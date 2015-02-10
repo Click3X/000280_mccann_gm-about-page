@@ -1,0 +1,345 @@
+/******************************************************************
+Site Name: GM
+Author: Jason Tordsen
+
+Stylesheet: Base Styles
+******************************************************************/
+
+/*------------------------------------------
+----------- ELEMENT DEFAULTS ---------------
+------------------------------------------*/
+
+body,html{
+	margin:0;
+	padding:0;
+}
+
+h1,h2,h3,h4,h5,h6{
+	&.c3xgm-about-h{
+		color:$gm-black;
+		margin:0; padding:0;
+		font-family: "open-sans-condensed", sans-serif;
+
+		span.c3xgm-about-blue{ color: $gm-blue; }
+		span.c3xgm-about-yellow{ color: $gm-yellow; }
+		span.c3xgm-about-gray{ color: $gm-gray; }
+	}
+}
+
+p.c3xgm-about-p{
+	margin:6px 0 6px 0; padding:0;
+	font-size:14px;
+	line-height:24px;
+	font-family: "open-sans", sans-serif;
+	color:$gm-black;
+	max-width:800px;
+
+	@media( max-width:$tablet-height ){
+		font-size:11px; line-height:16px;
+	}
+}
+
+h1.c3xgm-about-h{
+	font-size: 72px;
+	line-height: 70px;
+
+	@media( max-width:$tablet-height ){
+		font-size: 36px; line-height: 36px;
+	}
+}
+
+h2.c3xgm-about-h{
+	font-size: 44px;
+	line-height: 44px;
+	color:$gm-blue;
+
+	@media( max-width:$tablet-height ){
+		font-size: 18px; line-height: 18px;
+	}
+}
+
+h3.c3xgm-about-h{
+	font-size: 24px;
+	line-height: 24px;
+	margin:2px 0;
+	color:$gm-gray;
+
+	@media( max-width:$tablet-height ){
+		font-size: 18px; line-height: 18px;
+	}
+}
+
+
+h4.c3xgm-about-h{
+	font-size: 19px;
+	line-height: 23px;
+	margin:4px 0;
+	color:$gm-light-gray;
+}
+
+.c3x-about-blue{ color:$gm-blue !important; }
+.c3xgm-about-yellow{ color:$gm-yellow !important; }
+.c3x-about-light-gray{ color:$gm-light-gray !important; }
+.c3x-about-gray{ color:$gm-gray !important; }
+.c3x-about-dark-gray{ color:$gm-dark-gray !important; }
+.c3xgm-about-thin{ font-weight: 200 !important; }
+
+/*------------------------------------------
+----------------- LAYOUT ------------------- 
+------------------------------------------*/
+
+div{
+	&.c3xgm-about-content{
+		padding:0;
+		height: 100%;
+		overflow: hidden;
+		position: absolute;
+	}
+
+	&.c3xgm-about-inner{
+		background:#CCC;
+		position: relative;
+		top:0;
+
+		@include transition(top, 400ms, "easeInOut");
+	}
+
+	&.c3xgm-about-screensize-warning{
+		position: fixed;
+		background-color:#EEE;
+		width:100%;
+		height:100%;
+		z-index: 2;
+		text-align: center;
+		display: none;
+
+		div.c3xgm-about-screensize-warning-inner{
+			padding:90px 20px 20px 20px;
+		}
+	}
+
+	&.c3xgm-about-yellow-bar-left-wrapper{
+		margin:8px 0;
+		border-left:4px solid $gm-yellow;
+		padding-left:14px;
+
+		.c3xgm-about-h:first-child{
+			margin-top:0;
+		}
+	}
+}
+
+div.c3xgm-about-section{
+	background:#FFF;
+
+	div.c3xgm-about-section-header{
+		position: absolute;
+		width: 100%;
+		padding: 0;
+
+		div.c3xgm-about-section-header-inner{
+			padding:40px;
+
+			@media( max-width:$tablet-height ){
+				text-align:center;
+			}
+
+			img.c3xgm-about-section-icon{
+				float: left;
+				width: 80px;
+				height: auto;
+				margin: -4px 20px 0 0;
+
+				@media( max-width:$tablet-height ){
+					float: none;
+					width: 60px;
+					margin: 0 0 4px 0;
+				}
+			}
+
+			@media( max-width:$tablet-height ){
+				padding:20px;
+			}
+
+			hr{
+				margin:30px 0 10px 0;
+				border:none;
+				border-bottom:1px solid #999;
+
+				@media( max-width:$tablet-height ){
+					margin:14px 0 10px 0;
+				}
+			}
+		}
+	}
+
+	ul.c3xgm-about-subsections{
+		margin:0; padding:0;
+		width: 100%; height:100%;
+		list-style:none;
+		position: relative;
+		left:0;
+
+		// @include transition(left, 400ms, "easeInOut");
+
+		li.c3xgm-about-subsection{
+			margin:0; padding:0;
+			height: 100%;
+			float:left;
+
+			a.c3xgm-about-subsection-inner{
+				padding:160px 80px 40px 40px;
+				display: block;
+
+				@media( max-width:$tablet-height ){
+					padding:150px 40px 20px 20px;
+				}
+			}
+		}
+	}
+}
+
+/*------------------------------------------
+-------------- NAVIGATION ------------------ 
+------------------------------------------*/
+
+div.c3xgm-about-nav-container{
+	position: fixed;
+	z-index:1;
+	right:20px;
+	top:50%;
+
+	@media( max-width:$tablet-height ){ right:10px; }
+
+	div.c3xgm-about-nav-inner{
+		position:relative;
+
+		div.c3xgm-about-hitblocker{
+			position: absolute;
+			z-index: 1;
+			top:-20px;
+			right: $nav-dot-size;
+			height: 100%;
+			width: 100%;
+			padding:40px 0 0 0;
+		}
+
+		ul.c3xgm-about-nav{
+			margin:0; padding:0;
+			list-style: none;
+
+			li{
+				display: block;	
+				cursor:pointer;
+				margin:0 0 8px 0; padding:0;
+				opacity: .8;
+				position: relative;
+				text-align: right;
+				font-size: 14px;
+				line-height: $nav-dot-size;
+
+				label{
+					opacity: 0;
+					-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+					white-space: nowrap;
+					font-family: "open-sans-condensed", sans-serif;
+					font-weight: bold;
+					
+					span{
+						padding:10px;
+						border:1px solid $gm-light-gray;
+						margin-right: 24px;
+
+						&:after{
+							content: "";
+							position: absolute;
+							top:-2px;
+							right:16px;
+							width: 0; 
+							height: 0; 
+							border-top: 8px solid transparent;
+							border-bottom: 8px solid transparent;
+							border-left: 8px solid $gm-light-gray;
+						}
+					}
+				}
+
+				ul.c3xgm-about-subnav{
+					padding:0; margin:10px 0 0 0;
+					top:0;
+					height:0;
+
+					@include transition(height, 400s, "easeInOut");
+
+					li{
+						display: none;
+
+						&::before{
+							content: "";
+							height: 14px;
+							display: block;
+							position: absolute;
+							right: 4px;
+							border-right: 1px solid #444;
+							top: -11px;
+							z-index: -3;
+						}
+
+						label{
+							height: 0;
+							opacity: 0;
+						}
+
+						&::after{
+							background-color:$gm-dark-gray;
+						}
+					}
+				}
+
+				&.active{
+					ul.c3xgm-about-subnav{
+						height: auto;
+
+						li{
+							display: block;
+						}
+					}
+
+					&::after{
+							background-color:$gm-yellow;
+						}
+				}
+
+				&:hover{
+					label{
+						opacity: 1;
+						-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+					}
+				}
+
+				&::after{
+					content: " ";
+					clear:both;
+					display: table;
+					width: 10px;
+					height: 10px;
+					background-color:$gm-light-gray;
+					position: absolute;
+					top:1px;
+					right:0;
+				}
+
+				&.touch{
+					width:$nav-dot-size-touch;
+					height:$nav-dot-size-touch;
+
+					label{
+						right: $nav-dot-size-touch;
+						line-height: $nav-dot-size-touch;
+						display: none;
+					}
+				}
+			}
+		}
+	}
+}
