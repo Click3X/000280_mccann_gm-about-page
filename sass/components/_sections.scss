@@ -1,0 +1,19 @@
+/* SECTION STYLES COMMON TO ALL SECTIONS */
+
+.c3xgm-about-section {
+	padding-top: 73px;
+
+	.c3xgm-about-section-header-inner {
+		text-align: left;
+		width: 100%;
+	}
+
+
+	hr {
+		background: $gm-gray; border: none;
+		width: 86.25%; height: 2px;
+		margin-left: 7px; margin-top: 23px;
+		display: block;
+		float: left; clear: left;
+	}
+}

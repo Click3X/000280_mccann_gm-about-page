@@ -1,0 +1,82 @@
+/*------------------------------------------
+----------- ELEMENT DEFAULTS ---------------
+------------------------------------------*/
+
+body,html{
+	margin:0;
+	padding:0;
+}
+
+h1,h2,h3,h4,h5,h6{
+	font-weight: 600;
+	letter-spacing: .01em;
+	text-transform: uppercase;
+
+	&.c3xgm-about-h{
+		color:$gm-black;
+		margin:0; padding:0;
+		font-family: "open-sans-condensed", sans-serif;
+
+		span.c3xgm-about-blue{ color: $gm-blue; }
+		span.c3xgm-about-yellow{ color: $gm-yellow; }
+		span.c3xgm-about-gray{ color: $gm-gray; }
+	}
+}
+
+p.c3xgm-about-p{
+	margin:6px 0 6px 0; padding:0;
+	font-size:14px;
+	line-height:24px;
+	font-family: "open-sans", sans-serif;
+	color:$gm-black;
+	max-width:800px;
+
+	@media( max-width:$tablet-height ){
+		font-size:11px; line-height:16px;
+	}
+}
+
+h1.c3xgm-about-h{
+	font-size: 73px;
+	line-height: 70px;
+
+	@media( max-width:$tablet-height ){
+		font-size: 36px; line-height: 36px;
+	}
+}
+
+h2.c3xgm-about-h{
+	font-size: 44px;
+	line-height: 44px;
+	color:$gm-blue;
+
+	@media( max-width:$tablet-height ){
+		font-size: 18px; line-height: 18px;
+	}
+}
+
+h3.c3xgm-about-h{
+	font-size: 24px;
+	line-height: 24px;
+	margin:2px 0;
+	color:$gm-gray;
+
+	@media( max-width:$tablet-height ){
+		font-size: 18px; line-height: 18px;
+	}
+}
+
+
+h4.c3xgm-about-h{
+	font-size: 19px;
+	line-height: 23px;
+	margin:4px 0;
+	color:$gm-light-gray;
+}
+
+.c3x-about-blue{ color:$gm-blue !important; }
+.c3xgm-about-yellow{ color:$gm-yellow !important; }
+.c3x-about-light-gray{ color:$gm-light-gray !important; }
+.c3x-about-gray{ color:$gm-gray !important; }
+.c3x-about-dark-gray{ color:$gm-dark-gray !important; }
+.c3xgm-about-thin{ font-weight: 200 !important; }

@@ -1,0 +1,27 @@
+// LAYOUT
+// TITLE ICON
+img.c3xgm-about-section-icon{
+	float: left;
+	width: 80px;
+	height: auto;
+	margin: -5px 25px 0 0;
+	padding-left: 14px;
+
+	@media( max-width:$tablet-height ){
+		float: none;
+		width: 60px;
+		margin: 0 0 4px 0;
+	}
+}
+
+
+
+// PAGE CONTAINER
+.c3xgm-about-page-container {
+	width:100%; max-width:905px;
+	margin:0 auto;
+	position: relative;
+
+	// PADDING FOR GM - MENU
+	padding-top:35px;
+}

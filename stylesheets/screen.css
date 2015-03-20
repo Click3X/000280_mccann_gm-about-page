@@ -1,0 +1,364 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+/* line 5, ../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+/* line 22, ../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+html {
+  line-height: 1;
+}
+
+/* line 24, ../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 26, ../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 28, ../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+/* line 30, ../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none;
+}
+/* line 103, ../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+/* line 32, ../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none;
+}
+
+/* line 116, ../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+  display: block;
+}
+
+/******************************************************************
+Site Name: GM
+Author: Jason Tordsen
+
+Stylesheet: Sass Variables
+******************************************************************/
+/*----screen sizes----
+----------------------*/
+/******************************************************************
+Site Name: GM
+Author: Jason Tordsen
+
+Stylesheet: Sass Functions
+******************************************************************/
+/******************************************************************
+Site Name: GM
+Author: Jason Tordsen
+
+Stylesheet: Sass Mixins
+******************************************************************/
+/******************************************************************
+Site Name: GM
+Author: Jason Tordsen
+
+Stylesheet: Helpers
+******************************************************************/
+/* line 8, ../sass/components/_helpers.scss */
+.ir {
+  background-color: transparent;
+  border: 0;
+  overflow: hidden;
+  *text-indent: -9999px;
+}
+
+/* line 15, ../sass/components/_helpers.scss */
+.ir:before {
+  content: "";
+  display: block;
+  width: 0;
+  height: 150%;
+}
+
+/* line 22, ../sass/components/_helpers.scss */
+.hidden {
+  display: none !important;
+  visibility: hidden;
+}
+
+/* line 27, ../sass/components/_helpers.scss */
+.visuallyhidden {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+}
+
+/* line 38, ../sass/components/_helpers.scss */
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+  clip: auto;
+  height: auto;
+  margin: 0;
+  overflow: visible;
+  position: static;
+  width: auto;
+}
+
+/* line 48, ../sass/components/_helpers.scss */
+.invisible {
+  visibility: hidden;
+}
+
+/* line 52, ../sass/components/_helpers.scss */
+.c3xgm-about-clearfix:before,
+.c3xgm-about-clearfix:after {
+  content: " ";
+  display: table;
+}
+
+/* line 58, ../sass/components/_helpers.scss */
+.c3xgm-about-clearfix:after {
+  clear: both;
+}
+
+/* line 62, ../sass/components/_helpers.scss */
+.c3xgm-about-clearfix {
+  *zoom: 1;
+}
+
+/*
+TEMPLATE STYLES
+TO BE DELETED AFTER DEVELOPMENT
+*/
+/* line 6, ../sass/components/_temp.scss */
+.temp {
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 0;
+  padding: 50%;
+  z-index: 0;
+  position: absolute;
+  top: 0;
+}
+
+/* line 17, ../sass/components/_temp.scss */
+.our-comp-temp {
+  background-image: url("../templates/our-company.png");
+  opacity: 0.5;
+}
+
+/*------------------------------------------
+----------- ELEMENT DEFAULTS ---------------
+------------------------------------------*/
+/* line 5, ../sass/components/_element-defaults.scss */
+body, html {
+  margin: 0;
+  padding: 0;
+}
+
+/* line 10, ../sass/components/_element-defaults.scss */
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 600;
+  letter-spacing: .01em;
+  text-transform: uppercase;
+}
+/* line 15, ../sass/components/_element-defaults.scss */
+h1.c3xgm-about-h, h2.c3xgm-about-h, h3.c3xgm-about-h, h4.c3xgm-about-h, h5.c3xgm-about-h, h6.c3xgm-about-h {
+  color: #444444;
+  margin: 0;
+  padding: 0;
+  font-family: "open-sans-condensed", sans-serif;
+}
+/* line 20, ../sass/components/_element-defaults.scss */
+h1.c3xgm-about-h span.c3xgm-about-blue, h2.c3xgm-about-h span.c3xgm-about-blue, h3.c3xgm-about-h span.c3xgm-about-blue, h4.c3xgm-about-h span.c3xgm-about-blue, h5.c3xgm-about-h span.c3xgm-about-blue, h6.c3xgm-about-h span.c3xgm-about-blue {
+  color: #5e85c4;
+}
+/* line 21, ../sass/components/_element-defaults.scss */
+h1.c3xgm-about-h span.c3xgm-about-yellow, h2.c3xgm-about-h span.c3xgm-about-yellow, h3.c3xgm-about-h span.c3xgm-about-yellow, h4.c3xgm-about-h span.c3xgm-about-yellow, h5.c3xgm-about-h span.c3xgm-about-yellow, h6.c3xgm-about-h span.c3xgm-about-yellow {
+  color: #FDB12E;
+}
+/* line 22, ../sass/components/_element-defaults.scss */
+h1.c3xgm-about-h span.c3xgm-about-gray, h2.c3xgm-about-h span.c3xgm-about-gray, h3.c3xgm-about-h span.c3xgm-about-gray, h4.c3xgm-about-h span.c3xgm-about-gray, h5.c3xgm-about-h span.c3xgm-about-gray, h6.c3xgm-about-h span.c3xgm-about-gray {
+  color: #888888;
+}
+
+/* line 26, ../sass/components/_element-defaults.scss */
+p.c3xgm-about-p {
+  margin: 6px 0 6px 0;
+  padding: 0;
+  font-size: 14px;
+  line-height: 24px;
+  font-family: "open-sans", sans-serif;
+  color: #444444;
+  max-width: 800px;
+}
+@media (max-width: 768px) {
+  /* line 26, ../sass/components/_element-defaults.scss */
+  p.c3xgm-about-p {
+    font-size: 11px;
+    line-height: 16px;
+  }
+}
+
+/* line 39, ../sass/components/_element-defaults.scss */
+h1.c3xgm-about-h {
+  font-size: 73px;
+  line-height: 70px;
+}
+@media (max-width: 768px) {
+  /* line 39, ../sass/components/_element-defaults.scss */
+  h1.c3xgm-about-h {
+    font-size: 36px;
+    line-height: 36px;
+  }
+}
+
+/* line 48, ../sass/components/_element-defaults.scss */
+h2.c3xgm-about-h {
+  font-size: 44px;
+  line-height: 44px;
+  color: #5e85c4;
+}
+@media (max-width: 768px) {
+  /* line 48, ../sass/components/_element-defaults.scss */
+  h2.c3xgm-about-h {
+    font-size: 18px;
+    line-height: 18px;
+  }
+}
+
+/* line 58, ../sass/components/_element-defaults.scss */
+h3.c3xgm-about-h {
+  font-size: 24px;
+  line-height: 24px;
+  margin: 2px 0;
+  color: #888888;
+}
+@media (max-width: 768px) {
+  /* line 58, ../sass/components/_element-defaults.scss */
+  h3.c3xgm-about-h {
+    font-size: 18px;
+    line-height: 18px;
+  }
+}
+
+/* line 70, ../sass/components/_element-defaults.scss */
+h4.c3xgm-about-h {
+  font-size: 19px;
+  line-height: 23px;
+  margin: 4px 0;
+  color: #BBB;
+}
+
+/* line 77, ../sass/components/_element-defaults.scss */
+.c3x-about-blue {
+  color: #5e85c4 !important;
+}
+
+/* line 78, ../sass/components/_element-defaults.scss */
+.c3xgm-about-yellow {
+  color: #FDB12E !important;
+}
+
+/* line 79, ../sass/components/_element-defaults.scss */
+.c3x-about-light-gray {
+  color: #BBB !important;
+}
+
+/* line 80, ../sass/components/_element-defaults.scss */
+.c3x-about-gray {
+  color: #888888 !important;
+}
+
+/* line 81, ../sass/components/_element-defaults.scss */
+.c3x-about-dark-gray {
+  color: #555555 !important;
+}
+
+/* line 82, ../sass/components/_element-defaults.scss */
+.c3xgm-about-thin {
+  font-weight: 200 !important;
+}
+
+/* line 3, ../sass/components/_layout.scss */
+img.c3xgm-about-section-icon {
+  float: left;
+  width: 80px;
+  height: auto;
+  margin: -5px 25px 0 0;
+  padding-left: 14px;
+}
+@media (max-width: 768px) {
+  /* line 3, ../sass/components/_layout.scss */
+  img.c3xgm-about-section-icon {
+    float: none;
+    width: 60px;
+    margin: 0 0 4px 0;
+  }
+}
+
+/* line 20, ../sass/components/_layout.scss */
+.c3xgm-about-page-container {
+  width: 100%;
+  max-width: 905px;
+  margin: 0 auto;
+  position: relative;
+  padding-top: 35px;
+}
+
+/* SECTION STYLES COMMON TO ALL SECTIONS */
+/* line 3, ../sass/components/_sections.scss */
+.c3xgm-about-section {
+  padding-top: 73px;
+}
+/* line 6, ../sass/components/_sections.scss */
+.c3xgm-about-section .c3xgm-about-section-header-inner {
+  text-align: left;
+  width: 100%;
+}
+/* line 12, ../sass/components/_sections.scss */
+.c3xgm-about-section hr {
+  background: #888888;
+  border: none;
+  width: 86.25%;
+  height: 2px;
+  margin-left: 7px;
+  margin-top: 23px;
+  display: block;
+  float: left;
+  clear: left;
+}
