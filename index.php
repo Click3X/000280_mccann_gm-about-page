@@ -28,12 +28,32 @@
         <div id="c3xgm-about-page-container" class="c3xgm-about-page-container c3xgm-about-clearfix">
 
             <!-- TEMPLATE FOR CODING -->
-            <div id="our-comp-temp" class="temp our-comp-temp"></div>
+            <!-- <div id="our-comp-temp" class="temp our-comp-temp"></div> -->
 
             <?php 
-                // SECTION HEADER
+                // ITERATE THROUGH PAGEES ARRAY
                 foreach ($pages as $key => $page) {
-                    sectionHeader($page['title'], $page['title-icon@2x']);
+                    // helper($page);
+                    
+                    // PAGE HEADER
+                    pageHeader($page['title'], $page['image@2x'], $page['tagline']);
+
+                    // BLOCKS
+                    if($page['blocks']) {
+                        foreach ($page['blocks'] as $key => $block) {
+                            // helper($block);
+                            printBlock($block);
+                        }
+                    }
+
+
+                    // SUB-SECTIONS
+                    if($page['sections']) {
+                        foreach ($page['sections'] as $key => $section) {
+                            // helper($section);
+                            subSectionHeader($section['title'], $section['tagline']);
+                        }
+                    }
                 }
             ?>
 

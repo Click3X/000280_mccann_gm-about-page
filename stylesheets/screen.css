@@ -184,132 +184,132 @@ TO BE DELETED AFTER DEVELOPMENT
 /*------------------------------------------
 ----------- ELEMENT DEFAULTS ---------------
 ------------------------------------------*/
-/* line 5, ../sass/components/_element-defaults.scss */
+/* line 5, ../sass/components/_typography.scss */
 body, html {
   margin: 0;
   padding: 0;
 }
 
-/* line 10, ../sass/components/_element-defaults.scss */
+/* line 10, ../sass/components/_typography.scss */
 h1, h2, h3, h4, h5, h6 {
   font-weight: 600;
   letter-spacing: .01em;
   text-transform: uppercase;
 }
-/* line 15, ../sass/components/_element-defaults.scss */
+/* line 15, ../sass/components/_typography.scss */
 h1.c3xgm-about-h, h2.c3xgm-about-h, h3.c3xgm-about-h, h4.c3xgm-about-h, h5.c3xgm-about-h, h6.c3xgm-about-h {
-  color: #444444;
+  color: #464B51;
   margin: 0;
   padding: 0;
   font-family: "open-sans-condensed", sans-serif;
 }
-/* line 20, ../sass/components/_element-defaults.scss */
+/* line 20, ../sass/components/_typography.scss */
 h1.c3xgm-about-h span.c3xgm-about-blue, h2.c3xgm-about-h span.c3xgm-about-blue, h3.c3xgm-about-h span.c3xgm-about-blue, h4.c3xgm-about-h span.c3xgm-about-blue, h5.c3xgm-about-h span.c3xgm-about-blue, h6.c3xgm-about-h span.c3xgm-about-blue {
   color: #5e85c4;
 }
-/* line 21, ../sass/components/_element-defaults.scss */
+/* line 21, ../sass/components/_typography.scss */
 h1.c3xgm-about-h span.c3xgm-about-yellow, h2.c3xgm-about-h span.c3xgm-about-yellow, h3.c3xgm-about-h span.c3xgm-about-yellow, h4.c3xgm-about-h span.c3xgm-about-yellow, h5.c3xgm-about-h span.c3xgm-about-yellow, h6.c3xgm-about-h span.c3xgm-about-yellow {
   color: #FDB12E;
 }
-/* line 22, ../sass/components/_element-defaults.scss */
+/* line 22, ../sass/components/_typography.scss */
 h1.c3xgm-about-h span.c3xgm-about-gray, h2.c3xgm-about-h span.c3xgm-about-gray, h3.c3xgm-about-h span.c3xgm-about-gray, h4.c3xgm-about-h span.c3xgm-about-gray, h5.c3xgm-about-h span.c3xgm-about-gray, h6.c3xgm-about-h span.c3xgm-about-gray {
   color: #888888;
 }
 
-/* line 26, ../sass/components/_element-defaults.scss */
+/* line 27, ../sass/components/_typography.scss */
 p.c3xgm-about-p {
-  margin: 6px 0 6px 0;
+  margin: 9px 0 9px 0;
   padding: 0;
-  font-size: 14px;
-  line-height: 24px;
+  font-size: 11px;
+  line-height: 16px;
   font-family: "open-sans", sans-serif;
-  color: #444444;
-  max-width: 800px;
+  color: #464B51;
+  max-width: 42em;
 }
-@media (max-width: 768px) {
-  /* line 26, ../sass/components/_element-defaults.scss */
+@media (min-width: 768px) {
+  /* line 27, ../sass/components/_typography.scss */
   p.c3xgm-about-p {
-    font-size: 11px;
-    line-height: 16px;
+    font-size: 17px;
+    line-height: 29px;
   }
 }
 
-/* line 39, ../sass/components/_element-defaults.scss */
+/* line 36, ../sass/components/_typography.scss */
 h1.c3xgm-about-h {
-  font-size: 73px;
-  line-height: 70px;
+  font-size: 36px;
+  line-height: 36px;
 }
-@media (max-width: 768px) {
-  /* line 39, ../sass/components/_element-defaults.scss */
+@media (min-width: 768px) {
+  /* line 36, ../sass/components/_typography.scss */
   h1.c3xgm-about-h {
-    font-size: 36px;
-    line-height: 36px;
+    font-size: 73px;
+    line-height: 70px;
   }
 }
 
-/* line 48, ../sass/components/_element-defaults.scss */
+/* line 42, ../sass/components/_typography.scss */
 h2.c3xgm-about-h {
-  font-size: 44px;
-  line-height: 44px;
-  color: #5e85c4;
+  font-size: 18px;
+  line-height: 18px;
+  color: #124e9c;
 }
-@media (max-width: 768px) {
-  /* line 48, ../sass/components/_element-defaults.scss */
+@media (min-width: 768px) {
+  /* line 42, ../sass/components/_typography.scss */
   h2.c3xgm-about-h {
-    font-size: 18px;
-    line-height: 18px;
+    font-size: 52px;
+    line-height: 74px;
   }
 }
 
-/* line 58, ../sass/components/_element-defaults.scss */
+/* line 48, ../sass/components/_typography.scss */
 h3.c3xgm-about-h {
-  font-size: 24px;
-  line-height: 24px;
+  font-size: 18px;
+  line-height: 18px;
   margin: 2px 0;
   color: #888888;
 }
-@media (max-width: 768px) {
-  /* line 58, ../sass/components/_element-defaults.scss */
+@media (min-width: 768px) {
+  /* line 48, ../sass/components/_typography.scss */
   h3.c3xgm-about-h {
-    font-size: 18px;
-    line-height: 18px;
+    font-size: 24px;
+    line-height: 24px;
   }
 }
 
-/* line 70, ../sass/components/_element-defaults.scss */
+/* line 56, ../sass/components/_typography.scss */
 h4.c3xgm-about-h {
   font-size: 19px;
   line-height: 23px;
   margin: 4px 0;
-  color: #BBB;
+  color: #939597;
 }
 
-/* line 77, ../sass/components/_element-defaults.scss */
+/* line 62, ../sass/components/_typography.scss */
 .c3x-about-blue {
   color: #5e85c4 !important;
 }
 
-/* line 78, ../sass/components/_element-defaults.scss */
+/* line 63, ../sass/components/_typography.scss */
 .c3xgm-about-yellow {
   color: #FDB12E !important;
 }
 
-/* line 79, ../sass/components/_element-defaults.scss */
+/* line 64, ../sass/components/_typography.scss */
 .c3x-about-light-gray {
-  color: #BBB !important;
+  color: #939597 !important;
 }
 
-/* line 80, ../sass/components/_element-defaults.scss */
+/* line 65, ../sass/components/_typography.scss */
 .c3x-about-gray {
   color: #888888 !important;
 }
 
-/* line 81, ../sass/components/_element-defaults.scss */
+/* line 66, ../sass/components/_typography.scss */
 .c3x-about-dark-gray {
   color: #555555 !important;
 }
 
-/* line 82, ../sass/components/_element-defaults.scss */
+/* line 67, ../sass/components/_typography.scss */
 .c3xgm-about-thin {
   font-weight: 200 !important;
 }
@@ -317,21 +317,20 @@ h4.c3xgm-about-h {
 /* line 3, ../sass/components/_layout.scss */
 img.c3xgm-about-section-icon {
   float: left;
-  width: 80px;
+  width: 50px;
   height: auto;
-  margin: -5px 25px 0 0;
-  padding-left: 14px;
+  margin: -8px 15px 0 0;
+  padding-left: 4px;
 }
-@media (max-width: 768px) {
+@media (min-width: 768px) {
   /* line 3, ../sass/components/_layout.scss */
   img.c3xgm-about-section-icon {
-    float: none;
-    width: 60px;
-    margin: 0 0 4px 0;
+    width: 90px;
+    margin: -10px 25px 0 0;
   }
 }
 
-/* line 20, ../sass/components/_layout.scss */
+/* line 14, ../sass/components/_layout.scss */
 .c3xgm-about-page-container {
   width: 100%;
   max-width: 905px;
@@ -340,25 +339,87 @@ img.c3xgm-about-section-icon {
   padding-top: 35px;
 }
 
-/* SECTION STYLES COMMON TO ALL SECTIONS */
-/* line 3, ../sass/components/_sections.scss */
-.c3xgm-about-section {
-  padding-top: 73px;
+/* line 23, ../sass/components/_layout.scss */
+.c3xgm-about-yellow-bar-left-wrapper {
+  margin: 8px 0;
+  padding-left: 14px;
+  border-left: 3px solid #FDB12E;
 }
-/* line 6, ../sass/components/_sections.scss */
+/* line 27, ../sass/components/_layout.scss */
+.c3xgm-about-yellow-bar-left-wrapper .c3xgm-about-h:first-child {
+  margin-top: 0;
+}
+
+/* line 30, ../sass/components/_layout.scss */
+.c3xgm-about-section {
+  padding-top: 36px;
+}
+@media (min-width: 768px) {
+  /* line 30, ../sass/components/_layout.scss */
+  .c3xgm-about-section {
+    padding-top: 73px;
+  }
+}
+/* line 34, ../sass/components/_layout.scss */
 .c3xgm-about-section .c3xgm-about-section-header-inner {
   text-align: left;
   width: 100%;
 }
-/* line 12, ../sass/components/_sections.scss */
+/* line 36, ../sass/components/_layout.scss */
 .c3xgm-about-section hr {
   background: #888888;
   border: none;
   width: 86.25%;
-  height: 2px;
-  margin-left: 7px;
-  margin-top: 23px;
+  height: 1px;
+  margin-top: 12px;
   display: block;
   float: left;
   clear: left;
+}
+@media (min-width: 768px) {
+  /* line 36, ../sass/components/_layout.scss */
+  .c3xgm-about-section hr {
+    height: 2px;
+    margin-top: 23px;
+  }
+}
+
+/* line 50, ../sass/components/_layout.scss */
+.c3xgm-about-subsection {
+  padding-left: 2px;
+}
+
+/* line 55, ../sass/components/_layout.scss */
+.c3xgm-about-block-image img {
+  width: 100%;
+}
+
+/* line 3, ../sass/components/pages/_our-company.scss */
+.c3xgm-about-earn .c3xgm-about-block-title {
+  color: #6086C4;
+  font-size: 50px;
+  line-height: .925em;
+  font-weight: 100;
+  max-width: 4em;
+}
+/* line 8, ../sass/components/pages/_our-company.scss */
+.c3xgm-about-earn .c3xgm-about-block-title strong {
+  font-weight: 600;
+}
+@media (min-width: 768px) {
+  /* line 3, ../sass/components/pages/_our-company.scss */
+  .c3xgm-about-earn .c3xgm-about-block-title {
+    font-size: 100px;
+  }
+}
+
+/* line 16, ../sass/components/pages/_our-company.scss */
+.our-company .c3xgm-about-p {
+  font-size: 19px;
+  line-height: 23px;
+  margin: 1em 0;
+  color: #939597;
+  text-transform: uppercase;
+  font-weight: 600;
+  font-family: "open-sans-condensed", sans-serif;
 }

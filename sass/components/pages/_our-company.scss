@@ -1,0 +1,22 @@
+// OUR COMPANY
+.c3xgm-about-earn {
+	.c3xgm-about-block-title {
+		color: $gm-light-blue;
+		font-size: 50px; line-height: .925em;
+		font-weight: 100; max-width: 4em;
+
+		strong { font-weight: 600; }
+
+		@media( min-width:$tablet-height ){ font-size: 100px; }
+	}
+}
+
+
+.our-company {
+	.c3xgm-about-p {
+		font-size: 19px; line-height: 23px;
+		margin:1em 0;
+		color:$gm-light-gray; text-transform:uppercase; font-weight: 600;
+		font-family: "open-sans-condensed", sans-serif;
+	}
+}

@@ -6,12 +6,14 @@ $pages = array(
 		"type"=>"page",
 		"title"=>"Our Company",
 		"tagline"=>"General Motors is a global automotive company united by a single purpose:",
-		"title-icon"=>"img/title-icons/our-company.png",
-		"title-icon@2x"=>"img/title-icons/our-company.svg",
+		"image"=>"img/title-icons/our-company.png",
+		"image@2x"=>"img/title-icons/our-company.svg",
 		"blocks"=>array(
 			array(
-				"image"=>"img/pages/logos/general-motors.png",
 				"title"=>"To <strong>earn customers</strong> for <strong>life</strong>",
+				"image"=>"img/logos/general-motors.png",
+				"image@2x"=>"img/logos/general-motors.png",
+				"class"=>"earn",
 				"copy"=>"<p><strong>Earning customers for life is the foundational promise of General Motors.</strong> It is a commitment to treat every customer with respect. To care about a customer, not just when they purchase a new vehicle, but for as long as they own the vehicle. Appreciating customers and fighting every day to earn their loyalty inspires us to make better, safer, higher value cars, trucks and crossovers.</p>"
 			)
 		)
@@ -21,8 +23,8 @@ $pages = array(
 		"type"=>"page",
 		"title"=>"Our People",
 		"tagline"=>"General Motors employs the finest workforce in the automotive world. We are a richly diverse and dedicated team.",
-		"title-icon"=>"img/title-icons/our-people.png",
-		"title-icon@2x"=>"img/title-icons/our-people.svg",
+		"image"=>"img/title-icons/our-people.png",
+		"image@2x"=>"img/title-icons/our-people.svg",
 		"blocks"=>array(
 			array(
 				"title"=>"Employees",
@@ -84,8 +86,8 @@ $pages = array(
 		"type"=>"page",
 		"title"=>"Our Brands",
 		"tagline"=>"From electric mini-cars to heavy-duty full-size trucks, GM provides a complete range of vehicles that meets the needs and expectations of drivers on a truly global scale. There are 9 distinctive automotive brands under the GM corporate umbrella: Chevrolet, Buick, GMC, Cadillac, Opel, Vauxhall, Holden, Baojun and Wuling.",
-		"title-icon"=>"img/title-icons/our-brands.png",
-		"title-icon@2x"=>"img/title-icons/our-brands.svg",
+		"image"=>"img/title-icons/our-brands.png",
+		"image@2x"=>"img/title-icons/our-brands.svg",
 		"module"=>array(
 			"name"=>"car",
 			"blocks"=>array(
@@ -243,8 +245,8 @@ $pages = array(
 		"type"=>"page",
 		"title"=>"Our Commitment",
 		"tagline"=>"",
-		"title-icon"=>"img/title-icons/our-commitment.png",
-		"title-icon@2x"=>"img/title-icons/our-commitment.svg",
+		"image"=>"img/title-icons/our-commitment.png",
+		"image@2x"=>"img/title-icons/our-commitment.svg",
 		"sections"=>array(
 			// SAFETY & QUALITY
 			array(
@@ -328,8 +330,8 @@ $pages = array(
 								"Offering",
 								"4G LTE Connectivity",
 								"On more vehicles than any other auto manufacturer combined"
-							),
-							"marker"=>array(x,y)
+							)
+							// "marker"=>array(x,y)
 						),
 						array(
 							"title"=>"Concept Car",
@@ -340,8 +342,8 @@ $pages = array(
 								"Creating the affordable electric",
 								"Chevrolet Bolt Concept Car",
 								"Capable of traveling over <strong>200 miles</strong> on a single charge"
-							),
-							"marker"=>array(x,y)
+							)
+							// "marker"=>array(x,y)
 						),
 						array(
 							"title"=>"Safety",
@@ -352,8 +354,8 @@ $pages = array(
 								"Enhancing",
 								"Driver Vision &amp; Safety",
 								"With a <strong>Patented streaming video rearview mirror</strong>"
-							),
-							"marker"=>array(x,y)
+							)
+							// "marker"=>array(x,y)
 						)
 					)
 				)

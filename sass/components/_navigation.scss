@@ -1,0 +1,144 @@
+/*------------------------------------------
+-------------- NAVIGATION ------------------ 
+------------------------------------------*/
+
+div.c3xgm-about-nav-container{
+	position: fixed;
+	z-index:1;
+	right:20px;
+	top:50%;
+
+	@media( max-width:$tablet-height ){ right:10px; }
+
+	div.c3xgm-about-nav-inner{
+		position:relative;
+
+		div.c3xgm-about-hitblocker{
+			position: absolute;
+			z-index: 1;
+			top:-20px;
+			right: $nav-dot-size;
+			height: 100%;
+			width: 100%;
+			padding:40px 0 0 0;
+		}
+
+		ul.c3xgm-about-nav{
+			margin:0; padding:0;
+			list-style: none;
+
+			li{
+				display: block;	
+				cursor:pointer;
+				margin:0 0 8px 0; padding:0;
+				opacity: .8;
+				position: relative;
+				text-align: right;
+				font-size: 14px;
+				line-height: $nav-dot-size;
+
+				label{
+					opacity: 0;
+					-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+					white-space: nowrap;
+					font-family: "open-sans-condensed", sans-serif;
+					font-weight: bold;
+					
+					span{
+						padding:10px;
+						border:1px solid $gm-light-gray;
+						margin-right: 24px;
+
+						&:after{
+							content: "";
+							position: absolute;
+							top:-2px;
+							right:16px;
+							width: 0; 
+							height: 0; 
+							border-top: 8px solid transparent;
+							border-bottom: 8px solid transparent;
+							border-left: 8px solid $gm-light-gray;
+						}
+					}
+				}
+
+				ul.c3xgm-about-subnav{
+					padding:0; margin:10px 0 0 0;
+					top:0;
+					height:0;
+
+					@include transition(height, 400s, "easeInOut");
+
+					li{
+						display: none;
+
+						&::before{
+							content: "";
+							height: 14px;
+							display: block;
+							position: absolute;
+							right: 4px;
+							border-right: 1px solid #444;
+							top: -11px;
+							z-index: -3;
+						}
+
+						label{
+							height: 0;
+							opacity: 0;
+						}
+
+						&::after{
+							background-color:$gm-dark-gray;
+						}
+					}
+				}
+
+				&.active{
+					ul.c3xgm-about-subnav{
+						height: auto;
+
+						li{
+							display: block;
+						}
+					}
+
+					&::after{
+							background-color:$gm-yellow;
+						}
+				}
+
+				&:hover{
+					label{
+						opacity: 1;
+						-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+					}
+				}
+
+				&::after{
+					content: " ";
+					clear:both;
+					display: table;
+					width: 10px;
+					height: 10px;
+					background-color:$gm-light-gray;
+					position: absolute;
+					top:1px;
+					right:0;
+				}
+
+				&.touch{
+					width:$nav-dot-size-touch;
+					height:$nav-dot-size-touch;
+
+					label{
+						right: $nav-dot-size-touch;
+						line-height: $nav-dot-size-touch;
+						display: none;
+					}
+				}
+			}
+		}
+	}
+}

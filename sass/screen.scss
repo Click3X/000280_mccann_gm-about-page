@@ -11,8 +11,10 @@
 @import "components/helpers";
 
 @import "components/temp";
+// @import "components/base";
+// @import "components/navigation";
 
-@import "components/element-defaults";
+@import "components/typography";
 @import "components/layout";
 
-@import "components/sections";
+@import "components/pages/our-company";
