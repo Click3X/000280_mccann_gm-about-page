@@ -2,21 +2,54 @@
 .c3xgm-about-earn {
 	.c3xgm-about-block-title {
 		color: $gm-light-blue;
-		font-size: 50px; line-height: .925em;
+		font-size: 58px; line-height: .9em;
 		font-weight: 100; max-width: 4em;
+		padding-left: 8px;
 
 		strong { font-weight: 600; }
 
-		@media( min-width:$tablet-height ){ font-size: 100px; }
+		@media( min-width:$tablet-height ){ font-size:117px; }
 	}
 }
 
 
 .our-company {
-	.c3xgm-about-p {
-		font-size: 19px; line-height: 23px;
-		margin:1em 0;
+	.c3xgm-about-header-p {
+		margin:.4em 0 .4em 8px;
 		color:$gm-light-gray; text-transform:uppercase; font-weight: 600;
 		font-family: "open-sans-condensed", sans-serif;
+		font-size: 24px; line-height:1.1em;
+		letter-spacing: .025em;
+		padding:0;
+		clear:left;
+		
+		@media( min-width:$tablet-height ){ margin:1em 0 1em 8px; }
+	}
+
+	.c3xgm-about-header-image { 
+		margin: 4.02% auto 3.14%;
+		text-align: center;
+		width: 96%;
+		@media(min-width: 408px) {
+			float: left;
+			margin-left:6px;
+		}
+		@media( min-width:$tablet-height ){ margin: 2em 0 1.6em; }
+	}
+}
+
+
+.c3xgm-about-earn {
+	margin-top:4px;
+
+	.c3xgm-about-yellow-bar-left-wrapper { 
+		margin-bottom: 20px;
+		@media( min-width:$tablet-height ){ margin-bottom: 28px; }
+	}
+
+	.c3xgm-about-p { 
+		// padding-left:7px;
+
+		strong { display: block; }
 	}
 }

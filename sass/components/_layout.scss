@@ -3,10 +3,13 @@
 img.c3xgm-about-section-icon{
 	float: left;
 	width: 50px; height: auto;
-	margin: -8px 15px 0 0; padding-left: 4px;
+	padding-left: 6px;
+	// margin: -8px 15px 0 0; 
+	margin: -10px 6px 0 0;
 	@media( min-width:$tablet-height ){ 
 		width: 90px; 
-		margin: -10px 25px 0 0;
+		margin: -10px 21px 0 0;
+		padding-left:8px;
 	}
 }
 
@@ -21,8 +24,11 @@ img.c3xgm-about-section-icon{
 
 // YELLOW BAR
 .c3xgm-about-yellow-bar-left-wrapper {
-	margin:8px 0; padding-left:14px;
+	margin: 8px 0 8px 6px; 
+	padding-left:6px;
 	border-left:3px solid $gm-yellow;
+
+	@media( min-width:$tablet-height ){ padding-left:14px; }
 
 	.c3xgm-about-h:first-child { margin-top:0; }
 }
@@ -41,7 +47,7 @@ img.c3xgm-about-section-icon{
 
 		@media(min-width:$tablet-height ){ 
 			height: 2px; 
-			margin-top: 23px;
+			margin-top: 18px;
 		}
 	}
 }
@@ -51,7 +57,10 @@ img.c3xgm-about-section-icon{
 	padding-left:2px;
 }
 
+.c3xgm-about-header-image,
 .c3xgm-about-block-image {
+	width: 100%;
+	height: 100%;
 	img {
 		width:100%;
 	}

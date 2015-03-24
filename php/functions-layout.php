@@ -1,24 +1,28 @@
 <?php // FUNCTIONS
 
 // SECTION HEADER
-function pageHeader($title, $image, $tagline) {
+function pageHeader($title, $icon, $tagline, $image) {
 	$title = $title;
 	$titleSpan = str_replace('Our','<span class=\'c3xgm-about-thin\'>Our</span>', $title);
-	$image = $image;
+	$icon = $icon;
 	$tagline = $tagline;
+	$image = $image;
 	echo '<!-- SECTION START -->
 		<div class="c3xgm-about-section c3xgm-about-clearfix '.cleanString($title).'">
 		    <div class="c3xgm-about-section-header c3xgm-about-clearfix">
-		    <div class="c3xgm-about-section-header-inner">
-		        <img class="c3xgm-about-section-icon" src="'.$image.'">
-		        <h1 class="c3xgm-about-h">'.$titleSpan.'</h1>
-		    </div>
-			<hr>
+			    <div class="c3xgm-about-section-header-inner">
+			        <img class="c3xgm-about-section-icon" src="'.$icon.'">
+			        <h1 class="c3xgm-about-h">'.$titleSpan.'</h1>
+			    </div>
+				<hr>
 			</div>';
 
-			if($tagline) {
-				echo '<p class="c3xgm-about-p">'.$tagline.'</p>';
+			if($image) { 
+				$size = getimagesize($image);
+				echo '<div class="c3xgm-about-header-image" style="max-width:'.$size[0].'px; max-height:'.$size[1].'px;"><img src="'.$image.'"></div>';
 			}
+
+			if($tagline) { echo '<p class="c3xgm-about-p c3xgm-about-header-p">'.$tagline.'</p>'; }
 
 	echo '</div>';
 }
@@ -42,12 +46,17 @@ function printBlock($block) {
 	// helper($block);
 	if($block['class']) {$class = " c3xgm-about-".$block['class']; } else { $class = "";}
 	echo '<div class="c3xgm-about-block c3xgm-about-clearfix'.$class.'">';
-			if($block['image@2x']) { echo '<div class="c3xgm-about-block-image"><img src="'.$block['image@2x'].'"></div>';}
+			if($block['image@2x']) { 
+				$size = getimagesize($block['image']);
+				echo '<div class="c3xgm-about-block-image" style="max-width:'.$size[0].'px; max-height:'.$size[1].'px;"><img src="'.$block['image@2x'].'"></div>';
+			}
 			echo '<div class="c3xgm-about-yellow-bar-left-wrapper">';
-			// if($block['image@2x']) { echo '<div class="c3xgm-about-block-image"><img src="'.$block['image@2x'].'"></div>';}
-			if($block['title']) { echo '<h3 class="c3xgm-about-block-title c3xgm-about-h">'.$block['title'].'</h3>';}
-	echo '</div>
-	</div>';
+				if($block['title']) { echo '<h3 class="c3xgm-about-block-title c3xgm-about-h">'.$block['title'].'</h3>';}
+			echo '</div>';
+
+			if($block['copy']) { echo '<p class="c3xgm-about-p">'.$block['copy'].'</p>';}
+
+	echo '</div>';
 }
 
 ?>

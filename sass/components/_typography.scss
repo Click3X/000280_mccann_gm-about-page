@@ -2,20 +2,14 @@
 ----------- ELEMENT DEFAULTS ---------------
 ------------------------------------------*/
 
-body,html{
-	margin:0;
-	padding:0;
-}
+body,html{ margin:0; padding:0; }
 
 h1,h2,h3,h4,h5,h6{
-	font-weight: 600;
-	letter-spacing: .01em;
-	text-transform: uppercase;
+	font-weight: 600; letter-spacing: .01em; text-transform: uppercase;
 
 	&.c3xgm-about-h{
-		color:$gm-black;
+		font-family: "open-sans-condensed", sans-serif; color:$gm-black;
 		margin:0; padding:0;
-		font-family: "open-sans-condensed", sans-serif;
 
 		span.c3xgm-about-blue{ color: $gm-blue; }
 		span.c3xgm-about-yellow{ color: $gm-yellow; }
@@ -23,40 +17,39 @@ h1,h2,h3,h4,h5,h6{
 	}
 }
 
-
 p.c3xgm-about-p{
-	margin:9px 0 9px 0; padding:0;
-	font-size:11px; line-height:16px;
-	font-family: "open-sans", sans-serif;
-	color: $gm-black;
-	max-width: 42em;
-	@media( min-width:$tablet-height ){ font-size:17px; line-height:29px; }
+	margin:9px 0 9px 0;
+	font-size:14px; line-height:1.613em; letter-spacing: 0.01em;
+	font-family: "open-sans", sans-serif; color: $gm-black;
+	max-width: 39em;
+	padding:0;
+	padding-left: 7px;
+
+	@media( min-width:$tablet-height ){ font-size: 18px; }
+
+	strong { font-weight: 700; }
 }
 
 h1.c3xgm-about-h{
-	font-size: 36px; line-height: 36px;
-
+	font-size: 32px;  line-height:1em;
 	@media( min-width:$tablet-height ){ font-size: 73px; line-height: 70px; }
 }
 
 h2.c3xgm-about-h{
-	font-size: 18px; line-height: 18px;
-	color:$gm-dark-blue;
+	font-size: 18px; line-height:1em; color:$gm-dark-blue;
 	@media( min-width:$tablet-height ){ font-size: 52px; line-height: 74px; }
 }
 
 h3.c3xgm-about-h{
-	font-size: 18px; line-height: 18px;
+	font-size: 18px; line-height:1em; color:$gm-gray;
 	margin:2px 0;
-	color:$gm-gray;
-	@media( min-width:$tablet-height ){ font-size: 24px; line-height: 24px; }
+	@media( min-width:$tablet-height ){ font-size: 24px; }
 }
 
 
 h4.c3xgm-about-h{
-	font-size: 19px; line-height: 23px;
+	font-size: 19px; line-height: 23px; color:$gm-light-gray;
 	margin:4px 0;
-	color:$gm-light-gray;
 }
 
 .c3x-about-blue{ color:$gm-blue !important; }

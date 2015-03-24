@@ -5,16 +5,18 @@ $pages = array(
 	array(
 		"type"=>"page",
 		"title"=>"Our Company",
-		"tagline"=>"General Motors is a global automotive company united by a single purpose:",
-		"image"=>"img/title-icons/our-company.png",
-		"image@2x"=>"img/title-icons/our-company.svg",
+		"tagline"=>"is a global automotive company united by a single purpose:",		
+		"icon"=>"img/title-icons/our-company.png",
+		"icon@2x"=>"img/title-icons/our-company.svg",
+		"image"=>"img/logos/general-motors.png",
+		"image@2x"=>"img/logos/general-motors.svg",
 		"blocks"=>array(
 			array(
 				"title"=>"To <strong>earn customers</strong> for <strong>life</strong>",
-				"image"=>"img/logos/general-motors.png",
-				"image@2x"=>"img/logos/general-motors.png",
+				"image"=>"",
+				"image@2x"=>"",
 				"class"=>"earn",
-				"copy"=>"<p><strong>Earning customers for life is the foundational promise of General Motors.</strong> It is a commitment to treat every customer with respect. To care about a customer, not just when they purchase a new vehicle, but for as long as they own the vehicle. Appreciating customers and fighting every day to earn their loyalty inspires us to make better, safer, higher value cars, trucks and crossovers.</p>"
+				"copy"=>"<strong>Earning customers for life is the foundational promise of General Motors.</strong> It is a commitment to treat every customer with respect. To care about a customer, not just when they purchase a new vehicle, but for as long as they own the vehicle. Appreciating customers and fighting every day to earn their loyalty inspires us to make better, safer, higher value cars, trucks and crossovers."
 			)
 		)
 	),
@@ -23,8 +25,8 @@ $pages = array(
 		"type"=>"page",
 		"title"=>"Our People",
 		"tagline"=>"General Motors employs the finest workforce in the automotive world. We are a richly diverse and dedicated team.",
-		"image"=>"img/title-icons/our-people.png",
-		"image@2x"=>"img/title-icons/our-people.svg",
+		"icon"=>"img/title-icons/our-people.png",
+		"icon@2x"=>"img/title-icons/our-people.svg",
 		"blocks"=>array(
 			array(
 				"title"=>"Employees",
@@ -86,8 +88,8 @@ $pages = array(
 		"type"=>"page",
 		"title"=>"Our Brands",
 		"tagline"=>"From electric mini-cars to heavy-duty full-size trucks, GM provides a complete range of vehicles that meets the needs and expectations of drivers on a truly global scale. There are 9 distinctive automotive brands under the GM corporate umbrella: Chevrolet, Buick, GMC, Cadillac, Opel, Vauxhall, Holden, Baojun and Wuling.",
-		"image"=>"img/title-icons/our-brands.png",
-		"image@2x"=>"img/title-icons/our-brands.svg",
+		"icon"=>"img/title-icons/our-brands.png",
+		"icon@2x"=>"img/title-icons/our-brands.svg",
 		"module"=>array(
 			"name"=>"car",
 			"blocks"=>array(
@@ -245,8 +247,8 @@ $pages = array(
 		"type"=>"page",
 		"title"=>"Our Commitment",
 		"tagline"=>"",
-		"image"=>"img/title-icons/our-commitment.png",
-		"image@2x"=>"img/title-icons/our-commitment.svg",
+		"icon"=>"img/title-icons/our-commitment.png",
+		"icon@2x"=>"img/title-icons/our-commitment.svg",
 		"sections"=>array(
 			// SAFETY & QUALITY
 			array(

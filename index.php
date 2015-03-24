@@ -22,13 +22,22 @@
         <!--[if IE]>
           <link href="stylesheets/ie.css" media="screen, projection" rel="stylesheet" type="text/css" />
         <![endif]-->
-
+        <style>
+            .bg-change {
+                position: fixed; bottom: 80px; right:80px;
+                z-index: 100;
+                width: 80px; height: 20px;
+            }
+            .hide-bg {
+                display: none;
+            }
+        </style>
     </head>
     <body>
         <div id="c3xgm-about-page-container" class="c3xgm-about-page-container c3xgm-about-clearfix">
 
             <!-- TEMPLATE FOR CODING -->
-            <!-- <div id="our-comp-temp" class="temp our-comp-temp"></div> -->
+            <div id="our-comp-temp" class="temp our-comp-temp"></div>
 
             <?php 
                 // ITERATE THROUGH PAGEES ARRAY
@@ -36,7 +45,7 @@
                     // helper($page);
                     
                     // PAGE HEADER
-                    pageHeader($page['title'], $page['image@2x'], $page['tagline']);
+                    pageHeader($page['title'], $page['icon@2x'], $page['tagline'], $page['image']);
 
                     // BLOCKS
                     if($page['blocks']) {
@@ -59,9 +68,17 @@
 
 
         </div>
-
+        <button id="bg-change" class="bg-change">Bg Change</button>
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.1.min.js"><\/script>')</script>
         <script src="js/plugins/jquery.outlineButton.js"></script>
+
+        <script>
+            jQuery(document).ready(function($) {
+                $('#bg-change').click(function(){
+                    $("#our-comp-temp").toggleClass('hide-bg');
+                });
+            });
+        </script>
     </body>
 </html>
