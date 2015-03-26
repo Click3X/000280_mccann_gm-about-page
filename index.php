@@ -37,32 +37,47 @@
         <div id="c3xgm-about-page-container" class="c3xgm-about-page-container c3xgm-about-clearfix">
 
             <!-- TEMPLATE FOR CODING -->
-            <div id="our-comp-temp" class="temp our-comp-temp"></div>
+            <!-- <div id="our-comp-temp" class="temp our-comp-temp hide-bg"></div> -->
+            <div id="our-peop-temp" class="temp our-peop-temp hide-bg"></div>
 
             <?php 
                 // ITERATE THROUGH PAGEES ARRAY
                 foreach ($pages as $key => $page) {
-                    // helper($page);
-                    
-                    // PAGE HEADER
-                    pageHeader($page['title'], $page['icon@2x'], $page['tagline'], $page['image']);
+                    echo '<div class="c3xgm-about-page c3xgm-about-clearfix c3xgm-about-page-'.cleanString($page['title']).'">';
+                        // helper($page);
+                        
+                        // PAGE HEADER
+                        pageHeader($page['title'], $page['icon@2x'], $page['tagline'], $page['image']);
 
-                    // BLOCKS
-                    if($page['blocks']) {
-                        foreach ($page['blocks'] as $key => $block) {
-                            // helper($block);
-                            printBlock($block);
+                        // BLOCKS
+                        if($page['blocks']) {
+                            foreach ($page['blocks'] as $key => $block) {
+                                // helper($block);
+                                printBlock($block);
+                            }
                         }
-                    }
 
 
-                    // SUB-SECTIONS
-                    if($page['sections']) {
-                        foreach ($page['sections'] as $key => $section) {
-                            // helper($section);
-                            subSectionHeader($section['title'], $section['tagline']);
+                        // SECTIONS
+                        if($page['sections']) {
+                            foreach ($page['sections'] as $key => $section) {
+                                
+                                // SECTION HEADER
+                                subSectionHeader($section['title'], $section['tagline']);
+
+                                // SECTION BLOCKS
+                                if($section['blocks']) {
+                                    foreach ($section['blocks'] as $key => $block) {
+                                        // helper($block);
+                                        printBlock($block);
+                                    }
+                                }
+                            }
                         }
-                    }
+                        // END SECTION CONTAINER
+
+                    echo '</div>'; 
+                    // END PAGE CONTAINER
                 }
             ?>
 
@@ -76,7 +91,7 @@
         <script>
             jQuery(document).ready(function($) {
                 $('#bg-change').click(function(){
-                    $("#our-comp-temp").toggleClass('hide-bg');
+                    $(".temp").toggleClass('hide-bg');
                 });
             });
         </script>

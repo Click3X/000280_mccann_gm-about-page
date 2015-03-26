@@ -1,5 +1,6 @@
 <?php 
 // GM DATA
+// FOR BLOCKS, ARRAY KEYS ARE USED AS CLASS NAMES FOR THE VALUES THEY WRAP
 $pages = array(
 	// OUR COMPANY
 	array(
@@ -12,7 +13,8 @@ $pages = array(
 		"image@2x"=>"img/logos/general-motors.svg",
 		"blocks"=>array(
 			array(
-				"title"=>"To <strong>earn customers</strong> for <strong>life</strong>",
+				// "title"=>"To <strong>earn customers</strong> for <strong>life</strong>",
+				"tagline"=>"To <strong>earn customers</strong> for <strong>life</strong>",
 				"image"=>"",
 				"image@2x"=>"",
 				"class"=>"earn",
@@ -34,8 +36,8 @@ $pages = array(
 				"image@2x"=>"img/pages/people/people-icons.svg",
 				"class"=>"employees",
 				"copy"=>array(
-					"Employees",
-					216000
+					"c3xgm-about-light-blue number"=>216000,
+					"c3xgm-about-gray"=>"Employees"
 				)
 			),
 			array(
@@ -44,9 +46,9 @@ $pages = array(
 				"image@2x"=>"img/pages/people/map.svg",
 				"class"=>"continents",
 				"copy"=>array(
-					"We Serve",
-					"<strong>Continents</strong>",
-					6
+					"c3xgm-about-dark-blue c3xgm-about-thin"=>"We Serve",
+					"c3xgm-about-gray"=>"Continents",
+					"c3xgm-about-light-blue number"=>6
 				)
 			),
 			array(
@@ -55,19 +57,19 @@ $pages = array(
 				"image@2x"=>"img/pages/people/time-zones.svg",
 				"class"=>"timezones",
 				"copy"=>array(
-					"Across <strong>Timezones</strong>",
-					23
+					"c3xgm-about-dark-blue c3xgm-about-thin"=>"Across",
+					"c3xgm-about-gray"=>"Timezones",
+					"c3xgm-about-light-blue number"=>23
 				)
 			),
 			array(
 				"title"=>"Global headquarters",
 				"image"=>"",
 				"image@2x"=>"",
-				"class"=>"headquarters",
+				"class"=>"headquarters clear-left",
 				"copy"=>array(
-					"Global headquarters",
-					"Detroit",
-					"Michigan, USA"
+					"c3xgm-about-light-blue"=>"Global headquarters",
+					"c3xgm-about-gray"=>"<span>Detroit</span> Michigan, USA"
 				)
 			),
 			array(
@@ -76,9 +78,9 @@ $pages = array(
 				"image@2x"=>"img/pages/people/language.svg",
 				"class"=>"languages",
 				"copy"=>array(
-					"And we speak",
-					"<strong>Languages</strong>",
-					70
+					"c3xgm-about-dark-blue c3xgm-about-thin"=>"And we speak",
+					"c3xgm-about-gray"=>"Languages",
+					"c3xgm-about-light-blue number"=>70
 				)
 			)
 		)
@@ -183,9 +185,9 @@ $pages = array(
 				"image@2x"=>"img/pages/brands/world.svg",
 				"class"=>"global",
 				"copy"=>array(
-					"In 2014, we <strong>delivered</strong> over",
-					"9.9 Million",
-					"Vehicles Globally"
+					"c3xgm-about-dark-blue c3xgm-about-thin"=>"In 2014, we <strong>delivered</strong> over",
+					"c3xgm-about-light-blue number"=>"9.9 Million",
+					"c3xgm-about-gray"=>"Vehicles Globally"
 				)
 			),
 			array(
@@ -194,8 +196,8 @@ $pages = array(
 				"image@2x"=>"img/pages/brands/clock.svg",
 				"class"=>"seconds",
 				"copy"=>array(
-					"A <strong>Chevy is sold</strong> somewhere in the world",
-					"every <strong>6.63 seconds</strong>"
+					"c3xgm-about-dark-blue c3xgm-about-thin"=>"A <strong>Chevy is sold</strong> somewhere in the world",
+					"c3xgm-about-light-blue c3xgm-about-thin number"=>"every <strong>6.63 seconds</strong>"
 				)
 			),
 			array(
@@ -203,10 +205,9 @@ $pages = array(
 				"image"=>"",
 				"class"=>"dealers",
 				"copy"=>array(
-					"There are over <strong>20,000</strong>",
-					"Dealers in",
-					140,
-					"Countries"
+					"c3xgm-about-dark-blue c3xgm-about-thin"=>"There are over <strong>20,000</strong><br><span>Dealers in</span>",
+					"c3xgm-about-light-blue number"=>140,
+					"c3xgm-about-gray"=>"Countries"
 				)
 			),
 			array(
@@ -215,10 +216,9 @@ $pages = array(
 				"image@2x"=>"img/pages/brands/flag.svg",
 				"class"=>"china",
 				"copy"=>array(
-					"GM will open five new manufacturing plants",
-					"in <strong>China</strong>",
-					"By <strong>2018</strong> to support sales of nearly",
-					"5 million vehicles annually"
+					"c3xgm-about-light-blue c3xgm-about-thin"=>"in <strong>China</strong>",
+					"c3xgm-about-gray"=>"5 million vehicles annually",
+					"c3xgm-about-dark-blue c3xgm-about-thin"=>"GM will open five new manufacturing plants<br>By <strong>2018</strong> to support sales of nearly",
 				)
 			),
 			array(
@@ -226,9 +226,9 @@ $pages = array(
 				"image"=>"img/pages/brands/cadillac-logo.png",
 				"class"=>"cadillac",
 				"copy"=>array(
-					"<strong>Cadillac</strong> was named",
-					"The fastest growing full-line luxury brand",
-					"in 2013"
+					"c3xgm-about-dark-blue c3xgm-about-thin"=>"<strong>Cadillac</strong> was named",
+					"c3xgm-about-gray"=>"The fastest growing full-line luxury brand",
+					"c3xgm-about-thin"=>"in 2013"
 				)
 			),
 			array(
@@ -236,8 +236,8 @@ $pages = array(
 				"image"=>"img/pages/brands/chevy-logo.png",
 				"class"=>"chevrolet",
 				"copy"=>array(
-					"<strong>Chevrolet</strong> won both",
-					"2014 car &amp; truck of the year"
+					"c3xgm-about-dark-blue c3xgm-about-thin"=>"<strong>Chevrolet</strong> won both",
+					"c3xgm-about-gray"=>"2014 car &amp; truck of the year"
 				)
 			)
 		)
@@ -261,9 +261,9 @@ $pages = array(
 						"image@2x"=>"img/pages/commitment/crash-test-dummies.svg",
 						"class"=>"crash-test-dummies",
 						"copy"=>array(
-							"GM-Designed",
-							"Crash Test Dummies",
-							"Remain the <strong>global standard</strong> for frontal crash testing"
+							"c3xgm-about-dark-blue c3xgm-about-thin"=>"We Designed",
+							"c3xgm-about-light-blue"=>"Crash Test Dummies",
+							"c3xgm-about-light-gray c3xgm-about-thin"=>"The <strong>global standard</strong> for frontal crash testing"
 						)
 					),
 					array(
@@ -271,9 +271,9 @@ $pages = array(
 						"image"=>"img/pages/commitment/truck-front.png",
 						"class"=>"test-facility",
 						"copy"=>array(
-							"The first North American auto manufacturer",
-							"to build a",
-							"Rollover Test Facility"
+							"c3xgm-about-dark-blue c3xgm-about-thin"=>"The first North American <br>auto manufacturer",
+							"c3xgm-about-gray"=>"to build a",
+							"c3xgm-about-light-blue c3xgm-about-yellow-bar-left-wrapper"=>"Rollover Test Facility"
 						)
 					),
 					array(
@@ -281,11 +281,11 @@ $pages = array(
 						"image"=>"",
 						"class"=>"safety-score",
 						"copy"=>array(
-							"<strong>General Motors</strong>",
-							"2014 model year vehicles earned the",
-							"Highest possible overall vehicle safety score",
-							"In their respective markets by the <strong>2014 New Car Assessment Program</strong> (NCFAP)",
-							63
+							"c3xgm-about-light-blue number"=>63,
+							"c3xgm-about-dark-blue"=>"<strong>General Motors</strong>",
+							"c3xgm-about-dark-blue c3xgm-about-thin"=>"2014 model year vehicles earned the",
+							"c3xgm-about-light-blue"=>"Highest possible overall vehicle safety score",
+							"c3xgm-about-light-gray c3xgm-about-thin"=>"In their respective markets by the <br><strong>2014 New Car Assessment Program</strong> (NCFAP)"
 						)
 					),
 					array(
@@ -294,25 +294,25 @@ $pages = array(
 						"image@2x"=>"img/pages/commitment/on-star.svg",
 						"class"=>"onstar-subscribers",
 						"copy"=>array(
-							"Nearly",
-							"Million",
-							"Onstar subscribers",
-							"Globally",
-							7
-						)
-					),
-					array(
-						"title"=>"Quality Awards",
-						"image"=>"img/pages/commitment/award.png",
-						"class"=>"quality-awards",
-						"copy"=>array(
-							"<strong>General Motors</strong> received more",
-							"J.D. Power initial quality awards",
-							"Than any other automaker <strong>two years in a row</strong> in an industry leading benchmark study.",
-							"The Chevrolet Malibu, Silverado HD, Suburban, Buick Encore, GMC Terrain, and GMC Yukon were awarded the \"Highest Ranked Midsize Car, Large Heavy Duty Pickup, Large SUV (tie), Small SUV(tie), and Compact SUV in Initial Quality\"",
-							"<strong>DISCLAIMER:</strong> The Chevrolet Malibu, Chevrolet Silverado HD, Chevrolet Suburban, Buick Encore, GMC Terrain, and GMC Yukon received the lowest number of problems per 100 vehicles in the Midsize Car, Large Heavy Duty Pickup, Large SUV (tie), Small SUV (tie), and Compact SUV segments in the J.D. Power 2014 Initial Quality StudySM. Study based on responses from 86,118 new-vehicle owners, measuring 239 models and measures opinions after 90 days of ownership. Proprietary study results are based on experiences and perceptions of owners surveyed in February-May 2014. Your experiences may vary. Visit <a href=\"http://jdpower.com\">jdpower.com</a>."
+							"c3xgm-about-dark-blue c3xgm-about-thin c3xgm-about-small"=>"Nearly",
+							"c3xgm-about-light-blue number"=>7,
+							"c3xgm-about-light-blue"=>"Million",
+							"c3xgm-about-dark-blue c3xgm-about-thin"=>"Onstar subscribers",
+							"c3xgm-about-gray"=>"Globally"
 						)
 					)
+					// array(
+					// 	"title"=>"Quality Awards",
+					// 	"image"=>"img/pages/commitment/award.png",
+					// 	"class"=>"quality-awards",
+					// 	"copy"=>array(
+					// 		"<strong>General Motors</strong> received more",
+					// 		"J.D. Power initial quality awards",
+					// 		"Than any other automaker <strong>two years in a row</strong> in an industry leading benchmark study.",
+					// 		"The Chevrolet Malibu, Silverado HD, Suburban, Buick Encore, GMC Terrain, and GMC Yukon were awarded the \"Highest Ranked Midsize Car, Large Heavy Duty Pickup, Large SUV (tie), Small SUV(tie), and Compact SUV in Initial Quality\"",
+					// 		"<strong>DISCLAIMER:</strong> The Chevrolet Malibu, Chevrolet Silverado HD, Chevrolet Suburban, Buick Encore, GMC Terrain, and GMC Yukon received the lowest number of problems per 100 vehicles in the Midsize Car, Large Heavy Duty Pickup, Large SUV (tie), Small SUV (tie), and Compact SUV segments in the J.D. Power 2014 Initial Quality StudySM. Study based on responses from 86,118 new-vehicle owners, measuring 239 models and measures opinions after 90 days of ownership. Proprietary study results are based on experiences and perceptions of owners surveyed in February-May 2014. Your experiences may vary. Visit <a href=\"http://jdpower.com\">jdpower.com</a>."
+					// 	)
+					// )
 				)
 			),
 			// TECHNOLOGY
@@ -372,21 +372,21 @@ $pages = array(
 						"image"=>"",
 						"class"=>"clean-energy",
 						"copy"=>array(
-							"<strong>GM</strong> granted more",
-							"clean-energy",
-							"patente",
-							"Than anybody else for more than a decade"
+							"c3xgm-about-dark-blue c3xgm-about-thin"=>"We granted more",
+							"c3xgm-about-light-blue"=>"clean-energy",
+							"c3xgm-about-light-blue c3xgm-about-thin"=>"patents",
+							"c3xgm-about-gray"=>"Than anybody else for <br>more than a decade"
 						)
 					),
 					array(
 						"title"=>"EPA Energy Star",
 						"image"=>"img/pages/commitment/energy-ribbon.png",
 						"image@2x"=>"img/pages/commitment/energy-ribbon.svg",
-						"class"=>"epa-energy-star",
+						"class"=>"epa-energy-star text-right",
 						"copy"=>array(
-							"<strong>70 Facilities</strong> received",
-							"EPA Energy Star",
-							"Challenge for Industry"
+							"c3xgm-about-dark-blue c3xgm-about-thin"=>"<strong>70 Facilities</strong> received",
+							"c3xgm-about-light-blue"=>"EPA Energy Star",
+							"c3xgm-about-gray"=>"Challenge for Industry"
 						)
 					),
 					array(
@@ -395,20 +395,20 @@ $pages = array(
 						"image@2x"=>"img/pages/commitment/climate.svg",
 						"class"=>"climate-declaration",
 						"copy"=>array(
-							"General Motors is the <strong>only automaker</strong> to sign a",
-							"Climate Declaration",
-							"making <strong>tackling climate change a priority"
+							"c3xgm-about-dark-blue c3xgm-about-thin"=>"General Motors is the <strong>only automaker</strong> to sign a",
+							"c3xgm-about-light-blue"=>"Climate Declaration",
+							"c3xgm-about-gray c3xgm-about-thin"=>"making <strong>tackling climate change <br>a priority"
 						)
 					),
 					array(
 						"title"=>"Landfill Free",
 						"image"=>"img/pages/commitment/landfill.png",
 						"image@2x"=>"img/pages/commitment/landfill.svg",
-						"class"=>"landfill-free",
+						"class"=>"landfill-free text-right",
 						"copy"=>array(
-							"<strong>GM</strong> has 123",
-							"Landfill-free facilities",
-							"More than any other automaker"
+							"c3xgm-about-dark-blue c3xgm-about-thin"=>"We have <strong>123</strong>",
+							"c3xgm-about-light-blue"=>"Landfill-free facilities",
+							"c3xgm-about-gray"=>"More than any other automaker"
 						)
 					)
 				)

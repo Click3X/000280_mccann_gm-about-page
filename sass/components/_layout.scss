@@ -1,17 +1,6 @@
 // LAYOUT
-// TITLE ICON
-img.c3xgm-about-section-icon{
-	float: left;
-	width: 50px; height: auto;
-	padding-left: 6px;
-	// margin: -8px 15px 0 0; 
-	margin: -10px 6px 0 0;
-	@media( min-width:$tablet-height ){ 
-		width: 90px; 
-		margin: -10px 21px 0 0;
-		padding-left:8px;
-	}
-}
+// BLOCKS & HEADERS & SUBSECTIONS & HELPERS
+
 
 // PAGE CONTAINER
 .c3xgm-about-page-container {
@@ -22,27 +11,34 @@ img.c3xgm-about-section-icon{
 	padding-top:35px;
 }
 
+// INDIVIDUAL PAGE-SECTION HODLER
+.c3xgm-about-page {
+	// width:100%;
+	width:96%;
+	margin:0 auto;
+	position: relative;
+}
+
 // YELLOW BAR
 .c3xgm-about-yellow-bar-left-wrapper {
-	margin: 8px 0 8px 6px; 
-	padding-left:6px;
-	border-left:3px solid $gm-yellow;
-
+	margin: 8px 0 8px 6px;  padding-left:6px; border-left:3px solid $gm-yellow;
 	@media( min-width:$tablet-height ){ padding-left:14px; }
 
 	.c3xgm-about-h:first-child { margin-top:0; }
 }
 
+
+// PAGE HEAders
 .c3xgm-about-section {
 	padding-top: 36px;
 	@media( min-width:$tablet-height ){ padding-top: 73px; }
 
-	.c3xgm-about-section-header-inner { text-align: left; width: 100%; }
+	.c3xgm-about-section-header-inner { text-align: left; width: 100%; max-width: 900px;}
 
 	hr {
 		background: $gm-gray; border: none;
 		width: 86.25%; height: 1px;
-		margin-top: 12px;
+		margin-top: 12px; margin-left:4px;
 		display: block; float: left; clear: left;
 
 		@media(min-width:$tablet-height ){ 
@@ -52,16 +48,36 @@ img.c3xgm-about-section-icon{
 	}
 }
 
+// TITLE ICON
+img.c3xgm-about-section-icon{
+	float: left;
+	width: 50px; min-width: 50px;
+	height: auto;
+	margin: -10px 6px 0 0; padding-left:8px;
 
-.c3xgm-about-subsection {
-	padding-left:2px;
+	@media(min-width: 404px) {
+		width: 10%; 
+		margin: -1% 2.333333% 0 0;
+		padding-left:.888888%;
+	}
+
+	// padding-left: 6px; 
+	// margin: -10px 6px 0 0;
+	@media( min-width:905px ){ 
+		width: 90px; 
+		margin: -10px 21px 0 0; padding-left:8px;
+	}
 }
+
+.c3xgm-about-subsection { padding-left:2px; }
 
 .c3xgm-about-header-image,
 .c3xgm-about-block-image {
-	width: 100%;
-	height: 100%;
-	img {
-		width:100%;
-	}
+	width: 100%; height: 100%;
+	img { width:100%; }
 }
+
+.c3xgm-about-block {  margin-bottom: 2em; }
+
+.clear-left,
+.c3xgm-clear-left { clear:left; }

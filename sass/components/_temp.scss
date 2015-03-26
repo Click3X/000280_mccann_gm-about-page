@@ -4,11 +4,8 @@ TO BE DELETED AFTER DEVELOPMENT
 */
 
 .temp {
-	background-repeat: no-repeat;
-	background-size: cover;
-	// width:100%; max-width:905px;
-	height: 0;
-	padding: 50%;
+	background-repeat: no-repeat; background-size: cover;
+	height: 0; padding: 50%;
 	z-index: 0;
 	position: absolute;
 	top:0;
@@ -16,5 +13,12 @@ TO BE DELETED AFTER DEVELOPMENT
 
 .our-comp-temp {
 	background-image:url('../templates/our-company.png');
+	opacity:0.5;
+}
+
+.our-peop-temp {
+	left: -48px; 
+	top: 18.16%;
+	background-image:url('../templates/our-people.png');
 	opacity:0.5;
 }

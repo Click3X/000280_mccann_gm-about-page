@@ -27,4 +27,11 @@ function cleanString($string){
 	return $newString;
 }
 
+
+// TEST FOR ASSOCIATIVE ARRAY
+function isAssoc($arr) {
+    return array_keys($arr) !== range(0, count($arr) - 1);
+}
+
+
 ?>

@@ -17,22 +17,25 @@ h1,h2,h3,h4,h5,h6{
 	}
 }
 
-p.c3xgm-about-p{
-	margin:9px 0 9px 0;
+p.c3xgm-about-p {	
 	font-size:14px; line-height:1.613em; letter-spacing: 0.01em;
 	font-family: "open-sans", sans-serif; color: $gm-black;
 	max-width: 39em;
-	padding:0;
-	padding-left: 7px;
+	margin:9px 0 9px 0; padding:0 9% 0 7px;
 
 	@media( min-width:$tablet-height ){ font-size: 18px; }
 
 	strong { font-weight: 700; }
 }
 
+p.c3xgm-about-p.c3xgm-about-blockquote {
+	max-width: none;
+}
+
 h1.c3xgm-about-h{
-	font-size: 32px;  line-height:1em;
-	@media( min-width:$tablet-height ){ font-size: 73px; line-height: 70px; }
+	font-size: 32px; line-height:1em;
+	@media( min-width: 404px) { font-size:32px; font-size: 8.06vw;}
+	@media( min-width:905px ){ font-size: 73px; line-height: 70px; }
 }
 
 h2.c3xgm-about-h{
@@ -52,9 +55,60 @@ h4.c3xgm-about-h{
 	margin:4px 0;
 }
 
-.c3x-about-blue{ color:$gm-blue !important; }
-.c3xgm-about-yellow{ color:$gm-yellow !important; }
-.c3x-about-light-gray{ color:$gm-light-gray !important; }
-.c3x-about-gray{ color:$gm-gray !important; }
-.c3x-about-dark-gray{ color:$gm-dark-gray !important; }
-.c3xgm-about-thin{ font-weight: 200 !important; }
+
+// SPANS AND STRONGS
+.c3xgm-about-thin,
+.c3xgm-about-blockquote .c3xgm-about-thin span { font-weight: 200 !important; }
+
+.c3xgm-about-block { font-family: "open-sans-condensed", sans-serif; }
+
+.c3xgm-about-blockquote {
+	text-transform: uppercase; 
+	margin: 9px 0 9px 0;
+	span { 
+		display: block; font-weight: 600;
+		font-family: "open-sans-condensed", sans-serif;
+		font-size: 4.528923vw;
+		line-height:1em; 
+		
+		@media( min-width:$tablet-height ){ font-size:41px; }
+	}
+}
+
+
+
+// COLORS
+.c3xgm-about-light-blue { 
+	color:$gm-light-blue !important;
+	// span, strong { color:$gm-light-blue !important; }
+ }
+.c3xgm-about-blue { 
+	color:$gm-blue !important;
+	// span, strong { color:$gm-blue !important; }
+ }
+.c3xgm-about-dark-blue{ 
+	color:$gm-dark-blue !important;
+	// span, strong { color:$gm-dark-blue !important; }
+ }
+.c3xgm-about-yellow{ 
+	color:$gm-yellow !important;
+	// span, strong { color:$gm-yellow !important; }
+ }
+.c3xgm-about-light-gray{ 
+	color:$gm-light-gray !important;
+	// span, strong { color:$gm-light-gray !important; }
+ }
+.c3xgm-about-gray{ 
+	color:$gm-gray !important;
+	// span, strong { color:$gm-gray !important; }
+ }
+.c3xgm-about-dark-gray{ 
+	color:$gm-dark-gray !important;
+	// span, strong { color:$gm-dark-gray !important; }
+ }
+
+
+.text-right,
+.c3xgm-about-text-right {
+	text-align: right;
+}
