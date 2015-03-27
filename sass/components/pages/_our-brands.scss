@@ -1,0 +1,80 @@
+// OUR BRANDS
+.c3xgm-about-page-our-brands {
+	max-width: 1100px;
+
+	.c3xgm-about-section,
+	.c3xgm-about-block {  max-width: 905px; margin:0 auto; }
+	
+	.c3xgm-about-global,
+	.c3xgm-about-seconds {
+		margin-bottom: 12.5%;
+
+		.c3xgm-about-blockquote { 
+			width: 75%; 
+			 
+			span strong { font-weight:700; }
+
+			.number { 
+				font-size: 106px; 
+				// font-size: 11.7088395vw; 
+				font-size: 9vw; 
+				line-height: .83em;
+				@media(min-width: 1140px) { font-size: 106px; }
+  				margin-bottom: .05em;
+			}
+			.c3xgm-about-gray { 
+				 font-size: 53px; 
+				 // font-size:5.854419vw; 
+				 font-size:4.4921369vw; 
+				 line-height: 1em; 
+				 @media(min-width: 1140px) { font-size: 53px; }
+			}
+			.c3xgm-about-dark-blue { 
+				font-size: 35px; 
+				// font-size: 3.8661262vw; 
+				font-size: 2.9716979vw; 
+				line-height: 1em; 
+				@media(min-width: 1140px) { font-size: 35px; }
+			}
+
+		}
+		.c3xgm-about-block-image { 
+			width: 25%; 
+			margin: 9px 0;
+			img { max-width: 185px; } 
+		}
+	}
+
+
+	.c3xgm-about-global {
+		max-width:940px; 
+		.c3xgm-about-blockquote { 
+			float: right; 
+			border-left:3px solid $gm-yellow;
+			@include prefix(box-sizing, border-box);
+
+			span { padding-left:6%; }
+
+			.c3xgm-about-block-image {
+				img { padding-top:6%;}
+			}
+		}
+	}
+
+
+	.c3xgm-about-seconds {
+		max-width: 1200px; 
+		.c3xgm-about-blockquote { 
+			float:left; 
+			border-right:3px solid $gm-yellow;
+			padding-right:1.6%;
+			margin-top:3em;
+			@include prefix(box-sizing, border-box);
+		}
+		.c3xgm-about-block-image { 
+			float:left;
+			max-width: 226px;
+			// img { padding-right: 5%;}
+		}
+	}
+}

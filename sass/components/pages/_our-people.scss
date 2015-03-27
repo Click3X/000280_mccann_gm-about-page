@@ -1,28 +1,27 @@
 // OUR PEOPLE
 .c3xgm-about-page-our-people {
 
-	> .c3xgm-about-section { margin-bottom:2em; }
+	> .c3xgm-about-section { margin-bottom: 0.6em; }
 
-	.c3xgm-about-block {
-			width: 50%; float: left; 
-	}
-	.c3xgm-about-block.c3xgm-about-employees {
-		width: 100%;;
-	}
+	.c3xgm-about-block { width: 50%; float: left; margin-bottom: 1.75em; }
 
 	.c3xgm-about-block.c3xgm-about-employees {
-		@media(min-width:$tablet-height ) { width:100%; float:none; }
+		width: 100%;
+		margin-bottom: 2em;
+		@media(min-width:$tablet-height ) { float:none; }
 
 		.c3xgm-about-blockquote {
 		  	margin:0; padding: 0;
 		  	width: auto; max-width:50%;
 		  	float: left;
+
+		  	.c3xgm-about-gray { margin-top: -2.272%; margin-left: -1px; }
 		}
 
 		.c3xgm-about-block-image {
 			width: 50%;
 			float: left;
-			@media(min-width:$tablet-height ) { max-width: 445px !important; }
+			margin-top: 0.692%;
 		}
 
 		.number { line-height: 1.09em; }
@@ -35,28 +34,66 @@
 	}
 
 	.number { 
-		font-size: 65px; 
-		font-size: 14.36vw;
-		@media(min-width:905px) { font-size: 130px; }
+		font-size: 64px; font-size: 14.36vw;
+		@media(min-width:905px) { font-size: 128px;  }
 	}
 
 
+	.c3xgm-about-separator {
+		display: block; float:left;
+		width: 47.25%;
+		margin: 5px 0; padding-right: .4em; padding-bottom: .65em;
+		border-right:3px solid $gm-yellow;
+
+		.c3xgm-about-gray { line-height: .9em; }
+
+		span { display:block; clear:left; }
+		+ .number { 
+			float: left;
+			padding-left: .1em;
+			font-size: 41px; font-size: 13.697113vw; line-height: .8em;
+			@media(min-width: 905px) { font-size: 124px; }
+		}	
+	}
+
+	.c3xgm-about-timezones {
+		.c3xgm-about-separator { width: 50.75%; }
+		 .c3xgm-about-block-image {
+			width:76.672%; max-width: 333px;
+			padding-top: 2.5%; padding-left: 6%;
+		}
+	}
+
+	.c3xgm-about-continents {
+		 .c3xgm-about-block-image { width:88.672%; max-width: 385px; }
+	}
+
+	.c3xgm-about-languages {
+		.c3xgm-about-separator { width: 53%; }
+		.c3xgm-about-blockquote { margin-bottom:0;}
+		.c3xgm-about-block-image { width:78.110599%; max-width: 339px; padding-left: 1.7em; }
+	}
+	  
+
 	.c3xgm-about-headquarters {
 		.c3xgm-about-blockquote {
+			margin-top: 1.0625em;
+			
+			.c3xgm-about-gray { border-left:3px solid $gm-yellow; padding-left: .35em; }
+
 			span > span {
-				color:$gm-light-blue;
-				font-size: 11.262vw;
-				@media(min-width:905px) { font-size: 102px; }
+				color:$gm-light-blue; line-height: .86em;				
+				font-size: 34px; font-size: 10.604232vw;
+				@media(min-width:905px) { font-size: 93px; }
 			}
 			> span:first-of-type {
-				font-size: 3.75vw;
+				font-size:12px; font-size: 3.75vw;
 				@media(min-width:905px) { font-size:34px; }
 			}
 			> span:last-of-type {
-				font-size: 4.087vw;
+				font-size:13px; font-size: 4.087vw;
 				@media(min-width:905px) { font-size:37px; }
 			}
-
 		}
 	}
 

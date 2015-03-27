@@ -4,7 +4,8 @@
 
 // PAGE CONTAINER
 .c3xgm-about-page-container {
-	width:100%; max-width:905px;
+	width:100%;
+	// max-width:905px;
 	margin:0 auto;
 	position: relative;
 	// PADDING FOR GM - MENU
@@ -15,6 +16,7 @@
 .c3xgm-about-page {
 	// width:100%;
 	width:96%;
+	max-width:905px;
 	margin:0 auto;
 	position: relative;
 }
@@ -51,12 +53,12 @@
 // TITLE ICON
 img.c3xgm-about-section-icon{
 	float: left;
-	width: 50px; min-width: 50px;
-	height: auto;
+	// width: 50px; height: 50px;
+	width: 10%; height:10%;
 	margin: -10px 6px 0 0; padding-left:8px;
 
 	@media(min-width: 404px) {
-		width: 10%; 
+		width: 10%; height:10%;
 		margin: -1% 2.333333% 0 0;
 		padding-left:.888888%;
 	}
@@ -64,7 +66,7 @@ img.c3xgm-about-section-icon{
 	// padding-left: 6px; 
 	// margin: -10px 6px 0 0;
 	@media( min-width:905px ){ 
-		width: 90px; 
+		width: 90px; height: 90px;
 		margin: -10px 21px 0 0; padding-left:8px;
 	}
 }

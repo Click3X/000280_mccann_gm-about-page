@@ -160,6 +160,16 @@ Stylesheet: Helpers
   *zoom: 1;
 }
 
+/* line 68, ../sass/components/_helpers.scss */
+.bg-change {
+  position: fixed;
+  bottom: 80px;
+  right: 80px;
+  z-index: 100;
+  width: 80px;
+  height: 20px;
+}
+
 /*
 TEMPLATE STYLES
 TO BE DELETED AFTER DEVELOPMENT
@@ -169,23 +179,35 @@ TO BE DELETED AFTER DEVELOPMENT
   background-repeat: no-repeat;
   background-size: cover;
   height: 0;
-  padding: 50%;
   z-index: 0;
   position: absolute;
   top: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
 }
 
-/* line 14, ../sass/components/_temp.scss */
+/* line 16, ../sass/components/_temp.scss */
 .our-comp-temp {
   background-image: url("../templates/our-company.png");
   opacity: 0.5;
 }
 
-/* line 19, ../sass/components/_temp.scss */
+/* line 21, ../sass/components/_temp.scss */
 .our-peop-temp {
-  left: -48px;
-  top: 18.16%;
+  left: -37px;
+  top: 952px;
   background-image: url("../templates/our-people.png");
+  opacity: 0.5;
+}
+
+/* line 29, ../sass/components/_temp.scss */
+.our-brands-temp {
+  left: -30.2%;
+  top: 1014px;
+  width: 52.5%;
+  height: 2556px;
+  background-image: url("../templates/brands.png");
   opacity: 0.5;
 }
 
@@ -206,7 +228,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 /* line 10, ../sass/components/_typography.scss */
 h1.c3xgm-about-h, h2.c3xgm-about-h, h3.c3xgm-about-h, h4.c3xgm-about-h, h5.c3xgm-about-h, h6.c3xgm-about-h {
-  font-family: "open-sans-condensed", sans-serif;
+  font-family: "open-sans-condensed", arial, sans-serif;
   color: #464B51;
   margin: 0;
   padding: 0;
@@ -226,14 +248,24 @@ h1.c3xgm-about-h span.c3xgm-about-gray, h2.c3xgm-about-h span.c3xgm-about-gray, 
 
 /* line 20, ../sass/components/_typography.scss */
 p.c3xgm-about-p {
+  *zoom: 1;
   font-size: 14px;
   line-height: 1.613em;
   letter-spacing: 0.01em;
-  font-family: "open-sans", sans-serif;
+  font-family: "open-sans", arial, sans-serif;
   color: #464B51;
   max-width: 39em;
   margin: 9px 0 9px 0;
-  padding: 0 9% 0 7px;
+  padding: 0 2% 0 7px;
+}
+/* line 72, ../sass/components/_mixins.scss */
+p.c3xgm-about-p:before, p.c3xgm-about-p:after {
+  content: " ";
+  display: table;
+}
+/* line 78, ../sass/components/_mixins.scss */
+p.c3xgm-about-p:after {
+  clear: both;
 }
 @media (min-width: 768px) {
   /* line 20, ../sass/components/_typography.scss */
@@ -241,51 +273,51 @@ p.c3xgm-about-p {
     font-size: 18px;
   }
 }
-/* line 28, ../sass/components/_typography.scss */
+/* line 31, ../sass/components/_typography.scss */
 p.c3xgm-about-p strong {
   font-weight: 700;
 }
 
-/* line 31, ../sass/components/_typography.scss */
+/* line 34, ../sass/components/_typography.scss */
 p.c3xgm-about-p.c3xgm-about-blockquote {
   max-width: none;
 }
 
-/* line 35, ../sass/components/_typography.scss */
+/* line 38, ../sass/components/_typography.scss */
 h1.c3xgm-about-h {
   font-size: 32px;
   line-height: 1em;
 }
 @media (min-width: 404px) {
-  /* line 35, ../sass/components/_typography.scss */
+  /* line 38, ../sass/components/_typography.scss */
   h1.c3xgm-about-h {
     font-size: 32px;
     font-size: 8.06vw;
   }
 }
 @media (min-width: 905px) {
-  /* line 35, ../sass/components/_typography.scss */
+  /* line 38, ../sass/components/_typography.scss */
   h1.c3xgm-about-h {
     font-size: 73px;
     line-height: 70px;
   }
 }
 
-/* line 41, ../sass/components/_typography.scss */
+/* line 45, ../sass/components/_typography.scss */
 h2.c3xgm-about-h {
   font-size: 18px;
   line-height: 1em;
   color: #124e9c;
 }
 @media (min-width: 768px) {
-  /* line 41, ../sass/components/_typography.scss */
+  /* line 45, ../sass/components/_typography.scss */
   h2.c3xgm-about-h {
     font-size: 52px;
     line-height: 74px;
   }
 }
 
-/* line 46, ../sass/components/_typography.scss */
+/* line 50, ../sass/components/_typography.scss */
 h3.c3xgm-about-h {
   font-size: 18px;
   line-height: 1em;
@@ -293,13 +325,13 @@ h3.c3xgm-about-h {
   margin: 2px 0;
 }
 @media (min-width: 768px) {
-  /* line 46, ../sass/components/_typography.scss */
+  /* line 50, ../sass/components/_typography.scss */
   h3.c3xgm-about-h {
     font-size: 24px;
   }
 }
 
-/* line 53, ../sass/components/_typography.scss */
+/* line 57, ../sass/components/_typography.scss */
 h4.c3xgm-about-h {
   font-size: 19px;
   line-height: 23px;
@@ -307,58 +339,68 @@ h4.c3xgm-about-h {
   margin: 4px 0;
 }
 
-/* line 60, ../sass/components/_typography.scss */
+/* line 64, ../sass/components/_typography.scss */
 .c3xgm-about-thin,
 .c3xgm-about-blockquote .c3xgm-about-thin span {
   font-weight: 200 !important;
 }
 
-/* line 63, ../sass/components/_typography.scss */
+/* line 67, ../sass/components/_typography.scss */
 .c3xgm-about-block {
-  font-family: "open-sans-condensed", sans-serif;
+  font-family: "open-sans-condensed", arial, sans-serif;
 }
 
-/* line 65, ../sass/components/_typography.scss */
+/* line 69, ../sass/components/_typography.scss */
 .c3xgm-about-blockquote {
   text-transform: uppercase;
   margin: 9px 0 9px 0;
+  *zoom: 1;
 }
-/* line 68, ../sass/components/_typography.scss */
+/* line 72, ../sass/components/_mixins.scss */
+.c3xgm-about-blockquote:before, .c3xgm-about-blockquote:after {
+  content: " ";
+  display: table;
+}
+/* line 78, ../sass/components/_mixins.scss */
+.c3xgm-about-blockquote:after {
+  clear: both;
+}
+/* line 73, ../sass/components/_typography.scss */
 .c3xgm-about-blockquote span {
   display: block;
   font-weight: 600;
-  font-family: "open-sans-condensed", sans-serif;
+  font-family: "open-sans-condensed", arial, sans-serif;
   font-size: 4.528923vw;
   line-height: 1em;
 }
 @media (min-width: 768px) {
-  /* line 68, ../sass/components/_typography.scss */
+  /* line 73, ../sass/components/_typography.scss */
   .c3xgm-about-blockquote span {
     font-size: 41px;
   }
 }
 
-/* line 81, ../sass/components/_typography.scss */
+/* line 86, ../sass/components/_typography.scss */
 .c3xgm-about-light-blue {
   color: #6086C4 !important;
 }
 
-/* line 85, ../sass/components/_typography.scss */
+/* line 89, ../sass/components/_typography.scss */
 .c3xgm-about-blue {
   color: #5e85c4 !important;
 }
 
-/* line 89, ../sass/components/_typography.scss */
+/* line 92, ../sass/components/_typography.scss */
 .c3xgm-about-dark-blue {
   color: #124e9c !important;
 }
 
-/* line 93, ../sass/components/_typography.scss */
+/* line 95, ../sass/components/_typography.scss */
 .c3xgm-about-yellow {
   color: #FDB12E !important;
 }
 
-/* line 97, ../sass/components/_typography.scss */
+/* line 98, ../sass/components/_typography.scss */
 .c3xgm-about-light-gray {
   color: #7E8184 !important;
 }
@@ -368,13 +410,14 @@ h4.c3xgm-about-h {
   color: #808285 !important;
 }
 
-/* line 105, ../sass/components/_typography.scss */
+/* line 104, ../sass/components/_typography.scss */
 .c3xgm-about-dark-gray {
   color: #555555 !important;
 }
 
-/* line 111, ../sass/components/_typography.scss */
+/* line 109, ../sass/components/_typography.scss */
 .text-right,
+.text-right .c3xgm-about-blockquote,
 .c3xgm-about-text-right {
   text-align: right;
 }
@@ -382,53 +425,53 @@ h4.c3xgm-about-h {
 /* line 6, ../sass/components/_layout.scss */
 .c3xgm-about-page-container {
   width: 100%;
-  max-width: 905px;
   margin: 0 auto;
   position: relative;
   padding-top: 35px;
 }
 
-/* line 15, ../sass/components/_layout.scss */
+/* line 16, ../sass/components/_layout.scss */
 .c3xgm-about-page {
   width: 96%;
+  max-width: 905px;
   margin: 0 auto;
   position: relative;
 }
 
-/* line 23, ../sass/components/_layout.scss */
+/* line 25, ../sass/components/_layout.scss */
 .c3xgm-about-yellow-bar-left-wrapper {
   margin: 8px 0 8px 6px;
   padding-left: 6px;
   border-left: 3px solid #FDB12E;
 }
 @media (min-width: 768px) {
-  /* line 23, ../sass/components/_layout.scss */
+  /* line 25, ../sass/components/_layout.scss */
   .c3xgm-about-yellow-bar-left-wrapper {
     padding-left: 14px;
   }
 }
-/* line 27, ../sass/components/_layout.scss */
+/* line 29, ../sass/components/_layout.scss */
 .c3xgm-about-yellow-bar-left-wrapper .c3xgm-about-h:first-child {
   margin-top: 0;
 }
 
-/* line 32, ../sass/components/_layout.scss */
+/* line 34, ../sass/components/_layout.scss */
 .c3xgm-about-section {
   padding-top: 36px;
 }
 @media (min-width: 768px) {
-  /* line 32, ../sass/components/_layout.scss */
+  /* line 34, ../sass/components/_layout.scss */
   .c3xgm-about-section {
     padding-top: 73px;
   }
 }
-/* line 36, ../sass/components/_layout.scss */
+/* line 38, ../sass/components/_layout.scss */
 .c3xgm-about-section .c3xgm-about-section-header-inner {
   text-align: left;
   width: 100%;
   max-width: 900px;
 }
-/* line 38, ../sass/components/_layout.scss */
+/* line 40, ../sass/components/_layout.scss */
 .c3xgm-about-section hr {
   background: #808285;
   border: none;
@@ -441,62 +484,63 @@ h4.c3xgm-about-h {
   clear: left;
 }
 @media (min-width: 768px) {
-  /* line 38, ../sass/components/_layout.scss */
+  /* line 40, ../sass/components/_layout.scss */
   .c3xgm-about-section hr {
     height: 2px;
     margin-top: 18px;
   }
 }
 
-/* line 52, ../sass/components/_layout.scss */
+/* line 54, ../sass/components/_layout.scss */
 img.c3xgm-about-section-icon {
   float: left;
-  width: 50px;
-  min-width: 50px;
-  height: auto;
+  width: 10%;
+  height: 10%;
   margin: -10px 6px 0 0;
   padding-left: 8px;
 }
 @media (min-width: 404px) {
-  /* line 52, ../sass/components/_layout.scss */
+  /* line 54, ../sass/components/_layout.scss */
   img.c3xgm-about-section-icon {
     width: 10%;
+    height: 10%;
     margin: -1% 2.333333% 0 0;
     padding-left: .888888%;
   }
 }
 @media (min-width: 905px) {
-  /* line 52, ../sass/components/_layout.scss */
+  /* line 54, ../sass/components/_layout.scss */
   img.c3xgm-about-section-icon {
     width: 90px;
+    height: 90px;
     margin: -10px 21px 0 0;
     padding-left: 8px;
   }
 }
 
-/* line 72, ../sass/components/_layout.scss */
+/* line 74, ../sass/components/_layout.scss */
 .c3xgm-about-subsection {
   padding-left: 2px;
 }
 
-/* line 74, ../sass/components/_layout.scss */
+/* line 76, ../sass/components/_layout.scss */
 .c3xgm-about-header-image,
 .c3xgm-about-block-image {
   width: 100%;
   height: 100%;
 }
-/* line 77, ../sass/components/_layout.scss */
+/* line 79, ../sass/components/_layout.scss */
 .c3xgm-about-header-image img,
 .c3xgm-about-block-image img {
   width: 100%;
 }
 
-/* line 80, ../sass/components/_layout.scss */
+/* line 82, ../sass/components/_layout.scss */
 .c3xgm-about-block {
   margin-bottom: 2em;
 }
 
-/* line 82, ../sass/components/_layout.scss */
+/* line 84, ../sass/components/_layout.scss */
 .clear-left,
 .c3xgm-clear-left {
   clear: left;
@@ -592,25 +636,26 @@ img.c3xgm-about-section-icon {
 
 /* line 4, ../sass/components/pages/_our-people.scss */
 .c3xgm-about-page-our-people > .c3xgm-about-section {
-  margin-bottom: 2em;
+  margin-bottom: 0.6em;
 }
 /* line 6, ../sass/components/pages/_our-people.scss */
 .c3xgm-about-page-our-people .c3xgm-about-block {
   width: 50%;
   float: left;
+  margin-bottom: 1.75em;
 }
-/* line 9, ../sass/components/pages/_our-people.scss */
+/* line 8, ../sass/components/pages/_our-people.scss */
 .c3xgm-about-page-our-people .c3xgm-about-block.c3xgm-about-employees {
   width: 100%;
+  margin-bottom: 2em;
 }
 @media (min-width: 768px) {
-  /* line 13, ../sass/components/pages/_our-people.scss */
+  /* line 8, ../sass/components/pages/_our-people.scss */
   .c3xgm-about-page-our-people .c3xgm-about-block.c3xgm-about-employees {
-    width: 100%;
     float: none;
   }
 }
-/* line 16, ../sass/components/pages/_our-people.scss */
+/* line 13, ../sass/components/pages/_our-people.scss */
 .c3xgm-about-page-our-people .c3xgm-about-block.c3xgm-about-employees .c3xgm-about-blockquote {
   margin: 0;
   padding: 0;
@@ -618,71 +663,270 @@ img.c3xgm-about-section-icon {
   max-width: 50%;
   float: left;
 }
-/* line 22, ../sass/components/pages/_our-people.scss */
+/* line 18, ../sass/components/pages/_our-people.scss */
+.c3xgm-about-page-our-people .c3xgm-about-block.c3xgm-about-employees .c3xgm-about-blockquote .c3xgm-about-gray {
+  margin-top: -2.272%;
+  margin-left: -1px;
+}
+/* line 21, ../sass/components/pages/_our-people.scss */
 .c3xgm-about-page-our-people .c3xgm-about-block.c3xgm-about-employees .c3xgm-about-block-image {
   width: 50%;
   float: left;
+  margin-top: 0.692%;
 }
-@media (min-width: 768px) {
-  /* line 22, ../sass/components/pages/_our-people.scss */
-  .c3xgm-about-page-our-people .c3xgm-about-block.c3xgm-about-employees .c3xgm-about-block-image {
-    max-width: 445px !important;
-  }
-}
-/* line 28, ../sass/components/pages/_our-people.scss */
+/* line 27, ../sass/components/pages/_our-people.scss */
 .c3xgm-about-page-our-people .c3xgm-about-block.c3xgm-about-employees .number {
   line-height: 1.09em;
 }
-/* line 30, ../sass/components/pages/_our-people.scss */
+/* line 29, ../sass/components/pages/_our-people.scss */
 .c3xgm-about-page-our-people .c3xgm-about-block.c3xgm-about-employees .c3xgm-about-gray {
   margin-left: 5px;
   font-size: 17px;
 }
 @media (min-width: 768px) {
-  /* line 30, ../sass/components/pages/_our-people.scss */
+  /* line 29, ../sass/components/pages/_our-people.scss */
   .c3xgm-about-page-our-people .c3xgm-about-block.c3xgm-about-employees .c3xgm-about-gray {
     font-size: 34px;
   }
 }
-/* line 37, ../sass/components/pages/_our-people.scss */
+/* line 36, ../sass/components/pages/_our-people.scss */
 .c3xgm-about-page-our-people .number {
-  font-size: 65px;
+  font-size: 64px;
   font-size: 14.36vw;
 }
 @media (min-width: 905px) {
-  /* line 37, ../sass/components/pages/_our-people.scss */
+  /* line 36, ../sass/components/pages/_our-people.scss */
   .c3xgm-about-page-our-people .number {
-    font-size: 130px;
+    font-size: 128px;
   }
 }
-/* line 46, ../sass/components/pages/_our-people.scss */
-.c3xgm-about-page-our-people .c3xgm-about-headquarters .c3xgm-about-blockquote span > span {
-  color: #6086C4;
-  font-size: 11.262vw;
+/* line 42, ../sass/components/pages/_our-people.scss */
+.c3xgm-about-page-our-people .c3xgm-about-separator {
+  display: block;
+  float: left;
+  width: 47.25%;
+  margin: 5px 0;
+  padding-right: .4em;
+  padding-bottom: .65em;
+  border-right: 3px solid #FDB12E;
 }
-@media (min-width: 905px) {
-  /* line 46, ../sass/components/pages/_our-people.scss */
-  .c3xgm-about-page-our-people .c3xgm-about-headquarters .c3xgm-about-blockquote span > span {
-    font-size: 102px;
-  }
+/* line 48, ../sass/components/pages/_our-people.scss */
+.c3xgm-about-page-our-people .c3xgm-about-separator .c3xgm-about-gray {
+  line-height: .9em;
+}
+/* line 50, ../sass/components/pages/_our-people.scss */
+.c3xgm-about-page-our-people .c3xgm-about-separator span {
+  display: block;
+  clear: left;
 }
 /* line 51, ../sass/components/pages/_our-people.scss */
-.c3xgm-about-page-our-people .c3xgm-about-headquarters .c3xgm-about-blockquote > span:first-of-type {
-  font-size: 3.75vw;
+.c3xgm-about-page-our-people .c3xgm-about-separator + .number {
+  float: left;
+  padding-left: .1em;
+  font-size: 41px;
+  font-size: 13.697113vw;
+  line-height: .8em;
 }
 @media (min-width: 905px) {
   /* line 51, ../sass/components/pages/_our-people.scss */
+  .c3xgm-about-page-our-people .c3xgm-about-separator + .number {
+    font-size: 124px;
+  }
+}
+/* line 60, ../sass/components/pages/_our-people.scss */
+.c3xgm-about-page-our-people .c3xgm-about-timezones .c3xgm-about-separator {
+  width: 50.75%;
+}
+/* line 61, ../sass/components/pages/_our-people.scss */
+.c3xgm-about-page-our-people .c3xgm-about-timezones .c3xgm-about-block-image {
+  width: 76.672%;
+  max-width: 333px;
+  padding-top: 2.5%;
+  padding-left: 6%;
+}
+/* line 68, ../sass/components/pages/_our-people.scss */
+.c3xgm-about-page-our-people .c3xgm-about-continents .c3xgm-about-block-image {
+  width: 88.672%;
+  max-width: 385px;
+}
+/* line 72, ../sass/components/pages/_our-people.scss */
+.c3xgm-about-page-our-people .c3xgm-about-languages .c3xgm-about-separator {
+  width: 53%;
+}
+/* line 73, ../sass/components/pages/_our-people.scss */
+.c3xgm-about-page-our-people .c3xgm-about-languages .c3xgm-about-blockquote {
+  margin-bottom: 0;
+}
+/* line 74, ../sass/components/pages/_our-people.scss */
+.c3xgm-about-page-our-people .c3xgm-about-languages .c3xgm-about-block-image {
+  width: 78.110599%;
+  max-width: 339px;
+  padding-left: 1.7em;
+}
+/* line 79, ../sass/components/pages/_our-people.scss */
+.c3xgm-about-page-our-people .c3xgm-about-headquarters .c3xgm-about-blockquote {
+  margin-top: 1.0625em;
+}
+/* line 82, ../sass/components/pages/_our-people.scss */
+.c3xgm-about-page-our-people .c3xgm-about-headquarters .c3xgm-about-blockquote .c3xgm-about-gray {
+  border-left: 3px solid #FDB12E;
+  padding-left: .35em;
+}
+/* line 84, ../sass/components/pages/_our-people.scss */
+.c3xgm-about-page-our-people .c3xgm-about-headquarters .c3xgm-about-blockquote span > span {
+  color: #6086C4;
+  line-height: .86em;
+  font-size: 34px;
+  font-size: 10.604232vw;
+}
+@media (min-width: 905px) {
+  /* line 84, ../sass/components/pages/_our-people.scss */
+  .c3xgm-about-page-our-people .c3xgm-about-headquarters .c3xgm-about-blockquote span > span {
+    font-size: 93px;
+  }
+}
+/* line 89, ../sass/components/pages/_our-people.scss */
+.c3xgm-about-page-our-people .c3xgm-about-headquarters .c3xgm-about-blockquote > span:first-of-type {
+  font-size: 12px;
+  font-size: 3.75vw;
+}
+@media (min-width: 905px) {
+  /* line 89, ../sass/components/pages/_our-people.scss */
   .c3xgm-about-page-our-people .c3xgm-about-headquarters .c3xgm-about-blockquote > span:first-of-type {
     font-size: 34px;
   }
 }
-/* line 55, ../sass/components/pages/_our-people.scss */
+/* line 93, ../sass/components/pages/_our-people.scss */
 .c3xgm-about-page-our-people .c3xgm-about-headquarters .c3xgm-about-blockquote > span:last-of-type {
+  font-size: 13px;
   font-size: 4.087vw;
 }
 @media (min-width: 905px) {
-  /* line 55, ../sass/components/pages/_our-people.scss */
+  /* line 93, ../sass/components/pages/_our-people.scss */
   .c3xgm-about-page-our-people .c3xgm-about-headquarters .c3xgm-about-blockquote > span:last-of-type {
     font-size: 37px;
   }
+}
+
+/* line 2, ../sass/components/pages/_our-brands.scss */
+.c3xgm-about-page-our-brands {
+  max-width: 1100px;
+}
+/* line 5, ../sass/components/pages/_our-brands.scss */
+.c3xgm-about-page-our-brands .c3xgm-about-section,
+.c3xgm-about-page-our-brands .c3xgm-about-block {
+  max-width: 905px;
+  margin: 0 auto;
+}
+/* line 8, ../sass/components/pages/_our-brands.scss */
+.c3xgm-about-page-our-brands .c3xgm-about-global,
+.c3xgm-about-page-our-brands .c3xgm-about-seconds {
+  margin-bottom: 12.5%;
+}
+/* line 12, ../sass/components/pages/_our-brands.scss */
+.c3xgm-about-page-our-brands .c3xgm-about-global .c3xgm-about-blockquote,
+.c3xgm-about-page-our-brands .c3xgm-about-seconds .c3xgm-about-blockquote {
+  width: 75%;
+}
+/* line 15, ../sass/components/pages/_our-brands.scss */
+.c3xgm-about-page-our-brands .c3xgm-about-global .c3xgm-about-blockquote span strong,
+.c3xgm-about-page-our-brands .c3xgm-about-seconds .c3xgm-about-blockquote span strong {
+  font-weight: 700;
+}
+/* line 17, ../sass/components/pages/_our-brands.scss */
+.c3xgm-about-page-our-brands .c3xgm-about-global .c3xgm-about-blockquote .number,
+.c3xgm-about-page-our-brands .c3xgm-about-seconds .c3xgm-about-blockquote .number {
+  font-size: 106px;
+  font-size: 9vw;
+  line-height: .83em;
+  margin-bottom: .05em;
+}
+@media (min-width: 1140px) {
+  /* line 17, ../sass/components/pages/_our-brands.scss */
+  .c3xgm-about-page-our-brands .c3xgm-about-global .c3xgm-about-blockquote .number,
+  .c3xgm-about-page-our-brands .c3xgm-about-seconds .c3xgm-about-blockquote .number {
+    font-size: 106px;
+  }
+}
+/* line 25, ../sass/components/pages/_our-brands.scss */
+.c3xgm-about-page-our-brands .c3xgm-about-global .c3xgm-about-blockquote .c3xgm-about-gray,
+.c3xgm-about-page-our-brands .c3xgm-about-seconds .c3xgm-about-blockquote .c3xgm-about-gray {
+  font-size: 53px;
+  font-size: 4.4921369vw;
+  line-height: 1em;
+}
+@media (min-width: 1140px) {
+  /* line 25, ../sass/components/pages/_our-brands.scss */
+  .c3xgm-about-page-our-brands .c3xgm-about-global .c3xgm-about-blockquote .c3xgm-about-gray,
+  .c3xgm-about-page-our-brands .c3xgm-about-seconds .c3xgm-about-blockquote .c3xgm-about-gray {
+    font-size: 53px;
+  }
+}
+/* line 32, ../sass/components/pages/_our-brands.scss */
+.c3xgm-about-page-our-brands .c3xgm-about-global .c3xgm-about-blockquote .c3xgm-about-dark-blue,
+.c3xgm-about-page-our-brands .c3xgm-about-seconds .c3xgm-about-blockquote .c3xgm-about-dark-blue {
+  font-size: 35px;
+  font-size: 2.9716979vw;
+  line-height: 1em;
+}
+@media (min-width: 1140px) {
+  /* line 32, ../sass/components/pages/_our-brands.scss */
+  .c3xgm-about-page-our-brands .c3xgm-about-global .c3xgm-about-blockquote .c3xgm-about-dark-blue,
+  .c3xgm-about-page-our-brands .c3xgm-about-seconds .c3xgm-about-blockquote .c3xgm-about-dark-blue {
+    font-size: 35px;
+  }
+}
+/* line 41, ../sass/components/pages/_our-brands.scss */
+.c3xgm-about-page-our-brands .c3xgm-about-global .c3xgm-about-block-image,
+.c3xgm-about-page-our-brands .c3xgm-about-seconds .c3xgm-about-block-image {
+  width: 25%;
+  margin: 9px 0;
+}
+/* line 44, ../sass/components/pages/_our-brands.scss */
+.c3xgm-about-page-our-brands .c3xgm-about-global .c3xgm-about-block-image img,
+.c3xgm-about-page-our-brands .c3xgm-about-seconds .c3xgm-about-block-image img {
+  max-width: 185px;
+}
+/* line 49, ../sass/components/pages/_our-brands.scss */
+.c3xgm-about-page-our-brands .c3xgm-about-global {
+  max-width: 940px;
+}
+/* line 51, ../sass/components/pages/_our-brands.scss */
+.c3xgm-about-page-our-brands .c3xgm-about-global .c3xgm-about-blockquote {
+  float: right;
+  border-left: 3px solid #FDB12E;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+}
+/* line 56, ../sass/components/pages/_our-brands.scss */
+.c3xgm-about-page-our-brands .c3xgm-about-global .c3xgm-about-blockquote span {
+  padding-left: 6%;
+}
+/* line 59, ../sass/components/pages/_our-brands.scss */
+.c3xgm-about-page-our-brands .c3xgm-about-global .c3xgm-about-blockquote .c3xgm-about-block-image img {
+  padding-top: 6%;
+}
+/* line 65, ../sass/components/pages/_our-brands.scss */
+.c3xgm-about-page-our-brands .c3xgm-about-seconds {
+  max-width: 1200px;
+}
+/* line 67, ../sass/components/pages/_our-brands.scss */
+.c3xgm-about-page-our-brands .c3xgm-about-seconds .c3xgm-about-blockquote {
+  float: left;
+  border-right: 3px solid #FDB12E;
+  padding-right: 1.6%;
+  margin-top: 3em;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+}
+/* line 74, ../sass/components/pages/_our-brands.scss */
+.c3xgm-about-page-our-brands .c3xgm-about-seconds .c3xgm-about-block-image {
+  float: left;
+  max-width: 226px;
 }

@@ -22,23 +22,17 @@
         <!--[if IE]>
           <link href="stylesheets/ie.css" media="screen, projection" rel="stylesheet" type="text/css" />
         <![endif]-->
-        <style>
-            .bg-change {
-                position: fixed; bottom: 80px; right:80px;
-                z-index: 100;
-                width: 80px; height: 20px;
-            }
-            .hide-bg {
-                display: none;
-            }
-        </style>
+
+        <script src="js/vendor/modernizr-2.6.2-respond-1.1.0.min.js"></script>
+
     </head>
     <body>
         <div id="c3xgm-about-page-container" class="c3xgm-about-page-container c3xgm-about-clearfix">
 
             <!-- TEMPLATE FOR CODING -->
-            <!-- <div id="our-comp-temp" class="temp our-comp-temp hide-bg"></div> -->
-            <div id="our-peop-temp" class="temp our-peop-temp hide-bg"></div>
+            <!-- <div id="our-comp-temp" class="temp our-comp-temp hidden"></div> -->
+            <!-- <div id="our-peop-temp" class="temp our-peop-temp hidden"></div> -->
+            <div id="our-brands-temp" class="temp our-brands-temp hidden"></div>
 
             <?php 
                 // ITERATE THROUGH PAGEES ARRAY
@@ -84,15 +78,41 @@
 
         </div>
         <button id="bg-change" class="bg-change">Bg Change</button>
+        
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.1.min.js"><\/script>')</script>
+        
+        <!--[if lt IE 9 ]>
+        <script>
+        var is_ie_lt9 = true;
+        console.log('THis is IE 8');
+        $('img[src$=".svg"]').each(function(index,element) {
+            element.src = element.src.replace('.svg','.png');
+        });
+        </script>
+        <![endif]--> 
+
+        <!--
+        <script src="js/ios-orient-fix.js"></script>
+        -->
         <script src="js/plugins/jquery.outlineButton.js"></script>
 
         <script>
             jQuery(document).ready(function($) {
+                // CHECK FOR SVG SUPPORT
+                if(!$('html').hasClass('svg')) {
+                    console.log('No svg support');
+                    $('img[src$=".svg"]').each(function(index,element) {
+                        element.src = element.src.replace('.svg','.png');
+                    });
+                } else {
+                    console.log('svg BABY!');
+                }
+                // TEMPORARY BG-IMG TOGGLE HIDE
                 $('#bg-change').click(function(){
-                    $(".temp").toggleClass('hide-bg');
+                    $(".temp").toggleClass('hidden');
                 });
+
             });
         </script>
     </body>

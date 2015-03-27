@@ -5,10 +5,12 @@ TO BE DELETED AFTER DEVELOPMENT
 
 .temp {
 	background-repeat: no-repeat; background-size: cover;
-	height: 0; padding: 50%;
+	height: 0; 
+	// padding: 50%;
 	z-index: 0;
 	position: absolute;
 	top:0;
+	left:0; right:0; margin:auto;
 }
 
 .our-comp-temp {
@@ -17,8 +19,21 @@ TO BE DELETED AFTER DEVELOPMENT
 }
 
 .our-peop-temp {
-	left: -48px; 
-	top: 18.16%;
+	left: -37px;
+  	// top: 12.57%;
+  	  top: 952px;
 	background-image:url('../templates/our-people.png');
 	opacity:0.5;
 }
+
+.our-brands-temp {
+	left: -30.2%; 
+	// top: 27.08%;
+	// top: 15.23%;
+	// top: 1136px;
+	top: 1014px;
+  	width: 52.5%; height: 2556px;
+	background-image:url('../templates/brands.png');
+	opacity:0.5;
+}
+

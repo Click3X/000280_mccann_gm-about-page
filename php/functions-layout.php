@@ -62,12 +62,22 @@ function printBlock($block) {
 		if($block['copy']) {
 			if( is_array($block['copy']) ) {
 				$class="";
+				// OUR PEOPLE SPECIFIC
+				$our_people =  array("continents", "timezones", "languages");
 				// CHECK FOR MULTI-LINE COPY
 				echo '<p class="c3xgm-about-blockquote">';
+				$isOurPeople = false;
+				if( in_array($block['title'], $our_people) ) {
+					$isOurPeople = true;
+					echo '<span class="c3xgm-about-separator">';
+				}
 				foreach ($block['copy'] as $key => $line) {
 					if( isAssoc($block['copy']) ) { $class = $key; }
 					// IF VALUE IS A NUMBER, FORMAT IT
-					if( is_numeric($line) ) { $line = number_format($line); }
+					if( is_numeric($line) ) { 
+						if( $isOurPeople ) { echo '</span>';}
+						$line = number_format($line);
+					}
 					echo '<span class="'.$class.'">'.$line.'</span>';
 				}
 				echo '</p>';
@@ -79,7 +89,8 @@ function printBlock($block) {
 
 		if($block['image@2x']) { 
 			$size = getimagesize($block['image']);
-			echo '<div class="c3xgm-about-block-image" style="max-width:'.$size[0].'px; max-height:'.$size[1].'px;"><img src="'.$block['image@2x'].'"></div>';
+			// echo '<div class="c3xgm-about-block-image" style="max-width:'.$size[0].'px; max-height:'.$size[1].'px;"><img src="'.$block['image@2x'].'"></div>';
+			echo '<div class="c3xgm-about-block-image"><img src="'.$block['image@2x'].'"></div>';
 		}
 
 	echo '</div>';
