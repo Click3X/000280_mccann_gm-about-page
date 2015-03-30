@@ -53,13 +53,13 @@ function printBlock($block) {
 
 	echo '<div class="c3xgm-about-block c3xgm-about-clearfix'.$class.'">';
 		
-		if($block['tagline']) {
+		if( isset($block['tagline']) ) {
 			echo '<div class="c3xgm-about-yellow-bar-left-wrapper">';
 				echo '<h3 class="c3xgm-about-block-tagline c3xgm-about-h">'.$block['tagline'].'</h3>';
 			echo '</div>';
 		}
 
-		if($block['copy']) {
+		if( isset($block['copy']) ) {
 			if( is_array($block['copy']) ) {
 				$class="";
 				// OUR PEOPLE SPECIFIC
@@ -87,10 +87,12 @@ function printBlock($block) {
 			}
 		}
 
-		if($block['image@2x']) { 
-			$size = getimagesize($block['image']);
-			// echo '<div class="c3xgm-about-block-image" style="max-width:'.$size[0].'px; max-height:'.$size[1].'px;"><img src="'.$block['image@2x'].'"></div>';
-			echo '<div class="c3xgm-about-block-image"><img src="'.$block['image@2x'].'"></div>';
+		if( isset($block['image@2x']) ) { 
+			if( isset($block['image']) && ($block['image'] != "") ) { 
+				$size = getimagesize($block['image']); 
+				// echo '<div class="c3xgm-about-block-image" style="max-width:'.$size[0].'px; max-height:'.$size[1].'px;"><img src="'.$block['image@2x'].'"></div>';
+				echo '<div class="c3xgm-about-block-image"><img src="'.$block['image@2x'].'"></div>';
+			}
 		}
 
 	echo '</div>';

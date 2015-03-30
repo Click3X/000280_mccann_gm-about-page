@@ -1,5 +1,221 @@
 // OUR COMMITMENT
 .c3xgm-about-page-our-commitment {
+	
+	// CRASH TEST DUMMIES
+	.c3xgm-about-crash-test-dummies {
+		.c3xgm-about-block-image {
+			float: left;
+			width: 30%; max-width: 218px;
+			padding-top: 1em;
+		}
 
+		.c3xgm-about-blockquote {
+			  float: right; width: 70%;
+			.c3xgm-about-dark-blue.c3xgm-about-thin {
+				font-size: 36.5199px; line-height:43.808725px;
+				font-size:4.03401830544375vw; line-height: 4.83914462004375vw;
+				@media(min-width:905px) {font-size:36.5199px; line-height:43.808725px; }
+			}
+
+			.c3xgm-about-light-blue {
+				font-size: 81.315675px; line-height:75.925px;
+				font-size:8.982190447256249vw; line-height:8.386732443749999vw;
+
+				margin-bottom: .2em;
+
+				@media(min-width:905px) {font-size:81.315675px; line-height:75.925px; }	
+			}
+
+			.c3xgm-about-light-gray.c3xgm-about-thin {
+				.c3xgm-about-light-blue {
+					font-size: 31.8885px; line-height: 1.2em;
+					font-size:3.522427626375vw;
+					@media(min-width:905px) {font-size:31.8885px;}	
+				}
+			}
+		}
+	}
+
+
+	// TEST FACILITY
+	.c3xgm-about-test-facility {
+		.c3xgm-about-blockquote {
+			width: 50%;
+
+			.c3xgm-about-dark-blue.c3xgm-about-thin {
+				font-size: 36.5199px; line-height:43.808725px;
+				font-size:4.03401830544375vw; line-height: 4.83914462004375vw;
+				@media(min-width:905px) {font-size:36.5199px; line-height:43.808725px; }
+			}
+
+			.c3xgm-about-gray {
+				font-size:31.8885px; line-height:45.555px;
+				font-size:3.522427626375vw; line-height:5.03203946625vw;
+				@media(min-width:905px) {font-size:31.8885px; line-height:45.555px; }
+			}
+
+			.c3xgm-about-light-blue {
+				font-size:68.3325px; 
+				// line-height:45.555px; 
+				line-height:1em;
+				font-size:7.5480591993749995vw; 
+				// line-height:7.03311382732875vw;
+				line-height:1em;
+				@media(min-width:905px) {font-size:68.3325px; 
+					// line-height:45.555px; 
+					line-height:1em; 
+				}
+			}
+
+			.c3xgm-about-yellow-bar-left-wrapper {
+				border-width: .2rem;
+			}
+		}
+	}
+
+	// SAFETY SCORE 
+	.c3xgm-about-safety-score {
+		.c3xgm-about-blockquote {
+			
+			.c3xgm-about-light-blue.number {
+				width: 39.1%; float: left;
+				font-size:353.14236px; line-height: 0.8em;
+				font-size:39.008369942369995vw; 
+				@media(min-width:905px) {font-size:353.14236px; }
+			}
+
+			.c3xgm-about-dark-blue.c3xgm-about-thin {
+				font-size:37.20325px; 
+				font-size:4.1094988974375vw; 
+				@media(min-width:905px) {font-size:37.20325px; }
+			}
+
+
+			.c3xgm-about-light-blue {
+				font-size:49.16903px; 
+				font-size:5.4312479305725vw; 
+				@media(min-width:905px) {font-size:49.16903px; }
+			}
+
+			.c3xgm-about-light-gray.c3xgm-about-thin {
+				font-size:22.807869999999998px; 
+				font-size:2.5193744261024995vw; 
+				@media(min-width:905px) {font-size:22.807869999999998px; }
+			}
+		}
+	}
+
+
+	// ONSTAR
+	.c3xgm-about-onstar-subscribers {
+		.c3xgm-about-block-image {
+			width:29%; max-width: 172px;
+		}
+
+		.c3xgm-about-blockquote {
+			  float: right; width: 71%;
+
+			.c3xgm-about-dark-blue.c3xgm-about-thin.c3xgm-about-small {
+				font-size:36.519925px; 
+				font-size:4.03401830544375vw; 
+				@media(min-width:905px) {font-size:36.519925px; }
+			}
+
+			.c3xgm-about-light-blue.number {
+				width: 22%; float: left;
+
+				font-size:257.99315px; 
+				font-size:28.4981168438625vw; 
+				@media(min-width:905px) {font-size:257.99315px; }
+			}
+
+			.c3xgm-about-light-blue {
+				font-size:81.61937499999999px; 
+				font-size:9.015737377031249vw; 
+				@media(min-width:905px) {font-size:81.61937499999999px; }
+			}
+
+			.c3xgm-about-dark-blue.c3xgm-about-thin {
+				font-size:68.013615px; 
+				font-size:7.51283492311125vw; 
+				@media(min-width:905px) {font-size:68.013615px; }
+			}
+
+			.c3xgm-about-gray {
+				font-size:54.316745000000004px; 
+				font-size:5.99986839025875vw; 
+				@media(min-width:905px) {font-size:54.316745000000004px; }
+			}
+		}
+	}
+
+
+	// AWARDS
+	.c3xgm-about-quality-awards {
+		.c3xgm-about-block-image {
+			text-align: center;
+			width: 35%;
+			float: right;
+			img {
+				max-width: 147px;
+			}
+		}
+		.c3xgm-about-blockquote {
+			width: 65%;
+			float: left;
+
+			.c3xgm-about-dark-blue.c3xgm-about-thin {
+				font-size:36.519925px; 
+				font-size:4.03401830544375vw; 
+				@media(min-width:905px) {font-size:36.519925px; }				
+			}
+
+			.c3xgm-about-light-blue.c3xgm-about-thin {
+				font-size:65.249945px; 
+				font-size:7.207557862158749vw; 
+				@media(min-width:905px) {font-size:65.249945px; }
+			}
+
+			.c3xgm-about-gray.c3xgm-about-thin {
+				font-size:31.8885px; 
+				font-size:3.522427626375vw; 
+				@media(min-width:905px) {font-size:31.8885px; }
+			}
+
+			.c3xgm-about-gray.c3xgm-about-disclaimer {
+				font-size:18.222px; line-height: 1.613em;
+				font-size:2.0128157865vw; 
+				font-weight: normal; text-transform: none;
+				margin: 2em auto;
+				@media(min-width:905px) {font-size:18.222px; }
+			}
+
+			.c3xgm-about-gray.c3xgm-about-disclaimer-small {
+				font-size:10.6295px; 
+				// font-size:1.174142542125vw;
+				font-weight: normal; text-transform: none; line-height: 1.613em;
+				@media(min-width:905px) {font-size:10.6295px; }
+
+				strong {
+					font-size:21.259px; 
+					color:$gm-light-blue;
+					@media(min-width:905px) {font-size:21.259px; }					
+				}
+			}
+
+		}
+	}
+
+	.c3xgm-about-climate-declaration {
+		.c3xgm-about-block-image {
+			width:100%; max-width: 121px;
+		}
+	}
+
+	.c3xgm-about-landfill-free {
+		.c3xgm-about-block-image {
+			width:100%; max-width: 112px;
+		}
+	}
 
 }

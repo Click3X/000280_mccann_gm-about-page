@@ -31,8 +31,9 @@
 
             <!-- TEMPLATE FOR CODING -->
             <!-- <div id="our-comp-temp" class="temp our-comp-temp hidden"></div> -->
-            <!-- <div id="our-peop-temp" class="temp our-peop-temp hidden"></div> -->
+            <div id="our-peop-temp" class="temp our-peop-temp hidden"></div>
             <div id="our-brands-temp" class="temp our-brands-temp hidden"></div>
+            <div id="our-commitment-temp" class="temp our-commitment-temp hidden"></div>
 
             <?php 
                 // ITERATE THROUGH PAGEES ARRAY
@@ -41,10 +42,14 @@
                         // helper($page);
                         
                         // PAGE HEADER
+                        if(isset($page['tagline'])) { $page['tagline'] = $page['tagline']; } else { $page['tagline'] = "";}
+                        if(isset($page['icon@2x'])) { $page['icon@2x'] = $page['icon@2x']; } else { $page['icon@2x'] = "";}
+                        if(isset($page['image'])) { $page['image'] = $page['image']; } else { $page['image'] = "";}
+
                         pageHeader($page['title'], $page['icon@2x'], $page['tagline'], $page['image']);
 
                         // BLOCKS
-                        if($page['blocks']) {
+                        if( isset($page['blocks']) ) {
                             foreach ($page['blocks'] as $key => $block) {
                                 // helper($block);
                                 printBlock($block);
@@ -53,14 +58,14 @@
 
 
                         // SECTIONS
-                        if($page['sections']) {
+                        if( isset($page['sections']) ) {
                             foreach ($page['sections'] as $key => $section) {
                                 
                                 // SECTION HEADER
                                 subSectionHeader($section['title'], $section['tagline']);
 
                                 // SECTION BLOCKS
-                                if($section['blocks']) {
+                                if( isset($section['blocks']) ) {
                                     foreach ($section['blocks'] as $key => $block) {
                                         // helper($block);
                                         printBlock($block);
@@ -112,6 +117,17 @@
                 $('#bg-change').click(function(){
                     $(".temp").toggleClass('hidden');
                 });
+
+                // GET VIEWPORT
+                var fonts = [30.36, 51.76, 23.56, 22.25, 44.17, 23],
+                    rat = 0.11046075,
+                    ptRat = 1.5185;
+
+
+                $.each(fonts, function(i) {
+                    console.log('This is px: '+ fonts[i] * ptRat + ', and px: ' + fonts[i]*ptRat * rat );
+                    // console.log('This is px: '+ fonts[i] + ', and vw: ' + fonts[i]*rat )
+                })
 
             });
         </script>

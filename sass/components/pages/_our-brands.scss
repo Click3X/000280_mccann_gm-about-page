@@ -1,16 +1,19 @@
 // OUR BRANDS
 .c3xgm-about-page-our-brands {
-	max-width: 1100px;
+	// max-width: 1100px;
+	max-width: 1175px;
 
 	.c3xgm-about-section,
 	.c3xgm-about-block {  max-width: 905px; margin:0 auto; }
 	
 	.c3xgm-about-global,
 	.c3xgm-about-seconds {
-		margin-bottom: 12.5%;
+		// margin-bottom: 12.5%;
+		margin-bottom: 8.8%;
 
 		.c3xgm-about-blockquote { 
 			width: 75%; 
+			// width:auto; 
 			 
 			span strong { font-weight:700; }
 
@@ -39,6 +42,7 @@
 
 		}
 		.c3xgm-about-block-image { 
+			text-align: center;
 			width: 25%; 
 			margin: 9px 0;
 			img { max-width: 185px; } 
@@ -46,6 +50,7 @@
 	}
 
 
+	// GLOBAL
 	.c3xgm-about-global {
 		max-width:940px; 
 		.c3xgm-about-blockquote { 
@@ -54,14 +59,19 @@
 			@include prefix(box-sizing, border-box);
 
 			span { padding-left:6%; }
+		}
 
-			.c3xgm-about-block-image {
-				img { padding-top:6%;}
+		.c3xgm-about-block-image {
+			width:25%;
+			img { 
+				padding-top:6%;
+				max-width: 120px;
 			}
 		}
 	}
 
 
+	// SECONDS
 	.c3xgm-about-seconds {
 		max-width: 1200px; 
 		.c3xgm-about-blockquote { 
@@ -73,8 +83,111 @@
 		}
 		.c3xgm-about-block-image { 
 			float:left;
-			max-width: 226px;
-			// img { padding-right: 5%;}
+			// max-width: 226px;
+			img { 
+				// padding-right: 5%;
+				max-width:119px;
+			}
 		}
 	}
+
+
+	// DEALERS
+	.c3xgm-about-dealers {
+
+		.c3xgm-about-blockquote {
+			.c3xgm-about-dark-blue { 
+				font-size: 42px;
+				font-size: 4.6393515vw;
+				@media(min-width:905px) {font-size: 42px; }
+				
+				span { 
+					font-size: 55px;
+					font-size:6.07534125vw;
+					@media(min-width:905px) {font-size: 55px; }
+				}
+			}
+
+			.number { 
+				font-size: 84px;
+				font-size:9.278703vw;
+				@media(min-width:905px) {font-size: 84px; }
+			}
+
+			.c3xgm-about-gray {
+				font-size: 25px;
+				font-size:2.76151875vw;
+				@media(min-width:905px) {font-size: 25px; }
+			}
+		}
+
+	}
+
+
+	// CHINA
+	.c3xgm-about-china {
+		position: relative;
+		.c3xgm-about-block-image { 
+			width:25%; max-width:224px; 
+			float: left;
+		}
+
+		.c3xgm-about-blockquote {
+			width: 75%;
+			position: absolute;
+			top: 38%;
+			left: 6%;
+
+			.c3xgm-about-dark-blue.c3xgm-about-thin {
+				font-size: 15px;
+				font-size: 1.6569112499999998vw;
+				@media(min-width:905px) {font-size: 15px; }
+			}
+
+			.c3xgm-about-dark-blue.c3xgm-about-thin.c3xgm-about-big {
+				font-size: 32px;
+				font-size:3.534744vw;
+				@media(min-width:905px) {font-size: 32px; }
+			}
+
+			.c3xgm-about-light-blue {
+				font-size: 86px;
+				font-size:9.4996245vw;
+				@media(min-width:905px) {font-size:86px; }
+			}
+
+			.c3xgm-about-gray {
+				font-size: 41px;
+				font-size: 4.5288907499999995vw;
+				@media(min-width:905px) {font-size:41px; }
+			}
+		}
+	}
+
+
+
+	// CADILLAC & CHEVROLET
+	.c3xgm-about-cadillac,
+	.c3xgm-about-chevrolet {
+		.c3xgm-about-blockquote {
+			
+			.c3xgm-about-dark-blue.c3xgm-about-thin {
+				font-size: 54px;
+				font-size: 5.9648805vw;
+				@media(min-width:905px) {font-size: 54px; }
+			}
+			.c3xgm-about-gray {
+				font-size: 28px;
+				font-size: 3.092901vw;
+				@media(min-width:905px) {font-size: 28px; }
+			}
+			.c3xgm-about-thin {
+				font-size: 18px;
+				font-size: 1.9882935vw;
+				@media(min-width:905px) {font-size: 18px; }
+			}
+
+		}
+	}
+
 }

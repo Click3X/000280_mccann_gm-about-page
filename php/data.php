@@ -9,8 +9,8 @@ $pages = array(
 		"tagline"=>"is a global automotive company united by a single purpose:",		
 		"icon"=>"img/title-icons/our-company.png",
 		"icon@2x"=>"img/title-icons/our-company.svg",
-		"image"=>"img/logos/general-motors.png",
-		"image@2x"=>"img/logos/general-motors.svg",
+		// "image"=>"img/logos/general-motors.png",
+		// "image@2x"=>"img/logos/general-motors.svg",
 		"blocks"=>array(
 			array(
 				// "title"=>"To <strong>earn customers</strong> for <strong>life</strong>",
@@ -216,9 +216,10 @@ $pages = array(
 				"image@2x"=>"img/pages/brands/flag.svg",
 				"class"=>"china",
 				"copy"=>array(
+					"c3xgm-about-dark-blue c3xgm-about-thin"=>"GM will open five new manufacturing plants",
+					"c3xgm-about-dark-blue c3xgm-about-thin c3xgm-about-big"=>"By <strong>2018</strong> to support sales of nearly",
 					"c3xgm-about-light-blue c3xgm-about-thin"=>"in <strong>China</strong>",
-					"c3xgm-about-gray"=>"5 million vehicles annually",
-					"c3xgm-about-dark-blue c3xgm-about-thin"=>"GM will open five new manufacturing plants<br>By <strong>2018</strong> to support sales of nearly",
+					"c3xgm-about-gray"=>"5 million vehicles annually"
 				)
 			),
 			array(
@@ -262,8 +263,8 @@ $pages = array(
 						"class"=>"crash-test-dummies",
 						"copy"=>array(
 							"c3xgm-about-dark-blue c3xgm-about-thin"=>"We Designed",
-							"c3xgm-about-light-blue"=>"Crash Test Dummies",
-							"c3xgm-about-light-gray c3xgm-about-thin"=>"The <strong>global standard</strong> for frontal crash testing"
+							"c3xgm-about-light-blue"=>"Crash Test <br>Dummies",
+							"c3xgm-about-light-gray c3xgm-about-thin"=>"Remain the <strong>global standard</strong> <br>for frontal crash testing"
 						)
 					),
 					array(
@@ -273,7 +274,7 @@ $pages = array(
 						"copy"=>array(
 							"c3xgm-about-dark-blue c3xgm-about-thin"=>"The first North American <br>auto manufacturer",
 							"c3xgm-about-gray"=>"to build a",
-							"c3xgm-about-light-blue c3xgm-about-yellow-bar-left-wrapper"=>"Rollover Test Facility"
+							"c3xgm-about-light-blue c3xgm-about-yellow-bar-left-wrapper"=>"Rollover <br>Test Facility"
 						)
 					),
 					array(
@@ -282,9 +283,8 @@ $pages = array(
 						"class"=>"safety-score",
 						"copy"=>array(
 							"c3xgm-about-light-blue number"=>63,
-							"c3xgm-about-dark-blue"=>"<strong>General Motors</strong>",
-							"c3xgm-about-dark-blue c3xgm-about-thin"=>"2014 model year vehicles earned the",
-							"c3xgm-about-light-blue"=>"Highest possible overall vehicle safety score",
+							"c3xgm-about-dark-blue c3xgm-about-thin"=>"<strong>General Motors</strong><br>2014 model year vehicles earned the",
+							"c3xgm-about-light-blue"=>"Highest possible overall <br>vehicle safety score",
 							"c3xgm-about-light-gray c3xgm-about-thin"=>"In their respective markets by the <br><strong>2014 New Car Assessment Program</strong> (NCFAP)"
 						)
 					),
@@ -294,25 +294,26 @@ $pages = array(
 						"image@2x"=>"img/pages/commitment/on-star.svg",
 						"class"=>"onstar-subscribers",
 						"copy"=>array(
-							"c3xgm-about-dark-blue c3xgm-about-thin c3xgm-about-small"=>"Nearly",
 							"c3xgm-about-light-blue number"=>7,
+							"c3xgm-about-dark-blue c3xgm-about-thin c3xgm-about-small"=>"Nearly",
 							"c3xgm-about-light-blue"=>"Million",
 							"c3xgm-about-dark-blue c3xgm-about-thin"=>"Onstar subscribers",
 							"c3xgm-about-gray"=>"Globally"
 						)
+					),
+					array(
+						"title"=>"Quality Awards",
+						"image"=>"img/pages/commitment/award.png",
+						"image@2x"=>"img/pages/commitment/award.png",
+						"class"=>"quality-awards",
+						"copy"=>array(
+							"c3xgm-about-dark-blue c3xgm-about-thin"=>"<strong>General Motors</strong> received more",
+							"c3xgm-about-light-blue c3xgm-about-thin"=>"J.D. Power initial <br>quality awards",
+							"c3xgm-about-gray c3xgm-about-thin"=>"Than any other automaker <br><strong>two years in a row</strong> in an <br>industry leading benchmark study.",
+							"c3xgm-about-gray c3xgm-about-disclaimer"=>"The Chevrolet Malibu, Silverado HD, Suburban, Buick Encore, GMC Terrain, and GMC Yukon were awarded the \"Highest Ranked Midsize Car, Large Heavy Duty Pickup, Large SUV (tie), Small SUV(tie), and Compact SUV in Initial Quality\"",
+							"c3xgm-about-gray c3xgm-about-disclaimer-small"=>"<strong>VIEW DISCLAIMER:</strong> The Chevrolet Malibu, Chevrolet Silverado HD, Chevrolet Suburban, Buick Encore, GMC Terrain, and GMC Yukon received the lowest number of problems per 100 vehicles in the Midsize Car, Large Heavy Duty Pickup, Large SUV (tie), Small SUV (tie), and Compact SUV segments in the J.D. Power 2014 Initial Quality StudySM. Study based on responses from 86,118 new-vehicle owners, measuring 239 models and measures opinions after 90 days of ownership. Proprietary study results are based on experiences and perceptions of owners surveyed in February-May 2014. Your experiences may vary. Visit <a href=\"http://jdpower.com\">jdpower.com</a>."
+						)
 					)
-					// array(
-					// 	"title"=>"Quality Awards",
-					// 	"image"=>"img/pages/commitment/award.png",
-					// 	"class"=>"quality-awards",
-					// 	"copy"=>array(
-					// 		"<strong>General Motors</strong> received more",
-					// 		"J.D. Power initial quality awards",
-					// 		"Than any other automaker <strong>two years in a row</strong> in an industry leading benchmark study.",
-					// 		"The Chevrolet Malibu, Silverado HD, Suburban, Buick Encore, GMC Terrain, and GMC Yukon were awarded the \"Highest Ranked Midsize Car, Large Heavy Duty Pickup, Large SUV (tie), Small SUV(tie), and Compact SUV in Initial Quality\"",
-					// 		"<strong>DISCLAIMER:</strong> The Chevrolet Malibu, Chevrolet Silverado HD, Chevrolet Suburban, Buick Encore, GMC Terrain, and GMC Yukon received the lowest number of problems per 100 vehicles in the Midsize Car, Large Heavy Duty Pickup, Large SUV (tie), Small SUV (tie), and Compact SUV segments in the J.D. Power 2014 Initial Quality StudySM. Study based on responses from 86,118 new-vehicle owners, measuring 239 models and measures opinions after 90 days of ownership. Proprietary study results are based on experiences and perceptions of owners surveyed in February-May 2014. Your experiences may vary. Visit <a href=\"http://jdpower.com\">jdpower.com</a>."
-					// 	)
-					// )
 				)
 			),
 			// TECHNOLOGY

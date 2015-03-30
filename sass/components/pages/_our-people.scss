@@ -19,9 +19,9 @@
 		}
 
 		.c3xgm-about-block-image {
-			width: 50%;
+			width: 43.7%;
 			float: left;
-			margin-top: 0.692%;
+			margin-top: 2.4%; margin-left: 1.8%;
 		}
 
 		.number { line-height: 1.09em; }
@@ -41,9 +41,11 @@
 
 	.c3xgm-about-separator {
 		display: block; float:left;
-		width: 47.25%;
+		// width: 47.25%;
+		width: auto;
 		margin: 5px 0; padding-right: .4em; padding-bottom: .65em;
-		border-right:3px solid $gm-yellow;
+		// border-right:3px solid $gm-yellow;
+		border-right: 0.08em solid $gm-yellow;
 
 		.c3xgm-about-gray { line-height: .9em; }
 
@@ -79,7 +81,7 @@
 		.c3xgm-about-blockquote {
 			margin-top: 1.0625em;
 			
-			.c3xgm-about-gray { border-left:3px solid $gm-yellow; padding-left: .35em; }
+			.c3xgm-about-gray { border-left:0.1em solid $gm-yellow; padding-left: .35em; }
 
 			span > span {
 				color:$gm-light-blue; line-height: .86em;				

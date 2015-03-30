@@ -23,7 +23,7 @@
 
 // YELLOW BAR
 .c3xgm-about-yellow-bar-left-wrapper {
-	margin: 8px 0 8px 6px;  padding-left:6px; border-left:3px solid $gm-yellow;
+	margin: 8px 0 8px 6px;  padding-left:6px; border-left:0.2em solid $gm-yellow;
 	@media( min-width:$tablet-height ){ padding-left:14px; }
 
 	.c3xgm-about-h:first-child { margin-top:0; }
@@ -83,3 +83,9 @@ img.c3xgm-about-section-icon{
 
 .clear-left,
 .c3xgm-clear-left { clear:left; }
+
+
+// STRONG TAGS IN BLOCKQUOTE
+.c3xgm-about-blockquote {
+	strong { font-weight: 700; }
+}
