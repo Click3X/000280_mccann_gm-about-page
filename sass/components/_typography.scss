@@ -22,22 +22,17 @@ p.c3xgm-about-p {
 	font-size:14px; line-height:1.613em; letter-spacing: 0.01em;
 	font-family: "open-sans", arial, sans-serif; color: $gm-black;
 	max-width: 39em;
-	margin:9px 0 9px 0; 
-	// padding:0 9% 0 7px;
-	padding:0 2% 0 7px;
+	margin:9px 0 9px 0; padding:0 2% 0 7px;
 
 	@media( min-width:$tablet-height ){ font-size: 18px; }
-
 	strong { font-weight: 700; }
 }
 
-p.c3xgm-about-p.c3xgm-about-blockquote {
-	max-width: none;
-}
+p.c3xgm-about-p.c3xgm-about-blockquote { max-width: none; }
 
 h1.c3xgm-about-h{
-	font-size: 32px; line-height:1em;
-	@media( min-width: 404px) { font-size:32px; font-size: 8.06vw;}
+	font-size: 32px; font-size: 8.06vw; line-height:1em;
+	// @media( min-width: 404px) { font-size:32px; font-size: 8.06vw;}
 	@media( min-width:905px ){ 
 		font-size: 73px; line-height: 70px; }
 }

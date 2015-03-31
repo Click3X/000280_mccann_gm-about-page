@@ -309,11 +309,19 @@ $pages = array(
 						"copy"=>array(
 							"c3xgm-about-dark-blue c3xgm-about-thin"=>"<strong>General Motors</strong> received more",
 							"c3xgm-about-light-blue c3xgm-about-thin"=>"J.D. Power initial <br>quality awards",
-							"c3xgm-about-gray c3xgm-about-thin"=>"Than any other automaker <br><strong>two years in a row</strong> in an <br>industry leading benchmark study.",
+							"c3xgm-about-gray c3xgm-about-thin"=>"Than any other automaker <br><strong>two years in a row</strong> in an <br>industry leading benchmark study."
+						)
+					),
+					array(
+						"title"=>"Disclaimer",
+						"image"=>"",
+						"image@2x"=>"",
+						"class"=>"disclaimer",
+						"copy"=>array(
 							"c3xgm-about-gray c3xgm-about-disclaimer"=>"The Chevrolet Malibu, Silverado HD, Suburban, Buick Encore, GMC Terrain, and GMC Yukon were awarded the \"Highest Ranked Midsize Car, Large Heavy Duty Pickup, Large SUV (tie), Small SUV(tie), and Compact SUV in Initial Quality\"",
 							"c3xgm-about-gray c3xgm-about-disclaimer-small"=>"<strong>VIEW DISCLAIMER:</strong> The Chevrolet Malibu, Chevrolet Silverado HD, Chevrolet Suburban, Buick Encore, GMC Terrain, and GMC Yukon received the lowest number of problems per 100 vehicles in the Midsize Car, Large Heavy Duty Pickup, Large SUV (tie), Small SUV (tie), and Compact SUV segments in the J.D. Power 2014 Initial Quality StudySM. Study based on responses from 86,118 new-vehicle owners, measuring 239 models and measures opinions after 90 days of ownership. Proprietary study results are based on experiences and perceptions of owners surveyed in February-May 2014. Your experiences may vary. Visit <a href=\"http://jdpower.com\">jdpower.com</a>."
 						)
-					)
+					) 
 				)
 			),
 			// TECHNOLOGY
