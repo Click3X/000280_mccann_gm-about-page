@@ -1,9 +1,6 @@
 // OUR COMMITMENT
 .c3xgm-about-page-our-commitment {
-	.c3xgm-about-block {
-		margin-bottom: 11%;
-	}
-
+	.c3xgm-about-block { margin-bottom: 11%; }
 	.c3xgm-about-block-image {text-align: center; }
 	
 	// CRASH TEST DUMMIES
@@ -15,6 +12,9 @@
 
 		.c3xgm-about-blockquote {
 			  float: right; width: 70%;
+			  border-left:0.2rem solid $gm-yellow;
+			  @include prefix(box-sizing,border-box);
+			  > span {padding-left:1.25rem;}
 			.c3xgm-about-dark-blue.c3xgm-about-thin {
 				font-size:12.9088582992554px; font-size:4.03401830544375vw; line-height: 4.83914462004375vw;
 				@media(min-width:905px) {font-size:36.5199px; line-height:43.808725px; }
@@ -38,17 +38,24 @@
 
 	// TEST FACILITY
 	.c3xgm-about-test-facility {
+		  margin-left: 13%;
+		.c3xgm-about-block-image {
+			width:40%; float:left;
+			img {max-width: 222px;}
+		}
 		.c3xgm-about-blockquote {
-			width: 50%;
+			width:60%; float:left;
 
 			.c3xgm-about-dark-blue.c3xgm-about-thin {
-				font-size:12.9088582992554px; font-size:4.03401830544375vw; line-height: 4.83914462004375vw;
-				@media(min-width:905px) {font-size:36.5199px; line-height:43.808725px; }
+				font-size:12.9088582992554px; font-size:4vw; line-height: 1.2em;
+				@media(min-width:905px) { font-size: 34.5199px; }
 			}
 
 			.c3xgm-about-gray {
-				font-size:11.2717685699463px; font-size:3.522427626375vw; line-height:5.03203946625vw;
-				@media(min-width:905px) {font-size:31.8885px; line-height:45.555px; }
+				font-size:11.2717685699463px; font-size:3.322427626375vw;
+				line-height: 1em;
+				margin-top: .27em;
+				@media(min-width:905px) { font-size: 28px; }
 			}
 
 			.c3xgm-about-light-blue {
@@ -62,15 +69,16 @@
 
 	// SAFETY SCORE 
 	.c3xgm-about-safety-score {
+		margin-bottom: 2%;
 		.c3xgm-about-blockquote {
-			
 			.c3xgm-about-light-blue.number {
+				border-right:0.2rem solid $gm-yellow;
+				margin-right: 1.25rem;
+			  	@include prefix(box-sizing,border-box);
+
 				width: 36.3%; float: left; margin-top: -1.768%;
 				font-size:117.752771px; font-size:36.7991456vw; line-height: 0.8em;
-				@media(min-width:905px) {
-					// font-size:353.14236px; 
-					font-size:333.14236px;
-				}
+				@media(min-width:905px) { font-size:333.14236px; }
 			}
 
 			.c3xgm-about-dark-blue.c3xgm-about-thin {
@@ -80,7 +88,8 @@
 
 
 			.c3xgm-about-light-blue {
-				font-size:17.3799934387207px; font-size:5.4312479305725vw; 
+				font-size:17.3799934387207px; font-size:5.4312479305725vw; line-height: 0.9em;
+  				margin-bottom: .25em;
 				@media(min-width:905px) {font-size:49.16903px; }
 			}
 
@@ -95,12 +104,12 @@
 	// ONSTAR
 	.c3xgm-about-onstar-subscribers {
 		.c3xgm-about-block-image {
-			width:29%; 
-			img { max-width: 172px; }
+			width:27%; 
+			img { max-width:230px; }
 		}
 
 		.c3xgm-about-blockquote {
-			  float: right; width: 71%;
+			  float: right; width: 73%;
 
 			.c3xgm-about-dark-blue.c3xgm-about-thin.c3xgm-about-small {
 				font-size: 12.9088582992554px; font-size:4.03401830544375vw; 
@@ -108,13 +117,13 @@
 			}
 
 			.c3xgm-about-light-blue.number {
-				width: 22%; float: left;
-				font-size:91.193977355957px; font-size:28.4981168438625vw; 
-				@media(min-width:905px) {font-size:257.99315px; }
+				width:20%; float: left;
+				font-size:91.193977355957px; font-size:27vw;  line-height: 1.04em;
+				@media(min-width:905px) {font-size:241.99315px; }
 			}
 
 			.c3xgm-about-light-blue {
-				font-size:28.8503589630127px; font-size:9.015737377031249vw; 
+				font-size:28.8503589630127px; font-size:9.015737377031249vw; line-height: 0.9em;
 				@media(min-width:905px) {font-size:81.61937499999999px; }
 			}
 
@@ -137,9 +146,7 @@
 			text-align: center;
 			width: 35%;
 			float: right;
-			img {
-				max-width: 147px;
-			}
+			img { width:69.62%; max-width: 220px; }
 		}
 		.c3xgm-about-blockquote {
 			width: 65%;
@@ -150,7 +157,7 @@
 				@media(min-width:905px) {font-size:36.519925px; }				
 			}
 
-			.c3xgm-about-light-blue.c3xgm-about-thin {
+			.c3xgm-about-light-blue {
 				font-size:23.0641860961914px; font-size:7.207557862158749vw; 
 				@media(min-width:905px) {font-size:65.249945px; }
 			}
@@ -211,7 +218,7 @@
 	.c3xgm-about-epa-energy-star {
 		.c3xgm-about-block-image { 
 			width:25%; float:right;
-			img { max-width: 160px;}
+			img { width:100%; max-width: 160px; height:auto; }
 		}
 		
 		.c3xgm-about-blockquote {
@@ -236,7 +243,7 @@
 	// CLIMATE DECLARATION
 	.c3xgm-about-climate-declaration {
 		.c3xgm-about-block-image { width:25%;
-			img { max-width: 151px; }
+			img { width:100%; max-width: 151px; height:auto; }
 		}
 
 		.c3xgm-about-blockquote {
@@ -262,7 +269,7 @@
 	.c3xgm-about-landfill-free {
 		.c3xgm-about-block-image { 
 			width:25%; float: right;
-			img { max-width: 172px;}
+			img { width:100%; max-width: 172px; height:auto; }
 		}
 
 		.c3xgm-about-blockquote {

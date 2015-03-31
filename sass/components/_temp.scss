@@ -16,6 +16,7 @@ TO BE DELETED AFTER DEVELOPMENT
 .our-comp-temp {
 	background-image:url('../templates/our-company.png');
 	opacity:0.5;
+	display: none;
 }
 
 .our-peop-temp {
@@ -26,36 +27,35 @@ TO BE DELETED AFTER DEVELOPMENT
   	width: 905px; height: 982px;
 	background-image:url('../templates/our-people.png');
 	opacity:0.5;
+	display: none;
 }
 
 .our-brands-temp {
-	left: -95px;
-	// top: 1034px;
-	top: 427px;
-	width: 1360px;
-  	height: 3836px;
+	left: -114px;
+	// top: 1847px;
+ top: 227px;
+  width: 1348px;
+  height: 3816px;
 	background-image:url('../templates/brands.png');
 	opacity:0.5;
+
+	display: none;
 }
 
 
 .our-commitment-temp {
-	// left: -95px;
-	// // top: 1034px;
-	// top: 1427px;
-	// width:1861px;
- //  	height:4046px;
-	// background-image:url('../templates/comm.png');
   opacity: 0.5;
-  // left: -195px;
-  // top: 3800px;
-    left: -86px;
-  top: 3250px;
+    // left: -86px;
+    // top: 3859px;
+      left: -145px;
+  top: 3534px;
+
   width: 1300px;
   height: 4046px;
   background-image: url("../templates/comm.png");
   opacity: 0.5;
   height: 0;
   padding-bottom: 217.409%;
+
 }
 

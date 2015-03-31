@@ -216,15 +216,16 @@ $pages = array(
 				"image@2x"=>"img/pages/brands/flag.svg",
 				"class"=>"china",
 				"copy"=>array(
-					"c3xgm-about-dark-blue c3xgm-about-thin"=>"GM will open five new manufacturing plants",
-					"c3xgm-about-dark-blue c3xgm-about-thin c3xgm-about-big"=>"By <strong>2018</strong> to support sales of nearly",
+					"c3xgm-about-dark-blue c3xgm-about-thin"=>"GM will open <strong>five new manufacturing plants</strong>",
 					"c3xgm-about-light-blue c3xgm-about-thin"=>"in <strong>China</strong>",
+					"c3xgm-about-dark-blue c3xgm-about-thin c3xgm-about-big"=>"By <strong>2018</strong> to support <br>sales of nearly",
 					"c3xgm-about-gray"=>"5 million vehicles annually"
 				)
 			),
 			array(
 				"title"=>"Cadillac",
 				"image"=>"img/pages/brands/cadillac-logo.png",
+				"image@2x"=>"img/pages/brands/cadillac-logo.png",
 				"class"=>"cadillac",
 				"copy"=>array(
 					"c3xgm-about-dark-blue c3xgm-about-thin"=>"<strong>Cadillac</strong> was named",
@@ -235,6 +236,7 @@ $pages = array(
 			array(
 				"title"=>"Chevrolet",
 				"image"=>"img/pages/brands/chevy-logo.png",
+				"image@2x"=>"img/pages/brands/chevy-logo.png",
 				"class"=>"chevrolet",
 				"copy"=>array(
 					"c3xgm-about-dark-blue c3xgm-about-thin"=>"<strong>Chevrolet</strong> won both",
@@ -270,6 +272,7 @@ $pages = array(
 					array(
 						"title"=>"Test Facility",
 						"image"=>"img/pages/commitment/truck-front.png",
+						"image@2x"=>"img/pages/commitment/truck-front.png",
 						"class"=>"test-facility",
 						"copy"=>array(
 							"c3xgm-about-dark-blue c3xgm-about-thin"=>"The first North American <br>auto manufacturer",
@@ -308,7 +311,7 @@ $pages = array(
 						"class"=>"quality-awards",
 						"copy"=>array(
 							"c3xgm-about-dark-blue c3xgm-about-thin"=>"<strong>General Motors</strong> received more",
-							"c3xgm-about-light-blue c3xgm-about-thin"=>"J.D. Power initial <br>quality awards",
+							"c3xgm-about-light-blue"=>"J.D. Power initial <br>quality awards",
 							"c3xgm-about-gray c3xgm-about-thin"=>"Than any other automaker <br><strong>two years in a row</strong> in an <br>industry leading benchmark study."
 						)
 					),
