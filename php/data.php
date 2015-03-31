@@ -285,7 +285,7 @@ $pages = array(
 							"c3xgm-about-light-blue number"=>63,
 							"c3xgm-about-dark-blue c3xgm-about-thin"=>"<strong>General Motors</strong><br>2014 model year vehicles earned the",
 							"c3xgm-about-light-blue"=>"Highest possible overall <br>vehicle safety score",
-							"c3xgm-about-light-gray c3xgm-about-thin"=>"In their respective markets by the <br><strong>2014 New Car Assessment Program</strong> (NCFAP)"
+							"c3xgm-about-light-gray c3xgm-about-thin"=>"In their respective markets by the <br><strong>2014 New Car Assessment Program</strong> <br>(NCFAP)"
 						)
 					),
 					array(

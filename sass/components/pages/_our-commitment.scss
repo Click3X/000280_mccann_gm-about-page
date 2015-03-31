@@ -1,12 +1,16 @@
 // OUR COMMITMENT
 .c3xgm-about-page-our-commitment {
+	.c3xgm-about-block {
+		margin-bottom: 11%;
+	}
+
+	.c3xgm-about-block-image {text-align: center; }
 	
 	// CRASH TEST DUMMIES
 	.c3xgm-about-crash-test-dummies {
 		.c3xgm-about-block-image {
-			float: left;
-			width: 30%; max-width: 218px;
-			padding-top: 1em;
+			float: left; width: 30%; padding-top: 1em;
+			img { max-width: 218px; }
 		}
 
 		.c3xgm-about-blockquote {
@@ -61,9 +65,12 @@
 		.c3xgm-about-blockquote {
 			
 			.c3xgm-about-light-blue.number {
-				width: 39.1%; float: left;
-				font-size:124.826782226563px; font-size:39.008369942369995vw; line-height: 0.8em;
-				@media(min-width:905px) {font-size:353.14236px; }
+				width: 36.3%; float: left; margin-top: -1.768%;
+				font-size:117.752771px; font-size:36.7991456vw; line-height: 0.8em;
+				@media(min-width:905px) {
+					// font-size:353.14236px; 
+					font-size:333.14236px;
+				}
 			}
 
 			.c3xgm-about-dark-blue.c3xgm-about-thin {
@@ -78,7 +85,7 @@
 			}
 
 			.c3xgm-about-light-gray.c3xgm-about-thin {
-				font-size:8.06199836730957px; font-size:2.5193744261024995vw; 
+				font-size:8.06199836730957px; font-size:2.5193744261024995vw; line-height: 1.2em;
 				@media(min-width:905px) {font-size:22.807869999999998px; }
 			}
 		}
@@ -88,7 +95,8 @@
 	// ONSTAR
 	.c3xgm-about-onstar-subscribers {
 		.c3xgm-about-block-image {
-			width:29%; max-width: 172px;
+			width:29%; 
+			img { max-width: 172px; }
 		}
 
 		.c3xgm-about-blockquote {
@@ -201,7 +209,10 @@
 
 	// EPA ENERGY
 	.c3xgm-about-epa-energy-star {
-		.c3xgm-about-block-image { width:25%;  max-width: 160px; float:right;}
+		.c3xgm-about-block-image { 
+			width:25%; float:right;
+			img { max-width: 160px;}
+		}
 		
 		.c3xgm-about-blockquote {
 			width:75%; float:left;
@@ -224,7 +235,9 @@
 
 	// CLIMATE DECLARATION
 	.c3xgm-about-climate-declaration {
-		.c3xgm-about-block-image { width:25%; max-width: 121px; }
+		.c3xgm-about-block-image { width:25%;
+			img { max-width: 151px; }
+		}
 
 		.c3xgm-about-blockquote {
 			width:75%; float:right;
@@ -247,7 +260,10 @@
 
 	// LANDFILL FREE
 	.c3xgm-about-landfill-free {
-		.c3xgm-about-block-image { width:25%; max-width: 112px; float: right; }
+		.c3xgm-about-block-image { 
+			width:25%; float: right;
+			img { max-width: 172px;}
+		}
 
 		.c3xgm-about-blockquote {
 			width:75%; float:left;

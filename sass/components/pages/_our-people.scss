@@ -6,9 +6,10 @@
 	.c3xgm-about-block { 
 		width: 50%; float: left; margin-bottom: 1.75em; 
 
-		.c3xgm-about-block-image { position: relative; }
+		.c3xgm-about-block-image { position: relative; text-align: center;}
 	}
 
+	// EMPLOYEES
 	.c3xgm-about-block.c3xgm-about-employees {
 		width: 100%;
 		margin-bottom: 2em;
@@ -19,7 +20,7 @@
 		  	width: auto; max-width:50%;
 		  	float: left;
 
-		  	.c3xgm-about-gray { margin-top: -2.272%; margin-left: -1px; }
+		  	.c3xgm-about-gray { margin-top: -2.272%; }
 		}
 
 		.c3xgm-about-block-image {
@@ -45,10 +46,8 @@
 
 	.c3xgm-about-separator {
 		display: block; float:left;
-		// width: 47.25%;
 		width: auto;
 		margin: 5px 0; padding-right: .4em; padding-bottom: .65em;
-		// border-right:3px solid $gm-yellow;
 		border-right: 0.08em solid $gm-yellow;
 
 		.c3xgm-about-gray { line-height: .9em; }
@@ -62,25 +61,37 @@
 		}	
 	}
 
+	// TIMEZONES
 	.c3xgm-about-timezones {
-		.c3xgm-about-separator { width: 50.75%; }
+		.c3xgm-about-separator { 
+			// width: 50.75%; 
+		}
 		 .c3xgm-about-block-image {
-			width:76.672%; max-width: 333px;
-			padding-top: 2.5%; padding-left: 6%;
+			 padding-top: 2.5%;
+			img { width:76.672%; max-width: 333px;}
 		}
 	}
 
+	// CONTINETS
 	.c3xgm-about-continents {
 		 .c3xgm-about-block-image { 
-		 	width:88.672%; max-width: 385px; 
-		 	
+		 	img { width:88.672%; max-width: 385px; }
 		 }
 	}
 
+	// LANGUAGES
 	.c3xgm-about-languages {
-		.c3xgm-about-separator { width: 53%; }
+		// .c3xgm-about-separator { width: 53%; }
 		.c3xgm-about-blockquote { margin-bottom:0;}
-		.c3xgm-about-block-image { width:78.110599%; max-width: 339px; padding-left: 1.7em; }
+		.c3xgm-about-block-image {  
+			img {width:78.110599%; max-width: 339px;}
+		}
+	}
+	.c3xgm-about-timezones,
+	.c3xgm-about-continents,
+	.c3xgm-about-languages {
+		text-align: center;
+		> p { display: inline-block;}
 	}
 	  
 
@@ -105,5 +116,4 @@
 			}
 		}
 	}
-
 }

@@ -119,13 +119,13 @@
                 });
 
                 // GET VIEWPORT
-                var fonts = [19.59, 41.01, 24.1, 49, 36, 23],
+                var fonts = [84.2, 55.27, 42.57, 25.66],
                     rat = 0.11046075,
                     ptRat = 1.5185;
 
 
                 $.each(fonts, function(i) {
-                    console.log('This is px: '+ fonts[i] * ptRat + ', and px: ' + fonts[i]*ptRat * rat );
+                    console.log('This is px: '+ fonts[i] * ptRat* 0.81  + ', and px: ' + fonts[i]*ptRat * rat * 0.81 );
                     // console.log('This is px: '+ fonts[i] + ', and vw: ' + fonts[i]*rat )
                 })
 
