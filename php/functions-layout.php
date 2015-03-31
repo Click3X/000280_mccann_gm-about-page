@@ -98,4 +98,57 @@ function printBlock($block) {
 	echo '</div>';
 }
 
+
+
+
+
+// MODULE
+function printModule($module) {
+	$module = $module;
+	$class = "";
+	$color = "";
+	
+	if( isset($module['name']) ) { 
+		$class = ' c3xgm-about-module-'.cleanString($module['name']); 
+		$color = ' c3xgm-about-light-blue';
+	}
+	echo '<div class="c3xgm-about-clearfix'.$class.'">';
+	
+
+	if( isset($module['blocks']) ) {
+		// LOGO HOLDER
+		echo '<div class="c3xgm-about-clearfix c3xgm-about-module-half">';
+			echo '<ul class="c3xgm-about-clearfix c3xgm-about-module-car-logo-container">';
+				foreach ($module['blocks'] as $key => $block) {
+					if( isset($block['logo']) ) {
+						$link = cleanString($block['title']);
+						echo '<li><a href="#c3xgm-about-'.$link.'" class="c3xgm-about-module-car-logo"><img src="'.$block['logo'].'"></a></li>';
+					}
+				}
+			echo '</ul>';
+		echo '</div>';
+
+		echo '<div class="c3xgm-about-clearfix c3xgm-about-module-half">';
+
+	 	foreach ($module['blocks'] as $key => $block) {
+	 		$href = cleanString($block['title']);
+	 		echo '<div id="c3xgm-about-'.$href.'" class="c3xgm-about-clearfix c3xgm-about-module-container">';
+	 			// helper($block);
+	 			if(isset( $block['title']) ) { echo '<h3 class="c3xgm-about-h'.$color.'">'.$block['title'].'</h3>'; }
+	 			if(isset( $block['copy']) ) { echo '<p class="c3xgm-about-p">'.$block['copy'].'</p>'; }
+	 			if(isset( $block['link']) ) { echo '<a class="c3xgm-about-link" href="'.$block['link'].'">Learn more at chevrolet.com</a>'; }
+	 			if(isset( $block['image']) ) {
+	 				echo '<div class="c3xgm-about-clearfix c3xgm-about-block-image">';
+	 					echo '<img src="'.$block['image'].'">';
+	 				echo '</div>';
+	 			}
+
+	 		echo '</div>'; // END MODULE BLOCK
+	 	}
+
+	 	echo '</div>';
+	}
+	echo '</div>'; // END MODULE
+}
+
 ?>

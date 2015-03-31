@@ -48,14 +48,17 @@
 
                         pageHeader($page['title'], $page['icon@2x'], $page['tagline'], $page['image']);
 
+                        // MODULES
+                        if($page['module']) {
+                            printModule($page['module']);
+                        }
+
                         // BLOCKS
                         if( isset($page['blocks']) ) {
                             foreach ($page['blocks'] as $key => $block) {
-                                // helper($block);
                                 printBlock($block);
                             }
                         }
-
 
                         // SECTIONS
                         if( isset($page['sections']) ) {
@@ -64,10 +67,14 @@
                                 // SECTION HEADER
                                 subSectionHeader($section['title'], $section['tagline']);
 
+                                 // MODULES
+                                if($section['module']) {
+                                    printModule($section['module']);
+                                }
+
                                 // SECTION BLOCKS
                                 if( isset($section['blocks']) ) {
                                     foreach ($section['blocks'] as $key => $block) {
-                                        // helper($block);
                                         printBlock($block);
                                     }
                                 }

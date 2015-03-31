@@ -54,6 +54,16 @@ h4.c3xgm-about-h{
 	margin:4px 0;
 }
 
+.c3xgm-about-link {
+	font-family: "open-sans-condensed", arial, sans-serif; color:$gm-light-blue;
+	text-transform: uppercase;
+	text-decoration: none;
+	font-weight: 600;
+	&:hover, &:focus, &:active {
+		text-decoration: none;
+		outline: none;
+	}
+}
 
 // SPANS AND STRONGS
 .c3xgm-about-thin,
