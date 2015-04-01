@@ -183,7 +183,11 @@ function printModule($module) {
 	 			}
 
 	 			// LINK
-	 			if( (isset($block['link']) )  && ($block['link'] != "") ) { echo '<a class="c3xgm-about-link" href="'.$block['link'].'">Learn more at chevrolet.com</a>'; }
+	 			if( (isset($block['link']) )  && ($block['link'] != "") ) {
+	 				$link_snippet = str_replace('http://www.', '', $block['link']);
+	 				$link_text ="Learn more at ".$link_snippet;
+	 				echo '<a class="c3xgm-about-link" href="'.$block['link'].'">'.$link_text.'</a>'; 
+	 			}
 	 			
 	 			// ICON
 	 			if( (isset($block['icon']) )  && ($block['icon'] != "") ) {

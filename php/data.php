@@ -98,7 +98,7 @@ $pages = array(
 					"vehicle-copy"=>"2015 Chevrolet Colorado LTZ 26 MPG/HWY",
 					"image"=>"img/modules/car/gmc-chevrolet.png",
 					"logo"=>"img/company-logos/chevy-logo.jpg",
-					"copy"=>"An innovative range of award-winning, affordable and fuel-efficient cars, trucks and SUVs, designed and built for a better driving experience. Learn more at Chevrolet.com.",
+					"copy"=>"An innovative range of award-winning, affordable and fuel-efficient cars, trucks and SUVs, designed and built for a better driving experience.",
 					"link"=>"http://www.chevrolet.com"
 				),
 				array(
@@ -116,7 +116,7 @@ $pages = array(
 					"vehicle-copy"=>"2015 GMC Yukon Denali",
 					"image"=>"img/modules/car/gmc-yukon.png",
 					"logo"=>"img/company-logos/gmc-logo.jpg",
-					"copy"=>"Purpose-built vehicles reaching a higher standard through engineering excellence and innovation. We give our customers the power to be their best. We are Professional Grade. Learn more at GMC.com.",
+					"copy"=>"Purpose-built vehicles reaching a higher standard through engineering excellence and innovation. We give our customers the power to be their best. We are Professional Grade.",
 					"link"=>"http://www.gmc.com"
 				),
 				array(
@@ -125,7 +125,7 @@ $pages = array(
 					"vehicle-copy"=>"2015 Cadillac CTS Sedan",
 					"image"=>"img/modules/car/cadillac.png",
 					"logo"=>"img/company-logos/cadillac-logo.jpg",
-					"copy"=>"The bold, daring and original Cadillac lineup seamlessly blends driving dynamics, refinement and technology to satisfy enthusiasts and luxury seekers alike. Learn more at Cadillac.com.",
+					"copy"=>"The bold, daring and original Cadillac lineup seamlessly blends driving dynamics, refinement and technology to satisfy enthusiasts and luxury seekers alike.",
 					"link"=>"http://www.cadillac.com"
 				),
 				array(
@@ -134,7 +134,7 @@ $pages = array(
 					"vehicle-copy"=>"2015 Opel Antara",
 					"image"=>"img/modules/car/opel-antara.png",
 					"logo"=>"img/company-logos/opel-logo.jpg",
-					"copy"=>"We live and breathe the German commitment to quality. It’s evident in our precision-engineered, affordable vehicles and, above all, in the ride and handling that make every Opel so exciting to drive. Learn more at Opel.com.",
+					"copy"=>"We live and breathe the German commitment to quality. It’s evident in our precision-engineered, affordable vehicles and, above all, in the ride and handling that make every Opel so exciting to drive.",
 					"link"=>"http://www.opel.com"
 				),
 				array(
@@ -143,7 +143,7 @@ $pages = array(
 					"vehicle-copy"=>"2015 Vauxhall Adam",
 					"image"=>"img/modules/car/vauxhall-adam.png",
 					"logo"=>"img/company-logos/vauxhall-logo.jpg",
-					"copy"=>"Vauxhall has always emphasized forward thinking – creating exciting, clever designs that anticipate customers’ needs and set the trends. Learn more at Vauxhall.co.uk.",
+					"copy"=>"Vauxhall has always emphasized forward thinking – creating exciting, clever designs that anticipate customers’ needs and set the trends.",
 					"link"=>"http://www.vauxhall.co.uk"
 				),
 				array(
@@ -152,7 +152,7 @@ $pages = array(
 					"vehicle-copy"=>"2015 Holden TBD",
 					"image"=>"",
 					"logo"=>"img/company-logos/holden-logo.jpg",
-					"copy"=>"One of only seven fully integrated global General Motors operations that designs, builds and sells vehicles for Australia and the world. Learn more at Holden.com.au.",
+					"copy"=>"One of only seven fully integrated global General Motors operations that designs, builds and sells vehicles for Australia and the world.",
 					"link"=>"http://www.holden.com.au"
 				),
 				array(
@@ -161,7 +161,7 @@ $pages = array(
 					"vehicle-copy"=>"2015 Baojun 730 MPV",
 					"image"=>"",
 					"logo"=>"img/company-logos/baojun-logo.jpg",
-					"copy"=>"As General Motors’ youngest brand in China, Baojun means “trustworthy companion” and gives first-time buyers access to reliable, attractive vehicles that meet high-quality, global standards. Learn more at AutoBaojun.com.",
+					"copy"=>"As General Motors’ youngest brand in China, Baojun means “trustworthy companion” and gives first-time buyers access to reliable, attractive vehicles that meet high-quality, global standards.",
 					"link"=>"http://www.autobaojun.com"
 				),
 				array(
@@ -170,7 +170,7 @@ $pages = array(
 					"vehicle-copy"=>"2015 Wuling N300S Rong Guang S Van",
 					"image"=>"",
 					"logo"=>"img/company-logos/wuling-logo.jpg",
-					"copy"=>"With the goal of enriching customers’ lives, Wuling provides affordable small and mini-car products to meet the needs of both individual and commercial customers in China and other global markets. Learn more at WulingMotors.com.",
+					"copy"=>"With the goal of enriching customers’ lives, Wuling provides affordable small and mini-car products to meet the needs of both individual and commercial customers in China and other global markets.",
 					"link"=>"http://www.wulingmotors.com"
 				)
 			)
