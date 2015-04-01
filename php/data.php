@@ -408,7 +408,7 @@ $pages = array(
 						"copy"=>array(
 							"c3xgm-about-dark-blue c3xgm-about-thin"=>"General Motors is the <strong>only automaker</strong> to sign a",
 							"c3xgm-about-light-blue"=>"Climate Declaration",
-							"c3xgm-about-gray c3xgm-about-thin"=>"making <strong>tackling climate change <br>a priority"
+							"c3xgm-about-gray c3xgm-about-thin"=>"making <strong>tackling climate change <br>a priority</strong>"
 						)
 					),
 					array(
@@ -434,31 +434,31 @@ $pages = array(
 						array(
 							"title"=>"GM Foundation",
 							"class"=>"gm-foundation",
-							"image"=>"img/modules/foundation/gm-foundation.jpg",
+							"logo"=>"img/modules/foundation/gm-foundation.jpg",
 							"copy"=>"GM Foundation provided grants totaling &dollar;2.875 million to support 29 leading universities and organizations in 201 grants totaling nearly &dollar;45.6 million over the last decade."
 						),
 						array(
 							"title"=>"Buick Achievers Scholarship Program",
 							"class"=>"buick-achievers",
-							"image"=>"img/modules/foundation/buick-achievers.jpg",
+							"logo"=>"img/modules/foundation/buick-achievers.jpg",
 							"copy"=>"Buick Achievers Scholarship Program annually awards scholarships up to $25,000 to students pursuing STEM majors and other fields related to the auto industry."
 						),
 						array(
 							"title"=>"Safe Kids USA",
 							"class"=>"safe-kids-usa",
-							"image"=>"img/modules/foundation/safe-kids.png",
+							"logo"=>"img/modules/foundation/safe-kids.png",
 							"copy"=>"For nearly two decades, General Motors and the GM Foundation have partnered with Safe Kids to promote child passenger safety."
 						),
 						array(
 							"title"=>"Habitat for Humanity",
 							"class"=>"habitat-humanity",
-							"image"=>"img/modules/foundation/habitat.jpg",
+							"logo"=>"img/modules/foundation/habitat.jpg",
 							"copy"=>"The GM Foundation is committed to helping Habitat for Humanity partner families find homes and supporting United States military veterans through programs designed to move their lives forward."
 						),
 						array(
 							"title"=>"United Way",
 							"class"=>"united-way",
-							"image"=>"img/modules/foundation/united-way.jpg",
+							"logo"=>"img/modules/foundation/united-way.jpg",
 							"copy"=>"In 2011, the GM Foundation pledged &dollar;27.1 million to United Way of Southeastern Michigan to increase graduation rates from 50 to 80 percent by 2015."
 						)
 					)

@@ -90,3 +90,18 @@ img.c3xgm-about-section-icon{
 .c3xgm-about-blockquote {
 	strong { font-weight: 700; }
 }
+
+// MODULE SIZES
+.c3xgm-about-module-3quarter,
+.c3xgm-about-module-1quarter {
+	position: relative;
+	width: 100%;
+	margin-top:1em;
+}
+
+.c3xgm-about-module-1quarter {
+	@media(min-width:768px) { width:25%; float:left; }	
+}
+.c3xgm-about-module-3quarter {
+	@media(min-width:768px) { width:75%; float:left; }	
+}

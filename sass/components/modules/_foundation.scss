@@ -1,0 +1,54 @@
+// FOUNDATION
+.c3xgm-about-module-foundation {
+	margin-bottom: 5%; margin-top:5%;
+
+	.c3xgm-about-module-container {
+  		// padding-bottom: 41.5%; 
+  		border-top:0.2rem solid $gm-yellow;
+  		@media(min-width:768px) {
+  			padding-bottom: 41.5%; 
+			border-top:0; padding-top:0; border-left:0.2rem solid $gm-yellow;
+		}
+	}
+	
+	
+	.c3xgm-about-module {
+		// DELETE WHEN IN PRODUCTION
+		position: absolute; visibility: hidden;
+
+		padding-left: 1em; padding-top:1em; 
+		@media(min-width:768px) {
+			padding-left: 4em;
+			border-top:0; padding-top:0;
+		}
+
+		// TEMP CODE
+		// DELETE WHEN IN PRODUCTION
+		&:first-child {  visibility: visible; position: relative; }
+
+		.c3xgm-about-p { padding:0; margin-top:1.5em; max-width: 22em; }
+
+		h3.c3xgm-about-h{
+			font-size: 32px; font-size: 8.06vw; line-height:1em;
+			@media( min-width:905px ){ font-size: 73px; line-height: 70px; }
+		}
+		.c3xgm-about-link {
+			display: block;
+			margin-top:1em; margin-bottom: 0.5em;
+		}
+	}
+
+	.c3xgm-about-module-foundation-logo-container {
+		li {
+			display: block; float: left; text-align: center;
+			margin-bottom:1em; margin-top:1em;
+			width:20%;
+			@media(min-width: 768px) { width: 100%; }
+			
+			.c3xgm-about-module-foundation-logo {
+				img { width:60%; }
+			}
+		}
+	}
+	
+}
