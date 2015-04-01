@@ -101,6 +101,7 @@ function printBlock($block) {
 
 
 
+
 // MODULE
 function printModule($module) {
 	$module = $module;
@@ -121,7 +122,7 @@ function printModule($module) {
 		// CARS MODULE
 		if($module_name == 'car') {
 			// LOGO HOLDER
-			echo '<div class="c3xgm-about-clearfix c3xgm-about-module-half">';
+			echo '<div class="c3xgm-about-clearfix c3xgm-about-module-40">';
 				echo '<ul class="c3xgm-about-clearfix c3xgm-about-module-car-logo-container">';
 					foreach ($module['blocks'] as $key => $block) {
 						if( isset($block['logo']) ) {
@@ -133,12 +134,12 @@ function printModule($module) {
 			echo '</div>';
 
 			// OPEN DIV CONTAINER FOR CAR DESCRIPTIONS
-			echo '<div class="c3xgm-about-clearfix c3xgm-about-module-half">';
+			echo '<div class="c3xgm-about-clearfix c3xgm-about-module-60">';
 		
 		} elseif($module_name == 'foundation') {
 
 			// LOGO HOLDER
-			echo '<div class="c3xgm-about-clearfix c3xgm-about-module-1quarter">';
+			echo '<div class="c3xgm-about-clearfix c3xgm-about-module-25">';
 				echo '<ul class="c3xgm-about-clearfix c3xgm-about-module-foundation-logo-container">';
 					foreach ($module['blocks'] as $key => $block) {
 						if( isset($block['logo']) ) {
@@ -150,7 +151,7 @@ function printModule($module) {
 			echo '</div>';
 
 			// OPEN DIV CONTAINER FOR CAR DESCRIPTIONS
-			echo '<div class="c3xgm-about-clearfix c3xgm-about-module-3quarter">';
+			echo '<div class="c3xgm-about-clearfix c3xgm-about-module-75">';
 		}
 
 		// MODULE CONTAINER

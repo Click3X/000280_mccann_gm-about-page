@@ -92,16 +92,20 @@ img.c3xgm-about-section-icon{
 }
 
 // MODULE SIZES
-.c3xgm-about-module-3quarter,
-.c3xgm-about-module-1quarter {
+.c3xgm-about-module-25,
+.c3xgm-about-module-40,
+.c3xgm-about-module-50,
+.c3xgm-about-module-60,
+.c3xgm-about-module-75 {
 	position: relative;
 	width: 100%;
 	margin-top:1em;
 }
 
-.c3xgm-about-module-1quarter {
-	@media(min-width:768px) { width:25%; float:left; }	
-}
-.c3xgm-about-module-3quarter {
-	@media(min-width:768px) { width:75%; float:left; }	
+@media(min-width:768px) {
+	.c3xgm-about-module-25 { width:25%; float:left; }	
+	.c3xgm-about-module-40 { width:40%; float:left;}
+	.c3xgm-about-module-50 { width:50%; float:left }
+	.c3xgm-about-module-75 { width:75%; float:left; }
+	.c3xgm-about-module-60 { width:60%; float:left;}
 }

@@ -1,12 +1,7 @@
 // CAR
 .c3xgm-about-module-car {
-	margin-bottom: 5%;
-	.c3xgm-about-module-half {
-		position: relative;
-		width: 100%;
-		margin-top:1em;
-		@media(min-width:768px) { width:50%; float:left; }
-	}
+	max-width: 905px;
+	margin:0 auto 5%;
 
 	.c3xgm-about-module {
 		position: absolute; visibility: hidden;

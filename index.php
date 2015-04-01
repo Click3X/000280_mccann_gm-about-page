@@ -31,9 +31,9 @@
 
             <!-- TEMPLATE FOR CODING -->
             <!-- <div id="our-comp-temp" class="temp our-comp-temp hidden"></div> -->
-            <div id="our-peop-temp" class="temp our-peop-temp hidden"></div>
+            <!-- <div id="our-peop-temp" class="temp our-peop-temp hidden"></div>
             <div id="our-brands-temp" class="temp our-brands-temp hidden"></div>
-            <div id="our-commitment-temp" class="temp our-commitment-temp hidden"></div>
+            <div id="our-commitment-temp" class="temp our-commitment-temp hidden"></div> -->
 
             <?php 
                 // ITERATE THROUGH PAGEES ARRAY
@@ -89,7 +89,7 @@
 
 
         </div>
-        <button id="bg-change" class="bg-change">Bg Change</button>
+        <!-- <button id="bg-change" class="bg-change">Bg Change</button> -->
         
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.1.min.js"><\/script>')</script>

@@ -75,6 +75,8 @@ Stylesheet: Sass Variables
 ******************************************************************/
 /*----screen sizes----
 ----------------------*/
+/*----page-widths----
+----------------------*/
 /******************************************************************
 Site Name: GM
 Author: Jason Tordsen
@@ -580,29 +582,47 @@ img.c3xgm-about-section-icon {
 }
 
 /* line 95, ../sass/components/_layout.scss */
-.c3xgm-about-module-3quarter,
-.c3xgm-about-module-1quarter {
+.c3xgm-about-module-25,
+.c3xgm-about-module-40,
+.c3xgm-about-module-50,
+.c3xgm-about-module-60,
+.c3xgm-about-module-75 {
   position: relative;
   width: 100%;
   margin-top: 1em;
 }
 
 @media (min-width: 768px) {
-  /* line 102, ../sass/components/_layout.scss */
-  .c3xgm-about-module-1quarter {
+  /* line 106, ../sass/components/_layout.scss */
+  .c3xgm-about-module-25 {
     width: 25%;
     float: left;
   }
-}
 
-@media (min-width: 768px) {
-  /* line 105, ../sass/components/_layout.scss */
-  .c3xgm-about-module-3quarter {
+  /* line 107, ../sass/components/_layout.scss */
+  .c3xgm-about-module-40 {
+    width: 40%;
+    float: left;
+  }
+
+  /* line 108, ../sass/components/_layout.scss */
+  .c3xgm-about-module-50 {
+    width: 50%;
+    float: left;
+  }
+
+  /* line 109, ../sass/components/_layout.scss */
+  .c3xgm-about-module-75 {
     width: 75%;
     float: left;
   }
-}
 
+  /* line 110, ../sass/components/_layout.scss */
+  .c3xgm-about-module-60 {
+    width: 60%;
+    float: left;
+  }
+}
 /* line 3, ../sass/components/pages/_our-company.scss */
 .c3xgm-about-page-our-company .c3xgm-about-earn {
   margin-top: 0;
@@ -1788,22 +1808,10 @@ img.c3xgm-about-section-icon {
 
 /* line 2, ../sass/components/modules/_car.scss */
 .c3xgm-about-module-car {
-  margin-bottom: 5%;
+  max-width: 905px;
+  margin: 0 auto 5%;
 }
-/* line 4, ../sass/components/modules/_car.scss */
-.c3xgm-about-module-car .c3xgm-about-module-half {
-  position: relative;
-  width: 100%;
-  margin-top: 1em;
-}
-@media (min-width: 768px) {
-  /* line 4, ../sass/components/modules/_car.scss */
-  .c3xgm-about-module-car .c3xgm-about-module-half {
-    width: 50%;
-    float: left;
-  }
-}
-/* line 11, ../sass/components/modules/_car.scss */
+/* line 6, ../sass/components/modules/_car.scss */
 .c3xgm-about-module-car .c3xgm-about-module {
   position: absolute;
   visibility: hidden;
@@ -1812,42 +1820,42 @@ img.c3xgm-about-section-icon {
   border-top: 0.2rem solid #FDB12E;
 }
 @media (min-width: 768px) {
-  /* line 11, ../sass/components/modules/_car.scss */
+  /* line 6, ../sass/components/modules/_car.scss */
   .c3xgm-about-module-car .c3xgm-about-module {
     border-top: 0;
     padding-top: 0;
     border-left: 0.2rem solid #FDB12E;
   }
 }
-/* line 21, ../sass/components/modules/_car.scss */
+/* line 16, ../sass/components/modules/_car.scss */
 .c3xgm-about-module-car .c3xgm-about-module:first-child {
   visibility: visible;
   position: relative;
 }
-/* line 26, ../sass/components/modules/_car.scss */
+/* line 21, ../sass/components/modules/_car.scss */
 .c3xgm-about-module-car .c3xgm-about-module .c3xgm-about-p {
   padding: 0;
 }
-/* line 28, ../sass/components/modules/_car.scss */
+/* line 23, ../sass/components/modules/_car.scss */
 .c3xgm-about-module-car .c3xgm-about-module h3.c3xgm-about-h {
   font-size: 32px;
   font-size: 8.06vw;
   line-height: 1em;
 }
 @media (min-width: 905px) {
-  /* line 28, ../sass/components/modules/_car.scss */
+  /* line 23, ../sass/components/modules/_car.scss */
   .c3xgm-about-module-car .c3xgm-about-module h3.c3xgm-about-h {
     font-size: 73px;
     line-height: 70px;
   }
 }
-/* line 32, ../sass/components/modules/_car.scss */
+/* line 27, ../sass/components/modules/_car.scss */
 .c3xgm-about-module-car .c3xgm-about-module .c3xgm-about-link {
   display: block;
   margin-top: 1em;
   margin-bottom: 0.5em;
 }
-/* line 39, ../sass/components/modules/_car.scss */
+/* line 34, ../sass/components/modules/_car.scss */
 .c3xgm-about-module-car .c3xgm-about-module-car-logo-container li {
   display: block;
   float: left;
@@ -1855,25 +1863,25 @@ img.c3xgm-about-section-icon {
   margin-bottom: 1em;
   width: 33.3333334%;
 }
-/* line 43, ../sass/components/modules/_car.scss */
+/* line 38, ../sass/components/modules/_car.scss */
 .c3xgm-about-module-car .c3xgm-about-module-car-logo-container li:nth-of-type(3n+1) {
   clear: left;
 }
 @media (min-width: 768px) {
-  /* line 39, ../sass/components/modules/_car.scss */
+  /* line 34, ../sass/components/modules/_car.scss */
   .c3xgm-about-module-car .c3xgm-about-module-car-logo-container li {
     width: 50%;
   }
-  /* line 48, ../sass/components/modules/_car.scss */
+  /* line 43, ../sass/components/modules/_car.scss */
   .c3xgm-about-module-car .c3xgm-about-module-car-logo-container li:nth-of-type(3n+1) {
     clear: none;
   }
-  /* line 51, ../sass/components/modules/_car.scss */
+  /* line 46, ../sass/components/modules/_car.scss */
   .c3xgm-about-module-car .c3xgm-about-module-car-logo-container li:nth-of-type(odd) {
     clear: left;
   }
 }
-/* line 57, ../sass/components/modules/_car.scss */
+/* line 52, ../sass/components/modules/_car.scss */
 .c3xgm-about-module-car .c3xgm-about-module-car-logo-container li .c3xgm-about-module-car-logo img {
   width: 40%;
 }
