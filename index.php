@@ -49,7 +49,7 @@
                         pageHeader($page['title'], $page['icon@2x'], $page['tagline'], $page['image']);
 
                         // MODULES
-                        if($page['module']) {
+                        if( isset($page['module']) ) {
                             printModule($page['module']);
                         }
 
@@ -68,7 +68,7 @@
                                 subSectionHeader($section['title'], $section['tagline']);
 
                                  // MODULES
-                                if($section['module']) {
+                                if( isset($section['module']) ) {
                                     printModule($section['module']);
                                 }
 
@@ -126,14 +126,19 @@
                 });
 
                 // GET VIEWPORT
-                var fonts = [84.2, 55.27, 42.57, 25.66],
+                var fonts = [12.9088582992554, 4.03401830544375, 36.5199],
+                    // rat = 0.11046075,
+                    // ptRat = 1.5185;
                     rat = 0.11046075,
-                    ptRat = 1.5185;
+                    // ptRat = 1.70165975;
+                    // ptRat = 0.81252592;
+                    // ptRat = 0.48630705;
+                    ptRat = 1.144393834;
 
 
                 $.each(fonts, function(i) {
-                    console.log('This is px: '+ fonts[i] * ptRat* 0.81  + ', and px: ' + fonts[i]*ptRat * rat * 0.81 );
-                    // console.log('This is px: '+ fonts[i] + ', and vw: ' + fonts[i]*rat )
+                    // console.log('This is px: '+ fonts[i] * ptRat* 0.81  + ', and px: ' + fonts[i]*ptRat * rat * 0.81 );
+                    console.log('This is px: '+ fonts[i] * ptRat);
                 })
 
             });

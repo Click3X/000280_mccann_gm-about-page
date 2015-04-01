@@ -9,11 +9,8 @@ $pages = array(
 		"tagline"=>"is a global automotive company united by a single purpose:",		
 		"icon"=>"img/title-icons/our-company.png",
 		"icon@2x"=>"img/title-icons/our-company.svg",
-		// "image"=>"img/logos/general-motors.png",
-		// "image@2x"=>"img/logos/general-motors.svg",
 		"blocks"=>array(
 			array(
-				// "title"=>"To <strong>earn customers</strong> for <strong>life</strong>",
 				"tagline"=>"To <strong>earn customers</strong> for <strong>life</strong>",
 				"image"=>"",
 				"image@2x"=>"",
@@ -226,7 +223,7 @@ $pages = array(
 				"title"=>"Cadillac",
 				"image"=>"img/pages/brands/cadillac-logo.png",
 				"image@2x"=>"img/pages/brands/cadillac-logo.png",
-				"class"=>"cadillac",
+				"class"=>"cadillac-award",
 				"copy"=>array(
 					"c3xgm-about-dark-blue c3xgm-about-thin"=>"<strong>Cadillac</strong> was named",
 					"c3xgm-about-gray"=>"The fastest growing full-line luxury brand",
@@ -237,7 +234,7 @@ $pages = array(
 				"title"=>"Chevrolet",
 				"image"=>"img/pages/brands/chevy-logo.png",
 				"image@2x"=>"img/pages/brands/chevy-logo.png",
-				"class"=>"chevrolet",
+				"class"=>"chevrolet-award",
 				"copy"=>array(
 					"c3xgm-about-dark-blue c3xgm-about-thin"=>"<strong>Chevrolet</strong> won both",
 					"c3xgm-about-gray"=>"2014 car &amp; truck of the year"
@@ -333,43 +330,45 @@ $pages = array(
 				"tagline"=>"Historically, GM technology has always been on the forefront. We continue to excel in engine and drivetrain development, and strive to push exciting advancements in alternative energy and purposeful vehicle design.",
 				"module"=>array(
 					"name"=>"technology",
-					"background-image"=>"img/modules/technology/blue-car.png",
 					"blocks"=>array(
 						array(
 							"title"=>"4G LTE",
 							"class"=>"4g-lte",
-							"image"=>"img/modules/technology/4g-lte/4g-lte.png",
-							"image@2x"=>"img/modules/technology/4g-lte/4g-lte.png",
+							"icon"=>"img/modules/technology/4g-lte/4g-lte.png",
+							"icon@2x"=>"img/modules/technology/4g-lte/4g-lte.png",
+							"image"=>"img/modules/technology/blue-car.png",
+							"image@2x"=>"img/modules/technology/blue-car.png",
 							"copy"=>array(
-								"Offering",
-								"4G LTE Connectivity",
-								"On more vehicles than any other auto manufacturer combined"
+								"c3xgm-about-dark-blue c3xgm-about-thin"=>"Offering",
+								"c3xgm-about-light-blue"=>"4G LTE Connectivity",
+								"c3xgm-about-gray"=>"On more vehicles than any other <br>auto manufacturer combined"
 							)
-							// "marker"=>array(x,y)
 						),
 						array(
 							"title"=>"Concept Car",
 							"class"=>"concept-car",
-							"image"=>"img/modules/technology/bolt/bolt.png",
-							"image@2x"=>"img/modules/technology/bolt/bolt.png",
+							"icon"=>"img/modules/technology/bolt/bolt.png",
+							"icon@2x"=>"img/modules/technology/bolt/bolt.png",
+							"image"=>"img/modules/technology/blue-car.png",
+							"image@2x"=>"img/modules/technology/blue-car.png",
 							"copy"=>array(
-								"Creating the affordable electric",
-								"Chevrolet Bolt Concept Car",
-								"Capable of traveling over <strong>200 miles</strong> on a single charge"
+								"c3xgm-about-dark-blue c3xgm-about-thin"=>"Creating the affordable electric",
+								"c3xgm-about-light-blue"=>"Chevrolet Bolt <br>Concept Car",
+								"c3xgm-about-gray c3xgm-about-thin"=>"Capable of traveling over <br><strong>200 miles</strong> on a single charge"
 							)
-							// "marker"=>array(x,y)
 						),
 						array(
 							"title"=>"Safety",
 							"class"=>"safety",
-							"image"=>"img/modules/technology/safety/safety.png",
-							"image@2x"=>"img/modules/technology/safety/safety.png",
+							"icon"=>"img/modules/technology/safety/safety.png",
+							"icon@2x"=>"img/modules/technology/safety/safety.png",
+							"image"=>"img/modules/technology/blue-car.png",
+							"image@2x"=>"img/modules/technology/blue-car.png",
 							"copy"=>array(
-								"Enhancing",
-								"Driver Vision &amp; Safety",
-								"With a <strong>Patented streaming video rearview mirror</strong>"
+								"c3xgm-about-dark-blue c3xgm-about-thin"=>"Enhancing",
+								"c3xgm-about-light-blue"=>"Driver Vision &amp; Safety",
+								"c3xgm-about-gray c3xgm-about-thin"=>"With a <strong>Patented streaming video <br>rearview mirror</strong>"
 							)
-							// "marker"=>array(x,y)
 						)
 					)
 				)

@@ -107,48 +107,96 @@ function printModule($module) {
 	$module = $module;
 	$class = "";
 	$color = "";
+	$module_name = $module['name'];
 	
+	// CHECK MODULE NAME AND MAKE MODULE BASE CLASS
 	if( isset($module['name']) ) { 
 		$class = ' c3xgm-about-module-'.cleanString($module['name']); 
 		$color = ' c3xgm-about-light-blue';
 	}
+	// MODULE SECITON CONTAINER
 	echo '<div class="c3xgm-about-clearfix'.$class.'">';
 	
-
 	if( isset($module['blocks']) ) {
-		// LOGO HOLDER
-		echo '<div class="c3xgm-about-clearfix c3xgm-about-module-half">';
-			echo '<ul class="c3xgm-about-clearfix c3xgm-about-module-car-logo-container">';
-				foreach ($module['blocks'] as $key => $block) {
-					if( isset($block['logo']) ) {
-						$link = cleanString($block['title']);
-						echo '<li><a href="#c3xgm-about-'.$link.'" class="c3xgm-about-module-car-logo"><img src="'.$block['logo'].'"></a></li>';
-					}
-				}
-			echo '</ul>';
-		echo '</div>';
 
-		echo '<div class="c3xgm-about-clearfix c3xgm-about-module-half">';
+		// CARS MODULE
+		if($module_name == 'car') {
+			// LOGO HOLDER
+			echo '<div class="c3xgm-about-clearfix c3xgm-about-module-half">';
+				echo '<ul class="c3xgm-about-clearfix c3xgm-about-module-car-logo-container">';
+					foreach ($module['blocks'] as $key => $block) {
+						if( isset($block['logo']) ) {
+							$link = cleanString($block['title']);
+							echo '<li><a href="#c3xgm-about-'.$link.'" class="c3xgm-about-module-car-logo"><img src="'.$block['logo'].'"></a></li>';
+						}
+					}
+				echo '</ul>';
+			echo '</div>';
+
+			// OPEN DIV CONTAINER FOR CAR DESCRIPTIONS
+			echo '<div class="c3xgm-about-clearfix c3xgm-about-module-half">';
+		}
 
 	 	foreach ($module['blocks'] as $key => $block) {
 	 		$href = cleanString($block['title']);
-	 		echo '<div id="c3xgm-about-'.$href.'" class="c3xgm-about-clearfix c3xgm-about-module-container">';
+	 		echo '<div id="c3xgm-about-'.$href.'" class="c3xgm-about-clearfix c3xgm-about-module-container c3xgm-about-'.$href.'">';
 	 			// helper($block);
-	 			if(isset( $block['title']) ) { echo '<h3 class="c3xgm-about-h'.$color.'">'.$block['title'].'</h3>'; }
-	 			if(isset( $block['copy']) ) { echo '<p class="c3xgm-about-p">'.$block['copy'].'</p>'; }
-	 			if(isset( $block['link']) ) { echo '<a class="c3xgm-about-link" href="'.$block['link'].'">Learn more at chevrolet.com</a>'; }
-	 			if(isset( $block['image']) ) {
-	 				echo '<div class="c3xgm-about-clearfix c3xgm-about-block-image">';
-	 					echo '<img src="'.$block['image'].'">';
+	 			// PRINT TITLE IF NOT TECH MODULE
+	 			if( (isset( $block['title']) ) && ($module_name != 'technology') ){ echo '<h3 class="c3xgm-about-h'.$color.'">'.$block['title'].'</h3>'; }
+	 			// COPY
+	 			if(isset( $block['copy']) ) { 
+	 				if( is_array($block['copy']) ) {
+						$class="";
+						// CHECK FOR MULTI-LINE COPY
+						echo '<p class="c3xgm-about-blockquote">';
+						foreach ($block['copy'] as $key => $line) {
+							if( isAssoc($block['copy']) ) { $class = $key; }
+							// IF VALUE IS A NUMBER, FORMAT IT
+							if( is_numeric($line) ) { $line = number_format($line); }
+							// PRINT LINE
+							echo '<span class="'.$class.'">'.$line.'</span>';
+						}
+						echo '</p>';
+					} else {
+						echo '<p class="c3xgm-about-p">'.$block['copy'].'</p>';	
+					}
+	 			}
+
+	 			// LINK
+	 			// if(isset( $block['link']) ) { echo '<a class="c3xgm-about-link" href="'.$block['link'].'">Learn more at chevrolet.com</a>'; }
+	 			if( (isset($block['link']) )  && ($block['link'] != "") ) { echo '<a class="c3xgm-about-link" href="'.$block['link'].'">Learn more at chevrolet.com</a>'; }
+	 			
+	 			// ICON
+	 			if( (isset($block['icon']) )  && ($block['icon'] != "") ) {
+	 				echo '<div class="c3xgm-about-clearfix c3xgm-about-block-icon">';
+	 					echo '<img src="'.$block['icon'].'">';
 	 				echo '</div>';
 	 			}
+
+	 			// IMAGE
+	 			if($module_name == 'car') {
+		 			if( (isset($block['image']) )  && ($block['image'] != "") ) {
+		 				echo '<div class="c3xgm-about-clearfix c3xgm-about-block-image">';
+		 					echo '<img src="'.$block['image'].'">';
+		 				echo '</div>';
+		 			}
+		 		} elseif ($module_name == 'technology') {
+		 			echo '<div class="c3xgm-about-clearfix c3xgm-about-block-image">';
+		 				echo '<img src="'.$block['image'].'">';
+		 			echo '</div>';
+		 		}
+
+	 			
 
 	 		echo '</div>'; // END MODULE BLOCK
 	 	}
 
-	 	echo '</div>';
+	 	// CLOSE OUT HALF DIV IF CAR MODULE
+	 	if($module_name == 'car') { echo '</div>'; }
+
 	}
 	echo '</div>'; // END MODULE
+
 }
 
 ?>
