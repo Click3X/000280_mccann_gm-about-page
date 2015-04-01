@@ -18,6 +18,11 @@ $gm-gray: #808285;
 $gm-dark-gray: #555555;
 $gm-black: #464B51;
 
+$gm-nav-bullet: transparent;
+$gm-nav-bullet-border: #F0B41C;
+$gm-nav-bullet-active: #FFDD17;
+
+
 
 /*----screen sizes----
 ----------------------*/
@@ -35,11 +40,12 @@ $mobile-height:480px;
 
 // FONT RATIOS
 // VW
-$pxvw: 0.11046075;
-$ptpx: 1.5185;
+// $pxvw: 0.11046075;
+// $ptpx: 1.5185;
+
+
 
 /*----page-widths----
 ----------------------*/
-
 $inner-border: 905px;
 $outer-border: 1175px;

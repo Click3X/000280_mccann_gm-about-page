@@ -5,7 +5,6 @@
 // PAGE CONTAINER
 .c3xgm-about-page-container {
 	width:100%;
-	// max-width:905px;
 	margin:0 auto;
 	position: relative;
 	// PADDING FOR GM - MENU
@@ -15,8 +14,7 @@
 // INDIVIDUAL PAGE-SECTION HODLER
 .c3xgm-about-page {
 	// width:100%;
-	width:96%;
-	max-width:905px;
+	width:96%; max-width:905px;
 	margin:0 auto;
 	position: relative;
 }
@@ -43,10 +41,7 @@
 		margin-top: 12px; margin-left:4px;
 		display: block; float: left; clear: left;
 
-		@media(min-width:$tablet-height ){ 
-			height: 2px; 
-			margin-top: 18px;
-		}
+		@media(min-width:$tablet-height ){ height: 2px; margin-top: 18px; }
 	}
 }
 
@@ -59,10 +54,8 @@ img.c3xgm-about-section-icon{
 
 	@media(min-width: 404px) {
 		width: 10%; height:10%;
-		margin: -1% 2.333333% 0 0;
-		padding-left:.888888%;
+		margin: -1% 2.333333% 0 0; padding-left:.888888%;
 	}
-
 	// padding-left: 6px; 
 	// margin: -10px 6px 0 0;
 	@media( min-width:905px ){ 
@@ -84,12 +77,6 @@ img.c3xgm-about-section-icon{
 
 .clear-left,
 .c3xgm-clear-left { clear:left; }
-
-
-// STRONG TAGS IN BLOCKQUOTE
-.c3xgm-about-blockquote {
-	strong { font-weight: 700; }
-}
 
 // MODULE SIZES
 .c3xgm-about-module-25,

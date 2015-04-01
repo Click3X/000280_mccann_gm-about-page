@@ -159,7 +159,11 @@ function printModule($module) {
 
 	 	foreach ($module['blocks'] as $key => $block) {
 	 		$href = cleanString($block['title']);
-	 		echo '<div id="c3xgm-about-'.$href.'" class="c3xgm-about-clearfix c3xgm-about-module c3xgm-about-'.$href.'">';
+	 		
+	 		// SHOW FIRST CAR MODULE ON LIST - HIDE THE REST
+	 		if($key == 0 ) {$hide_show = "show-module";} else {$hide_show = "hide-module";}
+
+	 		echo '<div id="c3xgm-about-'.$href.'" class="c3xgm-about-clearfix c3xgm-about-module c3xgm-about-'.$href.' '.$hide_show.'">';
 	 			// PRINT TITLE IF NOT TECH MODULE
 	 			if( (isset( $block['title']) ) && ($module_name != 'technology') ){ echo '<h3 class="c3xgm-about-h'.$color.'">'.$block['title'].'</h3>'; }
 	 			// COPY
@@ -213,7 +217,20 @@ function printModule($module) {
 	 	echo '</div>'; // END MODULE CONTAINER
 
 	 	// CLOSE OUT HALF DIV IF CAR MODULE
-	 	if($module_name == 'car' || $module_name == 'foundation') { echo '</div>'; }
+	 	if($module_name == 'car' || $module_name == 'foundation') { 
+	 		echo '</div>'; 
+	 	} elseif($module_name == 'technology') {
+	 		// PRINT NAV BULLETS 
+	 		echo '<ul class="c3xgm-about-clearfix c3xgm-about-module-nav">';
+	 			foreach ($module['blocks'] as $key => $block) {
+	 				$href = cleanString($block['title']);
+	 				// FIRST NAV BULLET IS ACTIVE BY DEFAULT
+	 				if($key == 0) { $active_state = 'c3xgm-about-module-nav-bullet c3xgm-about-module-nav-bullet-active'; } else { $active_state = 'c3xgm-about-module-nav-bullet';}
+	 				echo '<li><a href="#c3xgm-about-'.$href.'" class="'.$active_state.'"></a></li>';
+	 			}
+	 		echo '</ul>';
+
+	 	}
 	}
 	echo '</div>'; // END MODULE
 }

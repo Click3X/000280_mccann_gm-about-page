@@ -106,8 +106,12 @@
 
         <!--
         <script src="js/ios-orient-fix.js"></script>
+        <script src="js/font-changer.js"></script>
         -->
         <script src="js/plugins/jquery.outlineButton.js"></script>
+        
+        
+        <script src="js/modules/all-modules.js"></script>
 
         <script>
             jQuery(document).ready(function($) {
@@ -124,22 +128,6 @@
                 $('#bg-change').click(function(){
                     $(".temp").toggleClass('hidden');
                 });
-
-                // GET VIEWPORT
-                var fonts = [12.9088582992554, 4.03401830544375, 36.5199],
-                    // rat = 0.11046075,
-                    // ptRat = 1.5185;
-                    rat = 0.11046075,
-                    // ptRat = 1.70165975;
-                    // ptRat = 0.81252592;
-                    // ptRat = 0.48630705;
-                    ptRat = 1.144393834;
-
-
-                $.each(fonts, function(i) {
-                    // console.log('This is px: '+ fonts[i] * ptRat* 0.81  + ', and px: ' + fonts[i]*ptRat * rat * 0.81 );
-                    console.log('This is px: '+ fonts[i] * ptRat);
-                })
 
             });
         </script>

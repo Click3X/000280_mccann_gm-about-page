@@ -30,11 +30,11 @@ p.c3xgm-about-p {
 
 p.c3xgm-about-p.c3xgm-about-blockquote { max-width: none; }
 
+.c3xgm-about-block { font-family: "open-sans-condensed", arial, sans-serif; }
+
 h1.c3xgm-about-h{
 	font-size: 32px; font-size: 8.06vw; line-height:1em;
-	// @media( min-width: 404px) { font-size:32px; font-size: 8.06vw;}
-	@media( min-width:905px ){ 
-		font-size: 73px; line-height: 70px; }
+	@media( min-width:905px ){ font-size: 73px; line-height: 70px; }
 }
 
 h2.c3xgm-about-h{
@@ -56,63 +56,40 @@ h4.c3xgm-about-h{
 
 .c3xgm-about-link {
 	font-family: "open-sans-condensed", arial, sans-serif; color:$gm-light-blue;
-	text-transform: uppercase;
-	text-decoration: none;
+	text-transform: uppercase; text-decoration: none;
 	font-weight: 600;
-	&:hover, &:focus, &:active {
-		text-decoration: none;
-		outline: none;
-	}
+	&:hover, &:focus, &:active { text-decoration: none; outline: none; }
 }
 
 // SPANS AND STRONGS
 .c3xgm-about-thin,
 .c3xgm-about-blockquote .c3xgm-about-thin span { font-weight: 200 !important; }
 
-.c3xgm-about-block { font-family: "open-sans-condensed", arial, sans-serif; }
-
 .c3xgm-about-blockquote {
 	text-transform: uppercase; 
 	margin: 9px 0 9px 0;
+	
 	@include clearfix;
+	
 	span { 
 		display: block; font-weight: 600;
 		font-family: "open-sans-condensed", arial, sans-serif;
-		font-size: 4.528923vw;
-		line-height:1em; 
-		
+		font-size: 4.528923vw; line-height:1em; 
 		@media( min-width:$tablet-height ){ font-size:41px; }
 	}
+	strong { font-weight: 700; }
 }
-
-
 
 // COLORS
-.c3xgm-about-light-blue { 
-	color:$gm-light-blue !important;
- }
-.c3xgm-about-blue { 
-	color:$gm-blue !important;
- }
-.c3xgm-about-dark-blue{ 
-	color:$gm-dark-blue !important;
- }
-.c3xgm-about-yellow{ 
-	color:$gm-yellow !important;
- }
-.c3xgm-about-light-gray{ 
-	color:$gm-light-gray !important;
- }
-.c3xgm-about-gray{ 
-	color:$gm-gray !important;
- }
-.c3xgm-about-dark-gray{ 
-	color:$gm-dark-gray !important;
- }
+.c3xgm-about-light-blue { color:$gm-light-blue !important; }
+.c3xgm-about-blue { color:$gm-blue !important; }
+.c3xgm-about-dark-blue{ color:$gm-dark-blue !important; }
+.c3xgm-about-yellow{ color:$gm-yellow !important; }
+.c3xgm-about-light-gray{ color:$gm-light-gray !important; }
+.c3xgm-about-gray{ color:$gm-gray !important; }
+.c3xgm-about-dark-gray{ color:$gm-dark-gray !important; }
 
-
+// TEXT ALIGN
 .text-right,
 .text-right .c3xgm-about-blockquote,
-.c3xgm-about-text-right {
-	text-align: right;
-}
+.c3xgm-about-text-right { text-align: right; }

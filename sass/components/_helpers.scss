@@ -64,9 +64,15 @@ Stylesheet: Helpers
 }
 
 
-// HELPER CLASSES
+// HELPER CLASSES 
+// TEMP TEMPLATE IMAGES
+// CAN DELETE FOR PRODUCTOIN
 .bg-change {
     position: fixed; bottom: 80px; right:80px;
     z-index: 100;
     width: 80px; height: 20px;
 }
+
+// MODULE HELPERS
+.show-module {visibility: visible;}
+.hide-module { visibility: hidden; position: absolute;}

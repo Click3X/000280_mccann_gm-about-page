@@ -3,17 +3,16 @@
 	max-width: $inner-border;
 	margin:0 auto 5%;
 
-	.c3xgm-about-module {
-		// TEDMP CODE TO BE DELETED
-		position: absolute; visibility: hidden;
-		&:first-child { visibility: visible; position: relative; }
-		// END TEMP CODE
-
-		padding:1em 0 0 1em; border-top:0.2rem solid $gm-yellow;
+	.c3xgm-about-module-container {
+		padding:1em 0 0 2.5em; border-top:0.2rem solid $gm-yellow;
 		@media(min-width:$tablet-height) {
 			border-top:0; padding-top:0; border-left:0.2rem solid $gm-yellow;
+			// padding-bottom: 100%;
+			// > div { position: absolute;}
 		}
+	}
 
+	.c3xgm-about-module {
 		.c3xgm-about-p { padding:0; max-width: 26em; }
 
 		h3.c3xgm-about-h{
@@ -40,5 +39,4 @@
 			}
 		}
 	}
-	
 }

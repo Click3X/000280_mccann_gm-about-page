@@ -3,30 +3,24 @@
 	margin-bottom: 5%; margin-top:5%;
 
 	.c3xgm-about-module-container {
-  		// padding-bottom: 41.5%; 
   		border-top:0.2rem solid $gm-yellow;
   		@media(min-width:768px) {
-  			padding-bottom: 41.5%; 
-			border-top:0; padding-top:0; border-left:0.2rem solid $gm-yellow;
+  			padding-bottom: 41.5%; padding-top:0; 
+  			border-top:0;  border-left:0.2rem solid $gm-yellow;
 		}
 	}
 	
-	
 	.c3xgm-about-module {
-		// DELETE WHEN IN PRODUCTION
-		position: absolute; visibility: hidden;
-
-		padding-left: 1em; padding-top:1em; 
+		padding-left: 1em; padding-top:1em;
 		@media(min-width:768px) {
-			padding-left: 4em;
-			border-top:0; padding-top:0;
+			padding-left: 4em; padding-top:0; 
+			border-top:0;
 		}
 
-		// TEMP CODE
-		// DELETE WHEN IN PRODUCTION
-		&:first-child {  visibility: visible; position: relative; }
-
-		.c3xgm-about-p { padding:0; margin-top:1.5em; max-width: 22em; }
+		.c3xgm-about-p { 
+			padding:0; 
+			margin-top:1.5em; max-width: 22em; 
+		}
 
 		h3.c3xgm-about-h{
 			font-size: 32px; font-size: 8.06vw; line-height:1em;
@@ -50,5 +44,4 @@
 			}
 		}
 	}
-	
 }
