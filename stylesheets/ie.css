@@ -3,3 +3,11 @@
  * <!--[if IE]>
  *   <link href="/stylesheets/ie.css" media="screen, projection" rel="stylesheet" type="text/css" />
  * <![endif]--> */
+/* line 17, ../sass/ie.scss */
+.lt-ie9 .c3xgm-about-page-our-people .c3xgm-about-block.c3xgm-about-clearfix.c3xgm-about-languages,
+.lt-ie9 .c3xgm-about-page-our-people .c3xgm-about-block.c3xgm-about-clearfix.c3xgm-about-headquarters,
+.lt-ie9 .c3xgm-about-page-our-people .c3xgm-about-block.c3xgm-about-clearfix.c3xgm-about-timezones,
+.lt-ie9 .c3xgm-about-page-our-people .c3xgm-about-block.c3xgm-about-clearfix.c3xgm-about-continents {
+  width: 49%;
+  float: left;
+}
