@@ -315,39 +315,49 @@ p.c3xgm-about-p.c3xgm-about-blockquote {
 }
 
 /* line 33, ../sass/components/_typography.scss */
+.c3xgm-about-vehicle-copy {
+  font-family: "open-sans-condensed", arial, sans-serif;
+  color: #464B51;
+  margin: 0;
+  padding: 0;
+  text-transform: uppercase;
+  color: #464B51;
+}
+
+/* line 40, ../sass/components/_typography.scss */
 .c3xgm-about-block {
   font-family: "open-sans-condensed", arial, sans-serif;
 }
 
-/* line 35, ../sass/components/_typography.scss */
+/* line 42, ../sass/components/_typography.scss */
 h1.c3xgm-about-h {
   font-size: 32px;
   font-size: 8.06vw;
   line-height: 1em;
 }
 @media (min-width: 905px) {
-  /* line 35, ../sass/components/_typography.scss */
+  /* line 42, ../sass/components/_typography.scss */
   h1.c3xgm-about-h {
     font-size: 73px;
     line-height: 70px;
   }
 }
 
-/* line 40, ../sass/components/_typography.scss */
+/* line 47, ../sass/components/_typography.scss */
 h2.c3xgm-about-h {
   font-size: 18px;
   line-height: 1em;
   color: #124e9c;
 }
 @media (min-width: 768px) {
-  /* line 40, ../sass/components/_typography.scss */
+  /* line 47, ../sass/components/_typography.scss */
   h2.c3xgm-about-h {
     font-size: 52px;
     line-height: 74px;
   }
 }
 
-/* line 45, ../sass/components/_typography.scss */
+/* line 52, ../sass/components/_typography.scss */
 h3.c3xgm-about-h {
   font-size: 18px;
   line-height: 1em;
@@ -355,13 +365,13 @@ h3.c3xgm-about-h {
   margin: 2px 0;
 }
 @media (min-width: 768px) {
-  /* line 45, ../sass/components/_typography.scss */
+  /* line 52, ../sass/components/_typography.scss */
   h3.c3xgm-about-h {
     font-size: 24px;
   }
 }
 
-/* line 52, ../sass/components/_typography.scss */
+/* line 59, ../sass/components/_typography.scss */
 h4.c3xgm-about-h {
   font-size: 19px;
   line-height: 23px;
@@ -369,7 +379,7 @@ h4.c3xgm-about-h {
   margin: 4px 0;
 }
 
-/* line 57, ../sass/components/_typography.scss */
+/* line 64, ../sass/components/_typography.scss */
 .c3xgm-about-link {
   font-family: "open-sans-condensed", arial, sans-serif;
   color: #6086C4;
@@ -377,19 +387,19 @@ h4.c3xgm-about-h {
   text-decoration: none;
   font-weight: 600;
 }
-/* line 61, ../sass/components/_typography.scss */
+/* line 68, ../sass/components/_typography.scss */
 .c3xgm-about-link:hover, .c3xgm-about-link:focus, .c3xgm-about-link:active {
   text-decoration: none;
   outline: none;
 }
 
-/* line 65, ../sass/components/_typography.scss */
+/* line 72, ../sass/components/_typography.scss */
 .c3xgm-about-thin,
 .c3xgm-about-blockquote .c3xgm-about-thin span {
   font-weight: 200 !important;
 }
 
-/* line 68, ../sass/components/_typography.scss */
+/* line 75, ../sass/components/_typography.scss */
 .c3xgm-about-blockquote {
   text-transform: uppercase;
   margin: 9px 0 9px 0;
@@ -404,7 +414,7 @@ h4.c3xgm-about-h {
 .c3xgm-about-blockquote:after {
   clear: both;
 }
-/* line 74, ../sass/components/_typography.scss */
+/* line 81, ../sass/components/_typography.scss */
 .c3xgm-about-blockquote span {
   display: block;
   font-weight: 600;
@@ -413,52 +423,52 @@ h4.c3xgm-about-h {
   line-height: 1em;
 }
 @media (min-width: 768px) {
-  /* line 74, ../sass/components/_typography.scss */
+  /* line 81, ../sass/components/_typography.scss */
   .c3xgm-about-blockquote span {
     font-size: 41px;
   }
 }
-/* line 80, ../sass/components/_typography.scss */
+/* line 87, ../sass/components/_typography.scss */
 .c3xgm-about-blockquote strong {
   font-weight: 700;
 }
 
-/* line 84, ../sass/components/_typography.scss */
+/* line 91, ../sass/components/_typography.scss */
 .c3xgm-about-light-blue {
   color: #6086C4 !important;
 }
 
-/* line 85, ../sass/components/_typography.scss */
+/* line 92, ../sass/components/_typography.scss */
 .c3xgm-about-blue {
   color: #5e85c4 !important;
 }
 
-/* line 86, ../sass/components/_typography.scss */
+/* line 93, ../sass/components/_typography.scss */
 .c3xgm-about-dark-blue {
   color: #124e9c !important;
 }
 
-/* line 87, ../sass/components/_typography.scss */
+/* line 94, ../sass/components/_typography.scss */
 .c3xgm-about-yellow {
   color: #FDB12E !important;
 }
 
-/* line 88, ../sass/components/_typography.scss */
+/* line 95, ../sass/components/_typography.scss */
 .c3xgm-about-light-gray {
   color: #7E8184 !important;
 }
 
-/* line 89, ../sass/components/_typography.scss */
+/* line 96, ../sass/components/_typography.scss */
 .c3xgm-about-gray {
   color: #808285 !important;
 }
 
-/* line 90, ../sass/components/_typography.scss */
+/* line 97, ../sass/components/_typography.scss */
 .c3xgm-about-dark-gray {
   color: #555555 !important;
 }
 
-/* line 93, ../sass/components/_typography.scss */
+/* line 100, ../sass/components/_typography.scss */
 .text-right,
 .text-right .c3xgm-about-blockquote,
 .c3xgm-about-text-right {
@@ -561,37 +571,37 @@ img.c3xgm-about-section-icon {
   }
 }
 
-/* line 67, ../sass/components/_layout.scss */
+/* line 66, ../sass/components/_layout.scss */
 .c3xgm-about-subsection {
   padding-left: 2px;
 }
 
-/* line 69, ../sass/components/_layout.scss */
+/* line 68, ../sass/components/_layout.scss */
 .c3xgm-about-header-image,
 .c3xgm-about-block-image,
 .c3xgm-about-block-icon {
   width: 100%;
   height: 100%;
 }
-/* line 73, ../sass/components/_layout.scss */
+/* line 72, ../sass/components/_layout.scss */
 .c3xgm-about-header-image img,
 .c3xgm-about-block-image img,
 .c3xgm-about-block-icon img {
   width: 100%;
 }
 
-/* line 76, ../sass/components/_layout.scss */
+/* line 75, ../sass/components/_layout.scss */
 .c3xgm-about-block {
   margin-bottom: 2em;
 }
 
-/* line 78, ../sass/components/_layout.scss */
+/* line 77, ../sass/components/_layout.scss */
 .clear-left,
 .c3xgm-clear-left {
   clear: left;
 }
 
-/* line 82, ../sass/components/_layout.scss */
+/* line 81, ../sass/components/_layout.scss */
 .c3xgm-about-module-25,
 .c3xgm-about-module-40,
 .c3xgm-about-module-50,
@@ -603,36 +613,41 @@ img.c3xgm-about-section-icon {
 }
 
 @media (min-width: 768px) {
-  /* line 93, ../sass/components/_layout.scss */
+  /* line 92, ../sass/components/_layout.scss */
   .c3xgm-about-module-25 {
     width: 25%;
     float: left;
   }
 
-  /* line 94, ../sass/components/_layout.scss */
+  /* line 93, ../sass/components/_layout.scss */
   .c3xgm-about-module-40 {
     width: 40%;
     float: left;
   }
 
-  /* line 95, ../sass/components/_layout.scss */
+  /* line 94, ../sass/components/_layout.scss */
   .c3xgm-about-module-50 {
     width: 50%;
     float: left;
   }
 
-  /* line 96, ../sass/components/_layout.scss */
+  /* line 95, ../sass/components/_layout.scss */
   .c3xgm-about-module-75 {
     width: 75%;
     float: left;
   }
 
-  /* line 97, ../sass/components/_layout.scss */
+  /* line 96, ../sass/components/_layout.scss */
   .c3xgm-about-module-60 {
     width: 60%;
     float: left;
   }
 }
+/* line 100, ../sass/components/_layout.scss */
+svg {
+  max-height: 100%;
+}
+
 /* line 3, ../sass/components/pages/_our-company.scss */
 .c3xgm-about-page-our-company .c3xgm-about-earn {
   margin-top: 0;
@@ -1858,7 +1873,21 @@ img.c3xgm-about-section-icon {
   margin-top: 1em;
   margin-bottom: 0.5em;
 }
+/* line 24, ../sass/components/modules/_car.scss */
+.c3xgm-about-module-car .c3xgm-about-module .c3xgm-about-block-image {
+  text-align: center;
+}
 /* line 26, ../sass/components/modules/_car.scss */
+.c3xgm-about-module-car .c3xgm-about-module .c3xgm-about-block-image img {
+  width: 74%;
+}
+/* line 29, ../sass/components/modules/_car.scss */
+.c3xgm-about-module-car .c3xgm-about-module .c3xgm-about-vehicle-copy {
+  display: block;
+  width: 74%;
+  margin: 1em auto 0;
+}
+/* line 33, ../sass/components/modules/_car.scss */
 .c3xgm-about-module-car .c3xgm-about-module-car-logo-container li {
   display: block;
   float: left;
@@ -1866,25 +1895,25 @@ img.c3xgm-about-section-icon {
   margin-bottom: 1em;
   width: 33.3333334%;
 }
-/* line 30, ../sass/components/modules/_car.scss */
+/* line 37, ../sass/components/modules/_car.scss */
 .c3xgm-about-module-car .c3xgm-about-module-car-logo-container li:nth-of-type(3n+1) {
   clear: left;
 }
 @media (min-width: 768px) {
-  /* line 26, ../sass/components/modules/_car.scss */
+  /* line 33, ../sass/components/modules/_car.scss */
   .c3xgm-about-module-car .c3xgm-about-module-car-logo-container li {
     width: 50%;
   }
-  /* line 33, ../sass/components/modules/_car.scss */
+  /* line 40, ../sass/components/modules/_car.scss */
   .c3xgm-about-module-car .c3xgm-about-module-car-logo-container li:nth-of-type(3n+1) {
     clear: none;
   }
-  /* line 34, ../sass/components/modules/_car.scss */
+  /* line 41, ../sass/components/modules/_car.scss */
   .c3xgm-about-module-car .c3xgm-about-module-car-logo-container li:nth-of-type(odd) {
     clear: left;
   }
 }
-/* line 38, ../sass/components/modules/_car.scss */
+/* line 45, ../sass/components/modules/_car.scss */
 .c3xgm-about-module-car .c3xgm-about-module-car-logo-container li .c3xgm-about-module-car-logo img {
   width: 40%;
 }

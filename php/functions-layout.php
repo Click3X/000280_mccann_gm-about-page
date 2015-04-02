@@ -126,8 +126,9 @@ function printModule($module) {
 				echo '<ul class="c3xgm-about-clearfix c3xgm-about-module-car-logo-container">';
 					foreach ($module['blocks'] as $key => $block) {
 						if( isset($block['logo']) ) {
+							if(isset($block['logo@2x'])) { $rel = 'rel="'.$block['logo@2x'].'"'; } else { $rel = ''; }
 							$link = cleanString($block['title']);
-							echo '<li><a href="#c3xgm-about-'.$link.'" class="c3xgm-about-module-car-logo"><img src="'.$block['logo'].'" alt="'.$block['title'].'"></a></li>';
+							echo '<li><a href="#c3xgm-about-'.$link.'" class="c3xgm-about-module-car-logo"><img src="'.$block['logo'].'" alt="'.$block['title'].'" '.$rel.'></a></li>';
 						}
 					}
 				echo '</ul>';
@@ -203,11 +204,18 @@ function printModule($module) {
 	 			// IMAGE
 	 			if($module_name == 'car') {
 		 			if( (isset($block['image']) )  && ($block['image'] != "") ) {
+		 				// BUILD REL ATTRIBUTE FOR RETINA DISPLAYS
+		 				if(isset($block['image@2x'])) { $rel = 'rel="'.$block['image@2x'].'"'; } else { $rel = ''; }
+
 		 				echo '<div class="c3xgm-about-clearfix c3xgm-about-block-image">';
-		 					echo '<img src="'.$block['image'].'" alt="'.$block['title'].'">';
+		 					echo '<img src="'.$block['image'].'" alt="'.$block['title'].'" '.$rel.'>';
 		 				echo '</div>';
 		 			}
+		 			if( isset($block['vehicle-copy']) ) {
+		 				echo '<span class="c3xgm-about-vehicle-copy">'.$block['vehicle-copy'].'</span>';
+		 			}
 		 		} elseif ($module_name == 'technology') {
+		 			// TECHNOLOGY
 		 			echo '<div class="c3xgm-about-clearfix c3xgm-about-block-image">';
 		 				echo '<img src="'.$block['image'].'" alt="'.$block['title'].'">';
 		 			echo '</div>';

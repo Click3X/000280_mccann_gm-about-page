@@ -104,10 +104,15 @@
         </script>
         <![endif]--> 
 
+
+
+
         <!--
         <script src="js/ios-orient-fix.js"></script>
         <script src="js/font-changer.js"></script>
         -->
+
+
         <script src="js/plugins/jquery.outlineButton.js"></script>
         
         
@@ -124,7 +129,27 @@
                 } else {
                     console.log('svg BABY!');
                 }
+
+                // CHECK FOR RETINA 
+                if (window.devicePixelRatio >= 2) {
+                    // retina display
+                    console.log('We have Retina!');
+                    $('img[rel]').each(function(index,element) {
+                        var file_name_array = element.src.split("."),
+                            file_extension = file_name_array[file_name_array.length - 1],
+                            file_name = element.src.substr(0, element.src.lastIndexOf('.'));
+
+                        file_name = file_name + '@2x.' + file_extension;
+                        element.src = file_name;
+                    });
+                } else {
+                    // standard display
+                    console.log('Standard Display');
+                }
+
+
                 // TEMPORARY BG-IMG TOGGLE HIDE
+                // DELETE BEFORE PRODUCTION
                 $('#bg-change').click(function(){
                     $(".temp").toggleClass('hidden');
                 });

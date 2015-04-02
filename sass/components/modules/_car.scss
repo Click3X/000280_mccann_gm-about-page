@@ -20,6 +20,13 @@
 			@media( min-width:$inner-border ){ font-size: 73px; line-height: 70px; }
 		}
 		.c3xgm-about-link { display: block; margin-top:1em; margin-bottom: 0.5em; }
+
+		.c3xgm-about-block-image {
+			text-align: center;
+			img { width: 74%;}
+		}
+
+		.c3xgm-about-vehicle-copy { display: block; width: 74%; margin: 1em auto 0; }
 	}
 
 	.c3xgm-about-module-car-logo-container {
