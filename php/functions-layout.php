@@ -41,15 +41,32 @@ function subSectionHeader($title, $copy) {
 }
 
 
+// DECORATIVE
+function printDecorative($block) {
+	$block = $block;
+	if($block['class']) { $class = " c3xgm-about-".$block['class']; } 
+		else { $class = ""; }
+
+	echo '<div class="c3xgm-about-block c3xgm-about-decorative c3xgm-about-clearfix'.$class.'">';
+			if( isset($block['assets']) ) {
+				foreach ($block['assets'] as $key => $asset) {
+					// helper($asset);
+					$class = cleanString($key);
+					if( isset($asset['image@2x']) ) { $rel = 'rel="'.$asset['image@2x'].'"'; } else { $rel = ''; }
+					echo '<div class="c3xgm-about-'.$class.'">';
+						echo '<img src="'.$asset['image'].'" '.$rel.'>';
+					echo '</div>';
+				}
+			}
+	echo '</div>';
+}
+
+
 // BLOCK
 function printBlock($block) {
 	$block = $block;
-
-	if($block['class']) {
-		$class = " c3xgm-about-".$block['class']; 
-	} else { 
-		$class = "";
-	}
+	if($block['class']) { $class = " c3xgm-about-".$block['class']; } 
+		else { $class = ""; }
 
 	echo '<div class="c3xgm-about-block c3xgm-about-clearfix'.$class.'">';
 		

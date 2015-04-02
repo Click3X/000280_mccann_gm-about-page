@@ -7,8 +7,17 @@
 	width:100%;
 	margin:0 auto;
 	position: relative;
-	// PADDING FOR GM - MENU
-	padding-top:35px;
+}
+
+// TEMP MENU
+.c3xgm-about-temp-menu {
+	padding-bottom:33px; width:100%; max-width:905px; 
+	clear: both;
+	background-image:url('../img/decorative/temp-menu.jpg');
+	background-repeat: no-repeat;
+	background-size: contain;
+	background-position: 0 50%;
+	margin:0 auto;
 }
 
 // INDIVIDUAL PAGE-SECTION HODLER
@@ -98,3 +107,9 @@ img.c3xgm-about-section-icon{
 
 // FIX SVG INCORRECT HEIGHT BUG
 svg { max-height: 100%; }
+
+// DECORATIVES
+.c3xgm-about-page-our-brands .c3xgm-about-block.c3xgm-about-decorative {
+	position: relative; width:100%; max-width: none;
+	margin-bottom:0;
+}

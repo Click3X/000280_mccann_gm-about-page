@@ -27,6 +27,11 @@
 
     </head>
     <body>
+        <!-- TEMP MENU FOR DISPLAY PUPOSES
+        DELETE AFTER PRODUCTION -->
+        <div class="c3xgm-about-temp-menu"></div>
+
+        <!-- MAIN PAGE CONTAINER -->
         <div id="c3xgm-about-page-container" class="c3xgm-about-page-container c3xgm-about-clearfix">
 
             <!-- TEMPLATE FOR CODING -->
@@ -56,7 +61,13 @@
                         // BLOCKS
                         if( isset($page['blocks']) ) {
                             foreach ($page['blocks'] as $key => $block) {
-                                printBlock($block);
+                                if( isset($block['type']) && ($block['type'] == "decorative") ) {
+                                    // DECORATIVE
+                                    printDecorative($block);
+
+                                } else {
+                                    printBlock($block);
+                                }
                             }
                         }
 
@@ -75,7 +86,15 @@
                                 // SECTION BLOCKS
                                 if( isset($section['blocks']) ) {
                                     foreach ($section['blocks'] as $key => $block) {
-                                        printBlock($block);
+                                        
+                                        if( isset($block['type']) && ($block['type'] == "decorative") ) {
+                                        
+                                            // DECORATIVE
+                                            printDecorative($block);
+
+                                        } else {
+                                            printBlock($block);
+                                        }
                                     }
                                 }
                             }

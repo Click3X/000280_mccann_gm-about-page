@@ -195,6 +195,21 @@ $pages = array(
 		),
 		"blocks"=>array(
 			array(
+				"title"=>"Red Car Road",
+				"type"=>"decorative",
+				"class"=>"red-car-road",
+				"assets"=>array(
+					"red-car" =>array(
+						"image"=>"img/decorative/cars/red-car.png",
+						"image@2x"=>"img/decorative/cars/red-car@2x.png"
+					)
+					// "road" =>array(
+					// 	"image"=>"img/decorative/landscape/road.png",
+					// 	"image@2x"=>"img/decorative/landscape/road.svg"
+					// )
+				)
+			),
+			array(
 				"title"=>"Global",
 				"image"=>"img/pages/brands/world.png",
 				"image@2x"=>"img/pages/brands/world.svg",
@@ -223,6 +238,21 @@ $pages = array(
 					"c3xgm-about-dark-blue c3xgm-about-thin"=>"There are over <strong>20,000</strong><br><span>Dealers in</span>",
 					"c3xgm-about-light-blue number"=>140,
 					"c3xgm-about-gray"=>"Countries"
+				)
+			),
+			array(
+				"title"=>"Flag Line",
+				"type"=>"decorative",
+				"class"=>"flag-line",
+				"assets"=>array(
+					"grey-car" =>array(
+						"image"=>"img/decorative/cars/grey-side.png",
+						"image@2x"=>"img/decorative/cars/grey-side@2x.png"
+					),
+					"flag-line" =>array(
+						"image"=>"img/decorative/landscape/flag-line.png",
+						"image@2x"=>"img/decorative/landscape/flag-line.svg"
+					)
 				)
 			),
 			array(
@@ -293,6 +323,25 @@ $pages = array(
 							"c3xgm-about-dark-blue c3xgm-about-thin"=>"The first North American <br>auto manufacturer",
 							"c3xgm-about-gray"=>"to build a",
 							"c3xgm-about-light-blue c3xgm-about-yellow-bar-left-wrapper"=>"Rollover <br>Test Facility"
+						)
+					),
+					array(
+						"title"=>"Five Stars",
+						"type"=>"decorative",
+						"class"=>"five-stars",
+						"assets"=>array(
+							"grey-top" =>array(
+								"image"=>"img/decorative/cars/grey-top.png",
+								"image@2x"=>"img/decorative/cars/grey-top@2x.png"
+							),
+							"checker" =>array(
+								"image"=>"img/decorative/landscape/checker.png",
+								"image@2x"=>"img/decorative/landscape/checker.svg"
+							),
+							"stars" =>array(
+								"image"=>"img/decorative/landscape/stars.png",
+								"image@2x"=>"img/decorative/landscape/stars.svg"
+							)
 						)
 					),
 					array(
@@ -405,6 +454,29 @@ $pages = array(
 							"c3xgm-about-light-blue"=>"clean-energy",
 							"c3xgm-about-light-blue c3xgm-about-thin"=>"patents",
 							"c3xgm-about-gray"=>"Than anybody else for <br>more than a decade"
+						)
+					),
+					array(
+						"title"=>"Solar Panels",
+						"type"=>"decorative",
+						"class"=>"solar-panels",
+						"assets"=>array(
+							"grey-side" =>array(
+								"image"=>"img/decorative/cars/grey-side.png",
+								"image@2x"=>"img/decorative/cars/grey-side@2x.png"
+							),
+							"tree" =>array(
+								"image"=>"img/decorative/landscape/tree.jpg",
+								"image@2x"=>"img/decorative/landscape/tree@2x.jpg"
+							),
+							"solar-panels" =>array(
+								"image"=>"img/decorative/landscape/solar-panels.png",
+								"image@2x"=>"img/decorative/landscape/solar-panels.png"
+							),
+							"sun" =>array(
+								"image"=>"img/decorative/landscape/sun.png",
+								"image@2x"=>"img/decorative/landscape/sun.svg"
+							)
 						)
 					),
 					array(
