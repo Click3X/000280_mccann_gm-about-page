@@ -2,13 +2,25 @@
 .c3xgm-about-module-technology {
 	margin-bottom: 5%;
 
-	.c3xgm-about-module-container {margin: 3em auto;}
+	.c3xgm-about-module-container {
+		margin: 3em auto;
+		padding-bottom: 70%;
+		@media(min-width: $tablet-height) { padding-bottom: 533px; }
+		
+		> .c3xgm-about-module {
+			position: absolute;
+			width: 100%;
+		}
+	}
 	.c3xgm-about-blockquote { float:right; }	
 	.c3xgm-about-block-icon { 
 		float: left; text-align: center; 
 		img {width: 80%;}
 	}
-	.c3xgm-about-block-image {width: 100%; clear: both;}
+	.c3xgm-about-block-image {
+		width: 100%; clear: both;
+		img { max-width: 612px; }
+	}
 
 	// 4G-LTE
 	.c3xgm-about-4g-lte {
@@ -23,12 +35,12 @@
 			.c3xgm-about-dark-blue.c3xgm-about-thin,
 			.c3xgm-about-light-blue {
 				font-size:14.772817841647605px; font-size:4.616505674992956vw;
-				@media(min-width:905px) {font-size:41.7931483782966px; }
+				@media(min-width:$inner-border) {font-size:41.7931483782966px; }
 			}
 
 			.c3xgm-about-gray {
 				font-size:6.277668798378911px; font-size:1.961771541766349vw; line-height: 1.075em;
-				@media(min-width:905px) {font-size:17.759884835295px; }
+				@media(min-width:$inner-border) {font-size:17.759884835295px; }
 			}
 
 			.c3xgm-about-light-blue { margin: .05em 0; }

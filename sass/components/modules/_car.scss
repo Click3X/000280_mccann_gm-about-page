@@ -5,10 +5,14 @@
 
 	.c3xgm-about-module-container {
 		padding:1em 0 0 2.5em; border-top:0.2rem solid $gm-yellow;
+
 		@media(min-width:$tablet-height) {
 			border-top:0; padding-top:0; border-left:0.2rem solid $gm-yellow;
-			// padding-bottom: 100%;
-			// > div { position: absolute;}
+			padding-bottom: 480px;		
+			> .c3xgm-about-module {
+				position: absolute;
+				width: 100%;
+			}
 		}
 	}
 
@@ -23,7 +27,13 @@
 
 		.c3xgm-about-block-image {
 			text-align: center;
-			img { width: 74%;}
+			height: 0; 
+			// padding-bottom: 50%;
+			position: relative;
+			img { 
+				width: 74%; 
+				// position: absolute; right:0; left:0; margin:auto;
+			}
 		}
 
 		.c3xgm-about-vehicle-copy { display: block; width: 74%; margin: 1em auto 0; }

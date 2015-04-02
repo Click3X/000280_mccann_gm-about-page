@@ -354,8 +354,8 @@ $pages = array(
 							"class"=>"4g-lte",
 							"icon"=>"img/modules/technology/4g-lte/4g-lte.png",
 							"icon@2x"=>"img/modules/technology/4g-lte/4g-lte.png",
-							"image"=>"img/modules/technology/blue-car.png",
-							"image@2x"=>"img/modules/technology/blue-car.png",
+							"image"=>"img/modules/technology/4g-lte/4g-lte-car.jpg",
+							"image@2x"=>"img/modules/technology/4g-lte/4g-lte-car@2x.jpg",
 							"copy"=>array(
 								"c3xgm-about-dark-blue c3xgm-about-thin"=>"Offering",
 								"c3xgm-about-light-blue"=>"4G LTE Connectivity",
@@ -367,8 +367,8 @@ $pages = array(
 							"class"=>"concept-car",
 							"icon"=>"img/modules/technology/bolt/bolt.png",
 							"icon@2x"=>"img/modules/technology/bolt/bolt.png",
-							"image"=>"img/modules/technology/blue-car.png",
-							"image@2x"=>"img/modules/technology/blue-car.png",
+							"image"=>"img/modules/technology/bolt/bolt.jpg",
+							"image@2x"=>"img/modules/technology/bolt/bolt@2x.jpg",
 							"copy"=>array(
 								"c3xgm-about-dark-blue c3xgm-about-thin"=>"Creating the affordable electric",
 								"c3xgm-about-light-blue"=>"Chevrolet Bolt <br>Concept Car",
@@ -380,8 +380,8 @@ $pages = array(
 							"class"=>"safety",
 							"icon"=>"img/modules/technology/safety/safety.png",
 							"icon@2x"=>"img/modules/technology/safety/safety.png",
-							"image"=>"img/modules/technology/blue-car.png",
-							"image@2x"=>"img/modules/technology/blue-car.png",
+							"image"=>"img/modules/technology/4g-lte/4g-lte-car.jpg",
+							"image@2x"=>"img/modules/technology/4g-lte/4g-lte-car@2x.jpg",
 							"copy"=>array(
 								"c3xgm-about-dark-blue c3xgm-about-thin"=>"Enhancing",
 								"c3xgm-about-light-blue"=>"Driver Vision &amp; Safety",
@@ -453,30 +453,35 @@ $pages = array(
 							"title"=>"GM Foundation",
 							"class"=>"gm-foundation",
 							"logo"=>"img/modules/foundation/gm-foundation.jpg",
+							"logo@2x"=>"img/modules/foundation/gm-foundation@2x.jpg",
 							"copy"=>"GM Foundation provided grants totaling &dollar;2.875 million to support 29 leading universities and organizations in 201 grants totaling nearly &dollar;45.6 million over the last decade."
 						),
 						array(
 							"title"=>"Buick Achievers Scholarship Program",
 							"class"=>"buick-achievers",
 							"logo"=>"img/modules/foundation/buick-achievers.jpg",
+							"logo@2x"=>"img/modules/foundation/buick-achievers@2x.jpg",
 							"copy"=>"Buick Achievers Scholarship Program annually awards scholarships up to $25,000 to students pursuing STEM majors and other fields related to the auto industry."
 						),
 						array(
 							"title"=>"Safe Kids USA",
 							"class"=>"safe-kids-usa",
 							"logo"=>"img/modules/foundation/safe-kids.png",
+							"logo@2x"=>"img/modules/foundation/safe-kids@2x.png",
 							"copy"=>"For nearly two decades, General Motors and the GM Foundation have partnered with Safe Kids to promote child passenger safety."
 						),
 						array(
 							"title"=>"Habitat for Humanity",
 							"class"=>"habitat-humanity",
 							"logo"=>"img/modules/foundation/habitat.jpg",
+							"logo@2x"=>"img/modules/foundation/habitat@2x.jpg",
 							"copy"=>"The GM Foundation is committed to helping Habitat for Humanity partner families find homes and supporting United States military veterans through programs designed to move their lives forward."
 						),
 						array(
 							"title"=>"United Way",
 							"class"=>"united-way",
 							"logo"=>"img/modules/foundation/united-way.jpg",
+							"logo@2x"=>"img/modules/foundation/united-way@2x.jpg",
 							"copy"=>"In 2011, the GM Foundation pledged &dollar;27.1 million to United Way of Southeastern Michigan to increase graduation rates from 50 to 80 percent by 2015."
 						)
 					)
