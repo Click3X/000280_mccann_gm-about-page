@@ -23,7 +23,8 @@
 // INDIVIDUAL PAGE-SECTION HODLER
 .c3xgm-about-page {
 	// width:100%;
-	width:96%; max-width:905px;
+	// width:96%; 
+	// max-width:905px;
 	margin:0 auto;
 	position: relative;
 }
@@ -46,30 +47,44 @@
 
 	hr {
 		background: $gm-gray; border: none;
-		width: 86.25%; height: 1px;
+		// width: 86.25%; 
+		width: 100%; 
+		height: 1px;
 		margin-top: 12px; margin-left:4px;
 		display: block; float: left; clear: left;
-
-		@media(min-width:$tablet-height ){ height: 2px; margin-top: 18px; }
+		// @media(min-width:401px) { width: 86.25%; }
+		@media(min-width:$tablet-height ){ width: 86.25%; height: 2px; margin-top: 18px; }
 	}
 }
 
 // TITLE ICON
 img.c3xgm-about-section-icon{
-	float: left;
-	// width: 50px; height: 50px;
-	width: 10%; height:10%;
-	margin: -10px 6px 0 0; padding-left:8px;
-
-	@media(min-width: 404px) {
-		width: 10%; height:10%;
-		margin: -1% 2.333333% 0 0; padding-left:.888888%;
-	}
 	
-	@media( min-width:905px ){ 
+	width: 10%; height:10%;
+	margin: -10px 6px 0 0; 
+	// padding-left:8px;
+	display: block;
+	float: none;
+	margin: 0 auto;
+
+	  width: 92px; height: 92px;
+
+
+	// @media(min-width: 404px) {
+	// @media(min-width: 401px) {
+	@media(min-width:$tablet-height ){ 
+		// width: 10%; height:10%;
+		// margin: -1% 2.333333% 0 0; padding-left:.888888%;
+		float: left;
+		// padding-left:8px;
 		width: 90px; height: 90px;
 		margin: -10px 21px 0 0; padding-left:8px;
 	}
+	
+	// @media( min-width:905px ){ 
+	// 	width: 90px; height: 90px;
+	// 	margin: -10px 21px 0 0; padding-left:8px;
+	// }
 }
 
 .c3xgm-about-subsection { padding-left:2px; }
@@ -88,21 +103,25 @@ img.c3xgm-about-section-icon{
 
 // MODULE SIZES
 .c3xgm-about-module-25,
+.c3xgm-about-module-35,
 .c3xgm-about-module-40,
 .c3xgm-about-module-50,
 .c3xgm-about-module-60,
+.c3xgm-about-module-65,
 .c3xgm-about-module-75 {
 	position: relative;
 	width: 100%;
 	margin-top:1em;
 }
 
-@media(min-width:768px) {
+@media(min-width:$tablet-height) {
 	.c3xgm-about-module-25 { width:25%; float:left; }	
+	.c3xgm-about-module-35 { width:35%; float:left; }	
 	.c3xgm-about-module-40 { width:40%; float:left;}
 	.c3xgm-about-module-50 { width:50%; float:left }
-	.c3xgm-about-module-75 { width:75%; float:left; }
 	.c3xgm-about-module-60 { width:60%; float:left;}
+	.c3xgm-about-module-65 { width:65%; float:left; }	
+	.c3xgm-about-module-75 { width:75%; float:left; }
 }
 
 // FIX SVG INCORRECT HEIGHT BUG
@@ -113,3 +132,43 @@ svg { max-height: 100%; }
 	position: relative; width:100%; max-width: none;
 	margin-bottom:0;
 }
+
+.c3xgm-about-module-technology,
+.c3xgm-about-module-foundation {
+	position: relative;
+}
+
+.c3xgm-about-module-technology,
+.c3xgm-about-module-foundation,
+.c3xgm-about-subsection,
+.c3xgm-about-section,
+.c3xgm-about-block {  
+	max-width: $inner-border; 
+	margin:0 auto 4%; 
+	@media(min-width: $inner-border) {
+		margin:0 auto 50px; 
+	}
+}
+
+.c3xgm-about-block.c3xgm-about-decorative {
+	width: 100%; max-width: none; margin-left: auto; margin-right:auto;
+}
+
+.c3xgm-about-module-technology,
+.c3xgm-about-subsection,
+.c3xgm-about-module-foundation,
+.c3xgm-about-block,
+.c3xgm-about-module-car,
+.c3xgm-about-section {
+	width: 77%;
+	@media(min-width:$tablet-height ){
+		width:96%;
+	}
+}
+
+.c3xgm-about-block.c3xgm-about-decorative {
+	@media(min-width:$tablet-height ){
+		width:100%;
+	}
+}
+

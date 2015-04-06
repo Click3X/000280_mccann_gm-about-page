@@ -9,6 +9,8 @@ jQuery(document).ready(function($) {
 	carLinks.on('click touchstart', function(e) {
 		e.preventDefault();
 		var target = $(this).attr('href');
+		$('.c3xgm-about-module-car .active').removeClass('active');
+		$(this).addClass('active');
 
 		$('.c3xgm-about-module-car .show-module').removeClass('show-module').addClass('hide-module');
 		$(target).removeClass('hide-module').addClass('show-module');
@@ -19,6 +21,8 @@ jQuery(document).ready(function($) {
 	foundationLinks.on('click touchstart', function(e) {
 		e.preventDefault();
 		var target = $(this).attr('href');
+		$('.c3xgm-about-module-foundation .active').removeClass('active');
+		$(this).addClass('active');
 
 		$('.c3xgm-about-module-foundation .show-module').removeClass('show-module').addClass('hide-module');
 		$(target).removeClass('hide-module').addClass('show-module');

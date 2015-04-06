@@ -2,25 +2,52 @@
 .c3xgm-about-module-car {
 	max-width: $inner-border;
 	margin:0 auto 5%;
+	@media(min-width:$tablet-height) { 
+		margin-bottom: 65px;
+	}
+
+	.c3xgm-about-module-40 {
+		margin-top:0;
+		@media(min-width:$tablet-height) { margin-top:1em; }
+	}
+
+	.c3xgm-about-module-car-logo-container {
+		min-width:none; width: 100%;
+		margin:0 auto;
+	}
 
 	.c3xgm-about-module-container {
-		// padding:1em 0 100% 2.5em; 
 		padding:1em 0 100%; 
 		border-top:0.2rem solid $gm-yellow; 
 		height: 0;
 
 		@media(min-width:$tablet-height) {
 			border-top:0; padding-top:0; border-left:0.2rem solid $gm-yellow;
-			padding-bottom: 480px;		
+			// padding-bottom: 480px;		
 			> .c3xgm-about-module {
 				position: absolute;
 				width: 100%;
+				left:0;
 			}
 		}
 	}
 
 	.c3xgm-about-module {
-		.c3xgm-about-p { padding:0; max-width: 26em; }
+		.c3xgm-about-block-image,
+		.c3xgm-about-block-image img,
+		.c3xgm-about-vehicle-copy,
+		.c3xgm-about-link,
+		.c3xgm-about-h,
+		.c3xgm-about-p { 
+			margin: 9px auto; padding: 0 2% 0 7px;
+			@media(min-width:$tablet-height) { width: 88.69731800766284%; max-width:463px; }
+		}
+
+		.c3xgm-about-vehicle-copy { 
+			display: block; 
+			margin: 1em auto 0; 
+		}
+
 
 		h3.c3xgm-about-h{
 			font-size: 32px; font-size: 8.06vw; line-height:1em;
@@ -31,21 +58,21 @@
 		.c3xgm-about-block-image {
 			text-align: center;
 			height: 0; 
-			// padding-bottom: 50%;
 			position: relative;
+			margin-top:2em;
+			max-width: 77%;
 			img { 
-				width: 74%; 
-				// position: absolute; right:0; left:0; margin:auto;
+				display: block;
+				margin:0 auto;
+				max-width: 77%;
 			}
 		}
-
-		.c3xgm-about-vehicle-copy { display: block; width: 74%; margin: 1em auto 0; }
 	}
 
 	.c3xgm-about-module-car-logo-container {
 		li {
 			display: block; float: left; text-align: center;
-			margin-bottom:1em;
+			margin:.5em auto;
 			width:33.3333334%;
 			&:nth-of-type(3n+1) { clear: left; }
 			@media(min-width:$tablet-height) {
@@ -55,8 +82,42 @@
 			}
 			
 			.c3xgm-about-module-car-logo {
-				img { width:40%; }
+				line-height: 44px;
+				// opacity:0.5;
+
+				// @include prefix(transition, opacity 90ms);
+
+				// &.active {
+				// 	opacity: 1;
+				// 	@include prefix(transition, opacity 120ms);
+				// }
+				img { 
+					width:40%; 
+					vertical-align: middle;
+				}
+				@media(min-width:$tablet-height) { 
+					line-height: 60px; 
+					text-align: left;
+  					display: block;
+  					img {  
+  						width:60%;
+  						padding-left: 7px;
+  					}
+				}
 			}
 		}
 	}
+
+
+	// CARS
+	.c3xgm-about-chevrolet .c3xgm-about-block-image { padding-bottom:37.56906077348066%; }
+	.c3xgm-about-buick .c3xgm-about-block-image { padding-bottom:39.95584988962472%; }
+	.c3xgm-about-gmc .c3xgm-about-block-image { padding-bottom:34.65783664459161%; }
+	.c3xgm-about-opel .c3xgm-about-block-image { padding-bottom:42.721854304635764%; }
+	.c3xgm-about-cadillac .c3xgm-about-block-image { padding-bottom:27.593818984547464%; }
+	.c3xgm-about-vauxhall .c3xgm-about-block-image { padding-bottom:42.60485651214128%; }
+	
+	
+	
+
 }

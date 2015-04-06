@@ -3,6 +3,9 @@
 	
 	.c3xgm-about-block.c3xgm-about-decorative.c3xgm-about-flag-line {
 		margin-bottom: 7.5%;
+		@media(min-width: $inner-border) {
+			margin-bottom: 90px;
+		}
 
 		.c3xgm-about-grey-car {
 			position: absolute;

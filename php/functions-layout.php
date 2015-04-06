@@ -69,6 +69,14 @@ function printBlock($block) {
 		else { $class = ""; }
 
 	echo '<div class="c3xgm-about-block c3xgm-about-clearfix'.$class.'">';
+
+		// IMAGE
+		if( isset($block['image@2x']) ) { 
+			if( isset($block['image']) && ($block['image'] != "") ) { 
+				$size = getimagesize($block['image']); 
+				echo '<div class="c3xgm-about-block-image"><img src="'.$block['image@2x'].'" alt="'.$block['title'].'"></div>';
+			}
+		}
 		
 		// TAGLINE
 		if( isset($block['tagline']) ) {
@@ -106,13 +114,13 @@ function printBlock($block) {
 			}
 		}
 
-		// IMAGE
-		if( isset($block['image@2x']) ) { 
-			if( isset($block['image']) && ($block['image'] != "") ) { 
-				$size = getimagesize($block['image']); 
-				echo '<div class="c3xgm-about-block-image"><img src="'.$block['image@2x'].'" alt="'.$block['title'].'"></div>';
-			}
-		}
+		// // IMAGE
+		// if( isset($block['image@2x']) ) { 
+		// 	if( isset($block['image']) && ($block['image'] != "") ) { 
+		// 		$size = getimagesize($block['image']); 
+		// 		echo '<div class="c3xgm-about-block-image"><img src="'.$block['image@2x'].'" alt="'.$block['title'].'"></div>';
+		// 	}
+		// }
 	echo '</div>';
 }
 
@@ -139,20 +147,23 @@ function printModule($module) {
 		// CARS MODULE
 		if($module_name == 'car') {
 			// LOGO HOLDER
-			echo '<div class="c3xgm-about-clearfix c3xgm-about-module-40">';
+			// echo '<div class="c3xgm-about-clearfix c3xgm-about-module-40">';
+			echo '<div class="c3xgm-about-clearfix c3xgm-about-module-35">';
 				echo '<ul class="c3xgm-about-clearfix c3xgm-about-module-car-logo-container">';
 					foreach ($module['blocks'] as $key => $block) {
+						if($key == 0) { $active = " active"; } else { $active = ""; }
 						if( isset($block['logo']) ) {
 							if(isset($block['logo@2x'])) { $rel = 'rel="'.$block['logo@2x'].'"'; } else { $rel = ''; }
 							$link = cleanString($block['title']);
-							echo '<li><a href="#c3xgm-about-'.$link.'" class="c3xgm-about-module-car-logo"><img src="'.$block['logo'].'" alt="'.$block['title'].'" '.$rel.'></a></li>';
+							echo '<li><a href="#c3xgm-about-'.$link.'" class="c3xgm-about-module-car-logo'.$active.'"><img src="'.$block['logo'].'" alt="'.$block['title'].'" '.$rel.'></a></li>';
 						}
 					}
 				echo '</ul>';
 			echo '</div>';
 
 			// OPEN DIV CONTAINER FOR CAR DESCRIPTIONS
-			echo '<div class="c3xgm-about-clearfix c3xgm-about-module-60">';
+			// echo '<div class="c3xgm-about-clearfix c3xgm-about-module-60">';
+			echo '<div class="c3xgm-about-clearfix c3xgm-about-module-65">';
 		
 		} elseif($module_name == 'foundation') {
 
@@ -160,9 +171,10 @@ function printModule($module) {
 			echo '<div class="c3xgm-about-clearfix c3xgm-about-module-25">';
 				echo '<ul class="c3xgm-about-clearfix c3xgm-about-module-foundation-logo-container">';
 					foreach ($module['blocks'] as $key => $block) {
+						if($key == 0) { $active = " active"; } else { $active = ""; }
 						if( isset($block['logo']) ) {
 							$link = cleanString($block['title']);
-							echo '<li><a href="#c3xgm-about-'.$link.'" class="c3xgm-about-module-foundation-logo"><img src="'.$block['logo'].'" alt="'.$block['title'].'"></a></li>';
+							echo '<li><a href="#c3xgm-about-'.$link.'" class="c3xgm-about-module-foundation-logo'.$active.'"><img src="'.$block['logo'].'" alt="'.$block['title'].'"></a></li>';
 						}
 					}
 				echo '</ul>';

@@ -11,3 +11,18 @@
   width: 49%;
   float: left;
 }
+/* line 26, ../sass/ie.scss */
+.lt-ie9 .c3xgm-about-module-car .c3xgm-about-module-car-logo-container li {
+  width: 49%;
+  float: left;
+}
+/* line 30, ../sass/ie.scss */
+.lt-ie9 .c3xgm-about-module-25 {
+  width: 24%;
+  float: left;
+}
+/* line 33, ../sass/ie.scss */
+.lt-ie9 .c3xgm-about-module-75 {
+  width: 74%;
+  float: left;
+}

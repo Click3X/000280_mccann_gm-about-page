@@ -31,15 +31,14 @@ TO BE DELETED AFTER DEVELOPMENT
 }
 
 .our-brands-temp {
-	left: -114px;
-	// top: 1847px;
- top: 227px;
+  left: -166px;
+  top: -035px;
   width: 1348px;
   height: 3816px;
 	background-image:url('../templates/brands.png');
 	opacity:0.5;
 
-	display: none;
+	// display: none;
 }
 
 
@@ -59,3 +58,20 @@ TO BE DELETED AFTER DEVELOPMENT
 
 }
 
+
+
+.our-brands-temp-mobile {
+	// left: -114px;
+	// top: 1847px;
+ // top: 227px;
+ //  width: 1348px;
+ //  height: 3816px;
+	background-image:url('../templates/mobile-our-brands.jpg');
+	opacity:0.5;
+	width:100%; max-width:400px;
+	height: 3641px;
+	top:-19px;
+	display:block;
+	visibility: visible;
+	bottom:auto;
+}

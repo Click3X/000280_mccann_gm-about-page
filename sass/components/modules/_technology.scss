@@ -71,16 +71,16 @@
 		.c3xgm-about-blockquote {
 			.c3xgm-about-dark-blue.c3xgm-about-thin {
 				font-size:10.488781965752128px; font-size:3.277744434927524vw;
-				@media(min-width:905px) {font-size:29.673365345808px; }
+				@media(min-width:$inner-border) {font-size:29.673365345808px; }
 			}
 			.c3xgm-about-light-blue {
 				margin: .05em 0; 
 				font-size: 21.966484586296367px; font-size:6.864526581136835vw; line-height: 0.9em;
-				@media(min-width:905px) {font-size:62.144443904024996px; }
+				@media(min-width:$inner-border) {font-size:62.144443904024996px; }
 			}
 			.c3xgm-about-gray {
 				font-size:12.9088582992554px; font-size:4.03401830544375vw;   line-height: 1.075em;
-				@media(min-width:905px) {font-size:36.5199px; }
+				@media(min-width:$inner-border) {font-size:36.5199px; }
 			}
 		}
 	}

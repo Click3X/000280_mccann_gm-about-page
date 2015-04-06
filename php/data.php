@@ -86,7 +86,7 @@ $pages = array(
 	array(
 		"type"=>"page",
 		"title"=>"Our Brands",
-		"tagline"=>"From electric mini-cars to heavy-duty full-size trucks, GM provides a complete range of vehicles that meets the needs and expectations of drivers on a truly global scale. There are 9 distinctive automotive brands under the GM corporate umbrella: Chevrolet, Buick, GMC, Cadillac, Opel, Vauxhall, Holden, Baojun and Wuling.",
+		"tagline"=>"From electric mini-cars to heavy-duty full-size trucks, General Motors provides a complete range of vehicles that meets the needs and expectations of drivers on a truly global scale. There are 9 distinctive automotive brands under the GM corporate umbrella: Chevrolet, Buick, GMC, Cadillac, Opel, Vauxhall, Holden, Baojun and Wuling.",
 		"icon"=>"img/title-icons/our-brands.png",
 		"icon@2x"=>"img/title-icons/our-brands.svg",
 		"module"=>array(

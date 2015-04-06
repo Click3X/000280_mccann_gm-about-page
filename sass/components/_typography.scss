@@ -8,7 +8,7 @@ h1,h2,h3,h4,h5,h6{
 	font-weight: 600; letter-spacing: .01em; text-transform: uppercase;
 
 	&.c3xgm-about-h{
-		font-family: "open-sans-condensed", arial, sans-serif; color:$gm-black;
+		font-family: "open-sans-condensed", 'Arial Narrow', Arial, sans-serif; color:$gm-black;
 		margin:0; padding:0;
 
 		span.c3xgm-about-blue{ color: $gm-blue; }
@@ -20,7 +20,7 @@ h1,h2,h3,h4,h5,h6{
 p.c3xgm-about-p {
 	@include clearfix;
 	font-size:14px; line-height:1.613em; letter-spacing: 0.01em;
-	font-family: "open-sans", arial, sans-serif; color: $gm-black;
+	font-family: "open-sans", 'Arial Narrow', Arial, sans-serif; color: $gm-black;
 	max-width: 39em;
 	margin:9px 0 9px 0; padding:0 2% 0 7px;
 
@@ -31,17 +31,24 @@ p.c3xgm-about-p {
 p.c3xgm-about-p.c3xgm-about-blockquote { max-width: none; }
 
 .c3xgm-about-vehicle-copy {
-	font-family: "open-sans-condensed", arial, sans-serif; color:$gm-black;
+	font-family: "open-sans-condensed", 'Arial Narrow', Arial, sans-serif; color:$gm-black;
 	margin:0; padding:0;
 	text-transform: uppercase;
 	color:$gm-black;
 }
 
-.c3xgm-about-block { font-family: "open-sans-condensed", arial, sans-serif; }
+.c3xgm-about-block { font-family: "open-sans-condensed", 'Arial Narrow', Arial, sans-serif; }
 
 h1.c3xgm-about-h{
-	font-size: 32px; font-size: 8.06vw; line-height:1em;
-	@media( min-width:905px ){ font-size: 73px; line-height: 70px; }
+	text-align:center;
+	 font-size: 43px; font-size: 11.3vw;
+	line-height:1em;
+	@media(min-width:$tablet-height ){ 
+		text-align: left;
+		font-size:8.06vw;
+		font-size: 73px; line-height: 70px; 
+	}
+
 }
 
 h2.c3xgm-about-h{
@@ -62,7 +69,7 @@ h4.c3xgm-about-h{
 }
 
 .c3xgm-about-link {
-	font-family: "open-sans-condensed", arial, sans-serif; color:$gm-light-blue;
+	font-family: "open-sans-condensed", 'Arial Narrow', Arial, sans-serif; color:$gm-light-blue;
 	text-transform: uppercase; text-decoration: none;
 	font-weight: 600;
 	&:hover, &:focus, &:active { text-decoration: none; outline: none; }
@@ -80,7 +87,7 @@ h4.c3xgm-about-h{
 	
 	span { 
 		display: block; font-weight: 600;
-		font-family: "open-sans-condensed", arial, sans-serif;
+		font-family: "open-sans-condensed", 'Arial Narrow', Arial, sans-serif;
 		font-size: 4.528923vw; line-height:1em; 
 		@media( min-width:$tablet-height ){ font-size:41px; }
 	}
@@ -100,3 +107,19 @@ h4.c3xgm-about-h{
 .text-right,
 .text-right .c3xgm-about-blockquote,
 .c3xgm-about-text-right { text-align: right; }
+
+
+// RESPONSIVE STYLES FOR SECTION HEADERS
+.c3xgm-about-section-header,
+p.c3xgm-about-p.c3xgm-about-header-p {
+	max-width: 77%;
+	margin:0 auto; padding: 0 2% 0 7px;
+	@media( min-width:$tablet-height ){ 
+		max-width:768px;
+		margin: 9px 0 9px 0;
+	}
+}
+
+.c3xgm-about-section-header {
+	@media( min-width:$tablet-height ){ padding:0; }
+}

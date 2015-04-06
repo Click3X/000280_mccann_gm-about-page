@@ -33,4 +33,9 @@ function isAssoc($arr) {
     return array_keys($arr) !== range(0, count($arr) - 1);
 }
 
+// CLASS PREFIX	
+function classPrefix($class) {
+	return ".c3xgm-about-".$class;
+}
+
 ?>

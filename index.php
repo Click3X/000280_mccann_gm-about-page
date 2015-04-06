@@ -37,81 +37,87 @@
             <!-- TEMPLATE FOR CODING -->
             <!-- <div id="our-comp-temp" class="temp our-comp-temp hidden"></div> -->
             <!-- <div id="our-peop-temp" class="temp our-peop-temp hidden"></div>
-            <div id="our-brands-temp" class="temp our-brands-temp hidden"></div>
+            
             <div id="our-commitment-temp" class="temp our-commitment-temp hidden"></div> -->
+
+            <div id="our-brands-temp-mobile" class="temp our-brands-temp-mobile hidden"></div>
+            <!-- <div id="our-brands-temp" class="temp our-brands-temp hidden"></div> -->
 
             <?php 
                 // ITERATE THROUGH PAGEES ARRAY
                 foreach ($pages as $key => $page) {
-                    echo '<div class="c3xgm-about-page c3xgm-about-clearfix c3xgm-about-page-'.cleanString($page['title']).'">';
-                        // helper($page);
-                        
-                        // PAGE HEADER
-                        if(isset($page['tagline'])) { $page['tagline'] = $page['tagline']; } else { $page['tagline'] = "";}
-                        if(isset($page['icon@2x'])) { $page['icon@2x'] = $page['icon@2x']; } else { $page['icon@2x'] = "";}
-                        if(isset($page['image'])) { $page['image'] = $page['image']; } else { $page['image'] = "";}
+                    if($page['title'] == "Our Brands" || $page['title'] == "Our Commitment") {
 
-                        pageHeader($page['title'], $page['icon@2x'], $page['tagline'], $page['image']);
+                        echo '<div class="c3xgm-about-page c3xgm-about-clearfix c3xgm-about-page-'.cleanString($page['title']).'">';
+                            // helper($page);
+                            
+                            // PAGE HEADER
+                            if(isset($page['tagline'])) { $page['tagline'] = $page['tagline']; } else { $page['tagline'] = "";}
+                            if(isset($page['icon@2x'])) { $page['icon@2x'] = $page['icon@2x']; } else { $page['icon@2x'] = "";}
+                            if(isset($page['image'])) { $page['image'] = $page['image']; } else { $page['image'] = "";}
 
-                        // MODULES
-                        if( isset($page['module']) ) {
-                            printModule($page['module']);
-                        }
+                            pageHeader($page['title'], $page['icon@2x'], $page['tagline'], $page['image']);
 
-                        // BLOCKS
-                        if( isset($page['blocks']) ) {
-                            foreach ($page['blocks'] as $key => $block) {
-                                if( isset($block['type']) && ($block['type'] == "decorative") ) {
-                                    // DECORATIVE
-                                    printDecorative($block);
+                            // MODULES
+                            if( isset($page['module']) ) {
+                                printModule($page['module']);
+                            }
 
-                                } else {
-                                    printBlock($block);
+                            // BLOCKS
+                            if( isset($page['blocks']) ) {
+                                foreach ($page['blocks'] as $key => $block) {
+                                    if( isset($block['type']) && ($block['type'] == "decorative") ) {
+                                        // DECORATIVE
+                                        printDecorative($block);
+
+                                    } else {
+                                        printBlock($block);
+                                    }
                                 }
                             }
-                        }
 
-                        // SECTIONS
-                        if( isset($page['sections']) ) {
-                            foreach ($page['sections'] as $key => $section) {
-                                
-                                // SECTION HEADER
-                                subSectionHeader($section['title'], $section['tagline']);
+                            // SECTIONS
+                            if( isset($page['sections']) ) {
+                                foreach ($page['sections'] as $key => $section) {
+                                    
+                                    // SECTION HEADER
+                                    subSectionHeader($section['title'], $section['tagline']);
 
-                                 // MODULES
-                                if( isset($section['module']) ) {
-                                    printModule($section['module']);
-                                }
+                                     // MODULES
+                                    if( isset($section['module']) ) {
+                                        printModule($section['module']);
+                                    }
 
-                                // SECTION BLOCKS
-                                if( isset($section['blocks']) ) {
-                                    foreach ($section['blocks'] as $key => $block) {
-                                        
-                                        if( isset($block['type']) && ($block['type'] == "decorative") ) {
-                                        
-                                            // DECORATIVE
-                                            printDecorative($block);
+                                    // SECTION BLOCKS
+                                    if( isset($section['blocks']) ) {
+                                        foreach ($section['blocks'] as $key => $block) {
+                                            
+                                            if( isset($block['type']) && ($block['type'] == "decorative") ) {
+                                            
+                                                // DECORATIVE
+                                                printDecorative($block);
 
-                                        } else {
-                                            printBlock($block);
+                                            } else {
+                                                printBlock($block);
+                                            }
                                         }
                                     }
                                 }
                             }
-                        }
-                        // END SECTION CONTAINER
+                            // END SECTION CONTAINER
 
-                    echo '</div>'; 
-                    // END PAGE CONTAINER
+                        echo '</div>'; 
+                        // END PAGE CONTAINER
+                    } // TEMP OUR BRANDS PAGE ONLY
                 }
             ?>
 
 
         </div>
-        <!-- <button id="bg-change" class="bg-change">Bg Change</button> -->
+        <button id="bg-change" class="bg-change">Bg Change</button>
         
-        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.1.min.js"><\/script>')</script>
+        
+        <script src="js/vendor/jquery-1.11.1.min.js"></script>
         
         <!--[if lt IE 9 ]>
         <script>
@@ -173,7 +179,12 @@
                     $(".temp").toggleClass('hidden');
                 });
 
+
+                // console.log( (463/522) );
+                // console.log( (170/905) );
+
             });
         </script>
+        <script src="js/resize-functions.js"></script>
     </body>
 </html>
