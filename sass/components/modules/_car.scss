@@ -6,7 +6,8 @@
 		margin-bottom: 65px;
 	}
 
-	.c3xgm-about-module-40 {
+	.c3xgm-about-module-40,
+	.c3xgm-about-module-35 {
 		margin-top:0;
 		@media(min-width:$tablet-height) { margin-top:1em; }
 	}
@@ -39,6 +40,7 @@
 		.c3xgm-about-link,
 		.c3xgm-about-h,
 		.c3xgm-about-p { 
+			// width: 77%;
 			margin: 9px auto; padding: 0 2% 0 7px;
 			@media(min-width:$tablet-height) { width: 88.69731800766284%; max-width:463px; }
 		}
@@ -72,10 +74,11 @@
 	.c3xgm-about-module-car-logo-container {
 		li {
 			display: block; float: left; text-align: center;
-			margin:.5em auto;
+			// margin:.5em auto;
 			width:33.3333334%;
 			&:nth-of-type(3n+1) { clear: left; }
 			@media(min-width:$tablet-height) {
+				margin:1em auto;
 				width: 50%;
 				&:nth-of-type(3n+1) { clear:none; }
 				&:nth-of-type(odd) { clear: left; }
@@ -92,7 +95,7 @@
 				// 	@include prefix(transition, opacity 120ms);
 				// }
 				img { 
-					width:40%; 
+					width:60%;
 					vertical-align: middle;
 				}
 				@media(min-width:$tablet-height) { 
@@ -100,7 +103,7 @@
 					text-align: left;
   					display: block;
   					img {  
-  						width:60%;
+  						
   						padding-left: 7px;
   					}
 				}

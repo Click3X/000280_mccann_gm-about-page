@@ -6,13 +6,21 @@
 	// CRASH TEST DUMMIES
 	.c3xgm-about-crash-test-dummies {
 		.c3xgm-about-block-image {
-			float: left; width: 30%; padding-top: 1em;
+			width: 100%;
+			padding-top: 1em;
 			img { max-width: 218px; }
+			@media(min-width:$tablet-height) {
+				float: left; width: 30%; 
+			}
 		}
 
 		.c3xgm-about-blockquote {
-			  float: right; width: 70%;
-			  border-left:0.2rem solid $gm-yellow;
+		  	width: 100%;
+		  	border-top:0.2rem solid $gm-yellow;
+			  @media(min-width:$tablet-height) {
+			  	float: right; width: 70%;
+			  	border-left:0.2rem solid $gm-yellow;
+			  }
 			  @include prefix(box-sizing,border-box);
 			  > span {padding-left:1.25rem;}
 			.c3xgm-about-dark-blue.c3xgm-about-thin {
@@ -40,12 +48,17 @@
 	.c3xgm-about-test-facility {
 		  // margin-left: 13%;
 		.c3xgm-about-block-image {
-			width:40%; float:left;
+			width:100%;
 			img {max-width: 222px;}
+			@media(min-width:$tablet-height) {
+				width:40%; float:left;
+			}
 		}
 		.c3xgm-about-blockquote {
-			width:60%; float:left;
-
+			width:100%;
+			@media(min-width:$tablet-height) {
+				width:60%; float:left;
+			}
 			.c3xgm-about-dark-blue.c3xgm-about-thin {
 				font-size:12.9088582992554px; font-size:4vw; line-height: 1.2em;
 				@media(min-width:$inner-border) { font-size: 34.5199px; }
@@ -72,14 +85,19 @@
 		margin-bottom: 2%;
 		.c3xgm-about-blockquote {
 			.c3xgm-about-light-blue.number {
-				border-right:0.2rem solid $gm-yellow;
-				margin-right: 1.25rem;
-			  	@include prefix(box-sizing,border-box);
-
-				width: 36.3%; float: left; margin-top: -1.768%;
-				font-size:117.752771px; font-size:36.7991456vw; line-height: 0.8em;
+				@include prefix(box-sizing,border-box);
+				width: 100%;
+				display: block;
+  				text-align: center;
+  				font-size:117.752771px; font-size:36.7991456vw; line-height: 0.8em;
+  				@media(min-width:$tablet-height) {
+					border-right:0.2rem solid $gm-yellow;
+					margin-right: 1.25rem;
+					width: 36.3%; float: left; margin-top: -1.768%;
+				}
 				@media(min-width:$inner-border) { font-size:333.14236px; }
 			}
+
 
 			.c3xgm-about-dark-blue.c3xgm-about-thin {
 				font-size:13.1503963470459px; font-size:4.1094988974375vw; 
@@ -104,12 +122,17 @@
 	// ONSTAR
 	.c3xgm-about-onstar-subscribers {
 		.c3xgm-about-block-image {
-			width:27%; 
+			width:100%; 
 			img { max-width:230px; }
+			@media(min-width:$tablet-height) {
+				width:27%; 
+			}
 		}
 
 		.c3xgm-about-blockquote {
-			  float: right; width: 73%;
+			width:100%;
+
+			@media(min-width:$tablet-height) {float: right; width: 73%;}
 
 			.c3xgm-about-dark-blue.c3xgm-about-thin.c3xgm-about-small {
 				font-size: 12.9088582992554px; font-size:4.03401830544375vw; 
@@ -144,13 +167,19 @@
 	.c3xgm-about-quality-awards {
 		.c3xgm-about-block-image {
 			text-align: center;
-			width: 35%;
-			float: right;
+			width:100%;
 			img { width:69.62%; max-width: 220px; }
+			@media(min-width:$tablet-height) {
+				width: 35%;
+				float: right;
+			}
 		}
 		.c3xgm-about-blockquote {
-			width: 65%;
-			float: left;
+			width:100%;
+			@media(min-width:$tablet-height) {
+				width: 65%;
+				float: left;
+			}
 
 			.c3xgm-about-dark-blue.c3xgm-about-thin {
 				font-size:12.9088582992554px; font-size:4.03401830544375vw; 
@@ -217,12 +246,15 @@
 	// EPA ENERGY
 	.c3xgm-about-epa-energy-star {
 		.c3xgm-about-block-image { 
-			width:25%; float:right;
+			width: 100%;
+			@media(min-width:$tablet-height) { width:25%; float:right; }
 			img { width:100%; max-width: 160px; height:auto; }
 		}
 		
 		.c3xgm-about-blockquote {
-			width:75%; float:left;
+			width: 100%;
+			@media(min-width:$tablet-height) { width:75%; float:left; }
+
 			.c3xgm-about-dark-blue.c3xgm-about-thin {
 				font-size:11.9427070617676px; font-size:3.7320959374687vw; 
 				@media(min-width:$inner-border) {font-size:33.786625px; }
@@ -242,12 +274,17 @@
 
 	// CLIMATE DECLARATION
 	.c3xgm-about-climate-declaration {
-		.c3xgm-about-block-image { width:25%;
+		.c3xgm-about-block-image { 
+			width: 100%;
+			@media(min-width:$tablet-height) { width:25%; }
 			img { width:100%; max-width: 151px; height:auto; }
 		}
 
 		.c3xgm-about-blockquote {
-			width:75%; float:right;
+			width: 100%;
+			@media(min-width:$tablet-height) { 
+				width:75%; float:right;
+			}
 			.c3xgm-about-dark-blue.c3xgm-about-thin {
 				font-size:10.514949798584px; font-size:3.28592177146125vw; 
 				@media(min-width:$inner-border) {font-size:29.747415px; }
@@ -268,12 +305,18 @@
 	// LANDFILL FREE
 	.c3xgm-about-landfill-free {
 		.c3xgm-about-block-image { 
-			width:25%; float: right;
+			width: 100%;
+			@media(min-width:$tablet-height) { 
+				width:25%; float: right;
+			}
 			img { width:100%; max-width: 172px; height:auto; }
 		}
 
 		.c3xgm-about-blockquote {
-			width:75%; float:left;
+			width: 100%;
+			@media(min-width:$tablet-height) { 
+				width:75%; float:left;
+			}
 			.c3xgm-about-dark-blue.c3xgm-about-thin {
 				font-size:26.3007926940918px; font-size:8.218997794875vw; 
 				@media(min-width:$inner-border) {font-size:74.4065px; }

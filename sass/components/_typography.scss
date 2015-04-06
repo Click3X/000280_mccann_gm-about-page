@@ -110,15 +110,17 @@ h4.c3xgm-about-h{
 
 
 // RESPONSIVE STYLES FOR SECTION HEADERS
-.c3xgm-about-section-header,
+// .c3xgm-about-section-header,
+// .c3xgm-about-section-header,
 p.c3xgm-about-p.c3xgm-about-header-p {
-	max-width: 77%;
+	// max-width: 77%;
 	margin:0 auto; padding: 0 2% 0 7px;
 	@media( min-width:$tablet-height ){ 
 		max-width:768px;
 		margin: 9px 0 9px 0;
 	}
 }
+
 
 .c3xgm-about-section-header {
 	@media( min-width:$tablet-height ){ padding:0; }

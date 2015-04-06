@@ -5,10 +5,12 @@
 	.c3xgm-about-global,
 	.c3xgm-about-seconds {
 		margin-bottom: 8.8%;
-		@media(min-width:$inner-border) { margin-bottom: 80px; }
+		@media(min-width:$tablet-height) { margin-bottom: 80px; }
 
 		.c3xgm-about-blockquote { 
-			width: 75%; 
+			width: 100%; 
+			@media(min-width:$tablet-height) { width: 75%; }
+			
 			span strong { font-weight:700; }
 
 			.number {
@@ -31,9 +33,9 @@
 		}
 		.c3xgm-about-block-image { 
 			text-align: center;
-			width: 25%; 
 			margin: 9px 0;
-
+			width: 100%; 
+			@media(min-width:$inner-border) {width: 25%; }
 			img { display:block; margin: 0 auto; padding:0; } 
 		}
 	}
@@ -51,7 +53,9 @@
 		}
 
 		.c3xgm-about-block-image {
-			width:25%;
+			width: 100%; 
+			text-align: center;
+			@media(min-width:$tablet-height) {width: 25%; float:left; }
 			img { width:67.234%; max-width: 158px; }
 		}
 	}
@@ -67,7 +71,8 @@
 			@include prefix(box-sizing, border-box);
 		}
 		.c3xgm-about-block-image { 
-			float:left;
+			
+			@media(min-width:$tablet-height) {float:right; width: 25%; }
 			img { width:62.798%; max-width:184px; }
 		}
 	}
@@ -75,13 +80,29 @@
 
 	// DEALERS
 	.c3xgm-about-dealers {
-
+		text-align: center;
+		@media(min-width: $tablet-height) { text-align: left; }
 		.c3xgm-about-blockquote {
-			width: 77%;
+			width:auto;
 		  	margin: 0 auto;
+		  	display: inline-block;
+		  	text-align: center;
+		  	@media(min-width: $tablet-height) {
+		  		width: 77%;
+		  		display: block;
+		  		text-align: right;
+		  	}
 			.c3xgm-about-dark-blue.c3xgm-about-thin {
-				width: 78%;
-				float: left;
+				width:auto;
+				max-width: 5em;
+				border-bottom:3px solid $gm-yellow;
+				@media(min-width: $tablet-height) {
+					max-width: none;
+					width: 75%;
+					float: left;
+					border-bottom:0;
+					border-right:3px solid $gm-yellow;
+				}
 			}
 
 			.c3xgm-about-dark-blue { 
@@ -128,14 +149,19 @@
 			.c3xgm-about-dark-blue.c3xgm-about-thin.c3xgm-about-big {
 				float: left;
 				font-size:11.3111810684204px; font-size:3.534744vw;
-				  margin-top: .2em;
-			  margin-left: .35em;
-			  line-height: 1.2em;
+				margin-top: .2em;
+				line-height: 1.2em;
+				clear: left;
+			  @media(min-width:$tablet-height) { 
+					clear:none; margin-left: .35em;
+				}
+
 				@media(min-width:$inner-border) {font-size: 32px; }
 			}
 
 			.c3xgm-about-light-blue {
 				float: left;
+				// clear:left;
 				font-size:30.3987979888916px; font-size:9.4996245vw;
 				@media(min-width:$inner-border) {font-size:86px; }
 			}
@@ -156,11 +182,18 @@
 		position: relative;
 		max-width: 945px;
 		.c3xgm-about-block-image { 
-			width:29%; 
-			text-align: left;
-			position: absolute;
-			right:0;
-			img {max-width: 272px;}
+			width:100%; 
+			text-align:center;
+			
+			img {width:29%;max-width: 272px;}
+
+			@media(min-width:$tablet-height) {
+				width:29%;
+				text-align: left;
+				position: absolute;
+				right:0;
+				img {width:100%;}
+			}
 		}
 		.c3xgm-about-blockquote {
 			float: left;
