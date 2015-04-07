@@ -776,31 +776,35 @@ svg {
   }
 }
 
-/* line 3, ../sass/components/pages/_our-company.scss */
+/* line 4, ../sass/components/pages/_our-company.scss */
+.c3xgm-about-page-our-company .c3xgm-about-section.our-company {
+  padding-top: 12px;
+}
+/* line 8, ../sass/components/pages/_our-company.scss */
 .c3xgm-about-page-our-company .c3xgm-about-earn {
   margin-top: 0;
 }
 @media (min-width: 768px) {
-  /* line 3, ../sass/components/pages/_our-company.scss */
+  /* line 8, ../sass/components/pages/_our-company.scss */
   .c3xgm-about-page-our-company .c3xgm-about-earn {
     margin-top: 4px;
   }
 }
-/* line 7, ../sass/components/pages/_our-company.scss */
+/* line 12, ../sass/components/pages/_our-company.scss */
 .c3xgm-about-page-our-company .c3xgm-about-earn .c3xgm-about-yellow-bar-left-wrapper {
   margin-bottom: 20px;
 }
 @media (min-width: 768px) {
-  /* line 7, ../sass/components/pages/_our-company.scss */
+  /* line 12, ../sass/components/pages/_our-company.scss */
   .c3xgm-about-page-our-company .c3xgm-about-earn .c3xgm-about-yellow-bar-left-wrapper {
     margin-bottom: 28px;
   }
 }
-/* line 12, ../sass/components/pages/_our-company.scss */
+/* line 17, ../sass/components/pages/_our-company.scss */
 .c3xgm-about-page-our-company .c3xgm-about-earn .c3xgm-about-p strong {
   display: block;
 }
-/* line 14, ../sass/components/pages/_our-company.scss */
+/* line 19, ../sass/components/pages/_our-company.scss */
 .c3xgm-about-page-our-company .c3xgm-about-earn .c3xgm-about-block-tagline,
 .c3xgm-about-page-our-company .c3xgm-about-earn .c3xgm-about-block-title {
   color: #6086C4;
@@ -811,19 +815,19 @@ svg {
   max-width: 4em;
   padding-left: 8px;
 }
-/* line 22, ../sass/components/pages/_our-company.scss */
+/* line 27, ../sass/components/pages/_our-company.scss */
 .c3xgm-about-page-our-company .c3xgm-about-earn .c3xgm-about-block-tagline strong,
 .c3xgm-about-page-our-company .c3xgm-about-earn .c3xgm-about-block-title strong {
   font-weight: 600;
 }
 @media (min-width: 768px) {
-  /* line 14, ../sass/components/pages/_our-company.scss */
+  /* line 19, ../sass/components/pages/_our-company.scss */
   .c3xgm-about-page-our-company .c3xgm-about-earn .c3xgm-about-block-tagline,
   .c3xgm-about-page-our-company .c3xgm-about-earn .c3xgm-about-block-title {
     font-size: 117px;
   }
 }
-/* line 30, ../sass/components/pages/_our-company.scss */
+/* line 35, ../sass/components/pages/_our-company.scss */
 .c3xgm-about-page-our-company .our-company .c3xgm-about-header-p {
   margin: .4em 0 .4em 8px;
   color: #7E8184;
@@ -838,59 +842,63 @@ svg {
   width: 89%;
 }
 @media (min-width: 768px) {
-  /* line 30, ../sass/components/pages/_our-company.scss */
+  /* line 35, ../sass/components/pages/_our-company.scss */
   .c3xgm-about-page-our-company .our-company .c3xgm-about-header-p {
     margin: 1em 0 1em 8px;
     font-size: 24px;
     line-height: 1.1em;
   }
 }
-/* line 46, ../sass/components/pages/_our-company.scss */
+/* line 51, ../sass/components/pages/_our-company.scss */
 .c3xgm-about-page-our-company .our-company .c3xgm-about-header-image {
   margin: 2.5% auto 3.14% 6px;
   width: 89%;
 }
 @media (min-width: 408px) {
-  /* line 46, ../sass/components/pages/_our-company.scss */
+  /* line 51, ../sass/components/pages/_our-company.scss */
   .c3xgm-about-page-our-company .our-company .c3xgm-about-header-image {
     float: left;
     margin: 4.02% auto 3.14% 6px;
   }
 }
 @media (min-width: 768px) {
-  /* line 46, ../sass/components/pages/_our-company.scss */
+  /* line 51, ../sass/components/pages/_our-company.scss */
   .c3xgm-about-page-our-company .our-company .c3xgm-about-header-image {
     margin: 2em 0 1.6em;
   }
 }
 
-/* line 4, ../sass/components/pages/_our-people.scss */
+/* line 2, ../sass/components/pages/_our-people.scss */
+.c3xgm-about-page-our-people {
+  max-width: 906px;
+}
+/* line 5, ../sass/components/pages/_our-people.scss */
 .c3xgm-about-page-our-people > .c3xgm-about-section {
   margin-bottom: 0.6em;
 }
-/* line 6, ../sass/components/pages/_our-people.scss */
+/* line 7, ../sass/components/pages/_our-people.scss */
 .c3xgm-about-page-our-people .c3xgm-about-block {
   width: 50%;
   float: left;
   margin-bottom: 1.75em;
 }
-/* line 9, ../sass/components/pages/_our-people.scss */
+/* line 10, ../sass/components/pages/_our-people.scss */
 .c3xgm-about-page-our-people .c3xgm-about-block .c3xgm-about-block-image {
   position: relative;
   text-align: center;
 }
-/* line 13, ../sass/components/pages/_our-people.scss */
+/* line 14, ../sass/components/pages/_our-people.scss */
 .c3xgm-about-page-our-people .c3xgm-about-block.c3xgm-about-employees {
   width: 100%;
   margin-bottom: 2em;
 }
 @media (min-width: 768px) {
-  /* line 13, ../sass/components/pages/_our-people.scss */
+  /* line 14, ../sass/components/pages/_our-people.scss */
   .c3xgm-about-page-our-people .c3xgm-about-block.c3xgm-about-employees {
     float: none;
   }
 }
-/* line 18, ../sass/components/pages/_our-people.scss */
+/* line 19, ../sass/components/pages/_our-people.scss */
 .c3xgm-about-page-our-people .c3xgm-about-block.c3xgm-about-employees .c3xgm-about-blockquote {
   margin: 0;
   padding: 0;
@@ -898,44 +906,44 @@ svg {
   max-width: 50%;
   float: left;
 }
-/* line 23, ../sass/components/pages/_our-people.scss */
+/* line 24, ../sass/components/pages/_our-people.scss */
 .c3xgm-about-page-our-people .c3xgm-about-block.c3xgm-about-employees .c3xgm-about-blockquote .c3xgm-about-gray {
   margin-top: -2.272%;
 }
-/* line 26, ../sass/components/pages/_our-people.scss */
+/* line 27, ../sass/components/pages/_our-people.scss */
 .c3xgm-about-page-our-people .c3xgm-about-block.c3xgm-about-employees .c3xgm-about-block-image {
   width: 43.7%;
   float: left;
   margin-top: 2.4%;
   margin-left: 1.8%;
 }
-/* line 32, ../sass/components/pages/_our-people.scss */
+/* line 33, ../sass/components/pages/_our-people.scss */
 .c3xgm-about-page-our-people .c3xgm-about-block.c3xgm-about-employees .number {
   line-height: 1.09em;
 }
-/* line 34, ../sass/components/pages/_our-people.scss */
+/* line 35, ../sass/components/pages/_our-people.scss */
 .c3xgm-about-page-our-people .c3xgm-about-block.c3xgm-about-employees .c3xgm-about-gray {
   margin-left: 5px;
   font-size: 17px;
 }
 @media (min-width: 768px) {
-  /* line 34, ../sass/components/pages/_our-people.scss */
+  /* line 35, ../sass/components/pages/_our-people.scss */
   .c3xgm-about-page-our-people .c3xgm-about-block.c3xgm-about-employees .c3xgm-about-gray {
     font-size: 34px;
   }
 }
-/* line 41, ../sass/components/pages/_our-people.scss */
+/* line 42, ../sass/components/pages/_our-people.scss */
 .c3xgm-about-page-our-people .number {
   font-size: 64px;
   font-size: 14.36vw;
 }
 @media (min-width: 906px) {
-  /* line 41, ../sass/components/pages/_our-people.scss */
+  /* line 42, ../sass/components/pages/_our-people.scss */
   .c3xgm-about-page-our-people .number {
     font-size: 128px;
   }
 }
-/* line 47, ../sass/components/pages/_our-people.scss */
+/* line 48, ../sass/components/pages/_our-people.scss */
 .c3xgm-about-page-our-people .c3xgm-about-separator {
   display: block;
   float: left;
@@ -945,16 +953,16 @@ svg {
   padding-bottom: .65em;
   border-right: 0.08em solid #FDB12E;
 }
-/* line 53, ../sass/components/pages/_our-people.scss */
+/* line 54, ../sass/components/pages/_our-people.scss */
 .c3xgm-about-page-our-people .c3xgm-about-separator .c3xgm-about-gray {
   line-height: .9em;
 }
-/* line 55, ../sass/components/pages/_our-people.scss */
+/* line 56, ../sass/components/pages/_our-people.scss */
 .c3xgm-about-page-our-people .c3xgm-about-separator span {
   display: block;
   clear: left;
 }
-/* line 56, ../sass/components/pages/_our-people.scss */
+/* line 57, ../sass/components/pages/_our-people.scss */
 .c3xgm-about-page-our-people .c3xgm-about-separator + .number {
   float: left;
   padding-left: .1em;
@@ -963,56 +971,56 @@ svg {
   line-height: .8em;
 }
 @media (min-width: 906px) {
-  /* line 56, ../sass/components/pages/_our-people.scss */
+  /* line 57, ../sass/components/pages/_our-people.scss */
   .c3xgm-about-page-our-people .c3xgm-about-separator + .number {
     font-size: 124px;
   }
 }
-/* line 69, ../sass/components/pages/_our-people.scss */
+/* line 70, ../sass/components/pages/_our-people.scss */
 .c3xgm-about-page-our-people .c3xgm-about-timezones .c3xgm-about-block-image {
   padding-top: 2.5%;
 }
-/* line 71, ../sass/components/pages/_our-people.scss */
+/* line 72, ../sass/components/pages/_our-people.scss */
 .c3xgm-about-page-our-people .c3xgm-about-timezones .c3xgm-about-block-image img {
   width: 76.672%;
   max-width: 333px;
 }
-/* line 78, ../sass/components/pages/_our-people.scss */
+/* line 79, ../sass/components/pages/_our-people.scss */
 .c3xgm-about-page-our-people .c3xgm-about-continents .c3xgm-about-block-image img {
   width: 88.672%;
   max-width: 385px;
 }
-/* line 85, ../sass/components/pages/_our-people.scss */
+/* line 86, ../sass/components/pages/_our-people.scss */
 .c3xgm-about-page-our-people .c3xgm-about-languages .c3xgm-about-blockquote {
   margin-bottom: 0;
 }
-/* line 87, ../sass/components/pages/_our-people.scss */
+/* line 88, ../sass/components/pages/_our-people.scss */
 .c3xgm-about-page-our-people .c3xgm-about-languages .c3xgm-about-block-image img {
   width: 78.110599%;
   max-width: 339px;
 }
-/* line 90, ../sass/components/pages/_our-people.scss */
+/* line 91, ../sass/components/pages/_our-people.scss */
 .c3xgm-about-page-our-people .c3xgm-about-timezones,
 .c3xgm-about-page-our-people .c3xgm-about-continents,
 .c3xgm-about-page-our-people .c3xgm-about-languages {
   text-align: center;
 }
-/* line 94, ../sass/components/pages/_our-people.scss */
+/* line 95, ../sass/components/pages/_our-people.scss */
 .c3xgm-about-page-our-people .c3xgm-about-timezones > p,
 .c3xgm-about-page-our-people .c3xgm-about-continents > p,
 .c3xgm-about-page-our-people .c3xgm-about-languages > p {
   display: inline-block;
 }
-/* line 99, ../sass/components/pages/_our-people.scss */
+/* line 100, ../sass/components/pages/_our-people.scss */
 .c3xgm-about-page-our-people .c3xgm-about-headquarters .c3xgm-about-blockquote {
   margin-top: 1.0625em;
 }
-/* line 102, ../sass/components/pages/_our-people.scss */
+/* line 103, ../sass/components/pages/_our-people.scss */
 .c3xgm-about-page-our-people .c3xgm-about-headquarters .c3xgm-about-blockquote .c3xgm-about-gray {
   border-left: 0.1em solid #FDB12E;
   padding-left: .35em;
 }
-/* line 104, ../sass/components/pages/_our-people.scss */
+/* line 105, ../sass/components/pages/_our-people.scss */
 .c3xgm-about-page-our-people .c3xgm-about-headquarters .c3xgm-about-blockquote span > span {
   color: #6086C4;
   line-height: .86em;
@@ -1020,29 +1028,29 @@ svg {
   font-size: 10.604232vw;
 }
 @media (min-width: 906px) {
-  /* line 104, ../sass/components/pages/_our-people.scss */
+  /* line 105, ../sass/components/pages/_our-people.scss */
   .c3xgm-about-page-our-people .c3xgm-about-headquarters .c3xgm-about-blockquote span > span {
     font-size: 93px;
   }
 }
-/* line 109, ../sass/components/pages/_our-people.scss */
+/* line 110, ../sass/components/pages/_our-people.scss */
 .c3xgm-about-page-our-people .c3xgm-about-headquarters .c3xgm-about-blockquote > span:first-of-type {
   font-size: 12px;
   font-size: 3.75vw;
 }
 @media (min-width: 906px) {
-  /* line 109, ../sass/components/pages/_our-people.scss */
+  /* line 110, ../sass/components/pages/_our-people.scss */
   .c3xgm-about-page-our-people .c3xgm-about-headquarters .c3xgm-about-blockquote > span:first-of-type {
     font-size: 34px;
   }
 }
-/* line 113, ../sass/components/pages/_our-people.scss */
+/* line 114, ../sass/components/pages/_our-people.scss */
 .c3xgm-about-page-our-people .c3xgm-about-headquarters .c3xgm-about-blockquote > span:last-of-type {
   font-size: 13px;
   font-size: 4.087vw;
 }
 @media (min-width: 906px) {
-  /* line 113, ../sass/components/pages/_our-people.scss */
+  /* line 114, ../sass/components/pages/_our-people.scss */
   .c3xgm-about-page-our-people .c3xgm-about-headquarters .c3xgm-about-blockquote > span:last-of-type {
     font-size: 37px;
   }

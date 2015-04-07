@@ -44,14 +44,70 @@
             <!-- <div id="our-brands-temp" class="temp our-brands-temp hidden"></div> -->
 
             <?php 
-                // OUR COMPANY
-                include('php/pages/our-company.php');
-                // OUR PEOPLE
-                include('php/pages/our-people.php');
-                // OUR BRANDS
-                include('php/pages/our-brands.php');
-                // OUR COMMITMENT
-                include('php/pages/our-commitment.php');
+                // ITERATE THROUGH PAGEES ARRAY
+                foreach ($pages as $key => $page) {
+
+                        echo '<div class="c3xgm-about-page c3xgm-about-clearfix c3xgm-about-page-'.cleanString($page['title']).'">';
+                            // helper($page);
+                            
+                            // PAGE HEADER
+                            if(isset($page['tagline'])) { $page['tagline'] = $page['tagline']; } else { $page['tagline'] = "";}
+                            if(isset($page['icon@2x'])) { $page['icon@2x'] = $page['icon@2x']; } else { $page['icon@2x'] = "";}
+                            if(isset($page['image'])) { $page['image'] = $page['image']; } else { $page['image'] = "";}
+
+                            pageHeader($page['title'], $page['icon@2x'], $page['tagline'], $page['image']);
+
+                            // MODULES
+                            if( isset($page['module']) ) {
+                                printModule($page['module']);
+                            }
+
+                            // BLOCKS
+                            if( isset($page['blocks']) ) {
+                                foreach ($page['blocks'] as $key => $block) {
+                                    if( isset($block['type']) && ($block['type'] == "decorative") ) {
+                                        // DECORATIVE
+                                        printDecorative($block);
+
+                                    } else {
+                                        printBlock($block);
+                                    }
+                                }
+                            }
+
+                            // SECTIONS
+                            if( isset($page['sections']) ) {
+                                foreach ($page['sections'] as $key => $section) {
+                                    
+                                    // SECTION HEADER
+                                    subSectionHeader($section['title'], $section['tagline']);
+
+                                     // MODULES
+                                    if( isset($section['module']) ) {
+                                        printModule($section['module']);
+                                    }
+
+                                    // SECTION BLOCKS
+                                    if( isset($section['blocks']) ) {
+                                        foreach ($section['blocks'] as $key => $block) {
+                                            
+                                            if( isset($block['type']) && ($block['type'] == "decorative") ) {
+                                            
+                                                // DECORATIVE
+                                                printDecorative($block);
+
+                                            } else {
+                                                printBlock($block);
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                            // END SECTION CONTAINER
+
+                        echo '</div>'; 
+                        // END PAGE CONTAINER
+                }
             ?>
 
 
@@ -102,7 +158,12 @@
                     // retina display
                     console.log('We have Retina!');
                     $('img[rel]').each(function(index,element) {
-                        element.src = $(this).attr('rel');
+                        var file_name_array = element.src.split("."),
+                            file_extension = file_name_array[file_name_array.length - 1],
+                            file_name = element.src.substr(0, element.src.lastIndexOf('.'));
+
+                        file_name = file_name + '@2x.' + file_extension;
+                        element.src = file_name;
                     });
                 } else {
                     // standard display
