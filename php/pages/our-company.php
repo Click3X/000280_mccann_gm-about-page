@@ -1,6 +1,6 @@
 <?php
 // OUR COMPANY
-
+echo '<div id="our-comp-temp" class="temp our-comp-temp hidden"></div>';
 // ITERATE THROUGH PAGEES ARRAY
 foreach ($pages as $key => $page) {
     if($page['title'] == "Our Company") {

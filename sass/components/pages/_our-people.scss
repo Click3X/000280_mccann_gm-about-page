@@ -5,43 +5,73 @@
 	> .c3xgm-about-section { margin-bottom: 0.6em; }
 
 	.c3xgm-about-block { 
-		width: 50%; float: left; margin-bottom: 1.75em; 
+		margin-bottom: 1.75em; 
+		width: 100%;
+		@media(min-width:$tablet-height ) { width: 50%; float: left; }
 
 		.c3xgm-about-block-image { position: relative; text-align: center;}
 	}
 
 	// EMPLOYEES
 	.c3xgm-about-block.c3xgm-about-employees {
-		width: 100%;
-		margin-bottom: 2em;
-		@media(min-width:$tablet-height ) { float:none; }
+		width: 96%;
+		margin: 0 auto 2em;
+		float: none;
+		text-align: center;
 
 		.c3xgm-about-blockquote {
-		  	margin:0; padding: 0;
-		  	width: auto; max-width:50%;
-		  	float: left;
+			text-align: left;
+		  	padding: 0; margin: 0 auto;
+		  	// width: 100%; 
+		  	max-width: 400px;
+		  	display: inline-block;
+		  	@media(min-width:$tablet-height ) { 
+		  	// @media(min-width:600px ) { 
+		  		float: left;
+		  		width: auto; max-width:50%;
+		  		margin:0; 
+		  	}
 
 		  	.c3xgm-about-gray { margin-top: -2.272%; }
 		}
 
 		.c3xgm-about-block-image {
-			width: 43.7%;
-			float: left;
-			margin-top: 2.4%; margin-left: 1.8%;
+			margin-top: 2.4%;
+			width: 100%;
+
+			img { 
+				// float:left;
+				width: 88%; max-width: 400px;
+			}
+		  	@media(min-width:$tablet-height ) { 
+		  	// @media(min-width:600px ) { 
+		  		float: left;
+		  		width:50%;
+		  		// width: 43.7%;
+		  		margin-left: 1.8%;
+
+		  		img { float:none; width:auto; max-width:none;}
+		  	}
 		}
 
-		.number { line-height: 1.09em; }
+		.number { 
+			// line-height: 1.09em; 
+			line-height: 1em; 
+			// font-size: 64px; font-size: 14.36vw;
+			font-size: 128px; font-size: 28vw;
+			@media(min-width:400px) {font-size: 111px;}
+			// @media(min-width:$tablet-height ) { font-size: 64px; font-size: 14.36vw; }
+			@media(min-width:600px ) { font-size: 64px; font-size: 14.36vw; line-height: 1.09em;  }
+			@media(min-width:$inner-border) { font-size: 128px;  }
+		}
 		  
 		.c3xgm-about-gray { 
 			margin-left: 5px;
-			font-size: 17px;
+			// font-size: 17px;
+			font-size: 34px; font-size: 7.4375vw;
+			@media(min-width:400px) { font-size: 34px; }
   			@media(min-width:$tablet-height ) { font-size: 34px; }
   		}
-	}
-
-	.number { 
-		font-size: 64px; font-size: 14.36vw;
-		@media(min-width:$inner-border) { font-size: 128px;  }
 	}
 
 
@@ -57,7 +87,10 @@
 		+ .number { 
 			float: left;
 			padding-left: .1em;
-			font-size: 41px; font-size: 13.697113vw; line-height: .8em;
+			// font-size: 41px; font-size: 13.697113vw;
+
+			font-size: 77px; font-size: 25.697113vw;  line-height: .8em;
+			@media(min-width:$tablet-height ) { font-size: 41px; font-size: 13.697113vw; }
 			@media(min-width: $inner-border) { font-size: 124px; }
 		}	
 	}
@@ -96,23 +129,41 @@
 	}
 	  
 
+	// HEADQUARTERS
 	.c3xgm-about-headquarters {
+		text-align: center;
 		.c3xgm-about-blockquote {
+			display: inline-block;
 			margin-top: 1.0625em;
+			text-align: left;
+			width: auto;
+			// @media(min-width: $tablet-height) {
+			// 	width: 96%;
+  	// 			float: right;
+			// }
 			
 			.c3xgm-about-gray { border-left:0.1em solid $gm-yellow; padding-left: .35em; }
 
+			// .c3xgm-about-gray-2 { text-align: left; }
+
 			span > span {
 				color:$gm-light-blue; line-height: .86em;				
-				font-size: 34px; font-size: 10.604232vw;
+				// font-size: 34px; font-size: 10.604232vw;
+				// font-size:50px; font-size:15.604232vw;
+				font-size: 72px; font-size: 22.604232vw;
+				@media(min-width: $tablet-height) {font-size: 34px; font-size: 10.604232vw;}
 				@media(min-width:$inner-border) { font-size: 93px; }
 			}
 			> span:first-of-type {
-				font-size:12px; font-size: 3.75vw;
+				// font-size:17.658px; font-size: 5.51819vw;
+				font-size:25.577px; font-size: 8vw;
+				@media(min-width: $tablet-height) { font-size:12px; font-size: 3.75vw; }
 				@media(min-width:$inner-border) { font-size:34px; }
 			}
 			> span:last-of-type {
-				font-size:13px; font-size: 4.087vw;
+				// font-size:19px; font-size: 6.01409815vw;
+				font-size:27.5px; font-size: 8.71142095vw;
+				@media(min-width: $tablet-height) { font-size:13px; font-size: 4.087vw; }
 				@media(min-width:$inner-border) { font-size:37px; }
 			}
 		}

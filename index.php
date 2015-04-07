@@ -34,26 +34,16 @@
         <!-- MAIN PAGE CONTAINER -->
         <div id="c3xgm-about-page-container" class="c3xgm-about-page-container c3xgm-about-clearfix">
 
-            <!-- TEMPLATE FOR CODING -->
-            <!-- <div id="our-comp-temp" class="temp our-comp-temp hidden"></div> -->
-            <!-- <div id="our-peop-temp" class="temp our-peop-temp hidden"></div>
-            
-            <div id="our-commitment-temp" class="temp our-commitment-temp hidden"></div> -->
-
-            <div id="our-brands-temp-mobile" class="temp our-brands-temp-mobile hidden"></div>
-            <!-- <div id="our-brands-temp" class="temp our-brands-temp hidden"></div> -->
-
             <?php 
                 // OUR COMPANY
-                include('php/pages/our-company.php');
+                // include('php/pages/our-company.php');
                 // OUR PEOPLE
-                include('php/pages/our-people.php');
+                // include('php/pages/our-people.php');
                 // OUR BRANDS
                 include('php/pages/our-brands.php');
                 // OUR COMMITMENT
-                include('php/pages/our-commitment.php');
+                // include('php/pages/our-commitment.php');
             ?>
-
 
         </div>
         <button id="bg-change" class="bg-change">Bg Change</button>
@@ -119,6 +109,14 @@
 
                 // console.log( (463/522) );
                 // console.log( (170/905) );
+                var fonts = [5.30211591720581,1.6569112499999998, 11.3111810684204, 3.534744, 30.3987979888916, 9.4996245, 14.4924507141113,4.5288907499999995];
+                var rat = 2.1895612;
+
+                $.each(fonts, function(i, val) {
+                    console.log( rat * fonts[i]);
+                });
+
+
 
             });
         </script>

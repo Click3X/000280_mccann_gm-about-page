@@ -70,11 +70,17 @@ function printBlock($block) {
 
 	echo '<div class="c3xgm-about-block c3xgm-about-clearfix'.$class.'">';
 
-		// IMAGE
-		if( isset($block['image@2x']) ) { 
-			if( isset($block['image']) && ($block['image'] != "") ) { 
-				$size = getimagesize($block['image']); 
-				echo '<div class="c3xgm-about-block-image"><img src="'.$block['image@2x'].'" alt="'.$block['title'].'"></div>';
+		// OUR PEOPLE BLOCKS WE DONT WANT TO SPIT IMAGE OUT FIRST
+		$people_blocks = array("employees", "continents", "timezones", "global-headquarters", "languages");
+		if( isset($block['title']) && in_array( $block['title'], $people_blocks ) ) {
+
+		} else {
+			// IMAGE
+			if( isset($block['image@2x']) ) { 
+				if( isset($block['image']) && ($block['image'] != "") ) { 
+					$size = getimagesize($block['image']); 
+					echo '<div class="c3xgm-about-block-image"><img src="'.$block['image@2x'].'" alt="'.$block['title'].'"></div>';
+				}
 			}
 		}
 		
@@ -114,13 +120,16 @@ function printBlock($block) {
 			}
 		}
 
-		// // IMAGE
-		// if( isset($block['image@2x']) ) { 
-		// 	if( isset($block['image']) && ($block['image'] != "") ) { 
-		// 		$size = getimagesize($block['image']); 
-		// 		echo '<div class="c3xgm-about-block-image"><img src="'.$block['image@2x'].'" alt="'.$block['title'].'"></div>';
-		// 	}
-		// }
+		// SPIT OUT IMAGE FOR OUR PEOPLE
+		if( isset($block['title']) && in_array( $block['title'], $people_blocks ) ) {
+			// // IMAGE
+			if( isset($block['image@2x']) ) { 
+				if( isset($block['image']) && ($block['image'] != "") ) { 
+					$size = getimagesize($block['image']); 
+					echo '<div class="c3xgm-about-block-image"><img src="'.$block['image@2x'].'" alt="'.$block['title'].'"></div>';
+				}
+			}
+		}
 	echo '</div>';
 }
 

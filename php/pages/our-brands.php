@@ -1,5 +1,7 @@
 <?php
 // OUR BRANDS
+echo '<div id="our-brands-temp-mobile" class="temp our-brands-temp-mobile hidden"></div>';
+// <div id="our-brands-temp" class="temp our-brands-temp hidden"></div>
 
 // ITERATE THROUGH PAGEES ARRAY
 foreach ($pages as $key => $page) {

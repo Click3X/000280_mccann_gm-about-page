@@ -19,6 +19,7 @@ TO BE DELETED AFTER DEVELOPMENT
 	display: none;
 }
 
+
 .our-peop-temp {
 	// left: -37px;
 	left: -110px;
@@ -28,6 +29,20 @@ TO BE DELETED AFTER DEVELOPMENT
 	background-image:url('../templates/our-people.png');
 	opacity:0.5;
 	display: none;
+}
+
+.our-peop-temp-mobile {
+  	width: 100%;
+  	max-width: 400px;
+  	padding-bottom: 462.75%;
+  	height: 0;
+  	margin:auto;
+  	position: absolute; top:-16px; left: 0; right:0;
+	background-image:url('../templates/people-mobile.jpg');
+	background-size:contain;
+	background-repeat: no-repeat;
+	opacity:0.5;
+	// display: none;
 }
 
 .our-brands-temp {

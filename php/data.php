@@ -66,7 +66,8 @@ $pages = array(
 				"class"=>"headquarters clear-left",
 				"copy"=>array(
 					"c3xgm-about-light-blue"=>"Global headquarters",
-					"c3xgm-about-gray"=>"<span>Detroit</span> Michigan, USA"
+					"c3xgm-about-gray"=>"<span>Detroit</span>",
+					"c3xgm-about-gray c3xgm-about-gray-2"=>"Michigan, USA"
 				)
 			),
 			array(
@@ -226,8 +227,8 @@ $pages = array(
 				"image@2x"=>"img/pages/brands/clock.svg",
 				"class"=>"seconds text-right",
 				"copy"=>array(
-					"c3xgm-about-dark-blue c3xgm-about-thin"=>"A <strong>Chevy is sold</strong> somewhere in the world",
-					"c3xgm-about-light-blue c3xgm-about-thin number"=>"every <strong>6.63 seconds</strong>"
+					"c3xgm-about-dark-blue c3xgm-about-thin"=>"A <strong>Chevy is sold</strong><br>somewhere in the world",
+					"c3xgm-about-light-blue c3xgm-about-thin number"=>"every <strong>6.63<br>seconds</strong>"
 				)
 			),
 			array(
@@ -261,7 +262,7 @@ $pages = array(
 				"image@2x"=>"img/pages/brands/flag.svg",
 				"class"=>"china",
 				"copy"=>array(
-					"c3xgm-about-dark-blue c3xgm-about-thin"=>"GM will open <strong>five new manufacturing plants</strong>",
+					"c3xgm-about-dark-blue c3xgm-about-thin"=>"General Motors will open <br><strong>five new manufacturing plants</strong>",
 					"c3xgm-about-light-blue c3xgm-about-thin"=>"in <strong>China</strong>",
 					"c3xgm-about-dark-blue c3xgm-about-thin c3xgm-about-big"=>"By <strong>2018</strong> to support <br>sales of nearly",
 					"c3xgm-about-gray"=>"5 million vehicles annually"

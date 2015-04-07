@@ -207,7 +207,7 @@ TO BE DELETED AFTER DEVELOPMENT
   display: none;
 }
 
-/* line 22, ../sass/components/_temp.scss */
+/* line 23, ../sass/components/_temp.scss */
 .our-peop-temp {
   left: -110px;
   top: 950px;
@@ -218,7 +218,24 @@ TO BE DELETED AFTER DEVELOPMENT
   display: none;
 }
 
-/* line 33, ../sass/components/_temp.scss */
+/* line 34, ../sass/components/_temp.scss */
+.our-peop-temp-mobile {
+  width: 100%;
+  max-width: 400px;
+  padding-bottom: 462.75%;
+  height: 0;
+  margin: auto;
+  position: absolute;
+  top: -16px;
+  left: 0;
+  right: 0;
+  background-image: url("../templates/people-mobile.jpg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  opacity: 0.5;
+}
+
+/* line 48, ../sass/components/_temp.scss */
 .our-brands-temp {
   left: -166px;
   top: -035px;
@@ -228,7 +245,7 @@ TO BE DELETED AFTER DEVELOPMENT
   opacity: 0.5;
 }
 
-/* line 45, ../sass/components/_temp.scss */
+/* line 60, ../sass/components/_temp.scss */
 .our-commitment-temp {
   opacity: 0.5;
   left: -145px;
@@ -241,7 +258,7 @@ TO BE DELETED AFTER DEVELOPMENT
   padding-bottom: 217.409%;
 }
 
-/* line 63, ../sass/components/_temp.scss */
+/* line 78, ../sass/components/_temp.scss */
 .our-brands-temp-mobile {
   background-image: url("../templates/mobile-our-brands.jpg");
   opacity: 0.5;
@@ -434,7 +451,8 @@ h4.c3xgm-about-h {
   display: block;
   font-weight: 600;
   font-family: "open-sans-condensed", 'Arial Narrow', Arial, sans-serif;
-  font-size: 4.528923vw;
+  font-size: 27.292552947998px;
+  font-size: 8.528923vw;
   line-height: 1em;
 }
 @media (min-width: 768px) {
@@ -443,60 +461,60 @@ h4.c3xgm-about-h {
     font-size: 41px;
   }
 }
-/* line 94, ../sass/components/_typography.scss */
+/* line 97, ../sass/components/_typography.scss */
 .c3xgm-about-blockquote strong {
   font-weight: 700;
 }
 
-/* line 98, ../sass/components/_typography.scss */
+/* line 101, ../sass/components/_typography.scss */
 .c3xgm-about-light-blue {
   color: #6086C4 !important;
 }
 
-/* line 99, ../sass/components/_typography.scss */
+/* line 102, ../sass/components/_typography.scss */
 .c3xgm-about-blue {
   color: #5e85c4 !important;
 }
 
-/* line 100, ../sass/components/_typography.scss */
+/* line 103, ../sass/components/_typography.scss */
 .c3xgm-about-dark-blue {
   color: #124e9c !important;
 }
 
-/* line 101, ../sass/components/_typography.scss */
+/* line 104, ../sass/components/_typography.scss */
 .c3xgm-about-yellow {
   color: #FDB12E !important;
 }
 
-/* line 102, ../sass/components/_typography.scss */
+/* line 105, ../sass/components/_typography.scss */
 .c3xgm-about-light-gray {
   color: #7E8184 !important;
 }
 
-/* line 103, ../sass/components/_typography.scss */
+/* line 106, ../sass/components/_typography.scss */
 .c3xgm-about-gray {
   color: #808285 !important;
 }
 
-/* line 104, ../sass/components/_typography.scss */
+/* line 107, ../sass/components/_typography.scss */
 .c3xgm-about-dark-gray {
   color: #555555 !important;
 }
 
-/* line 107, ../sass/components/_typography.scss */
+/* line 110, ../sass/components/_typography.scss */
 .text-right,
 .text-right .c3xgm-about-blockquote,
 .c3xgm-about-text-right {
   text-align: right;
 }
 
-/* line 115, ../sass/components/_typography.scss */
+/* line 118, ../sass/components/_typography.scss */
 p.c3xgm-about-p.c3xgm-about-header-p {
   margin: 0 auto;
   padding: 0 2% 0 7px;
 }
 @media (min-width: 768px) {
-  /* line 115, ../sass/components/_typography.scss */
+  /* line 118, ../sass/components/_typography.scss */
   p.c3xgm-about-p.c3xgm-about-header-p {
     max-width: 768px;
     margin: 9px 0 9px 0;
@@ -504,7 +522,7 @@ p.c3xgm-about-p.c3xgm-about-header-p {
 }
 
 @media (min-width: 768px) {
-  /* line 125, ../sass/components/_typography.scss */
+  /* line 128, ../sass/components/_typography.scss */
   .c3xgm-about-section-header {
     padding: 0;
   }
@@ -878,72 +896,118 @@ svg {
 }
 /* line 7, ../sass/components/pages/_our-people.scss */
 .c3xgm-about-page-our-people .c3xgm-about-block {
-  width: 50%;
-  float: left;
   margin-bottom: 1.75em;
+  width: 100%;
 }
-/* line 10, ../sass/components/pages/_our-people.scss */
+@media (min-width: 768px) {
+  /* line 7, ../sass/components/pages/_our-people.scss */
+  .c3xgm-about-page-our-people .c3xgm-about-block {
+    width: 50%;
+    float: left;
+  }
+}
+/* line 12, ../sass/components/pages/_our-people.scss */
 .c3xgm-about-page-our-people .c3xgm-about-block .c3xgm-about-block-image {
   position: relative;
   text-align: center;
 }
-/* line 14, ../sass/components/pages/_our-people.scss */
+/* line 16, ../sass/components/pages/_our-people.scss */
 .c3xgm-about-page-our-people .c3xgm-about-block.c3xgm-about-employees {
-  width: 100%;
-  margin-bottom: 2em;
+  width: 96%;
+  margin: 0 auto 2em;
+  float: none;
+  text-align: center;
+}
+/* line 22, ../sass/components/pages/_our-people.scss */
+.c3xgm-about-page-our-people .c3xgm-about-block.c3xgm-about-employees .c3xgm-about-blockquote {
+  text-align: left;
+  padding: 0;
+  margin: 0 auto;
+  max-width: 400px;
+  display: inline-block;
 }
 @media (min-width: 768px) {
-  /* line 14, ../sass/components/pages/_our-people.scss */
-  .c3xgm-about-page-our-people .c3xgm-about-block.c3xgm-about-employees {
-    float: none;
+  /* line 22, ../sass/components/pages/_our-people.scss */
+  .c3xgm-about-page-our-people .c3xgm-about-block.c3xgm-about-employees .c3xgm-about-blockquote {
+    float: left;
+    width: auto;
+    max-width: 50%;
+    margin: 0;
   }
 }
-/* line 19, ../sass/components/pages/_our-people.scss */
-.c3xgm-about-page-our-people .c3xgm-about-block.c3xgm-about-employees .c3xgm-about-blockquote {
-  margin: 0;
-  padding: 0;
-  width: auto;
-  max-width: 50%;
-  float: left;
-}
-/* line 24, ../sass/components/pages/_our-people.scss */
+/* line 35, ../sass/components/pages/_our-people.scss */
 .c3xgm-about-page-our-people .c3xgm-about-block.c3xgm-about-employees .c3xgm-about-blockquote .c3xgm-about-gray {
   margin-top: -2.272%;
 }
-/* line 27, ../sass/components/pages/_our-people.scss */
+/* line 38, ../sass/components/pages/_our-people.scss */
 .c3xgm-about-page-our-people .c3xgm-about-block.c3xgm-about-employees .c3xgm-about-block-image {
-  width: 43.7%;
-  float: left;
   margin-top: 2.4%;
-  margin-left: 1.8%;
+  width: 100%;
 }
-/* line 33, ../sass/components/pages/_our-people.scss */
-.c3xgm-about-page-our-people .c3xgm-about-block.c3xgm-about-employees .number {
-  line-height: 1.09em;
-}
-/* line 35, ../sass/components/pages/_our-people.scss */
-.c3xgm-about-page-our-people .c3xgm-about-block.c3xgm-about-employees .c3xgm-about-gray {
-  margin-left: 5px;
-  font-size: 17px;
+/* line 42, ../sass/components/pages/_our-people.scss */
+.c3xgm-about-page-our-people .c3xgm-about-block.c3xgm-about-employees .c3xgm-about-block-image img {
+  width: 88%;
+  max-width: 400px;
 }
 @media (min-width: 768px) {
-  /* line 35, ../sass/components/pages/_our-people.scss */
+  /* line 38, ../sass/components/pages/_our-people.scss */
+  .c3xgm-about-page-our-people .c3xgm-about-block.c3xgm-about-employees .c3xgm-about-block-image {
+    float: left;
+    width: 50%;
+    margin-left: 1.8%;
+  }
+  /* line 53, ../sass/components/pages/_our-people.scss */
+  .c3xgm-about-page-our-people .c3xgm-about-block.c3xgm-about-employees .c3xgm-about-block-image img {
+    float: none;
+    width: auto;
+    max-width: none;
+  }
+}
+/* line 57, ../sass/components/pages/_our-people.scss */
+.c3xgm-about-page-our-people .c3xgm-about-block.c3xgm-about-employees .number {
+  line-height: 1em;
+  font-size: 128px;
+  font-size: 28vw;
+}
+@media (min-width: 400px) {
+  /* line 57, ../sass/components/pages/_our-people.scss */
+  .c3xgm-about-page-our-people .c3xgm-about-block.c3xgm-about-employees .number {
+    font-size: 111px;
+  }
+}
+@media (min-width: 600px) {
+  /* line 57, ../sass/components/pages/_our-people.scss */
+  .c3xgm-about-page-our-people .c3xgm-about-block.c3xgm-about-employees .number {
+    font-size: 64px;
+    font-size: 14.36vw;
+    line-height: 1.09em;
+  }
+}
+@media (min-width: 906px) {
+  /* line 57, ../sass/components/pages/_our-people.scss */
+  .c3xgm-about-page-our-people .c3xgm-about-block.c3xgm-about-employees .number {
+    font-size: 128px;
+  }
+}
+/* line 68, ../sass/components/pages/_our-people.scss */
+.c3xgm-about-page-our-people .c3xgm-about-block.c3xgm-about-employees .c3xgm-about-gray {
+  margin-left: 5px;
+  font-size: 34px;
+  font-size: 7.4375vw;
+}
+@media (min-width: 400px) {
+  /* line 68, ../sass/components/pages/_our-people.scss */
   .c3xgm-about-page-our-people .c3xgm-about-block.c3xgm-about-employees .c3xgm-about-gray {
     font-size: 34px;
   }
 }
-/* line 42, ../sass/components/pages/_our-people.scss */
-.c3xgm-about-page-our-people .number {
-  font-size: 64px;
-  font-size: 14.36vw;
-}
-@media (min-width: 906px) {
-  /* line 42, ../sass/components/pages/_our-people.scss */
-  .c3xgm-about-page-our-people .number {
-    font-size: 128px;
+@media (min-width: 768px) {
+  /* line 68, ../sass/components/pages/_our-people.scss */
+  .c3xgm-about-page-our-people .c3xgm-about-block.c3xgm-about-employees .c3xgm-about-gray {
+    font-size: 34px;
   }
 }
-/* line 48, ../sass/components/pages/_our-people.scss */
+/* line 78, ../sass/components/pages/_our-people.scss */
 .c3xgm-about-page-our-people .c3xgm-about-separator {
   display: block;
   float: left;
@@ -953,104 +1017,139 @@ svg {
   padding-bottom: .65em;
   border-right: 0.08em solid #FDB12E;
 }
-/* line 54, ../sass/components/pages/_our-people.scss */
+/* line 84, ../sass/components/pages/_our-people.scss */
 .c3xgm-about-page-our-people .c3xgm-about-separator .c3xgm-about-gray {
   line-height: .9em;
 }
-/* line 56, ../sass/components/pages/_our-people.scss */
+/* line 86, ../sass/components/pages/_our-people.scss */
 .c3xgm-about-page-our-people .c3xgm-about-separator span {
   display: block;
   clear: left;
 }
-/* line 57, ../sass/components/pages/_our-people.scss */
+/* line 87, ../sass/components/pages/_our-people.scss */
 .c3xgm-about-page-our-people .c3xgm-about-separator + .number {
   float: left;
   padding-left: .1em;
-  font-size: 41px;
-  font-size: 13.697113vw;
+  font-size: 77px;
+  font-size: 25.697113vw;
   line-height: .8em;
 }
+@media (min-width: 768px) {
+  /* line 87, ../sass/components/pages/_our-people.scss */
+  .c3xgm-about-page-our-people .c3xgm-about-separator + .number {
+    font-size: 41px;
+    font-size: 13.697113vw;
+  }
+}
 @media (min-width: 906px) {
-  /* line 57, ../sass/components/pages/_our-people.scss */
+  /* line 87, ../sass/components/pages/_our-people.scss */
   .c3xgm-about-page-our-people .c3xgm-about-separator + .number {
     font-size: 124px;
   }
 }
-/* line 70, ../sass/components/pages/_our-people.scss */
+/* line 103, ../sass/components/pages/_our-people.scss */
 .c3xgm-about-page-our-people .c3xgm-about-timezones .c3xgm-about-block-image {
   padding-top: 2.5%;
 }
-/* line 72, ../sass/components/pages/_our-people.scss */
+/* line 105, ../sass/components/pages/_our-people.scss */
 .c3xgm-about-page-our-people .c3xgm-about-timezones .c3xgm-about-block-image img {
   width: 76.672%;
   max-width: 333px;
 }
-/* line 79, ../sass/components/pages/_our-people.scss */
+/* line 112, ../sass/components/pages/_our-people.scss */
 .c3xgm-about-page-our-people .c3xgm-about-continents .c3xgm-about-block-image img {
   width: 88.672%;
   max-width: 385px;
 }
-/* line 86, ../sass/components/pages/_our-people.scss */
+/* line 119, ../sass/components/pages/_our-people.scss */
 .c3xgm-about-page-our-people .c3xgm-about-languages .c3xgm-about-blockquote {
   margin-bottom: 0;
 }
-/* line 88, ../sass/components/pages/_our-people.scss */
+/* line 121, ../sass/components/pages/_our-people.scss */
 .c3xgm-about-page-our-people .c3xgm-about-languages .c3xgm-about-block-image img {
   width: 78.110599%;
   max-width: 339px;
 }
-/* line 91, ../sass/components/pages/_our-people.scss */
+/* line 124, ../sass/components/pages/_our-people.scss */
 .c3xgm-about-page-our-people .c3xgm-about-timezones,
 .c3xgm-about-page-our-people .c3xgm-about-continents,
 .c3xgm-about-page-our-people .c3xgm-about-languages {
   text-align: center;
 }
-/* line 95, ../sass/components/pages/_our-people.scss */
+/* line 128, ../sass/components/pages/_our-people.scss */
 .c3xgm-about-page-our-people .c3xgm-about-timezones > p,
 .c3xgm-about-page-our-people .c3xgm-about-continents > p,
 .c3xgm-about-page-our-people .c3xgm-about-languages > p {
   display: inline-block;
 }
-/* line 100, ../sass/components/pages/_our-people.scss */
-.c3xgm-about-page-our-people .c3xgm-about-headquarters .c3xgm-about-blockquote {
-  margin-top: 1.0625em;
+/* line 133, ../sass/components/pages/_our-people.scss */
+.c3xgm-about-page-our-people .c3xgm-about-headquarters {
+  text-align: center;
 }
-/* line 103, ../sass/components/pages/_our-people.scss */
+/* line 135, ../sass/components/pages/_our-people.scss */
+.c3xgm-about-page-our-people .c3xgm-about-headquarters .c3xgm-about-blockquote {
+  display: inline-block;
+  margin-top: 1.0625em;
+  text-align: left;
+  width: auto;
+}
+/* line 145, ../sass/components/pages/_our-people.scss */
 .c3xgm-about-page-our-people .c3xgm-about-headquarters .c3xgm-about-blockquote .c3xgm-about-gray {
   border-left: 0.1em solid #FDB12E;
   padding-left: .35em;
 }
-/* line 105, ../sass/components/pages/_our-people.scss */
+/* line 149, ../sass/components/pages/_our-people.scss */
 .c3xgm-about-page-our-people .c3xgm-about-headquarters .c3xgm-about-blockquote span > span {
   color: #6086C4;
   line-height: .86em;
-  font-size: 34px;
-  font-size: 10.604232vw;
+  font-size: 72px;
+  font-size: 22.604232vw;
+}
+@media (min-width: 768px) {
+  /* line 149, ../sass/components/pages/_our-people.scss */
+  .c3xgm-about-page-our-people .c3xgm-about-headquarters .c3xgm-about-blockquote span > span {
+    font-size: 34px;
+    font-size: 10.604232vw;
+  }
 }
 @media (min-width: 906px) {
-  /* line 105, ../sass/components/pages/_our-people.scss */
+  /* line 149, ../sass/components/pages/_our-people.scss */
   .c3xgm-about-page-our-people .c3xgm-about-headquarters .c3xgm-about-blockquote span > span {
     font-size: 93px;
   }
 }
-/* line 110, ../sass/components/pages/_our-people.scss */
+/* line 157, ../sass/components/pages/_our-people.scss */
 .c3xgm-about-page-our-people .c3xgm-about-headquarters .c3xgm-about-blockquote > span:first-of-type {
-  font-size: 12px;
-  font-size: 3.75vw;
+  font-size: 25.577px;
+  font-size: 8vw;
+}
+@media (min-width: 768px) {
+  /* line 157, ../sass/components/pages/_our-people.scss */
+  .c3xgm-about-page-our-people .c3xgm-about-headquarters .c3xgm-about-blockquote > span:first-of-type {
+    font-size: 12px;
+    font-size: 3.75vw;
+  }
 }
 @media (min-width: 906px) {
-  /* line 110, ../sass/components/pages/_our-people.scss */
+  /* line 157, ../sass/components/pages/_our-people.scss */
   .c3xgm-about-page-our-people .c3xgm-about-headquarters .c3xgm-about-blockquote > span:first-of-type {
     font-size: 34px;
   }
 }
-/* line 114, ../sass/components/pages/_our-people.scss */
+/* line 163, ../sass/components/pages/_our-people.scss */
 .c3xgm-about-page-our-people .c3xgm-about-headquarters .c3xgm-about-blockquote > span:last-of-type {
-  font-size: 13px;
-  font-size: 4.087vw;
+  font-size: 27.5px;
+  font-size: 8.71142095vw;
+}
+@media (min-width: 768px) {
+  /* line 163, ../sass/components/pages/_our-people.scss */
+  .c3xgm-about-page-our-people .c3xgm-about-headquarters .c3xgm-about-blockquote > span:last-of-type {
+    font-size: 13px;
+    font-size: 4.087vw;
+  }
 }
 @media (min-width: 906px) {
-  /* line 114, ../sass/components/pages/_our-people.scss */
+  /* line 163, ../sass/components/pages/_our-people.scss */
   .c3xgm-about-page-our-people .c3xgm-about-headquarters .c3xgm-about-blockquote > span:last-of-type {
     font-size: 37px;
   }
@@ -1063,7 +1162,8 @@ svg {
 /* line 5, ../sass/components/pages/_our-brands.scss */
 .c3xgm-about-page-our-brands .c3xgm-about-global,
 .c3xgm-about-page-our-brands .c3xgm-about-seconds {
-  margin-bottom: 8.8%;
+  margin: 3em auto;
+  text-align: center;
 }
 @media (min-width: 768px) {
   /* line 5, ../sass/components/pages/_our-brands.scss */
@@ -1072,33 +1172,35 @@ svg {
     margin-bottom: 80px;
   }
 }
-/* line 10, ../sass/components/pages/_our-brands.scss */
+/* line 12, ../sass/components/pages/_our-brands.scss */
 .c3xgm-about-page-our-brands .c3xgm-about-global .c3xgm-about-blockquote,
 .c3xgm-about-page-our-brands .c3xgm-about-seconds .c3xgm-about-blockquote {
-  width: 100%;
+  width: auto;
+  display: inline-block;
+  text-align: left;
 }
 @media (min-width: 768px) {
-  /* line 10, ../sass/components/pages/_our-brands.scss */
+  /* line 12, ../sass/components/pages/_our-brands.scss */
   .c3xgm-about-page-our-brands .c3xgm-about-global .c3xgm-about-blockquote,
   .c3xgm-about-page-our-brands .c3xgm-about-seconds .c3xgm-about-blockquote {
     width: 75%;
   }
 }
-/* line 14, ../sass/components/pages/_our-brands.scss */
+/* line 20, ../sass/components/pages/_our-brands.scss */
 .c3xgm-about-page-our-brands .c3xgm-about-global .c3xgm-about-blockquote span strong,
 .c3xgm-about-page-our-brands .c3xgm-about-seconds .c3xgm-about-blockquote span strong {
   font-weight: 700;
 }
-/* line 16, ../sass/components/pages/_our-brands.scss */
+/* line 22, ../sass/components/pages/_our-brands.scss */
 .c3xgm-about-page-our-brands .c3xgm-about-global .c3xgm-about-blockquote .number,
 .c3xgm-about-page-our-brands .c3xgm-about-seconds .c3xgm-about-blockquote .number {
-  font-size: 28.7999992370605px;
-  font-size: 8.1509434vw;
+  font-size: 61px;
+  font-size: 17.4vw;
   line-height: .83em;
   margin-bottom: .05em;
 }
-@media (min-width: 906px) {
-  /* line 16, ../sass/components/pages/_our-brands.scss */
+@media (min-width: 600px) {
+  /* line 22, ../sass/components/pages/_our-brands.scss */
   .c3xgm-about-page-our-brands .c3xgm-about-global .c3xgm-about-blockquote .number,
   .c3xgm-about-page-our-brands .c3xgm-about-seconds .c3xgm-about-blockquote .number {
     font-size: 81.3600006103516px;
@@ -1106,21 +1208,21 @@ svg {
   }
 }
 @media (min-width: 1140px) {
-  /* line 16, ../sass/components/pages/_our-brands.scss */
+  /* line 22, ../sass/components/pages/_our-brands.scss */
   .c3xgm-about-page-our-brands .c3xgm-about-global .c3xgm-about-blockquote .number,
   .c3xgm-about-page-our-brands .c3xgm-about-seconds .c3xgm-about-blockquote .number {
     font-size: 96px;
   }
 }
-/* line 22, ../sass/components/pages/_our-brands.scss */
+/* line 31, ../sass/components/pages/_our-brands.scss */
 .c3xgm-about-page-our-brands .c3xgm-about-global .c3xgm-about-blockquote .c3xgm-about-gray,
 .c3xgm-about-page-our-brands .c3xgm-about-seconds .c3xgm-about-blockquote .c3xgm-about-gray {
-  font-size: 14.3748378753662px;
-  font-size: 4.3921369vw;
+  font-size: 30.68628583917922px;
+  font-size: 9.375992239131463vw;
   line-height: 1em;
 }
-@media (min-width: 906px) {
-  /* line 22, ../sass/components/pages/_our-brands.scss */
+@media (min-width: 600px) {
+  /* line 31, ../sass/components/pages/_our-brands.scss */
   .c3xgm-about-page-our-brands .c3xgm-about-global .c3xgm-about-blockquote .c3xgm-about-gray,
   .c3xgm-about-page-our-brands .c3xgm-about-seconds .c3xgm-about-blockquote .c3xgm-about-gray {
     font-size: 40.6089172363281px;
@@ -1128,21 +1230,21 @@ svg {
   }
 }
 @media (min-width: 1140px) {
-  /* line 22, ../sass/components/pages/_our-brands.scss */
+  /* line 31, ../sass/components/pages/_our-brands.scss */
   .c3xgm-about-page-our-brands .c3xgm-about-global .c3xgm-about-blockquote .c3xgm-about-gray,
   .c3xgm-about-page-our-brands .c3xgm-about-seconds .c3xgm-about-blockquote .c3xgm-about-gray {
     font-size: 53px;
   }
 }
-/* line 27, ../sass/components/pages/_our-brands.scss */
+/* line 38, ../sass/components/pages/_our-brands.scss */
 .c3xgm-about-page-our-brands .c3xgm-about-global .c3xgm-about-blockquote .c3xgm-about-dark-blue,
 .c3xgm-about-page-our-brands .c3xgm-about-seconds .c3xgm-about-blockquote .c3xgm-about-dark-blue {
-  font-size: 9.50943374633789px;
-  font-size: 2.9716979vw;
+  font-size: 20.29999952965922px;
+  font-size: 6.343749541924176vw;
   line-height: 1em;
 }
-@media (min-width: 906px) {
-  /* line 27, ../sass/components/pages/_our-brands.scss */
+@media (min-width: 600px) {
+  /* line 38, ../sass/components/pages/_our-brands.scss */
   .c3xgm-about-page-our-brands .c3xgm-about-global .c3xgm-about-blockquote .c3xgm-about-dark-blue,
   .c3xgm-about-page-our-brands .c3xgm-about-seconds .c3xgm-about-blockquote .c3xgm-about-dark-blue {
     font-size: 26.8641490936279px;
@@ -1150,40 +1252,41 @@ svg {
   }
 }
 @media (min-width: 1140px) {
-  /* line 27, ../sass/components/pages/_our-brands.scss */
+  /* line 38, ../sass/components/pages/_our-brands.scss */
   .c3xgm-about-page-our-brands .c3xgm-about-global .c3xgm-about-blockquote .c3xgm-about-dark-blue,
   .c3xgm-about-page-our-brands .c3xgm-about-seconds .c3xgm-about-blockquote .c3xgm-about-dark-blue {
     font-size: 35px;
   }
 }
-/* line 34, ../sass/components/pages/_our-brands.scss */
+/* line 47, ../sass/components/pages/_our-brands.scss */
 .c3xgm-about-page-our-brands .c3xgm-about-global .c3xgm-about-block-image,
 .c3xgm-about-page-our-brands .c3xgm-about-seconds .c3xgm-about-block-image {
   text-align: center;
   margin: 9px 0;
   width: 100%;
 }
-@media (min-width: 906px) {
-  /* line 34, ../sass/components/pages/_our-brands.scss */
+@media (min-width: 600px) {
+  /* line 47, ../sass/components/pages/_our-brands.scss */
   .c3xgm-about-page-our-brands .c3xgm-about-global .c3xgm-about-block-image,
   .c3xgm-about-page-our-brands .c3xgm-about-seconds .c3xgm-about-block-image {
     width: 25%;
   }
 }
-/* line 39, ../sass/components/pages/_our-brands.scss */
+/* line 52, ../sass/components/pages/_our-brands.scss */
 .c3xgm-about-page-our-brands .c3xgm-about-global .c3xgm-about-block-image img,
 .c3xgm-about-page-our-brands .c3xgm-about-seconds .c3xgm-about-block-image img {
   display: block;
   margin: 0 auto;
   padding: 0;
 }
-/* line 45, ../sass/components/pages/_our-brands.scss */
+/* line 58, ../sass/components/pages/_our-brands.scss */
 .c3xgm-about-page-our-brands .c3xgm-about-global {
   max-width: 940px;
+  text-align: left;
 }
-/* line 47, ../sass/components/pages/_our-brands.scss */
+/* line 61, ../sass/components/pages/_our-brands.scss */
 .c3xgm-about-page-our-brands .c3xgm-about-global .c3xgm-about-blockquote {
-  float: right;
+  float: none;
   border-left: 3px solid #FDB12E;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -1191,34 +1294,38 @@ svg {
   -ms-box-sizing: border-box;
   box-sizing: border-box;
 }
-/* line 52, ../sass/components/pages/_our-brands.scss */
+/* line 67, ../sass/components/pages/_our-brands.scss */
 .c3xgm-about-page-our-brands .c3xgm-about-global .c3xgm-about-blockquote span {
   padding-left: 6%;
 }
-/* line 55, ../sass/components/pages/_our-brands.scss */
+/* line 70, ../sass/components/pages/_our-brands.scss */
 .c3xgm-about-page-our-brands .c3xgm-about-global .c3xgm-about-block-image {
   width: 100%;
   text-align: center;
 }
-@media (min-width: 768px) {
-  /* line 55, ../sass/components/pages/_our-brands.scss */
+@media (min-width: 600px) {
+  /* line 70, ../sass/components/pages/_our-brands.scss */
   .c3xgm-about-page-our-brands .c3xgm-about-global .c3xgm-about-block-image {
     width: 25%;
     float: left;
   }
 }
-/* line 59, ../sass/components/pages/_our-brands.scss */
+/* line 74, ../sass/components/pages/_our-brands.scss */
 .c3xgm-about-page-our-brands .c3xgm-about-global .c3xgm-about-block-image img {
   width: 67.234%;
   max-width: 158px;
 }
-/* line 65, ../sass/components/pages/_our-brands.scss */
+/* line 80, ../sass/components/pages/_our-brands.scss */
 .c3xgm-about-page-our-brands .c3xgm-about-seconds {
   max-width: 1020px;
+  text-align: center;
 }
-/* line 67, ../sass/components/pages/_our-brands.scss */
+/* line 83, ../sass/components/pages/_our-brands.scss */
 .c3xgm-about-page-our-brands .c3xgm-about-seconds .c3xgm-about-blockquote {
-  float: left;
+  display: inline-block;
+  width: auto;
+  float: none;
+  text-align: right;
   border-right: 3px solid #FDB12E;
   padding-right: 1.6%;
   -webkit-box-sizing: border-box;
@@ -1227,51 +1334,64 @@ svg {
   -ms-box-sizing: border-box;
   box-sizing: border-box;
 }
-@media (min-width: 768px) {
-  /* line 73, ../sass/components/pages/_our-brands.scss */
+/* line 92, ../sass/components/pages/_our-brands.scss */
+.c3xgm-about-page-our-brands .c3xgm-about-seconds .c3xgm-about-blockquote > span {
+  display: inline-block;
+  float: right;
+  clear: right;
+}
+@media (min-width: 600px) {
+  /* line 83, ../sass/components/pages/_our-brands.scss */
+  .c3xgm-about-page-our-brands .c3xgm-about-seconds .c3xgm-about-blockquote {
+    float: left;
+  }
+}
+@media (min-width: 600px) {
+  /* line 100, ../sass/components/pages/_our-brands.scss */
   .c3xgm-about-page-our-brands .c3xgm-about-seconds .c3xgm-about-block-image {
     float: right;
     width: 25%;
   }
 }
-/* line 76, ../sass/components/pages/_our-brands.scss */
+/* line 103, ../sass/components/pages/_our-brands.scss */
 .c3xgm-about-page-our-brands .c3xgm-about-seconds .c3xgm-about-block-image img {
   width: 62.798%;
   max-width: 184px;
 }
-/* line 82, ../sass/components/pages/_our-brands.scss */
+/* line 109, ../sass/components/pages/_our-brands.scss */
 .c3xgm-about-page-our-brands .c3xgm-about-dealers {
   text-align: center;
+  margin: 3em auto;
 }
-@media (min-width: 768px) {
-  /* line 82, ../sass/components/pages/_our-brands.scss */
+@media (min-width: 600px) {
+  /* line 109, ../sass/components/pages/_our-brands.scss */
   .c3xgm-about-page-our-brands .c3xgm-about-dealers {
     text-align: left;
   }
 }
-/* line 85, ../sass/components/pages/_our-brands.scss */
+/* line 113, ../sass/components/pages/_our-brands.scss */
 .c3xgm-about-page-our-brands .c3xgm-about-dealers .c3xgm-about-blockquote {
   width: auto;
   margin: 0 auto;
   display: inline-block;
   text-align: center;
 }
-@media (min-width: 768px) {
-  /* line 85, ../sass/components/pages/_our-brands.scss */
+@media (min-width: 600px) {
+  /* line 113, ../sass/components/pages/_our-brands.scss */
   .c3xgm-about-page-our-brands .c3xgm-about-dealers .c3xgm-about-blockquote {
     width: 77%;
     display: block;
     text-align: right;
   }
 }
-/* line 95, ../sass/components/pages/_our-brands.scss */
+/* line 123, ../sass/components/pages/_our-brands.scss */
 .c3xgm-about-page-our-brands .c3xgm-about-dealers .c3xgm-about-blockquote .c3xgm-about-dark-blue.c3xgm-about-thin {
   width: auto;
   max-width: 5em;
   border-bottom: 3px solid #FDB12E;
 }
-@media (min-width: 768px) {
-  /* line 95, ../sass/components/pages/_our-brands.scss */
+@media (min-width: 600px) {
+  /* line 123, ../sass/components/pages/_our-brands.scss */
   .c3xgm-about-page-our-brands .c3xgm-about-dealers .c3xgm-about-blockquote .c3xgm-about-dark-blue.c3xgm-about-thin {
     max-width: none;
     width: 75%;
@@ -1280,148 +1400,214 @@ svg {
     border-right: 3px solid #FDB12E;
   }
 }
-/* line 108, ../sass/components/pages/_our-brands.scss */
+/* line 136, ../sass/components/pages/_our-brands.scss */
 .c3xgm-about-page-our-brands .c3xgm-about-dealers .c3xgm-about-blockquote .c3xgm-about-dark-blue {
-  font-size: 14.8459243774414px;
-  font-size: 5.783775842113087vw;
+  font-size: 28.665995380401597px;
+  font-size: 11.16789277353616vw;
+}
+@media (min-width: 600px) {
+  /* line 136, ../sass/components/pages/_our-brands.scss */
+  .c3xgm-about-page-our-brands .c3xgm-about-dealers .c3xgm-about-blockquote .c3xgm-about-dark-blue {
+    font-size: 14.8459243774414px;
+    font-size: 5.783775842113087vw;
+  }
 }
 @media (min-width: 906px) {
-  /* line 108, ../sass/components/pages/_our-brands.scss */
+  /* line 136, ../sass/components/pages/_our-brands.scss */
   .c3xgm-about-page-our-brands .c3xgm-about-dealers .c3xgm-about-blockquote .c3xgm-about-dark-blue {
     font-size: 52.36046145px;
   }
 }
-/* line 112, ../sass/components/pages/_our-brands.scss */
+/* line 142, ../sass/components/pages/_our-brands.scss */
 .c3xgm-about-page-our-brands .c3xgm-about-dealers .c3xgm-about-blockquote .c3xgm-about-dark-blue span {
-  font-size: 19.4410915374756px;
-  font-size: 7.509262175090214vw;
+  font-size: 37.53880364971164px;
+  font-size: 14.5vw;
+}
+@media (min-width: 600px) {
+  /* line 142, ../sass/components/pages/_our-brands.scss */
+  .c3xgm-about-page-our-brands .c3xgm-about-dealers .c3xgm-about-blockquote .c3xgm-about-dark-blue span {
+    font-size: 19.4410915374756px;
+    font-size: 7.509262175090214vw;
+  }
 }
 @media (min-width: 906px) {
-  /* line 112, ../sass/components/pages/_our-brands.scss */
+  /* line 142, ../sass/components/pages/_our-brands.scss */
   .c3xgm-about-page-our-brands .c3xgm-about-dealers .c3xgm-about-blockquote .c3xgm-about-dark-blue span {
     font-size: 67.98127095px;
   }
 }
-/* line 118, ../sass/components/pages/_our-brands.scss */
+/* line 150, ../sass/components/pages/_our-brands.scss */
 .c3xgm-about-page-our-brands .c3xgm-about-dealers .c3xgm-about-blockquote .number {
-  font-size: 29.6918487548828px;
-  font-size: 11.43983852257275vw;
+  font-size: 57.331990760803194px;
+  font-size: 22.08918420323572vw;
   line-height: 0.85em;
 }
+@media (min-width: 600px) {
+  /* line 150, ../sass/components/pages/_our-brands.scss */
+  .c3xgm-about-page-our-brands .c3xgm-about-dealers .c3xgm-about-blockquote .number {
+    font-size: 29.6918487548828px;
+    font-size: 11.43983852257275vw;
+  }
+}
 @media (min-width: 906px) {
-  /* line 118, ../sass/components/pages/_our-brands.scss */
+  /* line 150, ../sass/components/pages/_our-brands.scss */
   .c3xgm-about-page-our-brands .c3xgm-about-dealers .c3xgm-about-blockquote .number {
     font-size: 103.564737px;
   }
 }
-/* line 123, ../sass/components/pages/_our-brands.scss */
+/* line 158, ../sass/components/pages/_our-brands.scss */
 .c3xgm-about-page-our-brands .c3xgm-about-dealers .c3xgm-about-blockquote .c3xgm-about-gray {
-  font-size: 8.83685970306397px;
-  font-size: 3.4862975830073246vw;
+  font-size: 17.06309240064622px;
+  font-size: 6.731692003028844vw;
+}
+@media (min-width: 600px) {
+  /* line 158, ../sass/components/pages/_our-brands.scss */
+  .c3xgm-about-page-our-brands .c3xgm-about-dealers .c3xgm-about-blockquote .c3xgm-about-gray {
+    font-size: 8.83685970306397px;
+    font-size: 3.4862975830073246vw;
+  }
 }
 @media (min-width: 906px) {
-  /* line 123, ../sass/components/pages/_our-brands.scss */
+  /* line 158, ../sass/components/pages/_our-brands.scss */
   .c3xgm-about-page-our-brands .c3xgm-about-dealers .c3xgm-about-blockquote .c3xgm-about-gray {
     font-size: 31.561415099999998px;
   }
 }
-/* line 132, ../sass/components/pages/_our-brands.scss */
+/* line 169, ../sass/components/pages/_our-brands.scss */
 .c3xgm-about-page-our-brands .c3xgm-about-china {
   position: relative;
+  margin: 3em auto;
 }
-/* line 134, ../sass/components/pages/_our-brands.scss */
+/* line 173, ../sass/components/pages/_our-brands.scss */
 .c3xgm-about-page-our-brands .c3xgm-about-china .c3xgm-about-block-image {
   width: 25%;
   float: left;
 }
-/* line 136, ../sass/components/pages/_our-brands.scss */
+/* line 175, ../sass/components/pages/_our-brands.scss */
 .c3xgm-about-page-our-brands .c3xgm-about-china .c3xgm-about-block-image img {
   max-width: 224px;
 }
-/* line 139, ../sass/components/pages/_our-brands.scss */
+/* line 178, ../sass/components/pages/_our-brands.scss */
 .c3xgm-about-page-our-brands .c3xgm-about-china .c3xgm-about-blockquote {
-  width: 75%;
-  position: absolute;
-  top: 38%;
-  left: 6%;
+  width: auto;
+  display: inline-block;
+  float: none;
+  margin-top: 21%;
+  margin-left: -18%;
 }
-/* line 144, ../sass/components/pages/_our-brands.scss */
+/* line 185, ../sass/components/pages/_our-brands.scss */
 .c3xgm-about-page-our-brands .c3xgm-about-china .c3xgm-about-blockquote .c3xgm-about-dark-blue.c3xgm-about-thin {
-  font-size: 5.30211591720581px;
-  font-size: 1.6569112499999998vw;
+  font-size: 11.609307290216254px;
+  font-size: 3.6279085848434995vw;
+}
+@media (min-width: 600px) {
+  /* line 185, ../sass/components/pages/_our-brands.scss */
+  .c3xgm-about-page-our-brands .c3xgm-about-china .c3xgm-about-blockquote .c3xgm-about-dark-blue.c3xgm-about-thin {
+    font-size: 5.30211591720581px;
+    font-size: 1.6569112499999998vw;
+  }
+  /* line 190, ../sass/components/pages/_our-brands.scss */
+  .c3xgm-about-page-our-brands .c3xgm-about-china .c3xgm-about-blockquote .c3xgm-about-dark-blue.c3xgm-about-thin br {
+    display: none;
+  }
 }
 @media (min-width: 906px) {
-  /* line 144, ../sass/components/pages/_our-brands.scss */
+  /* line 185, ../sass/components/pages/_our-brands.scss */
   .c3xgm-about-page-our-brands .c3xgm-about-china .c3xgm-about-blockquote .c3xgm-about-dark-blue.c3xgm-about-thin {
     font-size: 15px;
   }
 }
-/* line 149, ../sass/components/pages/_our-brands.scss */
+/* line 195, ../sass/components/pages/_our-brands.scss */
 .c3xgm-about-page-our-brands .c3xgm-about-china .c3xgm-about-blockquote .c3xgm-about-dark-blue.c3xgm-about-thin.c3xgm-about-big {
   float: left;
-  font-size: 11.3111810684204px;
-  font-size: 3.534744vw;
   margin-top: .2em;
-  line-height: 1.2em;
+  line-height: 1em;
   clear: left;
+  font-size: 24.76652319358785px;
+  font-size: 7.739538314332799vw;
+}
+@media (min-width: 600px) {
+  /* line 195, ../sass/components/pages/_our-brands.scss */
+  .c3xgm-about-page-our-brands .c3xgm-about-china .c3xgm-about-blockquote .c3xgm-about-dark-blue.c3xgm-about-thin.c3xgm-about-big {
+    font-size: 11.3111810684204px;
+    font-size: 3.534744vw;
+  }
 }
 @media (min-width: 768px) {
-  /* line 149, ../sass/components/pages/_our-brands.scss */
+  /* line 195, ../sass/components/pages/_our-brands.scss */
   .c3xgm-about-page-our-brands .c3xgm-about-china .c3xgm-about-blockquote .c3xgm-about-dark-blue.c3xgm-about-thin.c3xgm-about-big {
     clear: none;
     margin-left: .35em;
   }
 }
 @media (min-width: 906px) {
-  /* line 149, ../sass/components/pages/_our-brands.scss */
+  /* line 195, ../sass/components/pages/_our-brands.scss */
   .c3xgm-about-page-our-brands .c3xgm-about-china .c3xgm-about-blockquote .c3xgm-about-dark-blue.c3xgm-about-thin.c3xgm-about-big {
     font-size: 32px;
   }
 }
-/* line 162, ../sass/components/pages/_our-brands.scss */
+/* line 211, ../sass/components/pages/_our-brands.scss */
 .c3xgm-about-page-our-brands .c3xgm-about-china .c3xgm-about-blockquote .c3xgm-about-light-blue {
   float: left;
-  font-size: 30.3987979888916px;
-  font-size: 9.4996245vw;
+  font-size: 66.56002860311509px;
+  font-size: 20.8vw;
+  line-height: 0.9em;
+}
+@media (min-width: 600px) {
+  /* line 211, ../sass/components/pages/_our-brands.scss */
+  .c3xgm-about-page-our-brands .c3xgm-about-china .c3xgm-about-blockquote .c3xgm-about-light-blue {
+    font-size: 30.3987979888916px;
+    font-size: 9.4996245vw;
+  }
 }
 @media (min-width: 906px) {
-  /* line 162, ../sass/components/pages/_our-brands.scss */
+  /* line 211, ../sass/components/pages/_our-brands.scss */
   .c3xgm-about-page-our-brands .c3xgm-about-china .c3xgm-about-blockquote .c3xgm-about-light-blue {
     font-size: 86px;
   }
 }
-/* line 169, ../sass/components/pages/_our-brands.scss */
+/* line 220, ../sass/components/pages/_our-brands.scss */
 .c3xgm-about-page-our-brands .c3xgm-about-china .c3xgm-about-blockquote .c3xgm-about-gray {
   clear: left;
-  font-size: 14.4924507141113px;
-  font-size: 4.5288907499999995vw;
+  max-width: 8.25em;
+  font-size: 31.732107776530395px;
+  font-size: 9.916283465238898vw;
+}
+@media (min-width: 600px) {
+  /* line 220, ../sass/components/pages/_our-brands.scss */
+  .c3xgm-about-page-our-brands .c3xgm-about-china .c3xgm-about-blockquote .c3xgm-about-gray {
+    font-size: 14.4924507141113px;
+    font-size: 4.5288907499999995vw;
+    max-width: none;
+  }
 }
 @media (min-width: 906px) {
-  /* line 169, ../sass/components/pages/_our-brands.scss */
+  /* line 220, ../sass/components/pages/_our-brands.scss */
   .c3xgm-about-page-our-brands .c3xgm-about-china .c3xgm-about-blockquote .c3xgm-about-gray {
     font-size: 41px;
   }
 }
-/* line 180, ../sass/components/pages/_our-brands.scss */
+/* line 233, ../sass/components/pages/_our-brands.scss */
 .c3xgm-about-page-our-brands .c3xgm-about-cadillac-award,
 .c3xgm-about-page-our-brands .c3xgm-about-chevrolet-award {
+  margin: 3em auto;
   position: relative;
   max-width: 945px;
 }
-/* line 184, ../sass/components/pages/_our-brands.scss */
+/* line 238, ../sass/components/pages/_our-brands.scss */
 .c3xgm-about-page-our-brands .c3xgm-about-cadillac-award .c3xgm-about-block-image,
 .c3xgm-about-page-our-brands .c3xgm-about-chevrolet-award .c3xgm-about-block-image {
   width: 100%;
   text-align: center;
 }
-/* line 188, ../sass/components/pages/_our-brands.scss */
+/* line 242, ../sass/components/pages/_our-brands.scss */
 .c3xgm-about-page-our-brands .c3xgm-about-cadillac-award .c3xgm-about-block-image img,
 .c3xgm-about-page-our-brands .c3xgm-about-chevrolet-award .c3xgm-about-block-image img {
   width: 29%;
   max-width: 272px;
 }
 @media (min-width: 768px) {
-  /* line 184, ../sass/components/pages/_our-brands.scss */
+  /* line 238, ../sass/components/pages/_our-brands.scss */
   .c3xgm-about-page-our-brands .c3xgm-about-cadillac-award .c3xgm-about-block-image,
   .c3xgm-about-page-our-brands .c3xgm-about-chevrolet-award .c3xgm-about-block-image {
     width: 29%;
@@ -1429,31 +1615,31 @@ svg {
     position: absolute;
     right: 0;
   }
-  /* line 195, ../sass/components/pages/_our-brands.scss */
+  /* line 249, ../sass/components/pages/_our-brands.scss */
   .c3xgm-about-page-our-brands .c3xgm-about-cadillac-award .c3xgm-about-block-image img,
   .c3xgm-about-page-our-brands .c3xgm-about-chevrolet-award .c3xgm-about-block-image img {
     width: 100%;
   }
 }
-/* line 198, ../sass/components/pages/_our-brands.scss */
+/* line 252, ../sass/components/pages/_our-brands.scss */
 .c3xgm-about-page-our-brands .c3xgm-about-cadillac-award .c3xgm-about-blockquote,
 .c3xgm-about-page-our-brands .c3xgm-about-chevrolet-award .c3xgm-about-blockquote {
   float: left;
 }
-/* line 200, ../sass/components/pages/_our-brands.scss */
+/* line 254, ../sass/components/pages/_our-brands.scss */
 .c3xgm-about-page-our-brands .c3xgm-about-cadillac-award .c3xgm-about-blockquote .c3xgm-about-dark-blue.c3xgm-about-thin,
 .c3xgm-about-page-our-brands .c3xgm-about-chevrolet-award .c3xgm-about-blockquote .c3xgm-about-dark-blue.c3xgm-about-thin {
   font-size: 23.325067px;
   font-size: 7.2904095vw;
 }
 @media (min-width: 906px) {
-  /* line 200, ../sass/components/pages/_our-brands.scss */
+  /* line 254, ../sass/components/pages/_our-brands.scss */
   .c3xgm-about-page-our-brands .c3xgm-about-cadillac-award .c3xgm-about-blockquote .c3xgm-about-dark-blue.c3xgm-about-thin,
   .c3xgm-about-page-our-brands .c3xgm-about-chevrolet-award .c3xgm-about-blockquote .c3xgm-about-dark-blue.c3xgm-about-thin {
     font-size: 66px;
   }
 }
-/* line 203, ../sass/components/pages/_our-brands.scss */
+/* line 257, ../sass/components/pages/_our-brands.scss */
 .c3xgm-about-page-our-brands .c3xgm-about-cadillac-award .c3xgm-about-blockquote .c3xgm-about-dark-blue.c3xgm-about-thin strong,
 .c3xgm-about-page-our-brands .c3xgm-about-chevrolet-award .c3xgm-about-blockquote .c3xgm-about-dark-blue.c3xgm-about-thin strong {
   color: #6086C4;
@@ -1461,26 +1647,26 @@ svg {
   font-size: 8.94732075vw;
 }
 @media (min-width: 906px) {
-  /* line 203, ../sass/components/pages/_our-brands.scss */
+  /* line 257, ../sass/components/pages/_our-brands.scss */
   .c3xgm-about-page-our-brands .c3xgm-about-cadillac-award .c3xgm-about-blockquote .c3xgm-about-dark-blue.c3xgm-about-thin strong,
   .c3xgm-about-page-our-brands .c3xgm-about-chevrolet-award .c3xgm-about-blockquote .c3xgm-about-dark-blue.c3xgm-about-thin strong {
     font-size: 81px;
   }
 }
-/* line 209, ../sass/components/pages/_our-brands.scss */
+/* line 263, ../sass/components/pages/_our-brands.scss */
 .c3xgm-about-page-our-brands .c3xgm-about-cadillac-award .c3xgm-about-blockquote .c3xgm-about-gray,
 .c3xgm-about-page-our-brands .c3xgm-about-chevrolet-award .c3xgm-about-blockquote .c3xgm-about-gray {
   font-size: 12px;
   font-size: 3.77952vw;
 }
 @media (min-width: 906px) {
-  /* line 209, ../sass/components/pages/_our-brands.scss */
+  /* line 263, ../sass/components/pages/_our-brands.scss */
   .c3xgm-about-page-our-brands .c3xgm-about-cadillac-award .c3xgm-about-blockquote .c3xgm-about-gray,
   .c3xgm-about-page-our-brands .c3xgm-about-chevrolet-award .c3xgm-about-blockquote .c3xgm-about-gray {
     font-size: 34px;
   }
 }
-/* line 213, ../sass/components/pages/_our-brands.scss */
+/* line 267, ../sass/components/pages/_our-brands.scss */
 .c3xgm-about-page-our-brands .c3xgm-about-cadillac-award .c3xgm-about-blockquote .c3xgm-about-thin,
 .c3xgm-about-page-our-brands .c3xgm-about-chevrolet-award .c3xgm-about-blockquote .c3xgm-about-thin {
   color: #124e9c;
@@ -1488,17 +1674,17 @@ svg {
   font-size: 1.9882935vw;
 }
 @media (min-width: 906px) {
-  /* line 213, ../sass/components/pages/_our-brands.scss */
+  /* line 267, ../sass/components/pages/_our-brands.scss */
   .c3xgm-about-page-our-brands .c3xgm-about-cadillac-award .c3xgm-about-blockquote .c3xgm-about-thin,
   .c3xgm-about-page-our-brands .c3xgm-about-chevrolet-award .c3xgm-about-blockquote .c3xgm-about-thin {
     font-size: 26px;
   }
 }
-/* line 223, ../sass/components/pages/_our-brands.scss */
+/* line 277, ../sass/components/pages/_our-brands.scss */
 .c3xgm-about-page-our-brands .c3xgm-about-cadillac-award .c3xgm-about-blockquote {
   margin-top: 4%;
 }
-/* line 225, ../sass/components/pages/_our-brands.scss */
+/* line 279, ../sass/components/pages/_our-brands.scss */
 .c3xgm-about-page-our-brands .c3xgm-about-cadillac-award .c3xgm-about-blockquote .c3xgm-about-gray {
   margin-bottom: 1%;
   margin-top: 1%;
@@ -1506,7 +1692,7 @@ svg {
   font-size: 3.77952vw;
 }
 @media (min-width: 906px) {
-  /* line 225, ../sass/components/pages/_our-brands.scss */
+  /* line 279, ../sass/components/pages/_our-brands.scss */
   .c3xgm-about-page-our-brands .c3xgm-about-cadillac-award .c3xgm-about-blockquote .c3xgm-about-gray {
     font-size: 41px;
   }
@@ -2596,9 +2782,9 @@ svg {
 
 /* line 4, ../sass/components/decorative/_red-car.scss */
 .c3xgm-about-page-our-brands .c3xgm-about-block.c3xgm-about-decorative.c3xgm-about-red-car-road {
-  margin-bottom: 7.5%;
+  margin: 3em auto;
   height: 0;
-  padding-bottom: 21.446809%;
+  padding-bottom: 31.602%;
 }
 @media (min-width: 906px) {
   /* line 4, ../sass/components/decorative/_red-car.scss */
@@ -2612,14 +2798,20 @@ svg {
     padding-bottom: 252px;
   }
 }
-/* line 10, ../sass/components/decorative/_red-car.scss */
+/* line 13, ../sass/components/decorative/_red-car.scss */
 .c3xgm-about-page-our-brands .c3xgm-about-block.c3xgm-about-decorative.c3xgm-about-red-car-road .c3xgm-about-red-car {
   position: absolute;
   right: 0;
-  width: 34.042553%;
+  width: 50%;
   max-width: 400px;
 }
-/* line 14, ../sass/components/decorative/_red-car.scss */
+@media (min-width: 768px) {
+  /* line 13, ../sass/components/decorative/_red-car.scss */
+  .c3xgm-about-page-our-brands .c3xgm-about-block.c3xgm-about-decorative.c3xgm-about-red-car-road .c3xgm-about-red-car {
+    width: 34.042553%;
+  }
+}
+/* line 18, ../sass/components/decorative/_red-car.scss */
 .c3xgm-about-page-our-brands .c3xgm-about-block.c3xgm-about-decorative.c3xgm-about-red-car-road .c3xgm-about-red-car img {
   width: 100%;
 }
@@ -2627,6 +2819,7 @@ svg {
 /* line 4, ../sass/components/decorative/_flag-line.scss */
 .c3xgm-about-page-our-brands .c3xgm-about-block.c3xgm-about-decorative.c3xgm-about-flag-line {
   margin-bottom: 7.5%;
+  overflow-x: hidden;
 }
 @media (min-width: 906px) {
   /* line 4, ../sass/components/decorative/_flag-line.scss */
@@ -2634,29 +2827,43 @@ svg {
     margin-bottom: 90px;
   }
 }
-/* line 10, ../sass/components/decorative/_flag-line.scss */
+/* line 11, ../sass/components/decorative/_flag-line.scss */
 .c3xgm-about-page-our-brands .c3xgm-about-block.c3xgm-about-decorative.c3xgm-about-flag-line .c3xgm-about-grey-car {
   position: absolute;
   left: 0;
   right: 0;
   bottom: 0;
   margin: auto;
-  width: 21.3617%;
+  width: 50%;
   max-width: 251px;
 }
-/* line 16, ../sass/components/decorative/_flag-line.scss */
+@media (min-width: 768px) {
+  /* line 11, ../sass/components/decorative/_flag-line.scss */
+  .c3xgm-about-page-our-brands .c3xgm-about-block.c3xgm-about-decorative.c3xgm-about-flag-line .c3xgm-about-grey-car {
+    width: 21.3617%;
+    max-width: 251px;
+  }
+}
+/* line 21, ../sass/components/decorative/_flag-line.scss */
 .c3xgm-about-page-our-brands .c3xgm-about-block.c3xgm-about-decorative.c3xgm-about-flag-line .c3xgm-about-grey-car img {
   width: 100%;
 }
-/* line 19, ../sass/components/decorative/_flag-line.scss */
+/* line 24, ../sass/components/decorative/_flag-line.scss */
 .c3xgm-about-page-our-brands .c3xgm-about-block.c3xgm-about-decorative.c3xgm-about-flag-line .c3xgm-about-flag-line {
   margin: 0 auto;
   text-align: center;
-  width: 100%;
   height: 0;
-  padding-bottom: 21.276596%;
+  width: 150%;
+  padding-bottom: 40%;
 }
-/* line 25, ../sass/components/decorative/_flag-line.scss */
+@media (min-width: 768px) {
+  /* line 24, ../sass/components/decorative/_flag-line.scss */
+  .c3xgm-about-page-our-brands .c3xgm-about-block.c3xgm-about-decorative.c3xgm-about-flag-line .c3xgm-about-flag-line {
+    width: 100%;
+    padding-bottom: 21.276596%;
+  }
+}
+/* line 31, ../sass/components/decorative/_flag-line.scss */
 .c3xgm-about-page-our-brands .c3xgm-about-block.c3xgm-about-decorative.c3xgm-about-flag-line .c3xgm-about-flag-line img {
   width: 100%;
 }
