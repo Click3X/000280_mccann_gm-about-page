@@ -34,6 +34,11 @@
 	}
 
 	.c3xgm-about-module {
+		.c3xgm-about-vehicle-copy,
+		.c3xgm-about-link,
+		.c3xgm-about-h,
+		.c3xgm-about-p { text-align: left; }
+
 		.c3xgm-about-block-image,
 		.c3xgm-about-block-image img,
 		.c3xgm-about-vehicle-copy,
@@ -48,6 +53,11 @@
 		.c3xgm-about-vehicle-copy { 
 			display: block; 
 			margin: 1em auto 0; 
+		}
+
+		// .c3xgm-about-link,
+		.c3xgm-about-p { margin-left:0; margin-right:0; 
+			@media(min-width: $tablet-height) { margin-left: auto; margin-right:auto;}
 		}
 
 

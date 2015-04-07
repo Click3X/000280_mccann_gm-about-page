@@ -52,7 +52,9 @@ h1.c3xgm-about-h{
 }
 
 h2.c3xgm-about-h{
-	font-size: 18px; line-height:1em; color:$gm-dark-blue;
+	font-size: 18px; 
+	line-height:1em; color:$gm-dark-blue;
+	font-size: 48px; font-size: 8.65vw;
 	@media( min-width:$tablet-height ){ font-size: 52px; line-height: 74px; }
 }
 
@@ -86,13 +88,19 @@ h4.c3xgm-about-h{
 	@include clearfix;
 	
 	span { 
-		display: block; font-weight: 600;
+		font-weight: 600;
 		font-family: "open-sans-condensed", 'Arial Narrow', Arial, sans-serif;
 		// font-size: 4.528923vw;
 		font-size: 27.292552947998px;
 		font-size: 8.528923vw;
 		line-height:1em;
-		@media( min-width:$tablet-height ){ font-size:41px; }
+
+		// display: block; 
+		display: inline-block; 
+		@media( min-width:$tablet-height ){ 
+			font-size:41px; 
+			display: block; 
+		}
 	}
 	strong { font-weight: 700; }
 }
@@ -118,6 +126,7 @@ h4.c3xgm-about-h{
 p.c3xgm-about-p.c3xgm-about-header-p {
 	// max-width: 77%;
 	margin:0 auto; padding: 0 2% 0 7px;
+	text-align: left;
 	@media( min-width:$tablet-height ){ 
 		max-width:768px;
 		margin: 9px 0 9px 0;

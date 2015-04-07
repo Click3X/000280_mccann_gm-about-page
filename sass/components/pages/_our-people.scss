@@ -1,12 +1,16 @@
 // OUR PEOPLE
 .c3xgm-about-page-our-people {
 	max-width: $inner-border;
+	width:92%;
+
+	.c3xgm-about-block.c3xgm-about-clearfix.c3xgm-about-employees,
+	.c3xgm-about-section.c3xgm-about-clearfix.our-people { width: 100%; }
 
 	> .c3xgm-about-section { margin-bottom: 0.6em; }
 
 	.c3xgm-about-block { 
 		margin-bottom: 1.75em; 
-		width: 100%;
+		width: 92%;
 		@media(min-width:$tablet-height ) { width: 50%; float: left; }
 
 		.c3xgm-about-block-image { position: relative; text-align: center;}
@@ -14,19 +18,17 @@
 
 	// EMPLOYEES
 	.c3xgm-about-block.c3xgm-about-employees {
-		width: 96%;
 		margin: 0 auto 2em;
 		float: none;
 		text-align: center;
 
+		@media(min-width:$tablet-height ) { width:92%; }
+
 		.c3xgm-about-blockquote {
 			text-align: left;
 		  	padding: 0; margin: 0 auto;
-		  	// width: 100%; 
-		  	max-width: 400px;
 		  	display: inline-block;
 		  	@media(min-width:$tablet-height ) { 
-		  	// @media(min-width:600px ) { 
 		  		float: left;
 		  		width: auto; max-width:50%;
 		  		margin:0; 
@@ -39,29 +41,22 @@
 			margin-top: 2.4%;
 			width: 100%;
 
-			img { 
-				// float:left;
-				width: 88%; max-width: 400px;
-			}
+			img {  width: 88%; max-width: 76%; }
 		  	@media(min-width:$tablet-height ) { 
-		  	// @media(min-width:600px ) { 
 		  		float: left;
 		  		width:50%;
-		  		// width: 43.7%;
-		  		margin-left: 1.8%;
+		  		// margin-left: 1.8%;
 
 		  		img { float:none; width:auto; max-width:none;}
 		  	}
 		}
 
 		.number { 
-			// line-height: 1.09em; 
 			line-height: 1em; 
-			// font-size: 64px; font-size: 14.36vw;
-			font-size: 128px; font-size: 28vw;
-			@media(min-width:400px) {font-size: 111px;}
+			font-size: 128px; font-size: 24vw;
+			// @media(min-width:400px) {font-size: 111px;}
 			// @media(min-width:$tablet-height ) { font-size: 64px; font-size: 14.36vw; }
-			@media(min-width:600px ) { font-size: 64px; font-size: 14.36vw; line-height: 1.09em;  }
+			@media(min-width:$tablet-height) { font-size: 64px; font-size: 14.36vw; line-height: 1.09em;  }
 			@media(min-width:$inner-border) { font-size: 128px;  }
 		}
 		  

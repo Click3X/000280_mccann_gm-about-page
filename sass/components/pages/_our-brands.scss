@@ -1,19 +1,22 @@
 // OUR BRANDS
 .c3xgm-about-page-our-brands {
 	max-width:none;
+	text-align: center;
+
+	.c3xgm-about-blockquote { text-align: left;}
 
 	.c3xgm-about-global,
 	.c3xgm-about-seconds {
 		// margin-bottom: 8.8%;
 		margin: $block-margin;
 		text-align: center;
+		// display: inline-block;
 		@media(min-width:$tablet-height) { margin-bottom: 80px; }
 
 		.c3xgm-about-blockquote { 
 			// width: 100%; 
 			width: auto;
 			display: inline-block;
-			text-align: left;
 
 			@media(min-width:$tablet-height) { width: 75%; }
 			
@@ -64,14 +67,19 @@
 			border-left:3px solid $gm-yellow;
 			@include prefix(box-sizing, border-box);
 
-			span { padding-left:6%; }
+			span { 
+				// padding-left:6%; 
+				padding-left:1rem; 
+			}
 		}
 
 		.c3xgm-about-block-image {
 			width: 100%; 
 			text-align: center;
 			@media(min-width:$font-change) {width: 25%; float:left; }
-			img { width:67.234%; max-width: 158px; }
+			img { 
+				width:67.234%; max-width: 158px; 
+			}
 		}
 	}
 
@@ -80,6 +88,8 @@
 	.c3xgm-about-seconds {
 		max-width: 1020px; 
 		text-align: center;
+		// display: inline-block;
+		width:auto;
 		.c3xgm-about-blockquote { 
 			display: inline-block;
 			width:auto;
@@ -95,12 +105,19 @@
 				clear: right;
 			}
 
-			@media(min-width:$font-change) {float:left; }
+			@media(min-width:$font-change) {
+				// width: 75%;
+				// float:left; 
+				float:right; 
+			}
 		}
 		.c3xgm-about-block-image { 
 			
 			@media(min-width:$font-change) {float:right; width: 25%; }
-			img { width:62.798%; max-width:184px; }
+			img { 
+				// width:62.798%; max-width:184px; 
+				width:67.234%; max-width: 158px; 
+			}
 		}
 	}
 
@@ -123,12 +140,15 @@
 			.c3xgm-about-dark-blue.c3xgm-about-thin {
 				width:auto;
 				max-width: 5em;
+				padding-bottom: .5rem;
 				border-bottom:3px solid $gm-yellow;
 				@media(min-width:$font-change) {
 					max-width: none;
 					width: 75%;
 					float: left;
 					border-bottom:0;
+					padding-bottom:0;
+					padding-right: .5rem;
 					border-right:3px solid $gm-yellow;
 				}
 			}
@@ -147,11 +167,16 @@
 				}
 			}
 
-			.number { 
+			.number {
+				display: block;
+				padding-top: 0.5rem;
 				// font-size: 29.6918487548828px; font-size:11.43983852257275vw; 
 				font-size: 57.331990760803194px; font-size:22.08918420323572vw; 
 				line-height: 0.85em;
-				@media(min-width: $font-change) { font-size: 29.6918487548828px; font-size:11.43983852257275vw; }
+				@media(min-width: $font-change) {
+				 font-size: 29.6918487548828px; font-size:11.43983852257275vw; 
+				 padding-top: 0; padding-left: 0.5rem;
+				}
 				@media(min-width:$inner-border) {font-size:103.564737px; }
 			}
 
@@ -179,17 +204,22 @@
 			width: auto;
 			display: inline-block;
 			float: none;
-			margin-top: 21%;
-  			margin-left: -18%;
+			margin-top: 21%; margin-left: -18%;
+  			text-align: left;
 
 			.c3xgm-about-dark-blue.c3xgm-about-thin {
 				// font-size: 5.30211591720581px; font-size: 1.6569112499999998vw;
 				font-size:11.609307290216254px; font-size:3.6279085848434995vw;
+				line-height: 1.15em;
 				@media(min-width: $font-change) { 
-					font-size: 5.30211591720581px; font-size: 1.6569112499999998vw; 
+					// font-size: 5.30211591720581px; font-size: 1.6569112499999998vw; 
+					font-size: 6.975993912267684px; font-size: 2.179998131625vw; 
 					br {display: none;}
 				}
-				@media(min-width:$inner-border) {font-size: 15px; }
+				@media(min-width:$inner-border) {
+					// font-size: 15px; 
+					  font-size: 26px;
+				}
 			}
 
 			.c3xgm-about-dark-blue.c3xgm-about-thin.c3xgm-about-big {
@@ -198,31 +228,55 @@
 				// line-height: 1.2em;
 				line-height: 1em;
 				clear: left;
+				max-width: 8em;
+
 				// font-size:11.3111810684204px; font-size:3.534744vw;
 				font-size:24.76652319358785px; font-size:7.739538314332799vw;
-				@media(min-width: $font-change) { font-size:11.3111810684204px; font-size:3.534744vw; }
+				@media(min-width: $font-change) { 
+					// font-size:11.3111810684204px; font-size:3.534744vw; 
+					font-size:14.8821209317207px; font-size:4.6506626808vw; 
+				}
 			  	@media(min-width:$tablet-height) { 
 					clear:none; margin-left: .35em;
+					margin-top:0;
 				}
 
-				@media(min-width:$inner-border) {font-size: 32px; }
+				@media(min-width:$inner-border) {
+					// font-size: 32px; 
+					  font-size: 49px;
+				}
 			}
 
 			.c3xgm-about-light-blue {
 				float: left;
 				// font-size:30.3987979888916px; font-size:9.4996245vw;
 				font-size: 66.56002860311509px; font-size: 20.8vw;
-				line-height:0.9em;
-				@media(min-width: $font-change) { font-size:30.3987979888916px; font-size:9.4996245vw; }
-				@media(min-width:$inner-border) {font-size:86px; }
+				line-height:0.8em;
+				@media(min-width: $font-change) { 
+					// font-size:30.3987979888916px; font-size:9.4996245vw; 
+					font-size: 39.995698513984685px; font-size: 12.5vw;
+					
+				}
+				@media(min-width:$inner-border) {
+					// font-size:86px; 
+					font-size: 116px;
+				}
 			}
 
 			.c3xgm-about-gray {
 				clear: left; max-width: 8.25em;
 				// font-size:14.4924507141113px; font-size: 4.5288907499999995vw;
 				font-size:31.732107776530395px; font-size:9.916283465238898vw;
-				@media(min-width: $font-change) { font-size:14.4924507141113px; font-size: 4.5288907499999995vw;  max-width: none;}
-				@media(min-width:$inner-border) {font-size:41px; }
+				line-height: 0.9em;
+				@media(min-width: $font-change) { 
+					max-width: none; line-height: 1.1em;
+					// font-size:14.4924507141113px; font-size: 4.5288907499999995vw;
+					font-size:19.067717404556237px; font-size: 5.958661559775vw;  
+				}
+				@media(min-width:$inner-border) {
+					// font-size:41px; 
+					font-size: 58px;
+				}
 			}
 		}
 	}
@@ -239,7 +293,13 @@
 			width:100%; 
 			text-align:center;
 			
-			img {width:29%;max-width: 272px;}
+			img {
+				// width:29%;max-width: 245px;
+				width:45%;
+				@media(min-width: $tablet-height) {
+					width:29%;max-width: 245px;
+				}
+			}
 
 			@media(min-width:$tablet-height) {
 				width:29%;
@@ -249,24 +309,34 @@
 				img {width:100%;}
 			}
 		}
+
 		.c3xgm-about-blockquote {
-			float: left;
+			float: none;
+  			display: inline-block;
+  			@media(min-width:$tablet-height) { float: left; }
 			.c3xgm-about-dark-blue.c3xgm-about-thin {
-				font-size:23.325067px; font-size:7.2904095vw;
+				// font-size:23.325067px; font-size:7.2904095vw;
+				font-size:26.069331341001668px; font-size:8.148148121807594vw;
+				
 				@media(min-width:$inner-border) { font-size: 66px; }
 				strong {
 					color:$gm-light-blue;
-					font-size: 28.6314258575439px; font-size:8.94732075vw; 
+					// font-size: 28.6314258575439px; font-size:8.94732075vw; 
+					font-size: 31.999999290275767px; font-size: 10vw;
 					@media(min-width:$inner-border) { font-size: 81px; }
 				}
 			}
 			.c3xgm-about-gray {
-				font-size:12px; font-size: 3.77952vw;
+				// font-size:12px; font-size: 3.77952vw;
+				font-size:13.41183612px; font-size:4.2241919043552vw;
+				
 				@media(min-width:$inner-border) { font-size: 34px; }
 			}
 			.c3xgm-about-thin {
 				color:$gm-dark-blue;
-				font-size:6.36253929138184px; font-size: 1.9882935vw;
+				// font-size:6.36253929138184px; font-size: 1.9882935vw;
+				font-size:7.111111190256181px; font-size:2.222222215038435vw;
+				
 				@media(min-width:$inner-border) {font-size: 26px; }
 			}
 		}

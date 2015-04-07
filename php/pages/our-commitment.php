@@ -1,6 +1,6 @@
 <?php
 // OUR CONMMITMENT
-echo ' <div id="our-commitment-temp" class="temp our-commitment-temp hidden"></div>';
+// echo ' <div id="our-commitment-temp" class="temp our-commitment-temp hidden"></div>';
 // ITERATE THROUGH PAGEES ARRAY
 foreach ($pages as $key => $page) {
     if($page['title'] == "Our Commitment") {

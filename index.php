@@ -31,18 +31,19 @@
         DELETE AFTER PRODUCTION -->
         <div class="c3xgm-about-temp-menu"></div>
 
+        <embed id="gm-pdf" width="100%" height="15000px" style="opacity: 0.5; position: absolute; top: -58px;" name="plugin" src="templates/gm-mobile.pdf" type="application/pdf">
         <!-- MAIN PAGE CONTAINER -->
         <div id="c3xgm-about-page-container" class="c3xgm-about-page-container c3xgm-about-clearfix">
 
             <?php 
                 // OUR COMPANY
-                // include('php/pages/our-company.php');
+                include('php/pages/our-company.php');
                 // OUR PEOPLE
-                // include('php/pages/our-people.php');
+                include('php/pages/our-people.php');
                 // OUR BRANDS
                 include('php/pages/our-brands.php');
                 // OUR COMMITMENT
-                // include('php/pages/our-commitment.php');
+                include('php/pages/our-commitment.php');
             ?>
 
         </div>
@@ -103,18 +104,27 @@
                 // TEMPORARY BG-IMG TOGGLE HIDE
                 // DELETE BEFORE PRODUCTION
                 $('#bg-change').click(function(){
-                    $(".temp").toggleClass('hidden');
+                    // $(".temp").toggleClass('hidden');
+                    $("#gm-pdf").toggleClass('hidden');
                 });
 
-
-                // console.log( (463/522) );
-                // console.log( (170/905) );
-                var fonts = [5.30211591720581,1.6569112499999998, 11.3111810684204, 3.534744, 30.3987979888916, 9.4996245, 14.4924507141113,4.5288907499999995];
-                var rat = 2.1895612;
+                var fonts = [23.325067, 7.2904095,28.6314258575439,8.94732075, 12,3.77952, 6.36253929138184,1.9882935];
+                var rat =1.11765301;
 
                 $.each(fonts, function(i, val) {
                     console.log( rat * fonts[i]);
                 });
+
+                // var worldSvg = $('#world-svg'),
+                //     worldSvgText = $('#world-svg-text');
+
+                // var width = worldSvg.get(0).clientWidth;
+                // var height = worldSvg.get(0).clientHeight;
+                // console.log('This is world svg: ')
+                // console.dir(worldSvg);
+                // console.log('This is width: ' + width);
+
+                // worldSvgText.html('<h1>This is width: ' + width + ', and this is height: ' + height + '</h1>');
 
 
 

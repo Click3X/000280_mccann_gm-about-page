@@ -46,10 +46,15 @@ TO BE DELETED AFTER DEVELOPMENT
 }
 
 .our-brands-temp {
-  left: -166px;
-  top: -035px;
-  width: 1348px;
-  height: 3816px;
+  // left: -166px;
+  // top: -035px;
+  // width: 1348px;
+  // height: 3816px;
+  top:0; left:0;
+  width:100%; 
+  // max-width: 906px; 
+  height: 0;
+  padding-bottom: 282.4309%;
 	background-image:url('../templates/brands.png');
 	opacity:0.5;
 

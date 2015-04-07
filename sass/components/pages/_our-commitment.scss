@@ -8,7 +8,7 @@
 		.c3xgm-about-block-image {
 			width: 100%;
 			padding-top: 1em;
-			img { max-width: 218px; }
+			img { max-width: 200px; }
 			@media(min-width:$tablet-height) {
 				float: left; width: 30%; 
 			}
@@ -19,21 +19,32 @@
 		  	border-top:0.2rem solid $gm-yellow;
 			  @media(min-width:$tablet-height) {
 			  	float: right; width: 70%;
+			  	border-top:0;
 			  	border-left:0.2rem solid $gm-yellow;
 			  }
 			  @include prefix(box-sizing,border-box);
 			  > span {padding-left:1.25rem;}
 			.c3xgm-about-dark-blue.c3xgm-about-thin {
-				font-size:12.9088582992554px; font-size:4.03401830544375vw; line-height: 4.83914462004375vw;
+				font-size:12.9088582992554px; 
+				// font-size:4.03401830544375vw; 
+				font-size: 6.034018vw;
+  				line-height: 1.25em;
 				@media(min-width:$inner-border) {font-size:36.5199px; line-height:43.808725px; }
 			}
 
 			.c3xgm-about-light-blue {
-				font-size: 28.7430095672607px; font-size:8.982190447256249vw; line-height:8.386732443749999vw;
-				margin-bottom: .2em;
+				font-size: 28.7430095672607px; 
+				// font-size:8.982190447256249vw; 
+				font-size: 13.98219vw;
+  				line-height: 0.9em;
+				margin-bottom: .1em;
 				@media(min-width:$inner-border) {font-size:81.315675px; line-height:75.925px; }	
 			}
-
+			.c3xgm-about-light-gray {
+				font-size: 5.528923vw;
+  				line-height: 1em;	
+			}
+			
 			.c3xgm-about-light-gray.c3xgm-about-thin {
 				.c3xgm-about-light-blue {
 					font-size:14.4925537109375px; font-size:3.522427626375vw; line-height: 1.2em;
