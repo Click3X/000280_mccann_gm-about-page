@@ -1,0 +1,49 @@
+// FIVE STARS
+.c3xgm-about-page-our-commitment {
+	
+	.c3xgm-about-five-stars {
+		margin-bottom: 7.5%; margin-top: 7.5%;
+		height: 0; padding-bottom: 30.75%;
+  		position: relative;
+  		
+		@media(min-width: $tablet-height) {
+			margin-bottom: 100px; margin-top: 100px;
+			padding-bottom: 164px;
+		}
+		
+		
+		.c3xgm-about-checker { 
+			width: 100%;
+			background-image:url('../img/decorative/landscape/checker.png');
+			background-repeat: repeat-x; background-size: contain;
+			height: 0; padding-bottom: 2.5%;
+			position: absolute;
+
+			@media(min-width: $tablet-height) { padding-bottom: 20px; }
+		}
+		.c3xgm-about-stars + .c3xgm-about-checker { bottom:0; }
+
+		.c3xgm-about-grey-top {
+			position: absolute; right:10%;
+			height: 0; padding-bottom: 30.7%;
+			width: 43%; max-width: 230px;
+			z-index: 10;
+			@media(min-width: $tablet-height) { padding-bottom: 164px; }
+			img {
+				width: 100%;
+				@include center;
+			}
+		}
+
+		.c3xgm-about-stars {
+			margin:0 auto; text-align: center;
+			width: 76.210526%; max-width: 550px;	
+			height: 0;  padding-bottom: 12.75%;
+			z-index: 0;
+			@include center;
+			
+			img { width: 100%; }
+			@media(min-width: $tablet-height) { padding-bottom: 94px; }
+		}
+	}
+}

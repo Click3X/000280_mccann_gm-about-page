@@ -1,0 +1,42 @@
+// FIVE STARS
+.c3xgm-about-page-our-commitment {
+	
+	.c3xgm-about-block.c3xgm-about-five-stars {
+		margin-bottom: 7.5%;
+		height: 0;
+  		padding-bottom: 13.958%;
+  		
+		@media(min-width: $outer-border) {
+			margin-bottom: 100px;
+			padding-bottom: 164px;
+		}
+		
+		
+		.c3xgm-about-checker { display: none; }
+
+		.c3xgm-about-grey-top {
+			position: absolute;
+			right:10%;
+			width: 19.744681%;
+			padding-bottom: 14.042553%;
+			height: 0;
+			max-width: 230px;
+			@media(min-width: $outer-border) {
+				padding-bottom: 164px;
+			}
+			img {width: 100%;}
+		}
+
+		.c3xgm-about-stars {
+			margin:0 auto;
+			text-align: center;
+			width: 76.210526%; max-width: 724px;	
+			height: 0; 
+			padding-bottom: 10.468%;
+			img { width: 100%; }
+			@media(min-width: $outer-border) {
+				padding-bottom: 124px;
+			}
+		}
+	}
+}

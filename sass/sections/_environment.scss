@@ -1,0 +1,193 @@
+// ENVIRONMENT
+.c3xgm-about-page-our-commitment {
+	.c3xgm-about-block {
+		text-align: center;
+		.c3xgm-about-blockquote {
+			text-align: left;
+			display: inline-block;
+			@media(min-width:$tablet-height) { display: block;  }
+		}
+		.c3xgm-about-block-image {
+			margin: 1em auto;
+			text-align: center;
+			img {margin:0 auto;}
+			@media(min-width:$tablet-height) { 
+				margin:0 auto; 
+			}
+		}
+	}
+
+	// CLEAN ENERGY 
+	.c3xgm-about-clean-energy {
+		text-align: left;
+		@media(min-width:$tablet-height) { margin-bottom: 0; }
+		.c3xgm-about-dark-blue.c3xgm-about-thin {
+			font-size:23px; font-size: 7vw;
+			@media(min-width:$tablet-height) {font-size:46.101659999999995px; }
+		}
+
+		.c3xgm-about-light-blue {
+			font-size:40px; font-size: 12.4vw;
+	  		line-height: 0.9em;
+			@media(min-width:$tablet-height) {font-size:78.59756px; }
+		}
+
+		.c3xgm-about-gray {
+			font-size:19px; font-size:6vw; 
+			@media(min-width:$tablet-height) {font-size:35.775859999999994px; }
+		}
+	}
+
+	// EPA ENERGY
+	.c3xgm-about-epa-energy-star {
+		   max-width: 44.5em;
+		.c3xgm-about-block-image {
+			width: 42%;
+			position: relative;
+			img { 
+				width:100%; max-width: 160px; 
+				height:auto; 
+			}
+			@media(min-width:$tablet-height) { 
+				width: 25%;
+	  			float: right; 
+	  			margin-top:9px;
+	  			padding-bottom: 168px; height: 0;
+	  			img { @include center; width:65%; }
+	  		}
+		}
+
+		.c3xgm-about-blockquote {
+			text-align: right;
+			padding-right: .6em;
+	  		border-right: .15rem solid $gm-yellow;
+
+	  		@media(min-width:$tablet-height) { 
+	  			width:75%;
+		  		padding-right: 2.5em;
+		  		border-right: .2rem solid $gm-yellow;
+		  	}
+		}
+
+		.c3xgm-about-dark-blue.c3xgm-about-thin {
+			font-size:17px; font-size:5.5vw; 
+			@media(min-width:$tablet-height) {font-size:33.786625px; }
+		}
+
+		.c3xgm-about-light-blue {
+			font-size:32px; font-size: 10.25vw;
+			@media(min-width:$tablet-height) {font-size:67.072145px; }
+		}
+
+		.c3xgm-about-gray {
+			font-size:17px; font-size:5.5vw; 
+			@media(min-width:$tablet-height) {font-size:34.9255px; }
+		}
+		
+	}
+
+
+	// CLIMATE DECLARATION
+	.c3xgm-about-climate-declaration {
+		  max-width: 52em;
+		.c3xgm-about-block-image { 
+			width:38%;
+			position: relative;
+			img { 
+				width:100%; max-width: 151px; 
+				height:auto; 
+			}
+			@media(min-width:$tablet-height) { 
+				width:25%; height:0;
+				padding-bottom: 181px; margin-top:9px;
+	  			float: left; 
+	  			position: relative;
+	  			img { 
+	  				width:65%;
+	  				@include center;
+	  			}
+	  		}
+		}
+
+		.c3xgm-about-blockquote {
+		  	padding-left: .6em;
+	  		border-left: .15rem solid $gm-yellow;
+
+	  		@media(min-width:$tablet-height) { 
+	  			float: right;
+	  			width:75%;
+		  		padding-left: 2.5em;
+		  		border-left: .2rem solid $gm-yellow;
+		  	}
+	  	}
+		
+		.c3xgm-about-dark-blue.c3xgm-about-thin {
+			font-size:16px; font-size: 5vw;
+			display: inline-block;
+			max-width: 13em;
+			@media(min-width:$tablet-height) {
+				font-size:29.747415px; 
+				display: inline;
+				max-width:none;
+			}
+		}
+
+		.c3xgm-about-light-blue {
+			font-size:28px; font-size: 9vw;
+			@media(min-width:$tablet-height) {font-size:62.27368499999999px; }
+		}
+
+		.c3xgm-about-gray.c3xgm-about-thin {
+			font-size:17px; font-size: 5.5vw;
+			@media(min-width:$tablet-height) {font-size:36.59585px; }
+		}
+	}
+
+	// LANDFILL FREE
+	.c3xgm-about-landfill-free {
+		.c3xgm-about-block-image { 
+			width: 30%;
+			position: relative;
+			img { 
+				width:100%; 
+				max-width: 172px; 
+				height:auto; 
+			}
+			@media(min-width:$tablet-height) { 
+				width: 25%;
+	  			float: right; 
+	  			padding-bottom: 162px; margin-top:9px;
+	  			img { @include center; width:60%; }
+	  		}
+		}
+
+		.c3xgm-about-blockquote { 
+			max-width: 52em;
+			text-align: right; 
+		  	padding-right: .6em;
+	  		border-right: .15rem solid $gm-yellow;
+
+	  		@media(min-width:$tablet-height) { 
+	  			width:75%;
+		  		padding-right: 2.5em;
+		  		border-right: .2rem solid $gm-yellow;
+		  	}
+		}
+
+		.c3xgm-about-dark-blue.c3xgm-about-thin {
+			font-size:26.3007926940918px; font-size:8.218997794875vw; 
+			@media(min-width:$tablet-height) {font-size:74.4065px; }
+		}
+
+		.c3xgm-about-light-blue {
+			font-size: 25px;; font-size: 8vw;
+			@media(min-width:$tablet-height) {font-size:54.666px; }
+		}
+
+		.c3xgm-about-gray {
+			font-size: 16px; font-size: 5vw;
+			@media(min-width:$tablet-height) {font-size:34.9255px; }
+		}
+	}
+
+}

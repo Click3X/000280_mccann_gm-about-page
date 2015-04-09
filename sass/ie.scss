@@ -7,12 +7,7 @@
 
 // IE 8 AND BELOW
 .lt-ie9 {
-	// .c3xgm-about-page-our-company .c3xgm-about-earn .c3xgm-about-block-tagline strong,
-	// .c3xgm-about-page-our-company .c3xgm-about-earn .c3xgm-about-block-title strong {
-	//   	font-weight: 700;
-	// }
-
-	// .c3xgm-about-module-50 {  }
+	// body { width:906px; margin: 0 auto; }
 	.c3xgm-about-page-our-people {
 		.c3xgm-about-block.c3xgm-about-clearfix.c3xgm-about-languages,
 		.c3xgm-about-block.c3xgm-about-clearfix.c3xgm-about-headquarters,
@@ -33,4 +28,32 @@
 	.c3xgm-about-module-75 {
 		width:74%; float:left;			
 	}
+
+	// TECHNOLOGY MODULE
+	.c3xgm-about-module-technology {
+		// IMAGE
+		.c3xgm-about-block-icon {
+			position: static;
+			img { 
+				width:60%;
+				position:static;
+			}
+		}
+	}
+
+		// FOUNDATION MODULE
+	.c3xgm-about-module-foundation {
+
+		.c3xgm-about-module-foundation-logo-container {
+			li img { 
+				width:50%; max-width: 130px;
+				position:static;
+			}
+		}
+	}
+
+	// GRADIENT FALLBACK
+	.c3xgm-about-gradient {
+       filter: none;
+    }
 }

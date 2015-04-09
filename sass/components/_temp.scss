@@ -78,6 +78,26 @@ TO BE DELETED AFTER DEVELOPMENT
 
 }
 
+.temp-our-commitment-mobile {
+	background-image: url("../templates/our-commitment-mobile.jpg");
+  opacity: 0.5;
+  height: 0;
+  background-size: contain;
+  width:100%;max-width: 320px;
+  padding-bottom: 532.81%;
+
+  @media(min-width: 600px) {
+  	background-image: url("../templates/our-commitment-desktop.jpg");
+  background-image: url("../templates/our-commitment-desktop.jpg");
+  width: 100%;
+  max-width: 905px;
+  // padding-bottom: 162.76%;
+  padding-bottom: 192.76%;
+  background-size: 150%;
+  background-position: 65% 0;
+  }
+}
+
 
 
 .our-brands-temp-mobile {
@@ -94,4 +114,68 @@ TO BE DELETED AFTER DEVELOPMENT
 	display:block;
 	visibility: visible;
 	bottom:auto;
+}
+
+
+
+
+.temp-foundation {
+	background-image: url("../templates/foundation-mobile.jpg");
+  opacity: 0.5;
+  height: 0;
+  background-size: contain;
+  width:100%;max-width: 320px;
+  padding-bottom: 249.875%;
+
+  @media(min-width: 600px) {
+  background-image: url("../templates/foundation-desktop.jpg");
+  width: 100%;
+  max-width: 905px;
+  // padding-bottom: 162.76%;
+  padding-bottom: 62.87%;
+  background-size: 150%;
+  background-position: 65% 0;
+  }
+}
+
+
+
+.temp-environment {
+	background-image: url("../templates/environments-mobile.jpg");
+  opacity: 0.5;
+  height: 0;
+  background-size: contain;
+  width:100%;max-width: 320px;
+  padding-bottom:491.875%;
+
+  @media(min-width: 600px) {
+  background-image: url("../templates/environments-desktop.jpg");
+  width: 100%;
+  max-width: 905px;
+  // padding-bottom: 162.76%;
+  padding-bottom: 213%;
+  background-size: 150%;
+  background-position: 65% 0;
+  }
+}
+
+
+.temp-safety {
+  background-image: url("../templates/safety-mobile.jpg");
+  opacity: 0.5;
+  height: 0;
+  background-size: contain;
+  width:100%;max-width: 320px;
+  padding-bottom:737.5%;
+
+  @media(min-width: 600px) {
+  background-image: url("../templates/safety-desktop.jpg");
+  width: 100%;
+  max-width: 905px;
+  // padding-bottom: 162.76%;
+  // padding-bottom: 223.5;
+  padding-bottom: 335%;
+  background-size: 150%;
+  background-position: 65% 0;
+  }
 }

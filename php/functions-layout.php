@@ -47,16 +47,26 @@ function printDecorative($block) {
 	if($block['class']) { $class = " c3xgm-about-".$block['class']; } 
 		else { $class = ""; }
 
-	echo '<div class="c3xgm-about-block c3xgm-about-decorative c3xgm-about-clearfix'.$class.'">';
+	if($block['title'] == "Red Car Road" || $block['title'] == "Five Stars") { $deco_class = " c3xgm-about-gradient c3xgm-about-grey-gradient"; } 
+		else { $deco_class = ""; }
+
+	echo '<div class="c3xgm-about-block c3xgm-about-decorative c3xgm-about-clearfix'.$class.''.$deco_class.'">';
 			if( isset($block['assets']) ) {
+				if($block['title'] == "Five Stars") { echo '<div class="c3xgm-about-checker"></div>';}
 				foreach ($block['assets'] as $key => $asset) {
-					// helper($asset);
-					$class = cleanString($key);
-					if( isset($asset['image@2x']) ) { $rel = 'rel="'.$asset['image@2x'].'"'; } else { $rel = ''; }
-					echo '<div class="c3xgm-about-'.$class.'">';
-						echo '<img src="'.$asset['image'].'" '.$rel.'>';
-					echo '</div>';
+					if($key == "checker") { 
+						echo ""; 
+					} else {
+						// helper($asset);
+						$class = cleanString($key);
+						if( isset($asset['image@2x']) ) { $rel = 'rel="'.$asset['image@2x'].'"'; } else { $rel = ''; }
+						echo '<div class="c3xgm-about-'.$class.'">';
+							echo '<img src="'.$asset['image'].'" '.$rel.'>';
+						echo '</div>';
+					}
 				}
+				if($block['title'] == "Five Stars") { echo '<div class="c3xgm-about-checker"></div>';}
+				if($block['title'] == "Solar Panels" || $block['title'] == "Flag Line") { echo '<div class="c3xgm-about-gradient c3xgm-about-grey-gradient c3xgm-about-solar-road"></div>';}
 			}
 	echo '</div>';
 }
@@ -177,7 +187,7 @@ function printModule($module) {
 		} elseif($module_name == 'foundation') {
 
 			// LOGO HOLDER
-			echo '<div class="c3xgm-about-clearfix c3xgm-about-module-25">';
+			echo '<div class="c3xgm-about-clearfix c3xgm-about-module-20">';
 				echo '<ul class="c3xgm-about-clearfix c3xgm-about-module-foundation-logo-container">';
 					foreach ($module['blocks'] as $key => $block) {
 						if($key == 0) { $active = " active"; } else { $active = ""; }
@@ -190,7 +200,7 @@ function printModule($module) {
 			echo '</div>';
 
 			// OPEN DIV CONTAINER FOR CAR DESCRIPTIONS
-			echo '<div class="c3xgm-about-clearfix c3xgm-about-module-75">';
+			echo '<div class="c3xgm-about-clearfix c3xgm-about-module-80">';
 		}
 
 		// MODULE CONTAINER
@@ -202,7 +212,12 @@ function printModule($module) {
 	 		// SHOW FIRST CAR MODULE ON LIST - HIDE THE REST
 	 		if($key == 0 ) {$hide_show = "show-module";} else {$hide_show = "hide-module";}
 
-	 		echo '<div id="c3xgm-about-'.$href.'" class="c3xgm-about-clearfix c3xgm-about-module c3xgm-about-'.$href.' '.$hide_show.'">';
+	 		if($module_name == 'technology') {
+	 			echo '<div id="c3xgm-about-'.$href.'" class="c3xgm-about-clearfix c3xgm-about-module c3xgm-about-'.$href.'">';
+	 		} else {
+	 			echo '<div id="c3xgm-about-'.$href.'" class="c3xgm-about-clearfix c3xgm-about-module c3xgm-about-'.$href.' '.$hide_show.'">';	
+	 		}
+	 		
 	 			// PRINT TITLE IF NOT TECH MODULE
 	 			if( (isset( $block['title']) ) && ($module_name != 'technology') ){ echo '<h3 class="c3xgm-about-h'.$color.'">'.$block['title'].'</h3>'; }
 	 			// COPY
@@ -235,7 +250,7 @@ function printModule($module) {
 	 			// ICON
 	 			if( (isset($block['icon']) )  && ($block['icon'] != "") ) {
 	 				echo '<div class="c3xgm-about-clearfix c3xgm-about-block-icon">';
-	 					echo '<img src="'.$block['icon'].'" alt="'.$block['title'].'">';
+	 					echo '<img src="'.$block['icon@2x'].'" alt="'.$block['title'].'" rel="'.$block['icon@2x'].'">';
 	 				echo '</div>';
 	 			}
 

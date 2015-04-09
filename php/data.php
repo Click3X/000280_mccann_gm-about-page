@@ -6,7 +6,7 @@ $pages = array(
 	array(
 		"type"=>"page",
 		"title"=>"Our Company",
-		"tagline"=>"is a global automotive company united by a single purpose:",		
+		"tagline"=>"General Motors is a global automotive company united by a single purpose:",		
 		"icon"=>"img/title-icons/our-company.png",
 		"icon@2x"=>"img/title-icons/our-company.svg",
 		"blocks"=>array(
@@ -204,10 +204,6 @@ $pages = array(
 						"image"=>"img/decorative/cars/red-car.png",
 						"image@2x"=>"img/decorative/cars/red-car@2x.png"
 					)
-					// "road" =>array(
-					// 	"image"=>"img/decorative/landscape/road.png",
-					// 	"image@2x"=>"img/decorative/landscape/road.svg"
-					// )
 				)
 			),
 			array(
@@ -323,7 +319,7 @@ $pages = array(
 						"copy"=>array(
 							"c3xgm-about-dark-blue c3xgm-about-thin"=>"The first North American <br>auto manufacturer",
 							"c3xgm-about-gray"=>"to build a",
-							"c3xgm-about-light-blue c3xgm-about-yellow-bar-left-wrapper"=>"Rollover <br>Test Facility"
+							"c3xgm-about-light-blue"=>"Rollover <br>Test Facility"
 						)
 					),
 					array(
@@ -362,8 +358,8 @@ $pages = array(
 						"image@2x"=>"img/pages/commitment/on-star.svg",
 						"class"=>"onstar-subscribers",
 						"copy"=>array(
-							"c3xgm-about-light-blue number"=>7,
 							"c3xgm-about-dark-blue c3xgm-about-thin c3xgm-about-small"=>"Nearly",
+							"c3xgm-about-light-blue number"=>7,
 							"c3xgm-about-light-blue"=>"Million",
 							"c3xgm-about-dark-blue c3xgm-about-thin"=>"Onstar subscribers",
 							"c3xgm-about-gray"=>"Globally"
@@ -403,7 +399,7 @@ $pages = array(
 							"title"=>"4G LTE",
 							"class"=>"4g-lte",
 							"icon"=>"img/modules/technology/4g-lte/4g-lte.png",
-							"icon@2x"=>"img/modules/technology/4g-lte/4g-lte.png",
+							"icon@2x"=>"img/modules/technology/4g-lte/4g-lte.svg",
 							"image"=>"img/modules/technology/4g-lte/4g-lte-car.jpg",
 							"image@2x"=>"img/modules/technology/4g-lte/4g-lte-car@2x.jpg",
 							"copy"=>array(
@@ -416,7 +412,7 @@ $pages = array(
 							"title"=>"Concept Car",
 							"class"=>"concept-car",
 							"icon"=>"img/modules/technology/bolt/bolt.png",
-							"icon@2x"=>"img/modules/technology/bolt/bolt.png",
+							"icon@2x"=>"img/modules/technology/bolt/bolt.svg",
 							"image"=>"img/modules/technology/bolt/bolt.jpg",
 							"image@2x"=>"img/modules/technology/bolt/bolt@2x.jpg",
 							"copy"=>array(
@@ -429,13 +425,14 @@ $pages = array(
 							"title"=>"Safety",
 							"class"=>"safety",
 							"icon"=>"img/modules/technology/safety/safety.png",
-							"icon@2x"=>"img/modules/technology/safety/safety.png",
+							"icon@2x"=>"img/modules/technology/safety/safety.svg",
 							"image"=>"img/modules/technology/4g-lte/4g-lte-car.jpg",
 							"image@2x"=>"img/modules/technology/4g-lte/4g-lte-car@2x.jpg",
 							"copy"=>array(
 								"c3xgm-about-dark-blue c3xgm-about-thin"=>"Enhancing",
 								"c3xgm-about-light-blue"=>"Driver Vision &amp; Safety",
-								"c3xgm-about-gray c3xgm-about-thin"=>"With a <strong>Patented streaming video <br>rearview mirror</strong>"
+								"c3xgm-about-gray c3xgm-about-thin"=>"With a <strong>Patented streaming video <br>rearview mirror</strong>",
+								"c3xgm-about-gray c3xgm-about-thin c3xgm-about-small"=>"Debuting on the 2016 <strong>Cadillac CTS</strong>.<br>Available late 2015"
 							)
 						)
 					)
@@ -451,9 +448,9 @@ $pages = array(
 						"image"=>"",
 						"class"=>"clean-energy",
 						"copy"=>array(
-							"c3xgm-about-dark-blue c3xgm-about-thin"=>"We granted more",
-							"c3xgm-about-light-blue"=>"clean-energy",
-							"c3xgm-about-light-blue c3xgm-about-thin"=>"patents",
+							"c3xgm-about-dark-blue c3xgm-about-thin"=>"We granted more<br>",
+							"c3xgm-about-light-blue"=>"clean-energy<br>",
+							"c3xgm-about-light-blue c3xgm-about-thin"=>"patents<br>",
 							"c3xgm-about-gray"=>"Than anybody else for <br>more than a decade"
 						)
 					),
@@ -486,9 +483,10 @@ $pages = array(
 						"image@2x"=>"img/pages/commitment/energy-ribbon.svg",
 						"class"=>"epa-energy-star text-right",
 						"copy"=>array(
-							"c3xgm-about-dark-blue c3xgm-about-thin"=>"<strong>70 Facilities</strong> received",
-							"c3xgm-about-light-blue"=>"EPA Energy Star",
-							"c3xgm-about-gray"=>"Challenge for Industry"
+							"c3xgm-about-dark-blue c3xgm-about-thin"=>"<strong>70 Facilities</strong> received<br>",
+							"c3xgm-about-light-blue"=>"EPA Energy Star<br>",
+							"c3xgm-about-gray"=>"Challenge for Industry<br>",
+							"c3xgm-about-gray c3xgm-about-thin"=>"More than any other company"
 						)
 					),
 					array(
@@ -497,8 +495,8 @@ $pages = array(
 						"image@2x"=>"img/pages/commitment/climate.svg",
 						"class"=>"climate-declaration",
 						"copy"=>array(
-							"c3xgm-about-dark-blue c3xgm-about-thin"=>"General Motors is the <strong>only automaker</strong> to sign a",
-							"c3xgm-about-light-blue"=>"Climate Declaration",
+							"c3xgm-about-dark-blue c3xgm-about-thin"=>"General Motors is the <strong>only automaker</strong> to sign a<br>",
+							"c3xgm-about-light-blue"=>"Climate Declaration<br>",
 							"c3xgm-about-gray c3xgm-about-thin"=>"making <strong>tackling climate change <br>a priority</strong>"
 						)
 					),
@@ -508,8 +506,8 @@ $pages = array(
 						"image@2x"=>"img/pages/commitment/landfill.svg",
 						"class"=>"landfill-free text-right",
 						"copy"=>array(
-							"c3xgm-about-dark-blue c3xgm-about-thin"=>"We have <strong>123</strong>",
-							"c3xgm-about-light-blue"=>"Landfill-free facilities",
+							"c3xgm-about-dark-blue c3xgm-about-thin"=>"We have <strong>123</strong><br>",
+							"c3xgm-about-light-blue"=>"Landfill-free facilities<br>",
 							"c3xgm-about-gray"=>"More than any other automaker"
 						)
 					)

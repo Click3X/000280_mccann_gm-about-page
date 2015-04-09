@@ -27,29 +27,23 @@
 
     </head>
     <body>
-        <!-- TEMP MENU FOR DISPLAY PUPOSES
-        DELETE AFTER PRODUCTION -->
+        <!-- TEMP MENU FOR DISPLAY PUPOSES DELETE AFTER PRODUCTION -->
         <div class="c3xgm-about-temp-menu"></div>
 
-        <embed id="gm-pdf" width="100%" height="15000px" style="opacity: 0.5; position: absolute; top: -58px;" name="plugin" src="templates/gm-mobile.pdf" type="application/pdf">
         <!-- MAIN PAGE CONTAINER -->
         <div id="c3xgm-about-page-container" class="c3xgm-about-page-container c3xgm-about-clearfix">
-
             <?php 
                 // OUR COMPANY
-                include('php/pages/our-company.php');
+                include('php/our-company.php');
                 // OUR PEOPLE
-                include('php/pages/our-people.php');
+                include('php/our-people.php');
                 // OUR BRANDS
-                include('php/pages/our-brands.php');
+                include('php/our-brands.php');
                 // OUR COMMITMENT
-                include('php/pages/our-commitment.php');
+                include('php/our-commitment.php');
             ?>
-
         </div>
-        <button id="bg-change" class="bg-change">Bg Change</button>
-        
-        
+
         <script src="js/vendor/jquery-1.11.1.min.js"></script>
         
         <!--[if lt IE 9 ]>
@@ -62,74 +56,10 @@
         </script>
         <![endif]--> 
 
-
-
-
         <!--
-        <script src="js/ios-orient-fix.js"></script>
-        <script src="js/font-changer.js"></script>
-        -->
-
-
         <script src="js/plugins/jquery.outlineButton.js"></script>
-        
-        
+        -->        
         <script src="js/modules/all-modules.js"></script>
 
-        <script>
-            jQuery(document).ready(function($) {
-                // CHECK FOR SVG SUPPORT
-                if(!$('html').hasClass('svg')) {
-                    console.log('No svg support');
-                    $('img[src$=".svg"]').each(function(index,element) {
-                        element.src = element.src.replace('.svg','.png');
-                    });
-                } else {
-                    console.log('svg BABY!');
-                }
-
-                // CHECK FOR RETINA 
-                if (window.devicePixelRatio >= 2) {
-                    // retina display
-                    console.log('We have Retina!');
-                    $('img[rel]').each(function(index,element) {
-                        element.src = $(this).attr('rel');
-                    });
-                } else {
-                    // standard display
-                    console.log('Standard Display');
-                }
-
-
-                // TEMPORARY BG-IMG TOGGLE HIDE
-                // DELETE BEFORE PRODUCTION
-                $('#bg-change').click(function(){
-                    // $(".temp").toggleClass('hidden');
-                    $("#gm-pdf").toggleClass('hidden');
-                });
-
-                var fonts = [23.325067, 7.2904095,28.6314258575439,8.94732075, 12,3.77952, 6.36253929138184,1.9882935];
-                var rat =1.11765301;
-
-                $.each(fonts, function(i, val) {
-                    console.log( rat * fonts[i]);
-                });
-
-                // var worldSvg = $('#world-svg'),
-                //     worldSvgText = $('#world-svg-text');
-
-                // var width = worldSvg.get(0).clientWidth;
-                // var height = worldSvg.get(0).clientHeight;
-                // console.log('This is world svg: ')
-                // console.dir(worldSvg);
-                // console.log('This is width: ' + width);
-
-                // worldSvgText.html('<h1>This is width: ' + width + ', and this is height: ' + height + '</h1>');
-
-
-
-            });
-        </script>
-        <script src="js/resize-functions.js"></script>
     </body>
 </html>

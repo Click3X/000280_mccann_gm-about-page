@@ -3,7 +3,7 @@
  * <!--[if IE]>
  *   <link href="/stylesheets/ie.css" media="screen, projection" rel="stylesheet" type="text/css" />
  * <![endif]--> */
-/* line 17, ../sass/ie.scss */
+/* line 12, ../sass/ie.scss */
 .lt-ie9 .c3xgm-about-page-our-people .c3xgm-about-block.c3xgm-about-clearfix.c3xgm-about-languages,
 .lt-ie9 .c3xgm-about-page-our-people .c3xgm-about-block.c3xgm-about-clearfix.c3xgm-about-headquarters,
 .lt-ie9 .c3xgm-about-page-our-people .c3xgm-about-block.c3xgm-about-clearfix.c3xgm-about-timezones,
@@ -11,18 +11,37 @@
   width: 49%;
   float: left;
 }
-/* line 26, ../sass/ie.scss */
+/* line 21, ../sass/ie.scss */
 .lt-ie9 .c3xgm-about-module-car .c3xgm-about-module-car-logo-container li {
   width: 49%;
   float: left;
 }
-/* line 30, ../sass/ie.scss */
+/* line 25, ../sass/ie.scss */
 .lt-ie9 .c3xgm-about-module-25 {
   width: 24%;
   float: left;
 }
-/* line 33, ../sass/ie.scss */
+/* line 28, ../sass/ie.scss */
 .lt-ie9 .c3xgm-about-module-75 {
   width: 74%;
   float: left;
+}
+/* line 35, ../sass/ie.scss */
+.lt-ie9 .c3xgm-about-module-technology .c3xgm-about-block-icon {
+  position: static;
+}
+/* line 37, ../sass/ie.scss */
+.lt-ie9 .c3xgm-about-module-technology .c3xgm-about-block-icon img {
+  width: 60%;
+  position: static;
+}
+/* line 48, ../sass/ie.scss */
+.lt-ie9 .c3xgm-about-module-foundation .c3xgm-about-module-foundation-logo-container li img {
+  width: 50%;
+  max-width: 130px;
+  position: static;
+}
+/* line 56, ../sass/ie.scss */
+.lt-ie9 .c3xgm-about-gradient {
+  filter: none;
 }

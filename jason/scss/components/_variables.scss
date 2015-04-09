@@ -1,0 +1,30 @@
+/******************************************************************
+Site Name: GM
+Author: Jason Tordsen
+
+Stylesheet: Sass Variables
+******************************************************************/
+$nav-dot-size: 10px;
+$nav-dot-size-touch: 20px;
+
+$gm-blue: rgb(94, 133, 196);
+$gm-yellow: #FDB12E;
+$gm-light-gray: #BBB;
+$gm-gray: #888888;
+$gm-dark-gray: #555555;
+$gm-black: #444444;
+
+
+/*----screen sizes----
+----------------------*/
+$desktop-width:1200px;
+$desktop-height:900px;
+
+$tablet-width:1024px;
+$tablet-height:768px;
+
+$mobile-large-width:414px;
+$mobile-large-height:736px;
+
+$mobile-width:320px;
+$mobile-height:480px;

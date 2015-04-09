@@ -1,0 +1,155 @@
+// TECHNOLOGY MODULE
+.c3xgm-about-module-technology {
+
+	.c3xgm-about-module { 
+		text-align: center; 
+		margin: 8% auto;
+	}
+	.c3xgm-about-module-container .c3xgm-about-module:first-child {
+		margin-top:4%;
+	}
+	// COMMON
+	// IMAGE
+	.c3xgm-about-block-icon {
+		position: relative;
+		padding-bottom:20%;
+		img { 
+			width:60%;
+			@include center;
+		}
+	}
+	// IMAGE
+	.c3xgm-about-block-image {
+		  margin: 1.5em auto;
+		  @media(min-width: $tablet-height) { 
+	  			float: left;
+				margin: 2.25em auto;
+			}
+		img { width:80%;}
+	}
+	// BLOCK-QUOTE
+	.c3xgm-about-blockquote {
+		max-width: 92%;
+		margin: 1em auto 1.5em;
+		display: inline-block;
+		text-align: left;
+		@media(min-width: $tablet-height) { 
+			display: block; 
+			margin: 0;
+		}
+		
+		span { display: block; }
+
+		@media(min-width: $tablet-height) { float: right; }
+	}
+
+	// INDIVIDUAL
+	// 4G LTE
+	.c3xgm-about-4g-lte {
+		.c3xgm-about-block-icon {
+			@media(min-width: $tablet-height) { 
+				width:35%; float: right; 
+				height: 0; padding-bottom: 128px;
+			}
+			img { 
+				width:65%; max-width: 157px; 
+				@media(min-width: $tablet-height) { width:80%; max-width: none; }
+			}
+		}
+		.c3xgm-about-block-image { 
+			img {
+				@media(min-width: $tablet-height) { width: 70%; }
+			}
+		}
+
+		.c3xgm-about-blockquote { 
+			@media(min-width: $tablet-height) { width:65%; float: right; }
+		}
+
+		.c3xgm-about-dark-blue.c3xgm-about-thin,
+		.c3xgm-about-light-blue {
+			font-size:27px; font-size: 8.5vw;
+			@media(min-width:$tablet-height) {font-size:41.7931483782966px; }
+		}
+
+		.c3xgm-about-gray {
+			font-size:12px; font-size: 3.961772vw;  
+			line-height: 1.075em;
+			@media(min-width:$tablet-height) {font-size:20px; }
+		}
+
+		.c3xgm-about-light-blue { margin: .05em 0; }
+
+	}
+
+	// CONCEPT CAR
+	.c3xgm-about-concept-car {
+		// IMAGES
+		.c3xgm-about-blockquote { 
+			width: auto;
+			@media(min-width: $tablet-height) { width:75%; float: right; }
+		}
+		.c3xgm-about-block-icon {
+			padding-bottom: 27%;
+			img {width:30%; max-width: 113px;}
+			@media(min-width: $tablet-height) { 
+				width:25%; height: 0;  float:right;
+				padding-bottom: 223px;
+				img {width:75%; max-width: none;}
+			}
+		}
+	}
+
+	// SAFETY
+	.c3xgm-about-safety {
+		.c3xgm-about-block-icon {
+			padding-bottom: 25%;
+			@media(min-width: $tablet-height) { 
+				width: 20%; height: 0;
+				padding-bottom: 212px;
+
+			}
+			img {
+				// width:57%;
+				width:40%;
+				@media(min-width: $tablet-height) { width: 80%; }
+			}
+		}
+
+		.c3xgm-about-blockquote { 
+			@media(min-width: $tablet-height) { width: 80%; }
+		}
+
+  		.c3xgm-about-light-blue {
+  			max-width: 6em;
+  			@media(min-width: $tablet-height) { max-width: none; }
+  		}
+
+  		.c3xgm-about-gray.c3xgm-about-thin.c3xgm-about-small {
+		  	font-size:12px; font-size: 4vw;
+		  	@media(min-width:$tablet-height) { font-size: 21px; }
+		}
+	}
+
+	// BOTH CONCEPT AND SAFETY
+	.c3xgm-about-safety,
+	.c3xgm-about-concept-car {
+		.c3xgm-about-dark-blue.c3xgm-about-thin {
+			font-size:17px; font-size: 5vw;
+			@media(min-width:$tablet-height) {font-size:28px; }
+		}
+		.c3xgm-about-light-blue {
+			margin: .05em 0; 
+			font-size:35px; font-size: 10.7vw;
+			line-height: 0.9em;
+			@media(min-width:$tablet-height) {font-size:60px; }
+		}
+		.c3xgm-about-gray {
+			font-size:20px; font-size: 6vw;
+			line-height: 1.075em;
+			@media(min-width:$tablet-height) {font-size:35px; }
+		}
+	}
+
+
+}

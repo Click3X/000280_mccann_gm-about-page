@@ -1,0 +1,148 @@
+/*------------------------------------------
+----------- ELEMENT DEFAULTS ---------------
+------------------------------------------*/
+
+body,html{ margin:0; padding:0; }
+
+body { font-family: "open-sans-condensed", 'Arial Narrow', Arial, sans-serif; color:$gm-black; }
+
+h1,h2,h3,h4,h5,h6{
+	font-weight: 600; letter-spacing: .01em; text-transform: uppercase;
+
+	&.c3xgm-about-h{
+		margin:0; padding:0;
+
+		span.c3xgm-about-blue{ color: $gm-blue; }
+		span.c3xgm-about-yellow{ color: $gm-yellow; }
+		span.c3xgm-about-gray{ color: $gm-gray; }
+	}
+}
+
+.c3xgm-about-p {
+	@include clearfix;
+	font-size:14px; line-height:1.613em; letter-spacing: 0.01em;
+	font-family: "open-sans", 'Arial', Arial, sans-serif; color: $gm-black;
+	margin:9px 0 9px 0; padding:0 2% 0 7px;
+	// max-width: 39em;
+	  max-width: 44em;
+
+	@media( min-width:$tablet-height ){ font-size: 18px; }
+	strong { font-weight: 700; }
+}
+
+.c3xgm-about-blockquote { max-width: none; }
+
+.c3xgm-about-vehicle-copy {
+	margin:0; padding:0;
+	text-transform: uppercase;
+}
+
+h1.c3xgm-about-h{
+	text-align:center;
+	font-size: 43px; font-size: 11.3vw; line-height:1em;
+	@media(min-width:$tablet-height ){ 
+		text-align: left;
+		font-size:8.06vw;
+		font-size: 73px; line-height: 70px; 
+	}
+}
+
+h2.c3xgm-about-h{
+	// font-size: 18px; 
+	line-height:1em; color:$gm-dark-blue;
+	font-size: 48px; font-size: 8.65vw;
+	// font-size: 26.5599994659424px; font-size: 8.3vw;
+	@media( min-width:$tablet-height ){ font-size: 52px; line-height: 74px; }
+}
+
+h3.c3xgm-about-h{
+	font-size: 18px; line-height:1em; color:$gm-gray;
+	margin:2px 0;
+	@media( min-width:$tablet-height ){ font-size: 24px; }
+}
+
+
+h4.c3xgm-about-h{
+	font-size: 19px; line-height: 23px; color:$gm-light-gray;
+	margin:4px 0;
+}
+
+.c3xgm-about-link {
+	font-family: "open-sans-condensed", 'Arial Narrow', Arial, sans-serif; color:$gm-light-blue;
+	text-transform: uppercase; text-decoration: none; font-weight: 600;
+	&:hover, &:focus, &:active { text-decoration: none; outline: none; }
+}
+
+// SPANS AND STRONGS
+.c3xgm-about-thin,
+.c3xgm-about-blockquote .c3xgm-about-thin span { font-weight: 200 !important; }
+
+.c3xgm-about-blockquote {
+	text-transform: uppercase; 
+	margin: 9px 0 9px 0;
+	
+	@include clearfix;
+	
+	span { 
+		font-family: "open-sans-condensed", 'Arial Narrow', Arial, sans-serif; font-weight: 600;
+		font-size: 27.292552947998px; font-size: 8.528923vw;
+		line-height:1em;
+		// display: inline-block; 
+		@media( min-width:$tablet-height ){ 
+			font-size:41px; 
+		}
+	}
+	strong { font-weight: 700; }
+}
+
+// COLORS
+.c3xgm-about-light-blue { color:$gm-light-blue !important; }
+.c3xgm-about-blue { color:$gm-blue !important; }
+.c3xgm-about-dark-blue{ color:$gm-dark-blue !important; }
+.c3xgm-about-yellow{ color:$gm-yellow !important; }
+.c3xgm-about-light-gray{ color:$gm-light-gray !important; }
+.c3xgm-about-gray{ color:$gm-gray !important; }
+.c3xgm-about-dark-gray{ color:$gm-dark-gray !important; }
+
+// TEXT ALIGN
+.text-right,
+.text-right .c3xgm-about-blockquote,
+.c3xgm-about-text-right { text-align: right; }
+
+
+// RESPONSIVE STYLES FOR SECTION HEADERS
+// p.c3xgm-about-p.c3xgm-about-header-p {
+.c3xgm-about-header-p {
+	margin:0 auto; padding: 0 2% 0 7px;
+	text-align: left;
+	@media( min-width:$tablet-height ){ 
+		max-width:768px;
+		margin: 9px 0 9px 0;
+	}
+}
+
+
+.c3xgm-about-section-header {
+	@media( min-width:$tablet-height ){ padding:0; }
+}
+
+// DISCLAIMER
+.c3xgm-about-gray.c3xgm-about-disclaimer,
+.c3xgm-about-gray.c3xgm-about-disclaimer-small {
+	font-family: "open-sans", 'Arial', Arial, sans-serif; color: $gm-black;
+	font-weight: normal; text-transform: none;
+}
+
+.c3xgm-about-gray.c3xgm-about-disclaimer-small {
+	font-size: 10px; line-height: 1.613em;
+	strong {
+		font-family: "open-sans-condensed", 'Arial Narrow', Arial, sans-serif;
+		font-size:1.5em; color:$gm-light-blue;
+	}
+}
+.c3xgm-about-gray.c3xgm-about-disclaimer {
+	margin: 2em auto;
+	font-size:14px; line-height: 1.613em;
+	@media(min-width:481px) { font-size:18px; font-size:2.0128157865vw; }
+	@media(min-width:$inner-border) {font-size:18.222px; }
+}

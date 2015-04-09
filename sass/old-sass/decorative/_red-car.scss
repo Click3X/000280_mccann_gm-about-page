@@ -1,0 +1,22 @@
+// RED CAR SCSS
+.c3xgm-about-page-our-brands {
+	
+	.c3xgm-about-block.c3xgm-about-decorative.c3xgm-about-red-car-road {
+		// margin-bottom: 7.5%;
+		margin: $block-margin;
+		height: 0; 
+		// padding-bottom: 21.446809%;
+		// padding-bottom: 31.602%;
+		  padding-bottom: 21.602%;
+		@media(min-width:$inner-border) { margin-bottom: 80px; }
+		@media(min-width:$outer-border) { padding-bottom: 252px; }
+
+		.c3xgm-about-red-car {
+			position: absolute; right:0;
+			width: 50%;
+			max-width:400px;
+			@media(min-width: $tablet-height) {width:34.042553%;}
+			img { width: 100%; }
+		}
+	}
+}
