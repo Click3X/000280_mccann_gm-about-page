@@ -11,7 +11,7 @@ foreach ($pages as $key => $page) {
                     
                     if($section['title'] == "Technology") {
                         // SECTION HEADER
-                       // subSectionHeader($section['title'], $section['tagline']);
+                       subSectionHeader($section['title'], $section['tagline']);
                     }
                 
 

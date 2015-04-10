@@ -19,18 +19,17 @@
 @import "typography/our-company";
 @import "typography/our-people";
 
-// PAGES
-// @import "pages/our-brands";
-
 // DECORATIVES
 @import "decoratives/five-stars";
 @import "decoratives/red-car";
 @import "decoratives/solar-panels";
+@import "decoratives/flag-line";
 
 // MODULES
 @import "modules/all-modules";
 @import "modules/tech";
 @import "modules/foundation";
+@import "modules/car";
 
 // SECTIONS
 @import "sections/environment";
@@ -39,28 +38,12 @@
 
 // INCLUDE OLD PAGES FOR SHOW AND TELL TODAY
 // THE FOLLOWING SASS FILES WILL NEED TO BE EXAMINED AND PICKED THROUGH
-@import "old-sass/pages/our-people";
-@import "old-sass/pages/our-brands";
-@import "old-sass/modules/car";
-@import "old-sass/decorative/flag-line";
+// @import "old-sass/pages/our-people";
+// @import "old-sass/pages/our-brands";
+// @import "old-sass/modules/car";
+// @import "old-sass/decorative/flag-line";
+
 
 // PAGES
-// @import "components/pages/our-company";
-// @import "components/pages/our-people";
-// @import "components/pages/our-brands";
-// @import "components/pages/our-commitment";
-
-// MODULES
-// @import "components/modules/all-modules";
-// @import "components/modules/car";
-// @import "components/modules/technology";
-// @import "components/modules/foundation";
-
-// DECORATIVES
-// @import "components/decorative/red-car";
-// @import "components/decorative/flag-line";
-// @import "components/decorative/five-stars";
-// @import "components/decorative/solar-panels";
-
-// ADD ONS TEST
-// @import "components/pages/add-ons";
+@import "pages/our-brands";
+@import "pages/our-people";

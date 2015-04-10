@@ -1,6 +1,6 @@
-<?php include('php/functions.php'); ?>
-<?php include('php/functions-layout.php'); ?>
-<?php include('php/data.php'); ?>
+<?php include('php/helpers/functions.php'); ?>
+<?php include('php/helpers/functions-layout.php'); ?>
+<?php include('php/helpers/data.php'); ?>
 <!DOCTYPE html>
 <!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
 <!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
@@ -58,7 +58,8 @@
 
         <!--
         <script src="js/plugins/jquery.outlineButton.js"></script>
-        -->        
+        -->
+                
         <script src="js/modules/all-modules.js"></script>
 
     </body>

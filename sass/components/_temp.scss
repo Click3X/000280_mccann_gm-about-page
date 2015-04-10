@@ -179,3 +179,43 @@ TO BE DELETED AFTER DEVELOPMENT
   background-position: 65% 0;
   }
 }
+
+.temp-brands {
+  background-image: url("../templates/brands-mobile.jpg");
+  opacity: 0.5;
+  height: 0;
+  background-size: contain;
+  width:100%;max-width: 320px;
+  padding-bottom:925.31%;
+  top:230px;
+
+  @media(min-width: 600px) {
+  background-image: url("../templates/brands-desktop.jpg");
+  width: 100%;
+  max-width: 905px;
+  // padding-bottom: 281.104%;
+  padding-bottom: 421.656%;
+  background-size: 150%;
+  background-position: 65% 0;
+  }
+}
+
+.temp-people {
+  background-image: url("../templates/people-mobile.jpg");
+  opacity: 0.5;
+  height: 0;
+  background-size: contain;
+  width:100%;max-width: 320px;
+  padding-bottom:403.125%;
+  top:230px;
+
+  @media(min-width: 600px) {
+  background-image: url("../templates/people-desktop.jpg");
+  width: 100%;
+  max-width: 905px;
+  // padding-bottom: 80.99%;
+  padding-bottom: 121.5%;
+  background-size: 150%;
+  background-position: 65% 0;
+  }
+}

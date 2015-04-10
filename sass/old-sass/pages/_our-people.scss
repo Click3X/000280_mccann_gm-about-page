@@ -37,8 +37,12 @@
 		  	}
 
 		  	.c3xgm-about-gray { 
-		  		margin-top: -2.272%; 
+				margin-top: 0%;		  		
 		  		float: left;
+		  		@media(min-width:400px) {
+		  		// @media(min-width: $tablet-height) {
+		  			margin-top: -2.272%; 	
+		  		}
 		  	}
 		}
 
@@ -66,11 +70,11 @@
 		}
 		  
 		.c3xgm-about-gray { 
-			margin-left: 5px;
-			// font-size: 17px;
+			
+			margin-left: 0;
 			font-size: 34px; font-size: 7.4375vw;
 			@media(min-width:400px) { font-size: 34px; }
-  			@media(min-width:$tablet-height ) { font-size: 34px; }
+  			@media(min-width:$tablet-height ) {margin-left: 5px; font-size: 34px; }
   		}
 	}
 

@@ -16,9 +16,9 @@
 			@media(min-width: $tablet-height) { 
 				float: left;
   				width: 25%; height: 0;
-  				padding-bottom:280px; margin-right: 1em;
+  				padding-bottom:297px; margin-right: 1em;
 
-  				img { @include center; width: 65%;}
+  				img { @include center; width: 95%;}
   			}
 		}
 		
@@ -55,31 +55,21 @@
 		}
 
 		.c3xgm-about-light-blue {
-			font-size: 28.7430095672607px; font-size: 13.98219vw;
-			line-height: 0.9em;
-			margin-bottom: .1em;
-			display: inline-block;
-			@media(min-width:$tablet-height) {
-				font-size:81.315675px; line-height:75.925px; 
-			}	
+			font-size: 28.7430095672607px; font-size: 13.98219vw; line-height: 0.9em;
+			margin-bottom: .1em; display: inline-block;
+			@media(min-width:$tablet-height) { font-size:81.315675px; line-height:75.925px;  }	
 		}
 
 		.c3xgm-about-light-gray {
-			font-size: 18px;font-size: 5.528923vw;
-			@media(min-width:$tablet-height) {
-				font-size: 33px;
-			}
-			line-height: 1.2em;
 			display: inline-block;
+			font-size: 18px;font-size: 5.528923vw; line-height: 1.2em;
+			@media(min-width:$tablet-height) { font-size: 33px; }
 		}
 		
 		.c3xgm-about-light-gray.c3xgm-about-thin {
 			.c3xgm-about-light-blue {
-				font-size:14.4925537109375px; font-size:3.522427626375vw; 
-				line-height: 1.2em;
-				@media(min-width:$tablet-height) {
-					font-size:31.8885px;
-				}	
+				font-size:14.4925537109375px; font-size:3.522427626375vw;  line-height: 1.2em;
+				@media(min-width:$tablet-height) { font-size:31.8885px; }	
 			}
 		}
 	}
@@ -88,16 +78,21 @@
 	.c3xgm-about-test-facility {
 		max-width: 54em;
 		.c3xgm-about-block-image {
-			width: 45%;
+			width: 60%; height: 0; 
+			padding-bottom: 55%;
+			position: relative;
+			.c3xgm-about-circle-lines {
+				position: absolute;
+				width:90%; max-width: none;
+				@media(min-width: $tablet-height) { width: 85%; }
+			}
+
+			img { @include center; width: 50%; }
 			@media(min-width: $tablet-height) { 
 				  width: 48%;
 				  float: right;
-				  height: 0; padding-bottom: 270px;
-				  position: relative;
-				  img {
-				  	width: 65%; max-width: 225px;
-				  	@include center;
-				  }
+				  padding-bottom: 270px;
+				  img { max-width: 225px; }
 			}
 		}
 		
@@ -150,31 +145,18 @@
 		
 		.c3xgm-about-block-image {
 			width: 45%;
-			@media(min-width: $tablet-height) { }
-		}
-		
-		.c3xgm-about-blockquote {
-			@media(min-width: $tablet-height) { }
 		}
 
 		.c3xgm-about-light-blue.number {
-			@include prefix(box-sizing,border-box);
-			display: block;
-			width: 100%;
-			text-align: center;
-			line-height: 0.8em;
-			font-size: 53vw;
+			display: block; width: 100%; text-align: center;
+			font-size: 53vw; line-height: 0.8em;
 			margin-bottom: .1em; margin-top:0;
 			@media(min-width:$tablet-height) {
-				border-right:0.2rem solid $gm-yellow;
-				margin-right: 1.25rem;
-				width: 36.3%; float: left; margin-top: -1.768%;
-				// font-size:300px; 
-				font-size:220px; 
-				width: 1em;
-				  margin-top: 0;
-				  padding-bottom: 0;
-				  line-height: 1.1em;
+				width: 1em; float: left;
+				margin-top: 0; margin-right: 1.25rem; padding-bottom: 0; border-right:0.2rem solid $gm-yellow;
+				font-size:250px; 
+				// font-size: 32vw; 
+				line-height: 0.96em;
 			}
 		}
 
@@ -209,25 +191,18 @@
 
 	// ON STAR
 	.c3xgm-about-onstar-subscribers {
-		
 		.c3xgm-about-block-image {
-			width: 45%;
-			position: relative;
+			width: 45%; position: relative;
 			@media(min-width: $tablet-height) {
-				width: 25%; float: left; 
-				padding-bottom: 221px; height:0;
-				margin-top:9px;
-				img {
-					width: 65%;
-					@include center;
-				}
+				width: 27%; height:0; float: left;
+				padding-bottom: 221px; margin-top:9px; 
+				img { width: 85%; @include center; }
 			}
 		}
 		
 		.c3xgm-about-blockquote {
-			@media(min-width: $tablet-height) { 
-				width: 75%; float:left;
-			}
+			padding-left: 1.25rem; border-left:0.2rem solid $gm-yellow;
+			@media(min-width: $tablet-height) { width: 70%; float:left; }
 		}
 
 		.c3xgm-about-dark-blue.c3xgm-about-thin.c3xgm-about-small {
@@ -238,11 +213,9 @@
 		}
 
 		.c3xgm-about-light-blue.number {
-			width: .5em; 
+			width: .5em; padding-left:0;
 			float: left; clear: left;
-			font-size:91.193977355957px; font-size:27vw;  
-			line-height:0.75em;
-			  padding-left:0;
+			font-size:91.193977355957px; font-size:27vw; line-height:0.75em;
 			@media(min-width:$tablet-height) {font-size:241.99315px; }
 		}
 

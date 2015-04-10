@@ -20,7 +20,10 @@
 	// CLEAN ENERGY 
 	.c3xgm-about-clean-energy {
 		text-align: left;
-		@media(min-width:$tablet-height) { margin-bottom: 0; }
+		@media(min-width:$tablet-height) { 
+			margin-bottom: 0; 
+			.c3xgm-about-blockquote > span { float: left; clear: left; }
+		}
 		.c3xgm-about-dark-blue.c3xgm-about-thin {
 			font-size:23px; font-size: 7vw;
 			@media(min-width:$tablet-height) {font-size:46.101659999999995px; }
@@ -44,28 +47,20 @@
 		.c3xgm-about-block-image {
 			width: 42%;
 			position: relative;
-			img { 
-				width:100%; max-width: 160px; 
-				height:auto; 
-			}
+			img {  width:100%; max-width: 160px;  height:auto;  }
 			@media(min-width:$tablet-height) { 
-				width: 25%;
-	  			float: right; 
-	  			margin-top:9px;
-	  			padding-bottom: 168px; height: 0;
-	  			img { @include center; width:65%; }
+				width: 25%; float: right; 
+	  			margin-top:9px; padding-bottom: 168px; height: 0;
+	  			img { @include center; width:90%; }
 	  		}
 		}
 
 		.c3xgm-about-blockquote {
-			text-align: right;
-			padding-right: .6em;
-	  		border-right: .15rem solid $gm-yellow;
+			text-align: right; padding-right: .6em; border-right: .15rem solid $gm-yellow;
 
 	  		@media(min-width:$tablet-height) { 
-	  			width:75%;
-		  		padding-right: 2.5em;
-		  		border-right: .2rem solid $gm-yellow;
+	  			width:73%;
+		  		padding-right: 2.5em; border-right: .2rem solid $gm-yellow;
 		  	}
 		}
 
@@ -93,31 +88,21 @@
 		.c3xgm-about-block-image { 
 			width:38%;
 			position: relative;
-			img { 
-				width:100%; max-width: 151px; 
-				height:auto; 
-			}
+			img { width:100%; max-width: 151px; height:auto;  }
 			@media(min-width:$tablet-height) { 
 				width:25%; height:0;
 				padding-bottom: 181px; margin-top:9px;
 	  			float: left; 
 	  			position: relative;
-	  			img { 
-	  				width:65%;
-	  				@include center;
-	  			}
+	  			img { width:65%; @include center; }
 	  		}
 		}
 
 		.c3xgm-about-blockquote {
-		  	padding-left: .6em;
-	  		border-left: .15rem solid $gm-yellow;
-
+		  	padding-left: .6em; border-left: .15rem solid $gm-yellow;
 	  		@media(min-width:$tablet-height) { 
-	  			float: right;
-	  			width:75%;
-		  		padding-left: 2.5em;
-		  		border-left: .2rem solid $gm-yellow;
+	  			float: right; width:75%;
+		  		padding-left: 2.5em; border-left: .2rem solid $gm-yellow;
 		  	}
 	  	}
 		
@@ -127,8 +112,7 @@
 			max-width: 13em;
 			@media(min-width:$tablet-height) {
 				font-size:29.747415px; 
-				display: inline;
-				max-width:none;
+				display: inline; max-width:none;
 			}
 		}
 
@@ -148,14 +132,9 @@
 		.c3xgm-about-block-image { 
 			width: 30%;
 			position: relative;
-			img { 
-				width:100%; 
-				max-width: 172px; 
-				height:auto; 
-			}
+			img { width:100%; max-width: 172px; height:auto; }
 			@media(min-width:$tablet-height) { 
-				width: 25%;
-	  			float: right; 
+				width: 24%; float: right; 
 	  			padding-bottom: 162px; margin-top:9px;
 	  			img { @include center; width:60%; }
 	  		}
@@ -164,13 +143,11 @@
 		.c3xgm-about-blockquote { 
 			max-width: 52em;
 			text-align: right; 
-		  	padding-right: .6em;
-	  		border-right: .15rem solid $gm-yellow;
+		  	padding-right: .6em; border-right: .15rem solid $gm-yellow;
 
 	  		@media(min-width:$tablet-height) { 
-	  			width:75%;
-		  		padding-right: 2.5em;
-		  		border-right: .2rem solid $gm-yellow;
+	  			width:76%;
+		  		padding-right: 2.5em; border-right: .2rem solid $gm-yellow;
 		  	}
 		}
 

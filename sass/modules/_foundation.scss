@@ -22,11 +22,24 @@
 
 		p.c3xgm-about-p { 
 			max-width: 24em; 
+			margin-bottom: 3em;
 			@media(min-width:$tablet-height) {
 				margin-top:1.5rem
 			}
 		}
 	}
+
+
+	.c3xgm-about-block-icon {
+		width: 30%;
+		padding-bottom: 30%;
+		height: 0;
+		float: left;	
+		img { width: 100%; height: auto;}
+		@media(min-width: 400px) {
+			width: 100px; padding-bottom: 100px;
+		}
+	}  
 	  
 
 	.c3xgm-about-module-foundation-logo-container {
@@ -59,7 +72,7 @@
 		}
 		li:first-child { 
 			width: 100%;
-			img { width: 75%; max-width: 180px;}
+			img { width: 75%; max-width: none; }
 		}
 	}		
 }

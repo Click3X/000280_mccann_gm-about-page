@@ -2,12 +2,13 @@
 .c3xgm-about-page-our-commitment {
 	
 	.c3xgm-about-five-stars {
-		margin-bottom: 7.5%; margin-top: 7.5%;
+		// margin-bottom: 7.5%; 
+		margin-bottom: 1em; margin-top: 7.5%;
 		height: 0; padding-bottom: 30.75%;
   		position: relative;
   		
 		@media(min-width: $tablet-height) {
-			margin-bottom: 100px; margin-top: 100px;
+			margin-bottom:6em; margin-top: 11em;
 			padding-bottom: 164px;
 		}
 		
