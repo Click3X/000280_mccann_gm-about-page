@@ -10,8 +10,8 @@
 @import "components/mixins";
 @import "components/helpers";
 
-@import "components/temp";
-// @import "components/navigation";
+// @import "components/temp";
+@import "components/navigation";
 
 @import "components/layout";
 // TYPE
@@ -34,15 +34,6 @@
 // SECTIONS
 @import "sections/environment";
 @import "sections/safety";
-
-
-// INCLUDE OLD PAGES FOR SHOW AND TELL TODAY
-// THE FOLLOWING SASS FILES WILL NEED TO BE EXAMINED AND PICKED THROUGH
-// @import "old-sass/pages/our-people";
-// @import "old-sass/pages/our-brands";
-// @import "old-sass/modules/car";
-// @import "old-sass/decorative/flag-line";
-
 
 // PAGES
 @import "pages/our-brands";

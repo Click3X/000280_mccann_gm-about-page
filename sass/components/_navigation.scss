@@ -1,144 +1,70 @@
-/*------------------------------------------
--------------- NAVIGATION ------------------ 
-------------------------------------------*/
-
-div.c3xgm-about-nav-container{
+// NAV
+// NAV FOR TECHNOLOGY MODULE
+.c3xgm-about-main-nav-container {
+	width:100%;  max-width: 996px;
+	margin:auto;
 	position: fixed;
-	z-index:1;
-	right:20px;
-	top:50%;
+	// top:auto; 
+	top:3em; 
+	left:0; right:0; 
+	
+	z-index: 10;
+	@include prefix(transform, translate3d(0,0,10));
 
-	@media( max-width:$tablet-height ){ right:10px; }
+	@media(min-width: $tablet-height) {
+		top:13em;
+	}
 
-	div.c3xgm-about-nav-inner{
-		position:relative;
 
-		div.c3xgm-about-hitblocker{
-			position: absolute;
-			z-index: 1;
-			top:-20px;
-			right: $nav-dot-size;
-			height: 100%;
-			width: 100%;
-			padding:40px 0 0 0;
+	.c3xgm-about-main-nav {
+		float: right;
+		text-align: center;
+		li {display: block; margin: 0; padding: 0; float: left; clear:left;}
+		.c3xgm-about-nav-bullet {
+			display: block;
+			width:9px; height:9px;
+			margin:8px;
+			background-color: $gm-gray;
 		}
+		.c3xgm-about-nav-bullet-active { background-color: $gm-yellow; }
 
-		ul.c3xgm-about-nav{
-			margin:0; padding:0;
-			list-style: none;
+		// SUB NAV
+		.c3xgm-about-main-nav-sub {
 
-			li{
-				display: block;	
-				cursor:pointer;
-				margin:0 0 8px 0; padding:0;
-				opacity: .8;
+			@include prefix(transition, all 200ms);
+
+			.c3xgm-about-nav-bullet { background-color: $gm-dark-gray; }
+			.c3xgm-about-nav-bullet-active { background-color: $gm-yellow; }
+
+			li {
 				position: relative;
-				text-align: right;
-				font-size: 14px;
-				line-height: $nav-dot-size;
-
-				label{
-					opacity: 0;
-					-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
-					white-space: nowrap;
-					font-family: "open-sans-condensed", sans-serif;
-					font-weight: bold;
-					
-					span{
-						padding:10px;
-						border:1px solid $gm-light-gray;
-						margin-right: 24px;
-
-						&:after{
-							content: "";
-							position: absolute;
-							top:-2px;
-							right:16px;
-							width: 0; 
-							height: 0; 
-							border-top: 8px solid transparent;
-							border-bottom: 8px solid transparent;
-							border-left: 8px solid $gm-light-gray;
-						}
-					}
-				}
-
-				ul.c3xgm-about-subnav{
-					padding:0; margin:10px 0 0 0;
-					top:0;
-					height:0;
-
-					@include transition(height, 400s, "easeInOut");
-
-					li{
-						display: none;
-
-						&::before{
-							content: "";
-							height: 14px;
-							display: block;
-							position: absolute;
-							right: 4px;
-							border-right: 1px solid #444;
-							top: -11px;
-							z-index: -3;
-						}
-
-						label{
-							height: 0;
-							opacity: 0;
-						}
-
-						&::after{
-							background-color:$gm-dark-gray;
-						}
-					}
-				}
-
-				&.active{
-					ul.c3xgm-about-subnav{
-						height: auto;
-
-						li{
-							display: block;
-						}
-					}
-
-					&::after{
-							background-color:$gm-yellow;
-						}
-				}
-
-				&:hover{
-					label{
-						opacity: 1;
-						-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
-					}
-				}
-
-				&::after{
-					content: " ";
-					clear:both;
-					display: table;
-					width: 10px;
-					height: 10px;
-					background-color:$gm-light-gray;
-					position: absolute;
-					top:1px;
-					right:0;
-				}
-
-				&.touch{
-					width:$nav-dot-size-touch;
-					height:$nav-dot-size-touch;
-
-					label{
-						right: $nav-dot-size-touch;
-						line-height: $nav-dot-size-touch;
-						display: none;
-					}
+				&:after {
+					  content: "";
+					  display: block;
+					  width: 1px; height: 17px;
+					  background-color: $gm-dark-gray;
+					  position: absolute;
+					  margin: auto;
+					  left: 0; right: 0; bottom: -8px;
+					  z-index: -1;
 				}
 			}
+			li:last-child:after {
+				content: none;
+				display: none;
+			}
 		}
+
 	}
+}
+
+
+.c3xgm-about-main-nav-sub {
+	opacity: 0;
+	position: absolute;
+	@include prefix(transition, all 200ms);
+}
+
+.c3xgm-about-nav-bullet-active + .c3xgm-about-main-nav-sub {
+	opacity: 1;
 }

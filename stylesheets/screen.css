@@ -181,6 +181,7 @@ Stylesheet: Helpers
 .hide-module {
   visibility: hidden;
   position: absolute;
+  top: 0;
 }
 
 /* line 82, ../sass/components/_helpers.scss */
@@ -203,228 +204,107 @@ Stylesheet: Helpers
   /* IE6-8 */
 }
 
-/*
-TEMPLATE STYLES
-TO BE DELETED AFTER DEVELOPMENT
-*/
-/* line 6, ../sass/components/_temp.scss */
-.temp {
-  background-repeat: no-repeat;
-  background-size: cover;
-  height: 0;
-  z-index: 0;
-  position: absolute;
-  top: 0;
+/* line 3, ../sass/components/_navigation.scss */
+.c3xgm-about-main-nav-container {
+  width: 100%;
+  max-width: 996px;
+  margin: auto;
+  position: fixed;
+  top: 3em;
   left: 0;
   right: 0;
-  margin: auto;
+  z-index: 10;
+  -webkit-transform: translate3d(0, 0, 10);
+  -moz-transform: translate3d(0, 0, 10);
+  -o-transform: translate3d(0, 0, 10);
+  -ms-transform: translate3d(0, 0, 10);
+  transform: translate3d(0, 0, 10);
 }
-
-/* line 16, ../sass/components/_temp.scss */
-.our-comp-temp {
-  background-image: url("../templates/our-company.png");
-  opacity: 0.5;
-  display: none;
-}
-
-/* line 23, ../sass/components/_temp.scss */
-.our-peop-temp {
-  left: -110px;
-  top: 950px;
-  width: 905px;
-  height: 982px;
-  background-image: url("../templates/our-people.png");
-  opacity: 0.5;
-  display: none;
-}
-
-/* line 34, ../sass/components/_temp.scss */
-.our-peop-temp-mobile {
-  width: 100%;
-  max-width: 400px;
-  padding-bottom: 462.75%;
-  height: 0;
-  margin: auto;
-  position: absolute;
-  top: -16px;
-  left: 0;
-  right: 0;
-  background-image: url("../templates/people-mobile.jpg");
-  background-size: contain;
-  background-repeat: no-repeat;
-  opacity: 0.5;
-}
-
-/* line 48, ../sass/components/_temp.scss */
-.our-brands-temp {
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 0;
-  padding-bottom: 282.4309%;
-  background-image: url("../templates/brands.png");
-  opacity: 0.5;
-}
-
-/* line 65, ../sass/components/_temp.scss */
-.our-commitment-temp {
-  opacity: 0.5;
-  left: -145px;
-  top: 3534px;
-  width: 1300px;
-  height: 4046px;
-  background-image: url("../templates/comm.png");
-  opacity: 0.5;
-  height: 0;
-  padding-bottom: 217.409%;
-}
-
-/* line 81, ../sass/components/_temp.scss */
-.temp-our-commitment-mobile {
-  background-image: url("../templates/our-commitment-mobile.jpg");
-  opacity: 0.5;
-  height: 0;
-  background-size: contain;
-  width: 100%;
-  max-width: 320px;
-  padding-bottom: 532.81%;
-}
-@media (min-width: 600px) {
-  /* line 81, ../sass/components/_temp.scss */
-  .temp-our-commitment-mobile {
-    background-image: url("../templates/our-commitment-desktop.jpg");
-    background-image: url("../templates/our-commitment-desktop.jpg");
-    width: 100%;
-    max-width: 905px;
-    padding-bottom: 192.76%;
-    background-size: 150%;
-    background-position: 65% 0;
+@media (min-width: 768px) {
+  /* line 3, ../sass/components/_navigation.scss */
+  .c3xgm-about-main-nav-container {
+    top: 13em;
   }
 }
-
-/* line 103, ../sass/components/_temp.scss */
-.our-brands-temp-mobile {
-  background-image: url("../templates/mobile-our-brands.jpg");
-  opacity: 0.5;
-  width: 100%;
-  max-width: 400px;
-  height: 3641px;
-  top: -19px;
+/* line 19, ../sass/components/_navigation.scss */
+.c3xgm-about-main-nav-container .c3xgm-about-main-nav {
+  float: right;
+  text-align: center;
+}
+/* line 22, ../sass/components/_navigation.scss */
+.c3xgm-about-main-nav-container .c3xgm-about-main-nav li {
   display: block;
-  visibility: visible;
-  bottom: auto;
+  margin: 0;
+  padding: 0;
+  float: left;
+  clear: left;
+}
+/* line 23, ../sass/components/_navigation.scss */
+.c3xgm-about-main-nav-container .c3xgm-about-main-nav .c3xgm-about-nav-bullet {
+  display: block;
+  width: 9px;
+  height: 9px;
+  margin: 8px;
+  background-color: #808285;
+}
+/* line 29, ../sass/components/_navigation.scss */
+.c3xgm-about-main-nav-container .c3xgm-about-main-nav .c3xgm-about-nav-bullet-active {
+  background-color: #FDB12E;
+}
+/* line 32, ../sass/components/_navigation.scss */
+.c3xgm-about-main-nav-container .c3xgm-about-main-nav .c3xgm-about-main-nav-sub {
+  -webkit-transition: all 200ms;
+  -moz-transition: all 200ms;
+  -o-transition: all 200ms;
+  -ms-transition: all 200ms;
+  transition: all 200ms;
+}
+/* line 36, ../sass/components/_navigation.scss */
+.c3xgm-about-main-nav-container .c3xgm-about-main-nav .c3xgm-about-main-nav-sub .c3xgm-about-nav-bullet {
+  background-color: #555555;
+}
+/* line 37, ../sass/components/_navigation.scss */
+.c3xgm-about-main-nav-container .c3xgm-about-main-nav .c3xgm-about-main-nav-sub .c3xgm-about-nav-bullet-active {
+  background-color: #FDB12E;
+}
+/* line 39, ../sass/components/_navigation.scss */
+.c3xgm-about-main-nav-container .c3xgm-about-main-nav .c3xgm-about-main-nav-sub li {
+  position: relative;
+}
+/* line 41, ../sass/components/_navigation.scss */
+.c3xgm-about-main-nav-container .c3xgm-about-main-nav .c3xgm-about-main-nav-sub li:after {
+  content: "";
+  display: block;
+  width: 1px;
+  height: 17px;
+  background-color: #555555;
+  position: absolute;
+  margin: auto;
+  left: 0;
+  right: 0;
+  bottom: -8px;
+  z-index: -1;
+}
+/* line 52, ../sass/components/_navigation.scss */
+.c3xgm-about-main-nav-container .c3xgm-about-main-nav .c3xgm-about-main-nav-sub li:last-child:after {
+  content: none;
+  display: none;
 }
 
-/* line 122, ../sass/components/_temp.scss */
-.temp-foundation {
-  background-image: url("../templates/foundation-mobile.jpg");
-  opacity: 0.5;
-  height: 0;
-  background-size: contain;
-  width: 100%;
-  max-width: 320px;
-  padding-bottom: 249.875%;
-}
-@media (min-width: 600px) {
-  /* line 122, ../sass/components/_temp.scss */
-  .temp-foundation {
-    background-image: url("../templates/foundation-desktop.jpg");
-    width: 100%;
-    max-width: 905px;
-    padding-bottom: 62.87%;
-    background-size: 150%;
-    background-position: 65% 0;
-  }
+/* line 62, ../sass/components/_navigation.scss */
+.c3xgm-about-main-nav-sub {
+  opacity: 0;
+  position: absolute;
+  -webkit-transition: all 200ms;
+  -moz-transition: all 200ms;
+  -o-transition: all 200ms;
+  -ms-transition: all 200ms;
+  transition: all 200ms;
 }
 
-/* line 143, ../sass/components/_temp.scss */
-.temp-environment {
-  background-image: url("../templates/environments-mobile.jpg");
-  opacity: 0.5;
-  height: 0;
-  background-size: contain;
-  width: 100%;
-  max-width: 320px;
-  padding-bottom: 491.875%;
-}
-@media (min-width: 600px) {
-  /* line 143, ../sass/components/_temp.scss */
-  .temp-environment {
-    background-image: url("../templates/environments-desktop.jpg");
-    width: 100%;
-    max-width: 905px;
-    padding-bottom: 213%;
-    background-size: 150%;
-    background-position: 65% 0;
-  }
-}
-
-/* line 163, ../sass/components/_temp.scss */
-.temp-safety {
-  background-image: url("../templates/safety-mobile.jpg");
-  opacity: 0.5;
-  height: 0;
-  background-size: contain;
-  width: 100%;
-  max-width: 320px;
-  padding-bottom: 737.5%;
-}
-@media (min-width: 600px) {
-  /* line 163, ../sass/components/_temp.scss */
-  .temp-safety {
-    background-image: url("../templates/safety-desktop.jpg");
-    width: 100%;
-    max-width: 905px;
-    padding-bottom: 335%;
-    background-size: 150%;
-    background-position: 65% 0;
-  }
-}
-
-/* line 183, ../sass/components/_temp.scss */
-.temp-brands {
-  background-image: url("../templates/brands-mobile.jpg");
-  opacity: 0.5;
-  height: 0;
-  background-size: contain;
-  width: 100%;
-  max-width: 320px;
-  padding-bottom: 925.31%;
-  top: 230px;
-}
-@media (min-width: 600px) {
-  /* line 183, ../sass/components/_temp.scss */
-  .temp-brands {
-    background-image: url("../templates/brands-desktop.jpg");
-    width: 100%;
-    max-width: 905px;
-    padding-bottom: 421.656%;
-    background-size: 150%;
-    background-position: 65% 0;
-  }
-}
-
-/* line 203, ../sass/components/_temp.scss */
-.temp-people {
-  background-image: url("../templates/people-mobile.jpg");
-  opacity: 0.5;
-  height: 0;
-  background-size: contain;
-  width: 100%;
-  max-width: 320px;
-  padding-bottom: 403.125%;
-  top: 230px;
-}
-@media (min-width: 600px) {
-  /* line 203, ../sass/components/_temp.scss */
-  .temp-people {
-    background-image: url("../templates/people-desktop.jpg");
-    width: 100%;
-    max-width: 905px;
-    padding-bottom: 121.5%;
-    background-size: 150%;
-    background-position: 65% 0;
-  }
+/* line 68, ../sass/components/_navigation.scss */
+.c3xgm-about-nav-bullet-active + .c3xgm-about-main-nav-sub {
+  opacity: 1;
 }
 
 /* line 3, ../sass/components/_layout.scss */
@@ -1517,19 +1397,14 @@ h4.c3xgm-about-h {
 /* line 4, ../sass/modules/_tech.scss */
 .c3xgm-about-module-technology .c3xgm-about-module {
   text-align: center;
-  margin: 8% auto;
 }
-/* line 8, ../sass/modules/_tech.scss */
-.c3xgm-about-module-technology .c3xgm-about-module-container .c3xgm-about-module:first-child {
-  margin-top: 4%;
-}
-/* line 13, ../sass/modules/_tech.scss */
+/* line 7, ../sass/modules/_tech.scss */
 .c3xgm-about-module-technology .c3xgm-about-block-icon {
   position: relative;
   padding-bottom: 20%;
   height: 0;
 }
-/* line 17, ../sass/modules/_tech.scss */
+/* line 11, ../sass/modules/_tech.scss */
 .c3xgm-about-module-technology .c3xgm-about-block-icon img {
   width: 60%;
   position: absolute;
@@ -1541,22 +1416,22 @@ h4.c3xgm-about-h {
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
 }
-/* line 23, ../sass/modules/_tech.scss */
+/* line 17, ../sass/modules/_tech.scss */
 .c3xgm-about-module-technology .c3xgm-about-block-image {
   margin: 1.5em auto;
 }
 @media (min-width: 768px) {
-  /* line 23, ../sass/modules/_tech.scss */
+  /* line 17, ../sass/modules/_tech.scss */
   .c3xgm-about-module-technology .c3xgm-about-block-image {
     float: left;
     margin: 2.25em auto;
   }
 }
-/* line 29, ../sass/modules/_tech.scss */
+/* line 20, ../sass/modules/_tech.scss */
 .c3xgm-about-module-technology .c3xgm-about-block-image img {
   width: 80%;
 }
-/* line 32, ../sass/modules/_tech.scss */
+/* line 23, ../sass/modules/_tech.scss */
 .c3xgm-about-module-technology .c3xgm-about-blockquote {
   max-width: 92%;
   margin: 1em auto 1.5em;
@@ -1564,24 +1439,24 @@ h4.c3xgm-about-h {
   text-align: left;
 }
 @media (min-width: 768px) {
-  /* line 32, ../sass/modules/_tech.scss */
+  /* line 23, ../sass/modules/_tech.scss */
   .c3xgm-about-module-technology .c3xgm-about-blockquote {
     display: block;
     margin: 0;
   }
 }
-/* line 42, ../sass/modules/_tech.scss */
+/* line 30, ../sass/modules/_tech.scss */
 .c3xgm-about-module-technology .c3xgm-about-blockquote span {
   display: block;
 }
 @media (min-width: 768px) {
-  /* line 32, ../sass/modules/_tech.scss */
+  /* line 23, ../sass/modules/_tech.scss */
   .c3xgm-about-module-technology .c3xgm-about-blockquote {
     float: right;
   }
 }
 @media (min-width: 768px) {
-  /* line 50, ../sass/modules/_tech.scss */
+  /* line 38, ../sass/modules/_tech.scss */
   .c3xgm-about-module-technology .c3xgm-about-4g-lte .c3xgm-about-block-icon {
     width: 35%;
     float: right;
@@ -1589,157 +1464,157 @@ h4.c3xgm-about-h {
     padding-bottom: 128px;
   }
 }
-/* line 55, ../sass/modules/_tech.scss */
+/* line 43, ../sass/modules/_tech.scss */
 .c3xgm-about-module-technology .c3xgm-about-4g-lte .c3xgm-about-block-icon img {
   width: 65%;
   max-width: 157px;
 }
 @media (min-width: 768px) {
-  /* line 55, ../sass/modules/_tech.scss */
+  /* line 43, ../sass/modules/_tech.scss */
   .c3xgm-about-module-technology .c3xgm-about-4g-lte .c3xgm-about-block-icon img {
     width: 80%;
     max-width: none;
   }
 }
 @media (min-width: 768px) {
-  /* line 61, ../sass/modules/_tech.scss */
+  /* line 49, ../sass/modules/_tech.scss */
   .c3xgm-about-module-technology .c3xgm-about-4g-lte .c3xgm-about-block-image img {
     width: 70%;
   }
 }
 @media (min-width: 768px) {
-  /* line 66, ../sass/modules/_tech.scss */
+  /* line 54, ../sass/modules/_tech.scss */
   .c3xgm-about-module-technology .c3xgm-about-4g-lte .c3xgm-about-blockquote {
     width: 65%;
     float: right;
   }
 }
-/* line 70, ../sass/modules/_tech.scss */
+/* line 58, ../sass/modules/_tech.scss */
 .c3xgm-about-module-technology .c3xgm-about-4g-lte .c3xgm-about-dark-blue.c3xgm-about-thin,
 .c3xgm-about-module-technology .c3xgm-about-4g-lte .c3xgm-about-light-blue {
   font-size: 27px;
   font-size: 8.5vw;
 }
 @media (min-width: 768px) {
-  /* line 70, ../sass/modules/_tech.scss */
+  /* line 58, ../sass/modules/_tech.scss */
   .c3xgm-about-module-technology .c3xgm-about-4g-lte .c3xgm-about-dark-blue.c3xgm-about-thin,
   .c3xgm-about-module-technology .c3xgm-about-4g-lte .c3xgm-about-light-blue {
     font-size: 41.7931483782966px;
   }
 }
-/* line 76, ../sass/modules/_tech.scss */
+/* line 64, ../sass/modules/_tech.scss */
 .c3xgm-about-module-technology .c3xgm-about-4g-lte .c3xgm-about-gray {
   font-size: 12px;
   font-size: 3.961772vw;
   line-height: 1.075em;
 }
 @media (min-width: 768px) {
-  /* line 76, ../sass/modules/_tech.scss */
+  /* line 64, ../sass/modules/_tech.scss */
   .c3xgm-about-module-technology .c3xgm-about-4g-lte .c3xgm-about-gray {
     font-size: 20px;
   }
 }
-/* line 82, ../sass/modules/_tech.scss */
+/* line 70, ../sass/modules/_tech.scss */
 .c3xgm-about-module-technology .c3xgm-about-4g-lte .c3xgm-about-light-blue {
   margin: .05em 0;
 }
-/* line 89, ../sass/modules/_tech.scss */
+/* line 77, ../sass/modules/_tech.scss */
 .c3xgm-about-module-technology .c3xgm-about-concept-car .c3xgm-about-blockquote {
   width: auto;
 }
 @media (min-width: 768px) {
-  /* line 89, ../sass/modules/_tech.scss */
+  /* line 77, ../sass/modules/_tech.scss */
   .c3xgm-about-module-technology .c3xgm-about-concept-car .c3xgm-about-blockquote {
     width: 75%;
     float: right;
   }
 }
-/* line 93, ../sass/modules/_tech.scss */
+/* line 81, ../sass/modules/_tech.scss */
 .c3xgm-about-module-technology .c3xgm-about-concept-car .c3xgm-about-block-icon {
   padding-bottom: 27%;
 }
-/* line 95, ../sass/modules/_tech.scss */
+/* line 83, ../sass/modules/_tech.scss */
 .c3xgm-about-module-technology .c3xgm-about-concept-car .c3xgm-about-block-icon img {
   width: 30%;
   max-width: 113px;
 }
 @media (min-width: 768px) {
-  /* line 93, ../sass/modules/_tech.scss */
+  /* line 81, ../sass/modules/_tech.scss */
   .c3xgm-about-module-technology .c3xgm-about-concept-car .c3xgm-about-block-icon {
     width: 25%;
     height: 0;
     float: right;
     padding-bottom: 223px;
   }
-  /* line 99, ../sass/modules/_tech.scss */
+  /* line 87, ../sass/modules/_tech.scss */
   .c3xgm-about-module-technology .c3xgm-about-concept-car .c3xgm-about-block-icon img {
     width: 75%;
     max-width: none;
   }
 }
-/* line 106, ../sass/modules/_tech.scss */
+/* line 94, ../sass/modules/_tech.scss */
 .c3xgm-about-module-technology .c3xgm-about-safety .c3xgm-about-block-icon {
   padding-bottom: 25%;
 }
 @media (min-width: 768px) {
-  /* line 106, ../sass/modules/_tech.scss */
+  /* line 94, ../sass/modules/_tech.scss */
   .c3xgm-about-module-technology .c3xgm-about-safety .c3xgm-about-block-icon {
     width: 20%;
     height: 0;
     padding-bottom: 212px;
   }
 }
-/* line 113, ../sass/modules/_tech.scss */
+/* line 101, ../sass/modules/_tech.scss */
 .c3xgm-about-module-technology .c3xgm-about-safety .c3xgm-about-block-icon img {
   width: 40%;
 }
 @media (min-width: 768px) {
-  /* line 113, ../sass/modules/_tech.scss */
+  /* line 101, ../sass/modules/_tech.scss */
   .c3xgm-about-module-technology .c3xgm-about-safety .c3xgm-about-block-icon img {
     width: 80%;
   }
 }
 @media (min-width: 768px) {
-  /* line 120, ../sass/modules/_tech.scss */
+  /* line 108, ../sass/modules/_tech.scss */
   .c3xgm-about-module-technology .c3xgm-about-safety .c3xgm-about-blockquote {
     width: 80%;
   }
 }
-/* line 124, ../sass/modules/_tech.scss */
+/* line 112, ../sass/modules/_tech.scss */
 .c3xgm-about-module-technology .c3xgm-about-safety .c3xgm-about-light-blue {
   max-width: 6em;
 }
 @media (min-width: 768px) {
-  /* line 124, ../sass/modules/_tech.scss */
+  /* line 112, ../sass/modules/_tech.scss */
   .c3xgm-about-module-technology .c3xgm-about-safety .c3xgm-about-light-blue {
     max-width: none;
   }
 }
-/* line 129, ../sass/modules/_tech.scss */
+/* line 117, ../sass/modules/_tech.scss */
 .c3xgm-about-module-technology .c3xgm-about-safety .c3xgm-about-gray.c3xgm-about-thin.c3xgm-about-small {
   font-size: 12px;
   font-size: 4vw;
 }
 @media (min-width: 768px) {
-  /* line 129, ../sass/modules/_tech.scss */
+  /* line 117, ../sass/modules/_tech.scss */
   .c3xgm-about-module-technology .c3xgm-about-safety .c3xgm-about-gray.c3xgm-about-thin.c3xgm-about-small {
     font-size: 21px;
   }
 }
-/* line 138, ../sass/modules/_tech.scss */
+/* line 126, ../sass/modules/_tech.scss */
 .c3xgm-about-module-technology .c3xgm-about-safety .c3xgm-about-dark-blue.c3xgm-about-thin,
 .c3xgm-about-module-technology .c3xgm-about-concept-car .c3xgm-about-dark-blue.c3xgm-about-thin {
   font-size: 17px;
   font-size: 5vw;
 }
 @media (min-width: 768px) {
-  /* line 138, ../sass/modules/_tech.scss */
+  /* line 126, ../sass/modules/_tech.scss */
   .c3xgm-about-module-technology .c3xgm-about-safety .c3xgm-about-dark-blue.c3xgm-about-thin,
   .c3xgm-about-module-technology .c3xgm-about-concept-car .c3xgm-about-dark-blue.c3xgm-about-thin {
     font-size: 28px;
   }
 }
-/* line 142, ../sass/modules/_tech.scss */
+/* line 130, ../sass/modules/_tech.scss */
 .c3xgm-about-module-technology .c3xgm-about-safety .c3xgm-about-light-blue,
 .c3xgm-about-module-technology .c3xgm-about-concept-car .c3xgm-about-light-blue {
   margin: .05em 0;
@@ -1748,13 +1623,13 @@ h4.c3xgm-about-h {
   line-height: 0.9em;
 }
 @media (min-width: 768px) {
-  /* line 142, ../sass/modules/_tech.scss */
+  /* line 130, ../sass/modules/_tech.scss */
   .c3xgm-about-module-technology .c3xgm-about-safety .c3xgm-about-light-blue,
   .c3xgm-about-module-technology .c3xgm-about-concept-car .c3xgm-about-light-blue {
     font-size: 60px;
   }
 }
-/* line 148, ../sass/modules/_tech.scss */
+/* line 136, ../sass/modules/_tech.scss */
 .c3xgm-about-module-technology .c3xgm-about-safety .c3xgm-about-gray,
 .c3xgm-about-module-technology .c3xgm-about-concept-car .c3xgm-about-gray {
   font-size: 20px;
@@ -1762,23 +1637,23 @@ h4.c3xgm-about-h {
   line-height: 1.075em;
 }
 @media (min-width: 768px) {
-  /* line 148, ../sass/modules/_tech.scss */
+  /* line 136, ../sass/modules/_tech.scss */
   .c3xgm-about-module-technology .c3xgm-about-safety .c3xgm-about-gray,
   .c3xgm-about-module-technology .c3xgm-about-concept-car .c3xgm-about-gray {
     font-size: 35px;
   }
 }
-/* line 156, ../sass/modules/_tech.scss */
+/* line 144, ../sass/modules/_tech.scss */
 .c3xgm-about-module-technology .c3xgm-about-module-nav {
   text-align: center;
 }
-/* line 158, ../sass/modules/_tech.scss */
+/* line 146, ../sass/modules/_tech.scss */
 .c3xgm-about-module-technology .c3xgm-about-module-nav li {
   display: inline-block;
   margin: 0;
   padding: 0;
 }
-/* line 159, ../sass/modules/_tech.scss */
+/* line 147, ../sass/modules/_tech.scss */
 .c3xgm-about-module-technology .c3xgm-about-module-nav .c3xgm-about-module-nav-bullet {
   display: block;
   width: 8px;
@@ -1786,7 +1661,7 @@ h4.c3xgm-about-h {
   margin: 8px;
   background-color: #808285;
 }
-/* line 168, ../sass/modules/_tech.scss */
+/* line 153, ../sass/modules/_tech.scss */
 .c3xgm-about-module-technology .c3xgm-about-module-nav .c3xgm-about-module-nav-bullet-active {
   background-color: #FDB12E;
 }
@@ -1965,11 +1840,6 @@ h4.c3xgm-about-h {
     float: right;
   }
 }
-/* line 27, ../sass/modules/_car.scss */
-.c3xgm-about-module-car .c3xgm-about-module-container {
-  height: 0;
-  padding: 1em 0 100%;
-}
 @media (min-width: 768px) {
   /* line 27, ../sass/modules/_car.scss */
   .c3xgm-about-module-car .c3xgm-about-module-container {
@@ -1977,7 +1847,7 @@ h4.c3xgm-about-h {
     width: 90%;
   }
 }
-/* line 32, ../sass/modules/_car.scss */
+/* line 33, ../sass/modules/_car.scss */
 .c3xgm-about-module-car .c3xgm-about-module-container .c3xgm-about-module .c3xgm-about-h,
 .c3xgm-about-module-car .c3xgm-about-module-container .c3xgm-about-module .c3xgm-about-p,
 .c3xgm-about-module-car .c3xgm-about-module-container .c3xgm-about-module .c3xgm-about-link,
@@ -1987,21 +1857,21 @@ h4.c3xgm-about-h {
   margin-right: auto;
 }
 @media (min-width: 768px) {
-  /* line 42, ../sass/modules/_car.scss */
+  /* line 43, ../sass/modules/_car.scss */
   .c3xgm-about-module-car .c3xgm-about-module-container > .c3xgm-about-module {
     position: absolute;
     left: 0;
     width: 100%;
   }
 }
-/* line 50, ../sass/modules/_car.scss */
+/* line 51, ../sass/modules/_car.scss */
 .c3xgm-about-module-car .c3xgm-about-module .c3xgm-about-vehicle-copy,
 .c3xgm-about-module-car .c3xgm-about-module .c3xgm-about-link,
 .c3xgm-about-module-car .c3xgm-about-module .c3xgm-about-h,
 .c3xgm-about-module-car .c3xgm-about-module .c3xgm-about-p {
   text-align: left;
 }
-/* line 55, ../sass/modules/_car.scss */
+/* line 56, ../sass/modules/_car.scss */
 .c3xgm-about-module-car .c3xgm-about-module .c3xgm-about-block-image,
 .c3xgm-about-module-car .c3xgm-about-module .c3xgm-about-block-image img,
 .c3xgm-about-module-car .c3xgm-about-module .c3xgm-about-vehicle-copy,
@@ -2012,7 +1882,7 @@ h4.c3xgm-about-h {
   padding: 0 2% 0 7px;
 }
 @media (min-width: 768px) {
-  /* line 55, ../sass/modules/_car.scss */
+  /* line 56, ../sass/modules/_car.scss */
   .c3xgm-about-module-car .c3xgm-about-module .c3xgm-about-block-image,
   .c3xgm-about-module-car .c3xgm-about-module .c3xgm-about-block-image img,
   .c3xgm-about-module-car .c3xgm-about-module .c3xgm-about-vehicle-copy,
@@ -2020,47 +1890,47 @@ h4.c3xgm-about-h {
   .c3xgm-about-module-car .c3xgm-about-module .c3xgm-about-h,
   .c3xgm-about-module-car .c3xgm-about-module .c3xgm-about-p {
     width: 88.69731800766284%;
-    max-width: 463px;
+    max-width: 480px;
   }
 }
-/* line 65, ../sass/modules/_car.scss */
+/* line 70, ../sass/modules/_car.scss */
 .c3xgm-about-module-car .c3xgm-about-module .c3xgm-about-vehicle-copy {
   display: block;
   margin: 1em auto 0;
   font-family: open-sans, Arial, sans-serif;
 }
-/* line 71, ../sass/modules/_car.scss */
+/* line 76, ../sass/modules/_car.scss */
 .c3xgm-about-module-car .c3xgm-about-module .c3xgm-about-p {
   margin-left: 0;
   margin-right: 0;
 }
 @media (min-width: 768px) {
-  /* line 71, ../sass/modules/_car.scss */
+  /* line 76, ../sass/modules/_car.scss */
   .c3xgm-about-module-car .c3xgm-about-module .c3xgm-about-p {
     margin-left: auto;
     margin-right: auto;
   }
 }
-/* line 75, ../sass/modules/_car.scss */
+/* line 80, ../sass/modules/_car.scss */
 .c3xgm-about-module-car .c3xgm-about-module h3.c3xgm-about-h {
   font-size: 32px;
   font-size: 8.06vw;
   line-height: 1em;
 }
 @media (min-width: 906px) {
-  /* line 75, ../sass/modules/_car.scss */
+  /* line 80, ../sass/modules/_car.scss */
   .c3xgm-about-module-car .c3xgm-about-module h3.c3xgm-about-h {
     font-size: 73px;
     line-height: 70px;
   }
 }
-/* line 79, ../sass/modules/_car.scss */
+/* line 84, ../sass/modules/_car.scss */
 .c3xgm-about-module-car .c3xgm-about-module .c3xgm-about-link {
   display: block;
   margin-top: 1em;
   margin-bottom: 0.5em;
 }
-/* line 81, ../sass/modules/_car.scss */
+/* line 86, ../sass/modules/_car.scss */
 .c3xgm-about-module-car .c3xgm-about-module .c3xgm-about-block-image {
   position: relative;
   text-align: center;
@@ -2068,80 +1938,80 @@ h4.c3xgm-about-h {
   height: 0;
   margin-top: 2em;
 }
-/* line 84, ../sass/modules/_car.scss */
+/* line 89, ../sass/modules/_car.scss */
 .c3xgm-about-module-car .c3xgm-about-module .c3xgm-about-block-image img {
   display: block;
   margin: 0 auto;
   max-width: 77%;
 }
-/* line 89, ../sass/modules/_car.scss */
+/* line 94, ../sass/modules/_car.scss */
 .c3xgm-about-module-car .c3xgm-about-module-car-logo-container li {
   display: block;
   float: left;
   text-align: center;
   width: 33.3333334%;
 }
-/* line 92, ../sass/modules/_car.scss */
+/* line 97, ../sass/modules/_car.scss */
 .c3xgm-about-module-car .c3xgm-about-module-car-logo-container li:nth-of-type(3n+1) {
   clear: left;
 }
 @media (min-width: 768px) {
-  /* line 89, ../sass/modules/_car.scss */
+  /* line 94, ../sass/modules/_car.scss */
   .c3xgm-about-module-car .c3xgm-about-module-car-logo-container li {
     width: 50%;
     margin: 1em auto;
   }
-  /* line 95, ../sass/modules/_car.scss */
+  /* line 100, ../sass/modules/_car.scss */
   .c3xgm-about-module-car .c3xgm-about-module-car-logo-container li:nth-of-type(3n+1) {
     clear: none;
   }
-  /* line 96, ../sass/modules/_car.scss */
+  /* line 101, ../sass/modules/_car.scss */
   .c3xgm-about-module-car .c3xgm-about-module-car-logo-container li:nth-of-type(odd) {
     clear: left;
   }
 }
-/* line 99, ../sass/modules/_car.scss */
+/* line 104, ../sass/modules/_car.scss */
 .c3xgm-about-module-car .c3xgm-about-module-car-logo-container li .c3xgm-about-module-car-logo {
   line-height: 44px;
 }
-/* line 101, ../sass/modules/_car.scss */
+/* line 106, ../sass/modules/_car.scss */
 .c3xgm-about-module-car .c3xgm-about-module-car-logo-container li .c3xgm-about-module-car-logo img {
   width: 60%;
   vertical-align: middle;
 }
 @media (min-width: 768px) {
-  /* line 99, ../sass/modules/_car.scss */
+  /* line 104, ../sass/modules/_car.scss */
   .c3xgm-about-module-car .c3xgm-about-module-car-logo-container li .c3xgm-about-module-car-logo {
     line-height: 60px;
     display: block;
     text-align: left;
   }
-  /* line 104, ../sass/modules/_car.scss */
+  /* line 109, ../sass/modules/_car.scss */
   .c3xgm-about-module-car .c3xgm-about-module-car-logo-container li .c3xgm-about-module-car-logo img {
     padding-left: 7px;
   }
 }
-/* line 111, ../sass/modules/_car.scss */
+/* line 116, ../sass/modules/_car.scss */
 .c3xgm-about-module-car .c3xgm-about-chevrolet .c3xgm-about-block-image {
   padding-bottom: 37.56906077348066%;
 }
-/* line 112, ../sass/modules/_car.scss */
+/* line 117, ../sass/modules/_car.scss */
 .c3xgm-about-module-car .c3xgm-about-buick .c3xgm-about-block-image {
   padding-bottom: 39.95584988962472%;
 }
-/* line 113, ../sass/modules/_car.scss */
+/* line 118, ../sass/modules/_car.scss */
 .c3xgm-about-module-car .c3xgm-about-gmc .c3xgm-about-block-image {
   padding-bottom: 34.65783664459161%;
 }
-/* line 114, ../sass/modules/_car.scss */
+/* line 119, ../sass/modules/_car.scss */
 .c3xgm-about-module-car .c3xgm-about-opel .c3xgm-about-block-image {
   padding-bottom: 42.721854304635764%;
 }
-/* line 115, ../sass/modules/_car.scss */
+/* line 120, ../sass/modules/_car.scss */
 .c3xgm-about-module-car .c3xgm-about-cadillac .c3xgm-about-block-image {
   padding-bottom: 27.593818984547464%;
 }
-/* line 116, ../sass/modules/_car.scss */
+/* line 121, ../sass/modules/_car.scss */
 .c3xgm-about-module-car .c3xgm-about-vauxhall .c3xgm-about-block-image {
   padding-bottom: 42.60485651214128%;
 }
@@ -2988,7 +2858,8 @@ h4.c3xgm-about-h {
 .c3xgm-about-page-our-commitment .c3xgm-about-disclaimer {
   text-align: left;
 }
-/* line 327, ../sass/sections/_safety.scss */
+/* line 319, ../sass/sections/_safety.scss */
+.c3xgm-about-page-our-commitment .c3xgm-about-disclaimer .c3xgm-about-p,
 .c3xgm-about-page-our-commitment .c3xgm-about-disclaimer .c3xgm-about-gray.c3xgm-about-disclaimer {
   font-weight: normal;
   text-transform: none;
@@ -3000,13 +2871,14 @@ h4.c3xgm-about-h {
   padding-right: 3em;
 }
 @media (min-width: 768px) {
-  /* line 327, ../sass/sections/_safety.scss */
+  /* line 319, ../sass/sections/_safety.scss */
+  .c3xgm-about-page-our-commitment .c3xgm-about-disclaimer .c3xgm-about-p,
   .c3xgm-about-page-our-commitment .c3xgm-about-disclaimer .c3xgm-about-gray.c3xgm-about-disclaimer {
     font-size: 18.222px;
     max-width: none;
   }
 }
-/* line 338, ../sass/sections/_safety.scss */
+/* line 331, ../sass/sections/_safety.scss */
 .c3xgm-about-page-our-commitment .c3xgm-about-disclaimer .c3xgm-about-gray.c3xgm-about-disclaimer-small {
   font-weight: normal;
   text-transform: none;
@@ -3018,25 +2890,56 @@ h4.c3xgm-about-h {
   padding-right: 3em;
 }
 @media (min-width: 768px) {
-  /* line 338, ../sass/sections/_safety.scss */
+  /* line 331, ../sass/sections/_safety.scss */
   .c3xgm-about-page-our-commitment .c3xgm-about-disclaimer .c3xgm-about-gray.c3xgm-about-disclaimer-small {
     font-size: 10.6295px;
     max-width: none;
   }
 }
-/* line 348, ../sass/sections/_safety.scss */
-.c3xgm-about-page-our-commitment .c3xgm-about-disclaimer .c3xgm-about-gray.c3xgm-about-disclaimer-small strong {
+/* line 339, ../sass/sections/_safety.scss */
+.c3xgm-about-page-our-commitment .c3xgm-about-disclaimer .c3xgm-about-gray.c3xgm-about-disclaimer-small strong, .c3xgm-about-page-our-commitment .c3xgm-about-disclaimer .c3xgm-about-gray.c3xgm-about-disclaimer-small a {
   display: block;
   margin: 1em 0 .5em;
   font-size: 14px;
+  text-decoration: none;
+  font-weight: 600;
+  font-family: "open-sans-condensed", 'Arial Narrow', Arial, sans-serif;
   color: #6086C4;
 }
 @media (min-width: 768px) {
-  /* line 348, ../sass/sections/_safety.scss */
-  .c3xgm-about-page-our-commitment .c3xgm-about-disclaimer .c3xgm-about-gray.c3xgm-about-disclaimer-small strong {
+  /* line 339, ../sass/sections/_safety.scss */
+  .c3xgm-about-page-our-commitment .c3xgm-about-disclaimer .c3xgm-about-gray.c3xgm-about-disclaimer-small strong, .c3xgm-about-page-our-commitment .c3xgm-about-disclaimer .c3xgm-about-gray.c3xgm-about-disclaimer-small a {
     font-size: 21.259px;
     max-width: none;
   }
+}
+/* line 349, ../sass/sections/_safety.scss */
+.c3xgm-about-page-our-commitment .c3xgm-about-disclaimer .c3xgm-about-p {
+  margin-left: 0;
+  margin-right: 0;
+  padding-left: 0;
+  padding-right: 0;
+  color: #7E8184;
+  font-size: 10px;
+  max-width: 83em;
+}
+
+/* line 354, ../sass/sections/_safety.scss */
+.c3xgm-about-disclaimer-box {
+  height: 0;
+  opacity: 0;
+  max-height: 100%;
+  -webkit-transition: all 250ms;
+  -moz-transition: all 250ms;
+  -o-transition: all 250ms;
+  -ms-transition: all 250ms;
+  transition: all 250ms;
+}
+
+/* line 361, ../sass/sections/_safety.scss */
+.c3xgm-about-disclaimer-box.c3xgm-about-show-disclaimer {
+  height: auto;
+  opacity: 1;
 }
 
 /* line 2, ../sass/pages/_our-brands.scss */

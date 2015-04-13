@@ -316,14 +316,7 @@
 	.c3xgm-about-disclaimer {
 		text-align: left;
 
-		.c3xgm-about-block-image {
-			@media(min-width: $tablet-height) { }
-		}
-		
-		.c3xgm-about-blockquote {
-			@media(min-width: $tablet-height) { }
-		}
-
+		.c3xgm-about-p,
 		.c3xgm-about-gray.c3xgm-about-disclaimer {
 			font-weight: normal; text-transform: none;
 			font-size: 10px;
@@ -337,22 +330,34 @@
 
 		.c3xgm-about-gray.c3xgm-about-disclaimer-small {
 			font-weight: normal; text-transform: none;
-			font-size: 10px;
-			line-height: 1.6em;
+			font-size: 10px; line-height: 1.6em;
 			max-width: 27em;
 			display: block;
-			margin: 0 auto;
-			padding-right: 3em;
+			margin: 0 auto; padding-right: 3em;
 			@media(min-width:$tablet-height) {font-size:10.6295px; max-width: none;}
 
-			strong {
+			strong, a {
 				display: block;
 				margin: 1em 0 .5em;
 				font-size: 14px;
+				text-decoration: none; font-weight: 600;
+				font-family: "open-sans-condensed", 'Arial Narrow', Arial, sans-serif; 
 				color:$gm-light-blue;
 				@media(min-width:$tablet-height) {font-size:21.259px; max-width:none; }					
 			}
 		}
+		.c3xgm-about-p {margin-left:0; margin-right:0; padding-left:0; padding-right:0; color:$gm-light-gray;font-size: 10px; max-width: 83em;}
 	}
 
+}
+
+.c3xgm-about-disclaimer-box {
+	height: 0; opacity: 0;
+	max-height: 100%;
+	@include prefix(transition, all 250ms);
+}
+
+
+.c3xgm-about-disclaimer-box.c3xgm-about-show-disclaimer {
+	height: auto; opacity: 1;
 }

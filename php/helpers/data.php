@@ -6,6 +6,7 @@ $pages = array(
 	array(
 		"type"=>"page",
 		"title"=>"Our Company",
+		"id"=>"our-company",
 		"tagline"=>"General Motors is a global automotive company united by a single purpose:",		
 		"icon"=>"img/title-icons/our-company.png",
 		"icon@2x"=>"img/title-icons/our-company.svg",
@@ -23,6 +24,7 @@ $pages = array(
 	array(
 		"type"=>"page",
 		"title"=>"Our People",
+		"id"=>"our-people",
 		"tagline"=>"General Motors employs the finest workforce in the automotive world. We are a richly diverse and dedicated team.",
 		"icon"=>"img/title-icons/our-people.png",
 		"icon@2x"=>"img/title-icons/our-people.svg",
@@ -87,6 +89,7 @@ $pages = array(
 	array(
 		"type"=>"page",
 		"title"=>"Our Brands",
+		"id"=>"our-brands",
 		"tagline"=>"From electric mini-cars to heavy-duty full-size trucks, General Motors provides a complete range of vehicles that meets the needs and expectations of drivers on a truly global scale. There are 9 distinctive automotive brands under the GM corporate umbrella: Chevrolet, Buick, GMC, Cadillac, Opel, Vauxhall, Holden, Baojun and Wuling.",
 		"icon"=>"img/title-icons/our-brands.png",
 		"icon@2x"=>"img/title-icons/our-brands.svg",
@@ -293,12 +296,14 @@ $pages = array(
 		"type"=>"page",
 		"title"=>"Our Commitment",
 		"tagline"=>"",
+		"id"=>"our-commitment",
 		"icon"=>"img/title-icons/our-commitment.png",
 		"icon@2x"=>"img/title-icons/our-commitment.svg",
 		"sections"=>array(
 			// SAFETY & QUALITY
 			array(
 				"title"=>"Safety &amp; Quality",
+				"id"=>"safety-quality",
 				"tagline"=>"We assign the highest priority to matters that impact our customers’ well-being and quality of life. As a result, GM is driven to maintain the highest quality standards. Quality and safety are part of our very foundation. Safety is something we will never compromise.",
 				"blocks"=>array(
 					array(
@@ -384,64 +389,15 @@ $pages = array(
 						"class"=>"disclaimer",
 						"copy"=>array(
 							"c3xgm-about-gray c3xgm-about-disclaimer"=>"The Chevrolet Malibu, Silverado HD, Suburban, Buick Encore, GMC Terrain, and GMC Yukon were awarded the \"Highest Ranked Midsize Car, Large Heavy Duty Pickup, Large SUV (tie), Small SUV(tie), and Compact SUV in Initial Quality\"",
-							"c3xgm-about-gray c3xgm-about-disclaimer-small"=>"<strong>VIEW DISCLAIMER:</strong> The Chevrolet Malibu, Chevrolet Silverado HD, Chevrolet Suburban, Buick Encore, GMC Terrain, and GMC Yukon received the lowest number of problems per 100 vehicles in the Midsize Car, Large Heavy Duty Pickup, Large SUV (tie), Small SUV (tie), and Compact SUV segments in the J.D. Power 2014 Initial Quality StudySM. Study based on responses from 86,118 new-vehicle owners, measuring 239 models and measures opinions after 90 days of ownership. Proprietary study results are based on experiences and perceptions of owners surveyed in February-May 2014. Your experiences may vary. Visit <a href=\"http://jdpower.com\">jdpower.com</a>."
+							"c3xgm-about-gray c3xgm-about-disclaimer-small"=>"<a id='c3xgm-about-disclaimer-link' href='#c3xgm-about-disclaimer-box' class='c3xgm-about-disclaimer-link'>VIEW DISCLAIMER:</a><span id='c3xgm-about-disclaimer-box' class='c3xgm-about-p c3xgm-about-disclaimer-box c3xgm-about-clearfix'>The Chevrolet Malibu, Chevrolet Silverado HD, Chevrolet Suburban, Buick Encore, GMC Terrain, and GMC Yukon received the lowest number of problems per 100 vehicles in the Midsize Car, Large Heavy Duty Pickup, Large SUV (tie), Small SUV (tie), and Compact SUV segments in the J.D. Power 2014 Initial Quality StudySM. Study based on responses from 86,118 new-vehicle owners, measuring 239 models and measures opinions after 90 days of ownership. Proprietary study results are based on experiences and perceptions of owners surveyed in February-May 2014. Your experiences may vary. Visit <a href=\"http://jdpower.com\">jdpower.com</a>.</span>"
 						)
 					) 
-				)
-			),
-			// TECHNOLOGY
-			array(
-				"title"=>"Technology",
-				"tagline"=>"Historically, GM technology has always been on the forefront. We continue to excel in engine and drivetrain development, and strive to push exciting advancements in alternative energy and purposeful vehicle design.",
-				"module"=>array(
-					"name"=>"technology",
-					"blocks"=>array(
-						array(
-							"title"=>"4G LTE",
-							"class"=>"4g-lte",
-							"icon"=>"img/modules/technology/4g-lte/4g-lte.png",
-							"icon@2x"=>"img/modules/technology/4g-lte/4g-lte.svg",
-							"image"=>"img/modules/technology/4g-lte/4g-lte-car.jpg",
-							"image@2x"=>"img/modules/technology/4g-lte/4g-lte-car@2x.jpg",
-							"copy"=>array(
-								"c3xgm-about-dark-blue c3xgm-about-thin"=>"Offering",
-								"c3xgm-about-light-blue"=>"4G LTE Connectivity",
-								"c3xgm-about-gray"=>"On more vehicles than any other <br>auto manufacturer combined"
-							)
-						),
-						array(
-							"title"=>"Concept Car",
-							"class"=>"concept-car",
-							"icon"=>"img/modules/technology/bolt/bolt.png",
-							"icon@2x"=>"img/modules/technology/bolt/bolt.svg",
-							"image"=>"img/modules/technology/bolt/bolt.jpg",
-							"image@2x"=>"img/modules/technology/bolt/bolt@2x.jpg",
-							"copy"=>array(
-								"c3xgm-about-dark-blue c3xgm-about-thin"=>"Creating the affordable electric",
-								"c3xgm-about-light-blue"=>"Chevrolet Bolt <br>Concept Car",
-								"c3xgm-about-gray c3xgm-about-thin"=>"Capable of traveling over <br><strong>200 miles</strong> on a single charge"
-							)
-						),
-						array(
-							"title"=>"Safety",
-							"class"=>"safety",
-							"icon"=>"img/modules/technology/safety/safety.png",
-							"icon@2x"=>"img/modules/technology/safety/safety.svg",
-							"image"=>"img/modules/technology/4g-lte/4g-lte-car.jpg",
-							"image@2x"=>"img/modules/technology/4g-lte/4g-lte-car@2x.jpg",
-							"copy"=>array(
-								"c3xgm-about-dark-blue c3xgm-about-thin"=>"Enhancing",
-								"c3xgm-about-light-blue"=>"Driver Vision &amp; Safety",
-								"c3xgm-about-gray c3xgm-about-thin"=>"With a <strong>Patented streaming video <br>rearview mirror</strong>",
-								"c3xgm-about-gray c3xgm-about-thin c3xgm-about-small"=>"Debuting on the 2016 <strong>Cadillac CTS</strong>.<br>Available late 2015"
-							)
-						)
-					)
 				)
 			),
 			// ENVIRONMENT
 			array(
 				"title"=>"Environment",
+				"id"=>"environment",
 				"tagline"=>"A key focus of GM’s customer-first approach is to seek creative and innovative solutions for the environment. We consistently adopt policies and develop technologies that promote a cleaner planet from supply chain to manufacturing to the vehicles we put on the road.",
 				"blocks"=>array(
 					array(
@@ -514,9 +470,61 @@ $pages = array(
 					)
 				)
 			),
+			// TECHNOLOGY
+			array(
+				"title"=>"Technology",
+				"id"=>"technology",
+				"tagline"=>"Historically, GM technology has always been on the forefront. We continue to excel in engine and drivetrain development, and strive to push exciting advancements in alternative energy and purposeful vehicle design.",
+				"module"=>array(
+					"name"=>"technology",
+					"blocks"=>array(
+						array(
+							"title"=>"4G LTE",
+							"class"=>"4g-lte",
+							"icon"=>"img/modules/technology/4g-lte/4g-lte.png",
+							"icon@2x"=>"img/modules/technology/4g-lte/4g-lte.svg",
+							"image"=>"img/modules/technology/4g-lte/4g-lte-car.jpg",
+							"image@2x"=>"img/modules/technology/4g-lte/4g-lte-car@2x.jpg",
+							"copy"=>array(
+								"c3xgm-about-dark-blue c3xgm-about-thin"=>"Offering",
+								"c3xgm-about-light-blue"=>"4G LTE Connectivity",
+								"c3xgm-about-gray"=>"On more vehicles than any other <br>auto manufacturer combined"
+							)
+						),
+						array(
+							"title"=>"Concept Car",
+							"class"=>"concept-car",
+							"icon"=>"img/modules/technology/bolt/bolt.png",
+							"icon@2x"=>"img/modules/technology/bolt/bolt.svg",
+							"image"=>"img/modules/technology/bolt/bolt.jpg",
+							"image@2x"=>"img/modules/technology/bolt/bolt@2x.jpg",
+							"copy"=>array(
+								"c3xgm-about-dark-blue c3xgm-about-thin"=>"Creating the affordable electric",
+								"c3xgm-about-light-blue"=>"Chevrolet Bolt <br>Concept Car",
+								"c3xgm-about-gray c3xgm-about-thin"=>"Capable of traveling over <br><strong>200 miles</strong> on a single charge"
+							)
+						),
+						array(
+							"title"=>"Safety",
+							"class"=>"safety",
+							"icon"=>"img/modules/technology/safety/safety.png",
+							"icon@2x"=>"img/modules/technology/safety/safety.svg",
+							"image"=>"img/modules/technology/4g-lte/4g-lte-car.jpg",
+							"image@2x"=>"img/modules/technology/4g-lte/4g-lte-car@2x.jpg",
+							"copy"=>array(
+								"c3xgm-about-dark-blue c3xgm-about-thin"=>"Enhancing",
+								"c3xgm-about-light-blue"=>"Driver Vision &amp; Safety",
+								"c3xgm-about-gray c3xgm-about-thin"=>"With a <strong>Patented streaming video <br>rearview mirror</strong>",
+								"c3xgm-about-gray c3xgm-about-thin c3xgm-about-small"=>"Debuting on the 2016 <strong>Cadillac CTS</strong>.<br>Available late 2015"
+							)
+						)
+					)
+				)
+			),
 			// OUR GLOBAL COMMUNITY
 			array(
 				"title"=>"Our Global Community",
+				"id"=>"our-global-community",
 				"tagline"=>"For decades, the GM Foundation has donated hundreds of millions of dollars to support education, health and human services, the environment, community development and disaster relief efforts.",
 				"module"=>array(
 					"name"=>"foundation",

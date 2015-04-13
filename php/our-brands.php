@@ -6,8 +6,8 @@
 // ITERATE THROUGH PAGEES ARRAY
 foreach ($pages as $key => $page) {
     if($page['title'] == "Our Brands") {
-
-        echo '<div class="c3xgm-about-page c3xgm-about-clearfix c3xgm-about-page-'.cleanString($page['title']).'">';
+        if( isset($page['id']) ) { $href = cleanString($page['id']); } else { $href = ""; }
+    echo '<div id="c3xgm-about-'.$href.'" class="c3xgm-about-page c3xgm-about-clearfix c3xgm-about-page-'.cleanString($page['title']).'">';
             // helper($page);
             
             // PAGE HEADER
@@ -64,9 +64,7 @@ foreach ($pages as $key => $page) {
                 }
             }
             // END SECTION CONTAINER
-
-        echo '</div>'; 
-        // END PAGE CONTAINER
+    echo '</div>';
     } // TEMP OUR BRANDS PAGE ONLY
 }
 

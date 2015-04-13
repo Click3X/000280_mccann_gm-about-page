@@ -2,9 +2,10 @@
 // TECH MODULE
 foreach ($pages as $key => $page) {
     if($page['title'] == "Our Commitment") {
-
-        echo '<div class="c3xgm-about-page c3xgm-about-clearfix c3xgm-about-page-'.cleanString($page['title']).'">';
-
+        $href = $page['sections'][2]['id'];
+        if( isset($href) && $href != "") { $href = $page['sections'][2]['id']; } else { $href = ""; }
+            echo '<div id="c3xgm-about-'.$href.'" class="c3xgm-about-page c3xgm-about-clearfix c3xgm-about-page-'.cleanString($page['title']).'">';
+            
             // SECTIONS
             if( isset($page['sections']) ) {
                 foreach ($page['sections'] as $key => $section) {
@@ -14,7 +15,6 @@ foreach ($pages as $key => $page) {
                        subSectionHeader($section['title'], $section['tagline']);
                     }
                 
-
                      // MODULES
                     if( isset($section['module']) ) {
                         if($section['module']['name'] == "technology") {
@@ -23,9 +23,7 @@ foreach ($pages as $key => $page) {
                     }
                 }
             }
-            // END SECTION CONTAINER
-
-        echo '</div>'; 
-        // END PAGE CONTAINER
+        echo '</div>';
+        // END SECTION CONTAINER
     } // TEMP OUR BRANDS PAGE ONLY
 }

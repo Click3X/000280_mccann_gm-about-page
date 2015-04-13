@@ -2,8 +2,6 @@
 // FOUNDATION MODULE
 foreach ($pages as $key => $page) {
     if($page['title'] == "Our Commitment") {
-
-        echo '<div class="c3xgm-about-page c3xgm-about-clearfix c3xgm-about-page-'.cleanString($page['title']).'">';
             // helper($page);
             
             // PAGE HEADER
@@ -11,7 +9,9 @@ foreach ($pages as $key => $page) {
             if(isset($page['icon@2x'])) { $page['icon@2x'] = $page['icon@2x']; } else { $page['icon@2x'] = "";}
             if(isset($page['image'])) { $page['image'] = $page['image']; } else { $page['image'] = "";}
 
-            // pageHeader($page['title'], $page['icon@2x'], $page['tagline'], $page['image']);
+            $href = $page['sections'][3]['id'];
+            if( isset($href) && $href != "") { $href = $page['sections'][3]['id']; } else { $href = ""; }
+            echo '<div id="c3xgm-about-'.$href.'" class="c3xgm-about-page c3xgm-about-clearfix c3xgm-about-page-'.cleanString($page['title']).'">';
 
             // SECTIONS
             if( isset($page['sections']) ) {
@@ -21,7 +21,6 @@ foreach ($pages as $key => $page) {
                         // SECTION HEADER
                         subSectionHeader($section['title'], $section['tagline']);
                     }
-                
 
                      // MODULES
                     if( isset($section['module']) ) {
@@ -32,8 +31,6 @@ foreach ($pages as $key => $page) {
                 }
             }
             // END SECTION CONTAINER
-
-        echo '</div>'; 
-        // END PAGE CONTAINER
+        echo '</div>';
     } // TEMP OUR BRANDS PAGE ONLY
 }

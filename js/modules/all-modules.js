@@ -2,7 +2,6 @@
 jQuery(document).ready(function($) {
 
 	var carLinks = $('.c3xgm-about-module-car-logo'),
-		techContainers = $('.c3xgm-about-module-technology .c3xgm-about-module'),
 		foundationLinks = $('.c3xgm-about-module-foundation-logo'),
 		techBullets = $('.c3xgm-about-module-nav-bullet');
 
@@ -30,45 +29,7 @@ jQuery(document).ready(function($) {
 	});
 
 
-
-	// RESIZE TECH MODULES
-	// R E S I Z E 
-	var resizeTimeout,
-		resizeHandler,
-		maxHeight;
-
-
-    $(window).resize(function() {
-        if (resizeTimeout) {
-            // clear the timeout, if one is pending
-            clearTimeout(resizeTimeout);
-            resizeTimeout = null;
-        }
-        resizeTimeout = setTimeout(resizeHandler, 60/1000);
-    });
-
-    resizeHandler = function() {
-        // techContainers.map(function () {
-        //     $(this).height('auto');
-        // });
-        maxHeight = Math.max.apply(null, techContainers.map(function () {
-        	console.log( 'This is height: ' + $(this).height());
-            return $(this).height();
-        }).get());
-        console.log('This is maxHeight: ' + maxHeight);
-        techContainers.each(function() {
-        	// $(this).style('paddingBottom', 0);
-        	// console.log(this);
-         //    $(this).height(maxHeight);
-        });
-    }
-   	resizeHandler();
-    // E N D    R E S I Z E
-
 	// SHOW ONLY ONE TECH MODULE, HIDE THE OTHERS
-
-	// $(techContainers.get(1)).addClass('hide-module');
-	// $(techContainers.get(2)).addClass('hide-module');
 	// TECHNOLOGY
 	techBullets.on('click touchstart', function(e) {
 		e.preventDefault();
@@ -76,7 +37,6 @@ jQuery(document).ready(function($) {
 
 		// SHOW CURRENT CAR - HIDE OLD CAR
 		$('.c3xgm-about-module-technology .show-module').removeClass('show-module').addClass('hide-module');
-		// $('.show-module').addClass('hide-module').removeClass('show-module');
 		$(target).removeClass('hide-module').addClass('show-module');
 
 		// UPDATE BULLETS
@@ -84,5 +44,17 @@ jQuery(document).ready(function($) {
 		$(this).addClass('c3xgm-about-module-nav-bullet-active');
 	});
 
+
+
+	// DISCLAIMER BOX OPEN CLOSE
+	var $discLink = $('#c3xgm-about-disclaimer-link'),
+		$discBox = $('#c3xgm-about-disclaimer-box'),
+		discBoxHeight = $discBox.height();
+
+	// HIDE DISC BOX HEIGHT
+	$discLink.click(function(event) {
+		event.preventDefault();
+		$discBox.toggleClass('c3xgm-about-show-disclaimer');
+	});
 
 });

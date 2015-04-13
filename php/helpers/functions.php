@@ -23,6 +23,8 @@ function cleanString($string){
 	$newString = str_replace($search, $replace, $string);
 	$newString = strtolower($newString);
 	$newString = str_replace($space, $replace, $newString);
+	$newString = str_replace('&amp;', '', $newString);
+	$newString = str_replace('&', '', $newString);
 
 	return $newString;
 }

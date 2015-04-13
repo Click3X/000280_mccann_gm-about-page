@@ -1,13 +1,7 @@
 // TECHNOLOGY MODULE
 .c3xgm-about-module-technology {
 
-	.c3xgm-about-module { 
-		text-align: center; 
-		margin: 8% auto;
-	}
-	.c3xgm-about-module-container .c3xgm-about-module:first-child {
-		margin-top:4%;
-	}
+	.c3xgm-about-module { text-align: center; }
 	// COMMON
 	// IMAGE
 	.c3xgm-about-block-icon {
@@ -22,10 +16,7 @@
 	// IMAGE
 	.c3xgm-about-block-image {
 		  margin: 1.5em auto;
-		  @media(min-width: $tablet-height) { 
-	  			float: left;
-				margin: 2.25em auto;
-			}
+		  @media(min-width: $tablet-height) { float: left; margin: 2.25em auto; }
 		img { width:80%;}
 	}
 	// BLOCK-QUOTE
@@ -34,10 +25,7 @@
 		margin: 1em auto 1.5em;
 		display: inline-block;
 		text-align: left;
-		@media(min-width: $tablet-height) { 
-			display: block; 
-			margin: 0;
-		}
+		@media(min-width: $tablet-height) { display: block; margin: 0; }
 		
 		span { display: block; }
 
@@ -160,10 +148,7 @@
 			display: block;
 			width:8px; height:8px;
 			margin: 8px;
-			// background-color: $gm-nav-bullet;
 			background-color: $gm-gray;
-			// border: 4px solid $gm-nav-bullet-border;
-			// @include prefix(border-radius, 50%);
 		}
 		.c3xgm-about-module-nav-bullet-active { background-color: $gm-yellow; }
 	}
