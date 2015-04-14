@@ -5,7 +5,7 @@
 foreach ($pages as $key => $page) {
     if($page['title'] == "Our Company") {
         if( isset($page['id']) ) { $href = cleanString($page['id']); } else { $href = ""; }
-        echo '<div id="c3xgm-about-'.$href.'" class="c3xgm-about-page c3xgm-about-clearfix c3xgm-about-page-'.cleanString($page['title']).'">';
+        echo '<div id="c3xgm-about-'.$href.'" class="c3xgm-about-page c3xgm-about-clearfix c3xgm-about-page-'.cleanString($page['title']).' c3xgm-about-animate">';
             // helper($page);
             
             // PAGE HEADER

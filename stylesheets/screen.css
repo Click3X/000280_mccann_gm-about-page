@@ -208,8 +208,8 @@ Stylesheet: Helpers
 .c3xgm-about-main-nav-container {
   width: 100%;
   max-width: 996px;
-  margin: auto;
   position: fixed;
+  margin: auto;
   top: 3em;
   left: 0;
   right: 0;
@@ -223,15 +223,15 @@ Stylesheet: Helpers
 @media (min-width: 768px) {
   /* line 3, ../sass/components/_navigation.scss */
   .c3xgm-about-main-nav-container {
-    top: 13em;
+    top: 208px;
   }
 }
-/* line 19, ../sass/components/_navigation.scss */
+/* line 15, ../sass/components/_navigation.scss */
 .c3xgm-about-main-nav-container .c3xgm-about-main-nav {
   float: right;
   text-align: center;
 }
-/* line 22, ../sass/components/_navigation.scss */
+/* line 18, ../sass/components/_navigation.scss */
 .c3xgm-about-main-nav-container .c3xgm-about-main-nav li {
   display: block;
   margin: 0;
@@ -239,19 +239,19 @@ Stylesheet: Helpers
   float: left;
   clear: left;
 }
-/* line 23, ../sass/components/_navigation.scss */
+/* line 20, ../sass/components/_navigation.scss */
 .c3xgm-about-main-nav-container .c3xgm-about-main-nav .c3xgm-about-nav-bullet {
   display: block;
+  background-color: #808285;
   width: 9px;
   height: 9px;
   margin: 8px;
-  background-color: #808285;
 }
-/* line 29, ../sass/components/_navigation.scss */
+/* line 25, ../sass/components/_navigation.scss */
 .c3xgm-about-main-nav-container .c3xgm-about-main-nav .c3xgm-about-nav-bullet-active {
   background-color: #FDB12E;
 }
-/* line 32, ../sass/components/_navigation.scss */
+/* line 28, ../sass/components/_navigation.scss */
 .c3xgm-about-main-nav-container .c3xgm-about-main-nav .c3xgm-about-main-nav-sub {
   -webkit-transition: all 200ms;
   -moz-transition: all 200ms;
@@ -259,19 +259,19 @@ Stylesheet: Helpers
   -ms-transition: all 200ms;
   transition: all 200ms;
 }
-/* line 36, ../sass/components/_navigation.scss */
+/* line 31, ../sass/components/_navigation.scss */
 .c3xgm-about-main-nav-container .c3xgm-about-main-nav .c3xgm-about-main-nav-sub .c3xgm-about-nav-bullet {
   background-color: #555555;
 }
-/* line 37, ../sass/components/_navigation.scss */
+/* line 32, ../sass/components/_navigation.scss */
 .c3xgm-about-main-nav-container .c3xgm-about-main-nav .c3xgm-about-main-nav-sub .c3xgm-about-nav-bullet-active {
   background-color: #FDB12E;
 }
-/* line 39, ../sass/components/_navigation.scss */
+/* line 34, ../sass/components/_navigation.scss */
 .c3xgm-about-main-nav-container .c3xgm-about-main-nav .c3xgm-about-main-nav-sub li {
   position: relative;
 }
-/* line 41, ../sass/components/_navigation.scss */
+/* line 35, ../sass/components/_navigation.scss */
 .c3xgm-about-main-nav-container .c3xgm-about-main-nav .c3xgm-about-main-nav-sub li:after {
   content: "";
   display: block;
@@ -285,13 +285,13 @@ Stylesheet: Helpers
   bottom: -8px;
   z-index: -1;
 }
-/* line 52, ../sass/components/_navigation.scss */
+/* line 44, ../sass/components/_navigation.scss */
 .c3xgm-about-main-nav-container .c3xgm-about-main-nav .c3xgm-about-main-nav-sub li:last-child:after {
   content: none;
   display: none;
 }
 
-/* line 62, ../sass/components/_navigation.scss */
+/* line 49, ../sass/components/_navigation.scss */
 .c3xgm-about-main-nav-sub {
   opacity: 0;
   position: absolute;
@@ -302,7 +302,7 @@ Stylesheet: Helpers
   transition: all 200ms;
 }
 
-/* line 68, ../sass/components/_navigation.scss */
+/* line 55, ../sass/components/_navigation.scss */
 .c3xgm-about-nav-bullet-active + .c3xgm-about-main-nav-sub {
   opacity: 1;
 }
@@ -3979,4 +3979,35 @@ h4.c3xgm-about-h {
   .c3xgm-about-page-our-people .c3xgm-about-headquarters .c3xgm-about-blockquote > span:last-of-type {
     font-size: 37px;
   }
+}
+
+/* line 2, ../sass/components/_animations.scss */
+.c3xgm-about-animate-container {
+  overflow-x: hidden;
+}
+/* line 7, ../sass/components/_animations.scss */
+.c3xgm-about-animate-container .c3xgm-about-section-header-inner h1 {
+  -webkit-transition: all 400ms;
+  -moz-transition: all 400ms;
+  -o-transition: all 400ms;
+  -ms-transition: all 400ms;
+  transition: all 400ms;
+}
+/* line 11, ../sass/components/_animations.scss */
+.c3xgm-about-animate-container .c3xgm-about-section-header-inner h1.c3xgm-about-not-viewed {
+  opacity: 0;
+  -webkit-transform: translate3d(50%, 0, 0);
+  -moz-transform: translate3d(50%, 0, 0);
+  -o-transform: translate3d(50%, 0, 0);
+  -ms-transform: translate3d(50%, 0, 0);
+  transform: translate3d(50%, 0, 0);
+}
+/* line 16, ../sass/components/_animations.scss */
+.c3xgm-about-animate-container .c3xgm-about-section-header-inner h1.c3xgm-about-viewed {
+  opacity: 1;
+  -webkit-transform: translate3d(0, 0, 0);
+  -moz-transform: translate3d(0, 0, 0);
+  -o-transform: translate3d(0, 0, 0);
+  -ms-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
 }

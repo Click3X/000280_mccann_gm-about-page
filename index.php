@@ -34,7 +34,8 @@
         <?php include('php/main-navigation.php'); ?>
 
         <!-- MAIN PAGE CONTAINER -->
-        <div id="c3xgm-about-page-container" class="c3xgm-about-page-container c3xgm-about-clearfix">
+        <!-- <div id="c3xgm-about-page-container" class="c3xgm-about-page-container c3xgm-about-clearfix"> -->
+        <div id="c3xgm-about-page-container" class="c3xgm-about-page-container c3xgm-about-clearfix c3xgm-about-animate-container">
             <?php 
                 // OUR COMPANY
                 include('php/our-company.php');

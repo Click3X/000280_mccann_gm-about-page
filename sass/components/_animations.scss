@@ -1,0 +1,22 @@
+// ANIMATIONS
+.c3xgm-about-animate-container {
+	overflow-x:hidden;
+	.c3xgm-about-section-header-inner {
+		// overflow-x:hidden;
+
+		h1 {
+			// position: absolute;
+			@include prefix(transition, all 400ms);
+
+			&.c3xgm-about-not-viewed {
+				opacity: 0;
+				@include prefix(transform, translate3d(50%,0,0));
+			}
+
+			&.c3xgm-about-viewed {
+				opacity: 1;
+				@include prefix(transform, translate3d(0,0,0));
+			}
+		}	
+	}
+}

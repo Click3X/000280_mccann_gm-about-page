@@ -10,8 +10,7 @@ jQuery(document).ready(function($) {
         scrollTimeout,
         resizeTimeout,
         scrollHandler,
-        resizeHandler,
-        notViewed = $('.c3xgm-about-not-viewed');
+        resizeHandler;
 
     // GET WINDOW SPECS UTIL FUNCITON
     function updateWindowSpecs() {
@@ -43,6 +42,7 @@ jQuery(document).ready(function($) {
         aArray.push(ahref);
     } // this for loop fills the aArray with attribute href values
 
+
     function checkNav() {
         updateWindowSpecs();
 
@@ -59,28 +59,6 @@ jQuery(document).ready(function($) {
         }
     }
 
-
-    function isInView(elem) {
-        var elTop = $(elem).offset().top,
-            elHeight = $(elem).height(),
-            elBottom = elHeight + elTop,
-            elText = $(elem).text();
-
-        return ( (elTop <= docViewBottom) && (elBottom >= windowPos) );
-    }
-
-    
-    function checkElemeView(notViewed) {
-        $.each(notViewed, function(i, elem) {
-            var inView = isInView($(this));
-            // console.log('InView: ' + inView);
-            if(inView) {
-                $(this).removeClass('c3xgm-about-not-viewed').addClass('c3xgm-about-viewed');
-            } else {
-                $(this).removeClass('c3xgm-about-viewed').addClass('c3xgm-about-not-viewed');
-            }
-        });
-    }
 
 
     // GET WIN VARS ON SCREEN RESIZE
@@ -115,14 +93,11 @@ jQuery(document).ready(function($) {
 
     });
 
-    // CALL ON PAGE LOAD
-    checkElemeView(notViewed);
 
     // RUN CHECK NAV
     scrollHandler = function () {
         // UPDATE WINDOW SCROLL VARIABLE
         checkNav();
-        checkElemeView(notViewed);
     }
     // E N D    S C R O L L
 

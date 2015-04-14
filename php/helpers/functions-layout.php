@@ -10,7 +10,7 @@ function pageHeader($title, $icon, $tagline, $image) {
 		    <div class="c3xgm-about-section-header c3xgm-about-clearfix">
 			    <div class="c3xgm-about-section-header-inner">
 			        <img class="c3xgm-about-section-icon" src="'.$icon.'" alt="'.$title.'">
-			        <h1 class="c3xgm-about-h">'.$titleSpan.'</h1>
+			        <h1 class="c3xgm-about-h c3xgm-about-not-viewed">'.$titleSpan.'</h1>
 			    </div>
 				<hr>
 			</div>';

@@ -2,62 +2,49 @@
 // NAV FOR TECHNOLOGY MODULE
 .c3xgm-about-main-nav-container {
 	width:100%;  max-width: 996px;
-	margin:auto;
-	position: fixed;
-	// top:auto; 
-	top:3em; 
-	left:0; right:0; 
-	
-	z-index: 10;
+	position: fixed; margin:auto;
+	top:3em; left:0; right:0; z-index: 10;
+	// @include prefix(transform, translate3d(0,0,10));
+	// @include prefix(transform, translate3d(0,0,10));
 	@include prefix(transform, translate3d(0,0,10));
-
-	@media(min-width: $tablet-height) {
-		top:13em;
+	@media(min-width: $tablet-height) { 
+		// top:13em; 
+		top:208px; 
 	}
 
-
 	.c3xgm-about-main-nav {
-		float: right;
-		text-align: center;
+		float: right; text-align: center;
+
 		li {display: block; margin: 0; padding: 0; float: left; clear:left;}
+		
 		.c3xgm-about-nav-bullet {
-			display: block;
-			width:9px; height:9px;
-			margin:8px;
-			background-color: $gm-gray;
+			display: block; background-color: $gm-gray;
+			width:9px; height:9px; margin:8px;
 		}
+
 		.c3xgm-about-nav-bullet-active { background-color: $gm-yellow; }
 
 		// SUB NAV
 		.c3xgm-about-main-nav-sub {
-
 			@include prefix(transition, all 200ms);
 
 			.c3xgm-about-nav-bullet { background-color: $gm-dark-gray; }
 			.c3xgm-about-nav-bullet-active { background-color: $gm-yellow; }
 
-			li {
-				position: relative;
+			li { position: relative;
 				&:after {
-					  content: "";
-					  display: block;
+					  content: ""; display: block;
 					  width: 1px; height: 17px;
 					  background-color: $gm-dark-gray;
-					  position: absolute;
-					  margin: auto;
+					  position: absolute; margin: auto;
 					  left: 0; right: 0; bottom: -8px;
 					  z-index: -1;
 				}
 			}
-			li:last-child:after {
-				content: none;
-				display: none;
-			}
+			li:last-child:after { content: none; display: none; }
 		}
-
 	}
 }
-
 
 .c3xgm-about-main-nav-sub {
 	opacity: 0;
@@ -65,6 +52,4 @@
 	@include prefix(transition, all 200ms);
 }
 
-.c3xgm-about-nav-bullet-active + .c3xgm-about-main-nav-sub {
-	opacity: 1;
-}
+.c3xgm-about-nav-bullet-active + .c3xgm-about-main-nav-sub { opacity: 1; }
