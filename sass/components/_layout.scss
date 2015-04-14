@@ -93,7 +93,8 @@ img.c3xgm-about-section-icon{
 	img { width:100%; }
 }
 
-.c3xgm-about-block {  margin-bottom: 2em; }
+.c3xgm-about-block,
+.c3xgm-about-block-earn {  margin-bottom: 2em; }
 
 .clear-left,
 .c3xgm-clear-left { clear:left; }
@@ -140,7 +141,8 @@ svg { max-height: 100%; }
 .c3xgm-about-module-technology,
 .c3xgm-about-module-foundation,
 .c3xgm-about-subsection,
-.c3xgm-about-block {  
+.c3xgm-about-block,
+.c3xgm-about-block-earn {  
 	max-width: $inner-border; 
 	margin: 0 auto 3.5em;
 
@@ -160,7 +162,8 @@ svg { max-height: 100%; }
 .c3xgm-about-section,
 .c3xgm-about-subsection,
 .c3xgm-about-module-foundation,
-.c3xgm-about-block {
+.c3xgm-about-block,
+.c3xgm-about-block-earn {
 	width: 92%;
 	@media(min-width:$tablet-height ){ width:94%; }
 }

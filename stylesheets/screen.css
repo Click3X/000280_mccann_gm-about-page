@@ -111,12 +111,6 @@ Stylesheet: Helpers
   height: 150%;
 }
 
-/* line 22, ../sass/components/_helpers.scss */
-.hidden {
-  display: none !important;
-  visibility: hidden;
-}
-
 /* line 27, ../sass/components/_helpers.scss */
 .visuallyhidden {
   border: 0;
@@ -443,17 +437,18 @@ img.c3xgm-about-section-icon {
 }
 
 /* line 96, ../sass/components/_layout.scss */
-.c3xgm-about-block {
+.c3xgm-about-block,
+.c3xgm-about-block-earn {
   margin-bottom: 2em;
 }
 
-/* line 98, ../sass/components/_layout.scss */
+/* line 99, ../sass/components/_layout.scss */
 .clear-left,
 .c3xgm-clear-left {
   clear: left;
 }
 
-/* line 102, ../sass/components/_layout.scss */
+/* line 103, ../sass/components/_layout.scss */
 .c3xgm-about-module-20,
 .c3xgm-about-module-25,
 .c3xgm-about-module-35,
@@ -469,66 +464,66 @@ img.c3xgm-about-section-icon {
 }
 
 @media (min-width: 768px) {
-  /* line 117, ../sass/components/_layout.scss */
+  /* line 118, ../sass/components/_layout.scss */
   .c3xgm-about-module-20 {
     width: 20%;
     float: left;
   }
 
-  /* line 118, ../sass/components/_layout.scss */
+  /* line 119, ../sass/components/_layout.scss */
   .c3xgm-about-module-25 {
     width: 25%;
     float: left;
   }
 
-  /* line 119, ../sass/components/_layout.scss */
+  /* line 120, ../sass/components/_layout.scss */
   .c3xgm-about-module-35 {
     width: 35%;
     float: left;
   }
 
-  /* line 120, ../sass/components/_layout.scss */
+  /* line 121, ../sass/components/_layout.scss */
   .c3xgm-about-module-40 {
     width: 40%;
     float: left;
   }
 
-  /* line 121, ../sass/components/_layout.scss */
+  /* line 122, ../sass/components/_layout.scss */
   .c3xgm-about-module-50 {
     width: 50%;
     float: left;
   }
 
-  /* line 122, ../sass/components/_layout.scss */
+  /* line 123, ../sass/components/_layout.scss */
   .c3xgm-about-module-60 {
     width: 60%;
     float: left;
   }
 
-  /* line 123, ../sass/components/_layout.scss */
+  /* line 124, ../sass/components/_layout.scss */
   .c3xgm-about-module-65 {
     width: 65%;
     float: left;
   }
 
-  /* line 124, ../sass/components/_layout.scss */
+  /* line 125, ../sass/components/_layout.scss */
   .c3xgm-about-module-75 {
     width: 75%;
     float: left;
   }
 
-  /* line 125, ../sass/components/_layout.scss */
+  /* line 126, ../sass/components/_layout.scss */
   .c3xgm-about-module-80 {
     width: 80%;
     float: left;
   }
 }
-/* line 129, ../sass/components/_layout.scss */
+/* line 130, ../sass/components/_layout.scss */
 svg {
   max-height: 100%;
 }
 
-/* line 132, ../sass/components/_layout.scss */
+/* line 133, ../sass/components/_layout.scss */
 .c3xgm-about-decorative {
   position: relative;
   width: 100%;
@@ -536,37 +531,39 @@ svg {
   margin-bottom: 0;
 }
 
-/* line 137, ../sass/components/_layout.scss */
+/* line 138, ../sass/components/_layout.scss */
 .c3xgm-about-module-technology,
 .c3xgm-about-module-foundation {
   position: relative;
 }
 
-/* line 140, ../sass/components/_layout.scss */
+/* line 141, ../sass/components/_layout.scss */
 .c3xgm-about-module-technology,
 .c3xgm-about-module-foundation,
 .c3xgm-about-subsection,
-.c3xgm-about-block {
+.c3xgm-about-block,
+.c3xgm-about-block-earn {
   max-width: 906px;
   margin: 0 auto 3.5em;
 }
 @media (min-width: 768px) {
-  /* line 140, ../sass/components/_layout.scss */
+  /* line 141, ../sass/components/_layout.scss */
   .c3xgm-about-module-technology,
   .c3xgm-about-module-foundation,
   .c3xgm-about-subsection,
-  .c3xgm-about-block {
+  .c3xgm-about-block,
+  .c3xgm-about-block-earn {
     margin: 0 auto 7em;
   }
 }
 
-/* line 150, ../sass/components/_layout.scss */
+/* line 152, ../sass/components/_layout.scss */
 .c3xgm-about-section {
   max-width: 906px;
   margin: 0 auto;
 }
 
-/* line 155, ../sass/components/_layout.scss */
+/* line 157, ../sass/components/_layout.scss */
 .c3xgm-about-block.c3xgm-about-decorative {
   width: 100%;
   max-width: none;
@@ -574,25 +571,27 @@ svg {
   margin-right: auto;
 }
 
-/* line 160, ../sass/components/_layout.scss */
+/* line 162, ../sass/components/_layout.scss */
 .c3xgm-about-section,
 .c3xgm-about-subsection,
 .c3xgm-about-module-foundation,
-.c3xgm-about-block {
+.c3xgm-about-block,
+.c3xgm-about-block-earn {
   width: 92%;
 }
 @media (min-width: 768px) {
-  /* line 160, ../sass/components/_layout.scss */
+  /* line 162, ../sass/components/_layout.scss */
   .c3xgm-about-section,
   .c3xgm-about-subsection,
   .c3xgm-about-module-foundation,
-  .c3xgm-about-block {
+  .c3xgm-about-block,
+  .c3xgm-about-block-earn {
     width: 94%;
   }
 }
 
 @media (min-width: 768px) {
-  /* line 168, ../sass/components/_layout.scss */
+  /* line 171, ../sass/components/_layout.scss */
   .c3xgm-about-module-technology,
   .c3xgm-about-block.c3xgm-about-decorative {
     width: 100%;
@@ -600,24 +599,24 @@ svg {
 }
 
 @media (min-width: 768px) {
-  /* line 177, ../sass/components/_layout.scss */
+  /* line 180, ../sass/components/_layout.scss */
   .c3xgm-about-block-image-mobile {
     display: none;
   }
 }
 
-/* line 180, ../sass/components/_layout.scss */
+/* line 183, ../sass/components/_layout.scss */
 .c3xgm-about-desktop {
   display: none;
 }
 @media (min-width: 768px) {
-  /* line 180, ../sass/components/_layout.scss */
+  /* line 183, ../sass/components/_layout.scss */
   .c3xgm-about-desktop {
     display: block;
   }
 }
 
-/* line 186, ../sass/components/_layout.scss */
+/* line 189, ../sass/components/_layout.scss */
 .c3xgm-about-open-sans {
   font-family: "open-sans", 'Arial', Arial, sans-serif !important;
 }
@@ -959,7 +958,6 @@ h4.c3xgm-about-h {
   font-size: 58px;
   font-size: 14.36vw;
   line-height: .9em;
-  max-width: 4em;
   padding-left: .5rem;
 }
 /* line 27, ../sass/typography/_our-company.scss */
@@ -974,7 +972,13 @@ h4.c3xgm-about-h {
     font-size: 117px;
   }
 }
-/* line 35, ../sass/typography/_our-company.scss */
+/* line 33, ../sass/typography/_our-company.scss */
+.c3xgm-about-page-our-company .c3xgm-about-earn .c3xgm-about-block-tagline span {
+  float: left;
+  clear: left;
+  display: inline-block;
+}
+/* line 39, ../sass/typography/_our-company.scss */
 .c3xgm-about-page-our-company .c3xgm-about-header-p {
   margin: .4em 0 .4em 8px;
   color: #7E8184;
@@ -986,7 +990,7 @@ h4.c3xgm-about-h {
   letter-spacing: .025em;
 }
 @media (min-width: 768px) {
-  /* line 35, ../sass/typography/_our-company.scss */
+  /* line 39, ../sass/typography/_our-company.scss */
   .c3xgm-about-page-our-company .c3xgm-about-header-p {
     margin: 1em 0 1em 8px;
     font-size: 24px;
@@ -1038,7 +1042,7 @@ h4.c3xgm-about-h {
 /* line 27, ../sass/decoratives/_five-stars.scss */
 .c3xgm-about-page-our-commitment .c3xgm-about-five-stars .c3xgm-about-grey-top {
   position: absolute;
-  right: 10%;
+  left: 10%;
   height: 0;
   padding-bottom: 30.7%;
   width: 43%;
@@ -1051,7 +1055,7 @@ h4.c3xgm-about-h {
     padding-bottom: 164px;
   }
 }
-/* line 33, ../sass/decoratives/_five-stars.scss */
+/* line 35, ../sass/decoratives/_five-stars.scss */
 .c3xgm-about-page-our-commitment .c3xgm-about-five-stars .c3xgm-about-grey-top img {
   width: 100%;
   position: absolute;
@@ -1063,7 +1067,7 @@ h4.c3xgm-about-h {
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
 }
-/* line 39, ../sass/decoratives/_five-stars.scss */
+/* line 41, ../sass/decoratives/_five-stars.scss */
 .c3xgm-about-page-our-commitment .c3xgm-about-five-stars .c3xgm-about-stars {
   margin: 0 auto;
   text-align: center;
@@ -1081,12 +1085,12 @@ h4.c3xgm-about-h {
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
 }
-/* line 46, ../sass/decoratives/_five-stars.scss */
+/* line 48, ../sass/decoratives/_five-stars.scss */
 .c3xgm-about-page-our-commitment .c3xgm-about-five-stars .c3xgm-about-stars img {
   width: 100%;
 }
 @media (min-width: 768px) {
-  /* line 39, ../sass/decoratives/_five-stars.scss */
+  /* line 41, ../sass/decoratives/_five-stars.scss */
   .c3xgm-about-page-our-commitment .c3xgm-about-five-stars .c3xgm-about-stars {
     padding-bottom: 94px;
   }
@@ -1121,13 +1125,13 @@ h4.c3xgm-about-h {
 /* line 16, ../sass/decoratives/_red-car.scss */
 .c3xgm-about-page-our-brands .c3xgm-about-red-car-road .c3xgm-about-red-car {
   position: absolute;
+  left: auto;
   right: 0;
-  left: 35%;
   margin: auto;
   width: 50%;
   max-width: 400px;
 }
-/* line 21, ../sass/decoratives/_red-car.scss */
+/* line 23, ../sass/decoratives/_red-car.scss */
 .c3xgm-about-page-our-brands .c3xgm-about-red-car-road .c3xgm-about-red-car img {
   width: 100%;
 }
@@ -3981,33 +3985,203 @@ h4.c3xgm-about-h {
   }
 }
 
-/* line 2, ../sass/components/_animations.scss */
-.c3xgm-about-animate-container {
-  overflow-x: hidden;
+/* line 1, ../sass/components/_animations-2.scss */
+#c3xgm-about-grey-van,
+#c3xgm-about-red-car {
+  z-index: 10;
+  -webkit-transform: translate3d(0, 0, 10);
+  -moz-transform: translate3d(0, 0, 10);
+  -o-transform: translate3d(0, 0, 10);
+  -ms-transform: translate3d(0, 0, 10);
+  transform: translate3d(0, 0, 10);
 }
-/* line 7, ../sass/components/_animations.scss */
-.c3xgm-about-animate-container .c3xgm-about-section-header-inner h1 {
-  -webkit-transition: all 400ms;
-  -moz-transition: all 400ms;
-  -o-transition: all 400ms;
-  -ms-transition: all 400ms;
-  transition: all 400ms;
+
+/* line 10, ../sass/components/_animations-2.scss */
+.c3xgm-about-animate-css .c3xgm-about-block-earn .c3xgm-about-yellow-bar-left-wrapper {
+  overflow: hidden;
+  position: relative;
+  border-left: none;
 }
-/* line 11, ../sass/components/_animations.scss */
-.c3xgm-about-animate-container .c3xgm-about-section-header-inner h1.c3xgm-about-not-viewed {
+/* line 15, ../sass/components/_animations-2.scss */
+.c3xgm-about-animate-css .c3xgm-about-block-earn .c3xgm-about-yellow-bar-left-wrapper:before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0.2em;
+  height: 100%;
+  background-color: #FDB12E;
+  -webkit-transform-origin: top right;
+  -moz-transform-origin: top right;
+  -o-transform-origin: top right;
+  -ms-transform-origin: top right;
+  transform-origin: top right;
+  -webkit-animation-delay: 200ms;
+  -moz-animation-delay: 200ms;
+  -o-animation-delay: 200ms;
+  -ms-animation-delay: 200ms;
+  animation-delay: 200ms;
+  -webkit-animation-duration: 1400ms;
+  -moz-animation-duration: 1400ms;
+  -o-animation-duration: 1400ms;
+  -ms-animation-duration: 1400ms;
+  animation-duration: 1400ms;
+}
+@-webkit-keyframes growBorder {
+  0% {
+    -webkit-transform: scaleY(0);
+  }
+  70% {
+    -webkit-transform: scaleY(100%);
+  }
+  100% {
+    -webkit-transform: scaleY(100%);
+  }
+}
+@-moz-keyframes growBorder {
+  0% {
+    -moz-transform: scaleY(0);
+  }
+  70% {
+    -moz-transform: scaleY(100%);
+  }
+  100% {
+    -moz-transform: scaleY(100%);
+  }
+}
+@-o-keyframes growBorder {
+  0% {
+    -o-transform: scaleY(0);
+  }
+  70% {
+    -o-transform: scaleY(100%);
+  }
+  100% {
+    -o-transform: scaleY(100%);
+  }
+}
+@keyframes growBorder {
+  0% {
+    transform: scaleY(0);
+  }
+  70% {
+    -o-transform: scaleY(100%);
+  }
+  100% {
+    transform: scaleY(100%);
+  }
+}
+@-webkit-keyframes fadeInLeftMega {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateX(-100%);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateX(0);
+  }
+}
+@-moz-keyframes fadeInLeftMega {
+  0% {
+    opacity: 0;
+    -moz-transform: translateX(-100%);
+  }
+  100% {
+    opacity: 1;
+    -moz-transform: translateX(0);
+  }
+}
+@-o-keyframes fadeInLeftMega {
+  0% {
+    opacity: 0;
+    -o-transform: translateX(-100%);
+  }
+  100% {
+    opacity: 1;
+    -o-transform: translateX(0);
+  }
+}
+@keyframes fadeInLeftMega {
+  0% {
+    opacity: 0;
+    transform: translateX(-100%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+/* line 134, ../sass/components/_animations-2.scss */
+.c3xgm-about-animate-css .animated.fadeInLeftMega {
+  -webkit-animation-name: fadeInLeftMega;
+  -moz-animation-name: fadeInLeftMega;
+  -o-animation-name: fadeInLeftMega;
+  animation-name: fadeInLeftMega;
+}
+/* line 141, ../sass/components/_animations-2.scss */
+.c3xgm-about-animate-css .c3xgm-about-yellow-bar-left-wrapper:before {
+  -webkit-animation-name: growBorder;
+  -moz-animation-name: growBorder;
+  -o-animation-name: growBorder;
+  animation-name: growBorder;
+}
+/* line 148, ../sass/components/_animations-2.scss */
+.c3xgm-about-animate-css #c3xgm-about-our-company .c3xgm-about-earn h3 > span.animated.fadeInLeftMega {
+  -webkit-animation-delay: 1000ms;
+  -moz-animation-delay: 1000ms;
+  -o-animation-delay: 1000ms;
+  -ms-animation-delay: 1000ms;
+  animation-delay: 1000ms;
+  -webkit-animation-duration: 1000ms;
+  -moz-animation-duration: 1000ms;
+  -o-animation-duration: 1000ms;
+  -ms-animation-duration: 1000ms;
+  animation-duration: 1000ms;
+}
+/* line 153, ../sass/components/_animations-2.scss */
+.c3xgm-about-animate-css #c3xgm-about-our-company .c3xgm-about-earn h3 > span.animated.fadeInLeftMega:nth-child(2) {
+  -webkit-animation-delay: 1900ms;
+  -moz-animation-delay: 1900ms;
+  -o-animation-delay: 1900ms;
+  -ms-animation-delay: 1900ms;
+  animation-delay: 1900ms;
+  -webkit-animation-duration: 600ms;
+  -moz-animation-duration: 600ms;
+  -o-animation-duration: 600ms;
+  -ms-animation-duration: 600ms;
+  animation-duration: 600ms;
+}
+
+/* line 2, ../sass/components/_one-page.scss */
+.loading {
+  background: url("../demos/one-page/img/ico_loading.gif") no-repeat center center;
+}
+
+/* line 3, ../sass/components/_one-page.scss */
+section {
   opacity: 0;
-  -webkit-transform: translate3d(50%, 0, 0);
-  -moz-transform: translate3d(50%, 0, 0);
-  -o-transform: translate3d(50%, 0, 0);
-  -ms-transform: translate3d(50%, 0, 0);
-  transform: translate3d(50%, 0, 0);
+  -webkit-transition: opacity 0.6s;
+  -moz-transition: opacity 0.6s;
+  -o-transition: opacity 0.6s;
+  -ms-transition: opacity 0.6s;
+  transition: opacity 0.6s;
 }
-/* line 16, ../sass/components/_animations.scss */
-.c3xgm-about-animate-container .c3xgm-about-section-header-inner h1.c3xgm-about-viewed {
+
+/* line 7, ../sass/components/_one-page.scss */
+.loaded section {
   opacity: 1;
-  -webkit-transform: translate3d(0, 0, 0);
-  -moz-transform: translate3d(0, 0, 0);
-  -o-transform: translate3d(0, 0, 0);
-  -ms-transform: translate3d(0, 0, 0);
-  transform: translate3d(0, 0, 0);
+}
+
+/* line 14, ../sass/components/_one-page.scss */
+.no-js.loading {
+  background: none;
+}
+/* line 17, ../sass/components/_one-page.scss */
+.no-js section {
+  opacity: 1;
+}
+/* line 19, ../sass/components/_one-page.scss */
+.no-js section .loaded {
+  opacity: 1;
 }

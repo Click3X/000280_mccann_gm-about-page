@@ -15,7 +15,9 @@
 
 		.c3xgm-about-red-car {
 			position: absolute; 
-			right:0; left: 35%;
+			// right:0; 
+			// left: 35%;
+			left:auto; right:0;
 			margin: auto;
 			width: 50%; max-width:400px;
 			img { width: 100%; }

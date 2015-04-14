@@ -25,7 +25,9 @@
 		.c3xgm-about-stars + .c3xgm-about-checker { bottom:0; }
 
 		.c3xgm-about-grey-top {
-			position: absolute; right:10%;
+			position: absolute; 
+			// right:10%;
+			left:10%;
 			height: 0; padding-bottom: 30.7%;
 			width: 43%; max-width: 230px;
 			z-index: 10;

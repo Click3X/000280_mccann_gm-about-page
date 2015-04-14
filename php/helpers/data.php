@@ -12,7 +12,7 @@ $pages = array(
 		"icon@2x"=>"img/title-icons/our-company.svg",
 		"blocks"=>array(
 			array(
-				"tagline"=>"To <strong>earn customers</strong> for <strong>life</strong>",
+				"tagline"=>"<span class='animated fadeInLeftMega'>To <strong>earn customers</strong></span><span class='animated fadeInLeftMega'>for <strong>life</strong></span>",
 				"image"=>"",
 				"image@2x"=>"",
 				"class"=>"earn",
@@ -204,6 +204,7 @@ $pages = array(
 				"class"=>"red-car-road",
 				"assets"=>array(
 					"red-car" =>array(
+						"id"=>"c3xgm-about-red-car",
 						"image"=>"img/decorative/cars/red-car.png",
 						"image@2x"=>"img/decorative/cars/red-car@2x.png"
 					)
@@ -335,7 +336,8 @@ $pages = array(
 						"assets"=>array(
 							"grey-top" =>array(
 								"image"=>"img/decorative/cars/grey-top.png",
-								"image@2x"=>"img/decorative/cars/grey-top@2x.png"
+								"image@2x"=>"img/decorative/cars/grey-top@2x.png",
+								"id"=>"c3xgm-about-grey-van"
 							),
 							"checker" =>array(
 								"image"=>"img/decorative/landscape/checker.png",

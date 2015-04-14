@@ -10,7 +10,7 @@ function pageHeader($title, $icon, $tagline, $image) {
 		    <div class="c3xgm-about-section-header c3xgm-about-clearfix">
 			    <div class="c3xgm-about-section-header-inner">
 			        <img class="c3xgm-about-section-icon" src="'.$icon.'" alt="'.$title.'">
-			        <h1 class="c3xgm-about-h c3xgm-about-not-viewed">'.$titleSpan.'</h1>
+			        <h1 class="c3xgm-about-h">'.$titleSpan.'</h1>
 			    </div>
 				<hr>
 			</div>';
@@ -50,7 +50,7 @@ function printDecorative($block) {
 	if($block['title'] == "Red Car Road" || $block['title'] == "Five Stars") { $deco_class = " c3xgm-about-gradient c3xgm-about-grey-gradient"; } 
 		else { $deco_class = ""; }
 
-	echo '<div class="c3xgm-about-block c3xgm-about-decorative c3xgm-about-clearfix'.$class.''.$deco_class.'">';
+	echo '<div class="c3xgm-about-decorative c3xgm-about-clearfix'.$class.''.$deco_class.'">';
 			if( isset($block['assets']) ) {
 				if($block['title'] == "Five Stars") { echo '<div class="c3xgm-about-checker"></div>';}
 				foreach ($block['assets'] as $key => $asset) {
@@ -59,8 +59,9 @@ function printDecorative($block) {
 					} else {
 						// helper($asset);
 						$class = cleanString($key);
+						if( isset($asset['id']) &&  $asset['id'] != "" ) { $id = ' id="'.$asset['id'].'"'; } else { $id = ''; }
 						if( isset($asset['image@2x']) ) { $rel = 'rel="'.$asset['image@2x'].'"'; } else { $rel = ''; }
-						echo '<div class="c3xgm-about-'.$class.'">';
+						echo '<div'.$id.' class="c3xgm-about-'.$class.'">';
 							echo '<img src="'.$asset['image'].'" '.$rel.'>';
 						echo '</div>';
 					}
@@ -78,7 +79,10 @@ function printBlock($block) {
 	if($block['class']) { $class = " c3xgm-about-".$block['class']; } 
 		else { $class = ""; }
 
-	echo '<div class="c3xgm-about-block c3xgm-about-clearfix'.$class.'">';
+	if($block['class'] == "earn") { $block_class="c3xgm-about-block-earn "; }
+		else { $block_class="c3xgm-about-block "; }
+
+	echo '<div class="'.$block_class.'c3xgm-about-clearfix'.$class.'">';
 
 		// OUR PEOPLE BLOCKS WE DONT WANT TO SPIT IMAGE OUT FIRST
 		$people_blocks = array("employees", "continents", "timezones", "global-headquarters", "languages");
@@ -107,7 +111,7 @@ function printBlock($block) {
 		
 		// TAGLINE
 		if( isset($block['tagline']) ) {
-			echo '<div class="c3xgm-about-yellow-bar-left-wrapper">';
+			echo '<div class="c3xgm-about-clearfix c3xgm-about-yellow-bar-left-wrapper">';
 				echo '<h3 class="c3xgm-about-block-tagline c3xgm-about-h">'.$block['tagline'].'</h3>';
 			echo '</div>';
 		}
