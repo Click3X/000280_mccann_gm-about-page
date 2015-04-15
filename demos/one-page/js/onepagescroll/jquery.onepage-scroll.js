@@ -21,6 +21,8 @@
     pagination: true,
     updateURL: false
 	};
+
+  var nextSec, nextPos, thisSec = "c3xgm-about-our-company";
 	
 	/*------------------------------------------------*/
 	/*  Credit: Eike Send for the awesome swipe event */    
@@ -86,24 +88,34 @@
         paginationList = "";
     
     $.fn.transformPage = function(settings, pos) {
+
       $(this).css({
-        "-webkit-transform": "translate3d(0, " + pos + "%, 0)", 
+        "-webkit-transform": "translate3d(0, " + pos + "px, 0)", 
         "-webkit-transition": "all " + settings.animationTime + "ms " + settings.easing,
-        "-moz-transform": "translate3d(0, " + pos + "%, 0)", 
+        "-moz-transform": "translate3d(0, " + pos + "px, 0)", 
         "-moz-transition": "all " + settings.animationTime + "ms " + settings.easing,
-        "-ms-transform": "translate3d(0, " + pos + "%, 0)", 
+        "-ms-transform": "translate3d(0, " + pos + "px, 0)", 
         "-ms-transition": "all " + settings.animationTime + "ms " + settings.easing,
-        "transform": "translate3d(0, " + pos + "%, 0)", 
+        "transform": "translate3d(0, " + pos + "px, 0)", 
         "transition": "all " + settings.animationTime + "ms " + settings.easing
       });
     }
     
     $.fn.moveDown = function() {
-      var el = $(this)
-      index = $(settings.sectionContainer +".active").data("index");
+      var el = $(this),
+        nextSec, nextPos,
+        index = $(settings.sectionContainer +".active").data("index");
+
       if(index < total) {
         current = $(settings.sectionContainer + "[data-index='" + index + "']");
         next = $(settings.sectionContainer + "[data-index='" + (index + 1) + "']");
+
+        // CHARLES CODE - REST SCROLL STOP TO TOP OF PAGE
+        thisSec = next.get(0).id;
+        console.log('This is thisSec: ' + thisSec);
+        nextSec = next.get(0);
+        nextPos = nextSec.offsetTop;
+
         if(next) {
           current.removeClass("active")
           next.addClass("active");
@@ -119,17 +131,30 @@
             history.pushState( {}, document.title, href );
           }
         }
-        pos = (index * 100) * -1;
+        // pos = (index * 100) * -1;
+        pos = nextPos * -1
         el.transformPage(settings, pos);
+        if(thisSec == "c3xgm-about-our-brands") { 
+          console.log('This is about brands!'); 
+          // $(document).unbind('mousewheel DOMMouseScroll');
+        }
       }
     }
     
     $.fn.moveUp = function() {
-      var el = $(this)
+      var el = $(this),
+      nextSec, nextPos, 
       index = $(settings.sectionContainer +".active").data("index");
+
       if(index <= total && index > 1) {
         current = $(settings.sectionContainer + "[data-index='" + index + "']");
         next = $(settings.sectionContainer + "[data-index='" + (index - 1) + "']");
+        
+        // CHARLES CODE - REST SCROLL STOPS TO SECTIONS
+        thisSec = next.get(0).id;
+        console.log('This is thisSec: ' + thisSec);
+        nextSec = next.get(0);
+        nextPos = nextSec.offsetTop;
 
         if(next) {
           current.removeClass("active")
@@ -146,35 +171,82 @@
             history.pushState( {}, document.title, href );
           }
         }
-        pos = ((next.data("index") - 1) * 100) * -1;
+
+        pos = nextPos * -1;
         el.transformPage(settings, pos);
+
+        if(thisSec == "c3xgm-about-our-brands") { 
+          console.log('This is about brands!'); 
+          $(document).unbind('mousewheel DOMMouseScroll');
+        }
       }
     }
     
     function init_scroll(event, delta) {
         deltaOfInterest = delta;
+        console.log('This is delta: ' +  delta);
+
         var timeNow = new Date().getTime();
         // Cancel scroll if currently animating or within quiet period
         if(timeNow - lastAnimation < quietPeriod + settings.animationTime) {
-            event.preventDefault();
+            event.preventDefault(); 
             return;
         }
 
         if (deltaOfInterest < 0) {
-          el.moveDown()
+          el.moveDown();
         } else {
-          el.moveUp()
+          el.moveUp();
         }
         lastAnimation = timeNow;
     }
+
+
+
+
+
+
+      // function noMouseScroll(test) {
+      //   //start modification
+      //   var valForTest = test || false;
+      //   // var typeOfRF = typeof settings.responsiveFallback
+
+      //   //end modification
+      //   if (valForTest) {
+      //     $("body").addClass("disabled-onepage-scroll");
+      //     $(document).unbind('mousewheel DOMMouseScroll MozMousePixelScroll');
+      //     el.swipeEvents().unbind("swipeDown swipeUp");
+      //   } else {
+      //     if($("body").hasClass("disabled-onepage-scroll")) {
+      //       $("body").removeClass("disabled-onepage-scroll");
+      //       $("html, body, .wrapper").animate({ scrollTop: 0 }, "fast");
+      //     }
+
+
+      //     el.swipeEvents().bind("swipeDown",  function(event){
+      //       if (!$("body").hasClass("disabled-onepage-scroll")) event.preventDefault();
+      //       el.moveUp();
+      //     }).bind("swipeUp", function(event){
+      //       if (!$("body").hasClass("disabled-onepage-scroll")) event.preventDefault();
+      //       el.moveDown();
+      //     });
+
+      //     $(document).bind('mousewheel DOMMouseScroll MozMousePixelScroll', function(event) {
+      //       event.preventDefault();
+      //       var delta = event.originalEvent.wheelDelta || -event.originalEvent.detail;
+      //       init_scroll(event, delta);
+      //     });
+      //   }
+      // }
+
     
     // Prepare everything before binding wheel scroll
     
     el.addClass("onepage-wrapper").css("position","relative");
     $.each( sections, function(i) {
       $(this).css({
-        position: "absolute",
-        top: topPos + "%"
+        // position: "absolute",
+        // top: topPos + "%"
       }).addClass("section").attr("data-index", i+1);
       topPos = topPos + 100;
       if(settings.pagination == true) {
@@ -203,6 +275,12 @@
       
       next = $(settings.sectionContainer + "[data-index='" + (init_index) + "']");
       if(next) {
+        // CHARLES CODE
+        nextSec = next.get(0);
+        nextPos = nextSec.offsetTop;
+        thisSec = next.get(0).id;
+        console.log('This is thisSec: ' + thisSec);
+
         next.addClass("active")
         if(settings.pagination == true) $(".onepage-pagination li a" + "[data-index='" + (init_index) + "']").addClass("active");
         $("body")[0].className = $("body")[0].className.replace(/\bviewing-page-\d.*?\b/g, '');
@@ -212,7 +290,8 @@
           history.pushState( {}, document.title, href );
         }
       }
-      pos = ((init_index - 1) * 100) * -1;
+      // pos = ((init_index - 1) * 100) * -1;
+      pos = nextPos * -1;
       el.transformPage(settings, pos);
       
     }else{
@@ -226,6 +305,13 @@
         if (!$(this).hasClass("active")) {
           current = $(settings.sectionContainer + ".active")
           next = $(settings.sectionContainer + "[data-index='" + (page_index) + "']");
+          
+          // CHARLES CODE
+          nextSec = next.get(0);
+          nextPos = nextSec.offsetTop;
+          thisSec = next.get(0).id;
+          console.log('This is thisSec: ' + thisSec);
+
           if(next) {
             current.removeClass("active")
             next.addClass("active")
@@ -234,7 +320,8 @@
             $("body")[0].className = $("body")[0].className.replace(/\bviewing-page-\d.*?\b/g, '');
             $("body").addClass("viewing-page-"+next.data("index"))
           }
-          pos = ((page_index - 1) * 100) * -1;
+          // pos = ((page_index - 1) * 100) * -1;
+          pos = nextPos * -1;
           el.transformPage(settings, pos);
         }
         if (settings.updateURL == false) return false;
@@ -245,9 +332,11 @@
     
     $(document).bind('mousewheel DOMMouseScroll', function(event) {
       event.preventDefault();
+      console.log($(window).scrollTop() );
       var delta = event.originalEvent.wheelDelta || -event.originalEvent.detail;
       init_scroll(event, delta);
     });
+
     return false;
     
   }

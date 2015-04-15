@@ -56,6 +56,7 @@ jQuery(document).ready(function($) {
             } else {
                 $("a[href='" + theID + "']").removeClass("c3xgm-about-nav-bullet-active");
             }
+
         }
     }
 

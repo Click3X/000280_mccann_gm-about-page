@@ -9,13 +9,14 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-        
-        <title>General Motors | About</title>
-        <script src="//use.typekit.net/aod8wgv.js"></script>
-        <script>try{Typekit.load();}catch(e){}</script>
-
+        <title>Demo - One Page Scroll with Animations</title>
         <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
+
+        <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+
+        <!-- <link rel="stylesheet" href="demos/one-page/css/normalize.css">
+        <link rel="stylesheet" href="demos/one-page/css/main.css"> -->
 
         <link href="stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" />
         <link href="stylesheets/print.css" media="print" rel="stylesheet" type="text/css" />
@@ -23,75 +24,47 @@
           <link href="stylesheets/ie.css" media="screen, projection" rel="stylesheet" type="text/css" />
         <![endif]-->
 
-        <link href="demos/scroll-effects/assets/demo.css" media="screen, projection" rel="stylesheet" type="text/css" />
-        <link href="demos/scroll-effects/assets/animate.css" media="screen, projection" rel="stylesheet" type="text/css" />
-
-        <script src="js/vendor/modernizr-2.6.2-respond-1.1.0.min.js"></script>
-
+        <script src="demos/one-page/js/vendor/modernizr-2.6.2.min.js"></script>
+    
     </head>
-    <body>
-        <!-- MAIN NAVIGATION -->
-        <?php include('php/main-navigation.php'); ?>
-
-        <!-- MAIN PAGE CONTAINER -->
-        <!-- <div id="c3xgm-about-page-container" class="c3xgm-about-page-container c3xgm-about-clearfix"> -->
-            <?php 
-                // ANIMATTE
-                // include('php/animate.php');
-                // // OUR COMPANY
-                // include('php/our-company.php');
-                // // OUR PEOPLE
-                // include('php/our-people.php');
-                // // OUR BRANDS
-                // include('php/our-brands.php');
-                // // OUR COMMITMENT
-                // include('php/our-commitment.php');
-            ?>
-        <!-- </div> -->
-
-        <script src="js/vendor/jquery-1.11.1.min.js"></script>
+    <body class="loading">
+        <!--[if lt IE 7]>
+            <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
+        <![endif]-->
         
-        <!--[if lt IE 9 ]>
-        <script>
-        var is_ie_lt9 = true;
-        console.log('THis is IE 8');
-        $('img[src$=".svg"]').each(function(index,element) {
-            element.src = element.src.replace('.svg','.png');
-        });
-        </script>
-        <![endif]--> 
+        <div class="main">
+         
+            <section id="c3xgm-about-our-company">
+                <div class="section-content">
+                    <?php include('php/our-company.php'); ?>
+                </div>
+            </section>
 
-        <?php
-            // CONDITIONALLY LOAD OUTLINE SCRIPT
-            $server = $_SERVER['REMOTE_ADDR'];
-            // IF SERVER IS LOCAL, ADD OUTLINE BUTTON
-            if($server == '127.0.0.1') {
-                echo "<script>
-                    jQuery('head').append('<style>#outline {position:fixed;z-index:1000;bottom:50px;right:50px;} .outlines {outline:1px solid rgba(255, 0, 0, 0.3);}</style>');
-                    jQuery('body').append('<input id=\"outline\" type=\"button\">');
+            <section id="c3xgm-about-our-people">
+                <div class="section-content">
+                    <?php include('php/our-people.php'); ?>
+                </div>
+            </section>
 
-                    jQuery('#outline').click(function() {
-                        jQuery('*').toggleClass('outlines');
-                   });
-                </script>";
-            }
-        ?>
-    <!--
-        <script src="js/modules/all-modules.js"></script>
+            <section id="c3xgm-about-our-brands">
+                <div class="section-content">
+                    <?php include('php/our-brands.php'); ?>
+                </div>
+            </section>
 
-        <script src="js/resize-functions.js"></script>
+            <section id="c3xgm-about-our-commitment">
+                <div class="section-content">
+                    <?php include('php/our-commitment.php'); ?>
+                </div>
+            </section>
+            
+        </div>
 
-        <script src="js/main-nav.js"></script>
-    -->
-        <script src="js/vendor/viewportchecker.js"></script>
-        <script type="text/javascript">
-        jQuery(document).ready(function() {
-            jQuery('.post').addClass("hidden").viewportChecker({
-                classToAdd: 'visible animated bounceInLeft', // Class to add to the elements when they are visible
-                offset: 100    
-               });   
-        });            
-        </script>
-
+        <script src="demos/one-page/js/vendor/jquery-1.9.1.min.js"></script>
+        <script type="text/javascript" src="demos/one-page/js/onepagescroll/jquery.onepage-scroll.js"></script>
+        <link href='demos/one-page/js/onepagescroll/onepage-scroll.css' rel='stylesheet' type='text/css'>
+        <script src="demos/one-page/js/main.js"></script>
+        <?php include('php/helpers/outlines-js.php'); ?>
+     
     </body>
 </html>

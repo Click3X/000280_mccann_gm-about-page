@@ -10,7 +10,7 @@
    Base styles: opinionated defaults
    ========================================================================== */
 
-html,
+/*html,
 button,
 input,
 select,
@@ -21,7 +21,7 @@ textarea {
 body {
     font-size: 1em;
     line-height: 1.4;
-}
+}*/
 
 /*
  * Remove text-shadow in selection highlight: h5bp.com/i
@@ -29,7 +29,7 @@ body {
  * Customize the background color to match your design.
  */
 
-::-moz-selection {
+/*::-moz-selection {
     background: #b3d4fc;
     text-shadow: none;
 }
@@ -38,12 +38,12 @@ body {
     background: #b3d4fc;
     text-shadow: none;
 }
-
+*/
 /*
  * A better looking default horizontal rule
  */
 
-hr {
+/*hr {
     display: block;
     height: 1px;
     border: 0;
@@ -51,64 +51,52 @@ hr {
     margin: 1em 0;
     padding: 0;
 }
-
+*/
 /*
  * Remove the gap between images and the bottom of their containers: h5bp.com/i/440
  */
-
+/*
 img {
     vertical-align: middle;
-}
+}*/
 
 /*
  * Remove default fieldset styles.
  */
 
-fieldset {
+/*fieldset {
     border: 0;
     margin: 0;
     padding: 0;
 }
-
+*/
 /*
  * Allow only vertical resizing of textareas.
  */
 
-textarea {
+/*textarea {
     resize: vertical;
-}
+}*/
 
 /* ==========================================================================
    Chrome Frame prompt
    ========================================================================== */
 
-.chromeframe {
+/*.chromeframe {
     margin: 0.2em 0;
     background: #ccc;
     color: #000;
     padding: 0.2em 0;
 }
-
+*/
 /* ==========================================================================
    One Page Scroll with Animations styles
    ========================================================================== */
-/* Code Samples */
-pre {
- white-space: pre-wrap;
- white-space: -moz-pre-wrap;
- white-space: -o-pre-wrap;
- background: #faf8f0;
- font-size: 14px;
-}
-code {
- display: block;
- padding: 0.5em 1em;
- border: 1px solid #bebab0;
-}
+/*
 body, html {
 	height: 100%;
 	min-height: 100%;
-}
+}*/
 .loading {
 	background: url('../img/ico_loading.gif') no-repeat center center;
 }
@@ -116,7 +104,7 @@ body, html {
 	
 }
 section {
-	min-width: 960px;
+	/*min-width: 960px;*/
 	opacity: 0;
 	-webkit-transition:opacity .6s;
 	-webkit-transition-delay:.2s;
@@ -130,7 +118,7 @@ section {
 .loaded section {
 	opacity: 1;
 }
-section h2 {
+/*section h2 {
 	font-size: 36px;
 	font-weight: 300;
 	color: #000000;
@@ -144,8 +132,8 @@ section p {
 	font-size: 1.1875em;
 	line-height: 1.6316;
 	color: #808080;
-}
-.section-content,
+}*/
+/*.section-content,
 .fake-content {
 	display: block;
 	position: absolute;
@@ -155,8 +143,8 @@ section p {
 	width: 100%;
 	height: 100%;
 	border-bottom: 1px #707070 solid;
-}
-.copy-container {
+}*/
+/*.copy-container {
 	position: absolute;
 	top: 50%;
 	left: 50%;
@@ -173,10 +161,10 @@ section p {
 	left: 50%;
 	width: 670px;
 	height: 600px;
-}
+}*/
 
 /* Fade in animation - Slide 1 */
-#fadeInAnim {
+/*#fadeInAnim {
 	background-color: #f0f2f4;
 	overflow: hidden;
 }
@@ -192,11 +180,11 @@ section p {
 		margin-left: -530px;
 	}
 	.fadeIn {
-		
+		*/
 	}
 
 /* Reveal animation - Slide 2 */
-#revealAnim .copy-container {
+/*#revealAnim .copy-container {
 	width: 320px;
 	margin-left: 60px;
 	margin-top: -130px;
@@ -232,10 +220,10 @@ section p {
 		-webkit-transform: translate3d(0, 0, 0) !important;
 		-moz-transform: translate3d(0, 0, 0) !important;
 		transform: translate3d(0, 0, 0) !important;
-	}
+	}*/
 
 /* Between Slides Animation - Slide 3-4 */
-#betweenSlidesAnimStart {
+/*#betweenSlidesAnimStart {
 	
 }
 	#betweenSlidesAnimStart .copy-container {
@@ -351,7 +339,7 @@ section p {
 	}
 	.viewing-page-4 #betweenSlidesAnimEnd .copy-container {
 		opacity: 1;
-	}
+	}*/
 
 /* ==========================================================================
    Helper classes

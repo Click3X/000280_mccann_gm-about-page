@@ -1,3 +1,6 @@
+<?php include('../../php/helpers/functions.php'); ?>
+<?php include('../../php/helpers/functions-layout.php'); ?>
+<?php include('../../php/helpers/data.php'); ?>
 <!DOCTYPE html>
 <!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
 <!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
@@ -72,40 +75,18 @@
        	 
 	        <section id="fadeInAnim">
 	        	<div class="section-content">
-		    		<div class="copy-container">
+		    		<!-- <div class="copy-container">
 			    		<h2>Fade in animation</h2>
-<pre><code>section {
-  transition: opacity .6s;
-  transition-delay:.2s;
-}
-.loaded section {
-  opacity: 1;
-}	
-</code></pre>
 		    		</div>
-		    		<img src="img/img_hero-iphone.jpg" alt="iPhone" />
+		    		<img src="img/img_hero-iphone.jpg" alt="iPhone" /> -->
+		    		<?php include('../../php/our-company.php'); ?>
 	        	</div>
 		    </section>
+
 		    <section id="revealAnim">
 		    	<div class="section-content">
 		    		<div class="copy-container">
 			    		<h2>Reveal animation</h2>
-<pre><code>#revealAnim img {
-  transition: transform .6s .9s;
-}
-.back {
-  transform:translate3d(-40%, 0, 0);
-}
-.front {
-  transform:translate3d(61.6%, 0, 0);
-}
-.side {
-  transform:translate3d(-338%, 0, 0);
-}
-.viewing-page-2 #revealAnim img {
-  transform: translate3d(0, 0, 0);
-}	
-</code></pre>
 		    		</div>
 		    		<div class="images-container">
 			    		<img class="front" src="img/img_iphone_front.png" alt="iPhone" />
@@ -114,6 +95,7 @@
 		    		</div>
 	        	</div>
 		    </section>
+
 		    <section id="betweenSlidesAnimStart">
 		    	<div class="section-content">
 		    		<div class="copy-container">
@@ -127,6 +109,7 @@
 		    		</div>
 	        	</div>
 		    </section>
+
 		    <section id="betweenSlidesAnimEnd">
 		    	<div class="fake-content">
 		    		<div class="images-container">

@@ -34,7 +34,7 @@
 <div id="c3xgm-about-page-container" class="c3xgm-about-page-container c3xgm-about-clearfix c3xgm-about-animate-css">
     
     <?php 
-    	 // OUR COMPANY
+         // OUR COMPANY
         include('php/our-company.php');
         // OUR PEOPLE
         include('php/our-people.php');
