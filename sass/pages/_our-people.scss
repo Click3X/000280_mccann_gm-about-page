@@ -52,7 +52,8 @@
 		  	@media(min-width:$inner-border) { margin-top: 1.75%; }
 		}
 
-		.number { 
+		.number,
+		.number > span { 
 			line-height: 1em; 
 			font-size: 128px; font-size: 24vw;
 			@media(min-width:$tablet-height) { font-size: 64px; font-size: 14.36vw; line-height: 1.09em;  }

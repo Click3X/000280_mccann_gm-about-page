@@ -39,8 +39,14 @@
 @import "pages/our-brands";
 @import "pages/our-people";
 
+
+// KEYFRAMES
+@import "keyframe-animations/animations-all";
 // ANIMATIONS
-@import "components/animations-2";
+// @import "components/animations-2";
+// @import "components/animations-header";
+@import "components/animate-text";
 
 // ON PAGE TRIAL
-@import "components/one-page";
+// @import "components/one-page";
+

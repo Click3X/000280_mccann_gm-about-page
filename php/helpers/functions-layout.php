@@ -10,7 +10,7 @@ function pageHeader($title, $icon, $tagline, $image) {
 		    <div class="c3xgm-about-section-header c3xgm-about-clearfix">
 			    <div class="c3xgm-about-section-header-inner">
 			        <img class="c3xgm-about-section-icon" src="'.$icon.'" alt="'.$title.'">
-			        <h1 class="c3xgm-about-h">'.$titleSpan.'</h1>
+			        <h1 class="c3xgm-about-h fadeInLeftMega">'.$titleSpan.'</h1>
 			    </div>
 				<hr>
 			</div>';
@@ -82,7 +82,8 @@ function printBlock($block) {
 	if($block['class'] == "earn") { $block_class="c3xgm-about-block-earn "; }
 		else { $block_class="c3xgm-about-block "; }
 
-	echo '<div class="'.$block_class.'c3xgm-about-clearfix'.$class.'">';
+	// echo '<div class="'.$block_class.'c3xgm-about-clearfix'.$class.' bounceInLeft">';
+		echo '<div class="'.$block_class.'c3xgm-about-clearfix'.$class.'">';
 
 		// OUR PEOPLE BLOCKS WE DONT WANT TO SPIT IMAGE OUT FIRST
 		$people_blocks = array("employees", "continents", "timezones", "global-headquarters", "languages");
@@ -93,9 +94,13 @@ function printBlock($block) {
 			if( isset($block['image@2x']) ) { 
 				if( isset($block['image']) && ($block['image'] != "") ) { 
 					$size = getimagesize($block['image']); 
+
+					if( isset( $block['image-animate'] ) ) { $img_anim = $block['image-animate']; } 
+						else { $img_anim = "";}
 					// IF CHINA, SET DESKTOP CLASS
 					if($block['title'] == "China") { $desk_class="c3xgm-about-desktop";} else {$desk_class="";}
-					echo '<div class="c3xgm-about-block-image"><img src="'.$block['image@2x'].'" alt="'.$block['title'].'" class="'.$desk_class.'">';
+					
+					echo '<div class="c3xgm-about-block-image"><div><img src="'.$block['image@2x'].'" class="'.$img_anim.'" alt="'.$block['title'].'" class="'.$desk_class.'"></div>';
 					// IF BLOCK IS TEST FACILITY - ADD IN NEW DIV FOR ANIMATION
 					if($block['title'] == "Test Facility") {
 						echo '<img src="img/pages/commitment/circle-lines.svg" class="c3xgm-about-circle-lines" alt="Rollover Test Facility">';

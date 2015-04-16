@@ -26,12 +26,12 @@
         <script src="js/vendor/modernizr-2.6.2-respond-1.1.0.min.js"></script>
 
     </head>
-    <body>
+    <body class="loading">
         <!-- MAIN NAVIGATION -->
         <?php include('php/main-navigation.php'); ?>
 
         <!-- MAIN PAGE CONTAINER -->
-        <div id="c3xgm-about-page-container" class="c3xgm-about-page-container c3xgm-about-clearfix c3xgm-about-animate-container">
+        <div id="c3xgm-about-page-container" class="c3xgm-about-page-container c3xgm-about-clearfix c3xgm-about-animate-text">
             <?php 
                 // OUR COMPANY
                 include('php/our-company.php');
@@ -55,12 +55,12 @@
         });
         </script>
         <![endif]--> 
-    
+        
+        <script src="js/vendor/viewportchecker.js"></script>
         <script src="js/resize-functions.js"></script>
-        <script src="js/scroll/object-scroll.js"></script>
+        <script src="js/loading.js"></script>
         <!--
-        <script src="js/modules/all-modules.js"></script> 
-        <script src="js/main-nav-fix.js"></script>
+        <script src="js/scroll/object-scroll.js"></script>
         -->
         <?php include('php/helpers/outlines-js.php'); ?>
 

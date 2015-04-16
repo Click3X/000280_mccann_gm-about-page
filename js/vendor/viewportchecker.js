@@ -26,6 +26,7 @@
         var options = {
             classToAdd: 'visible',
             offset: 100,
+            classToRemove: 'invisible',
             callbackFunction: function(elem){}
         };
         $.extend(options, useroptions);
@@ -53,7 +54,11 @@
 
                 // Add class if in viewport
                 if ((elemTop < viewportBottom) && (elemBottom > viewportTop)){
-                    $obj.addClass(options.classToAdd);
+                    // if ($obj.hasClass(options.classToRemove)){
+                    //     $obj.removeClass(options.classToRemove);
+                    // }
+                    // $obj.addClass(options.classToAdd);
+                    $obj.removeClass(options.classToRemove).addClass(options.classToAdd);
 
                     // Do the callback function. Callback wil send the jQuery object as parameter
                     options.callbackFunction($obj);

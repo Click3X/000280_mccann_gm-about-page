@@ -35,7 +35,7 @@ $pages = array(
 				"image@2x"=>"img/pages/people/people-icons.svg",
 				"class"=>"employees",
 				"copy"=>array(
-					"c3xgm-about-light-blue number"=>216000,
+					"c3xgm-about-light-blue number"=>"<span id='c3xgm-about-emp-num'>216000</span>",
 					"c3xgm-about-gray"=>"Employees"
 				)
 			),
@@ -214,21 +214,23 @@ $pages = array(
 				"title"=>"Global",
 				"image"=>"img/pages/brands/world.png",
 				"image@2x"=>"img/pages/brands/world.svg",
-				"class"=>"global",
+				"image-animate"=>"fadeInRightMega",
+				"class"=>"global c3xgm-about-animated-box",
 				"copy"=>array(
-					"c3xgm-about-dark-blue c3xgm-about-thin"=>"In 2014, we <strong>delivered</strong> over",
-					"c3xgm-about-light-blue number"=>"9.9 Million",
-					"c3xgm-about-gray"=>"Vehicles Globally"
+					"c3xgm-about-dark-blue c3xgm-about-thin fadeInLeftMega"=>"In 2014, we <strong>delivered</strong> over",
+					"c3xgm-about-light-blue number fadeInLeftMega"=>"9.9 Million",
+					"c3xgm-about-gray fadeInLeftMega"=>"Vehicles Globally"
 				)
 			),
 			array(
 				"title"=>"Seconds",
 				"image"=>"img/pages/brands/clock.png",
 				"image@2x"=>"img/pages/brands/clock.svg",
-				"class"=>"seconds text-right",
+				"image-animate"=>"fadeInLeftMega",
+				"class"=>"seconds text-right c3xgm-about-animated-box",
 				"copy"=>array(
-					"c3xgm-about-dark-blue c3xgm-about-thin"=>"A <strong>Chevy is sold</strong><br>somewhere in the world",
-					"c3xgm-about-light-blue c3xgm-about-thin number"=>"every <strong>6.63<br>seconds</strong>"
+					"c3xgm-about-dark-blue c3xgm-about-thin fadeInRightMega"=>"A <strong>Chevy is sold</strong><br>somewhere in the world",
+					"c3xgm-about-light-blue c3xgm-about-thin number fadeInRightMega"=>"every <strong>6.63<br>seconds</strong>"
 				)
 			),
 			array(

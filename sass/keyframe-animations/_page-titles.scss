@@ -1,4 +1,177 @@
-@charset "UTF-8";
+	@-webkit-keyframes fadeInLeftMega {
+		0% {
+			opacity: 0;
+			-webkit-transform: translateX(-100%);
+		}
+
+		100% {
+			opacity: 1;
+			-webkit-transform: translateX(0);
+		}
+	}
+
+	@-moz-keyframes fadeInLeftMega {
+		0% {
+			opacity: 0;
+			-moz-transform: translateX(-100%);
+		}
+
+		100% {
+			opacity: 1;
+			-moz-transform: translateX(0);
+		}
+	}
+
+	@-o-keyframes fadeInLeftMega {
+		0% {
+			opacity: 0;
+			-o-transform: translateX(-100%);
+		}
+
+		100% {
+			opacity: 1;
+			-o-transform: translateX(0);
+		}
+	}
+
+	@keyframes fadeInLeftMega {
+		0% {
+			opacity: 0;
+			transform: translateX(-100%);
+		}
+
+		100% {
+			opacity: 1;
+			transform: translateX(0);
+		}
+	}
+
+
+		@-webkit-keyframes fadeInRightMega {
+		0% {
+			opacity: 0;
+			-webkit-transform: translateX(100%);
+		}
+
+		100% {
+			opacity: 1;
+			-webkit-transform: translateX(0);
+		}
+	}
+
+	@-moz-keyframes fadeInRightMega {
+		0% {
+			opacity: 0;
+			-moz-transform: translateX(100%);
+		}
+
+		100% {
+			opacity: 1;
+			-moz-transform: translateX(0);
+		}
+	}
+
+	@-o-keyframes fadeInRightMega {
+		0% {
+			opacity: 0;
+			-o-transform: translateX(100%);
+		}
+
+		100% {
+			opacity: 1;
+			-o-transform: translateX(0);
+		}
+	}
+
+	@keyframes fadeInRightMega {
+		0% {
+			opacity: 0;
+			transform: translateX(100%);
+		}
+
+		100% {
+			opacity: 1;
+			transform: translateX(0);
+		}
+	}
+
+	// .animated.fadeInLeftMega {
+	// 	-webkit-animation-name: fadeInLeftMega;
+	// 	-moz-animation-name: fadeInLeftMega;
+	// 	-o-animation-name: fadeInLeftMega;
+	// 	animation-name: fadeInLeftMega;
+	// }
+
+	// .animated.fadeInRightMega {
+	// 	-webkit-animation-name: fadeInRightMega;
+	// 	-moz-animation-name: fadeInRightMega;
+	// 	-o-animation-name: fadeInRightMega;
+	// 	animation-name: fadeInRightMega;
+	// }
+
+
+	// GROW HR
+	@-webkit-keyframes growHr {
+		0% {
+			-webkit-transform: scaleX(0);
+		}
+
+		70% {
+			-webkit-transform: scaleX(100%);
+		}
+
+		100% {
+			-webkit-transform: scaleX(100%);
+		}
+	}
+
+	@-moz-keyframes growHr {
+		0% {
+			-moz-transform: scaleX(0);
+		}
+
+		70% {
+			-moz-transform: scaleX(100%);
+		}
+
+		100% {
+			-moz-transform: scaleX(100%);
+		}
+	}
+
+
+	@-o-keyframes growHr {
+		0% {
+			-o-transform: scaleX(0);
+		}
+
+		70% {
+			-o-transform: scaleX(100%);
+		}	
+
+		100% {
+			-o-transform: scaleX(100%);
+		}
+	}
+
+	@keyframes growHr {
+		0% {
+			transform: scaleX(0);
+		}
+
+		70% {
+			-o-transform: scaleX(100%);
+		}
+
+		100% {
+			transform: scaleX(100%);
+		}
+	}
+
+
+
+
+	@charset "UTF-8";
 /*
 Animate.css - http://daneden.me/animate
 Licensed under the MIT license

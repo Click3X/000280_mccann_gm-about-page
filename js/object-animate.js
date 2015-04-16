@@ -142,11 +142,15 @@ jQuery(document).ready(function($) {
 
 	// LIST VARS
 	var GreyVan,
-		RedCar;
+		RedCar,
+		empNumber;
 
 	// ANIMATABLE OBJECTS
 	GreyVan = new AnimatedElement('#c3xgm-about-grey-van');
 	RedCar = new AnimatedElement('#c3xgm-about-red-car');
+	empNumber = new AnimatedElement($('#c3xgm-about-our-people > div.c3xgm-about-block.c3xgm-about-clearfix.c3xgm-about-employees > p > span > span.c3xgm-about-light-blue.number').get(0));
+
+	console.dir(empNumber);
 
 	// W I N D O W    E V E N T S
 		// R E S I Z E 

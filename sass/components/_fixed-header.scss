@@ -1,0 +1,14 @@
+// FIXED HEADER
+.c3xgm-about-section.c3xgm-about-fixed {
+	@media(min-width: $tablet-height) {
+
+		padding-top: 202px;
+
+		> .c3xgm-about-section-header {
+			width:100%;
+			position:fixed;
+			top:0;
+		}
+
+	}
+}

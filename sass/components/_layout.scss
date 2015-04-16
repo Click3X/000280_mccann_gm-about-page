@@ -51,7 +51,11 @@ html {
 // PAGE HEAders
 .c3xgm-about-section {
 	padding-top: 36px;
-	@media( min-width:$tablet-height ){ padding-top: 73px; }
+	@media( min-width:$tablet-height ){ 
+		// padding-top: 73px; 
+		padding-top:25px; 
+		.c3xgm-about-section-header { padding-top: 48px; }
+	}
 
 	.c3xgm-about-section-header-inner { text-align: left; width: 100%; max-width: 900px;}
 

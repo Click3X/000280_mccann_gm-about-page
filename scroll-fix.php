@@ -57,8 +57,10 @@
         <![endif]--> 
     
         <script src="js/resize-functions.js"></script>
-        <script src="js/scroll/object-scroll.js"></script>
+        <script src="js/scroll/scroll-fix.js"></script>
+
         <!--
+        <script src="js/scroll/object-scroll.js"></script>
         <script src="js/modules/all-modules.js"></script> 
         <script src="js/main-nav-fix.js"></script>
         -->

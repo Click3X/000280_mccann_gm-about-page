@@ -89,6 +89,33 @@ Stylesheet: Sass Mixins
 
 
 
+@mixin table-cell-center {
+	display: table;
+	> div {
+		display: table-cell;
+	  	vertical-align: middle;
+	  	> div {
+	  		width: 50%;
+	  		margin: 0 auto;
+	  	}
+	}
+}
+
+@mixin fakeBorder {
+	content: ""; display: block;
+	position: absolute;
+	top:0; left:0;
+	width:0.15rem; height: 100%;
+	background-color:$gm-yellow;
+	@include prefix(transform-origin, top right);
+	@include prefix(animation-fill-mode, both);
+	@include prefix(animation-name, growBorder);
+	@include prefix(animation-delay,1800ms);
+	@include prefix(animation-duration,600ms);
+	@media(min-width: $tablet-height) { width:0.2rem;}
+}
+
+
 @mixin animation($animate...) {
     $max: length($animate);
     $animations: '';
