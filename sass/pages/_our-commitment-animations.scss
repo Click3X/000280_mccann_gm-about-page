@@ -1,0 +1,47 @@
+// OUR COMMITMENT ANIMATION
+#c3xgm-about-page-container > .c3xgm-about-page-our-commitment {
+	.c3xgm-about-section-header { 
+
+		.c3xgm-about-section-icon,
+		h1.c3xgm-about-h,
+		.c3xgm-about-header-p,
+		hr { opacity: 0; }
+	}
+}
+
+// #c3xgm-about-page-container > .c3xgm-about-page-our-commitment {
+// 	.c3xgm-about-block { opacity: 0; }
+// }
+
+
+#c3xgm-about-page-container > .c3xgm-about-page-our-commitment.c3xgm-about-page-in-view {
+
+	.c3xgm-about-section-header { 
+
+		.c3xgm-about-section-icon { 
+			@include prefix(animation-fill-mode, both);
+			@include prefix(animation-name, fadeIn);
+			@include prefix(animation-delay, 400ms);
+			@include prefix(animation-duration, 400ms);
+		}
+
+		h1.c3xgm-about-h {
+			@include prefix(animation-fill-mode, both);
+			@include prefix(animation-name, fadeInRightMega);
+			@include prefix(animation-delay, 200ms);
+			@include prefix(animation-duration, 400ms);
+		 }
+
+		hr { 
+			@include prefix(animation-fill-mode, both);
+			@include prefix(animation-name, growHr);
+			@include prefix(animation-delay, 400ms);
+			@include prefix(animation-duration, 400ms);
+		}
+
+	}
+
+	// ANIMATE ME NOW
+	// MORE ANIMATE CLASSES TO ADD
+	
+}

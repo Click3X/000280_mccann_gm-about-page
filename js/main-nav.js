@@ -51,11 +51,17 @@ jQuery(document).ready(function($) {
                 divPos = $(theID).offset().top,
                 divHeight = $(theID).height(); // get the height of the div in question
 
+            // UPDATE NAV BASED ON WINDOW POSITION AND PAGE HEIGHT
             if (windowPos >= (divPos - 10) && windowPos < ((divPos - 10) + divHeight)) {
                 $("a[href='" + theID + "']").addClass("c3xgm-about-nav-bullet-active");
-                $(theID).addClass("c3xgm-about-page-in-view");
             } else {
                 $("a[href='" + theID + "']").removeClass("c3xgm-about-nav-bullet-active");
+            }
+
+            // CHECK IF PAGE IS BREAKING VIEW
+            if ( (divPos <= docViewBottom + 50) && (divPos + divHeight > windowPos + 50) )  {
+                $(theID).addClass("c3xgm-about-page-in-view");
+            } else {
                 $(theID).removeClass("c3xgm-about-page-in-view");
             }
 
@@ -70,19 +76,6 @@ jQuery(document).ready(function($) {
             elText = $(elem).text();
 
         return ( (elTop <= docViewBottom) && (elBottom >= windowPos) );
-    }
-
-    
-    function checkElemeView(notViewed) {
-        $.each(notViewed, function(i, elem) {
-            var inView = isInView($(this));
-            // console.log('InView: ' + inView);
-            if(inView) {
-                $(this).removeClass('c3xgm-about-not-viewed').addClass('c3xgm-about-viewed');
-            } else {
-                $(this).removeClass('c3xgm-about-viewed').addClass('c3xgm-about-not-viewed');
-            }
-        });
     }
 
 
@@ -118,15 +111,14 @@ jQuery(document).ready(function($) {
 
     });
 
-    // CALL ON PAGE LOAD
-    checkElemeView(notViewed);
 
     // RUN CHECK NAV
     scrollHandler = function () {
         // UPDATE WINDOW SCROLL VARIABLE
         checkNav();
-        checkElemeView(notViewed);
     }
     // E N D    S C R O L L
 
+    // CHECK NAV ON PAGE LOAD
+    checkNav();
 });

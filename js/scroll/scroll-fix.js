@@ -12,9 +12,7 @@ jQuery(document).ready(function($) {
 	    scrollTimeout,
 	    resizeTimeout,
 	    scrollHandler,
-	    resizeHandler,
-	    pagesArray = ['#c3xgm-about-our-company, #c3xgm-about-our-people, #c3xgm-about-our-brands, #c3xgm-about-our-commitment'],
-	    PageObjects = [];
+	    resizeHandler;
 
 	// GET WINDOW SPECS UTIL FUNCITON
 	function updateWindowSpecs() {
@@ -176,8 +174,8 @@ jQuery(document).ready(function($) {
 
 	});
 
-	// console.log('This is animBlocks: ' + animBlocks);
-	// console.dir(animBlocks);
+	console.log('This is animBlocks: ' + animBlocks);
+	console.dir(animBlocks);
 
 
 	// W I N D O W    E V E N T S
@@ -233,6 +231,7 @@ jQuery(document).ready(function($) {
 			// SCROLL - CLASS ADDED ANIMATIONS
 			$.each(animBlocks, function(i, val) {
 				if( this.isInView() ){
+					this.$element.removeClass('invisible');
 					this.addInViewClass();		
 				}
 			});
@@ -243,7 +242,7 @@ jQuery(document).ready(function($) {
 
 		// HIDE  ELEMENTS TO BE UNCOVERED ON SCROLL
 		$.each(animBlocks, function(i, val) {
-			$(this).addClass('invisible');
+			this.$element.addClass('invisible');
 		});
 	
 });

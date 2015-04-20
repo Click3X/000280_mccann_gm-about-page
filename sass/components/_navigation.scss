@@ -3,23 +3,25 @@
 .c3xgm-about-main-nav-container {
 	width:100%;  max-width: 996px;
 	position: fixed; margin:auto;
-	top:3em; left:0; right:0; z-index: 10;
-	// @include prefix(transform, translate3d(0,0,10));
-	// @include prefix(transform, translate3d(0,0,10));
+	top:3em; left:0; right:0; 
+	z-index: 10;
 	@include prefix(transform, translate3d(0,0,10));
 	@media(min-width: $tablet-height) { 
-		// top:13em; 
 		top:208px; 
 	}
 
 	.c3xgm-about-main-nav {
 		float: right; text-align: center;
+		position: absolute;
+  		right: 0;
 
 		li {display: block; margin: 0; padding: 0; float: left; clear:left;}
 		
 		.c3xgm-about-nav-bullet {
 			display: block; background-color: $gm-gray;
-			width:9px; height:9px; margin:8px;
+			width:9px; height:9px; 
+			margin:8px;
+			// padding:8px;
 		}
 
 		.c3xgm-about-nav-bullet-active { background-color: $gm-yellow; }

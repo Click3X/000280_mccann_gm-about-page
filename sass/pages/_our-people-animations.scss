@@ -1,0 +1,99 @@
+// OUR PEOPLE ANIMATION
+#c3xgm-about-page-container > .c3xgm-about-page-our-people {
+	.c3xgm-about-section-header { 
+
+		.c3xgm-about-section-icon,
+		h1.c3xgm-about-h,
+		.c3xgm-about-header-p,
+		hr { opacity: 0; }
+	}
+}
+
+#c3xgm-about-page-container > .c3xgm-about-page-our-people {
+	.c3xgm-about-block { opacity: 0; }
+}
+
+
+#c3xgm-about-page-container > .c3xgm-about-page-our-people.c3xgm-about-page-in-view {
+
+	.c3xgm-about-section-header { 
+
+		.c3xgm-about-section-icon { 
+			@include prefix(animation-fill-mode, both);
+			@include prefix(animation-name, fadeIn);
+			@include prefix(animation-delay, 400ms);
+			@include prefix(animation-duration, 400ms);
+		}
+
+		h1.c3xgm-about-h {
+			@include prefix(animation-fill-mode, both);
+			@include prefix(animation-name, fadeInRightMega);
+			@include prefix(animation-delay, 200ms);
+			@include prefix(animation-duration, 400ms);
+		 }
+
+		hr { 
+			@include prefix(animation-fill-mode, both);
+			@include prefix(animation-name, growHr);
+			@include prefix(animation-delay, 400ms);
+			@include prefix(animation-duration, 400ms);
+		}
+
+	}
+
+
+	.c3xgm-about-header-p { 
+		@include prefix(animation-fill-mode, both);
+		@include prefix(animation-name, fadeIn);
+		@include prefix(animation-delay, 800ms);
+		@include prefix(animation-duration, 400ms);
+	}
+
+	.c3xgm-about-block.c3xgm-about-employees {
+		@include prefix(animation-fill-mode, both);
+		@include prefix(animation-name, fadeIn);
+		@include prefix(animation-delay, 1200ms);
+		@include prefix(animation-duration, 400ms);
+	}
+
+
+	.c3xgm-about-continents {
+		@include prefix(animation-fill-mode, both);
+		@include prefix(animation-name, fadeIn);
+		@include prefix(animation-delay, 1600ms);
+		@include prefix(animation-duration, 400ms);
+	}
+
+
+	.c3xgm-about-headquarters {
+		@include prefix(animation-fill-mode, both);
+		@include prefix(animation-name, fadeIn);
+		@include prefix(animation-delay, 2000ms);
+		@include prefix(animation-duration, 400ms);
+
+		@media(min-width: $tablet-height) {
+			@include prefix(animation-delay, 2400ms);
+		}
+	}
+
+	.c3xgm-about-timezones {
+		@include prefix(animation-fill-mode, both);
+		@include prefix(animation-name, fadeIn);
+		@include prefix(animation-delay, 2400ms);
+		@include prefix(animation-duration, 400ms);
+		@media(min-width: $tablet-height) {
+			@include prefix(animation-delay, 2000ms);
+		}
+	}
+
+	.c3xgm-about-languages {
+		@include prefix(animation-fill-mode, both);
+		@include prefix(animation-name, fadeIn);
+		@include prefix(animation-delay, 2800ms);
+		@include prefix(animation-duration, 400ms);	
+	}
+
+	// ANIMATE ME NOW
+	// MORE ANIMATE CLASSES TO ADD
+	
+}

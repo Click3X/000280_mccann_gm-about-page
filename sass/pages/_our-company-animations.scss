@@ -5,7 +5,8 @@
 	@include prefix(animation-duration, 800ms);
 }
 
-#c3xgm-about-page-container > .c3xgm-about-page-our-company {
+// #c3xgm-about-page-container > .c3xgm-about-page-our-company,
+#c3xgm-about-page-container > .c3xgm-about-page-our-company.c3xgm-about-page-in-view {
 
 	.c3xgm-about-section-header { 
 
