@@ -6,7 +6,7 @@ jQuery(document).ready(function($) {
 		carMaxHeight,
 		techMaxHeight,
 		foundationMaxHeight,
-		carContainers = $('.c3xgm-about-module-car .c3xgm-about-module'),
+		carContainers = $('#c3xgm-about-module-car .c3xgm-about-slide'),
 		carModContainer = $('div.c3xgm-about-clearfix.c3xgm-about-module-car > div.c3xgm-about-clearfix.c3xgm-about-module-65 > div').get(0),
 		techContainers = $('.c3xgm-about-module-technology .c3xgm-about-module'),
 		techModContainer = $('.c3xgm-about-module-technology .c3xgm-about-module-container').get(0),
@@ -25,19 +25,36 @@ jQuery(document).ready(function($) {
     });
 
     resizeHandler = function() {
-    	// CAR HANDLER
+        // CAR HANDLER
+        // DEFAULT HEIGHT TO ORIGINAL SIZE ON RESIZE 
+        $(carContainers).height('auto');
+        $(carModContainer).height('auto');
+        // GET TALLEST DIV
         carMaxHeight = Math.max.apply(null, carContainers.map(function () {
             return $(this).height();
         }).get());
-        $(carModContainer).height(carMaxHeight);
 
-        // tech HANDLER
+        // console.log('This is carMaxHeight: ' + carMaxHeight);
+        $(carModContainer).height(carMaxHeight);
+        $(carContainers).height(carMaxHeight);
+        
+
+        // TECH HANDLER
+        // DEFAULT HEIGHT TO ORIGINAL SIZE ON RESIZE 
+        $(techContainers).height('auto');
+        $(techModContainer).height('auto');
+        // GET TALLEST DIV
         techMaxHeight = Math.max.apply(null, techContainers.map(function () {
             return $(this).height();
         }).get());
         $(techModContainer).height(techMaxHeight + 25);
 
-        // foundation HANDLER
+
+        // FOUNDATION HANDLER
+        // DEFAULT HEIGHT TO ORIGINAL SIZE ON RESIZE 
+        $(foundationContainers).height('auto');
+        $(foundationModContainer).height('auto');
+        // GET TALLEST DIV
         foundationMaxHeight = Math.max.apply(null, foundationContainers.map(function () {
             return $(this).height();
         }).get());

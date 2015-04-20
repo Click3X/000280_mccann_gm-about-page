@@ -74,8 +74,9 @@ Stylesheet: Helpers
 }
 
 // MODULE HELPERS
-.show-module {visibility: visible;}
-.hide-module { visibility: hidden; position: absolute; top:0;}
+.show-module {visibility: visible; z-index: 1000; }
+.hide-module { 
+    visibility: hidden; position: absolute; top:0;}
 
 
 // GRADIENT 
@@ -121,4 +122,10 @@ section {
         opacity:1;
         .loaded { opacity:1; }
     }
+}
+
+
+// DISABLE HOVER ON SCROLL
+.disable-hover {
+  pointer-events: none;
 }

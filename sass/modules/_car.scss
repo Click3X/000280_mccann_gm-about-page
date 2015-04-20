@@ -1,4 +1,8 @@
 // CAR MODULE
+.c3xgm-about-module-car-holder {
+	@media(min-width:$tablet-height) { margin-top:1em; }
+}
+	
 .c3xgm-about-module-car {
 	max-width: $inner-border; margin:0 auto 5%;
 	@media(min-width:$tablet-height) { margin-bottom: 65px;}
@@ -25,8 +29,6 @@
 	}
 
 	.c3xgm-about-module-container {
-		// height: 0; 
-		// padding:1em 0 100%; 
   		@media(min-width:$tablet-height) { float: right; width: 90%; }
 
 		.c3xgm-about-module {
@@ -39,15 +41,15 @@
 			}
 		}
 
-		@media(min-width:$tablet-height) {	
-			> .c3xgm-about-module {
-				position: absolute;
-				left:0; width: 100%;
-			}
+		> .c3xgm-about-module {
+			position: absolute;
+			left:0; 
+			width: 100%;
 		}
 	}
 
 	.c3xgm-about-module {
+		background-color: white;
 		.c3xgm-about-vehicle-copy,
 		.c3xgm-about-link,
 		.c3xgm-about-h,
@@ -68,9 +70,12 @@
 		}
 
 		.c3xgm-about-vehicle-copy { 
-			display: block; 
 			margin: 1em auto 0; 
 			font-family: open-sans, Arial, sans-serif;
+
+			display: block;
+			position: absolute;
+			bottom: 1em; left: 0; right: 0;
 		}
 
 		.c3xgm-about-p { margin-left:0; margin-right:0; 

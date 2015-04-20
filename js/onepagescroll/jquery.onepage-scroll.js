@@ -87,15 +87,34 @@
     
     $.fn.transformPage = function(settings, pos) {
       $(this).css({
-        "-webkit-transform": "translate3d(0, " + pos + "%, 0)", 
+        "-webkit-transform": "translate3d(" + pos + "%, 0, 0)", 
         "-webkit-transition": "all " + settings.animationTime + "ms " + settings.easing,
-        "-moz-transform": "translate3d(0, " + pos + "%, 0)", 
+        "-moz-transform": "translate3d(" + pos + "%, 0, 0)", 
         "-moz-transition": "all " + settings.animationTime + "ms " + settings.easing,
-        "-ms-transform": "translate3d(0, " + pos + "%, 0)", 
+        "-ms-transform": "translate3d(" + pos + "%, 0, 0)", 
         "-ms-transition": "all " + settings.animationTime + "ms " + settings.easing,
-        "transform": "translate3d(0, " + pos + "%, 0)", 
+        "transform": "translate3d(" + pos + "%, 0, 0)", 
         "transition": "all " + settings.animationTime + "ms " + settings.easing
       });
+    }
+
+
+    bindTechModule = function(event) {
+        event.preventDefault();
+        var delta = event.originalEvent.wheelDelta || -event.originalEvent.detail;
+        init_scroll(event, delta);
+    }
+
+    $.fn.bind_scroll = function() {
+      $('body, html').addClass('c3xgm-about-one-page-scroll');
+      $('#c3xgm-about-module-technology').addClass('c3xgm-about-module-technology-fixed');
+      $(document).bind('mousewheel DOMMouseScroll', bindTechModule);
+    }
+
+    $.fn.unbind_scroll = function() {
+      $('body, html').removeClass('c3xgm-about-one-page-scroll');
+      $('#c3xgm-about-module-technology').removeClass('c3xgm-about-module-technology-fixed');
+      $(document).unbind('mousewheel DOMMouseScroll', bindTechModule);
     }
     
     $.fn.moveDown = function() {
@@ -121,6 +140,8 @@
         }
         pos = (index * 100) * -1;
         el.transformPage(settings, pos);
+      } else {
+        el.unbind_scroll();
       }
     }
     
@@ -148,6 +169,8 @@
         }
         pos = ((next.data("index") - 1) * 100) * -1;
         el.transformPage(settings, pos);
+      } else {
+        el.unbind_scroll();
       }
     }
     
@@ -174,7 +197,9 @@
     $.each( sections, function(i) {
       $(this).css({
         position: "absolute",
-        top: topPos + "%"
+        // top: topPos + "%"
+        top:0,
+        left: topPos + "%"
       }).addClass("section").attr("data-index", i+1);
       topPos = topPos + 100;
       if(settings.pagination == true) {
@@ -242,16 +267,26 @@
     }
     
     
-    
-    $(document).bind('mousewheel DOMMouseScroll', function(event) {
-      event.preventDefault();
-      var delta = event.originalEvent.wheelDelta || -event.originalEvent.detail;
-      init_scroll(event, delta);
-    });
+    // bindTechModule = function(event) {
+    //     event.preventDefault();
+    //     var delta = event.originalEvent.wheelDelta || -event.originalEvent.detail;
+    //     init_scroll(event, delta);
+    // }
+
+    // $.fn.bind_scroll = function() {
+    //   $('body, html').addClass('c3xgm-about-one-page-scroll');
+    //   $('#c3xgm-about-module-technology').addClass('c3xgm-about-module-technology-fixed');
+    //   $(document).bind('mousewheel DOMMouseScroll', bindTechModule);
+    // }
+
+    // $.fn.unbind_scroll = function() {
+    //   $('body, html').removeClass('c3xgm-about-one-page-scroll');
+    //   $('#c3xgm-about-module-technology').removeClass('c3xgm-about-module-technology-fixed');
+    //   $(document).unbind('mousewheel DOMMouseScroll', bindTechModule);
+    // }
+
     return false;
     
   }
   
 }(window.jQuery);
-
-

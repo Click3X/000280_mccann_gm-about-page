@@ -27,3 +27,5 @@ foreach ($pages as $key => $page) {
         // END SECTION CONTAINER
     } // TEMP OUR BRANDS PAGE ONLY
 }
+
+?>

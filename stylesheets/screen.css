@@ -89,6 +89,34 @@ Author: Jason Tordsen
 
 Stylesheet: Sass Mixins
 ******************************************************************/
+/* line 91, ../sass/components/_mixins.scss */
+.Center-Container.is-Inline {
+  text-align: center;
+  overflow: auto;
+}
+
+/* line 96, ../sass/components/_mixins.scss */
+.Center-Container.is-Inline:after,
+.is-Inline .Center-Block {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+/* line 102, ../sass/components/_mixins.scss */
+.Center-Container.is-Inline:after {
+  content: '';
+  height: 100%;
+  margin-left: -0.25em;
+  /* To offset spacing. May vary by font */
+}
+
+/* line 108, ../sass/components/_mixins.scss */
+.is-Inline .Center-Block {
+  max-width: 99%;
+  /* Prevents issues with long content causes the content block to be pushed to the top */
+  /* max-width: calc(100% - 0.25em) /* Only for IE9+ */
+}
+
 /******************************************************************
 Site Name: GM
 Author: Jason Tordsen
@@ -169,6 +197,7 @@ Stylesheet: Helpers
 /* line 77, ../sass/components/_helpers.scss */
 .show-module {
   visibility: visible;
+  z-index: 1000;
 }
 
 /* line 78, ../sass/components/_helpers.scss */
@@ -178,7 +207,7 @@ Stylesheet: Helpers
   top: 0;
 }
 
-/* line 82, ../sass/components/_helpers.scss */
+/* line 83, ../sass/components/_helpers.scss */
 .c3xgm-about-grey-gradient {
   /* IE9 SVG, needs conditional override of 'filter' to 'none' */
   background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIxMDAlIiB5Mj0iMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzAwMDAwMCIgc3RvcC1vcGFjaXR5PSIwIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEyJSIgc3RvcC1jb2xvcj0iI2YzZjNmNCIgc3RvcC1vcGFjaXR5PSIwLjI4Ii8+CiAgICA8c3RvcCBvZmZzZXQ9IjQzJSIgc3RvcC1jb2xvcj0iI2YzZjNmNCIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgPC9saW5lYXJHcmFkaWVudD4KICA8cmVjdCB4PSIwIiB5PSIwIiB3aWR0aD0iMSIgaGVpZ2h0PSIxIiBmaWxsPSJ1cmwoI2dyYWQtdWNnZy1nZW5lcmF0ZWQpIiAvPgo8L3N2Zz4=);
@@ -198,7 +227,7 @@ Stylesheet: Helpers
   /* IE6-8 */
 }
 
-/* line 106, ../sass/components/_helpers.scss */
+/* line 107, ../sass/components/_helpers.scss */
 section {
   opacity: 0;
   -webkit-transition: opacity 0.6s;
@@ -208,25 +237,30 @@ section {
   transition: opacity 0.6s;
 }
 
-/* line 110, ../sass/components/_helpers.scss */
+/* line 111, ../sass/components/_helpers.scss */
 .loaded section,
 .loaded div {
   opacity: 1;
 }
 
-/* line 116, ../sass/components/_helpers.scss */
+/* line 117, ../sass/components/_helpers.scss */
 .no-js.loading {
   background: none;
 }
-/* line 119, ../sass/components/_helpers.scss */
+/* line 120, ../sass/components/_helpers.scss */
 .no-js section,
 .no-js div {
   opacity: 1;
 }
-/* line 122, ../sass/components/_helpers.scss */
+/* line 123, ../sass/components/_helpers.scss */
 .no-js section .loaded,
 .no-js div .loaded {
   opacity: 1;
+}
+
+/* line 129, ../sass/components/_helpers.scss */
+.disable-hover {
+  pointer-events: none;
 }
 
 /* line 3, ../sass/components/_navigation.scss */
@@ -344,14 +378,19 @@ html {
   box-sizing: border-box;
 }
 
-/* line 14, ../sass/components/_layout.scss */
+/* line 12, ../sass/components/_layout.scss */
+html, body {
+  -webkit-overflow-scrolling: touch;
+}
+
+/* line 16, ../sass/components/_layout.scss */
 .c3xgm-about-page-container {
   width: 100%;
   margin: 0 auto;
   position: relative;
 }
 
-/* line 21, ../sass/components/_layout.scss */
+/* line 23, ../sass/components/_layout.scss */
 .c3xgm-about-temp-menu {
   padding-bottom: 33px;
   width: 100%;
@@ -364,52 +403,52 @@ html {
   margin: 0 auto;
 }
 
-/* line 30, ../sass/components/_layout.scss */
+/* line 32, ../sass/components/_layout.scss */
 .c3xgm-about-page {
   margin: 0 auto;
   position: relative;
 }
 
-/* line 36, ../sass/components/_layout.scss */
+/* line 38, ../sass/components/_layout.scss */
 .c3xgm-about-yellow-bar-left-wrapper {
   margin: 8px 0 8px 2px;
   padding-left: 2px;
   border-left: 0.15em solid #FDB12E;
 }
 @media (min-width: 768px) {
-  /* line 36, ../sass/components/_layout.scss */
+  /* line 38, ../sass/components/_layout.scss */
   .c3xgm-about-yellow-bar-left-wrapper {
     margin: 8px 0 8px 6px;
     border-left: 0.2em solid #FDB12E;
     padding-left: 14px;
   }
 }
-/* line 47, ../sass/components/_layout.scss */
+/* line 49, ../sass/components/_layout.scss */
 .c3xgm-about-yellow-bar-left-wrapper .c3xgm-about-h:first-child {
   margin-top: 0;
 }
 
-/* line 52, ../sass/components/_layout.scss */
+/* line 54, ../sass/components/_layout.scss */
 .c3xgm-about-section {
   padding-top: 36px;
 }
 @media (min-width: 768px) {
-  /* line 52, ../sass/components/_layout.scss */
+  /* line 54, ../sass/components/_layout.scss */
   .c3xgm-about-section {
     padding-top: 25px;
   }
-  /* line 57, ../sass/components/_layout.scss */
+  /* line 59, ../sass/components/_layout.scss */
   .c3xgm-about-section .c3xgm-about-section-header {
     padding-top: 48px;
   }
 }
-/* line 60, ../sass/components/_layout.scss */
+/* line 62, ../sass/components/_layout.scss */
 .c3xgm-about-section .c3xgm-about-section-header-inner {
   text-align: left;
   width: 100%;
   max-width: 900px;
 }
-/* line 62, ../sass/components/_layout.scss */
+/* line 64, ../sass/components/_layout.scss */
 .c3xgm-about-section hr {
   background: #808285;
   border: none;
@@ -420,7 +459,7 @@ html {
   clear: left;
 }
 @media (min-width: 768px) {
-  /* line 62, ../sass/components/_layout.scss */
+  /* line 64, ../sass/components/_layout.scss */
   .c3xgm-about-section hr {
     float: left;
     margin-left: 4px;
@@ -431,7 +470,7 @@ html {
   }
 }
 
-/* line 78, ../sass/components/_layout.scss */
+/* line 80, ../sass/components/_layout.scss */
 img.c3xgm-about-section-icon {
   width: 10%;
   height: 10%;
@@ -442,7 +481,7 @@ img.c3xgm-about-section-icon {
   height: 92px;
 }
 @media (min-width: 768px) {
-  /* line 78, ../sass/components/_layout.scss */
+  /* line 80, ../sass/components/_layout.scss */
   img.c3xgm-about-section-icon {
     float: left;
     width: 90px;
@@ -452,38 +491,38 @@ img.c3xgm-about-section-icon {
   }
 }
 
-/* line 91, ../sass/components/_layout.scss */
+/* line 93, ../sass/components/_layout.scss */
 .c3xgm-about-subsection {
   padding-left: 2px;
 }
 
-/* line 93, ../sass/components/_layout.scss */
+/* line 95, ../sass/components/_layout.scss */
 .c3xgm-about-header-image,
 .c3xgm-about-block-image,
 .c3xgm-about-block-icon {
   width: 100%;
   height: 100%;
 }
-/* line 97, ../sass/components/_layout.scss */
+/* line 99, ../sass/components/_layout.scss */
 .c3xgm-about-header-image img,
 .c3xgm-about-block-image img,
 .c3xgm-about-block-icon img {
   width: 100%;
 }
 
-/* line 100, ../sass/components/_layout.scss */
+/* line 102, ../sass/components/_layout.scss */
 .c3xgm-about-block,
 .c3xgm-about-block-earn {
   margin-bottom: 2em;
 }
 
-/* line 103, ../sass/components/_layout.scss */
+/* line 105, ../sass/components/_layout.scss */
 .clear-left,
 .c3xgm-clear-left {
   clear: left;
 }
 
-/* line 107, ../sass/components/_layout.scss */
+/* line 109, ../sass/components/_layout.scss */
 .c3xgm-about-module-20,
 .c3xgm-about-module-25,
 .c3xgm-about-module-35,
@@ -499,66 +538,66 @@ img.c3xgm-about-section-icon {
 }
 
 @media (min-width: 768px) {
-  /* line 122, ../sass/components/_layout.scss */
+  /* line 124, ../sass/components/_layout.scss */
   .c3xgm-about-module-20 {
     width: 20%;
     float: left;
   }
 
-  /* line 123, ../sass/components/_layout.scss */
+  /* line 125, ../sass/components/_layout.scss */
   .c3xgm-about-module-25 {
     width: 25%;
     float: left;
   }
 
-  /* line 124, ../sass/components/_layout.scss */
+  /* line 126, ../sass/components/_layout.scss */
   .c3xgm-about-module-35 {
     width: 35%;
     float: left;
   }
 
-  /* line 125, ../sass/components/_layout.scss */
+  /* line 127, ../sass/components/_layout.scss */
   .c3xgm-about-module-40 {
     width: 40%;
     float: left;
   }
 
-  /* line 126, ../sass/components/_layout.scss */
+  /* line 128, ../sass/components/_layout.scss */
   .c3xgm-about-module-50 {
     width: 50%;
     float: left;
   }
 
-  /* line 127, ../sass/components/_layout.scss */
+  /* line 129, ../sass/components/_layout.scss */
   .c3xgm-about-module-60 {
     width: 60%;
     float: left;
   }
 
-  /* line 128, ../sass/components/_layout.scss */
+  /* line 130, ../sass/components/_layout.scss */
   .c3xgm-about-module-65 {
     width: 65%;
     float: left;
   }
 
-  /* line 129, ../sass/components/_layout.scss */
+  /* line 131, ../sass/components/_layout.scss */
   .c3xgm-about-module-75 {
     width: 75%;
     float: left;
   }
 
-  /* line 130, ../sass/components/_layout.scss */
+  /* line 132, ../sass/components/_layout.scss */
   .c3xgm-about-module-80 {
     width: 80%;
     float: left;
   }
 }
-/* line 134, ../sass/components/_layout.scss */
+/* line 136, ../sass/components/_layout.scss */
 svg {
   max-height: 100%;
 }
 
-/* line 137, ../sass/components/_layout.scss */
+/* line 139, ../sass/components/_layout.scss */
 .c3xgm-about-decorative {
   position: relative;
   width: 100%;
@@ -566,13 +605,13 @@ svg {
   margin-bottom: 0;
 }
 
-/* line 142, ../sass/components/_layout.scss */
+/* line 144, ../sass/components/_layout.scss */
 .c3xgm-about-module-technology,
 .c3xgm-about-module-foundation {
   position: relative;
 }
 
-/* line 145, ../sass/components/_layout.scss */
+/* line 147, ../sass/components/_layout.scss */
 .c3xgm-about-module-technology,
 .c3xgm-about-module-foundation,
 .c3xgm-about-subsection,
@@ -582,7 +621,7 @@ svg {
   margin: 0 auto 3.5em;
 }
 @media (min-width: 768px) {
-  /* line 145, ../sass/components/_layout.scss */
+  /* line 147, ../sass/components/_layout.scss */
   .c3xgm-about-module-technology,
   .c3xgm-about-module-foundation,
   .c3xgm-about-subsection,
@@ -592,13 +631,13 @@ svg {
   }
 }
 
-/* line 156, ../sass/components/_layout.scss */
+/* line 158, ../sass/components/_layout.scss */
 .c3xgm-about-section {
   max-width: 906px;
   margin: 0 auto;
 }
 
-/* line 161, ../sass/components/_layout.scss */
+/* line 163, ../sass/components/_layout.scss */
 .c3xgm-about-block.c3xgm-about-decorative {
   width: 100%;
   max-width: none;
@@ -606,7 +645,7 @@ svg {
   margin-right: auto;
 }
 
-/* line 166, ../sass/components/_layout.scss */
+/* line 168, ../sass/components/_layout.scss */
 .c3xgm-about-section,
 .c3xgm-about-subsection,
 .c3xgm-about-module-foundation,
@@ -615,7 +654,7 @@ svg {
   width: 92%;
 }
 @media (min-width: 768px) {
-  /* line 166, ../sass/components/_layout.scss */
+  /* line 168, ../sass/components/_layout.scss */
   .c3xgm-about-section,
   .c3xgm-about-subsection,
   .c3xgm-about-module-foundation,
@@ -626,7 +665,7 @@ svg {
 }
 
 @media (min-width: 768px) {
-  /* line 175, ../sass/components/_layout.scss */
+  /* line 177, ../sass/components/_layout.scss */
   .c3xgm-about-module-technology,
   .c3xgm-about-block.c3xgm-about-decorative {
     width: 100%;
@@ -634,24 +673,24 @@ svg {
 }
 
 @media (min-width: 768px) {
-  /* line 184, ../sass/components/_layout.scss */
+  /* line 186, ../sass/components/_layout.scss */
   .c3xgm-about-block-image-mobile {
     display: none;
   }
 }
 
-/* line 187, ../sass/components/_layout.scss */
+/* line 189, ../sass/components/_layout.scss */
 .c3xgm-about-desktop {
   display: none;
 }
 @media (min-width: 768px) {
-  /* line 187, ../sass/components/_layout.scss */
+  /* line 189, ../sass/components/_layout.scss */
   .c3xgm-about-desktop {
     display: block;
   }
 }
 
-/* line 193, ../sass/components/_layout.scss */
+/* line 195, ../sass/components/_layout.scss */
 .c3xgm-about-open-sans {
   font-family: "open-sans", 'Arial', Arial, sans-serif !important;
 }
@@ -1415,14 +1454,14 @@ h4.c3xgm-about-h {
 /* line 2, ../sass/modules/_all-modules.scss */
 .c3xgm-about-module-car-logo,
 .c3xgm-about-module-foundation-logo {
-  opacity: 0.5;
+  opacity: 0.35;
   -webkit-transition: opacity 90ms;
   -moz-transition: opacity 90ms;
   -o-transition: opacity 90ms;
   -ms-transition: opacity 90ms;
   transition: opacity 90ms;
 }
-/* line 8, ../sass/modules/_all-modules.scss */
+/* line 9, ../sass/modules/_all-modules.scss */
 .c3xgm-about-module-car-logo.active,
 .c3xgm-about-module-foundation-logo.active {
   opacity: 1;
@@ -1826,30 +1865,37 @@ h4.c3xgm-about-h {
   max-width: none;
 }
 
-/* line 2, ../sass/modules/_car.scss */
+@media (min-width: 768px) {
+  /* line 2, ../sass/modules/_car.scss */
+  .c3xgm-about-module-car-holder {
+    margin-top: 1em;
+  }
+}
+
+/* line 6, ../sass/modules/_car.scss */
 .c3xgm-about-module-car {
   max-width: 906px;
   margin: 0 auto 5%;
 }
 @media (min-width: 768px) {
-  /* line 2, ../sass/modules/_car.scss */
+  /* line 6, ../sass/modules/_car.scss */
   .c3xgm-about-module-car {
     margin-bottom: 65px;
   }
 }
-/* line 6, ../sass/modules/_car.scss */
+/* line 10, ../sass/modules/_car.scss */
 .c3xgm-about-module-car .c3xgm-about-module-40,
 .c3xgm-about-module-car .c3xgm-about-module-35 {
   margin-top: 0;
 }
 @media (min-width: 768px) {
-  /* line 6, ../sass/modules/_car.scss */
+  /* line 10, ../sass/modules/_car.scss */
   .c3xgm-about-module-car .c3xgm-about-module-40,
   .c3xgm-about-module-car .c3xgm-about-module-35 {
     margin-top: 1em;
   }
 }
-/* line 12, ../sass/modules/_car.scss */
+/* line 16, ../sass/modules/_car.scss */
 .c3xgm-about-module-car .c3xgm-about-module-65 {
   width: 90%;
   margin-left: auto;
@@ -1857,7 +1903,7 @@ h4.c3xgm-about-h {
   border-top: 0.15rem solid #FDB12E;
 }
 @media (min-width: 768px) {
-  /* line 12, ../sass/modules/_car.scss */
+  /* line 16, ../sass/modules/_car.scss */
   .c3xgm-about-module-car .c3xgm-about-module-65 {
     width: 65%;
     border-top: 0;
@@ -1865,7 +1911,7 @@ h4.c3xgm-about-h {
     border-left: 0.2rem solid #FDB12E;
   }
 }
-/* line 21, ../sass/modules/_car.scss */
+/* line 25, ../sass/modules/_car.scss */
 .c3xgm-about-module-car .c3xgm-about-module-car-logo-container {
   width: 92%;
   min-width: none;
@@ -1873,20 +1919,20 @@ h4.c3xgm-about-h {
   margin: 0 auto;
 }
 @media (min-width: 768px) {
-  /* line 21, ../sass/modules/_car.scss */
+  /* line 25, ../sass/modules/_car.scss */
   .c3xgm-about-module-car .c3xgm-about-module-car-logo-container {
     padding-top: 0;
     float: right;
   }
 }
 @media (min-width: 768px) {
-  /* line 27, ../sass/modules/_car.scss */
+  /* line 31, ../sass/modules/_car.scss */
   .c3xgm-about-module-car .c3xgm-about-module-container {
     float: right;
     width: 90%;
   }
 }
-/* line 33, ../sass/modules/_car.scss */
+/* line 35, ../sass/modules/_car.scss */
 .c3xgm-about-module-car .c3xgm-about-module-container .c3xgm-about-module .c3xgm-about-h,
 .c3xgm-about-module-car .c3xgm-about-module-container .c3xgm-about-module .c3xgm-about-p,
 .c3xgm-about-module-car .c3xgm-about-module-container .c3xgm-about-module .c3xgm-about-link,
@@ -1895,22 +1941,24 @@ h4.c3xgm-about-h {
   margin-left: auto;
   margin-right: auto;
 }
-@media (min-width: 768px) {
-  /* line 43, ../sass/modules/_car.scss */
-  .c3xgm-about-module-car .c3xgm-about-module-container > .c3xgm-about-module {
-    position: absolute;
-    left: 0;
-    width: 100%;
-  }
+/* line 44, ../sass/modules/_car.scss */
+.c3xgm-about-module-car .c3xgm-about-module-container > .c3xgm-about-module {
+  position: absolute;
+  left: 0;
+  width: 100%;
 }
 /* line 51, ../sass/modules/_car.scss */
+.c3xgm-about-module-car .c3xgm-about-module {
+  background-color: white;
+}
+/* line 53, ../sass/modules/_car.scss */
 .c3xgm-about-module-car .c3xgm-about-module .c3xgm-about-vehicle-copy,
 .c3xgm-about-module-car .c3xgm-about-module .c3xgm-about-link,
 .c3xgm-about-module-car .c3xgm-about-module .c3xgm-about-h,
 .c3xgm-about-module-car .c3xgm-about-module .c3xgm-about-p {
   text-align: left;
 }
-/* line 56, ../sass/modules/_car.scss */
+/* line 58, ../sass/modules/_car.scss */
 .c3xgm-about-module-car .c3xgm-about-module .c3xgm-about-block-image,
 .c3xgm-about-module-car .c3xgm-about-module .c3xgm-about-block-image img,
 .c3xgm-about-module-car .c3xgm-about-module .c3xgm-about-vehicle-copy,
@@ -1921,7 +1969,7 @@ h4.c3xgm-about-h {
   padding: 0 2% 0 7px;
 }
 @media (min-width: 768px) {
-  /* line 56, ../sass/modules/_car.scss */
+  /* line 58, ../sass/modules/_car.scss */
   .c3xgm-about-module-car .c3xgm-about-module .c3xgm-about-block-image,
   .c3xgm-about-module-car .c3xgm-about-module .c3xgm-about-block-image img,
   .c3xgm-about-module-car .c3xgm-about-module .c3xgm-about-vehicle-copy,
@@ -1932,44 +1980,48 @@ h4.c3xgm-about-h {
     max-width: 480px;
   }
 }
-/* line 70, ../sass/modules/_car.scss */
+/* line 72, ../sass/modules/_car.scss */
 .c3xgm-about-module-car .c3xgm-about-module .c3xgm-about-vehicle-copy {
-  display: block;
   margin: 1em auto 0;
   font-family: open-sans, Arial, sans-serif;
+  display: block;
+  position: absolute;
+  bottom: 1em;
+  left: 0;
+  right: 0;
 }
-/* line 76, ../sass/modules/_car.scss */
+/* line 81, ../sass/modules/_car.scss */
 .c3xgm-about-module-car .c3xgm-about-module .c3xgm-about-p {
   margin-left: 0;
   margin-right: 0;
 }
 @media (min-width: 768px) {
-  /* line 76, ../sass/modules/_car.scss */
+  /* line 81, ../sass/modules/_car.scss */
   .c3xgm-about-module-car .c3xgm-about-module .c3xgm-about-p {
     margin-left: auto;
     margin-right: auto;
   }
 }
-/* line 80, ../sass/modules/_car.scss */
+/* line 85, ../sass/modules/_car.scss */
 .c3xgm-about-module-car .c3xgm-about-module h3.c3xgm-about-h {
   font-size: 32px;
   font-size: 8.06vw;
   line-height: 1em;
 }
 @media (min-width: 906px) {
-  /* line 80, ../sass/modules/_car.scss */
+  /* line 85, ../sass/modules/_car.scss */
   .c3xgm-about-module-car .c3xgm-about-module h3.c3xgm-about-h {
     font-size: 73px;
     line-height: 70px;
   }
 }
-/* line 84, ../sass/modules/_car.scss */
+/* line 89, ../sass/modules/_car.scss */
 .c3xgm-about-module-car .c3xgm-about-module .c3xgm-about-link {
   display: block;
   margin-top: 1em;
   margin-bottom: 0.5em;
 }
-/* line 86, ../sass/modules/_car.scss */
+/* line 91, ../sass/modules/_car.scss */
 .c3xgm-about-module-car .c3xgm-about-module .c3xgm-about-block-image {
   position: relative;
   text-align: center;
@@ -1977,80 +2029,80 @@ h4.c3xgm-about-h {
   height: 0;
   margin-top: 2em;
 }
-/* line 89, ../sass/modules/_car.scss */
+/* line 94, ../sass/modules/_car.scss */
 .c3xgm-about-module-car .c3xgm-about-module .c3xgm-about-block-image img {
   display: block;
   margin: 0 auto;
   max-width: 77%;
 }
-/* line 94, ../sass/modules/_car.scss */
+/* line 99, ../sass/modules/_car.scss */
 .c3xgm-about-module-car .c3xgm-about-module-car-logo-container li {
   display: block;
   float: left;
   text-align: center;
   width: 33.3333334%;
 }
-/* line 97, ../sass/modules/_car.scss */
+/* line 102, ../sass/modules/_car.scss */
 .c3xgm-about-module-car .c3xgm-about-module-car-logo-container li:nth-of-type(3n+1) {
   clear: left;
 }
 @media (min-width: 768px) {
-  /* line 94, ../sass/modules/_car.scss */
+  /* line 99, ../sass/modules/_car.scss */
   .c3xgm-about-module-car .c3xgm-about-module-car-logo-container li {
     width: 50%;
     margin: 1em auto;
   }
-  /* line 100, ../sass/modules/_car.scss */
+  /* line 105, ../sass/modules/_car.scss */
   .c3xgm-about-module-car .c3xgm-about-module-car-logo-container li:nth-of-type(3n+1) {
     clear: none;
   }
-  /* line 101, ../sass/modules/_car.scss */
+  /* line 106, ../sass/modules/_car.scss */
   .c3xgm-about-module-car .c3xgm-about-module-car-logo-container li:nth-of-type(odd) {
     clear: left;
   }
 }
-/* line 104, ../sass/modules/_car.scss */
+/* line 109, ../sass/modules/_car.scss */
 .c3xgm-about-module-car .c3xgm-about-module-car-logo-container li .c3xgm-about-module-car-logo {
   line-height: 44px;
 }
-/* line 106, ../sass/modules/_car.scss */
+/* line 111, ../sass/modules/_car.scss */
 .c3xgm-about-module-car .c3xgm-about-module-car-logo-container li .c3xgm-about-module-car-logo img {
   width: 60%;
   vertical-align: middle;
 }
 @media (min-width: 768px) {
-  /* line 104, ../sass/modules/_car.scss */
+  /* line 109, ../sass/modules/_car.scss */
   .c3xgm-about-module-car .c3xgm-about-module-car-logo-container li .c3xgm-about-module-car-logo {
     line-height: 60px;
     display: block;
     text-align: left;
   }
-  /* line 109, ../sass/modules/_car.scss */
+  /* line 114, ../sass/modules/_car.scss */
   .c3xgm-about-module-car .c3xgm-about-module-car-logo-container li .c3xgm-about-module-car-logo img {
     padding-left: 7px;
   }
 }
-/* line 116, ../sass/modules/_car.scss */
+/* line 121, ../sass/modules/_car.scss */
 .c3xgm-about-module-car .c3xgm-about-chevrolet .c3xgm-about-block-image {
   padding-bottom: 37.56906077348066%;
 }
-/* line 117, ../sass/modules/_car.scss */
+/* line 122, ../sass/modules/_car.scss */
 .c3xgm-about-module-car .c3xgm-about-buick .c3xgm-about-block-image {
   padding-bottom: 39.95584988962472%;
 }
-/* line 118, ../sass/modules/_car.scss */
+/* line 123, ../sass/modules/_car.scss */
 .c3xgm-about-module-car .c3xgm-about-gmc .c3xgm-about-block-image {
   padding-bottom: 34.65783664459161%;
 }
-/* line 119, ../sass/modules/_car.scss */
+/* line 124, ../sass/modules/_car.scss */
 .c3xgm-about-module-car .c3xgm-about-opel .c3xgm-about-block-image {
   padding-bottom: 42.721854304635764%;
 }
-/* line 120, ../sass/modules/_car.scss */
+/* line 125, ../sass/modules/_car.scss */
 .c3xgm-about-module-car .c3xgm-about-cadillac .c3xgm-about-block-image {
   padding-bottom: 27.593818984547464%;
 }
-/* line 121, ../sass/modules/_car.scss */
+/* line 126, ../sass/modules/_car.scss */
 .c3xgm-about-module-car .c3xgm-about-vauxhall .c3xgm-about-block-image {
   padding-bottom: 42.60485651214128%;
 }
@@ -3106,25 +3158,55 @@ h4.c3xgm-about-h {
     font-size: 35px;
   }
 }
-/* line 45, ../sass/pages/_our-brands.scss */
+/* line 67, ../sass/pages/_our-brands.scss */
 .c3xgm-about-global .c3xgm-about-block-image,
 .c3xgm-about-seconds .c3xgm-about-block-image {
   text-align: center;
   margin: 9px 0;
   width: 100%;
   position: relative;
+  text-align: center;
+  overflow: auto;
 }
-/* line 50, ../sass/pages/_our-brands.scss */
+/* line 116, ../sass/components/_mixins.scss */
+.c3xgm-about-global .c3xgm-about-block-image:after,
+.c3xgm-about-global .c3xgm-about-block-image > div,
+.c3xgm-about-global .c3xgm-about-block-image > span,
+.c3xgm-about-global .c3xgm-about-block-image > img,
+.c3xgm-about-seconds .c3xgm-about-block-image:after,
+.c3xgm-about-seconds .c3xgm-about-block-image > div,
+.c3xgm-about-seconds .c3xgm-about-block-image > span,
+.c3xgm-about-seconds .c3xgm-about-block-image > img {
+  display: inline-block;
+  vertical-align: middle;
+}
+/* line 124, ../sass/components/_mixins.scss */
+.c3xgm-about-global .c3xgm-about-block-image :after,
+.c3xgm-about-seconds .c3xgm-about-block-image :after {
+  content: '';
+  height: 100%;
+  margin-left: -0.25em;
+  /* To offset spacing. May vary by font */
+}
+/* line 130, ../sass/components/_mixins.scss */
+.c3xgm-about-global .c3xgm-about-block-image > div,
+.c3xgm-about-global .c3xgm-about-block-image > span,
+.c3xgm-about-global .c3xgm-about-block-image > img,
+.c3xgm-about-seconds .c3xgm-about-block-image > div,
+.c3xgm-about-seconds .c3xgm-about-block-image > span,
+.c3xgm-about-seconds .c3xgm-about-block-image > img {
+  max-width: 99%;
+  /* Prevents issues with long content causes the content block to be pushed to the top */
+  max-width: calc(100% - 0.25em);
+  /* Only for IE9+ */
+}
+/* line 73, ../sass/pages/_our-brands.scss */
 .c3xgm-about-global .c3xgm-about-block-image img,
 .c3xgm-about-seconds .c3xgm-about-block-image img {
-  display: block;
-  margin: 0 auto;
-  padding: 0;
-  width: 40%;
   max-width: 158px;
 }
 @media (min-width: 768px) {
-  /* line 45, ../sass/pages/_our-brands.scss */
+  /* line 67, ../sass/pages/_our-brands.scss */
   .c3xgm-about-global .c3xgm-about-block-image,
   .c3xgm-about-seconds .c3xgm-about-block-image {
     width: 25%;
@@ -3132,30 +3214,22 @@ h4.c3xgm-about-h {
     padding-bottom: 16%;
     margin-top: 9px;
   }
-  /* line 57, ../sass/pages/_our-brands.scss */
+  /* line 82, ../sass/pages/_our-brands.scss */
   .c3xgm-about-global .c3xgm-about-block-image img,
   .c3xgm-about-seconds .c3xgm-about-block-image img {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    -webkit-transform: translate(-50%, -50%);
-    -moz-transform: translate(-50%, -50%);
-    -o-transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
     width: 80%;
     max-width: 189px;
   }
 }
 @media (min-width: 1176px) {
-  /* line 45, ../sass/pages/_our-brands.scss */
+  /* line 67, ../sass/pages/_our-brands.scss */
   .c3xgm-about-global .c3xgm-about-block-image,
   .c3xgm-about-seconds .c3xgm-about-block-image {
     padding-bottom: 171px;
   }
 }
 
-/* line 94, ../sass/pages/_our-brands.scss */
+/* line 122, ../sass/pages/_our-brands.scss */
 .c3xgm-about-global .c3xgm-about-blockquote {
   float: none;
   text-align: left;
@@ -3163,26 +3237,26 @@ h4.c3xgm-about-h {
   border-left: 0.15rem solid #FDB12E;
 }
 @media (min-width: 768px) {
-  /* line 94, ../sass/pages/_our-brands.scss */
+  /* line 122, ../sass/pages/_our-brands.scss */
   .c3xgm-about-global .c3xgm-about-blockquote {
     padding-left: 2.5em;
     border-left: 0.2rem solid #FDB12E;
   }
 }
-/* line 100, ../sass/pages/_our-brands.scss */
+/* line 128, ../sass/pages/_our-brands.scss */
 .c3xgm-about-global .c3xgm-about-block-image {
   width: 100%;
   text-align: center;
 }
 @media (min-width: 768px) {
-  /* line 100, ../sass/pages/_our-brands.scss */
+  /* line 128, ../sass/pages/_our-brands.scss */
   .c3xgm-about-global .c3xgm-about-block-image {
     width: 25%;
     float: left;
   }
 }
 
-/* line 113, ../sass/pages/_our-brands.scss */
+/* line 141, ../sass/pages/_our-brands.scss */
 .c3xgm-about-seconds .c3xgm-about-blockquote {
   display: inline-block;
   text-align: right;
@@ -3192,46 +3266,40 @@ h4.c3xgm-about-h {
   border-right: 0.15rem solid #FDB12E;
 }
 @media (min-width: 768px) {
-  /* line 113, ../sass/pages/_our-brands.scss */
+  /* line 141, ../sass/pages/_our-brands.scss */
   .c3xgm-about-seconds .c3xgm-about-blockquote {
     padding-right: 2.5em;
     border-right: 0.2rem solid #FDB12E;
   }
 }
 @media (min-width: 768px) {
-  /* line 113, ../sass/pages/_our-brands.scss */
+  /* line 141, ../sass/pages/_our-brands.scss */
   .c3xgm-about-seconds .c3xgm-about-blockquote {
     float: right;
   }
 }
 @media (min-width: 768px) {
-  /* line 120, ../sass/pages/_our-brands.scss */
+  /* line 148, ../sass/pages/_our-brands.scss */
   .c3xgm-about-seconds .c3xgm-about-block-image {
     float: right;
     width: 25%;
   }
 }
-@media (min-width: 1176px) {
-  /* line 120, ../sass/pages/_our-brands.scss */
-  .c3xgm-about-seconds .c3xgm-about-block-image {
-    height: 232px;
-  }
-}
 
-/* line 136, ../sass/pages/_our-brands.scss */
+/* line 164, ../sass/pages/_our-brands.scss */
 .c3xgm-about-dealers {
   text-align: center;
   margin-top: 6em;
   margin-bottom: 2em;
 }
 @media (min-width: 768px) {
-  /* line 136, ../sass/pages/_our-brands.scss */
+  /* line 164, ../sass/pages/_our-brands.scss */
   .c3xgm-about-dealers {
     text-align: left;
     margin-bottom: 3em;
   }
 }
-/* line 140, ../sass/pages/_our-brands.scss */
+/* line 168, ../sass/pages/_our-brands.scss */
 .c3xgm-about-dealers .c3xgm-about-blockquote {
   width: auto;
   margin: 0 auto;
@@ -3239,14 +3307,14 @@ h4.c3xgm-about-h {
   text-align: center;
 }
 @media (min-width: 768px) {
-  /* line 140, ../sass/pages/_our-brands.scss */
+  /* line 168, ../sass/pages/_our-brands.scss */
   .c3xgm-about-dealers .c3xgm-about-blockquote {
     width: 77%;
     display: block;
     text-align: right;
   }
 }
-/* line 147, ../sass/pages/_our-brands.scss */
+/* line 175, ../sass/pages/_our-brands.scss */
 .c3xgm-about-dealers .c3xgm-about-blockquote .c3xgm-about-dark-blue.c3xgm-about-thin {
   width: auto;
   max-width: 5em;
@@ -3255,7 +3323,7 @@ h4.c3xgm-about-h {
   border-bottom: 0.15rem solid #FDB12E;
 }
 @media (min-width: 768px) {
-  /* line 147, ../sass/pages/_our-brands.scss */
+  /* line 175, ../sass/pages/_our-brands.scss */
   .c3xgm-about-dealers .c3xgm-about-blockquote .c3xgm-about-dark-blue.c3xgm-about-thin {
     width: 75%;
     max-width: none;
@@ -3266,43 +3334,43 @@ h4.c3xgm-about-h {
     border-right: 0.2rem solid #FDB12E;
   }
 }
-/* line 159, ../sass/pages/_our-brands.scss */
+/* line 187, ../sass/pages/_our-brands.scss */
 .c3xgm-about-dealers .c3xgm-about-blockquote .c3xgm-about-dark-blue {
   font-size: 28.665995380401597px;
   font-size: 11.16789277353616vw;
 }
 @media (min-width: 768px) {
-  /* line 159, ../sass/pages/_our-brands.scss */
+  /* line 187, ../sass/pages/_our-brands.scss */
   .c3xgm-about-dealers .c3xgm-about-blockquote .c3xgm-about-dark-blue {
     font-size: 14.8459243774414px;
     font-size: 5.783775842113087vw;
   }
 }
 @media (min-width: 906px) {
-  /* line 159, ../sass/pages/_our-brands.scss */
+  /* line 187, ../sass/pages/_our-brands.scss */
   .c3xgm-about-dealers .c3xgm-about-blockquote .c3xgm-about-dark-blue {
     font-size: 52.36046145px;
   }
 }
-/* line 164, ../sass/pages/_our-brands.scss */
+/* line 192, ../sass/pages/_our-brands.scss */
 .c3xgm-about-dealers .c3xgm-about-blockquote .c3xgm-about-dark-blue span {
   font-size: 37.53880364971164px;
   font-size: 14.5vw;
 }
 @media (min-width: 768px) {
-  /* line 164, ../sass/pages/_our-brands.scss */
+  /* line 192, ../sass/pages/_our-brands.scss */
   .c3xgm-about-dealers .c3xgm-about-blockquote .c3xgm-about-dark-blue span {
     font-size: 19.4410915374756px;
     font-size: 7.509262175090214vw;
   }
 }
 @media (min-width: 906px) {
-  /* line 164, ../sass/pages/_our-brands.scss */
+  /* line 192, ../sass/pages/_our-brands.scss */
   .c3xgm-about-dealers .c3xgm-about-blockquote .c3xgm-about-dark-blue span {
     font-size: 67.98127095px;
   }
 }
-/* line 171, ../sass/pages/_our-brands.scss */
+/* line 199, ../sass/pages/_our-brands.scss */
 .c3xgm-about-dealers .c3xgm-about-blockquote .number {
   display: block;
   padding-top: 0.5rem;
@@ -3311,7 +3379,7 @@ h4.c3xgm-about-h {
   line-height: 0.85em;
 }
 @media (min-width: 768px) {
-  /* line 171, ../sass/pages/_our-brands.scss */
+  /* line 199, ../sass/pages/_our-brands.scss */
   .c3xgm-about-dealers .c3xgm-about-blockquote .number {
     font-size: 29.6918487548828px;
     font-size: 11.43983852257275vw;
@@ -3320,31 +3388,31 @@ h4.c3xgm-about-h {
   }
 }
 @media (min-width: 906px) {
-  /* line 171, ../sass/pages/_our-brands.scss */
+  /* line 199, ../sass/pages/_our-brands.scss */
   .c3xgm-about-dealers .c3xgm-about-blockquote .number {
     font-size: 103.564737px;
   }
 }
-/* line 182, ../sass/pages/_our-brands.scss */
+/* line 210, ../sass/pages/_our-brands.scss */
 .c3xgm-about-dealers .c3xgm-about-blockquote .c3xgm-about-gray {
   font-size: 17.06309240064622px;
   font-size: 6.731692003028844vw;
 }
 @media (min-width: 768px) {
-  /* line 182, ../sass/pages/_our-brands.scss */
+  /* line 210, ../sass/pages/_our-brands.scss */
   .c3xgm-about-dealers .c3xgm-about-blockquote .c3xgm-about-gray {
     font-size: 8.83685970306397px;
     font-size: 3.4862975830073246vw;
   }
 }
 @media (min-width: 906px) {
-  /* line 182, ../sass/pages/_our-brands.scss */
+  /* line 210, ../sass/pages/_our-brands.scss */
   .c3xgm-about-dealers .c3xgm-about-blockquote .c3xgm-about-gray {
     font-size: 31.561415099999998px;
   }
 }
 
-/* line 192, ../sass/pages/_our-brands.scss */
+/* line 220, ../sass/pages/_our-brands.scss */
 .c3xgm-about-china {
   position: relative;
   margin: 7em auto;
@@ -3352,19 +3420,19 @@ h4.c3xgm-about-h {
   padding-bottom: 18%;
 }
 @media (min-width: 768px) {
-  /* line 192, ../sass/pages/_our-brands.scss */
+  /* line 220, ../sass/pages/_our-brands.scss */
   .c3xgm-about-china {
     padding-top: 0;
     padding-bottom: 15%;
   }
 }
 @media (min-width: 906px) {
-  /* line 192, ../sass/pages/_our-brands.scss */
+  /* line 220, ../sass/pages/_our-brands.scss */
   .c3xgm-about-china {
     padding-bottom: 135px;
   }
 }
-/* line 199, ../sass/pages/_our-brands.scss */
+/* line 227, ../sass/pages/_our-brands.scss */
 .c3xgm-about-china .c3xgm-about-block-image {
   width: 46%;
   position: absolute;
@@ -3372,16 +3440,16 @@ h4.c3xgm-about-h {
   z-index: -1;
 }
 @media (min-width: 768px) {
-  /* line 199, ../sass/pages/_our-brands.scss */
+  /* line 227, ../sass/pages/_our-brands.scss */
   .c3xgm-about-china .c3xgm-about-block-image {
     width: 25%;
   }
 }
-/* line 202, ../sass/pages/_our-brands.scss */
+/* line 230, ../sass/pages/_our-brands.scss */
 .c3xgm-about-china .c3xgm-about-block-image .c3xgm-about-block-image-mobile {
   margin-top: -45%;
 }
-/* line 205, ../sass/pages/_our-brands.scss */
+/* line 233, ../sass/pages/_our-brands.scss */
 .c3xgm-about-china .c3xgm-about-blockquote {
   width: auto;
   max-width: 21em;
@@ -3392,13 +3460,13 @@ h4.c3xgm-about-h {
   margin-top: 18%;
 }
 @media (min-width: 404px) {
-  /* line 205, ../sass/pages/_our-brands.scss */
+  /* line 233, ../sass/pages/_our-brands.scss */
   .c3xgm-about-china .c3xgm-about-blockquote {
     max-width: 41em;
   }
 }
 @media (min-width: 768px) {
-  /* line 205, ../sass/pages/_our-brands.scss */
+  /* line 233, ../sass/pages/_our-brands.scss */
   .c3xgm-about-china .c3xgm-about-blockquote {
     max-width: none;
     float: left;
@@ -3406,35 +3474,35 @@ h4.c3xgm-about-h {
     margin-top: 19%;
   }
 }
-/* line 216, ../sass/pages/_our-brands.scss */
+/* line 244, ../sass/pages/_our-brands.scss */
 .c3xgm-about-china .c3xgm-about-blockquote .c3xgm-about-dark-blue.c3xgm-about-thin {
   font-family: open-sans, Arial, sans-serif;
   font-size: 11.609307290216254px;
   font-size: 3.6279085848434995vw;
   line-height: 1.2em;
 }
-/* line 220, ../sass/pages/_our-brands.scss */
+/* line 248, ../sass/pages/_our-brands.scss */
 .c3xgm-about-china .c3xgm-about-blockquote .c3xgm-about-dark-blue.c3xgm-about-thin strong {
   font-family: open-sans-condensed, 'Arial Narrow', Arial, sans-serif;
 }
 @media (min-width: 768px) {
-  /* line 216, ../sass/pages/_our-brands.scss */
+  /* line 244, ../sass/pages/_our-brands.scss */
   .c3xgm-about-china .c3xgm-about-blockquote .c3xgm-about-dark-blue.c3xgm-about-thin {
     font-size: 6.975993912267684px;
     font-size: 2.179998131625vw;
   }
-  /* line 223, ../sass/pages/_our-brands.scss */
+  /* line 251, ../sass/pages/_our-brands.scss */
   .c3xgm-about-china .c3xgm-about-blockquote .c3xgm-about-dark-blue.c3xgm-about-thin br {
     display: none;
   }
 }
 @media (min-width: 906px) {
-  /* line 216, ../sass/pages/_our-brands.scss */
+  /* line 244, ../sass/pages/_our-brands.scss */
   .c3xgm-about-china .c3xgm-about-blockquote .c3xgm-about-dark-blue.c3xgm-about-thin {
     font-size: 26px;
   }
 }
-/* line 228, ../sass/pages/_our-brands.scss */
+/* line 256, ../sass/pages/_our-brands.scss */
 .c3xgm-about-china .c3xgm-about-blockquote .c3xgm-about-dark-blue.c3xgm-about-thin.c3xgm-about-big {
   font-family: open-sans-condensed, 'Arial Narrow', Arial, sans-serif;
   max-width: 8em;
@@ -3447,7 +3515,7 @@ h4.c3xgm-about-h {
   font-size: 7.739538314332799vw;
 }
 @media (min-width: 768px) {
-  /* line 228, ../sass/pages/_our-brands.scss */
+  /* line 256, ../sass/pages/_our-brands.scss */
   .c3xgm-about-china .c3xgm-about-blockquote .c3xgm-about-dark-blue.c3xgm-about-thin.c3xgm-about-big {
     clear: none;
     margin-left: .35em;
@@ -3459,12 +3527,12 @@ h4.c3xgm-about-h {
   }
 }
 @media (min-width: 906px) {
-  /* line 228, ../sass/pages/_our-brands.scss */
+  /* line 256, ../sass/pages/_our-brands.scss */
   .c3xgm-about-china .c3xgm-about-blockquote .c3xgm-about-dark-blue.c3xgm-about-thin.c3xgm-about-big {
     font-size: 44px;
   }
 }
-/* line 242, ../sass/pages/_our-brands.scss */
+/* line 270, ../sass/pages/_our-brands.scss */
 .c3xgm-about-china .c3xgm-about-blockquote .c3xgm-about-light-blue {
   float: left;
   font-size: 66.56002860311509px;
@@ -3472,23 +3540,23 @@ h4.c3xgm-about-h {
   line-height: 0.8em;
 }
 @media (min-width: 768px) {
-  /* line 242, ../sass/pages/_our-brands.scss */
+  /* line 270, ../sass/pages/_our-brands.scss */
   .c3xgm-about-china .c3xgm-about-blockquote .c3xgm-about-light-blue {
     font-size: 39.995698513984685px;
     font-size: 12.5vw;
   }
 }
 @media (min-width: 906px) {
-  /* line 242, ../sass/pages/_our-brands.scss */
+  /* line 270, ../sass/pages/_our-brands.scss */
   .c3xgm-about-china .c3xgm-about-blockquote .c3xgm-about-light-blue {
     font-size: 116px;
   }
 }
-/* line 250, ../sass/pages/_our-brands.scss */
+/* line 278, ../sass/pages/_our-brands.scss */
 .c3xgm-about-china .c3xgm-about-blockquote .c3xgm-about-light-blue.c3xgm-about-thin {
   margin-left: -.05em;
 }
-/* line 252, ../sass/pages/_our-brands.scss */
+/* line 280, ../sass/pages/_our-brands.scss */
 .c3xgm-about-china .c3xgm-about-blockquote .c3xgm-about-gray {
   clear: left;
   max-width: 8.25em;
@@ -3497,7 +3565,7 @@ h4.c3xgm-about-h {
   line-height: 1.05em;
 }
 @media (min-width: 768px) {
-  /* line 252, ../sass/pages/_our-brands.scss */
+  /* line 280, ../sass/pages/_our-brands.scss */
   .c3xgm-about-china .c3xgm-about-blockquote .c3xgm-about-gray {
     max-width: none;
     line-height: 1.1em;
@@ -3506,32 +3574,32 @@ h4.c3xgm-about-h {
   }
 }
 @media (min-width: 906px) {
-  /* line 252, ../sass/pages/_our-brands.scss */
+  /* line 280, ../sass/pages/_our-brands.scss */
   .c3xgm-about-china .c3xgm-about-blockquote .c3xgm-about-gray {
     font-size: 58px;
   }
 }
 
-/* line 268, ../sass/pages/_our-brands.scss */
+/* line 296, ../sass/pages/_our-brands.scss */
 .c3xgm-about-cadillac-award,
 .c3xgm-about-chevrolet-award {
   position: relative;
   max-width: 945px;
 }
-/* line 271, ../sass/pages/_our-brands.scss */
+/* line 299, ../sass/pages/_our-brands.scss */
 .c3xgm-about-cadillac-award .c3xgm-about-block-image,
 .c3xgm-about-chevrolet-award .c3xgm-about-block-image {
   width: 100%;
   text-align: center;
   z-index: -1;
 }
-/* line 274, ../sass/pages/_our-brands.scss */
+/* line 302, ../sass/pages/_our-brands.scss */
 .c3xgm-about-cadillac-award .c3xgm-about-block-image img,
 .c3xgm-about-chevrolet-award .c3xgm-about-block-image img {
   width: 45%;
 }
 @media (min-width: 768px) {
-  /* line 271, ../sass/pages/_our-brands.scss */
+  /* line 299, ../sass/pages/_our-brands.scss */
   .c3xgm-about-cadillac-award .c3xgm-about-block-image,
   .c3xgm-about-chevrolet-award .c3xgm-about-block-image {
     width: 29%;
@@ -3539,26 +3607,26 @@ h4.c3xgm-about-h {
     position: absolute;
     right: 0;
   }
-  /* line 279, ../sass/pages/_our-brands.scss */
+  /* line 307, ../sass/pages/_our-brands.scss */
   .c3xgm-about-cadillac-award .c3xgm-about-block-image img,
   .c3xgm-about-chevrolet-award .c3xgm-about-block-image img {
     width: 80%;
   }
 }
-/* line 283, ../sass/pages/_our-brands.scss */
+/* line 311, ../sass/pages/_our-brands.scss */
 .c3xgm-about-cadillac-award .c3xgm-about-blockquote,
 .c3xgm-about-chevrolet-award .c3xgm-about-blockquote {
   float: none;
   display: inline-block;
 }
 @media (min-width: 768px) {
-  /* line 283, ../sass/pages/_our-brands.scss */
+  /* line 311, ../sass/pages/_our-brands.scss */
   .c3xgm-about-cadillac-award .c3xgm-about-blockquote,
   .c3xgm-about-chevrolet-award .c3xgm-about-blockquote {
     float: left;
   }
 }
-/* line 288, ../sass/pages/_our-brands.scss */
+/* line 316, ../sass/pages/_our-brands.scss */
 .c3xgm-about-cadillac-award .c3xgm-about-blockquote .c3xgm-about-dark-blue.c3xgm-about-thin,
 .c3xgm-about-chevrolet-award .c3xgm-about-blockquote .c3xgm-about-dark-blue.c3xgm-about-thin {
   margin-left: -0.05em;
@@ -3569,7 +3637,7 @@ h4.c3xgm-about-h {
   line-height: 1.2em;
 }
 @media (min-width: 768px) {
-  /* line 288, ../sass/pages/_our-brands.scss */
+  /* line 316, ../sass/pages/_our-brands.scss */
   .c3xgm-about-cadillac-award .c3xgm-about-blockquote .c3xgm-about-dark-blue.c3xgm-about-thin,
   .c3xgm-about-chevrolet-award .c3xgm-about-blockquote .c3xgm-about-dark-blue.c3xgm-about-thin {
     font-size: 52px;
@@ -3577,13 +3645,13 @@ h4.c3xgm-about-h {
   }
 }
 @media (min-width: 906px) {
-  /* line 288, ../sass/pages/_our-brands.scss */
+  /* line 316, ../sass/pages/_our-brands.scss */
   .c3xgm-about-cadillac-award .c3xgm-about-blockquote .c3xgm-about-dark-blue.c3xgm-about-thin,
   .c3xgm-about-chevrolet-award .c3xgm-about-blockquote .c3xgm-about-dark-blue.c3xgm-about-thin {
     font-size: 66px;
   }
 }
-/* line 294, ../sass/pages/_our-brands.scss */
+/* line 322, ../sass/pages/_our-brands.scss */
 .c3xgm-about-cadillac-award .c3xgm-about-blockquote .c3xgm-about-dark-blue.c3xgm-about-thin strong,
 .c3xgm-about-chevrolet-award .c3xgm-about-blockquote .c3xgm-about-dark-blue.c3xgm-about-thin strong {
   color: #6086C4;
@@ -3591,7 +3659,7 @@ h4.c3xgm-about-h {
   font-size: 11.5vw;
 }
 @media (min-width: 768px) {
-  /* line 294, ../sass/pages/_our-brands.scss */
+  /* line 322, ../sass/pages/_our-brands.scss */
   .c3xgm-about-cadillac-award .c3xgm-about-blockquote .c3xgm-about-dark-blue.c3xgm-about-thin strong,
   .c3xgm-about-chevrolet-award .c3xgm-about-blockquote .c3xgm-about-dark-blue.c3xgm-about-thin strong {
     font-size: 77px;
@@ -3599,13 +3667,13 @@ h4.c3xgm-about-h {
   }
 }
 @media (min-width: 906px) {
-  /* line 294, ../sass/pages/_our-brands.scss */
+  /* line 322, ../sass/pages/_our-brands.scss */
   .c3xgm-about-cadillac-award .c3xgm-about-blockquote .c3xgm-about-dark-blue.c3xgm-about-thin strong,
   .c3xgm-about-chevrolet-award .c3xgm-about-blockquote .c3xgm-about-dark-blue.c3xgm-about-thin strong {
     font-size: 81px;
   }
 }
-/* line 301, ../sass/pages/_our-brands.scss */
+/* line 329, ../sass/pages/_our-brands.scss */
 .c3xgm-about-cadillac-award .c3xgm-about-blockquote .c3xgm-about-gray,
 .c3xgm-about-chevrolet-award .c3xgm-about-blockquote .c3xgm-about-gray {
   font-size: 21px;
@@ -3614,7 +3682,7 @@ h4.c3xgm-about-h {
   line-height: 1.105em;
 }
 @media (min-width: 768px) {
-  /* line 301, ../sass/pages/_our-brands.scss */
+  /* line 329, ../sass/pages/_our-brands.scss */
   .c3xgm-about-cadillac-award .c3xgm-about-blockquote .c3xgm-about-gray,
   .c3xgm-about-chevrolet-award .c3xgm-about-blockquote .c3xgm-about-gray {
     font-size: 32px;
@@ -3625,13 +3693,13 @@ h4.c3xgm-about-h {
   }
 }
 @media (min-width: 906px) {
-  /* line 301, ../sass/pages/_our-brands.scss */
+  /* line 329, ../sass/pages/_our-brands.scss */
   .c3xgm-about-cadillac-award .c3xgm-about-blockquote .c3xgm-about-gray,
   .c3xgm-about-chevrolet-award .c3xgm-about-blockquote .c3xgm-about-gray {
     font-size: 34px;
   }
 }
-/* line 312, ../sass/pages/_our-brands.scss */
+/* line 340, ../sass/pages/_our-brands.scss */
 .c3xgm-about-cadillac-award .c3xgm-about-blockquote .c3xgm-about-gray .c3xgm-about-thin,
 .c3xgm-about-chevrolet-award .c3xgm-about-blockquote .c3xgm-about-gray .c3xgm-about-thin {
   color: #124e9c;
@@ -3642,7 +3710,7 @@ h4.c3xgm-about-h {
   clear: left;
 }
 @media (min-width: 768px) {
-  /* line 312, ../sass/pages/_our-brands.scss */
+  /* line 340, ../sass/pages/_our-brands.scss */
   .c3xgm-about-cadillac-award .c3xgm-about-blockquote .c3xgm-about-gray .c3xgm-about-thin,
   .c3xgm-about-chevrolet-award .c3xgm-about-blockquote .c3xgm-about-gray .c3xgm-about-thin {
     font-size: 17px;
@@ -3651,30 +3719,30 @@ h4.c3xgm-about-h {
   }
 }
 @media (min-width: 906px) {
-  /* line 312, ../sass/pages/_our-brands.scss */
+  /* line 340, ../sass/pages/_our-brands.scss */
   .c3xgm-about-cadillac-award .c3xgm-about-blockquote .c3xgm-about-gray .c3xgm-about-thin,
   .c3xgm-about-chevrolet-award .c3xgm-about-blockquote .c3xgm-about-gray .c3xgm-about-thin {
     font-size: 26px;
   }
 }
 
-/* line 326, ../sass/pages/_our-brands.scss */
+/* line 354, ../sass/pages/_our-brands.scss */
 .c3xgm-about-cadillac-award .c3xgm-about-blockquote {
   margin-top: 4%;
 }
-/* line 328, ../sass/pages/_our-brands.scss */
+/* line 356, ../sass/pages/_our-brands.scss */
 .c3xgm-about-cadillac-award .c3xgm-about-blockquote .c3xgm-about-gray {
   margin-bottom: 1%;
   margin-top: 1%;
 }
 @media (min-width: 768px) {
-  /* line 328, ../sass/pages/_our-brands.scss */
+  /* line 356, ../sass/pages/_our-brands.scss */
   .c3xgm-about-cadillac-award .c3xgm-about-blockquote .c3xgm-about-gray {
     margin-top: 0;
   }
 }
 @media (min-width: 906px) {
-  /* line 328, ../sass/pages/_our-brands.scss */
+  /* line 356, ../sass/pages/_our-brands.scss */
   .c3xgm-about-cadillac-award .c3xgm-about-blockquote .c3xgm-about-gray {
     font-size: 41px;
   }
@@ -8059,4 +8127,711 @@ body {
   -o-animation-duration: 600ms;
   -ms-animation-duration: 600ms;
   animation-duration: 600ms;
+}
+
+/* line 5, ../sass/components/_animate-me-now.scss */
+.animate-me-now .c3xgm-about-blockquote {
+  position: relative;
+  overflow: hidden;
+}
+/* line 9, ../sass/components/_animate-me-now.scss */
+.animate-me-now .c3xgm-about-blockquote > span.c3xgm-about-dark-blue:first-child {
+  -webkit-animation-fill-mode: both;
+  -moz-animation-fill-mode: both;
+  -o-animation-fill-mode: both;
+  -ms-animation-fill-mode: both;
+  animation-fill-mode: both;
+  -webkit-animation-name: fadeInLeftMega;
+  -moz-animation-name: fadeInLeftMega;
+  -o-animation-name: fadeInLeftMega;
+  -ms-animation-name: fadeInLeftMega;
+  animation-name: fadeInLeftMega;
+  -webkit-animation-delay: 100ms;
+  -moz-animation-delay: 100ms;
+  -o-animation-delay: 100ms;
+  -ms-animation-delay: 100ms;
+  animation-delay: 100ms;
+  -webkit-animation-duration: 400ms;
+  -moz-animation-duration: 400ms;
+  -o-animation-duration: 400ms;
+  -ms-animation-duration: 400ms;
+  animation-duration: 400ms;
+}
+/* line 15, ../sass/components/_animate-me-now.scss */
+.animate-me-now .c3xgm-about-blockquote > span:nth-child(2) {
+  -webkit-animation-fill-mode: both;
+  -moz-animation-fill-mode: both;
+  -o-animation-fill-mode: both;
+  -ms-animation-fill-mode: both;
+  animation-fill-mode: both;
+  -webkit-animation-name: fadeInLeftMega;
+  -moz-animation-name: fadeInLeftMega;
+  -o-animation-name: fadeInLeftMega;
+  -ms-animation-name: fadeInLeftMega;
+  animation-name: fadeInLeftMega;
+  -webkit-animation-delay: 400ms;
+  -moz-animation-delay: 400ms;
+  -o-animation-delay: 400ms;
+  -ms-animation-delay: 400ms;
+  animation-delay: 400ms;
+  -webkit-animation-duration: 400ms;
+  -moz-animation-duration: 400ms;
+  -o-animation-duration: 400ms;
+  -ms-animation-duration: 400ms;
+  animation-duration: 400ms;
+}
+/* line 21, ../sass/components/_animate-me-now.scss */
+.animate-me-now .c3xgm-about-blockquote > span:nth-child(3) {
+  -webkit-animation-fill-mode: both;
+  -moz-animation-fill-mode: both;
+  -o-animation-fill-mode: both;
+  -ms-animation-fill-mode: both;
+  animation-fill-mode: both;
+  -webkit-animation-name: fadeInLeftMega;
+  -moz-animation-name: fadeInLeftMega;
+  -o-animation-name: fadeInLeftMega;
+  -ms-animation-name: fadeInLeftMega;
+  animation-name: fadeInLeftMega;
+  -webkit-animation-delay: 800ms;
+  -moz-animation-delay: 800ms;
+  -o-animation-delay: 800ms;
+  -ms-animation-delay: 800ms;
+  animation-delay: 800ms;
+  -webkit-animation-duration: 400ms;
+  -moz-animation-duration: 400ms;
+  -o-animation-duration: 400ms;
+  -ms-animation-duration: 400ms;
+  animation-duration: 400ms;
+}
+/* line 27, ../sass/components/_animate-me-now.scss */
+.animate-me-now .c3xgm-about-blockquote > span:nth-child(4) {
+  -webkit-animation-fill-mode: both;
+  -moz-animation-fill-mode: both;
+  -o-animation-fill-mode: both;
+  -ms-animation-fill-mode: both;
+  animation-fill-mode: both;
+  -webkit-animation-name: fadeInLeftMega;
+  -moz-animation-name: fadeInLeftMega;
+  -o-animation-name: fadeInLeftMega;
+  -ms-animation-name: fadeInLeftMega;
+  animation-name: fadeInLeftMega;
+  -webkit-animation-delay: 1200ms;
+  -moz-animation-delay: 1200ms;
+  -o-animation-delay: 1200ms;
+  -ms-animation-delay: 1200ms;
+  animation-delay: 1200ms;
+  -webkit-animation-duration: 400ms;
+  -moz-animation-duration: 400ms;
+  -o-animation-duration: 400ms;
+  -ms-animation-duration: 400ms;
+  animation-duration: 400ms;
+}
+/* line 34, ../sass/components/_animate-me-now.scss */
+.animate-me-now .c3xgm-about-blockquote > span.fadeInLeftMega {
+  -webkit-animation-name: fadeInLeftMega;
+  -moz-animation-name: fadeInLeftMega;
+  -o-animation-name: fadeInLeftMega;
+  -ms-animation-name: fadeInLeftMega;
+  animation-name: fadeInLeftMega;
+}
+/* line 37, ../sass/components/_animate-me-now.scss */
+.animate-me-now .c3xgm-about-blockquote > span.fadeInRightMega {
+  -webkit-animation-name: fadeInRightMega;
+  -moz-animation-name: fadeInRightMega;
+  -o-animation-name: fadeInRightMega;
+  -ms-animation-name: fadeInRightMega;
+  animation-name: fadeInRightMega;
+}
+/* line 43, ../sass/components/_animate-me-now.scss */
+.animate-me-now .c3xgm-about-block-image img {
+  -webkit-animation-fill-mode: both;
+  -moz-animation-fill-mode: both;
+  -o-animation-fill-mode: both;
+  -ms-animation-fill-mode: both;
+  animation-fill-mode: both;
+  -webkit-animation-name: fadeInLeftMega;
+  -moz-animation-name: fadeInLeftMega;
+  -o-animation-name: fadeInLeftMega;
+  -ms-animation-name: fadeInLeftMega;
+  animation-name: fadeInLeftMega;
+  -webkit-animation-delay: 400ms;
+  -moz-animation-delay: 400ms;
+  -o-animation-delay: 400ms;
+  -ms-animation-delay: 400ms;
+  animation-delay: 400ms;
+  -webkit-animation-duration: 400ms;
+  -moz-animation-duration: 400ms;
+  -o-animation-duration: 400ms;
+  -ms-animation-duration: 400ms;
+  animation-duration: 400ms;
+}
+/* line 50, ../sass/components/_animate-me-now.scss */
+.animate-me-now .c3xgm-about-block-image img.fadeInLeftMega {
+  -webkit-animation-name: fadeInLeftMega;
+  -moz-animation-name: fadeInLeftMega;
+  -o-animation-name: fadeInLeftMega;
+  -ms-animation-name: fadeInLeftMega;
+  animation-name: fadeInLeftMega;
+}
+/* line 54, ../sass/components/_animate-me-now.scss */
+.animate-me-now .c3xgm-about-block-image img.fadeInRightMega {
+  -webkit-animation-name: fadeInRightMega;
+  -moz-animation-name: fadeInRightMega;
+  -o-animation-name: fadeInRightMega;
+  -ms-animation-name: fadeInRightMega;
+  animation-name: fadeInRightMega;
+}
+
+/* line 5, ../sass/modules/_module-click-animations.scss */
+.c3xgm-about-module-car .c3xgm-about-module-65,
+.c3xgm-about-module-car .c3xgm-about-module-80,
+.c3xgm-about-module-foundation .c3xgm-about-module-65,
+.c3xgm-about-module-foundation .c3xgm-about-module-80 {
+  overflow: hidden;
+}
+/* line 11, ../sass/modules/_module-click-animations.scss */
+.c3xgm-about-module-car .hide-module,
+.c3xgm-about-module-foundation .hide-module {
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  right: 100%;
+  left: auto;
+  -webkit-transform: translate3d(100%, 0, 0);
+  -moz-transform: translate3d(100%, 0, 0);
+  -o-transform: translate3d(100%, 0, 0);
+  -ms-transform: translate3d(100%, 0, 0);
+  transform: translate3d(100%, 0, 0);
+}
+/* line 23, ../sass/modules/_module-click-animations.scss */
+.c3xgm-about-module-car .show-module-slide-in,
+.c3xgm-about-module-foundation .show-module-slide-in {
+  visibility: visible;
+  opacity: 1;
+  z-index: 1000;
+  right: 0;
+  left: auto;
+}
+/* line 37, ../sass/modules/_module-click-animations.scss */
+.c3xgm-about-module-car .show-module-slide-in .c3xgm-about-h,
+.c3xgm-about-module-car .show-module-slide-in .c3xgm-about-p,
+.c3xgm-about-module-car .show-module-slide-in .c3xgm-about-link,
+.c3xgm-about-module-car .show-module-slide-in .c3xgm-about-block-image,
+.c3xgm-about-module-car .show-module-slide-in .c3xgm-about-block-icon,
+.c3xgm-about-module-car .show-module-slide-in .c3xgm-about-vehicle-copy,
+.c3xgm-about-module-foundation .show-module-slide-in .c3xgm-about-h,
+.c3xgm-about-module-foundation .show-module-slide-in .c3xgm-about-p,
+.c3xgm-about-module-foundation .show-module-slide-in .c3xgm-about-link,
+.c3xgm-about-module-foundation .show-module-slide-in .c3xgm-about-block-image,
+.c3xgm-about-module-foundation .show-module-slide-in .c3xgm-about-block-icon,
+.c3xgm-about-module-foundation .show-module-slide-in .c3xgm-about-vehicle-copy {
+  -webkit-animation: slideIn;
+  -moz-animation: slideIn;
+  -o-animation: slideIn;
+  -ms-animation: slideIn;
+  animation: slideIn;
+  -webkit-animation-duration: 600ms;
+  -moz-animation-duration: 600ms;
+  -o-animation-duration: 600ms;
+  -ms-animation-duration: 600ms;
+  animation-duration: 600ms;
+  -webkit-animation-fill-mode: both;
+  -moz-animation-fill-mode: both;
+  -o-animation-fill-mode: both;
+  -ms-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+/* line 49, ../sass/modules/_module-click-animations.scss */
+.c3xgm-about-module-car .show-module-slide-in .c3xgm-about-block-image,
+.c3xgm-about-module-foundation .show-module-slide-in .c3xgm-about-block-image {
+  -webkit-animation-delay: 0ms;
+  -moz-animation-delay: 0ms;
+  -o-animation-delay: 0ms;
+  -ms-animation-delay: 0ms;
+  animation-delay: 0ms;
+}
+/* line 50, ../sass/modules/_module-click-animations.scss */
+.c3xgm-about-module-car .show-module-slide-in .c3xgm-about-h,
+.c3xgm-about-module-foundation .show-module-slide-in .c3xgm-about-h {
+  -webkit-animation-delay: 100ms;
+  -moz-animation-delay: 100ms;
+  -o-animation-delay: 100ms;
+  -ms-animation-delay: 100ms;
+  animation-delay: 100ms;
+}
+/* line 51, ../sass/modules/_module-click-animations.scss */
+.c3xgm-about-module-car .show-module-slide-in .c3xgm-about-p,
+.c3xgm-about-module-foundation .show-module-slide-in .c3xgm-about-p {
+  -webkit-animation-delay: 150ms;
+  -moz-animation-delay: 150ms;
+  -o-animation-delay: 150ms;
+  -ms-animation-delay: 150ms;
+  animation-delay: 150ms;
+}
+/* line 52, ../sass/modules/_module-click-animations.scss */
+.c3xgm-about-module-car .show-module-slide-in .c3xgm-about-link,
+.c3xgm-about-module-foundation .show-module-slide-in .c3xgm-about-link {
+  -webkit-animation-delay: 200ms;
+  -moz-animation-delay: 200ms;
+  -o-animation-delay: 200ms;
+  -ms-animation-delay: 200ms;
+  animation-delay: 200ms;
+}
+/* line 53, ../sass/modules/_module-click-animations.scss */
+.c3xgm-about-module-car .show-module-slide-in .c3xgm-about-block-icon,
+.c3xgm-about-module-foundation .show-module-slide-in .c3xgm-about-block-icon {
+  -webkit-animation-delay: 200ms;
+  -moz-animation-delay: 200ms;
+  -o-animation-delay: 200ms;
+  -ms-animation-delay: 200ms;
+  animation-delay: 200ms;
+}
+/* line 54, ../sass/modules/_module-click-animations.scss */
+.c3xgm-about-module-car .show-module-slide-in .c3xgm-about-vehicle-copy,
+.c3xgm-about-module-foundation .show-module-slide-in .c3xgm-about-vehicle-copy {
+  -webkit-animation-delay: 250ms;
+  -moz-animation-delay: 250ms;
+  -o-animation-delay: 250ms;
+  -ms-animation-delay: 250ms;
+  animation-delay: 250ms;
+}
+/* line 72, ../sass/modules/_module-click-animations.scss */
+.c3xgm-about-module-car .hide-module-slide-out .c3xgm-about-h,
+.c3xgm-about-module-car .hide-module-slide-out .c3xgm-about-p,
+.c3xgm-about-module-car .hide-module-slide-out .c3xgm-about-link,
+.c3xgm-about-module-car .hide-module-slide-out .c3xgm-about-block-image,
+.c3xgm-about-module-car .hide-module-slide-out .c3xgm-about-block-icon,
+.c3xgm-about-module-car .hide-module-slide-out .c3xgm-about-vehicle-copy,
+.c3xgm-about-module-foundation .hide-module-slide-out .c3xgm-about-h,
+.c3xgm-about-module-foundation .hide-module-slide-out .c3xgm-about-p,
+.c3xgm-about-module-foundation .hide-module-slide-out .c3xgm-about-link,
+.c3xgm-about-module-foundation .hide-module-slide-out .c3xgm-about-block-image,
+.c3xgm-about-module-foundation .hide-module-slide-out .c3xgm-about-block-icon,
+.c3xgm-about-module-foundation .hide-module-slide-out .c3xgm-about-vehicle-copy {
+  -webkit-animation: slideOut;
+  -moz-animation: slideOut;
+  -o-animation: slideOut;
+  -ms-animation: slideOut;
+  animation: slideOut;
+  -webkit-animation-duration: 600ms;
+  -moz-animation-duration: 600ms;
+  -o-animation-duration: 600ms;
+  -ms-animation-duration: 600ms;
+  animation-duration: 600ms;
+  -webkit-animation-fill-mode: both;
+  -moz-animation-fill-mode: both;
+  -o-animation-fill-mode: both;
+  -ms-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+/* line 91, ../sass/modules/_module-click-animations.scss */
+.c3xgm-about-module-car .hide-module-slide-out .c3xgm-about-block-image,
+.c3xgm-about-module-foundation .hide-module-slide-out .c3xgm-about-block-image {
+  -webkit-animation-delay: 0ms;
+  -moz-animation-delay: 0ms;
+  -o-animation-delay: 0ms;
+  -ms-animation-delay: 0ms;
+  animation-delay: 0ms;
+}
+/* line 92, ../sass/modules/_module-click-animations.scss */
+.c3xgm-about-module-car .hide-module-slide-out .c3xgm-about-h,
+.c3xgm-about-module-foundation .hide-module-slide-out .c3xgm-about-h {
+  -webkit-animation-delay: 100ms;
+  -moz-animation-delay: 100ms;
+  -o-animation-delay: 100ms;
+  -ms-animation-delay: 100ms;
+  animation-delay: 100ms;
+}
+/* line 93, ../sass/modules/_module-click-animations.scss */
+.c3xgm-about-module-car .hide-module-slide-out .c3xgm-about-p,
+.c3xgm-about-module-foundation .hide-module-slide-out .c3xgm-about-p {
+  -webkit-animation-delay: 150ms;
+  -moz-animation-delay: 150ms;
+  -o-animation-delay: 150ms;
+  -ms-animation-delay: 150ms;
+  animation-delay: 150ms;
+}
+/* line 94, ../sass/modules/_module-click-animations.scss */
+.c3xgm-about-module-car .hide-module-slide-out .c3xgm-about-link,
+.c3xgm-about-module-foundation .hide-module-slide-out .c3xgm-about-link {
+  -webkit-animation-delay: 200ms;
+  -moz-animation-delay: 200ms;
+  -o-animation-delay: 200ms;
+  -ms-animation-delay: 200ms;
+  animation-delay: 200ms;
+}
+/* line 95, ../sass/modules/_module-click-animations.scss */
+.c3xgm-about-module-car .hide-module-slide-out .c3xgm-about-block-icon,
+.c3xgm-about-module-foundation .hide-module-slide-out .c3xgm-about-block-icon {
+  -webkit-animation-delay: 200ms;
+  -moz-animation-delay: 200ms;
+  -o-animation-delay: 200ms;
+  -ms-animation-delay: 200ms;
+  animation-delay: 200ms;
+}
+/* line 96, ../sass/modules/_module-click-animations.scss */
+.c3xgm-about-module-car .hide-module-slide-out .c3xgm-about-vehicle-copy,
+.c3xgm-about-module-foundation .hide-module-slide-out .c3xgm-about-vehicle-copy {
+  -webkit-animation-delay: 250ms;
+  -moz-animation-delay: 250ms;
+  -o-animation-delay: 250ms;
+  -ms-animation-delay: 250ms;
+  animation-delay: 250ms;
+}
+
+@-webkit-keyframes slideOut {
+  0% {
+    opacity: 1;
+  }
+  70% {
+    opacity: 0;
+  }
+  75% {
+    z-index: -1;
+  }
+  99% {
+    -webkit-transform: translate3d(-100%, 0, 0);
+  }
+  100% {
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    right: -100%;
+    left: auto;
+    -webkit-transform: translate3d(100%, 0, 0);
+  }
+}
+@-moz-keyframes slideOut {
+  0% {
+    opacity: 1;
+  }
+  70% {
+    opacity: 0;
+  }
+  75% {
+    z-index: -1;
+  }
+  99% {
+    -moz-transform: translate3d(-100%, 0, 0);
+  }
+  100% {
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    right: -100%;
+    left: auto;
+    -moz-transform: translate3d(100%, 0, 0);
+  }
+}
+@-o-keyframes slideOut {
+  0% {
+    opacity: 1;
+  }
+  70% {
+    opacity: 0;
+  }
+  75% {
+    z-index: -1;
+  }
+  99% {
+    -o-transform: translate3d(-100%, 0, 0);
+  }
+  100% {
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    right: -100%;
+    left: auto;
+    -o-transform: translate3d(100%, 0, 0);
+  }
+}
+@keyframes slideOut {
+  0% {
+    opacity: 1;
+  }
+  70% {
+    opacity: 0;
+  }
+  75% {
+    z-index: -1;
+  }
+  99% {
+    -o-transform: translate3d(-100%, 0, 0);
+  }
+  100% {
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    right: -100%;
+    left: auto;
+    -o-transform: translate3d(100%, 0, 0);
+  }
+}
+@-webkit-keyframes slideIn {
+  0% {
+    opacity: 0;
+    z-index: 0;
+    -webkit-transform: translate3d(100%, 0, 0);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+  }
+}
+@-moz-keyframes slideIn {
+  0% {
+    opacity: 0;
+    z-index: 0;
+    -moz-transform: translate3d(100%, 0, 0);
+  }
+  100% {
+    opacity: 1;
+    -moz-transform: translate3d(0, 0, 0);
+  }
+}
+@-o-keyframes slideIn {
+  0% {
+    opacity: 0;
+    z-index: 0;
+    -o-transform: translate3d(100%, 0, 0);
+  }
+  100% {
+    opacity: 1;
+    -o-transform: translate3d(0, 0, 0);
+  }
+}
+@keyframes slideIn {
+  0% {
+    opacity: 0;
+    z-index: 0;
+    -o-transform: translate3d(100%, 0, 0);
+  }
+  100% {
+    opacity: 1;
+    -o-transform: translate3d(0, 0, 0);
+  }
+}
+/* line 2, ../sass/pages/_our-company-animations.scss */
+.animated,
+.c3xgm-animated {
+  -webkit-animation-fill-mode: both;
+  -moz-animation-fill-mode: both;
+  -o-animation-fill-mode: both;
+  -ms-animation-fill-mode: both;
+  animation-fill-mode: both;
+  -webkit-animation-duration: 800ms;
+  -moz-animation-duration: 800ms;
+  -o-animation-duration: 800ms;
+  -ms-animation-duration: 800ms;
+  animation-duration: 800ms;
+}
+
+/* line 12, ../sass/pages/_our-company-animations.scss */
+#c3xgm-about-page-container > .c3xgm-about-page-our-company .c3xgm-about-section-header .c3xgm-about-section-icon {
+  -webkit-animation-fill-mode: both;
+  -moz-animation-fill-mode: both;
+  -o-animation-fill-mode: both;
+  -ms-animation-fill-mode: both;
+  animation-fill-mode: both;
+  -webkit-animation-name: fadeIn;
+  -moz-animation-name: fadeIn;
+  -o-animation-name: fadeIn;
+  -ms-animation-name: fadeIn;
+  animation-name: fadeIn;
+  -webkit-animation-delay: 800ms;
+  -moz-animation-delay: 800ms;
+  -o-animation-delay: 800ms;
+  -ms-animation-delay: 800ms;
+  animation-delay: 800ms;
+  -webkit-animation-duration: 800ms;
+  -moz-animation-duration: 800ms;
+  -o-animation-duration: 800ms;
+  -ms-animation-duration: 800ms;
+  animation-duration: 800ms;
+}
+/* line 19, ../sass/pages/_our-company-animations.scss */
+#c3xgm-about-page-container > .c3xgm-about-page-our-company .c3xgm-about-section-header h1.c3xgm-about-h {
+  -webkit-animation-fill-mode: both;
+  -moz-animation-fill-mode: both;
+  -o-animation-fill-mode: both;
+  -ms-animation-fill-mode: both;
+  animation-fill-mode: both;
+  -webkit-animation-name: fadeInRightMega;
+  -moz-animation-name: fadeInRightMega;
+  -o-animation-name: fadeInRightMega;
+  -ms-animation-name: fadeInRightMega;
+  animation-name: fadeInRightMega;
+  -webkit-animation-delay: 400ms;
+  -moz-animation-delay: 400ms;
+  -o-animation-delay: 400ms;
+  -ms-animation-delay: 400ms;
+  animation-delay: 400ms;
+  -webkit-animation-duration: 800ms;
+  -moz-animation-duration: 800ms;
+  -o-animation-duration: 800ms;
+  -ms-animation-duration: 800ms;
+  animation-duration: 800ms;
+}
+/* line 26, ../sass/pages/_our-company-animations.scss */
+#c3xgm-about-page-container > .c3xgm-about-page-our-company .c3xgm-about-section-header hr {
+  -webkit-animation-fill-mode: both;
+  -moz-animation-fill-mode: both;
+  -o-animation-fill-mode: both;
+  -ms-animation-fill-mode: both;
+  animation-fill-mode: both;
+  -webkit-animation-name: growHr;
+  -moz-animation-name: growHr;
+  -o-animation-name: growHr;
+  -ms-animation-name: growHr;
+  animation-name: growHr;
+  -webkit-animation-delay: 800ms;
+  -moz-animation-delay: 800ms;
+  -o-animation-delay: 800ms;
+  -ms-animation-delay: 800ms;
+  animation-delay: 800ms;
+  -webkit-animation-duration: 800ms;
+  -moz-animation-duration: 800ms;
+  -o-animation-duration: 800ms;
+  -ms-animation-duration: 800ms;
+  animation-duration: 800ms;
+}
+/* line 36, ../sass/pages/_our-company-animations.scss */
+#c3xgm-about-page-container > .c3xgm-about-page-our-company .c3xgm-about-header-p {
+  -webkit-animation-fill-mode: both;
+  -moz-animation-fill-mode: both;
+  -o-animation-fill-mode: both;
+  -ms-animation-fill-mode: both;
+  animation-fill-mode: both;
+  -webkit-animation-name: fadeIn;
+  -moz-animation-name: fadeIn;
+  -o-animation-name: fadeIn;
+  -ms-animation-name: fadeIn;
+  animation-name: fadeIn;
+  -webkit-animation-delay: 1400ms;
+  -moz-animation-delay: 1400ms;
+  -o-animation-delay: 1400ms;
+  -ms-animation-delay: 1400ms;
+  animation-delay: 1400ms;
+  -webkit-animation-duration: 800ms;
+  -moz-animation-duration: 800ms;
+  -o-animation-duration: 800ms;
+  -ms-animation-duration: 800ms;
+  animation-duration: 800ms;
+}
+/* line 46, ../sass/pages/_our-company-animations.scss */
+#c3xgm-about-page-container > .c3xgm-about-page-our-company .c3xgm-about-block-earn .c3xgm-about-yellow-bar-left-wrapper {
+  overflow: hidden;
+  position: relative;
+  border-left: none;
+}
+/* line 53, ../sass/pages/_our-company-animations.scss */
+#c3xgm-about-page-container > .c3xgm-about-page-our-company .c3xgm-about-block-earn .c3xgm-about-yellow-bar-left-wrapper .c3xgm-about-block-tagline:before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0.15rem;
+  height: 100%;
+  background-color: #FDB12E;
+  -webkit-transform-origin: top right;
+  -moz-transform-origin: top right;
+  -o-transform-origin: top right;
+  -ms-transform-origin: top right;
+  transform-origin: top right;
+  -webkit-animation-fill-mode: both;
+  -moz-animation-fill-mode: both;
+  -o-animation-fill-mode: both;
+  -ms-animation-fill-mode: both;
+  animation-fill-mode: both;
+  -webkit-animation-name: growBorder;
+  -moz-animation-name: growBorder;
+  -o-animation-name: growBorder;
+  -ms-animation-name: growBorder;
+  animation-name: growBorder;
+  -webkit-animation-delay: 1800ms;
+  -moz-animation-delay: 1800ms;
+  -o-animation-delay: 1800ms;
+  -ms-animation-delay: 1800ms;
+  animation-delay: 1800ms;
+  -webkit-animation-duration: 600ms;
+  -moz-animation-duration: 600ms;
+  -o-animation-duration: 600ms;
+  -ms-animation-duration: 600ms;
+  animation-duration: 600ms;
+}
+@media (min-width: 768px) {
+  /* line 53, ../sass/pages/_our-company-animations.scss */
+  #c3xgm-about-page-container > .c3xgm-about-page-our-company .c3xgm-about-block-earn .c3xgm-about-yellow-bar-left-wrapper .c3xgm-about-block-tagline:before {
+    width: 0.2rem;
+  }
+}
+/* line 67, ../sass/pages/_our-company-animations.scss */
+#c3xgm-about-page-container > .c3xgm-about-page-our-company .c3xgm-about-block-earn .c3xgm-about-yellow-bar-left-wrapper .c3xgm-about-block-tagline > span:first-child {
+  -webkit-animation-fill-mode: both;
+  -moz-animation-fill-mode: both;
+  -o-animation-fill-mode: both;
+  -ms-animation-fill-mode: both;
+  animation-fill-mode: both;
+  -webkit-animation-name: fadeInLeftMega;
+  -moz-animation-name: fadeInLeftMega;
+  -o-animation-name: fadeInLeftMega;
+  -ms-animation-name: fadeInLeftMega;
+  animation-name: fadeInLeftMega;
+  -webkit-animation-delay: 2200ms;
+  -moz-animation-delay: 2200ms;
+  -o-animation-delay: 2200ms;
+  -ms-animation-delay: 2200ms;
+  animation-delay: 2200ms;
+  -webkit-animation-duration: 600ms;
+  -moz-animation-duration: 600ms;
+  -o-animation-duration: 600ms;
+  -ms-animation-duration: 600ms;
+  animation-duration: 600ms;
+}
+/* line 74, ../sass/pages/_our-company-animations.scss */
+#c3xgm-about-page-container > .c3xgm-about-page-our-company .c3xgm-about-block-earn .c3xgm-about-yellow-bar-left-wrapper .c3xgm-about-block-tagline > span:nth-child(2) {
+  -webkit-animation-fill-mode: both;
+  -moz-animation-fill-mode: both;
+  -o-animation-fill-mode: both;
+  -ms-animation-fill-mode: both;
+  animation-fill-mode: both;
+  -webkit-animation-name: fadeInLeftMega;
+  -moz-animation-name: fadeInLeftMega;
+  -o-animation-name: fadeInLeftMega;
+  -ms-animation-name: fadeInLeftMega;
+  animation-name: fadeInLeftMega;
+  -webkit-animation-delay: 2800ms;
+  -moz-animation-delay: 2800ms;
+  -o-animation-delay: 2800ms;
+  -ms-animation-delay: 2800ms;
+  animation-delay: 2800ms;
+  -webkit-animation-duration: 500ms;
+  -moz-animation-duration: 500ms;
+  -o-animation-duration: 500ms;
+  -ms-animation-duration: 500ms;
+  animation-duration: 500ms;
+}
+/* line 83, ../sass/pages/_our-company-animations.scss */
+#c3xgm-about-page-container > .c3xgm-about-page-our-company .c3xgm-about-block-earn .c3xgm-about-p {
+  -webkit-animation-fill-mode: both;
+  -moz-animation-fill-mode: both;
+  -o-animation-fill-mode: both;
+  -ms-animation-fill-mode: both;
+  animation-fill-mode: both;
+  -webkit-animation-name: fadeIn;
+  -moz-animation-name: fadeIn;
+  -o-animation-name: fadeIn;
+  -ms-animation-name: fadeIn;
+  animation-name: fadeIn;
+  -webkit-animation-delay: 3300ms;
+  -moz-animation-delay: 3300ms;
+  -o-animation-delay: 3300ms;
+  -ms-animation-delay: 3300ms;
+  animation-delay: 3300ms;
+  -webkit-animation-duration: 800ms;
+  -moz-animation-duration: 800ms;
+  -o-animation-duration: 800ms;
+  -ms-animation-duration: 800ms;
+  animation-duration: 800ms;
 }

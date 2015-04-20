@@ -1,0 +1,90 @@
+// ANIMATE TEXT
+.animated, 
+.c3xgm-animated {
+	@include prefix(animation-fill-mode, both);
+	@include prefix(animation-duration, 800ms);
+}
+
+#c3xgm-about-page-container > .c3xgm-about-page-our-company {
+
+	.c3xgm-about-section-header { 
+
+		.c3xgm-about-section-icon { 
+			@include prefix(animation-fill-mode, both);
+			@include prefix(animation-name, fadeIn);
+			@include prefix(animation-delay, 800ms);
+			@include prefix(animation-duration, 800ms);
+		}
+
+		h1.c3xgm-about-h {
+			@include prefix(animation-fill-mode, both);
+			@include prefix(animation-name, fadeInRightMega);
+			@include prefix(animation-delay, 400ms);
+			@include prefix(animation-duration, 800ms);
+		 }
+
+		hr { 
+			@include prefix(animation-fill-mode, both);
+			@include prefix(animation-name, growHr);
+			@include prefix(animation-delay, 800ms);
+			@include prefix(animation-duration, 800ms);
+		}
+
+	}
+
+
+	.c3xgm-about-header-p { 
+		@include prefix(animation-fill-mode, both);
+		@include prefix(animation-name, fadeIn);
+		@include prefix(animation-delay, 1400ms);
+		@include prefix(animation-duration, 800ms);
+	}
+
+
+	.c3xgm-about-block-earn {
+
+		.c3xgm-about-yellow-bar-left-wrapper { 
+			overflow: hidden;
+			position: relative;
+			border-left:none;
+
+			.c3xgm-about-block-tagline { 
+
+				&:before {
+					content: ""; display: block;
+					position: absolute;
+					top:0; left:0;
+					width:0.15rem; height: 100%;
+					background-color:$gm-yellow;
+					@include prefix(transform-origin, top right);
+					@include prefix(animation-fill-mode, both);
+					@include prefix(animation-name, growBorder);
+					@include prefix(animation-delay,1800ms);
+		  			@include prefix(animation-duration,600ms);
+		  			@media(min-width: $tablet-height) { width:0.2rem;}
+				}
+			
+				> span:first-child { 
+					@include prefix(animation-fill-mode, both);
+					@include prefix(animation-name, fadeInLeftMega);
+					@include prefix(animation-delay, 2200ms);
+					@include prefix(animation-duration, 600ms);
+				}
+
+				> span:nth-child(2) {
+					@include prefix(animation-fill-mode, both);
+					@include prefix(animation-name, fadeInLeftMega);
+					@include prefix(animation-delay, 2800ms);
+					@include prefix(animation-duration, 500ms);
+				}
+			}
+		}
+
+		.c3xgm-about-p { 
+			@include prefix(animation-fill-mode, both);
+			@include prefix(animation-name, fadeIn);
+			@include prefix(animation-delay, 3300ms);
+			@include prefix(animation-duration, 800ms);
+		}
+	}
+}

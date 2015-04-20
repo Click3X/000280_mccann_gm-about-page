@@ -1,14 +1,9 @@
 <?php
 // OUR BRANDS
-// echo '<div id="our-brands-temp-mobile" class="temp our-brands-temp-mobile hidden"></div>';
-// echo '<div id="our-brands-temp" class="temp our-brands-temp hidden"></div>';
-
-// ITERATE THROUGH PAGEES ARRAY
-foreach ($pages as $key => $page) {
-    if($page['title'] == "Our Brands") {
+// STORE BRANDS PAGE IN VAR
+$page = $pages[2];
         if( isset($page['id']) ) { $href = cleanString($page['id']); } else { $href = ""; }
     echo '<div id="c3xgm-about-'.$href.'" class="c3xgm-about-page c3xgm-about-clearfix c3xgm-about-page-'.cleanString($page['title']).'">';
-            // helper($page);
             
             // PAGE HEADER
             if(isset($page['tagline'])) { $page['tagline'] = $page['tagline']; } else { $page['tagline'] = "";}
@@ -18,9 +13,7 @@ foreach ($pages as $key => $page) {
             pageHeader($page['title'], $page['icon@2x'], $page['tagline'], $page['image']);
 
             // MODULES
-            if( isset($page['module']) ) {
-                printModule($page['module']);
-            }
+            include('php/modules/car.php');
 
             // BLOCKS
             if( isset($page['blocks']) ) {
@@ -35,37 +28,5 @@ foreach ($pages as $key => $page) {
                 }
             }
 
-            // SECTIONS
-            if( isset($page['sections']) ) {
-                foreach ($page['sections'] as $key => $section) {
-                    
-                    // SECTION HEADER
-                    subSectionHeader($section['title'], $section['tagline']);
-
-                     // MODULES
-                    if( isset($section['module']) ) {
-                        printModule($section['module']);
-                    }
-
-                    // SECTION BLOCKS
-                    if( isset($section['blocks']) ) {
-                        foreach ($section['blocks'] as $key => $block) {
-                            
-                            if( isset($block['type']) && ($block['type'] == "decorative") ) {
-                            
-                                // DECORATIVE
-                                printDecorative($block);
-
-                            } else {
-                                printBlock($block);
-                            }
-                        }
-                    }
-                }
-            }
-            // END SECTION CONTAINER
     echo '</div>';
-    } // TEMP OUR BRANDS PAGE ONLY
-}
-
 ?>
