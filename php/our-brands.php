@@ -22,6 +22,19 @@ $page = $pages[2];
                         // DECORATIVE
                         printDecorative($block);
 
+                        // DECORATIVE
+                        // if( $block['title'] == "Flag Line" ) {
+                        //     echo '<div id="flag-line-container" class="clearfix">
+                        //             <ul id="animate-flag-line" class="animate-flag-line">
+                        //                 <li class="flag-line"><img src="img/decorative/landscape/flag-line.svg"></li>
+                        //                 <li class="flag-line"><img src="img/decorative/landscape/flag-line.svg"></li>
+                        //             </ul>
+                        //         </div>';
+                        // } else {
+                        //     printDecorative($block);
+                        // }
+
+
                     } else {
                         printBlock($block);
                     }

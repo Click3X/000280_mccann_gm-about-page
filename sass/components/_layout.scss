@@ -55,7 +55,8 @@ html, body {
 	padding-top: 36px;
 	@media( min-width:$tablet-height ){ 
 		// padding-top: 73px; 
-		padding-top:25px; 
+		// padding-top:25px; 
+		padding-top:0; 
 		.c3xgm-about-section-header { padding-top: 48px; }
 	}
 

@@ -145,10 +145,6 @@ jQuery(document).ready(function($) {
 			}
 		}	
 
-
-
-
-
 	} // END OBJECT ANIMATE
 
 
@@ -164,18 +160,11 @@ jQuery(document).ready(function($) {
 
 
 	$.each($blocks, function(i, val) {
-		// console.log('This is i: ' + i);
-		// console.log('This is val: ' + val);
-		// console.dir(val);
-		// console.log('This is this: ' + this);
-		// console.dir(this);
-
 		animBlocks[i] = new AnimatedElement(this);
-
 	});
 
-	console.log('This is animBlocks: ' + animBlocks);
-	console.dir(animBlocks);
+	// console.log('This is animBlocks: ' + animBlocks);
+	// console.dir(animBlocks);
 
 
 	// W I N D O W    E V E N T S

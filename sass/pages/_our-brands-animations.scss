@@ -120,6 +120,12 @@
 		&:nth-child(8) { @include prefix(animation-delay, 2600ms); }
 		&:nth-child(9) { @include prefix(animation-delay, 2800ms); }
 
+		// &:first-child a { 
+		// 	@include prefix(animation-fill-mode, both);
+		// 	@include prefix(animation-name, fadeIn);
+		// 	@include prefix(animation-duration, 200ms);
+		// 	@include prefix(animation-delay, 2800ms); 
+		// }
 		@media(min-width: $tablet-height) {
 			&:nth-child(3) { @include prefix(animation-delay, 1400ms); }
 			&:nth-child(5) { @include prefix(animation-delay, 1600ms); }

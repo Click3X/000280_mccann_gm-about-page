@@ -78,5 +78,16 @@ jQuery(document).ready(function($) {
 
 
 
+	// DISCLAIMER ---------------------------------------------------------------------------------------------------------
+	// DISCLAIMER BOX OPEN CLOSE
+	var $discLink = $('#c3xgm-about-disclaimer-link'),
+		$discBox = $('#c3xgm-about-disclaimer-box'),
+		discBoxHeight = $discBox.height();
+
+	// HIDE DISC BOX HEIGHT
+	$discLink.click(function(event) {
+		event.preventDefault();
+		$discBox.toggleClass('c3xgm-about-show-disclaimer');
+	});
 
 });

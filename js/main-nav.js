@@ -29,6 +29,24 @@ jQuery(document).ready(function($) {
 
      /**
      * MAIN NAV JS
+     */
+    // SMOOTH SCROLL TO LINKS
+        $('.c3xgm-about-main-nav a[href*=#]:not([href=#])').click(function() {
+            if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+                var target = $(this.hash);
+                target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+                if (target.length) {
+                    $('html,body').animate({
+                        scrollTop: target.offset().top
+                    }, 1000);
+                    return false;
+                }
+            }
+        });
+    
+     /*
+     * MAIN NAV JS
+     HIGH LIGHT NAV, ATTACH CLASSES
      * This part handles the highlighting functionality.
      * We use the scroll functionality again, some array creation and 
      * manipulation, class adding and class removing, and conditional testing
