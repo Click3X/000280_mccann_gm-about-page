@@ -161,8 +161,8 @@ jQuery(document).ready(function($) {
 		animBlocks = [];
 
 	// ANIMATABLE OBJECTS
-	// GreyVan = new AnimatedElement('#c3xgm-about-grey-van');
-	// RedCar = new AnimatedElement('#c3xgm-about-red-car');
+	GreyVan = new AnimatedElement('#c3xgm-about-grey-van');
+	RedCar = new AnimatedElement('#c3xgm-about-red-car');
 
 
 	$.each($blocks, function(i, val) {
@@ -176,8 +176,8 @@ jQuery(document).ready(function($) {
 
 	});
 
-	console.log('This is animBlocks: ' + animBlocks);
-	console.dir(animBlocks);
+	// console.log('This is animBlocks: ' + animBlocks);
+	// console.dir(animBlocks);
 
 
 	// W I N D O W    E V E N T S
@@ -216,19 +216,21 @@ jQuery(document).ready(function($) {
 			// UPDATE WINDOW SCROLL VARIABLE
 			updateWindowSpecs();
 
-			// $.each(scrollElems, function(i, val) {
-			// 	if( this.isInView() ){
+			// SCROLL - TIED ANIMATIONS
+			$.each(scrollElems, function(i, val) {
+				if( this.isInView() ){
 
-			// 		if(this.name == 'c3xgm-about-red-car') {
-			// 			this.moveLeft();
-			// 		}
+					if(this.name == 'c3xgm-about-red-car') {
+						this.moveLeft();
+					}
 
-			// 		if(this.name == 'c3xgm-about-grey-van') {
-			// 			this.moveRight();
-			// 		}
-			// 	}
-			// });
+					if(this.name == 'c3xgm-about-grey-van') {
+						this.moveRight();
+					}
+				}
+			});
 
+			// SCROLL - CLASS ADDED ANIMATIONS
 			$.each(animBlocks, function(i, val) {
 				if( this.isInView() ){
 					this.addInViewClass();		
@@ -241,7 +243,7 @@ jQuery(document).ready(function($) {
 
 		// HIDE  ELEMENTS TO BE UNCOVERED ON SCROLL
 		$.each(animBlocks, function(i, val) {
-			// $(this).addClass('invisible');
+			$(this).addClass('invisible');
 		});
 	
 });

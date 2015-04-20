@@ -11,10 +11,11 @@
         <![endif]--> 
     
         <script src="js/resize-functions.js"></script>
+        <script src="js/main-nav.js"></script>
         <script src="js/modules/car-slider.js"></script>
+        <script src="js/scroll/scroll-fix.js"></script>
         <!--
         <script src="js/modules/all-modules.js"></script>
-        <script src="js/main-nav.js"></script>
         -->
         <?php include('php/helpers/outlines-js.php'); ?>
 

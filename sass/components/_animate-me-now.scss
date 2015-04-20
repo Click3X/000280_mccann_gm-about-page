@@ -42,17 +42,20 @@
 	.c3xgm-about-block-image {
 		img { 
 			@include prefix(animation-fill-mode, both);
-			@include prefix(animation-name, fadeInLeftMega);
+			// @include prefix(animation-name, fadeInLeftMega);
+			@include prefix(animation-name, fadeIn);
 			@include prefix(animation-delay, 400ms);
 			@include prefix(animation-duration, 400ms);
 		}
 
 		img.fadeInLeftMega {
-			@include prefix(animation-name, fadeInLeftMega);
+			// @include prefix(animation-name, fadeInLeftMega);
+			@include prefix(animation-name, fadeIn);
 		}	
 		
 		img.fadeInRightMega {
-			@include prefix(animation-name, fadeInRightMega);
+			// @include prefix(animation-name, fadeInRightMega);
+			@include prefix(animation-name, fadeIn);
 		}	
 
 	}

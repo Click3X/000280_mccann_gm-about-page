@@ -53,8 +53,10 @@ jQuery(document).ready(function($) {
 
             if (windowPos >= (divPos - 10) && windowPos < ((divPos - 10) + divHeight)) {
                 $("a[href='" + theID + "']").addClass("c3xgm-about-nav-bullet-active");
+                $(theID).addClass("c3xgm-about-page-in-view");
             } else {
                 $("a[href='" + theID + "']").removeClass("c3xgm-about-nav-bullet-active");
+                $(theID).removeClass("c3xgm-about-page-in-view");
             }
 
         }

@@ -8249,11 +8249,11 @@ body {
   -o-animation-fill-mode: both;
   -ms-animation-fill-mode: both;
   animation-fill-mode: both;
-  -webkit-animation-name: fadeInLeftMega;
-  -moz-animation-name: fadeInLeftMega;
-  -o-animation-name: fadeInLeftMega;
-  -ms-animation-name: fadeInLeftMega;
-  animation-name: fadeInLeftMega;
+  -webkit-animation-name: fadeIn;
+  -moz-animation-name: fadeIn;
+  -o-animation-name: fadeIn;
+  -ms-animation-name: fadeIn;
+  animation-name: fadeIn;
   -webkit-animation-delay: 400ms;
   -moz-animation-delay: 400ms;
   -o-animation-delay: 400ms;
@@ -8265,21 +8265,21 @@ body {
   -ms-animation-duration: 400ms;
   animation-duration: 400ms;
 }
-/* line 50, ../sass/components/_animate-me-now.scss */
+/* line 51, ../sass/components/_animate-me-now.scss */
 .animate-me-now .c3xgm-about-block-image img.fadeInLeftMega {
-  -webkit-animation-name: fadeInLeftMega;
-  -moz-animation-name: fadeInLeftMega;
-  -o-animation-name: fadeInLeftMega;
-  -ms-animation-name: fadeInLeftMega;
-  animation-name: fadeInLeftMega;
+  -webkit-animation-name: fadeIn;
+  -moz-animation-name: fadeIn;
+  -o-animation-name: fadeIn;
+  -ms-animation-name: fadeIn;
+  animation-name: fadeIn;
 }
-/* line 54, ../sass/components/_animate-me-now.scss */
+/* line 56, ../sass/components/_animate-me-now.scss */
 .animate-me-now .c3xgm-about-block-image img.fadeInRightMega {
-  -webkit-animation-name: fadeInRightMega;
-  -moz-animation-name: fadeInRightMega;
-  -o-animation-name: fadeInRightMega;
-  -ms-animation-name: fadeInRightMega;
-  animation-name: fadeInRightMega;
+  -webkit-animation-name: fadeIn;
+  -moz-animation-name: fadeIn;
+  -o-animation-name: fadeIn;
+  -ms-animation-name: fadeIn;
+  animation-name: fadeIn;
 }
 
 /* line 5, ../sass/modules/_module-click-animations.scss */
