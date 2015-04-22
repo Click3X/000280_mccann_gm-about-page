@@ -3,6 +3,8 @@ jQuery(document).ready(function($) {
 
 	var carLinks = $('.c3xgm-about-module-car-logo'),
 		carSlides = $('#c3xgm-about-module-car .c3xgm-about-slide'),
+		carContainer = $('.c3xgm-about-module-65').get(0),
+		foundationContainer = $('.c3xgm-about-module-foundation .c3xgm-about-module-20').get(0),
 		foundationLinks = $('.c3xgm-about-module-foundation-logo'),
 		foundationSlides = $('#c3xgm-about-module-foundation .c3xgm-about-slide'),
 		techSlides = $('.c3xgm-about-module-technology .c3xgm-about-module'),
@@ -13,18 +15,47 @@ jQuery(document).ready(function($) {
 	// console.dir(foundationLinks);
 	// console.log('Here are your foundationSlides: ' + foundationSlides);
 	// console.dir(foundationSlides);
-	// console.log('Here are your techLinks: ' + techLinks);
-	// console.dir(techLinks);
-	// console.log('Here are your techSlides: ' + techSlides);
-	// console.dir(techSlides);
+	// console.log('Here are your carLinks: ' + carLinks);
+	// console.dir(carLinks);
+	// console.log('Here are your carContainer: ' + carContainer);
+	// console.dir(carContainer);
+
+	// BUILD YELLOW AND GRAY LINES
+	var animLines = $('<div class="c3xgm-about-gray-line c3xgm-about-line-vert slideInDown invisible"></div><div class="c3xgm-about-yellow-line c3xgm-about-line-vert slideInDown invisible"></div>');
+	// APPEND TO CAR CONTAINER
+	$(carContainer).prepend(animLines);
+	// ANIMIATE LINES AFTER 1200 MS
+	setTimeout(function() {
+		$(carContainer).find('.c3xgm-about-gray-line').removeClass('invisible').addClass('animated');
+
+		setTimeout(function() {
+			$(carContainer).find('.c3xgm-about-yellow-line').removeClass('invisible').addClass('animated');
+		}, 600);
+
+	}, 1200);
 
 
 	// CARS ---------------------------------------------------------------------------------------------------------
+	
 	// MOVE ALL SLIDES TO RIGHT 100%;
+	carLinks.addClass('active');
 	carSlides.addClass('hide-module').addClass('hide-module-slide-out');
+	
 	// MAKE CHEVY DEFALUT 
-	$('#c3xgm-about-car-chevrolet').removeClass('hide-module').removeClass('hide-module-slide-out').addClass('show-module-slide-in');
-		
+	// 3200 MS WAIT FOR LOGOS TO LOAD
+	setTimeout(function() {
+		// REMOVE CLASS ON CHEVY SLIDE
+		$('#c3xgm-about-car-chevrolet').removeClass('hide-module').removeClass('hide-module-slide-out').addClass('show-module-slide-in');
+		// REMOVE ACTIVE CLASS ON CARS
+		setTimeout(function() {
+			carLinks.removeClass('active');
+			$('a[href="#c3xgm-about-car-chevrolet"]').addClass('active');
+			setTimeout(function() {
+				$('a[href="#c3xgm-about-car-chevrolet"]').addClass('active');
+			}, 0);
+		}, 0);
+	}, 0);
+
 	// CARS LINKS
 	carLinks.on('click touchstart', function(e) {
 		e.preventDefault();
@@ -53,10 +84,38 @@ jQuery(document).ready(function($) {
 
 
 	// FOUNDATION ---------------------------------------------------------------------------------------------------------
+	$(foundationContainer).append(animLines);
+	// ANIMIATE LINES AFTER 1200 MS
+	setTimeout(function() {
+		$(foundationContainer).find('.c3xgm-about-gray-line').removeClass('invisible').addClass('animated');
+
+		setTimeout(function() {
+			$(foundationContainer).find('.c3xgm-about-yellow-line').removeClass('invisible').addClass('animated');
+		}, 600);
+
+	}, 1200);
 	// MOVE ALL SLIDES TO RIGHT 100%;
 	foundationSlides.addClass('hide-module');
 	// MAKE GM FOUNDATION DEFALUT 
-	$('#c3xgm-about-foundation-gm-foundation').removeClass('hide-module').addClass('show-module-slide-in');
+	// $('#c3xgm-about-foundation-gm-foundation').removeClass('hide-module').addClass('show-module-slide-in');
+	// $('#c3xgm-about-foundation-gm-foundation').removeClass('hide-module').removeClass('hide-module-slide-out').addClass('show-module-slide-in');
+
+	// 3200 MS WAIT FOR LOGOS TO LOAD
+	setTimeout(function() {
+		// REMOVE CLASS ON CHEVY SLIDE
+		$('#c3xgm-about-foundation-gm-foundation').removeClass('hide-module').removeClass('hide-module-slide-out').addClass('show-module-slide-in');
+
+		// REMOVE ACTIVE CLASS ON CARS
+		// setTimeout(function() {
+		// 	foundationLinks.removeClass('active');
+		// 	$('a[href="#c3xgm-about-foundation-gm-foundation"]').addClass('active');
+		// 	setTimeout(function() {
+		// 		$('a[href="#c3xgm-about-foundation-gm-foundation"]').addClass('active');
+		// 	}, 400);
+		// }, 1000);
+		
+	}, 1200);
+
 		
 	// FOUNDATION
 	foundationLinks.on('click touchstart', function(e) {
@@ -75,23 +134,23 @@ jQuery(document).ready(function($) {
 		curSlide.removeClass('show-module-slide-in').addClass('hide-module-slide-out');
 		setTimeout(function() {
 				$(curSlide).addClass('hide-module');
-			}, 300);
+			}, 700);
 		// MODULE SLIDE-IN
 		setTimeout(function() {
 			$(target).removeClass('hide-module').removeClass('hide-module-slide-out').addClass('show-module-slide-in');
-		}, 300);
+		}, 700);
 	});
 
 
 
 
-	// FOUNDATION ---------------------------------------------------------------------------------------------------------
+	// TECH ---------------------------------------------------------------------------------------------------------
 	// MOVE ALL SLIDES TO RIGHT 100%;
 	techSlides.addClass('hide-module');
-	// MAKE GM FOUNDATION DEFALUT 
+	// MAKE GM TECH DEFALUT 
 	$('#c3xgm-about-technology-4g-lte').removeClass('hide-module').addClass('show-module-slide-in');
 		
-	// FOUNDATION
+	// TECH
 	techLinks.on('click touchstart', function(e) {
 		e.preventDefault();
 

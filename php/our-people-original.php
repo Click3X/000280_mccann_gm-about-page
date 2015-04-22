@@ -4,6 +4,8 @@
 // echo '<div id="our-peop-temp-mobile" class="temp our-peop-temp-mobile hidden"></div>';
 
 // ITERATE THROUGH PAGEES ARRAY
+$blocks = $pages[2]['blocks'];
+
 foreach ($pages as $key => $page) {
     if($page['title'] == "Our People") {
         if( isset($page['id']) ) { $href = cleanString($page['id']); } else { $href = ""; }
@@ -21,7 +23,7 @@ foreach ($pages as $key => $page) {
             if( isset($page['blocks']) ) {
                 foreach ($page['blocks'] as $key => $block) {
                     $block_title = $block['title'];
-                    if($block_title == "continents" || $block_title == "timezones" ) { echo '<div class="c3xgm-about-clearfix c3xgm-about-module-50 c3xgm-about-employee-container">';}
+                    if($block_title == "continents" || $block_title == "timezones" ) { echo '<div class="c3xgm-about-clearfix c3xgm-about-module-50">';}
                     printBlock($block);
                     if($block_title == "global-headquarters" || $block_title == "languages" ) { echo '</div>';}
                 }

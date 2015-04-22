@@ -29,7 +29,8 @@
 			@include prefix(animation-fill-mode, both);
 			@include prefix(animation-name, fadeInRightMega);
 			@include prefix(animation-delay, 200ms);
-			@include prefix(animation-duration, 400ms);
+			// @include prefix(animation-duration, 400ms);
+			@include prefix(animation-duration, 800ms);
 		 }
 
 		hr { 

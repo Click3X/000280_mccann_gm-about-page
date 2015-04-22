@@ -2,6 +2,14 @@
 .c3xgm-about-module-foundation {
 	.c3xgm-about-module-20,
 	.c3xgm-about-module-80 { margin-top:0; }
+
+	.c3xgm-about-module-20 { overflow: hidden; }
+	
+	.c3xgm-about-gray-line,
+	.c3xgm-about-yellow-line {
+		top:0; right:0;
+	}
+
 	// COMMON
 	.c3xgm-about-module {
 		width: 85%;
@@ -46,12 +54,12 @@
 		width: 85%;
   		margin: 0 auto;
   		padding-bottom: 1rem;
-  		border-bottom:0.15rem solid $gm-yellow;
+  		// border-bottom:0.15rem solid $gm-yellow;
 
   		@media(min-width:$tablet-height) { 
   			width: 100%;
   			border-bottom:0;
-  			border-right:0.2rem solid $gm-yellow;
+  			// border-right:0.2rem solid $gm-yellow;
   		}
 
 		li { 

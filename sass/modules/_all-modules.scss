@@ -6,6 +6,12 @@
 
 	@include prefix(transition, opacity 90ms);
 
+	&:hover,
+	&:focus {
+		opacity: 0.75;
+		@include prefix(transition, opacity 120ms);
+	}
+
 	&.active {
 		opacity: 1;
 		@include prefix(transition, opacity 120ms);

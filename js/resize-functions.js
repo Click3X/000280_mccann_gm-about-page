@@ -1,5 +1,5 @@
 jQuery(document).ready(function($) { 
-    console.log('document is ready!');
+    // console.log('document is ready!');
 	// RESIZE TECH MODULES
 	// R E S I Z E 
 	var resizeTimeout,
@@ -11,8 +11,6 @@ jQuery(document).ready(function($) {
 		carModContainer = $('div.c3xgm-about-clearfix.c3xgm-about-module-car > div.c3xgm-about-clearfix.c3xgm-about-module-65 > div').get(0),
 		techContainers = $('.c3xgm-about-module-technology .c3xgm-about-module'),
 		techModContainer = $('.c3xgm-about-module-technology .c3xgm-about-module-container').get(0),
-        // techContainers = $('#c3xgm-about-module-technology .c3xgm-about-slide'),
-        // techModContainer = $('#c3xgm-about-module-technology'),
 		foundationContainers = $('.c3xgm-about-module-foundation .c3xgm-about-module'),
 		foundationModContainer = $('.c3xgm-about-clearfix.c3xgm-about-module-foundation > div.c3xgm-about-clearfix.c3xgm-about-module-80 > div').get(0);
 

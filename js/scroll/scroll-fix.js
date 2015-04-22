@@ -198,16 +198,17 @@ jQuery(document).ready(function($) {
 
 		// console.log('This is empNum: ' + empNum);
 		// console.dir(empNum);
-		
-
 
 
 		var empImages = $('#c3xgm-about-employees-img');
-		console.log('This is empImages: ' + empImages);
-		console.dir(empImages);
+		// console.log('This is empImages: ' + empImages);
+		// console.dir(empImages);
 		
 		var children = empImages.children('.c3xgm-about-boy, .c3xgm-about-girl');
-		children.removeClass('invisible');
+		// children.removeClass('invisible');
+		// console.log('This is children: ' + children);
+		// console.dir(children);
+
 		// $.each(children, function() {
 
 		// });
@@ -263,12 +264,12 @@ jQuery(document).ready(function($) {
 		});
 
 		// SCROLL - CLASS ADDED ANIMATIONS
-		$.each(animBlocks, function(i, val) {
-			if( this.isInView() ){
-				this.$element.removeClass('invisible');
-				this.addInViewClass();		
-			}
-		});
+		// $.each(animBlocks, function(i, val) {
+		// 	if( this.isInView() ){
+		// 		this.$element.removeClass('invisible');
+		// 		this.addInViewClass();		
+		// 	}
+		// });
 
 		// if(Employees.isInView) {
 		// 	// Employees.animateNumber();
@@ -280,8 +281,8 @@ jQuery(document).ready(function($) {
 	// E N D   W I N D O W   E V E N T S 
 
 	// HIDE  ELEMENTS TO BE UNCOVERED ON SCROLL
-	$.each(animBlocks, function(i, val) {
-		this.$element.addClass('invisible');
-	});
+	// $.each(animBlocks, function(i, val) {
+	// 	this.$element.addClass('invisible');
+	// });
 
 });

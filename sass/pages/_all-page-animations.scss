@@ -1,0 +1,205 @@
+// ANIMATE TEXT
+// #c3xgm-about-page-container > .c3xgm-about-page-our-company.c3xgm-about-page-in-view,
+// .c3xgm-about-page.c3xgm-about-page-in-view
+
+#c3xgm-about-our-company.c3xgm-about-page.c3xgm-about-page-in-view,
+#c3xgm-about-our-people.c3xgm-about-page.c3xgm-about-page-in-view,
+#c3xgm-about-our-brands.c3xgm-about-page.c3xgm-about-page-in-view {
+
+	.c3xgm-about-section-header { 
+
+		.c3xgm-about-section-icon { 
+			@include prefix(animation-fill-mode, both);
+			@include prefix(animation-name, fadeIn);
+			@include prefix(animation-delay, 800ms);
+			@include prefix(animation-duration, 800ms);
+		}
+
+		h1.c3xgm-about-h {
+			@include prefix(animation-fill-mode, both);
+			@include prefix(animation-name, fadeInRightMega);
+			@include prefix(animation-delay, 400ms);
+			@include prefix(animation-duration, 800ms);
+		 }
+
+		hr { 
+			@include prefix(animation-fill-mode, both);
+			@include prefix(animation-name, growHr);
+			@include prefix(animation-delay, 800ms);
+			@include prefix(animation-duration, 800ms);
+		}
+
+	}
+
+
+	.c3xgm-about-header-p { 
+		@include prefix(animation-fill-mode, both);
+		@include prefix(animation-name, fadeIn);
+		@include prefix(animation-delay, 1400ms);
+		@include prefix(animation-duration, 800ms);
+	}
+
+	.c3xgm-about-block-earn {
+
+		.c3xgm-about-yellow-bar-left-wrapper { 
+			overflow: hidden;
+			position: relative;
+			border-left:none;
+
+			.c3xgm-about-block-tagline { 
+
+				&:before {
+					content: ""; display: block;
+					position: absolute;
+					top:0; left:0;
+					width:0.15rem; height: 100%;
+					background-color:$gm-yellow;
+					@include prefix(transform-origin, top right);
+					@include prefix(animation-fill-mode, both);
+					@include prefix(animation-name, growBorder);
+					@include prefix(animation-delay,1800ms);
+		  			@include prefix(animation-duration,600ms);
+		  			@media(min-width: $tablet-height) { width:0.2rem;}
+				}
+			
+				> span:first-child { 
+					@include prefix(animation-fill-mode, both);
+					@include prefix(animation-name, fadeInLeftMega);
+					@include prefix(animation-delay, 2200ms);
+					@include prefix(animation-duration, 600ms);
+				}
+
+				> span:nth-child(2) {
+					@include prefix(animation-fill-mode, both);
+					@include prefix(animation-name, fadeInLeftMega);
+					@include prefix(animation-delay, 2800ms);
+					@include prefix(animation-duration, 500ms);
+				}
+			}
+		}
+
+		.c3xgm-about-p { 
+			@include prefix(animation-fill-mode, both);
+			@include prefix(animation-name, fadeIn);
+			@include prefix(animation-delay, 3300ms);
+			@include prefix(animation-duration, 800ms);
+		}
+	}
+
+
+	// CAR LOGOS
+	.c3xgm-about-module-car {
+		.c3xgm-about-module-car-logo-container li {
+			@include prefix(animation-fill-mode, both);
+			@include prefix(animation-name, fadeIn);
+			@include prefix(animation-delay, 1800ms);
+			@include prefix(animation-duration, 100ms);
+
+			&:nth-child(2) { @include prefix(animation-delay, 1900ms); }
+			&:nth-child(3) { @include prefix(animation-delay, 2000ms); }
+			&:nth-child(4) { @include prefix(animation-delay, 2100ms); }
+			&:nth-child(5) { @include prefix(animation-delay, 2200ms); }
+			&:nth-child(6) { @include prefix(animation-delay, 2300ms); }
+			&:nth-child(7) { @include prefix(animation-delay, 2400ms); }
+			&:nth-child(8) { @include prefix(animation-delay, 2500ms); }
+			&:nth-child(9) { @include prefix(animation-delay, 2600ms); }
+
+			@media(min-width: $tablet-height) {
+				&:nth-child(3) { @include prefix(animation-delay, 1900ms); }
+				&:nth-child(5) { @include prefix(animation-delay, 2000ms); }
+				&:nth-child(7) { @include prefix(animation-delay, 2100ms); }
+				&:nth-child(9) { @include prefix(animation-delay, 2200ms); }
+				&:nth-child(2) { @include prefix(animation-delay, 2300ms); }
+				&:nth-child(4) { @include prefix(animation-delay, 2400ms); }
+				&:nth-child(6) { @include prefix(animation-delay, 2500ms); }
+				&:nth-child(8) { @include prefix(animation-delay, 2600ms); }
+			}
+		}
+	}
+}
+
+
+// OUR COMMITMENT
+#c3xgm-about-our-commitment.c3xgm-about-page.c3xgm-about-page-in-view {
+	.c3xgm-about-section-header { 
+
+		.c3xgm-about-section-icon { 
+			@include prefix(animation-fill-mode, both);
+			@include prefix(animation-name, fadeIn);
+			@include prefix(animation-delay, 800ms);
+			@include prefix(animation-duration, 800ms);
+		}
+
+		h1.c3xgm-about-h {
+			@include prefix(animation-fill-mode, both);
+			@include prefix(animation-name, fadeInRightMega);
+			@include prefix(animation-delay, 400ms);
+			@include prefix(animation-duration, 800ms);
+		 }
+
+		hr { 
+			@include prefix(animation-fill-mode, both);
+			@include prefix(animation-name, growHr);
+			@include prefix(animation-delay, 800ms);
+			@include prefix(animation-duration, 800ms);
+		}
+
+	}
+
+}
+
+// OTHER SUB SECTIONS
+#c3xgm-about-safety-quality.c3xgm-about-page-in-view,
+#c3xgm-about-our-global-community.c3xgm-about-page.c3xgm-about-page-in-view,
+#c3xgm-about-environment.c3xgm-about-page.c3xgm-about-page-in-view,
+#c3xgm-about-technology.c3xgm-about-page.c3xgm-about-page-in-view {
+		// SUB-SECTIONS
+	.c3xgm-about-subsection {
+		.c3xgm-about-h {
+			@include prefix(animation-fill-mode, both);
+			@include prefix(animation-name, fadeIn);
+			@include prefix(animation-delay, 200ms);
+			@include prefix(animation-duration, 800ms);
+		 }
+	}
+}
+
+
+
+// FOUNDATION LOGOS
+#c3xgm-about-our-global-community.c3xgm-about-page.c3xgm-about-page-in-view {
+	
+	.c3xgm-about-yellow-bar-left-wrapper.c3xgm-about-p {
+		@include prefix(animation-fill-mode, both);
+		@include prefix(animation-name, fadeIn);
+		@include prefix(animation-delay, 800ms);
+		@include prefix(animation-duration, 800ms);
+	}
+
+	.c3xgm-about-module-foundation {
+		.c3xgm-about-module-foundation-logo-container li {
+			@include prefix(animation-fill-mode, both);
+			@include prefix(animation-name, fadeIn);
+			// @include prefix(animation-delay, 1600ms);
+			@include prefix(animation-duration, 200ms);
+
+			&:first-child { @include prefix(animation-delay, 1400ms); }
+			&:nth-child(2) { @include prefix(animation-delay, 1700ms); }
+			&:nth-child(3) { @include prefix(animation-delay, 2000ms); }
+			&:nth-child(4) { @include prefix(animation-delay, 2300ms); }
+			&:nth-child(5) { @include prefix(animation-delay, 2600ms); }
+		}
+
+
+		.c3xgm-about-gray-line.c3xgm-about-line-vert.slideInDown {
+			@include prefix(animation-fill-mode, both);
+			@include prefix(animation-delay, 1400ms);
+			@include prefix(animation-duration, 500ms);			
+		}
+		.c3xgm-about-yellow-line.c3xgm-about-line-vert.slideInDown {
+			@include prefix(animation-fill-mode, both);
+			@include prefix(animation-delay, 2000ms);
+			@include prefix(animation-duration, 500ms);			
+		}
+	}
+}

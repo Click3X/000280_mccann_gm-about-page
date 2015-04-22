@@ -195,3 +195,37 @@ svg { max-height: 100%; }
 
 
 .c3xgm-about-open-sans { font-family: "open-sans", 'Arial', Arial, sans-serif !important; }
+
+
+// YELLOW AND GRAY LINES
+.c3xgm-about-yellow-line, 
+.c3xgm-about-gray-line {
+	position: absolute;
+	display: block;
+	z-index: 1100;
+}
+
+.c3xgm-about-yellow-line {
+	background-color:$gm-yellow;
+}
+
+.c3xgm-about-gray-line {
+	background-color:$gm-light-gray;
+}
+
+.c3xgm-about-line-vert {
+	height: 100%;
+	width: .15rem;
+	@media(min-width: $tablet-height) {
+		width: .2rem;
+	}
+}
+
+.c3xgm-about-line-horz {
+	width: 100%;
+
+	height: .15rem;
+	@media(min-width: $tablet-height) {
+		height: .2rem;
+	}
+}
