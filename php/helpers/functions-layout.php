@@ -82,8 +82,13 @@ function printBlock($block) {
 	if($block['class'] == "earn") { $block_class="c3xgm-about-block-earn "; }
 		else { $block_class="c3xgm-about-block "; }
 
-	// echo '<div class="'.$block_class.'c3xgm-about-clearfix'.$class.' bounceInLeft">';
-		echo '<div class="'.$block_class.'c3xgm-about-clearfix'.$class.'">';
+
+		if($block['title'] == "employees") {
+			echo '<div id="c3xgm-about-employees" class="'.$block_class.'c3xgm-about-clearfix'.$class.'">';
+		 } else {
+				// echo '<div class="'.$block_class.'c3xgm-about-clearfix'.$class.' bounceInLeft">';
+				echo '<div class="'.$block_class.'c3xgm-about-clearfix'.$class.'">';
+			}
 
 		// OUR PEOPLE BLOCKS WE DONT WANT TO SPIT IMAGE OUT FIRST
 		$people_blocks = array("employees", "continents", "timezones", "global-headquarters", "languages");
@@ -100,7 +105,7 @@ function printBlock($block) {
 					// IF CHINA, SET DESKTOP CLASS
 					if($block['title'] == "China") { $desk_class="c3xgm-about-desktop";} else {$desk_class="";}
 					
-					echo '<div class="c3xgm-about-block-image"><div><img src="'.$block['image@2x'].'" class="'.$img_anim.'" alt="'.$block['title'].'" class="'.$desk_class.'"></div>';
+					echo '<div class="c3xgm-about-block-image"><div><img src="'.$block['image@2x'].'" class="'.$img_anim.' '.$desk_class.'" alt="'.$block['title'].'"></div>';
 					// IF BLOCK IS TEST FACILITY - ADD IN NEW DIV FOR ANIMATION
 					if($block['title'] == "Test Facility") {
 						echo '<img src="img/pages/commitment/circle-lines.svg" class="c3xgm-about-circle-lines" alt="Rollover Test Facility">';
@@ -157,10 +162,25 @@ function printBlock($block) {
 		// SPIT OUT IMAGE FOR OUR PEOPLE
 		if( isset($block['title']) && in_array( $block['title'], $people_blocks ) ) {
 			// // IMAGE
-			if( isset($block['image@2x']) ) { 
-				if( isset($block['image']) && ($block['image'] != "") ) { 
-					$size = getimagesize($block['image']); 
-					echo '<div class="c3xgm-about-block-image"><img src="'.$block['image@2x'].'" alt="'.$block['title'].'"></div>';
+			// SPECIAL DIV FOR EMPLOYEES
+			if($block['title'] == "employees") { 
+				echo '<div id="c3xgm-about-employees-img" class="c3xgm-about-block-image c3xgm-about-clearfix c3xgm-about-employees-img">
+						<div class="c3xgm-about-girl"></div>
+						<div class="c3xgm-about-boy"></div>
+						<div class="c3xgm-about-girl"></div>
+						<div class="c3xgm-about-boy"></div>
+						<div class="c3xgm-about-girl"></div>
+						<div class="c3xgm-about-boy"></div>
+						<div class="c3xgm-about-girl"></div>
+						<div class="c3xgm-about-boy"></div>
+						<div class="c3xgm-about-girl"></div>
+					</div>';
+			} else {
+				if( isset($block['image@2x']) ) { 
+					if( isset($block['image']) && ($block['image'] != "") ) { 
+						$size = getimagesize($block['image']); 
+						echo '<div class="c3xgm-about-block-image"><img src="'.$block['image@2x'].'" alt="'.$block['title'].'"></div>';
+					}
 				}
 			}
 		}
@@ -244,6 +264,8 @@ function printModule($module) {
 	 			// PRINT TITLE IF NOT TECH MODULE
 	 			if( (isset( $block['title']) ) && ($module_name != 'technology') ){ echo '<h3 class="c3xgm-about-h'.$color.'">'.$block['title'].'</h3>'; }
 	 			// COPY
+	 			if($module_name == 'technology') { echo '<div class="c3xgm-about-blockquote-container c3xgm-about-clearfix">';}
+	 			
 	 			if(isset( $block['copy']) ) { 
 	 				if( is_array($block['copy']) ) {
 						$class="";
@@ -276,6 +298,8 @@ function printModule($module) {
 	 					echo '<img src="'.$block['icon@2x'].'" alt="'.$block['title'].'" rel="'.$block['icon@2x'].'">';
 	 				echo '</div>';
 	 			}
+
+	 			if($module_name == 'technology') { echo '</div>';}
 
 	 			// IMAGE
 	 			if($module_name == 'car') {
@@ -408,7 +432,7 @@ function printTechModule($blocks) {
 	echo '<div class="c3xgm-about-clearfix c3xgm-about-module-technology">';
 
 		// MODULE CONTAINER
-		echo '<div id="c3xgm-about-slider" class="c3xgm-about-clearfix c3xgm-about-module-container c3xgm-about-slider">';
+		echo '<div id="c3xgm-about-module-technology" class="c3xgm-about-clearfix c3xgm-about-module-container c3xgm-about-slider">';
 
 		 	foreach ($blocks as $key => $block) {
 		 		$href = cleanString($block['title']);

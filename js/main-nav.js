@@ -64,10 +64,17 @@ jQuery(document).ready(function($) {
     function checkNav() {
         updateWindowSpecs();
 
+        // console.dir(aArray);
+
         for (var i=0; i < aArray.length; i++) {
             var theID = aArray[i],
                 divPos = $(theID).offset().top,
                 divHeight = $(theID).height(); // get the height of the div in question
+
+                // console.log('This is theID: ' + theID);
+                // console.log('This is divPos: ' + divPos);
+                // console.log('This is divHeight: ' + divHeight);
+
 
             // UPDATE NAV BASED ON WINDOW POSITION AND PAGE HEIGHT
             if (windowPos >= (divPos - 10) && windowPos < ((divPos - 10) + divHeight)) {

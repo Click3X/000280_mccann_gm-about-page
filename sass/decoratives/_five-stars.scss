@@ -2,14 +2,14 @@
 .c3xgm-about-page-our-commitment {
 	
 	.c3xgm-about-five-stars {
-		// margin-bottom: 7.5%; 
 		margin-bottom: 1em; margin-top: 7.5%;
 		height: 0; padding-bottom: 30.75%;
   		position: relative;
+  		overflow: hidden;
   		
 		@media(min-width: $tablet-height) {
-			margin-bottom:6em; margin-top: 11em;
-			padding-bottom: 164px;
+			margin-bottom:2em;  margin-top: 11em;
+			padding-bottom: 194px;
 		}
 		
 		
@@ -17,22 +17,22 @@
 			width: 100%;
 			background-image:url('../img/decorative/landscape/checker.png');
 			background-repeat: repeat-x; background-size: contain;
-			height: 0; padding-bottom: 2.5%;
+			height: 0;  padding-bottom: 2.5%;
 			position: absolute;
 			z-index: 5;
 
-			@media(min-width: $tablet-height) { padding-bottom: 20px; }
+			@media(min-width: $tablet-height) { padding-bottom: 30px; }
 		}
 		.c3xgm-about-stars + .c3xgm-about-checker { bottom:0; }
 
 		.c3xgm-about-grey-top {
 			position: absolute; 
-			// right:10%;
 			left:10%;
-			height: 0; padding-bottom: 30.7%;
+			height: 0; 
+			padding-bottom: 30.7%;
 			width: 43%; max-width: 230px;
 			z-index: 1;
-			@media(min-width: $tablet-height) { padding-bottom: 164px; }
+			@media(min-width: $tablet-height) {  padding-bottom: 194px; }
 			img {
 				width: 100%;
 				@include center;
@@ -62,5 +62,4 @@ div#c3xgm-about-grey-van:before {
   height: 0;
   padding-bottom: 71.1%;
   background:  #f3f3f4;
-
 }

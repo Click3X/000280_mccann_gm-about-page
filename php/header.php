@@ -14,6 +14,8 @@
         <script src="//use.typekit.net/aod8wgv.js"></script>
         <script>try{Typekit.load();}catch(e){}</script>
 
+        <link rel="favicon" href="favicon.ico">
+
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 

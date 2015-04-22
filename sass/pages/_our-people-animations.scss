@@ -54,12 +54,21 @@
 		@include prefix(animation-name, fadeIn);
 		@include prefix(animation-delay, 1200ms);
 		@include prefix(animation-duration, 400ms);
+
+		.c3xgm-about-girl,
+		.c3xgm-about-boy {
+			@include prefix(animation-fill-mode, both);
+			@include prefix(animation-name, fadeInUp);
+			@include prefix(animation-delay, 1200ms);
+			@include prefix(animation-duration, 400ms);	
+		}
 	}
+
 
 
 	.c3xgm-about-continents {
 		@include prefix(animation-fill-mode, both);
-		@include prefix(animation-name, fadeIn);
+		@include prefix(animation-name, fadeIn);	
 		@include prefix(animation-delay, 1600ms);
 		@include prefix(animation-duration, 400ms);
 	}

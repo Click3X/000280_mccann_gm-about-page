@@ -14,6 +14,29 @@
         <script src="js/main-nav.js"></script>
         <script src="js/modules/car-slider.js"></script>
         <script src="js/scroll/scroll-fix.js"></script>
+
+        <script src="js/count-num.js"></script>
+
+        <script>
+            // jQuery(function ($) {
+            // // custom formatting example
+            // $('#c3xgm-about-emp-num').data('countToOptions', {
+            //     formatter: function (value, options) {
+            //         return value.toFixed(options.decimals).replace(/\B(?=(?:\d{3})+(?!\d))/g, ',');
+            //     }
+            // });
+
+            // // start all the timers
+            // $('.timer').each(count);  
+
+            // function count(options) {
+            //     var $this = $(this);
+            //     options = $.extend({}, options || {}, $this.data('countToOptions') || {});
+            //     $this.countTo(options);
+            //     }
+            // });
+        </script>
+        
         <!--
         <script src="js/modules/all-modules.js"></script>
         -->

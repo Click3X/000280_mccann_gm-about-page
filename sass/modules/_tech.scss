@@ -1,12 +1,30 @@
 // TECHNOLOGY MODULE
 .c3xgm-about-module-technology {
 
-	.c3xgm-about-module { text-align: center; }
+	.c3xgm-about-module {
+		text-align: center; 
+		width: 100%;
+		
+		&:after {
+			content: "";
+			display: block;
+			width:100%;
+			height: 0;
+  			padding-bottom: 32%;
+		}
+
+
+		.c3xgm-about-blockquote-container {
+			width: 94%; max-width: 46em;
+			margin: 1.5em auto 0;
+		}
+	}
 	// COMMON
 	// IMAGE
 	.c3xgm-about-block-icon {
 		position: relative;
-		padding-bottom:20%;
+		// padding-bottom:20%;
+		padding-bottom:18%;
 		height: 0;
 		img { 
 			width:60%;
@@ -16,8 +34,10 @@
 	// IMAGE
 	.c3xgm-about-block-image {
 		  margin: 1.5em auto;
-		  @media(min-width: $tablet-height) { float: left; margin: 2.25em auto; }
-		img { width:80%;}
+		  position: absolute;
+		  bottom:28px;
+		  @media(min-width: $tablet-height) {  margin: 0 auto;}
+		img { width:70%;}
 	}
 	// BLOCK-QUOTE
 	.c3xgm-about-blockquote {
@@ -27,7 +47,10 @@
 		text-align: left;
 		@media(min-width: $tablet-height) { display: block; margin: 0; }
 		
-		span { display: block; }
+		span { 
+			display: block; 
+			float: left; clear: left;
+		}
 
 		@media(min-width: $tablet-height) { float: right; }
 	}
@@ -35,6 +58,7 @@
 	// INDIVIDUAL
 	// 4G LTE
 	.c3xgm-about-4g-lte {
+		.c3xgm-about-blockquote-container { max-width:39em; }
 		.c3xgm-about-block-icon {
 			@media(min-width: $tablet-height) { 
 				width:35%; float: right; 
@@ -73,6 +97,7 @@
 
 	// CONCEPT CAR
 	.c3xgm-about-concept-car {
+		.c3xgm-about-blockquote-container { max-width: 43em; }
 		// IMAGES
 		.c3xgm-about-blockquote { 
 			width: auto;
@@ -140,6 +165,7 @@
 		}
 	}
 
+
 	// NAV FOR TECHNOLOGY MODULE
 	.c3xgm-about-module-nav {
 		text-align: center;
@@ -152,5 +178,8 @@
 		}
 		.c3xgm-about-module-nav-bullet-active { background-color: $gm-yellow; }
 	}
+
+
+
 
 }

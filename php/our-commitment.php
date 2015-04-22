@@ -15,10 +15,10 @@ foreach ($pages as $key => $page) {
     }
     // SAFETY
     include('sections/safety.php');
-    // ENVIRONMENT
-    include('sections/environment.php');
     // TECH
     include('modules/tech.php');
+    // ENVIRONMENT
+    include('sections/environment.php');
     // FOUNDATION
     include('modules/foundation.php');
 

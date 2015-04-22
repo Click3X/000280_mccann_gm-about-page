@@ -81,22 +81,22 @@ jQuery(document).ready(function($) {
 			return ( (this.elementTop <= scrollTop) );
 		}
 
-		// this.setText = function(text) {
-		// 	this.$element.text(text);
-		// }
+		this.setText = function(text) {
+			this.$element.text(text);
+		}
 
-		// // NUMBER
-		// this.animateNumber = function(num) {
-		// 	move = this.getScrollAmt();
-		// 	num = Number(this.elementText);
-		// 	move = move;
-		// 	if( ((move + 215500) <= 216000) && (this.animated == false) ){
-		// 		this.setText(move + 215500);
-		// 	} else {
-		// 		this.setText(216000);
-		// 		this.animated = true;
-		// 	}
-		// }
+		// NUMBER
+		this.animateNumber = function(num) {
+			move = this.getScrollAmt();
+			num = Number(this.elementText);
+			move = move;
+			if( ((move + 215500) <= 216000) && (this.animated == false) ){
+				this.setText(move + 215500);
+			} else {
+				this.setText(216000);
+				this.animated = true;
+			}
+		}
 
 		this.addInViewClass = function() {
 			this.$element.addClass('animate-me-now');
@@ -152,12 +152,18 @@ jQuery(document).ready(function($) {
 	var GreyVan,
 		RedCar,
 		$blocks = $('.c3xgm-about-block'),
+		Employees,
+		EmpNum,
 		animBlocks = [];
 
 	// ANIMATABLE OBJECTS
 	GreyVan = new AnimatedElement('#c3xgm-about-grey-van');
 	RedCar = new AnimatedElement('#c3xgm-about-red-car');
+	Employees = new AnimatedElement('#c3xgm-about-employees');
+	// EmpNum = new AnimatedElement('#c3xgm-about-emp-num');
 
+	// console.log('THis is EmpNum: ' + EmpNum);
+	// console.dir(EmpNum);
 
 	$.each($blocks, function(i, val) {
 		animBlocks[i] = new AnimatedElement(this);
@@ -166,72 +172,116 @@ jQuery(document).ready(function($) {
 	// console.log('This is animBlocks: ' + animBlocks);
 	// console.dir(animBlocks);
 
+	// ONE TIME EMPLOYEES ANIMATION FUNCTION
+	var animateEmp = false;
+
+	$('#c3xgm-about-employees-img > div').addClass('invisible');
+
+	function numberWithCommas(x) {
+	    return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+	}
+
+	function setNumber(num) {
+		num = numberWithCommas(parseInt(num + 6.4));
+		return num 
+	}
+
+	function animateEmployees() {
+		animateEmp = true;
+		console.log('Employees Function!!');
+
+		$('#c3xgm-about-employees').addClass('animate-me-now');
+
+		var empNum = $('#c3xgm-about-emp-num');
+		var num = empNum.text();
+
+
+		// console.log('This is empNum: ' + empNum);
+		// console.dir(empNum);
+		
+
+
+
+		var empImages = $('#c3xgm-about-employees-img');
+		console.log('This is empImages: ' + empImages);
+		console.dir(empImages);
+		
+		var children = empImages.children('.c3xgm-about-boy, .c3xgm-about-girl');
+		children.removeClass('invisible');
+		// $.each(children, function() {
+
+		// });
+		
+	}
 
 	// W I N D O W    E V E N T S
-		// R E S I Z E 
-		$(window).resize(function() {
-			if (resizeTimeout) {
-				// clear the timeout, if one is pending
-				clearTimeout(resizeTimeout);
-				resizeTimeout = null;
+	// R E S I Z E 
+	$(window).resize(function() {
+		if (resizeTimeout) {
+			// clear the timeout, if one is pending
+			clearTimeout(resizeTimeout);
+			resizeTimeout = null;
+		}
+		resizeTimeout = setTimeout(resizeHandler, 60/1000);
+	});
+
+	resizeHandler = function(argument) {	
+		updateWindowSpecs();
+	}
+	// E N D    R E S I Z E
+
+
+	// S C R O L L 
+	$(window).scroll(function () {
+		if (scrollTimeout) {
+			// clear the timeout, if one is pending
+			clearTimeout(scrollTimeout);
+			scrollTimeout = null;
+		}
+		scrollTimeout = setTimeout(scrollHandler, 60/1000);
+	});
+
+
+	var scrollElems = [GreyVan, RedCar];
+
+	scrollHandler = function () {
+		// UPDATE WINDOW SCROLL VARIABLE
+		updateWindowSpecs();
+
+		// SCROLL - TIED ANIMATIONS
+		$.each(scrollElems, function(i, val) {
+			if( this.isInView() ){
+
+				if(this.name == 'c3xgm-about-red-car') {
+					this.moveLeft();
+				}
+
+				if(this.name == 'c3xgm-about-grey-van') {
+					this.moveRight();
+				}
 			}
-			resizeTimeout = setTimeout(resizeHandler, 60/1000);
 		});
 
-		resizeHandler = function(argument) {	
-			updateWindowSpecs();
-		}
-		// E N D    R E S I Z E
-
-
-
-		// S C R O L L 
-		$(window).scroll(function () {
-			if (scrollTimeout) {
-				// clear the timeout, if one is pending
-				clearTimeout(scrollTimeout);
-				scrollTimeout = null;
-			}
-			scrollTimeout = setTimeout(scrollHandler, 60/1000);
-		});
-
-
-
-		var scrollElems = [GreyVan, RedCar];
-
-		scrollHandler = function () {
-			// UPDATE WINDOW SCROLL VARIABLE
-			updateWindowSpecs();
-
-			// SCROLL - TIED ANIMATIONS
-			$.each(scrollElems, function(i, val) {
-				if( this.isInView() ){
-
-					if(this.name == 'c3xgm-about-red-car') {
-						this.moveLeft();
-					}
-
-					if(this.name == 'c3xgm-about-grey-van') {
-						this.moveRight();
-					}
-				}
-			});
-
-			// SCROLL - CLASS ADDED ANIMATIONS
-			$.each(animBlocks, function(i, val) {
-				if( this.isInView() ){
-					this.$element.removeClass('invisible');
-					this.addInViewClass();		
-				}
-			});
-
-		}
-		// E N D    S C R O L L
-		// E N D   W I N D O W   E V E N T S 
-
-		// HIDE  ELEMENTS TO BE UNCOVERED ON SCROLL
+		// SCROLL - CLASS ADDED ANIMATIONS
 		$.each(animBlocks, function(i, val) {
-			this.$element.addClass('invisible');
+			if( this.isInView() ){
+				this.$element.removeClass('invisible');
+				this.addInViewClass();		
+			}
 		});
-	
+
+		// if(Employees.isInView) {
+		// 	// Employees.animateNumber();
+		// 	animateEmployees();
+		// }
+
+	}
+	// E N D    S C R O L L
+	// E N D   W I N D O W   E V E N T S 
+
+	// HIDE  ELEMENTS TO BE UNCOVERED ON SCROLL
+	$.each(animBlocks, function(i, val) {
+		this.$element.addClass('invisible');
+	});
+
 });

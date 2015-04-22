@@ -29,7 +29,11 @@
 	}
 
 	.c3xgm-about-module-container {
-  		@media(min-width:$tablet-height) { float: right; width: 90%; }
+  		@media(min-width:$tablet-height) { 
+  			float: right; 
+  			// width: 90%; 
+  			width:100%; 
+  		}
 
 		.c3xgm-about-module {
 			.c3xgm-about-h,

@@ -35,7 +35,7 @@ $pages = array(
 				"image@2x"=>"img/pages/people/people-icons.svg",
 				"class"=>"employees",
 				"copy"=>array(
-					"c3xgm-about-light-blue number"=>"<span id='c3xgm-about-emp-num'>216000</span>",
+					"c3xgm-about-light-blue number"=>"<span id='c3xgm-about-emp-num'>216,000</span>",
 					"c3xgm-about-gray"=>"Employees"
 				)
 			),
@@ -398,6 +398,57 @@ $pages = array(
 					) 
 				)
 			),
+			// TECHNOLOGY
+			array(
+				"title"=>"Technology",
+				"id"=>"technology",
+				"tagline"=>"Historically, GM technology has always been on the forefront. We continue to excel in engine and drivetrain development, and strive to push exciting advancements in alternative energy and purposeful vehicle design.",
+				"module"=>array(
+					"name"=>"technology",
+					"blocks"=>array(
+						array(
+							"title"=>"4G LTE",
+							"class"=>"4g-lte",
+							"icon"=>"img/modules/technology/4g-lte/4g-lte.png",
+							"icon@2x"=>"img/modules/technology/4g-lte/4g-lte.svg",
+							"image"=>"img/modules/technology/4g-lte/4g-lte-car.jpg",
+							"image@2x"=>"img/modules/technology/4g-lte/4g-lte-car@2x.jpg",
+							"copy"=>array(
+								"c3xgm-about-dark-blue c3xgm-about-thin"=>"Offering",
+								"c3xgm-about-light-blue"=>"4G LTE Connectivity",
+								"c3xgm-about-gray"=>"On more vehicles than any other <br>auto manufacturer combined"
+							)
+						),
+						array(
+							"title"=>"Concept Car",
+							"class"=>"concept-car",
+							"icon"=>"img/modules/technology/bolt/bolt.png",
+							"icon@2x"=>"img/modules/technology/bolt/bolt.svg",
+							"image"=>"img/modules/technology/bolt/bolt.jpg",
+							"image@2x"=>"img/modules/technology/bolt/bolt@2x.jpg",
+							"copy"=>array(
+								"c3xgm-about-dark-blue c3xgm-about-thin"=>"Creating the affordable electric",
+								"c3xgm-about-light-blue"=>"Chevrolet Bolt <br>Concept Car",
+								"c3xgm-about-gray c3xgm-about-thin"=>"Capable of traveling over <br><strong>200 miles</strong> on a single charge"
+							)
+						),
+						array(
+							"title"=>"Safety",
+							"class"=>"safety",
+							"icon"=>"img/modules/technology/safety/safety.png",
+							"icon@2x"=>"img/modules/technology/safety/safety.svg",
+							"image"=>"img/modules/technology/4g-lte/4g-lte-car.jpg",
+							"image@2x"=>"img/modules/technology/4g-lte/4g-lte-car@2x.jpg",
+							"copy"=>array(
+								"c3xgm-about-dark-blue c3xgm-about-thin"=>"Enhancing",
+								"c3xgm-about-light-blue"=>"Driver Vision &amp; Safety",
+								"c3xgm-about-gray c3xgm-about-thin"=>"With a <strong>Patented streaming video <br>rearview mirror</strong>",
+								"c3xgm-about-gray c3xgm-about-thin c3xgm-about-small"=>"Debuting on the 2016 <strong>Cadillac CTS</strong>.<br>Available late 2015"
+							)
+						)
+					)
+				)
+			),
 			// ENVIRONMENT
 			array(
 				"title"=>"Environment",
@@ -470,57 +521,6 @@ $pages = array(
 							"c3xgm-about-dark-blue c3xgm-about-thin"=>"We have <strong>123</strong><br>",
 							"c3xgm-about-light-blue"=>"Landfill-free facilities<br>",
 							"c3xgm-about-gray"=>"More than any other automaker"
-						)
-					)
-				)
-			),
-			// TECHNOLOGY
-			array(
-				"title"=>"Technology",
-				"id"=>"technology",
-				"tagline"=>"Historically, GM technology has always been on the forefront. We continue to excel in engine and drivetrain development, and strive to push exciting advancements in alternative energy and purposeful vehicle design.",
-				"module"=>array(
-					"name"=>"technology",
-					"blocks"=>array(
-						array(
-							"title"=>"4G LTE",
-							"class"=>"4g-lte",
-							"icon"=>"img/modules/technology/4g-lte/4g-lte.png",
-							"icon@2x"=>"img/modules/technology/4g-lte/4g-lte.svg",
-							"image"=>"img/modules/technology/4g-lte/4g-lte-car.jpg",
-							"image@2x"=>"img/modules/technology/4g-lte/4g-lte-car@2x.jpg",
-							"copy"=>array(
-								"c3xgm-about-dark-blue c3xgm-about-thin"=>"Offering",
-								"c3xgm-about-light-blue"=>"4G LTE Connectivity",
-								"c3xgm-about-gray"=>"On more vehicles than any other <br>auto manufacturer combined"
-							)
-						),
-						array(
-							"title"=>"Concept Car",
-							"class"=>"concept-car",
-							"icon"=>"img/modules/technology/bolt/bolt.png",
-							"icon@2x"=>"img/modules/technology/bolt/bolt.svg",
-							"image"=>"img/modules/technology/bolt/bolt.jpg",
-							"image@2x"=>"img/modules/technology/bolt/bolt@2x.jpg",
-							"copy"=>array(
-								"c3xgm-about-dark-blue c3xgm-about-thin"=>"Creating the affordable electric",
-								"c3xgm-about-light-blue"=>"Chevrolet Bolt <br>Concept Car",
-								"c3xgm-about-gray c3xgm-about-thin"=>"Capable of traveling over <br><strong>200 miles</strong> on a single charge"
-							)
-						),
-						array(
-							"title"=>"Safety",
-							"class"=>"safety",
-							"icon"=>"img/modules/technology/safety/safety.png",
-							"icon@2x"=>"img/modules/technology/safety/safety.svg",
-							"image"=>"img/modules/technology/4g-lte/4g-lte-car.jpg",
-							"image@2x"=>"img/modules/technology/4g-lte/4g-lte-car@2x.jpg",
-							"copy"=>array(
-								"c3xgm-about-dark-blue c3xgm-about-thin"=>"Enhancing",
-								"c3xgm-about-light-blue"=>"Driver Vision &amp; Safety",
-								"c3xgm-about-gray c3xgm-about-thin"=>"With a <strong>Patented streaming video <br>rearview mirror</strong>",
-								"c3xgm-about-gray c3xgm-about-thin c3xgm-about-small"=>"Debuting on the 2016 <strong>Cadillac CTS</strong>.<br>Available late 2015"
-							)
 						)
 					)
 				)

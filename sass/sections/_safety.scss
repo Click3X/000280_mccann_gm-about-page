@@ -142,7 +142,8 @@
 
 	// SAFETY SCORE
 	.c3xgm-about-safety-score {
-		
+		margin-top:0;
+
 		.c3xgm-about-block-image {
 			width: 45%;
 		}
@@ -271,6 +272,12 @@
   					@include center;
   				}
   			}
+
+  			@media(min-width: $inner-border) {
+  				width: 33%; 
+
+  				img {   left: 42%;}
+  			}
 		}
 		
 		.c3xgm-about-blockquote {
@@ -283,10 +290,20 @@
 			}
 			@media(min-width: $tablet-height) { 
 				width: 75%;
+				// width: 528px;
 				border-top:0;
 				padding-top:0;
-				border-right:.15rem solid $gm-yellow;
-				padding-right:1.6em;
+				border-right:.2rem solid $gm-yellow;
+				// padding-right:1.6em;
+
+				> span {
+					display: block;
+					width: 528px;
+					float: right;
+				}
+			}
+			@media(min-width: $inner-border) {
+				width: 66%;
 			}
 		}
 
@@ -307,7 +324,10 @@
 		.c3xgm-about-gray.c3xgm-about-thin {
 			font-size:17px; font-size: 5.5vw;
 			line-height: 1.2em;
-			@media(min-width:$tablet-height) {font-size:31.8885px; width:auto; }
+			@media(min-width:$tablet-height) {
+				font-size:31.8885px; 
+				// width:auto; 
+			}
 		}
 
 	}
@@ -315,6 +335,7 @@
 	// DISCLAIMER
 	.c3xgm-about-disclaimer {
 		text-align: left;
+		margin-top: 1.5em;
 
 		.c3xgm-about-p,
 		.c3xgm-about-gray.c3xgm-about-disclaimer {
@@ -323,9 +344,15 @@
 			line-height: 1.6em;
 			max-width: 27.4em;
 			display: block;
-			margin: 0 auto;
+			margin: 0 auto 1.5em;
 			padding-right: 3em;
 			@media(min-width:$tablet-height) {font-size:18.222px; max-width: none;}
+		}
+
+		.c3xgm-about-blockquote {
+			 max-width: 838px;
+  			float: right;
+  			padding-left: 4px;
 		}
 
 		.c3xgm-about-gray.c3xgm-about-disclaimer-small {
@@ -346,7 +373,21 @@
 				@media(min-width:$tablet-height) {font-size:21.259px; max-width:none; }					
 			}
 		}
-		.c3xgm-about-p {margin-left:0; margin-right:0; padding-left:0; padding-right:0; color:$gm-light-gray;font-size: 10px; max-width: 83em;}
+		
+		.c3xgm-about-p.c3xgm-about-disclaimer-box {
+			margin-left:0; margin-right:0; 
+			padding-left:0; padding-right:0; 
+			font-family: "open-sans", Arial, sans-serif; 
+			color:$gm-light-gray;font-size: 10px; 
+			max-width: 83em;
+			strong, a {
+				font-family: "open-sans", Arial, sans-serif; 
+				font-size: 1em;
+				display: inline;
+  				padding-left: 0.15em;
+			}
+		}
+
 	}
 
 }
