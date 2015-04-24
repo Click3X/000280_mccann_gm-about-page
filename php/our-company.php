@@ -22,6 +22,9 @@ foreach ($pages as $key => $page) {
                 }
             }
 
+            // DOWNWARD ARROW
+            echo '<a href="#c3xgm-about-our-people" class="c3xgm-about-down-arrow-link"><img src="img/pages/company/down-arrow.svg" alt="Scroll to read more about General Motors"  class="c3xgm-about-down-arrow"></a>';
+
         echo '</div>'; 
         // END PAGE CONTAINER
     } // TEMP OUR BRANDS PAGE ONLY

@@ -1,23 +1,30 @@
 // CLOCK
 #clock { 
-    width:11.6666667%; max-width: 164px;
-    height: 0; padding-bottom: 11.6666667%;
-    
+    position: relative;
     margin: 0 auto;
-	position: absolute; 
-    top: 64%; right: 20.5%;
 
-    background-image: url('../animate-img/animate/clock-face.png');
+      width: 33.3333334%;
+      max-width: none;
+      height: 0;
+      padding-bottom: 33.3333334%;
+
+
+    background-image: url('../img/decorative/clock/clock-face.png');
 	@include prefix(background-size, cover);
     background-position: 50% 50%; background-repeat: no-repeat;
 
-    @media(min-width: 1400px) { 
-    	top: 41.75%; 
-    	padding-bottom: 11.6666667%;
-    }
-
     @include prefix(border-radius, 50%);
+
+    @media(min-width: $tablet-height) {
+        width: 80%;
+        padding-bottom: 80%;
+        // max-width: 164px;
+    }
 } 
+
+.svg #clock {
+    background-image: url('../img/decorative/clock/clock-face.svg');
+}
 
 #clock:after { 
     content: '';
@@ -50,7 +57,8 @@
     left: 50%; 
 
     @include prefix(transform-origin, left bottom);
-    @include prefix(animation, rotate 60s infinite linear);
+    // @include prefix(animation, rotate 60s infinite linear);
+    @include prefix(animation, rotate 15s infinite linear);
 } 
 
 #clock span.hand.second {  
@@ -68,7 +76,8 @@
     margin-left: -1.6666667%; 
     top:16.6666667%;
 
-    @include prefix(animation-duration, 3600s);
+    // @include prefix(animation-duration, 3600s);
+    @include prefix(animation-duration, 900s);
 } 
 
 #clock span.hand.hour { 
@@ -77,7 +86,8 @@
     margin-left:-2.5%;
     top:25%; 
 
-    @include prefix(animation-duration, 84600s);
+    // @include prefix(animation-duration, 84600s);
+    @include prefix(animation-duration, 21150s);
 } 
 
 @-webkit-keyframes rotate { 

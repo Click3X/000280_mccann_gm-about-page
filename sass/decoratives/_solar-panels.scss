@@ -10,7 +10,8 @@
 		width:45%; height: 0;
   		padding-bottom: 17.5%;
   		position: absolute;
-		left:0; bottom:0; right:0;
+		left:0; bottom:0; 
+		right:auto;
 		margin: auto;
 		z-index: 10;
   		@media(min-width: $tablet-height) {
@@ -52,7 +53,8 @@
 		img { width:100%;}
   		@media(min-width:668px) { width: 200px; padding-bottom: 170px; top:auto; }
 		@media(min-width:$inner-border) { 
-			left: 0; right: -63%;
+			left: 0; 
+			right: -39%;
 			bottom:30px;
 			margin: auto; 
 			padding-bottom: 210px;

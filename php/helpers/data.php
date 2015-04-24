@@ -212,9 +212,11 @@ $pages = array(
 			),
 			array(
 				"title"=>"Global",
-				"image"=>"img/pages/brands/world.png",
-				"image@2x"=>"img/pages/brands/world.svg",
-				"image-animate"=>"fadeInRightMega",
+				// "image"=>"img/pages/brands/world.png",
+				// "image@2x"=>"img/pages/brands/world.svg",
+				"image"=>"img/pages/brands/world.gif",
+				"image@2x"=>"img/pages/brands/world.gif",
+				// "image-animate"=>"fadeInRightMega",
 				"class"=>"global c3xgm-about-animated-box",
 				"copy"=>array(
 					"c3xgm-about-dark-blue c3xgm-about-thin fadeInLeftMega"=>"In 2014, we <strong>delivered</strong> over",
@@ -226,7 +228,7 @@ $pages = array(
 				"title"=>"Seconds",
 				"image"=>"img/pages/brands/clock.png",
 				"image@2x"=>"img/pages/brands/clock.svg",
-				"image-animate"=>"fadeInLeftMega",
+				// "image-animate"=>"fadeInLeftMega",
 				"class"=>"seconds text-right c3xgm-about-animated-box",
 				"copy"=>array(
 					"c3xgm-about-dark-blue c3xgm-about-thin fadeInRightMega"=>"A <strong>Chevy is sold</strong><br>somewhere in the world",
@@ -260,8 +262,10 @@ $pages = array(
 			),
 			array(
 				"title"=>"China",
-				"image"=>"img/pages/brands/flag.png",
-				"image@2x"=>"img/pages/brands/flag.svg",
+				// "image"=>"img/pages/brands/flag.png",
+				// "image@2x"=>"img/pages/brands/flag.svg",
+				"image"=>"img/pages/brands/flag.gif",
+				"image@2x"=>"img/pages/brands/flag.gif",
 				"image-mobile"=>"img/pages/brands/flag-mobile.png",
 				"image-mobile@2x"=>"img/pages/brands/flag-mobile.svg",
 				"class"=>"china",
@@ -311,8 +315,10 @@ $pages = array(
 				"blocks"=>array(
 					array(
 						"title"=>"Crash Test Dummies",
-						"image"=>"img/pages/commitment/crash-test-dummies.png",
-						"image@2x"=>"img/pages/commitment/crash-test-dummies.svg",
+						// "image"=>"img/pages/commitment/crash-test-dummies.png",
+						// "image@2x"=>"img/pages/commitment/crash-test-dummies.svg",
+						"image"=>"img/pages/commitment/crash-test-dummies.gif",
+						"image@2x"=>"img/pages/commitment/crash-test-dummies.gif",
 						"class"=>"crash-test-dummies",
 						"copy"=>array(
 							"c3xgm-about-dark-blue c3xgm-about-thin"=>"We Designed",
@@ -503,8 +509,10 @@ $pages = array(
 					),
 					array(
 						"title"=>"Climate Declaration",
-						"image"=>"img/pages/commitment/climate.png",
-						"image@2x"=>"img/pages/commitment/climate.svg",
+						// "image"=>"img/pages/commitment/climate.png",
+						// "image@2x"=>"img/pages/commitment/climate.svg",
+						"image"=>"img/pages/commitment/climate.gif",
+						"image@2x"=>"img/pages/commitment/climate.gif",
 						"class"=>"climate-declaration",
 						"copy"=>array(
 							"c3xgm-about-dark-blue c3xgm-about-thin"=>"General Motors is the <strong>only automaker</strong> to sign a<br>",

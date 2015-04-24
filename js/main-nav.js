@@ -169,6 +169,7 @@ jQuery(document).ready(function($) {
         // LIST VARS
     var GreyVan,
         RedCar,
+        CrashTestDummies,
         $blocks = $('.c3xgm-about-block'),
         Employees,
         EmpNum,
@@ -178,6 +179,7 @@ jQuery(document).ready(function($) {
     GreyVan = new AnimatedElement('#c3xgm-about-grey-van');
     RedCar = new AnimatedElement('#c3xgm-about-red-car');
     Employees = new AnimatedElement('#c3xgm-about-employees');
+    CrashTestDummies = new AnimatedElement('#c3xgm-about-crash-test-dummies');
 
 
     $.each($blocks, function(i, val) {
@@ -189,7 +191,7 @@ jQuery(document).ready(function($) {
      * MAIN NAV JS
      */
     // SMOOTH SCROLL TO LINKS
-        $('.c3xgm-about-main-nav a[href*=#]:not([href=#])').click(function() {
+        $('.c3xgm-about-main-nav a[href*=#]:not([href=#]), a.c3xgm-about-down-arrow-link').click(function() {
             if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
                 var target = $(this.hash);
                 target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
@@ -210,7 +212,8 @@ jQuery(document).ready(function($) {
      * We use the scroll functionality again, some array creation and 
      * manipulation, class adding and class removing, and conditional testing
      */
-    var aChildren = $(".c3xgm-about-main-nav li").children('a'),
+    // var aChildren = $(".c3xgm-about-main-nav li").children('a'),
+    var aChildren = $(".c3xgm-about-main-nav li a"),
         aArray = []; // create the empty aArray
     
     for (var i=0; i < aChildren.length; i++) {    
@@ -219,6 +222,13 @@ jQuery(document).ready(function($) {
         
         aArray.push(ahref);
     } // this for loop fills the aArray with attribute href values
+
+    console.dir(aArray);
+
+      for (var i=0; i < aArray.length; i++) {
+            var theID = aArray[i];
+            $(theID).removeClass("c3xgm-about-page-in-view");
+        }
 
     function checkPageInView() {
         updateWindowSpecs();
@@ -238,10 +248,11 @@ jQuery(document).ready(function($) {
             }
 
             // CHECK IF PAGE IS BREAKING VIEW
-            if ( (divPos <= scrollBottom + 50) && (divPos + divHeight > scrollTop + 50) )  {
+            // if ( (divPos <= scrollBottom + 50) && (divPos + divHeight > scrollTop + 50) )  {
+            if ( (divPos <= scrollBottom) && (divPos + divHeight > scrollTop) )  {
                 $(theID).addClass("c3xgm-about-page-in-view");
             } else {
-                $(theID).removeClass("c3xgm-about-page-in-view");
+                // $(theID).removeClass("c3xgm-about-page-in-view");
             }
 
         }
@@ -309,11 +320,25 @@ jQuery(document).ready(function($) {
         }
     }
 
-    // CHECK IF EMPLOYEES IS IN VIEW
-    // if(Employees.isInView) {
-    //     fireAnimatedEmployees();
-    // }
 
+    function triggerGif(gif){
+        return gif.src= gif.src.split('?')[0]+'?='+(+new Date());
+    }
+
+    var animateCrashTestDummies = false;
+    function fireAnimatedCrashTestDummies() {
+         if(animateCrashTestDummies === false) {
+          // // TRIGGER NUMBER ANIMATION
+            console.log('Firing animated employeees!');
+            // TRIGGER PEOPLE ANIMATION
+            // $('#c3xgm-about-employees-img div').each(addAnimation);
+            // TRIGGER ANIMATED GIF WHEN SCROLLED TO
+    
+            triggerGif(document.getElementById('c3xgm-about-crash-test-dummies'));
+
+            animateCrashTestDummies = true;
+        }
+    }
 
     // RUN CHECK PAGE VIEW
     scrollHandler = function () {
@@ -322,17 +347,22 @@ jQuery(document).ready(function($) {
 
         // SCROLL - TIED ANIMATIONS
         if( GreyVan.isInView() ) {
+            // console.log('Gray Van in view!');
             GreyVan.moveRight();
         }
-
+        // RED CAR
         if( RedCar.isInView() ) {
             RedCar.moveLeft();
         }
-
         // EMPLOYEES
         if(Employees.isInView) {
              // TRIGGER NUMBER ANIMATION
             fireAnimatedEmployees();
+        }
+        // CrashTestDummies
+        if(CrashTestDummies.isInView) {
+             // TRIGGER NUMBER ANIMATION
+            fireAnimatedCrashTestDummies();
         }
 
     }

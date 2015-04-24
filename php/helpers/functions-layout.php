@@ -83,7 +83,7 @@ function printBlock($block) {
 		else { $block_class="c3xgm-about-block "; }
 
 
-		if($block['title'] == "employees") {
+		if( ( isset($block['title']) ) &&  ( $block['title'] == "employees") ) {
 			echo '<div id="c3xgm-about-employees" class="'.$block_class.'c3xgm-about-clearfix'.$class.'">';
 		 } else {
 				// echo '<div class="'.$block_class.'c3xgm-about-clearfix'.$class.' bounceInLeft">';
@@ -105,11 +105,29 @@ function printBlock($block) {
 					// IF CHINA, SET DESKTOP CLASS
 					if($block['title'] == "China") { $desk_class="c3xgm-about-desktop";} else {$desk_class="";}
 					
-					echo '<div class="c3xgm-about-block-image"><div><img src="'.$block['image@2x'].'" class="'.$img_anim.' '.$desk_class.'" alt="'.$block['title'].'"></div>';
+					// SECONDS BLOCK
+					if($block['title'] == "Seconds") {
+						echo '<div class="c3xgm-about-block-image">
+								<div>
+									<div id="clock" class="clock"> 
+						                <span class="hand second"></span> 
+						                <span class="hand minute"></span> 
+						                <span class="hand hour"></span> 
+	            					</div>
+	            				</div>';
+					} elseif($block['title'] == "Crash Test Dummies") {
+						echo '<div class="c3xgm-about-block-image"><div><img id="c3xgm-about-crash-test-dummies" src="'.$block['image@2x'].'" class="'.$img_anim.' '.$desk_class.'" alt="'.$block['title'].'"></div>';						
+					} else {
+						// NORMAL IMAGE
+						echo '<div class="c3xgm-about-block-image"><div><img src="'.$block['image@2x'].'" class="'.$img_anim.' '.$desk_class.'" alt="'.$block['title'].'"></div>';						
+					}
+					
 					// IF BLOCK IS TEST FACILITY - ADD IN NEW DIV FOR ANIMATION
 					if($block['title'] == "Test Facility") {
 						echo '<img src="img/pages/commitment/circle-lines.svg" class="c3xgm-about-circle-lines" alt="Rollover Test Facility">';
-					} 
+					}
+
+
 					// IF BLOCK IS CHINA, GET MOBIL PICS
 					if( isset($block['image-mobile']) && $block['image-mobile'] != "" ) {
 						echo '<img src="'.$block['image-mobile@2x'].'" class="c3xgm-about-block-image-mobile" alt="'.$block['title'].'">';	
@@ -221,6 +239,8 @@ function printModule($module) {
 						}
 					}
 				echo '</ul>';
+
+				echo '<div class="c3xgm-about-gray-line"></div><div class="c3xgm-about-yellow-line"></div>';
 			echo '</div>';
 
 			// OPEN DIV CONTAINER FOR CAR DESCRIPTIONS
@@ -240,6 +260,7 @@ function printModule($module) {
 						}
 					}
 				echo '</ul>';
+				echo '<div class="c3xgm-about-gray-line c3xgm-about-line-vert"></div><div class="c3xgm-about-yellow-line c3xgm-about-line-vert"></div>';
 			echo '</div>';
 
 			// OPEN DIV CONTAINER FOR CAR DESCRIPTIONS
@@ -374,11 +395,12 @@ function printCarModule($module) {
 					}
 				}
 			echo '</ul>';
+			echo '<div class="c3xgm-about-gray-line"></div><div class="c3xgm-about-yellow-line"></div>';
 		echo '</div>';
 
 		// OPEN DIV CONTAINER FOR CAR DESCRIPTIONS
 		echo '<div class="c3xgm-about-clearfix c3xgm-about-module-65">';
-
+			// echo '<div class="c3xgm-about-gray-line"></div><div class="c3xgm-about-yellow-line"></div>';
 			// MODULE CONTAINER - !!! JAVASCRIPT HANDLE !!!
 			echo '<div id="c3xgm-about-module-car" class="c3xgm-about-clearfix c3xgm-about-module-container">';
 

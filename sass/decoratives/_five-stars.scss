@@ -27,14 +27,15 @@
 
 		.c3xgm-about-grey-top {
 			position: absolute; 
-			left:10%;
+			left:-10%;
 			height: 0; 
 			padding-bottom: 30.7%;
 			width: 43%; max-width: 230px;
 			z-index: 1;
 			@media(min-width: $tablet-height) {  padding-bottom: 194px; }
 			img {
-				width: 100%;
+				// width: 100%;
+				  width: 135%;
 				@include center;
 			}
 

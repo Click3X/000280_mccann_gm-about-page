@@ -1,7 +1,8 @@
 // FLAG-LINE
 .c3xgm-about-page-our-brands {
 
-	.c3xgm-about-grey-car + .c3xgm-about-flag-line {
+	// .c3xgm-about-grey-car + .c3xgm-about-flag-line {
+	.c3xgm-about-flag-line {
 		background-image:url('../img/decorative/landscape/flag-line.png');
 		background-repeat:  no-repeat; background-size: cover;
 		padding-bottom:40%;
@@ -14,7 +15,7 @@
 		margin: 0 auto 5em;
 		// overflow-x:hidden;
 		@media(min-width: $tablet-height) { margin: 0 auto 9em; }
-		.c3xgm-about-grey-car {
+		.grey-car {
 			position: absolute;
 			left:0; right:0; bottom:0;
 			margin:auto;

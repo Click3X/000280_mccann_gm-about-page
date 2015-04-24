@@ -1,10 +1,47 @@
 // ANIMATE ME NOW
 // .c3xgm-about-blockquote span { opacity: 0;}
-.animate-me-now {
+// .animate-me-now
+.element-in-view {
 
 	.c3xgm-about-blockquote {
 		position: relative;
 		overflow: hidden;
+
+		> .c3xgm-about-separator {
+			> span:first-child { 
+				@include prefix(animation-fill-mode, both);
+				@include prefix(animation-name, fadeInRight);
+				@include prefix(animation-delay, 400ms);
+				@include prefix(animation-duration, 800ms);
+			}
+			> span:nth-child(2) { 
+				@include prefix(animation-fill-mode, both);
+				@include prefix(animation-name, fadeInRight);
+				@include prefix(animation-delay, 1200ms);
+				@include prefix(animation-duration, 800ms);
+			}
+
+			.c3xgm-about-gray-line {
+				@include prefix(animation-fill-mode, both);
+				@include prefix(animation-name, growBorder);
+				@include prefix(animation-delay,400ms);
+	  			@include prefix(animation-duration,800ms);
+
+			}
+			.c3xgm-about-yellow-line {
+				@include prefix(animation-fill-mode, both);
+				@include prefix(animation-name, growBorder);
+				@include prefix(animation-delay,600ms);
+	  			@include prefix(animation-duration,600ms);
+			}
+		}
+
+		> span.c3xgm-about-light-blue.number {
+				@include prefix(animation-fill-mode, both);
+				@include prefix(animation-name, fadeIn);
+				@include prefix(animation-delay, 800ms); 
+				@include prefix(animation-duration,800ms);	
+		}
 		
 		> span.c3xgm-about-dark-blue:first-child {
 			@include prefix(animation-fill-mode, both);
@@ -12,6 +49,14 @@
 			@include prefix(animation-delay, 100ms); 
 			@include prefix(animation-duration, 400ms);
 		}
+
+		span.c3xgm-about-light-blue {
+			@include prefix(animation-fill-mode, both);
+			@include prefix(animation-name, fadeInLeftMega);
+			@include prefix(animation-delay, 400ms);
+			@include prefix(animation-duration, 400ms);
+		}
+		
 		> span:nth-child(2) { 
 			@include prefix(animation-fill-mode, both);
 			@include prefix(animation-name, fadeInLeftMega);

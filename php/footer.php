@@ -21,7 +21,8 @@
         -->
         <script src="js/main-nav.js"></script>
 
-
+        <!-- NEW ANIMATIONS -->
+        <script src="js/scroll/animate-me.js"></script>
         <!---
         <script src="js/wen.js"></script>
         -->

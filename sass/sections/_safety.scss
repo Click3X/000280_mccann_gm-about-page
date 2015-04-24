@@ -24,8 +24,9 @@
 		
 		.c3xgm-about-blockquote {
 			display: inline-block;
-			border-top:.15rem solid $gm-yellow;
-			padding-top:1em;
+			// border-top:.15rem solid $gm-yellow;
+			// padding-top:1em;
+			padding-left:1em;
 
 			> span {
 				display: inline-block;
@@ -41,9 +42,37 @@
 				display:block;
 				border-top:0;
 				padding-top:0;
-				border-left:.15rem solid $gm-yellow;
+				// border-left:.15rem solid $gm-yellow;
 				padding-left:1em;
 			}
+
+			&:before {
+					content: ""; display: block;
+					position: absolute;
+					top:0; left:0;
+					width:0.15rem; height: 100%;
+					background-color:$gm-gray-line;
+					@include prefix(transform-origin, top right);
+					@include prefix(animation-fill-mode, both);
+					@include prefix(animation-name, growBorder);
+					@include prefix(animation-delay,800ms);
+		  			@include prefix(animation-duration,600ms);
+		  			@media(min-width: $tablet-height) { width:0.2rem;}
+				}
+
+				&:after {
+					content: ""; display: block;
+					position: absolute;
+					top:0; left:0;
+					width:0.15rem; height: 100%;
+					background-color:$gm-yellow;
+					@include prefix(transform-origin, top right);
+					@include prefix(animation-fill-mode, both);
+					@include prefix(animation-name, growBorder);
+					@include prefix(animation-delay,1600ms);
+		  			@include prefix(animation-duration,600ms);
+		  			@media(min-width: $tablet-height) { width:0.2rem;}
+				}
 		}
 
 		.c3xgm-about-dark-blue.c3xgm-about-thin {
@@ -130,11 +159,39 @@
 			font-size:38px; font-size: 12vw;
 
 			padding-left: .6rem;
-			border-left: 0.15rem solid $gm-yellow;
+			// border-left: 0.15rem solid $gm-yellow;
 
 			@media(min-width:$tablet-height) {
 				font-size:68.3325px;
 			}
+
+			&:before {
+					content: ""; display: block;
+					position: absolute;
+					top:0; left:0;
+					width:0.15rem; height: 100%;
+					background-color:$gm-gray-line;
+					@include prefix(transform-origin, top right);
+					@include prefix(animation-fill-mode, both);
+					@include prefix(animation-name, growBorder);
+					@include prefix(animation-delay,800ms);
+		  			@include prefix(animation-duration,600ms);
+		  			@media(min-width: $tablet-height) { width:0.2rem;}
+				}
+
+				&:after {
+					content: ""; display: block;
+					position: absolute;
+					top:0; left:0;
+					width:0.15rem; height: 100%;
+					background-color:$gm-yellow;
+					@include prefix(transform-origin, top right);
+					@include prefix(animation-fill-mode, both);
+					@include prefix(animation-name, growBorder);
+					@include prefix(animation-delay,1400ms);
+		  			@include prefix(animation-duration,600ms);
+		  			@media(min-width: $tablet-height) { width:0.2rem;}
+				}
 		}
 
 
@@ -154,10 +211,38 @@
 			margin-bottom: .1em; margin-top:0;
 			@media(min-width:$tablet-height) {
 				width: 1em; float: left;
-				margin-top: 0; margin-right: 1.25rem; padding-bottom: 0; border-right:0.2rem solid $gm-yellow;
+				margin-top: 0; margin-right: 1.25rem; padding-bottom: 0; 
+				// border-right:0.2rem solid $gm-yellow;
 				font-size:250px; 
 				// font-size: 32vw; 
 				line-height: 0.96em;
+				position: relative;
+
+				&:before {
+					content: ""; display: block;
+					position: absolute;
+					top:0; right:0;
+					width:0.2rem; height: 100%;
+					background-color:$gm-gray-line;
+					@include prefix(transform-origin, top right);
+					@include prefix(animation-fill-mode, both);
+					@include prefix(animation-name, growBorder);
+					@include prefix(animation-delay,800ms);
+		  			@include prefix(animation-duration,600ms);
+				}
+
+				&:after {
+					content: ""; display: block;
+					position: absolute;
+					top:0; right:0;
+					width:0.2rem; height: 100%;
+					background-color:$gm-yellow;
+					@include prefix(transform-origin, top right);
+					@include prefix(animation-fill-mode, both);
+					@include prefix(animation-name, growBorder);
+					@include prefix(animation-delay,1400ms);
+		  			@include prefix(animation-duration,600ms);
+				}
 			}
 		}
 
@@ -202,7 +287,37 @@
 		}
 		
 		.c3xgm-about-blockquote {
-			padding-left: 1.25rem; border-left:0.2rem solid $gm-yellow;
+			padding-left: 1.25rem; 
+			// border-left:0.2rem solid $gm-yellow;
+			&:before {
+				content: ""; display: block;
+				position: absolute;
+				top:0; left:0;
+				width:0.15rem; height: 100%;
+				background-color:$gm-gray-line;
+				@include prefix(transform-origin, top right);
+				@include prefix(animation-fill-mode, both);
+				@include prefix(animation-name, growBorder);
+				@include prefix(animation-delay,800ms);
+	  			@include prefix(animation-duration,600ms);
+
+	  			@media(min-width: $tablet-height) {  width:0.2rem; }
+			}
+
+			&:after {
+				content: ""; display: block;
+				position: absolute;
+				top:0; left:0;
+				width:0.15rem; height: 100%;
+				background-color:$gm-yellow;
+				@include prefix(transform-origin, top right);
+				@include prefix(animation-fill-mode, both);
+				@include prefix(animation-name, growBorder);
+				@include prefix(animation-delay,1400ms);
+	  			@include prefix(animation-duration,600ms);
+
+	  			@media(min-width: $tablet-height) {  width:0.2rem; }
+			}
 			@media(min-width: $tablet-height) { width: 70%; float:left; }
 		}
 
@@ -256,7 +371,8 @@
 	// QUATLITY
 	.c3xgm-about-quality-awards {
 		margin-bottom: 0;
-		text-align: left;
+		// text-align: left;
+		  text-align: center;
 		.c3xgm-about-block-image {
 			width: 40%;
 			position: relative;
@@ -281,8 +397,43 @@
 		}
 		
 		.c3xgm-about-blockquote {
-			border-top:.15rem solid $gm-yellow;
+			// border-top:.15rem solid $gm-yellow;
 			padding-top:1.6em;
+
+
+			&:before {
+					content: ""; display: block;
+					position: absolute;
+					top:0; right:0;
+					width:100%; height: 0.15rem;
+					background-color:$gm-gray-line;
+					@include prefix(transform-origin, top right);
+					@include prefix(animation-fill-mode, both);
+					@include prefix(animation-name, growBorder);
+					@include prefix(animation-delay,800ms);
+		  			@include prefix(animation-duration,600ms);
+
+		  			@media(min-width: $tablet-height) {
+		  				width:0.2rem; height:100%;
+		  			}
+				}
+
+				&:after {
+					content: ""; display: block;
+					position: absolute;
+					top:0; right:0;
+					width:100%; height: 0.15em;
+					background-color:$gm-yellow;
+					@include prefix(transform-origin, top right);
+					@include prefix(animation-fill-mode, both);
+					@include prefix(animation-name, growBorder);
+					@include prefix(animation-delay,1400ms);
+		  			@include prefix(animation-duration,600ms);
+
+		  			@media(min-width: $tablet-height) {
+		  				width:0.2em; height:100%;
+		  			}
+				}
 
 			> span {
 				display: inline-block;
@@ -293,7 +444,7 @@
 				// width: 528px;
 				border-top:0;
 				padding-top:0;
-				border-right:.2rem solid $gm-yellow;
+				// border-right:.2rem solid $gm-yellow;
 				// padding-right:1.6em;
 
 				> span {
@@ -342,11 +493,14 @@
 			font-weight: normal; text-transform: none;
 			font-size: 10px;
 			line-height: 1.6em;
-			max-width: 27.4em;
+			// max-width: 27.4em;
 			display: block;
 			margin: 0 auto 1.5em;
 			padding-right: 3em;
-			@media(min-width:$tablet-height) {font-size:18.222px; max-width: none;}
+			@media(min-width:$tablet-height) {
+				font-size:18.222px; max-width: none;
+				// max-width: 27.4em;
+			}
 		}
 
 		.c3xgm-about-blockquote {

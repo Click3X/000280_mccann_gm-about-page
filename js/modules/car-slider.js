@@ -23,7 +23,7 @@ jQuery(document).ready(function($) {
 	// BUILD YELLOW AND GRAY LINES
 	var animLines = $('<div class="c3xgm-about-gray-line c3xgm-about-line-vert slideInDown invisible"></div><div class="c3xgm-about-yellow-line c3xgm-about-line-vert slideInDown invisible"></div>');
 	// APPEND TO CAR CONTAINER
-	$(carContainer).prepend(animLines);
+	// $(carContainer).prepend(animLines);
 	// ANIMIATE LINES AFTER 1200 MS
 	setTimeout(function() {
 		$(carContainer).find('.c3xgm-about-gray-line').removeClass('invisible').addClass('animated');
@@ -66,6 +66,9 @@ jQuery(document).ready(function($) {
 		$('.c3xgm-about-module-car .active').removeClass('active');
 		$(this).addClass('active');
 
+		// ADD TRANSPARENCY TO OTHER NAV ITEMS
+		carLinks.not(this).addClass('c3xgm-about-module-logo-unactive');
+
 		// GET CUR SLIDE
 		var curSlide = $('.c3xgm-about-module-car .show-module-slide-in');
 
@@ -84,7 +87,7 @@ jQuery(document).ready(function($) {
 
 
 	// FOUNDATION ---------------------------------------------------------------------------------------------------------
-	$(foundationContainer).append(animLines);
+	// $(foundationContainer).append(animLines);
 	// ANIMIATE LINES AFTER 1200 MS
 	setTimeout(function() {
 		$(foundationContainer).find('.c3xgm-about-gray-line').removeClass('invisible').addClass('animated');
@@ -126,6 +129,9 @@ jQuery(document).ready(function($) {
 		//  ADD ACRIVE CLASS
 		$('.c3xgm-about-module-foundation .active').removeClass('active');
 		$(this).addClass('active');
+
+		// ADD TRANSPARENCY TO OTHER NAV ITEMS
+		foundationLinks.not(this).addClass('c3xgm-about-module-logo-unactive');
 
 		// GET CUR SLIDE
 		var curSlide = $('.c3xgm-about-module-foundation .show-module-slide-in');

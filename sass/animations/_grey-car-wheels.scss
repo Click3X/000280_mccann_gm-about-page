@@ -18,35 +18,52 @@
     background-image:url('../img/decorative/cars/grey-car.png');
     @include prefix(background-size, cover); 
     background-position: 50% 50%; background-repeat:no-repeat;
-    width:33.37%; max-width: 467px;
-    height:0; padding-bottom:21.5714%;
+    height:0;
+    // max-width: 467px;
+    width:66.747%; 
+    padding-bottom:23.1428%;
 
-    position: absolute;
-    top: 78.6%; left: 33%;
-
+    // position: absolute;
+    // left: 0; right: 0; bottom:0;
+    margin: auto;
+    position: relative;
+    margin-top: -22%;
+    
     @include prefix(transform, translate3d(0,0,0));
     @include prefix(transition, left 0.05s ease-out);
 
-	@media(min-width: 1400px) {
-		padding-bottom: 263px; top: 51.75%;
-	}
+    @media(min-width: $tablet-height) {
+         // bottom: -15%;
+         width:33.37%; max-width: 467px;
+     padding-bottom:21.5714%;
+     margin-top: -17%;
+    }
+
+    @media(min-width:1330px) {  
+        max-width: 450px;
+        padding-bottom: 289px;
+    }
 
     .wheel {
         background-image:url('../img/decorative/cars/wheel.png');
         @include prefix(background-size, cover);
         background-position: 50% 50%; background-repeat:no-repeat;
         width:9.933775%; padding-bottom: 9.602649%;
+        bottom:11.5%;
         position: absolute;
-        bottom:26.5%;
-        @media(min-width: 1400px) { bottom:67px; }
+        
+        @media(min-width: $tablet-height) {
+            width:9.933775%; padding-bottom: 9.602649%;
+            bottom:26.5%;    
+        }
     }
 
     .front-wheel { 
-        right: 18.5%; 
-        @media(min-width: 1400px) { right:102px; }
+          right: 22%;
+        @media(min-width: $tablet-height) {right: 18.5%; }
     }
     .back-wheel { 
-        left: 22.5%; 
-        @media(min-width: 1400px) { left: 119px; }
+          left: 25.5%;
+        @media(min-width: $tablet-height) {left: 22.5%; }
     }
 }

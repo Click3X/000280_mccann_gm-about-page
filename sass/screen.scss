@@ -46,7 +46,7 @@
 
 // @import "components/animate-text";
 // ANIMATE ME NOW IS THE GOOD ONE!
-// @import "components/animate-me-now";
+@import "components/animate-me-now";
 
 
 // CAR MOD
@@ -63,5 +63,9 @@
 @import "pages/all-page-animations";
 
 
-// @import "animations/flag-line";
-// @import "animations/grey-car-wheels";
+@import "animations/flag-line";
+@import "animations/grey-car-wheels";
+@import "animations/clock";
+
+@import "components/element-in-view";
+@import "decoratives/solar-panels-animations";

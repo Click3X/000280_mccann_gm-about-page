@@ -48,6 +48,7 @@ echo '<div id="c3xgm-about-our-people" class="c3xgm-about-page c3xgm-about-clear
                 <span class="c3xgm-about-separator">
                     <span class="c3xgm-about-dark-blue c3xgm-about-thin">We Serve</span>
                     <span class="c3xgm-about-gray">Continents</span>
+                    <span class="c3xgm-about-gray-line"></span><span class="c3xgm-about-yellow-line"></span>
                 </span>
                 <span class="c3xgm-about-light-blue number" id="number-6">6</span>
             </p>
@@ -61,7 +62,10 @@ echo '<div id="c3xgm-about-our-people" class="c3xgm-about-page c3xgm-about-clear
         <div class="c3xgm-about-block c3xgm-about-clearfix c3xgm-about-headquarters clear-left">
             <p class="c3xgm-about-blockquote">
                 <span class="c3xgm-about-light-blue">Global headquarters</span>
-                <span class="c3xgm-about-gray"><span>Detroit</span></span>
+                <span class="c3xgm-about-gray">
+                    <span>Detroit</span>
+                    <span class="c3xgm-about-gray-line"></span><span class="c3xgm-about-yellow-line"></span>
+                </span>
                 <span class="c3xgm-about-gray c3xgm-about-gray-2">Michigan, USA</span>
             </p>
         </div>
@@ -75,6 +79,7 @@ echo '<div id="c3xgm-about-our-people" class="c3xgm-about-page c3xgm-about-clear
                 <span class="c3xgm-about-separator">
                     <span class="c3xgm-about-dark-blue c3xgm-about-thin">Across</span>
                     <span class="c3xgm-about-gray">Timezones</span>
+                    <span class="c3xgm-about-gray-line"></span><span class="c3xgm-about-yellow-line"></span>
                 </span>
                 <span class="c3xgm-about-light-blue number" id="number-23">23</span>
             </p>
@@ -91,6 +96,7 @@ echo '<div id="c3xgm-about-our-people" class="c3xgm-about-page c3xgm-about-clear
                 <span class="c3xgm-about-separator">
                     <span class="c3xgm-about-dark-blue c3xgm-about-thin">And we speak</span>
                     <span class="c3xgm-about-gray">Languages</span>
+                    <span class="c3xgm-about-gray-line"></span><span class="c3xgm-about-yellow-line"></span>
                 </span>
                 <span class="c3xgm-about-light-blue number" id="number-70">70</span>
             </p>

@@ -56,11 +56,42 @@
 		}
 
 		.c3xgm-about-blockquote {
-			text-align: right; padding-right: .6em; border-right: .15rem solid $gm-yellow;
+			text-align: right; 
+			// padding-right: .6em; 
+			padding-right:1em; margin-right:2em;
+			// border-right: .15rem solid $gm-yellow;
+			&:before {
+				content: ""; display: block;
+				position: absolute;
+				top:0; right:0;
+				width:0.15rem; height: 100%;
+				background-color:$gm-gray-line;
+				@include prefix(transform-origin, top right);
+				@include prefix(animation-fill-mode, both);
+				@include prefix(animation-name, growBorder);
+				@include prefix(animation-delay,400ms);
+					@include prefix(animation-duration,600ms);
+					@media(min-width: $tablet-height) { width:0.2rem;}
+			}
+
+			&:after {
+				content: ""; display: block;
+				position: absolute;
+				top:0; right:0;
+				width:0.15rem; height: 100%;
+				background-color:$gm-yellow;
+				@include prefix(transform-origin, top right);
+				@include prefix(animation-fill-mode, both);
+				@include prefix(animation-name, growBorder);
+				@include prefix(animation-delay,800ms);
+					@include prefix(animation-duration,600ms);
+					@media(min-width: $tablet-height) { width:0.2rem;}
+			}
 
 	  		@media(min-width:$tablet-height) { 
 	  			width:73%;
-		  		padding-right: 2.5em; border-right: .2rem solid $gm-yellow;
+		  		padding-right: 2.5em; 
+		  		// border-right: .2rem solid $gm-yellow;
 		  	}
 		}
 
@@ -94,15 +125,50 @@
 				padding-bottom: 181px; margin-top:9px;
 	  			float: left; 
 	  			position: relative;
-	  			img { width:65%; @include center; }
+	  			img { 
+	  				// width:65%; 
+	  				width:100%; 
+	  				max-width: none;
+	  				@include center; 
+	  			}
 	  		}
 		}
 
 		.c3xgm-about-blockquote {
-		  	padding-left: .6em; border-left: .15rem solid $gm-yellow;
+		  	padding-left:1em; 
+		  	// padding-left: .6em; 
+		  	// border-left: .15rem solid $gm-yellow;
+		  	&:before {
+				content: ""; display: block;
+				position: absolute;
+				top:0; left:0;
+				width:0.15rem; height: 100%;
+				background-color:$gm-gray-line;
+				@include prefix(transform-origin, top right);
+				@include prefix(animation-fill-mode, both);
+				@include prefix(animation-name, growBorder);
+				@include prefix(animation-delay,400ms);
+					@include prefix(animation-duration,600ms);
+					@media(min-width: $tablet-height) { width:0.2rem;}
+			}
+
+			&:after {
+				content: ""; display: block;
+				position: absolute;
+				top:0; left:0;
+				width:0.15rem; height: 100%;
+				background-color:$gm-yellow;
+				@include prefix(transform-origin, top right);
+				@include prefix(animation-fill-mode, both);
+				@include prefix(animation-name, growBorder);
+				@include prefix(animation-delay,800ms);
+					@include prefix(animation-duration,600ms);
+					@media(min-width: $tablet-height) { width:0.2rem;}
+			}
 	  		@media(min-width:$tablet-height) { 
 	  			float: right; width:75%;
-		  		padding-left: 2.5em; border-left: .2rem solid $gm-yellow;
+		  		padding-left: 2.5em; 
+		  		// border-left: .2rem solid $gm-yellow;
 		  	}
 	  	}
 		
@@ -143,11 +209,42 @@
 		.c3xgm-about-blockquote { 
 			max-width: 52em;
 			text-align: right; 
-		  	padding-right: .6em; border-right: .15rem solid $gm-yellow;
+		  	// padding-right: .6em; 
+		  	padding-right:1em;
+		  	margin-right: 1.25em;
+		  	// border-right: .15rem solid $gm-yellow;
 
+		  	&:before {
+				content: ""; display: block;
+				position: absolute;
+				top:0; right:0;
+				width:0.15rem; height: 100%;
+				background-color:$gm-gray-line;
+				@include prefix(transform-origin, top right);
+				@include prefix(animation-fill-mode, both);
+				@include prefix(animation-name, growBorder);
+				@include prefix(animation-delay,400ms);
+					@include prefix(animation-duration,600ms);
+					@media(min-width: $tablet-height) { width:0.2rem;}
+			}
+
+			&:after {
+				content: ""; display: block;
+				position: absolute;
+				top:0; right:0;
+				width:0.15rem; height: 100%;
+				background-color:$gm-yellow;
+				@include prefix(transform-origin, top right);
+				@include prefix(animation-fill-mode, both);
+				@include prefix(animation-name, growBorder);
+				@include prefix(animation-delay,800ms);
+					@include prefix(animation-duration,600ms);
+					@media(min-width: $tablet-height) { width:0.2rem;}
+			}
 	  		@media(min-width:$tablet-height) { 
 	  			width:76%;
-		  		padding-right: 2.5em; border-right: .2rem solid $gm-yellow;
+		  		padding-right: 2.5em; 
+		  		// border-right: .2rem solid $gm-yellow;
 		  	}
 		}
 

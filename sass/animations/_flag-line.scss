@@ -8,14 +8,41 @@
     100% { -moz-transform: translate3d(-50%,0,0); }
 }
 
-#flag-line-container {
-    width:100%;
+
+.c3xgm-about-flag-line-container {
+    position: relative;
+    width: 100%;
     overflow-x:hidden;
-    z-index: -1;
+
+    // @media(min-width: $inner-border) {
+    //     overflow-x:initial;        
+    // }
+
+
+    .c3xgm-about-grey-white-gradient {
+      padding-bottom: 5%;
+      // position: absolute;
+      // bottom: 0;
+      width: 100%;
+      margin-top: -3%;
+      @media(min-width: $tablet-height) {
+        margin-top: -2%;
+    }
+  }
+}
+
+#flag-line-container {
+    // width:180%;
+    width: 480%;
+    overflow-x:hidden;
+    z-index: -1; 
     position: relative;
     
     @include prefix(transform, translate3d(0,0,0));
-
+    @media(min-width: $tablet-height) {
+        // width: 100%;
+        width: 300%;
+    }
 
     > ul { 
         width:200%;
@@ -33,6 +60,7 @@
             margin:0 auto; padding:0;
         }
     }
+
 }
 
 // SEPARATING ANIMATION INTO ITS OWN CLASS

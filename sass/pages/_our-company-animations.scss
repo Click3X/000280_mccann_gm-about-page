@@ -49,21 +49,35 @@
 			position: relative;
 			border-left:none;
 
-			.c3xgm-about-block-tagline { 
+			&:before {
+				content: ""; display: block;
+				position: absolute;
+				top:0; left:0;
+				width:0.15rem; height: 100%;
+				background-color:$gm-gray;
+				@include prefix(transform-origin, top right);
+				@include prefix(animation-fill-mode, both);
+				@include prefix(animation-name, growBorder);
+				@include prefix(animation-delay,1800ms);
+	  			@include prefix(animation-duration,600ms);
+	  			@media(min-width: $tablet-height) { width:0.2rem;}
+			}
 
-				&:before {
-					content: ""; display: block;
-					position: absolute;
-					top:0; left:0;
-					width:0.15rem; height: 100%;
-					background-color:$gm-yellow;
-					@include prefix(transform-origin, top right);
-					@include prefix(animation-fill-mode, both);
-					@include prefix(animation-name, growBorder);
-					@include prefix(animation-delay,1800ms);
-		  			@include prefix(animation-duration,600ms);
-		  			@media(min-width: $tablet-height) { width:0.2rem;}
-				}
+			&:after {
+				content: ""; display: block;
+				position: absolute;
+				top:0; left:0;
+				width:0.15rem; height: 100%;
+				background-color:$gm-yellow;
+				@include prefix(transform-origin, top right);
+				@include prefix(animation-fill-mode, both);
+				@include prefix(animation-name, growBorder);
+				@include prefix(animation-delay,2400ms);
+	  			@include prefix(animation-duration,600ms);
+	  			@media(min-width: $tablet-height) { width:0.2rem;}
+			}
+
+			.c3xgm-about-block-tagline { 
 			
 				> span:first-child { 
 					@include prefix(animation-fill-mode, both);

@@ -1,8 +1,7 @@
 // ALL MODULE STYLES
 .c3xgm-about-module-car-logo,
 .c3xgm-about-module-foundation-logo {
-	opacity:0.35;
-	// opacity:0.5;
+	// opacity:0.35;
 
 	@include prefix(transition, opacity 90ms);
 
@@ -16,4 +15,10 @@
 		opacity: 1;
 		@include prefix(transition, opacity 120ms);
 	}
+}
+
+
+.c3xgm-about-module-logo-unactive {
+	opacity:0.35;
+	@include prefix(transition, opacity 90ms);
 }
