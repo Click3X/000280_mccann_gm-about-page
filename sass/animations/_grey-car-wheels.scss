@@ -13,18 +13,13 @@
     @include prefix(animation, rotateTires 2s linear infinite);    
 }
 
-
 .grey-car {
     background-image:url('../img/decorative/cars/grey-car.png');
     @include prefix(background-size, cover); 
     background-position: 50% 50%; background-repeat:no-repeat;
     height:0;
-    // max-width: 467px;
     width:66.747%; 
     padding-bottom:23.1428%;
-
-    // position: absolute;
-    // left: 0; right: 0; bottom:0;
     margin: auto;
     position: relative;
     margin-top: -22%;
@@ -33,15 +28,15 @@
     @include prefix(transition, left 0.05s ease-out);
 
     @media(min-width: $tablet-height) {
-         // bottom: -15%;
-         width:33.37%; max-width: 467px;
-     padding-bottom:21.5714%;
-     margin-top: -17%;
+        margin-top: -18%;
+          width: 56%; max-width: none;
+          padding-bottom: 16.5714%;
     }
 
-    @media(min-width:1330px) {  
-        max-width: 450px;
-        padding-bottom: 289px;
+    @media(min-width: $inner-border) {  
+        width:505px;
+        padding-bottom:150px;
+        margin-top: -163px;
     }
 
     .wheel {
@@ -54,16 +49,16 @@
         
         @media(min-width: $tablet-height) {
             width:9.933775%; padding-bottom: 9.602649%;
-            bottom:26.5%;    
+            bottom:4.5%;    
         }
     }
 
     .front-wheel { 
-          right: 22%;
-        @media(min-width: $tablet-height) {right: 18.5%; }
+          right: 21.9%;
     }
     .back-wheel { 
-          left: 25.5%;
-        @media(min-width: $tablet-height) {left: 22.5%; }
+          // left: 25.5%;
+          left: 25.6%;
+        // @media(min-width: $tablet-height) { left: 25.6%; }
     }
 }

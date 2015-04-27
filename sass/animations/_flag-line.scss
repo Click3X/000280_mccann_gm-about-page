@@ -14,25 +14,24 @@
     width: 100%;
     overflow-x:hidden;
 
-    // @media(min-width: $inner-border) {
-    //     overflow-x:initial;        
-    // }
-
+    @media(min-width:$inner-border) {
+        height: 327px;
+    }
 
     .c3xgm-about-grey-white-gradient {
-      padding-bottom: 5%;
-      // position: absolute;
-      // bottom: 0;
-      width: 100%;
-      margin-top: -3%;
-      @media(min-width: $tablet-height) {
-        margin-top: -2%;
+        padding-bottom: 5%;
+        width: 100%;
+        margin-top: -3%;
+        @media(min-width: $tablet-height) { 
+            margin-top: -2%; 
+            padding-bottom: 4%;
+        }
+
+        @media(min-width: $inner-border) { padding-bottom: 37px }
     }
-  }
 }
 
 #flag-line-container {
-    // width:180%;
     width: 480%;
     overflow-x:hidden;
     z-index: -1; 
@@ -46,6 +45,7 @@
 
     > ul { 
         width:200%;
+        max-width: 5500px;
         position: relative;
         @include prefix(transform, translate3d(0,0,0));
     }

@@ -2064,6 +2064,7 @@ div#c3xgm-about-grey-van:before {
 /* line 17, ../sass/modules/_car.scss */
 .c3xgm-about-module-car .c3xgm-about-module-35 .c3xgm-about-gray-line,
 .c3xgm-about-module-car .c3xgm-about-module-35 .c3xgm-about-yellow-line {
+  display: none;
   position: absolute;
   bottom: 0;
   left: 0;
@@ -2096,6 +2097,7 @@ div#c3xgm-about-grey-van:before {
   /* line 17, ../sass/modules/_car.scss */
   .c3xgm-about-module-car .c3xgm-about-module-35 .c3xgm-about-gray-line,
   .c3xgm-about-module-car .c3xgm-about-module-35 .c3xgm-about-yellow-line {
+    display: block;
     width: 0.15rem;
     height: 100%;
     top: 0;
@@ -2103,7 +2105,7 @@ div#c3xgm-about-grey-van:before {
     left: auto;
   }
 }
-/* line 33, ../sass/modules/_car.scss */
+/* line 35, ../sass/modules/_car.scss */
 .c3xgm-about-module-car .c3xgm-about-module-35 .c3xgm-about-gray-line {
   -webkit-animation-delay: 2200ms;
   -moz-animation-delay: 2200ms;
@@ -2111,7 +2113,7 @@ div#c3xgm-about-grey-van:before {
   -ms-animation-delay: 2200ms;
   animation-delay: 2200ms;
 }
-/* line 36, ../sass/modules/_car.scss */
+/* line 38, ../sass/modules/_car.scss */
 .c3xgm-about-module-car .c3xgm-about-module-35 .c3xgm-about-yellow-line {
   -webkit-animation-delay: 2700ms;
   -moz-animation-delay: 2700ms;
@@ -2119,21 +2121,21 @@ div#c3xgm-about-grey-van:before {
   -ms-animation-delay: 2700ms;
   animation-delay: 2700ms;
 }
-/* line 41, ../sass/modules/_car.scss */
+/* line 43, ../sass/modules/_car.scss */
 .c3xgm-about-module-car .c3xgm-about-module-65 {
   width: 90%;
   margin-left: auto;
   margin-right: auto;
 }
 @media (min-width: 768px) {
-  /* line 41, ../sass/modules/_car.scss */
+  /* line 43, ../sass/modules/_car.scss */
   .c3xgm-about-module-car .c3xgm-about-module-65 {
     width: 65%;
     border-top: 0;
     padding-top: 0;
   }
 }
-/* line 51, ../sass/modules/_car.scss */
+/* line 53, ../sass/modules/_car.scss */
 .c3xgm-about-module-car .c3xgm-about-module-car-logo-container {
   width: 92%;
   min-width: none;
@@ -2141,7 +2143,7 @@ div#c3xgm-about-grey-van:before {
   margin: 0 auto 1em;
 }
 @media (min-width: 768px) {
-  /* line 51, ../sass/modules/_car.scss */
+  /* line 53, ../sass/modules/_car.scss */
   .c3xgm-about-module-car .c3xgm-about-module-car-logo-container {
     padding-top: 0;
     float: right;
@@ -2149,13 +2151,13 @@ div#c3xgm-about-grey-van:before {
   }
 }
 @media (min-width: 768px) {
-  /* line 57, ../sass/modules/_car.scss */
+  /* line 59, ../sass/modules/_car.scss */
   .c3xgm-about-module-car .c3xgm-about-module-container {
     float: right;
     width: 100%;
   }
 }
-/* line 65, ../sass/modules/_car.scss */
+/* line 67, ../sass/modules/_car.scss */
 .c3xgm-about-module-car .c3xgm-about-module-container .c3xgm-about-module .c3xgm-about-h,
 .c3xgm-about-module-car .c3xgm-about-module-container .c3xgm-about-module .c3xgm-about-p,
 .c3xgm-about-module-car .c3xgm-about-module-container .c3xgm-about-module .c3xgm-about-link,
@@ -2164,24 +2166,24 @@ div#c3xgm-about-grey-van:before {
   margin-left: auto;
   margin-right: auto;
 }
-/* line 74, ../sass/modules/_car.scss */
+/* line 76, ../sass/modules/_car.scss */
 .c3xgm-about-module-car .c3xgm-about-module-container > .c3xgm-about-module {
   position: absolute;
   left: 0;
   width: 100%;
 }
-/* line 81, ../sass/modules/_car.scss */
+/* line 83, ../sass/modules/_car.scss */
 .c3xgm-about-module-car .c3xgm-about-module {
   background-color: white;
 }
-/* line 83, ../sass/modules/_car.scss */
+/* line 85, ../sass/modules/_car.scss */
 .c3xgm-about-module-car .c3xgm-about-module .c3xgm-about-vehicle-copy,
 .c3xgm-about-module-car .c3xgm-about-module .c3xgm-about-link,
 .c3xgm-about-module-car .c3xgm-about-module .c3xgm-about-h,
 .c3xgm-about-module-car .c3xgm-about-module .c3xgm-about-p {
   text-align: left;
 }
-/* line 88, ../sass/modules/_car.scss */
+/* line 90, ../sass/modules/_car.scss */
 .c3xgm-about-module-car .c3xgm-about-module .c3xgm-about-block-image,
 .c3xgm-about-module-car .c3xgm-about-module .c3xgm-about-block-image img,
 .c3xgm-about-module-car .c3xgm-about-module .c3xgm-about-vehicle-copy,
@@ -2192,7 +2194,7 @@ div#c3xgm-about-grey-van:before {
   padding: 0 2% 0 7px;
 }
 @media (min-width: 768px) {
-  /* line 88, ../sass/modules/_car.scss */
+  /* line 90, ../sass/modules/_car.scss */
   .c3xgm-about-module-car .c3xgm-about-module .c3xgm-about-block-image,
   .c3xgm-about-module-car .c3xgm-about-module .c3xgm-about-block-image img,
   .c3xgm-about-module-car .c3xgm-about-module .c3xgm-about-vehicle-copy,
@@ -2203,7 +2205,7 @@ div#c3xgm-about-grey-van:before {
     max-width: 480px;
   }
 }
-/* line 104, ../sass/modules/_car.scss */
+/* line 106, ../sass/modules/_car.scss */
 .c3xgm-about-module-car .c3xgm-about-module .c3xgm-about-vehicle-copy {
   margin: 1em auto 0;
   font-family: open-sans, Arial, sans-serif;
@@ -2213,38 +2215,38 @@ div#c3xgm-about-grey-van:before {
   left: 0;
   right: 0;
 }
-/* line 113, ../sass/modules/_car.scss */
+/* line 115, ../sass/modules/_car.scss */
 .c3xgm-about-module-car .c3xgm-about-module .c3xgm-about-p {
   margin-left: 0;
   margin-right: 0;
 }
 @media (min-width: 768px) {
-  /* line 113, ../sass/modules/_car.scss */
+  /* line 115, ../sass/modules/_car.scss */
   .c3xgm-about-module-car .c3xgm-about-module .c3xgm-about-p {
     margin-left: auto;
     margin-right: auto;
   }
 }
-/* line 117, ../sass/modules/_car.scss */
+/* line 119, ../sass/modules/_car.scss */
 .c3xgm-about-module-car .c3xgm-about-module h3.c3xgm-about-h {
   font-size: 32px;
   font-size: 8.06vw;
   line-height: 1em;
 }
 @media (min-width: 906px) {
-  /* line 117, ../sass/modules/_car.scss */
+  /* line 119, ../sass/modules/_car.scss */
   .c3xgm-about-module-car .c3xgm-about-module h3.c3xgm-about-h {
     font-size: 73px;
     line-height: 70px;
   }
 }
-/* line 121, ../sass/modules/_car.scss */
+/* line 123, ../sass/modules/_car.scss */
 .c3xgm-about-module-car .c3xgm-about-module .c3xgm-about-link {
   display: block;
   margin-top: 1em;
   margin-bottom: 0.5em;
 }
-/* line 123, ../sass/modules/_car.scss */
+/* line 125, ../sass/modules/_car.scss */
 .c3xgm-about-module-car .c3xgm-about-module .c3xgm-about-block-image {
   position: relative;
   text-align: center;
@@ -2252,80 +2254,80 @@ div#c3xgm-about-grey-van:before {
   height: 0;
   margin-top: 2em;
 }
-/* line 126, ../sass/modules/_car.scss */
+/* line 128, ../sass/modules/_car.scss */
 .c3xgm-about-module-car .c3xgm-about-module .c3xgm-about-block-image img {
   display: block;
   margin: 0 auto;
   max-width: 77%;
 }
-/* line 131, ../sass/modules/_car.scss */
+/* line 133, ../sass/modules/_car.scss */
 .c3xgm-about-module-car .c3xgm-about-module-car-logo-container li {
   display: block;
   float: left;
   text-align: center;
   width: 33.3333334%;
 }
-/* line 134, ../sass/modules/_car.scss */
+/* line 136, ../sass/modules/_car.scss */
 .c3xgm-about-module-car .c3xgm-about-module-car-logo-container li:nth-of-type(3n+1) {
   clear: left;
 }
 @media (min-width: 768px) {
-  /* line 131, ../sass/modules/_car.scss */
+  /* line 133, ../sass/modules/_car.scss */
   .c3xgm-about-module-car .c3xgm-about-module-car-logo-container li {
     width: 50%;
     margin: 1em auto;
   }
-  /* line 137, ../sass/modules/_car.scss */
+  /* line 139, ../sass/modules/_car.scss */
   .c3xgm-about-module-car .c3xgm-about-module-car-logo-container li:nth-of-type(3n+1) {
     clear: none;
   }
-  /* line 138, ../sass/modules/_car.scss */
+  /* line 140, ../sass/modules/_car.scss */
   .c3xgm-about-module-car .c3xgm-about-module-car-logo-container li:nth-of-type(odd) {
     clear: left;
   }
 }
-/* line 141, ../sass/modules/_car.scss */
+/* line 143, ../sass/modules/_car.scss */
 .c3xgm-about-module-car .c3xgm-about-module-car-logo-container li .c3xgm-about-module-car-logo {
   line-height: 44px;
 }
-/* line 143, ../sass/modules/_car.scss */
+/* line 145, ../sass/modules/_car.scss */
 .c3xgm-about-module-car .c3xgm-about-module-car-logo-container li .c3xgm-about-module-car-logo img {
   width: 60%;
   vertical-align: middle;
 }
 @media (min-width: 768px) {
-  /* line 141, ../sass/modules/_car.scss */
+  /* line 143, ../sass/modules/_car.scss */
   .c3xgm-about-module-car .c3xgm-about-module-car-logo-container li .c3xgm-about-module-car-logo {
     line-height: 60px;
     display: block;
     text-align: left;
   }
-  /* line 146, ../sass/modules/_car.scss */
+  /* line 148, ../sass/modules/_car.scss */
   .c3xgm-about-module-car .c3xgm-about-module-car-logo-container li .c3xgm-about-module-car-logo img {
     padding-left: 7px;
   }
 }
-/* line 153, ../sass/modules/_car.scss */
+/* line 155, ../sass/modules/_car.scss */
 .c3xgm-about-module-car .c3xgm-about-chevrolet .c3xgm-about-block-image {
   padding-bottom: 37.56906077348066%;
 }
-/* line 154, ../sass/modules/_car.scss */
+/* line 156, ../sass/modules/_car.scss */
 .c3xgm-about-module-car .c3xgm-about-buick .c3xgm-about-block-image {
   padding-bottom: 39.95584988962472%;
 }
-/* line 155, ../sass/modules/_car.scss */
+/* line 157, ../sass/modules/_car.scss */
 .c3xgm-about-module-car .c3xgm-about-gmc .c3xgm-about-block-image {
   padding-bottom: 34.65783664459161%;
 }
-/* line 156, ../sass/modules/_car.scss */
+/* line 158, ../sass/modules/_car.scss */
 .c3xgm-about-module-car .c3xgm-about-opel .c3xgm-about-block-image {
   padding-bottom: 42.721854304635764%;
 }
-/* line 157, ../sass/modules/_car.scss */
+/* line 159, ../sass/modules/_car.scss */
 .c3xgm-about-module-car .c3xgm-about-cadillac .c3xgm-about-block-image {
   padding-bottom: 27.593818984547464%;
 }
-/* line 158, ../sass/modules/_car.scss */
+/* line 160, ../sass/modules/_car.scss */
 .c3xgm-about-module-car .c3xgm-about-vauxhall .c3xgm-about-block-image {
   padding-bottom: 42.60485651214128%;
 }
@@ -10765,16 +10767,29 @@ body {
   width: 100%;
   overflow-x: hidden;
 }
-/* line 22, ../sass/animations/_flag-line.scss */
+@media (min-width: 906px) {
+  /* line 12, ../sass/animations/_flag-line.scss */
+  .c3xgm-about-flag-line-container {
+    height: 327px;
+  }
+}
+/* line 21, ../sass/animations/_flag-line.scss */
 .c3xgm-about-flag-line-container .c3xgm-about-grey-white-gradient {
   padding-bottom: 5%;
   width: 100%;
   margin-top: -3%;
 }
 @media (min-width: 768px) {
-  /* line 22, ../sass/animations/_flag-line.scss */
+  /* line 21, ../sass/animations/_flag-line.scss */
   .c3xgm-about-flag-line-container .c3xgm-about-grey-white-gradient {
     margin-top: -2%;
+    padding-bottom: 4%;
+  }
+}
+@media (min-width: 906px) {
+  /* line 21, ../sass/animations/_flag-line.scss */
+  .c3xgm-about-flag-line-container .c3xgm-about-grey-white-gradient {
+    padding-bottom: 37px;
   }
 }
 
@@ -10796,9 +10811,10 @@ body {
     width: 300%;
   }
 }
-/* line 47, ../sass/animations/_flag-line.scss */
+/* line 46, ../sass/animations/_flag-line.scss */
 #flag-line-container > ul {
   width: 200%;
+  max-width: 5500px;
   position: relative;
   -webkit-transform: translate3d(0, 0, 0);
   -moz-transform: translate3d(0, 0, 0);
@@ -10853,7 +10869,7 @@ body {
   animation: rotateTires 2s linear infinite;
 }
 
-/* line 17, ../sass/animations/_grey-car-wheels.scss */
+/* line 16, ../sass/animations/_grey-car-wheels.scss */
 .grey-car {
   background-image: url("../img/decorative/cars/grey-car.png");
   -webkit-background-size: cover;
@@ -10881,22 +10897,23 @@ body {
   transition: left 0.05s ease-out;
 }
 @media (min-width: 768px) {
-  /* line 17, ../sass/animations/_grey-car-wheels.scss */
+  /* line 16, ../sass/animations/_grey-car-wheels.scss */
   .grey-car {
-    width: 33.37%;
-    max-width: 467px;
-    padding-bottom: 21.5714%;
-    margin-top: -17%;
+    margin-top: -18%;
+    width: 56%;
+    max-width: none;
+    padding-bottom: 16.5714%;
   }
 }
-@media (min-width: 1330px) {
-  /* line 17, ../sass/animations/_grey-car-wheels.scss */
+@media (min-width: 906px) {
+  /* line 16, ../sass/animations/_grey-car-wheels.scss */
   .grey-car {
-    max-width: 450px;
-    padding-bottom: 289px;
+    width: 505px;
+    padding-bottom: 150px;
+    margin-top: -163px;
   }
 }
-/* line 47, ../sass/animations/_grey-car-wheels.scss */
+/* line 42, ../sass/animations/_grey-car-wheels.scss */
 .grey-car .wheel {
   background-image: url("../img/decorative/cars/wheel.png");
   -webkit-background-size: cover;
@@ -10912,32 +10929,20 @@ body {
   position: absolute;
 }
 @media (min-width: 768px) {
-  /* line 47, ../sass/animations/_grey-car-wheels.scss */
+  /* line 42, ../sass/animations/_grey-car-wheels.scss */
   .grey-car .wheel {
     width: 9.933775%;
     padding-bottom: 9.602649%;
-    bottom: 26.5%;
+    bottom: 4.5%;
   }
 }
-/* line 61, ../sass/animations/_grey-car-wheels.scss */
+/* line 56, ../sass/animations/_grey-car-wheels.scss */
 .grey-car .front-wheel {
-  right: 22%;
+  right: 21.9%;
 }
-@media (min-width: 768px) {
-  /* line 61, ../sass/animations/_grey-car-wheels.scss */
-  .grey-car .front-wheel {
-    right: 18.5%;
-  }
-}
-/* line 65, ../sass/animations/_grey-car-wheels.scss */
+/* line 59, ../sass/animations/_grey-car-wheels.scss */
 .grey-car .back-wheel {
-  left: 25.5%;
-}
-@media (min-width: 768px) {
-  /* line 65, ../sass/animations/_grey-car-wheels.scss */
-  .grey-car .back-wheel {
-    left: 22.5%;
-  }
+  left: 25.6%;
 }
 
 /* line 2, ../sass/animations/_clock.scss */
