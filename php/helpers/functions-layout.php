@@ -116,7 +116,7 @@ function printBlock($block) {
 	            					</div>
 	            				</div>';
 					} elseif($block['title'] == "Crash Test Dummies") {
-						echo '<div class="c3xgm-about-block-image"><div><img id="c3xgm-about-crash-test-dummies" src="'.$block['image@2x'].'" class="'.$img_anim.' '.$desk_class.'" alt="'.$block['title'].'"></div>';						
+						echo '<div class="c3xgm-about-block-image"><img id="c3xgm-about-crash-test-dummies" src="'.$block['image@2x'].'" class="'.$img_anim.' '.$desk_class.'" alt="'.$block['title'].'">';						
 					} else {
 						// NORMAL IMAGE
 						echo '<div class="c3xgm-about-block-image"><div><img src="'.$block['image@2x'].'" class="'.$img_anim.' '.$desk_class.'" alt="'.$block['title'].'"></div>';						

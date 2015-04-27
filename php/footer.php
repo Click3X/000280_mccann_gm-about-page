@@ -23,12 +23,7 @@
 
         <!-- NEW ANIMATIONS -->
         <script src="js/scroll/animate-me.js"></script>
-        <!---
-        <script src="js/wen.js"></script>
-        -->
         
-
-
         <!--
         SCROLL FIX HAS CAR ANIMATIONS ON SCROLL
         <script src="js/scroll/scroll-fix.js"></script>

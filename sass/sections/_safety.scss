@@ -12,13 +12,21 @@
 	.c3xgm-about-crash-test-dummies {
 		
 		.c3xgm-about-block-image {
-			width: 40%; position: relative;
+			// width: 40%; 
+			width:100%; 
+			position: relative;
 			@media(min-width: $tablet-height) { 
 				float: left;
   				width: 25%; height: 0;
   				padding-bottom:297px; margin-right: 1em;
 
-  				img { @include center; width: 95%;}
+  				img { 
+  					@include center; 
+  					// width: 95%;
+  					transform: translate(-27%, -50%);
+  					@include prefix(transform, translate(-27%, -50%) );
+  					width: 235%;
+  				}
   			}
 		}
 		
@@ -27,6 +35,8 @@
 			// border-top:.15rem solid $gm-yellow;
 			// padding-top:1em;
 			padding-left:1em;
+			z-index: 10;
+			background:#fff;
 
 			> span {
 				display: inline-block;

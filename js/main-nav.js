@@ -5,6 +5,9 @@ jQuery(document).ready(function($) {
         scrollTop = $(window).scrollTop(),
         scrollBottom = scrollTop + windowHeight,
         docHeight = $(document).height(),
+        halfWindowHeight = windowHeight/2,
+        quarterWindowHeight = windowHeight/4,
+        eighthWindowHeight = windowHeight/8,
         css3dtransforms = true,
         currentScroll,
         scrollTimeout,
@@ -20,6 +23,9 @@ jQuery(document).ready(function($) {
             scrollTop = $(window).scrollTop();
             scrollBottom = scrollTop + windowHeight;
             docHeight = $(document).height();
+            halfWindowHeight = windowHeight/2;
+            quarterWindowHeight = windowHeight/4;
+            eighthWindowHeight = windowHeight/8;
     }
 
     // TEST FOR 3D TRANSFORMS - for IE
@@ -111,6 +117,21 @@ jQuery(document).ready(function($) {
             return ( (this.elementTop <= scrollBottom) && (this.elementBottom >= scrollTop) );
         }
 
+        // IS AT HALF
+        this.isAtHalf = function() {
+            return ( (this.elementTop <= scrollBottom - halfWindowHeight) );
+        }
+
+        // IS AT QUARTER
+        this.isAtQuarter = function() {
+            return ( (this.elementTop <= scrollBottom - quarterWindowHeight) );
+        }
+
+        // IS AT EIGHTH
+        this.isAtEighth = function() {
+            return ( (this.elementTop <= scrollBottom - eighthWindowHeight) );
+        }
+
         // AT TOP
         this.isAtTop = function() {
             return ( (this.elementTop <= scrollTop) );
@@ -172,6 +193,7 @@ jQuery(document).ready(function($) {
         CrashTestDummies,
         $blocks = $('.c3xgm-about-block'),
         Employees,
+        Num6, Num23, Num70,
         EmpNum,
         animBlocks = [];
 
@@ -179,6 +201,9 @@ jQuery(document).ready(function($) {
     GreyVan = new AnimatedElement('#c3xgm-about-grey-van');
     RedCar = new AnimatedElement('#c3xgm-about-red-car');
     Employees = new AnimatedElement('#c3xgm-about-employees');
+    Num6 = new AnimatedElement('#c3xgm-about-number-6');
+    Num23 = new AnimatedElement('#c3xgm-about-number-23');
+    Num70 = new AnimatedElement('#c3xgm-about-number-70');
     CrashTestDummies = new AnimatedElement('#c3xgm-about-crash-test-dummies');
 
 
@@ -212,7 +237,6 @@ jQuery(document).ready(function($) {
      * We use the scroll functionality again, some array creation and 
      * manipulation, class adding and class removing, and conditional testing
      */
-    // var aChildren = $(".c3xgm-about-main-nav li").children('a'),
     var aChildren = $(".c3xgm-about-main-nav li a"),
         aArray = []; // create the empty aArray
     
@@ -248,7 +272,6 @@ jQuery(document).ready(function($) {
             }
 
             // CHECK IF PAGE IS BREAKING VIEW
-            // if ( (divPos <= scrollBottom + 50) && (divPos + divHeight > scrollTop + 50) )  {
             if ( (divPos <= scrollBottom) && (divPos + divHeight > scrollTop) )  {
                 $(theID).addClass("c3xgm-about-page-in-view");
             } else {
@@ -305,18 +328,40 @@ jQuery(document).ready(function($) {
     // CHECK IF ANIMATED EMPLOYEES IN ON SCREEN
     var animateEmployees = false;
     function fireAnimatedEmployees() {
-          
           if(animateEmployees === false) {
           // // TRIGGER NUMBER ANIMATION
-            console.log('Firing animated employeees!');
             $('#c3xgm-about-emp-num').jQuerySimpleCounter({end: 216000,duration: 2500});
-            $('#number-6').jQuerySimpleCounter({start:0, end: 6,duration: 2000});
-            $('#number-23').jQuerySimpleCounter({start:0, end: 23,duration: 2000});
-            $('#number-70').jQuerySimpleCounter({start:0, end: 70,duration: 2000});
-
             // TRIGGER PEOPLE ANIMATION
             $('#c3xgm-about-employees-img div').each(addAnimation);
             animateEmployees = true;
+        }
+    }
+
+
+    var animate6 = false;
+    function fireAnimate6() {          
+          if(animate6 === false) {
+          // // TRIGGER NUMBER ANIMATION
+            $('#c3xgm-about-number-6').jQuerySimpleCounter({start:0, end: 6,duration: 2000});
+            animate6 = true;
+        }
+    }
+
+    var animate23 = false;
+    function fireAnimate23() {
+          if(animate23 === false) {
+          // // TRIGGER NUMBER ANIMATION
+            $('#c3xgm-about-number-23').jQuerySimpleCounter({start:0, end: 23,duration: 2000});
+            animate23 = true;
+        }
+    }
+
+    var animate70 = false;
+    function fireAnimate70() {
+          if(animate70 === false) {
+          // // TRIGGER NUMBER ANIMATION
+            $('#c3xgm-about-number-70').jQuerySimpleCounter({start:0, end: 70,duration: 2000});
+            animate70 = true;
         }
     }
 
@@ -328,14 +373,8 @@ jQuery(document).ready(function($) {
     var animateCrashTestDummies = false;
     function fireAnimatedCrashTestDummies() {
          if(animateCrashTestDummies === false) {
-          // // TRIGGER NUMBER ANIMATION
-            console.log('Firing animated employeees!');
-            // TRIGGER PEOPLE ANIMATION
-            // $('#c3xgm-about-employees-img div').each(addAnimation);
             // TRIGGER ANIMATED GIF WHEN SCROLLED TO
-    
             triggerGif(document.getElementById('c3xgm-about-crash-test-dummies'));
-
             animateCrashTestDummies = true;
         }
     }
@@ -347,7 +386,6 @@ jQuery(document).ready(function($) {
 
         // SCROLL - TIED ANIMATIONS
         if( GreyVan.isInView() ) {
-            // console.log('Gray Van in view!');
             GreyVan.moveRight();
         }
         // RED CAR
@@ -355,12 +393,31 @@ jQuery(document).ready(function($) {
             RedCar.moveLeft();
         }
         // EMPLOYEES
-        if(Employees.isInView) {
+        if(Employees.isAtEighth() ) {
              // TRIGGER NUMBER ANIMATION
             fireAnimatedEmployees();
         }
+
+        // Num6
+        if(Num6.isAtEighth() ) {
+             // TRIGGER NUMBER ANIMATION
+             fireAnimate6();
+        }
+
+        // Num23
+        if(Num23.isAtEighth() ) {
+             // TRIGGER NUMBER ANIMATION
+             fireAnimate23();
+        }
+
+        // Num70
+        if(Num70.isAtEighth() ) {
+             // TRIGGER NUMBER ANIMATION
+             fireAnimate70();
+        }
+
         // CrashTestDummies
-        if(CrashTestDummies.isInView) {
+        if(CrashTestDummies.isAtEighth() ) {
              // TRIGGER NUMBER ANIMATION
             fireAnimatedCrashTestDummies();
         }

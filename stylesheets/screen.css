@@ -798,19 +798,19 @@ h1.c3xgm-about-h span.c3xgm-about-gray, h2.c3xgm-about-h span.c3xgm-about-gray, 
   font-weight: 700;
 }
 
-/* line 34, ../sass/typography/_base.scss */
+/* line 38, ../sass/typography/_base.scss */
 .c3xgm-about-blockquote {
   max-width: none;
 }
 
-/* line 36, ../sass/typography/_base.scss */
+/* line 40, ../sass/typography/_base.scss */
 .c3xgm-about-vehicle-copy {
   margin: 0;
   padding: 0;
   text-transform: uppercase;
 }
 
-/* line 41, ../sass/typography/_base.scss */
+/* line 45, ../sass/typography/_base.scss */
 h1.c3xgm-about-h {
   text-align: center;
   font-size: 43px;
@@ -818,7 +818,7 @@ h1.c3xgm-about-h {
   line-height: 1em;
 }
 @media (min-width: 768px) {
-  /* line 41, ../sass/typography/_base.scss */
+  /* line 45, ../sass/typography/_base.scss */
   h1.c3xgm-about-h {
     text-align: left;
     font-size: 8.06vw;
@@ -827,7 +827,7 @@ h1.c3xgm-about-h {
   }
 }
 
-/* line 51, ../sass/typography/_base.scss */
+/* line 55, ../sass/typography/_base.scss */
 h2.c3xgm-about-h {
   line-height: 1em;
   color: #124e9c;
@@ -835,14 +835,14 @@ h2.c3xgm-about-h {
   font-size: 8.65vw;
 }
 @media (min-width: 768px) {
-  /* line 51, ../sass/typography/_base.scss */
+  /* line 55, ../sass/typography/_base.scss */
   h2.c3xgm-about-h {
     font-size: 52px;
     line-height: 74px;
   }
 }
 
-/* line 59, ../sass/typography/_base.scss */
+/* line 63, ../sass/typography/_base.scss */
 h3.c3xgm-about-h {
   font-size: 18px;
   line-height: 1em;
@@ -850,13 +850,13 @@ h3.c3xgm-about-h {
   margin: 2px 0;
 }
 @media (min-width: 768px) {
-  /* line 59, ../sass/typography/_base.scss */
+  /* line 63, ../sass/typography/_base.scss */
   h3.c3xgm-about-h {
     font-size: 24px;
   }
 }
 
-/* line 66, ../sass/typography/_base.scss */
+/* line 70, ../sass/typography/_base.scss */
 h4.c3xgm-about-h {
   font-size: 19px;
   line-height: 23px;
@@ -864,7 +864,7 @@ h4.c3xgm-about-h {
   margin: 4px 0;
 }
 
-/* line 71, ../sass/typography/_base.scss */
+/* line 75, ../sass/typography/_base.scss */
 .c3xgm-about-link {
   font-family: "open-sans-condensed", 'Arial Narrow', Arial, sans-serif;
   color: #6086C4;
@@ -872,19 +872,19 @@ h4.c3xgm-about-h {
   text-decoration: none;
   font-weight: 600;
 }
-/* line 74, ../sass/typography/_base.scss */
+/* line 78, ../sass/typography/_base.scss */
 .c3xgm-about-link:hover, .c3xgm-about-link:focus, .c3xgm-about-link:active {
   text-decoration: none;
   outline: none;
 }
 
-/* line 78, ../sass/typography/_base.scss */
+/* line 82, ../sass/typography/_base.scss */
 .c3xgm-about-thin,
 .c3xgm-about-blockquote .c3xgm-about-thin span {
   font-weight: 200 !important;
 }
 
-/* line 81, ../sass/typography/_base.scss */
+/* line 85, ../sass/typography/_base.scss */
 .c3xgm-about-blockquote {
   text-transform: uppercase;
   margin: 9px 0 9px 0;
@@ -899,7 +899,7 @@ h4.c3xgm-about-h {
 .c3xgm-about-blockquote:after {
   clear: both;
 }
-/* line 87, ../sass/typography/_base.scss */
+/* line 91, ../sass/typography/_base.scss */
 .c3xgm-about-blockquote span {
   font-family: "open-sans-condensed", 'Arial Narrow', Arial, sans-serif;
   font-weight: 600;
@@ -908,66 +908,66 @@ h4.c3xgm-about-h {
   line-height: 1em;
 }
 @media (min-width: 768px) {
-  /* line 87, ../sass/typography/_base.scss */
+  /* line 91, ../sass/typography/_base.scss */
   .c3xgm-about-blockquote span {
     font-size: 41px;
   }
 }
-/* line 96, ../sass/typography/_base.scss */
+/* line 100, ../sass/typography/_base.scss */
 .c3xgm-about-blockquote strong {
   font-weight: 700;
 }
 
-/* line 100, ../sass/typography/_base.scss */
+/* line 104, ../sass/typography/_base.scss */
 .c3xgm-about-light-blue {
   color: #6086C4 !important;
 }
 
-/* line 101, ../sass/typography/_base.scss */
+/* line 105, ../sass/typography/_base.scss */
 .c3xgm-about-blue {
   color: #5e85c4 !important;
 }
 
-/* line 102, ../sass/typography/_base.scss */
+/* line 106, ../sass/typography/_base.scss */
 .c3xgm-about-dark-blue {
   color: #124e9c !important;
 }
 
-/* line 103, ../sass/typography/_base.scss */
+/* line 107, ../sass/typography/_base.scss */
 .c3xgm-about-yellow {
   color: #FDB12E !important;
 }
 
-/* line 104, ../sass/typography/_base.scss */
+/* line 108, ../sass/typography/_base.scss */
 .c3xgm-about-light-gray {
   color: #7E8184 !important;
 }
 
-/* line 105, ../sass/typography/_base.scss */
+/* line 109, ../sass/typography/_base.scss */
 .c3xgm-about-gray {
   color: #808285 !important;
 }
 
-/* line 106, ../sass/typography/_base.scss */
+/* line 110, ../sass/typography/_base.scss */
 .c3xgm-about-dark-gray {
   color: #555555 !important;
 }
 
-/* line 109, ../sass/typography/_base.scss */
+/* line 113, ../sass/typography/_base.scss */
 .text-right,
 .text-right .c3xgm-about-blockquote,
 .c3xgm-about-text-right {
   text-align: right;
 }
 
-/* line 116, ../sass/typography/_base.scss */
+/* line 120, ../sass/typography/_base.scss */
 .c3xgm-about-header-p {
   margin: 0 auto;
   padding: 0 2% 0 7px;
   text-align: left;
 }
 @media (min-width: 768px) {
-  /* line 116, ../sass/typography/_base.scss */
+  /* line 120, ../sass/typography/_base.scss */
   .c3xgm-about-header-p {
     max-width: 768px;
     margin: 9px 0 9px 0;
@@ -975,13 +975,13 @@ h4.c3xgm-about-h {
 }
 
 @media (min-width: 768px) {
-  /* line 126, ../sass/typography/_base.scss */
+  /* line 130, ../sass/typography/_base.scss */
   .c3xgm-about-section-header {
     padding: 0;
   }
 }
 
-/* line 131, ../sass/typography/_base.scss */
+/* line 135, ../sass/typography/_base.scss */
 .c3xgm-about-gray.c3xgm-about-disclaimer,
 .c3xgm-about-gray.c3xgm-about-disclaimer-small {
   font-family: "open-sans", 'Arial', Arial, sans-serif;
@@ -990,33 +990,33 @@ h4.c3xgm-about-h {
   text-transform: none;
 }
 
-/* line 137, ../sass/typography/_base.scss */
+/* line 141, ../sass/typography/_base.scss */
 .c3xgm-about-gray.c3xgm-about-disclaimer-small {
   font-size: 10px;
   line-height: 1.613em;
 }
-/* line 139, ../sass/typography/_base.scss */
+/* line 143, ../sass/typography/_base.scss */
 .c3xgm-about-gray.c3xgm-about-disclaimer-small strong {
   font-family: "open-sans-condensed", 'Arial Narrow', Arial, sans-serif;
   font-size: 1.5em;
   color: #6086C4;
 }
 
-/* line 144, ../sass/typography/_base.scss */
+/* line 148, ../sass/typography/_base.scss */
 .c3xgm-about-gray.c3xgm-about-disclaimer {
   margin: 2em auto;
   font-size: 14px;
   line-height: 1.613em;
 }
 @media (min-width: 481px) {
-  /* line 144, ../sass/typography/_base.scss */
+  /* line 148, ../sass/typography/_base.scss */
   .c3xgm-about-gray.c3xgm-about-disclaimer {
     font-size: 18px;
     font-size: 2.0128157865vw;
   }
 }
 @media (min-width: 906px) {
-  /* line 144, ../sass/typography/_base.scss */
+  /* line 148, ../sass/typography/_base.scss */
   .c3xgm-about-gray.c3xgm-about-disclaimer {
     font-size: 18.222px;
   }
@@ -1113,7 +1113,7 @@ h4.c3xgm-about-h {
 /* line 68, ../sass/typography/_our-company.scss */
 .c3xgm-about-down-arrow {
   max-width: 22px;
-  margin: -4em auto 5em;
+  margin: 0 auto 5em;
   text-align: center;
   display: block;
   -webkit-animation-fill-mode: both;
@@ -1146,6 +1146,12 @@ h4.c3xgm-about-h {
   -o-animation-timing-function: ease-in-out;
   -ms-animation-timing-function: ease-in-out;
   animation-timing-function: ease-in-out;
+}
+@media (min-width: 768px) {
+  /* line 68, ../sass/typography/_our-company.scss */
+  .c3xgm-about-down-arrow {
+    margin: -4em auto 5em;
+  }
 }
 
 /* line 6, ../sass/typography/_our-people.scss */
@@ -2918,7 +2924,7 @@ div#c3xgm-about-grey-van:before {
 }
 /* line 14, ../sass/sections/_safety.scss */
 .c3xgm-about-page-our-commitment .c3xgm-about-crash-test-dummies .c3xgm-about-block-image {
-  width: 40%;
+  width: 100%;
   position: relative;
 }
 @media (min-width: 768px) {
@@ -2930,7 +2936,7 @@ div#c3xgm-about-grey-van:before {
     padding-bottom: 297px;
     margin-right: 1em;
   }
-  /* line 21, ../sass/sections/_safety.scss */
+  /* line 23, ../sass/sections/_safety.scss */
   .c3xgm-about-page-our-commitment .c3xgm-about-crash-test-dummies .c3xgm-about-block-image img {
     position: absolute;
     top: 50%;
@@ -2940,27 +2946,35 @@ div#c3xgm-about-grey-van:before {
     -o-transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
-    width: 95%;
+    transform: translate(-27%, -50%);
+    -webkit-transform: translate(-27%, -50%);
+    -moz-transform: translate(-27%, -50%);
+    -o-transform: translate(-27%, -50%);
+    -ms-transform: translate(-27%, -50%);
+    transform: translate(-27%, -50%);
+    width: 235%;
   }
 }
-/* line 25, ../sass/sections/_safety.scss */
+/* line 33, ../sass/sections/_safety.scss */
 .c3xgm-about-page-our-commitment .c3xgm-about-crash-test-dummies .c3xgm-about-blockquote {
   display: inline-block;
   padding-left: 1em;
+  z-index: 10;
+  background: #fff;
 }
-/* line 31, ../sass/sections/_safety.scss */
+/* line 41, ../sass/sections/_safety.scss */
 .c3xgm-about-page-our-commitment .c3xgm-about-crash-test-dummies .c3xgm-about-blockquote > span {
   display: inline-block;
   float: left;
   clear: left;
   max-width: 5.5em;
 }
-/* line 36, ../sass/sections/_safety.scss */
+/* line 46, ../sass/sections/_safety.scss */
 .c3xgm-about-page-our-commitment .c3xgm-about-crash-test-dummies .c3xgm-about-blockquote > span.c3xgm-about-light-gray {
   max-width: 16em;
 }
 @media (min-width: 768px) {
-  /* line 25, ../sass/sections/_safety.scss */
+  /* line 33, ../sass/sections/_safety.scss */
   .c3xgm-about-page-our-commitment .c3xgm-about-crash-test-dummies .c3xgm-about-blockquote {
     width: auto;
     float: left;
@@ -2970,7 +2984,7 @@ div#c3xgm-about-grey-van:before {
     padding-left: 1em;
   }
 }
-/* line 49, ../sass/sections/_safety.scss */
+/* line 59, ../sass/sections/_safety.scss */
 .c3xgm-about-page-our-commitment .c3xgm-about-crash-test-dummies .c3xgm-about-blockquote:before {
   content: "";
   display: block;
@@ -3007,12 +3021,12 @@ div#c3xgm-about-grey-van:before {
   animation-duration: 600ms;
 }
 @media (min-width: 768px) {
-  /* line 49, ../sass/sections/_safety.scss */
+  /* line 59, ../sass/sections/_safety.scss */
   .c3xgm-about-page-our-commitment .c3xgm-about-crash-test-dummies .c3xgm-about-blockquote:before {
     width: 0.2rem;
   }
 }
-/* line 63, ../sass/sections/_safety.scss */
+/* line 73, ../sass/sections/_safety.scss */
 .c3xgm-about-page-our-commitment .c3xgm-about-crash-test-dummies .c3xgm-about-blockquote:after {
   content: "";
   display: block;
@@ -3049,25 +3063,25 @@ div#c3xgm-about-grey-van:before {
   animation-duration: 600ms;
 }
 @media (min-width: 768px) {
-  /* line 63, ../sass/sections/_safety.scss */
+  /* line 73, ../sass/sections/_safety.scss */
   .c3xgm-about-page-our-commitment .c3xgm-about-crash-test-dummies .c3xgm-about-blockquote:after {
     width: 0.2rem;
   }
 }
-/* line 78, ../sass/sections/_safety.scss */
+/* line 88, ../sass/sections/_safety.scss */
 .c3xgm-about-page-our-commitment .c3xgm-about-crash-test-dummies .c3xgm-about-dark-blue.c3xgm-about-thin {
   font-size: 12.9088582992554px;
   font-size: 6.034018vw;
   line-height: 1.25em;
 }
 @media (min-width: 768px) {
-  /* line 78, ../sass/sections/_safety.scss */
+  /* line 88, ../sass/sections/_safety.scss */
   .c3xgm-about-page-our-commitment .c3xgm-about-crash-test-dummies .c3xgm-about-dark-blue.c3xgm-about-thin {
     font-size: 36.5199px;
     line-height: 43.808725px;
   }
 }
-/* line 86, ../sass/sections/_safety.scss */
+/* line 96, ../sass/sections/_safety.scss */
 .c3xgm-about-page-our-commitment .c3xgm-about-crash-test-dummies .c3xgm-about-light-blue {
   font-size: 28.7430095672607px;
   font-size: 13.98219vw;
@@ -3076,13 +3090,13 @@ div#c3xgm-about-grey-van:before {
   display: inline-block;
 }
 @media (min-width: 768px) {
-  /* line 86, ../sass/sections/_safety.scss */
+  /* line 96, ../sass/sections/_safety.scss */
   .c3xgm-about-page-our-commitment .c3xgm-about-crash-test-dummies .c3xgm-about-light-blue {
     font-size: 81.315675px;
     line-height: 75.925px;
   }
 }
-/* line 92, ../sass/sections/_safety.scss */
+/* line 102, ../sass/sections/_safety.scss */
 .c3xgm-about-page-our-commitment .c3xgm-about-crash-test-dummies .c3xgm-about-light-gray {
   display: inline-block;
   font-size: 18px;
@@ -3090,47 +3104,47 @@ div#c3xgm-about-grey-van:before {
   line-height: 1.2em;
 }
 @media (min-width: 768px) {
-  /* line 92, ../sass/sections/_safety.scss */
+  /* line 102, ../sass/sections/_safety.scss */
   .c3xgm-about-page-our-commitment .c3xgm-about-crash-test-dummies .c3xgm-about-light-gray {
     font-size: 33px;
   }
 }
-/* line 99, ../sass/sections/_safety.scss */
+/* line 109, ../sass/sections/_safety.scss */
 .c3xgm-about-page-our-commitment .c3xgm-about-crash-test-dummies .c3xgm-about-light-gray.c3xgm-about-thin .c3xgm-about-light-blue {
   font-size: 14.4925537109375px;
   font-size: 3.522427626375vw;
   line-height: 1.2em;
 }
 @media (min-width: 768px) {
-  /* line 99, ../sass/sections/_safety.scss */
+  /* line 109, ../sass/sections/_safety.scss */
   .c3xgm-about-page-our-commitment .c3xgm-about-crash-test-dummies .c3xgm-about-light-gray.c3xgm-about-thin .c3xgm-about-light-blue {
     font-size: 31.8885px;
   }
 }
-/* line 107, ../sass/sections/_safety.scss */
+/* line 117, ../sass/sections/_safety.scss */
 .c3xgm-about-page-our-commitment .c3xgm-about-test-facility {
   max-width: 54em;
 }
-/* line 109, ../sass/sections/_safety.scss */
+/* line 119, ../sass/sections/_safety.scss */
 .c3xgm-about-page-our-commitment .c3xgm-about-test-facility .c3xgm-about-block-image {
   width: 60%;
   height: 0;
   padding-bottom: 55%;
   position: relative;
 }
-/* line 113, ../sass/sections/_safety.scss */
+/* line 123, ../sass/sections/_safety.scss */
 .c3xgm-about-page-our-commitment .c3xgm-about-test-facility .c3xgm-about-block-image .c3xgm-about-circle-lines {
   position: absolute;
   width: 90%;
   max-width: none;
 }
 @media (min-width: 768px) {
-  /* line 113, ../sass/sections/_safety.scss */
+  /* line 123, ../sass/sections/_safety.scss */
   .c3xgm-about-page-our-commitment .c3xgm-about-test-facility .c3xgm-about-block-image .c3xgm-about-circle-lines {
     width: 85%;
   }
 }
-/* line 119, ../sass/sections/_safety.scss */
+/* line 129, ../sass/sections/_safety.scss */
 .c3xgm-about-page-our-commitment .c3xgm-about-test-facility .c3xgm-about-block-image img {
   position: absolute;
   top: 50%;
@@ -3143,22 +3157,22 @@ div#c3xgm-about-grey-van:before {
   width: 50%;
 }
 @media (min-width: 768px) {
-  /* line 109, ../sass/sections/_safety.scss */
+  /* line 119, ../sass/sections/_safety.scss */
   .c3xgm-about-page-our-commitment .c3xgm-about-test-facility .c3xgm-about-block-image {
     width: 48%;
     float: right;
     padding-bottom: 270px;
   }
-  /* line 124, ../sass/sections/_safety.scss */
+  /* line 134, ../sass/sections/_safety.scss */
   .c3xgm-about-page-our-commitment .c3xgm-about-test-facility .c3xgm-about-block-image img {
     max-width: 225px;
   }
 }
-/* line 128, ../sass/sections/_safety.scss */
+/* line 138, ../sass/sections/_safety.scss */
 .c3xgm-about-page-our-commitment .c3xgm-about-test-facility .c3xgm-about-blockquote {
   display: inline-block;
 }
-/* line 130, ../sass/sections/_safety.scss */
+/* line 140, ../sass/sections/_safety.scss */
 .c3xgm-about-page-our-commitment .c3xgm-about-test-facility .c3xgm-about-blockquote > span {
   display: inline-block;
   float: left;
@@ -3166,12 +3180,12 @@ div#c3xgm-about-grey-van:before {
   max-width: 7.5em;
 }
 @media (min-width: 768px) {
-  /* line 128, ../sass/sections/_safety.scss */
+  /* line 138, ../sass/sections/_safety.scss */
   .c3xgm-about-page-our-commitment .c3xgm-about-test-facility .c3xgm-about-blockquote {
     display: block;
   }
 }
-/* line 141, ../sass/sections/_safety.scss */
+/* line 151, ../sass/sections/_safety.scss */
 .c3xgm-about-page-our-commitment .c3xgm-about-test-facility .c3xgm-about-dark-blue.c3xgm-about-thin {
   font-size: 19px;
   font-size: 6vw;
@@ -3179,12 +3193,12 @@ div#c3xgm-about-grey-van:before {
   max-width: 12em;
 }
 @media (min-width: 768px) {
-  /* line 141, ../sass/sections/_safety.scss */
+  /* line 151, ../sass/sections/_safety.scss */
   .c3xgm-about-page-our-commitment .c3xgm-about-test-facility .c3xgm-about-dark-blue.c3xgm-about-thin {
     font-size: 34.5199px;
   }
 }
-/* line 150, ../sass/sections/_safety.scss */
+/* line 160, ../sass/sections/_safety.scss */
 .c3xgm-about-page-our-commitment .c3xgm-about-test-facility .c3xgm-about-gray {
   font-size: 17px;
   font-size: 5.5vw;
@@ -3193,12 +3207,12 @@ div#c3xgm-about-grey-van:before {
   margin-bottom: .27em;
 }
 @media (min-width: 768px) {
-  /* line 150, ../sass/sections/_safety.scss */
+  /* line 160, ../sass/sections/_safety.scss */
   .c3xgm-about-page-our-commitment .c3xgm-about-test-facility .c3xgm-about-gray {
     font-size: 28px;
   }
 }
-/* line 157, ../sass/sections/_safety.scss */
+/* line 167, ../sass/sections/_safety.scss */
 .c3xgm-about-page-our-commitment .c3xgm-about-test-facility .c3xgm-about-light-blue {
   line-height: 1em;
   font-size: 38px;
@@ -3206,12 +3220,12 @@ div#c3xgm-about-grey-van:before {
   padding-left: .6rem;
 }
 @media (min-width: 768px) {
-  /* line 157, ../sass/sections/_safety.scss */
+  /* line 167, ../sass/sections/_safety.scss */
   .c3xgm-about-page-our-commitment .c3xgm-about-test-facility .c3xgm-about-light-blue {
     font-size: 68.3325px;
   }
 }
-/* line 168, ../sass/sections/_safety.scss */
+/* line 178, ../sass/sections/_safety.scss */
 .c3xgm-about-page-our-commitment .c3xgm-about-test-facility .c3xgm-about-light-blue:before {
   content: "";
   display: block;
@@ -3248,12 +3262,12 @@ div#c3xgm-about-grey-van:before {
   animation-duration: 600ms;
 }
 @media (min-width: 768px) {
-  /* line 168, ../sass/sections/_safety.scss */
+  /* line 178, ../sass/sections/_safety.scss */
   .c3xgm-about-page-our-commitment .c3xgm-about-test-facility .c3xgm-about-light-blue:before {
     width: 0.2rem;
   }
 }
-/* line 182, ../sass/sections/_safety.scss */
+/* line 192, ../sass/sections/_safety.scss */
 .c3xgm-about-page-our-commitment .c3xgm-about-test-facility .c3xgm-about-light-blue:after {
   content: "";
   display: block;
@@ -3290,20 +3304,20 @@ div#c3xgm-about-grey-van:before {
   animation-duration: 600ms;
 }
 @media (min-width: 768px) {
-  /* line 182, ../sass/sections/_safety.scss */
+  /* line 192, ../sass/sections/_safety.scss */
   .c3xgm-about-page-our-commitment .c3xgm-about-test-facility .c3xgm-about-light-blue:after {
     width: 0.2rem;
   }
 }
-/* line 201, ../sass/sections/_safety.scss */
+/* line 211, ../sass/sections/_safety.scss */
 .c3xgm-about-page-our-commitment .c3xgm-about-safety-score {
   margin-top: 0;
 }
-/* line 204, ../sass/sections/_safety.scss */
+/* line 214, ../sass/sections/_safety.scss */
 .c3xgm-about-page-our-commitment .c3xgm-about-safety-score .c3xgm-about-block-image {
   width: 45%;
 }
-/* line 208, ../sass/sections/_safety.scss */
+/* line 218, ../sass/sections/_safety.scss */
 .c3xgm-about-page-our-commitment .c3xgm-about-safety-score .c3xgm-about-light-blue.number {
   display: block;
   width: 100%;
@@ -3314,7 +3328,7 @@ div#c3xgm-about-grey-van:before {
   margin-top: 0;
 }
 @media (min-width: 768px) {
-  /* line 208, ../sass/sections/_safety.scss */
+  /* line 218, ../sass/sections/_safety.scss */
   .c3xgm-about-page-our-commitment .c3xgm-about-safety-score .c3xgm-about-light-blue.number {
     width: 1em;
     float: left;
@@ -3325,7 +3339,7 @@ div#c3xgm-about-grey-van:before {
     line-height: 0.96em;
     position: relative;
   }
-  /* line 221, ../sass/sections/_safety.scss */
+  /* line 231, ../sass/sections/_safety.scss */
   .c3xgm-about-page-our-commitment .c3xgm-about-safety-score .c3xgm-about-light-blue.number:before {
     content: "";
     display: block;
@@ -3361,7 +3375,7 @@ div#c3xgm-about-grey-van:before {
     -ms-animation-duration: 600ms;
     animation-duration: 600ms;
   }
-  /* line 234, ../sass/sections/_safety.scss */
+  /* line 244, ../sass/sections/_safety.scss */
   .c3xgm-about-page-our-commitment .c3xgm-about-safety-score .c3xgm-about-light-blue.number:after {
     content: "";
     display: block;
@@ -3398,7 +3412,7 @@ div#c3xgm-about-grey-van:before {
     animation-duration: 600ms;
   }
 }
-/* line 250, ../sass/sections/_safety.scss */
+/* line 260, ../sass/sections/_safety.scss */
 .c3xgm-about-page-our-commitment .c3xgm-about-safety-score .c3xgm-about-dark-blue.c3xgm-about-thin {
   font-size: 13.1503963470459px;
   font-size: 4.1094988974375vw;
@@ -3406,12 +3420,12 @@ div#c3xgm-about-grey-van:before {
   font-size: 6vw;
 }
 @media (min-width: 768px) {
-  /* line 250, ../sass/sections/_safety.scss */
+  /* line 260, ../sass/sections/_safety.scss */
   .c3xgm-about-page-our-commitment .c3xgm-about-safety-score .c3xgm-about-dark-blue.c3xgm-about-thin {
     font-size: 33px;
   }
 }
-/* line 257, ../sass/sections/_safety.scss */
+/* line 267, ../sass/sections/_safety.scss */
 .c3xgm-about-page-our-commitment .c3xgm-about-safety-score .c3xgm-about-light-blue {
   line-height: 0.9em;
   font-size: 26px;
@@ -3423,13 +3437,13 @@ div#c3xgm-about-grey-van:before {
   clear: left;
 }
 @media (min-width: 768px) {
-  /* line 257, ../sass/sections/_safety.scss */
+  /* line 267, ../sass/sections/_safety.scss */
   .c3xgm-about-page-our-commitment .c3xgm-about-safety-score .c3xgm-about-light-blue {
     font-size: 40px;
     clear: none;
   }
 }
-/* line 266, ../sass/sections/_safety.scss */
+/* line 276, ../sass/sections/_safety.scss */
 .c3xgm-about-page-our-commitment .c3xgm-about-safety-score .c3xgm-about-light-gray.c3xgm-about-thin {
   font-family: "open-sans", Arial, sans-serif;
   display: inline-block;
@@ -3439,18 +3453,18 @@ div#c3xgm-about-grey-van:before {
   font-size: 4.5vw;
 }
 @media (min-width: 768px) {
-  /* line 266, ../sass/sections/_safety.scss */
+  /* line 276, ../sass/sections/_safety.scss */
   .c3xgm-about-page-our-commitment .c3xgm-about-safety-score .c3xgm-about-light-gray.c3xgm-about-thin {
     font-size: 22.807869999999998px;
   }
 }
-/* line 280, ../sass/sections/_safety.scss */
+/* line 290, ../sass/sections/_safety.scss */
 .c3xgm-about-page-our-commitment .c3xgm-about-onstar-subscribers .c3xgm-about-block-image {
   width: 45%;
   position: relative;
 }
 @media (min-width: 768px) {
-  /* line 280, ../sass/sections/_safety.scss */
+  /* line 290, ../sass/sections/_safety.scss */
   .c3xgm-about-page-our-commitment .c3xgm-about-onstar-subscribers .c3xgm-about-block-image {
     width: 27%;
     height: 0;
@@ -3458,7 +3472,7 @@ div#c3xgm-about-grey-van:before {
     padding-bottom: 221px;
     margin-top: 9px;
   }
-  /* line 285, ../sass/sections/_safety.scss */
+  /* line 295, ../sass/sections/_safety.scss */
   .c3xgm-about-page-our-commitment .c3xgm-about-onstar-subscribers .c3xgm-about-block-image img {
     width: 85%;
     position: absolute;
@@ -3471,11 +3485,11 @@ div#c3xgm-about-grey-van:before {
     transform: translate(-50%, -50%);
   }
 }
-/* line 289, ../sass/sections/_safety.scss */
+/* line 299, ../sass/sections/_safety.scss */
 .c3xgm-about-page-our-commitment .c3xgm-about-onstar-subscribers .c3xgm-about-blockquote {
   padding-left: 1.25rem;
 }
-/* line 292, ../sass/sections/_safety.scss */
+/* line 302, ../sass/sections/_safety.scss */
 .c3xgm-about-page-our-commitment .c3xgm-about-onstar-subscribers .c3xgm-about-blockquote:before {
   content: "";
   display: block;
@@ -3512,12 +3526,12 @@ div#c3xgm-about-grey-van:before {
   animation-duration: 600ms;
 }
 @media (min-width: 768px) {
-  /* line 292, ../sass/sections/_safety.scss */
+  /* line 302, ../sass/sections/_safety.scss */
   .c3xgm-about-page-our-commitment .c3xgm-about-onstar-subscribers .c3xgm-about-blockquote:before {
     width: 0.2rem;
   }
 }
-/* line 307, ../sass/sections/_safety.scss */
+/* line 317, ../sass/sections/_safety.scss */
 .c3xgm-about-page-our-commitment .c3xgm-about-onstar-subscribers .c3xgm-about-blockquote:after {
   content: "";
   display: block;
@@ -3554,19 +3568,19 @@ div#c3xgm-about-grey-van:before {
   animation-duration: 600ms;
 }
 @media (min-width: 768px) {
-  /* line 307, ../sass/sections/_safety.scss */
+  /* line 317, ../sass/sections/_safety.scss */
   .c3xgm-about-page-our-commitment .c3xgm-about-onstar-subscribers .c3xgm-about-blockquote:after {
     width: 0.2rem;
   }
 }
 @media (min-width: 768px) {
-  /* line 289, ../sass/sections/_safety.scss */
+  /* line 299, ../sass/sections/_safety.scss */
   .c3xgm-about-page-our-commitment .c3xgm-about-onstar-subscribers .c3xgm-about-blockquote {
     width: 70%;
     float: left;
   }
 }
-/* line 324, ../sass/sections/_safety.scss */
+/* line 334, ../sass/sections/_safety.scss */
 .c3xgm-about-page-our-commitment .c3xgm-about-onstar-subscribers .c3xgm-about-dark-blue.c3xgm-about-thin.c3xgm-about-small {
   font-size: 12.9088582992554px;
   font-size: 4.03401830544375vw;
@@ -3576,12 +3590,12 @@ div#c3xgm-about-grey-van:before {
   width: auto;
 }
 @media (min-width: 768px) {
-  /* line 324, ../sass/sections/_safety.scss */
+  /* line 334, ../sass/sections/_safety.scss */
   .c3xgm-about-page-our-commitment .c3xgm-about-onstar-subscribers .c3xgm-about-dark-blue.c3xgm-about-thin.c3xgm-about-small {
     font-size: 36.519925px;
   }
 }
-/* line 331, ../sass/sections/_safety.scss */
+/* line 341, ../sass/sections/_safety.scss */
 .c3xgm-about-page-our-commitment .c3xgm-about-onstar-subscribers .c3xgm-about-light-blue.number {
   width: .5em;
   padding-left: 0;
@@ -3592,12 +3606,12 @@ div#c3xgm-about-grey-van:before {
   line-height: 0.75em;
 }
 @media (min-width: 768px) {
-  /* line 331, ../sass/sections/_safety.scss */
+  /* line 341, ../sass/sections/_safety.scss */
   .c3xgm-about-page-our-commitment .c3xgm-about-onstar-subscribers .c3xgm-about-light-blue.number {
     font-size: 241.99315px;
   }
 }
-/* line 338, ../sass/sections/_safety.scss */
+/* line 348, ../sass/sections/_safety.scss */
 .c3xgm-about-page-our-commitment .c3xgm-about-onstar-subscribers .c3xgm-about-light-blue {
   font-size: 28.8503589630127px;
   font-size: 9.015737377031249vw;
@@ -3606,12 +3620,12 @@ div#c3xgm-about-grey-van:before {
   float: left;
 }
 @media (min-width: 768px) {
-  /* line 338, ../sass/sections/_safety.scss */
+  /* line 348, ../sass/sections/_safety.scss */
   .c3xgm-about-page-our-commitment .c3xgm-about-onstar-subscribers .c3xgm-about-light-blue {
     font-size: 81.61937499999999px;
   }
 }
-/* line 346, ../sass/sections/_safety.scss */
+/* line 356, ../sass/sections/_safety.scss */
 .c3xgm-about-page-our-commitment .c3xgm-about-onstar-subscribers .c3xgm-about-dark-blue.c3xgm-about-thin {
   display: inline-block;
   float: left;
@@ -3621,13 +3635,13 @@ div#c3xgm-about-grey-van:before {
   font-size: 7.51283492311125vw;
 }
 @media (min-width: 768px) {
-  /* line 346, ../sass/sections/_safety.scss */
+  /* line 356, ../sass/sections/_safety.scss */
   .c3xgm-about-page-our-commitment .c3xgm-about-onstar-subscribers .c3xgm-about-dark-blue.c3xgm-about-thin {
     font-size: 52px;
     width: auto;
   }
 }
-/* line 360, ../sass/sections/_safety.scss */
+/* line 370, ../sass/sections/_safety.scss */
 .c3xgm-about-page-our-commitment .c3xgm-about-onstar-subscribers .c3xgm-about-gray {
   display: inline-block;
   float: left;
@@ -3636,27 +3650,27 @@ div#c3xgm-about-grey-van:before {
   font-size: 5.99986839025875vw;
 }
 @media (min-width: 768px) {
-  /* line 360, ../sass/sections/_safety.scss */
+  /* line 370, ../sass/sections/_safety.scss */
   .c3xgm-about-page-our-commitment .c3xgm-about-onstar-subscribers .c3xgm-about-gray {
     font-size: 48px;
   }
 }
-/* line 372, ../sass/sections/_safety.scss */
+/* line 382, ../sass/sections/_safety.scss */
 .c3xgm-about-page-our-commitment .c3xgm-about-quality-awards {
   margin-bottom: 0;
   text-align: center;
 }
-/* line 376, ../sass/sections/_safety.scss */
+/* line 386, ../sass/sections/_safety.scss */
 .c3xgm-about-page-our-commitment .c3xgm-about-quality-awards .c3xgm-about-block-image {
   width: 40%;
   position: relative;
 }
-/* line 379, ../sass/sections/_safety.scss */
+/* line 389, ../sass/sections/_safety.scss */
 .c3xgm-about-page-our-commitment .c3xgm-about-quality-awards .c3xgm-about-block-image img {
   max-width: 225px;
 }
 @media (min-width: 768px) {
-  /* line 376, ../sass/sections/_safety.scss */
+  /* line 386, ../sass/sections/_safety.scss */
   .c3xgm-about-page-our-commitment .c3xgm-about-quality-awards .c3xgm-about-block-image {
     float: right;
     width: 25%;
@@ -3664,7 +3678,7 @@ div#c3xgm-about-grey-van:before {
     padding-bottom: 294px;
     margin-top: 9px;
   }
-  /* line 386, ../sass/sections/_safety.scss */
+  /* line 396, ../sass/sections/_safety.scss */
   .c3xgm-about-page-our-commitment .c3xgm-about-quality-awards .c3xgm-about-block-image img {
     width: 60%;
     position: absolute;
@@ -3678,20 +3692,20 @@ div#c3xgm-about-grey-van:before {
   }
 }
 @media (min-width: 906px) {
-  /* line 376, ../sass/sections/_safety.scss */
+  /* line 386, ../sass/sections/_safety.scss */
   .c3xgm-about-page-our-commitment .c3xgm-about-quality-awards .c3xgm-about-block-image {
     width: 33%;
   }
-  /* line 395, ../sass/sections/_safety.scss */
+  /* line 405, ../sass/sections/_safety.scss */
   .c3xgm-about-page-our-commitment .c3xgm-about-quality-awards .c3xgm-about-block-image img {
     left: 42%;
   }
 }
-/* line 399, ../sass/sections/_safety.scss */
+/* line 409, ../sass/sections/_safety.scss */
 .c3xgm-about-page-our-commitment .c3xgm-about-quality-awards .c3xgm-about-blockquote {
   padding-top: 1.6em;
 }
-/* line 404, ../sass/sections/_safety.scss */
+/* line 414, ../sass/sections/_safety.scss */
 .c3xgm-about-page-our-commitment .c3xgm-about-quality-awards .c3xgm-about-blockquote:before {
   content: "";
   display: block;
@@ -3728,13 +3742,13 @@ div#c3xgm-about-grey-van:before {
   animation-duration: 600ms;
 }
 @media (min-width: 768px) {
-  /* line 404, ../sass/sections/_safety.scss */
+  /* line 414, ../sass/sections/_safety.scss */
   .c3xgm-about-page-our-commitment .c3xgm-about-quality-awards .c3xgm-about-blockquote:before {
     width: 0.2rem;
     height: 100%;
   }
 }
-/* line 421, ../sass/sections/_safety.scss */
+/* line 431, ../sass/sections/_safety.scss */
 .c3xgm-about-page-our-commitment .c3xgm-about-quality-awards .c3xgm-about-blockquote:after {
   content: "";
   display: block;
@@ -3771,26 +3785,26 @@ div#c3xgm-about-grey-van:before {
   animation-duration: 600ms;
 }
 @media (min-width: 768px) {
-  /* line 421, ../sass/sections/_safety.scss */
+  /* line 431, ../sass/sections/_safety.scss */
   .c3xgm-about-page-our-commitment .c3xgm-about-quality-awards .c3xgm-about-blockquote:after {
     width: 0.2em;
     height: 100%;
   }
 }
-/* line 438, ../sass/sections/_safety.scss */
+/* line 448, ../sass/sections/_safety.scss */
 .c3xgm-about-page-our-commitment .c3xgm-about-quality-awards .c3xgm-about-blockquote > span {
   display: inline-block;
   float: left;
   clear: left;
 }
 @media (min-width: 768px) {
-  /* line 399, ../sass/sections/_safety.scss */
+  /* line 409, ../sass/sections/_safety.scss */
   .c3xgm-about-page-our-commitment .c3xgm-about-quality-awards .c3xgm-about-blockquote {
     width: 75%;
     border-top: 0;
     padding-top: 0;
   }
-  /* line 450, ../sass/sections/_safety.scss */
+  /* line 460, ../sass/sections/_safety.scss */
   .c3xgm-about-page-our-commitment .c3xgm-about-quality-awards .c3xgm-about-blockquote > span {
     display: block;
     width: 528px;
@@ -3798,53 +3812,53 @@ div#c3xgm-about-grey-van:before {
   }
 }
 @media (min-width: 906px) {
-  /* line 399, ../sass/sections/_safety.scss */
+  /* line 409, ../sass/sections/_safety.scss */
   .c3xgm-about-page-our-commitment .c3xgm-about-quality-awards .c3xgm-about-blockquote {
     width: 66%;
   }
 }
-/* line 461, ../sass/sections/_safety.scss */
+/* line 471, ../sass/sections/_safety.scss */
 .c3xgm-about-page-our-commitment .c3xgm-about-quality-awards .c3xgm-about-dark-blue.c3xgm-about-thin {
   font-size: 20px;
   font-size: 6.25vw;
 }
 @media (min-width: 768px) {
-  /* line 461, ../sass/sections/_safety.scss */
+  /* line 471, ../sass/sections/_safety.scss */
   .c3xgm-about-page-our-commitment .c3xgm-about-quality-awards .c3xgm-about-dark-blue.c3xgm-about-thin {
     font-size: 36.519925px;
   }
 }
-/* line 466, ../sass/sections/_safety.scss */
+/* line 476, ../sass/sections/_safety.scss */
 .c3xgm-about-page-our-commitment .c3xgm-about-quality-awards .c3xgm-about-light-blue {
   font-size: 35px;
   font-size: 11vw;
   margin-bottom: .2em;
 }
 @media (min-width: 768px) {
-  /* line 466, ../sass/sections/_safety.scss */
+  /* line 476, ../sass/sections/_safety.scss */
   .c3xgm-about-page-our-commitment .c3xgm-about-quality-awards .c3xgm-about-light-blue {
     font-size: 65.249945px;
     width: 8em;
   }
 }
-/* line 475, ../sass/sections/_safety.scss */
+/* line 485, ../sass/sections/_safety.scss */
 .c3xgm-about-page-our-commitment .c3xgm-about-quality-awards .c3xgm-about-gray.c3xgm-about-thin {
   font-size: 17px;
   font-size: 5.5vw;
   line-height: 1.2em;
 }
 @media (min-width: 768px) {
-  /* line 475, ../sass/sections/_safety.scss */
+  /* line 485, ../sass/sections/_safety.scss */
   .c3xgm-about-page-our-commitment .c3xgm-about-quality-awards .c3xgm-about-gray.c3xgm-about-thin {
     font-size: 31.8885px;
   }
 }
-/* line 487, ../sass/sections/_safety.scss */
+/* line 497, ../sass/sections/_safety.scss */
 .c3xgm-about-page-our-commitment .c3xgm-about-disclaimer {
   text-align: left;
   margin-top: 1.5em;
 }
-/* line 491, ../sass/sections/_safety.scss */
+/* line 501, ../sass/sections/_safety.scss */
 .c3xgm-about-page-our-commitment .c3xgm-about-disclaimer .c3xgm-about-p,
 .c3xgm-about-page-our-commitment .c3xgm-about-disclaimer .c3xgm-about-gray.c3xgm-about-disclaimer {
   font-weight: normal;
@@ -3856,20 +3870,20 @@ div#c3xgm-about-grey-van:before {
   padding-right: 3em;
 }
 @media (min-width: 768px) {
-  /* line 491, ../sass/sections/_safety.scss */
+  /* line 501, ../sass/sections/_safety.scss */
   .c3xgm-about-page-our-commitment .c3xgm-about-disclaimer .c3xgm-about-p,
   .c3xgm-about-page-our-commitment .c3xgm-about-disclaimer .c3xgm-about-gray.c3xgm-about-disclaimer {
     font-size: 18.222px;
     max-width: none;
   }
 }
-/* line 506, ../sass/sections/_safety.scss */
+/* line 516, ../sass/sections/_safety.scss */
 .c3xgm-about-page-our-commitment .c3xgm-about-disclaimer .c3xgm-about-blockquote {
   max-width: 838px;
   float: right;
   padding-left: 4px;
 }
-/* line 512, ../sass/sections/_safety.scss */
+/* line 522, ../sass/sections/_safety.scss */
 .c3xgm-about-page-our-commitment .c3xgm-about-disclaimer .c3xgm-about-gray.c3xgm-about-disclaimer-small {
   font-weight: normal;
   text-transform: none;
@@ -3881,13 +3895,13 @@ div#c3xgm-about-grey-van:before {
   padding-right: 3em;
 }
 @media (min-width: 768px) {
-  /* line 512, ../sass/sections/_safety.scss */
+  /* line 522, ../sass/sections/_safety.scss */
   .c3xgm-about-page-our-commitment .c3xgm-about-disclaimer .c3xgm-about-gray.c3xgm-about-disclaimer-small {
     font-size: 10.6295px;
     max-width: none;
   }
 }
-/* line 520, ../sass/sections/_safety.scss */
+/* line 530, ../sass/sections/_safety.scss */
 .c3xgm-about-page-our-commitment .c3xgm-about-disclaimer .c3xgm-about-gray.c3xgm-about-disclaimer-small strong, .c3xgm-about-page-our-commitment .c3xgm-about-disclaimer .c3xgm-about-gray.c3xgm-about-disclaimer-small a {
   display: block;
   margin: 1em 0 .5em;
@@ -3898,13 +3912,13 @@ div#c3xgm-about-grey-van:before {
   color: #6086C4;
 }
 @media (min-width: 768px) {
-  /* line 520, ../sass/sections/_safety.scss */
+  /* line 530, ../sass/sections/_safety.scss */
   .c3xgm-about-page-our-commitment .c3xgm-about-disclaimer .c3xgm-about-gray.c3xgm-about-disclaimer-small strong, .c3xgm-about-page-our-commitment .c3xgm-about-disclaimer .c3xgm-about-gray.c3xgm-about-disclaimer-small a {
     font-size: 21.259px;
     max-width: none;
   }
 }
-/* line 531, ../sass/sections/_safety.scss */
+/* line 541, ../sass/sections/_safety.scss */
 .c3xgm-about-page-our-commitment .c3xgm-about-disclaimer .c3xgm-about-p.c3xgm-about-disclaimer-box {
   margin-left: 0;
   margin-right: 0;
@@ -3915,7 +3929,7 @@ div#c3xgm-about-grey-van:before {
   font-size: 10px;
   max-width: 83em;
 }
-/* line 537, ../sass/sections/_safety.scss */
+/* line 547, ../sass/sections/_safety.scss */
 .c3xgm-about-page-our-commitment .c3xgm-about-disclaimer .c3xgm-about-p.c3xgm-about-disclaimer-box strong, .c3xgm-about-page-our-commitment .c3xgm-about-disclaimer .c3xgm-about-p.c3xgm-about-disclaimer-box a {
   font-family: "open-sans", Arial, sans-serif;
   font-size: 1em;
@@ -3923,7 +3937,7 @@ div#c3xgm-about-grey-van:before {
   padding-left: 0.15em;
 }
 
-/* line 549, ../sass/sections/_safety.scss */
+/* line 559, ../sass/sections/_safety.scss */
 .c3xgm-about-disclaimer-box {
   height: 0;
   opacity: 0;
@@ -3935,7 +3949,7 @@ div#c3xgm-about-grey-van:before {
   transition: all 250ms;
 }
 
-/* line 556, ../sass/sections/_safety.scss */
+/* line 566, ../sass/sections/_safety.scss */
 .c3xgm-about-disclaimer-box.c3xgm-about-show-disclaimer {
   height: auto;
   opacity: 1;
@@ -9986,10 +10000,12 @@ body {
   content: "";
   display: block;
   position: absolute;
-  top: 0;
+  top: 8px;
   left: 0;
+  bottom: 0;
+  margin: auto;
   width: 0.15rem;
-  height: 100%;
+  height: 94%;
   background-color: #d4d4d5;
   -webkit-transform-origin: top right;
   -moz-transform-origin: top right;
@@ -10025,17 +10041,19 @@ body {
     width: 0.2rem;
   }
 }
-/* line 65, ../sass/pages/_all-page-animations.scss */
+/* line 70, ../sass/pages/_all-page-animations.scss */
 #c3xgm-about-our-company.c3xgm-about-page.c3xgm-about-page-in-view .c3xgm-about-block-earn .c3xgm-about-yellow-bar-left-wrapper .c3xgm-about-block-tagline:after,
 #c3xgm-about-our-people.c3xgm-about-page.c3xgm-about-page-in-view .c3xgm-about-block-earn .c3xgm-about-yellow-bar-left-wrapper .c3xgm-about-block-tagline:after,
 #c3xgm-about-our-brands.c3xgm-about-page.c3xgm-about-page-in-view .c3xgm-about-block-earn .c3xgm-about-yellow-bar-left-wrapper .c3xgm-about-block-tagline:after {
   content: "";
   display: block;
   position: absolute;
-  top: 0;
+  top: 8px;
   left: 0;
+  bottom: 0;
+  margin: auto;
   width: 0.15rem;
-  height: 100%;
+  height: 94%;
   background-color: #FDB12E;
   -webkit-transform-origin: top right;
   -moz-transform-origin: top right;
@@ -10064,14 +10082,14 @@ body {
   animation-duration: 600ms;
 }
 @media (min-width: 768px) {
-  /* line 65, ../sass/pages/_all-page-animations.scss */
+  /* line 70, ../sass/pages/_all-page-animations.scss */
   #c3xgm-about-our-company.c3xgm-about-page.c3xgm-about-page-in-view .c3xgm-about-block-earn .c3xgm-about-yellow-bar-left-wrapper .c3xgm-about-block-tagline:after,
   #c3xgm-about-our-people.c3xgm-about-page.c3xgm-about-page-in-view .c3xgm-about-block-earn .c3xgm-about-yellow-bar-left-wrapper .c3xgm-about-block-tagline:after,
   #c3xgm-about-our-brands.c3xgm-about-page.c3xgm-about-page-in-view .c3xgm-about-block-earn .c3xgm-about-yellow-bar-left-wrapper .c3xgm-about-block-tagline:after {
     width: 0.2rem;
   }
 }
-/* line 79, ../sass/pages/_all-page-animations.scss */
+/* line 89, ../sass/pages/_all-page-animations.scss */
 #c3xgm-about-our-company.c3xgm-about-page.c3xgm-about-page-in-view .c3xgm-about-block-earn .c3xgm-about-yellow-bar-left-wrapper .c3xgm-about-block-tagline > span:first-child,
 #c3xgm-about-our-people.c3xgm-about-page.c3xgm-about-page-in-view .c3xgm-about-block-earn .c3xgm-about-yellow-bar-left-wrapper .c3xgm-about-block-tagline > span:first-child,
 #c3xgm-about-our-brands.c3xgm-about-page.c3xgm-about-page-in-view .c3xgm-about-block-earn .c3xgm-about-yellow-bar-left-wrapper .c3xgm-about-block-tagline > span:first-child {
@@ -10096,7 +10114,7 @@ body {
   -ms-animation-duration: 600ms;
   animation-duration: 600ms;
 }
-/* line 86, ../sass/pages/_all-page-animations.scss */
+/* line 96, ../sass/pages/_all-page-animations.scss */
 #c3xgm-about-our-company.c3xgm-about-page.c3xgm-about-page-in-view .c3xgm-about-block-earn .c3xgm-about-yellow-bar-left-wrapper .c3xgm-about-block-tagline > span:nth-child(2),
 #c3xgm-about-our-people.c3xgm-about-page.c3xgm-about-page-in-view .c3xgm-about-block-earn .c3xgm-about-yellow-bar-left-wrapper .c3xgm-about-block-tagline > span:nth-child(2),
 #c3xgm-about-our-brands.c3xgm-about-page.c3xgm-about-page-in-view .c3xgm-about-block-earn .c3xgm-about-yellow-bar-left-wrapper .c3xgm-about-block-tagline > span:nth-child(2) {
@@ -10121,7 +10139,7 @@ body {
   -ms-animation-duration: 500ms;
   animation-duration: 500ms;
 }
-/* line 95, ../sass/pages/_all-page-animations.scss */
+/* line 105, ../sass/pages/_all-page-animations.scss */
 #c3xgm-about-our-company.c3xgm-about-page.c3xgm-about-page-in-view .c3xgm-about-block-earn .c3xgm-about-p,
 #c3xgm-about-our-people.c3xgm-about-page.c3xgm-about-page-in-view .c3xgm-about-block-earn .c3xgm-about-p,
 #c3xgm-about-our-brands.c3xgm-about-page.c3xgm-about-page-in-view .c3xgm-about-block-earn .c3xgm-about-p {
@@ -10146,7 +10164,7 @@ body {
   -ms-animation-duration: 800ms;
   animation-duration: 800ms;
 }
-/* line 104, ../sass/pages/_all-page-animations.scss */
+/* line 114, ../sass/pages/_all-page-animations.scss */
 #c3xgm-about-our-company.c3xgm-about-page.c3xgm-about-page-in-view .c3xgm-about-down-arrow-link,
 #c3xgm-about-our-people.c3xgm-about-page.c3xgm-about-page-in-view .c3xgm-about-down-arrow-link,
 #c3xgm-about-our-brands.c3xgm-about-page.c3xgm-about-page-in-view .c3xgm-about-down-arrow-link {
@@ -10171,7 +10189,7 @@ body {
   -ms-animation-duration: 400ms;
   animation-duration: 400ms;
 }
-/* line 112, ../sass/pages/_all-page-animations.scss */
+/* line 122, ../sass/pages/_all-page-animations.scss */
 #c3xgm-about-our-company.c3xgm-about-page.c3xgm-about-page-in-view .c3xgm-about-employees .c3xgm-about-blockquote .c3xgm-about-span-container .c3xgm-about-gray,
 #c3xgm-about-our-people.c3xgm-about-page.c3xgm-about-page-in-view .c3xgm-about-employees .c3xgm-about-blockquote .c3xgm-about-span-container .c3xgm-about-gray,
 #c3xgm-about-our-brands.c3xgm-about-page.c3xgm-about-page-in-view .c3xgm-about-employees .c3xgm-about-blockquote .c3xgm-about-span-container .c3xgm-about-gray {
@@ -10196,7 +10214,7 @@ body {
   -ms-animation-duration: 900ms;
   animation-duration: 900ms;
 }
-/* line 122, ../sass/pages/_all-page-animations.scss */
+/* line 132, ../sass/pages/_all-page-animations.scss */
 #c3xgm-about-our-company.c3xgm-about-page.c3xgm-about-page-in-view .c3xgm-about-module-car .c3xgm-about-module-car-logo-container li,
 #c3xgm-about-our-people.c3xgm-about-page.c3xgm-about-page-in-view .c3xgm-about-module-car .c3xgm-about-module-car-logo-container li,
 #c3xgm-about-our-brands.c3xgm-about-page.c3xgm-about-page-in-view .c3xgm-about-module-car .c3xgm-about-module-car-logo-container li {
@@ -10221,7 +10239,7 @@ body {
   -ms-animation-duration: 100ms;
   animation-duration: 100ms;
 }
-/* line 128, ../sass/pages/_all-page-animations.scss */
+/* line 138, ../sass/pages/_all-page-animations.scss */
 #c3xgm-about-our-company.c3xgm-about-page.c3xgm-about-page-in-view .c3xgm-about-module-car .c3xgm-about-module-car-logo-container li:nth-child(2),
 #c3xgm-about-our-people.c3xgm-about-page.c3xgm-about-page-in-view .c3xgm-about-module-car .c3xgm-about-module-car-logo-container li:nth-child(2),
 #c3xgm-about-our-brands.c3xgm-about-page.c3xgm-about-page-in-view .c3xgm-about-module-car .c3xgm-about-module-car-logo-container li:nth-child(2) {
@@ -10231,7 +10249,7 @@ body {
   -ms-animation-delay: 1900ms;
   animation-delay: 1900ms;
 }
-/* line 129, ../sass/pages/_all-page-animations.scss */
+/* line 139, ../sass/pages/_all-page-animations.scss */
 #c3xgm-about-our-company.c3xgm-about-page.c3xgm-about-page-in-view .c3xgm-about-module-car .c3xgm-about-module-car-logo-container li:nth-child(3),
 #c3xgm-about-our-people.c3xgm-about-page.c3xgm-about-page-in-view .c3xgm-about-module-car .c3xgm-about-module-car-logo-container li:nth-child(3),
 #c3xgm-about-our-brands.c3xgm-about-page.c3xgm-about-page-in-view .c3xgm-about-module-car .c3xgm-about-module-car-logo-container li:nth-child(3) {
@@ -10241,7 +10259,7 @@ body {
   -ms-animation-delay: 2000ms;
   animation-delay: 2000ms;
 }
-/* line 130, ../sass/pages/_all-page-animations.scss */
+/* line 140, ../sass/pages/_all-page-animations.scss */
 #c3xgm-about-our-company.c3xgm-about-page.c3xgm-about-page-in-view .c3xgm-about-module-car .c3xgm-about-module-car-logo-container li:nth-child(4),
 #c3xgm-about-our-people.c3xgm-about-page.c3xgm-about-page-in-view .c3xgm-about-module-car .c3xgm-about-module-car-logo-container li:nth-child(4),
 #c3xgm-about-our-brands.c3xgm-about-page.c3xgm-about-page-in-view .c3xgm-about-module-car .c3xgm-about-module-car-logo-container li:nth-child(4) {
@@ -10251,7 +10269,7 @@ body {
   -ms-animation-delay: 2100ms;
   animation-delay: 2100ms;
 }
-/* line 131, ../sass/pages/_all-page-animations.scss */
+/* line 141, ../sass/pages/_all-page-animations.scss */
 #c3xgm-about-our-company.c3xgm-about-page.c3xgm-about-page-in-view .c3xgm-about-module-car .c3xgm-about-module-car-logo-container li:nth-child(5),
 #c3xgm-about-our-people.c3xgm-about-page.c3xgm-about-page-in-view .c3xgm-about-module-car .c3xgm-about-module-car-logo-container li:nth-child(5),
 #c3xgm-about-our-brands.c3xgm-about-page.c3xgm-about-page-in-view .c3xgm-about-module-car .c3xgm-about-module-car-logo-container li:nth-child(5) {
@@ -10261,7 +10279,7 @@ body {
   -ms-animation-delay: 2200ms;
   animation-delay: 2200ms;
 }
-/* line 132, ../sass/pages/_all-page-animations.scss */
+/* line 142, ../sass/pages/_all-page-animations.scss */
 #c3xgm-about-our-company.c3xgm-about-page.c3xgm-about-page-in-view .c3xgm-about-module-car .c3xgm-about-module-car-logo-container li:nth-child(6),
 #c3xgm-about-our-people.c3xgm-about-page.c3xgm-about-page-in-view .c3xgm-about-module-car .c3xgm-about-module-car-logo-container li:nth-child(6),
 #c3xgm-about-our-brands.c3xgm-about-page.c3xgm-about-page-in-view .c3xgm-about-module-car .c3xgm-about-module-car-logo-container li:nth-child(6) {
@@ -10271,7 +10289,7 @@ body {
   -ms-animation-delay: 2300ms;
   animation-delay: 2300ms;
 }
-/* line 133, ../sass/pages/_all-page-animations.scss */
+/* line 143, ../sass/pages/_all-page-animations.scss */
 #c3xgm-about-our-company.c3xgm-about-page.c3xgm-about-page-in-view .c3xgm-about-module-car .c3xgm-about-module-car-logo-container li:nth-child(7),
 #c3xgm-about-our-people.c3xgm-about-page.c3xgm-about-page-in-view .c3xgm-about-module-car .c3xgm-about-module-car-logo-container li:nth-child(7),
 #c3xgm-about-our-brands.c3xgm-about-page.c3xgm-about-page-in-view .c3xgm-about-module-car .c3xgm-about-module-car-logo-container li:nth-child(7) {
@@ -10281,7 +10299,7 @@ body {
   -ms-animation-delay: 2400ms;
   animation-delay: 2400ms;
 }
-/* line 134, ../sass/pages/_all-page-animations.scss */
+/* line 144, ../sass/pages/_all-page-animations.scss */
 #c3xgm-about-our-company.c3xgm-about-page.c3xgm-about-page-in-view .c3xgm-about-module-car .c3xgm-about-module-car-logo-container li:nth-child(8),
 #c3xgm-about-our-people.c3xgm-about-page.c3xgm-about-page-in-view .c3xgm-about-module-car .c3xgm-about-module-car-logo-container li:nth-child(8),
 #c3xgm-about-our-brands.c3xgm-about-page.c3xgm-about-page-in-view .c3xgm-about-module-car .c3xgm-about-module-car-logo-container li:nth-child(8) {
@@ -10291,7 +10309,7 @@ body {
   -ms-animation-delay: 2500ms;
   animation-delay: 2500ms;
 }
-/* line 135, ../sass/pages/_all-page-animations.scss */
+/* line 145, ../sass/pages/_all-page-animations.scss */
 #c3xgm-about-our-company.c3xgm-about-page.c3xgm-about-page-in-view .c3xgm-about-module-car .c3xgm-about-module-car-logo-container li:nth-child(9),
 #c3xgm-about-our-people.c3xgm-about-page.c3xgm-about-page-in-view .c3xgm-about-module-car .c3xgm-about-module-car-logo-container li:nth-child(9),
 #c3xgm-about-our-brands.c3xgm-about-page.c3xgm-about-page-in-view .c3xgm-about-module-car .c3xgm-about-module-car-logo-container li:nth-child(9) {
@@ -10302,7 +10320,7 @@ body {
   animation-delay: 2600ms;
 }
 @media (min-width: 768px) {
-  /* line 138, ../sass/pages/_all-page-animations.scss */
+  /* line 148, ../sass/pages/_all-page-animations.scss */
   #c3xgm-about-our-company.c3xgm-about-page.c3xgm-about-page-in-view .c3xgm-about-module-car .c3xgm-about-module-car-logo-container li:nth-child(3),
   #c3xgm-about-our-people.c3xgm-about-page.c3xgm-about-page-in-view .c3xgm-about-module-car .c3xgm-about-module-car-logo-container li:nth-child(3),
   #c3xgm-about-our-brands.c3xgm-about-page.c3xgm-about-page-in-view .c3xgm-about-module-car .c3xgm-about-module-car-logo-container li:nth-child(3) {
@@ -10312,7 +10330,7 @@ body {
     -ms-animation-delay: 1900ms;
     animation-delay: 1900ms;
   }
-  /* line 139, ../sass/pages/_all-page-animations.scss */
+  /* line 149, ../sass/pages/_all-page-animations.scss */
   #c3xgm-about-our-company.c3xgm-about-page.c3xgm-about-page-in-view .c3xgm-about-module-car .c3xgm-about-module-car-logo-container li:nth-child(5),
   #c3xgm-about-our-people.c3xgm-about-page.c3xgm-about-page-in-view .c3xgm-about-module-car .c3xgm-about-module-car-logo-container li:nth-child(5),
   #c3xgm-about-our-brands.c3xgm-about-page.c3xgm-about-page-in-view .c3xgm-about-module-car .c3xgm-about-module-car-logo-container li:nth-child(5) {
@@ -10322,7 +10340,7 @@ body {
     -ms-animation-delay: 2000ms;
     animation-delay: 2000ms;
   }
-  /* line 140, ../sass/pages/_all-page-animations.scss */
+  /* line 150, ../sass/pages/_all-page-animations.scss */
   #c3xgm-about-our-company.c3xgm-about-page.c3xgm-about-page-in-view .c3xgm-about-module-car .c3xgm-about-module-car-logo-container li:nth-child(7),
   #c3xgm-about-our-people.c3xgm-about-page.c3xgm-about-page-in-view .c3xgm-about-module-car .c3xgm-about-module-car-logo-container li:nth-child(7),
   #c3xgm-about-our-brands.c3xgm-about-page.c3xgm-about-page-in-view .c3xgm-about-module-car .c3xgm-about-module-car-logo-container li:nth-child(7) {
@@ -10332,7 +10350,7 @@ body {
     -ms-animation-delay: 2100ms;
     animation-delay: 2100ms;
   }
-  /* line 141, ../sass/pages/_all-page-animations.scss */
+  /* line 151, ../sass/pages/_all-page-animations.scss */
   #c3xgm-about-our-company.c3xgm-about-page.c3xgm-about-page-in-view .c3xgm-about-module-car .c3xgm-about-module-car-logo-container li:nth-child(9),
   #c3xgm-about-our-people.c3xgm-about-page.c3xgm-about-page-in-view .c3xgm-about-module-car .c3xgm-about-module-car-logo-container li:nth-child(9),
   #c3xgm-about-our-brands.c3xgm-about-page.c3xgm-about-page-in-view .c3xgm-about-module-car .c3xgm-about-module-car-logo-container li:nth-child(9) {
@@ -10342,7 +10360,7 @@ body {
     -ms-animation-delay: 2200ms;
     animation-delay: 2200ms;
   }
-  /* line 142, ../sass/pages/_all-page-animations.scss */
+  /* line 152, ../sass/pages/_all-page-animations.scss */
   #c3xgm-about-our-company.c3xgm-about-page.c3xgm-about-page-in-view .c3xgm-about-module-car .c3xgm-about-module-car-logo-container li:nth-child(2),
   #c3xgm-about-our-people.c3xgm-about-page.c3xgm-about-page-in-view .c3xgm-about-module-car .c3xgm-about-module-car-logo-container li:nth-child(2),
   #c3xgm-about-our-brands.c3xgm-about-page.c3xgm-about-page-in-view .c3xgm-about-module-car .c3xgm-about-module-car-logo-container li:nth-child(2) {
@@ -10352,7 +10370,7 @@ body {
     -ms-animation-delay: 2300ms;
     animation-delay: 2300ms;
   }
-  /* line 143, ../sass/pages/_all-page-animations.scss */
+  /* line 153, ../sass/pages/_all-page-animations.scss */
   #c3xgm-about-our-company.c3xgm-about-page.c3xgm-about-page-in-view .c3xgm-about-module-car .c3xgm-about-module-car-logo-container li:nth-child(4),
   #c3xgm-about-our-people.c3xgm-about-page.c3xgm-about-page-in-view .c3xgm-about-module-car .c3xgm-about-module-car-logo-container li:nth-child(4),
   #c3xgm-about-our-brands.c3xgm-about-page.c3xgm-about-page-in-view .c3xgm-about-module-car .c3xgm-about-module-car-logo-container li:nth-child(4) {
@@ -10362,7 +10380,7 @@ body {
     -ms-animation-delay: 2400ms;
     animation-delay: 2400ms;
   }
-  /* line 144, ../sass/pages/_all-page-animations.scss */
+  /* line 154, ../sass/pages/_all-page-animations.scss */
   #c3xgm-about-our-company.c3xgm-about-page.c3xgm-about-page-in-view .c3xgm-about-module-car .c3xgm-about-module-car-logo-container li:nth-child(6),
   #c3xgm-about-our-people.c3xgm-about-page.c3xgm-about-page-in-view .c3xgm-about-module-car .c3xgm-about-module-car-logo-container li:nth-child(6),
   #c3xgm-about-our-brands.c3xgm-about-page.c3xgm-about-page-in-view .c3xgm-about-module-car .c3xgm-about-module-car-logo-container li:nth-child(6) {
@@ -10372,7 +10390,7 @@ body {
     -ms-animation-delay: 2500ms;
     animation-delay: 2500ms;
   }
-  /* line 145, ../sass/pages/_all-page-animations.scss */
+  /* line 155, ../sass/pages/_all-page-animations.scss */
   #c3xgm-about-our-company.c3xgm-about-page.c3xgm-about-page-in-view .c3xgm-about-module-car .c3xgm-about-module-car-logo-container li:nth-child(8),
   #c3xgm-about-our-people.c3xgm-about-page.c3xgm-about-page-in-view .c3xgm-about-module-car .c3xgm-about-module-car-logo-container li:nth-child(8),
   #c3xgm-about-our-brands.c3xgm-about-page.c3xgm-about-page-in-view .c3xgm-about-module-car .c3xgm-about-module-car-logo-container li:nth-child(8) {
@@ -10384,7 +10402,7 @@ body {
   }
 }
 
-/* line 156, ../sass/pages/_all-page-animations.scss */
+/* line 166, ../sass/pages/_all-page-animations.scss */
 #c3xgm-about-our-commitment.c3xgm-about-page.c3xgm-about-page-in-view .c3xgm-about-section-header .c3xgm-about-section-icon {
   -webkit-animation-fill-mode: both;
   -moz-animation-fill-mode: both;
@@ -10407,7 +10425,7 @@ body {
   -ms-animation-duration: 800ms;
   animation-duration: 800ms;
 }
-/* line 163, ../sass/pages/_all-page-animations.scss */
+/* line 173, ../sass/pages/_all-page-animations.scss */
 #c3xgm-about-our-commitment.c3xgm-about-page.c3xgm-about-page-in-view .c3xgm-about-section-header h1.c3xgm-about-h {
   -webkit-animation-fill-mode: both;
   -moz-animation-fill-mode: both;
@@ -10430,7 +10448,7 @@ body {
   -ms-animation-duration: 800ms;
   animation-duration: 800ms;
 }
-/* line 170, ../sass/pages/_all-page-animations.scss */
+/* line 180, ../sass/pages/_all-page-animations.scss */
 #c3xgm-about-our-commitment.c3xgm-about-page.c3xgm-about-page-in-view .c3xgm-about-section-header hr {
   -webkit-animation-fill-mode: both;
   -moz-animation-fill-mode: both;
@@ -10454,7 +10472,7 @@ body {
   animation-duration: 800ms;
 }
 
-/* line 188, ../sass/pages/_all-page-animations.scss */
+/* line 198, ../sass/pages/_all-page-animations.scss */
 #c3xgm-about-safety-quality.c3xgm-about-page-in-view .c3xgm-about-subsection .c3xgm-about-h,
 #c3xgm-about-our-global-community.c3xgm-about-page.c3xgm-about-page-in-view .c3xgm-about-subsection .c3xgm-about-h,
 #c3xgm-about-environment.c3xgm-about-page.c3xgm-about-page-in-view .c3xgm-about-subsection .c3xgm-about-h,
@@ -10480,7 +10498,7 @@ body {
   -ms-animation-duration: 800ms;
   animation-duration: 800ms;
 }
-/* line 195, ../sass/pages/_all-page-animations.scss */
+/* line 205, ../sass/pages/_all-page-animations.scss */
 #c3xgm-about-safety-quality.c3xgm-about-page-in-view .c3xgm-about-subsection .c3xgm-about-p,
 #c3xgm-about-our-global-community.c3xgm-about-page.c3xgm-about-page-in-view .c3xgm-about-subsection .c3xgm-about-p,
 #c3xgm-about-environment.c3xgm-about-page.c3xgm-about-page-in-view .c3xgm-about-subsection .c3xgm-about-p,
@@ -10506,7 +10524,7 @@ body {
   -ms-animation-duration: 800ms;
   animation-duration: 800ms;
 }
-/* line 201, ../sass/pages/_all-page-animations.scss */
+/* line 211, ../sass/pages/_all-page-animations.scss */
 #c3xgm-about-safety-quality.c3xgm-about-page-in-view .c3xgm-about-subsection .c3xgm-about-p:before,
 #c3xgm-about-our-global-community.c3xgm-about-page.c3xgm-about-page-in-view .c3xgm-about-subsection .c3xgm-about-p:before,
 #c3xgm-about-environment.c3xgm-about-page.c3xgm-about-page-in-view .c3xgm-about-subsection .c3xgm-about-p:before,
@@ -10514,10 +10532,12 @@ body {
   content: "";
   display: block;
   position: absolute;
-  top: 0;
-  left: 0;
+  bottom: 0;
+  left: -0.5em;
   width: 0.15rem;
-  height: 100%;
+  height: 90%;
+  top: 0;
+  margin: auto;
   background-color: #d4d4d5;
   -webkit-transform-origin: top right;
   -moz-transform-origin: top right;
@@ -10546,7 +10566,7 @@ body {
   animation-duration: 600ms;
 }
 @media (min-width: 768px) {
-  /* line 201, ../sass/pages/_all-page-animations.scss */
+  /* line 211, ../sass/pages/_all-page-animations.scss */
   #c3xgm-about-safety-quality.c3xgm-about-page-in-view .c3xgm-about-subsection .c3xgm-about-p:before,
   #c3xgm-about-our-global-community.c3xgm-about-page.c3xgm-about-page-in-view .c3xgm-about-subsection .c3xgm-about-p:before,
   #c3xgm-about-environment.c3xgm-about-page.c3xgm-about-page-in-view .c3xgm-about-subsection .c3xgm-about-p:before,
@@ -10554,7 +10574,7 @@ body {
     width: 0.2rem;
   }
 }
-/* line 215, ../sass/pages/_all-page-animations.scss */
+/* line 232, ../sass/pages/_all-page-animations.scss */
 #c3xgm-about-safety-quality.c3xgm-about-page-in-view .c3xgm-about-subsection .c3xgm-about-p:after,
 #c3xgm-about-our-global-community.c3xgm-about-page.c3xgm-about-page-in-view .c3xgm-about-subsection .c3xgm-about-p:after,
 #c3xgm-about-environment.c3xgm-about-page.c3xgm-about-page-in-view .c3xgm-about-subsection .c3xgm-about-p:after,
@@ -10562,10 +10582,12 @@ body {
   content: "";
   display: block;
   position: absolute;
-  top: 0;
-  left: 0;
+  bottom: 0;
+  left: -0.5em;
   width: 0.15rem;
-  height: 100%;
+  height: 90%;
+  top: 0;
+  margin: auto;
   background-color: #FDB12E;
   -webkit-transform-origin: top right;
   -moz-transform-origin: top right;
@@ -10594,7 +10616,7 @@ body {
   animation-duration: 600ms;
 }
 @media (min-width: 768px) {
-  /* line 215, ../sass/pages/_all-page-animations.scss */
+  /* line 232, ../sass/pages/_all-page-animations.scss */
   #c3xgm-about-safety-quality.c3xgm-about-page-in-view .c3xgm-about-subsection .c3xgm-about-p:after,
   #c3xgm-about-our-global-community.c3xgm-about-page.c3xgm-about-page-in-view .c3xgm-about-subsection .c3xgm-about-p:after,
   #c3xgm-about-environment.c3xgm-about-page.c3xgm-about-page-in-view .c3xgm-about-subsection .c3xgm-about-p:after,
@@ -10603,7 +10625,7 @@ body {
   }
 }
 
-/* line 240, ../sass/pages/_all-page-animations.scss */
+/* line 264, ../sass/pages/_all-page-animations.scss */
 #c3xgm-about-our-global-community.c3xgm-about-page.c3xgm-about-page-in-view .c3xgm-about-yellow-bar-left-wrapper.c3xgm-about-p {
   -webkit-animation-fill-mode: both;
   -moz-animation-fill-mode: both;
@@ -10626,7 +10648,7 @@ body {
   -ms-animation-duration: 800ms;
   animation-duration: 800ms;
 }
-/* line 248, ../sass/pages/_all-page-animations.scss */
+/* line 272, ../sass/pages/_all-page-animations.scss */
 #c3xgm-about-our-global-community.c3xgm-about-page.c3xgm-about-page-in-view .c3xgm-about-module-foundation .c3xgm-about-module-foundation-logo-container li {
   -webkit-animation-fill-mode: both;
   -moz-animation-fill-mode: both;
@@ -10644,7 +10666,7 @@ body {
   -ms-animation-duration: 200ms;
   animation-duration: 200ms;
 }
-/* line 254, ../sass/pages/_all-page-animations.scss */
+/* line 278, ../sass/pages/_all-page-animations.scss */
 #c3xgm-about-our-global-community.c3xgm-about-page.c3xgm-about-page-in-view .c3xgm-about-module-foundation .c3xgm-about-module-foundation-logo-container li:first-child {
   -webkit-animation-delay: 1400ms;
   -moz-animation-delay: 1400ms;
@@ -10652,7 +10674,7 @@ body {
   -ms-animation-delay: 1400ms;
   animation-delay: 1400ms;
 }
-/* line 255, ../sass/pages/_all-page-animations.scss */
+/* line 279, ../sass/pages/_all-page-animations.scss */
 #c3xgm-about-our-global-community.c3xgm-about-page.c3xgm-about-page-in-view .c3xgm-about-module-foundation .c3xgm-about-module-foundation-logo-container li:nth-child(2) {
   -webkit-animation-delay: 1700ms;
   -moz-animation-delay: 1700ms;
@@ -10660,7 +10682,7 @@ body {
   -ms-animation-delay: 1700ms;
   animation-delay: 1700ms;
 }
-/* line 256, ../sass/pages/_all-page-animations.scss */
+/* line 280, ../sass/pages/_all-page-animations.scss */
 #c3xgm-about-our-global-community.c3xgm-about-page.c3xgm-about-page-in-view .c3xgm-about-module-foundation .c3xgm-about-module-foundation-logo-container li:nth-child(3) {
   -webkit-animation-delay: 2000ms;
   -moz-animation-delay: 2000ms;
@@ -10668,7 +10690,7 @@ body {
   -ms-animation-delay: 2000ms;
   animation-delay: 2000ms;
 }
-/* line 257, ../sass/pages/_all-page-animations.scss */
+/* line 281, ../sass/pages/_all-page-animations.scss */
 #c3xgm-about-our-global-community.c3xgm-about-page.c3xgm-about-page-in-view .c3xgm-about-module-foundation .c3xgm-about-module-foundation-logo-container li:nth-child(4) {
   -webkit-animation-delay: 2300ms;
   -moz-animation-delay: 2300ms;
@@ -10676,7 +10698,7 @@ body {
   -ms-animation-delay: 2300ms;
   animation-delay: 2300ms;
 }
-/* line 258, ../sass/pages/_all-page-animations.scss */
+/* line 282, ../sass/pages/_all-page-animations.scss */
 #c3xgm-about-our-global-community.c3xgm-about-page.c3xgm-about-page-in-view .c3xgm-about-module-foundation .c3xgm-about-module-foundation-logo-container li:nth-child(5) {
   -webkit-animation-delay: 2600ms;
   -moz-animation-delay: 2600ms;
@@ -10684,7 +10706,7 @@ body {
   -ms-animation-delay: 2600ms;
   animation-delay: 2600ms;
 }
-/* line 262, ../sass/pages/_all-page-animations.scss */
+/* line 286, ../sass/pages/_all-page-animations.scss */
 #c3xgm-about-our-global-community.c3xgm-about-page.c3xgm-about-page-in-view .c3xgm-about-module-foundation .c3xgm-about-gray-line.c3xgm-about-line-vert.slideInDown {
   -webkit-animation-fill-mode: both;
   -moz-animation-fill-mode: both;
@@ -10702,7 +10724,7 @@ body {
   -ms-animation-duration: 500ms;
   animation-duration: 500ms;
 }
-/* line 267, ../sass/pages/_all-page-animations.scss */
+/* line 291, ../sass/pages/_all-page-animations.scss */
 #c3xgm-about-our-global-community.c3xgm-about-page.c3xgm-about-page-in-view .c3xgm-about-module-foundation .c3xgm-about-yellow-line.c3xgm-about-line-vert.slideInDown {
   -webkit-animation-fill-mode: both;
   -moz-animation-fill-mode: both;

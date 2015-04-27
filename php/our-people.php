@@ -50,7 +50,7 @@ echo '<div id="c3xgm-about-our-people" class="c3xgm-about-page c3xgm-about-clear
                     <span class="c3xgm-about-gray">Continents</span>
                     <span class="c3xgm-about-gray-line"></span><span class="c3xgm-about-yellow-line"></span>
                 </span>
-                <span class="c3xgm-about-light-blue number" id="number-6">6</span>
+                <span class="c3xgm-about-light-blue number" id="c3xgm-about-number-6">6</span>
             </p>
 
             <div class="c3xgm-about-block-image">
@@ -81,7 +81,7 @@ echo '<div id="c3xgm-about-our-people" class="c3xgm-about-page c3xgm-about-clear
                     <span class="c3xgm-about-gray">Timezones</span>
                     <span class="c3xgm-about-gray-line"></span><span class="c3xgm-about-yellow-line"></span>
                 </span>
-                <span class="c3xgm-about-light-blue number" id="number-23">23</span>
+                <span class="c3xgm-about-light-blue number" id="c3xgm-about-number-23">23</span>
             </p>
 
             <div class="c3xgm-about-block-image">
@@ -98,7 +98,7 @@ echo '<div id="c3xgm-about-our-people" class="c3xgm-about-page c3xgm-about-clear
                     <span class="c3xgm-about-gray">Languages</span>
                     <span class="c3xgm-about-gray-line"></span><span class="c3xgm-about-yellow-line"></span>
                 </span>
-                <span class="c3xgm-about-light-blue number" id="number-70">70</span>
+                <span class="c3xgm-about-light-blue number" id="c3xgm-about-number-70">70</span>
             </p>
             
             <div class="c3xgm-about-block-image">

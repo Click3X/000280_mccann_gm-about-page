@@ -67,12 +67,9 @@
 
 .c3xgm-about-down-arrow {
 	max-width: 22px;
-	margin: -4em auto 5em;
+	margin: 0 auto 5em;
 	text-align: center;
 	display: block;
-
-	// opacity: 0;
-	// @include prefix(transition, opacity 3200ms);
 
 	@include prefix(animation-fill-mode, both);
 	@include prefix(animation-name, bounceUpDown);
@@ -80,8 +77,6 @@
 	@include prefix(animation-duration, 2000ms);
 	@include prefix(animation-iteration-count, infinite);
 	@include prefix(animation-timing-function, ease-in-out);
-}
 
-// .c3xgm-about-page-in-view .c3xgm-about-down-arrow-link .c3xgm-about-down-arrow {
-// 	opacity: 1;
-// }
+	@media(min-width: $tablet-height) { margin: -4em auto 5em; }
+}

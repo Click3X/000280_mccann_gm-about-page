@@ -23,9 +23,9 @@ $.fn.jQuerySimpleCounter = function( options ) {
 
 // TRIGGER NUMBER ANIMATION
 $('#c3xgm-about-emp-num').jQuerySimpleCounter({end: 216000,duration: 2500});
-$('#number-6').jQuerySimpleCounter({start:0, end: 6,duration: 2000});
-$('#number-23').jQuerySimpleCounter({start:0, end: 23,duration: 2000});
-$('#number-70').jQuerySimpleCounter({start:0, end: 70,duration: 2000});
+$('#c3xgm-about-number-6').jQuerySimpleCounter({start:0, end: 6,duration: 2000});
+$('#c3xgm-about-number-23').jQuerySimpleCounter({start:0, end: 23,duration: 2000});
+$('#c3xgm-about-number-70').jQuerySimpleCounter({start:0, end: 70,duration: 2000});
 
 // TRIGGER PEOPLE ANIMATION
 $('#c3xgm-about-employees-img div').each(addAnimation);

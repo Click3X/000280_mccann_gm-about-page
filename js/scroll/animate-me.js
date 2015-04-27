@@ -7,6 +7,8 @@ jQuery(document).ready(function($) {
 	    scrollTop = $(window).scrollTop(),
 	    scrollBottom = scrollTop + windowHeight,
 	    halfWindowHeight = windowHeight/2,
+	    quarterWindowHeight = windowHeight/4,
+	    eighthWindowHeight = windowHeight/8,
 	    css3dtransforms = true,
 	    currentScroll,
 	    scrollTimeout,
@@ -21,6 +23,8 @@ jQuery(document).ready(function($) {
 			scrollTop = $(window).scrollTop();
 			scrollBottom = scrollTop + windowHeight;
 			halfWindowHeight = windowHeight/2;
+			quarterWindowHeight = windowHeight/4;
+			eighthWindowHeight = windowHeight/8;
 	}
 
 	// TEST FOR 3D TRANSFORMS
@@ -74,6 +78,21 @@ jQuery(document).ready(function($) {
 		// IN VIEW
 		this.isInView = function() {
 			return ( (this.elementTop - 200 <= scrollBottom) && (this.elementBottom + 200 >= scrollTop) );
+		}
+
+		// IS AT HALF
+		this.isAtHalf = function() {
+			return ( (this.elementTop <= scrollBottom - halfWindowHeight) );
+		}
+
+		// IS AT QUARTER
+		this.isAtQuarter = function() {
+			return ( (this.elementTop <= scrollBottom - quarterWindowHeight) );
+		}
+
+		// IS AT EIGHTH
+		this.isAtEighth = function() {
+			return ( (this.elementTop <= scrollBottom - eighthWindowHeight) );
 		}
 
 		// AT TOP
@@ -144,8 +163,8 @@ jQuery(document).ready(function($) {
 		GreySide = $('.c3xgm-about-solar-panels .c3xgm-about-grey-side').get(0);
 
 	// ANIMATABLE OBJECTS
-	GreyVan = new AnimatedElement('#c3xgm-about-grey-van');
-	RedCar = new AnimatedElement('#c3xgm-about-red-car');
+	// GreyVan = new AnimatedElement('#c3xgm-about-grey-van');
+	// RedCar = new AnimatedElement('#c3xgm-about-red-car');
 	GreySide = new AnimatedElement(GreySide);
 
 	// console.log('This is GreySide: ' + GreySide);
@@ -196,19 +215,19 @@ jQuery(document).ready(function($) {
 			// UPDATE WINDOW SCROLL VARIABLE
 			updateWindowSpecs();
 
-			// SCROLL - TIED ANIMATIONS
-			$.each(scrollElems, function(i, val) {
-				if( this.isInView() ){
+			// // SCROLL - TIED ANIMATIONS
+			// $.each(scrollElems, function(i, val) {
+			// 	if( this.isInView() ){
 
-					if(this.name == 'c3xgm-about-red-car') {
-						this.moveLeft();
-					}
+			// 		if(this.name == 'c3xgm-about-red-car') {
+			// 			this.moveLeft();
+			// 		}
 
-					if(this.name == 'c3xgm-about-grey-van') {
-						this.moveRight();
-					}
-				}
-			});
+			// 		if(this.name == 'c3xgm-about-grey-van') {
+			// 			this.moveRight();
+			// 		}
+			// 	}
+			// });
 
 			if(GreySide.isInView() ) {
 				GreySide.moveRight();
@@ -216,7 +235,8 @@ jQuery(document).ready(function($) {
 
 			// SCROLL - CLASS ADDED ANIMATIONS
 			$.each(animBlocks, function(i, val) {
-				if( this.isInView() ){
+				// if( this.isInView() ){
+				if( this.isAtEighth() ){
 					this.$element.removeClass('invisible');
 					this.addInViewClass();		
 				}
