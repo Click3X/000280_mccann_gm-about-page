@@ -14,51 +14,51 @@
 }
 
 .grey-car {
-    background-image:url('../img/decorative/cars/grey-car.png');
-    @include prefix(background-size, cover); 
+    background-image:url('../img/decorative/cars/grey-side.png');
+    background-size: 100%;
     background-position: 50% 50%; background-repeat:no-repeat;
     height:0;
-    width:66.747%; 
-    padding-bottom:23.1428%;
+    width: 45.692%;
+    padding-bottom: 14.1%;
     margin: auto;
-    position: relative;
-    margin-top: -22%;
+    position:absolute;
+    bottom:10px;
     
     @include prefix(transform, translate3d(0,0,0));
     @include prefix(transition, left 0.05s ease-out);
 
     @media(min-width: $tablet-height) {
-        margin-top: -18%;
-          width: 56%; max-width: none;
-          padding-bottom: 16.5714%;
+        width:350px;
+        padding-bottom:108px;
     }
 
-    @media(min-width: $inner-border) {  
-        width:505px;
-        padding-bottom:150px;
-        margin-top: -163px;
+    @media(min-width: $inner-border) {
+        // left:0; 
+        left:-35%; 
+        right:0;
     }
 
     .wheel {
         background-image:url('../img/decorative/cars/wheel.png');
         @include prefix(background-size, cover);
         background-position: 50% 50%; background-repeat:no-repeat;
-        width:9.933775%; padding-bottom: 9.602649%;
-        bottom:11.5%;
+        width: 13.142857%; padding-bottom: 13.142857%;
         position: absolute;
+        // bottom:0.857143%;
+        bottom: 2%;
         
-        @media(min-width: $tablet-height) {
-            width:9.933775%; padding-bottom: 9.602649%;
-            bottom:4.5%;    
+        @media(min-width: $tablet-height) { 
+            width: 46px; padding-bottom: 46px;
+            bottom: 3px; 
         }
     }
 
     .front-wheel { 
-          right: 21.9%;
+          right: 10.285714%;
+          @media(min-width: $tablet-height) { right:36px; }
     }
     .back-wheel { 
-          // left: 25.5%;
-          left: 25.6%;
-        // @media(min-width: $tablet-height) { left: 25.6%; }
+          left: 16%;
+        @media(min-width: $tablet-height) { left: 56px; }
     }
 }

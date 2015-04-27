@@ -25,9 +25,6 @@
           <link href="stylesheets/ie.css" media="screen, projection" rel="stylesheet" type="text/css" />
         <![endif]-->
 
-        <!-- WEN'S STYLES -->
-        <link href="stylesheets/wen.css" media="screen, projection" rel="stylesheet" type="text/css" />
-
         <script src="js/vendor/modernizr-2.6.2-respond-1.1.0.min.js"></script>
 
     </head>

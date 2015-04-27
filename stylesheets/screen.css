@@ -1345,6 +1345,49 @@ div#c3xgm-about-grey-van:before {
   margin: auto;
   z-index: 10;
 }
+/* line 18, ../sass/decoratives/_solar-panels.scss */
+.c3xgm-about-solar-panels .c3xgm-about-grey-side .c3xgm-about-wheel {
+  background-image: url("../img/decorative/cars/wheel.png");
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  -ms-background-size: cover;
+  background-size: cover;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  width: 13.142857%;
+  padding-bottom: 13.142857%;
+  position: absolute;
+  bottom: 23%;
+}
+@media (min-width: 768px) {
+  /* line 18, ../sass/decoratives/_solar-panels.scss */
+  .c3xgm-about-solar-panels .c3xgm-about-grey-side .c3xgm-about-wheel {
+    width: 13.85%;
+    padding-bottom: 13.85%;
+    bottom: 13%;
+  }
+}
+/* line 38, ../sass/decoratives/_solar-panels.scss */
+.c3xgm-about-solar-panels .c3xgm-about-grey-side .c3xgm-about-front-wheel {
+  right: 10.285714%;
+}
+@media (min-width: 768px) {
+  /* line 38, ../sass/decoratives/_solar-panels.scss */
+  .c3xgm-about-solar-panels .c3xgm-about-grey-side .c3xgm-about-front-wheel {
+    right: 10.1%;
+  }
+}
+/* line 46, ../sass/decoratives/_solar-panels.scss */
+.c3xgm-about-solar-panels .c3xgm-about-grey-side .c3xgm-about-back-wheel {
+  left: 16%;
+}
+@media (min-width: 768px) {
+  /* line 46, ../sass/decoratives/_solar-panels.scss */
+  .c3xgm-about-solar-panels .c3xgm-about-grey-side .c3xgm-about-back-wheel {
+    left: 15.7%;
+  }
+}
 @media (min-width: 768px) {
   /* line 9, ../sass/decoratives/_solar-panels.scss */
   .c3xgm-about-solar-panels .c3xgm-about-grey-side {
@@ -1359,11 +1402,11 @@ div#c3xgm-about-grey-van:before {
     width: 276px;
   }
 }
-/* line 25, ../sass/decoratives/_solar-panels.scss */
+/* line 61, ../sass/decoratives/_solar-panels.scss */
 .c3xgm-about-solar-panels .c3xgm-about-grey-side img {
   width: 100%;
 }
-/* line 28, ../sass/decoratives/_solar-panels.scss */
+/* line 64, ../sass/decoratives/_solar-panels.scss */
 .c3xgm-about-solar-panels .c3xgm-about-tree {
   width: 20%;
   max-width: 99px;
@@ -1374,31 +1417,31 @@ div#c3xgm-about-grey-van:before {
   bottom: 34px;
   z-index: -5;
 }
-/* line 34, ../sass/decoratives/_solar-panels.scss */
+/* line 70, ../sass/decoratives/_solar-panels.scss */
 .c3xgm-about-solar-panels .c3xgm-about-tree img {
   width: 100%;
 }
 @media (min-width: 400px) {
-  /* line 28, ../sass/decoratives/_solar-panels.scss */
+  /* line 64, ../sass/decoratives/_solar-panels.scss */
   .c3xgm-about-solar-panels .c3xgm-about-tree {
     padding-bottom: 13.5%;
   }
 }
 @media (min-width: 768px) {
-  /* line 28, ../sass/decoratives/_solar-panels.scss */
+  /* line 64, ../sass/decoratives/_solar-panels.scss */
   .c3xgm-about-solar-panels .c3xgm-about-tree {
     padding-bottom: 100px;
     margin: auto;
   }
 }
 @media (min-width: 906px) {
-  /* line 28, ../sass/decoratives/_solar-panels.scss */
+  /* line 64, ../sass/decoratives/_solar-panels.scss */
   .c3xgm-about-solar-panels .c3xgm-about-tree {
     right: 0;
     left: -63%;
   }
 }
-/* line 44, ../sass/decoratives/_solar-panels.scss */
+/* line 80, ../sass/decoratives/_solar-panels.scss */
 .c3xgm-about-solar-panels .c3xgm-about-solar-panels {
   width: 30%;
   height: 0;
@@ -1408,12 +1451,12 @@ div#c3xgm-about-grey-van:before {
   bottom: -2%;
   z-index: -5;
 }
-/* line 53, ../sass/decoratives/_solar-panels.scss */
+/* line 89, ../sass/decoratives/_solar-panels.scss */
 .c3xgm-about-solar-panels .c3xgm-about-solar-panels img {
   width: 100%;
 }
 @media (min-width: 668px) {
-  /* line 44, ../sass/decoratives/_solar-panels.scss */
+  /* line 80, ../sass/decoratives/_solar-panels.scss */
   .c3xgm-about-solar-panels .c3xgm-about-solar-panels {
     width: 200px;
     padding-bottom: 170px;
@@ -1421,7 +1464,7 @@ div#c3xgm-about-grey-van:before {
   }
 }
 @media (min-width: 906px) {
-  /* line 44, ../sass/decoratives/_solar-panels.scss */
+  /* line 80, ../sass/decoratives/_solar-panels.scss */
   .c3xgm-about-solar-panels .c3xgm-about-solar-panels {
     left: 0;
     right: -39%;
@@ -1430,7 +1473,7 @@ div#c3xgm-about-grey-van:before {
     padding-bottom: 210px;
   }
 }
-/* line 64, ../sass/decoratives/_solar-panels.scss */
+/* line 100, ../sass/decoratives/_solar-panels.scss */
 .c3xgm-about-solar-panels .c3xgm-about-sun {
   width: 16%;
   max-width: 100px;
@@ -1442,31 +1485,31 @@ div#c3xgm-about-grey-van:before {
   top: auto;
   right: 5%;
 }
-/* line 72, ../sass/decoratives/_solar-panels.scss */
+/* line 108, ../sass/decoratives/_solar-panels.scss */
 .c3xgm-about-solar-panels .c3xgm-about-sun img {
   width: 100%;
 }
 @media (min-width: 400px) {
-  /* line 64, ../sass/decoratives/_solar-panels.scss */
+  /* line 100, ../sass/decoratives/_solar-panels.scss */
   .c3xgm-about-solar-panels .c3xgm-about-sun {
     padding-bottom: 100px;
     right: 1%;
   }
 }
 @media (min-width: 530px) {
-  /* line 64, ../sass/decoratives/_solar-panels.scss */
+  /* line 100, ../sass/decoratives/_solar-panels.scss */
   .c3xgm-about-solar-panels .c3xgm-about-sun {
     bottom: 25em;
   }
 }
 @media (min-width: 768px) {
-  /* line 64, ../sass/decoratives/_solar-panels.scss */
+  /* line 100, ../sass/decoratives/_solar-panels.scss */
   .c3xgm-about-solar-panels .c3xgm-about-sun {
     bottom: 28em;
   }
 }
 @media (min-width: 906px) {
-  /* line 64, ../sass/decoratives/_solar-panels.scss */
+  /* line 100, ../sass/decoratives/_solar-panels.scss */
   .c3xgm-about-solar-panels .c3xgm-about-sun {
     left: 0;
     right: -50%;
@@ -1474,7 +1517,7 @@ div#c3xgm-about-grey-van:before {
   }
 }
 
-/* line 83, ../sass/decoratives/_solar-panels.scss */
+/* line 119, ../sass/decoratives/_solar-panels.scss */
 .c3xgm-about-solar-road {
   width: 100%;
   height: 0;
@@ -10745,6 +10788,58 @@ body {
   animation-duration: 500ms;
 }
 
+/* line 302, ../sass/pages/_all-page-animations.scss */
+.people-animate {
+  -webkit-animation: wenFadeIn 1s  forwards;
+  -moz-animation: wenFadeIn 1s linear forwards;
+  -ms-animation: wenFadeIn 1s linear forwards;
+}
+
+/* line 308, ../sass/pages/_all-page-animations.scss */
+#c3xgm-about-employees-img div {
+  opacity: 0;
+}
+
+@-webkit-keyframes wenFadeIn {
+  from {
+    margin-top: 80px;
+    opacity: 0;
+  }
+  to {
+    margin-top: 0px;
+    opacity: 1;
+  }
+}
+@-moz-keyframes wenFadeIn {
+  from {
+    margin-top: 80px;
+    opacity: 0;
+  }
+  to {
+    margin-top: 0px;
+    opacity: 1;
+  }
+}
+@-o-keyframes wenFadeIn {
+  from {
+    margin-top: 80px;
+    opacity: 0;
+  }
+  to {
+    margin-top: 0px;
+    opacity: 1;
+  }
+}
+@keyframes wenFadeIn {
+  from {
+    margin-top: 80px;
+    opacity: 0;
+  }
+  to {
+    margin-top: 0px;
+    opacity: 1;
+  }
+}
 @-webkit-keyframes moveFlagLine {
   0% {
     -webkit-transform: translate3d(0, 0, 0);
@@ -10770,25 +10865,19 @@ body {
 @media (min-width: 906px) {
   /* line 12, ../sass/animations/_flag-line.scss */
   .c3xgm-about-flag-line-container {
-    height: 327px;
+    height: 335px;
   }
 }
-/* line 21, ../sass/animations/_flag-line.scss */
+/* line 22, ../sass/animations/_flag-line.scss */
 .c3xgm-about-flag-line-container .c3xgm-about-grey-white-gradient {
   padding-bottom: 5%;
   width: 100%;
   margin-top: -3%;
 }
 @media (min-width: 768px) {
-  /* line 21, ../sass/animations/_flag-line.scss */
+  /* line 22, ../sass/animations/_flag-line.scss */
   .c3xgm-about-flag-line-container .c3xgm-about-grey-white-gradient {
-    margin-top: -2%;
-    padding-bottom: 4%;
-  }
-}
-@media (min-width: 906px) {
-  /* line 21, ../sass/animations/_flag-line.scss */
-  .c3xgm-about-flag-line-container .c3xgm-about-grey-white-gradient {
+    margin-top: -28px;
     padding-bottom: 37px;
   }
 }
@@ -10822,12 +10911,12 @@ body {
   -ms-transform: translate3d(0, 0, 0);
   transform: translate3d(0, 0, 0);
 }
-/* line 53, ../sass/animations/_flag-line.scss */
+/* line 54, ../sass/animations/_flag-line.scss */
 #flag-line-container .flag-line {
   width: 50%;
   float: left;
 }
-/* line 57, ../sass/animations/_flag-line.scss */
+/* line 58, ../sass/animations/_flag-line.scss */
 #flag-line-container .flag-line > img {
   width: 100%;
   display: block;
@@ -10835,7 +10924,7 @@ body {
   padding: 0;
 }
 
-/* line 67, ../sass/animations/_flag-line.scss */
+/* line 68, ../sass/animations/_flag-line.scss */
 .animate-flag-line {
   -webkit-animation: moveFlagLine 16s linear infinite;
   -moz-animation: moveFlagLine 16s linear infinite;
@@ -10871,20 +10960,16 @@ body {
 
 /* line 16, ../sass/animations/_grey-car-wheels.scss */
 .grey-car {
-  background-image: url("../img/decorative/cars/grey-car.png");
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  -ms-background-size: cover;
-  background-size: cover;
+  background-image: url("../img/decorative/cars/grey-side.png");
+  background-size: 100%;
   background-position: 50% 50%;
   background-repeat: no-repeat;
   height: 0;
-  width: 66.747%;
-  padding-bottom: 23.1428%;
+  width: 45.692%;
+  padding-bottom: 14.1%;
   margin: auto;
-  position: relative;
-  margin-top: -22%;
+  position: absolute;
+  bottom: 10px;
   -webkit-transform: translate3d(0, 0, 0);
   -moz-transform: translate3d(0, 0, 0);
   -o-transform: translate3d(0, 0, 0);
@@ -10899,21 +10984,18 @@ body {
 @media (min-width: 768px) {
   /* line 16, ../sass/animations/_grey-car-wheels.scss */
   .grey-car {
-    margin-top: -18%;
-    width: 56%;
-    max-width: none;
-    padding-bottom: 16.5714%;
+    width: 350px;
+    padding-bottom: 108px;
   }
 }
 @media (min-width: 906px) {
   /* line 16, ../sass/animations/_grey-car-wheels.scss */
   .grey-car {
-    width: 505px;
-    padding-bottom: 150px;
-    margin-top: -163px;
+    left: -35%;
+    right: 0;
   }
 }
-/* line 42, ../sass/animations/_grey-car-wheels.scss */
+/* line 41, ../sass/animations/_grey-car-wheels.scss */
 .grey-car .wheel {
   background-image: url("../img/decorative/cars/wheel.png");
   -webkit-background-size: cover;
@@ -10923,26 +11005,38 @@ body {
   background-size: cover;
   background-position: 50% 50%;
   background-repeat: no-repeat;
-  width: 9.933775%;
-  padding-bottom: 9.602649%;
-  bottom: 11.5%;
+  width: 13.142857%;
+  padding-bottom: 13.142857%;
   position: absolute;
+  bottom: 2%;
 }
 @media (min-width: 768px) {
-  /* line 42, ../sass/animations/_grey-car-wheels.scss */
+  /* line 41, ../sass/animations/_grey-car-wheels.scss */
   .grey-car .wheel {
-    width: 9.933775%;
-    padding-bottom: 9.602649%;
-    bottom: 4.5%;
+    width: 46px;
+    padding-bottom: 46px;
+    bottom: 3px;
   }
 }
 /* line 56, ../sass/animations/_grey-car-wheels.scss */
 .grey-car .front-wheel {
-  right: 21.9%;
+  right: 10.285714%;
 }
-/* line 59, ../sass/animations/_grey-car-wheels.scss */
+@media (min-width: 768px) {
+  /* line 56, ../sass/animations/_grey-car-wheels.scss */
+  .grey-car .front-wheel {
+    right: 36px;
+  }
+}
+/* line 60, ../sass/animations/_grey-car-wheels.scss */
 .grey-car .back-wheel {
-  left: 25.6%;
+  left: 16%;
+}
+@media (min-width: 768px) {
+  /* line 60, ../sass/animations/_grey-car-wheels.scss */
+  .grey-car .back-wheel {
+    left: 56px;
+  }
 }
 
 /* line 2, ../sass/animations/_clock.scss */

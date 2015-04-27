@@ -14,6 +14,42 @@
 		right:auto;
 		margin: auto;
 		z-index: 10;
+
+		.c3xgm-about-wheel {
+			background-image:url('../img/decorative/cars/wheel.png');
+			@include prefix(background-size, cover);
+			background-position: 50% 50%; background-repeat:no-repeat;
+			width: 13.142857%; padding-bottom: 13.142857%;
+			position: absolute;
+			bottom: 23%;
+
+			@media(min-width: $tablet-height) { 
+				  width: 13.85%;
+				  padding-bottom: 13.85%;
+				// width: 33px;
+				// padding-bottom: 33px; 
+				// bottom:11px;
+				// bottom:3%;
+				bottom: 13%;
+
+			}
+		}
+
+		.c3xgm-about-front-wheel {
+			right: 10.285714%;
+          	@media(min-width: $tablet-height) { 
+          		right: 10.1%;
+  				
+          	}
+		}
+
+		.c3xgm-about-back-wheel {
+			left: 16%;
+        	@media(min-width: $tablet-height) { 
+        		left: 15.7%;
+        	}			
+		}
+
   		@media(min-width: $tablet-height) {
   			padding-bottom: 10.75%;
   			width: 31%;

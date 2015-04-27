@@ -53,9 +53,20 @@ function printDecorative($block) {
 	echo '<div class="c3xgm-about-decorative c3xgm-about-clearfix'.$class.''.$deco_class.'">';
 			if( isset($block['assets']) ) {
 				if($block['title'] == "Five Stars") { echo '<div class="c3xgm-about-checker"></div>';}
+				
 				foreach ($block['assets'] as $key => $asset) {
 					if($key == "checker") { 
 						echo ""; 
+					} elseif( ($key == "grey-side")  )  { 
+						// helper($asset);
+						$class = cleanString($key);
+						if( isset($asset['id']) &&  $asset['id'] != "" ) { $id = ' id="'.$asset['id'].'"'; } else { $id = ''; }
+						if( isset($asset['image@2x']) ) { $rel = 'rel="'.$asset['image@2x'].'"'; } else { $rel = ''; }
+						echo '<div'.$id.' class="c3xgm-about-'.$class.'">';
+							echo '<div class="c3xgm-about-wheel c3xgm-about-back-wheel"></div>';
+							echo '<img src="'.$asset['image'].'" '.$rel.'>';
+							echo '<div class="c3xgm-about-wheel c3xgm-about-front-wheel"></div>';
+						echo '</div>';
 					} else {
 						// helper($asset);
 						$class = cleanString($key);
@@ -66,6 +77,7 @@ function printDecorative($block) {
 						echo '</div>';
 					}
 				}
+
 				if($block['title'] == "Five Stars") { echo '<div class="c3xgm-about-checker"></div>';}
 				if($block['title'] == "Solar Panels" || $block['title'] == "Flag Line") { echo '<div class="c3xgm-about-gradient c3xgm-about-grey-gradient c3xgm-about-solar-road"></div>';}
 			}
