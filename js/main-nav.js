@@ -185,11 +185,10 @@ jQuery(document).ready(function($) {
                 // }
             }
         }   
-
     } // END OBJECT ANIMATE
 
 
-        // LIST VARS
+    // LIST VARS
     var GreyVan,
         RedCar,
         GreySide = $('#c3xgm-about-solar-grey-car'),
@@ -213,14 +212,12 @@ jQuery(document).ready(function($) {
     CrashTestDummies = new AnimatedElement('#c3xgm-about-crash-test-dummies');
 
 
+    // MAKE ABOUT BLOCKS ANIMATED WHEN COME INTO VIEW
     $.each($blocks, function(i, val) {
         animBlocks[i] = new AnimatedElement(this);
     });
 
-
-     /**
-     * MAIN NAV JS
-     */
+    // MAIN NAV
     // SMOOTH SCROLL TO LINKS
     $('.c3xgm-about-main-nav a[href*=#]:not([href=#]), a.c3xgm-about-down-arrow-link').click(function() {
         if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
@@ -235,16 +232,9 @@ jQuery(document).ready(function($) {
         }
     });
     
-     /*
-     * MAIN NAV JS
-     HIGH LIGHT NAV, ATTACH CLASSES
-
-     * This part handles the highlighting functionality.
-     * We use the scroll functionality again, some array creation and 
-     * manipulation, class adding and class removing, and conditional testing
-     */
+    /** MAIN NAV JS --- HIGH LIGHT NAV, ATTACH CLASSES */
     var aChildren = $(".c3xgm-about-main-nav li a"),
-        aArray = []; // create the empty aArray
+        aArray = [];
     
     for (var i=0; i < aChildren.length; i++) {    
         var aChild = aChildren[i],
@@ -253,20 +243,12 @@ jQuery(document).ready(function($) {
         aArray.push(ahref);
     } 
 
-    // console.dir(aArray);
-
-      for (var i=0; i < aArray.length; i++) {
-            var theID = aArray[i];
-            $(theID).removeClass("c3xgm-about-page-in-view");
-        }
-
+    // SAVE STATE OF PAGES IN VIEW
     var brandsInView = false,
         globalCommunityInView = false;
 
     function checkPageInView() {
         updateWindowSpecs();
-
-        // console.dir(aArray);
 
         for (var i=0; i < aArray.length; i++) {
             var theID = aArray[i],
@@ -293,7 +275,6 @@ jQuery(document).ready(function($) {
                 
                 // IF PAGE IS OUR BRANDS, OR GLOBAL THEN SHOW FIRST SLIDE
                 if( (theID == "#c3xgm-about-our-brands") && (brandsInView == false) ) {
-                    // console.log('This is OUr Brands!');
                     brandsInView = true;
                     // 3200 MS WAIT FOR LOGOS TO LOAD & LOAD CHEVY
                     setTimeout(function() {
@@ -301,29 +282,16 @@ jQuery(document).ready(function($) {
                         $('#c3xgm-about-car-chevrolet').removeClass('hide-module').removeClass('hide-module-slide-out').addClass('show-module-slide-in');
                     }, 3200);
                 } else if( (theID == "#c3xgm-about-our-global-community") && (globalCommunityInView == false) ) {
-                    console.log('This is GLOBAL COMMUNITY!');
                     globalCommunityInView = true;
                     setTimeout(function() {
                         $('#c3xgm-about-foundation-gm-foundation').removeClass('hide-module').removeClass('hide-module-slide-out').addClass('show-module-slide-in');
                     }, 2800);
                 }
-
-
             } else {  
+                // HERE YOU CAN REVERSE ELEMENT REVEAL EFFECTS WHEN SCROLLED UP
                 // $(theID).removeClass("c3xgm-about-page-in-view").addClass("invisible");
             }
-
         }
-    }
-
-
-    function isInView(elem) {
-        var elTop = $(elem).offset().top,
-            elHeight = $(elem).height(),
-            elBottom = elHeight + elTop,
-            elText = $(elem).text();
-
-        return ( (elTop <= scrollBottom) && (elBottom >= scrollTop) );
     }
 
 
@@ -363,14 +331,13 @@ jQuery(document).ready(function($) {
     var animateEmployees = false;
     function fireAnimatedEmployees() {
           if(animateEmployees === false) {
-          // // TRIGGER NUMBER ANIMATION
+            // TRIGGER NUMBER ANIMATION
             $('#c3xgm-about-emp-num').jQuerySimpleCounter({end: 216000,duration: 2500});
 
             // MAKE SURE NUMBER REACHES 216000
             setTimeout(function(){ 
                 $('#c3xgm-about-emp-num').text(formatNumber(216000));
             }, 2500);
-
 
             // TRIGGER PEOPLE ANIMATION
             $('#c3xgm-about-employees-img div').each(addAnimation);
@@ -411,6 +378,7 @@ jQuery(document).ready(function($) {
         return gif.src= gif.src.split('?')[0]+'?='+(+new Date());
     }
 
+    // TRIGGER GIFS
     var animateCrashTestDummies = false;
     function fireAnimatedCrashTestDummies() {
          if(animateCrashTestDummies === false) {
@@ -475,7 +443,6 @@ jQuery(document).ready(function($) {
 
         // SCROLL - CLASS ADDED ANIMATIONS
         $.each(animBlocks, function(i, val) {
-            // if( this.isInView() ){
             if( this.isAtEighth() ){
                 this.$element.removeClass('invisible');
                 this.addInViewClass();      
@@ -493,7 +460,7 @@ jQuery(document).ready(function($) {
     // HIDE PAGES FOR ADDING 'IN-VIEW' CLASS
     for (var i=0; i < aArray.length; i++) {
         var theID = aArray[i];
-         $(theID).addClass("invisible");
+        $(theID).removeClass("c3xgm-about-page-in-view").addClass("invisible");
     }
 
     // CHECK NAV ON PAGE LOAD

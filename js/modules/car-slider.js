@@ -57,28 +57,9 @@ jQuery(document).ready(function($) {
 
 
 	// FOUNDATION ---------------------------------------------------------------------------------------------------------
-	// $(foundationContainer).append(animLines);
-	// ANIMIATE LINES AFTER 1200 MS
-	// setTimeout(function() {
-	// 	$(foundationContainer).find('.c3xgm-about-gray-line').removeClass('invisible').addClass('animated');
-
-	// 	setTimeout(function() {
-	// 		$(foundationContainer).find('.c3xgm-about-yellow-line').removeClass('invisible').addClass('animated');
-	// 	}, 600);
-
-	// }, 1200);
 	// MOVE ALL SLIDES TO RIGHT 100%;
 	foundationSlides.addClass('hide-module');
-	// MAKE GM FOUNDATION DEFALUT 
-	// $('#c3xgm-about-foundation-gm-foundation').removeClass('hide-module').addClass('show-module-slide-in');
-	// $('#c3xgm-about-foundation-gm-foundation').removeClass('hide-module').removeClass('hide-module-slide-out').addClass('show-module-slide-in');
-
-	// 3200 MS WAIT FOR LOGOS TO LOAD
-	// setTimeout(function() {
-	// 	$('#c3xgm-about-foundation-gm-foundation').removeClass('hide-module').removeClass('hide-module-slide-out').addClass('show-module-slide-in');
-	// }, 1200);
-
-		
+	
 	// FOUNDATION
 	foundationLinks.on('click touchstart', function(e) {
 		e.preventDefault();

@@ -10868,6 +10868,11 @@ body {
   position: relative;
   width: 100%;
   overflow-x: hidden;
+  -webkit-transform: translate3d(0, 0, 0);
+  -moz-transform: translate3d(0, 0, 0);
+  -o-transform: translate3d(0, 0, 0);
+  -ms-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
 }
 @media (min-width: 906px) {
   /* line 12, ../sass/animations/_flag-line.scss */
@@ -10875,63 +10880,57 @@ body {
     height: 335px;
   }
 }
-/* line 22, ../sass/animations/_flag-line.scss */
+/* line 20, ../sass/animations/_flag-line.scss */
 .c3xgm-about-flag-line-container .c3xgm-about-grey-white-gradient {
-  padding-bottom: 5%;
   width: 100%;
+  padding-bottom: 5%;
   margin-top: -4%;
 }
 @media (min-width: 768px) {
-  /* line 22, ../sass/animations/_flag-line.scss */
+  /* line 20, ../sass/animations/_flag-line.scss */
   .c3xgm-about-flag-line-container .c3xgm-about-grey-white-gradient {
-    margin-top: -28px;
+    margin-top: -38px;
     padding-bottom: 37px;
   }
 }
 
-/* line 34, ../sass/animations/_flag-line.scss */
+/* line 28, ../sass/animations/_flag-line.scss */
 #flag-line-container {
   width: 480%;
-  overflow-x: hidden;
   z-index: -1;
   position: relative;
-  -webkit-transform: translate3d(0, 0, 0);
-  -moz-transform: translate3d(0, 0, 0);
-  -o-transform: translate3d(0, 0, 0);
-  -ms-transform: translate3d(0, 0, 0);
-  transform: translate3d(0, 0, 0);
 }
 @media (min-width: 768px) {
-  /* line 34, ../sass/animations/_flag-line.scss */
+  /* line 28, ../sass/animations/_flag-line.scss */
   #flag-line-container {
     width: 300%;
   }
 }
-/* line 46, ../sass/animations/_flag-line.scss */
+/* line 35, ../sass/animations/_flag-line.scss */
 #flag-line-container > ul {
   width: 200%;
   max-width: 5500px;
   position: relative;
+}
+/* line 39, ../sass/animations/_flag-line.scss */
+#flag-line-container > ul .flag-line {
+  width: 50%;
+  float: left;
   -webkit-transform: translate3d(0, 0, 0);
   -moz-transform: translate3d(0, 0, 0);
   -o-transform: translate3d(0, 0, 0);
   -ms-transform: translate3d(0, 0, 0);
   transform: translate3d(0, 0, 0);
 }
-/* line 54, ../sass/animations/_flag-line.scss */
-#flag-line-container .flag-line {
-  width: 50%;
-  float: left;
-}
-/* line 58, ../sass/animations/_flag-line.scss */
-#flag-line-container .flag-line > img {
+/* line 44, ../sass/animations/_flag-line.scss */
+#flag-line-container > ul .flag-line > img {
   width: 100%;
   display: block;
   margin: 0 auto;
   padding: 0;
 }
 
-/* line 68, ../sass/animations/_flag-line.scss */
+/* line 54, ../sass/animations/_flag-line.scss */
 .animate-flag-line {
   -webkit-animation: moveFlagLine 32s linear infinite;
   -moz-animation: moveFlagLine 32s linear infinite;
