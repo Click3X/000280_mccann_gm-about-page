@@ -229,9 +229,9 @@ jQuery(document).ready(function($) {
 			// 	}
 			// });
 
-			if(GreySide.isInView() ) {
-				GreySide.moveRight();
-			}
+			// if(GreySide.isInView() ) {
+			// 	GreySide.moveRight();
+			// }
 
 			// SCROLL - CLASS ADDED ANIMATIONS
 			$.each(animBlocks, function(i, val) {

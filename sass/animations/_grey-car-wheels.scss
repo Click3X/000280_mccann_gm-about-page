@@ -9,7 +9,13 @@
     100% { -moz-transform: rotate(360deg); }
 }
 
+@keyframes rotateTires {
+    0%   { transform: rotate(0); }    
+    100% { transform: rotate(360deg); }
+}
+
 .animate-tires {
+    @include prefix(animation-fill-mode, both);
     @include prefix(animation, rotateTires 2s linear infinite);    
 }
 
@@ -21,6 +27,7 @@
     width: 45.692%;
     padding-bottom: 14.1%;
     margin: auto;
+    right:0; left:0;
     position:absolute;
     bottom:10px;
     
@@ -30,11 +37,8 @@
     @media(min-width: $tablet-height) {
         width:350px;
         padding-bottom:108px;
-    }
 
-    @media(min-width: $inner-border) {
-        // left:0; 
-        left:-35%; 
+        left:-75%; 
         right:0;
     }
 

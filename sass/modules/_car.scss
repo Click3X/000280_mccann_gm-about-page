@@ -23,21 +23,13 @@
   			height:0.2rem;
 			
 			@include prefix(transform-origin, top right);
-			@include prefix(animation-fill-mode, both);
-			@include prefix(animation-name, growBorder);
-  			@include prefix(animation-duration,500ms);
   			@media(min-width: $tablet-height) { 
   				display: block;
   				width:0.15rem; height: 100%;
   				top:0; right:0; left:auto;
   			}
 		}
-		.c3xgm-about-gray-line {
-			@include prefix(animation-delay,2200ms);
-		}
-		.c3xgm-about-yellow-line {
-			@include prefix(animation-delay,2700ms);
-		}
+		
 	}
 
 	.c3xgm-about-module-65 {
@@ -59,7 +51,6 @@
 	.c3xgm-about-module-container {
   		@media(min-width:$tablet-height) { 
   			float: right; 
-  			// width: 90%; 
   			width:100%; 
   		}
 

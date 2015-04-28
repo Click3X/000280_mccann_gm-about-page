@@ -60,6 +60,7 @@
 			// padding-right: .6em; 
 			padding-right:1em; margin-right:2em;
 			// border-right: .15rem solid $gm-yellow;
+			position: relative;
 			&:before {
 				content: ""; display: block;
 				position: absolute;
@@ -136,6 +137,7 @@
 
 		.c3xgm-about-blockquote {
 		  	padding-left:1em; 
+		  	position: relative;
 		  	// padding-left: .6em; 
 		  	// border-left: .15rem solid $gm-yellow;
 		  	&:before {
@@ -212,6 +214,7 @@
 		  	// padding-right: .6em; 
 		  	padding-right:1em;
 		  	margin-right: 1.25em;
+		  	position: relative;
 		  	// border-right: .15rem solid $gm-yellow;
 
 		  	&:before {

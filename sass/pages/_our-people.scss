@@ -202,21 +202,29 @@
 			margin-top: 1.0625em;
 			text-align: left;
 			width: auto;
+			position: relative;
+
 			@media(min-width: $tablet-height) { float: left; margin-left: 9px; }
 
 			.c3xgm-about-gray { 
 				// border-left:0.1em solid $gm-yellow; 
 				padding-left: .35em; 
 
+
 				&:before {
 					content: ""; display: block;
 					position: absolute;
-					top:0; left:0;
-					width:0.15rem; height: 100%;
+					// top:0; 
+					bottom:0;
+					left:0;
+					width:0.15rem; 
+					// height: 100%;
+					height:75%;
 					background-color:$gm-gray-line;
 					@include prefix(transform-origin, top right);
 					@include prefix(animation-fill-mode, both);
-					@include prefix(animation-name, fadeIn);
+					// @include prefix(animation-name, fadeIn);
+					@include prefix(animation-name, growBorder);
 					@include prefix(animation-delay,1800ms);
 		  			@include prefix(animation-duration,600ms);
 		  			@media(min-width: $tablet-height) { width:0.2rem;}
@@ -225,12 +233,17 @@
 				&:after {
 					content: ""; display: block;
 					position: absolute;
-					top:0; left:0;
-					width:0.15rem; height: 100%;
+					// top:0; 
+					bottom:0;
+					left:0;
+					width:0.15rem; 
+					// height: 100%;
+					height: 75%;
 					background-color:$gm-yellow;
 					@include prefix(transform-origin, top right);
 					@include prefix(animation-fill-mode, both);
-					@include prefix(animation-name, fadeIn);
+					// @include prefix(animation-name, fadeIn);
+					@include prefix(animation-name, growBorder);
 					@include prefix(animation-delay,2400ms);
 		  			@include prefix(animation-duration,600ms);
 		  			@media(min-width: $tablet-height) { width:0.2rem;}

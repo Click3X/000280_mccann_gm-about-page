@@ -62,11 +62,16 @@ function printDecorative($block) {
 						$class = cleanString($key);
 						if( isset($asset['id']) &&  $asset['id'] != "" ) { $id = ' id="'.$asset['id'].'"'; } else { $id = ''; }
 						if( isset($asset['image@2x']) ) { $rel = 'rel="'.$asset['image@2x'].'"'; } else { $rel = ''; }
-						echo '<div'.$id.' class="c3xgm-about-'.$class.'">';
-							echo '<div class="c3xgm-about-wheel c3xgm-about-back-wheel"></div>';
+						echo '<div id="c3xgm-about-solar-grey-car" class="c3xgm-about-'.$class.' c3xgm-about-clearfix c3xgm-about-solar-grey-car">';
+							echo '<div class="c3xgm-about-wheel c3xgm-about-back-wheel animate-tires"></div>';
 							echo '<img src="'.$asset['image'].'" '.$rel.'>';
-							echo '<div class="c3xgm-about-wheel c3xgm-about-front-wheel"></div>';
+							echo '<div class="c3xgm-about-wheel c3xgm-about-front-wheel animate-tires"></div>';
 						echo '</div>';
+
+						 // echo '<div id="c3xgm-about-solar-grey-car" class="grey-car c3xgm-about-clearfix c3xgm-about-solar-grey-car">
+       //                      <div class="wheel back-wheel"></div>
+       //                      <div class="wheel front-wheel"></div>
+       //                  </div>';
 					} else {
 						// helper($asset);
 						$class = cleanString($key);

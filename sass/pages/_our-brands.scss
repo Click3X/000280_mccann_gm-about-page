@@ -51,7 +51,10 @@
 		position: relative;
 		img { 
 			display:block; margin: 0 auto; padding:0; 
-			width:40%; max-width: 158px; 
+			// width:40%; 
+			width:43%; 
+			// max-width: 158px; 
+			max-width:none; 
 		} 
 		@media(min-width:$tablet-height) {
 			width: 25%; 
@@ -129,6 +132,7 @@
 		float:none; text-align: left;
 		// padding-left: 0.6em; 
 		padding-left: 1em; 
+		position: relative;
 		// border-left: 0.15rem solid $gm-yellow;
 		@media(min-width: $tablet-height) { 
 			padding-left: 2.5em; 
@@ -167,8 +171,9 @@
 	.c3xgm-about-block-image {
 		width: 100%; 
 		text-align: center;
+		margin-bottom: 1.5em;
 		@media(min-width:$tablet-height) {
-			width: 25%; float:left; 
+			width: 25%; float:left;  margin-bottom:9px;
 			// img { @include prefix(transform, translate(-60%, -50%)); }
 		}
 	}
@@ -182,6 +187,7 @@
 		width:auto; float: none;
 		// padding-right: 0.6em; 
 		padding-right: 1em; 
+		position: relative;
 
 		&:before {
 			content: ""; display: block;

@@ -25,9 +25,9 @@ $page = $pages[2];
                         // DECORATIVE
                         if( $block['title'] == "Flag Line" ) {
                             echo '<div class="c3xgm-about-flag-line-container c3xgm-about-clearfix">
-                                    <div class="grey-car c3xgm-about-clearfix">
-                                        <div id="back-wheel" class="wheel back-wheel animate-tires"></div>
-                                        <div id="front-wheel" class="wheel front-wheel animate-tires"></div>
+                                    <div id="c3xgm-about-flag-line-grey-car" class="grey-car c3xgm-about-clearfix c3xgm-about-flag-line-grey-car">
+                                        <div class="wheel back-wheel animate-tires"></div>
+                                        <div class="wheel front-wheel animate-tires"></div>
                                     </div>
                                     <div id="flag-line-container" class="c3xgm-about-clearfix">
                                         <ul id="animate-flag-line" class="animate-flag-line c3xgm-about-clearfix">

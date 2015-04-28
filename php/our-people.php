@@ -64,7 +64,6 @@ echo '<div id="c3xgm-about-our-people" class="c3xgm-about-page c3xgm-about-clear
                 <span class="c3xgm-about-light-blue">Global headquarters</span>
                 <span class="c3xgm-about-gray">
                     <span>Detroit</span>
-                    <span class="c3xgm-about-gray-line"></span><span class="c3xgm-about-yellow-line"></span>
                 </span>
                 <span class="c3xgm-about-gray c3xgm-about-gray-2">Michigan, USA</span>
             </p>

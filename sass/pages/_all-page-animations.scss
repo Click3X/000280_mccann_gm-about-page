@@ -1,7 +1,4 @@
 // ANIMATE TEXT
-// #c3xgm-about-page-container > .c3xgm-about-page-our-company.c3xgm-about-page-in-view,
-// .c3xgm-about-page.c3xgm-about-page-in-view
-
 #c3xgm-about-our-company.c3xgm-about-page.c3xgm-about-page-in-view,
 #c3xgm-about-our-people.c3xgm-about-page.c3xgm-about-page-in-view,
 #c3xgm-about-our-brands.c3xgm-about-page.c3xgm-about-page-in-view {
@@ -28,7 +25,6 @@
 			@include prefix(animation-delay, 800ms);
 			@include prefix(animation-duration, 800ms);
 		}
-
 	}
 
 
@@ -51,13 +47,9 @@
 				&:before {
 					content: ""; display: block;
 					position: absolute;
-					top:8px; 
-					left:0;
-					bottom:0;
+					top:8px; left:0; bottom:0;
 					margin: auto;
-					width:0.15rem; 
-					// height: 100%;
-					height: 94%;
+					width:0.15rem; height: 94%;
 					background-color:$gm-gray-line;
 					@include prefix(transform-origin, top right);
 					@include prefix(animation-fill-mode, both);
@@ -70,13 +62,9 @@
 				&:after {
 					content: ""; display: block;
 					position: absolute;
-					top:8px; 
-					left:0;
-					bottom:0;
+					top:8px; left:0; bottom:0;
 					margin: auto;
-					width:0.15rem; 
-					// height: 100%;
-					height: 94%;
+					width:0.15rem; height: 94%;
 					background-color:$gm-yellow;
 					@include prefix(transform-origin, top right);
 					@include prefix(animation-fill-mode, both);
@@ -155,6 +143,24 @@
 				&:nth-child(8) { @include prefix(animation-delay, 2600ms); }
 			}
 		}
+
+		// LINES
+		.c3xgm-about-module-35 {
+	
+			.c3xgm-about-gray-line,
+			.c3xgm-about-yellow-line {
+				
+				@include prefix(animation-fill-mode, both);
+				@include prefix(animation-name, growBorder);
+	  			@include prefix(animation-duration,500ms);
+			}
+			.c3xgm-about-gray-line {
+				@include prefix(animation-delay,2200ms);
+			}
+			.c3xgm-about-yellow-line {
+				@include prefix(animation-delay,2700ms);
+			}
+		}
 	}
 }
 
@@ -183,9 +189,7 @@
 			@include prefix(animation-delay, 800ms);
 			@include prefix(animation-duration, 800ms);
 		}
-
 	}
-
 }
 
 // OTHER SUB SECTIONS
@@ -209,50 +213,35 @@
 			@include prefix(animation-duration, 800ms);	
 
 			&:before {
-					content: ""; display: block;
-					position: absolute;
-					// top:0; 
-					bottom:0; 
-					// left:0;
-					left:-0.5em;
-					width:0.15rem; 
-					// height: 95%;
-					height: 90%;
-					top:0;
-					margin: auto;
-					background-color:$gm-gray-line;
-					@include prefix(transform-origin, top right);
-					@include prefix(animation-fill-mode, both);
-					@include prefix(animation-name, growBorder);
-					@include prefix(animation-delay,1000ms);
-		  			@include prefix(animation-duration,600ms);
-		  			@media(min-width: $tablet-height) { width:0.2rem;}
-				}
+				content: ""; display: block;
+				position: absolute;
+				margin: auto;
+				bottom:0; left:-0.5em; top:0;
+				width:0.15rem; height: 90%;
+				background-color:$gm-gray-line;
+				@include prefix(transform-origin, top right);
+				@include prefix(animation-fill-mode, both);
+				@include prefix(animation-name, growBorder);
+				@include prefix(animation-delay,1000ms);
+	  			@include prefix(animation-duration,600ms);
+	  			@media(min-width: $tablet-height) { width:0.2rem;}
+			}
 
-				&:after {
-					content: ""; display: block;
-					position: absolute;
-					// top:0; 
-					bottom:0; 
-					// left:0;
-					left:-0.5em;
-					width:0.15rem; 
-					// height: 95%;
-					height: 90%;
-					top:0;
-					margin: auto;
-					background-color:$gm-yellow;
-					@include prefix(transform-origin, top right);
-					@include prefix(animation-fill-mode, both);
-					@include prefix(animation-name, growBorder);
-					@include prefix(animation-delay,1400ms);
-		  			@include prefix(animation-duration,600ms);
-		  			@media(min-width: $tablet-height) { width:0.2rem;}
-				}
-
-		 }
-
-
+			&:after {
+				content: ""; display: block;
+				position: absolute;
+				bottom:0; top:0; left:-0.5em;
+				margin: auto;
+				width:0.15rem; height: 90%;
+				background-color:$gm-yellow;
+				@include prefix(transform-origin, top right);
+				@include prefix(animation-fill-mode, both);
+				@include prefix(animation-name, growBorder);
+				@include prefix(animation-delay,1400ms);
+	  			@include prefix(animation-duration,600ms);
+	  			@media(min-width: $tablet-height) { width:0.2rem;}
+			}
+		}
 	}
 }
 
@@ -272,7 +261,6 @@
 		.c3xgm-about-module-foundation-logo-container li {
 			@include prefix(animation-fill-mode, both);
 			@include prefix(animation-name, fadeIn);
-			// @include prefix(animation-delay, 1600ms);
 			@include prefix(animation-duration, 200ms);
 
 			&:first-child { @include prefix(animation-delay, 1400ms); }
@@ -282,19 +270,21 @@
 			&:nth-child(5) { @include prefix(animation-delay, 2600ms); }
 		}
 
-
-		.c3xgm-about-gray-line.c3xgm-about-line-vert.slideInDown {
+		.c3xgm-about-gray-line {
+			@include prefix(animation-name, growBorder);
 			@include prefix(animation-fill-mode, both);
-			@include prefix(animation-delay, 1400ms);
+			@include prefix(animation-delay, 1600ms);
 			@include prefix(animation-duration, 500ms);			
 		}
-		.c3xgm-about-yellow-line.c3xgm-about-line-vert.slideInDown {
+		.c3xgm-about-yellow-line {
+			@include prefix(animation-name, growBorder);
 			@include prefix(animation-fill-mode, both);
-			@include prefix(animation-delay, 2000ms);
+			@include prefix(animation-delay, 2200ms);
 			@include prefix(animation-duration, 500ms);			
 		}
 	}
 }
+
 
 
 

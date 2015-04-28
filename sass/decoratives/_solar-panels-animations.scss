@@ -9,9 +9,19 @@
 .c3xgm-about-solar-panels.element-in-view {
 	
 
-	.c3xgm-about-grey-side {
-	
-	}
+	// .c3xgm-about-grey-side {
+    
+	   // .c3xgm-about-wheel {
+    //   // @include prefix(animation-fill-mode, both);
+    //     // @include prefix(animation-delay, 1s);
+
+    //   -webkit-animation: rotating 5s linear infinite;
+    //   -moz-animation: rotating 5s linear infinite;
+    //   -ms-animation: rotating 5s linear infinite;
+    //   -o-animation: rotating 5s linear infinite;
+    //   animation: rotating 5s linear infinite;
+    //  }
+	// }
 	
 	.c3xgm-about-tree {
 		@include prefix(transform-origin, center bottom);

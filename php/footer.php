@@ -21,8 +21,9 @@
         -->
         <script src="js/main-nav.js"></script>
 
-        <!-- NEW ANIMATIONS -->
+        <!-- NEW ANIMATIONS 
         <script src="js/scroll/animate-me.js"></script>
+        -->
         
         <!--
         SCROLL FIX HAS CAR ANIMATIONS ON SCROLL
