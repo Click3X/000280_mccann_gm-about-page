@@ -51,9 +51,7 @@
 		position: relative;
 		img { 
 			display:block; margin: 0 auto; padding:0; 
-			// width:40%; 
 			width:43%; 
-			// max-width: 158px; 
 			max-width:none; 
 		} 
 		@media(min-width:$tablet-height) {
@@ -61,111 +59,23 @@
 			height: 0;  padding-bottom: 16%; margin-top:9px;
 			img { 
 				@include center; 
-				// width: 80%; max-width: 189px; 
 				width: 93%; max-width: none;
 			}
 		}
 		@media(min-width:$outer-border) { padding-bottom: 171px; }
 	}
-
-
-
-	// DISPLAY-INLINE-CENTER
-	// .c3xgm-about-block-image { 
-	// 	text-align: center;
-	// 	margin: 9px 0;
-	// 	width: 100%; 
-	// 	position: relative;
-	// 	@include display-inline-center;
-	// 	img { 
-	// 		// display:block; margin: 0 auto; padding:0; 
-	// 		// width:40%; 
-	// 		max-width: 158px; 
-	// 	} 
-	// 	@media(min-width:$tablet-height) {
-	// 		width: 25%; 
-	// 		height: 0;  padding-bottom: 16%; 
-	// 		margin-top:9px;
-	// 		img { 
-	// 			// @include center; 
-	// 			width: 80%; 
-	// 			max-width: 189px; 
-	// 		}
-	// 	}
-	// 	@media(min-width:$outer-border) { padding-bottom: 171px; }
-	// }
-
-
-
-	// CENTER DISPLAY TABLE
-	// .c3xgm-about-block-image { 
-	// 	// text-align: center;
-	// 	// margin: 9px 0;
-	// 	// width: 100%; 
-	// 	// position: relative;
-	// 	@include table-cell-center; 
-	// 	// img { 
-	// 	// 	display:block; margin: 0 auto; padding:0; 
-	// 	// 	width:40%; max-width: 158px; 
-	// 	// } 
-	// 	@media(min-width:$tablet-height) {
-	// 		width: 25%; 
-	// 		height: 0;  
-	// 		// padding-bottom: 16%; 
-	// 		margin-top:9px;
-	// 		img { 
-	// 			// @include center; 
-	// 			width: 70%; max-width: 170px; 
-	// 		}
-	// 		}
-	// 	@media(min-width:$outer-border) { 
-	// 		// padding-bottom: 171px; 
-	// 		height: 171px; 
-	// 	}
-	// }
 }
 
 
 // GLOBAL
 .c3xgm-about-global {
 	.c3xgm-about-blockquote { 
-		float:none; text-align: left;
-		// padding-left: 0.6em; 
-		padding-left: 1em; 
-		position: relative;
-		// border-left: 0.15rem solid $gm-yellow;
-		@media(min-width: $tablet-height) { 
-			padding-left: 2.5em; 
-			// border-left: 0.2rem solid $gm-yellow; 
-		}
+		position: relative; float:none; 
+		text-align: left; padding-left: 1em; 
+		@media(min-width: $tablet-height) { padding-left: 2.5em; }
 
-		&:before {
-			content: ""; display: block;
-			position: absolute;
-			top:0; left:0;
-			width:0.15rem; height: 100%;
-			background-color:$gm-gray-line;
-			@include prefix(transform-origin, top right);
-			@include prefix(animation-fill-mode, both);
-			@include prefix(animation-name, growBorder);
-			@include prefix(animation-delay,1800ms);
-  			@include prefix(animation-duration,600ms);
-  			@media(min-width: $tablet-height) { width:0.2rem;}
-		}
-
-		&:after {
-			content: ""; display: block;
-			position: absolute;
-			top:0; left:0;
-			width:0.15rem; height: 100%;
-			background-color:$gm-yellow;
-			@include prefix(transform-origin, top right);
-			@include prefix(animation-fill-mode, both);
-			@include prefix(animation-name, growBorder);
-			@include prefix(animation-delay,2400ms);
-  			@include prefix(animation-duration,600ms);
-  			@media(min-width: $tablet-height) { width:0.2rem;}
-		}
+		// BORDER LINES + ANIMATION
+		@include borderLines(left);
 	}
 
 	.c3xgm-about-block-image {
@@ -174,7 +84,6 @@
 		margin-bottom: 1.5em;
 		@media(min-width:$tablet-height) {
 			width: 25%; float:left;  margin-bottom:9px;
-			// img { @include prefix(transform, translate(-60%, -50%)); }
 		}
 	}
 }
@@ -182,57 +91,25 @@
 
 // SECONDS
 .c3xgm-about-seconds {
+	max-width: 945px;
 	.c3xgm-about-blockquote { 
 		display: inline-block; text-align: right;
-		width:auto; float: none;
-		// padding-right: 0.6em; 
+		position: relative; width:auto; float: none;
 		padding-right: 1em; 
-		position: relative;
+		// BORDER LINES + ANIMATION
+		@include borderLines(right);
 
-		&:before {
-			content: ""; display: block;
-			position: absolute;
-			top:0; right:0;
-			width:0.15rem; height: 100%;
-			background-color:$gm-gray-line;
-			@include prefix(transform-origin, top right);
-			@include prefix(animation-fill-mode, both);
-			@include prefix(animation-name, growBorder);
-			@include prefix(animation-delay,400ms);
-  			@include prefix(animation-duration,600ms);
-  			@media(min-width: $tablet-height) { width:0.2rem;}
-		}
-
-		&:after {
-			content: ""; display: block;
-			position: absolute;
-			top:0; right:0;
-			width:0.15rem; height: 100%;
-			background-color:$gm-yellow;
-			@include prefix(transform-origin, top right);
-			@include prefix(animation-fill-mode, both);
-			@include prefix(animation-name, growBorder);
-			@include prefix(animation-delay,1000ms);
-  			@include prefix(animation-duration,600ms);
-  			@media(min-width: $tablet-height) { width:0.2rem;}
-		}
-
-		// border-right: 0.15rem solid $gm-yellow;
 		@media(min-width: $tablet-height) { 
-			padding-right: 2.5em; 
-			// border-right: 0.2rem solid $gm-yellow; 
+			width: 80%; float:right; 
+			padding-right: 1.2rem; margin-top: 4.5%;
+			span br { display: none; }
+			> span { float: right; }
 		}
-		@media(min-width:$tablet-height) { float:right; }
+		@media(min-width:1150px) { margin-top:3.5%; }
 	}
 	.c3xgm-about-block-image { 
 		@media(min-width:$tablet-height) { 
-			float:right; width: 25%; 
-			// padding-bottom: 20%; 
-			// img { @include prefix(transform, translate(-40%, -50%)); }
-		}
-		@media(min-width:$outer-border) { 
-			// padding-bottom: 232px; 
-			// height: 232px; 
+			float:right; width: 20%; 
 		}
 	}
 }
@@ -244,6 +121,7 @@
 	text-align: center;
 	margin-top:6em; margin-bottom:2em;
 	@media(min-width:$tablet-height) { text-align: left; margin-bottom: 3em;}
+	
 	.c3xgm-about-blockquote {
 		width:auto; margin: 0 auto;
 	  	display: inline-block; text-align: center;
@@ -254,12 +132,34 @@
 		.c3xgm-about-dark-blue.c3xgm-about-thin {
 			width:auto; max-width: 5em;
 			display: inline-block;
-			padding-bottom: 0.5rem; border-bottom: 0.15rem solid $gm-yellow;
+			padding-bottom: 0.5rem; 
+			position: relative;
+
+			&:before {
+				content: ""; display: block;
+				position: absolute; bottom:0;
+				height:0.15rem; width: 100%;
+				background-color:$gm-gray-line;
+				@media(min-width: $tablet-height) { 
+					width:0.2rem; height: 100%;
+					top:0; bottom:auto; right:0;
+				}
+			}
+
+			&:after {
+				content: ""; display: block;
+				position: absolute; bottom:0;
+				height:0.15rem; width: 100%;
+				background-color:$gm-yellow;
+				@media(min-width: $tablet-height) { 
+					width:0.2rem; height: 100%;
+					top:0; bottom:auto; right:0;
+				}
+			}
+
 			@media(min-width:$tablet-height) {					
-				width: 75%; max-width: none;
-				float: left;
-				border-bottom:0; padding-bottom:0;
-				padding-right: 2rem; border-right: 0.2rem solid $gm-yellow;
+				width: 75%; max-width: none; float: left;
+				border-bottom:0; padding-bottom:0; padding-right: 2rem; 
 			}
 		}
 
@@ -305,11 +205,8 @@
 
 	.c3xgm-about-block-image { 
 		width: 46%; position: absolute; left:0; z-index: -1;
-		@media(min-width:$tablet-height	) {  
-			// width: 25%; 
-			// width: 46%;
-			left: -15%; top: -11%;
-		}
+
+		@media(min-width:$tablet-height	) { left: -15%; top: -11%; }
 		  .c3xgm-about-block-image-mobile { margin-top: -45%; }
 	}
 
@@ -378,7 +275,9 @@
 // CADILLAC & CHEVROLET
 .c3xgm-about-cadillac-award,
 .c3xgm-about-chevrolet-award {
-	position: relative; max-width: 945px;
+	position: relative; 
+	// max-width: 945px;
+	max-width:$inner-border;
 	.c3xgm-about-block-image { 
 		width:100%; text-align:center;
 		z-index: -1;
@@ -389,6 +288,8 @@
 			position: absolute; right:0;
 			img {width:80%;}
 		}
+
+		@media(min-width:$inner-border) { text-align: left; }
 	}
 
 	.c3xgm-about-blockquote {
@@ -435,7 +336,7 @@
 // CADILLAC SPECIFIC 
 .c3xgm-about-cadillac-award {
 	.c3xgm-about-blockquote {
-		margin-top: 4%;
+		margin-top: 1%;
 		.c3xgm-about-gray { 
 			margin-bottom: 1%; margin-top: 1%; 
 			@media(min-width:$tablet-height) { margin-top:0; }

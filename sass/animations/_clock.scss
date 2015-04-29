@@ -51,15 +51,6 @@
 } 
 
 /* Hands */ 
-#clock span.hand { 
-    background: #000; 
-    position: absolute; 
-    left: 50%; 
-
-    @include prefix(transform-origin, left bottom);
-    // @include prefix(animation, rotate 60s infinite linear);
-    @include prefix(animation, rotate 15s infinite linear);
-} 
 
 #clock span.hand.second {  
     width:1.6666667%; min-width:1px;
@@ -68,6 +59,16 @@
     top: 8.3333334%;
     background-color:#ED1C24;
     z-index: 10;
+} 
+
+#clock span.hand { 
+    background: #000; 
+    position: absolute; 
+    left: 50%; 
+
+    @include prefix(transform-origin, left bottom);
+    // @include prefix(animation, rotate 60s infinite linear);
+    @include prefix(animation, rotate 15s infinite linear);
 } 
 
 #clock span.hand.minute { 

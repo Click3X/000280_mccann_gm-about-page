@@ -3,21 +3,24 @@
  * Import this file using the following HTML or equivalent:
  * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
 
+// RESETS AND MUST-HAVES
 @import "compass/reset";
-
 @import "components/variables";
 @import "components/functions";
 @import "components/mixins";
 @import "components/helpers";
 
-// @import "components/temp";
+// COMPONENTS
 @import "components/navigation";
-
 @import "components/layout";
-// TYPE
-@import "typography/base";
-@import "typography/our-company";
-@import "typography/our-people";
+
+// PAGES & SECTIONS TYPE
+@import "pages/base-type";
+@import "pages/our-company";
+@import "pages/environment";
+@import "pages/safety";
+@import "pages/our-brands";
+@import "pages/our-people";
 
 // DECORATIVES
 @import "decoratives/five-stars";
@@ -31,41 +34,22 @@
 @import "modules/foundation";
 @import "modules/car";
 
-// SECTIONS
-@import "sections/environment";
-@import "sections/safety";
-
-// PAGES
-@import "pages/our-brands";
-@import "pages/our-people";
-
-
-// KEYFRAMES
-@import "keyframe-animations/animations-all";
-// ANIMATIONS
-
-// @import "components/animate-text";
-// ANIMATE ME NOW IS THE GOOD ONE!
-@import "components/animate-me-now";
-
-
-// CAR MOD
+// CAR MOD CLICK 
 @import "modules/module-click-animations";
 @import "modules/tech-module-click-animations";
 
-// @import "pages/our-company-animations";
-// @import "pages/our-people-animations";
-// @import "pages/our-brands-animations";
-// @import "pages/our-global-community-animations";
+// A N I M A T I O N S 
+// ANIMATE CSS
+@import "animations/animations-all";
 
-// @import "pages/our-commitment-animations";
+// ELEMENT IN VIEW ANIMATIONS
+@import "animations/element-in-view";
 
-@import "pages/all-page-animations";
+// PAGE IN VIEW ANIMATIONS
+@import "animations/page-in-view";
 
-
+// DECORATIVE ANIMATIONS
 @import "animations/flag-line";
 @import "animations/grey-car-wheels";
 @import "animations/clock";
-
-@import "components/element-in-view";
-@import "decoratives/solar-panels-animations";
+@import "animations/solar-panels-animations";

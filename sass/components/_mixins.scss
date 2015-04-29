@@ -194,3 +194,52 @@ Stylesheet: Sass Mixins
         @content;
     }
 }
+
+// TURN OFF ANIMATION
+@mixin noAnimation {
+	@include prefix(animation-fill-mode, none);
+	@include prefix(animation-name, none);
+	@include prefix(animation-delay, 0);
+	@include prefix(animation-duration, 0);
+}
+
+
+// BORDER LINES MIXIN
+@mixin borderLines($direction) {
+	&:before {
+		content: ""; display: block;
+		position: absolute;
+		top:0; #{$direction}:0;
+		width:0.15rem; height: 100%;
+		background-color:$gm-gray-line;
+		@media(min-width: $tablet-height) { width:0.2rem;}
+	}
+
+	&:after {
+		content: ""; display: block;
+		position: absolute;
+		top:0; #{$direction}:0;
+		width:0.15rem; height: 100%;
+		background-color:$gm-yellow;
+		@media(min-width: $tablet-height) { width:0.2rem;}
+	}
+}
+
+// BORDER LINES MIXIN
+@mixin borderLinesAnimation($delay) {
+	&:before {
+		@include prefix(transform-origin, top right);
+		@include prefix(animation-fill-mode, both);
+		@include prefix(animation-name, growBorder);
+		@include prefix(animation-delay, #{$delay + "ms"});
+		@include prefix(animation-duration,600ms);
+	}
+
+	&:after {
+		@include prefix(transform-origin, top right);
+		@include prefix(animation-fill-mode, both);
+		@include prefix(animation-name, growBorder);
+		@include prefix(animation-delay, #{ ($delay + 600) + "ms"});
+		@include prefix(animation-duration,600ms);
+	}
+}

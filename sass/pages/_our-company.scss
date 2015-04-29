@@ -1,0 +1,82 @@
+// OUR COMPANY TYPE
+.c3xgm-about-page-our-company {
+
+	// MAKE MIN HEIGHT 100VH SO IT ALWAYS FILLS SCREEN
+	// min-height: 100%;
+	// min-height: 100vh;
+	// height: 100%;
+	// height: 100vh;
+
+	.c3xgm-about-section.our-company {
+		padding-top:18px;
+		@media( min-width:$tablet-height ){ padding-top:36px; }
+	}
+
+	.c3xgm-about-earn {
+		margin-top:0;
+		@media( min-width:$tablet-height ){ margin-top:4px; }
+
+		.c3xgm-about-yellow-bar-left-wrapper { 
+			margin-bottom: 20px;
+			@media( min-width:$tablet-height ){ margin-bottom: 28px; }
+		}
+
+		.c3xgm-about-p strong { display: block; }
+		
+		.c3xgm-about-block-tagline,
+		.c3xgm-about-block-title {
+			color: $gm-light-blue; font-weight: 100;
+			font-size: 58px; font-size: 14.36vw;
+			line-height: .9em;
+			// max-width: 4em;
+			padding-left:.5rem;
+
+			strong { font-weight: 600; }
+
+			@media( min-width:$tablet-height ){ font-size:117px; }
+		}
+
+		.c3xgm-about-block-tagline {
+			span { float: left; clear: left; display: inline-block;}
+		}
+	}
+
+
+	// TAGLINE
+	.c3xgm-about-header-p {
+		margin:.4em 0 .4em 8px;
+		color:$gm-light-gray; text-transform:uppercase; font-weight: 600;
+		font-family: "open-sans-condensed", sans-serif;
+		font-size:18px; line-height:1.15em;
+		letter-spacing: .025em;
+
+		@media( min-width:$tablet-height ){ 
+			margin:1em 0 1em 8px;
+			font-size: 24px; line-height:1.1em;
+		}
+	}
+
+}
+
+
+
+.c3xgm-about-down-arrow-link {
+	display: block;
+	position: relative;
+}
+
+.c3xgm-about-down-arrow {
+	max-width: 22px;
+	margin: 0 auto 5em;
+	text-align: center;
+	display: block;
+
+	@include prefix(animation-fill-mode, both);
+	@include prefix(animation-name, bounceUpDown);
+	@include prefix(animation-delay, 0ms);
+	@include prefix(animation-duration, 2000ms);
+	@include prefix(animation-iteration-count, infinite);
+	@include prefix(animation-timing-function, ease-in-out);
+
+	@media(min-width: $tablet-height) { margin: -4em auto 5em; }
+}

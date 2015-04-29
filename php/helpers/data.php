@@ -232,7 +232,7 @@ $pages = array(
 				"class"=>"seconds text-right c3xgm-about-animated-box",
 				"copy"=>array(
 					"c3xgm-about-dark-blue c3xgm-about-thin fadeInRightMega"=>"A <strong>Chevy is sold</strong><br>somewhere in the world",
-					"c3xgm-about-light-blue c3xgm-about-thin number fadeInRightMega"=>"every <strong>6.63<br>seconds</strong>"
+					"c3xgm-about-light-blue c3xgm-about-thin number fadeInRightMega"=>"every <strong>6.63<br>&nbsp;seconds</strong>"
 				)
 			),
 			array(
@@ -293,7 +293,7 @@ $pages = array(
 				"class"=>"chevrolet-award",
 				"copy"=>array(
 					"c3xgm-about-dark-blue c3xgm-about-thin"=>"<strong>Chevrolet</strong> won both",
-					"c3xgm-about-gray"=>"2014 North American car &amp; truck of the year"
+					"c3xgm-about-gray"=>"2014 car &amp; truck of the year"
 				)
 			)
 		)

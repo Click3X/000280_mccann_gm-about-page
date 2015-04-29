@@ -6,12 +6,10 @@
 	.c3xgm-about-block.c3xgm-about-clearfix.c3xgm-about-employees,
 	.c3xgm-about-section.c3xgm-about-clearfix.our-people { width: 100%; }
 
-
 	> .c3xgm-about-section { margin-bottom: 0.6em; }
 
 	.c3xgm-about-block { 
 		margin-top:0; margin-bottom: 1.75em; 
-
 		.c3xgm-about-block-image { position: relative; text-align: center;}
 	}
 
@@ -20,11 +18,7 @@
 		margin: 0 auto 2em; float: none; text-align: center;
 		@media(min-width:$tablet-height ) { width:92%; }
 
-		.c3xgm-about-module-50.c3xgm-about-employee-container { 
-			margin-top:0;
-			
-		}
-
+		.c3xgm-about-module-50.c3xgm-about-employee-container { margin-top:0; }
 
 		.c3xgm-about-blockquote {
 			max-width: 82%;
@@ -53,42 +47,27 @@
 
 		.c3xgm-about-girl,
 		.c3xgm-about-boy {
-			// background-size: cover;
-			background-size: 80%;
-			background-position: 50% 50%;
-			background-repeat: no-repeat;
-			width: 10.9%; 
-			max-width: 46px;
-			height: 0;
-			padding-bottom: 33.2%;
+			background-size: 80%; background-position: 50% 50%; background-repeat: no-repeat;
+			width: 10.9%; max-width: 46px;
+			height: 0; padding-bottom: 33.2%;
 			float: left;
 			@media(min-width:522px ) { padding-bottom: 124px; }
 		}
 
 		.c3xgm-about-employees-img {
-			height: 0;
-			padding-bottom: 33.2%;
-			position: relative;
-			overflow: hidden;
+			height: 0; padding-bottom: 33.2%;
+			position: relative; overflow: hidden;
 			@media(min-width:522px ) { padding-bottom: 124px; }
 		}
 
-
-
 		.c3xgm-about-block-image {
-			margin-top: 2.4%; 
-			// width: 100%;
-			width: 83%;
-			max-width: 425px;
-			
-			margin-left:auto;
-			margin-right:auto;
+			width: 83%; max-width: 425px;
+			margin-top: 2.4%; margin-left:auto; margin-right:auto;
 
 			img {  width: 88%;  max-width: 82%; }
+		  	
 		  	@media(min-width:$tablet-height ) { 
-		  		float: left; width:48%;
-		  		// margin-top: 0; 
-		  		margin-top: 1%; 
+		  		float: left; width:48%; margin-top: 1%; 
 		  		img { float:none; width:auto; max-width:none;}
 		  	}
 		}
@@ -114,29 +93,19 @@
 		display: block; float:left;
 		width: auto;
 		margin: 5px 0; padding-right: .4em; padding-bottom: .65em;
-		// border-right: 0.08em solid $gm-yellow;
 
 		.c3xgm-about-yellow-line,
 		.c3xgm-about-gray-line {
 			position: absolute;
 			right:0; top:0;
-			width: 0.15rem;
-			height: 100%;
+			width: 0.15rem; height: 100%;
 
 			@include prefix( transform-origin, center top);
-
-			@media(min-width: $tablet-height) {
-				width:0.2rem;
-			}
+			@media(min-width: $tablet-height) { width:0.2rem; }
 		}
 
-		.c3xgm-about-yellow-line {
-			background: $gm-gray;
-		}
-
-		.c3xgm-about-yellow-line {
-			background: $gm-yellow;
-		}
+		.c3xgm-about-yellow-line { background: $gm-gray; }
+		.c3xgm-about-yellow-line { background: $gm-yellow; }
 
 		.c3xgm-about-gray { line-height: .9em; }
 
@@ -161,24 +130,18 @@
 
 	// CONTINETS
 	.c3xgm-about-continents {
-		 .c3xgm-about-block-image { 
-		 	img { width:88.672%; max-width: 385px; }
-		 }
+		 .c3xgm-about-block-image img { width:88.672%; max-width: 385px; }
 		 
 		 @media(min-width: $tablet-height) {
 		 	.c3xgm-about-blockquote {margin-left: -15%; }
 		 	.c3xgm-about-block-image img { float: left; }
-
-		 }
-		 
+		 }	 
 	}
 
 	// LANGUAGES
 	.c3xgm-about-languages {
 		.c3xgm-about-blockquote { margin-bottom:0;}
-		.c3xgm-about-block-image {  
-			img {width:78.110599%; max-width: 339px;}
-		}
+		.c3xgm-about-block-image img {width:78.110599%; max-width: 339px;}
 	}
 	.c3xgm-about-timezones,
 	.c3xgm-about-continents,
@@ -204,51 +167,38 @@
 			width: auto;
 			position: relative;
 
+			&:before {
+				content: ""; display: block;
+				position: absolute;
+				bottom:0; left:0;
+				width:0.15rem; height:75%;
+				background-color:$gm-gray-line;
+				@include prefix(transform-origin, top right);
+				@include prefix(animation-fill-mode, both);
+				@include prefix(animation-name, growBorder);
+				@include prefix(animation-delay,1800ms);
+				@include prefix(animation-duration,600ms);
+				@media(min-width: $tablet-height) { width:0.2rem;}
+			}
+
+			&:after {
+				content: ""; display: block;
+				position: absolute;
+				bottom:0; left:0;
+				width:0.15rem; height: 75%;
+				background-color:$gm-yellow;
+				@include prefix(transform-origin, top right);
+				@include prefix(animation-fill-mode, both);
+				@include prefix(animation-name, growBorder);
+				@include prefix(animation-delay,2400ms);
+				@include prefix(animation-duration,600ms);
+				@media(min-width: $tablet-height) { width:0.2rem;}
+			}
+
 			@media(min-width: $tablet-height) { float: left; margin-left: 9px; }
 
-			.c3xgm-about-gray { 
-				// border-left:0.1em solid $gm-yellow; 
-				padding-left: .35em; 
+			.c3xgm-about-gray { padding-left: .35em; display: block; }
 
-
-				&:before {
-					content: ""; display: block;
-					position: absolute;
-					// top:0; 
-					bottom:0;
-					left:0;
-					width:0.15rem; 
-					// height: 100%;
-					height:75%;
-					background-color:$gm-gray-line;
-					@include prefix(transform-origin, top right);
-					@include prefix(animation-fill-mode, both);
-					// @include prefix(animation-name, fadeIn);
-					@include prefix(animation-name, growBorder);
-					@include prefix(animation-delay,1800ms);
-		  			@include prefix(animation-duration,600ms);
-		  			@media(min-width: $tablet-height) { width:0.2rem;}
-				}
-
-				&:after {
-					content: ""; display: block;
-					position: absolute;
-					// top:0; 
-					bottom:0;
-					left:0;
-					width:0.15rem; 
-					// height: 100%;
-					height: 75%;
-					background-color:$gm-yellow;
-					@include prefix(transform-origin, top right);
-					@include prefix(animation-fill-mode, both);
-					// @include prefix(animation-name, fadeIn);
-					@include prefix(animation-name, growBorder);
-					@include prefix(animation-delay,2400ms);
-		  			@include prefix(animation-duration,600ms);
-		  			@media(min-width: $tablet-height) { width:0.2rem;}
-				}
-			}
 			span > span {
 				color:$gm-light-blue; line-height: .86em;				
 				font-size: 72px; font-size: 22.604232vw;
@@ -260,8 +210,8 @@
 				@media(min-width: $tablet-height) { font-size:12px; font-size: 3.75vw; }
 				@media(min-width:$inner-border) { font-size:34px; }
 			}
+
 			> span:last-of-type {
-				// font-size:19px; font-size: 6.01409815vw;
 				font-size:27.5px; font-size: 8.71142095vw;
 				@media(min-width: $tablet-height) { font-size:13px; font-size: 4.087vw; }
 				@media(min-width:$inner-border) { font-size:37px; }
@@ -270,14 +220,11 @@
 	}
 }
 
-
 .svg {
 	.c3xgm-about-page-our-people {
 		.c3xgm-about-block.c3xgm-about-employees {
-
 			.c3xgm-about-girl {background-image: url('../img/pages/people/girl.svg');}
 			.c3xgm-about-boy {background-image: url('../img/pages/people/boy.svg');}
-
 		}
 	}
 }

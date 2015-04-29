@@ -33,6 +33,21 @@ jQuery(document).ready(function($) {
         css3dtransforms = false;
     }
 
+    // DISABLE HOVER ON SCROLL SCROLL
+    var body = document.body,
+    timer;
+
+    window.addEventListener('scroll', function() {
+        clearTimeout(timer);
+        if(!body.classList.contains('disable-hover')) {
+            body.classList.add('disable-hover')
+        }
+
+        timer = setTimeout(function(){
+            body.classList.remove('disable-hover')
+        }, 90);
+    }, false);
+
 
     // NUMBER TICKER
     $.fn.jQuerySimpleCounter = function( options ) {
@@ -380,11 +395,15 @@ jQuery(document).ready(function($) {
 
     // TRIGGER GIFS
     var animateCrashTestDummies = false;
+    $('#c3xgm-about-crash-test-dummies').addClass('invisible');
     function fireAnimatedCrashTestDummies() {
          if(animateCrashTestDummies === false) {
             // TRIGGER ANIMATED GIF WHEN SCROLLED TO
-            triggerGif(document.getElementById('c3xgm-about-crash-test-dummies'));
-            animateCrashTestDummies = true;
+            setTimeout(function() {
+                $('#c3xgm-about-crash-test-dummies').removeClass('invisible');
+                triggerGif(document.getElementById('c3xgm-about-crash-test-dummies'));
+                animateCrashTestDummies = true;
+            } , 600);
         }
     }
 

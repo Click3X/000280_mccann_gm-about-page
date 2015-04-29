@@ -36,79 +36,19 @@ html, body {
 
 // YELLOW BAR
 .c3xgm-about-yellow-bar-left-wrapper {
-
 	position: relative;
-	  margin: 8px 0 8px 2px;
-	  // padding-left:6px;
-	  padding-left: 2px;
-	  // border-left: 0.15em solid $gm-yellow;
+	margin: 8px 0 8px 2px;
+	// padding-left:6px;
+	padding-left: 2px;
+// border-left: 0.15em solid $gm-yellow;
 	
 	@media( min-width:$tablet-height ){ 
 		// margin: 8px 0 8px 6px; border-left:0.2em solid $gm-yellow;
 		padding-left:14px; 
 	}
-
-	// &:before {
-	// 		content: ""; display: block;
-	// 		position: absolute;
-	// 		top:0; left:0;
-	// 		width:0.15rem; height: 100%;
-	// 		background-color:$gm-gray-line;
-	// 		@include prefix(transform-origin, top right);
-	// 		@include prefix(animation-fill-mode, both);
-	// 		@include prefix(animation-name, growBorder);
-	// 		@include prefix(animation-delay,400ms);
- //  			@include prefix(animation-duration,600ms);
- //  			@media(min-width: $tablet-height) { width:0.2rem;}
-	// 	}
-
-	// 	&:after {
-	// 		content: ""; display: block;
-	// 		position: absolute;
-	// 		top:0; left:0;
-	// 		width:0.15rem; height: 100%;
-	// 		background-color:$gm-yellow;
-	// 		@include prefix(transform-origin, top right);
-	// 		@include prefix(animation-fill-mode, both);
-	// 		@include prefix(animation-name, growBorder);
-	// 		@include prefix(animation-delay,800ms);
- //  			@include prefix(animation-duration,600ms);
- //  			@media(min-width: $tablet-height) { width:0.2rem;}
-	// 	}
-
 	.c3xgm-about-h:first-child { margin-top:0; }
 }
 
-
-.c3xgm-about-page-in-view .c3xgm-about-yellow-bar-left-wrapper {
-	// &:before {
-	// 	content: ""; display: block;
-	// 	position: absolute;
-	// 	top:0; left:0;
-	// 	width:0.15rem; height: 100%;
-	// 	background-color:$gm-gray-line;
-	// 	@include prefix(transform-origin, top right);
-	// 	@include prefix(animation-fill-mode, both);
-	// 	@include prefix(animation-name, growBorder);
-	// 	@include prefix(animation-delay,400ms);
-	// 		@include prefix(animation-duration,600ms);
-	// 		@media(min-width: $tablet-height) { width:0.2rem;}
-	// }
-
-	// &:after {
-	// 	content: ""; display: block;
-	// 	position: absolute;
-	// 	top:0; left:0;
-	// 	width:0.15rem; height: 100%;
-	// 	background-color:$gm-yellow;
-	// 	@include prefix(transform-origin, top right);
-	// 	@include prefix(animation-fill-mode, both);
-	// 	@include prefix(animation-name, growBorder);
-	// 	@include prefix(animation-delay,800ms);
-	// 		@include prefix(animation-duration,600ms);
-	// 		@media(min-width: $tablet-height) { width:0.2rem;}
-	// }
-}
 // PAGE HEAders
 .c3xgm-about-section {
 	padding-top: 36px;
@@ -264,13 +204,8 @@ svg { max-height: 100%; }
 	z-index: 1100;
 }
 
-.c3xgm-about-yellow-line {
-	background-color:$gm-yellow;
-}
-
-.c3xgm-about-gray-line {
-	background-color:$gm-gray-line;
-}
+.c3xgm-about-yellow-line { background-color:$gm-yellow; }
+.c3xgm-about-gray-line { background-color:$gm-gray-line; }
 
 .c3xgm-about-line-vert {
 	height: 100%;
@@ -280,11 +215,9 @@ svg { max-height: 100%; }
 	}
 }
 
-.c3xgm-about-line-horz {
-	width: 100%;
 
-	height: .15rem;
-	@media(min-width: $tablet-height) {
-		height: .2rem;
-	}
+// ADD MARGIN-BOTTOMS TO ALL MAIN PAGES
+.c3xgm-about-page-container > div {
+	margin-bottom: 7em;
+	&:last-child { margin-bottom: 2em; }
 }

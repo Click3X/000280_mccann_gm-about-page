@@ -44,9 +44,9 @@
 	.hide-module-slide-out { 
 		.c3xgm-about-h {
 			@include prefix(animation, slideOut);
-			@include prefix(animation-duration, 300ms);
+			@include prefix(animation-duration, 400ms);
 			@include prefix(animation-fill-mode, both);
-			@include prefix(animation-delay, 300ms);
+			@include prefix(animation-delay, 0ms);
 		}
 
 		.c3xgm-about-p,
