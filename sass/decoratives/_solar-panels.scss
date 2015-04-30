@@ -1,17 +1,15 @@
 // SOLAR PANELS
 .c3xgm-about-solar-panels {
-	padding-bottom:5em; height: 0;
-	position: relative;
-	margin-bottom: 7.5%;
-	
+	margin-bottom: 7.5%; padding-bottom:5em; height: 0;
+	position: relative; 
+	// overflow-x: hidden;
   	@media(min-width: $tablet-height) {  padding-bottom: 15em;  margin-bottom:100px; }
 
 	.c3xgm-about-grey-side {
 		width:45%; height: 0;
   		padding-bottom: 17.5%;
   		position: absolute;
-		left:0; bottom:0; 
-		right:auto;
+		left:0; bottom:0; right:auto;
 		margin: auto;
 		z-index: 10;
 
@@ -24,30 +22,19 @@
 			bottom: 23%;
 
 			@media(min-width: $tablet-height) { 
-				  width: 13.85%;
-				  padding-bottom: 13.85%;
-				// width: 33px;
-				// padding-bottom: 33px; 
-				// bottom:11px;
-				// bottom:3%;
+				width: 13.85%; padding-bottom: 13.85%;
 				bottom: 13%;
-
 			}
 		}
 
 		.c3xgm-about-front-wheel {
 			right: 10.285714%;
-          	@media(min-width: $tablet-height) { 
-          		right: 10.1%;
-  				
-          	}
+          	@media(min-width: $tablet-height) { right: 10.1%; }
 		}
 
 		.c3xgm-about-back-wheel {
 			left: 16%;
-        	@media(min-width: $tablet-height) { 
-        		left: 15.7%;
-        	}			
+        	@media(min-width: $tablet-height) { left: 15.7%; }			
 		}
 
   		@media(min-width: $tablet-height) {
@@ -69,31 +56,20 @@
 		z-index: -5;
 		img { width:100%;}
   		@media(min-width:400px) { padding-bottom:13.5%; }
-		@media(min-width:$tablet-height) { 
-			// right: 0; left: -43%;
-			padding-bottom: 100px;
-			margin: auto;
-		}
+		@media(min-width:$tablet-height) { padding-bottom: 100px; margin: auto;}
 		@media(min-width:$inner-border) { right:0; left:-63%; }
 	}
 	
 	.c3xgm-about-solar-panels {
-		width: 30%; 
-		// max-width: 200px;
-		height: 0; padding-bottom: 33%;
+		width: 30%; height: 0; padding-bottom: 33%;
 		position: absolute;
-		right: 1%; 
-		// bottom:0;
-		bottom:-2%;
+		right: 1%; bottom:-2%;
 		z-index: -5;
 		img { width:100%;}
   		@media(min-width:668px) { width: 200px; padding-bottom: 170px; top:auto; }
 		@media(min-width:$inner-border) { 
-			left: 0; 
-			right: -39%;
-			bottom:30px;
-			margin: auto; 
-			padding-bottom: 210px;
+			left: 0; right: -39%; bottom:30px;
+			margin: auto; padding-bottom: 210px;
 		}
 	}
 
@@ -102,14 +78,9 @@
   		height: 0; padding-bottom: 16%;
   		z-index: -1;
 		position: absolute;
-		bottom: 270%; 
-		top:auto;
-		right: 5%;
+		bottom: 270%; top:auto; right: 5%;
 		img { width:100%;}
-  		@media(min-width:400px) { 
-  			padding-bottom: 100px;
-			right: 1%;
-  		}
+  		@media(min-width:400px) { padding-bottom: 100px; right: 1%; }
   		@media(min-width:530px) {  bottom:25em; }
 		@media(min-width:$tablet-height) { bottom:28em; }
 		@media(min-width: $inner-border) {left: 0; right: -50%; margin: auto; }

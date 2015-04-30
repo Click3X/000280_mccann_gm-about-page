@@ -3,23 +3,25 @@
 	.c3xgm-about-block {
 		text-align: center;
 		.c3xgm-about-blockquote {
-			text-align: left;
-			display: inline-block;
+			text-align: left; display: inline-block;
 			@media(min-width:$tablet-height) { display: block;  }
 		}
 		.c3xgm-about-block-image {
-			margin: 1em auto;
-			text-align: center;
+			margin: 1em auto; text-align: center;
 			img {margin:0 auto;}
-			@media(min-width:$tablet-height) { 
-				margin:0 auto; 
-			}
+			@media(min-width:$tablet-height) { margin:0 auto;}
 		}
 	}
 
 	// CLEAN ENERGY 
 	.c3xgm-about-clean-energy {
 		text-align: left;
+		.c3xgm-about-blockquote {
+			padding-left: 14px; margin-left:9px;
+			@include borderLines(left);
+			@media(min-width: $tablet-height) {padding-left: 21px;}
+		}
+
 		@media(min-width:$tablet-height) { 
 			margin-bottom: 0; 
 			.c3xgm-about-blockquote > span { float: left; clear: left; }
@@ -57,43 +59,10 @@
 
 		.c3xgm-about-blockquote {
 			text-align: right; 
-			// padding-right: .6em; 
 			padding-right:1em; margin-right:2em;
-			// border-right: .15rem solid $gm-yellow;
 			position: relative;
-			&:before {
-				content: ""; display: block;
-				position: absolute;
-				top:0; right:0;
-				width:0.15rem; height: 100%;
-				background-color:$gm-gray-line;
-				@include prefix(transform-origin, top right);
-				@include prefix(animation-fill-mode, both);
-				@include prefix(animation-name, growBorder);
-				@include prefix(animation-delay,400ms);
-					@include prefix(animation-duration,600ms);
-					@media(min-width: $tablet-height) { width:0.2rem;}
-			}
-
-			&:after {
-				content: ""; display: block;
-				position: absolute;
-				top:0; right:0;
-				width:0.15rem; height: 100%;
-				background-color:$gm-yellow;
-				@include prefix(transform-origin, top right);
-				@include prefix(animation-fill-mode, both);
-				@include prefix(animation-name, growBorder);
-				@include prefix(animation-delay,800ms);
-					@include prefix(animation-duration,600ms);
-					@media(min-width: $tablet-height) { width:0.2rem;}
-			}
-
-	  		@media(min-width:$tablet-height) { 
-	  			width:73%;
-		  		padding-right: 2.5em; 
-		  		// border-right: .2rem solid $gm-yellow;
-		  	}
+			@include borderLines(right);
+	  		@media(min-width:$tablet-height) { width:73%; padding-right: 2.5em; }
 		}
 
 		.c3xgm-about-dark-blue.c3xgm-about-thin {
@@ -124,64 +93,23 @@
 			@media(min-width:$tablet-height) { 
 				width:25%; height:0;
 				padding-bottom: 181px; margin-top:9px;
-	  			float: left; 
-	  			position: relative;
-	  			img { 
-	  				// width:65%; 
-	  				width:100%; 
-	  				max-width: none;
-	  				@include center; 
-	  			}
+	  			position: relative; float: left; 
+	  			img {  width:100%; max-width: none; @include center; }
 	  		}
 		}
 
 		.c3xgm-about-blockquote {
-		  	padding-left:1em; 
-		  	position: relative;
-		  	// padding-left: .6em; 
-		  	// border-left: .15rem solid $gm-yellow;
-		  	&:before {
-				content: ""; display: block;
-				position: absolute;
-				top:0; left:0;
-				width:0.15rem; height: 100%;
-				background-color:$gm-gray-line;
-				@include prefix(transform-origin, top right);
-				@include prefix(animation-fill-mode, both);
-				@include prefix(animation-name, growBorder);
-				@include prefix(animation-delay,400ms);
-					@include prefix(animation-duration,600ms);
-					@media(min-width: $tablet-height) { width:0.2rem;}
-			}
-
-			&:after {
-				content: ""; display: block;
-				position: absolute;
-				top:0; left:0;
-				width:0.15rem; height: 100%;
-				background-color:$gm-yellow;
-				@include prefix(transform-origin, top right);
-				@include prefix(animation-fill-mode, both);
-				@include prefix(animation-name, growBorder);
-				@include prefix(animation-delay,800ms);
-					@include prefix(animation-duration,600ms);
-					@media(min-width: $tablet-height) { width:0.2rem;}
-			}
+		  	position: relative; padding-left:1em; 
+		  	@include borderLines(left);
 	  		@media(min-width:$tablet-height) { 
-	  			float: right; width:75%;
-		  		padding-left: 2.5em; 
-		  		// border-left: .2rem solid $gm-yellow;
+	  			float: right; width:75%; padding-left: 2.5em; 
 		  	}
 	  	}
 		
 		.c3xgm-about-dark-blue.c3xgm-about-thin {
 			font-size:16px; font-size: 5vw;
-			display: inline-block;
-			max-width: 13em;
-			@media(min-width:$tablet-height) {
-				font-size:29.747415px; 
-				display: inline; max-width:none;
-			}
+			display: inline-block; max-width: 13em;
+			@media(min-width:$tablet-height) { max-width:none; font-size:29.747415px; }
 		}
 
 		.c3xgm-about-light-blue {
@@ -209,46 +137,11 @@
 		}
 
 		.c3xgm-about-blockquote { 
-			max-width: 52em;
+			position: relative; max-width: 52em;
 			text-align: right; 
-		  	// padding-right: .6em; 
-		  	padding-right:1em;
-		  	margin-right: 1.25em;
-		  	position: relative;
-		  	// border-right: .15rem solid $gm-yellow;
-
-		  	&:before {
-				content: ""; display: block;
-				position: absolute;
-				top:0; right:0;
-				width:0.15rem; height: 100%;
-				background-color:$gm-gray-line;
-				@include prefix(transform-origin, top right);
-				@include prefix(animation-fill-mode, both);
-				@include prefix(animation-name, growBorder);
-				@include prefix(animation-delay,400ms);
-					@include prefix(animation-duration,600ms);
-					@media(min-width: $tablet-height) { width:0.2rem;}
-			}
-
-			&:after {
-				content: ""; display: block;
-				position: absolute;
-				top:0; right:0;
-				width:0.15rem; height: 100%;
-				background-color:$gm-yellow;
-				@include prefix(transform-origin, top right);
-				@include prefix(animation-fill-mode, both);
-				@include prefix(animation-name, growBorder);
-				@include prefix(animation-delay,800ms);
-					@include prefix(animation-duration,600ms);
-					@media(min-width: $tablet-height) { width:0.2rem;}
-			}
-	  		@media(min-width:$tablet-height) { 
-	  			width:76%;
-		  		padding-right: 2.5em; 
-		  		// border-right: .2rem solid $gm-yellow;
-		  	}
+		  	padding-right:1em; margin-right: 1.25em;
+		  	@include borderLines(right);
+	  		@media(min-width:$tablet-height) { width:76%; padding-right: 2.5em; }
 		}
 
 		.c3xgm-about-dark-blue.c3xgm-about-thin {
@@ -266,5 +159,4 @@
 			@media(min-width:$tablet-height) {font-size:34.9255px; }
 		}
 	}
-
 }

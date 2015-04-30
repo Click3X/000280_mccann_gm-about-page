@@ -1166,87 +1166,132 @@ h4.c3xgm-about-h {
     display: block;
   }
 }
-/* line 10, ../sass/pages/_environment.scss */
+/* line 9, ../sass/pages/_environment.scss */
 .c3xgm-about-page-our-commitment .c3xgm-about-block .c3xgm-about-block-image {
   margin: 1em auto;
   text-align: center;
 }
-/* line 13, ../sass/pages/_environment.scss */
+/* line 11, ../sass/pages/_environment.scss */
 .c3xgm-about-page-our-commitment .c3xgm-about-block .c3xgm-about-block-image img {
   margin: 0 auto;
 }
 @media (min-width: 768px) {
-  /* line 10, ../sass/pages/_environment.scss */
+  /* line 9, ../sass/pages/_environment.scss */
   .c3xgm-about-page-our-commitment .c3xgm-about-block .c3xgm-about-block-image {
     margin: 0 auto;
   }
 }
-/* line 21, ../sass/pages/_environment.scss */
+/* line 17, ../sass/pages/_environment.scss */
 .c3xgm-about-page-our-commitment .c3xgm-about-clean-energy {
   text-align: left;
 }
+/* line 19, ../sass/pages/_environment.scss */
+.c3xgm-about-page-our-commitment .c3xgm-about-clean-energy .c3xgm-about-blockquote {
+  padding-left: 14px;
+  margin-left: 9px;
+}
+/* line 209, ../sass/components/_mixins.scss */
+.c3xgm-about-page-our-commitment .c3xgm-about-clean-energy .c3xgm-about-blockquote:before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0.15rem;
+  height: 100%;
+  background-color: #d4d4d5;
+}
 @media (min-width: 768px) {
-  /* line 21, ../sass/pages/_environment.scss */
+  /* line 209, ../sass/components/_mixins.scss */
+  .c3xgm-about-page-our-commitment .c3xgm-about-clean-energy .c3xgm-about-blockquote:before {
+    width: 0.2rem;
+  }
+}
+/* line 218, ../sass/components/_mixins.scss */
+.c3xgm-about-page-our-commitment .c3xgm-about-clean-energy .c3xgm-about-blockquote:after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0.15rem;
+  height: 100%;
+  background-color: #FDB12E;
+}
+@media (min-width: 768px) {
+  /* line 218, ../sass/components/_mixins.scss */
+  .c3xgm-about-page-our-commitment .c3xgm-about-clean-energy .c3xgm-about-blockquote:after {
+    width: 0.2rem;
+  }
+}
+@media (min-width: 768px) {
+  /* line 19, ../sass/pages/_environment.scss */
+  .c3xgm-about-page-our-commitment .c3xgm-about-clean-energy .c3xgm-about-blockquote {
+    padding-left: 21px;
+  }
+}
+@media (min-width: 768px) {
+  /* line 17, ../sass/pages/_environment.scss */
   .c3xgm-about-page-our-commitment .c3xgm-about-clean-energy {
     margin-bottom: 0;
   }
-  /* line 25, ../sass/pages/_environment.scss */
+  /* line 27, ../sass/pages/_environment.scss */
   .c3xgm-about-page-our-commitment .c3xgm-about-clean-energy .c3xgm-about-blockquote > span {
     float: left;
     clear: left;
   }
 }
-/* line 27, ../sass/pages/_environment.scss */
+/* line 29, ../sass/pages/_environment.scss */
 .c3xgm-about-page-our-commitment .c3xgm-about-clean-energy .c3xgm-about-dark-blue.c3xgm-about-thin {
   font-size: 23px;
   font-size: 7vw;
 }
 @media (min-width: 768px) {
-  /* line 27, ../sass/pages/_environment.scss */
+  /* line 29, ../sass/pages/_environment.scss */
   .c3xgm-about-page-our-commitment .c3xgm-about-clean-energy .c3xgm-about-dark-blue.c3xgm-about-thin {
     font-size: 46.101659999999995px;
   }
 }
-/* line 32, ../sass/pages/_environment.scss */
+/* line 34, ../sass/pages/_environment.scss */
 .c3xgm-about-page-our-commitment .c3xgm-about-clean-energy .c3xgm-about-light-blue {
   font-size: 40px;
   font-size: 12.4vw;
   line-height: 0.9em;
 }
 @media (min-width: 768px) {
-  /* line 32, ../sass/pages/_environment.scss */
+  /* line 34, ../sass/pages/_environment.scss */
   .c3xgm-about-page-our-commitment .c3xgm-about-clean-energy .c3xgm-about-light-blue {
     font-size: 78.59756px;
   }
 }
-/* line 38, ../sass/pages/_environment.scss */
+/* line 40, ../sass/pages/_environment.scss */
 .c3xgm-about-page-our-commitment .c3xgm-about-clean-energy .c3xgm-about-gray {
   font-size: 19px;
   font-size: 6vw;
 }
 @media (min-width: 768px) {
-  /* line 38, ../sass/pages/_environment.scss */
+  /* line 40, ../sass/pages/_environment.scss */
   .c3xgm-about-page-our-commitment .c3xgm-about-clean-energy .c3xgm-about-gray {
     font-size: 35.775859999999994px;
   }
 }
-/* line 45, ../sass/pages/_environment.scss */
+/* line 47, ../sass/pages/_environment.scss */
 .c3xgm-about-page-our-commitment .c3xgm-about-epa-energy-star {
   max-width: 44.5em;
 }
-/* line 47, ../sass/pages/_environment.scss */
+/* line 49, ../sass/pages/_environment.scss */
 .c3xgm-about-page-our-commitment .c3xgm-about-epa-energy-star .c3xgm-about-block-image {
   width: 42%;
   position: relative;
 }
-/* line 50, ../sass/pages/_environment.scss */
+/* line 52, ../sass/pages/_environment.scss */
 .c3xgm-about-page-our-commitment .c3xgm-about-epa-energy-star .c3xgm-about-block-image img {
   width: 100%;
   max-width: 160px;
   height: auto;
 }
 @media (min-width: 768px) {
-  /* line 47, ../sass/pages/_environment.scss */
+  /* line 49, ../sass/pages/_environment.scss */
   .c3xgm-about-page-our-commitment .c3xgm-about-epa-energy-star .c3xgm-about-block-image {
     width: 25%;
     float: right;
@@ -1254,7 +1299,7 @@ h4.c3xgm-about-h {
     padding-bottom: 168px;
     height: 0;
   }
-  /* line 54, ../sass/pages/_environment.scss */
+  /* line 56, ../sass/pages/_environment.scss */
   .c3xgm-about-page-our-commitment .c3xgm-about-epa-energy-star .c3xgm-about-block-image img {
     position: absolute;
     top: 50%;
@@ -1267,14 +1312,14 @@ h4.c3xgm-about-h {
     width: 90%;
   }
 }
-/* line 58, ../sass/pages/_environment.scss */
+/* line 60, ../sass/pages/_environment.scss */
 .c3xgm-about-page-our-commitment .c3xgm-about-epa-energy-star .c3xgm-about-blockquote {
   text-align: right;
   padding-right: 1em;
   margin-right: 2em;
   position: relative;
 }
-/* line 64, ../sass/pages/_environment.scss */
+/* line 209, ../sass/components/_mixins.scss */
 .c3xgm-about-page-our-commitment .c3xgm-about-epa-energy-star .c3xgm-about-blockquote:before {
   content: "";
   display: block;
@@ -1284,39 +1329,14 @@ h4.c3xgm-about-h {
   width: 0.15rem;
   height: 100%;
   background-color: #d4d4d5;
-  -webkit-transform-origin: top right;
-  -moz-transform-origin: top right;
-  -o-transform-origin: top right;
-  -ms-transform-origin: top right;
-  transform-origin: top right;
-  -webkit-animation-fill-mode: both;
-  -moz-animation-fill-mode: both;
-  -o-animation-fill-mode: both;
-  -ms-animation-fill-mode: both;
-  animation-fill-mode: both;
-  -webkit-animation-name: growBorder;
-  -moz-animation-name: growBorder;
-  -o-animation-name: growBorder;
-  -ms-animation-name: growBorder;
-  animation-name: growBorder;
-  -webkit-animation-delay: 400ms;
-  -moz-animation-delay: 400ms;
-  -o-animation-delay: 400ms;
-  -ms-animation-delay: 400ms;
-  animation-delay: 400ms;
-  -webkit-animation-duration: 600ms;
-  -moz-animation-duration: 600ms;
-  -o-animation-duration: 600ms;
-  -ms-animation-duration: 600ms;
-  animation-duration: 600ms;
 }
 @media (min-width: 768px) {
-  /* line 64, ../sass/pages/_environment.scss */
+  /* line 209, ../sass/components/_mixins.scss */
   .c3xgm-about-page-our-commitment .c3xgm-about-epa-energy-star .c3xgm-about-blockquote:before {
     width: 0.2rem;
   }
 }
-/* line 78, ../sass/pages/_environment.scss */
+/* line 218, ../sass/components/_mixins.scss */
 .c3xgm-about-page-our-commitment .c3xgm-about-epa-energy-star .c3xgm-about-blockquote:after {
   content: "";
   display: block;
@@ -1326,104 +1346,79 @@ h4.c3xgm-about-h {
   width: 0.15rem;
   height: 100%;
   background-color: #FDB12E;
-  -webkit-transform-origin: top right;
-  -moz-transform-origin: top right;
-  -o-transform-origin: top right;
-  -ms-transform-origin: top right;
-  transform-origin: top right;
-  -webkit-animation-fill-mode: both;
-  -moz-animation-fill-mode: both;
-  -o-animation-fill-mode: both;
-  -ms-animation-fill-mode: both;
-  animation-fill-mode: both;
-  -webkit-animation-name: growBorder;
-  -moz-animation-name: growBorder;
-  -o-animation-name: growBorder;
-  -ms-animation-name: growBorder;
-  animation-name: growBorder;
-  -webkit-animation-delay: 800ms;
-  -moz-animation-delay: 800ms;
-  -o-animation-delay: 800ms;
-  -ms-animation-delay: 800ms;
-  animation-delay: 800ms;
-  -webkit-animation-duration: 600ms;
-  -moz-animation-duration: 600ms;
-  -o-animation-duration: 600ms;
-  -ms-animation-duration: 600ms;
-  animation-duration: 600ms;
 }
 @media (min-width: 768px) {
-  /* line 78, ../sass/pages/_environment.scss */
+  /* line 218, ../sass/components/_mixins.scss */
   .c3xgm-about-page-our-commitment .c3xgm-about-epa-energy-star .c3xgm-about-blockquote:after {
     width: 0.2rem;
   }
 }
 @media (min-width: 768px) {
-  /* line 58, ../sass/pages/_environment.scss */
+  /* line 60, ../sass/pages/_environment.scss */
   .c3xgm-about-page-our-commitment .c3xgm-about-epa-energy-star .c3xgm-about-blockquote {
     width: 73%;
     padding-right: 2.5em;
   }
 }
-/* line 99, ../sass/pages/_environment.scss */
+/* line 68, ../sass/pages/_environment.scss */
 .c3xgm-about-page-our-commitment .c3xgm-about-epa-energy-star .c3xgm-about-dark-blue.c3xgm-about-thin {
   font-size: 17px;
   font-size: 5.5vw;
 }
 @media (min-width: 768px) {
-  /* line 99, ../sass/pages/_environment.scss */
+  /* line 68, ../sass/pages/_environment.scss */
   .c3xgm-about-page-our-commitment .c3xgm-about-epa-energy-star .c3xgm-about-dark-blue.c3xgm-about-thin {
     font-size: 33.786625px;
   }
 }
-/* line 104, ../sass/pages/_environment.scss */
+/* line 73, ../sass/pages/_environment.scss */
 .c3xgm-about-page-our-commitment .c3xgm-about-epa-energy-star .c3xgm-about-light-blue {
   font-size: 32px;
   font-size: 10.25vw;
 }
 @media (min-width: 768px) {
-  /* line 104, ../sass/pages/_environment.scss */
+  /* line 73, ../sass/pages/_environment.scss */
   .c3xgm-about-page-our-commitment .c3xgm-about-epa-energy-star .c3xgm-about-light-blue {
     font-size: 67.072145px;
   }
 }
-/* line 109, ../sass/pages/_environment.scss */
+/* line 78, ../sass/pages/_environment.scss */
 .c3xgm-about-page-our-commitment .c3xgm-about-epa-energy-star .c3xgm-about-gray {
   font-size: 17px;
   font-size: 5.5vw;
 }
 @media (min-width: 768px) {
-  /* line 109, ../sass/pages/_environment.scss */
+  /* line 78, ../sass/pages/_environment.scss */
   .c3xgm-about-page-our-commitment .c3xgm-about-epa-energy-star .c3xgm-about-gray {
     font-size: 34.9255px;
   }
 }
-/* line 118, ../sass/pages/_environment.scss */
+/* line 87, ../sass/pages/_environment.scss */
 .c3xgm-about-page-our-commitment .c3xgm-about-climate-declaration {
   max-width: 52em;
 }
-/* line 120, ../sass/pages/_environment.scss */
+/* line 89, ../sass/pages/_environment.scss */
 .c3xgm-about-page-our-commitment .c3xgm-about-climate-declaration .c3xgm-about-block-image {
   width: 38%;
   position: relative;
 }
-/* line 123, ../sass/pages/_environment.scss */
+/* line 92, ../sass/pages/_environment.scss */
 .c3xgm-about-page-our-commitment .c3xgm-about-climate-declaration .c3xgm-about-block-image img {
   width: 100%;
   max-width: 151px;
   height: auto;
 }
 @media (min-width: 768px) {
-  /* line 120, ../sass/pages/_environment.scss */
+  /* line 89, ../sass/pages/_environment.scss */
   .c3xgm-about-page-our-commitment .c3xgm-about-climate-declaration .c3xgm-about-block-image {
     width: 25%;
     height: 0;
     padding-bottom: 181px;
     margin-top: 9px;
-    float: left;
     position: relative;
+    float: left;
   }
-  /* line 129, ../sass/pages/_environment.scss */
+  /* line 97, ../sass/pages/_environment.scss */
   .c3xgm-about-page-our-commitment .c3xgm-about-climate-declaration .c3xgm-about-block-image img {
     width: 100%;
     max-width: none;
@@ -1437,12 +1432,12 @@ h4.c3xgm-about-h {
     transform: translate(-50%, -50%);
   }
 }
-/* line 138, ../sass/pages/_environment.scss */
+/* line 101, ../sass/pages/_environment.scss */
 .c3xgm-about-page-our-commitment .c3xgm-about-climate-declaration .c3xgm-about-blockquote {
-  padding-left: 1em;
   position: relative;
+  padding-left: 1em;
 }
-/* line 143, ../sass/pages/_environment.scss */
+/* line 209, ../sass/components/_mixins.scss */
 .c3xgm-about-page-our-commitment .c3xgm-about-climate-declaration .c3xgm-about-blockquote:before {
   content: "";
   display: block;
@@ -1452,39 +1447,14 @@ h4.c3xgm-about-h {
   width: 0.15rem;
   height: 100%;
   background-color: #d4d4d5;
-  -webkit-transform-origin: top right;
-  -moz-transform-origin: top right;
-  -o-transform-origin: top right;
-  -ms-transform-origin: top right;
-  transform-origin: top right;
-  -webkit-animation-fill-mode: both;
-  -moz-animation-fill-mode: both;
-  -o-animation-fill-mode: both;
-  -ms-animation-fill-mode: both;
-  animation-fill-mode: both;
-  -webkit-animation-name: growBorder;
-  -moz-animation-name: growBorder;
-  -o-animation-name: growBorder;
-  -ms-animation-name: growBorder;
-  animation-name: growBorder;
-  -webkit-animation-delay: 400ms;
-  -moz-animation-delay: 400ms;
-  -o-animation-delay: 400ms;
-  -ms-animation-delay: 400ms;
-  animation-delay: 400ms;
-  -webkit-animation-duration: 600ms;
-  -moz-animation-duration: 600ms;
-  -o-animation-duration: 600ms;
-  -ms-animation-duration: 600ms;
-  animation-duration: 600ms;
 }
 @media (min-width: 768px) {
-  /* line 143, ../sass/pages/_environment.scss */
+  /* line 209, ../sass/components/_mixins.scss */
   .c3xgm-about-page-our-commitment .c3xgm-about-climate-declaration .c3xgm-about-blockquote:before {
     width: 0.2rem;
   }
 }
-/* line 157, ../sass/pages/_environment.scss */
+/* line 218, ../sass/components/_mixins.scss */
 .c3xgm-about-page-our-commitment .c3xgm-about-climate-declaration .c3xgm-about-blockquote:after {
   content: "";
   display: block;
@@ -1494,47 +1464,22 @@ h4.c3xgm-about-h {
   width: 0.15rem;
   height: 100%;
   background-color: #FDB12E;
-  -webkit-transform-origin: top right;
-  -moz-transform-origin: top right;
-  -o-transform-origin: top right;
-  -ms-transform-origin: top right;
-  transform-origin: top right;
-  -webkit-animation-fill-mode: both;
-  -moz-animation-fill-mode: both;
-  -o-animation-fill-mode: both;
-  -ms-animation-fill-mode: both;
-  animation-fill-mode: both;
-  -webkit-animation-name: growBorder;
-  -moz-animation-name: growBorder;
-  -o-animation-name: growBorder;
-  -ms-animation-name: growBorder;
-  animation-name: growBorder;
-  -webkit-animation-delay: 800ms;
-  -moz-animation-delay: 800ms;
-  -o-animation-delay: 800ms;
-  -ms-animation-delay: 800ms;
-  animation-delay: 800ms;
-  -webkit-animation-duration: 600ms;
-  -moz-animation-duration: 600ms;
-  -o-animation-duration: 600ms;
-  -ms-animation-duration: 600ms;
-  animation-duration: 600ms;
 }
 @media (min-width: 768px) {
-  /* line 157, ../sass/pages/_environment.scss */
+  /* line 218, ../sass/components/_mixins.scss */
   .c3xgm-about-page-our-commitment .c3xgm-about-climate-declaration .c3xgm-about-blockquote:after {
     width: 0.2rem;
   }
 }
 @media (min-width: 768px) {
-  /* line 138, ../sass/pages/_environment.scss */
+  /* line 101, ../sass/pages/_environment.scss */
   .c3xgm-about-page-our-commitment .c3xgm-about-climate-declaration .c3xgm-about-blockquote {
     float: right;
     width: 75%;
     padding-left: 2.5em;
   }
 }
-/* line 177, ../sass/pages/_environment.scss */
+/* line 109, ../sass/pages/_environment.scss */
 .c3xgm-about-page-our-commitment .c3xgm-about-climate-declaration .c3xgm-about-dark-blue.c3xgm-about-thin {
   font-size: 16px;
   font-size: 5vw;
@@ -1542,55 +1487,54 @@ h4.c3xgm-about-h {
   max-width: 13em;
 }
 @media (min-width: 768px) {
-  /* line 177, ../sass/pages/_environment.scss */
+  /* line 109, ../sass/pages/_environment.scss */
   .c3xgm-about-page-our-commitment .c3xgm-about-climate-declaration .c3xgm-about-dark-blue.c3xgm-about-thin {
-    font-size: 29.747415px;
-    display: inline;
     max-width: none;
+    font-size: 29.747415px;
   }
 }
-/* line 187, ../sass/pages/_environment.scss */
+/* line 115, ../sass/pages/_environment.scss */
 .c3xgm-about-page-our-commitment .c3xgm-about-climate-declaration .c3xgm-about-light-blue {
   font-size: 28px;
   font-size: 9vw;
 }
 @media (min-width: 768px) {
-  /* line 187, ../sass/pages/_environment.scss */
+  /* line 115, ../sass/pages/_environment.scss */
   .c3xgm-about-page-our-commitment .c3xgm-about-climate-declaration .c3xgm-about-light-blue {
     font-size: 62.27368499999999px;
   }
 }
-/* line 192, ../sass/pages/_environment.scss */
+/* line 120, ../sass/pages/_environment.scss */
 .c3xgm-about-page-our-commitment .c3xgm-about-climate-declaration .c3xgm-about-gray.c3xgm-about-thin {
   font-size: 17px;
   font-size: 5.5vw;
 }
 @media (min-width: 768px) {
-  /* line 192, ../sass/pages/_environment.scss */
+  /* line 120, ../sass/pages/_environment.scss */
   .c3xgm-about-page-our-commitment .c3xgm-about-climate-declaration .c3xgm-about-gray.c3xgm-about-thin {
     font-size: 36.59585px;
   }
 }
-/* line 200, ../sass/pages/_environment.scss */
+/* line 128, ../sass/pages/_environment.scss */
 .c3xgm-about-page-our-commitment .c3xgm-about-landfill-free .c3xgm-about-block-image {
   width: 30%;
   position: relative;
 }
-/* line 203, ../sass/pages/_environment.scss */
+/* line 131, ../sass/pages/_environment.scss */
 .c3xgm-about-page-our-commitment .c3xgm-about-landfill-free .c3xgm-about-block-image img {
   width: 100%;
   max-width: 172px;
   height: auto;
 }
 @media (min-width: 768px) {
-  /* line 200, ../sass/pages/_environment.scss */
+  /* line 128, ../sass/pages/_environment.scss */
   .c3xgm-about-page-our-commitment .c3xgm-about-landfill-free .c3xgm-about-block-image {
     width: 24%;
     float: right;
     padding-bottom: 162px;
     margin-top: 9px;
   }
-  /* line 207, ../sass/pages/_environment.scss */
+  /* line 135, ../sass/pages/_environment.scss */
   .c3xgm-about-page-our-commitment .c3xgm-about-landfill-free .c3xgm-about-block-image img {
     position: absolute;
     top: 50%;
@@ -1603,15 +1547,15 @@ h4.c3xgm-about-h {
     width: 60%;
   }
 }
-/* line 211, ../sass/pages/_environment.scss */
+/* line 139, ../sass/pages/_environment.scss */
 .c3xgm-about-page-our-commitment .c3xgm-about-landfill-free .c3xgm-about-blockquote {
+  position: relative;
   max-width: 52em;
   text-align: right;
   padding-right: 1em;
   margin-right: 1.25em;
-  position: relative;
 }
-/* line 220, ../sass/pages/_environment.scss */
+/* line 209, ../sass/components/_mixins.scss */
 .c3xgm-about-page-our-commitment .c3xgm-about-landfill-free .c3xgm-about-blockquote:before {
   content: "";
   display: block;
@@ -1621,39 +1565,14 @@ h4.c3xgm-about-h {
   width: 0.15rem;
   height: 100%;
   background-color: #d4d4d5;
-  -webkit-transform-origin: top right;
-  -moz-transform-origin: top right;
-  -o-transform-origin: top right;
-  -ms-transform-origin: top right;
-  transform-origin: top right;
-  -webkit-animation-fill-mode: both;
-  -moz-animation-fill-mode: both;
-  -o-animation-fill-mode: both;
-  -ms-animation-fill-mode: both;
-  animation-fill-mode: both;
-  -webkit-animation-name: growBorder;
-  -moz-animation-name: growBorder;
-  -o-animation-name: growBorder;
-  -ms-animation-name: growBorder;
-  animation-name: growBorder;
-  -webkit-animation-delay: 400ms;
-  -moz-animation-delay: 400ms;
-  -o-animation-delay: 400ms;
-  -ms-animation-delay: 400ms;
-  animation-delay: 400ms;
-  -webkit-animation-duration: 600ms;
-  -moz-animation-duration: 600ms;
-  -o-animation-duration: 600ms;
-  -ms-animation-duration: 600ms;
-  animation-duration: 600ms;
 }
 @media (min-width: 768px) {
-  /* line 220, ../sass/pages/_environment.scss */
+  /* line 209, ../sass/components/_mixins.scss */
   .c3xgm-about-page-our-commitment .c3xgm-about-landfill-free .c3xgm-about-blockquote:before {
     width: 0.2rem;
   }
 }
-/* line 234, ../sass/pages/_environment.scss */
+/* line 218, ../sass/components/_mixins.scss */
 .c3xgm-about-page-our-commitment .c3xgm-about-landfill-free .c3xgm-about-blockquote:after {
   content: "";
   display: block;
@@ -1663,74 +1582,49 @@ h4.c3xgm-about-h {
   width: 0.15rem;
   height: 100%;
   background-color: #FDB12E;
-  -webkit-transform-origin: top right;
-  -moz-transform-origin: top right;
-  -o-transform-origin: top right;
-  -ms-transform-origin: top right;
-  transform-origin: top right;
-  -webkit-animation-fill-mode: both;
-  -moz-animation-fill-mode: both;
-  -o-animation-fill-mode: both;
-  -ms-animation-fill-mode: both;
-  animation-fill-mode: both;
-  -webkit-animation-name: growBorder;
-  -moz-animation-name: growBorder;
-  -o-animation-name: growBorder;
-  -ms-animation-name: growBorder;
-  animation-name: growBorder;
-  -webkit-animation-delay: 800ms;
-  -moz-animation-delay: 800ms;
-  -o-animation-delay: 800ms;
-  -ms-animation-delay: 800ms;
-  animation-delay: 800ms;
-  -webkit-animation-duration: 600ms;
-  -moz-animation-duration: 600ms;
-  -o-animation-duration: 600ms;
-  -ms-animation-duration: 600ms;
-  animation-duration: 600ms;
 }
 @media (min-width: 768px) {
-  /* line 234, ../sass/pages/_environment.scss */
+  /* line 218, ../sass/components/_mixins.scss */
   .c3xgm-about-page-our-commitment .c3xgm-about-landfill-free .c3xgm-about-blockquote:after {
     width: 0.2rem;
   }
 }
 @media (min-width: 768px) {
-  /* line 211, ../sass/pages/_environment.scss */
+  /* line 139, ../sass/pages/_environment.scss */
   .c3xgm-about-page-our-commitment .c3xgm-about-landfill-free .c3xgm-about-blockquote {
     width: 76%;
     padding-right: 2.5em;
   }
 }
-/* line 254, ../sass/pages/_environment.scss */
+/* line 147, ../sass/pages/_environment.scss */
 .c3xgm-about-page-our-commitment .c3xgm-about-landfill-free .c3xgm-about-dark-blue.c3xgm-about-thin {
   font-size: 26.3007926940918px;
   font-size: 8.218997794875vw;
 }
 @media (min-width: 768px) {
-  /* line 254, ../sass/pages/_environment.scss */
+  /* line 147, ../sass/pages/_environment.scss */
   .c3xgm-about-page-our-commitment .c3xgm-about-landfill-free .c3xgm-about-dark-blue.c3xgm-about-thin {
     font-size: 74.4065px;
   }
 }
-/* line 259, ../sass/pages/_environment.scss */
+/* line 152, ../sass/pages/_environment.scss */
 .c3xgm-about-page-our-commitment .c3xgm-about-landfill-free .c3xgm-about-light-blue {
   font-size: 25px;
   font-size: 8vw;
 }
 @media (min-width: 768px) {
-  /* line 259, ../sass/pages/_environment.scss */
+  /* line 152, ../sass/pages/_environment.scss */
   .c3xgm-about-page-our-commitment .c3xgm-about-landfill-free .c3xgm-about-light-blue {
     font-size: 54.666px;
   }
 }
-/* line 264, ../sass/pages/_environment.scss */
+/* line 157, ../sass/pages/_environment.scss */
 .c3xgm-about-page-our-commitment .c3xgm-about-landfill-free .c3xgm-about-gray {
   font-size: 16px;
   font-size: 5vw;
 }
 @media (min-width: 768px) {
-  /* line 264, ../sass/pages/_environment.scss */
+  /* line 157, ../sass/pages/_environment.scss */
   .c3xgm-about-page-our-commitment .c3xgm-about-landfill-free .c3xgm-about-gray {
     font-size: 34.9255px;
   }
@@ -1746,13 +1640,13 @@ h4.c3xgm-about-h {
     display: block;
   }
 }
-/* line 14, ../sass/pages/_safety.scss */
+/* line 11, ../sass/pages/_safety.scss */
 .c3xgm-about-page-our-commitment .c3xgm-about-crash-test-dummies .c3xgm-about-block-image {
   width: 100%;
   position: relative;
 }
 @media (min-width: 768px) {
-  /* line 14, ../sass/pages/_safety.scss */
+  /* line 11, ../sass/pages/_safety.scss */
   .c3xgm-about-page-our-commitment .c3xgm-about-crash-test-dummies .c3xgm-about-block-image {
     float: left;
     width: 25%;
@@ -1760,7 +1654,7 @@ h4.c3xgm-about-h {
     padding-bottom: 297px;
     margin-right: 1em;
   }
-  /* line 22, ../sass/pages/_safety.scss */
+  /* line 19, ../sass/pages/_safety.scss */
   .c3xgm-about-page-our-commitment .c3xgm-about-crash-test-dummies .c3xgm-about-block-image img {
     position: absolute;
     top: 50%;
@@ -1779,7 +1673,7 @@ h4.c3xgm-about-h {
     width: 235%;
   }
 }
-/* line 31, ../sass/pages/_safety.scss */
+/* line 28, ../sass/pages/_safety.scss */
 .c3xgm-about-page-our-commitment .c3xgm-about-crash-test-dummies .c3xgm-about-blockquote {
   background: #fff;
   display: inline-block;
@@ -1787,19 +1681,19 @@ h4.c3xgm-about-h {
   position: relative;
   z-index: 10;
 }
-/* line 36, ../sass/pages/_safety.scss */
+/* line 32, ../sass/pages/_safety.scss */
 .c3xgm-about-page-our-commitment .c3xgm-about-crash-test-dummies .c3xgm-about-blockquote > span {
   display: inline-block;
   float: left;
   clear: left;
   max-width: 5.5em;
 }
-/* line 41, ../sass/pages/_safety.scss */
+/* line 37, ../sass/pages/_safety.scss */
 .c3xgm-about-page-our-commitment .c3xgm-about-crash-test-dummies .c3xgm-about-blockquote > span.c3xgm-about-light-gray {
   max-width: 16em;
 }
 @media (min-width: 768px) {
-  /* line 31, ../sass/pages/_safety.scss */
+  /* line 28, ../sass/pages/_safety.scss */
   .c3xgm-about-page-our-commitment .c3xgm-about-crash-test-dummies .c3xgm-about-blockquote {
     display: block;
     width: auto;
@@ -1843,20 +1737,20 @@ h4.c3xgm-about-h {
     width: 0.2rem;
   }
 }
-/* line 52, ../sass/pages/_safety.scss */
+/* line 47, ../sass/pages/_safety.scss */
 .c3xgm-about-page-our-commitment .c3xgm-about-crash-test-dummies .c3xgm-about-dark-blue.c3xgm-about-thin {
   font-size: 12.9088582992554px;
   font-size: 6.034018vw;
   line-height: 1.25em;
 }
 @media (min-width: 768px) {
-  /* line 52, ../sass/pages/_safety.scss */
+  /* line 47, ../sass/pages/_safety.scss */
   .c3xgm-about-page-our-commitment .c3xgm-about-crash-test-dummies .c3xgm-about-dark-blue.c3xgm-about-thin {
     font-size: 36.5199px;
     line-height: 43.808725px;
   }
 }
-/* line 60, ../sass/pages/_safety.scss */
+/* line 55, ../sass/pages/_safety.scss */
 .c3xgm-about-page-our-commitment .c3xgm-about-crash-test-dummies .c3xgm-about-light-blue {
   font-size: 28.7430095672607px;
   font-size: 13.98219vw;
@@ -1865,13 +1759,13 @@ h4.c3xgm-about-h {
   display: inline-block;
 }
 @media (min-width: 768px) {
-  /* line 60, ../sass/pages/_safety.scss */
+  /* line 55, ../sass/pages/_safety.scss */
   .c3xgm-about-page-our-commitment .c3xgm-about-crash-test-dummies .c3xgm-about-light-blue {
     font-size: 81.315675px;
     line-height: 75.925px;
   }
 }
-/* line 66, ../sass/pages/_safety.scss */
+/* line 61, ../sass/pages/_safety.scss */
 .c3xgm-about-page-our-commitment .c3xgm-about-crash-test-dummies .c3xgm-about-light-gray {
   display: inline-block;
   font-size: 18px;
@@ -1879,47 +1773,47 @@ h4.c3xgm-about-h {
   line-height: 1.2em;
 }
 @media (min-width: 768px) {
-  /* line 66, ../sass/pages/_safety.scss */
+  /* line 61, ../sass/pages/_safety.scss */
   .c3xgm-about-page-our-commitment .c3xgm-about-crash-test-dummies .c3xgm-about-light-gray {
     font-size: 33px;
   }
 }
-/* line 73, ../sass/pages/_safety.scss */
+/* line 68, ../sass/pages/_safety.scss */
 .c3xgm-about-page-our-commitment .c3xgm-about-crash-test-dummies .c3xgm-about-light-gray.c3xgm-about-thin .c3xgm-about-light-blue {
   font-size: 14.4925537109375px;
   font-size: 3.522427626375vw;
   line-height: 1.2em;
 }
 @media (min-width: 768px) {
-  /* line 73, ../sass/pages/_safety.scss */
+  /* line 68, ../sass/pages/_safety.scss */
   .c3xgm-about-page-our-commitment .c3xgm-about-crash-test-dummies .c3xgm-about-light-gray.c3xgm-about-thin .c3xgm-about-light-blue {
     font-size: 31.8885px;
   }
 }
-/* line 81, ../sass/pages/_safety.scss */
+/* line 76, ../sass/pages/_safety.scss */
 .c3xgm-about-page-our-commitment .c3xgm-about-test-facility {
   max-width: 54em;
 }
-/* line 83, ../sass/pages/_safety.scss */
+/* line 78, ../sass/pages/_safety.scss */
 .c3xgm-about-page-our-commitment .c3xgm-about-test-facility .c3xgm-about-block-image {
   width: 60%;
   height: 0;
   padding-bottom: 55%;
   position: relative;
 }
-/* line 87, ../sass/pages/_safety.scss */
+/* line 82, ../sass/pages/_safety.scss */
 .c3xgm-about-page-our-commitment .c3xgm-about-test-facility .c3xgm-about-block-image .c3xgm-about-circle-lines {
   position: absolute;
   width: 90%;
   max-width: none;
 }
 @media (min-width: 768px) {
-  /* line 87, ../sass/pages/_safety.scss */
+  /* line 82, ../sass/pages/_safety.scss */
   .c3xgm-about-page-our-commitment .c3xgm-about-test-facility .c3xgm-about-block-image .c3xgm-about-circle-lines {
     width: 85%;
   }
 }
-/* line 93, ../sass/pages/_safety.scss */
+/* line 86, ../sass/pages/_safety.scss */
 .c3xgm-about-page-our-commitment .c3xgm-about-test-facility .c3xgm-about-block-image img {
   position: absolute;
   top: 50%;
@@ -1932,22 +1826,22 @@ h4.c3xgm-about-h {
   width: 50%;
 }
 @media (min-width: 768px) {
-  /* line 83, ../sass/pages/_safety.scss */
+  /* line 78, ../sass/pages/_safety.scss */
   .c3xgm-about-page-our-commitment .c3xgm-about-test-facility .c3xgm-about-block-image {
     width: 48%;
     float: right;
     padding-bottom: 270px;
   }
-  /* line 98, ../sass/pages/_safety.scss */
+  /* line 91, ../sass/pages/_safety.scss */
   .c3xgm-about-page-our-commitment .c3xgm-about-test-facility .c3xgm-about-block-image img {
     max-width: 225px;
   }
 }
-/* line 102, ../sass/pages/_safety.scss */
+/* line 95, ../sass/pages/_safety.scss */
 .c3xgm-about-page-our-commitment .c3xgm-about-test-facility .c3xgm-about-blockquote {
   display: inline-block;
 }
-/* line 104, ../sass/pages/_safety.scss */
+/* line 97, ../sass/pages/_safety.scss */
 .c3xgm-about-page-our-commitment .c3xgm-about-test-facility .c3xgm-about-blockquote > span {
   display: inline-block;
   float: left;
@@ -1955,12 +1849,12 @@ h4.c3xgm-about-h {
   max-width: 7.5em;
 }
 @media (min-width: 768px) {
-  /* line 102, ../sass/pages/_safety.scss */
+  /* line 95, ../sass/pages/_safety.scss */
   .c3xgm-about-page-our-commitment .c3xgm-about-test-facility .c3xgm-about-blockquote {
     display: block;
   }
 }
-/* line 115, ../sass/pages/_safety.scss */
+/* line 105, ../sass/pages/_safety.scss */
 .c3xgm-about-page-our-commitment .c3xgm-about-test-facility .c3xgm-about-dark-blue.c3xgm-about-thin {
   font-size: 19px;
   font-size: 6vw;
@@ -1968,12 +1862,12 @@ h4.c3xgm-about-h {
   max-width: 12em;
 }
 @media (min-width: 768px) {
-  /* line 115, ../sass/pages/_safety.scss */
+  /* line 105, ../sass/pages/_safety.scss */
   .c3xgm-about-page-our-commitment .c3xgm-about-test-facility .c3xgm-about-dark-blue.c3xgm-about-thin {
     font-size: 34.5199px;
   }
 }
-/* line 124, ../sass/pages/_safety.scss */
+/* line 111, ../sass/pages/_safety.scss */
 .c3xgm-about-page-our-commitment .c3xgm-about-test-facility .c3xgm-about-gray {
   font-size: 17px;
   font-size: 5.5vw;
@@ -1982,26 +1876,26 @@ h4.c3xgm-about-h {
   margin-bottom: .27em;
 }
 @media (min-width: 768px) {
-  /* line 124, ../sass/pages/_safety.scss */
+  /* line 111, ../sass/pages/_safety.scss */
   .c3xgm-about-page-our-commitment .c3xgm-about-test-facility .c3xgm-about-gray {
     font-size: 28px;
   }
 }
-/* line 131, ../sass/pages/_safety.scss */
+/* line 117, ../sass/pages/_safety.scss */
 .c3xgm-about-page-our-commitment .c3xgm-about-test-facility .c3xgm-about-light-blue {
-  line-height: 1em;
   font-size: 38px;
   font-size: 12vw;
-  padding-left: .6rem;
+  line-height: 1em;
   position: relative;
+  padding-left: .6rem;
 }
 @media (min-width: 768px) {
-  /* line 131, ../sass/pages/_safety.scss */
+  /* line 117, ../sass/pages/_safety.scss */
   .c3xgm-about-page-our-commitment .c3xgm-about-test-facility .c3xgm-about-light-blue {
     font-size: 68.3325px;
   }
 }
-/* line 143, ../sass/pages/_safety.scss */
+/* line 209, ../sass/components/_mixins.scss */
 .c3xgm-about-page-our-commitment .c3xgm-about-test-facility .c3xgm-about-light-blue:before {
   content: "";
   display: block;
@@ -2011,39 +1905,14 @@ h4.c3xgm-about-h {
   width: 0.15rem;
   height: 100%;
   background-color: #d4d4d5;
-  -webkit-transform-origin: top right;
-  -moz-transform-origin: top right;
-  -o-transform-origin: top right;
-  -ms-transform-origin: top right;
-  transform-origin: top right;
-  -webkit-animation-fill-mode: both;
-  -moz-animation-fill-mode: both;
-  -o-animation-fill-mode: both;
-  -ms-animation-fill-mode: both;
-  animation-fill-mode: both;
-  -webkit-animation-name: growBorder;
-  -moz-animation-name: growBorder;
-  -o-animation-name: growBorder;
-  -ms-animation-name: growBorder;
-  animation-name: growBorder;
-  -webkit-animation-delay: 800ms;
-  -moz-animation-delay: 800ms;
-  -o-animation-delay: 800ms;
-  -ms-animation-delay: 800ms;
-  animation-delay: 800ms;
-  -webkit-animation-duration: 600ms;
-  -moz-animation-duration: 600ms;
-  -o-animation-duration: 600ms;
-  -ms-animation-duration: 600ms;
-  animation-duration: 600ms;
 }
 @media (min-width: 768px) {
-  /* line 143, ../sass/pages/_safety.scss */
+  /* line 209, ../sass/components/_mixins.scss */
   .c3xgm-about-page-our-commitment .c3xgm-about-test-facility .c3xgm-about-light-blue:before {
     width: 0.2rem;
   }
 }
-/* line 157, ../sass/pages/_safety.scss */
+/* line 218, ../sass/components/_mixins.scss */
 .c3xgm-about-page-our-commitment .c3xgm-about-test-facility .c3xgm-about-light-blue:after {
   content: "";
   display: block;
@@ -2053,47 +1922,22 @@ h4.c3xgm-about-h {
   width: 0.15rem;
   height: 100%;
   background-color: #FDB12E;
-  -webkit-transform-origin: top right;
-  -moz-transform-origin: top right;
-  -o-transform-origin: top right;
-  -ms-transform-origin: top right;
-  transform-origin: top right;
-  -webkit-animation-fill-mode: both;
-  -moz-animation-fill-mode: both;
-  -o-animation-fill-mode: both;
-  -ms-animation-fill-mode: both;
-  animation-fill-mode: both;
-  -webkit-animation-name: growBorder;
-  -moz-animation-name: growBorder;
-  -o-animation-name: growBorder;
-  -ms-animation-name: growBorder;
-  animation-name: growBorder;
-  -webkit-animation-delay: 1400ms;
-  -moz-animation-delay: 1400ms;
-  -o-animation-delay: 1400ms;
-  -ms-animation-delay: 1400ms;
-  animation-delay: 1400ms;
-  -webkit-animation-duration: 600ms;
-  -moz-animation-duration: 600ms;
-  -o-animation-duration: 600ms;
-  -ms-animation-duration: 600ms;
-  animation-duration: 600ms;
 }
 @media (min-width: 768px) {
-  /* line 157, ../sass/pages/_safety.scss */
+  /* line 218, ../sass/components/_mixins.scss */
   .c3xgm-about-page-our-commitment .c3xgm-about-test-facility .c3xgm-about-light-blue:after {
     width: 0.2rem;
   }
 }
-/* line 176, ../sass/pages/_safety.scss */
+/* line 126, ../sass/pages/_safety.scss */
 .c3xgm-about-page-our-commitment .c3xgm-about-safety-score {
   margin-top: 0;
 }
-/* line 179, ../sass/pages/_safety.scss */
+/* line 128, ../sass/pages/_safety.scss */
 .c3xgm-about-page-our-commitment .c3xgm-about-safety-score .c3xgm-about-block-image {
   width: 45%;
 }
-/* line 183, ../sass/pages/_safety.scss */
+/* line 130, ../sass/pages/_safety.scss */
 .c3xgm-about-page-our-commitment .c3xgm-about-safety-score .c3xgm-about-light-blue.number {
   display: block;
   width: 100%;
@@ -2104,8 +1948,9 @@ h4.c3xgm-about-h {
   margin-top: 0;
 }
 @media (min-width: 768px) {
-  /* line 183, ../sass/pages/_safety.scss */
+  /* line 130, ../sass/pages/_safety.scss */
   .c3xgm-about-page-our-commitment .c3xgm-about-safety-score .c3xgm-about-light-blue.number {
+    position: relative;
     width: 1em;
     float: left;
     margin-top: 0;
@@ -2113,82 +1958,46 @@ h4.c3xgm-about-h {
     padding-bottom: 0;
     font-size: 250px;
     line-height: 0.96em;
-    position: relative;
   }
-  /* line 196, ../sass/pages/_safety.scss */
+  /* line 209, ../sass/components/_mixins.scss */
   .c3xgm-about-page-our-commitment .c3xgm-about-safety-score .c3xgm-about-light-blue.number:before {
     content: "";
     display: block;
     position: absolute;
     top: 0;
     right: 0;
-    width: 0.2rem;
+    width: 0.15rem;
     height: 100%;
     background-color: #d4d4d5;
-    -webkit-transform-origin: top right;
-    -moz-transform-origin: top right;
-    -o-transform-origin: top right;
-    -ms-transform-origin: top right;
-    transform-origin: top right;
-    -webkit-animation-fill-mode: both;
-    -moz-animation-fill-mode: both;
-    -o-animation-fill-mode: both;
-    -ms-animation-fill-mode: both;
-    animation-fill-mode: both;
-    -webkit-animation-name: growBorder;
-    -moz-animation-name: growBorder;
-    -o-animation-name: growBorder;
-    -ms-animation-name: growBorder;
-    animation-name: growBorder;
-    -webkit-animation-delay: 800ms;
-    -moz-animation-delay: 800ms;
-    -o-animation-delay: 800ms;
-    -ms-animation-delay: 800ms;
-    animation-delay: 800ms;
-    -webkit-animation-duration: 600ms;
-    -moz-animation-duration: 600ms;
-    -o-animation-duration: 600ms;
-    -ms-animation-duration: 600ms;
-    animation-duration: 600ms;
   }
-  /* line 209, ../sass/pages/_safety.scss */
+}
+@media (min-width: 768px) and (min-width: 768px) {
+  /* line 209, ../sass/components/_mixins.scss */
+  .c3xgm-about-page-our-commitment .c3xgm-about-safety-score .c3xgm-about-light-blue.number:before {
+    width: 0.2rem;
+  }
+}
+@media (min-width: 768px) {
+  /* line 218, ../sass/components/_mixins.scss */
   .c3xgm-about-page-our-commitment .c3xgm-about-safety-score .c3xgm-about-light-blue.number:after {
     content: "";
     display: block;
     position: absolute;
     top: 0;
     right: 0;
-    width: 0.2rem;
+    width: 0.15rem;
     height: 100%;
     background-color: #FDB12E;
-    -webkit-transform-origin: top right;
-    -moz-transform-origin: top right;
-    -o-transform-origin: top right;
-    -ms-transform-origin: top right;
-    transform-origin: top right;
-    -webkit-animation-fill-mode: both;
-    -moz-animation-fill-mode: both;
-    -o-animation-fill-mode: both;
-    -ms-animation-fill-mode: both;
-    animation-fill-mode: both;
-    -webkit-animation-name: growBorder;
-    -moz-animation-name: growBorder;
-    -o-animation-name: growBorder;
-    -ms-animation-name: growBorder;
-    animation-name: growBorder;
-    -webkit-animation-delay: 1400ms;
-    -moz-animation-delay: 1400ms;
-    -o-animation-delay: 1400ms;
-    -ms-animation-delay: 1400ms;
-    animation-delay: 1400ms;
-    -webkit-animation-duration: 600ms;
-    -moz-animation-duration: 600ms;
-    -o-animation-duration: 600ms;
-    -ms-animation-duration: 600ms;
-    animation-duration: 600ms;
   }
 }
-/* line 225, ../sass/pages/_safety.scss */
+@media (min-width: 768px) and (min-width: 768px) {
+  /* line 218, ../sass/components/_mixins.scss */
+  .c3xgm-about-page-our-commitment .c3xgm-about-safety-score .c3xgm-about-light-blue.number:after {
+    width: 0.2rem;
+  }
+}
+
+/* line 142, ../sass/pages/_safety.scss */
 .c3xgm-about-page-our-commitment .c3xgm-about-safety-score .c3xgm-about-dark-blue.c3xgm-about-thin {
   font-size: 13.1503963470459px;
   font-size: 4.1094988974375vw;
@@ -2196,12 +2005,12 @@ h4.c3xgm-about-h {
   font-size: 6vw;
 }
 @media (min-width: 768px) {
-  /* line 225, ../sass/pages/_safety.scss */
+  /* line 142, ../sass/pages/_safety.scss */
   .c3xgm-about-page-our-commitment .c3xgm-about-safety-score .c3xgm-about-dark-blue.c3xgm-about-thin {
     font-size: 33px;
   }
 }
-/* line 232, ../sass/pages/_safety.scss */
+/* line 148, ../sass/pages/_safety.scss */
 .c3xgm-about-page-our-commitment .c3xgm-about-safety-score .c3xgm-about-light-blue {
   line-height: 0.9em;
   font-size: 26px;
@@ -2213,13 +2022,13 @@ h4.c3xgm-about-h {
   clear: left;
 }
 @media (min-width: 768px) {
-  /* line 232, ../sass/pages/_safety.scss */
+  /* line 148, ../sass/pages/_safety.scss */
   .c3xgm-about-page-our-commitment .c3xgm-about-safety-score .c3xgm-about-light-blue {
     font-size: 40px;
     clear: none;
   }
 }
-/* line 241, ../sass/pages/_safety.scss */
+/* line 156, ../sass/pages/_safety.scss */
 .c3xgm-about-page-our-commitment .c3xgm-about-safety-score .c3xgm-about-light-gray.c3xgm-about-thin {
   font-family: "open-sans", Arial, sans-serif;
   display: inline-block;
@@ -2229,18 +2038,18 @@ h4.c3xgm-about-h {
   font-size: 4.5vw;
 }
 @media (min-width: 768px) {
-  /* line 241, ../sass/pages/_safety.scss */
+  /* line 156, ../sass/pages/_safety.scss */
   .c3xgm-about-page-our-commitment .c3xgm-about-safety-score .c3xgm-about-light-gray.c3xgm-about-thin {
     font-size: 22.807869999999998px;
   }
 }
-/* line 255, ../sass/pages/_safety.scss */
+/* line 169, ../sass/pages/_safety.scss */
 .c3xgm-about-page-our-commitment .c3xgm-about-onstar-subscribers .c3xgm-about-block-image {
   width: 45%;
   position: relative;
 }
 @media (min-width: 768px) {
-  /* line 255, ../sass/pages/_safety.scss */
+  /* line 169, ../sass/pages/_safety.scss */
   .c3xgm-about-page-our-commitment .c3xgm-about-onstar-subscribers .c3xgm-about-block-image {
     width: 27%;
     height: 0;
@@ -2248,7 +2057,7 @@ h4.c3xgm-about-h {
     padding-bottom: 221px;
     margin-top: 9px;
   }
-  /* line 260, ../sass/pages/_safety.scss */
+  /* line 174, ../sass/pages/_safety.scss */
   .c3xgm-about-page-our-commitment .c3xgm-about-onstar-subscribers .c3xgm-about-block-image img {
     width: 85%;
     position: absolute;
@@ -2261,12 +2070,12 @@ h4.c3xgm-about-h {
     transform: translate(-50%, -50%);
   }
 }
-/* line 264, ../sass/pages/_safety.scss */
+/* line 178, ../sass/pages/_safety.scss */
 .c3xgm-about-page-our-commitment .c3xgm-about-onstar-subscribers .c3xgm-about-blockquote {
   padding-left: 1.25rem;
   position: relative;
 }
-/* line 268, ../sass/pages/_safety.scss */
+/* line 209, ../sass/components/_mixins.scss */
 .c3xgm-about-page-our-commitment .c3xgm-about-onstar-subscribers .c3xgm-about-blockquote:before {
   content: "";
   display: block;
@@ -2276,39 +2085,14 @@ h4.c3xgm-about-h {
   width: 0.15rem;
   height: 100%;
   background-color: #d4d4d5;
-  -webkit-transform-origin: top right;
-  -moz-transform-origin: top right;
-  -o-transform-origin: top right;
-  -ms-transform-origin: top right;
-  transform-origin: top right;
-  -webkit-animation-fill-mode: both;
-  -moz-animation-fill-mode: both;
-  -o-animation-fill-mode: both;
-  -ms-animation-fill-mode: both;
-  animation-fill-mode: both;
-  -webkit-animation-name: growBorder;
-  -moz-animation-name: growBorder;
-  -o-animation-name: growBorder;
-  -ms-animation-name: growBorder;
-  animation-name: growBorder;
-  -webkit-animation-delay: 800ms;
-  -moz-animation-delay: 800ms;
-  -o-animation-delay: 800ms;
-  -ms-animation-delay: 800ms;
-  animation-delay: 800ms;
-  -webkit-animation-duration: 600ms;
-  -moz-animation-duration: 600ms;
-  -o-animation-duration: 600ms;
-  -ms-animation-duration: 600ms;
-  animation-duration: 600ms;
 }
 @media (min-width: 768px) {
-  /* line 268, ../sass/pages/_safety.scss */
+  /* line 209, ../sass/components/_mixins.scss */
   .c3xgm-about-page-our-commitment .c3xgm-about-onstar-subscribers .c3xgm-about-blockquote:before {
     width: 0.2rem;
   }
 }
-/* line 283, ../sass/pages/_safety.scss */
+/* line 218, ../sass/components/_mixins.scss */
 .c3xgm-about-page-our-commitment .c3xgm-about-onstar-subscribers .c3xgm-about-blockquote:after {
   content: "";
   display: block;
@@ -2318,46 +2102,21 @@ h4.c3xgm-about-h {
   width: 0.15rem;
   height: 100%;
   background-color: #FDB12E;
-  -webkit-transform-origin: top right;
-  -moz-transform-origin: top right;
-  -o-transform-origin: top right;
-  -ms-transform-origin: top right;
-  transform-origin: top right;
-  -webkit-animation-fill-mode: both;
-  -moz-animation-fill-mode: both;
-  -o-animation-fill-mode: both;
-  -ms-animation-fill-mode: both;
-  animation-fill-mode: both;
-  -webkit-animation-name: growBorder;
-  -moz-animation-name: growBorder;
-  -o-animation-name: growBorder;
-  -ms-animation-name: growBorder;
-  animation-name: growBorder;
-  -webkit-animation-delay: 1400ms;
-  -moz-animation-delay: 1400ms;
-  -o-animation-delay: 1400ms;
-  -ms-animation-delay: 1400ms;
-  animation-delay: 1400ms;
-  -webkit-animation-duration: 600ms;
-  -moz-animation-duration: 600ms;
-  -o-animation-duration: 600ms;
-  -ms-animation-duration: 600ms;
-  animation-duration: 600ms;
 }
 @media (min-width: 768px) {
-  /* line 283, ../sass/pages/_safety.scss */
+  /* line 218, ../sass/components/_mixins.scss */
   .c3xgm-about-page-our-commitment .c3xgm-about-onstar-subscribers .c3xgm-about-blockquote:after {
     width: 0.2rem;
   }
 }
 @media (min-width: 768px) {
-  /* line 264, ../sass/pages/_safety.scss */
+  /* line 178, ../sass/pages/_safety.scss */
   .c3xgm-about-page-our-commitment .c3xgm-about-onstar-subscribers .c3xgm-about-blockquote {
     width: 70%;
     float: left;
   }
 }
-/* line 300, ../sass/pages/_safety.scss */
+/* line 186, ../sass/pages/_safety.scss */
 .c3xgm-about-page-our-commitment .c3xgm-about-onstar-subscribers .c3xgm-about-dark-blue.c3xgm-about-thin.c3xgm-about-small {
   font-size: 12.9088582992554px;
   font-size: 4.03401830544375vw;
@@ -2367,13 +2126,15 @@ h4.c3xgm-about-h {
   width: auto;
 }
 @media (min-width: 768px) {
-  /* line 300, ../sass/pages/_safety.scss */
+  /* line 186, ../sass/pages/_safety.scss */
   .c3xgm-about-page-our-commitment .c3xgm-about-onstar-subscribers .c3xgm-about-dark-blue.c3xgm-about-thin.c3xgm-about-small {
     font-size: 36.519925px;
   }
 }
-/* line 307, ../sass/pages/_safety.scss */
+/* line 193, ../sass/pages/_safety.scss */
 .c3xgm-about-page-our-commitment .c3xgm-about-onstar-subscribers .c3xgm-about-light-blue.number {
+  background: white;
+  z-index: 10;
   width: .5em;
   padding-left: 0;
   float: left;
@@ -2383,12 +2144,12 @@ h4.c3xgm-about-h {
   line-height: 0.75em;
 }
 @media (min-width: 768px) {
-  /* line 307, ../sass/pages/_safety.scss */
+  /* line 193, ../sass/pages/_safety.scss */
   .c3xgm-about-page-our-commitment .c3xgm-about-onstar-subscribers .c3xgm-about-light-blue.number {
     font-size: 241.99315px;
   }
 }
-/* line 314, ../sass/pages/_safety.scss */
+/* line 202, ../sass/pages/_safety.scss */
 .c3xgm-about-page-our-commitment .c3xgm-about-onstar-subscribers .c3xgm-about-light-blue {
   font-size: 28.8503589630127px;
   font-size: 9.015737377031249vw;
@@ -2397,28 +2158,28 @@ h4.c3xgm-about-h {
   float: left;
 }
 @media (min-width: 768px) {
-  /* line 314, ../sass/pages/_safety.scss */
+  /* line 202, ../sass/pages/_safety.scss */
   .c3xgm-about-page-our-commitment .c3xgm-about-onstar-subscribers .c3xgm-about-light-blue {
     font-size: 81.61937499999999px;
   }
 }
-/* line 322, ../sass/pages/_safety.scss */
+/* line 210, ../sass/pages/_safety.scss */
 .c3xgm-about-page-our-commitment .c3xgm-about-onstar-subscribers .c3xgm-about-dark-blue.c3xgm-about-thin {
   display: inline-block;
+  width: 8em;
   float: left;
   clear: right;
-  width: 8em;
   font-size: 24.0410709381104px;
   font-size: 7.51283492311125vw;
 }
 @media (min-width: 768px) {
-  /* line 322, ../sass/pages/_safety.scss */
+  /* line 210, ../sass/pages/_safety.scss */
   .c3xgm-about-page-our-commitment .c3xgm-about-onstar-subscribers .c3xgm-about-dark-blue.c3xgm-about-thin {
     font-size: 52px;
     width: auto;
   }
 }
-/* line 336, ../sass/pages/_safety.scss */
+/* line 220, ../sass/pages/_safety.scss */
 .c3xgm-about-page-our-commitment .c3xgm-about-onstar-subscribers .c3xgm-about-gray {
   display: inline-block;
   float: left;
@@ -2427,27 +2188,27 @@ h4.c3xgm-about-h {
   font-size: 5.99986839025875vw;
 }
 @media (min-width: 768px) {
-  /* line 336, ../sass/pages/_safety.scss */
+  /* line 220, ../sass/pages/_safety.scss */
   .c3xgm-about-page-our-commitment .c3xgm-about-onstar-subscribers .c3xgm-about-gray {
     font-size: 48px;
   }
 }
-/* line 348, ../sass/pages/_safety.scss */
+/* line 229, ../sass/pages/_safety.scss */
 .c3xgm-about-page-our-commitment .c3xgm-about-quality-awards {
   margin-bottom: 0;
   text-align: center;
 }
-/* line 352, ../sass/pages/_safety.scss */
+/* line 231, ../sass/pages/_safety.scss */
 .c3xgm-about-page-our-commitment .c3xgm-about-quality-awards .c3xgm-about-block-image {
   width: 40%;
   position: relative;
 }
-/* line 355, ../sass/pages/_safety.scss */
+/* line 233, ../sass/pages/_safety.scss */
 .c3xgm-about-page-our-commitment .c3xgm-about-quality-awards .c3xgm-about-block-image img {
   max-width: 225px;
 }
 @media (min-width: 768px) {
-  /* line 352, ../sass/pages/_safety.scss */
+  /* line 231, ../sass/pages/_safety.scss */
   .c3xgm-about-page-our-commitment .c3xgm-about-quality-awards .c3xgm-about-block-image {
     float: right;
     width: 25%;
@@ -2455,7 +2216,7 @@ h4.c3xgm-about-h {
     padding-bottom: 294px;
     margin-top: 9px;
   }
-  /* line 362, ../sass/pages/_safety.scss */
+  /* line 238, ../sass/pages/_safety.scss */
   .c3xgm-about-page-our-commitment .c3xgm-about-quality-awards .c3xgm-about-block-image img {
     width: 60%;
     position: absolute;
@@ -2469,21 +2230,21 @@ h4.c3xgm-about-h {
   }
 }
 @media (min-width: 906px) {
-  /* line 352, ../sass/pages/_safety.scss */
+  /* line 231, ../sass/pages/_safety.scss */
   .c3xgm-about-page-our-commitment .c3xgm-about-quality-awards .c3xgm-about-block-image {
     width: 33%;
   }
-  /* line 371, ../sass/pages/_safety.scss */
+  /* line 245, ../sass/pages/_safety.scss */
   .c3xgm-about-page-our-commitment .c3xgm-about-quality-awards .c3xgm-about-block-image img {
     left: 42%;
   }
 }
-/* line 375, ../sass/pages/_safety.scss */
+/* line 249, ../sass/pages/_safety.scss */
 .c3xgm-about-page-our-commitment .c3xgm-about-quality-awards .c3xgm-about-blockquote {
   padding-top: 1.6em;
   position: relative;
 }
-/* line 381, ../sass/pages/_safety.scss */
+/* line 253, ../sass/pages/_safety.scss */
 .c3xgm-about-page-our-commitment .c3xgm-about-quality-awards .c3xgm-about-blockquote:before {
   content: "";
   display: block;
@@ -2498,35 +2259,15 @@ h4.c3xgm-about-h {
   -o-transform-origin: top right;
   -ms-transform-origin: top right;
   transform-origin: top right;
-  -webkit-animation-fill-mode: both;
-  -moz-animation-fill-mode: both;
-  -o-animation-fill-mode: both;
-  -ms-animation-fill-mode: both;
-  animation-fill-mode: both;
-  -webkit-animation-name: growBorder;
-  -moz-animation-name: growBorder;
-  -o-animation-name: growBorder;
-  -ms-animation-name: growBorder;
-  animation-name: growBorder;
-  -webkit-animation-delay: 800ms;
-  -moz-animation-delay: 800ms;
-  -o-animation-delay: 800ms;
-  -ms-animation-delay: 800ms;
-  animation-delay: 800ms;
-  -webkit-animation-duration: 600ms;
-  -moz-animation-duration: 600ms;
-  -o-animation-duration: 600ms;
-  -ms-animation-duration: 600ms;
-  animation-duration: 600ms;
 }
 @media (min-width: 768px) {
-  /* line 381, ../sass/pages/_safety.scss */
+  /* line 253, ../sass/pages/_safety.scss */
   .c3xgm-about-page-our-commitment .c3xgm-about-quality-awards .c3xgm-about-blockquote:before {
     width: 0.2rem;
     height: 100%;
   }
 }
-/* line 398, ../sass/pages/_safety.scss */
+/* line 264, ../sass/pages/_safety.scss */
 .c3xgm-about-page-our-commitment .c3xgm-about-quality-awards .c3xgm-about-blockquote:after {
   content: "";
   display: block;
@@ -2541,102 +2282,82 @@ h4.c3xgm-about-h {
   -o-transform-origin: top right;
   -ms-transform-origin: top right;
   transform-origin: top right;
-  -webkit-animation-fill-mode: both;
-  -moz-animation-fill-mode: both;
-  -o-animation-fill-mode: both;
-  -ms-animation-fill-mode: both;
-  animation-fill-mode: both;
-  -webkit-animation-name: growBorder;
-  -moz-animation-name: growBorder;
-  -o-animation-name: growBorder;
-  -ms-animation-name: growBorder;
-  animation-name: growBorder;
-  -webkit-animation-delay: 1400ms;
-  -moz-animation-delay: 1400ms;
-  -o-animation-delay: 1400ms;
-  -ms-animation-delay: 1400ms;
-  animation-delay: 1400ms;
-  -webkit-animation-duration: 600ms;
-  -moz-animation-duration: 600ms;
-  -o-animation-duration: 600ms;
-  -ms-animation-duration: 600ms;
-  animation-duration: 600ms;
 }
 @media (min-width: 768px) {
-  /* line 398, ../sass/pages/_safety.scss */
+  /* line 264, ../sass/pages/_safety.scss */
   .c3xgm-about-page-our-commitment .c3xgm-about-quality-awards .c3xgm-about-blockquote:after {
     width: 0.2em;
     height: 100%;
   }
 }
-/* line 415, ../sass/pages/_safety.scss */
+/* line 274, ../sass/pages/_safety.scss */
 .c3xgm-about-page-our-commitment .c3xgm-about-quality-awards .c3xgm-about-blockquote > span {
   display: inline-block;
   float: left;
   clear: left;
 }
 @media (min-width: 768px) {
-  /* line 375, ../sass/pages/_safety.scss */
+  /* line 249, ../sass/pages/_safety.scss */
   .c3xgm-about-page-our-commitment .c3xgm-about-quality-awards .c3xgm-about-blockquote {
     width: 75%;
     border-top: 0;
     padding-top: 0;
   }
-  /* line 427, ../sass/pages/_safety.scss */
+  /* line 281, ../sass/pages/_safety.scss */
   .c3xgm-about-page-our-commitment .c3xgm-about-quality-awards .c3xgm-about-blockquote > span {
     display: block;
-    width: 528px;
     float: right;
+    width: 528px;
   }
 }
 @media (min-width: 906px) {
-  /* line 375, ../sass/pages/_safety.scss */
+  /* line 249, ../sass/pages/_safety.scss */
   .c3xgm-about-page-our-commitment .c3xgm-about-quality-awards .c3xgm-about-blockquote {
     width: 66%;
   }
 }
-/* line 438, ../sass/pages/_safety.scss */
+/* line 289, ../sass/pages/_safety.scss */
 .c3xgm-about-page-our-commitment .c3xgm-about-quality-awards .c3xgm-about-dark-blue.c3xgm-about-thin {
   font-size: 20px;
   font-size: 6.25vw;
 }
 @media (min-width: 768px) {
-  /* line 438, ../sass/pages/_safety.scss */
+  /* line 289, ../sass/pages/_safety.scss */
   .c3xgm-about-page-our-commitment .c3xgm-about-quality-awards .c3xgm-about-dark-blue.c3xgm-about-thin {
     font-size: 36.519925px;
   }
 }
-/* line 443, ../sass/pages/_safety.scss */
+/* line 294, ../sass/pages/_safety.scss */
 .c3xgm-about-page-our-commitment .c3xgm-about-quality-awards .c3xgm-about-light-blue {
   font-size: 35px;
   font-size: 11vw;
   margin-bottom: .2em;
 }
 @media (min-width: 768px) {
-  /* line 443, ../sass/pages/_safety.scss */
+  /* line 294, ../sass/pages/_safety.scss */
   .c3xgm-about-page-our-commitment .c3xgm-about-quality-awards .c3xgm-about-light-blue {
     font-size: 65.249945px;
     width: 8em;
   }
 }
-/* line 452, ../sass/pages/_safety.scss */
+/* line 303, ../sass/pages/_safety.scss */
 .c3xgm-about-page-our-commitment .c3xgm-about-quality-awards .c3xgm-about-gray.c3xgm-about-thin {
   font-size: 17px;
   font-size: 5.5vw;
   line-height: 1.2em;
 }
 @media (min-width: 768px) {
-  /* line 452, ../sass/pages/_safety.scss */
+  /* line 303, ../sass/pages/_safety.scss */
   .c3xgm-about-page-our-commitment .c3xgm-about-quality-awards .c3xgm-about-gray.c3xgm-about-thin {
     font-size: 31.8885px;
   }
 }
-/* line 464, ../sass/pages/_safety.scss */
+/* line 311, ../sass/pages/_safety.scss */
 .c3xgm-about-page-our-commitment .c3xgm-about-disclaimer {
   text-align: left;
   margin-top: 1.5em;
 }
-/* line 468, ../sass/pages/_safety.scss */
+/* line 315, ../sass/pages/_safety.scss */
 .c3xgm-about-page-our-commitment .c3xgm-about-disclaimer .c3xgm-about-p,
 .c3xgm-about-page-our-commitment .c3xgm-about-disclaimer .c3xgm-about-gray.c3xgm-about-disclaimer {
   font-weight: normal;
@@ -2648,20 +2369,20 @@ h4.c3xgm-about-h {
   padding-right: 3em;
 }
 @media (min-width: 768px) {
-  /* line 468, ../sass/pages/_safety.scss */
+  /* line 315, ../sass/pages/_safety.scss */
   .c3xgm-about-page-our-commitment .c3xgm-about-disclaimer .c3xgm-about-p,
   .c3xgm-about-page-our-commitment .c3xgm-about-disclaimer .c3xgm-about-gray.c3xgm-about-disclaimer {
     font-size: 18.222px;
     max-width: none;
   }
 }
-/* line 483, ../sass/pages/_safety.scss */
+/* line 326, ../sass/pages/_safety.scss */
 .c3xgm-about-page-our-commitment .c3xgm-about-disclaimer .c3xgm-about-blockquote {
   max-width: 838px;
   float: right;
   padding-left: 4px;
 }
-/* line 489, ../sass/pages/_safety.scss */
+/* line 330, ../sass/pages/_safety.scss */
 .c3xgm-about-page-our-commitment .c3xgm-about-disclaimer .c3xgm-about-gray.c3xgm-about-disclaimer-small {
   font-weight: normal;
   text-transform: none;
@@ -2673,30 +2394,30 @@ h4.c3xgm-about-h {
   padding-right: 3em;
 }
 @media (min-width: 768px) {
-  /* line 489, ../sass/pages/_safety.scss */
+  /* line 330, ../sass/pages/_safety.scss */
   .c3xgm-about-page-our-commitment .c3xgm-about-disclaimer .c3xgm-about-gray.c3xgm-about-disclaimer-small {
     font-size: 10.6295px;
     max-width: none;
   }
 }
-/* line 497, ../sass/pages/_safety.scss */
+/* line 338, ../sass/pages/_safety.scss */
 .c3xgm-about-page-our-commitment .c3xgm-about-disclaimer .c3xgm-about-gray.c3xgm-about-disclaimer-small strong, .c3xgm-about-page-our-commitment .c3xgm-about-disclaimer .c3xgm-about-gray.c3xgm-about-disclaimer-small a {
   display: block;
   margin: 1em 0 .5em;
   font-size: 14px;
+  color: #6086C4;
   text-decoration: none;
   font-weight: 600;
   font-family: "open-sans-condensed", 'Arial Narrow', Arial, sans-serif;
-  color: #6086C4;
 }
 @media (min-width: 768px) {
-  /* line 497, ../sass/pages/_safety.scss */
+  /* line 338, ../sass/pages/_safety.scss */
   .c3xgm-about-page-our-commitment .c3xgm-about-disclaimer .c3xgm-about-gray.c3xgm-about-disclaimer-small strong, .c3xgm-about-page-our-commitment .c3xgm-about-disclaimer .c3xgm-about-gray.c3xgm-about-disclaimer-small a {
     font-size: 21.259px;
     max-width: none;
   }
 }
-/* line 508, ../sass/pages/_safety.scss */
+/* line 347, ../sass/pages/_safety.scss */
 .c3xgm-about-page-our-commitment .c3xgm-about-disclaimer .c3xgm-about-p.c3xgm-about-disclaimer-box {
   margin-left: 0;
   margin-right: 0;
@@ -2707,7 +2428,7 @@ h4.c3xgm-about-h {
   font-size: 10px;
   max-width: 83em;
 }
-/* line 514, ../sass/pages/_safety.scss */
+/* line 353, ../sass/pages/_safety.scss */
 .c3xgm-about-page-our-commitment .c3xgm-about-disclaimer .c3xgm-about-p.c3xgm-about-disclaimer-box strong, .c3xgm-about-page-our-commitment .c3xgm-about-disclaimer .c3xgm-about-p.c3xgm-about-disclaimer-box a {
   font-family: "open-sans", Arial, sans-serif;
   font-size: 1em;
@@ -2715,7 +2436,7 @@ h4.c3xgm-about-h {
   padding-left: 0.15em;
 }
 
-/* line 526, ../sass/pages/_safety.scss */
+/* line 362, ../sass/pages/_safety.scss */
 .c3xgm-about-disclaimer-box {
   height: 0;
   opacity: 0;
@@ -2727,7 +2448,7 @@ h4.c3xgm-about-h {
   transition: all 250ms;
 }
 
-/* line 533, ../sass/pages/_safety.scss */
+/* line 368, ../sass/pages/_safety.scss */
 .c3xgm-about-disclaimer-box.c3xgm-about-show-disclaimer {
   height: auto;
   opacity: 1;
@@ -4214,10 +3935,10 @@ div#c3xgm-about-grey-van:before {
 
 /* line 2, ../sass/decoratives/_solar-panels.scss */
 .c3xgm-about-solar-panels {
+  margin-bottom: 7.5%;
   padding-bottom: 5em;
   height: 0;
   position: relative;
-  margin-bottom: 7.5%;
 }
 @media (min-width: 768px) {
   /* line 2, ../sass/decoratives/_solar-panels.scss */
@@ -4226,7 +3947,7 @@ div#c3xgm-about-grey-van:before {
     margin-bottom: 100px;
   }
 }
-/* line 9, ../sass/decoratives/_solar-panels.scss */
+/* line 8, ../sass/decoratives/_solar-panels.scss */
 .c3xgm-about-solar-panels .c3xgm-about-grey-side {
   width: 45%;
   height: 0;
@@ -4238,7 +3959,7 @@ div#c3xgm-about-grey-van:before {
   margin: auto;
   z-index: 10;
 }
-/* line 18, ../sass/decoratives/_solar-panels.scss */
+/* line 16, ../sass/decoratives/_solar-panels.scss */
 .c3xgm-about-solar-panels .c3xgm-about-grey-side .c3xgm-about-wheel {
   background-image: url("../img/decorative/cars/wheel.png");
   -webkit-background-size: cover;
@@ -4254,52 +3975,52 @@ div#c3xgm-about-grey-van:before {
   bottom: 23%;
 }
 @media (min-width: 768px) {
-  /* line 18, ../sass/decoratives/_solar-panels.scss */
+  /* line 16, ../sass/decoratives/_solar-panels.scss */
   .c3xgm-about-solar-panels .c3xgm-about-grey-side .c3xgm-about-wheel {
     width: 13.85%;
     padding-bottom: 13.85%;
     bottom: 13%;
   }
 }
-/* line 38, ../sass/decoratives/_solar-panels.scss */
+/* line 30, ../sass/decoratives/_solar-panels.scss */
 .c3xgm-about-solar-panels .c3xgm-about-grey-side .c3xgm-about-front-wheel {
   right: 10.285714%;
 }
 @media (min-width: 768px) {
-  /* line 38, ../sass/decoratives/_solar-panels.scss */
+  /* line 30, ../sass/decoratives/_solar-panels.scss */
   .c3xgm-about-solar-panels .c3xgm-about-grey-side .c3xgm-about-front-wheel {
     right: 10.1%;
   }
 }
-/* line 46, ../sass/decoratives/_solar-panels.scss */
+/* line 35, ../sass/decoratives/_solar-panels.scss */
 .c3xgm-about-solar-panels .c3xgm-about-grey-side .c3xgm-about-back-wheel {
   left: 16%;
 }
 @media (min-width: 768px) {
-  /* line 46, ../sass/decoratives/_solar-panels.scss */
+  /* line 35, ../sass/decoratives/_solar-panels.scss */
   .c3xgm-about-solar-panels .c3xgm-about-grey-side .c3xgm-about-back-wheel {
     left: 15.7%;
   }
 }
 @media (min-width: 768px) {
-  /* line 9, ../sass/decoratives/_solar-panels.scss */
+  /* line 8, ../sass/decoratives/_solar-panels.scss */
   .c3xgm-about-solar-panels .c3xgm-about-grey-side {
     padding-bottom: 10.75%;
     width: 31%;
   }
 }
 @media (min-width: 906px) {
-  /* line 9, ../sass/decoratives/_solar-panels.scss */
+  /* line 8, ../sass/decoratives/_solar-panels.scss */
   .c3xgm-about-solar-panels .c3xgm-about-grey-side {
     padding-bottom: 96px;
     width: 276px;
   }
 }
-/* line 61, ../sass/decoratives/_solar-panels.scss */
+/* line 48, ../sass/decoratives/_solar-panels.scss */
 .c3xgm-about-solar-panels .c3xgm-about-grey-side img {
   width: 100%;
 }
-/* line 64, ../sass/decoratives/_solar-panels.scss */
+/* line 51, ../sass/decoratives/_solar-panels.scss */
 .c3xgm-about-solar-panels .c3xgm-about-tree {
   width: 20%;
   max-width: 99px;
@@ -4310,31 +4031,31 @@ div#c3xgm-about-grey-van:before {
   bottom: 34px;
   z-index: -5;
 }
-/* line 70, ../sass/decoratives/_solar-panels.scss */
+/* line 57, ../sass/decoratives/_solar-panels.scss */
 .c3xgm-about-solar-panels .c3xgm-about-tree img {
   width: 100%;
 }
 @media (min-width: 400px) {
-  /* line 64, ../sass/decoratives/_solar-panels.scss */
+  /* line 51, ../sass/decoratives/_solar-panels.scss */
   .c3xgm-about-solar-panels .c3xgm-about-tree {
     padding-bottom: 13.5%;
   }
 }
 @media (min-width: 768px) {
-  /* line 64, ../sass/decoratives/_solar-panels.scss */
+  /* line 51, ../sass/decoratives/_solar-panels.scss */
   .c3xgm-about-solar-panels .c3xgm-about-tree {
     padding-bottom: 100px;
     margin: auto;
   }
 }
 @media (min-width: 906px) {
-  /* line 64, ../sass/decoratives/_solar-panels.scss */
+  /* line 51, ../sass/decoratives/_solar-panels.scss */
   .c3xgm-about-solar-panels .c3xgm-about-tree {
     right: 0;
     left: -63%;
   }
 }
-/* line 80, ../sass/decoratives/_solar-panels.scss */
+/* line 63, ../sass/decoratives/_solar-panels.scss */
 .c3xgm-about-solar-panels .c3xgm-about-solar-panels {
   width: 30%;
   height: 0;
@@ -4344,12 +4065,12 @@ div#c3xgm-about-grey-van:before {
   bottom: -2%;
   z-index: -5;
 }
-/* line 89, ../sass/decoratives/_solar-panels.scss */
+/* line 68, ../sass/decoratives/_solar-panels.scss */
 .c3xgm-about-solar-panels .c3xgm-about-solar-panels img {
   width: 100%;
 }
 @media (min-width: 668px) {
-  /* line 80, ../sass/decoratives/_solar-panels.scss */
+  /* line 63, ../sass/decoratives/_solar-panels.scss */
   .c3xgm-about-solar-panels .c3xgm-about-solar-panels {
     width: 200px;
     padding-bottom: 170px;
@@ -4357,7 +4078,7 @@ div#c3xgm-about-grey-van:before {
   }
 }
 @media (min-width: 906px) {
-  /* line 80, ../sass/decoratives/_solar-panels.scss */
+  /* line 63, ../sass/decoratives/_solar-panels.scss */
   .c3xgm-about-solar-panels .c3xgm-about-solar-panels {
     left: 0;
     right: -39%;
@@ -4366,7 +4087,7 @@ div#c3xgm-about-grey-van:before {
     padding-bottom: 210px;
   }
 }
-/* line 100, ../sass/decoratives/_solar-panels.scss */
+/* line 76, ../sass/decoratives/_solar-panels.scss */
 .c3xgm-about-solar-panels .c3xgm-about-sun {
   width: 16%;
   max-width: 100px;
@@ -4378,31 +4099,31 @@ div#c3xgm-about-grey-van:before {
   top: auto;
   right: 5%;
 }
-/* line 108, ../sass/decoratives/_solar-panels.scss */
+/* line 82, ../sass/decoratives/_solar-panels.scss */
 .c3xgm-about-solar-panels .c3xgm-about-sun img {
   width: 100%;
 }
 @media (min-width: 400px) {
-  /* line 100, ../sass/decoratives/_solar-panels.scss */
+  /* line 76, ../sass/decoratives/_solar-panels.scss */
   .c3xgm-about-solar-panels .c3xgm-about-sun {
     padding-bottom: 100px;
     right: 1%;
   }
 }
 @media (min-width: 530px) {
-  /* line 100, ../sass/decoratives/_solar-panels.scss */
+  /* line 76, ../sass/decoratives/_solar-panels.scss */
   .c3xgm-about-solar-panels .c3xgm-about-sun {
     bottom: 25em;
   }
 }
 @media (min-width: 768px) {
-  /* line 100, ../sass/decoratives/_solar-panels.scss */
+  /* line 76, ../sass/decoratives/_solar-panels.scss */
   .c3xgm-about-solar-panels .c3xgm-about-sun {
     bottom: 28em;
   }
 }
 @media (min-width: 906px) {
-  /* line 100, ../sass/decoratives/_solar-panels.scss */
+  /* line 76, ../sass/decoratives/_solar-panels.scss */
   .c3xgm-about-solar-panels .c3xgm-about-sun {
     left: 0;
     right: -50%;
@@ -4410,7 +4131,7 @@ div#c3xgm-about-grey-van:before {
   }
 }
 
-/* line 119, ../sass/decoratives/_solar-panels.scss */
+/* line 90, ../sass/decoratives/_solar-panels.scss */
 .c3xgm-about-solar-road {
   width: 100%;
   height: 0;
@@ -10732,11 +10453,11 @@ body {
   -o-animation-fill-mode: both;
   -ms-animation-fill-mode: both;
   animation-fill-mode: both;
-  -webkit-animation-name: fadeIn;
-  -moz-animation-name: fadeIn;
-  -o-animation-name: fadeIn;
-  -ms-animation-name: fadeIn;
-  animation-name: fadeIn;
+  -webkit-animation-name: fadeInLeftMega;
+  -moz-animation-name: fadeInLeftMega;
+  -o-animation-name: fadeInLeftMega;
+  -ms-animation-name: fadeInLeftMega;
+  animation-name: fadeInLeftMega;
   -webkit-animation-delay: 900ms;
   -moz-animation-delay: 900ms;
   -o-animation-delay: 900ms;
@@ -10747,6 +10468,1094 @@ body {
   -o-animation-duration: 400ms;
   -ms-animation-duration: 400ms;
   animation-duration: 400ms;
+}
+/* line 230, ../sass/components/_mixins.scss */
+.c3xgm-about-test-facility.element-in-view .c3xgm-about-blockquote .c3xgm-about-light-blue:before {
+  -webkit-transform-origin: top right;
+  -moz-transform-origin: top right;
+  -o-transform-origin: top right;
+  -ms-transform-origin: top right;
+  transform-origin: top right;
+  -webkit-animation-fill-mode: both;
+  -moz-animation-fill-mode: both;
+  -o-animation-fill-mode: both;
+  -ms-animation-fill-mode: both;
+  animation-fill-mode: both;
+  -webkit-animation-name: growBorder;
+  -moz-animation-name: growBorder;
+  -o-animation-name: growBorder;
+  -ms-animation-name: growBorder;
+  animation-name: growBorder;
+  -webkit-animation-delay: 900ms;
+  -moz-animation-delay: 900ms;
+  -o-animation-delay: 900ms;
+  -ms-animation-delay: 900ms;
+  animation-delay: 900ms;
+  -webkit-animation-duration: 600ms;
+  -moz-animation-duration: 600ms;
+  -o-animation-duration: 600ms;
+  -ms-animation-duration: 600ms;
+  animation-duration: 600ms;
+}
+/* line 238, ../sass/components/_mixins.scss */
+.c3xgm-about-test-facility.element-in-view .c3xgm-about-blockquote .c3xgm-about-light-blue:after {
+  -webkit-transform-origin: top right;
+  -moz-transform-origin: top right;
+  -o-transform-origin: top right;
+  -ms-transform-origin: top right;
+  transform-origin: top right;
+  -webkit-animation-fill-mode: both;
+  -moz-animation-fill-mode: both;
+  -o-animation-fill-mode: both;
+  -ms-animation-fill-mode: both;
+  animation-fill-mode: both;
+  -webkit-animation-name: growBorder;
+  -moz-animation-name: growBorder;
+  -o-animation-name: growBorder;
+  -ms-animation-name: growBorder;
+  animation-name: growBorder;
+  -webkit-animation-delay: 1500ms;
+  -moz-animation-delay: 1500ms;
+  -o-animation-delay: 1500ms;
+  -ms-animation-delay: 1500ms;
+  animation-delay: 1500ms;
+  -webkit-animation-duration: 600ms;
+  -moz-animation-duration: 600ms;
+  -o-animation-duration: 600ms;
+  -ms-animation-duration: 600ms;
+  animation-duration: 600ms;
+}
+
+@media (min-width: 768px) {
+  /* line 415, ../sass/animations/_element-in-view.scss */
+  .c3xgm-about-onstar-subscribers.element-in-view .c3xgm-about-block-image img {
+    -webkit-animation-fill-mode: both;
+    -moz-animation-fill-mode: both;
+    -o-animation-fill-mode: both;
+    -ms-animation-fill-mode: both;
+    animation-fill-mode: both;
+    -webkit-animation-name: fadeIn;
+    -moz-animation-name: fadeIn;
+    -o-animation-name: fadeIn;
+    -ms-animation-name: fadeIn;
+    animation-name: fadeIn;
+    -webkit-animation-delay: 1400ms;
+    -moz-animation-delay: 1400ms;
+    -o-animation-delay: 1400ms;
+    -ms-animation-delay: 1400ms;
+    animation-delay: 1400ms;
+    -webkit-animation-duration: 400ms;
+    -moz-animation-duration: 400ms;
+    -o-animation-duration: 400ms;
+    -ms-animation-duration: 400ms;
+    animation-duration: 400ms;
+  }
+}
+/* line 426, ../sass/animations/_element-in-view.scss */
+.c3xgm-about-onstar-subscribers.element-in-view .c3xgm-about-blockquote {
+  overflow: hidden;
+}
+/* line 230, ../sass/components/_mixins.scss */
+.c3xgm-about-onstar-subscribers.element-in-view .c3xgm-about-blockquote:before {
+  -webkit-transform-origin: top right;
+  -moz-transform-origin: top right;
+  -o-transform-origin: top right;
+  -ms-transform-origin: top right;
+  transform-origin: top right;
+  -webkit-animation-fill-mode: both;
+  -moz-animation-fill-mode: both;
+  -o-animation-fill-mode: both;
+  -ms-animation-fill-mode: both;
+  animation-fill-mode: both;
+  -webkit-animation-name: growBorder;
+  -moz-animation-name: growBorder;
+  -o-animation-name: growBorder;
+  -ms-animation-name: growBorder;
+  animation-name: growBorder;
+  -webkit-animation-delay: 200ms;
+  -moz-animation-delay: 200ms;
+  -o-animation-delay: 200ms;
+  -ms-animation-delay: 200ms;
+  animation-delay: 200ms;
+  -webkit-animation-duration: 600ms;
+  -moz-animation-duration: 600ms;
+  -o-animation-duration: 600ms;
+  -ms-animation-duration: 600ms;
+  animation-duration: 600ms;
+}
+/* line 238, ../sass/components/_mixins.scss */
+.c3xgm-about-onstar-subscribers.element-in-view .c3xgm-about-blockquote:after {
+  -webkit-transform-origin: top right;
+  -moz-transform-origin: top right;
+  -o-transform-origin: top right;
+  -ms-transform-origin: top right;
+  transform-origin: top right;
+  -webkit-animation-fill-mode: both;
+  -moz-animation-fill-mode: both;
+  -o-animation-fill-mode: both;
+  -ms-animation-fill-mode: both;
+  animation-fill-mode: both;
+  -webkit-animation-name: growBorder;
+  -moz-animation-name: growBorder;
+  -o-animation-name: growBorder;
+  -ms-animation-name: growBorder;
+  animation-name: growBorder;
+  -webkit-animation-delay: 800ms;
+  -moz-animation-delay: 800ms;
+  -o-animation-delay: 800ms;
+  -ms-animation-delay: 800ms;
+  animation-delay: 800ms;
+  -webkit-animation-duration: 600ms;
+  -moz-animation-duration: 600ms;
+  -o-animation-duration: 600ms;
+  -ms-animation-duration: 600ms;
+  animation-duration: 600ms;
+}
+/* line 431, ../sass/animations/_element-in-view.scss */
+.c3xgm-about-onstar-subscribers.element-in-view .c3xgm-about-blockquote > span:first-child {
+  -webkit-animation-fill-mode: both;
+  -moz-animation-fill-mode: both;
+  -o-animation-fill-mode: both;
+  -ms-animation-fill-mode: both;
+  animation-fill-mode: both;
+  -webkit-animation-name: fadeInLeft;
+  -moz-animation-name: fadeInLeft;
+  -o-animation-name: fadeInLeft;
+  -ms-animation-name: fadeInLeft;
+  animation-name: fadeInLeft;
+  -webkit-animation-delay: 1400ms;
+  -moz-animation-delay: 1400ms;
+  -o-animation-delay: 1400ms;
+  -ms-animation-delay: 1400ms;
+  animation-delay: 1400ms;
+  -webkit-animation-duration: 400ms;
+  -moz-animation-duration: 400ms;
+  -o-animation-duration: 400ms;
+  -ms-animation-duration: 400ms;
+  animation-duration: 400ms;
+}
+/* line 437, ../sass/animations/_element-in-view.scss */
+.c3xgm-about-onstar-subscribers.element-in-view .c3xgm-about-blockquote > span:nth-child(2) {
+  -webkit-animation-fill-mode: both;
+  -moz-animation-fill-mode: both;
+  -o-animation-fill-mode: both;
+  -ms-animation-fill-mode: both;
+  animation-fill-mode: both;
+  -webkit-animation-name: fadeInLeft;
+  -moz-animation-name: fadeInLeft;
+  -o-animation-name: fadeInLeft;
+  -ms-animation-name: fadeInLeft;
+  animation-name: fadeInLeft;
+  -webkit-animation-delay: 1700ms;
+  -moz-animation-delay: 1700ms;
+  -o-animation-delay: 1700ms;
+  -ms-animation-delay: 1700ms;
+  animation-delay: 1700ms;
+  -webkit-animation-duration: 400ms;
+  -moz-animation-duration: 400ms;
+  -o-animation-duration: 400ms;
+  -ms-animation-duration: 400ms;
+  animation-duration: 400ms;
+}
+/* line 443, ../sass/animations/_element-in-view.scss */
+.c3xgm-about-onstar-subscribers.element-in-view .c3xgm-about-blockquote > span:nth-child(3) {
+  -webkit-animation-fill-mode: both;
+  -moz-animation-fill-mode: both;
+  -o-animation-fill-mode: both;
+  -ms-animation-fill-mode: both;
+  animation-fill-mode: both;
+  -webkit-animation-name: fadeInLeftMega;
+  -moz-animation-name: fadeInLeftMega;
+  -o-animation-name: fadeInLeftMega;
+  -ms-animation-name: fadeInLeftMega;
+  animation-name: fadeInLeftMega;
+  -webkit-animation-delay: 1700ms;
+  -moz-animation-delay: 1700ms;
+  -o-animation-delay: 1700ms;
+  -ms-animation-delay: 1700ms;
+  animation-delay: 1700ms;
+  -webkit-animation-duration: 400ms;
+  -moz-animation-duration: 400ms;
+  -o-animation-duration: 400ms;
+  -ms-animation-duration: 400ms;
+  animation-duration: 400ms;
+}
+/* line 450, ../sass/animations/_element-in-view.scss */
+.c3xgm-about-onstar-subscribers.element-in-view .c3xgm-about-blockquote > span:nth-child(4) {
+  -webkit-animation-fill-mode: both;
+  -moz-animation-fill-mode: both;
+  -o-animation-fill-mode: both;
+  -ms-animation-fill-mode: both;
+  animation-fill-mode: both;
+  -webkit-animation-name: fadeIn;
+  -moz-animation-name: fadeIn;
+  -o-animation-name: fadeIn;
+  -ms-animation-name: fadeIn;
+  animation-name: fadeIn;
+  -webkit-animation-delay: 2100ms;
+  -moz-animation-delay: 2100ms;
+  -o-animation-delay: 2100ms;
+  -ms-animation-delay: 2100ms;
+  animation-delay: 2100ms;
+  -webkit-animation-duration: 400ms;
+  -moz-animation-duration: 400ms;
+  -o-animation-duration: 400ms;
+  -ms-animation-duration: 400ms;
+  animation-duration: 400ms;
+}
+/* line 457, ../sass/animations/_element-in-view.scss */
+.c3xgm-about-onstar-subscribers.element-in-view .c3xgm-about-blockquote > span:nth-child(5) {
+  -webkit-animation-fill-mode: both;
+  -moz-animation-fill-mode: both;
+  -o-animation-fill-mode: both;
+  -ms-animation-fill-mode: both;
+  animation-fill-mode: both;
+  -webkit-animation-name: fadeIn;
+  -moz-animation-name: fadeIn;
+  -o-animation-name: fadeIn;
+  -ms-animation-name: fadeIn;
+  animation-name: fadeIn;
+  -webkit-animation-delay: 2100ms;
+  -moz-animation-delay: 2100ms;
+  -o-animation-delay: 2100ms;
+  -ms-animation-delay: 2100ms;
+  animation-delay: 2100ms;
+  -webkit-animation-duration: 400ms;
+  -moz-animation-duration: 400ms;
+  -o-animation-duration: 400ms;
+  -ms-animation-duration: 400ms;
+  animation-duration: 400ms;
+}
+
+@media (min-width: 768px) {
+  /* line 477, ../sass/animations/_element-in-view.scss */
+  .c3xgm-about-quality-awards.element-in-view .c3xgm-about-block-image img {
+    -webkit-animation-fill-mode: both;
+    -moz-animation-fill-mode: both;
+    -o-animation-fill-mode: both;
+    -ms-animation-fill-mode: both;
+    animation-fill-mode: both;
+    -webkit-animation-name: fadeIn;
+    -moz-animation-name: fadeIn;
+    -o-animation-name: fadeIn;
+    -ms-animation-name: fadeIn;
+    animation-name: fadeIn;
+    -webkit-animation-delay: 1000ms;
+    -moz-animation-delay: 1000ms;
+    -o-animation-delay: 1000ms;
+    -ms-animation-delay: 1000ms;
+    animation-delay: 1000ms;
+    -webkit-animation-duration: 400ms;
+    -moz-animation-duration: 400ms;
+    -o-animation-duration: 400ms;
+    -ms-animation-duration: 400ms;
+    animation-duration: 400ms;
+  }
+}
+/* line 488, ../sass/animations/_element-in-view.scss */
+.c3xgm-about-quality-awards.element-in-view .c3xgm-about-blockquote {
+  overflow: hidden;
+}
+/* line 491, ../sass/animations/_element-in-view.scss */
+.c3xgm-about-quality-awards.element-in-view .c3xgm-about-blockquote:before {
+  -webkit-animation-fill-mode: both;
+  -moz-animation-fill-mode: both;
+  -o-animation-fill-mode: both;
+  -ms-animation-fill-mode: both;
+  animation-fill-mode: both;
+  -webkit-animation-name: growBorder;
+  -moz-animation-name: growBorder;
+  -o-animation-name: growBorder;
+  -ms-animation-name: growBorder;
+  animation-name: growBorder;
+  -webkit-animation-delay: 400ms;
+  -moz-animation-delay: 400ms;
+  -o-animation-delay: 400ms;
+  -ms-animation-delay: 400ms;
+  animation-delay: 400ms;
+  -webkit-animation-duration: 600ms;
+  -moz-animation-duration: 600ms;
+  -o-animation-duration: 600ms;
+  -ms-animation-duration: 600ms;
+  animation-duration: 600ms;
+}
+/* line 497, ../sass/animations/_element-in-view.scss */
+.c3xgm-about-quality-awards.element-in-view .c3xgm-about-blockquote:after {
+  -webkit-animation-fill-mode: both;
+  -moz-animation-fill-mode: both;
+  -o-animation-fill-mode: both;
+  -ms-animation-fill-mode: both;
+  animation-fill-mode: both;
+  -webkit-animation-name: growBorder;
+  -moz-animation-name: growBorder;
+  -o-animation-name: growBorder;
+  -ms-animation-name: growBorder;
+  animation-name: growBorder;
+  -webkit-animation-delay: 1000ms;
+  -moz-animation-delay: 1000ms;
+  -o-animation-delay: 1000ms;
+  -ms-animation-delay: 1000ms;
+  animation-delay: 1000ms;
+  -webkit-animation-duration: 600ms;
+  -moz-animation-duration: 600ms;
+  -o-animation-duration: 600ms;
+  -ms-animation-duration: 600ms;
+  animation-duration: 600ms;
+}
+/* line 504, ../sass/animations/_element-in-view.scss */
+.c3xgm-about-quality-awards.element-in-view .c3xgm-about-blockquote > span:first-child {
+  -webkit-animation-fill-mode: both;
+  -moz-animation-fill-mode: both;
+  -o-animation-fill-mode: both;
+  -ms-animation-fill-mode: both;
+  animation-fill-mode: both;
+  -webkit-animation-name: fadeInRightMega;
+  -moz-animation-name: fadeInRightMega;
+  -o-animation-name: fadeInRightMega;
+  -ms-animation-name: fadeInRightMega;
+  animation-name: fadeInRightMega;
+  -webkit-animation-delay: 1000ms;
+  -moz-animation-delay: 1000ms;
+  -o-animation-delay: 1000ms;
+  -ms-animation-delay: 1000ms;
+  animation-delay: 1000ms;
+  -webkit-animation-duration: 400ms;
+  -moz-animation-duration: 400ms;
+  -o-animation-duration: 400ms;
+  -ms-animation-duration: 400ms;
+  animation-duration: 400ms;
+}
+/* line 510, ../sass/animations/_element-in-view.scss */
+.c3xgm-about-quality-awards.element-in-view .c3xgm-about-blockquote > span:nth-child(2) {
+  -webkit-animation-fill-mode: both;
+  -moz-animation-fill-mode: both;
+  -o-animation-fill-mode: both;
+  -ms-animation-fill-mode: both;
+  animation-fill-mode: both;
+  -webkit-animation-name: fadeInRightMega;
+  -moz-animation-name: fadeInRightMega;
+  -o-animation-name: fadeInRightMega;
+  -ms-animation-name: fadeInRightMega;
+  animation-name: fadeInRightMega;
+  -webkit-animation-delay: 1200ms;
+  -moz-animation-delay: 1200ms;
+  -o-animation-delay: 1200ms;
+  -ms-animation-delay: 1200ms;
+  animation-delay: 1200ms;
+  -webkit-animation-duration: 400ms;
+  -moz-animation-duration: 400ms;
+  -o-animation-duration: 400ms;
+  -ms-animation-duration: 400ms;
+  animation-duration: 400ms;
+}
+/* line 516, ../sass/animations/_element-in-view.scss */
+.c3xgm-about-quality-awards.element-in-view .c3xgm-about-blockquote > span:nth-child(3) {
+  -webkit-animation-fill-mode: both;
+  -moz-animation-fill-mode: both;
+  -o-animation-fill-mode: both;
+  -ms-animation-fill-mode: both;
+  animation-fill-mode: both;
+  -webkit-animation-name: fadeIn;
+  -moz-animation-name: fadeIn;
+  -o-animation-name: fadeIn;
+  -ms-animation-name: fadeIn;
+  animation-name: fadeIn;
+  -webkit-animation-delay: 1400ms;
+  -moz-animation-delay: 1400ms;
+  -o-animation-delay: 1400ms;
+  -ms-animation-delay: 1400ms;
+  animation-delay: 1400ms;
+  -webkit-animation-duration: 400ms;
+  -moz-animation-duration: 400ms;
+  -o-animation-duration: 400ms;
+  -ms-animation-duration: 400ms;
+  animation-duration: 400ms;
+}
+
+/* line 534, ../sass/animations/_element-in-view.scss */
+.c3xgm-about-disclaimer.element-in-view .c3xgm-about-blockquote {
+  overflow: hidden;
+}
+/* line 536, ../sass/animations/_element-in-view.scss */
+.c3xgm-about-disclaimer.element-in-view .c3xgm-about-blockquote > .c3xgm-about-disclaimer {
+  -webkit-animation-fill-mode: both;
+  -moz-animation-fill-mode: both;
+  -o-animation-fill-mode: both;
+  -ms-animation-fill-mode: both;
+  animation-fill-mode: both;
+  -webkit-animation-name: fadeIn;
+  -moz-animation-name: fadeIn;
+  -o-animation-name: fadeIn;
+  -ms-animation-name: fadeIn;
+  animation-name: fadeIn;
+  -webkit-animation-delay: 1400ms;
+  -moz-animation-delay: 1400ms;
+  -o-animation-delay: 1400ms;
+  -ms-animation-delay: 1400ms;
+  animation-delay: 1400ms;
+  -webkit-animation-duration: 400ms;
+  -moz-animation-duration: 400ms;
+  -o-animation-duration: 400ms;
+  -ms-animation-duration: 400ms;
+  animation-duration: 400ms;
+}
+/* line 542, ../sass/animations/_element-in-view.scss */
+.c3xgm-about-disclaimer.element-in-view .c3xgm-about-blockquote > .c3xgm-about-disclaimer-link {
+  -webkit-animation-fill-mode: both;
+  -moz-animation-fill-mode: both;
+  -o-animation-fill-mode: both;
+  -ms-animation-fill-mode: both;
+  animation-fill-mode: both;
+  -webkit-animation-name: fadeIn;
+  -moz-animation-name: fadeIn;
+  -o-animation-name: fadeIn;
+  -ms-animation-name: fadeIn;
+  animation-name: fadeIn;
+  -webkit-animation-delay: 1202 ms;
+  -moz-animation-delay: 1202 ms;
+  -o-animation-delay: 1202 ms;
+  -ms-animation-delay: 1202 ms;
+  animation-delay: 1202 ms;
+  -webkit-animation-duration: 400ms;
+  -moz-animation-duration: 400ms;
+  -o-animation-duration: 400ms;
+  -ms-animation-duration: 400ms;
+  animation-duration: 400ms;
+}
+
+/* line 561, ../sass/animations/_element-in-view.scss */
+.c3xgm-about-clean-energy.element-in-view .c3xgm-about-blockquote {
+  overflow: hidden;
+}
+/* line 230, ../sass/components/_mixins.scss */
+.c3xgm-about-clean-energy.element-in-view .c3xgm-about-blockquote:before {
+  -webkit-transform-origin: top right;
+  -moz-transform-origin: top right;
+  -o-transform-origin: top right;
+  -ms-transform-origin: top right;
+  transform-origin: top right;
+  -webkit-animation-fill-mode: both;
+  -moz-animation-fill-mode: both;
+  -o-animation-fill-mode: both;
+  -ms-animation-fill-mode: both;
+  animation-fill-mode: both;
+  -webkit-animation-name: growBorder;
+  -moz-animation-name: growBorder;
+  -o-animation-name: growBorder;
+  -ms-animation-name: growBorder;
+  animation-name: growBorder;
+  -webkit-animation-delay: 200ms;
+  -moz-animation-delay: 200ms;
+  -o-animation-delay: 200ms;
+  -ms-animation-delay: 200ms;
+  animation-delay: 200ms;
+  -webkit-animation-duration: 600ms;
+  -moz-animation-duration: 600ms;
+  -o-animation-duration: 600ms;
+  -ms-animation-duration: 600ms;
+  animation-duration: 600ms;
+}
+/* line 238, ../sass/components/_mixins.scss */
+.c3xgm-about-clean-energy.element-in-view .c3xgm-about-blockquote:after {
+  -webkit-transform-origin: top right;
+  -moz-transform-origin: top right;
+  -o-transform-origin: top right;
+  -ms-transform-origin: top right;
+  transform-origin: top right;
+  -webkit-animation-fill-mode: both;
+  -moz-animation-fill-mode: both;
+  -o-animation-fill-mode: both;
+  -ms-animation-fill-mode: both;
+  animation-fill-mode: both;
+  -webkit-animation-name: growBorder;
+  -moz-animation-name: growBorder;
+  -o-animation-name: growBorder;
+  -ms-animation-name: growBorder;
+  animation-name: growBorder;
+  -webkit-animation-delay: 800ms;
+  -moz-animation-delay: 800ms;
+  -o-animation-delay: 800ms;
+  -ms-animation-delay: 800ms;
+  animation-delay: 800ms;
+  -webkit-animation-duration: 600ms;
+  -moz-animation-duration: 600ms;
+  -o-animation-duration: 600ms;
+  -ms-animation-duration: 600ms;
+  animation-duration: 600ms;
+}
+/* line 566, ../sass/animations/_element-in-view.scss */
+.c3xgm-about-clean-energy.element-in-view .c3xgm-about-blockquote > span:first-child {
+  -webkit-animation-fill-mode: both;
+  -moz-animation-fill-mode: both;
+  -o-animation-fill-mode: both;
+  -ms-animation-fill-mode: both;
+  animation-fill-mode: both;
+  -webkit-animation-name: fadeInRight;
+  -moz-animation-name: fadeInRight;
+  -o-animation-name: fadeInRight;
+  -ms-animation-name: fadeInRight;
+  animation-name: fadeInRight;
+  -webkit-animation-delay: 1200ms;
+  -moz-animation-delay: 1200ms;
+  -o-animation-delay: 1200ms;
+  -ms-animation-delay: 1200ms;
+  animation-delay: 1200ms;
+  -webkit-animation-duration: 500ms;
+  -moz-animation-duration: 500ms;
+  -o-animation-duration: 500ms;
+  -ms-animation-duration: 500ms;
+  animation-duration: 500ms;
+}
+/* line 572, ../sass/animations/_element-in-view.scss */
+.c3xgm-about-clean-energy.element-in-view .c3xgm-about-blockquote > span:nth-child(2) {
+  -webkit-animation-fill-mode: both;
+  -moz-animation-fill-mode: both;
+  -o-animation-fill-mode: both;
+  -ms-animation-fill-mode: both;
+  animation-fill-mode: both;
+  -webkit-animation-name: fadeInRight;
+  -moz-animation-name: fadeInRight;
+  -o-animation-name: fadeInRight;
+  -ms-animation-name: fadeInRight;
+  animation-name: fadeInRight;
+  -webkit-animation-delay: 1450ms;
+  -moz-animation-delay: 1450ms;
+  -o-animation-delay: 1450ms;
+  -ms-animation-delay: 1450ms;
+  animation-delay: 1450ms;
+  -webkit-animation-duration: 500ms;
+  -moz-animation-duration: 500ms;
+  -o-animation-duration: 500ms;
+  -ms-animation-duration: 500ms;
+  animation-duration: 500ms;
+}
+/* line 578, ../sass/animations/_element-in-view.scss */
+.c3xgm-about-clean-energy.element-in-view .c3xgm-about-blockquote > span:nth-child(3) {
+  -webkit-animation-fill-mode: both;
+  -moz-animation-fill-mode: both;
+  -o-animation-fill-mode: both;
+  -ms-animation-fill-mode: both;
+  animation-fill-mode: both;
+  -webkit-animation-name: fadeInRight;
+  -moz-animation-name: fadeInRight;
+  -o-animation-name: fadeInRight;
+  -ms-animation-name: fadeInRight;
+  animation-name: fadeInRight;
+  -webkit-animation-delay: 1450ms;
+  -moz-animation-delay: 1450ms;
+  -o-animation-delay: 1450ms;
+  -ms-animation-delay: 1450ms;
+  animation-delay: 1450ms;
+  -webkit-animation-duration: 500ms;
+  -moz-animation-duration: 500ms;
+  -o-animation-duration: 500ms;
+  -ms-animation-duration: 500ms;
+  animation-duration: 500ms;
+}
+/* line 584, ../sass/animations/_element-in-view.scss */
+.c3xgm-about-clean-energy.element-in-view .c3xgm-about-blockquote > span:nth-child(4) {
+  -webkit-animation-fill-mode: both;
+  -moz-animation-fill-mode: both;
+  -o-animation-fill-mode: both;
+  -ms-animation-fill-mode: both;
+  animation-fill-mode: both;
+  -webkit-animation-name: fadeIn;
+  -moz-animation-name: fadeIn;
+  -o-animation-name: fadeIn;
+  -ms-animation-name: fadeIn;
+  animation-name: fadeIn;
+  -webkit-animation-delay: 1700ms;
+  -moz-animation-delay: 1700ms;
+  -o-animation-delay: 1700ms;
+  -ms-animation-delay: 1700ms;
+  animation-delay: 1700ms;
+  -webkit-animation-duration: 500ms;
+  -moz-animation-duration: 500ms;
+  -o-animation-duration: 500ms;
+  -ms-animation-duration: 500ms;
+  animation-duration: 500ms;
+}
+
+/* line 604, ../sass/animations/_element-in-view.scss */
+.c3xgm-about-epa-energy-star.element-in-view .c3xgm-about-block-image img {
+  -webkit-animation-fill-mode: both;
+  -moz-animation-fill-mode: both;
+  -o-animation-fill-mode: both;
+  -ms-animation-fill-mode: both;
+  animation-fill-mode: both;
+  -webkit-animation-name: fadeIn;
+  -moz-animation-name: fadeIn;
+  -o-animation-name: fadeIn;
+  -ms-animation-name: fadeIn;
+  animation-name: fadeIn;
+  -webkit-animation-delay: 1200ms;
+  -moz-animation-delay: 1200ms;
+  -o-animation-delay: 1200ms;
+  -ms-animation-delay: 1200ms;
+  animation-delay: 1200ms;
+  -webkit-animation-duration: 500ms;
+  -moz-animation-duration: 500ms;
+  -o-animation-duration: 500ms;
+  -ms-animation-duration: 500ms;
+  animation-duration: 500ms;
+}
+/* line 612, ../sass/animations/_element-in-view.scss */
+.c3xgm-about-epa-energy-star.element-in-view .c3xgm-about-blockquote {
+  overflow: hidden;
+}
+/* line 230, ../sass/components/_mixins.scss */
+.c3xgm-about-epa-energy-star.element-in-view .c3xgm-about-blockquote:before {
+  -webkit-transform-origin: top right;
+  -moz-transform-origin: top right;
+  -o-transform-origin: top right;
+  -ms-transform-origin: top right;
+  transform-origin: top right;
+  -webkit-animation-fill-mode: both;
+  -moz-animation-fill-mode: both;
+  -o-animation-fill-mode: both;
+  -ms-animation-fill-mode: both;
+  animation-fill-mode: both;
+  -webkit-animation-name: growBorder;
+  -moz-animation-name: growBorder;
+  -o-animation-name: growBorder;
+  -ms-animation-name: growBorder;
+  animation-name: growBorder;
+  -webkit-animation-delay: 200ms;
+  -moz-animation-delay: 200ms;
+  -o-animation-delay: 200ms;
+  -ms-animation-delay: 200ms;
+  animation-delay: 200ms;
+  -webkit-animation-duration: 600ms;
+  -moz-animation-duration: 600ms;
+  -o-animation-duration: 600ms;
+  -ms-animation-duration: 600ms;
+  animation-duration: 600ms;
+}
+/* line 238, ../sass/components/_mixins.scss */
+.c3xgm-about-epa-energy-star.element-in-view .c3xgm-about-blockquote:after {
+  -webkit-transform-origin: top right;
+  -moz-transform-origin: top right;
+  -o-transform-origin: top right;
+  -ms-transform-origin: top right;
+  transform-origin: top right;
+  -webkit-animation-fill-mode: both;
+  -moz-animation-fill-mode: both;
+  -o-animation-fill-mode: both;
+  -ms-animation-fill-mode: both;
+  animation-fill-mode: both;
+  -webkit-animation-name: growBorder;
+  -moz-animation-name: growBorder;
+  -o-animation-name: growBorder;
+  -ms-animation-name: growBorder;
+  animation-name: growBorder;
+  -webkit-animation-delay: 800ms;
+  -moz-animation-delay: 800ms;
+  -o-animation-delay: 800ms;
+  -ms-animation-delay: 800ms;
+  animation-delay: 800ms;
+  -webkit-animation-duration: 600ms;
+  -moz-animation-duration: 600ms;
+  -o-animation-duration: 600ms;
+  -ms-animation-duration: 600ms;
+  animation-duration: 600ms;
+}
+/* line 616, ../sass/animations/_element-in-view.scss */
+.c3xgm-about-epa-energy-star.element-in-view .c3xgm-about-blockquote > span:first-child {
+  -webkit-animation-fill-mode: both;
+  -moz-animation-fill-mode: both;
+  -o-animation-fill-mode: both;
+  -ms-animation-fill-mode: both;
+  animation-fill-mode: both;
+  -webkit-animation-name: fadeInRightMega;
+  -moz-animation-name: fadeInRightMega;
+  -o-animation-name: fadeInRightMega;
+  -ms-animation-name: fadeInRightMega;
+  animation-name: fadeInRightMega;
+  -webkit-animation-delay: 1200ms;
+  -moz-animation-delay: 1200ms;
+  -o-animation-delay: 1200ms;
+  -ms-animation-delay: 1200ms;
+  animation-delay: 1200ms;
+  -webkit-animation-duration: 500ms;
+  -moz-animation-duration: 500ms;
+  -o-animation-duration: 500ms;
+  -ms-animation-duration: 500ms;
+  animation-duration: 500ms;
+}
+/* line 622, ../sass/animations/_element-in-view.scss */
+.c3xgm-about-epa-energy-star.element-in-view .c3xgm-about-blockquote > span:nth-child(2) {
+  -webkit-animation-fill-mode: both;
+  -moz-animation-fill-mode: both;
+  -o-animation-fill-mode: both;
+  -ms-animation-fill-mode: both;
+  animation-fill-mode: both;
+  -webkit-animation-name: fadeInRightMega;
+  -moz-animation-name: fadeInRightMega;
+  -o-animation-name: fadeInRightMega;
+  -ms-animation-name: fadeInRightMega;
+  animation-name: fadeInRightMega;
+  -webkit-animation-delay: 1450ms;
+  -moz-animation-delay: 1450ms;
+  -o-animation-delay: 1450ms;
+  -ms-animation-delay: 1450ms;
+  animation-delay: 1450ms;
+  -webkit-animation-duration: 500ms;
+  -moz-animation-duration: 500ms;
+  -o-animation-duration: 500ms;
+  -ms-animation-duration: 500ms;
+  animation-duration: 500ms;
+}
+/* line 628, ../sass/animations/_element-in-view.scss */
+.c3xgm-about-epa-energy-star.element-in-view .c3xgm-about-blockquote > span:nth-child(3) {
+  -webkit-animation-fill-mode: both;
+  -moz-animation-fill-mode: both;
+  -o-animation-fill-mode: both;
+  -ms-animation-fill-mode: both;
+  animation-fill-mode: both;
+  -webkit-animation-name: fadeIn;
+  -moz-animation-name: fadeIn;
+  -o-animation-name: fadeIn;
+  -ms-animation-name: fadeIn;
+  animation-name: fadeIn;
+  -webkit-animation-delay: 1700ms;
+  -moz-animation-delay: 1700ms;
+  -o-animation-delay: 1700ms;
+  -ms-animation-delay: 1700ms;
+  animation-delay: 1700ms;
+  -webkit-animation-duration: 500ms;
+  -moz-animation-duration: 500ms;
+  -o-animation-duration: 500ms;
+  -ms-animation-duration: 500ms;
+  animation-duration: 500ms;
+}
+/* line 634, ../sass/animations/_element-in-view.scss */
+.c3xgm-about-epa-energy-star.element-in-view .c3xgm-about-blockquote > span:nth-child(4) {
+  -webkit-animation-fill-mode: both;
+  -moz-animation-fill-mode: both;
+  -o-animation-fill-mode: both;
+  -ms-animation-fill-mode: both;
+  animation-fill-mode: both;
+  -webkit-animation-name: fadeIn;
+  -moz-animation-name: fadeIn;
+  -o-animation-name: fadeIn;
+  -ms-animation-name: fadeIn;
+  animation-name: fadeIn;
+  -webkit-animation-delay: 1700ms;
+  -moz-animation-delay: 1700ms;
+  -o-animation-delay: 1700ms;
+  -ms-animation-delay: 1700ms;
+  animation-delay: 1700ms;
+  -webkit-animation-duration: 500ms;
+  -moz-animation-duration: 500ms;
+  -o-animation-duration: 500ms;
+  -ms-animation-duration: 500ms;
+  animation-duration: 500ms;
+}
+
+/* line 655, ../sass/animations/_element-in-view.scss */
+.c3xgm-about-climate-declaration.element-in-view .c3xgm-about-block-image img {
+  -webkit-animation-fill-mode: both;
+  -moz-animation-fill-mode: both;
+  -o-animation-fill-mode: both;
+  -ms-animation-fill-mode: both;
+  animation-fill-mode: both;
+  -webkit-animation-name: fadeIn;
+  -moz-animation-name: fadeIn;
+  -o-animation-name: fadeIn;
+  -ms-animation-name: fadeIn;
+  animation-name: fadeIn;
+  -webkit-animation-delay: 1200ms;
+  -moz-animation-delay: 1200ms;
+  -o-animation-delay: 1200ms;
+  -ms-animation-delay: 1200ms;
+  animation-delay: 1200ms;
+  -webkit-animation-duration: 500ms;
+  -moz-animation-duration: 500ms;
+  -o-animation-duration: 500ms;
+  -ms-animation-duration: 500ms;
+  animation-duration: 500ms;
+}
+/* line 663, ../sass/animations/_element-in-view.scss */
+.c3xgm-about-climate-declaration.element-in-view .c3xgm-about-blockquote {
+  overflow: hidden;
+}
+/* line 230, ../sass/components/_mixins.scss */
+.c3xgm-about-climate-declaration.element-in-view .c3xgm-about-blockquote:before {
+  -webkit-transform-origin: top right;
+  -moz-transform-origin: top right;
+  -o-transform-origin: top right;
+  -ms-transform-origin: top right;
+  transform-origin: top right;
+  -webkit-animation-fill-mode: both;
+  -moz-animation-fill-mode: both;
+  -o-animation-fill-mode: both;
+  -ms-animation-fill-mode: both;
+  animation-fill-mode: both;
+  -webkit-animation-name: growBorder;
+  -moz-animation-name: growBorder;
+  -o-animation-name: growBorder;
+  -ms-animation-name: growBorder;
+  animation-name: growBorder;
+  -webkit-animation-delay: 200ms;
+  -moz-animation-delay: 200ms;
+  -o-animation-delay: 200ms;
+  -ms-animation-delay: 200ms;
+  animation-delay: 200ms;
+  -webkit-animation-duration: 600ms;
+  -moz-animation-duration: 600ms;
+  -o-animation-duration: 600ms;
+  -ms-animation-duration: 600ms;
+  animation-duration: 600ms;
+}
+/* line 238, ../sass/components/_mixins.scss */
+.c3xgm-about-climate-declaration.element-in-view .c3xgm-about-blockquote:after {
+  -webkit-transform-origin: top right;
+  -moz-transform-origin: top right;
+  -o-transform-origin: top right;
+  -ms-transform-origin: top right;
+  transform-origin: top right;
+  -webkit-animation-fill-mode: both;
+  -moz-animation-fill-mode: both;
+  -o-animation-fill-mode: both;
+  -ms-animation-fill-mode: both;
+  animation-fill-mode: both;
+  -webkit-animation-name: growBorder;
+  -moz-animation-name: growBorder;
+  -o-animation-name: growBorder;
+  -ms-animation-name: growBorder;
+  animation-name: growBorder;
+  -webkit-animation-delay: 800ms;
+  -moz-animation-delay: 800ms;
+  -o-animation-delay: 800ms;
+  -ms-animation-delay: 800ms;
+  animation-delay: 800ms;
+  -webkit-animation-duration: 600ms;
+  -moz-animation-duration: 600ms;
+  -o-animation-duration: 600ms;
+  -ms-animation-duration: 600ms;
+  animation-duration: 600ms;
+}
+/* line 667, ../sass/animations/_element-in-view.scss */
+.c3xgm-about-climate-declaration.element-in-view .c3xgm-about-blockquote > span:first-child {
+  -webkit-animation-fill-mode: both;
+  -moz-animation-fill-mode: both;
+  -o-animation-fill-mode: both;
+  -ms-animation-fill-mode: both;
+  animation-fill-mode: both;
+  -webkit-animation-name: fadeInLeftMega;
+  -moz-animation-name: fadeInLeftMega;
+  -o-animation-name: fadeInLeftMega;
+  -ms-animation-name: fadeInLeftMega;
+  animation-name: fadeInLeftMega;
+  -webkit-animation-delay: 1200ms;
+  -moz-animation-delay: 1200ms;
+  -o-animation-delay: 1200ms;
+  -ms-animation-delay: 1200ms;
+  animation-delay: 1200ms;
+  -webkit-animation-duration: 500ms;
+  -moz-animation-duration: 500ms;
+  -o-animation-duration: 500ms;
+  -ms-animation-duration: 500ms;
+  animation-duration: 500ms;
+}
+/* line 673, ../sass/animations/_element-in-view.scss */
+.c3xgm-about-climate-declaration.element-in-view .c3xgm-about-blockquote > span:nth-child(2) {
+  -webkit-animation-fill-mode: both;
+  -moz-animation-fill-mode: both;
+  -o-animation-fill-mode: both;
+  -ms-animation-fill-mode: both;
+  animation-fill-mode: both;
+  -webkit-animation-name: fadeInLeftMega;
+  -moz-animation-name: fadeInLeftMega;
+  -o-animation-name: fadeInLeftMega;
+  -ms-animation-name: fadeInLeftMega;
+  animation-name: fadeInLeftMega;
+  -webkit-animation-delay: 1450ms;
+  -moz-animation-delay: 1450ms;
+  -o-animation-delay: 1450ms;
+  -ms-animation-delay: 1450ms;
+  animation-delay: 1450ms;
+  -webkit-animation-duration: 500ms;
+  -moz-animation-duration: 500ms;
+  -o-animation-duration: 500ms;
+  -ms-animation-duration: 500ms;
+  animation-duration: 500ms;
+}
+/* line 679, ../sass/animations/_element-in-view.scss */
+.c3xgm-about-climate-declaration.element-in-view .c3xgm-about-blockquote > span:nth-child(3) {
+  -webkit-animation-fill-mode: both;
+  -moz-animation-fill-mode: both;
+  -o-animation-fill-mode: both;
+  -ms-animation-fill-mode: both;
+  animation-fill-mode: both;
+  -webkit-animation-name: fadeIn;
+  -moz-animation-name: fadeIn;
+  -o-animation-name: fadeIn;
+  -ms-animation-name: fadeIn;
+  animation-name: fadeIn;
+  -webkit-animation-delay: 1825ms;
+  -moz-animation-delay: 1825ms;
+  -o-animation-delay: 1825ms;
+  -ms-animation-delay: 1825ms;
+  animation-delay: 1825ms;
+  -webkit-animation-duration: 500ms;
+  -moz-animation-duration: 500ms;
+  -o-animation-duration: 500ms;
+  -ms-animation-duration: 500ms;
+  animation-duration: 500ms;
+}
+
+/* line 699, ../sass/animations/_element-in-view.scss */
+.c3xgm-about-landfill-free.element-in-view .c3xgm-about-block-image img {
+  -webkit-animation-fill-mode: both;
+  -moz-animation-fill-mode: both;
+  -o-animation-fill-mode: both;
+  -ms-animation-fill-mode: both;
+  animation-fill-mode: both;
+  -webkit-animation-name: fadeIn;
+  -moz-animation-name: fadeIn;
+  -o-animation-name: fadeIn;
+  -ms-animation-name: fadeIn;
+  animation-name: fadeIn;
+  -webkit-animation-delay: 1200ms;
+  -moz-animation-delay: 1200ms;
+  -o-animation-delay: 1200ms;
+  -ms-animation-delay: 1200ms;
+  animation-delay: 1200ms;
+  -webkit-animation-duration: 500ms;
+  -moz-animation-duration: 500ms;
+  -o-animation-duration: 500ms;
+  -ms-animation-duration: 500ms;
+  animation-duration: 500ms;
+}
+/* line 707, ../sass/animations/_element-in-view.scss */
+.c3xgm-about-landfill-free.element-in-view .c3xgm-about-blockquote {
+  overflow: hidden;
+}
+/* line 230, ../sass/components/_mixins.scss */
+.c3xgm-about-landfill-free.element-in-view .c3xgm-about-blockquote:before {
+  -webkit-transform-origin: top right;
+  -moz-transform-origin: top right;
+  -o-transform-origin: top right;
+  -ms-transform-origin: top right;
+  transform-origin: top right;
+  -webkit-animation-fill-mode: both;
+  -moz-animation-fill-mode: both;
+  -o-animation-fill-mode: both;
+  -ms-animation-fill-mode: both;
+  animation-fill-mode: both;
+  -webkit-animation-name: growBorder;
+  -moz-animation-name: growBorder;
+  -o-animation-name: growBorder;
+  -ms-animation-name: growBorder;
+  animation-name: growBorder;
+  -webkit-animation-delay: 200ms;
+  -moz-animation-delay: 200ms;
+  -o-animation-delay: 200ms;
+  -ms-animation-delay: 200ms;
+  animation-delay: 200ms;
+  -webkit-animation-duration: 600ms;
+  -moz-animation-duration: 600ms;
+  -o-animation-duration: 600ms;
+  -ms-animation-duration: 600ms;
+  animation-duration: 600ms;
+}
+/* line 238, ../sass/components/_mixins.scss */
+.c3xgm-about-landfill-free.element-in-view .c3xgm-about-blockquote:after {
+  -webkit-transform-origin: top right;
+  -moz-transform-origin: top right;
+  -o-transform-origin: top right;
+  -ms-transform-origin: top right;
+  transform-origin: top right;
+  -webkit-animation-fill-mode: both;
+  -moz-animation-fill-mode: both;
+  -o-animation-fill-mode: both;
+  -ms-animation-fill-mode: both;
+  animation-fill-mode: both;
+  -webkit-animation-name: growBorder;
+  -moz-animation-name: growBorder;
+  -o-animation-name: growBorder;
+  -ms-animation-name: growBorder;
+  animation-name: growBorder;
+  -webkit-animation-delay: 800ms;
+  -moz-animation-delay: 800ms;
+  -o-animation-delay: 800ms;
+  -ms-animation-delay: 800ms;
+  animation-delay: 800ms;
+  -webkit-animation-duration: 600ms;
+  -moz-animation-duration: 600ms;
+  -o-animation-duration: 600ms;
+  -ms-animation-duration: 600ms;
+  animation-duration: 600ms;
+}
+/* line 711, ../sass/animations/_element-in-view.scss */
+.c3xgm-about-landfill-free.element-in-view .c3xgm-about-blockquote > span:first-child {
+  -webkit-animation-fill-mode: both;
+  -moz-animation-fill-mode: both;
+  -o-animation-fill-mode: both;
+  -ms-animation-fill-mode: both;
+  animation-fill-mode: both;
+  -webkit-animation-name: fadeInRightMega;
+  -moz-animation-name: fadeInRightMega;
+  -o-animation-name: fadeInRightMega;
+  -ms-animation-name: fadeInRightMega;
+  animation-name: fadeInRightMega;
+  -webkit-animation-delay: 1200ms;
+  -moz-animation-delay: 1200ms;
+  -o-animation-delay: 1200ms;
+  -ms-animation-delay: 1200ms;
+  animation-delay: 1200ms;
+  -webkit-animation-duration: 500ms;
+  -moz-animation-duration: 500ms;
+  -o-animation-duration: 500ms;
+  -ms-animation-duration: 500ms;
+  animation-duration: 500ms;
+}
+/* line 717, ../sass/animations/_element-in-view.scss */
+.c3xgm-about-landfill-free.element-in-view .c3xgm-about-blockquote > span:nth-child(2) {
+  -webkit-animation-fill-mode: both;
+  -moz-animation-fill-mode: both;
+  -o-animation-fill-mode: both;
+  -ms-animation-fill-mode: both;
+  animation-fill-mode: both;
+  -webkit-animation-name: fadeInRightMega;
+  -moz-animation-name: fadeInRightMega;
+  -o-animation-name: fadeInRightMega;
+  -ms-animation-name: fadeInRightMega;
+  animation-name: fadeInRightMega;
+  -webkit-animation-delay: 1450ms;
+  -moz-animation-delay: 1450ms;
+  -o-animation-delay: 1450ms;
+  -ms-animation-delay: 1450ms;
+  animation-delay: 1450ms;
+  -webkit-animation-duration: 500ms;
+  -moz-animation-duration: 500ms;
+  -o-animation-duration: 500ms;
+  -ms-animation-duration: 500ms;
+  animation-duration: 500ms;
+}
+/* line 723, ../sass/animations/_element-in-view.scss */
+.c3xgm-about-landfill-free.element-in-view .c3xgm-about-blockquote > span:nth-child(3) {
+  -webkit-animation-fill-mode: both;
+  -moz-animation-fill-mode: both;
+  -o-animation-fill-mode: both;
+  -ms-animation-fill-mode: both;
+  animation-fill-mode: both;
+  -webkit-animation-name: fadeIn;
+  -moz-animation-name: fadeIn;
+  -o-animation-name: fadeIn;
+  -ms-animation-name: fadeIn;
+  animation-name: fadeIn;
+  -webkit-animation-delay: 1825ms;
+  -moz-animation-delay: 1825ms;
+  -o-animation-delay: 1825ms;
+  -ms-animation-delay: 1825ms;
+  animation-delay: 1825ms;
+  -webkit-animation-duration: 500ms;
+  -moz-animation-duration: 500ms;
+  -o-animation-duration: 500ms;
+  -ms-animation-duration: 500ms;
+  animation-duration: 500ms;
 }
 
 /* line 8, ../sass/animations/_page-in-view.scss */
