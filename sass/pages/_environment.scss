@@ -57,7 +57,10 @@
 			@media(min-width:$tablet-height) { 
 				width: 25%; float: right; 
 	  			margin-top:9px; padding-bottom: 168px; height: 0;
-	  			img { @include center; width:90%; }
+	  			img { 
+	  				// @include center; 
+	  				width:90%; max-width: 140px;
+	  			}
 	  		}
 		}
 
@@ -98,7 +101,10 @@
 				width:25%; height:0;
 				padding-bottom: 181px; margin-top:9px;
 	  			position: relative; float: left; 
-	  			img {  width:100%; max-width: none; @include center; }
+	  			img {  
+	  				width:100%; max-width: none; 
+	  				// @include center;
+	  			}
 	  		}
 		}
 
@@ -136,7 +142,10 @@
 			@media(min-width:$tablet-height) { 
 				width: 24%; float: right; 
 	  			padding-bottom: 162px; margin-top:9px;
-	  			img { @include center; width:60%; }
+	  			img { 
+	  				// @include center; 
+	  				width:60%; 
+	  			}
 	  		}
 		}
 

@@ -211,7 +211,7 @@ jQuery(document).ready(function($) {
         $blocks = $('.c3xgm-about-block, .c3xgm-about-solar-panels'),
         animBlocks = [],
         Employees,
-        Num6, Num23, Num70,
+        Num6, Num23, Num70, Num63,
         EmpNum,
         CrashTestDummies;
 
@@ -224,6 +224,7 @@ jQuery(document).ready(function($) {
     Num6 = new AnimatedElement('#c3xgm-about-number-6');
     Num23 = new AnimatedElement('#c3xgm-about-number-23');
     Num70 = new AnimatedElement('#c3xgm-about-number-70');
+    Num63 = new AnimatedElement('#c3xgm-about-number-63');
     CrashTestDummies = new AnimatedElement('#c3xgm-about-crash-test-dummies');
 
 
@@ -231,6 +232,8 @@ jQuery(document).ready(function($) {
     $.each($blocks, function(i, val) {
         animBlocks[i] = new AnimatedElement(this);
     });
+
+    console.dir(animBlocks);
 
     // MAIN NAV
     // SMOOTH SCROLL TO LINKS
@@ -346,6 +349,9 @@ jQuery(document).ready(function($) {
     var animateEmployees = false;
     function fireAnimatedEmployees() {
           if(animateEmployees === false) {
+            // EMPTY TEXT
+            $('#c3xgm-about-emp-num').text('');
+
             // TRIGGER NUMBER ANIMATION
             $('#c3xgm-about-emp-num').jQuerySimpleCounter({end: 216000,duration: 2500});
 
@@ -364,6 +370,8 @@ jQuery(document).ready(function($) {
     var animate6 = false;
     function fireAnimate6() {          
           if(animate6 === false) {
+            // EMPTY TEXT
+            $('#c3xgm-about-number-6').text('');
           // // TRIGGER NUMBER ANIMATION
             setTimeout(function(){ 
                 $('#c3xgm-about-number-6').jQuerySimpleCounter({start:0, end: 6,duration: 1000});
@@ -375,6 +383,8 @@ jQuery(document).ready(function($) {
     var animate23 = false;
     function fireAnimate23() {
           if(animate23 === false) {
+            // EMPTY TEXT
+            $('#c3xgm-about-number-23').text('');
           // // TRIGGER NUMBER ANIMATION
             setTimeout(function(){ 
                 $('#c3xgm-about-number-23').jQuerySimpleCounter({start:0, end: 23,duration: 1200});
@@ -386,11 +396,26 @@ jQuery(document).ready(function($) {
     var animate70 = false;
     function fireAnimate70() {
           if(animate70 === false) {
+            // EMPTY TEXT
+            $('#c3xgm-about-number-70').text('');
           // // TRIGGER NUMBER ANIMATION
             setTimeout(function(){ 
                 $('#c3xgm-about-number-70').jQuerySimpleCounter({start:0, end: 70,duration: 1200});
                 animate70 = true;
             }, 600);
+        }
+    }
+
+    var animate63 = false;
+    function fireAnimate63() {
+          if(animate63 === false) {
+            // EMPTY TEXT
+            $('#c3xgm-about-number-63').text('');
+          // // TRIGGER NUMBER ANIMATION
+            setTimeout(function(){ 
+                $('#c3xgm-about-number-63').jQuerySimpleCounter({start:55, end: 63,duration: 800});
+                animate63 = true;
+            }, 1100);
         }
     }
 
@@ -458,6 +483,12 @@ jQuery(document).ready(function($) {
         if(Num70.isAtEighth() ) {
              // TRIGGER NUMBER ANIMATION
              fireAnimate70();
+        }
+
+        // Num63
+        if(Num63.isAtEighth() ) {
+             // TRIGGER NUMBER ANIMATION
+             fireAnimate63();
         }
 
         // CrashTestDummies

@@ -1316,18 +1316,11 @@ h4.c3xgm-about-h {
   }
   /* line 60, ../sass/pages/_environment.scss */
   .c3xgm-about-page-our-commitment .c3xgm-about-epa-energy-star .c3xgm-about-block-image img {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    -webkit-transform: translate(-50%, -50%);
-    -moz-transform: translate(-50%, -50%);
-    -o-transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
     width: 90%;
+    max-width: 140px;
   }
 }
-/* line 64, ../sass/pages/_environment.scss */
+/* line 67, ../sass/pages/_environment.scss */
 .c3xgm-about-page-our-commitment .c3xgm-about-epa-energy-star .c3xgm-about-blockquote {
   text-align: right;
   padding-right: 1em;
@@ -1369,62 +1362,62 @@ h4.c3xgm-about-h {
   }
 }
 @media (min-width: 768px) {
-  /* line 64, ../sass/pages/_environment.scss */
+  /* line 67, ../sass/pages/_environment.scss */
   .c3xgm-about-page-our-commitment .c3xgm-about-epa-energy-star .c3xgm-about-blockquote {
     width: 73%;
     padding-right: 2.5em;
   }
 }
-/* line 72, ../sass/pages/_environment.scss */
+/* line 75, ../sass/pages/_environment.scss */
 .c3xgm-about-page-our-commitment .c3xgm-about-epa-energy-star .c3xgm-about-dark-blue.c3xgm-about-thin {
   font-size: 17px;
   font-size: 5.5vw;
 }
 @media (min-width: 768px) {
-  /* line 72, ../sass/pages/_environment.scss */
+  /* line 75, ../sass/pages/_environment.scss */
   .c3xgm-about-page-our-commitment .c3xgm-about-epa-energy-star .c3xgm-about-dark-blue.c3xgm-about-thin {
     font-size: 33.786625px;
   }
 }
-/* line 77, ../sass/pages/_environment.scss */
+/* line 80, ../sass/pages/_environment.scss */
 .c3xgm-about-page-our-commitment .c3xgm-about-epa-energy-star .c3xgm-about-light-blue {
   font-size: 32px;
   font-size: 10.25vw;
 }
 @media (min-width: 768px) {
-  /* line 77, ../sass/pages/_environment.scss */
+  /* line 80, ../sass/pages/_environment.scss */
   .c3xgm-about-page-our-commitment .c3xgm-about-epa-energy-star .c3xgm-about-light-blue {
     font-size: 67.072145px;
   }
 }
-/* line 82, ../sass/pages/_environment.scss */
+/* line 85, ../sass/pages/_environment.scss */
 .c3xgm-about-page-our-commitment .c3xgm-about-epa-energy-star .c3xgm-about-gray {
   font-size: 17px;
   font-size: 5.5vw;
 }
 @media (min-width: 768px) {
-  /* line 82, ../sass/pages/_environment.scss */
+  /* line 85, ../sass/pages/_environment.scss */
   .c3xgm-about-page-our-commitment .c3xgm-about-epa-energy-star .c3xgm-about-gray {
     font-size: 34.9255px;
   }
 }
-/* line 91, ../sass/pages/_environment.scss */
+/* line 94, ../sass/pages/_environment.scss */
 .c3xgm-about-page-our-commitment .c3xgm-about-climate-declaration {
   max-width: 52em;
 }
-/* line 93, ../sass/pages/_environment.scss */
+/* line 96, ../sass/pages/_environment.scss */
 .c3xgm-about-page-our-commitment .c3xgm-about-climate-declaration .c3xgm-about-block-image {
   width: 38%;
   position: relative;
 }
-/* line 96, ../sass/pages/_environment.scss */
+/* line 99, ../sass/pages/_environment.scss */
 .c3xgm-about-page-our-commitment .c3xgm-about-climate-declaration .c3xgm-about-block-image img {
   width: 100%;
   max-width: 151px;
   height: auto;
 }
 @media (min-width: 768px) {
-  /* line 93, ../sass/pages/_environment.scss */
+  /* line 96, ../sass/pages/_environment.scss */
   .c3xgm-about-page-our-commitment .c3xgm-about-climate-declaration .c3xgm-about-block-image {
     width: 25%;
     height: 0;
@@ -1433,21 +1426,13 @@ h4.c3xgm-about-h {
     position: relative;
     float: left;
   }
-  /* line 101, ../sass/pages/_environment.scss */
+  /* line 104, ../sass/pages/_environment.scss */
   .c3xgm-about-page-our-commitment .c3xgm-about-climate-declaration .c3xgm-about-block-image img {
     width: 100%;
     max-width: none;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    -webkit-transform: translate(-50%, -50%);
-    -moz-transform: translate(-50%, -50%);
-    -o-transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
   }
 }
-/* line 105, ../sass/pages/_environment.scss */
+/* line 111, ../sass/pages/_environment.scss */
 .c3xgm-about-page-our-commitment .c3xgm-about-climate-declaration .c3xgm-about-blockquote {
   position: relative;
   padding-left: 1em;
@@ -1487,14 +1472,14 @@ h4.c3xgm-about-h {
   }
 }
 @media (min-width: 768px) {
-  /* line 105, ../sass/pages/_environment.scss */
+  /* line 111, ../sass/pages/_environment.scss */
   .c3xgm-about-page-our-commitment .c3xgm-about-climate-declaration .c3xgm-about-blockquote {
     float: right;
     width: 75%;
     padding-left: 2.5em;
   }
 }
-/* line 113, ../sass/pages/_environment.scss */
+/* line 119, ../sass/pages/_environment.scss */
 .c3xgm-about-page-our-commitment .c3xgm-about-climate-declaration .c3xgm-about-dark-blue.c3xgm-about-thin {
   font-size: 16px;
   font-size: 5vw;
@@ -1502,67 +1487,59 @@ h4.c3xgm-about-h {
   max-width: 13em;
 }
 @media (min-width: 768px) {
-  /* line 113, ../sass/pages/_environment.scss */
+  /* line 119, ../sass/pages/_environment.scss */
   .c3xgm-about-page-our-commitment .c3xgm-about-climate-declaration .c3xgm-about-dark-blue.c3xgm-about-thin {
     max-width: none;
     font-size: 29.747415px;
   }
 }
-/* line 119, ../sass/pages/_environment.scss */
+/* line 125, ../sass/pages/_environment.scss */
 .c3xgm-about-page-our-commitment .c3xgm-about-climate-declaration .c3xgm-about-light-blue {
   font-size: 28px;
   font-size: 9vw;
 }
 @media (min-width: 768px) {
-  /* line 119, ../sass/pages/_environment.scss */
+  /* line 125, ../sass/pages/_environment.scss */
   .c3xgm-about-page-our-commitment .c3xgm-about-climate-declaration .c3xgm-about-light-blue {
     font-size: 62.27368499999999px;
   }
 }
-/* line 124, ../sass/pages/_environment.scss */
+/* line 130, ../sass/pages/_environment.scss */
 .c3xgm-about-page-our-commitment .c3xgm-about-climate-declaration .c3xgm-about-gray.c3xgm-about-thin {
   font-size: 17px;
   font-size: 5.5vw;
 }
 @media (min-width: 768px) {
-  /* line 124, ../sass/pages/_environment.scss */
+  /* line 130, ../sass/pages/_environment.scss */
   .c3xgm-about-page-our-commitment .c3xgm-about-climate-declaration .c3xgm-about-gray.c3xgm-about-thin {
     font-size: 36.59585px;
   }
 }
-/* line 132, ../sass/pages/_environment.scss */
+/* line 138, ../sass/pages/_environment.scss */
 .c3xgm-about-page-our-commitment .c3xgm-about-landfill-free .c3xgm-about-block-image {
   width: 30%;
   position: relative;
 }
-/* line 135, ../sass/pages/_environment.scss */
+/* line 141, ../sass/pages/_environment.scss */
 .c3xgm-about-page-our-commitment .c3xgm-about-landfill-free .c3xgm-about-block-image img {
   width: 100%;
   max-width: 172px;
   height: auto;
 }
 @media (min-width: 768px) {
-  /* line 132, ../sass/pages/_environment.scss */
+  /* line 138, ../sass/pages/_environment.scss */
   .c3xgm-about-page-our-commitment .c3xgm-about-landfill-free .c3xgm-about-block-image {
     width: 24%;
     float: right;
     padding-bottom: 162px;
     margin-top: 9px;
   }
-  /* line 139, ../sass/pages/_environment.scss */
+  /* line 145, ../sass/pages/_environment.scss */
   .c3xgm-about-page-our-commitment .c3xgm-about-landfill-free .c3xgm-about-block-image img {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    -webkit-transform: translate(-50%, -50%);
-    -moz-transform: translate(-50%, -50%);
-    -o-transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
     width: 60%;
   }
 }
-/* line 143, ../sass/pages/_environment.scss */
+/* line 152, ../sass/pages/_environment.scss */
 .c3xgm-about-page-our-commitment .c3xgm-about-landfill-free .c3xgm-about-blockquote {
   position: relative;
   max-width: 52em;
@@ -1605,41 +1582,41 @@ h4.c3xgm-about-h {
   }
 }
 @media (min-width: 768px) {
-  /* line 143, ../sass/pages/_environment.scss */
+  /* line 152, ../sass/pages/_environment.scss */
   .c3xgm-about-page-our-commitment .c3xgm-about-landfill-free .c3xgm-about-blockquote {
     width: 76%;
     padding-right: 2.5em;
   }
 }
-/* line 151, ../sass/pages/_environment.scss */
+/* line 160, ../sass/pages/_environment.scss */
 .c3xgm-about-page-our-commitment .c3xgm-about-landfill-free .c3xgm-about-dark-blue.c3xgm-about-thin {
   font-size: 26.3007926940918px;
   font-size: 8.218997794875vw;
 }
 @media (min-width: 768px) {
-  /* line 151, ../sass/pages/_environment.scss */
+  /* line 160, ../sass/pages/_environment.scss */
   .c3xgm-about-page-our-commitment .c3xgm-about-landfill-free .c3xgm-about-dark-blue.c3xgm-about-thin {
     font-size: 74.4065px;
   }
 }
-/* line 156, ../sass/pages/_environment.scss */
+/* line 165, ../sass/pages/_environment.scss */
 .c3xgm-about-page-our-commitment .c3xgm-about-landfill-free .c3xgm-about-light-blue {
   font-size: 25px;
   font-size: 8vw;
 }
 @media (min-width: 768px) {
-  /* line 156, ../sass/pages/_environment.scss */
+  /* line 165, ../sass/pages/_environment.scss */
   .c3xgm-about-page-our-commitment .c3xgm-about-landfill-free .c3xgm-about-light-blue {
     font-size: 54.666px;
   }
 }
-/* line 161, ../sass/pages/_environment.scss */
+/* line 170, ../sass/pages/_environment.scss */
 .c3xgm-about-page-our-commitment .c3xgm-about-landfill-free .c3xgm-about-gray {
   font-size: 16px;
   font-size: 5vw;
 }
 @media (min-width: 768px) {
-  /* line 161, ../sass/pages/_environment.scss */
+  /* line 170, ../sass/pages/_environment.scss */
   .c3xgm-about-page-our-commitment .c3xgm-about-landfill-free .c3xgm-about-gray {
     font-size: 34.9255px;
   }
@@ -2129,14 +2106,6 @@ h4.c3xgm-about-h {
   /* line 214, ../sass/pages/_safety.scss */
   .c3xgm-about-page-our-commitment .c3xgm-about-onstar-subscribers .c3xgm-about-block-image img {
     width: 85%;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    -webkit-transform: translate(-50%, -50%);
-    -moz-transform: translate(-50%, -50%);
-    -o-transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
   }
 }
 /* line 218, ../sass/pages/_safety.scss */
@@ -2288,14 +2257,6 @@ h4.c3xgm-about-h {
   /* line 278, ../sass/pages/_safety.scss */
   .c3xgm-about-page-our-commitment .c3xgm-about-quality-awards .c3xgm-about-block-image img {
     width: 60%;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    -webkit-transform: translate(-50%, -50%);
-    -moz-transform: translate(-50%, -50%);
-    -o-transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
   }
 }
 @media (min-width: 906px) {
@@ -2870,11 +2831,11 @@ h4.c3xgm-about-h {
   position: relative;
   overflow: hidden;
 }
-/* line 132, ../sass/pages/_our-brands.scss */
+/* line 133, ../sass/pages/_our-brands.scss */
 .c3xgm-about-dealers .c3xgm-about-blockquote .c3xgm-about-sep > span {
   display: inline-block;
 }
-/* line 135, ../sass/pages/_our-brands.scss */
+/* line 136, ../sass/pages/_our-brands.scss */
 .c3xgm-about-dealers .c3xgm-about-blockquote .c3xgm-about-sep:first-child {
   width: auto;
   max-width: 6.5em;
@@ -2884,7 +2845,7 @@ h4.c3xgm-about-h {
   margin-left: auto;
   margin-right: auto;
 }
-/* line 142, ../sass/pages/_our-brands.scss */
+/* line 143, ../sass/pages/_our-brands.scss */
 .c3xgm-about-dealers .c3xgm-about-blockquote .c3xgm-about-sep:first-child:before {
   content: "";
   display: block;
@@ -2895,7 +2856,7 @@ h4.c3xgm-about-h {
   background-color: #d4d4d5;
 }
 @media (min-width: 768px) {
-  /* line 142, ../sass/pages/_our-brands.scss */
+  /* line 143, ../sass/pages/_our-brands.scss */
   .c3xgm-about-dealers .c3xgm-about-blockquote .c3xgm-about-sep:first-child:before {
     width: 0.2rem;
     height: 100%;
@@ -2904,7 +2865,7 @@ h4.c3xgm-about-h {
     right: 0;
   }
 }
-/* line 153, ../sass/pages/_our-brands.scss */
+/* line 154, ../sass/pages/_our-brands.scss */
 .c3xgm-about-dealers .c3xgm-about-blockquote .c3xgm-about-sep:first-child:after {
   content: "";
   display: block;
@@ -2915,7 +2876,7 @@ h4.c3xgm-about-h {
   background-color: #FDB12E;
 }
 @media (min-width: 768px) {
-  /* line 153, ../sass/pages/_our-brands.scss */
+  /* line 154, ../sass/pages/_our-brands.scss */
   .c3xgm-about-dealers .c3xgm-about-blockquote .c3xgm-about-sep:first-child:after {
     width: 0.2rem;
     height: 100%;
@@ -2925,7 +2886,7 @@ h4.c3xgm-about-h {
   }
 }
 @media (min-width: 768px) {
-  /* line 135, ../sass/pages/_our-brands.scss */
+  /* line 136, ../sass/pages/_our-brands.scss */
   .c3xgm-about-dealers .c3xgm-about-blockquote .c3xgm-about-sep:first-child {
     width: 75%;
     max-width: none;
@@ -2935,54 +2896,54 @@ h4.c3xgm-about-h {
     padding-right: 2rem;
   }
 }
-/* line 170, ../sass/pages/_our-brands.scss */
+/* line 171, ../sass/pages/_our-brands.scss */
 .c3xgm-about-dealers .c3xgm-about-blockquote .c3xgm-about-sep:nth-child(2) {
   text-align: center;
   width: 100%;
 }
 @media (min-width: 768px) {
-  /* line 170, ../sass/pages/_our-brands.scss */
+  /* line 171, ../sass/pages/_our-brands.scss */
   .c3xgm-about-dealers .c3xgm-about-blockquote .c3xgm-about-sep:nth-child(2) {
     width: 25%;
   }
 }
-/* line 177, ../sass/pages/_our-brands.scss */
+/* line 178, ../sass/pages/_our-brands.scss */
 .c3xgm-about-dealers .c3xgm-about-blockquote .c3xgm-about-dark-blue {
   font-size: 28.665995380401597px;
   font-size: 11.16789277353616vw;
 }
 @media (min-width: 768px) {
-  /* line 177, ../sass/pages/_our-brands.scss */
+  /* line 178, ../sass/pages/_our-brands.scss */
   .c3xgm-about-dealers .c3xgm-about-blockquote .c3xgm-about-dark-blue {
     font-size: 14.8459243774414px;
     font-size: 5.783775842113087vw;
   }
 }
 @media (min-width: 906px) {
-  /* line 177, ../sass/pages/_our-brands.scss */
+  /* line 178, ../sass/pages/_our-brands.scss */
   .c3xgm-about-dealers .c3xgm-about-blockquote .c3xgm-about-dark-blue {
     font-size: 52.36046145px;
   }
 }
-/* line 182, ../sass/pages/_our-brands.scss */
+/* line 183, ../sass/pages/_our-brands.scss */
 .c3xgm-about-dealers .c3xgm-about-blockquote .c3xgm-about-dark-blue span {
   font-size: 37.53880364971164px;
   font-size: 14.5vw;
 }
 @media (min-width: 768px) {
-  /* line 182, ../sass/pages/_our-brands.scss */
+  /* line 183, ../sass/pages/_our-brands.scss */
   .c3xgm-about-dealers .c3xgm-about-blockquote .c3xgm-about-dark-blue span {
     font-size: 19.4410915374756px;
     font-size: 7.509262175090214vw;
   }
 }
 @media (min-width: 906px) {
-  /* line 182, ../sass/pages/_our-brands.scss */
+  /* line 183, ../sass/pages/_our-brands.scss */
   .c3xgm-about-dealers .c3xgm-about-blockquote .c3xgm-about-dark-blue span {
     font-size: 67.98127095px;
   }
 }
-/* line 189, ../sass/pages/_our-brands.scss */
+/* line 190, ../sass/pages/_our-brands.scss */
 .c3xgm-about-dealers .c3xgm-about-blockquote .number {
   display: block;
   padding-top: 0.5rem;
@@ -2991,7 +2952,7 @@ h4.c3xgm-about-h {
   line-height: 0.75em;
 }
 @media (min-width: 768px) {
-  /* line 189, ../sass/pages/_our-brands.scss */
+  /* line 190, ../sass/pages/_our-brands.scss */
   .c3xgm-about-dealers .c3xgm-about-blockquote .number {
     font-size: 29.6918487548828px;
     font-size: 11.43983852257275vw;
@@ -3000,31 +2961,31 @@ h4.c3xgm-about-h {
   }
 }
 @media (min-width: 906px) {
-  /* line 189, ../sass/pages/_our-brands.scss */
+  /* line 190, ../sass/pages/_our-brands.scss */
   .c3xgm-about-dealers .c3xgm-about-blockquote .number {
     font-size: 103.564737px;
   }
 }
-/* line 200, ../sass/pages/_our-brands.scss */
+/* line 201, ../sass/pages/_our-brands.scss */
 .c3xgm-about-dealers .c3xgm-about-blockquote .c3xgm-about-gray {
   font-size: 17.06309240064622px;
   font-size: 6.731692003028844vw;
 }
 @media (min-width: 768px) {
-  /* line 200, ../sass/pages/_our-brands.scss */
+  /* line 201, ../sass/pages/_our-brands.scss */
   .c3xgm-about-dealers .c3xgm-about-blockquote .c3xgm-about-gray {
     font-size: 8.83685970306397px;
     font-size: 3.4862975830073246vw;
   }
 }
 @media (min-width: 906px) {
-  /* line 200, ../sass/pages/_our-brands.scss */
+  /* line 201, ../sass/pages/_our-brands.scss */
   .c3xgm-about-dealers .c3xgm-about-blockquote .c3xgm-about-gray {
     font-size: 31.561415099999998px;
   }
 }
 
-/* line 210, ../sass/pages/_our-brands.scss */
+/* line 211, ../sass/pages/_our-brands.scss */
 .c3xgm-about-china {
   position: relative;
   margin: 7em auto;
@@ -3032,19 +2993,19 @@ h4.c3xgm-about-h {
   padding-bottom: 18%;
 }
 @media (min-width: 768px) {
-  /* line 210, ../sass/pages/_our-brands.scss */
+  /* line 211, ../sass/pages/_our-brands.scss */
   .c3xgm-about-china {
     padding-top: 0;
     padding-bottom: 15%;
   }
 }
 @media (min-width: 906px) {
-  /* line 210, ../sass/pages/_our-brands.scss */
+  /* line 211, ../sass/pages/_our-brands.scss */
   .c3xgm-about-china {
     padding-bottom: 135px;
   }
 }
-/* line 217, ../sass/pages/_our-brands.scss */
+/* line 218, ../sass/pages/_our-brands.scss */
 .c3xgm-about-china .c3xgm-about-block-image {
   width: 46%;
   position: absolute;
@@ -3052,17 +3013,17 @@ h4.c3xgm-about-h {
   z-index: -1;
 }
 @media (min-width: 768px) {
-  /* line 217, ../sass/pages/_our-brands.scss */
+  /* line 218, ../sass/pages/_our-brands.scss */
   .c3xgm-about-china .c3xgm-about-block-image {
     left: -15%;
     top: -11%;
   }
 }
-/* line 221, ../sass/pages/_our-brands.scss */
+/* line 222, ../sass/pages/_our-brands.scss */
 .c3xgm-about-china .c3xgm-about-block-image .c3xgm-about-block-image-mobile {
   margin-top: -45%;
 }
-/* line 224, ../sass/pages/_our-brands.scss */
+/* line 225, ../sass/pages/_our-brands.scss */
 .c3xgm-about-china .c3xgm-about-blockquote {
   width: auto;
   max-width: 21em;
@@ -3073,13 +3034,13 @@ h4.c3xgm-about-h {
   margin-top: 18%;
 }
 @media (min-width: 404px) {
-  /* line 224, ../sass/pages/_our-brands.scss */
+  /* line 225, ../sass/pages/_our-brands.scss */
   .c3xgm-about-china .c3xgm-about-blockquote {
     max-width: 41em;
   }
 }
 @media (min-width: 768px) {
-  /* line 224, ../sass/pages/_our-brands.scss */
+  /* line 225, ../sass/pages/_our-brands.scss */
   .c3xgm-about-china .c3xgm-about-blockquote {
     max-width: none;
     float: left;
@@ -3087,35 +3048,35 @@ h4.c3xgm-about-h {
     margin-top: 19%;
   }
 }
-/* line 235, ../sass/pages/_our-brands.scss */
+/* line 236, ../sass/pages/_our-brands.scss */
 .c3xgm-about-china .c3xgm-about-blockquote .c3xgm-about-dark-blue.c3xgm-about-thin {
   font-family: open-sans, Arial, sans-serif;
   font-size: 11.609307290216254px;
   font-size: 3.6279085848434995vw;
   line-height: 1.2em;
 }
-/* line 239, ../sass/pages/_our-brands.scss */
+/* line 240, ../sass/pages/_our-brands.scss */
 .c3xgm-about-china .c3xgm-about-blockquote .c3xgm-about-dark-blue.c3xgm-about-thin strong {
   font-family: open-sans-condensed, 'Arial Narrow', Arial, sans-serif;
 }
 @media (min-width: 768px) {
-  /* line 235, ../sass/pages/_our-brands.scss */
+  /* line 236, ../sass/pages/_our-brands.scss */
   .c3xgm-about-china .c3xgm-about-blockquote .c3xgm-about-dark-blue.c3xgm-about-thin {
     font-size: 6.975993912267684px;
     font-size: 2.179998131625vw;
   }
-  /* line 242, ../sass/pages/_our-brands.scss */
+  /* line 243, ../sass/pages/_our-brands.scss */
   .c3xgm-about-china .c3xgm-about-blockquote .c3xgm-about-dark-blue.c3xgm-about-thin br {
     display: none;
   }
 }
 @media (min-width: 906px) {
-  /* line 235, ../sass/pages/_our-brands.scss */
+  /* line 236, ../sass/pages/_our-brands.scss */
   .c3xgm-about-china .c3xgm-about-blockquote .c3xgm-about-dark-blue.c3xgm-about-thin {
     font-size: 26px;
   }
 }
-/* line 247, ../sass/pages/_our-brands.scss */
+/* line 248, ../sass/pages/_our-brands.scss */
 .c3xgm-about-china .c3xgm-about-blockquote .c3xgm-about-dark-blue.c3xgm-about-thin.c3xgm-about-big {
   font-family: open-sans-condensed, 'Arial Narrow', Arial, sans-serif;
   max-width: 8em;
@@ -3128,7 +3089,7 @@ h4.c3xgm-about-h {
   font-size: 7.739538314332799vw;
 }
 @media (min-width: 768px) {
-  /* line 247, ../sass/pages/_our-brands.scss */
+  /* line 248, ../sass/pages/_our-brands.scss */
   .c3xgm-about-china .c3xgm-about-blockquote .c3xgm-about-dark-blue.c3xgm-about-thin.c3xgm-about-big {
     clear: none;
     margin-left: .35em;
@@ -3140,12 +3101,12 @@ h4.c3xgm-about-h {
   }
 }
 @media (min-width: 906px) {
-  /* line 247, ../sass/pages/_our-brands.scss */
+  /* line 248, ../sass/pages/_our-brands.scss */
   .c3xgm-about-china .c3xgm-about-blockquote .c3xgm-about-dark-blue.c3xgm-about-thin.c3xgm-about-big {
     font-size: 44px;
   }
 }
-/* line 261, ../sass/pages/_our-brands.scss */
+/* line 262, ../sass/pages/_our-brands.scss */
 .c3xgm-about-china .c3xgm-about-blockquote .c3xgm-about-light-blue {
   float: left;
   font-size: 66.56002860311509px;
@@ -3153,23 +3114,23 @@ h4.c3xgm-about-h {
   line-height: 0.8em;
 }
 @media (min-width: 768px) {
-  /* line 261, ../sass/pages/_our-brands.scss */
+  /* line 262, ../sass/pages/_our-brands.scss */
   .c3xgm-about-china .c3xgm-about-blockquote .c3xgm-about-light-blue {
     font-size: 39.995698513984685px;
     font-size: 12.5vw;
   }
 }
 @media (min-width: 906px) {
-  /* line 261, ../sass/pages/_our-brands.scss */
+  /* line 262, ../sass/pages/_our-brands.scss */
   .c3xgm-about-china .c3xgm-about-blockquote .c3xgm-about-light-blue {
     font-size: 116px;
   }
 }
-/* line 269, ../sass/pages/_our-brands.scss */
+/* line 270, ../sass/pages/_our-brands.scss */
 .c3xgm-about-china .c3xgm-about-blockquote .c3xgm-about-light-blue.c3xgm-about-thin {
   margin-left: -.05em;
 }
-/* line 271, ../sass/pages/_our-brands.scss */
+/* line 272, ../sass/pages/_our-brands.scss */
 .c3xgm-about-china .c3xgm-about-blockquote .c3xgm-about-gray {
   clear: left;
   max-width: 8.25em;
@@ -3178,7 +3139,7 @@ h4.c3xgm-about-h {
   line-height: 1.05em;
 }
 @media (min-width: 768px) {
-  /* line 271, ../sass/pages/_our-brands.scss */
+  /* line 272, ../sass/pages/_our-brands.scss */
   .c3xgm-about-china .c3xgm-about-blockquote .c3xgm-about-gray {
     max-width: none;
     line-height: 1.1em;
@@ -3187,32 +3148,32 @@ h4.c3xgm-about-h {
   }
 }
 @media (min-width: 906px) {
-  /* line 271, ../sass/pages/_our-brands.scss */
+  /* line 272, ../sass/pages/_our-brands.scss */
   .c3xgm-about-china .c3xgm-about-blockquote .c3xgm-about-gray {
     font-size: 58px;
   }
 }
 
-/* line 287, ../sass/pages/_our-brands.scss */
+/* line 288, ../sass/pages/_our-brands.scss */
 .c3xgm-about-cadillac-award,
 .c3xgm-about-chevrolet-award {
   position: relative;
   max-width: 906px;
 }
-/* line 292, ../sass/pages/_our-brands.scss */
+/* line 293, ../sass/pages/_our-brands.scss */
 .c3xgm-about-cadillac-award .c3xgm-about-block-image,
 .c3xgm-about-chevrolet-award .c3xgm-about-block-image {
   width: 100%;
   text-align: center;
   z-index: -1;
 }
-/* line 295, ../sass/pages/_our-brands.scss */
+/* line 296, ../sass/pages/_our-brands.scss */
 .c3xgm-about-cadillac-award .c3xgm-about-block-image img,
 .c3xgm-about-chevrolet-award .c3xgm-about-block-image img {
   width: 45%;
 }
 @media (min-width: 768px) {
-  /* line 292, ../sass/pages/_our-brands.scss */
+  /* line 293, ../sass/pages/_our-brands.scss */
   .c3xgm-about-cadillac-award .c3xgm-about-block-image,
   .c3xgm-about-chevrolet-award .c3xgm-about-block-image {
     width: 29%;
@@ -3220,33 +3181,33 @@ h4.c3xgm-about-h {
     position: absolute;
     right: 0;
   }
-  /* line 300, ../sass/pages/_our-brands.scss */
+  /* line 301, ../sass/pages/_our-brands.scss */
   .c3xgm-about-cadillac-award .c3xgm-about-block-image img,
   .c3xgm-about-chevrolet-award .c3xgm-about-block-image img {
     width: 80%;
   }
 }
 @media (min-width: 906px) {
-  /* line 292, ../sass/pages/_our-brands.scss */
+  /* line 293, ../sass/pages/_our-brands.scss */
   .c3xgm-about-cadillac-award .c3xgm-about-block-image,
   .c3xgm-about-chevrolet-award .c3xgm-about-block-image {
     text-align: left;
   }
 }
-/* line 306, ../sass/pages/_our-brands.scss */
+/* line 307, ../sass/pages/_our-brands.scss */
 .c3xgm-about-cadillac-award .c3xgm-about-blockquote,
 .c3xgm-about-chevrolet-award .c3xgm-about-blockquote {
   float: none;
   display: inline-block;
 }
 @media (min-width: 768px) {
-  /* line 306, ../sass/pages/_our-brands.scss */
+  /* line 307, ../sass/pages/_our-brands.scss */
   .c3xgm-about-cadillac-award .c3xgm-about-blockquote,
   .c3xgm-about-chevrolet-award .c3xgm-about-blockquote {
     float: left;
   }
 }
-/* line 311, ../sass/pages/_our-brands.scss */
+/* line 312, ../sass/pages/_our-brands.scss */
 .c3xgm-about-cadillac-award .c3xgm-about-blockquote .c3xgm-about-dark-blue.c3xgm-about-thin,
 .c3xgm-about-chevrolet-award .c3xgm-about-blockquote .c3xgm-about-dark-blue.c3xgm-about-thin {
   margin-left: -0.05em;
@@ -3257,7 +3218,7 @@ h4.c3xgm-about-h {
   line-height: 1.2em;
 }
 @media (min-width: 768px) {
-  /* line 311, ../sass/pages/_our-brands.scss */
+  /* line 312, ../sass/pages/_our-brands.scss */
   .c3xgm-about-cadillac-award .c3xgm-about-blockquote .c3xgm-about-dark-blue.c3xgm-about-thin,
   .c3xgm-about-chevrolet-award .c3xgm-about-blockquote .c3xgm-about-dark-blue.c3xgm-about-thin {
     font-size: 52px;
@@ -3265,13 +3226,13 @@ h4.c3xgm-about-h {
   }
 }
 @media (min-width: 906px) {
-  /* line 311, ../sass/pages/_our-brands.scss */
+  /* line 312, ../sass/pages/_our-brands.scss */
   .c3xgm-about-cadillac-award .c3xgm-about-blockquote .c3xgm-about-dark-blue.c3xgm-about-thin,
   .c3xgm-about-chevrolet-award .c3xgm-about-blockquote .c3xgm-about-dark-blue.c3xgm-about-thin {
     font-size: 66px;
   }
 }
-/* line 317, ../sass/pages/_our-brands.scss */
+/* line 318, ../sass/pages/_our-brands.scss */
 .c3xgm-about-cadillac-award .c3xgm-about-blockquote .c3xgm-about-dark-blue.c3xgm-about-thin strong,
 .c3xgm-about-chevrolet-award .c3xgm-about-blockquote .c3xgm-about-dark-blue.c3xgm-about-thin strong {
   color: #6086C4;
@@ -3279,7 +3240,7 @@ h4.c3xgm-about-h {
   font-size: 11.5vw;
 }
 @media (min-width: 768px) {
-  /* line 317, ../sass/pages/_our-brands.scss */
+  /* line 318, ../sass/pages/_our-brands.scss */
   .c3xgm-about-cadillac-award .c3xgm-about-blockquote .c3xgm-about-dark-blue.c3xgm-about-thin strong,
   .c3xgm-about-chevrolet-award .c3xgm-about-blockquote .c3xgm-about-dark-blue.c3xgm-about-thin strong {
     font-size: 77px;
@@ -3287,13 +3248,13 @@ h4.c3xgm-about-h {
   }
 }
 @media (min-width: 906px) {
-  /* line 317, ../sass/pages/_our-brands.scss */
+  /* line 318, ../sass/pages/_our-brands.scss */
   .c3xgm-about-cadillac-award .c3xgm-about-blockquote .c3xgm-about-dark-blue.c3xgm-about-thin strong,
   .c3xgm-about-chevrolet-award .c3xgm-about-blockquote .c3xgm-about-dark-blue.c3xgm-about-thin strong {
     font-size: 81px;
   }
 }
-/* line 324, ../sass/pages/_our-brands.scss */
+/* line 325, ../sass/pages/_our-brands.scss */
 .c3xgm-about-cadillac-award .c3xgm-about-blockquote .c3xgm-about-gray,
 .c3xgm-about-chevrolet-award .c3xgm-about-blockquote .c3xgm-about-gray {
   font-size: 21px;
@@ -3302,7 +3263,7 @@ h4.c3xgm-about-h {
   line-height: 1.105em;
 }
 @media (min-width: 768px) {
-  /* line 324, ../sass/pages/_our-brands.scss */
+  /* line 325, ../sass/pages/_our-brands.scss */
   .c3xgm-about-cadillac-award .c3xgm-about-blockquote .c3xgm-about-gray,
   .c3xgm-about-chevrolet-award .c3xgm-about-blockquote .c3xgm-about-gray {
     font-size: 32px;
@@ -3313,13 +3274,13 @@ h4.c3xgm-about-h {
   }
 }
 @media (min-width: 906px) {
-  /* line 324, ../sass/pages/_our-brands.scss */
+  /* line 325, ../sass/pages/_our-brands.scss */
   .c3xgm-about-cadillac-award .c3xgm-about-blockquote .c3xgm-about-gray,
   .c3xgm-about-chevrolet-award .c3xgm-about-blockquote .c3xgm-about-gray {
     font-size: 34px;
   }
 }
-/* line 335, ../sass/pages/_our-brands.scss */
+/* line 336, ../sass/pages/_our-brands.scss */
 .c3xgm-about-cadillac-award .c3xgm-about-blockquote .c3xgm-about-gray .c3xgm-about-thin,
 .c3xgm-about-chevrolet-award .c3xgm-about-blockquote .c3xgm-about-gray .c3xgm-about-thin {
   color: #124e9c;
@@ -3330,7 +3291,7 @@ h4.c3xgm-about-h {
   clear: left;
 }
 @media (min-width: 768px) {
-  /* line 335, ../sass/pages/_our-brands.scss */
+  /* line 336, ../sass/pages/_our-brands.scss */
   .c3xgm-about-cadillac-award .c3xgm-about-blockquote .c3xgm-about-gray .c3xgm-about-thin,
   .c3xgm-about-chevrolet-award .c3xgm-about-blockquote .c3xgm-about-gray .c3xgm-about-thin {
     font-size: 17px;
@@ -3339,30 +3300,30 @@ h4.c3xgm-about-h {
   }
 }
 @media (min-width: 906px) {
-  /* line 335, ../sass/pages/_our-brands.scss */
+  /* line 336, ../sass/pages/_our-brands.scss */
   .c3xgm-about-cadillac-award .c3xgm-about-blockquote .c3xgm-about-gray .c3xgm-about-thin,
   .c3xgm-about-chevrolet-award .c3xgm-about-blockquote .c3xgm-about-gray .c3xgm-about-thin {
     font-size: 26px;
   }
 }
 
-/* line 349, ../sass/pages/_our-brands.scss */
+/* line 350, ../sass/pages/_our-brands.scss */
 .c3xgm-about-cadillac-award .c3xgm-about-blockquote {
   margin-top: 1%;
 }
-/* line 351, ../sass/pages/_our-brands.scss */
+/* line 352, ../sass/pages/_our-brands.scss */
 .c3xgm-about-cadillac-award .c3xgm-about-blockquote .c3xgm-about-gray {
   margin-bottom: 1%;
   margin-top: 1%;
 }
 @media (min-width: 768px) {
-  /* line 351, ../sass/pages/_our-brands.scss */
+  /* line 352, ../sass/pages/_our-brands.scss */
   .c3xgm-about-cadillac-award .c3xgm-about-blockquote .c3xgm-about-gray {
     margin-top: 0;
   }
 }
 @media (min-width: 906px) {
-  /* line 351, ../sass/pages/_our-brands.scss */
+  /* line 352, ../sass/pages/_our-brands.scss */
   .c3xgm-about-cadillac-award .c3xgm-about-blockquote .c3xgm-about-gray {
     font-size: 41px;
   }
@@ -3523,6 +3484,7 @@ h4.c3xgm-about-h {
   line-height: 1em;
   font-size: 128px;
   font-size: 24vw;
+  display: inline-block;
 }
 @media (min-width: 768px) {
   /* line 75, ../sass/pages/_our-people.scss */
@@ -3540,20 +3502,20 @@ h4.c3xgm-about-h {
     font-size: 128px;
   }
 }
-/* line 83, ../sass/pages/_our-people.scss */
+/* line 84, ../sass/pages/_our-people.scss */
 .c3xgm-about-page-our-people .c3xgm-about-block.c3xgm-about-employees .c3xgm-about-gray {
   margin-left: 0;
   font-size: 20px;
   font-size: 6.5vw;
 }
 @media (min-width: 768px) {
-  /* line 83, ../sass/pages/_our-people.scss */
+  /* line 84, ../sass/pages/_our-people.scss */
   .c3xgm-about-page-our-people .c3xgm-about-block.c3xgm-about-employees .c3xgm-about-gray {
     margin-left: 5px;
     font-size: 34px;
   }
 }
-/* line 91, ../sass/pages/_our-people.scss */
+/* line 92, ../sass/pages/_our-people.scss */
 .c3xgm-about-page-our-people .c3xgm-about-separator {
   position: relative;
   overflow: hidden;
@@ -3564,7 +3526,7 @@ h4.c3xgm-about-h {
   padding-right: .4em;
   padding-bottom: .65em;
 }
-/* line 97, ../sass/pages/_our-people.scss */
+/* line 98, ../sass/pages/_our-people.scss */
 .c3xgm-about-page-our-people .c3xgm-about-separator .c3xgm-about-yellow-line,
 .c3xgm-about-page-our-people .c3xgm-about-separator .c3xgm-about-gray-line {
   position: absolute;
@@ -3579,30 +3541,30 @@ h4.c3xgm-about-h {
   transform-origin: center top;
 }
 @media (min-width: 768px) {
-  /* line 97, ../sass/pages/_our-people.scss */
+  /* line 98, ../sass/pages/_our-people.scss */
   .c3xgm-about-page-our-people .c3xgm-about-separator .c3xgm-about-yellow-line,
   .c3xgm-about-page-our-people .c3xgm-about-separator .c3xgm-about-gray-line {
     width: 0.2rem;
   }
 }
-/* line 107, ../sass/pages/_our-people.scss */
+/* line 108, ../sass/pages/_our-people.scss */
 .c3xgm-about-page-our-people .c3xgm-about-separator .c3xgm-about-yellow-line {
   background: #808285;
 }
-/* line 108, ../sass/pages/_our-people.scss */
+/* line 109, ../sass/pages/_our-people.scss */
 .c3xgm-about-page-our-people .c3xgm-about-separator .c3xgm-about-yellow-line {
   background: #FDB12E;
 }
-/* line 110, ../sass/pages/_our-people.scss */
+/* line 111, ../sass/pages/_our-people.scss */
 .c3xgm-about-page-our-people .c3xgm-about-separator .c3xgm-about-gray {
   line-height: .9em;
 }
-/* line 112, ../sass/pages/_our-people.scss */
+/* line 113, ../sass/pages/_our-people.scss */
 .c3xgm-about-page-our-people .c3xgm-about-separator span {
   display: block;
   clear: left;
 }
-/* line 113, ../sass/pages/_our-people.scss */
+/* line 114, ../sass/pages/_our-people.scss */
 .c3xgm-about-page-our-people .c3xgm-about-separator + .number {
   float: left;
   padding-left: .1em;
@@ -3611,7 +3573,7 @@ h4.c3xgm-about-h {
   line-height: .8em;
 }
 @media (min-width: 768px) {
-  /* line 113, ../sass/pages/_our-people.scss */
+  /* line 114, ../sass/pages/_our-people.scss */
   .c3xgm-about-page-our-people .c3xgm-about-separator + .number {
     font-size: 41px;
     font-size: 13.697113vw;
@@ -3620,70 +3582,70 @@ h4.c3xgm-about-h {
   }
 }
 @media (min-width: 830px) {
-  /* line 113, ../sass/pages/_our-people.scss */
+  /* line 114, ../sass/pages/_our-people.scss */
   .c3xgm-about-page-our-people .c3xgm-about-separator + .number {
     width: 130px;
   }
 }
 @media (min-width: 906px) {
-  /* line 113, ../sass/pages/_our-people.scss */
+  /* line 114, ../sass/pages/_our-people.scss */
   .c3xgm-about-page-our-people .c3xgm-about-separator + .number {
     font-size: 124px;
   }
 }
 @media (min-width: 768px) {
-  /* line 123, ../sass/pages/_our-people.scss */
+  /* line 124, ../sass/pages/_our-people.scss */
   .c3xgm-about-page-our-people .c3xgm-about-timezones {
     margin-bottom: 3.5em;
   }
 }
-/* line 125, ../sass/pages/_our-people.scss */
+/* line 126, ../sass/pages/_our-people.scss */
 .c3xgm-about-page-our-people .c3xgm-about-timezones .c3xgm-about-block-image {
   padding-top: 2.5%;
 }
-/* line 127, ../sass/pages/_our-people.scss */
+/* line 128, ../sass/pages/_our-people.scss */
 .c3xgm-about-page-our-people .c3xgm-about-timezones .c3xgm-about-block-image img {
   width: 76.672%;
   max-width: 333px;
 }
-/* line 133, ../sass/pages/_our-people.scss */
+/* line 134, ../sass/pages/_our-people.scss */
 .c3xgm-about-page-our-people .c3xgm-about-continents .c3xgm-about-block-image img {
   width: 88.672%;
   max-width: 385px;
 }
 @media (min-width: 768px) {
-  /* line 136, ../sass/pages/_our-people.scss */
+  /* line 137, ../sass/pages/_our-people.scss */
   .c3xgm-about-page-our-people .c3xgm-about-continents .c3xgm-about-blockquote {
     margin-left: -15%;
   }
-  /* line 137, ../sass/pages/_our-people.scss */
+  /* line 138, ../sass/pages/_our-people.scss */
   .c3xgm-about-page-our-people .c3xgm-about-continents .c3xgm-about-block-image img {
     float: left;
   }
 }
-/* line 143, ../sass/pages/_our-people.scss */
+/* line 144, ../sass/pages/_our-people.scss */
 .c3xgm-about-page-our-people .c3xgm-about-languages .c3xgm-about-blockquote {
   margin-bottom: 0;
 }
-/* line 144, ../sass/pages/_our-people.scss */
+/* line 145, ../sass/pages/_our-people.scss */
 .c3xgm-about-page-our-people .c3xgm-about-languages .c3xgm-about-block-image img {
   width: 78.110599%;
   max-width: 339px;
 }
-/* line 146, ../sass/pages/_our-people.scss */
+/* line 147, ../sass/pages/_our-people.scss */
 .c3xgm-about-page-our-people .c3xgm-about-timezones,
 .c3xgm-about-page-our-people .c3xgm-about-continents,
 .c3xgm-about-page-our-people .c3xgm-about-languages {
   text-align: center;
 }
-/* line 150, ../sass/pages/_our-people.scss */
+/* line 151, ../sass/pages/_our-people.scss */
 .c3xgm-about-page-our-people .c3xgm-about-timezones > p,
 .c3xgm-about-page-our-people .c3xgm-about-continents > p,
 .c3xgm-about-page-our-people .c3xgm-about-languages > p {
   display: inline-block;
 }
 @media (min-width: 768px) {
-  /* line 153, ../sass/pages/_our-people.scss */
+  /* line 154, ../sass/pages/_our-people.scss */
   .c3xgm-about-page-our-people .c3xgm-about-headquarters,
   .c3xgm-about-page-our-people .c3xgm-about-timezones,
   .c3xgm-about-page-our-people .c3xgm-about-continents,
@@ -3691,11 +3653,11 @@ h4.c3xgm-about-h {
     margin-left: 0;
   }
 }
-/* line 161, ../sass/pages/_our-people.scss */
+/* line 162, ../sass/pages/_our-people.scss */
 .c3xgm-about-page-our-people .c3xgm-about-headquarters {
   text-align: center;
 }
-/* line 163, ../sass/pages/_our-people.scss */
+/* line 164, ../sass/pages/_our-people.scss */
 .c3xgm-about-page-our-people .c3xgm-about-headquarters .c3xgm-about-blockquote {
   display: inline-block;
   margin-top: 1.0625em;
@@ -3703,7 +3665,7 @@ h4.c3xgm-about-h {
   width: auto;
   position: relative;
 }
-/* line 170, ../sass/pages/_our-people.scss */
+/* line 171, ../sass/pages/_our-people.scss */
 .c3xgm-about-page-our-people .c3xgm-about-headquarters .c3xgm-about-blockquote:before {
   content: "";
   display: block;
@@ -3718,34 +3680,14 @@ h4.c3xgm-about-h {
   -o-transform-origin: top right;
   -ms-transform-origin: top right;
   transform-origin: top right;
-  -webkit-animation-fill-mode: both;
-  -moz-animation-fill-mode: both;
-  -o-animation-fill-mode: both;
-  -ms-animation-fill-mode: both;
-  animation-fill-mode: both;
-  -webkit-animation-name: growBorder;
-  -moz-animation-name: growBorder;
-  -o-animation-name: growBorder;
-  -ms-animation-name: growBorder;
-  animation-name: growBorder;
-  -webkit-animation-delay: 1800ms;
-  -moz-animation-delay: 1800ms;
-  -o-animation-delay: 1800ms;
-  -ms-animation-delay: 1800ms;
-  animation-delay: 1800ms;
-  -webkit-animation-duration: 600ms;
-  -moz-animation-duration: 600ms;
-  -o-animation-duration: 600ms;
-  -ms-animation-duration: 600ms;
-  animation-duration: 600ms;
 }
 @media (min-width: 768px) {
-  /* line 170, ../sass/pages/_our-people.scss */
+  /* line 171, ../sass/pages/_our-people.scss */
   .c3xgm-about-page-our-people .c3xgm-about-headquarters .c3xgm-about-blockquote:before {
     width: 0.2rem;
   }
 }
-/* line 184, ../sass/pages/_our-people.scss */
+/* line 181, ../sass/pages/_our-people.scss */
 .c3xgm-about-page-our-people .c3xgm-about-headquarters .c3xgm-about-blockquote:after {
   content: "";
   display: block;
@@ -3760,46 +3702,26 @@ h4.c3xgm-about-h {
   -o-transform-origin: top right;
   -ms-transform-origin: top right;
   transform-origin: top right;
-  -webkit-animation-fill-mode: both;
-  -moz-animation-fill-mode: both;
-  -o-animation-fill-mode: both;
-  -ms-animation-fill-mode: both;
-  animation-fill-mode: both;
-  -webkit-animation-name: growBorder;
-  -moz-animation-name: growBorder;
-  -o-animation-name: growBorder;
-  -ms-animation-name: growBorder;
-  animation-name: growBorder;
-  -webkit-animation-delay: 2400ms;
-  -moz-animation-delay: 2400ms;
-  -o-animation-delay: 2400ms;
-  -ms-animation-delay: 2400ms;
-  animation-delay: 2400ms;
-  -webkit-animation-duration: 600ms;
-  -moz-animation-duration: 600ms;
-  -o-animation-duration: 600ms;
-  -ms-animation-duration: 600ms;
-  animation-duration: 600ms;
 }
 @media (min-width: 768px) {
-  /* line 184, ../sass/pages/_our-people.scss */
+  /* line 181, ../sass/pages/_our-people.scss */
   .c3xgm-about-page-our-people .c3xgm-about-headquarters .c3xgm-about-blockquote:after {
     width: 0.2rem;
   }
 }
 @media (min-width: 768px) {
-  /* line 163, ../sass/pages/_our-people.scss */
+  /* line 164, ../sass/pages/_our-people.scss */
   .c3xgm-about-page-our-people .c3xgm-about-headquarters .c3xgm-about-blockquote {
     float: left;
     margin-left: 9px;
   }
 }
-/* line 200, ../sass/pages/_our-people.scss */
+/* line 193, ../sass/pages/_our-people.scss */
 .c3xgm-about-page-our-people .c3xgm-about-headquarters .c3xgm-about-blockquote .c3xgm-about-gray {
   padding-left: .35em;
   display: block;
 }
-/* line 202, ../sass/pages/_our-people.scss */
+/* line 195, ../sass/pages/_our-people.scss */
 .c3xgm-about-page-our-people .c3xgm-about-headquarters .c3xgm-about-blockquote span > span {
   color: #6086C4;
   line-height: .86em;
@@ -3807,60 +3729,60 @@ h4.c3xgm-about-h {
   font-size: 22.604232vw;
 }
 @media (min-width: 768px) {
-  /* line 202, ../sass/pages/_our-people.scss */
+  /* line 195, ../sass/pages/_our-people.scss */
   .c3xgm-about-page-our-people .c3xgm-about-headquarters .c3xgm-about-blockquote span > span {
     font-size: 34px;
     font-size: 10.604232vw;
   }
 }
 @media (min-width: 906px) {
-  /* line 202, ../sass/pages/_our-people.scss */
+  /* line 195, ../sass/pages/_our-people.scss */
   .c3xgm-about-page-our-people .c3xgm-about-headquarters .c3xgm-about-blockquote span > span {
     font-size: 93px;
   }
 }
-/* line 208, ../sass/pages/_our-people.scss */
+/* line 201, ../sass/pages/_our-people.scss */
 .c3xgm-about-page-our-people .c3xgm-about-headquarters .c3xgm-about-blockquote > span:first-of-type {
   font-size: 25.577px;
   font-size: 8vw;
 }
 @media (min-width: 768px) {
-  /* line 208, ../sass/pages/_our-people.scss */
+  /* line 201, ../sass/pages/_our-people.scss */
   .c3xgm-about-page-our-people .c3xgm-about-headquarters .c3xgm-about-blockquote > span:first-of-type {
     font-size: 12px;
     font-size: 3.75vw;
   }
 }
 @media (min-width: 906px) {
-  /* line 208, ../sass/pages/_our-people.scss */
+  /* line 201, ../sass/pages/_our-people.scss */
   .c3xgm-about-page-our-people .c3xgm-about-headquarters .c3xgm-about-blockquote > span:first-of-type {
     font-size: 34px;
   }
 }
-/* line 214, ../sass/pages/_our-people.scss */
+/* line 207, ../sass/pages/_our-people.scss */
 .c3xgm-about-page-our-people .c3xgm-about-headquarters .c3xgm-about-blockquote > span:last-of-type {
   font-size: 27.5px;
   font-size: 8.71142095vw;
 }
 @media (min-width: 768px) {
-  /* line 214, ../sass/pages/_our-people.scss */
+  /* line 207, ../sass/pages/_our-people.scss */
   .c3xgm-about-page-our-people .c3xgm-about-headquarters .c3xgm-about-blockquote > span:last-of-type {
     font-size: 13px;
     font-size: 4.087vw;
   }
 }
 @media (min-width: 906px) {
-  /* line 214, ../sass/pages/_our-people.scss */
+  /* line 207, ../sass/pages/_our-people.scss */
   .c3xgm-about-page-our-people .c3xgm-about-headquarters .c3xgm-about-blockquote > span:last-of-type {
     font-size: 37px;
   }
 }
 
-/* line 226, ../sass/pages/_our-people.scss */
+/* line 219, ../sass/pages/_our-people.scss */
 .svg .c3xgm-about-page-our-people .c3xgm-about-block.c3xgm-about-employees .c3xgm-about-girl {
   background-image: url("../img/pages/people/girl.svg");
 }
-/* line 227, ../sass/pages/_our-people.scss */
+/* line 220, ../sass/pages/_our-people.scss */
 .svg .c3xgm-about-page-our-people .c3xgm-about-block.c3xgm-about-employees .c3xgm-about-boy {
   background-image: url("../img/pages/people/boy.svg");
 }
@@ -9516,7 +9438,8 @@ body {
   animation-duration: 600ms;
 }
 /* line 42, ../sass/animations/_element-in-view.scss */
-.element-in-view .c3xgm-about-blockquote > span.c3xgm-about-light-blue.number {
+.element-in-view .c3xgm-about-blockquote > span.c3xgm-about-light-blue.number,
+.element-in-view .c3xgm-about-blockquote > span.c3xgm-about-light-blue.number span {
   -webkit-animation-fill-mode: both;
   -moz-animation-fill-mode: both;
   -o-animation-fill-mode: both;
@@ -9538,69 +9461,7 @@ body {
   -ms-animation-duration: 800ms;
   animation-duration: 800ms;
 }
-/* line 49, ../sass/animations/_element-in-view.scss */
-.element-in-view .c3xgm-about-blockquote > span.c3xgm-about-dark-blue:first-child {
-  -webkit-animation-fill-mode: both;
-  -moz-animation-fill-mode: both;
-  -o-animation-fill-mode: both;
-  -ms-animation-fill-mode: both;
-  animation-fill-mode: both;
-  -webkit-animation-name: fadeInLeftMega;
-  -moz-animation-name: fadeInLeftMega;
-  -o-animation-name: fadeInLeftMega;
-  -ms-animation-name: fadeInLeftMega;
-  animation-name: fadeInLeftMega;
-  -webkit-animation-delay: 100ms;
-  -moz-animation-delay: 100ms;
-  -o-animation-delay: 100ms;
-  -ms-animation-delay: 100ms;
-  animation-delay: 100ms;
-  -webkit-animation-duration: 400ms;
-  -moz-animation-duration: 400ms;
-  -o-animation-duration: 400ms;
-  -ms-animation-duration: 400ms;
-  animation-duration: 400ms;
-}
-/* line 56, ../sass/animations/_element-in-view.scss */
-.element-in-view .c3xgm-about-blockquote span.c3xgm-about-light-blue {
-  -webkit-animation-fill-mode: both;
-  -moz-animation-fill-mode: both;
-  -o-animation-fill-mode: both;
-  -ms-animation-fill-mode: both;
-  animation-fill-mode: both;
-  -webkit-animation-name: fadeInLeftMega;
-  -moz-animation-name: fadeInLeftMega;
-  -o-animation-name: fadeInLeftMega;
-  -ms-animation-name: fadeInLeftMega;
-  animation-name: fadeInLeftMega;
-  -webkit-animation-delay: 400ms;
-  -moz-animation-delay: 400ms;
-  -o-animation-delay: 400ms;
-  -ms-animation-delay: 400ms;
-  animation-delay: 400ms;
-  -webkit-animation-duration: 400ms;
-  -moz-animation-duration: 400ms;
-  -o-animation-duration: 400ms;
-  -ms-animation-duration: 400ms;
-  animation-duration: 400ms;
-}
-/* line 82, ../sass/animations/_element-in-view.scss */
-.element-in-view .c3xgm-about-blockquote > span.fadeInLeftMega {
-  -webkit-animation-name: fadeInLeft;
-  -moz-animation-name: fadeInLeft;
-  -o-animation-name: fadeInLeft;
-  -ms-animation-name: fadeInLeft;
-  animation-name: fadeInLeft;
-}
-/* line 86, ../sass/animations/_element-in-view.scss */
-.element-in-view .c3xgm-about-blockquote > span.fadeInRightMega {
-  -webkit-animation-name: fadeInRight;
-  -moz-animation-name: fadeInRight;
-  -o-animation-name: fadeInRight;
-  -ms-animation-name: fadeInRight;
-  animation-name: fadeInRight;
-}
-/* line 97, ../sass/animations/_element-in-view.scss */
+/* line 79, ../sass/animations/_element-in-view.scss */
 .element-in-view .c3xgm-about-block-image img {
   -webkit-animation-fill-mode: both;
   -moz-animation-fill-mode: both;
@@ -9623,7 +9484,7 @@ body {
   -ms-animation-duration: 400ms;
   animation-duration: 400ms;
 }
-/* line 105, ../sass/animations/_element-in-view.scss */
+/* line 87, ../sass/animations/_element-in-view.scss */
 .element-in-view .c3xgm-about-block-image img.fadeInLeftMega {
   -webkit-animation-name: fadeIn;
   -moz-animation-name: fadeIn;
@@ -9631,7 +9492,7 @@ body {
   -ms-animation-name: fadeIn;
   animation-name: fadeIn;
 }
-/* line 110, ../sass/animations/_element-in-view.scss */
+/* line 92, ../sass/animations/_element-in-view.scss */
 .element-in-view .c3xgm-about-block-image img.fadeInRightMega {
   -webkit-animation-name: fadeIn;
   -moz-animation-name: fadeIn;
@@ -9640,7 +9501,141 @@ body {
   animation-name: fadeIn;
 }
 
-/* line 120, ../sass/animations/_element-in-view.scss */
+/* line 230, ../sass/components/_mixins.scss */
+.c3xgm-about-headquarters.element-in-view .c3xgm-about-blockquote:before {
+  -webkit-transform-origin: top right;
+  -moz-transform-origin: top right;
+  -o-transform-origin: top right;
+  -ms-transform-origin: top right;
+  transform-origin: top right;
+  -webkit-animation-fill-mode: both;
+  -moz-animation-fill-mode: both;
+  -o-animation-fill-mode: both;
+  -ms-animation-fill-mode: both;
+  animation-fill-mode: both;
+  -webkit-animation-name: growBorder;
+  -moz-animation-name: growBorder;
+  -o-animation-name: growBorder;
+  -ms-animation-name: growBorder;
+  animation-name: growBorder;
+  -webkit-animation-delay: 400ms;
+  -moz-animation-delay: 400ms;
+  -o-animation-delay: 400ms;
+  -ms-animation-delay: 400ms;
+  animation-delay: 400ms;
+  -webkit-animation-duration: 600ms;
+  -moz-animation-duration: 600ms;
+  -o-animation-duration: 600ms;
+  -ms-animation-duration: 600ms;
+  animation-duration: 600ms;
+}
+/* line 238, ../sass/components/_mixins.scss */
+.c3xgm-about-headquarters.element-in-view .c3xgm-about-blockquote:after {
+  -webkit-transform-origin: top right;
+  -moz-transform-origin: top right;
+  -o-transform-origin: top right;
+  -ms-transform-origin: top right;
+  transform-origin: top right;
+  -webkit-animation-fill-mode: both;
+  -moz-animation-fill-mode: both;
+  -o-animation-fill-mode: both;
+  -ms-animation-fill-mode: both;
+  animation-fill-mode: both;
+  -webkit-animation-name: growBorder;
+  -moz-animation-name: growBorder;
+  -o-animation-name: growBorder;
+  -ms-animation-name: growBorder;
+  animation-name: growBorder;
+  -webkit-animation-delay: 1000ms;
+  -moz-animation-delay: 1000ms;
+  -o-animation-delay: 1000ms;
+  -ms-animation-delay: 1000ms;
+  animation-delay: 1000ms;
+  -webkit-animation-duration: 600ms;
+  -moz-animation-duration: 600ms;
+  -o-animation-duration: 600ms;
+  -ms-animation-duration: 600ms;
+  animation-duration: 600ms;
+}
+/* line 113, ../sass/animations/_element-in-view.scss */
+.c3xgm-about-headquarters.element-in-view .c3xgm-about-blockquote:before, .c3xgm-about-headquarters.element-in-view .c3xgm-about-blockquote:after {
+  -webkit-animation-duration: 300ms;
+  -moz-animation-duration: 300ms;
+  -o-animation-duration: 300ms;
+  -ms-animation-duration: 300ms;
+  animation-duration: 300ms;
+}
+/* line 118, ../sass/animations/_element-in-view.scss */
+.c3xgm-about-headquarters.element-in-view .c3xgm-about-blockquote > span:first-child {
+  -webkit-animation-fill-mode: both;
+  -moz-animation-fill-mode: both;
+  -o-animation-fill-mode: both;
+  -ms-animation-fill-mode: both;
+  animation-fill-mode: both;
+  -webkit-animation-name: fadeIn;
+  -moz-animation-name: fadeIn;
+  -o-animation-name: fadeIn;
+  -ms-animation-name: fadeIn;
+  animation-name: fadeIn;
+  -webkit-animation-delay: 400ms;
+  -moz-animation-delay: 400ms;
+  -o-animation-delay: 400ms;
+  -ms-animation-delay: 400ms;
+  animation-delay: 400ms;
+  -webkit-animation-duration: 500ms;
+  -moz-animation-duration: 500ms;
+  -o-animation-duration: 500ms;
+  -ms-animation-duration: 500ms;
+  animation-duration: 500ms;
+}
+/* line 124, ../sass/animations/_element-in-view.scss */
+.c3xgm-about-headquarters.element-in-view .c3xgm-about-blockquote > span:nth-child(2) {
+  -webkit-animation-fill-mode: both;
+  -moz-animation-fill-mode: both;
+  -o-animation-fill-mode: both;
+  -ms-animation-fill-mode: both;
+  animation-fill-mode: both;
+  -webkit-animation-name: fadeInLeftBig;
+  -moz-animation-name: fadeInLeftBig;
+  -o-animation-name: fadeInLeftBig;
+  -ms-animation-name: fadeInLeftBig;
+  animation-name: fadeInLeftBig;
+  -webkit-animation-delay: 1100ms;
+  -moz-animation-delay: 1100ms;
+  -o-animation-delay: 1100ms;
+  -ms-animation-delay: 1100ms;
+  animation-delay: 1100ms;
+  -webkit-animation-duration: 500ms;
+  -moz-animation-duration: 500ms;
+  -o-animation-duration: 500ms;
+  -ms-animation-duration: 500ms;
+  animation-duration: 500ms;
+}
+/* line 130, ../sass/animations/_element-in-view.scss */
+.c3xgm-about-headquarters.element-in-view .c3xgm-about-blockquote > span:nth-child(3) {
+  -webkit-animation-fill-mode: both;
+  -moz-animation-fill-mode: both;
+  -o-animation-fill-mode: both;
+  -ms-animation-fill-mode: both;
+  animation-fill-mode: both;
+  -webkit-animation-name: fadeInLeftBig;
+  -moz-animation-name: fadeInLeftBig;
+  -o-animation-name: fadeInLeftBig;
+  -ms-animation-name: fadeInLeftBig;
+  animation-name: fadeInLeftBig;
+  -webkit-animation-delay: 1400ms;
+  -moz-animation-delay: 1400ms;
+  -o-animation-delay: 1400ms;
+  -ms-animation-delay: 1400ms;
+  animation-delay: 1400ms;
+  -webkit-animation-duration: 500ms;
+  -moz-animation-duration: 500ms;
+  -o-animation-duration: 500ms;
+  -ms-animation-duration: 500ms;
+  animation-duration: 500ms;
+}
+
+/* line 144, ../sass/animations/_element-in-view.scss */
 .c3xgm-about-china .c3xgm-about-block-image img {
   -webkit-animation-fill-mode: none;
   -moz-animation-fill-mode: none;
@@ -9678,7 +9673,7 @@ body {
   -ms-transition: transform 900ms;
   transition: transform 900ms;
 }
-/* line 131, ../sass/animations/_element-in-view.scss */
+/* line 155, ../sass/animations/_element-in-view.scss */
 .c3xgm-about-china.element-in-view .c3xgm-about-block-image img {
   -webkit-animation-fill-mode: none;
   -moz-animation-fill-mode: none;
@@ -9706,7 +9701,7 @@ body {
   -ms-transform: scale(1, 1);
   transform: scale(1, 1);
 }
-/* line 137, ../sass/animations/_element-in-view.scss */
+/* line 161, ../sass/animations/_element-in-view.scss */
 .c3xgm-about-china.element-in-view .c3xgm-about-blockquote > span:first-child {
   -webkit-animation-fill-mode: both;
   -moz-animation-fill-mode: both;
@@ -9729,7 +9724,7 @@ body {
   -ms-animation-duration: 600ms;
   animation-duration: 600ms;
 }
-/* line 143, ../sass/animations/_element-in-view.scss */
+/* line 167, ../sass/animations/_element-in-view.scss */
 .c3xgm-about-china.element-in-view .c3xgm-about-blockquote > span:nth-child(2),
 .c3xgm-about-china.element-in-view .c3xgm-about-blockquote > span:nth-child(3) {
   -webkit-animation-fill-mode: both;
@@ -9753,7 +9748,7 @@ body {
   -ms-animation-duration: 600ms;
   animation-duration: 600ms;
 }
-/* line 150, ../sass/animations/_element-in-view.scss */
+/* line 174, ../sass/animations/_element-in-view.scss */
 .c3xgm-about-china.element-in-view .c3xgm-about-blockquote > span:nth-child(4) {
   -webkit-animation-fill-mode: both;
   -moz-animation-fill-mode: both;
@@ -9777,7 +9772,7 @@ body {
   animation-duration: 600ms;
 }
 
-/* line 164, ../sass/animations/_element-in-view.scss */
+/* line 188, ../sass/animations/_element-in-view.scss */
 .c3xgm-about-cadillac-award .c3xgm-about-block-image,
 .c3xgm-about-chevrolet-award .c3xgm-about-block-image {
   opacity: 0;
@@ -9794,7 +9789,7 @@ body {
   transition: all 900ms;
 }
 @media (min-width: 768px) {
-  /* line 164, ../sass/animations/_element-in-view.scss */
+  /* line 188, ../sass/animations/_element-in-view.scss */
   .c3xgm-about-cadillac-award .c3xgm-about-block-image,
   .c3xgm-about-chevrolet-award .c3xgm-about-block-image {
     -webkit-transform: translate3d(-300%, 0, 0);
@@ -9804,7 +9799,7 @@ body {
     transform: translate3d(-300%, 0, 0);
   }
 }
-/* line 178, ../sass/animations/_element-in-view.scss */
+/* line 202, ../sass/animations/_element-in-view.scss */
 .c3xgm-about-cadillac-award.element-in-view .c3xgm-about-block-image,
 .c3xgm-about-chevrolet-award.element-in-view .c3xgm-about-block-image {
   opacity: 1;
@@ -9814,7 +9809,7 @@ body {
   -ms-transform: translate3d(0, 0, 0);
   transform: translate3d(0, 0, 0);
 }
-/* line 181, ../sass/animations/_element-in-view.scss */
+/* line 205, ../sass/animations/_element-in-view.scss */
 .c3xgm-about-cadillac-award.element-in-view .c3xgm-about-block-image img,
 .c3xgm-about-chevrolet-award.element-in-view .c3xgm-about-block-image img {
   -webkit-animation-fill-mode: none;
@@ -9838,7 +9833,7 @@ body {
   -ms-animation-duration: 0;
   animation-duration: 0;
 }
-/* line 188, ../sass/animations/_element-in-view.scss */
+/* line 212, ../sass/animations/_element-in-view.scss */
 .c3xgm-about-cadillac-award.element-in-view .c3xgm-about-blockquote > span:first-child,
 .c3xgm-about-chevrolet-award.element-in-view .c3xgm-about-blockquote > span:first-child {
   -webkit-animation-fill-mode: both;
@@ -9862,7 +9857,7 @@ body {
   -ms-animation-duration: 600ms;
   animation-duration: 600ms;
 }
-/* line 194, ../sass/animations/_element-in-view.scss */
+/* line 218, ../sass/animations/_element-in-view.scss */
 .c3xgm-about-cadillac-award.element-in-view .c3xgm-about-blockquote > span:nth-child(2),
 .c3xgm-about-chevrolet-award.element-in-view .c3xgm-about-blockquote > span:nth-child(2) {
   -webkit-animation-fill-mode: both;
@@ -9886,7 +9881,7 @@ body {
   -ms-animation-duration: 600ms;
   animation-duration: 600ms;
 }
-/* line 200, ../sass/animations/_element-in-view.scss */
+/* line 224, ../sass/animations/_element-in-view.scss */
 .c3xgm-about-cadillac-award.element-in-view .c3xgm-about-blockquote > span:nth-child(3),
 .c3xgm-about-chevrolet-award.element-in-view .c3xgm-about-blockquote > span:nth-child(3) {
   -webkit-animation-fill-mode: both;
@@ -9911,25 +9906,19 @@ body {
   animation-duration: 600ms;
 }
 
-/* line 215, ../sass/animations/_element-in-view.scss */
-.c3xgm-about-global .c3xgm-about-block-image > div {
-  -webkit-transform-origin: 50% 50%;
-  -moz-transform-origin: 50% 50%;
-  -o-transform-origin: 50% 50%;
-  -ms-transform-origin: 50% 50%;
-  transform-origin: 50% 50%;
-  -webkit-transform: scale(0, 0);
-  -moz-transform: scale(0, 0);
-  -o-transform: scale(0, 0);
-  -ms-transform: scale(0, 0);
-  transform: scale(0, 0);
-  -webkit-transition: transform 1200ms;
-  -moz-transition: transform 1200ms;
-  -o-transition: transform 1200ms;
-  -ms-transition: transform 1200ms;
-  transition: transform 1200ms;
+/* line 243, ../sass/animations/_element-in-view.scss */
+.c3xgm-about-global .c3xgm-about-block-image {
+  overflow: hidden;
 }
-/* line 220, ../sass/animations/_element-in-view.scss */
+/* line 245, ../sass/animations/_element-in-view.scss */
+.c3xgm-about-global .c3xgm-about-block-image > div {
+  -webkit-transform-origin: center center;
+  -moz-transform-origin: center center;
+  -o-transform-origin: center center;
+  -ms-transform-origin: center center;
+  transform-origin: center center;
+}
+/* line 248, ../sass/animations/_element-in-view.scss */
 .c3xgm-about-global .c3xgm-about-block-image > div img {
   -webkit-animation-fill-mode: none;
   -moz-animation-fill-mode: none;
@@ -9953,7 +9942,7 @@ body {
   animation-duration: 0;
 }
 @media (min-width: 768px) {
-  /* line 220, ../sass/animations/_element-in-view.scss */
+  /* line 248, ../sass/animations/_element-in-view.scss */
   .c3xgm-about-global .c3xgm-about-block-image > div img {
     -webkit-transform: translate3d(-50%, -4%, 0);
     -moz-transform: translate3d(-50%, -4%, 0);
@@ -9962,36 +9951,28 @@ body {
     transform: translate3d(-50%, -4%, 0);
   }
 }
-/* line 233, ../sass/animations/_element-in-view.scss */
+/* line 261, ../sass/animations/_element-in-view.scss */
 .c3xgm-about-global.element-in-view .c3xgm-about-block-image > div {
-  -webkit-transform: scale(1, 1);
-  -moz-transform: scale(1, 1);
-  -o-transform: scale(1, 1);
-  -ms-transform: scale(1, 1);
-  transform: scale(1, 1);
-}
-/* line 236, ../sass/animations/_element-in-view.scss */
-.c3xgm-about-global.element-in-view .c3xgm-about-block-image > div img {
-  -webkit-animation-fill-mode: none;
-  -moz-animation-fill-mode: none;
-  -o-animation-fill-mode: none;
-  -ms-animation-fill-mode: none;
-  animation-fill-mode: none;
-  -webkit-animation-name: none;
-  -moz-animation-name: none;
-  -o-animation-name: none;
-  -ms-animation-name: none;
-  animation-name: none;
-  -webkit-animation-delay: 0;
-  -moz-animation-delay: 0;
-  -o-animation-delay: 0;
-  -ms-animation-delay: 0;
-  animation-delay: 0;
-  -webkit-animation-duration: 0;
-  -moz-animation-duration: 0;
-  -o-animation-duration: 0;
-  -ms-animation-duration: 0;
-  animation-duration: 0;
+  -webkit-animation-fill-mode: both;
+  -moz-animation-fill-mode: both;
+  -o-animation-fill-mode: both;
+  -ms-animation-fill-mode: both;
+  animation-fill-mode: both;
+  -webkit-animation-name: fadeInRightMega;
+  -moz-animation-name: fadeInRightMega;
+  -o-animation-name: fadeInRightMega;
+  -ms-animation-name: fadeInRightMega;
+  animation-name: fadeInRightMega;
+  -webkit-animation-delay: 1400ms;
+  -moz-animation-delay: 1400ms;
+  -o-animation-delay: 1400ms;
+  -ms-animation-delay: 1400ms;
+  animation-delay: 1400ms;
+  -webkit-animation-duration: 700ms;
+  -moz-animation-duration: 700ms;
+  -o-animation-duration: 700ms;
+  -ms-animation-duration: 700ms;
+  animation-duration: 700ms;
 }
 /* line 230, ../sass/components/_mixins.scss */
 .c3xgm-about-global.element-in-view .c3xgm-about-blockquote:before {
@@ -10010,11 +9991,11 @@ body {
   -o-animation-name: growBorder;
   -ms-animation-name: growBorder;
   animation-name: growBorder;
-  -webkit-animation-delay: 600ms;
-  -moz-animation-delay: 600ms;
-  -o-animation-delay: 600ms;
-  -ms-animation-delay: 600ms;
-  animation-delay: 600ms;
+  -webkit-animation-delay: 0ms;
+  -moz-animation-delay: 0ms;
+  -o-animation-delay: 0ms;
+  -ms-animation-delay: 0ms;
+  animation-delay: 0ms;
   -webkit-animation-duration: 600ms;
   -moz-animation-duration: 600ms;
   -o-animation-duration: 600ms;
@@ -10038,18 +10019,18 @@ body {
   -o-animation-name: growBorder;
   -ms-animation-name: growBorder;
   animation-name: growBorder;
-  -webkit-animation-delay: 1200ms;
-  -moz-animation-delay: 1200ms;
-  -o-animation-delay: 1200ms;
-  -ms-animation-delay: 1200ms;
-  animation-delay: 1200ms;
+  -webkit-animation-delay: 600ms;
+  -moz-animation-delay: 600ms;
+  -o-animation-delay: 600ms;
+  -ms-animation-delay: 600ms;
+  animation-delay: 600ms;
   -webkit-animation-duration: 600ms;
   -moz-animation-duration: 600ms;
   -o-animation-duration: 600ms;
   -ms-animation-duration: 600ms;
   animation-duration: 600ms;
 }
-/* line 246, ../sass/animations/_element-in-view.scss */
+/* line 274, ../sass/animations/_element-in-view.scss */
 .c3xgm-about-global.element-in-view .c3xgm-about-blockquote > span:first-child {
   -webkit-animation-fill-mode: both;
   -moz-animation-fill-mode: both;
@@ -10066,13 +10047,13 @@ body {
   -o-animation-delay: 1400ms;
   -ms-animation-delay: 1400ms;
   animation-delay: 1400ms;
-  -webkit-animation-duration: 600ms;
-  -moz-animation-duration: 600ms;
-  -o-animation-duration: 600ms;
-  -ms-animation-duration: 600ms;
-  animation-duration: 600ms;
+  -webkit-animation-duration: 700ms;
+  -moz-animation-duration: 700ms;
+  -o-animation-duration: 700ms;
+  -ms-animation-duration: 700ms;
+  animation-duration: 700ms;
 }
-/* line 252, ../sass/animations/_element-in-view.scss */
+/* line 280, ../sass/animations/_element-in-view.scss */
 .c3xgm-about-global.element-in-view .c3xgm-about-blockquote > span:nth-child(2) {
   -webkit-animation-fill-mode: both;
   -moz-animation-fill-mode: both;
@@ -10084,18 +10065,18 @@ body {
   -o-animation-name: fadeInLeftMega;
   -ms-animation-name: fadeInLeftMega;
   animation-name: fadeInLeftMega;
-  -webkit-animation-delay: 1650ms;
-  -moz-animation-delay: 1650ms;
-  -o-animation-delay: 1650ms;
-  -ms-animation-delay: 1650ms;
-  animation-delay: 1650ms;
-  -webkit-animation-duration: 600ms;
-  -moz-animation-duration: 600ms;
-  -o-animation-duration: 600ms;
-  -ms-animation-duration: 600ms;
-  animation-duration: 600ms;
+  -webkit-animation-delay: 1700ms;
+  -moz-animation-delay: 1700ms;
+  -o-animation-delay: 1700ms;
+  -ms-animation-delay: 1700ms;
+  animation-delay: 1700ms;
+  -webkit-animation-duration: 700ms;
+  -moz-animation-duration: 700ms;
+  -o-animation-duration: 700ms;
+  -ms-animation-duration: 700ms;
+  animation-duration: 700ms;
 }
-/* line 258, ../sass/animations/_element-in-view.scss */
+/* line 286, ../sass/animations/_element-in-view.scss */
 .c3xgm-about-global.element-in-view .c3xgm-about-blockquote > span:nth-child(3) {
   -webkit-animation-fill-mode: both;
   -moz-animation-fill-mode: both;
@@ -10107,146 +10088,70 @@ body {
   -o-animation-name: fadeInLeftMega;
   -ms-animation-name: fadeInLeftMega;
   animation-name: fadeInLeftMega;
-  -webkit-animation-delay: 1900ms;
-  -moz-animation-delay: 1900ms;
-  -o-animation-delay: 1900ms;
-  -ms-animation-delay: 1900ms;
-  animation-delay: 1900ms;
-  -webkit-animation-duration: 600ms;
-  -moz-animation-duration: 600ms;
-  -o-animation-duration: 600ms;
-  -ms-animation-duration: 600ms;
-  animation-duration: 600ms;
+  -webkit-animation-delay: 2000ms;
+  -moz-animation-delay: 2000ms;
+  -o-animation-delay: 2000ms;
+  -ms-animation-delay: 2000ms;
+  animation-delay: 2000ms;
+  -webkit-animation-duration: 700ms;
+  -moz-animation-duration: 700ms;
+  -o-animation-duration: 700ms;
+  -ms-animation-duration: 700ms;
+  animation-duration: 700ms;
 }
 
+/* line 306, ../sass/animations/_element-in-view.scss */
+.c3xgm-about-seconds.element-in-view .c3xgm-about-block-image {
+  overflow: hidden;
+}
+/* line 309, ../sass/animations/_element-in-view.scss */
+.c3xgm-about-seconds.element-in-view .c3xgm-about-block-image img {
+  -webkit-animation-fill-mode: none;
+  -moz-animation-fill-mode: none;
+  -o-animation-fill-mode: none;
+  -ms-animation-fill-mode: none;
+  animation-fill-mode: none;
+  -webkit-animation-name: none;
+  -moz-animation-name: none;
+  -o-animation-name: none;
+  -ms-animation-name: none;
+  animation-name: none;
+  -webkit-animation-delay: 0;
+  -moz-animation-delay: 0;
+  -o-animation-delay: 0;
+  -ms-animation-delay: 0;
+  animation-delay: 0;
+  -webkit-animation-duration: 0;
+  -moz-animation-duration: 0;
+  -o-animation-duration: 0;
+  -ms-animation-duration: 0;
+  animation-duration: 0;
+}
+/* line 311, ../sass/animations/_element-in-view.scss */
+.c3xgm-about-seconds.element-in-view .c3xgm-about-block-image #clock {
+  -webkit-animation-fill-mode: both;
+  -moz-animation-fill-mode: both;
+  -o-animation-fill-mode: both;
+  -ms-animation-fill-mode: both;
+  animation-fill-mode: both;
+  -webkit-animation-name: fadeInLeft;
+  -moz-animation-name: fadeInLeft;
+  -o-animation-name: fadeInLeft;
+  -ms-animation-name: fadeInLeft;
+  animation-name: fadeInLeft;
+  -webkit-animation-delay: 1600ms;
+  -moz-animation-delay: 1600ms;
+  -o-animation-delay: 1600ms;
+  -ms-animation-delay: 1600ms;
+  animation-delay: 1600ms;
+  -webkit-animation-duration: 700ms;
+  -moz-animation-duration: 700ms;
+  -o-animation-duration: 700ms;
+  -ms-animation-duration: 700ms;
+  animation-duration: 700ms;
+}
 /* line 230, ../sass/components/_mixins.scss */
 .c3xgm-about-seconds.element-in-view .c3xgm-about-blockquote:before {
-  -webkit-transform-origin: top right;
-  -moz-transform-origin: top right;
-  -o-transform-origin: top right;
-  -ms-transform-origin: top right;
-  transform-origin: top right;
-  -webkit-animation-fill-mode: both;
-  -moz-animation-fill-mode: both;
-  -o-animation-fill-mode: both;
-  -ms-animation-fill-mode: both;
-  animation-fill-mode: both;
-  -webkit-animation-name: growBorder;
-  -moz-animation-name: growBorder;
-  -o-animation-name: growBorder;
-  -ms-animation-name: growBorder;
-  animation-name: growBorder;
-  -webkit-animation-delay: 600ms;
-  -moz-animation-delay: 600ms;
-  -o-animation-delay: 600ms;
-  -ms-animation-delay: 600ms;
-  animation-delay: 600ms;
-  -webkit-animation-duration: 600ms;
-  -moz-animation-duration: 600ms;
-  -o-animation-duration: 600ms;
-  -ms-animation-duration: 600ms;
-  animation-duration: 600ms;
-}
-/* line 238, ../sass/components/_mixins.scss */
-.c3xgm-about-seconds.element-in-view .c3xgm-about-blockquote:after {
-  -webkit-transform-origin: top right;
-  -moz-transform-origin: top right;
-  -o-transform-origin: top right;
-  -ms-transform-origin: top right;
-  transform-origin: top right;
-  -webkit-animation-fill-mode: both;
-  -moz-animation-fill-mode: both;
-  -o-animation-fill-mode: both;
-  -ms-animation-fill-mode: both;
-  animation-fill-mode: both;
-  -webkit-animation-name: growBorder;
-  -moz-animation-name: growBorder;
-  -o-animation-name: growBorder;
-  -ms-animation-name: growBorder;
-  animation-name: growBorder;
-  -webkit-animation-delay: 1200ms;
-  -moz-animation-delay: 1200ms;
-  -o-animation-delay: 1200ms;
-  -ms-animation-delay: 1200ms;
-  animation-delay: 1200ms;
-  -webkit-animation-duration: 600ms;
-  -moz-animation-duration: 600ms;
-  -o-animation-duration: 600ms;
-  -ms-animation-duration: 600ms;
-  animation-duration: 600ms;
-}
-/* line 289, ../sass/animations/_element-in-view.scss */
-.c3xgm-about-seconds.element-in-view .c3xgm-about-blockquote > span:first-child {
-  -webkit-animation-fill-mode: both;
-  -moz-animation-fill-mode: both;
-  -o-animation-fill-mode: both;
-  -ms-animation-fill-mode: both;
-  animation-fill-mode: both;
-  -webkit-animation-name: fadeInRightMega;
-  -moz-animation-name: fadeInRightMega;
-  -o-animation-name: fadeInRightMega;
-  -ms-animation-name: fadeInRightMega;
-  animation-name: fadeInRightMega;
-  -webkit-animation-delay: 1700ms;
-  -moz-animation-delay: 1700ms;
-  -o-animation-delay: 1700ms;
-  -ms-animation-delay: 1700ms;
-  animation-delay: 1700ms;
-  -webkit-animation-duration: 600ms;
-  -moz-animation-duration: 600ms;
-  -o-animation-duration: 600ms;
-  -ms-animation-duration: 600ms;
-  animation-duration: 600ms;
-}
-/* line 295, ../sass/animations/_element-in-view.scss */
-.c3xgm-about-seconds.element-in-view .c3xgm-about-blockquote > span:nth-child(2) {
-  -webkit-animation-fill-mode: both;
-  -moz-animation-fill-mode: both;
-  -o-animation-fill-mode: both;
-  -ms-animation-fill-mode: both;
-  animation-fill-mode: both;
-  -webkit-animation-name: fadeInRightMega;
-  -moz-animation-name: fadeInRightMega;
-  -o-animation-name: fadeInRightMega;
-  -ms-animation-name: fadeInRightMega;
-  animation-name: fadeInRightMega;
-  -webkit-animation-delay: 1950ms;
-  -moz-animation-delay: 1950ms;
-  -o-animation-delay: 1950ms;
-  -ms-animation-delay: 1950ms;
-  animation-delay: 1950ms;
-  -webkit-animation-duration: 600ms;
-  -moz-animation-duration: 600ms;
-  -o-animation-duration: 600ms;
-  -ms-animation-duration: 600ms;
-  animation-duration: 600ms;
-}
-/* line 301, ../sass/animations/_element-in-view.scss */
-.c3xgm-about-seconds.element-in-view .c3xgm-about-blockquote > span:nth-child(3) {
-  -webkit-animation-fill-mode: both;
-  -moz-animation-fill-mode: both;
-  -o-animation-fill-mode: both;
-  -ms-animation-fill-mode: both;
-  animation-fill-mode: both;
-  -webkit-animation-name: fadeInRightMega;
-  -moz-animation-name: fadeInRightMega;
-  -o-animation-name: fadeInRightMega;
-  -ms-animation-name: fadeInRightMega;
-  animation-name: fadeInRightMega;
-  -webkit-animation-delay: 2200ms;
-  -moz-animation-delay: 2200ms;
-  -o-animation-delay: 2200ms;
-  -ms-animation-delay: 2200ms;
-  animation-delay: 2200ms;
-  -webkit-animation-duration: 600ms;
-  -moz-animation-duration: 600ms;
-  -o-animation-duration: 600ms;
-  -ms-animation-duration: 600ms;
-  animation-duration: 600ms;
-}
-
-/* line 230, ../sass/components/_mixins.scss */
-.c3xgm-about-dealers.element-in-view .c3xgm-about-blockquote .c3xgm-about-sep:first-child:before {
   -webkit-transform-origin: top right;
   -moz-transform-origin: top right;
   -o-transform-origin: top right;
@@ -10274,7 +10179,7 @@ body {
   animation-duration: 600ms;
 }
 /* line 238, ../sass/components/_mixins.scss */
-.c3xgm-about-dealers.element-in-view .c3xgm-about-blockquote .c3xgm-about-sep:first-child:after {
+.c3xgm-about-seconds.element-in-view .c3xgm-about-blockquote:after {
   -webkit-transform-origin: top right;
   -moz-transform-origin: top right;
   -o-transform-origin: top right;
@@ -10301,7 +10206,137 @@ body {
   -ms-animation-duration: 600ms;
   animation-duration: 600ms;
 }
-/* line 325, ../sass/animations/_element-in-view.scss */
+/* line 323, ../sass/animations/_element-in-view.scss */
+.c3xgm-about-seconds.element-in-view .c3xgm-about-blockquote > span:first-child {
+  -webkit-animation-fill-mode: both;
+  -moz-animation-fill-mode: both;
+  -o-animation-fill-mode: both;
+  -ms-animation-fill-mode: both;
+  animation-fill-mode: both;
+  -webkit-animation-name: fadeInRightMega;
+  -moz-animation-name: fadeInRightMega;
+  -o-animation-name: fadeInRightMega;
+  -ms-animation-name: fadeInRightMega;
+  animation-name: fadeInRightMega;
+  -webkit-animation-delay: 1600ms;
+  -moz-animation-delay: 1600ms;
+  -o-animation-delay: 1600ms;
+  -ms-animation-delay: 1600ms;
+  animation-delay: 1600ms;
+  -webkit-animation-duration: 700ms;
+  -moz-animation-duration: 700ms;
+  -o-animation-duration: 700ms;
+  -ms-animation-duration: 700ms;
+  animation-duration: 700ms;
+}
+/* line 329, ../sass/animations/_element-in-view.scss */
+.c3xgm-about-seconds.element-in-view .c3xgm-about-blockquote > span:nth-child(2) {
+  -webkit-animation-fill-mode: both;
+  -moz-animation-fill-mode: both;
+  -o-animation-fill-mode: both;
+  -ms-animation-fill-mode: both;
+  animation-fill-mode: both;
+  -webkit-animation-name: fadeInRightMega;
+  -moz-animation-name: fadeInRightMega;
+  -o-animation-name: fadeInRightMega;
+  -ms-animation-name: fadeInRightMega;
+  animation-name: fadeInRightMega;
+  -webkit-animation-delay: 1900ms;
+  -moz-animation-delay: 1900ms;
+  -o-animation-delay: 1900ms;
+  -ms-animation-delay: 1900ms;
+  animation-delay: 1900ms;
+  -webkit-animation-duration: 700ms;
+  -moz-animation-duration: 700ms;
+  -o-animation-duration: 700ms;
+  -ms-animation-duration: 700ms;
+  animation-duration: 700ms;
+}
+/* line 335, ../sass/animations/_element-in-view.scss */
+.c3xgm-about-seconds.element-in-view .c3xgm-about-blockquote > span:nth-child(3) {
+  -webkit-animation-fill-mode: both;
+  -moz-animation-fill-mode: both;
+  -o-animation-fill-mode: both;
+  -ms-animation-fill-mode: both;
+  animation-fill-mode: both;
+  -webkit-animation-name: fadeInRightMega;
+  -moz-animation-name: fadeInRightMega;
+  -o-animation-name: fadeInRightMega;
+  -ms-animation-name: fadeInRightMega;
+  animation-name: fadeInRightMega;
+  -webkit-animation-delay: 2200ms;
+  -moz-animation-delay: 2200ms;
+  -o-animation-delay: 2200ms;
+  -ms-animation-delay: 2200ms;
+  animation-delay: 2200ms;
+  -webkit-animation-duration: 700ms;
+  -moz-animation-duration: 700ms;
+  -o-animation-duration: 700ms;
+  -ms-animation-duration: 700ms;
+  animation-duration: 700ms;
+}
+
+/* line 357, ../sass/animations/_element-in-view.scss */
+.c3xgm-about-dealers.element-in-view .c3xgm-about-blockquote .c3xgm-about-sep {
+  overflow: hidden;
+}
+/* line 230, ../sass/components/_mixins.scss */
+.c3xgm-about-dealers.element-in-view .c3xgm-about-blockquote .c3xgm-about-sep:first-child:before {
+  -webkit-transform-origin: top right;
+  -moz-transform-origin: top right;
+  -o-transform-origin: top right;
+  -ms-transform-origin: top right;
+  transform-origin: top right;
+  -webkit-animation-fill-mode: both;
+  -moz-animation-fill-mode: both;
+  -o-animation-fill-mode: both;
+  -ms-animation-fill-mode: both;
+  animation-fill-mode: both;
+  -webkit-animation-name: growBorder;
+  -moz-animation-name: growBorder;
+  -o-animation-name: growBorder;
+  -ms-animation-name: growBorder;
+  animation-name: growBorder;
+  -webkit-animation-delay: 400ms;
+  -moz-animation-delay: 400ms;
+  -o-animation-delay: 400ms;
+  -ms-animation-delay: 400ms;
+  animation-delay: 400ms;
+  -webkit-animation-duration: 600ms;
+  -moz-animation-duration: 600ms;
+  -o-animation-duration: 600ms;
+  -ms-animation-duration: 600ms;
+  animation-duration: 600ms;
+}
+/* line 238, ../sass/components/_mixins.scss */
+.c3xgm-about-dealers.element-in-view .c3xgm-about-blockquote .c3xgm-about-sep:first-child:after {
+  -webkit-transform-origin: top right;
+  -moz-transform-origin: top right;
+  -o-transform-origin: top right;
+  -ms-transform-origin: top right;
+  transform-origin: top right;
+  -webkit-animation-fill-mode: both;
+  -moz-animation-fill-mode: both;
+  -o-animation-fill-mode: both;
+  -ms-animation-fill-mode: both;
+  animation-fill-mode: both;
+  -webkit-animation-name: growBorder;
+  -moz-animation-name: growBorder;
+  -o-animation-name: growBorder;
+  -ms-animation-name: growBorder;
+  animation-name: growBorder;
+  -webkit-animation-delay: 1000ms;
+  -moz-animation-delay: 1000ms;
+  -o-animation-delay: 1000ms;
+  -ms-animation-delay: 1000ms;
+  animation-delay: 1000ms;
+  -webkit-animation-duration: 600ms;
+  -moz-animation-duration: 600ms;
+  -o-animation-duration: 600ms;
+  -ms-animation-duration: 600ms;
+  animation-duration: 600ms;
+}
+/* line 361, ../sass/animations/_element-in-view.scss */
 .c3xgm-about-dealers.element-in-view .c3xgm-about-blockquote .c3xgm-about-sep:first-child > span:first-child {
   -webkit-animation-fill-mode: both;
   -moz-animation-fill-mode: both;
@@ -10313,18 +10348,18 @@ body {
   -o-animation-name: fadeInRightMega;
   -ms-animation-name: fadeInRightMega;
   animation-name: fadeInRightMega;
-  -webkit-animation-delay: 1700ms;
-  -moz-animation-delay: 1700ms;
-  -o-animation-delay: 1700ms;
-  -ms-animation-delay: 1700ms;
-  animation-delay: 1700ms;
-  -webkit-animation-duration: 400ms;
-  -moz-animation-duration: 400ms;
-  -o-animation-duration: 400ms;
-  -ms-animation-duration: 400ms;
-  animation-duration: 400ms;
+  -webkit-animation-delay: 1800ms;
+  -moz-animation-delay: 1800ms;
+  -o-animation-delay: 1800ms;
+  -ms-animation-delay: 1800ms;
+  animation-delay: 1800ms;
+  -webkit-animation-duration: 700ms;
+  -moz-animation-duration: 700ms;
+  -o-animation-duration: 700ms;
+  -ms-animation-duration: 700ms;
+  animation-duration: 700ms;
 }
-/* line 334, ../sass/animations/_element-in-view.scss */
+/* line 370, ../sass/animations/_element-in-view.scss */
 .c3xgm-about-dealers.element-in-view .c3xgm-about-blockquote .c3xgm-about-sep:nth-child(2) > span {
   -webkit-animation-fill-mode: both;
   -moz-animation-fill-mode: both;
@@ -10336,16 +10371,16 @@ body {
   -o-animation-name: fadeInLeftMega;
   -ms-animation-name: fadeInLeftMega;
   animation-name: fadeInLeftMega;
-  -webkit-animation-delay: 2200ms;
-  -moz-animation-delay: 2200ms;
-  -o-animation-delay: 2200ms;
-  -ms-animation-delay: 2200ms;
-  animation-delay: 2200ms;
-  -webkit-animation-duration: 400ms;
-  -moz-animation-duration: 400ms;
-  -o-animation-duration: 400ms;
-  -ms-animation-duration: 400ms;
-  animation-duration: 400ms;
+  -webkit-animation-delay: 2100ms;
+  -moz-animation-delay: 2100ms;
+  -o-animation-delay: 2100ms;
+  -ms-animation-delay: 2100ms;
+  animation-delay: 2100ms;
+  -webkit-animation-duration: 700ms;
+  -moz-animation-duration: 700ms;
+  -o-animation-duration: 700ms;
+  -ms-animation-duration: 700ms;
+  animation-duration: 700ms;
 }
 
 /* line 230, ../sass/components/_mixins.scss */
@@ -10404,7 +10439,7 @@ body {
   -ms-animation-duration: 600ms;
   animation-duration: 600ms;
 }
-/* line 358, ../sass/animations/_element-in-view.scss */
+/* line 394, ../sass/animations/_element-in-view.scss */
 .c3xgm-about-crash-test-dummies.element-in-view .c3xgm-about-blockquote > span:first-child {
   -webkit-animation-fill-mode: both;
   -moz-animation-fill-mode: both;
@@ -10427,7 +10462,7 @@ body {
   -ms-animation-duration: 400ms;
   animation-duration: 400ms;
 }
-/* line 364, ../sass/animations/_element-in-view.scss */
+/* line 400, ../sass/animations/_element-in-view.scss */
 .c3xgm-about-crash-test-dummies.element-in-view .c3xgm-about-blockquote > span:nth-child(2) {
   -webkit-animation-fill-mode: both;
   -moz-animation-fill-mode: both;
@@ -10450,7 +10485,7 @@ body {
   -ms-animation-duration: 400ms;
   animation-duration: 400ms;
 }
-/* line 370, ../sass/animations/_element-in-view.scss */
+/* line 406, ../sass/animations/_element-in-view.scss */
 .c3xgm-about-crash-test-dummies.element-in-view .c3xgm-about-blockquote > span:nth-child(3) {
   -webkit-animation-fill-mode: both;
   -moz-animation-fill-mode: both;
@@ -10474,7 +10509,7 @@ body {
   animation-duration: 400ms;
 }
 
-/* line 392, ../sass/animations/_element-in-view.scss */
+/* line 428, ../sass/animations/_element-in-view.scss */
 .c3xgm-about-test-facility.element-in-view .c3xgm-about-blockquote > span:first-child {
   -webkit-animation-fill-mode: both;
   -moz-animation-fill-mode: both;
@@ -10486,18 +10521,18 @@ body {
   -o-animation-name: fadeIn;
   -ms-animation-name: fadeIn;
   animation-name: fadeIn;
-  -webkit-animation-delay: 200ms;
-  -moz-animation-delay: 200ms;
-  -o-animation-delay: 200ms;
-  -ms-animation-delay: 200ms;
-  animation-delay: 200ms;
+  -webkit-animation-delay: 400ms;
+  -moz-animation-delay: 400ms;
+  -o-animation-delay: 400ms;
+  -ms-animation-delay: 400ms;
+  animation-delay: 400ms;
   -webkit-animation-duration: 400ms;
   -moz-animation-duration: 400ms;
   -o-animation-duration: 400ms;
   -ms-animation-duration: 400ms;
   animation-duration: 400ms;
 }
-/* line 398, ../sass/animations/_element-in-view.scss */
+/* line 434, ../sass/animations/_element-in-view.scss */
 .c3xgm-about-test-facility.element-in-view .c3xgm-about-blockquote > span:nth-child(2) {
   -webkit-animation-fill-mode: both;
   -moz-animation-fill-mode: both;
@@ -10509,18 +10544,18 @@ body {
   -o-animation-name: fadeIn;
   -ms-animation-name: fadeIn;
   animation-name: fadeIn;
-  -webkit-animation-delay: 500ms;
-  -moz-animation-delay: 500ms;
-  -o-animation-delay: 500ms;
-  -ms-animation-delay: 500ms;
-  animation-delay: 500ms;
+  -webkit-animation-delay: 700ms;
+  -moz-animation-delay: 700ms;
+  -o-animation-delay: 700ms;
+  -ms-animation-delay: 700ms;
+  animation-delay: 700ms;
   -webkit-animation-duration: 400ms;
   -moz-animation-duration: 400ms;
   -o-animation-duration: 400ms;
   -ms-animation-duration: 400ms;
   animation-duration: 400ms;
 }
-/* line 405, ../sass/animations/_element-in-view.scss */
+/* line 441, ../sass/animations/_element-in-view.scss */
 .c3xgm-about-test-facility.element-in-view .c3xgm-about-blockquote > span:nth-child(3) span:first-child {
   -webkit-animation-fill-mode: both;
   -moz-animation-fill-mode: both;
@@ -10532,18 +10567,18 @@ body {
   -o-animation-name: fadeInLeftMega;
   -ms-animation-name: fadeInLeftMega;
   animation-name: fadeInLeftMega;
-  -webkit-animation-delay: 2300ms;
-  -moz-animation-delay: 2300ms;
-  -o-animation-delay: 2300ms;
-  -ms-animation-delay: 2300ms;
-  animation-delay: 2300ms;
+  -webkit-animation-delay: 2500ms;
+  -moz-animation-delay: 2500ms;
+  -o-animation-delay: 2500ms;
+  -ms-animation-delay: 2500ms;
+  animation-delay: 2500ms;
   -webkit-animation-duration: 400ms;
   -moz-animation-duration: 400ms;
   -o-animation-duration: 400ms;
   -ms-animation-duration: 400ms;
   animation-duration: 400ms;
 }
-/* line 411, ../sass/animations/_element-in-view.scss */
+/* line 447, ../sass/animations/_element-in-view.scss */
 .c3xgm-about-test-facility.element-in-view .c3xgm-about-blockquote > span:nth-child(3) span:nth-child(2) {
   -webkit-animation-fill-mode: both;
   -moz-animation-fill-mode: both;
@@ -10555,11 +10590,11 @@ body {
   -o-animation-name: fadeInLeftMega;
   -ms-animation-name: fadeInLeftMega;
   animation-name: fadeInLeftMega;
-  -webkit-animation-delay: 2600ms;
-  -moz-animation-delay: 2600ms;
-  -o-animation-delay: 2600ms;
-  -ms-animation-delay: 2600ms;
-  animation-delay: 2600ms;
+  -webkit-animation-delay: 2800ms;
+  -moz-animation-delay: 2800ms;
+  -o-animation-delay: 2800ms;
+  -ms-animation-delay: 2800ms;
+  animation-delay: 2800ms;
   -webkit-animation-duration: 400ms;
   -moz-animation-duration: 400ms;
   -o-animation-duration: 400ms;
@@ -10583,11 +10618,11 @@ body {
   -o-animation-name: growBorder;
   -ms-animation-name: growBorder;
   animation-name: growBorder;
-  -webkit-animation-delay: 900ms;
-  -moz-animation-delay: 900ms;
-  -o-animation-delay: 900ms;
-  -ms-animation-delay: 900ms;
-  animation-delay: 900ms;
+  -webkit-animation-delay: 1100ms;
+  -moz-animation-delay: 1100ms;
+  -o-animation-delay: 1100ms;
+  -ms-animation-delay: 1100ms;
+  animation-delay: 1100ms;
   -webkit-animation-duration: 600ms;
   -moz-animation-duration: 600ms;
   -o-animation-duration: 600ms;
@@ -10611,11 +10646,11 @@ body {
   -o-animation-name: growBorder;
   -ms-animation-name: growBorder;
   animation-name: growBorder;
-  -webkit-animation-delay: 1500ms;
-  -moz-animation-delay: 1500ms;
-  -o-animation-delay: 1500ms;
-  -ms-animation-delay: 1500ms;
-  animation-delay: 1500ms;
+  -webkit-animation-delay: 1700ms;
+  -moz-animation-delay: 1700ms;
+  -o-animation-delay: 1700ms;
+  -ms-animation-delay: 1700ms;
+  animation-delay: 1700ms;
   -webkit-animation-duration: 600ms;
   -moz-animation-duration: 600ms;
   -o-animation-duration: 600ms;
@@ -10679,8 +10714,8 @@ body {
   -ms-animation-duration: 600ms;
   animation-duration: 600ms;
 }
-/* line 441, ../sass/animations/_element-in-view.scss */
-.c3xgm-about-safety-score.element-in-view .c3xgm-about-blockquote .c3xgm-about-sep:first-child > span:first-child {
+/* line 476, ../sass/animations/_element-in-view.scss */
+.c3xgm-about-safety-score.element-in-view .c3xgm-about-blockquote .c3xgm-about-sep:first-child {
   -webkit-animation-fill-mode: both;
   -moz-animation-fill-mode: both;
   -o-animation-fill-mode: both;
@@ -10696,11 +10731,11 @@ body {
   -o-animation-delay: 1400ms;
   -ms-animation-delay: 1400ms;
   animation-delay: 1400ms;
-  -webkit-animation-duration: 800ms;
-  -moz-animation-duration: 800ms;
-  -o-animation-duration: 800ms;
-  -ms-animation-duration: 800ms;
-  animation-duration: 800ms;
+  -webkit-animation-duration: 1200ms;
+  -moz-animation-duration: 1200ms;
+  -o-animation-duration: 1200ms;
+  -ms-animation-duration: 1200ms;
+  animation-duration: 1200ms;
 }
 /* line 230, ../sass/components/_mixins.scss */
 .c3xgm-about-safety-score.element-in-view .c3xgm-about-blockquote .c3xgm-about-sep:nth-child(2):before {
@@ -10719,11 +10754,11 @@ body {
   -o-animation-name: growBorder;
   -ms-animation-name: growBorder;
   animation-name: growBorder;
-  -webkit-animation-delay: 600ms;
-  -moz-animation-delay: 600ms;
-  -o-animation-delay: 600ms;
-  -ms-animation-delay: 600ms;
-  animation-delay: 600ms;
+  -webkit-animation-delay: 200ms;
+  -moz-animation-delay: 200ms;
+  -o-animation-delay: 200ms;
+  -ms-animation-delay: 200ms;
+  animation-delay: 200ms;
   -webkit-animation-duration: 600ms;
   -moz-animation-duration: 600ms;
   -o-animation-duration: 600ms;
@@ -10747,18 +10782,18 @@ body {
   -o-animation-name: growBorder;
   -ms-animation-name: growBorder;
   animation-name: growBorder;
-  -webkit-animation-delay: 1200ms;
-  -moz-animation-delay: 1200ms;
-  -o-animation-delay: 1200ms;
-  -ms-animation-delay: 1200ms;
-  animation-delay: 1200ms;
+  -webkit-animation-delay: 800ms;
+  -moz-animation-delay: 800ms;
+  -o-animation-delay: 800ms;
+  -ms-animation-delay: 800ms;
+  animation-delay: 800ms;
   -webkit-animation-duration: 600ms;
   -moz-animation-duration: 600ms;
   -o-animation-duration: 600ms;
   -ms-animation-duration: 600ms;
   animation-duration: 600ms;
 }
-/* line 454, ../sass/animations/_element-in-view.scss */
+/* line 487, ../sass/animations/_element-in-view.scss */
 .c3xgm-about-safety-score.element-in-view .c3xgm-about-blockquote .c3xgm-about-sep:nth-child(2) > span:first-child {
   -webkit-animation-fill-mode: both;
   -moz-animation-fill-mode: both;
@@ -10775,13 +10810,13 @@ body {
   -o-animation-delay: 1400ms;
   -ms-animation-delay: 1400ms;
   animation-delay: 1400ms;
-  -webkit-animation-duration: 400ms;
-  -moz-animation-duration: 400ms;
-  -o-animation-duration: 400ms;
-  -ms-animation-duration: 400ms;
-  animation-duration: 400ms;
+  -webkit-animation-duration: 600ms;
+  -moz-animation-duration: 600ms;
+  -o-animation-duration: 600ms;
+  -ms-animation-duration: 600ms;
+  animation-duration: 600ms;
 }
-/* line 460, ../sass/animations/_element-in-view.scss */
+/* line 493, ../sass/animations/_element-in-view.scss */
 .c3xgm-about-safety-score.element-in-view .c3xgm-about-blockquote .c3xgm-about-sep:nth-child(2) > span:nth-child(2) {
   -webkit-animation-fill-mode: both;
   -moz-animation-fill-mode: both;
@@ -10793,18 +10828,18 @@ body {
   -o-animation-name: fadeInLeftMega;
   -ms-animation-name: fadeInLeftMega;
   animation-name: fadeInLeftMega;
-  -webkit-animation-delay: 1800ms;
-  -moz-animation-delay: 1800ms;
-  -o-animation-delay: 1800ms;
-  -ms-animation-delay: 1800ms;
-  animation-delay: 1800ms;
-  -webkit-animation-duration: 400ms;
-  -moz-animation-duration: 400ms;
-  -o-animation-duration: 400ms;
-  -ms-animation-duration: 400ms;
-  animation-duration: 400ms;
+  -webkit-animation-delay: 1900ms;
+  -moz-animation-delay: 1900ms;
+  -o-animation-delay: 1900ms;
+  -ms-animation-delay: 1900ms;
+  animation-delay: 1900ms;
+  -webkit-animation-duration: 600ms;
+  -moz-animation-duration: 600ms;
+  -o-animation-duration: 600ms;
+  -ms-animation-duration: 600ms;
+  animation-duration: 600ms;
 }
-/* line 466, ../sass/animations/_element-in-view.scss */
+/* line 499, ../sass/animations/_element-in-view.scss */
 .c3xgm-about-safety-score.element-in-view .c3xgm-about-blockquote .c3xgm-about-sep:nth-child(2) > span:nth-child(3) {
   -webkit-animation-fill-mode: both;
   -moz-animation-fill-mode: both;
@@ -10816,31 +10851,35 @@ body {
   -o-animation-name: fadeIn;
   -ms-animation-name: fadeIn;
   animation-name: fadeIn;
-  -webkit-animation-delay: 2100ms;
-  -moz-animation-delay: 2100ms;
-  -o-animation-delay: 2100ms;
-  -ms-animation-delay: 2100ms;
-  animation-delay: 2100ms;
-  -webkit-animation-duration: 400ms;
-  -moz-animation-duration: 400ms;
-  -o-animation-duration: 400ms;
-  -ms-animation-duration: 400ms;
-  animation-duration: 400ms;
+  -webkit-animation-delay: 2200ms;
+  -moz-animation-delay: 2200ms;
+  -o-animation-delay: 2200ms;
+  -ms-animation-delay: 2200ms;
+  animation-delay: 2200ms;
+  -webkit-animation-duration: 600ms;
+  -moz-animation-duration: 600ms;
+  -o-animation-duration: 600ms;
+  -ms-animation-duration: 600ms;
+  animation-duration: 600ms;
 }
 
+/* line 519, ../sass/animations/_element-in-view.scss */
+.c3xgm-about-onstar-subscribers.element-in-view .c3xgm-about-block-image {
+  overflow: hidden;
+}
 @media (min-width: 768px) {
-  /* line 487, ../sass/animations/_element-in-view.scss */
+  /* line 521, ../sass/animations/_element-in-view.scss */
   .c3xgm-about-onstar-subscribers.element-in-view .c3xgm-about-block-image img {
     -webkit-animation-fill-mode: both;
     -moz-animation-fill-mode: both;
     -o-animation-fill-mode: both;
     -ms-animation-fill-mode: both;
     animation-fill-mode: both;
-    -webkit-animation-name: fadeIn;
-    -moz-animation-name: fadeIn;
-    -o-animation-name: fadeIn;
-    -ms-animation-name: fadeIn;
-    animation-name: fadeIn;
+    -webkit-animation-name: fadeInRight;
+    -moz-animation-name: fadeInRight;
+    -o-animation-name: fadeInRight;
+    -ms-animation-name: fadeInRight;
+    animation-name: fadeInRight;
     -webkit-animation-delay: 1500ms;
     -moz-animation-delay: 1500ms;
     -o-animation-delay: 1500ms;
@@ -10853,7 +10892,7 @@ body {
     animation-duration: 400ms;
   }
 }
-/* line 498, ../sass/animations/_element-in-view.scss */
+/* line 531, ../sass/animations/_element-in-view.scss */
 .c3xgm-about-onstar-subscribers.element-in-view .c3xgm-about-blockquote {
   overflow: hidden;
 }
@@ -10913,7 +10952,7 @@ body {
   -ms-animation-duration: 600ms;
   animation-duration: 600ms;
 }
-/* line 503, ../sass/animations/_element-in-view.scss */
+/* line 536, ../sass/animations/_element-in-view.scss */
 .c3xgm-about-onstar-subscribers.element-in-view .c3xgm-about-blockquote > span:first-child {
   -webkit-animation-fill-mode: both;
   -moz-animation-fill-mode: both;
@@ -10936,7 +10975,7 @@ body {
   -ms-animation-duration: 400ms;
   animation-duration: 400ms;
 }
-/* line 509, ../sass/animations/_element-in-view.scss */
+/* line 542, ../sass/animations/_element-in-view.scss */
 .c3xgm-about-onstar-subscribers.element-in-view .c3xgm-about-blockquote > span:nth-child(2) {
   -webkit-animation-fill-mode: both;
   -moz-animation-fill-mode: both;
@@ -10959,7 +10998,7 @@ body {
   -ms-animation-duration: 400ms;
   animation-duration: 400ms;
 }
-/* line 515, ../sass/animations/_element-in-view.scss */
+/* line 548, ../sass/animations/_element-in-view.scss */
 .c3xgm-about-onstar-subscribers.element-in-view .c3xgm-about-blockquote > span:nth-child(3) {
   -webkit-animation-fill-mode: both;
   -moz-animation-fill-mode: both;
@@ -10982,7 +11021,7 @@ body {
   -ms-animation-duration: 400ms;
   animation-duration: 400ms;
 }
-/* line 522, ../sass/animations/_element-in-view.scss */
+/* line 555, ../sass/animations/_element-in-view.scss */
 .c3xgm-about-onstar-subscribers.element-in-view .c3xgm-about-blockquote > span:nth-child(4) {
   -webkit-animation-fill-mode: both;
   -moz-animation-fill-mode: both;
@@ -10994,18 +11033,18 @@ body {
   -o-animation-name: fadeIn;
   -ms-animation-name: fadeIn;
   animation-name: fadeIn;
-  -webkit-animation-delay: 2200ms;
-  -moz-animation-delay: 2200ms;
-  -o-animation-delay: 2200ms;
-  -ms-animation-delay: 2200ms;
-  animation-delay: 2200ms;
+  -webkit-animation-delay: 2300ms;
+  -moz-animation-delay: 2300ms;
+  -o-animation-delay: 2300ms;
+  -ms-animation-delay: 2300ms;
+  animation-delay: 2300ms;
   -webkit-animation-duration: 400ms;
   -moz-animation-duration: 400ms;
   -o-animation-duration: 400ms;
   -ms-animation-duration: 400ms;
   animation-duration: 400ms;
 }
-/* line 529, ../sass/animations/_element-in-view.scss */
+/* line 562, ../sass/animations/_element-in-view.scss */
 .c3xgm-about-onstar-subscribers.element-in-view .c3xgm-about-blockquote > span:nth-child(5) {
   -webkit-animation-fill-mode: both;
   -moz-animation-fill-mode: both;
@@ -11017,11 +11056,11 @@ body {
   -o-animation-name: fadeIn;
   -ms-animation-name: fadeIn;
   animation-name: fadeIn;
-  -webkit-animation-delay: 2200ms;
-  -moz-animation-delay: 2200ms;
-  -o-animation-delay: 2200ms;
-  -ms-animation-delay: 2200ms;
-  animation-delay: 2200ms;
+  -webkit-animation-delay: 2300ms;
+  -moz-animation-delay: 2300ms;
+  -o-animation-delay: 2300ms;
+  -ms-animation-delay: 2300ms;
+  animation-delay: 2300ms;
   -webkit-animation-duration: 400ms;
   -moz-animation-duration: 400ms;
   -o-animation-duration: 400ms;
@@ -11029,19 +11068,23 @@ body {
   animation-duration: 400ms;
 }
 
+/* line 581, ../sass/animations/_element-in-view.scss */
+.c3xgm-about-quality-awards.element-in-view .c3xgm-about-block-image {
+  overflow: hidden;
+}
 @media (min-width: 768px) {
-  /* line 549, ../sass/animations/_element-in-view.scss */
+  /* line 583, ../sass/animations/_element-in-view.scss */
   .c3xgm-about-quality-awards.element-in-view .c3xgm-about-block-image img {
     -webkit-animation-fill-mode: both;
     -moz-animation-fill-mode: both;
     -o-animation-fill-mode: both;
     -ms-animation-fill-mode: both;
     animation-fill-mode: both;
-    -webkit-animation-name: fadeIn;
-    -moz-animation-name: fadeIn;
-    -o-animation-name: fadeIn;
-    -ms-animation-name: fadeIn;
-    animation-name: fadeIn;
+    -webkit-animation-name: fadeInLeftMega;
+    -moz-animation-name: fadeInLeftMega;
+    -o-animation-name: fadeInLeftMega;
+    -ms-animation-name: fadeInLeftMega;
+    animation-name: fadeInLeftMega;
     -webkit-animation-delay: 1000ms;
     -moz-animation-delay: 1000ms;
     -o-animation-delay: 1000ms;
@@ -11054,11 +11097,11 @@ body {
     animation-duration: 400ms;
   }
 }
-/* line 560, ../sass/animations/_element-in-view.scss */
+/* line 593, ../sass/animations/_element-in-view.scss */
 .c3xgm-about-quality-awards.element-in-view .c3xgm-about-blockquote {
   overflow: hidden;
 }
-/* line 563, ../sass/animations/_element-in-view.scss */
+/* line 596, ../sass/animations/_element-in-view.scss */
 .c3xgm-about-quality-awards.element-in-view .c3xgm-about-blockquote:before {
   -webkit-animation-fill-mode: both;
   -moz-animation-fill-mode: both;
@@ -11081,7 +11124,7 @@ body {
   -ms-animation-duration: 600ms;
   animation-duration: 600ms;
 }
-/* line 569, ../sass/animations/_element-in-view.scss */
+/* line 602, ../sass/animations/_element-in-view.scss */
 .c3xgm-about-quality-awards.element-in-view .c3xgm-about-blockquote:after {
   -webkit-animation-fill-mode: both;
   -moz-animation-fill-mode: both;
@@ -11104,7 +11147,7 @@ body {
   -ms-animation-duration: 600ms;
   animation-duration: 600ms;
 }
-/* line 576, ../sass/animations/_element-in-view.scss */
+/* line 609, ../sass/animations/_element-in-view.scss */
 .c3xgm-about-quality-awards.element-in-view .c3xgm-about-blockquote > span:first-child {
   -webkit-animation-fill-mode: both;
   -moz-animation-fill-mode: both;
@@ -11127,7 +11170,7 @@ body {
   -ms-animation-duration: 400ms;
   animation-duration: 400ms;
 }
-/* line 582, ../sass/animations/_element-in-view.scss */
+/* line 615, ../sass/animations/_element-in-view.scss */
 .c3xgm-about-quality-awards.element-in-view .c3xgm-about-blockquote > span:nth-child(2) {
   -webkit-animation-fill-mode: both;
   -moz-animation-fill-mode: both;
@@ -11150,7 +11193,7 @@ body {
   -ms-animation-duration: 400ms;
   animation-duration: 400ms;
 }
-/* line 588, ../sass/animations/_element-in-view.scss */
+/* line 621, ../sass/animations/_element-in-view.scss */
 .c3xgm-about-quality-awards.element-in-view .c3xgm-about-blockquote > span:nth-child(3) {
   -webkit-animation-fill-mode: both;
   -moz-animation-fill-mode: both;
@@ -11174,11 +11217,11 @@ body {
   animation-duration: 400ms;
 }
 
-/* line 606, ../sass/animations/_element-in-view.scss */
+/* line 639, ../sass/animations/_element-in-view.scss */
 .c3xgm-about-disclaimer.element-in-view .c3xgm-about-blockquote {
   overflow: hidden;
 }
-/* line 608, ../sass/animations/_element-in-view.scss */
+/* line 641, ../sass/animations/_element-in-view.scss */
 .c3xgm-about-disclaimer.element-in-view .c3xgm-about-blockquote > span.c3xgm-about-gray:nth-child(2),
 .c3xgm-about-disclaimer.element-in-view .c3xgm-about-blockquote > span.c3xgm-about-disclaimer {
   -webkit-animation-fill-mode: both;
@@ -11203,7 +11246,7 @@ body {
   animation-duration: 400ms;
 }
 
-/* line 626, ../sass/animations/_element-in-view.scss */
+/* line 659, ../sass/animations/_element-in-view.scss */
 .c3xgm-about-solar-panels .c3xgm-about-sun {
   -webkit-transition: transform 1.5s;
   -moz-transition: transform 1.5s;
@@ -11221,7 +11264,7 @@ body {
   -ms-transform: scale(0, 0);
   transform: scale(0, 0);
 }
-/* line 634, ../sass/animations/_element-in-view.scss */
+/* line 667, ../sass/animations/_element-in-view.scss */
 .c3xgm-about-solar-panels.element-in-view .c3xgm-about-blockquote {
   overflow: hidden;
 }
@@ -11281,7 +11324,7 @@ body {
   -ms-animation-duration: 600ms;
   animation-duration: 600ms;
 }
-/* line 639, ../sass/animations/_element-in-view.scss */
+/* line 672, ../sass/animations/_element-in-view.scss */
 .c3xgm-about-solar-panels.element-in-view .c3xgm-about-blockquote > span:first-child {
   -webkit-animation-fill-mode: both;
   -moz-animation-fill-mode: both;
@@ -11304,7 +11347,7 @@ body {
   -ms-animation-duration: 500ms;
   animation-duration: 500ms;
 }
-/* line 645, ../sass/animations/_element-in-view.scss */
+/* line 678, ../sass/animations/_element-in-view.scss */
 .c3xgm-about-solar-panels.element-in-view .c3xgm-about-blockquote > span:nth-child(2) {
   -webkit-animation-fill-mode: both;
   -moz-animation-fill-mode: both;
@@ -11327,7 +11370,7 @@ body {
   -ms-animation-duration: 500ms;
   animation-duration: 500ms;
 }
-/* line 651, ../sass/animations/_element-in-view.scss */
+/* line 684, ../sass/animations/_element-in-view.scss */
 .c3xgm-about-solar-panels.element-in-view .c3xgm-about-blockquote > span:nth-child(3) {
   -webkit-animation-fill-mode: both;
   -moz-animation-fill-mode: both;
@@ -11350,7 +11393,7 @@ body {
   -ms-animation-duration: 500ms;
   animation-duration: 500ms;
 }
-/* line 657, ../sass/animations/_element-in-view.scss */
+/* line 690, ../sass/animations/_element-in-view.scss */
 .c3xgm-about-solar-panels.element-in-view .c3xgm-about-blockquote > span:nth-child(4) {
   -webkit-animation-fill-mode: both;
   -moz-animation-fill-mode: both;
@@ -11373,7 +11416,7 @@ body {
   -ms-animation-duration: 500ms;
   animation-duration: 500ms;
 }
-/* line 665, ../sass/animations/_element-in-view.scss */
+/* line 698, ../sass/animations/_element-in-view.scss */
 .c3xgm-about-solar-panels.element-in-view .c3xgm-about-solar-road {
   -webkit-animation-fill-mode: both;
   -moz-animation-fill-mode: both;
@@ -11396,7 +11439,7 @@ body {
   -ms-animation-duration: 600ms;
   animation-duration: 600ms;
 }
-/* line 672, ../sass/animations/_element-in-view.scss */
+/* line 705, ../sass/animations/_element-in-view.scss */
 .c3xgm-about-solar-panels.element-in-view .c3xgm-about-solar-panels,
 .c3xgm-about-solar-panels.element-in-view .c3xgm-about-tree {
   -webkit-animation-fill-mode: both;
@@ -11425,7 +11468,7 @@ body {
   -ms-animation-duration: 2.5s;
   animation-duration: 2.5s;
 }
-/* line 681, ../sass/animations/_element-in-view.scss */
+/* line 714, ../sass/animations/_element-in-view.scss */
 .c3xgm-about-solar-panels.element-in-view .c3xgm-about-sun {
   -webkit-transform: scale(1, 1);
   -moz-transform: scale(1, 1);
@@ -11438,7 +11481,7 @@ body {
   -ms-transition-delay: 600;
   transition-delay: 600;
 }
-/* line 684, ../sass/animations/_element-in-view.scss */
+/* line 717, ../sass/animations/_element-in-view.scss */
 .c3xgm-about-solar-panels.element-in-view .c3xgm-about-sun img {
   -webkit-animation-fill-mode: both;
   -moz-animation-fill-mode: both;
@@ -11467,18 +11510,22 @@ body {
   animation-duration: 5s;
 }
 
-/* line 706, ../sass/animations/_element-in-view.scss */
+/* line 738, ../sass/animations/_element-in-view.scss */
+.c3xgm-about-epa-energy-star.element-in-view .c3xgm-about-block-image {
+  overflow: hidden;
+}
+/* line 740, ../sass/animations/_element-in-view.scss */
 .c3xgm-about-epa-energy-star.element-in-view .c3xgm-about-block-image img {
   -webkit-animation-fill-mode: both;
   -moz-animation-fill-mode: both;
   -o-animation-fill-mode: both;
   -ms-animation-fill-mode: both;
   animation-fill-mode: both;
-  -webkit-animation-name: fadeIn;
-  -moz-animation-name: fadeIn;
-  -o-animation-name: fadeIn;
-  -ms-animation-name: fadeIn;
-  animation-name: fadeIn;
+  -webkit-animation-name: scaleUp;
+  -moz-animation-name: scaleUp;
+  -o-animation-name: scaleUp;
+  -ms-animation-name: scaleUp;
+  animation-name: scaleUp;
   -webkit-animation-delay: 1200ms;
   -moz-animation-delay: 1200ms;
   -o-animation-delay: 1200ms;
@@ -11490,7 +11537,7 @@ body {
   -ms-animation-duration: 500ms;
   animation-duration: 500ms;
 }
-/* line 714, ../sass/animations/_element-in-view.scss */
+/* line 748, ../sass/animations/_element-in-view.scss */
 .c3xgm-about-epa-energy-star.element-in-view .c3xgm-about-blockquote {
   overflow: hidden;
 }
@@ -11550,7 +11597,7 @@ body {
   -ms-animation-duration: 600ms;
   animation-duration: 600ms;
 }
-/* line 718, ../sass/animations/_element-in-view.scss */
+/* line 752, ../sass/animations/_element-in-view.scss */
 .c3xgm-about-epa-energy-star.element-in-view .c3xgm-about-blockquote > span:first-child {
   -webkit-animation-fill-mode: both;
   -moz-animation-fill-mode: both;
@@ -11573,7 +11620,7 @@ body {
   -ms-animation-duration: 500ms;
   animation-duration: 500ms;
 }
-/* line 724, ../sass/animations/_element-in-view.scss */
+/* line 758, ../sass/animations/_element-in-view.scss */
 .c3xgm-about-epa-energy-star.element-in-view .c3xgm-about-blockquote > span:nth-child(2) {
   -webkit-animation-fill-mode: both;
   -moz-animation-fill-mode: both;
@@ -11596,7 +11643,7 @@ body {
   -ms-animation-duration: 500ms;
   animation-duration: 500ms;
 }
-/* line 730, ../sass/animations/_element-in-view.scss */
+/* line 764, ../sass/animations/_element-in-view.scss */
 .c3xgm-about-epa-energy-star.element-in-view .c3xgm-about-blockquote > span:nth-child(3) {
   -webkit-animation-fill-mode: both;
   -moz-animation-fill-mode: both;
@@ -11619,7 +11666,7 @@ body {
   -ms-animation-duration: 500ms;
   animation-duration: 500ms;
 }
-/* line 736, ../sass/animations/_element-in-view.scss */
+/* line 770, ../sass/animations/_element-in-view.scss */
 .c3xgm-about-epa-energy-star.element-in-view .c3xgm-about-blockquote > span:nth-child(4) {
   -webkit-animation-fill-mode: both;
   -moz-animation-fill-mode: both;
@@ -11643,7 +11690,11 @@ body {
   animation-duration: 500ms;
 }
 
-/* line 757, ../sass/animations/_element-in-view.scss */
+/* line 790, ../sass/animations/_element-in-view.scss */
+.c3xgm-about-climate-declaration.element-in-view .c3xgm-about-block-image {
+  overflow: hidden;
+}
+/* line 792, ../sass/animations/_element-in-view.scss */
 .c3xgm-about-climate-declaration.element-in-view .c3xgm-about-block-image img {
   -webkit-animation-fill-mode: both;
   -moz-animation-fill-mode: both;
@@ -11666,7 +11717,7 @@ body {
   -ms-animation-duration: 500ms;
   animation-duration: 500ms;
 }
-/* line 765, ../sass/animations/_element-in-view.scss */
+/* line 800, ../sass/animations/_element-in-view.scss */
 .c3xgm-about-climate-declaration.element-in-view .c3xgm-about-blockquote {
   overflow: hidden;
 }
@@ -11726,7 +11777,7 @@ body {
   -ms-animation-duration: 600ms;
   animation-duration: 600ms;
 }
-/* line 769, ../sass/animations/_element-in-view.scss */
+/* line 804, ../sass/animations/_element-in-view.scss */
 .c3xgm-about-climate-declaration.element-in-view .c3xgm-about-blockquote > span:first-child {
   -webkit-animation-fill-mode: both;
   -moz-animation-fill-mode: both;
@@ -11749,7 +11800,7 @@ body {
   -ms-animation-duration: 500ms;
   animation-duration: 500ms;
 }
-/* line 775, ../sass/animations/_element-in-view.scss */
+/* line 810, ../sass/animations/_element-in-view.scss */
 .c3xgm-about-climate-declaration.element-in-view .c3xgm-about-blockquote > span:nth-child(2) {
   -webkit-animation-fill-mode: both;
   -moz-animation-fill-mode: both;
@@ -11772,7 +11823,7 @@ body {
   -ms-animation-duration: 500ms;
   animation-duration: 500ms;
 }
-/* line 781, ../sass/animations/_element-in-view.scss */
+/* line 816, ../sass/animations/_element-in-view.scss */
 .c3xgm-about-climate-declaration.element-in-view .c3xgm-about-blockquote > span:nth-child(3) {
   -webkit-animation-fill-mode: both;
   -moz-animation-fill-mode: both;
@@ -11796,18 +11847,22 @@ body {
   animation-duration: 500ms;
 }
 
-/* line 801, ../sass/animations/_element-in-view.scss */
+/* line 835, ../sass/animations/_element-in-view.scss */
+.c3xgm-about-landfill-free.element-in-view .c3xgm-about-block-image {
+  overflow: hidden;
+}
+/* line 837, ../sass/animations/_element-in-view.scss */
 .c3xgm-about-landfill-free.element-in-view .c3xgm-about-block-image img {
   -webkit-animation-fill-mode: both;
   -moz-animation-fill-mode: both;
   -o-animation-fill-mode: both;
   -ms-animation-fill-mode: both;
   animation-fill-mode: both;
-  -webkit-animation-name: fadeIn;
-  -moz-animation-name: fadeIn;
-  -o-animation-name: fadeIn;
-  -ms-animation-name: fadeIn;
-  animation-name: fadeIn;
+  -webkit-animation-name: fadeInLeftMega;
+  -moz-animation-name: fadeInLeftMega;
+  -o-animation-name: fadeInLeftMega;
+  -ms-animation-name: fadeInLeftMega;
+  animation-name: fadeInLeftMega;
   -webkit-animation-delay: 1200ms;
   -moz-animation-delay: 1200ms;
   -o-animation-delay: 1200ms;
@@ -11819,7 +11874,7 @@ body {
   -ms-animation-duration: 500ms;
   animation-duration: 500ms;
 }
-/* line 809, ../sass/animations/_element-in-view.scss */
+/* line 845, ../sass/animations/_element-in-view.scss */
 .c3xgm-about-landfill-free.element-in-view .c3xgm-about-blockquote {
   overflow: hidden;
 }
@@ -11879,7 +11934,7 @@ body {
   -ms-animation-duration: 600ms;
   animation-duration: 600ms;
 }
-/* line 813, ../sass/animations/_element-in-view.scss */
+/* line 849, ../sass/animations/_element-in-view.scss */
 .c3xgm-about-landfill-free.element-in-view .c3xgm-about-blockquote > span:first-child {
   -webkit-animation-fill-mode: both;
   -moz-animation-fill-mode: both;
@@ -11902,7 +11957,7 @@ body {
   -ms-animation-duration: 500ms;
   animation-duration: 500ms;
 }
-/* line 819, ../sass/animations/_element-in-view.scss */
+/* line 855, ../sass/animations/_element-in-view.scss */
 .c3xgm-about-landfill-free.element-in-view .c3xgm-about-blockquote > span:nth-child(2) {
   -webkit-animation-fill-mode: both;
   -moz-animation-fill-mode: both;
@@ -11925,7 +11980,7 @@ body {
   -ms-animation-duration: 500ms;
   animation-duration: 500ms;
 }
-/* line 825, ../sass/animations/_element-in-view.scss */
+/* line 861, ../sass/animations/_element-in-view.scss */
 .c3xgm-about-landfill-free.element-in-view .c3xgm-about-blockquote > span:nth-child(3) {
   -webkit-animation-fill-mode: both;
   -moz-animation-fill-mode: both;
@@ -13126,7 +13181,11 @@ body {
 }
 
 /* line 2, ../sass/animations/_clock.scss */
-#clock {
+.element-in-view {
+  /* Hands */
+}
+/* line 3, ../sass/animations/_clock.scss */
+.element-in-view #clock {
   position: relative;
   margin: 0 auto;
   width: 33.3333334%;
@@ -13148,20 +13207,18 @@ body {
   border-radius: 50%;
 }
 @media (min-width: 768px) {
-  /* line 2, ../sass/animations/_clock.scss */
-  #clock {
+  /* line 3, ../sass/animations/_clock.scss */
+  .element-in-view #clock {
     width: 80%;
     padding-bottom: 80%;
   }
 }
-
-/* line 25, ../sass/animations/_clock.scss */
-.svg #clock {
+/* line 26, ../sass/animations/_clock.scss */
+.element-in-view .svg #clock {
   background-image: url("../img/decorative/clock/clock-face.svg");
 }
-
-/* line 29, ../sass/animations/_clock.scss */
-#clock:after {
+/* line 30, ../sass/animations/_clock.scss */
+.element-in-view #clock:after {
   content: '';
   width: 100%;
   height: 0;
@@ -13175,9 +13232,8 @@ body {
   -ms-border-radius: 50%;
   border-radius: 50%;
 }
-
-/* line 40, ../sass/animations/_clock.scss */
-#clock:before {
+/* line 41, ../sass/animations/_clock.scss */
+.element-in-view #clock:before {
   content: '';
   position: absolute;
   left: 50%;
@@ -13194,10 +13250,8 @@ body {
   -ms-border-radius: 50%;
   border-radius: 50%;
 }
-
-/* Hands */
-/* line 55, ../sass/animations/_clock.scss */
-#clock span.hand.second {
+/* line 56, ../sass/animations/_clock.scss */
+.element-in-view #clock span.hand.second {
   width: 1.6666667%;
   min-width: 1px;
   height: 0;
@@ -13207,9 +13261,8 @@ body {
   background-color: #ED1C24;
   z-index: 10;
 }
-
-/* line 64, ../sass/animations/_clock.scss */
-#clock span.hand {
+/* line 65, ../sass/animations/_clock.scss */
+.element-in-view #clock span.hand {
   background: #000;
   position: absolute;
   left: 50%;
@@ -13224,9 +13277,8 @@ body {
   -ms-animation: rotate 15s infinite linear;
   animation: rotate 15s infinite linear;
 }
-
-/* line 74, ../sass/animations/_clock.scss */
-#clock span.hand.minute {
+/* line 75, ../sass/animations/_clock.scss */
+.element-in-view #clock span.hand.minute {
   height: 0;
   padding-bottom: 33.3333334%;
   width: 3.333333%;
@@ -13239,9 +13291,8 @@ body {
   -ms-animation-duration: 900s;
   animation-duration: 900s;
 }
-
-/* line 84, ../sass/animations/_clock.scss */
-#clock span.hand.hour {
+/* line 85, ../sass/animations/_clock.scss */
+.element-in-view #clock span.hand.hour {
   width: 5%;
   min-width: 2px;
   height: 0;

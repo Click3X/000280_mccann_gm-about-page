@@ -67,11 +67,6 @@ function printDecorative($block) {
 							echo '<img src="'.$asset['image'].'" '.$rel.'>';
 							echo '<div class="c3xgm-about-wheel c3xgm-about-front-wheel animate-tires"></div>';
 						echo '</div>';
-
-						 // echo '<div id="c3xgm-about-solar-grey-car" class="grey-car c3xgm-about-clearfix c3xgm-about-solar-grey-car">
-       //                      <div class="wheel back-wheel"></div>
-       //                      <div class="wheel front-wheel"></div>
-       //                  </div>';
 					} else {
 						// helper($asset);
 						$class = cleanString($key);
@@ -99,13 +94,11 @@ function printBlock($block) {
 	if($block['class'] == "earn") { $block_class="c3xgm-about-block-earn "; }
 		else { $block_class="c3xgm-about-block "; }
 
-
 		if( ( isset($block['title']) ) &&  ( $block['title'] == "employees") ) {
 			echo '<div id="c3xgm-about-employees" class="'.$block_class.'c3xgm-about-clearfix'.$class.'">';
 		 } else {
-				// echo '<div class="'.$block_class.'c3xgm-about-clearfix'.$class.' bounceInLeft">';
-				echo '<div class="'.$block_class.'c3xgm-about-clearfix'.$class.'">';
-			}
+			echo '<div class="'.$block_class.'c3xgm-about-clearfix'.$class.'">';
+		}
 
 		// OUR PEOPLE BLOCKS WE DONT WANT TO SPIT IMAGE OUT FIRST
 		$people_blocks = array("employees", "continents", "timezones", "global-headquarters", "languages");

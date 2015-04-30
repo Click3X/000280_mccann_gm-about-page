@@ -3,7 +3,7 @@
 echo '<div class="c3xgm-about-block c3xgm-about-clearfix c3xgm-about-safety-score">
 	<p class="c3xgm-about-blockquote">
 		<span class="c3xgm-about-sep c3xgm-about-clearfix">
-			<span class="c3xgm-about-light-blue number">63</span>
+			<span id="c3xgm-about-number-63" class="c3xgm-about-light-blue number">63</span>
 		</span>
 		<span class="c3xgm-about-sep c3xgm-about-clearfix">
 			<span class="c3xgm-about-dark-blue c3xgm-about-thin">

@@ -76,6 +76,7 @@
 		.number > span { 
 			line-height: 1em; 
 			font-size: 128px; font-size: 24vw;
+			display: inline-block;
 			@media(min-width:$tablet-height) { font-size: 64px; font-size: 14.36vw; line-height: 1.09em;  }
 			@media(min-width:$inner-border) { font-size: 128px;  }
 		}
@@ -174,10 +175,6 @@
 				width:0.15rem; height:75%;
 				background-color:$gm-gray-line;
 				@include prefix(transform-origin, top right);
-				@include prefix(animation-fill-mode, both);
-				@include prefix(animation-name, growBorder);
-				@include prefix(animation-delay,1800ms);
-				@include prefix(animation-duration,600ms);
 				@media(min-width: $tablet-height) { width:0.2rem;}
 			}
 
@@ -188,10 +185,6 @@
 				width:0.15rem; height: 75%;
 				background-color:$gm-yellow;
 				@include prefix(transform-origin, top right);
-				@include prefix(animation-fill-mode, both);
-				@include prefix(animation-name, growBorder);
-				@include prefix(animation-delay,2400ms);
-				@include prefix(animation-duration,600ms);
 				@media(min-width: $tablet-height) { width:0.2rem;}
 			}
 
