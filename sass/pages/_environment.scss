@@ -16,6 +16,10 @@
 	// CLEAN ENERGY 
 	.c3xgm-about-clean-energy {
 		text-align: left;
+		// margin-top:5em;
+		width: 92%;
+		max-width: 906px;
+		margin: 5em auto;
 		.c3xgm-about-blockquote {
 			padding-left: 14px; margin-left:9px;
 			@include borderLines(left);

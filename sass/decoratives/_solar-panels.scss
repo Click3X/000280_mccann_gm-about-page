@@ -1,9 +1,15 @@
 // SOLAR PANELS
-.c3xgm-about-solar-panels {
-	margin-bottom: 7.5%; padding-bottom:5em; height: 0;
+.c3xgm-about-decorative.c3xgm-about-solar-panels {
+	// margin-bottom: 7.5%; 
+	margin-bottom: 10%; 
+	padding-bottom:120%; 
+	height: 0;
 	position: relative; 
 	// overflow-x: hidden;
-  	@media(min-width: $tablet-height) {  padding-bottom: 15em;  margin-bottom:100px; }
+	@media(min-width: 480px) { padding-bottom:100%; }
+  	@media(min-width: $tablet-height) { 
+  		padding-bottom:550px; margin-bottom:150px; 
+  	}
 
 	.c3xgm-about-grey-side {
 		width:45%; height: 0;
@@ -49,40 +55,39 @@
 	}
 	
 	.c3xgm-about-tree {
-		width: 20%; max-width: 99px;
-		height: 0; padding-bottom: 21%;
+		width: 66px; height: 61px;
 		position: absolute;
-		left:2%; bottom:34px;
+		left:2%; bottom:40px;
 		z-index: -5;
 		img { width:100%;}
-  		@media(min-width:400px) { padding-bottom:13.5%; }
-		@media(min-width:$tablet-height) { padding-bottom: 100px; margin: auto;}
+  		@media(min-width:481px) { width: 99px; height: 93px; }
+		@media(min-width:$tablet-height) { margin: auto; }
 		@media(min-width:$inner-border) { right:0; left:-63%; }
 	}
 	
-	.c3xgm-about-solar-panels {
-		width: 30%; height: 0; padding-bottom: 33%;
+	.c3xgm-about-solar-panels {	
+		width: 127px; height: 141px; padding-bottom:0;
 		position: absolute;
-		right: 1%; bottom:-2%;
+		right: 25%;   bottom:0;
 		z-index: -5;
 		img { width:100%;}
-  		@media(min-width:668px) { width: 200px; padding-bottom: 170px; top:auto; }
+		@media(min-width:481px) { bottom: 40px; }
 		@media(min-width:$inner-border) { 
+			width: 193px; height: 213px;
 			left: 0; right: -39%; bottom:30px;
-			margin: auto; padding-bottom: 210px;
+			margin: auto;
 		}
 	}
 
 	.c3xgm-about-sun {
-		width: 16%; max-width: 100px;
+		width: 16%; max-width: 140px;
   		height: 0; padding-bottom: 16%;
   		z-index: -1;
 		position: absolute;
-		bottom: 270%; top:auto; right: 5%;
+		top:40%; right: 5%;
 		img { width:100%;}
-  		@media(min-width:400px) { padding-bottom: 100px; right: 1%; }
-  		@media(min-width:530px) {  bottom:25em; }
-		@media(min-width:$tablet-height) { bottom:28em; }
+  		@media(min-width:400px) { padding-bottom: 100px; }
+		@media(min-width:$tablet-height) { top: 26%; padding-bottom: 140px; }
 		@media(min-width: $inner-border) {left: 0; right: -50%; margin: auto; }
 	}
 }
@@ -90,6 +95,6 @@
 .c3xgm-about-solar-road {
 	width: 100%; height: 0;
 	padding-bottom: 40px;
-	position: absolute; bottom: -1px;
+	position: absolute; bottom:0;
 	z-index: -2;
 }

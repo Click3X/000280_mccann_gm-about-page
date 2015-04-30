@@ -40,12 +40,7 @@ html, body {
 	margin: 8px 0 8px 2px;
 	// padding-left:6px;
 	padding-left: 2px;
-// border-left: 0.15em solid $gm-yellow;
-	
-	@media( min-width:$tablet-height ){ 
-		// margin: 8px 0 8px 6px; border-left:0.2em solid $gm-yellow;
-		padding-left:14px; 
-	}
+	@media( min-width:$tablet-height ){  padding-left:14px; }
 	.c3xgm-about-h:first-child { margin-top:0; }
 }
 
@@ -154,6 +149,14 @@ svg { max-height: 100%; }
 	margin: 0 auto 3.5em;
 
 	@media(min-width: $tablet-height) { margin: 0 auto 7em; }
+}
+
+// ENVIRONMENT - NO MARGIN BOTTOM
+.c3xgm-about-page-environment {
+	.c3xgm-about-subsection {
+		margin: 0 auto;
+		@media(min-width: $tablet-height) { margin: 0 auto; }	
+	}
 }
 
 .c3xgm-about-section {

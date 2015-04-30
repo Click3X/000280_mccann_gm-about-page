@@ -365,8 +365,10 @@ jQuery(document).ready(function($) {
     function fireAnimate6() {          
           if(animate6 === false) {
           // // TRIGGER NUMBER ANIMATION
-            $('#c3xgm-about-number-6').jQuerySimpleCounter({start:0, end: 6,duration: 2000});
-            animate6 = true;
+            setTimeout(function(){ 
+                $('#c3xgm-about-number-6').jQuerySimpleCounter({start:0, end: 6,duration: 1000});
+                animate6 = true;
+            }, 800);
         }
     }
 
@@ -374,8 +376,10 @@ jQuery(document).ready(function($) {
     function fireAnimate23() {
           if(animate23 === false) {
           // // TRIGGER NUMBER ANIMATION
-            $('#c3xgm-about-number-23').jQuerySimpleCounter({start:0, end: 23,duration: 2000});
-            animate23 = true;
+            setTimeout(function(){ 
+                $('#c3xgm-about-number-23').jQuerySimpleCounter({start:0, end: 23,duration: 1200});
+                animate23 = true;
+            }, 600);
         }
     }
 
@@ -383,8 +387,10 @@ jQuery(document).ready(function($) {
     function fireAnimate70() {
           if(animate70 === false) {
           // // TRIGGER NUMBER ANIMATION
-            $('#c3xgm-about-number-70').jQuerySimpleCounter({start:0, end: 70,duration: 2000});
-            animate70 = true;
+            setTimeout(function(){ 
+                $('#c3xgm-about-number-70').jQuerySimpleCounter({start:0, end: 70,duration: 1200});
+                animate70 = true;
+            }, 600);
         }
     }
 

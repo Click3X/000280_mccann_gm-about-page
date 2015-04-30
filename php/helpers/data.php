@@ -334,7 +334,7 @@ $pages = array(
 						"copy"=>array(
 							"c3xgm-about-dark-blue c3xgm-about-thin"=>"The first North American <br>auto manufacturer",
 							"c3xgm-about-gray"=>"to build a",
-							"c3xgm-about-light-blue"=>"Rollover <br>Test Facility"
+							"c3xgm-about-light-blue"=>"<span class='c3xgm-about-sep'>Rollover</span><span class='c3xgm-about-sep'>Test Facility</span>"
 						)
 					),
 					array(
@@ -461,17 +461,17 @@ $pages = array(
 				"id"=>"environment",
 				"tagline"=>"A key focus of GM’s customer-first approach is to seek creative and innovative solutions for the environment. We consistently adopt policies and develop technologies that promote a cleaner planet from supply chain to manufacturing to the vehicles we put on the road.",
 				"blocks"=>array(
-					array(
-						"title"=>"Clean Energy",
-						"image"=>"",
-						"class"=>"clean-energy",
-						"copy"=>array(
-							"c3xgm-about-dark-blue c3xgm-about-thin"=>"We granted more<br>",
-							"c3xgm-about-light-blue"=>"clean-energy<br>",
-							"c3xgm-about-light-blue c3xgm-about-thin"=>"patents<br>",
-							"c3xgm-about-gray"=>"Than anybody else for <br>more than a decade"
-						)
-					),
+					// array(
+					// 	"title"=>"Clean Energy",
+					// 	"image"=>"",
+					// 	"class"=>"clean-energy",
+					// 	"copy"=>array(
+					// 		"c3xgm-about-dark-blue c3xgm-about-thin"=>"We granted more<br>",
+					// 		"c3xgm-about-light-blue"=>"clean-energy<br>",
+					// 		"c3xgm-about-light-blue c3xgm-about-thin"=>"patents<br>",
+					// 		"c3xgm-about-gray"=>"Than anybody else for <br>more than a decade"
+					// 	)
+					// ),
 					array(
 						"title"=>"Solar Panels",
 						"type"=>"decorative",

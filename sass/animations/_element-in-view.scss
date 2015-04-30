@@ -5,31 +5,36 @@
 		position: relative;
 		overflow: hidden;
 
+		$anim-delay:1200;
+		$anim-step:300;
+		$anim-duration:400;
+
 		> .c3xgm-about-separator {
+
 			> span:first-child { 
 				@include prefix(animation-fill-mode, both);
-				@include prefix(animation-name, fadeInRight);
-				@include prefix(animation-delay, 400ms);
-				@include prefix(animation-duration, 800ms);
+				@include prefix(animation-name, fadeInRightMega);
+				@include prefix(animation-delay, #{$anim-delay + "ms"});
+				@include prefix(animation-duration, #{$anim-duration + "ms"});
 			}
 			> span:nth-child(2) { 
 				@include prefix(animation-fill-mode, both);
-				@include prefix(animation-name, fadeInRight);
-				@include prefix(animation-delay, 1200ms);
-				@include prefix(animation-duration, 800ms);
+				@include prefix(animation-name, fadeInRightMega);
+				@include prefix(animation-delay, #{ ($anim-delay + $anim-step) + "ms"});
+				@include prefix(animation-duration, #{$anim-duration + "ms"});
 			}
 
 			.c3xgm-about-gray-line {
 				@include prefix(animation-fill-mode, both);
 				@include prefix(animation-name, growBorder);
-				@include prefix(animation-delay,400ms);
-	  			@include prefix(animation-duration,800ms);
+				@include prefix(animation-delay,200ms);
+	  			@include prefix(animation-duration,600ms);
 
 			}
 			.c3xgm-about-yellow-line {
 				@include prefix(animation-fill-mode, both);
 				@include prefix(animation-name, growBorder);
-				@include prefix(animation-delay,600ms);
+				@include prefix(animation-delay,800ms);
 	  			@include prefix(animation-duration,600ms);
 			}
 		}
@@ -37,7 +42,7 @@
 		> span.c3xgm-about-light-blue.number {
 				@include prefix(animation-fill-mode, both);
 				@include prefix(animation-name, fadeIn);
-				@include prefix(animation-delay, 800ms); 
+				@include prefix(animation-delay, #{$anim-delay + "ms"});
 				@include prefix(animation-duration,800ms);	
 		}
 		
@@ -55,24 +60,24 @@
 			@include prefix(animation-duration, 400ms);
 		}
 		
-		> span:nth-child(2) { 
-			@include prefix(animation-fill-mode, both);
-			@include prefix(animation-name, fadeInLeftMega);
-			@include prefix(animation-delay, 400ms);
-			@include prefix(animation-duration, 400ms);
-		}
-		> span:nth-child(3) { 
-			@include prefix(animation-fill-mode, both);
-			@include prefix(animation-name, fadeInLeftMega);
-			@include prefix(animation-delay, 800ms);
-			@include prefix(animation-duration, 400ms);
-		}
-		> span:nth-child(4) { 
-			@include prefix(animation-fill-mode, both);
-			@include prefix(animation-name, fadeInLeftMega);
-			@include prefix(animation-delay, 1200ms);
-			@include prefix(animation-duration, 400ms);
-		}
+		// > span:nth-child(2) { 
+		// 	@include prefix(animation-fill-mode, both);
+		// 	@include prefix(animation-name, fadeInLeftMega);
+		// 	@include prefix(animation-delay, 400ms);
+		// 	@include prefix(animation-duration, 400ms);
+		// }
+		// > span:nth-child(3) { 
+		// 	@include prefix(animation-fill-mode, both);
+		// 	@include prefix(animation-name, fadeInLeftMega);
+		// 	@include prefix(animation-delay, 800ms);
+		// 	@include prefix(animation-duration, 400ms);
+		// }
+		// > span:nth-child(4) { 
+		// 	@include prefix(animation-fill-mode, both);
+		// 	@include prefix(animation-name, fadeInLeftMega);
+		// 	@include prefix(animation-delay, 1200ms);
+		// 	@include prefix(animation-duration, 400ms);
+		// }
 
 		> span.fadeInLeftMega {
 			// @include prefix(animation-name, fadeInLeftMega);
@@ -85,11 +90,16 @@
 	}
 
 	.c3xgm-about-block-image {
+		$anim-delay:1200;
+		$anim-step:300;
+		$anim-duration:400;
+
 		img { 
 			@include prefix(animation-fill-mode, both);
 			@include prefix(animation-name, fadeIn);
-			@include prefix(animation-delay, 400ms);
-			@include prefix(animation-duration, 400ms);
+			// @include prefix(animation-delay, 400ms);
+			@include prefix(animation-delay, #{$anim-delay + "ms"});
+			@include prefix(animation-duration, #{$anim-duration + "ms"});
 		}
 
 		img.fadeInLeftMega {
@@ -103,6 +113,7 @@
 		}	
 	}
 }
+
 
 // CHINA
 .c3xgm-about-china {
@@ -302,26 +313,30 @@
 .c3xgm-about-dealers {
 	$dealers-duration:400;
 	$dealers-delay:1700;
-	$dealers-step:250;
+	$dealers-step:500;
 
 	// ELEMENT IN VIEW
 	&.element-in-view {
 		.c3xgm-about-blockquote {
 			// ANIMATE BORDER LINES
-			@include borderLinesAnimation(600);
+			.c3xgm-about-sep:first-child {
+				@include borderLinesAnimation(200);
 
-			> span:first-child {
-				@include prefix(animation-fill-mode, both);
-				@include prefix(animation-name, fadeInRightMega);
-				@include prefix(animation-delay, #{$dealers-delay + "ms"});
-				@include prefix(animation-duration, #{$dealers-duration + "ms"});
+				> span:first-child {
+					@include prefix(animation-fill-mode, both);
+					@include prefix(animation-name, fadeInRightMega);
+					@include prefix(animation-delay, #{$dealers-delay + "ms"});
+					@include prefix(animation-duration, #{$dealers-duration + "ms"});
+				}
 			}
-			> span:nth-child(2),
-			> span:nth-child(3) {
-				@include prefix(animation-fill-mode, both);
-				@include prefix(animation-name, fadeInLeftMega);
-				@include prefix(animation-delay, #{ ($dealers-delay + $dealers-step) + "ms"});
-				@include prefix(animation-duration, #{$dealers-duration + "ms"});
+			
+			.c3xgm-about-sep:nth-child(2) {
+				> span {
+					@include prefix(animation-fill-mode, both);
+					@include prefix(animation-name, fadeInLeftMega);
+					@include prefix(animation-delay, #{ ($dealers-delay + $dealers-step) + "ms"});
+					@include prefix(animation-duration, #{$dealers-duration + "ms"});
+				}
 			}
 		}
 	}
@@ -373,7 +388,6 @@
 	&.element-in-view {
 		.c3xgm-about-blockquote {
 			// ANIMATE BORDER LINES
-			@include borderLinesAnimation(600);
 
 			> span:first-child {
 				@include prefix(animation-fill-mode, both);
@@ -388,10 +402,18 @@
 				@include prefix(animation-duration, #{$test-duration + "ms"});
 			}
 			> span:nth-child(3) { 
-				@include prefix(animation-fill-mode, both);
-				@include prefix(animation-name, fadeInLeftMega);
-				@include prefix(animation-delay, #{ ($test-delay + $test-step * 2 + 100) + "ms"});
-				@include prefix(animation-duration, #{$test-duration + "ms"});
+				span:first-child {
+					@include prefix(animation-fill-mode, both);
+					@include prefix(animation-name, fadeInLeftMega);
+					@include prefix(animation-delay, #{ ($test-delay + $test-step * 2 + 1500) + "ms"});
+					@include prefix(animation-duration, #{$test-duration + "ms"});
+				}
+				span:nth-child(2) {
+					@include prefix(animation-fill-mode, both);
+					@include prefix(animation-name, fadeInLeftMega);
+					@include prefix(animation-delay, #{ ($test-delay + $test-step * 3 + 1500) + "ms"});
+					@include prefix(animation-duration, #{$test-duration + "ms"});
+				}
 			}
 
 
@@ -403,10 +425,60 @@
 }
 
 
+// SAFETY SCORE
+.c3xgm-about-safety-score {
+	$test-duration:400;
+	$test-delay:1400;
+	$test-step:300;
+
+	// ELEMENT IN VIEW
+	&.element-in-view {
+		.c3xgm-about-blockquote {
+			// ANIMATE BORDER LINES
+			@include borderLinesAnimation(200);
+
+			.c3xgm-about-sep:first-child {
+				> span:first-child {
+					@include prefix(animation-fill-mode, both);
+					@include prefix(animation-name, fadeIn);
+					@include prefix(animation-delay, #{$test-delay + "ms"});
+					@include prefix(animation-duration, #{ ($test-duration * 2 ) + "ms"});
+				}
+
+			}
+
+			.c3xgm-about-sep:nth-child(2) {
+				
+				@include borderLinesAnimation(600);
+
+				> span:first-child {
+					@include prefix(animation-fill-mode, both);
+					@include prefix(animation-name, fadeIn);
+					@include prefix(animation-delay, #{ ($test-delay) + "ms"});
+					@include prefix(animation-duration, #{$test-duration + "ms"});
+				}
+				> span:nth-child(2) { 
+					@include prefix(animation-fill-mode, both);
+					@include prefix(animation-name, fadeInLeftMega);
+					@include prefix(animation-delay, #{ ($test-delay + $test-step + 100) + "ms"});
+					@include prefix(animation-duration, #{$test-duration + "ms"});
+				}
+				> span:nth-child(3) { 
+					@include prefix(animation-fill-mode, both);
+					@include prefix(animation-name, fadeIn);
+					@include prefix(animation-delay, #{ ($test-delay + $test-step * 2 + 100) + "ms"});
+					@include prefix(animation-duration, #{$test-duration + "ms"});
+				}
+			}
+		}
+	}
+}
+
+
 // ON-STAR SUBCRIBERS
 .c3xgm-about-onstar-subscribers {
 	$on-star-duration:400;
-	$on-star-delay:1400;
+	$on-star-delay:1500;
 	$on-star-step:300;
 
 	// ELEMENT IN VIEW
@@ -426,7 +498,7 @@
 		.c3xgm-about-blockquote {
 			overflow: hidden;
 			// ANIMATE BORDER LINES
-			@include borderLinesAnimation(200);
+			@include borderLinesAnimation(400);
 
 			> span:first-child {
 				@include prefix(animation-fill-mode, both);
@@ -436,13 +508,13 @@
 			}
 			> span:nth-child(2) {
 				@include prefix(animation-fill-mode, both);
-				@include prefix(animation-name, fadeInLeft);
+				@include prefix(animation-name, fadeInLeftFixed);
 				@include prefix(animation-delay, #{ ($on-star-delay + $on-star-step) + "ms"});
 				@include prefix(animation-duration, #{$on-star-duration + "ms"});
 			}
 			> span:nth-child(3) { 
 				@include prefix(animation-fill-mode, both);
-				@include prefix(animation-name, fadeInLeftMega);
+				@include prefix(animation-name, fadeInLeftFixed);
 				@include prefix(animation-delay, #{ ($on-star-delay + $on-star-step) + "ms"});
 				@include prefix(animation-duration, #{$on-star-duration + "ms"});
 			}
@@ -533,16 +605,11 @@
 	&.element-in-view {
 		.c3xgm-about-blockquote {
 			overflow: hidden;
-			> .c3xgm-about-disclaimer {
+			> span.c3xgm-about-gray:nth-child(2),
+			> span.c3xgm-about-disclaimer {
 				@include prefix(animation-fill-mode, both);
 				@include prefix(animation-name, fadeIn);
 				@include prefix(animation-delay, #{ ($quality-delay + $quality-step * 2) + "ms"});
-				@include prefix(animation-duration, #{$quality-duration + "ms"});
-			}
-			> .c3xgm-about-disclaimer-link {
-				@include prefix(animation-fill-mode, both);
-				@include prefix(animation-name, fadeIn);
-				@include prefix(animation-delay, #{ ($quality-delay + $quality-step) + 2 "ms"});
 				@include prefix(animation-duration, #{$quality-duration + "ms"});
 			}
 		}
@@ -551,10 +618,16 @@
 
 
 // CLEAN ENERGY
-.c3xgm-about-clean-energy {
+.c3xgm-about-solar-panels {
 	$anim-duration:500;
-	$anim-delay:1200;
+	$anim-delay:600;
 	$anim-step:250;
+
+	.c3xgm-about-sun {
+		@include prefix(transition, transform 1.5s);
+		@include prefix(transition-delay, $anim-delay);
+		@include prefix(transform, scale(0, 0));
+	}
 
 	// ELEMENT IN VIEW
 	&.element-in-view {
@@ -586,6 +659,35 @@
 				@include prefix(animation-name, fadeIn);
 				@include prefix(animation-delay, #{ ($anim-delay + $anim-step * 2) + "ms"});
 				@include prefix(animation-duration, #{$anim-duration + "ms"});
+			}
+		}
+
+		.c3xgm-about-solar-road {
+			@include prefix(animation-fill-mode, both);
+			@include prefix(animation-name, fadeInLeftMega);
+			@include prefix(animation-delay, #{ ($anim-delay/2) + "ms"});
+			@include prefix(animation-duration,600ms);
+		}
+
+		.c3xgm-about-solar-panels,
+		.c3xgm-about-tree {
+			@include prefix(animation-fill-mode, both);
+			@include prefix(transform-origin, center bottom);
+			@include prefix(animation-delay, #{ ($anim-delay ) + "ms"});
+			@include prefix(animation-name, scaleUp);
+			@include prefix(animation-duration, 2.5s);
+		}
+
+		.c3xgm-about-sun {		
+			@include prefix(transform, scale(1, 1));
+			@include prefix(transition-delay, $anim-delay);
+			img {
+			  	// @include prefix(animation-delay, 1s);
+				@include prefix(animation-fill-mode, both);
+				@include prefix(animation-iteration-count, infinite);
+				@include prefix(animation-delay, 0);
+				@include prefix(animation-name, rotate);
+				@include prefix(animation-duration, 5s);
 			}
 		}
 	}

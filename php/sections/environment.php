@@ -13,7 +13,7 @@ foreach ($pages as $key => $page) {
                     
                     if($section['title'] == "Environment") {
                         if( isset($section['id']) ) { $href = cleanString($section['id']); } else { $href = ""; }
-                        echo '<div id="c3xgm-about-'.$href.'" class="c3xgm-about-page c3xgm-about-clearfix c3xgm-about-page-'.cleanString($page['title']).'">';
+                        echo '<div id="c3xgm-about-'.$href.'" class="c3xgm-about-page c3xgm-about-clearfix c3xgm-about-page-'.cleanString($section['title']).'">';
                         // SECTION HEADER
                        subSectionHeader($section['title'], $section['tagline']);
 
@@ -24,8 +24,12 @@ foreach ($pages as $key => $page) {
                                 if( isset($block['type']) && ($block['type'] == "decorative") ) {
                                 
                                     // DECORATIVE
-                                    printDecorative($block);
-
+                                    // IF SOLAR PANELS - GET STATIC HTML FILE
+                                    if($block['title'] == "Solar Panels") {
+                                        include('clean-energy.php');
+                                    } else {
+                                        printDecorative($block);
+                                    }
                                 } else {
                                     printBlock($block);
                                 }

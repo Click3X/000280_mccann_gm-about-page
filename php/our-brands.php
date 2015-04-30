@@ -20,9 +20,6 @@ $page = $pages[2];
                 foreach ($page['blocks'] as $key => $block) {
                     if( isset($block['type']) && ($block['type'] == "decorative") ) {
                         // DECORATIVE
-                        // printDecorative($block);
-
-                        // DECORATIVE
                         if( $block['title'] == "Flag Line" ) {
                             echo '<div class="c3xgm-about-flag-line-container c3xgm-about-clearfix">
                                     <div id="c3xgm-about-flag-line-grey-car" class="grey-car c3xgm-about-clearfix c3xgm-about-flag-line-grey-car">
@@ -41,9 +38,23 @@ $page = $pages[2];
                             printDecorative($block);
                         }
 
-
                     } else {
-                        printBlock($block);
+                        if( $block['title'] == "Dealers" ) {
+                            echo '<div class="c3xgm-about-block c3xgm-about-clearfix c3xgm-about-dealers text-right">
+                                    <p class="c3xgm-about-blockquote">
+                                        <span class="c3xgm-about-sep c3xgm-about-clearfix">
+                                            <span class="c3xgm-about-dark-blue c3xgm-about-thin">There are over <strong >20,000</strong>
+                                                <br>
+                                                <span>Dealers in</span>
+                                            </span>
+                                        </span>
+                                        <span class="c3xgm-about-sep c3xgm-about-clearfix">
+                                            <span class="c3xgm-about-light-blue number">140</span>
+                                            <span class="c3xgm-about-gray">Countries</span>
+                                        </span>
+                                    </p>
+                                </div>';
+                        } else { printBlock($block); }
                     }
                 }
             }

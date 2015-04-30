@@ -28,7 +28,11 @@ foreach ($pages as $key => $page) {
                                 printDecorative($block);
 
                             } else {
-                                printBlock($block);
+                                if( ( isset($block['title']) ) && ( $block['title'] == "Safety Score" ) ) {
+                                    include('safety-score.php');
+                                } else{
+                                    printBlock($block);
+                                }
                             }
                         }
                     }
