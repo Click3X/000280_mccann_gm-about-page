@@ -9,7 +9,7 @@ function pageHeader($title, $icon, $tagline, $image) {
 	echo '<div class="c3xgm-about-section c3xgm-about-clearfix '.cleanString($title).'">
 		    <div class="c3xgm-about-section-header c3xgm-about-clearfix">
 			    <div class="c3xgm-about-section-header-inner">
-			        <img class="c3xgm-about-section-icon" src="'.$icon.'" alt="'.$title.'">
+			        <img id="c3xgm-about-'.cleanString($title).'-icon" class="c3xgm-about-section-icon" src="'.$icon.'" alt="'.$title.'">
 			        <h1 class="c3xgm-about-h fadeInLeftMega">'.$titleSpan.'</h1>
 			    </div>
 				<hr>
@@ -140,6 +140,11 @@ function printBlock($block) {
 
 					// IF BLOCK IS CHINA, GET MOBIL PICS
 					if( isset($block['image-mobile']) && $block['image-mobile'] != "" ) {
+						echo '<div class="china-flag-wrapper c3xgm-about-desktop" style="height: 500px; position: relative;">
+							    <img src="img/pages/brands/pole.svg"  alt="China" style="height: 100%; width: auto; position: absolute; top:0; left: 0;">
+							    <img src="img/pages/brands/chinaflag.gif" style="position: absolute; left: 14px; top: -18px; width: auto; z-index: -2">
+							</div>';
+
 						echo '<img src="'.$block['image-mobile@2x'].'" class="c3xgm-about-block-image-mobile" alt="'.$block['title'].'">';	
 					}
 					echo '</div>';

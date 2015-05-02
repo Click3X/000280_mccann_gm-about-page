@@ -1,22 +1,25 @@
 // GREY-CAR and WHEELS
 
-@-webkit-keyframes rotateTires {
-    0%   { -webkit-transform: rotate(0); }    
-    100% { -webkit-transform: rotate(360deg); }
-}
-@-moz-keyframes rotateTires {
-    0%   { -moz-transform: rotate(0); }    
-    100% { -moz-transform: rotate(360deg); }
-}
+// @-webkit-keyframes rotateTires {
+//     0%   { -webkit-transform: rotate(0); }    
+//     100% { -webkit-transform: rotate(360deg); }
+// }
+// @-moz-keyframes rotateTires {
+//     0%   { -moz-transform: rotate(0); }    
+//     100% { -moz-transform: rotate(360deg); }
+// }
 
-@keyframes rotateTires {
-    0%   { transform: rotate(0); }    
-    100% { transform: rotate(360deg); }
-}
+// @keyframes rotateTires {
+//     0%   { transform: rotate(0); }    
+//     100% { transform: rotate(360deg); }
+// }
 
 .animate-tires {
     @include prefix(animation-fill-mode, both);
-    @include prefix(animation, rotateTires 2s linear infinite);    
+    @include prefix(animation-iteration-count, infinite);
+    @include prefix(animation-delay, 0);
+    @include prefix(animation-name, rotate);
+    @include prefix(animation-duration, 5s);    
 }
 
 .grey-car {

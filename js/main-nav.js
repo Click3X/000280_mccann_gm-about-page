@@ -84,6 +84,49 @@ jQuery(document).ready(function($) {
     }
 
 
+    // OUR PEOPLE MAP DRAW STROKE
+    var current_frame, total_frames, path, length, handle;
+
+    // myobj = document.getElementById('myobj').cloneNode(true);
+
+    var init = function() {
+      current_frame = 0;
+      // total_frames = 60;
+      total_frames = 150;
+      path = new Array();
+      length = new Array();
+      for(var i=0; i< 12 ;i++){
+        path[i] = document.getElementById('i'+i);
+        // console.log(path[i]);
+        l = path[i].getTotalLength();
+        // console.log(l);
+        length[i] = l;
+        path[i].style.strokeDasharray = l + ' ' + l; 
+        path[i].style.strokeDashoffset = l;
+      }
+      handle = 0;
+    }
+     
+     
+    var draw = function() {
+       var progress = current_frame/total_frames;
+       if (progress > 1) {
+         window.cancelAnimationFrame(handle);
+       } else {
+         current_frame++;
+         for(var j=0; j<path.length;j++){
+             path[j].style.strokeDashoffset = Math.floor(length[j] * (1 - progress));
+         }
+         handle = window.requestAnimationFrame(draw);
+       }
+    };
+
+    // init();
+    // draw();
+
+  
+
+
     // O B J E C T    A N I M A T E
     function AnimatedElement(elem, defaults) {
         var elem = elem,
@@ -100,7 +143,8 @@ jQuery(document).ready(function($) {
         if(elem instanceof jQuery) { this.$element = elem; } 
             else { this.$element = $(elem); }
 
-        this.name = this.$element.attr('id');
+        // this.name = this.$element.attr('id');
+        this.elementName = this.$element.get(0).classList[2];
         
         this.elementWidth = Number( this.$element.css("width").replace('px', '') );
         this.elementHeight = Number( this.$element.css("height").replace('px', '') );
@@ -128,7 +172,7 @@ jQuery(document).ready(function($) {
 
         // IN VIEW
         this.isInView = function() {
-            return ( (this.elementTop <= scrollBottom) && (this.elementBottom >= scrollTop) );
+            return ( (this.elementTop <= scrollBottom + this.elementHeight) && (this.elementBottom >= scrollTop - this.elementHeight) );
         }
 
         // IS AT HALF
@@ -159,24 +203,12 @@ jQuery(document).ready(function($) {
         if(css3dtransforms) {
             this.moveRight = function() {
                 move = this.getScrollAmt();
-                // console.log('THSI IS MOVE: ' + move);
-                // if( move > windowWidth ) {
-                //     return false;
-                // } else {
-                    this.$element.css("transform", "translate3d("+ move +"px, 0, 10px)");
-                // }
+                this.$element.css("transform", "translate3d("+ move +"px, 0, 10px)");
             }
-
 
             this.moveLeft = function() {
                 move = this.getScrollAmt();
-                // if( move > windowWidth ) {
-                //     console.log('THSI IS MOVE: ' + move);
-                //     return false;
-                // } else {
-                    // console.log('THSI IS MOVE: ' + move);
-                    this.$element.css("transform", "translate3d(-"+ move +"px, 0, 10px)");
-                // }
+                this.$element.css("transform", "translate3d(-"+ move +"px, 0, 10px)");
             }
 
         } else {
@@ -184,20 +216,12 @@ jQuery(document).ready(function($) {
 
             this.moveRight = function() {
                 move = this.getScrollAmt();
-                // if( move > windowWidth ) {
-                //     return false;
-                // } else {
-                    this.$element.css("left", move + "px");
-                // }
+                this.$element.css("left", move + "px");
             }
 
             this.moveLeft = function() {
                 move = this.getScrollAmt();
-                // if( move > windowWidth ) {
-                //     return false;
-                // } else {
-                    this.$element.css("transform", "translate3d(-"+ move +"px, 0, 10px)");
-                // }
+                this.$element.css("transform", "translate3d(-"+ move +"px, 0, 10px)");
             }
         }   
     } // END OBJECT ANIMATE
@@ -249,6 +273,10 @@ jQuery(document).ready(function($) {
             }
         }
     });
+
+
+
+
     
     /** MAIN NAV JS --- HIGH LIGHT NAV, ATTACH CLASSES */
     var aChildren = $(".c3xgm-about-main-nav li a"),
@@ -260,6 +288,9 @@ jQuery(document).ready(function($) {
   
         aArray.push(ahref);
     } 
+
+    // HIDE ICONS
+    $('.c3xgm-about-section-icon').addClass('invisible');
 
     // SAVE STATE OF PAGES IN VIEW
     var brandsInView = false,
@@ -290,6 +321,15 @@ jQuery(document).ready(function($) {
             // CHECK IF PAGE IS BREAKING VIEW
             if ( (divPos <= scrollBottom) && (divPos + divHeight > scrollTop) )  {
                 $(theID).removeClass("invisible").addClass("c3xgm-about-page-in-view");
+                // BUILD ICON ID FROM PAGE ID
+                var iconID = theID + '-icon';
+                iconID = iconID.substring(1);
+                console.log(iconID);
+                // TRIGGER ICON GIF
+                setTimeout(function() {
+                    $('#'+iconID).removeClass('invisible');
+                    triggerGif( document.getElementById(iconID) );                   
+                }, 800);
                 
                 // IF PAGE IS OUR BRANDS, OR GLOBAL THEN SHOW FIRST SLIDE
                 if( (theID == "#c3xgm-about-our-brands") && (brandsInView == false) ) {
@@ -328,7 +368,7 @@ jQuery(document).ready(function($) {
             clearTimeout(resizeTimeout);
             resizeTimeout = null;
         }
-        resizeTimeout = setTimeout(resizeHandler, 60/1000);
+        resizeTimeout = setTimeout(resizeHandler, 600/1000);
     });
     // E N D    R E S I Z E
 
@@ -340,7 +380,7 @@ jQuery(document).ready(function($) {
             clearTimeout(scrollTimeout);
             scrollTimeout = null;
         }
-        scrollTimeout = setTimeout(scrollHandler, 60/1000);
+        scrollTimeout = setTimeout(scrollHandler, 120/1000);
 
     });
 
@@ -374,6 +414,8 @@ jQuery(document).ready(function($) {
             $('#c3xgm-about-number-6').text('');
           // // TRIGGER NUMBER ANIMATION
             setTimeout(function(){ 
+                init();
+                draw();
                 $('#c3xgm-about-number-6').jQuerySimpleCounter({start:0, end: 6,duration: 1000});
                 animate6 = true;
             }, 800);
@@ -418,6 +460,24 @@ jQuery(document).ready(function($) {
             }, 1100);
         }
     }
+
+    var carHasRotated = false;
+      // ROTATE CAR
+    function rotateCar() {
+        if(carHasRotated === false) {
+            setTimeout(function(){ 
+                $('#safety-truck').css('opacity', 1);
+                setTimeout(function(){ 
+                    $('#truck-line-container').addClass('carAnimation-slide');                
+                    $('#truck-parent').addClass('carAnimation-rotate');
+                    $('#line-parent').addClass('carAnimation-lineFadeIn');
+                    $('.c3xgm-about-circle-lines').addClass('carAnimation-lineRotate');
+                    carHasRotated = true;
+                }, 800);
+            }, 2400);
+        }
+    }
+
 
 
     function triggerGif(gif){
@@ -501,7 +561,11 @@ jQuery(document).ready(function($) {
         $.each(animBlocks, function(i, val) {
             if( this.isAtEighth() ){
                 this.$element.removeClass('invisible');
-                this.addInViewClass();      
+                this.addInViewClass();
+
+                if(this.elementName = "c3xgm-about-test-facility") {
+                    rotateCar();
+                }
             }
         });
 

@@ -464,56 +464,50 @@ html, body {
 
 /* line 75, ../sass/components/_layout.scss */
 img.c3xgm-about-section-icon {
-  width: 10%;
-  height: 10%;
-  margin: -10px 6px 0 0;
   display: block;
   margin: 0 auto;
-  width: 92px;
-  height: 92px;
+  width: 100px;
+  height: 100px;
 }
 @media (min-width: 768px) {
   /* line 75, ../sass/components/_layout.scss */
   img.c3xgm-about-section-icon {
     float: left;
-    width: 90px;
-    height: 90px;
-    margin: -10px 21px 0 0;
-    padding-left: 8px;
+    margin: -16px 18px 0 8px;
   }
 }
 
-/* line 88, ../sass/components/_layout.scss */
+/* line 85, ../sass/components/_layout.scss */
 .c3xgm-about-subsection {
   padding-left: 2px;
 }
 
-/* line 90, ../sass/components/_layout.scss */
+/* line 87, ../sass/components/_layout.scss */
 .c3xgm-about-header-image,
 .c3xgm-about-block-image,
 .c3xgm-about-block-icon {
   width: 100%;
 }
-/* line 95, ../sass/components/_layout.scss */
+/* line 92, ../sass/components/_layout.scss */
 .c3xgm-about-header-image img,
 .c3xgm-about-block-image img,
 .c3xgm-about-block-icon img {
   width: 100%;
 }
 
-/* line 98, ../sass/components/_layout.scss */
+/* line 95, ../sass/components/_layout.scss */
 .c3xgm-about-block,
 .c3xgm-about-block-earn {
   margin-bottom: 2em;
 }
 
-/* line 101, ../sass/components/_layout.scss */
+/* line 98, ../sass/components/_layout.scss */
 .clear-left,
 .c3xgm-clear-left {
   clear: left;
 }
 
-/* line 105, ../sass/components/_layout.scss */
+/* line 102, ../sass/components/_layout.scss */
 .c3xgm-about-module-20,
 .c3xgm-about-module-25,
 .c3xgm-about-module-35,
@@ -529,66 +523,66 @@ img.c3xgm-about-section-icon {
 }
 
 @media (min-width: 768px) {
-  /* line 120, ../sass/components/_layout.scss */
+  /* line 117, ../sass/components/_layout.scss */
   .c3xgm-about-module-20 {
     width: 20%;
     float: left;
   }
 
-  /* line 121, ../sass/components/_layout.scss */
+  /* line 118, ../sass/components/_layout.scss */
   .c3xgm-about-module-25 {
     width: 25%;
     float: left;
   }
 
-  /* line 122, ../sass/components/_layout.scss */
+  /* line 119, ../sass/components/_layout.scss */
   .c3xgm-about-module-35 {
     width: 35%;
     float: left;
   }
 
-  /* line 123, ../sass/components/_layout.scss */
+  /* line 120, ../sass/components/_layout.scss */
   .c3xgm-about-module-40 {
     width: 40%;
     float: left;
   }
 
-  /* line 124, ../sass/components/_layout.scss */
+  /* line 121, ../sass/components/_layout.scss */
   .c3xgm-about-module-50 {
     width: 50%;
     float: left;
   }
 
-  /* line 125, ../sass/components/_layout.scss */
+  /* line 122, ../sass/components/_layout.scss */
   .c3xgm-about-module-60 {
     width: 60%;
     float: left;
   }
 
-  /* line 126, ../sass/components/_layout.scss */
+  /* line 123, ../sass/components/_layout.scss */
   .c3xgm-about-module-65 {
     width: 65%;
     float: left;
   }
 
-  /* line 127, ../sass/components/_layout.scss */
+  /* line 124, ../sass/components/_layout.scss */
   .c3xgm-about-module-75 {
     width: 75%;
     float: left;
   }
 
-  /* line 128, ../sass/components/_layout.scss */
+  /* line 125, ../sass/components/_layout.scss */
   .c3xgm-about-module-80 {
     width: 80%;
     float: left;
   }
 }
-/* line 132, ../sass/components/_layout.scss */
+/* line 129, ../sass/components/_layout.scss */
 svg {
   max-height: 100%;
 }
 
-/* line 135, ../sass/components/_layout.scss */
+/* line 132, ../sass/components/_layout.scss */
 .c3xgm-about-decorative {
   position: relative;
   width: 100%;
@@ -596,13 +590,13 @@ svg {
   margin-bottom: 0;
 }
 
-/* line 140, ../sass/components/_layout.scss */
+/* line 137, ../sass/components/_layout.scss */
 .c3xgm-about-module-technology,
 .c3xgm-about-module-foundation {
   position: relative;
 }
 
-/* line 143, ../sass/components/_layout.scss */
+/* line 140, ../sass/components/_layout.scss */
 .c3xgm-about-module-technology,
 .c3xgm-about-module-foundation,
 .c3xgm-about-subsection,
@@ -612,7 +606,7 @@ svg {
   margin: 0 auto 3.5em;
 }
 @media (min-width: 768px) {
-  /* line 143, ../sass/components/_layout.scss */
+  /* line 140, ../sass/components/_layout.scss */
   .c3xgm-about-module-technology,
   .c3xgm-about-module-foundation,
   .c3xgm-about-subsection,
@@ -622,24 +616,24 @@ svg {
   }
 }
 
-/* line 156, ../sass/components/_layout.scss */
+/* line 153, ../sass/components/_layout.scss */
 .c3xgm-about-page-environment .c3xgm-about-subsection {
   margin: 0 auto;
 }
 @media (min-width: 768px) {
-  /* line 156, ../sass/components/_layout.scss */
+  /* line 153, ../sass/components/_layout.scss */
   .c3xgm-about-page-environment .c3xgm-about-subsection {
     margin: 0 auto;
   }
 }
 
-/* line 162, ../sass/components/_layout.scss */
+/* line 159, ../sass/components/_layout.scss */
 .c3xgm-about-section {
   max-width: 906px;
   margin: 0 auto;
 }
 
-/* line 167, ../sass/components/_layout.scss */
+/* line 164, ../sass/components/_layout.scss */
 .c3xgm-about-block.c3xgm-about-decorative {
   width: 100%;
   max-width: none;
@@ -647,7 +641,7 @@ svg {
   margin-right: auto;
 }
 
-/* line 172, ../sass/components/_layout.scss */
+/* line 169, ../sass/components/_layout.scss */
 .c3xgm-about-section,
 .c3xgm-about-subsection,
 .c3xgm-about-module-foundation,
@@ -656,7 +650,7 @@ svg {
   width: 92%;
 }
 @media (min-width: 768px) {
-  /* line 172, ../sass/components/_layout.scss */
+  /* line 169, ../sass/components/_layout.scss */
   .c3xgm-about-section,
   .c3xgm-about-subsection,
   .c3xgm-about-module-foundation,
@@ -667,7 +661,7 @@ svg {
 }
 
 @media (min-width: 768px) {
-  /* line 181, ../sass/components/_layout.scss */
+  /* line 178, ../sass/components/_layout.scss */
   .c3xgm-about-module-technology,
   .c3xgm-about-block.c3xgm-about-decorative {
     width: 100%;
@@ -675,29 +669,29 @@ svg {
 }
 
 @media (min-width: 768px) {
-  /* line 190, ../sass/components/_layout.scss */
+  /* line 187, ../sass/components/_layout.scss */
   .c3xgm-about-block-image-mobile {
     display: none;
   }
 }
 
-/* line 193, ../sass/components/_layout.scss */
+/* line 190, ../sass/components/_layout.scss */
 .c3xgm-about-desktop {
   display: none;
 }
 @media (min-width: 768px) {
-  /* line 193, ../sass/components/_layout.scss */
+  /* line 190, ../sass/components/_layout.scss */
   .c3xgm-about-desktop {
     display: block;
   }
 }
 
-/* line 199, ../sass/components/_layout.scss */
+/* line 196, ../sass/components/_layout.scss */
 .c3xgm-about-open-sans {
   font-family: "open-sans", 'Arial', Arial, sans-serif !important;
 }
 
-/* line 203, ../sass/components/_layout.scss */
+/* line 200, ../sass/components/_layout.scss */
 .c3xgm-about-yellow-line,
 .c3xgm-about-gray-line {
   position: absolute;
@@ -705,33 +699,33 @@ svg {
   z-index: 1100;
 }
 
-/* line 210, ../sass/components/_layout.scss */
+/* line 207, ../sass/components/_layout.scss */
 .c3xgm-about-yellow-line {
   background-color: #FDB12E;
 }
 
-/* line 211, ../sass/components/_layout.scss */
+/* line 208, ../sass/components/_layout.scss */
 .c3xgm-about-gray-line {
   background-color: #d4d4d5;
 }
 
-/* line 213, ../sass/components/_layout.scss */
+/* line 210, ../sass/components/_layout.scss */
 .c3xgm-about-line-vert {
   height: 100%;
   width: .15rem;
 }
 @media (min-width: 768px) {
-  /* line 213, ../sass/components/_layout.scss */
+  /* line 210, ../sass/components/_layout.scss */
   .c3xgm-about-line-vert {
     width: .2rem;
   }
 }
 
-/* line 223, ../sass/components/_layout.scss */
+/* line 220, ../sass/components/_layout.scss */
 .c3xgm-about-page-container > div {
   margin-bottom: 7em;
 }
-/* line 225, ../sass/components/_layout.scss */
+/* line 222, ../sass/components/_layout.scss */
 .c3xgm-about-page-container > div:last-child {
   margin-bottom: 2em;
 }
@@ -1632,13 +1626,17 @@ h4.c3xgm-about-h {
     display: block;
   }
 }
-/* line 11, ../sass/pages/_safety.scss */
+/* line 10, ../sass/pages/_safety.scss */
+.c3xgm-about-page-our-commitment .c3xgm-about-crash-test-dummies {
+  margin-bottom: 10em;
+}
+/* line 12, ../sass/pages/_safety.scss */
 .c3xgm-about-page-our-commitment .c3xgm-about-crash-test-dummies .c3xgm-about-block-image {
   width: 100%;
   position: relative;
 }
 @media (min-width: 768px) {
-  /* line 11, ../sass/pages/_safety.scss */
+  /* line 12, ../sass/pages/_safety.scss */
   .c3xgm-about-page-our-commitment .c3xgm-about-crash-test-dummies .c3xgm-about-block-image {
     float: left;
     width: 25%;
@@ -1646,7 +1644,7 @@ h4.c3xgm-about-h {
     padding-bottom: 297px;
     margin-right: 1em;
   }
-  /* line 19, ../sass/pages/_safety.scss */
+  /* line 20, ../sass/pages/_safety.scss */
   .c3xgm-about-page-our-commitment .c3xgm-about-crash-test-dummies .c3xgm-about-block-image img {
     position: absolute;
     top: 50%;
@@ -1665,7 +1663,7 @@ h4.c3xgm-about-h {
     width: 235%;
   }
 }
-/* line 28, ../sass/pages/_safety.scss */
+/* line 29, ../sass/pages/_safety.scss */
 .c3xgm-about-page-our-commitment .c3xgm-about-crash-test-dummies .c3xgm-about-blockquote {
   background: #fff;
   display: inline-block;
@@ -1673,19 +1671,19 @@ h4.c3xgm-about-h {
   position: relative;
   z-index: 10;
 }
-/* line 32, ../sass/pages/_safety.scss */
+/* line 33, ../sass/pages/_safety.scss */
 .c3xgm-about-page-our-commitment .c3xgm-about-crash-test-dummies .c3xgm-about-blockquote > span {
   display: inline-block;
   float: left;
   clear: left;
   max-width: 5.5em;
 }
-/* line 37, ../sass/pages/_safety.scss */
+/* line 38, ../sass/pages/_safety.scss */
 .c3xgm-about-page-our-commitment .c3xgm-about-crash-test-dummies .c3xgm-about-blockquote > span.c3xgm-about-light-gray {
   max-width: 16em;
 }
 @media (min-width: 768px) {
-  /* line 28, ../sass/pages/_safety.scss */
+  /* line 29, ../sass/pages/_safety.scss */
   .c3xgm-about-page-our-commitment .c3xgm-about-crash-test-dummies .c3xgm-about-blockquote {
     display: block;
     width: auto;
@@ -1729,20 +1727,20 @@ h4.c3xgm-about-h {
     width: 0.2rem;
   }
 }
-/* line 47, ../sass/pages/_safety.scss */
+/* line 48, ../sass/pages/_safety.scss */
 .c3xgm-about-page-our-commitment .c3xgm-about-crash-test-dummies .c3xgm-about-dark-blue.c3xgm-about-thin {
   font-size: 12.9088582992554px;
   font-size: 6.034018vw;
   line-height: 1.25em;
 }
 @media (min-width: 768px) {
-  /* line 47, ../sass/pages/_safety.scss */
+  /* line 48, ../sass/pages/_safety.scss */
   .c3xgm-about-page-our-commitment .c3xgm-about-crash-test-dummies .c3xgm-about-dark-blue.c3xgm-about-thin {
     font-size: 36.5199px;
     line-height: 43.808725px;
   }
 }
-/* line 55, ../sass/pages/_safety.scss */
+/* line 56, ../sass/pages/_safety.scss */
 .c3xgm-about-page-our-commitment .c3xgm-about-crash-test-dummies .c3xgm-about-light-blue {
   font-size: 28.7430095672607px;
   font-size: 13.98219vw;
@@ -1751,13 +1749,13 @@ h4.c3xgm-about-h {
   display: inline-block;
 }
 @media (min-width: 768px) {
-  /* line 55, ../sass/pages/_safety.scss */
+  /* line 56, ../sass/pages/_safety.scss */
   .c3xgm-about-page-our-commitment .c3xgm-about-crash-test-dummies .c3xgm-about-light-blue {
     font-size: 81.315675px;
     line-height: 75.925px;
   }
 }
-/* line 61, ../sass/pages/_safety.scss */
+/* line 62, ../sass/pages/_safety.scss */
 .c3xgm-about-page-our-commitment .c3xgm-about-crash-test-dummies .c3xgm-about-light-gray {
   display: inline-block;
   font-size: 18px;
@@ -1765,47 +1763,47 @@ h4.c3xgm-about-h {
   line-height: 1.2em;
 }
 @media (min-width: 768px) {
-  /* line 61, ../sass/pages/_safety.scss */
+  /* line 62, ../sass/pages/_safety.scss */
   .c3xgm-about-page-our-commitment .c3xgm-about-crash-test-dummies .c3xgm-about-light-gray {
     font-size: 33px;
   }
 }
-/* line 68, ../sass/pages/_safety.scss */
+/* line 69, ../sass/pages/_safety.scss */
 .c3xgm-about-page-our-commitment .c3xgm-about-crash-test-dummies .c3xgm-about-light-gray.c3xgm-about-thin .c3xgm-about-light-blue {
   font-size: 14.4925537109375px;
   font-size: 3.522427626375vw;
   line-height: 1.2em;
 }
 @media (min-width: 768px) {
-  /* line 68, ../sass/pages/_safety.scss */
+  /* line 69, ../sass/pages/_safety.scss */
   .c3xgm-about-page-our-commitment .c3xgm-about-crash-test-dummies .c3xgm-about-light-gray.c3xgm-about-thin .c3xgm-about-light-blue {
     font-size: 31.8885px;
   }
 }
-/* line 76, ../sass/pages/_safety.scss */
+/* line 77, ../sass/pages/_safety.scss */
 .c3xgm-about-page-our-commitment .c3xgm-about-test-facility {
   max-width: 54em;
 }
-/* line 78, ../sass/pages/_safety.scss */
+/* line 79, ../sass/pages/_safety.scss */
 .c3xgm-about-page-our-commitment .c3xgm-about-test-facility .c3xgm-about-block-image {
   width: 60%;
   height: 0;
   padding-bottom: 55%;
   position: relative;
 }
-/* line 82, ../sass/pages/_safety.scss */
+/* line 83, ../sass/pages/_safety.scss */
 .c3xgm-about-page-our-commitment .c3xgm-about-test-facility .c3xgm-about-block-image .c3xgm-about-circle-lines {
   position: absolute;
   width: 90%;
   max-width: none;
 }
 @media (min-width: 768px) {
-  /* line 82, ../sass/pages/_safety.scss */
+  /* line 83, ../sass/pages/_safety.scss */
   .c3xgm-about-page-our-commitment .c3xgm-about-test-facility .c3xgm-about-block-image .c3xgm-about-circle-lines {
     width: 85%;
   }
 }
-/* line 86, ../sass/pages/_safety.scss */
+/* line 87, ../sass/pages/_safety.scss */
 .c3xgm-about-page-our-commitment .c3xgm-about-test-facility .c3xgm-about-block-image img {
   position: absolute;
   top: 50%;
@@ -1818,34 +1816,34 @@ h4.c3xgm-about-h {
   width: 50%;
 }
 @media (min-width: 768px) {
-  /* line 78, ../sass/pages/_safety.scss */
+  /* line 79, ../sass/pages/_safety.scss */
   .c3xgm-about-page-our-commitment .c3xgm-about-test-facility .c3xgm-about-block-image {
     width: 48%;
     float: right;
     padding-bottom: 270px;
   }
-  /* line 91, ../sass/pages/_safety.scss */
+  /* line 95, ../sass/pages/_safety.scss */
   .c3xgm-about-page-our-commitment .c3xgm-about-test-facility .c3xgm-about-block-image img {
     max-width: 225px;
   }
 }
-/* line 95, ../sass/pages/_safety.scss */
+/* line 99, ../sass/pages/_safety.scss */
 .c3xgm-about-page-our-commitment .c3xgm-about-test-facility .c3xgm-about-blockquote {
   display: inline-block;
 }
-/* line 97, ../sass/pages/_safety.scss */
+/* line 101, ../sass/pages/_safety.scss */
 .c3xgm-about-page-our-commitment .c3xgm-about-test-facility .c3xgm-about-blockquote > span {
   display: inline-block;
   float: left;
   clear: left;
 }
 @media (min-width: 768px) {
-  /* line 95, ../sass/pages/_safety.scss */
+  /* line 99, ../sass/pages/_safety.scss */
   .c3xgm-about-page-our-commitment .c3xgm-about-test-facility .c3xgm-about-blockquote {
     display: block;
   }
 }
-/* line 104, ../sass/pages/_safety.scss */
+/* line 108, ../sass/pages/_safety.scss */
 .c3xgm-about-page-our-commitment .c3xgm-about-test-facility .c3xgm-about-dark-blue.c3xgm-about-thin {
   font-size: 19px;
   font-size: 6vw;
@@ -1853,12 +1851,12 @@ h4.c3xgm-about-h {
   max-width: 12em;
 }
 @media (min-width: 768px) {
-  /* line 104, ../sass/pages/_safety.scss */
+  /* line 108, ../sass/pages/_safety.scss */
   .c3xgm-about-page-our-commitment .c3xgm-about-test-facility .c3xgm-about-dark-blue.c3xgm-about-thin {
     font-size: 34.5199px;
   }
 }
-/* line 110, ../sass/pages/_safety.scss */
+/* line 114, ../sass/pages/_safety.scss */
 .c3xgm-about-page-our-commitment .c3xgm-about-test-facility .c3xgm-about-gray {
   font-size: 17px;
   font-size: 5.5vw;
@@ -1867,12 +1865,12 @@ h4.c3xgm-about-h {
   margin-bottom: .27em;
 }
 @media (min-width: 768px) {
-  /* line 110, ../sass/pages/_safety.scss */
+  /* line 114, ../sass/pages/_safety.scss */
   .c3xgm-about-page-our-commitment .c3xgm-about-test-facility .c3xgm-about-gray {
     font-size: 28px;
   }
 }
-/* line 116, ../sass/pages/_safety.scss */
+/* line 120, ../sass/pages/_safety.scss */
 .c3xgm-about-page-our-commitment .c3xgm-about-test-facility .c3xgm-about-light-blue {
   padding-left: .6rem;
   position: relative;
@@ -1911,7 +1909,7 @@ h4.c3xgm-about-h {
     width: 0.2rem;
   }
 }
-/* line 120, ../sass/pages/_safety.scss */
+/* line 124, ../sass/pages/_safety.scss */
 .c3xgm-about-page-our-commitment .c3xgm-about-test-facility .c3xgm-about-light-blue span {
   font-size: 38px;
   font-size: 12vw;
@@ -1921,20 +1919,20 @@ h4.c3xgm-about-h {
   float: left;
 }
 @media (min-width: 768px) {
-  /* line 120, ../sass/pages/_safety.scss */
+  /* line 124, ../sass/pages/_safety.scss */
   .c3xgm-about-page-our-commitment .c3xgm-about-test-facility .c3xgm-about-light-blue span {
     font-size: 68.3325px;
   }
 }
-/* line 129, ../sass/pages/_safety.scss */
+/* line 133, ../sass/pages/_safety.scss */
 .c3xgm-about-page-our-commitment .c3xgm-about-safety-score {
   margin-top: 0;
 }
-/* line 131, ../sass/pages/_safety.scss */
+/* line 135, ../sass/pages/_safety.scss */
 .c3xgm-about-page-our-commitment .c3xgm-about-safety-score .c3xgm-about-block-image {
   width: 45%;
 }
-/* line 133, ../sass/pages/_safety.scss */
+/* line 137, ../sass/pages/_safety.scss */
 .c3xgm-about-page-our-commitment .c3xgm-about-safety-score .c3xgm-about-sep {
   display: block;
   float: right;
@@ -1944,18 +1942,18 @@ h4.c3xgm-about-h {
   padding-left: 2.5%;
 }
 @media (min-width: 768px) {
-  /* line 133, ../sass/pages/_safety.scss */
+  /* line 137, ../sass/pages/_safety.scss */
   .c3xgm-about-page-our-commitment .c3xgm-about-safety-score .c3xgm-about-sep {
     width: 65%;
   }
 }
-/* line 140, ../sass/pages/_safety.scss */
+/* line 144, ../sass/pages/_safety.scss */
 .c3xgm-about-page-our-commitment .c3xgm-about-safety-score .c3xgm-about-sep:first-child {
   float: left;
   padding-left: 0;
 }
 @media (min-width: 768px) {
-  /* line 140, ../sass/pages/_safety.scss */
+  /* line 144, ../sass/pages/_safety.scss */
   .c3xgm-about-page-our-commitment .c3xgm-about-safety-score .c3xgm-about-sep:first-child {
     width: 35%;
   }
@@ -1994,13 +1992,13 @@ h4.c3xgm-about-h {
     width: 0.2rem;
   }
 }
-/* line 151, ../sass/pages/_safety.scss */
+/* line 155, ../sass/pages/_safety.scss */
 .c3xgm-about-page-our-commitment .c3xgm-about-safety-score .c3xgm-about-clear,
 .c3xgm-about-page-our-commitment .c3xgm-about-safety-score span strong {
   float: left;
   clear: left;
 }
-/* line 157, ../sass/pages/_safety.scss */
+/* line 161, ../sass/pages/_safety.scss */
 .c3xgm-about-page-our-commitment .c3xgm-about-safety-score .c3xgm-about-light-blue.number,
 .c3xgm-about-page-our-commitment .c3xgm-about-safety-score .c3xgm-about-light-blue.number span {
   display: block;
@@ -2011,7 +2009,7 @@ h4.c3xgm-about-h {
   margin: 0 auto 0.1em;
 }
 @media (min-width: 768px) {
-  /* line 157, ../sass/pages/_safety.scss */
+  /* line 161, ../sass/pages/_safety.scss */
   .c3xgm-about-page-our-commitment .c3xgm-about-safety-score .c3xgm-about-light-blue.number,
   .c3xgm-about-page-our-commitment .c3xgm-about-safety-score .c3xgm-about-light-blue.number span {
     position: relative;
@@ -2023,11 +2021,11 @@ h4.c3xgm-about-h {
     line-height: 0.96em;
   }
 }
-/* line 172, ../sass/pages/_safety.scss */
+/* line 176, ../sass/pages/_safety.scss */
 .c3xgm-about-page-our-commitment .c3xgm-about-safety-score .c3xgm-about-dark-blue.c3xgm-about-thin {
   display: inline-block;
 }
-/* line 174, ../sass/pages/_safety.scss */
+/* line 178, ../sass/pages/_safety.scss */
 .c3xgm-about-page-our-commitment .c3xgm-about-safety-score .c3xgm-about-dark-blue.c3xgm-about-thin,
 .c3xgm-about-page-our-commitment .c3xgm-about-safety-score .c3xgm-about-dark-blue.c3xgm-about-thin span {
   font-size: 13.1503963470459px;
@@ -2036,13 +2034,13 @@ h4.c3xgm-about-h {
   font-size: 6vw;
 }
 @media (min-width: 768px) {
-  /* line 174, ../sass/pages/_safety.scss */
+  /* line 178, ../sass/pages/_safety.scss */
   .c3xgm-about-page-our-commitment .c3xgm-about-safety-score .c3xgm-about-dark-blue.c3xgm-about-thin,
   .c3xgm-about-page-our-commitment .c3xgm-about-safety-score .c3xgm-about-dark-blue.c3xgm-about-thin span {
     font-size: 33px;
   }
 }
-/* line 181, ../sass/pages/_safety.scss */
+/* line 185, ../sass/pages/_safety.scss */
 .c3xgm-about-page-our-commitment .c3xgm-about-safety-score .c3xgm-about-light-blue {
   line-height: 0.9em;
   font-size: 26px;
@@ -2054,25 +2052,25 @@ h4.c3xgm-about-h {
   clear: left;
 }
 @media (min-width: 768px) {
-  /* line 181, ../sass/pages/_safety.scss */
+  /* line 185, ../sass/pages/_safety.scss */
   .c3xgm-about-page-our-commitment .c3xgm-about-safety-score .c3xgm-about-light-blue {
     font-size: 40px;
     clear: none;
   }
 }
-/* line 188, ../sass/pages/_safety.scss */
+/* line 192, ../sass/pages/_safety.scss */
 .c3xgm-about-page-our-commitment .c3xgm-about-safety-score .c3xgm-about-light-blue span {
   line-height: 0.9em;
   font-size: 26px;
   font-size: 8vw;
 }
 @media (min-width: 768px) {
-  /* line 188, ../sass/pages/_safety.scss */
+  /* line 192, ../sass/pages/_safety.scss */
   .c3xgm-about-page-our-commitment .c3xgm-about-safety-score .c3xgm-about-light-blue span {
     font-size: 40px;
   }
 }
-/* line 195, ../sass/pages/_safety.scss */
+/* line 199, ../sass/pages/_safety.scss */
 .c3xgm-about-page-our-commitment .c3xgm-about-safety-score .c3xgm-about-light-gray.c3xgm-about-thin,
 .c3xgm-about-page-our-commitment .c3xgm-about-safety-score .c3xgm-about-light-gray.c3xgm-about-thin span {
   font-family: "open-sans", Arial, sans-serif;
@@ -2083,19 +2081,19 @@ h4.c3xgm-about-h {
   font-size: 4.5vw;
 }
 @media (min-width: 768px) {
-  /* line 195, ../sass/pages/_safety.scss */
+  /* line 199, ../sass/pages/_safety.scss */
   .c3xgm-about-page-our-commitment .c3xgm-about-safety-score .c3xgm-about-light-gray.c3xgm-about-thin,
   .c3xgm-about-page-our-commitment .c3xgm-about-safety-score .c3xgm-about-light-gray.c3xgm-about-thin span {
     font-size: 22.807869999999998px;
   }
 }
-/* line 209, ../sass/pages/_safety.scss */
+/* line 213, ../sass/pages/_safety.scss */
 .c3xgm-about-page-our-commitment .c3xgm-about-onstar-subscribers .c3xgm-about-block-image {
   width: 45%;
   position: relative;
 }
 @media (min-width: 768px) {
-  /* line 209, ../sass/pages/_safety.scss */
+  /* line 213, ../sass/pages/_safety.scss */
   .c3xgm-about-page-our-commitment .c3xgm-about-onstar-subscribers .c3xgm-about-block-image {
     width: 27%;
     height: 0;
@@ -2103,12 +2101,12 @@ h4.c3xgm-about-h {
     padding-bottom: 221px;
     margin-top: 9px;
   }
-  /* line 214, ../sass/pages/_safety.scss */
+  /* line 218, ../sass/pages/_safety.scss */
   .c3xgm-about-page-our-commitment .c3xgm-about-onstar-subscribers .c3xgm-about-block-image img {
     width: 85%;
   }
 }
-/* line 218, ../sass/pages/_safety.scss */
+/* line 222, ../sass/pages/_safety.scss */
 .c3xgm-about-page-our-commitment .c3xgm-about-onstar-subscribers .c3xgm-about-blockquote {
   padding-left: 1.25rem;
   position: relative;
@@ -2148,13 +2146,13 @@ h4.c3xgm-about-h {
   }
 }
 @media (min-width: 768px) {
-  /* line 218, ../sass/pages/_safety.scss */
+  /* line 222, ../sass/pages/_safety.scss */
   .c3xgm-about-page-our-commitment .c3xgm-about-onstar-subscribers .c3xgm-about-blockquote {
     width: 70%;
     float: left;
   }
 }
-/* line 226, ../sass/pages/_safety.scss */
+/* line 230, ../sass/pages/_safety.scss */
 .c3xgm-about-page-our-commitment .c3xgm-about-onstar-subscribers .c3xgm-about-dark-blue.c3xgm-about-thin.c3xgm-about-small {
   font-size: 12.9088582992554px;
   font-size: 4.03401830544375vw;
@@ -2164,12 +2162,12 @@ h4.c3xgm-about-h {
   width: auto;
 }
 @media (min-width: 768px) {
-  /* line 226, ../sass/pages/_safety.scss */
+  /* line 230, ../sass/pages/_safety.scss */
   .c3xgm-about-page-our-commitment .c3xgm-about-onstar-subscribers .c3xgm-about-dark-blue.c3xgm-about-thin.c3xgm-about-small {
     font-size: 36.519925px;
   }
 }
-/* line 233, ../sass/pages/_safety.scss */
+/* line 237, ../sass/pages/_safety.scss */
 .c3xgm-about-page-our-commitment .c3xgm-about-onstar-subscribers .c3xgm-about-light-blue.number {
   background: white;
   z-index: 10;
@@ -2182,12 +2180,12 @@ h4.c3xgm-about-h {
   line-height: 0.75em;
 }
 @media (min-width: 768px) {
-  /* line 233, ../sass/pages/_safety.scss */
+  /* line 237, ../sass/pages/_safety.scss */
   .c3xgm-about-page-our-commitment .c3xgm-about-onstar-subscribers .c3xgm-about-light-blue.number {
     font-size: 241.99315px;
   }
 }
-/* line 242, ../sass/pages/_safety.scss */
+/* line 246, ../sass/pages/_safety.scss */
 .c3xgm-about-page-our-commitment .c3xgm-about-onstar-subscribers .c3xgm-about-light-blue {
   font-size: 28.8503589630127px;
   font-size: 9.015737377031249vw;
@@ -2196,12 +2194,12 @@ h4.c3xgm-about-h {
   float: left;
 }
 @media (min-width: 768px) {
-  /* line 242, ../sass/pages/_safety.scss */
+  /* line 246, ../sass/pages/_safety.scss */
   .c3xgm-about-page-our-commitment .c3xgm-about-onstar-subscribers .c3xgm-about-light-blue {
     font-size: 81.61937499999999px;
   }
 }
-/* line 250, ../sass/pages/_safety.scss */
+/* line 254, ../sass/pages/_safety.scss */
 .c3xgm-about-page-our-commitment .c3xgm-about-onstar-subscribers .c3xgm-about-dark-blue.c3xgm-about-thin {
   display: inline-block;
   width: 8em;
@@ -2211,13 +2209,13 @@ h4.c3xgm-about-h {
   font-size: 7.51283492311125vw;
 }
 @media (min-width: 768px) {
-  /* line 250, ../sass/pages/_safety.scss */
+  /* line 254, ../sass/pages/_safety.scss */
   .c3xgm-about-page-our-commitment .c3xgm-about-onstar-subscribers .c3xgm-about-dark-blue.c3xgm-about-thin {
     font-size: 52px;
     width: auto;
   }
 }
-/* line 260, ../sass/pages/_safety.scss */
+/* line 264, ../sass/pages/_safety.scss */
 .c3xgm-about-page-our-commitment .c3xgm-about-onstar-subscribers .c3xgm-about-gray {
   display: inline-block;
   float: left;
@@ -2226,27 +2224,27 @@ h4.c3xgm-about-h {
   font-size: 5.99986839025875vw;
 }
 @media (min-width: 768px) {
-  /* line 260, ../sass/pages/_safety.scss */
+  /* line 264, ../sass/pages/_safety.scss */
   .c3xgm-about-page-our-commitment .c3xgm-about-onstar-subscribers .c3xgm-about-gray {
     font-size: 48px;
   }
 }
-/* line 269, ../sass/pages/_safety.scss */
+/* line 273, ../sass/pages/_safety.scss */
 .c3xgm-about-page-our-commitment .c3xgm-about-quality-awards {
   margin-bottom: 0;
   text-align: center;
 }
-/* line 271, ../sass/pages/_safety.scss */
+/* line 275, ../sass/pages/_safety.scss */
 .c3xgm-about-page-our-commitment .c3xgm-about-quality-awards .c3xgm-about-block-image {
   width: 40%;
   position: relative;
 }
-/* line 273, ../sass/pages/_safety.scss */
+/* line 277, ../sass/pages/_safety.scss */
 .c3xgm-about-page-our-commitment .c3xgm-about-quality-awards .c3xgm-about-block-image img {
   max-width: 225px;
 }
 @media (min-width: 768px) {
-  /* line 271, ../sass/pages/_safety.scss */
+  /* line 275, ../sass/pages/_safety.scss */
   .c3xgm-about-page-our-commitment .c3xgm-about-quality-awards .c3xgm-about-block-image {
     float: right;
     width: 25%;
@@ -2254,27 +2252,27 @@ h4.c3xgm-about-h {
     padding-bottom: 294px;
     margin-top: 9px;
   }
-  /* line 278, ../sass/pages/_safety.scss */
+  /* line 282, ../sass/pages/_safety.scss */
   .c3xgm-about-page-our-commitment .c3xgm-about-quality-awards .c3xgm-about-block-image img {
     width: 60%;
   }
 }
 @media (min-width: 906px) {
-  /* line 271, ../sass/pages/_safety.scss */
+  /* line 275, ../sass/pages/_safety.scss */
   .c3xgm-about-page-our-commitment .c3xgm-about-quality-awards .c3xgm-about-block-image {
     width: 33%;
   }
-  /* line 285, ../sass/pages/_safety.scss */
+  /* line 289, ../sass/pages/_safety.scss */
   .c3xgm-about-page-our-commitment .c3xgm-about-quality-awards .c3xgm-about-block-image img {
     left: 42%;
   }
 }
-/* line 289, ../sass/pages/_safety.scss */
+/* line 293, ../sass/pages/_safety.scss */
 .c3xgm-about-page-our-commitment .c3xgm-about-quality-awards .c3xgm-about-blockquote {
   padding-top: 1.6em;
   position: relative;
 }
-/* line 293, ../sass/pages/_safety.scss */
+/* line 297, ../sass/pages/_safety.scss */
 .c3xgm-about-page-our-commitment .c3xgm-about-quality-awards .c3xgm-about-blockquote:before {
   content: "";
   display: block;
@@ -2291,13 +2289,13 @@ h4.c3xgm-about-h {
   transform-origin: top right;
 }
 @media (min-width: 768px) {
-  /* line 293, ../sass/pages/_safety.scss */
+  /* line 297, ../sass/pages/_safety.scss */
   .c3xgm-about-page-our-commitment .c3xgm-about-quality-awards .c3xgm-about-blockquote:before {
     width: 0.2rem;
     height: 100%;
   }
 }
-/* line 304, ../sass/pages/_safety.scss */
+/* line 308, ../sass/pages/_safety.scss */
 .c3xgm-about-page-our-commitment .c3xgm-about-quality-awards .c3xgm-about-blockquote:after {
   content: "";
   display: block;
@@ -2314,26 +2312,26 @@ h4.c3xgm-about-h {
   transform-origin: top right;
 }
 @media (min-width: 768px) {
-  /* line 304, ../sass/pages/_safety.scss */
+  /* line 308, ../sass/pages/_safety.scss */
   .c3xgm-about-page-our-commitment .c3xgm-about-quality-awards .c3xgm-about-blockquote:after {
     width: 0.2em;
     height: 100%;
   }
 }
-/* line 314, ../sass/pages/_safety.scss */
+/* line 318, ../sass/pages/_safety.scss */
 .c3xgm-about-page-our-commitment .c3xgm-about-quality-awards .c3xgm-about-blockquote > span {
   display: inline-block;
   float: left;
   clear: left;
 }
 @media (min-width: 768px) {
-  /* line 289, ../sass/pages/_safety.scss */
+  /* line 293, ../sass/pages/_safety.scss */
   .c3xgm-about-page-our-commitment .c3xgm-about-quality-awards .c3xgm-about-blockquote {
     width: 75%;
     border-top: 0;
     padding-top: 0;
   }
-  /* line 321, ../sass/pages/_safety.scss */
+  /* line 325, ../sass/pages/_safety.scss */
   .c3xgm-about-page-our-commitment .c3xgm-about-quality-awards .c3xgm-about-blockquote > span {
     display: block;
     float: right;
@@ -2341,53 +2339,53 @@ h4.c3xgm-about-h {
   }
 }
 @media (min-width: 906px) {
-  /* line 289, ../sass/pages/_safety.scss */
+  /* line 293, ../sass/pages/_safety.scss */
   .c3xgm-about-page-our-commitment .c3xgm-about-quality-awards .c3xgm-about-blockquote {
     width: 66%;
   }
 }
-/* line 329, ../sass/pages/_safety.scss */
+/* line 333, ../sass/pages/_safety.scss */
 .c3xgm-about-page-our-commitment .c3xgm-about-quality-awards .c3xgm-about-dark-blue.c3xgm-about-thin {
   font-size: 20px;
   font-size: 6.25vw;
 }
 @media (min-width: 768px) {
-  /* line 329, ../sass/pages/_safety.scss */
+  /* line 333, ../sass/pages/_safety.scss */
   .c3xgm-about-page-our-commitment .c3xgm-about-quality-awards .c3xgm-about-dark-blue.c3xgm-about-thin {
     font-size: 36.519925px;
   }
 }
-/* line 334, ../sass/pages/_safety.scss */
+/* line 338, ../sass/pages/_safety.scss */
 .c3xgm-about-page-our-commitment .c3xgm-about-quality-awards .c3xgm-about-light-blue {
   font-size: 35px;
   font-size: 11vw;
   margin-bottom: .2em;
 }
 @media (min-width: 768px) {
-  /* line 334, ../sass/pages/_safety.scss */
+  /* line 338, ../sass/pages/_safety.scss */
   .c3xgm-about-page-our-commitment .c3xgm-about-quality-awards .c3xgm-about-light-blue {
     font-size: 65.249945px;
     width: 8em;
   }
 }
-/* line 343, ../sass/pages/_safety.scss */
+/* line 347, ../sass/pages/_safety.scss */
 .c3xgm-about-page-our-commitment .c3xgm-about-quality-awards .c3xgm-about-gray.c3xgm-about-thin {
   font-size: 17px;
   font-size: 5.5vw;
   line-height: 1.2em;
 }
 @media (min-width: 768px) {
-  /* line 343, ../sass/pages/_safety.scss */
+  /* line 347, ../sass/pages/_safety.scss */
   .c3xgm-about-page-our-commitment .c3xgm-about-quality-awards .c3xgm-about-gray.c3xgm-about-thin {
     font-size: 31.8885px;
   }
 }
-/* line 351, ../sass/pages/_safety.scss */
+/* line 355, ../sass/pages/_safety.scss */
 .c3xgm-about-page-our-commitment .c3xgm-about-disclaimer {
   text-align: left;
   margin-top: 1.5em;
 }
-/* line 355, ../sass/pages/_safety.scss */
+/* line 359, ../sass/pages/_safety.scss */
 .c3xgm-about-page-our-commitment .c3xgm-about-disclaimer .c3xgm-about-p,
 .c3xgm-about-page-our-commitment .c3xgm-about-disclaimer .c3xgm-about-gray.c3xgm-about-disclaimer {
   font-weight: normal;
@@ -2399,20 +2397,20 @@ h4.c3xgm-about-h {
   padding-right: 3em;
 }
 @media (min-width: 768px) {
-  /* line 355, ../sass/pages/_safety.scss */
+  /* line 359, ../sass/pages/_safety.scss */
   .c3xgm-about-page-our-commitment .c3xgm-about-disclaimer .c3xgm-about-p,
   .c3xgm-about-page-our-commitment .c3xgm-about-disclaimer .c3xgm-about-gray.c3xgm-about-disclaimer {
     font-size: 18.222px;
     max-width: none;
   }
 }
-/* line 366, ../sass/pages/_safety.scss */
+/* line 370, ../sass/pages/_safety.scss */
 .c3xgm-about-page-our-commitment .c3xgm-about-disclaimer .c3xgm-about-blockquote {
   max-width: 838px;
   float: right;
   padding-left: 4px;
 }
-/* line 370, ../sass/pages/_safety.scss */
+/* line 374, ../sass/pages/_safety.scss */
 .c3xgm-about-page-our-commitment .c3xgm-about-disclaimer .c3xgm-about-gray.c3xgm-about-disclaimer-small {
   font-weight: normal;
   text-transform: none;
@@ -2424,13 +2422,13 @@ h4.c3xgm-about-h {
   padding-right: 3em;
 }
 @media (min-width: 768px) {
-  /* line 370, ../sass/pages/_safety.scss */
+  /* line 374, ../sass/pages/_safety.scss */
   .c3xgm-about-page-our-commitment .c3xgm-about-disclaimer .c3xgm-about-gray.c3xgm-about-disclaimer-small {
     font-size: 10.6295px;
     max-width: none;
   }
 }
-/* line 378, ../sass/pages/_safety.scss */
+/* line 382, ../sass/pages/_safety.scss */
 .c3xgm-about-page-our-commitment .c3xgm-about-disclaimer .c3xgm-about-gray.c3xgm-about-disclaimer-small strong, .c3xgm-about-page-our-commitment .c3xgm-about-disclaimer .c3xgm-about-gray.c3xgm-about-disclaimer-small a {
   display: block;
   margin: 1em 0 .5em;
@@ -2441,13 +2439,13 @@ h4.c3xgm-about-h {
   font-family: "open-sans-condensed", 'Arial Narrow', Arial, sans-serif;
 }
 @media (min-width: 768px) {
-  /* line 378, ../sass/pages/_safety.scss */
+  /* line 382, ../sass/pages/_safety.scss */
   .c3xgm-about-page-our-commitment .c3xgm-about-disclaimer .c3xgm-about-gray.c3xgm-about-disclaimer-small strong, .c3xgm-about-page-our-commitment .c3xgm-about-disclaimer .c3xgm-about-gray.c3xgm-about-disclaimer-small a {
     font-size: 21.259px;
     max-width: none;
   }
 }
-/* line 387, ../sass/pages/_safety.scss */
+/* line 391, ../sass/pages/_safety.scss */
 .c3xgm-about-page-our-commitment .c3xgm-about-disclaimer .c3xgm-about-p.c3xgm-about-disclaimer-box {
   margin-left: 0;
   margin-right: 0;
@@ -2458,7 +2456,7 @@ h4.c3xgm-about-h {
   font-size: 10px;
   max-width: 83em;
 }
-/* line 393, ../sass/pages/_safety.scss */
+/* line 397, ../sass/pages/_safety.scss */
 .c3xgm-about-page-our-commitment .c3xgm-about-disclaimer .c3xgm-about-p.c3xgm-about-disclaimer-box strong, .c3xgm-about-page-our-commitment .c3xgm-about-disclaimer .c3xgm-about-p.c3xgm-about-disclaimer-box a {
   font-family: "open-sans", Arial, sans-serif;
   font-size: 1em;
@@ -2466,7 +2464,7 @@ h4.c3xgm-about-h {
   padding-left: 0.15em;
 }
 
-/* line 402, ../sass/pages/_safety.scss */
+/* line 406, ../sass/pages/_safety.scss */
 .c3xgm-about-disclaimer-box {
   height: 0;
   opacity: 0;
@@ -2478,12 +2476,390 @@ h4.c3xgm-about-h {
   transition: all 250ms;
 }
 
-/* line 408, ../sass/pages/_safety.scss */
+/* line 412, ../sass/pages/_safety.scss */
 .c3xgm-about-disclaimer-box.c3xgm-about-show-disclaimer {
   height: auto;
   opacity: 1;
 }
 
+/* line 423, ../sass/pages/_safety.scss */
+.tik-set1 {
+  -moz-transform-origin: left bottom;
+  -ms-transform-origin: left bottom;
+  -o-transform-origin: left bottom;
+  -webkit-transform-origin: left bottom;
+  transform-origin: left bottom;
+  -moz-animation: clockRotate 3s infinite linear;
+  -webkit-animation: clockRotate 3s infinite linear;
+  -o-animation: clockRotate 3s infinite linear;
+  -ms-animation: clockRotate 3s infinite linear;
+  animation: clockRotate 3s infinite linear;
+}
+
+/* line 436, ../sass/pages/_safety.scss */
+.tik-set2 {
+  -moz-transform-origin: left bottom;
+  -ms-transform-origin: left bottom;
+  -o-transform-origin: left bottom;
+  -webkit-transform-origin: left bottom;
+  transform-origin: left bottom;
+  -webkit-animation: clockRotate 5s infinite linear;
+  -moz-animation: clockRotate 5s infinite linear;
+  -ms-animation: clockRotate 5s infinite linear;
+  -o-animation: clockRotate 5s infinite linear;
+  animation: clockRotate 5s infinite linear;
+}
+
+/* line 449, ../sass/pages/_safety.scss */
+.tik-set3 {
+  -moz-transform-origin: left bottom;
+  -ms-transform-origin: left bottom;
+  -o-transform-origin: left bottom;
+  -webkit-transform-origin: left bottom;
+  transform-origin: left bottom;
+  -webkit-animation: clockRotate 4s infinite linear;
+  -moz-animation: clockRotate 4s infinite linear;
+  -ms-animation: clockRotate 4s infinite linear;
+  -o-animation: clockRotate 4s infinite linear;
+  animation: clockRotate 4s infinite linear;
+}
+
+/* line 462, ../sass/pages/_safety.scss */
+.tik-set4 {
+  -moz-transform-origin: left bottom;
+  -ms-transform-origin: left bottom;
+  -o-transform-origin: left bottom;
+  -webkit-transform-origin: left bottom;
+  transform-origin: left bottom;
+  -webkit-animation: clockRotate 5.5s infinite linear;
+  -moz-animation: clockRotate 5.5s infinite linear;
+  -ms-animation: clockRotate 5.5s infinite linear;
+  -o-animation: clockRotate 5.5s infinite linear;
+  animation: clockRotate 5.5s infinite linear;
+}
+
+/*END OF TIMEZONE CLOCK ANIMATION*/
+/*MAP ANIMATION*/
+/* line 478, ../sass/pages/_safety.scss */
+.fill {
+  -webkit-animation: wenfill 2s 4s linear forwards;
+  -moz-animation: wenfill 2s 4s linear forwards;
+  -ms-animation: wenfill 2s 4s linear forwards;
+  -o-animation: wenfill 2s 4s linear forwards;
+  animation: wenfill 2s 4s linear forwards;
+  -webkit-transition: fill-opacity 2s ease-in-out;
+  -moz-transition: fill-opacity 2s ease-in-out;
+  transition: fill-opacity 2s ease-in-out;
+}
+
+/* line 489, ../sass/pages/_safety.scss */
+#map-marker {
+  width: 6%;
+  position: absolute;
+  left: 22%;
+  z-index: 10;
+  opacity: 0;
+  -webkit-animation: markerDrop 1s 5s linear forwards;
+  -moz-animation: markerDrop 1s 5s linear forwards;
+  -ms-animation: markerDrop 1s 5s linear forwards;
+  -o-animation: markerDrop 1s 5s linear forwards;
+  animation: markerDrop 1s 5s linear forwards;
+}
+
+/*END OF MAP ANIMATION*/
+/*NEW STYLES!!!!!!*/
+/* line 523, ../sass/pages/_safety.scss */
+#safety-truck {
+  opacity: 0;
+  -webkit-transition: opacity 400ms;
+  -moz-transition: opacity 400ms;
+  -o-transition: opacity 400ms;
+  -ms-transition: opacity 400ms;
+  transition: opacity 400ms;
+}
+
+/* line 528, ../sass/pages/_safety.scss */
+#truck-parent {
+  height: 270px;
+}
+
+/* line 532, ../sass/pages/_safety.scss */
+.c3xgm-about-circle-lines {
+  opacity: 1;
+  filter: inherit;
+}
+
+/* line 537, ../sass/pages/_safety.scss */
+#line-parent {
+  opacity: 0;
+  height: 300px;
+}
+
+/* line 542, ../sass/pages/_safety.scss */
+.carAnimation-slide {
+  -webkit-animation: wenSlideInUp 3s forwards;
+  animation: wenSlideInUp 3s forwards;
+}
+
+/* line 547, ../sass/pages/_safety.scss */
+.carAnimation-rotate {
+  -webkit-animation: wenRotate 4s forwards;
+  animation: wenRotate 4s forwards;
+}
+
+/* line 552, ../sass/pages/_safety.scss */
+.carAnimation-lineRotate {
+  top: -12% !important;
+  left: 7% !important;
+  -webkit-animation: wenLineRotate 3s infinite linear;
+  animation: wenLineRotate 3s infinite linear;
+}
+
+/* line 559, ../sass/pages/_safety.scss */
+.carAnimation-lineFadeIn {
+  -webkit-animation: wenLineFadeIn 2s forwards;
+  animation: wenLineFadeIn 2s forwards;
+}
+
+@-webkit-keyframes wenFadeIn {
+  from {
+    margin-top: 80px;
+    opacity: 0;
+  }
+  to {
+    margin-top: 0px;
+    opacity: 1;
+  }
+}
+@-moz-keyframes wenFadeIn {
+  from {
+    margin-top: 80px;
+    opacity: 0;
+  }
+  to {
+    margin-top: 0px;
+    opacity: 1;
+  }
+}
+@-o-keyframes wenFadeIn {
+  from {
+    margin-top: 80px;
+    opacity: 0;
+  }
+  to {
+    margin-top: 0px;
+    opacity: 1;
+  }
+}
+@keyframes wenFadeIn {
+  from {
+    margin-top: 80px;
+    opacity: 0;
+  }
+  to {
+    margin-top: 0px;
+    opacity: 1;
+  }
+}
+/*NEW STYLES!!!!!!!!!!!*/
+@-webkit-keyframes wenSlideInUp {
+  25% {
+    opacity: 1;
+    -webkit-transform: translate(0, -25%);
+    -moz-transform: translate(0, -25%);
+    -o-transform: translate(0, -25%);
+    -ms-transform: translate(0, -25%);
+    transform: translate(0, -25%);
+  }
+  100% {
+    -webkit-transform: translate(0, -35%);
+    -moz-transform: translate(0, -35%);
+    -o-transform: translate(0, -35%);
+    -ms-transform: translate(0, -35%);
+    transform: translate(0, -35%);
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: translate(0, -30%);
+    -moz-transform: translate(0, -30%);
+    -o-transform: translate(0, -30%);
+    -ms-transform: translate(0, -30%);
+    transform: translate(0, -30%);
+    opacity: 1;
+  }
+}
+@-webkit-keyframes wenRotate {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  10% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+@-webkit-keyframes wenLineRotate {
+  from {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+@-webkit-keyframes wenLineFadeIn {
+  0% {
+    opacity: 0;
+  }
+  10% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+/*TIMEZONE CLOCKS ROTATE*/
+@-webkit-keyframes clockRotate {
+  from {
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+    -moz-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    transform: rotate(360deg);
+  }
+}
+@-moz-keyframes clockRotate {
+  from {
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+@-o-keyframes clockRotate {
+  from {
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+@keyframes clockRotate {
+  from {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+/*END OF TIMEZONE CLOCK ROTATE*/
+/*MAP FILLING*/
+@-webkit-keyframes wenfill {
+  from {
+    fill: none;
+    fill-opacity: 0;
+  }
+  to {
+    fill: #E6E7E8;
+    fill-opacity: 1;
+  }
+}
+@-moz-keyframes wenfill {
+  from {
+    fill: none;
+    fill-opacity: 0;
+  }
+  to {
+    fill: #E6E7E8;
+    fill-opacity: 1;
+  }
+}
+@-ms-keyframes wenfill {
+  from {
+    fill: none;
+    fill-opacity: 0;
+  }
+  to {
+    fill: #E6E7E8;
+    fill-opacity: 1;
+  }
+}
+@-o-keyframes wenfill {
+  from {
+    fill: none;
+    fill-opacity: 0;
+  }
+  to {
+    fill: #E6E7E8;
+    fill-opacity: 1;
+  }
+}
+@keyframes wenfill {
+  from {
+    fill: none;
+    fill-opacity: 0;
+  }
+  to {
+    fill: #E6E7E8;
+    fill-opacity: 1;
+  }
+}
+/*END OF MAP FILLING*/
+/*MAP MARKER DROP*/
+@-webkit-keyframes markerDrop {
+  from {
+    transform: translateY(0%);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(150px);
+    opacity: 1;
+  }
+}
+/*END OF MARKER DROP*/
+@media (max-width: 628px) {
+  /* line 830, ../sass/pages/_safety.scss */
+  .c3xgm-about-circle-lines {
+    top: -5% !important;
+    left: 6% !important;
+  }
+}
+@media (max-width: 500px) {
+  /* line 837, ../sass/pages/_safety.scss */
+  .c3xgm-about-circle-lines {
+    top: 5% !important;
+  }
+}
+@media (max-width: 450px) {
+  /* line 843, ../sass/pages/_safety.scss */
+  .c3xgm-about-circle-lines {
+    top: 13% !important;
+  }
+}
 /* line 2, ../sass/pages/_our-brands.scss */
 .c3xgm-about-blockquote {
   text-align: left;
@@ -9461,45 +9837,6 @@ body {
   -ms-animation-duration: 800ms;
   animation-duration: 800ms;
 }
-/* line 79, ../sass/animations/_element-in-view.scss */
-.element-in-view .c3xgm-about-block-image img {
-  -webkit-animation-fill-mode: both;
-  -moz-animation-fill-mode: both;
-  -o-animation-fill-mode: both;
-  -ms-animation-fill-mode: both;
-  animation-fill-mode: both;
-  -webkit-animation-name: fadeIn;
-  -moz-animation-name: fadeIn;
-  -o-animation-name: fadeIn;
-  -ms-animation-name: fadeIn;
-  animation-name: fadeIn;
-  -webkit-animation-delay: 1200ms;
-  -moz-animation-delay: 1200ms;
-  -o-animation-delay: 1200ms;
-  -ms-animation-delay: 1200ms;
-  animation-delay: 1200ms;
-  -webkit-animation-duration: 400ms;
-  -moz-animation-duration: 400ms;
-  -o-animation-duration: 400ms;
-  -ms-animation-duration: 400ms;
-  animation-duration: 400ms;
-}
-/* line 87, ../sass/animations/_element-in-view.scss */
-.element-in-view .c3xgm-about-block-image img.fadeInLeftMega {
-  -webkit-animation-name: fadeIn;
-  -moz-animation-name: fadeIn;
-  -o-animation-name: fadeIn;
-  -ms-animation-name: fadeIn;
-  animation-name: fadeIn;
-}
-/* line 92, ../sass/animations/_element-in-view.scss */
-.element-in-view .c3xgm-about-block-image img.fadeInRightMega {
-  -webkit-animation-name: fadeIn;
-  -moz-animation-name: fadeIn;
-  -o-animation-name: fadeIn;
-  -ms-animation-name: fadeIn;
-  animation-name: fadeIn;
-}
 
 /* line 230, ../sass/components/_mixins.scss */
 .c3xgm-about-headquarters.element-in-view .c3xgm-about-blockquote:before {
@@ -9951,7 +10288,7 @@ body {
     transform: translate3d(-50%, -4%, 0);
   }
 }
-/* line 261, ../sass/animations/_element-in-view.scss */
+/* line 262, ../sass/animations/_element-in-view.scss */
 .c3xgm-about-global.element-in-view .c3xgm-about-block-image > div {
   -webkit-animation-fill-mode: both;
   -moz-animation-fill-mode: both;
@@ -10030,7 +10367,7 @@ body {
   -ms-animation-duration: 600ms;
   animation-duration: 600ms;
 }
-/* line 274, ../sass/animations/_element-in-view.scss */
+/* line 275, ../sass/animations/_element-in-view.scss */
 .c3xgm-about-global.element-in-view .c3xgm-about-blockquote > span:first-child {
   -webkit-animation-fill-mode: both;
   -moz-animation-fill-mode: both;
@@ -10053,7 +10390,7 @@ body {
   -ms-animation-duration: 700ms;
   animation-duration: 700ms;
 }
-/* line 280, ../sass/animations/_element-in-view.scss */
+/* line 281, ../sass/animations/_element-in-view.scss */
 .c3xgm-about-global.element-in-view .c3xgm-about-blockquote > span:nth-child(2) {
   -webkit-animation-fill-mode: both;
   -moz-animation-fill-mode: both;
@@ -10076,7 +10413,7 @@ body {
   -ms-animation-duration: 700ms;
   animation-duration: 700ms;
 }
-/* line 286, ../sass/animations/_element-in-view.scss */
+/* line 287, ../sass/animations/_element-in-view.scss */
 .c3xgm-about-global.element-in-view .c3xgm-about-blockquote > span:nth-child(3) {
   -webkit-animation-fill-mode: both;
   -moz-animation-fill-mode: both;
@@ -10100,11 +10437,11 @@ body {
   animation-duration: 700ms;
 }
 
-/* line 306, ../sass/animations/_element-in-view.scss */
+/* line 307, ../sass/animations/_element-in-view.scss */
 .c3xgm-about-seconds.element-in-view .c3xgm-about-block-image {
   overflow: hidden;
 }
-/* line 309, ../sass/animations/_element-in-view.scss */
+/* line 310, ../sass/animations/_element-in-view.scss */
 .c3xgm-about-seconds.element-in-view .c3xgm-about-block-image img {
   -webkit-animation-fill-mode: none;
   -moz-animation-fill-mode: none;
@@ -10127,7 +10464,7 @@ body {
   -ms-animation-duration: 0;
   animation-duration: 0;
 }
-/* line 311, ../sass/animations/_element-in-view.scss */
+/* line 312, ../sass/animations/_element-in-view.scss */
 .c3xgm-about-seconds.element-in-view .c3xgm-about-block-image #clock {
   -webkit-animation-fill-mode: both;
   -moz-animation-fill-mode: both;
@@ -10206,7 +10543,7 @@ body {
   -ms-animation-duration: 600ms;
   animation-duration: 600ms;
 }
-/* line 323, ../sass/animations/_element-in-view.scss */
+/* line 324, ../sass/animations/_element-in-view.scss */
 .c3xgm-about-seconds.element-in-view .c3xgm-about-blockquote > span:first-child {
   -webkit-animation-fill-mode: both;
   -moz-animation-fill-mode: both;
@@ -10229,7 +10566,7 @@ body {
   -ms-animation-duration: 700ms;
   animation-duration: 700ms;
 }
-/* line 329, ../sass/animations/_element-in-view.scss */
+/* line 330, ../sass/animations/_element-in-view.scss */
 .c3xgm-about-seconds.element-in-view .c3xgm-about-blockquote > span:nth-child(2) {
   -webkit-animation-fill-mode: both;
   -moz-animation-fill-mode: both;
@@ -10252,7 +10589,7 @@ body {
   -ms-animation-duration: 700ms;
   animation-duration: 700ms;
 }
-/* line 335, ../sass/animations/_element-in-view.scss */
+/* line 336, ../sass/animations/_element-in-view.scss */
 .c3xgm-about-seconds.element-in-view .c3xgm-about-blockquote > span:nth-child(3) {
   -webkit-animation-fill-mode: both;
   -moz-animation-fill-mode: both;
@@ -10276,7 +10613,7 @@ body {
   animation-duration: 700ms;
 }
 
-/* line 357, ../sass/animations/_element-in-view.scss */
+/* line 358, ../sass/animations/_element-in-view.scss */
 .c3xgm-about-dealers.element-in-view .c3xgm-about-blockquote .c3xgm-about-sep {
   overflow: hidden;
 }
@@ -10336,7 +10673,7 @@ body {
   -ms-animation-duration: 600ms;
   animation-duration: 600ms;
 }
-/* line 361, ../sass/animations/_element-in-view.scss */
+/* line 362, ../sass/animations/_element-in-view.scss */
 .c3xgm-about-dealers.element-in-view .c3xgm-about-blockquote .c3xgm-about-sep:first-child > span:first-child {
   -webkit-animation-fill-mode: both;
   -moz-animation-fill-mode: both;
@@ -10359,7 +10696,7 @@ body {
   -ms-animation-duration: 700ms;
   animation-duration: 700ms;
 }
-/* line 370, ../sass/animations/_element-in-view.scss */
+/* line 371, ../sass/animations/_element-in-view.scss */
 .c3xgm-about-dealers.element-in-view .c3xgm-about-blockquote .c3xgm-about-sep:nth-child(2) > span {
   -webkit-animation-fill-mode: both;
   -moz-animation-fill-mode: both;
@@ -10439,7 +10776,7 @@ body {
   -ms-animation-duration: 600ms;
   animation-duration: 600ms;
 }
-/* line 394, ../sass/animations/_element-in-view.scss */
+/* line 395, ../sass/animations/_element-in-view.scss */
 .c3xgm-about-crash-test-dummies.element-in-view .c3xgm-about-blockquote > span:first-child {
   -webkit-animation-fill-mode: both;
   -moz-animation-fill-mode: both;
@@ -10462,7 +10799,7 @@ body {
   -ms-animation-duration: 400ms;
   animation-duration: 400ms;
 }
-/* line 400, ../sass/animations/_element-in-view.scss */
+/* line 401, ../sass/animations/_element-in-view.scss */
 .c3xgm-about-crash-test-dummies.element-in-view .c3xgm-about-blockquote > span:nth-child(2) {
   -webkit-animation-fill-mode: both;
   -moz-animation-fill-mode: both;
@@ -10485,7 +10822,7 @@ body {
   -ms-animation-duration: 400ms;
   animation-duration: 400ms;
 }
-/* line 406, ../sass/animations/_element-in-view.scss */
+/* line 407, ../sass/animations/_element-in-view.scss */
 .c3xgm-about-crash-test-dummies.element-in-view .c3xgm-about-blockquote > span:nth-child(3) {
   -webkit-animation-fill-mode: both;
   -moz-animation-fill-mode: both;
@@ -10509,7 +10846,7 @@ body {
   animation-duration: 400ms;
 }
 
-/* line 428, ../sass/animations/_element-in-view.scss */
+/* line 429, ../sass/animations/_element-in-view.scss */
 .c3xgm-about-test-facility.element-in-view .c3xgm-about-blockquote > span:first-child {
   -webkit-animation-fill-mode: both;
   -moz-animation-fill-mode: both;
@@ -10532,7 +10869,7 @@ body {
   -ms-animation-duration: 400ms;
   animation-duration: 400ms;
 }
-/* line 434, ../sass/animations/_element-in-view.scss */
+/* line 435, ../sass/animations/_element-in-view.scss */
 .c3xgm-about-test-facility.element-in-view .c3xgm-about-blockquote > span:nth-child(2) {
   -webkit-animation-fill-mode: both;
   -moz-animation-fill-mode: both;
@@ -10555,7 +10892,7 @@ body {
   -ms-animation-duration: 400ms;
   animation-duration: 400ms;
 }
-/* line 441, ../sass/animations/_element-in-view.scss */
+/* line 442, ../sass/animations/_element-in-view.scss */
 .c3xgm-about-test-facility.element-in-view .c3xgm-about-blockquote > span:nth-child(3) span:first-child {
   -webkit-animation-fill-mode: both;
   -moz-animation-fill-mode: both;
@@ -10578,7 +10915,7 @@ body {
   -ms-animation-duration: 400ms;
   animation-duration: 400ms;
 }
-/* line 447, ../sass/animations/_element-in-view.scss */
+/* line 448, ../sass/animations/_element-in-view.scss */
 .c3xgm-about-test-facility.element-in-view .c3xgm-about-blockquote > span:nth-child(3) span:nth-child(2) {
   -webkit-animation-fill-mode: both;
   -moz-animation-fill-mode: both;
@@ -10714,7 +11051,7 @@ body {
   -ms-animation-duration: 600ms;
   animation-duration: 600ms;
 }
-/* line 476, ../sass/animations/_element-in-view.scss */
+/* line 477, ../sass/animations/_element-in-view.scss */
 .c3xgm-about-safety-score.element-in-view .c3xgm-about-blockquote .c3xgm-about-sep:first-child {
   -webkit-animation-fill-mode: both;
   -moz-animation-fill-mode: both;
@@ -10793,7 +11130,7 @@ body {
   -ms-animation-duration: 600ms;
   animation-duration: 600ms;
 }
-/* line 487, ../sass/animations/_element-in-view.scss */
+/* line 488, ../sass/animations/_element-in-view.scss */
 .c3xgm-about-safety-score.element-in-view .c3xgm-about-blockquote .c3xgm-about-sep:nth-child(2) > span:first-child {
   -webkit-animation-fill-mode: both;
   -moz-animation-fill-mode: both;
@@ -10816,7 +11153,7 @@ body {
   -ms-animation-duration: 600ms;
   animation-duration: 600ms;
 }
-/* line 493, ../sass/animations/_element-in-view.scss */
+/* line 494, ../sass/animations/_element-in-view.scss */
 .c3xgm-about-safety-score.element-in-view .c3xgm-about-blockquote .c3xgm-about-sep:nth-child(2) > span:nth-child(2) {
   -webkit-animation-fill-mode: both;
   -moz-animation-fill-mode: both;
@@ -10839,7 +11176,7 @@ body {
   -ms-animation-duration: 600ms;
   animation-duration: 600ms;
 }
-/* line 499, ../sass/animations/_element-in-view.scss */
+/* line 500, ../sass/animations/_element-in-view.scss */
 .c3xgm-about-safety-score.element-in-view .c3xgm-about-blockquote .c3xgm-about-sep:nth-child(2) > span:nth-child(3) {
   -webkit-animation-fill-mode: both;
   -moz-animation-fill-mode: both;
@@ -10863,12 +11200,12 @@ body {
   animation-duration: 600ms;
 }
 
-/* line 519, ../sass/animations/_element-in-view.scss */
+/* line 520, ../sass/animations/_element-in-view.scss */
 .c3xgm-about-onstar-subscribers.element-in-view .c3xgm-about-block-image {
   overflow: hidden;
 }
 @media (min-width: 768px) {
-  /* line 521, ../sass/animations/_element-in-view.scss */
+  /* line 522, ../sass/animations/_element-in-view.scss */
   .c3xgm-about-onstar-subscribers.element-in-view .c3xgm-about-block-image img {
     -webkit-animation-fill-mode: both;
     -moz-animation-fill-mode: both;
@@ -10892,7 +11229,7 @@ body {
     animation-duration: 400ms;
   }
 }
-/* line 531, ../sass/animations/_element-in-view.scss */
+/* line 532, ../sass/animations/_element-in-view.scss */
 .c3xgm-about-onstar-subscribers.element-in-view .c3xgm-about-blockquote {
   overflow: hidden;
 }
@@ -10952,7 +11289,7 @@ body {
   -ms-animation-duration: 600ms;
   animation-duration: 600ms;
 }
-/* line 536, ../sass/animations/_element-in-view.scss */
+/* line 537, ../sass/animations/_element-in-view.scss */
 .c3xgm-about-onstar-subscribers.element-in-view .c3xgm-about-blockquote > span:first-child {
   -webkit-animation-fill-mode: both;
   -moz-animation-fill-mode: both;
@@ -10975,7 +11312,7 @@ body {
   -ms-animation-duration: 400ms;
   animation-duration: 400ms;
 }
-/* line 542, ../sass/animations/_element-in-view.scss */
+/* line 543, ../sass/animations/_element-in-view.scss */
 .c3xgm-about-onstar-subscribers.element-in-view .c3xgm-about-blockquote > span:nth-child(2) {
   -webkit-animation-fill-mode: both;
   -moz-animation-fill-mode: both;
@@ -10998,7 +11335,7 @@ body {
   -ms-animation-duration: 400ms;
   animation-duration: 400ms;
 }
-/* line 548, ../sass/animations/_element-in-view.scss */
+/* line 549, ../sass/animations/_element-in-view.scss */
 .c3xgm-about-onstar-subscribers.element-in-view .c3xgm-about-blockquote > span:nth-child(3) {
   -webkit-animation-fill-mode: both;
   -moz-animation-fill-mode: both;
@@ -11021,7 +11358,7 @@ body {
   -ms-animation-duration: 400ms;
   animation-duration: 400ms;
 }
-/* line 555, ../sass/animations/_element-in-view.scss */
+/* line 556, ../sass/animations/_element-in-view.scss */
 .c3xgm-about-onstar-subscribers.element-in-view .c3xgm-about-blockquote > span:nth-child(4) {
   -webkit-animation-fill-mode: both;
   -moz-animation-fill-mode: both;
@@ -11044,7 +11381,7 @@ body {
   -ms-animation-duration: 400ms;
   animation-duration: 400ms;
 }
-/* line 562, ../sass/animations/_element-in-view.scss */
+/* line 563, ../sass/animations/_element-in-view.scss */
 .c3xgm-about-onstar-subscribers.element-in-view .c3xgm-about-blockquote > span:nth-child(5) {
   -webkit-animation-fill-mode: both;
   -moz-animation-fill-mode: both;
@@ -11068,12 +11405,12 @@ body {
   animation-duration: 400ms;
 }
 
-/* line 581, ../sass/animations/_element-in-view.scss */
+/* line 582, ../sass/animations/_element-in-view.scss */
 .c3xgm-about-quality-awards.element-in-view .c3xgm-about-block-image {
   overflow: hidden;
 }
 @media (min-width: 768px) {
-  /* line 583, ../sass/animations/_element-in-view.scss */
+  /* line 584, ../sass/animations/_element-in-view.scss */
   .c3xgm-about-quality-awards.element-in-view .c3xgm-about-block-image img {
     -webkit-animation-fill-mode: both;
     -moz-animation-fill-mode: both;
@@ -11097,11 +11434,11 @@ body {
     animation-duration: 400ms;
   }
 }
-/* line 593, ../sass/animations/_element-in-view.scss */
+/* line 594, ../sass/animations/_element-in-view.scss */
 .c3xgm-about-quality-awards.element-in-view .c3xgm-about-blockquote {
   overflow: hidden;
 }
-/* line 596, ../sass/animations/_element-in-view.scss */
+/* line 597, ../sass/animations/_element-in-view.scss */
 .c3xgm-about-quality-awards.element-in-view .c3xgm-about-blockquote:before {
   -webkit-animation-fill-mode: both;
   -moz-animation-fill-mode: both;
@@ -11124,7 +11461,7 @@ body {
   -ms-animation-duration: 600ms;
   animation-duration: 600ms;
 }
-/* line 602, ../sass/animations/_element-in-view.scss */
+/* line 603, ../sass/animations/_element-in-view.scss */
 .c3xgm-about-quality-awards.element-in-view .c3xgm-about-blockquote:after {
   -webkit-animation-fill-mode: both;
   -moz-animation-fill-mode: both;
@@ -11147,7 +11484,7 @@ body {
   -ms-animation-duration: 600ms;
   animation-duration: 600ms;
 }
-/* line 609, ../sass/animations/_element-in-view.scss */
+/* line 610, ../sass/animations/_element-in-view.scss */
 .c3xgm-about-quality-awards.element-in-view .c3xgm-about-blockquote > span:first-child {
   -webkit-animation-fill-mode: both;
   -moz-animation-fill-mode: both;
@@ -11170,7 +11507,7 @@ body {
   -ms-animation-duration: 400ms;
   animation-duration: 400ms;
 }
-/* line 615, ../sass/animations/_element-in-view.scss */
+/* line 616, ../sass/animations/_element-in-view.scss */
 .c3xgm-about-quality-awards.element-in-view .c3xgm-about-blockquote > span:nth-child(2) {
   -webkit-animation-fill-mode: both;
   -moz-animation-fill-mode: both;
@@ -11193,7 +11530,7 @@ body {
   -ms-animation-duration: 400ms;
   animation-duration: 400ms;
 }
-/* line 621, ../sass/animations/_element-in-view.scss */
+/* line 622, ../sass/animations/_element-in-view.scss */
 .c3xgm-about-quality-awards.element-in-view .c3xgm-about-blockquote > span:nth-child(3) {
   -webkit-animation-fill-mode: both;
   -moz-animation-fill-mode: both;
@@ -11217,11 +11554,11 @@ body {
   animation-duration: 400ms;
 }
 
-/* line 639, ../sass/animations/_element-in-view.scss */
+/* line 640, ../sass/animations/_element-in-view.scss */
 .c3xgm-about-disclaimer.element-in-view .c3xgm-about-blockquote {
   overflow: hidden;
 }
-/* line 641, ../sass/animations/_element-in-view.scss */
+/* line 642, ../sass/animations/_element-in-view.scss */
 .c3xgm-about-disclaimer.element-in-view .c3xgm-about-blockquote > span.c3xgm-about-gray:nth-child(2),
 .c3xgm-about-disclaimer.element-in-view .c3xgm-about-blockquote > span.c3xgm-about-disclaimer {
   -webkit-animation-fill-mode: both;
@@ -11246,7 +11583,7 @@ body {
   animation-duration: 400ms;
 }
 
-/* line 659, ../sass/animations/_element-in-view.scss */
+/* line 660, ../sass/animations/_element-in-view.scss */
 .c3xgm-about-solar-panels .c3xgm-about-sun {
   -webkit-transition: transform 1.5s;
   -moz-transition: transform 1.5s;
@@ -11264,7 +11601,7 @@ body {
   -ms-transform: scale(0, 0);
   transform: scale(0, 0);
 }
-/* line 667, ../sass/animations/_element-in-view.scss */
+/* line 668, ../sass/animations/_element-in-view.scss */
 .c3xgm-about-solar-panels.element-in-view .c3xgm-about-blockquote {
   overflow: hidden;
 }
@@ -11324,7 +11661,7 @@ body {
   -ms-animation-duration: 600ms;
   animation-duration: 600ms;
 }
-/* line 672, ../sass/animations/_element-in-view.scss */
+/* line 673, ../sass/animations/_element-in-view.scss */
 .c3xgm-about-solar-panels.element-in-view .c3xgm-about-blockquote > span:first-child {
   -webkit-animation-fill-mode: both;
   -moz-animation-fill-mode: both;
@@ -11347,7 +11684,7 @@ body {
   -ms-animation-duration: 500ms;
   animation-duration: 500ms;
 }
-/* line 678, ../sass/animations/_element-in-view.scss */
+/* line 679, ../sass/animations/_element-in-view.scss */
 .c3xgm-about-solar-panels.element-in-view .c3xgm-about-blockquote > span:nth-child(2) {
   -webkit-animation-fill-mode: both;
   -moz-animation-fill-mode: both;
@@ -11370,7 +11707,7 @@ body {
   -ms-animation-duration: 500ms;
   animation-duration: 500ms;
 }
-/* line 684, ../sass/animations/_element-in-view.scss */
+/* line 685, ../sass/animations/_element-in-view.scss */
 .c3xgm-about-solar-panels.element-in-view .c3xgm-about-blockquote > span:nth-child(3) {
   -webkit-animation-fill-mode: both;
   -moz-animation-fill-mode: both;
@@ -11393,7 +11730,7 @@ body {
   -ms-animation-duration: 500ms;
   animation-duration: 500ms;
 }
-/* line 690, ../sass/animations/_element-in-view.scss */
+/* line 691, ../sass/animations/_element-in-view.scss */
 .c3xgm-about-solar-panels.element-in-view .c3xgm-about-blockquote > span:nth-child(4) {
   -webkit-animation-fill-mode: both;
   -moz-animation-fill-mode: both;
@@ -11416,7 +11753,7 @@ body {
   -ms-animation-duration: 500ms;
   animation-duration: 500ms;
 }
-/* line 698, ../sass/animations/_element-in-view.scss */
+/* line 699, ../sass/animations/_element-in-view.scss */
 .c3xgm-about-solar-panels.element-in-view .c3xgm-about-solar-road {
   -webkit-animation-fill-mode: both;
   -moz-animation-fill-mode: both;
@@ -11439,7 +11776,7 @@ body {
   -ms-animation-duration: 600ms;
   animation-duration: 600ms;
 }
-/* line 705, ../sass/animations/_element-in-view.scss */
+/* line 706, ../sass/animations/_element-in-view.scss */
 .c3xgm-about-solar-panels.element-in-view .c3xgm-about-solar-panels,
 .c3xgm-about-solar-panels.element-in-view .c3xgm-about-tree {
   -webkit-animation-fill-mode: both;
@@ -11468,7 +11805,7 @@ body {
   -ms-animation-duration: 2.5s;
   animation-duration: 2.5s;
 }
-/* line 714, ../sass/animations/_element-in-view.scss */
+/* line 715, ../sass/animations/_element-in-view.scss */
 .c3xgm-about-solar-panels.element-in-view .c3xgm-about-sun {
   -webkit-transform: scale(1, 1);
   -moz-transform: scale(1, 1);
@@ -11481,7 +11818,7 @@ body {
   -ms-transition-delay: 600;
   transition-delay: 600;
 }
-/* line 717, ../sass/animations/_element-in-view.scss */
+/* line 718, ../sass/animations/_element-in-view.scss */
 .c3xgm-about-solar-panels.element-in-view .c3xgm-about-sun img {
   -webkit-animation-fill-mode: both;
   -moz-animation-fill-mode: both;
@@ -11510,11 +11847,11 @@ body {
   animation-duration: 5s;
 }
 
-/* line 738, ../sass/animations/_element-in-view.scss */
+/* line 739, ../sass/animations/_element-in-view.scss */
 .c3xgm-about-epa-energy-star.element-in-view .c3xgm-about-block-image {
   overflow: hidden;
 }
-/* line 740, ../sass/animations/_element-in-view.scss */
+/* line 741, ../sass/animations/_element-in-view.scss */
 .c3xgm-about-epa-energy-star.element-in-view .c3xgm-about-block-image img {
   -webkit-animation-fill-mode: both;
   -moz-animation-fill-mode: both;
@@ -11537,7 +11874,7 @@ body {
   -ms-animation-duration: 500ms;
   animation-duration: 500ms;
 }
-/* line 748, ../sass/animations/_element-in-view.scss */
+/* line 749, ../sass/animations/_element-in-view.scss */
 .c3xgm-about-epa-energy-star.element-in-view .c3xgm-about-blockquote {
   overflow: hidden;
 }
@@ -11597,7 +11934,7 @@ body {
   -ms-animation-duration: 600ms;
   animation-duration: 600ms;
 }
-/* line 752, ../sass/animations/_element-in-view.scss */
+/* line 753, ../sass/animations/_element-in-view.scss */
 .c3xgm-about-epa-energy-star.element-in-view .c3xgm-about-blockquote > span:first-child {
   -webkit-animation-fill-mode: both;
   -moz-animation-fill-mode: both;
@@ -11620,7 +11957,7 @@ body {
   -ms-animation-duration: 500ms;
   animation-duration: 500ms;
 }
-/* line 758, ../sass/animations/_element-in-view.scss */
+/* line 759, ../sass/animations/_element-in-view.scss */
 .c3xgm-about-epa-energy-star.element-in-view .c3xgm-about-blockquote > span:nth-child(2) {
   -webkit-animation-fill-mode: both;
   -moz-animation-fill-mode: both;
@@ -11643,7 +11980,7 @@ body {
   -ms-animation-duration: 500ms;
   animation-duration: 500ms;
 }
-/* line 764, ../sass/animations/_element-in-view.scss */
+/* line 765, ../sass/animations/_element-in-view.scss */
 .c3xgm-about-epa-energy-star.element-in-view .c3xgm-about-blockquote > span:nth-child(3) {
   -webkit-animation-fill-mode: both;
   -moz-animation-fill-mode: both;
@@ -11666,7 +12003,7 @@ body {
   -ms-animation-duration: 500ms;
   animation-duration: 500ms;
 }
-/* line 770, ../sass/animations/_element-in-view.scss */
+/* line 771, ../sass/animations/_element-in-view.scss */
 .c3xgm-about-epa-energy-star.element-in-view .c3xgm-about-blockquote > span:nth-child(4) {
   -webkit-animation-fill-mode: both;
   -moz-animation-fill-mode: both;
@@ -11690,11 +12027,11 @@ body {
   animation-duration: 500ms;
 }
 
-/* line 790, ../sass/animations/_element-in-view.scss */
+/* line 791, ../sass/animations/_element-in-view.scss */
 .c3xgm-about-climate-declaration.element-in-view .c3xgm-about-block-image {
   overflow: hidden;
 }
-/* line 792, ../sass/animations/_element-in-view.scss */
+/* line 793, ../sass/animations/_element-in-view.scss */
 .c3xgm-about-climate-declaration.element-in-view .c3xgm-about-block-image img {
   -webkit-animation-fill-mode: both;
   -moz-animation-fill-mode: both;
@@ -11717,7 +12054,7 @@ body {
   -ms-animation-duration: 500ms;
   animation-duration: 500ms;
 }
-/* line 800, ../sass/animations/_element-in-view.scss */
+/* line 801, ../sass/animations/_element-in-view.scss */
 .c3xgm-about-climate-declaration.element-in-view .c3xgm-about-blockquote {
   overflow: hidden;
 }
@@ -11777,7 +12114,7 @@ body {
   -ms-animation-duration: 600ms;
   animation-duration: 600ms;
 }
-/* line 804, ../sass/animations/_element-in-view.scss */
+/* line 805, ../sass/animations/_element-in-view.scss */
 .c3xgm-about-climate-declaration.element-in-view .c3xgm-about-blockquote > span:first-child {
   -webkit-animation-fill-mode: both;
   -moz-animation-fill-mode: both;
@@ -11800,7 +12137,7 @@ body {
   -ms-animation-duration: 500ms;
   animation-duration: 500ms;
 }
-/* line 810, ../sass/animations/_element-in-view.scss */
+/* line 811, ../sass/animations/_element-in-view.scss */
 .c3xgm-about-climate-declaration.element-in-view .c3xgm-about-blockquote > span:nth-child(2) {
   -webkit-animation-fill-mode: both;
   -moz-animation-fill-mode: both;
@@ -11823,7 +12160,7 @@ body {
   -ms-animation-duration: 500ms;
   animation-duration: 500ms;
 }
-/* line 816, ../sass/animations/_element-in-view.scss */
+/* line 817, ../sass/animations/_element-in-view.scss */
 .c3xgm-about-climate-declaration.element-in-view .c3xgm-about-blockquote > span:nth-child(3) {
   -webkit-animation-fill-mode: both;
   -moz-animation-fill-mode: both;
@@ -11847,11 +12184,11 @@ body {
   animation-duration: 500ms;
 }
 
-/* line 835, ../sass/animations/_element-in-view.scss */
+/* line 836, ../sass/animations/_element-in-view.scss */
 .c3xgm-about-landfill-free.element-in-view .c3xgm-about-block-image {
   overflow: hidden;
 }
-/* line 837, ../sass/animations/_element-in-view.scss */
+/* line 838, ../sass/animations/_element-in-view.scss */
 .c3xgm-about-landfill-free.element-in-view .c3xgm-about-block-image img {
   -webkit-animation-fill-mode: both;
   -moz-animation-fill-mode: both;
@@ -11874,7 +12211,7 @@ body {
   -ms-animation-duration: 500ms;
   animation-duration: 500ms;
 }
-/* line 845, ../sass/animations/_element-in-view.scss */
+/* line 846, ../sass/animations/_element-in-view.scss */
 .c3xgm-about-landfill-free.element-in-view .c3xgm-about-blockquote {
   overflow: hidden;
 }
@@ -11934,7 +12271,7 @@ body {
   -ms-animation-duration: 600ms;
   animation-duration: 600ms;
 }
-/* line 849, ../sass/animations/_element-in-view.scss */
+/* line 850, ../sass/animations/_element-in-view.scss */
 .c3xgm-about-landfill-free.element-in-view .c3xgm-about-blockquote > span:first-child {
   -webkit-animation-fill-mode: both;
   -moz-animation-fill-mode: both;
@@ -11957,7 +12294,7 @@ body {
   -ms-animation-duration: 500ms;
   animation-duration: 500ms;
 }
-/* line 855, ../sass/animations/_element-in-view.scss */
+/* line 856, ../sass/animations/_element-in-view.scss */
 .c3xgm-about-landfill-free.element-in-view .c3xgm-about-blockquote > span:nth-child(2) {
   -webkit-animation-fill-mode: both;
   -moz-animation-fill-mode: both;
@@ -11980,7 +12317,7 @@ body {
   -ms-animation-duration: 500ms;
   animation-duration: 500ms;
 }
-/* line 861, ../sass/animations/_element-in-view.scss */
+/* line 862, ../sass/animations/_element-in-view.scss */
 .c3xgm-about-landfill-free.element-in-view .c3xgm-about-blockquote > span:nth-child(3) {
   -webkit-animation-fill-mode: both;
   -moz-animation-fill-mode: both;
@@ -12006,8 +12343,7 @@ body {
 
 /* line 8, ../sass/animations/_page-in-view.scss */
 #c3xgm-about-our-company.c3xgm-about-page.c3xgm-about-page-in-view .c3xgm-about-section-header .c3xgm-about-section-icon,
-#c3xgm-about-our-people.c3xgm-about-page.c3xgm-about-page-in-view .c3xgm-about-section-header .c3xgm-about-section-icon,
-#c3xgm-about-our-brands.c3xgm-about-page.c3xgm-about-page-in-view .c3xgm-about-section-header .c3xgm-about-section-icon {
+#c3xgm-about-our-people.c3xgm-about-page.c3xgm-about-page-in-view .c3xgm-about-section-header .c3xgm-about-section-icon {
   -webkit-animation-fill-mode: both;
   -moz-animation-fill-mode: both;
   -o-animation-fill-mode: both;
@@ -12031,8 +12367,7 @@ body {
 }
 /* line 15, ../sass/animations/_page-in-view.scss */
 #c3xgm-about-our-company.c3xgm-about-page.c3xgm-about-page-in-view .c3xgm-about-section-header h1.c3xgm-about-h,
-#c3xgm-about-our-people.c3xgm-about-page.c3xgm-about-page-in-view .c3xgm-about-section-header h1.c3xgm-about-h,
-#c3xgm-about-our-brands.c3xgm-about-page.c3xgm-about-page-in-view .c3xgm-about-section-header h1.c3xgm-about-h {
+#c3xgm-about-our-people.c3xgm-about-page.c3xgm-about-page-in-view .c3xgm-about-section-header h1.c3xgm-about-h {
   -webkit-animation-fill-mode: both;
   -moz-animation-fill-mode: both;
   -o-animation-fill-mode: both;
@@ -12056,8 +12391,7 @@ body {
 }
 /* line 22, ../sass/animations/_page-in-view.scss */
 #c3xgm-about-our-company.c3xgm-about-page.c3xgm-about-page-in-view .c3xgm-about-section-header hr,
-#c3xgm-about-our-people.c3xgm-about-page.c3xgm-about-page-in-view .c3xgm-about-section-header hr,
-#c3xgm-about-our-brands.c3xgm-about-page.c3xgm-about-page-in-view .c3xgm-about-section-header hr {
+#c3xgm-about-our-people.c3xgm-about-page.c3xgm-about-page-in-view .c3xgm-about-section-header hr {
   -webkit-animation-fill-mode: both;
   -moz-animation-fill-mode: both;
   -o-animation-fill-mode: both;
@@ -12081,8 +12415,7 @@ body {
 }
 /* line 31, ../sass/animations/_page-in-view.scss */
 #c3xgm-about-our-company.c3xgm-about-page.c3xgm-about-page-in-view .c3xgm-about-header-p,
-#c3xgm-about-our-people.c3xgm-about-page.c3xgm-about-page-in-view .c3xgm-about-header-p,
-#c3xgm-about-our-brands.c3xgm-about-page.c3xgm-about-page-in-view .c3xgm-about-header-p {
+#c3xgm-about-our-people.c3xgm-about-page.c3xgm-about-page-in-view .c3xgm-about-header-p {
   -webkit-animation-fill-mode: both;
   -moz-animation-fill-mode: both;
   -o-animation-fill-mode: both;
@@ -12106,16 +12439,14 @@ body {
 }
 /* line 40, ../sass/animations/_page-in-view.scss */
 #c3xgm-about-our-company.c3xgm-about-page.c3xgm-about-page-in-view .c3xgm-about-block-earn .c3xgm-about-yellow-bar-left-wrapper,
-#c3xgm-about-our-people.c3xgm-about-page.c3xgm-about-page-in-view .c3xgm-about-block-earn .c3xgm-about-yellow-bar-left-wrapper,
-#c3xgm-about-our-brands.c3xgm-about-page.c3xgm-about-page-in-view .c3xgm-about-block-earn .c3xgm-about-yellow-bar-left-wrapper {
+#c3xgm-about-our-people.c3xgm-about-page.c3xgm-about-page-in-view .c3xgm-about-block-earn .c3xgm-about-yellow-bar-left-wrapper {
   overflow: hidden;
   position: relative;
   border-left: none;
 }
 /* line 47, ../sass/animations/_page-in-view.scss */
 #c3xgm-about-our-company.c3xgm-about-page.c3xgm-about-page-in-view .c3xgm-about-block-earn .c3xgm-about-yellow-bar-left-wrapper .c3xgm-about-block-tagline:before,
-#c3xgm-about-our-people.c3xgm-about-page.c3xgm-about-page-in-view .c3xgm-about-block-earn .c3xgm-about-yellow-bar-left-wrapper .c3xgm-about-block-tagline:before,
-#c3xgm-about-our-brands.c3xgm-about-page.c3xgm-about-page-in-view .c3xgm-about-block-earn .c3xgm-about-yellow-bar-left-wrapper .c3xgm-about-block-tagline:before {
+#c3xgm-about-our-people.c3xgm-about-page.c3xgm-about-page-in-view .c3xgm-about-block-earn .c3xgm-about-yellow-bar-left-wrapper .c3xgm-about-block-tagline:before {
   content: "";
   display: block;
   position: absolute;
@@ -12155,15 +12486,13 @@ body {
 @media (min-width: 768px) {
   /* line 47, ../sass/animations/_page-in-view.scss */
   #c3xgm-about-our-company.c3xgm-about-page.c3xgm-about-page-in-view .c3xgm-about-block-earn .c3xgm-about-yellow-bar-left-wrapper .c3xgm-about-block-tagline:before,
-  #c3xgm-about-our-people.c3xgm-about-page.c3xgm-about-page-in-view .c3xgm-about-block-earn .c3xgm-about-yellow-bar-left-wrapper .c3xgm-about-block-tagline:before,
-  #c3xgm-about-our-brands.c3xgm-about-page.c3xgm-about-page-in-view .c3xgm-about-block-earn .c3xgm-about-yellow-bar-left-wrapper .c3xgm-about-block-tagline:before {
+  #c3xgm-about-our-people.c3xgm-about-page.c3xgm-about-page-in-view .c3xgm-about-block-earn .c3xgm-about-yellow-bar-left-wrapper .c3xgm-about-block-tagline:before {
     width: 0.2rem;
   }
 }
 /* line 62, ../sass/animations/_page-in-view.scss */
 #c3xgm-about-our-company.c3xgm-about-page.c3xgm-about-page-in-view .c3xgm-about-block-earn .c3xgm-about-yellow-bar-left-wrapper .c3xgm-about-block-tagline:after,
-#c3xgm-about-our-people.c3xgm-about-page.c3xgm-about-page-in-view .c3xgm-about-block-earn .c3xgm-about-yellow-bar-left-wrapper .c3xgm-about-block-tagline:after,
-#c3xgm-about-our-brands.c3xgm-about-page.c3xgm-about-page-in-view .c3xgm-about-block-earn .c3xgm-about-yellow-bar-left-wrapper .c3xgm-about-block-tagline:after {
+#c3xgm-about-our-people.c3xgm-about-page.c3xgm-about-page-in-view .c3xgm-about-block-earn .c3xgm-about-yellow-bar-left-wrapper .c3xgm-about-block-tagline:after {
   content: "";
   display: block;
   position: absolute;
@@ -12203,15 +12532,13 @@ body {
 @media (min-width: 768px) {
   /* line 62, ../sass/animations/_page-in-view.scss */
   #c3xgm-about-our-company.c3xgm-about-page.c3xgm-about-page-in-view .c3xgm-about-block-earn .c3xgm-about-yellow-bar-left-wrapper .c3xgm-about-block-tagline:after,
-  #c3xgm-about-our-people.c3xgm-about-page.c3xgm-about-page-in-view .c3xgm-about-block-earn .c3xgm-about-yellow-bar-left-wrapper .c3xgm-about-block-tagline:after,
-  #c3xgm-about-our-brands.c3xgm-about-page.c3xgm-about-page-in-view .c3xgm-about-block-earn .c3xgm-about-yellow-bar-left-wrapper .c3xgm-about-block-tagline:after {
+  #c3xgm-about-our-people.c3xgm-about-page.c3xgm-about-page-in-view .c3xgm-about-block-earn .c3xgm-about-yellow-bar-left-wrapper .c3xgm-about-block-tagline:after {
     width: 0.2rem;
   }
 }
 /* line 77, ../sass/animations/_page-in-view.scss */
 #c3xgm-about-our-company.c3xgm-about-page.c3xgm-about-page-in-view .c3xgm-about-block-earn .c3xgm-about-yellow-bar-left-wrapper .c3xgm-about-block-tagline > span:first-child,
-#c3xgm-about-our-people.c3xgm-about-page.c3xgm-about-page-in-view .c3xgm-about-block-earn .c3xgm-about-yellow-bar-left-wrapper .c3xgm-about-block-tagline > span:first-child,
-#c3xgm-about-our-brands.c3xgm-about-page.c3xgm-about-page-in-view .c3xgm-about-block-earn .c3xgm-about-yellow-bar-left-wrapper .c3xgm-about-block-tagline > span:first-child {
+#c3xgm-about-our-people.c3xgm-about-page.c3xgm-about-page-in-view .c3xgm-about-block-earn .c3xgm-about-yellow-bar-left-wrapper .c3xgm-about-block-tagline > span:first-child {
   -webkit-animation-fill-mode: both;
   -moz-animation-fill-mode: both;
   -o-animation-fill-mode: both;
@@ -12235,8 +12562,7 @@ body {
 }
 /* line 84, ../sass/animations/_page-in-view.scss */
 #c3xgm-about-our-company.c3xgm-about-page.c3xgm-about-page-in-view .c3xgm-about-block-earn .c3xgm-about-yellow-bar-left-wrapper .c3xgm-about-block-tagline > span:nth-child(2),
-#c3xgm-about-our-people.c3xgm-about-page.c3xgm-about-page-in-view .c3xgm-about-block-earn .c3xgm-about-yellow-bar-left-wrapper .c3xgm-about-block-tagline > span:nth-child(2),
-#c3xgm-about-our-brands.c3xgm-about-page.c3xgm-about-page-in-view .c3xgm-about-block-earn .c3xgm-about-yellow-bar-left-wrapper .c3xgm-about-block-tagline > span:nth-child(2) {
+#c3xgm-about-our-people.c3xgm-about-page.c3xgm-about-page-in-view .c3xgm-about-block-earn .c3xgm-about-yellow-bar-left-wrapper .c3xgm-about-block-tagline > span:nth-child(2) {
   -webkit-animation-fill-mode: both;
   -moz-animation-fill-mode: both;
   -o-animation-fill-mode: both;
@@ -12260,8 +12586,7 @@ body {
 }
 /* line 93, ../sass/animations/_page-in-view.scss */
 #c3xgm-about-our-company.c3xgm-about-page.c3xgm-about-page-in-view .c3xgm-about-block-earn .c3xgm-about-p,
-#c3xgm-about-our-people.c3xgm-about-page.c3xgm-about-page-in-view .c3xgm-about-block-earn .c3xgm-about-p,
-#c3xgm-about-our-brands.c3xgm-about-page.c3xgm-about-page-in-view .c3xgm-about-block-earn .c3xgm-about-p {
+#c3xgm-about-our-people.c3xgm-about-page.c3xgm-about-page-in-view .c3xgm-about-block-earn .c3xgm-about-p {
   -webkit-animation-fill-mode: both;
   -moz-animation-fill-mode: both;
   -o-animation-fill-mode: both;
@@ -12285,8 +12610,7 @@ body {
 }
 /* line 102, ../sass/animations/_page-in-view.scss */
 #c3xgm-about-our-company.c3xgm-about-page.c3xgm-about-page-in-view .c3xgm-about-down-arrow-link,
-#c3xgm-about-our-people.c3xgm-about-page.c3xgm-about-page-in-view .c3xgm-about-down-arrow-link,
-#c3xgm-about-our-brands.c3xgm-about-page.c3xgm-about-page-in-view .c3xgm-about-down-arrow-link {
+#c3xgm-about-our-people.c3xgm-about-page.c3xgm-about-page-in-view .c3xgm-about-down-arrow-link {
   -webkit-animation-fill-mode: both;
   -moz-animation-fill-mode: both;
   -o-animation-fill-mode: both;
@@ -12310,8 +12634,7 @@ body {
 }
 /* line 110, ../sass/animations/_page-in-view.scss */
 #c3xgm-about-our-company.c3xgm-about-page.c3xgm-about-page-in-view .c3xgm-about-employees .c3xgm-about-blockquote .c3xgm-about-span-container .c3xgm-about-gray,
-#c3xgm-about-our-people.c3xgm-about-page.c3xgm-about-page-in-view .c3xgm-about-employees .c3xgm-about-blockquote .c3xgm-about-span-container .c3xgm-about-gray,
-#c3xgm-about-our-brands.c3xgm-about-page.c3xgm-about-page-in-view .c3xgm-about-employees .c3xgm-about-blockquote .c3xgm-about-span-container .c3xgm-about-gray {
+#c3xgm-about-our-people.c3xgm-about-page.c3xgm-about-page-in-view .c3xgm-about-employees .c3xgm-about-blockquote .c3xgm-about-span-container .c3xgm-about-gray {
   -webkit-animation-fill-mode: both;
   -moz-animation-fill-mode: both;
   -o-animation-fill-mode: both;
@@ -12335,8 +12658,7 @@ body {
 }
 /* line 120, ../sass/animations/_page-in-view.scss */
 #c3xgm-about-our-company.c3xgm-about-page.c3xgm-about-page-in-view .c3xgm-about-module-car .c3xgm-about-module-car-logo-container li,
-#c3xgm-about-our-people.c3xgm-about-page.c3xgm-about-page-in-view .c3xgm-about-module-car .c3xgm-about-module-car-logo-container li,
-#c3xgm-about-our-brands.c3xgm-about-page.c3xgm-about-page-in-view .c3xgm-about-module-car .c3xgm-about-module-car-logo-container li {
+#c3xgm-about-our-people.c3xgm-about-page.c3xgm-about-page-in-view .c3xgm-about-module-car .c3xgm-about-module-car-logo-container li {
   -webkit-animation-fill-mode: both;
   -moz-animation-fill-mode: both;
   -o-animation-fill-mode: both;
@@ -12360,8 +12682,7 @@ body {
 }
 /* line 126, ../sass/animations/_page-in-view.scss */
 #c3xgm-about-our-company.c3xgm-about-page.c3xgm-about-page-in-view .c3xgm-about-module-car .c3xgm-about-module-car-logo-container li:nth-child(2),
-#c3xgm-about-our-people.c3xgm-about-page.c3xgm-about-page-in-view .c3xgm-about-module-car .c3xgm-about-module-car-logo-container li:nth-child(2),
-#c3xgm-about-our-brands.c3xgm-about-page.c3xgm-about-page-in-view .c3xgm-about-module-car .c3xgm-about-module-car-logo-container li:nth-child(2) {
+#c3xgm-about-our-people.c3xgm-about-page.c3xgm-about-page-in-view .c3xgm-about-module-car .c3xgm-about-module-car-logo-container li:nth-child(2) {
   -webkit-animation-delay: 1900ms;
   -moz-animation-delay: 1900ms;
   -o-animation-delay: 1900ms;
@@ -12370,8 +12691,7 @@ body {
 }
 /* line 127, ../sass/animations/_page-in-view.scss */
 #c3xgm-about-our-company.c3xgm-about-page.c3xgm-about-page-in-view .c3xgm-about-module-car .c3xgm-about-module-car-logo-container li:nth-child(3),
-#c3xgm-about-our-people.c3xgm-about-page.c3xgm-about-page-in-view .c3xgm-about-module-car .c3xgm-about-module-car-logo-container li:nth-child(3),
-#c3xgm-about-our-brands.c3xgm-about-page.c3xgm-about-page-in-view .c3xgm-about-module-car .c3xgm-about-module-car-logo-container li:nth-child(3) {
+#c3xgm-about-our-people.c3xgm-about-page.c3xgm-about-page-in-view .c3xgm-about-module-car .c3xgm-about-module-car-logo-container li:nth-child(3) {
   -webkit-animation-delay: 2000ms;
   -moz-animation-delay: 2000ms;
   -o-animation-delay: 2000ms;
@@ -12380,8 +12700,7 @@ body {
 }
 /* line 128, ../sass/animations/_page-in-view.scss */
 #c3xgm-about-our-company.c3xgm-about-page.c3xgm-about-page-in-view .c3xgm-about-module-car .c3xgm-about-module-car-logo-container li:nth-child(4),
-#c3xgm-about-our-people.c3xgm-about-page.c3xgm-about-page-in-view .c3xgm-about-module-car .c3xgm-about-module-car-logo-container li:nth-child(4),
-#c3xgm-about-our-brands.c3xgm-about-page.c3xgm-about-page-in-view .c3xgm-about-module-car .c3xgm-about-module-car-logo-container li:nth-child(4) {
+#c3xgm-about-our-people.c3xgm-about-page.c3xgm-about-page-in-view .c3xgm-about-module-car .c3xgm-about-module-car-logo-container li:nth-child(4) {
   -webkit-animation-delay: 2100ms;
   -moz-animation-delay: 2100ms;
   -o-animation-delay: 2100ms;
@@ -12390,8 +12709,7 @@ body {
 }
 /* line 129, ../sass/animations/_page-in-view.scss */
 #c3xgm-about-our-company.c3xgm-about-page.c3xgm-about-page-in-view .c3xgm-about-module-car .c3xgm-about-module-car-logo-container li:nth-child(5),
-#c3xgm-about-our-people.c3xgm-about-page.c3xgm-about-page-in-view .c3xgm-about-module-car .c3xgm-about-module-car-logo-container li:nth-child(5),
-#c3xgm-about-our-brands.c3xgm-about-page.c3xgm-about-page-in-view .c3xgm-about-module-car .c3xgm-about-module-car-logo-container li:nth-child(5) {
+#c3xgm-about-our-people.c3xgm-about-page.c3xgm-about-page-in-view .c3xgm-about-module-car .c3xgm-about-module-car-logo-container li:nth-child(5) {
   -webkit-animation-delay: 2200ms;
   -moz-animation-delay: 2200ms;
   -o-animation-delay: 2200ms;
@@ -12400,8 +12718,7 @@ body {
 }
 /* line 130, ../sass/animations/_page-in-view.scss */
 #c3xgm-about-our-company.c3xgm-about-page.c3xgm-about-page-in-view .c3xgm-about-module-car .c3xgm-about-module-car-logo-container li:nth-child(6),
-#c3xgm-about-our-people.c3xgm-about-page.c3xgm-about-page-in-view .c3xgm-about-module-car .c3xgm-about-module-car-logo-container li:nth-child(6),
-#c3xgm-about-our-brands.c3xgm-about-page.c3xgm-about-page-in-view .c3xgm-about-module-car .c3xgm-about-module-car-logo-container li:nth-child(6) {
+#c3xgm-about-our-people.c3xgm-about-page.c3xgm-about-page-in-view .c3xgm-about-module-car .c3xgm-about-module-car-logo-container li:nth-child(6) {
   -webkit-animation-delay: 2300ms;
   -moz-animation-delay: 2300ms;
   -o-animation-delay: 2300ms;
@@ -12410,8 +12727,7 @@ body {
 }
 /* line 131, ../sass/animations/_page-in-view.scss */
 #c3xgm-about-our-company.c3xgm-about-page.c3xgm-about-page-in-view .c3xgm-about-module-car .c3xgm-about-module-car-logo-container li:nth-child(7),
-#c3xgm-about-our-people.c3xgm-about-page.c3xgm-about-page-in-view .c3xgm-about-module-car .c3xgm-about-module-car-logo-container li:nth-child(7),
-#c3xgm-about-our-brands.c3xgm-about-page.c3xgm-about-page-in-view .c3xgm-about-module-car .c3xgm-about-module-car-logo-container li:nth-child(7) {
+#c3xgm-about-our-people.c3xgm-about-page.c3xgm-about-page-in-view .c3xgm-about-module-car .c3xgm-about-module-car-logo-container li:nth-child(7) {
   -webkit-animation-delay: 2400ms;
   -moz-animation-delay: 2400ms;
   -o-animation-delay: 2400ms;
@@ -12420,8 +12736,7 @@ body {
 }
 /* line 132, ../sass/animations/_page-in-view.scss */
 #c3xgm-about-our-company.c3xgm-about-page.c3xgm-about-page-in-view .c3xgm-about-module-car .c3xgm-about-module-car-logo-container li:nth-child(8),
-#c3xgm-about-our-people.c3xgm-about-page.c3xgm-about-page-in-view .c3xgm-about-module-car .c3xgm-about-module-car-logo-container li:nth-child(8),
-#c3xgm-about-our-brands.c3xgm-about-page.c3xgm-about-page-in-view .c3xgm-about-module-car .c3xgm-about-module-car-logo-container li:nth-child(8) {
+#c3xgm-about-our-people.c3xgm-about-page.c3xgm-about-page-in-view .c3xgm-about-module-car .c3xgm-about-module-car-logo-container li:nth-child(8) {
   -webkit-animation-delay: 2500ms;
   -moz-animation-delay: 2500ms;
   -o-animation-delay: 2500ms;
@@ -12430,8 +12745,7 @@ body {
 }
 /* line 133, ../sass/animations/_page-in-view.scss */
 #c3xgm-about-our-company.c3xgm-about-page.c3xgm-about-page-in-view .c3xgm-about-module-car .c3xgm-about-module-car-logo-container li:nth-child(9),
-#c3xgm-about-our-people.c3xgm-about-page.c3xgm-about-page-in-view .c3xgm-about-module-car .c3xgm-about-module-car-logo-container li:nth-child(9),
-#c3xgm-about-our-brands.c3xgm-about-page.c3xgm-about-page-in-view .c3xgm-about-module-car .c3xgm-about-module-car-logo-container li:nth-child(9) {
+#c3xgm-about-our-people.c3xgm-about-page.c3xgm-about-page-in-view .c3xgm-about-module-car .c3xgm-about-module-car-logo-container li:nth-child(9) {
   -webkit-animation-delay: 2600ms;
   -moz-animation-delay: 2600ms;
   -o-animation-delay: 2600ms;
@@ -12441,8 +12755,7 @@ body {
 @media (min-width: 768px) {
   /* line 136, ../sass/animations/_page-in-view.scss */
   #c3xgm-about-our-company.c3xgm-about-page.c3xgm-about-page-in-view .c3xgm-about-module-car .c3xgm-about-module-car-logo-container li:nth-child(3),
-  #c3xgm-about-our-people.c3xgm-about-page.c3xgm-about-page-in-view .c3xgm-about-module-car .c3xgm-about-module-car-logo-container li:nth-child(3),
-  #c3xgm-about-our-brands.c3xgm-about-page.c3xgm-about-page-in-view .c3xgm-about-module-car .c3xgm-about-module-car-logo-container li:nth-child(3) {
+  #c3xgm-about-our-people.c3xgm-about-page.c3xgm-about-page-in-view .c3xgm-about-module-car .c3xgm-about-module-car-logo-container li:nth-child(3) {
     -webkit-animation-delay: 1900ms;
     -moz-animation-delay: 1900ms;
     -o-animation-delay: 1900ms;
@@ -12451,8 +12764,7 @@ body {
   }
   /* line 137, ../sass/animations/_page-in-view.scss */
   #c3xgm-about-our-company.c3xgm-about-page.c3xgm-about-page-in-view .c3xgm-about-module-car .c3xgm-about-module-car-logo-container li:nth-child(5),
-  #c3xgm-about-our-people.c3xgm-about-page.c3xgm-about-page-in-view .c3xgm-about-module-car .c3xgm-about-module-car-logo-container li:nth-child(5),
-  #c3xgm-about-our-brands.c3xgm-about-page.c3xgm-about-page-in-view .c3xgm-about-module-car .c3xgm-about-module-car-logo-container li:nth-child(5) {
+  #c3xgm-about-our-people.c3xgm-about-page.c3xgm-about-page-in-view .c3xgm-about-module-car .c3xgm-about-module-car-logo-container li:nth-child(5) {
     -webkit-animation-delay: 2000ms;
     -moz-animation-delay: 2000ms;
     -o-animation-delay: 2000ms;
@@ -12461,8 +12773,7 @@ body {
   }
   /* line 138, ../sass/animations/_page-in-view.scss */
   #c3xgm-about-our-company.c3xgm-about-page.c3xgm-about-page-in-view .c3xgm-about-module-car .c3xgm-about-module-car-logo-container li:nth-child(7),
-  #c3xgm-about-our-people.c3xgm-about-page.c3xgm-about-page-in-view .c3xgm-about-module-car .c3xgm-about-module-car-logo-container li:nth-child(7),
-  #c3xgm-about-our-brands.c3xgm-about-page.c3xgm-about-page-in-view .c3xgm-about-module-car .c3xgm-about-module-car-logo-container li:nth-child(7) {
+  #c3xgm-about-our-people.c3xgm-about-page.c3xgm-about-page-in-view .c3xgm-about-module-car .c3xgm-about-module-car-logo-container li:nth-child(7) {
     -webkit-animation-delay: 2100ms;
     -moz-animation-delay: 2100ms;
     -o-animation-delay: 2100ms;
@@ -12471,8 +12782,7 @@ body {
   }
   /* line 139, ../sass/animations/_page-in-view.scss */
   #c3xgm-about-our-company.c3xgm-about-page.c3xgm-about-page-in-view .c3xgm-about-module-car .c3xgm-about-module-car-logo-container li:nth-child(9),
-  #c3xgm-about-our-people.c3xgm-about-page.c3xgm-about-page-in-view .c3xgm-about-module-car .c3xgm-about-module-car-logo-container li:nth-child(9),
-  #c3xgm-about-our-brands.c3xgm-about-page.c3xgm-about-page-in-view .c3xgm-about-module-car .c3xgm-about-module-car-logo-container li:nth-child(9) {
+  #c3xgm-about-our-people.c3xgm-about-page.c3xgm-about-page-in-view .c3xgm-about-module-car .c3xgm-about-module-car-logo-container li:nth-child(9) {
     -webkit-animation-delay: 2200ms;
     -moz-animation-delay: 2200ms;
     -o-animation-delay: 2200ms;
@@ -12481,8 +12791,7 @@ body {
   }
   /* line 140, ../sass/animations/_page-in-view.scss */
   #c3xgm-about-our-company.c3xgm-about-page.c3xgm-about-page-in-view .c3xgm-about-module-car .c3xgm-about-module-car-logo-container li:nth-child(2),
-  #c3xgm-about-our-people.c3xgm-about-page.c3xgm-about-page-in-view .c3xgm-about-module-car .c3xgm-about-module-car-logo-container li:nth-child(2),
-  #c3xgm-about-our-brands.c3xgm-about-page.c3xgm-about-page-in-view .c3xgm-about-module-car .c3xgm-about-module-car-logo-container li:nth-child(2) {
+  #c3xgm-about-our-people.c3xgm-about-page.c3xgm-about-page-in-view .c3xgm-about-module-car .c3xgm-about-module-car-logo-container li:nth-child(2) {
     -webkit-animation-delay: 2300ms;
     -moz-animation-delay: 2300ms;
     -o-animation-delay: 2300ms;
@@ -12491,8 +12800,7 @@ body {
   }
   /* line 141, ../sass/animations/_page-in-view.scss */
   #c3xgm-about-our-company.c3xgm-about-page.c3xgm-about-page-in-view .c3xgm-about-module-car .c3xgm-about-module-car-logo-container li:nth-child(4),
-  #c3xgm-about-our-people.c3xgm-about-page.c3xgm-about-page-in-view .c3xgm-about-module-car .c3xgm-about-module-car-logo-container li:nth-child(4),
-  #c3xgm-about-our-brands.c3xgm-about-page.c3xgm-about-page-in-view .c3xgm-about-module-car .c3xgm-about-module-car-logo-container li:nth-child(4) {
+  #c3xgm-about-our-people.c3xgm-about-page.c3xgm-about-page-in-view .c3xgm-about-module-car .c3xgm-about-module-car-logo-container li:nth-child(4) {
     -webkit-animation-delay: 2400ms;
     -moz-animation-delay: 2400ms;
     -o-animation-delay: 2400ms;
@@ -12501,8 +12809,7 @@ body {
   }
   /* line 142, ../sass/animations/_page-in-view.scss */
   #c3xgm-about-our-company.c3xgm-about-page.c3xgm-about-page-in-view .c3xgm-about-module-car .c3xgm-about-module-car-logo-container li:nth-child(6),
-  #c3xgm-about-our-people.c3xgm-about-page.c3xgm-about-page-in-view .c3xgm-about-module-car .c3xgm-about-module-car-logo-container li:nth-child(6),
-  #c3xgm-about-our-brands.c3xgm-about-page.c3xgm-about-page-in-view .c3xgm-about-module-car .c3xgm-about-module-car-logo-container li:nth-child(6) {
+  #c3xgm-about-our-people.c3xgm-about-page.c3xgm-about-page-in-view .c3xgm-about-module-car .c3xgm-about-module-car-logo-container li:nth-child(6) {
     -webkit-animation-delay: 2500ms;
     -moz-animation-delay: 2500ms;
     -o-animation-delay: 2500ms;
@@ -12511,8 +12818,7 @@ body {
   }
   /* line 143, ../sass/animations/_page-in-view.scss */
   #c3xgm-about-our-company.c3xgm-about-page.c3xgm-about-page-in-view .c3xgm-about-module-car .c3xgm-about-module-car-logo-container li:nth-child(8),
-  #c3xgm-about-our-people.c3xgm-about-page.c3xgm-about-page-in-view .c3xgm-about-module-car .c3xgm-about-module-car-logo-container li:nth-child(8),
-  #c3xgm-about-our-brands.c3xgm-about-page.c3xgm-about-page-in-view .c3xgm-about-module-car .c3xgm-about-module-car-logo-container li:nth-child(8) {
+  #c3xgm-about-our-people.c3xgm-about-page.c3xgm-about-page-in-view .c3xgm-about-module-car .c3xgm-about-module-car-logo-container li:nth-child(8) {
     -webkit-animation-delay: 2600ms;
     -moz-animation-delay: 2600ms;
     -o-animation-delay: 2600ms;
@@ -12524,9 +12830,7 @@ body {
 #c3xgm-about-our-company.c3xgm-about-page.c3xgm-about-page-in-view .c3xgm-about-module-car .c3xgm-about-module-35 .c3xgm-about-gray-line,
 #c3xgm-about-our-company.c3xgm-about-page.c3xgm-about-page-in-view .c3xgm-about-module-car .c3xgm-about-module-35 .c3xgm-about-yellow-line,
 #c3xgm-about-our-people.c3xgm-about-page.c3xgm-about-page-in-view .c3xgm-about-module-car .c3xgm-about-module-35 .c3xgm-about-gray-line,
-#c3xgm-about-our-people.c3xgm-about-page.c3xgm-about-page-in-view .c3xgm-about-module-car .c3xgm-about-module-35 .c3xgm-about-yellow-line,
-#c3xgm-about-our-brands.c3xgm-about-page.c3xgm-about-page-in-view .c3xgm-about-module-car .c3xgm-about-module-35 .c3xgm-about-gray-line,
-#c3xgm-about-our-brands.c3xgm-about-page.c3xgm-about-page-in-view .c3xgm-about-module-car .c3xgm-about-module-35 .c3xgm-about-yellow-line {
+#c3xgm-about-our-people.c3xgm-about-page.c3xgm-about-page-in-view .c3xgm-about-module-car .c3xgm-about-module-35 .c3xgm-about-yellow-line {
   -webkit-animation-fill-mode: both;
   -moz-animation-fill-mode: both;
   -o-animation-fill-mode: both;
@@ -12545,8 +12849,7 @@ body {
 }
 /* line 157, ../sass/animations/_page-in-view.scss */
 #c3xgm-about-our-company.c3xgm-about-page.c3xgm-about-page-in-view .c3xgm-about-module-car .c3xgm-about-module-35 .c3xgm-about-gray-line,
-#c3xgm-about-our-people.c3xgm-about-page.c3xgm-about-page-in-view .c3xgm-about-module-car .c3xgm-about-module-35 .c3xgm-about-gray-line,
-#c3xgm-about-our-brands.c3xgm-about-page.c3xgm-about-page-in-view .c3xgm-about-module-car .c3xgm-about-module-35 .c3xgm-about-gray-line {
+#c3xgm-about-our-people.c3xgm-about-page.c3xgm-about-page-in-view .c3xgm-about-module-car .c3xgm-about-module-35 .c3xgm-about-gray-line {
   -webkit-animation-delay: 2200ms;
   -moz-animation-delay: 2200ms;
   -o-animation-delay: 2200ms;
@@ -12555,8 +12858,7 @@ body {
 }
 /* line 160, ../sass/animations/_page-in-view.scss */
 #c3xgm-about-our-company.c3xgm-about-page.c3xgm-about-page-in-view .c3xgm-about-module-car .c3xgm-about-module-35 .c3xgm-about-yellow-line,
-#c3xgm-about-our-people.c3xgm-about-page.c3xgm-about-page-in-view .c3xgm-about-module-car .c3xgm-about-module-35 .c3xgm-about-yellow-line,
-#c3xgm-about-our-brands.c3xgm-about-page.c3xgm-about-page-in-view .c3xgm-about-module-car .c3xgm-about-module-35 .c3xgm-about-yellow-line {
+#c3xgm-about-our-people.c3xgm-about-page.c3xgm-about-page-in-view .c3xgm-about-module-car .c3xgm-about-module-35 .c3xgm-about-yellow-line {
   -webkit-animation-delay: 2700ms;
   -moz-animation-delay: 2700ms;
   -o-animation-delay: 2700ms;
@@ -13064,30 +13366,6 @@ body {
   animation: moveFlagLine 32s linear infinite;
 }
 
-@-webkit-keyframes rotateTires {
-  0% {
-    -webkit-transform: rotate(0);
-  }
-  100% {
-    -webkit-transform: rotate(360deg);
-  }
-}
-@-moz-keyframes rotateTires {
-  0% {
-    -moz-transform: rotate(0);
-  }
-  100% {
-    -moz-transform: rotate(360deg);
-  }
-}
-@keyframes rotateTires {
-  0% {
-    transform: rotate(0);
-  }
-  100% {
-    transform: rotate(360deg);
-  }
-}
 /* line 17, ../sass/animations/_grey-car-wheels.scss */
 .animate-tires {
   -webkit-animation-fill-mode: both;
@@ -13095,14 +13373,29 @@ body {
   -o-animation-fill-mode: both;
   -ms-animation-fill-mode: both;
   animation-fill-mode: both;
-  -webkit-animation: rotateTires 2s linear infinite;
-  -moz-animation: rotateTires 2s linear infinite;
-  -o-animation: rotateTires 2s linear infinite;
-  -ms-animation: rotateTires 2s linear infinite;
-  animation: rotateTires 2s linear infinite;
+  -webkit-animation-iteration-count: infinite;
+  -moz-animation-iteration-count: infinite;
+  -o-animation-iteration-count: infinite;
+  -ms-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+  -webkit-animation-delay: 0;
+  -moz-animation-delay: 0;
+  -o-animation-delay: 0;
+  -ms-animation-delay: 0;
+  animation-delay: 0;
+  -webkit-animation-name: rotate;
+  -moz-animation-name: rotate;
+  -o-animation-name: rotate;
+  -ms-animation-name: rotate;
+  animation-name: rotate;
+  -webkit-animation-duration: 5s;
+  -moz-animation-duration: 5s;
+  -o-animation-duration: 5s;
+  -ms-animation-duration: 5s;
+  animation-duration: 5s;
 }
 
-/* line 22, ../sass/animations/_grey-car-wheels.scss */
+/* line 25, ../sass/animations/_grey-car-wheels.scss */
 .grey-car {
   background-image: url("../img/decorative/cars/grey-side.png");
   background-size: 100%;
@@ -13128,7 +13421,7 @@ body {
   transition: left 0.05s ease-out;
 }
 @media (min-width: 768px) {
-  /* line 22, ../sass/animations/_grey-car-wheels.scss */
+  /* line 25, ../sass/animations/_grey-car-wheels.scss */
   .grey-car {
     width: 350px;
     padding-bottom: 108px;
@@ -13136,7 +13429,7 @@ body {
     right: 0;
   }
 }
-/* line 45, ../sass/animations/_grey-car-wheels.scss */
+/* line 48, ../sass/animations/_grey-car-wheels.scss */
 .grey-car .wheel {
   background-image: url("../img/decorative/cars/wheel.png");
   -webkit-background-size: cover;
@@ -13152,29 +13445,29 @@ body {
   bottom: 2%;
 }
 @media (min-width: 768px) {
-  /* line 45, ../sass/animations/_grey-car-wheels.scss */
+  /* line 48, ../sass/animations/_grey-car-wheels.scss */
   .grey-car .wheel {
     width: 46px;
     padding-bottom: 46px;
     bottom: 3px;
   }
 }
-/* line 60, ../sass/animations/_grey-car-wheels.scss */
+/* line 63, ../sass/animations/_grey-car-wheels.scss */
 .grey-car .front-wheel {
   right: 10.285714%;
 }
 @media (min-width: 768px) {
-  /* line 60, ../sass/animations/_grey-car-wheels.scss */
+  /* line 63, ../sass/animations/_grey-car-wheels.scss */
   .grey-car .front-wheel {
     right: 36px;
   }
 }
-/* line 64, ../sass/animations/_grey-car-wheels.scss */
+/* line 67, ../sass/animations/_grey-car-wheels.scss */
 .grey-car .back-wheel {
   left: 16%;
 }
 @media (min-width: 768px) {
-  /* line 64, ../sass/animations/_grey-car-wheels.scss */
+  /* line 67, ../sass/animations/_grey-car-wheels.scss */
   .grey-car .back-wheel {
     left: 56px;
   }

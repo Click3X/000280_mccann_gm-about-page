@@ -1,12 +1,12 @@
 <?php
 // OUR PEOPLE from WEN'S HTML
-echo '<div id="c3xgm-about-our-people" class="c3xgm-about-page c3xgm-about-clearfix c3xgm-about-page-our-people c3xgm-about-page-in-view">
+echo '<div id="c3xgm-about-page-our-people" class="c3xgm-about-page c3xgm-about-clearfix c3xgm-about-page-our-people">
 
     <div class="c3xgm-about-section c3xgm-about-clearfix our-people">
         
         <div class="c3xgm-about-section-header c3xgm-about-clearfix">
             <div class="c3xgm-about-section-header-inner">
-                <img class="c3xgm-about-section-icon" src="img/title-icons/our-people.svg" alt="Our People">
+                <img id="c3xgm-about-our-people-icon" class="c3xgm-about-section-icon" src="img/title-icons/our-people.gif" alt="Our People">
                 <h1 class="c3xgm-about-h fadeInLeftMega"><span class="c3xgm-about-thin">Our</span> People</h1>
             </div>
             <hr>
@@ -52,10 +52,19 @@ echo '<div id="c3xgm-about-our-people" class="c3xgm-about-page c3xgm-about-clear
                 </span>
                 <span class="c3xgm-about-light-blue number" id="c3xgm-about-number-6">6</span>
             </p>
+             <!-- MARKER SVG -->
+               <svg version="1.1" id="map-marker" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                   viewBox="0 0 121.3 223" enable-background="new 0 0 121.3 223" xml:space="preserve">
+                    <path fill="#F1B51C" d="M121.3,57.6c0,15.9-10.6,40.2-19,52.3C82.7,141,70.5,163,66,201.7c-1.5,12.1-1.5,22-5.3,21.2
+                  c-3.8-0.8-3.8-10.6-5.3-21.2c-5.3-39.4-18.2-59.1-34.9-90.2C12.9,97.8,0,73.6,0,56.9C0,25,27.3,0,60.7,0C94,0,121.3,25.8,121.3,57.6
+                  z"/>
+                    <circle fill="#FFFFFF" cx="60.5" cy="63.3" r="22"/>
+               </svg>
+            <div id="myobj" class="c3xgm-about-block-image">';
+                // <img src="img/pages/people/map.svg" alt="continents">
+                include('svgs/map.php');
 
-            <div class="c3xgm-about-block-image">
-                <img src="img/pages/people/map.svg" alt="continents">
-            </div>
+            echo '</div>
 
         </div>
         
@@ -83,9 +92,10 @@ echo '<div id="c3xgm-about-our-people" class="c3xgm-about-page c3xgm-about-clear
                 <span class="c3xgm-about-light-blue number" id="c3xgm-about-number-23">23</span>
             </p>
 
-            <div class="c3xgm-about-block-image">
-                <img src="img/pages/people/time-zones.svg" alt="timezones">
-            </div>
+            <div class="c3xgm-about-block-image">';
+                // <img src="img/pages/people/time-zones.svg" alt="timezones">
+                include('svgs/time-zone.php');
+            echo '</div>
 
         </div>
 

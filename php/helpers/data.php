@@ -8,8 +8,10 @@ $pages = array(
 		"title"=>"Our Company",
 		"id"=>"our-company",
 		"tagline"=>"General Motors is a global automotive company united by a single purpose:",		
-		"icon"=>"img/title-icons/our-company.png",
-		"icon@2x"=>"img/title-icons/our-company.svg",
+		// "icon"=>"img/title-icons/our-company.png",
+		// "icon@2x"=>"img/title-icons/our-company.svg",
+		"icon"=>"img/title-icons/our-company.gif",
+		"icon@2x"=>"img/title-icons/our-company.gif",
 		"blocks"=>array(
 			array(
 				"tagline"=>"<span class='animated fadeInLeftMega'>To <strong>earn customers</strong></span><span class='animated fadeInLeftMega'>for <strong>life</strong></span>",
@@ -26,8 +28,10 @@ $pages = array(
 		"title"=>"Our People",
 		"id"=>"our-people",
 		"tagline"=>"General Motors employs the finest workforce in the automotive world. We are a richly diverse and dedicated team.",
-		"icon"=>"img/title-icons/our-people.png",
-		"icon@2x"=>"img/title-icons/our-people.svg",
+		// "icon"=>"img/title-icons/our-people.png",
+		// "icon@2x"=>"img/title-icons/our-people.svg",
+		"icon"=>"img/title-icons/our-people.gif",
+		"icon@2x"=>"img/title-icons/our-people.gif",
 		"blocks"=>array(
 			array(
 				"title"=>"employees",
@@ -91,8 +95,10 @@ $pages = array(
 		"title"=>"Our Brands",
 		"id"=>"our-brands",
 		"tagline"=>"From electric mini-cars to heavy-duty full-size trucks, General Motors provides a complete range of vehicles that meets the needs and expectations of drivers on a truly global scale. There are 9 distinctive automotive brands under the GM corporate umbrella: Chevrolet, Buick, GMC, Cadillac, Opel, Vauxhall, Holden, Baojun and Wuling.",
-		"icon"=>"img/title-icons/our-brands.png",
-		"icon@2x"=>"img/title-icons/our-brands.svg",
+		// "icon"=>"img/title-icons/our-brands.png",
+		// "icon@2x"=>"img/title-icons/our-brands.svg",
+		"icon"=>"img/title-icons/our-brands.gif",
+		"icon@2x"=>"img/title-icons/our-brands.gif",
 		"module"=>array(
 			"name"=>"car",
 			"blocks"=>array(
@@ -231,7 +237,7 @@ $pages = array(
 				// "image-animate"=>"fadeInLeftMega",
 				"class"=>"seconds text-right c3xgm-about-animated-box",
 				"copy"=>array(
-					"c3xgm-about-dark-blue c3xgm-about-thin fadeInRightMega"=>"A <strong>Chevy is sold</strong><br>somewhere in the world",
+					"c3xgm-about-dark-blue c3xgm-about-thin fadeInRightMega"=>"A <strong>Chevy is sold</strong>&nbsp;<br>somewhere in the world",
 					"c3xgm-about-light-blue c3xgm-about-thin number fadeInRightMega"=>"every <strong>6.63<br>&nbsp;seconds</strong>"
 				)
 			),
@@ -304,8 +310,10 @@ $pages = array(
 		"title"=>"Our Commitment",
 		"tagline"=>"",
 		"id"=>"our-commitment",
-		"icon"=>"img/title-icons/our-commitment.png",
-		"icon@2x"=>"img/title-icons/our-commitment.svg",
+		// "icon"=>"img/title-icons/our-commitment.png",
+		// "icon@2x"=>"img/title-icons/our-commitment.svg",
+		"icon"=>"img/title-icons/our-commitment.gif",
+		"icon@2x"=>"img/title-icons/our-commitment.gif",
 		"sections"=>array(
 			// SAFETY & QUALITY
 			array(
@@ -546,8 +554,8 @@ $pages = array(
 							"class"=>"gm-foundation",
 							"logo"=>"img/modules/foundation/gm-foundation.jpg",
 							"logo@2x"=>"img/modules/foundation/gm-foundation@2x.jpg",
-							"icon"=>"img/modules/foundation/icons/edu.png",
-							"icon@2x"=>"img/modules/foundation/icons/edu.svg",
+							// "icon"=>"img/modules/foundation/icons/edu.png",
+							// "icon@2x"=>"img/modules/foundation/icons/edu.svg",
 							"copy"=>"GM Foundation provided grants totaling &dollar;2.875 million to support 29 leading universities and organizations in 201 grants totaling nearly &dollar;45.6 million over the last decade."
 						),
 						array(
@@ -555,8 +563,8 @@ $pages = array(
 							"class"=>"buick-achievers",
 							"logo"=>"img/modules/foundation/buick-achievers.jpg",
 							"logo@2x"=>"img/modules/foundation/buick-achievers@2x.jpg",
-							"icon"=>"img/modules/foundation/icons/edu.png",
-							"icon@2x"=>"img/modules/foundation/icons/edu.svg",
+							// "icon"=>"img/modules/foundation/icons/edu.png",
+							// "icon@2x"=>"img/modules/foundation/icons/edu.svg",
 							"copy"=>"Buick Achievers Scholarship Program annually awards scholarships up to $25,000 to students pursuing STEM majors and other fields related to the auto industry."
 						),
 						array(
@@ -564,8 +572,8 @@ $pages = array(
 							"class"=>"safe-kids-usa",
 							"logo"=>"img/modules/foundation/safe-kids.jpg",
 							"logo@2x"=>"img/modules/foundation/safe-kids@2x.jpg",
-							"icon"=>"img/modules/foundation/icons/seat-belt.png",
-							"icon@2x"=>"img/modules/foundation/icons/seat-belt.svg",
+							// "icon"=>"img/modules/foundation/icons/seat-belt.png",
+							// "icon@2x"=>"img/modules/foundation/icons/seat-belt.svg",
 							"copy"=>"For nearly two decades, General Motors and the GM Foundation have partnered with Safe Kids to promote child passenger safety."
 						),
 						array(
@@ -573,8 +581,8 @@ $pages = array(
 							"class"=>"habitat-humanity",
 							"logo"=>"img/modules/foundation/habitat.jpg",
 							"logo@2x"=>"img/modules/foundation/habitat@2x.jpg",
-							"icon"=>"img/modules/foundation/icons/house.png",
-							"icon@2x"=>"img/modules/foundation/icons/house.svg",
+							// "icon"=>"img/modules/foundation/icons/house.png",
+							// "icon@2x"=>"img/modules/foundation/icons/house.svg",
 							"copy"=>"The GM Foundation is committed to helping Habitat for Humanity partner families find homes and supporting United States military veterans through programs designed to move their lives forward."
 						),
 						array(
@@ -582,8 +590,8 @@ $pages = array(
 							"class"=>"united-way",
 							"logo"=>"img/modules/foundation/united-way.jpg",
 							"logo@2x"=>"img/modules/foundation/united-way@2x.jpg",
-							"icon"=>"img/modules/foundation/icons/edu.png",
-							"icon@2x"=>"img/modules/foundation/icons/edu.svg",
+							// "icon"=>"img/modules/foundation/icons/edu.png",
+							// "icon@2x"=>"img/modules/foundation/icons/edu.svg",
 							"copy"=>"In 2011, the GM Foundation pledged &dollar;27.1 million to United Way of Southeastern Michigan to increase graduation rates from 50 to 80 percent by 2015."
 						)
 					)
