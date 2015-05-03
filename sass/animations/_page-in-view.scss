@@ -193,10 +193,10 @@
 }
 
 // OTHER SUB SECTIONS
-#c3xgm-about-safety-quality.c3xgm-about-page-in-view,
-#c3xgm-about-our-global-community.c3xgm-about-page.c3xgm-about-page-in-view,
-#c3xgm-about-environment.c3xgm-about-page.c3xgm-about-page-in-view,
-#c3xgm-about-technology.c3xgm-about-page.c3xgm-about-page-in-view {
+#c3xgm-about-page-safety-quality.c3xgm-about-page-in-view,
+#c3xgm-about-page-our-global-community.c3xgm-about-page-in-view,
+#c3xgm-about-page-environment.c3xgm-about-page-in-view,
+#c3xgm-about-page-technology.c3xgm-about-page-in-view {
 	$subsec-duration:400;
 	// $subsec-delay:1600;
 	$subsec-delay:600;
@@ -253,7 +253,7 @@
 
 
 // FOUNDATION LOGOS
-#c3xgm-about-our-global-community.c3xgm-about-page.c3xgm-about-page-in-view {
+#c3xgm-about-page-our-global-community.c3xgm-about-page.c3xgm-about-page-in-view {
 	
 	.c3xgm-about-yellow-bar-left-wrapper.c3xgm-about-p {
 		@include prefix(animation-fill-mode, both);

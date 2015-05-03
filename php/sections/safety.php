@@ -14,7 +14,7 @@ foreach ($pages as $key => $page) {
             foreach ($page['sections'] as $key => $section) {
                 if($section['title'] == "Safety &amp; Quality") {
                     if( isset($section['id']) ) { $href = cleanString($section['id']); } else { $href = ""; }
-                    echo '<div id="c3xgm-about-page-'.$href.'" class="c3xgm-about-page c3xgm-about-clearfix c3xgm-about-page-'.cleanString($page['title']).'">';
+                    echo '<div id="c3xgm-about-page-'.$href.'" class="c3xgm-about-page c3xgm-about-clearfix c3xgm-about-page-'.$href.'">';
                     // SECTION HEADER
                    subSectionHeader($section['title'], $section['tagline']);
 

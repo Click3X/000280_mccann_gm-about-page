@@ -13005,10 +13005,10 @@ body {
 }
 
 /* line 207, ../sass/animations/_page-in-view.scss */
-#c3xgm-about-safety-quality.c3xgm-about-page-in-view .c3xgm-about-subsection .c3xgm-about-h,
-#c3xgm-about-our-global-community.c3xgm-about-page.c3xgm-about-page-in-view .c3xgm-about-subsection .c3xgm-about-h,
-#c3xgm-about-environment.c3xgm-about-page.c3xgm-about-page-in-view .c3xgm-about-subsection .c3xgm-about-h,
-#c3xgm-about-technology.c3xgm-about-page.c3xgm-about-page-in-view .c3xgm-about-subsection .c3xgm-about-h {
+#c3xgm-about-page-safety-quality.c3xgm-about-page-in-view .c3xgm-about-subsection .c3xgm-about-h,
+#c3xgm-about-page-our-global-community.c3xgm-about-page-in-view .c3xgm-about-subsection .c3xgm-about-h,
+#c3xgm-about-page-environment.c3xgm-about-page-in-view .c3xgm-about-subsection .c3xgm-about-h,
+#c3xgm-about-page-technology.c3xgm-about-page-in-view .c3xgm-about-subsection .c3xgm-about-h {
   -webkit-animation-fill-mode: both;
   -moz-animation-fill-mode: both;
   -o-animation-fill-mode: both;
@@ -13031,10 +13031,10 @@ body {
   animation-duration: 800ms;
 }
 /* line 214, ../sass/animations/_page-in-view.scss */
-#c3xgm-about-safety-quality.c3xgm-about-page-in-view .c3xgm-about-subsection .c3xgm-about-p,
-#c3xgm-about-our-global-community.c3xgm-about-page.c3xgm-about-page-in-view .c3xgm-about-subsection .c3xgm-about-p,
-#c3xgm-about-environment.c3xgm-about-page.c3xgm-about-page-in-view .c3xgm-about-subsection .c3xgm-about-p,
-#c3xgm-about-technology.c3xgm-about-page.c3xgm-about-page-in-view .c3xgm-about-subsection .c3xgm-about-p {
+#c3xgm-about-page-safety-quality.c3xgm-about-page-in-view .c3xgm-about-subsection .c3xgm-about-p,
+#c3xgm-about-page-our-global-community.c3xgm-about-page-in-view .c3xgm-about-subsection .c3xgm-about-p,
+#c3xgm-about-page-environment.c3xgm-about-page-in-view .c3xgm-about-subsection .c3xgm-about-p,
+#c3xgm-about-page-technology.c3xgm-about-page-in-view .c3xgm-about-subsection .c3xgm-about-p {
   -webkit-animation-fill-mode: both;
   -moz-animation-fill-mode: both;
   -o-animation-fill-mode: both;
@@ -13062,10 +13062,10 @@ body {
   animation-duration: 800ms;
 }
 /* line 221, ../sass/animations/_page-in-view.scss */
-#c3xgm-about-safety-quality.c3xgm-about-page-in-view .c3xgm-about-subsection .c3xgm-about-p:before,
-#c3xgm-about-our-global-community.c3xgm-about-page.c3xgm-about-page-in-view .c3xgm-about-subsection .c3xgm-about-p:before,
-#c3xgm-about-environment.c3xgm-about-page.c3xgm-about-page-in-view .c3xgm-about-subsection .c3xgm-about-p:before,
-#c3xgm-about-technology.c3xgm-about-page.c3xgm-about-page-in-view .c3xgm-about-subsection .c3xgm-about-p:before {
+#c3xgm-about-page-safety-quality.c3xgm-about-page-in-view .c3xgm-about-subsection .c3xgm-about-p:before,
+#c3xgm-about-page-our-global-community.c3xgm-about-page-in-view .c3xgm-about-subsection .c3xgm-about-p:before,
+#c3xgm-about-page-environment.c3xgm-about-page-in-view .c3xgm-about-subsection .c3xgm-about-p:before,
+#c3xgm-about-page-technology.c3xgm-about-page-in-view .c3xgm-about-subsection .c3xgm-about-p:before {
   content: "";
   display: block;
   position: absolute;
@@ -13104,18 +13104,18 @@ body {
 }
 @media (min-width: 768px) {
   /* line 221, ../sass/animations/_page-in-view.scss */
-  #c3xgm-about-safety-quality.c3xgm-about-page-in-view .c3xgm-about-subsection .c3xgm-about-p:before,
-  #c3xgm-about-our-global-community.c3xgm-about-page.c3xgm-about-page-in-view .c3xgm-about-subsection .c3xgm-about-p:before,
-  #c3xgm-about-environment.c3xgm-about-page.c3xgm-about-page-in-view .c3xgm-about-subsection .c3xgm-about-p:before,
-  #c3xgm-about-technology.c3xgm-about-page.c3xgm-about-page-in-view .c3xgm-about-subsection .c3xgm-about-p:before {
+  #c3xgm-about-page-safety-quality.c3xgm-about-page-in-view .c3xgm-about-subsection .c3xgm-about-p:before,
+  #c3xgm-about-page-our-global-community.c3xgm-about-page-in-view .c3xgm-about-subsection .c3xgm-about-p:before,
+  #c3xgm-about-page-environment.c3xgm-about-page-in-view .c3xgm-about-subsection .c3xgm-about-p:before,
+  #c3xgm-about-page-technology.c3xgm-about-page-in-view .c3xgm-about-subsection .c3xgm-about-p:before {
     width: 0.2rem;
   }
 }
 /* line 236, ../sass/animations/_page-in-view.scss */
-#c3xgm-about-safety-quality.c3xgm-about-page-in-view .c3xgm-about-subsection .c3xgm-about-p:after,
-#c3xgm-about-our-global-community.c3xgm-about-page.c3xgm-about-page-in-view .c3xgm-about-subsection .c3xgm-about-p:after,
-#c3xgm-about-environment.c3xgm-about-page.c3xgm-about-page-in-view .c3xgm-about-subsection .c3xgm-about-p:after,
-#c3xgm-about-technology.c3xgm-about-page.c3xgm-about-page-in-view .c3xgm-about-subsection .c3xgm-about-p:after {
+#c3xgm-about-page-safety-quality.c3xgm-about-page-in-view .c3xgm-about-subsection .c3xgm-about-p:after,
+#c3xgm-about-page-our-global-community.c3xgm-about-page-in-view .c3xgm-about-subsection .c3xgm-about-p:after,
+#c3xgm-about-page-environment.c3xgm-about-page-in-view .c3xgm-about-subsection .c3xgm-about-p:after,
+#c3xgm-about-page-technology.c3xgm-about-page-in-view .c3xgm-about-subsection .c3xgm-about-p:after {
   content: "";
   display: block;
   position: absolute;
@@ -13154,16 +13154,16 @@ body {
 }
 @media (min-width: 768px) {
   /* line 236, ../sass/animations/_page-in-view.scss */
-  #c3xgm-about-safety-quality.c3xgm-about-page-in-view .c3xgm-about-subsection .c3xgm-about-p:after,
-  #c3xgm-about-our-global-community.c3xgm-about-page.c3xgm-about-page-in-view .c3xgm-about-subsection .c3xgm-about-p:after,
-  #c3xgm-about-environment.c3xgm-about-page.c3xgm-about-page-in-view .c3xgm-about-subsection .c3xgm-about-p:after,
-  #c3xgm-about-technology.c3xgm-about-page.c3xgm-about-page-in-view .c3xgm-about-subsection .c3xgm-about-p:after {
+  #c3xgm-about-page-safety-quality.c3xgm-about-page-in-view .c3xgm-about-subsection .c3xgm-about-p:after,
+  #c3xgm-about-page-our-global-community.c3xgm-about-page-in-view .c3xgm-about-subsection .c3xgm-about-p:after,
+  #c3xgm-about-page-environment.c3xgm-about-page-in-view .c3xgm-about-subsection .c3xgm-about-p:after,
+  #c3xgm-about-page-technology.c3xgm-about-page-in-view .c3xgm-about-subsection .c3xgm-about-p:after {
     width: 0.2rem;
   }
 }
 
 /* line 258, ../sass/animations/_page-in-view.scss */
-#c3xgm-about-our-global-community.c3xgm-about-page.c3xgm-about-page-in-view .c3xgm-about-yellow-bar-left-wrapper.c3xgm-about-p {
+#c3xgm-about-page-our-global-community.c3xgm-about-page.c3xgm-about-page-in-view .c3xgm-about-yellow-bar-left-wrapper.c3xgm-about-p {
   -webkit-animation-fill-mode: both;
   -moz-animation-fill-mode: both;
   -o-animation-fill-mode: both;
@@ -13186,7 +13186,7 @@ body {
   animation-duration: 800ms;
 }
 /* line 266, ../sass/animations/_page-in-view.scss */
-#c3xgm-about-our-global-community.c3xgm-about-page.c3xgm-about-page-in-view .c3xgm-about-module-foundation .c3xgm-about-module-foundation-logo-container li {
+#c3xgm-about-page-our-global-community.c3xgm-about-page.c3xgm-about-page-in-view .c3xgm-about-module-foundation .c3xgm-about-module-foundation-logo-container li {
   -webkit-animation-fill-mode: both;
   -moz-animation-fill-mode: both;
   -o-animation-fill-mode: both;
@@ -13204,7 +13204,7 @@ body {
   animation-duration: 200ms;
 }
 /* line 271, ../sass/animations/_page-in-view.scss */
-#c3xgm-about-our-global-community.c3xgm-about-page.c3xgm-about-page-in-view .c3xgm-about-module-foundation .c3xgm-about-module-foundation-logo-container li:first-child {
+#c3xgm-about-page-our-global-community.c3xgm-about-page.c3xgm-about-page-in-view .c3xgm-about-module-foundation .c3xgm-about-module-foundation-logo-container li:first-child {
   -webkit-animation-delay: 1400ms;
   -moz-animation-delay: 1400ms;
   -o-animation-delay: 1400ms;
@@ -13212,7 +13212,7 @@ body {
   animation-delay: 1400ms;
 }
 /* line 272, ../sass/animations/_page-in-view.scss */
-#c3xgm-about-our-global-community.c3xgm-about-page.c3xgm-about-page-in-view .c3xgm-about-module-foundation .c3xgm-about-module-foundation-logo-container li:nth-child(2) {
+#c3xgm-about-page-our-global-community.c3xgm-about-page.c3xgm-about-page-in-view .c3xgm-about-module-foundation .c3xgm-about-module-foundation-logo-container li:nth-child(2) {
   -webkit-animation-delay: 1700ms;
   -moz-animation-delay: 1700ms;
   -o-animation-delay: 1700ms;
@@ -13220,7 +13220,7 @@ body {
   animation-delay: 1700ms;
 }
 /* line 273, ../sass/animations/_page-in-view.scss */
-#c3xgm-about-our-global-community.c3xgm-about-page.c3xgm-about-page-in-view .c3xgm-about-module-foundation .c3xgm-about-module-foundation-logo-container li:nth-child(3) {
+#c3xgm-about-page-our-global-community.c3xgm-about-page.c3xgm-about-page-in-view .c3xgm-about-module-foundation .c3xgm-about-module-foundation-logo-container li:nth-child(3) {
   -webkit-animation-delay: 2000ms;
   -moz-animation-delay: 2000ms;
   -o-animation-delay: 2000ms;
@@ -13228,7 +13228,7 @@ body {
   animation-delay: 2000ms;
 }
 /* line 274, ../sass/animations/_page-in-view.scss */
-#c3xgm-about-our-global-community.c3xgm-about-page.c3xgm-about-page-in-view .c3xgm-about-module-foundation .c3xgm-about-module-foundation-logo-container li:nth-child(4) {
+#c3xgm-about-page-our-global-community.c3xgm-about-page.c3xgm-about-page-in-view .c3xgm-about-module-foundation .c3xgm-about-module-foundation-logo-container li:nth-child(4) {
   -webkit-animation-delay: 2300ms;
   -moz-animation-delay: 2300ms;
   -o-animation-delay: 2300ms;
@@ -13236,7 +13236,7 @@ body {
   animation-delay: 2300ms;
 }
 /* line 275, ../sass/animations/_page-in-view.scss */
-#c3xgm-about-our-global-community.c3xgm-about-page.c3xgm-about-page-in-view .c3xgm-about-module-foundation .c3xgm-about-module-foundation-logo-container li:nth-child(5) {
+#c3xgm-about-page-our-global-community.c3xgm-about-page.c3xgm-about-page-in-view .c3xgm-about-module-foundation .c3xgm-about-module-foundation-logo-container li:nth-child(5) {
   -webkit-animation-delay: 2600ms;
   -moz-animation-delay: 2600ms;
   -o-animation-delay: 2600ms;
@@ -13244,7 +13244,7 @@ body {
   animation-delay: 2600ms;
 }
 /* line 278, ../sass/animations/_page-in-view.scss */
-#c3xgm-about-our-global-community.c3xgm-about-page.c3xgm-about-page-in-view .c3xgm-about-module-foundation .c3xgm-about-gray-line {
+#c3xgm-about-page-our-global-community.c3xgm-about-page.c3xgm-about-page-in-view .c3xgm-about-module-foundation .c3xgm-about-gray-line {
   -webkit-animation-name: growBorder;
   -moz-animation-name: growBorder;
   -o-animation-name: growBorder;
@@ -13267,7 +13267,7 @@ body {
   animation-duration: 500ms;
 }
 /* line 284, ../sass/animations/_page-in-view.scss */
-#c3xgm-about-our-global-community.c3xgm-about-page.c3xgm-about-page-in-view .c3xgm-about-module-foundation .c3xgm-about-yellow-line {
+#c3xgm-about-page-our-global-community.c3xgm-about-page.c3xgm-about-page-in-view .c3xgm-about-module-foundation .c3xgm-about-yellow-line {
   -webkit-animation-name: growBorder;
   -moz-animation-name: growBorder;
   -o-animation-name: growBorder;
