@@ -13,6 +13,43 @@ function formatNumber (num) {
     return num.toString().replace(/(\d)(?=(\d{3})+(?!\d))/g, "$1,");
 }
 
+// TRIGGER GIF
+function triggerGif(gif){
+    return gif.src= gif.src.split('?')[0]+'?='+(+new Date());
+}
+
+// NUMBER TICKER
+jQuery.fn.jQuerySimpleCounter = function( options ) {
+    var settings = jQuery.extend({
+        start:  200000,
+        end:    216000,
+        easing: 'swing',
+        duration: 2500,
+        complete: ''
+    }, options );
+
+    var thisElement = jQuery(this);
+
+    jQuery({count: settings.start}).animate({count: settings.end}, {
+        duration: settings.duration,
+        easing: settings.easing,
+        step: function() {
+            var mathCount = Math.ceil(this.count);
+            thisElement.text(formatNumber(mathCount));
+        },
+        complete: settings.complete
+    });
+};
+
+// PEOPLE ANIMATION - EMPLOYEES
+function addAnimation(index) {
+    var item = jQuery(this);
+    setTimeout(function () {
+      item.addClass('people-animate');
+    }, index * 250);
+}
+
+
 
 // DISABLE HOVER ON SCROLL SCROLL
 var body = document.body,

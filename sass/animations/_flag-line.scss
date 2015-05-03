@@ -39,7 +39,7 @@
         .flag-line {
             width: 50%;
             float: left;
-            @include prefix(transform, translate3d(0,0,0));
+            // @include prefix(transform, translate3d(0,0,0));
             
             > img {
                 width:100%;
@@ -51,6 +51,6 @@
 }
 
 // SEPARATING ANIMATION INTO ITS OWN CLASS
-.animate-flag-line {
-    @include prefix(animation, moveFlagLine 32s linear infinite);    
-}
+// .animate-flag-line {
+//     @include prefix(animation, moveFlagLine 32s linear infinite);    
+// }

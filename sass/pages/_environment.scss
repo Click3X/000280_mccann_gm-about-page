@@ -22,6 +22,7 @@
 		margin: 5em auto;
 		.c3xgm-about-blockquote {
 			padding-left: 14px; margin-left:9px;
+			position: relative; overflow: hidden;
 			@include borderLines(left);
 			@media(min-width: $tablet-height) {padding-left: 21px;}
 		}
@@ -119,12 +120,15 @@
 		.c3xgm-about-dark-blue.c3xgm-about-thin {
 			font-size:16px; font-size: 5vw;
 			display: inline-block; max-width: 13em;
-			@media(min-width:$tablet-height) { max-width:none; font-size:29.747415px; }
+			@media(min-width:$tablet-height) { max-width:none; font-size:25px; }
+			@media(min-width:870px) { max-width:none; font-size:30px; }
+
 		}
 
 		.c3xgm-about-light-blue {
 			font-size:28px; font-size: 9vw;
-			@media(min-width:$tablet-height) {font-size:62.27368499999999px; }
+			@media(min-width:$tablet-height) {font-size:56px; }
+			@media(min-width:870px) { max-width:none; font-size:63px; }
 		}
 
 		.c3xgm-about-gray.c3xgm-about-thin {

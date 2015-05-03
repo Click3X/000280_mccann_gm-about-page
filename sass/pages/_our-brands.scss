@@ -55,8 +55,10 @@
 			max-width:none; 
 		} 
 		@media(min-width:$tablet-height) {
-			width: 25%; 
-			height: 0;  padding-bottom: 16%; margin-top:9px;
+			width: 25%; height: 0; 
+			// padding-bottom: 16%; 
+			padding-bottom: 20%; 
+			margin-top:9px;
 			img { 
 				@include center; 
 				width: 93%; max-width: none;
@@ -127,10 +129,11 @@
 	  	}
 
 	  	.c3xgm-about-sep {
-	  		position: relative;
-	  		overflow: hidden;
-	  		
-	  		> span { display: inline-block; }
+	  		position: relative; overflow: hidden;
+	  		display: block;
+	  		> span { 
+	  			@media(min-width:$tablet-height) { display: inline-block;  }
+	  		}
 	  	}
 		// .c3xgm-about-dark-blue.c3xgm-about-thin {
 		.c3xgm-about-sep:first-child {
@@ -218,8 +221,22 @@
 	.c3xgm-about-block-image { 
 		width: 46%; position: absolute; left:0; z-index: -1;
 
-		@media(min-width:$tablet-height	) { left: -15%; top: -11%; }
-		  .c3xgm-about-block-image-mobile { margin-top: -45%; }
+		@media(min-width:$tablet-height	) { 
+			.china-flag-wrapper {
+				position: relative; height: 450px;
+				img:first-child {
+					height: 100%; width: auto; 
+					position: absolute; 
+					top:0; left: 0;
+				}
+				img:nth-child(2) { 
+					width: auto; position: absolute; 
+					left: 14px; top: -18px; 
+					z-index: -2;
+				}
+			}
+		}
+		.c3xgm-about-block-image-mobile { margin-top: -45%; }
 	}
 
 	.c3xgm-about-blockquote {

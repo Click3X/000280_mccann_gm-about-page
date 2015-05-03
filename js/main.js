@@ -3,10 +3,10 @@ jQuery(document).ready(function($) {
 
     // GET ALL PAGES
     var pages = [
-            '#c3xgm-about-our-company',
-            '#c3xgm-about-our-people',
-            '#c3xgm-about-our-brands',
-            '#c3xgm-about-our-commitment'
+            '#c3xgm-about-page-our-company',
+            '#c3xgm-about-page-our-people',
+            '#c3xgm-about-page-our-brands',
+            '#c3xgm-about-page-our-commitment'
         ],
         Pages = []  
 

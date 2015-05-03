@@ -29,7 +29,43 @@ jQuery(document).ready(function($) {
         aArray.push(ahref);
     } 
 
-    // NEED TO FINISH THIS
+    // HIGHTLIGHT NAV
+    function updateNav() {
+        for (var i=0; i < aArray.length; i++) {
+            var theID = aArray[i],
+                divPos = Pages[i].elementTop;
+                divHeight = Pages[i].elementHeight;
+
+            // UPDATE NAV BASED ON WINDOW POSITION AND PAGE HEIGHT
+            if (viewDimensions.scrollTop >= (divPos - 20) && viewDimensions.scrollTop < ((divPos - 20) + divHeight)) {
+                $("a[href='" + theID + "']").addClass("c3xgm-about-nav-bullet-active");
+            } else {
+                $("a[href='" + theID + "']").removeClass("c3xgm-about-nav-bullet-active");
+            }
+
+            // IF BOTTOM OF DOC IS REACHED, HIGHLIGHT LAST BULLET
+            if ( viewDimensions.scrollTop + viewDimensions.windowHeight == viewDimensions.docHeight - 20) {
+                var lastPage = aArray[aArray.length - 1];
+                $("a[href='#c3xgm-about-page-environment']").removeClass("c3xgm-about-nav-bullet-active");
+                $("a[href='" + lastPage + "']").addClass("c3xgm-about-nav-bullet-active");
+            }
+        }
+    }
+
+    // SMOOTH SCROLL TO LINKS
+    $('.c3xgm-about-main-nav a[href*=#]:not([href=#]), a.c3xgm-about-down-arrow-link').click(function() {
+        if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+            var target = $(this.hash);
+            console.log('This is the target: ' + this.hash);
+            target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+            if (target.length) {
+                $('html,body').animate({
+                    scrollTop: target.offset().top
+                }, 1000);
+                return false;
+            }
+        }
+    });
 
 	// UPDATE VIEW PORT DIMENSIONS
 	function updateviewDimensions() {
@@ -48,40 +84,46 @@ jQuery(document).ready(function($) {
 	window.addEventListener('resize', function() {
 		setTimeout(function() {
 			updateviewDimensions();
-		}, 200);
+		}, 320);
 	} , false);
 
 
 	// S C R O L L 
-    $(window).scroll(function () {
+    window.addEventListener('scroll', function() {
         if (scrollTimeout) {
             // clear the timeout, if one is pending
             clearTimeout(scrollTimeout);
             scrollTimeout = null;
         }
         scrollTimeout = setTimeout(scrollHandler, 120/1000);
-    });
+    }, false);
 
+
+    // CHECK FOR PAGES ON SCREEN
     function checkPages() {
     	$.each(Pages, function(i, val) {
     		if( this.isInView() && (this.hasViewClass == false) ){
-    			// ADD IN VIEW CLASS
+    			// REMOVE INVISIBLE CLASS
+                this.$element.removeClass('invisible');
+                // ADD IN VIEW CLASS
     			this.addInViewClass();
     			console.log('PAGE: ' + this.elementName);
     			// SET CURRENT PAGE TO PAGE INDEX
     			currentPage = i;
-    			console.log(currentPage);
     			// SET PAGE VIEW STATE
     			this.hasViewClass = true;
     		} 
     	}); 
     }
 
+    // CHECK FOR BLOCKS
     function checkBlocks(currentPage) {
     	var blocks = Pages[currentPage].animBlocks;
     	$.each(blocks, function(i, val) {
     		if( this.isInView() && (this.hasViewClass == false) ){
-    			// ADD IN VIEW CLASS
+                // REMOVE INVISIBLE CLASS
+                this.$element.removeClass('invisible');
+                // ADD IN VIEW CLASS
     			this.addInViewClass();
     			console.log('Im in view: ' + this.elementName);
     			// SET PAGE VIEW STATE
@@ -90,18 +132,8 @@ jQuery(document).ready(function($) {
     	});
     }
 
-    // SCROLL HANDLER
-    scrollHandler = function () {
-    	// UPDATE VIEW PORT
-    	updateviewDimensions();
-    	// CHECK PAGES
-    	checkPages();
-    	// CHECK BLOCKS FOR CURRENT PAGES
-    	checkBlocks(currentPage);
-    }
-
 	// PAGE OBJECT
-	function Page(elem, defaults) {
+	function AmimatedElement(elem, defaults) {
 		// DECLARE ELEM, DEFAULTS, THIS, OFFSET, CALLBACK - OPTIONAL USE
 		var elem = elem,
             defaults = defaults || {},
@@ -131,7 +163,7 @@ jQuery(document).ready(function($) {
         this.hasViewClass = false;
 
         // PAGE BLOCKS - BLOCKS ARE INDIVIDUAL 'PAGE OBJECTS'
-        this.aboutBlocks = this.$element.find('.c3xgm-about-block');
+        this.aboutBlocks = this.$element.find('.c3xgm-about-block, .c3xgm-about-solar-panels');
         // READY ANIM BLOCKS ARRAY
         this.animBlocks = []; 
 
@@ -144,9 +176,13 @@ jQuery(document).ready(function($) {
 			        	'blocktype':'block'
 			        };
 
-    	        elem = new Page(val, defaults);
+    	        elem = new AmimatedElement(val, defaults);
     	        _t.animBlocks.push(elem);
     	    });
+        }
+
+        this.getScrollAmt = function() {
+            return Math.round( viewDimensions.scrollBottom - this.elementTop );
         }
 
         // IN VIEW
@@ -154,17 +190,12 @@ jQuery(document).ready(function($) {
         	return ( (this.elementTop <= viewDimensions.scrollBottom) && (this.elementBottom >= viewDimensions.scrollTop) );
         }
 
-        // OUT OF VIEW
-        // this.outofView = function() {
-        // 	return ( (this.elementTop <= viewDimensions.scrollBottom) && (this.elementBottom >= viewDimensions.scrollTop) );
-        // }
-
         // TEST ISINVIEW AND SET INVIEW
         this.setInView = function() {
         	this.inView = this.isInView();
         }
 
-        // // ADD IN VIEW CLASS
+        // ADD IN VIEW CLASS
         this.addInViewClass = function() {
         	if( defaults.blocktype == 'page' ) {
         		this.$element.addClass('c3xgm-about-page-in-view');	
@@ -173,8 +204,71 @@ jQuery(document).ready(function($) {
         	}
         }
 
-	}
+        // ANIMATE FUNCTION - TEST FOR CSS3 TRANSFORMS
+        if(css3dtransforms) {
+            this.moveRight = function() {
+                move = this.getScrollAmt();
+                this.$element.css("transform", "translate3d("+ move +"px, 0, 10px)");
+            }
 
+            this.moveLeft = function() {
+                move = this.getScrollAmt();
+                this.$element.css("transform", "translate3d(-"+ move +"px, 0, 10px)");
+            }
+
+        } else {
+            this.elementPosition = this.$element.position();
+
+            this.moveRight = function() {
+                move = this.getScrollAmt();
+                this.$element.css("left", move + "px");
+            }
+
+            this.moveLeft = function() {
+                move = this.getScrollAmt();
+                this.$element.css("transform", "translate3d(-"+ move +"px, 0, 10px)");
+            }
+        }   
+
+	
+	} // END OBJECT
+
+    // ON SCROLL ANIMATIONS ---------------------------------------------------
+    var decDefaults = {type:'decorative'},
+        GreyVan = new AmimatedElement('#c3xgm-about-grey-van', decDefaults),
+        RedCar = new AmimatedElement('#c3xgm-about-red-car', decDefaults),
+        GreyFlagCar = new AmimatedElement('#c3xgm-about-flag-line-grey-car', decDefaults),
+        GreySide = new AmimatedElement('#c3xgm-about-solar-grey-car', decDefaults),
+        FlagLine = new AmimatedElement('#animate-flag-line', decDefaults);
+
+    // SCROLL HANDLER --------------------------------------------
+    scrollHandler = function () {
+        // UPDATE VIEW PORT
+        updateviewDimensions();
+        // CHECK PAGES
+        checkPages();
+        // CHECK BLOCKS FOR CURRENT PAGES
+        checkBlocks(currentPage);
+        // UPDATE NAV
+        updateNav();
+        // GREY VAN
+        if( GreyVan.isInView() ) {
+            GreyVan.moveRight();
+        }
+        // RED CAR
+        if( RedCar.isInView() ) {
+            RedCar.moveLeft();
+        }
+        // FLAG LINE
+        if( FlagLine.isInView() ) {
+            FlagLine.moveLeft();
+            GreyFlagCar.moveRight();
+        }   
+        // GREY SIDE
+        if( GreySide.isInView() ) {
+            GreySide.moveRight();
+        }
+    }
 
 
 	// NOW THAT WE HAVE PREPPED OUR ENVIRONMENT -------------------------------------------------------------------------------
@@ -191,8 +285,22 @@ jQuery(document).ready(function($) {
         var defaults = {
         	'blocktype':'page'
         }
-        Pages[i] = new Page(val, defaults);
-        console.log(Pages[i]);
+        Pages[i] = new AmimatedElement(val, defaults);
+        // console.log(Pages[i]);
+    });
+
+    // HIDE ALL ANIMATABLE ELEMENTS AND PAGES ---------------------------------------------------
+    $.each(Pages, function(i, val) {
+        // HIDE PAGES
+        this.$element.removeClass("c3xgm-about-page-in-view").addClass("invisible");
+        // LOOP PAGE BLOCKS IF PAGE HAS THEM
+        if(val.aboutBlocks.length > 0) {
+            // HIDE PAGE BLOCKS
+            $.each(val.aboutBlocks, function(i, val) {
+                // HIDE BLOCK
+                $(val).addClass('invisible');
+            });
+        }
     });
 
     // NOW THAT WE HAVE OUR PAGE OBJECTS - SEE WHICH ONES ON SCREEN

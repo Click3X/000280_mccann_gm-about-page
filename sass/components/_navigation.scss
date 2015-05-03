@@ -6,9 +6,7 @@
 	top:3em; left:0; right:0; 
 	z-index: 10000;
 	@include prefix(transform, translate3d(0,0,10000));
-	@media(min-width: $tablet-height) { 
-		top:208px; 
-	}
+	@media(min-width: $tablet-height) { top:208px; left: -26px; }
 
 	.c3xgm-about-main-nav {
 		float: right; text-align: center;

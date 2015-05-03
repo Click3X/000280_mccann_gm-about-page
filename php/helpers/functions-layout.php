@@ -113,7 +113,7 @@ function printBlock($block) {
 					if( isset( $block['image-animate'] ) ) { $img_anim = $block['image-animate']; } 
 						else { $img_anim = "";}
 					// IF CHINA, SET DESKTOP CLASS
-					if($block['title'] == "China") { $desk_class="c3xgm-about-desktop";} else {$desk_class="";}
+					// if($block['title'] == "China") { $desk_class="c3xgm-about-desktop";} else {$desk_class="";}
 					
 					// SECONDS BLOCK
 					if($block['title'] == "Seconds") {
@@ -127,7 +127,21 @@ function printBlock($block) {
 	            				</div>';
 					} elseif($block['title'] == "Crash Test Dummies") {
 						echo '<div class="c3xgm-about-block-image"><img id="c3xgm-about-crash-test-dummies" src="'.$block['image@2x'].'" class="'.$img_anim.' '.$desk_class.'" alt="'.$block['title'].'">';						
+					} elseif($block['title'] == "China") { 
+						$desk_class="c3xgm-about-desktop";
+						echo '<div class="c3xgm-about-block-image">
+								<div class="'.$img_anim.' '.$desk_class.'" alt="'.$block['title'].'">
+									<div class="china-flag-wrapper c3xgm-about-desktop c3xgm-about-clearfix">
+									    <img src="img/pages/brands/pole.svg"  alt="China Flag">
+									    <img src="img/pages/brands/chinaflag.gif" alt="China Flag">
+									</div>
+								</div>';						
+						// IF BLOCK IS CHINA AND HAS MOBILE PICS, GET MOBIL PICS
+						if( isset($block['image-mobile']) && $block['image-mobile'] != "" ) {
+							echo '<img src="'.$block['image-mobile@2x'].'" class="c3xgm-about-block-image-mobile" alt="'.$block['title'].'">';	
+						}
 					} else {
+						$desk_class="";
 						// NORMAL IMAGE
 						echo '<div class="c3xgm-about-block-image"><div><img src="'.$block['image@2x'].'" class="'.$img_anim.' '.$desk_class.'" alt="'.$block['title'].'"></div>';						
 					}
@@ -137,16 +151,6 @@ function printBlock($block) {
 						echo '<img src="img/pages/commitment/circle-lines.svg" class="c3xgm-about-circle-lines" alt="Rollover Test Facility">';
 					}
 
-
-					// IF BLOCK IS CHINA, GET MOBIL PICS
-					if( isset($block['image-mobile']) && $block['image-mobile'] != "" ) {
-						echo '<div class="china-flag-wrapper c3xgm-about-desktop" style="height: 500px; position: relative;">
-							    <img src="img/pages/brands/pole.svg"  alt="China" style="height: 100%; width: auto; position: absolute; top:0; left: 0;">
-							    <img src="img/pages/brands/chinaflag.gif" style="position: absolute; left: 14px; top: -18px; width: auto; z-index: -2">
-							</div>';
-
-						echo '<img src="'.$block['image-mobile@2x'].'" class="c3xgm-about-block-image-mobile" alt="'.$block['title'].'">';	
-					}
 					echo '</div>';
 				}
 			}

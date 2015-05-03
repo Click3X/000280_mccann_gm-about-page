@@ -332,7 +332,7 @@ jQuery(document).ready(function($) {
                 }, 800);
                 
                 // IF PAGE IS OUR BRANDS, OR GLOBAL THEN SHOW FIRST SLIDE
-                if( (theID == "#c3xgm-about-our-brands") && (brandsInView == false) ) {
+                if( (theID == "#c3xgm-about-page-our-brands") && (brandsInView == false) ) {
                     brandsInView = true;
                     // 3200 MS WAIT FOR LOGOS TO LOAD & LOAD CHEVY
                     setTimeout(function() {
