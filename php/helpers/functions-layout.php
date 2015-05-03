@@ -126,7 +126,7 @@ function printBlock($block) {
 	            					</div>
 	            				</div>';
 					} elseif($block['title'] == "Crash Test Dummies") {
-						echo '<div class="c3xgm-about-block-image"><img id="c3xgm-about-crash-test-dummies" src="'.$block['image@2x'].'" class="'.$img_anim.' '.$desk_class.'" alt="'.$block['title'].'">';						
+						echo '<div class="c3xgm-about-block-image"><img id="c3xgm-about-crash-test-dummies" src="'.$block['image@2x'].'" class="'.$img_anim.'" alt="'.$block['title'].'">';						
 					} elseif($block['title'] == "China") { 
 						$desk_class="c3xgm-about-desktop";
 						echo '<div class="c3xgm-about-block-image">
