@@ -29,13 +29,11 @@
         </script>
         <![endif]--> 
 
-        <!-- RESIZE FUNCTIONS FOR SLIDERS WITH VARIABLE HEIGHT
+        <!-- RESIZE FUNCTIONS FOR SLIDERS WITH VARIABLE HEIGHT -->    
         <script src="js/resize-functions.js"></script>
-         -->    
             
-        <!-- // SLIDER FILES FOR ALL SLIDERS, NOT JUST CAR 
+        <!-- // SLIDER FILES FOR ALL SLIDERS, NOT JUST CAR  -->
         <script src="js/modules/car-slider.js"></script>
-        -->
 
         <!-- MAIN JS -->
         <script src="js/helpers.js"></script>

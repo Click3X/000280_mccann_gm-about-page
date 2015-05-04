@@ -99,37 +99,240 @@ jQuery(document).ready(function($) {
     }, false);
 
 
+
+    // NUMBER ANIMATIONS
+    // CHECK IF ANIMATED EMPLOYEES IN ON SCREEN
+     // OUR PEOPLE MAP DRAW STROKE
+    var current_frame, total_frames, path, length, handle;
+
+    var init = function() {
+      current_frame = 0;
+      // total_frames = 60;
+      total_frames = 150;
+      path = new Array();
+      length = new Array();
+      for(var i=0; i< 12 ;i++){
+        path[i] = document.getElementById('i'+i);
+        // console.log(path[i]);
+        l = path[i].getTotalLength();
+        // console.log(l);
+        length[i] = l;
+        path[i].style.strokeDasharray = l + ' ' + l; 
+        path[i].style.strokeDashoffset = l;
+      }
+      handle = 0;
+    }
+     
+     
+    var draw = function() {
+       var progress = current_frame/total_frames;
+       if (progress > 1) {
+         window.cancelAnimationFrame(handle);
+       } else {
+         current_frame++;
+         for(var j=0; j<path.length;j++){
+             path[j].style.strokeDashoffset = Math.floor(length[j] * (1 - progress));
+         }
+         handle = window.requestAnimationFrame(draw);
+       }
+    };
+    
+    var animateEmployees = false;
+    function fireAnimatedEmployees() {
+          if(animateEmployees === false) {
+            // EMPTY TEXT
+            $('#c3xgm-about-emp-num').text('');
+
+            // TRIGGER NUMBER ANIMATION
+            $('#c3xgm-about-emp-num').jQuerySimpleCounter({end: 216000,duration: 2500});
+
+            // MAKE SURE NUMBER REACHES 216000
+            setTimeout(function(){ 
+                $('#c3xgm-about-emp-num').text(formatNumber(216000));
+            }, 2500);
+
+            // TRIGGER PEOPLE ANIMATION
+            $('#c3xgm-about-employees-img div').each(addAnimation);
+            animateEmployees = true;
+        }
+    }
+
+
+    var animate6 = false;
+    function fireAnimate6() {          
+          if(animate6 === false) {
+            // EMPTY TEXT
+            $('#c3xgm-about-number-6').text('');
+          // // TRIGGER NUMBER ANIMATION
+            setTimeout(function(){ 
+                init();
+                draw();
+                $('#c3xgm-about-number-6').jQuerySimpleCounter({start:0, end: 6,duration: 1000});
+                animate6 = true;
+            }, 800);
+        }
+    }
+
+    var animate23 = false;
+    function fireAnimate23() {
+          if(animate23 === false) {
+            // EMPTY TEXT
+            $('#c3xgm-about-number-23').text('');
+          // // TRIGGER NUMBER ANIMATION
+            setTimeout(function(){ 
+                $('#c3xgm-about-number-23').jQuerySimpleCounter({start:0, end: 23,duration: 1200});
+                animate23 = true;
+            }, 600);
+        }
+    }
+
+    var animate70 = false;
+    function fireAnimate70() {
+          if(animate70 === false) {
+            // EMPTY TEXT
+            $('#c3xgm-about-number-70').text('');
+          // // TRIGGER NUMBER ANIMATION
+            setTimeout(function(){ 
+                $('#c3xgm-about-number-70').jQuerySimpleCounter({start:0, end: 70,duration: 1200});
+                animate70 = true;
+            }, 600);
+        }
+    }
+
+    var animate63 = false;
+    function fireAnimate63() {
+          if(animate63 === false) {
+            // EMPTY TEXT
+            $('#c3xgm-about-number-63').text('');
+          // // TRIGGER NUMBER ANIMATION
+            setTimeout(function(){ 
+                $('#c3xgm-about-number-63').jQuerySimpleCounter({start:55, end: 63,duration: 800});
+                animate63 = true;
+            }, 1100);
+        }
+    }
+
+    var carHasRotated = false;
+      // ROTATE CAR
+    function rotateCar() {
+        if(carHasRotated === false) {
+            setTimeout(function(){ 
+                $('#safety-truck').css('opacity', 1);
+                setTimeout(function(){ 
+                    $('#truck-line-container').addClass('carAnimation-slide');                
+                    $('#truck-parent').addClass('carAnimation-rotate');
+                    $('#line-parent').addClass('carAnimation-lineFadeIn');
+                    $('.c3xgm-about-circle-lines').addClass('carAnimation-lineRotate');
+                    carHasRotated = true;
+                }, 800);
+            }, 2400);
+        }
+    }
+
     // CHECK FOR PAGES ON SCREEN
     function checkPages() {
     	$.each(Pages, function(i, val) {
-    		if( this.isInView() && (this.hasViewClass == false) ){
-    			// REMOVE INVISIBLE CLASS
-                this.$element.removeClass('invisible');
+            var _t = this;
+    		if( _t.isInView() && (_t.hasViewClass == false) ){
                 // ADD IN VIEW CLASS
-    			this.addInViewClass();
-    			console.log('PAGE: ' + this.elementName);
+    			_t.addInViewClass();
+    			console.log('PAGE: ' + _t.elementName);
     			// SET CURRENT PAGE TO PAGE INDEX
     			currentPage = i;
     			// SET PAGE VIEW STATE
-    			this.hasViewClass = true;
+    			_t.hasViewClass = true;
+
+                // TRIGGER GIF ON ICON
+                var pageIcon = $(_t.$element ).find('.c3xgm-about-section-icon');
+
+                if(pageIcon.length > 0) {
+                    var icon = $(pageIcon).get(0);
+                    setTimeout(function() {
+                        console.dir(icon.id);
+                        triggerGif(  document.getElementById(icon.id) );    
+                    }, 800);                    
+                }
+
+                // IF CURRENT PAGE IS OUR PEOPLE, SEQUENTIALLY FADE IN ANIMATIONS
+                if(currentPage == 1) {
+                    var time;
+                    $.each(_t.animBlocks, function(i, val) {
+                        var animateNum = $(this.$element ).find('.c3xgm-about-animate-number');
+                        setTimeout(function() {
+                            time = 1200 * i;
+                            setTimeout(function() {
+                                val.addInViewClass();
+                                if(animateNum.length > 0) {
+                                    // cd(animateNum);
+                                    // console.log('This is index: ' + i);
+                                    if(i == 0 ) {
+                                        fireAnimatedEmployees();
+                                    } else if(i==1) {
+                                        fireAnimate6();
+                                    } else if(i==3) {
+                                        fireAnimate23();
+                                    } else if(i==4) {
+                                        fireAnimate70();
+                                    }
+                                }
+                            }, time);
+                        }, 2000);
+                    });
+                }
+
+                // IF CURRENT PAGE IS OUR BRANDS, FADE IN FIRST SLIDE
+                if(currentPage == 2) {
+                    // SHOW FIRST SLIDE
+                    setTimeout(function() {
+                        $('#c3xgm-about-car-chevrolet').removeClass('hide-module hide-module-slide-out').addClass('show-module-slide-in');
+                    }, 3000);
+                }
+
+                // TRIGGER TECH MODULE
+                if( _t.elementName == "c3xgm-about-page-technology") {
+                    // SHOW FIRST SLIDE
+                    setTimeout(function() {
+                        $('#c3xgm-about-technology-4g-lte').removeClass('hide-module hide-module-slide-out').addClass('show-module-slide-in');
+                    }, 2200);
+                }
+                
+                if( _t.elementName == "c3xgm-about-page-our-global-community") {
+                //     // SHOW FIRST SLIDE
+                    setTimeout(function() {
+                        $('#c3xgm-about-foundation-gm-foundation').removeClass('hide-module hide-module-slide-out').addClass('show-module-slide-in');
+                    }, 3000);
+                }
     		} 
     	}); 
     }
 
     // CHECK FOR BLOCKS
     function checkBlocks(currentPage) {
+        // cd(currentPage);
     	var blocks = Pages[currentPage].animBlocks;
-    	$.each(blocks, function(i, val) {
-    		if( this.isInView() && (this.hasViewClass == false) ){
-                // REMOVE INVISIBLE CLASS
-                this.$element.removeClass('invisible');
-                // ADD IN VIEW CLASS
-    			this.addInViewClass();
-    			console.log('Im in view: ' + this.elementName);
-    			// SET PAGE VIEW STATE
-    			this.hasViewClass = true;
-    		}
-    	});
+
+        if(currentPage != 1) {
+            $.each(blocks, function(i, val) {
+                if( this.isAtEighth() && (this.hasViewClass == false) ){
+                    // ADD IN VIEW CLASS
+                    this.addInViewClass();
+                    console.log('Im in view: ' + this.elementName);
+                    // SET PAGE VIEW STATE
+                    this.hasViewClass = true;
+                    // IF TEST FACILITY - TRIGGER ROLLOVER
+                    if(this.elementName == "c3xgm-about-test-facility") {
+                        rotateCar();
+                    } else if( this.elementName == "c3xgm-about-safety-score") {
+                        fireAnimate63();
+                    } else if( this.elementName == "c3xgm-about-crash-test-dummies") {
+                        setTimeout(function() {
+                            console.log('We have test dummites!');
+                            triggerGif( document.getElementById('c3xgm-about-crash-test-dummies') );
+                        }, 800);
+                    }
+                }
+            });
+        }
     }
 
 	// PAGE OBJECT
@@ -190,6 +393,11 @@ jQuery(document).ready(function($) {
         	return ( (this.elementTop <= viewDimensions.scrollBottom) && (this.elementBottom >= viewDimensions.scrollTop) );
         }
 
+        // IS AT EIGHTH
+        this.isAtEighth = function() {
+            return ( (this.elementTop <= viewDimensions.scrollBottom - viewDimensions.windowHeight/8) );
+        }
+
         // TEST ISINVIEW AND SET INVIEW
         this.setInView = function() {
         	this.inView = this.isInView();
@@ -198,8 +406,10 @@ jQuery(document).ready(function($) {
         // ADD IN VIEW CLASS
         this.addInViewClass = function() {
         	if( defaults.blocktype == 'page' ) {
+                this.$element.removeClass('invisible');  
         		this.$element.addClass('c3xgm-about-page-in-view');	
         	} else {
+                this.$element.removeClass('invisible');  
         		this.$element.addClass('element-in-view');	
         	}
         }
@@ -303,6 +513,8 @@ jQuery(document).ready(function($) {
         }
     });
 
+    // UPDATE NAV ON PAGE LOAD
+    updateNav();
     // NOW THAT WE HAVE OUR PAGE OBJECTS - SEE WHICH ONES ON SCREEN
     checkPages();
     // CHECK IF THERE ARE BLOCKS ON CURRENT PAGE

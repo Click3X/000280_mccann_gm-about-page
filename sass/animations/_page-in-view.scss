@@ -107,10 +107,11 @@
 	}
 
 	// OUR PEOPLE
+	.c3xgm-about-employees .c3xgm-about-blockquote .c3xgm-about-light-blue.number,
 	.c3xgm-about-employees .c3xgm-about-blockquote .c3xgm-about-span-container .c3xgm-about-gray {
 		@include prefix(animation-fill-mode, both);
 		@include prefix(animation-name, fadeIn);
-		@include prefix(animation-delay, 2000ms);
+		@include prefix(animation-delay, 1900ms);
 		@include prefix(animation-duration, 900ms);
 	}	
 

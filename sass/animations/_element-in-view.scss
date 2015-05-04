@@ -46,54 +46,24 @@
 				@include prefix(animation-delay, #{$anim-delay + "ms"});
 				@include prefix(animation-duration,800ms);	
 		}
-		
-		// > span.c3xgm-about-dark-blue:first-child {
-		// 	@include prefix(animation-fill-mode, both);
-		// 	@include prefix(animation-name, fadeInLeftMega);
-		// 	@include prefix(animation-delay, 100ms); 
-		// 	@include prefix(animation-duration, 400ms);
-		// }
-
-		// span.c3xgm-about-light-blue {
-		// 	@include prefix(animation-fill-mode, both);
-		// 	@include prefix(animation-name, fadeInLeftMega);
-		// 	@include prefix(animation-delay, 400ms);
-		// 	@include prefix(animation-duration, 400ms);
-		// }
-
-		// > span.fadeInLeftMega {
-		// 	// @include prefix(animation-name, fadeInLeftMega);
-		// 	@include prefix(animation-name, fadeInLeft);
-		// }	
-		// > span.fadeInRightMega {
-		// 	// @include prefix(animation-name, fadeInRightMega);
-		// 	@include prefix(animation-name, fadeInRight);
-		// }	
 	}
 
-	// .c3xgm-about-block-image {
-	// 	$anim-delay:1200;
-	// 	$anim-step:300;
-	// 	$anim-duration:400;
+	&.c3xgm-about-continents .c3xgm-about-block-image,
+	&.c3xgm-about-timezones .c3xgm-about-block-image,
+	&.c3xgm-about-languages .c3xgm-about-block-image
+	{
+		$anim-delay:1200;
+		$anim-step:300;
+		$anim-duration:400;
 
-	// 	img { 
-	// 		@include prefix(animation-fill-mode, both);
-	// 		@include prefix(animation-name, fadeIn);
-	// 		// @include prefix(animation-delay, 400ms);
-	// 		@include prefix(animation-delay, #{$anim-delay + "ms"});
-	// 		@include prefix(animation-duration, #{$anim-duration + "ms"});
-	// 	}
-
-	// 	img.fadeInLeftMega {
-	// 		// @include prefix(animation-name, fadeInLeftMega);
-	// 		@include prefix(animation-name, fadeIn);
-	// 	}	
-		
-	// 	img.fadeInRightMega {
-	// 		// @include prefix(animation-name, fadeInRightMega);
-	// 		@include prefix(animation-name, fadeIn);
-	// 	}	
-	// }
+		svg, img { 
+			@include prefix(animation-fill-mode, both);
+			@include prefix(animation-name, fadeIn);
+			// @include prefix(animation-delay, 400ms);
+			@include prefix(animation-delay, #{$anim-delay + "ms"});
+			@include prefix(animation-duration, #{$anim-duration + "ms"});
+		}
+	}
 }
 
 // OUR PEOPLE PAGE

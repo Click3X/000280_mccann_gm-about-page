@@ -21,7 +21,7 @@ echo '<div id="c3xgm-about-page-our-people" class="c3xgm-about-page c3xgm-about-
         <p class="c3xgm-about-blockquote">
             <span class="c3xgm-about-span-container">
                 <span class="c3xgm-about-light-blue number">
-                    <span id="c3xgm-about-emp-num">200,000</span>
+                    <span id="c3xgm-about-emp-num" class="c3xgm-about-animate-number">200,000</span>
                 </span>
                 <span class="c3xgm-about-gray">Employees</span>
             </span>
@@ -50,7 +50,7 @@ echo '<div id="c3xgm-about-page-our-people" class="c3xgm-about-page c3xgm-about-
                     <span class="c3xgm-about-gray">Continents</span>
                     <span class="c3xgm-about-gray-line"></span><span class="c3xgm-about-yellow-line"></span>
                 </span>
-                <span class="c3xgm-about-light-blue number" id="c3xgm-about-number-6">6</span>
+                <span class="c3xgm-about-light-blue number c3xgm-about-animate-number" id="c3xgm-about-number-6">6</span>
             </p>
              <!-- MARKER SVG -->
                <svg version="1.1" id="map-marker" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
@@ -89,7 +89,7 @@ echo '<div id="c3xgm-about-page-our-people" class="c3xgm-about-page c3xgm-about-
                     <span class="c3xgm-about-gray">Timezones</span>
                     <span class="c3xgm-about-gray-line"></span><span class="c3xgm-about-yellow-line"></span>
                 </span>
-                <span class="c3xgm-about-light-blue number" id="c3xgm-about-number-23">23</span>
+                <span class="c3xgm-about-light-blue number c3xgm-about-animate-number" id="c3xgm-about-number-23">23</span>
             </p>
 
             <div class="c3xgm-about-block-image">';
@@ -107,7 +107,7 @@ echo '<div id="c3xgm-about-page-our-people" class="c3xgm-about-page c3xgm-about-
                     <span class="c3xgm-about-gray">Languages</span>
                     <span class="c3xgm-about-gray-line"></span><span class="c3xgm-about-yellow-line"></span>
                 </span>
-                <span class="c3xgm-about-light-blue number" id="c3xgm-about-number-70">70</span>
+                <span class="c3xgm-about-light-blue number c3xgm-about-animate-number" id="c3xgm-about-number-70">70</span>
             </p>
             
             <div class="c3xgm-about-block-image">
