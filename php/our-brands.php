@@ -27,7 +27,7 @@ $page = $pages[2];
                                         <div class="wheel front-wheel animate-tires"></div>
                                     </div>
                                     <div id="flag-line-container" class="c3xgm-about-clearfix">
-                                        <ul id="animate-flag-line" class="animate-flag-line c3xgm-about-clearfix">
+                                        <ul id="animate-flag-line" class="c3xgm-about-clearfix">
                                             <li class="flag-line"><img src="img/decorative/landscape/flag-line.svg"></li>
                                             <li class="flag-line"><img src="img/decorative/landscape/flag-line.svg"></li>
                                         </ul>

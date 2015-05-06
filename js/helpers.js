@@ -8,6 +8,22 @@ function cd(myVar) {
     console.dir(myVar);
 }
 
+var mobile = false;
+// CHECK FOR MOBILE DEVICE
+if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
+    mobile = true;
+
+    jQuery('body').addClass('c3xgm-about-mobile-device');
+}
+
+console.log('This is mobile: ' + mobile);
+// IF MOBILE - ADD MOBILE STYLESHEET
+if(mobile) {
+    jQuery('head').append('<link rel="stylesheet" href="stylesheets/mobile.css" type="text/css" />');
+    jQuery('body').append('<script src="js/mobile.js"></script>');
+}
+
+
 // FORMAT NUMBER
 function formatNumber (num) {
     return num.toString().replace(/(\d)(?=(\d{3})+(?!\d))/g, "$1,");

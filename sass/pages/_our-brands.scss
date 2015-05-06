@@ -93,6 +93,8 @@
 // SECONDS
 .c3xgm-about-seconds {
 	max-width: 945px;
+	margin-bottom: 9em;
+	@media(min-width:$tablet-height) { margin-bottom: 7em; }
 	.c3xgm-about-blockquote { 
 		display: inline-block; text-align: right;
 		position: relative; width:auto; float: none;
@@ -310,9 +312,11 @@
 	.c3xgm-about-block-image { 
 		width:100%; text-align:center;
 		z-index: -1;
+		margin-bottom: 1.5em;
 		img { width:45%; }
 
 		@media(min-width:$tablet-height) {
+			margin-bottom:0;
 			width:29%; text-align: right;
 			position: absolute; right:0;
 			img {width:80%;}
@@ -364,12 +368,31 @@
 
 // CADILLAC SPECIFIC 
 .c3xgm-about-cadillac-award {
+	margin-bottom: 4em;
+  	margin-top: 9em;
+
+  	@media(min-width: $tablet-height){
+  		margin-bottom:0;
+  		margin-top:7em;
+  	}
 	.c3xgm-about-blockquote {
 		margin-top: 1%;
 		.c3xgm-about-gray { 
 			margin-bottom: 1%; margin-top: 1%; 
 			@media(min-width:$tablet-height) { margin-top:0; }
 			@media(min-width:$inner-border) { font-size: 41px; }
+		}
+	}
+}
+
+.c3xgm-about-block.c3xgm-about-chevrolet-award {
+	margin-top: 1em;
+	.c3xgm-about-block-image { 
+		img {
+			width: 50%;
+			@media(min-width: $tablet-height) {
+				width: 85%;
+			}
 		}
 	}
 }

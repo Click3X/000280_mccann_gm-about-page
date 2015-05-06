@@ -1,6 +1,8 @@
 // TECHNOLOGY MODULE
 .c3xgm-about-module-technology {
 
+	.c3xgm-about-subsection {margin-bottom: 3em;}
+
 	.c3xgm-about-module {
 		text-align: center; 
 		width: 100%;
@@ -34,7 +36,8 @@
 	}
 	// IMAGE
 	.c3xgm-about-block-image {
-		  
+		  width: 100%; 
+		  max-width: $inner-border;
 		  margin: 0 auto;
 		  position: absolute;
 		  bottom:28px;
@@ -43,9 +46,10 @@
 		  @media(min-width: $tablet-height) {  
 		  	margin: 0 auto;
 		  	position: absolute;
-		  bottom:28px;
+		  	bottom:28px;
 		  }
-		img { width:70%;}
+		.c3xgm-about-wheel {display: block;}
+		.c3xgm-about-tech-car { width:70%;}
 	}
 	// BLOCK-QUOTE
 	.c3xgm-about-blockquote {
@@ -72,15 +76,31 @@
 				width:35%; float: right; 
 				height: 0; padding-bottom: 128px;
 			}
-			img { 
+			.c3xgm-about-tech-car { 
 				width:65%; max-width: 157px; 
 				@media(min-width: $tablet-height) { width:80%; max-width: none; }
 			}
 		}
 		.c3xgm-about-block-image { 
-			img {
+			.c3xgm-about-tech-car {
 				@media(min-width: $tablet-height) { width: 70%; }
 			}
+
+			.c3xgm-about-wheel {
+				width: 9%;
+				max-width: 76px;
+  				max-height: 75px;
+				position: absolute;
+				bottom:19%;
+				&:first-child {
+					left:30%;
+				}
+				&:nth-child(3) {
+					right: 26.4%;
+  					bottom: 19.6%;
+				}
+			}
+
 		}
 
 		.c3xgm-about-blockquote { 
@@ -120,6 +140,27 @@
 				img {width:75%; max-width: none;}
 			}
 		}
+
+		.c3xgm-about-block-image { 
+			.c3xgm-about-wheel {	
+				width: 9%;
+				// max-width: 72px; max-height: 71px;
+				max-width: 79px;
+  				max-height: 78px;
+				position: absolute;
+				bottom:20.5%;
+
+				&:first-child {
+					bottom: 20.7%;
+  					left: 30.1%;
+				}
+
+				&:nth-child(3) {
+					right: 28.2%;
+  					bottom: 20.2%;
+				}
+			}
+		}
 	}
 
 	// SAFETY
@@ -151,6 +192,25 @@
 		  	font-size:12px; font-size: 4vw;
 		  	@media(min-width:$tablet-height) { font-size: 21px; }
 		}
+
+		.c3xgm-about-block-image {
+
+			.c3xgm-about-wheel {
+				width: 9%;
+				max-width: 76px;
+  				max-height: 75px;
+				position: absolute;
+				bottom:19%;
+				&:first-child {
+					left:30%;
+				}
+				&:nth-child(3) {
+					right: 26.4%;
+  					bottom: 19.6%;
+				}
+			}
+		}
+
 	}
 
 	// BOTH CONCEPT AND SAFETY
@@ -179,15 +239,18 @@
 		text-align: center;
 		li {display: inline-block; margin: 0; padding: 0;}
 		.c3xgm-about-module-nav-bullet {
-			display: block;
-			width:8px; height:8px;
-			margin: 8px;
-			background-color: $gm-gray;
+			display: block; background-color: $gm-gray;
+			width:11px; height:11px; 
+			margin:10px;
+			
+			@media(min-width: $tablet-height) {
+				width:9px; height:9px; 
+				margin:8px;
+				// padding:8px;
+			}
 		}
 		.c3xgm-about-module-nav-bullet-active { background-color: $gm-yellow; }
 	}
-
-
 
 
 }

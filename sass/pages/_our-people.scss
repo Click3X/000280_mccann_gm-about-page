@@ -1,7 +1,7 @@
 // OUR PEOPLE
 .c3xgm-about-page-our-people {
 	width:92%; max-width: $inner-border;
-	padding-bottom: 7em;
+	@media(min-width:$tablet-height) { padding-bottom: 7em; }
 
 	.c3xgm-about-block.c3xgm-about-clearfix.c3xgm-about-employees,
 	.c3xgm-about-section.c3xgm-about-clearfix.our-people { width: 100%; }
@@ -9,14 +9,20 @@
 	> .c3xgm-about-section { margin-bottom: 0.6em; }
 
 	.c3xgm-about-block { 
-		margin-top:0; margin-bottom: 1.75em; 
-		.c3xgm-about-block-image { position: relative; text-align: center;}
+		margin-top:0; margin-bottom: 4em; 
+		&.c3xgm-about-timezones {margin-bottom: 4em; }
+		@media(min-width: $tablet-height) {
+			margin-bottom: 1.75em; 
+			&.c3xgm-about-timezones {margin-bottom: 1.75em; }
+		}
+		.c3xgm-about-block-image { position: relative; text-align: center; }
 	}
 
 	// EMPLOYEES
 	.c3xgm-about-block.c3xgm-about-employees {
-		margin: 0 auto 2em; float: none; text-align: center;
-		@media(min-width:$tablet-height ) { width:92%; }
+		margin: 0 auto 4em; 
+		float: none; text-align: center;
+		@media(min-width:$tablet-height ) { width:92%; margin: 0 auto 2em; }
 
 		.c3xgm-about-module-50.c3xgm-about-employee-container { margin-top:0; }
 
@@ -126,6 +132,8 @@
 		 .c3xgm-about-block-image {
 			 padding-top: 2.5%;
 			img { width:76.672%; max-width: 333px;}
+
+			@media(min-width:$tablet-height) { padding-bottom: 4.5%; }
 		}
 	}
 
@@ -211,6 +219,91 @@
 			}
 		}
 	}
+
+	#map-marker {
+	    width: 6%;
+	    position: absolute;
+	    left: 25%; top:2%;
+	    z-index: 10;
+	    opacity: 0;
+
+	    @media(min-width: $tablet-height) {
+	    	left: 22%; top:auto;
+	    }
+	}
+
+	.element-in-view {
+		#map-marker { @include prefix(animation, markerDrop .8s 2.3s ease-out forwards); }
+	}
+	
+
+	/*MAP MARKER DROP*/
+	@-webkit-keyframes markerDrop {
+	  0% {
+	    -webkit-transform: translateY(0%);
+	    opacity: 0;
+	  }
+
+	  75% {
+	    -webkit-transform: translateY(150px);
+	    opacity: 1;
+	  }
+	  
+	  100% {
+	    -webkit-transform: translateY(150px);
+	    opacity: 1;
+	  }
+	}
+	@-moz-keyframes markerDrop {
+	  0% {
+	    -moz-transform: translateY(0%);
+	    opacity: 0;
+	  }
+
+	  75% {
+	    -moz-transform: translateY(150px);
+	    opacity: 1;
+	  }
+
+	  100% {
+	    -moz-transform: translateY(150px);
+	    opacity: 1;
+	  }
+	}
+	@-o-keyframes markerDrop {
+	  0% {
+	    -o-transform: translateY(0%);
+	    opacity: 0;
+	  }
+
+	  75% {
+	    -o-transform: translateY(150px);
+	    opacity: 1;
+	  }
+
+	  100% {
+	    -o-transform: translateY(150px);
+	    opacity: 1;
+	  }
+	}
+
+	@keyframes markerDrop {
+	  0% {
+	    transform: translateY(0%);
+	    opacity: 0;
+	  }
+
+	  75% {
+	    transform: translateY(150px);
+	    opacity: 1;
+	  }
+
+	  100% {
+	    transform: translateY(150px);
+	    opacity: 1;
+	  }
+	}
+	/*END OF MARKER DROP*/
 }
 
 .svg {

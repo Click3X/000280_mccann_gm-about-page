@@ -5,10 +5,13 @@
 	padding-bottom:120%; 
 	height: 0;
 	position: relative; 
-	// overflow-x: hidden;
+
+	// overflow-x:hidden;
+
 	@media(min-width: 480px) { padding-bottom:100%; }
   	@media(min-width: $tablet-height) { 
-  		padding-bottom:550px; margin-bottom:150px; 
+  		padding-bottom:580px; 
+  		margin-bottom:100px; 
   	}
 
 	.c3xgm-about-grey-side {

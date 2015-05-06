@@ -14,9 +14,14 @@
 
 		h1.c3xgm-about-h {
 			@include prefix(animation-fill-mode, both);
-			@include prefix(animation-name, fadeInRightMega);
 			@include prefix(animation-delay, 400ms);
 			@include prefix(animation-duration, 800ms);
+			@include prefix(animation-name, fadeIn);
+			@media(min-width: $tablet-height) {
+				// @include prefix(animation-name, fadeInRightMega);	
+				@include prefix(animation-name, fadeInRightMega);	
+			}
+			
 		 }
 
 		hr { 

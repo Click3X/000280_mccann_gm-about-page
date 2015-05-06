@@ -6,7 +6,7 @@ echo '<div id="c3xgm-about-page-our-people" class="c3xgm-about-page c3xgm-about-
         
         <div class="c3xgm-about-section-header c3xgm-about-clearfix">
             <div class="c3xgm-about-section-header-inner">
-                <img id="c3xgm-about-our-people-icon" class="c3xgm-about-section-icon" src="img/title-icons/our-people.gif" alt="Our People">
+                <img id="c3xgm-about-our-people-icon" class="c3xgm-about-section-icon" src="img/title-icons/our-people.svg" alt="Our People">
                 <h1 class="c3xgm-about-h fadeInLeftMega"><span class="c3xgm-about-thin">Our</span> People</h1>
             </div>
             <hr>

@@ -51,10 +51,19 @@
 	// EPA ENERGY
 	.c3xgm-about-epa-energy-star {
 		   max-width: 44.5em;
+		   margin-bottom: 3em;
+		   @media($tablet-height) {
+		   	margin-bottom: 7em;
+		   }
 		.c3xgm-about-block-image {
 			width: 42%;
 			position: relative;
-			img {  width:100%; max-width: 160px;  height:auto;  }
+			img {  
+				width:100%; 
+				// max-width: 160px; 
+				max-width: 220px; 
+				height:auto;  
+			}
 			@media(min-width:$tablet-height) { 
 				width: 25%; float: right; 
 	  			margin-top:9px; padding-bottom: 168px; height: 0;
@@ -93,12 +102,23 @@
 
 	// CLIMATE DECLARATION
 	.c3xgm-about-climate-declaration {
-		  max-width: 52em;
+		max-width: 52em;
+		margin-bottom: 5em;
+		margin-top:0;
+		@media(min-width:$tablet-height) { margin-bottom:7em; margin-top:7em;}
 		.c3xgm-about-block-image { 
-			width:38%;
+			// width:38%;
+			width:78%;
 			position: relative;
-			img { width:100%; max-width: 151px; height:auto;  }
+			> div { margin-left: 20%;}
+
+			img { width:100%; 
+				// max-width: 151px; 
+				max-width:none; 
+				height:auto;  
+			}
 			@media(min-width:$tablet-height) { 
+				> div { margin-left:auto;}
 				width:25%; height:0;
 				padding-bottom: 181px; margin-top:9px;
 	  			position: relative; float: left; 
@@ -139,13 +159,17 @@
 
 	// LANDFILL FREE
 	.c3xgm-about-landfill-free {
+		margin-bottom:0;
+
 		.c3xgm-about-block-image { 
 			width: 30%;
 			position: relative;
 			img { width:100%; max-width: 172px; height:auto; }
 			@media(min-width:$tablet-height) { 
 				width: 24%; float: right; 
-	  			padding-bottom: 162px; margin-top:9px;
+	  			// padding-bottom: 162px; 
+	  			padding-bottom:0; 
+	  			margin-top:9px;
 	  			img { 
 	  				// @include center; 
 	  				width:60%; 

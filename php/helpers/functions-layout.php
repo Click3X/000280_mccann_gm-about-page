@@ -8,9 +8,9 @@ function pageHeader($title, $icon, $tagline, $image) {
 	
 	echo '<div class="c3xgm-about-section c3xgm-about-clearfix '.cleanString($title).'">
 		    <div class="c3xgm-about-section-header c3xgm-about-clearfix">
-			    <div class="c3xgm-about-section-header-inner">
+			    <div class="c3xgm-about-section-header-inner c3xgm-about-clearfix">
 			        <img id="c3xgm-about-'.cleanString($title).'-icon" class="c3xgm-about-section-icon" src="'.$icon.'" alt="'.$title.'">
-			        <h1 class="c3xgm-about-h fadeInLeftMega">'.$titleSpan.'</h1>
+			        <div class="c3xgm-about-header-holder c3xgm-about-clearfix"><h1 class="c3xgm-about-h">'.$titleSpan.'</h1></div>
 			    </div>
 				<hr>
 			</div>';
@@ -293,7 +293,7 @@ function printModule($module) {
 	 		$href = cleanString($block['title']);
 	 		
 	 		// SHOW FIRST CAR MODULE ON LIST - HIDE THE REST
-	 		if($key == 0 ) {$hide_show = "show-module";} else {$hide_show = "hide-module";}
+	 		if($key == 0 ) {$hide_show = "";} else {$hide_show = "hide-module";}
 
 	 		if($module_name == 'technology') {
 	 			echo '<div id="c3xgm-about-'.$module_name.'-'.$href.'" class="c3xgm-about-clearfix c3xgm-about-module c3xgm-about-'.$href.' '.$hide_show.'">';
@@ -357,7 +357,9 @@ function printModule($module) {
 		 		} elseif ($module_name == 'technology') {
 		 			// TECHNOLOGY
 		 			echo '<div class="c3xgm-about-clearfix c3xgm-about-block-image">';
-		 				echo '<img src="'.$block['image'].'" alt="'.$block['title'].'">';
+		 			if( (isset($block['wheel']) )  && ($block['wheel'] != "") ) {  echo '<img src="'.$block['wheel'].'" alt="wheel" class="c3xgm-about-wheel">'; } 	
+		 				echo '<img src="'.$block['image'].'" alt="'.$block['title'].'" class="c3xgm-about-tech-car">';
+		 				if( (isset($block['wheel']) )  && ($block['wheel'] != "") ) {  echo '<img src="'.$block['wheel'].'" alt="wheel" class="c3xgm-about-wheel">'; } 	
 		 			echo '</div>';
 		 		}	 			
 	 		echo '</div>'; // END MODULE BLOCK

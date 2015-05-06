@@ -75,6 +75,8 @@ jQuery(document).ready(function($) {
 		    scrollTop : jQuery(window).scrollTop(),
 		    scrollBottom : jQuery(window).scrollTop() + jQuery(window).height(),
 		    docHeight : jQuery(document).height(),
+            left : jQuery(window).scrollLeft(),
+            right : jQuery(window).scrollLeft() + jQuery(window).height()
 		}
 
 		return viewDimensions;
@@ -326,7 +328,8 @@ jQuery(document).ready(function($) {
                         fireAnimate63();
                     } else if( this.elementName == "c3xgm-about-crash-test-dummies") {
                         setTimeout(function() {
-                            console.log('We have test dummites!');
+                            // console.log('We have test dummites!');
+                            $('#c3xgm-about-crash-test-dummies').removeClass('invisible');
                             triggerGif( document.getElementById('c3xgm-about-crash-test-dummies') );
                         }, 800);
                     }
@@ -360,6 +363,8 @@ jQuery(document).ready(function($) {
         this.elementHeight = Number( this.$element.css("height").replace('px', '') );
         this.elementPaddingBottom = Number( this.$element.css("paddingBottom").replace('px', '') );
         this.elementTop = this.$element.offset().top;
+        this.elementLeft = this.$element.offset().left;
+        this.elementRight = this.$element.offset().left + Number( this.$element.css("width").replace('px', '') );
         this.elementBottom = this.elementHeight + this.elementTop;
 
         // ELEMENT STATE - PAGE VIEW
@@ -384,6 +389,12 @@ jQuery(document).ready(function($) {
     	    });
         }
 
+
+        this.getElementPosition = function() {
+            this.elementRight = this.$element.offset().left + Number( this.$element.css("width").replace('px', '') );
+            this.elementBottom = this.elementHeight + this.$element.offset().top;
+        }
+
         this.getScrollAmt = function() {
             return Math.round( viewDimensions.scrollBottom - this.elementTop );
         }
@@ -399,9 +410,9 @@ jQuery(document).ready(function($) {
         }
 
         // TEST ISINVIEW AND SET INVIEW
-        this.setInView = function() {
-        	this.inView = this.isInView();
-        }
+        // this.setInView = function() {
+        // 	this.inView = this.isInView();
+        // }
 
         // ADD IN VIEW CLASS
         this.addInViewClass = function() {
@@ -419,11 +430,15 @@ jQuery(document).ready(function($) {
             this.moveRight = function() {
                 move = this.getScrollAmt();
                 this.$element.css("transform", "translate3d("+ move +"px, 0, 10px)");
+                // console.log('this.elementRight: ' + this.elementRight);
+                // console.log('this.elementLeft: ' + this.elementLeft);
             }
 
             this.moveLeft = function() {
                 move = this.getScrollAmt();
                 this.$element.css("transform", "translate3d(-"+ move +"px, 0, 10px)");
+                // console.log('this.elementRight: ' + this.elementRight);
+                // console.log('this.elementLeft: ' + this.elementLeft);
             }
 
         } else {
@@ -431,12 +446,12 @@ jQuery(document).ready(function($) {
 
             this.moveRight = function() {
                 move = this.getScrollAmt();
-                this.$element.css("left", move + "px");
+                this.$element.css("right", move + "px");
             }
 
             this.moveLeft = function() {
                 move = this.getScrollAmt();
-                this.$element.css("transform", "translate3d(-"+ move +"px, 0, 10px)");
+                this.$element.css("left", move + "px");
             }
         }   
 
@@ -452,31 +467,46 @@ jQuery(document).ready(function($) {
         FlagLine = new AmimatedElement('#animate-flag-line', decDefaults);
 
     // SCROLL HANDLER --------------------------------------------
-    scrollHandler = function () {
-        // UPDATE VIEW PORT
-        updateviewDimensions();
-        // CHECK PAGES
-        checkPages();
-        // CHECK BLOCKS FOR CURRENT PAGES
-        checkBlocks(currentPage);
-        // UPDATE NAV
-        updateNav();
-        // GREY VAN
-        if( GreyVan.isInView() ) {
-            GreyVan.moveRight();
+
+    if(mobile) {
+        scrollHandler = function () {
+            // UPDATE VIEW PORT
+            updateviewDimensions();
+            // CHECK PAGES
+            checkPages();
+            // CHECK BLOCKS FOR CURRENT PAGES
+            checkBlocks(currentPage);
+            // UPDATE NAV
+            updateNav();
         }
-        // RED CAR
-        if( RedCar.isInView() ) {
-            RedCar.moveLeft();
-        }
-        // FLAG LINE
-        if( FlagLine.isInView() ) {
-            FlagLine.moveLeft();
-            GreyFlagCar.moveRight();
-        }   
-        // GREY SIDE
-        if( GreySide.isInView() ) {
-            GreySide.moveRight();
+
+    } else {
+        scrollHandler = function () {
+            // UPDATE VIEW PORT
+            updateviewDimensions();
+            // CHECK PAGES
+            checkPages();
+            // CHECK BLOCKS FOR CURRENT PAGES
+            checkBlocks(currentPage);
+            // UPDATE NAV
+            updateNav();
+            // GREY VAN
+            if( GreyVan.isInView() ) {
+                GreyVan.moveRight();
+            }
+            // RED CAR
+            if( RedCar.isInView() ) {
+                RedCar.moveLeft();
+            }
+            // FLAG LINE
+            if( FlagLine.isInView() ) {
+                FlagLine.moveLeft();
+                GreyFlagCar.moveRight();
+            }   
+            // GREY SIDE
+            if( GreySide.isInView() ) {
+                GreySide.moveRight();
+            }
         }
     }
 
@@ -512,6 +542,9 @@ jQuery(document).ready(function($) {
             });
         }
     });
+
+    // HIDE GIFS
+    $('#c3xgm-about-crash-test-dummies').addClass('invisible');
 
     // UPDATE NAV ON PAGE LOAD
     updateNav();

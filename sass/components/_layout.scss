@@ -21,7 +21,7 @@ html, body {
 
 // TEMP MENU
 .c3xgm-about-temp-menu {
-	padding-bottom:33px; width:100%; max-width:905px; 
+	padding-bottom:33px; width:100%; max-width:906px; 
 	clear: both;
 	background-image:url('../img/decorative/temp-menu.jpg');
 	background-repeat: no-repeat; background-size: contain; background-position: 0 50%;
@@ -54,7 +54,10 @@ html, body {
 		.c3xgm-about-section-header { padding-top: 48px; }
 	}
 
-	.c3xgm-about-section-header-inner { text-align: left; width: 100%; max-width: 900px;}
+	.c3xgm-about-section-header-inner {
+		text-align: left; width: 100%; max-width: 900px;
+		// overflow-x:hidden;
+	}
 
 	hr {
 		background: $gm-gray; border: none;
@@ -71,16 +74,40 @@ html, body {
 
 
 
+.c3xgm-about-header-holder {
+  position: relative;
+
+  @media(min-width: $tablet-height) {
+  	overflow-x: hidden;
+  }
+}
+
 // TITLE ICON
+// img.c3xgm-about-section-icon{
+// 	display: block;
+// 	margin: 0 auto;
+// 	width: 100px; height:100px;
+// 	@media(min-width:$tablet-height ){ 
+// 		float: left;
+// 		// margin: -16px 18px 0 8px; 
+// 		margin: -5px 18px 0 8px; 
+// 	}
+// }
+
+
 img.c3xgm-about-section-icon{
+	width: 10%; height:10%;
+	margin: -10px 6px 0 0; 
 	display: block;
 	margin: 0 auto;
-	width: 100px; height:100px;
+	width: 92px; height: 92px;
 	@media(min-width:$tablet-height ){ 
 		float: left;
-		margin: -16px 18px 0 8px; 
+		width: 90px; height: 90px;
+		margin: -10px 21px 0 0; padding-left:8px;
 	}
 }
+
 
 .c3xgm-about-subsection { padding-left:2px; }
 
@@ -123,6 +150,8 @@ img.c3xgm-about-section-icon{
 	.c3xgm-about-module-65 { width:65%; float:left; }	
 	.c3xgm-about-module-75 { width:75%; float:left; }
 	.c3xgm-about-module-80 { width:80%; float:left; }
+
+	.c3xgm-about-page-our-people .c3xgm-about-module-50 { margin-top:0; }
 }
 
 // FIX SVG INCORRECT HEIGHT BUG

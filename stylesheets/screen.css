@@ -206,27 +206,6 @@ Stylesheet: Helpers
 .c3xgm-about-grey-gradient {
   background: #f3f3f4;
 }
-@media (min-width: 768px) {
-  /* line 48, ../sass/components/_helpers.scss */
-  .c3xgm-about-grey-gradient {
-    /* IE9 SVG, needs conditional override of 'filter' to 'none' */
-    background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIxMDAlIiB5Mj0iMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzAwMDAwMCIgc3RvcC1vcGFjaXR5PSIwIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEyJSIgc3RvcC1jb2xvcj0iI2YzZjNmNCIgc3RvcC1vcGFjaXR5PSIwLjI4Ii8+CiAgICA8c3RvcCBvZmZzZXQ9IjQzJSIgc3RvcC1jb2xvcj0iI2YzZjNmNCIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgPC9saW5lYXJHcmFkaWVudD4KICA8cmVjdCB4PSIwIiB5PSIwIiB3aWR0aD0iMSIgaGVpZ2h0PSIxIiBmaWxsPSJ1cmwoI2dyYWQtdWNnZy1nZW5lcmF0ZWQpIiAvPgo8L3N2Zz4=);
-    background: -moz-linear-gradient(left, transparent 0%, rgba(243, 243, 244, 0.28) 12%, #f3f3f4 43%);
-    /* FF3.6+ */
-    background: -webkit-gradient(linear, left top, right top, color-stop(0%, transparent), color-stop(12%, rgba(243, 243, 244, 0.28)), color-stop(43%, #f3f3f4));
-    /* Chrome,Safari4+ */
-    background: -webkit-linear-gradient(left, transparent 0%, rgba(243, 243, 244, 0.28) 12%, #f3f3f4 43%);
-    /* Chrome10+,Safari5.1+ */
-    background: -o-linear-gradient(left, transparent 0%, rgba(243, 243, 244, 0.28) 12%, #f3f3f4 43%);
-    /* Opera 11.10+ */
-    background: -ms-linear-gradient(left, transparent 0%, rgba(243, 243, 244, 0.28) 12%, #f3f3f4 43%);
-    /* IE10+ */
-    background: linear-gradient(to right, transparent 0%, rgba(243, 243, 244, 0.28) 12%, #f3f3f4 43%);
-    /* W3C */
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#f3f3f4',GradientType=1 );
-    /* IE6-8 */
-  }
-}
 
 /* line 63, ../sass/components/_helpers.scss */
 .c3xgm-about-grey-white-gradient {
@@ -255,56 +234,138 @@ Stylesheet: Helpers
   }
 }
 
-/* line 3, ../sass/components/_navigation.scss */
+/* line 2, ../sass/components/_navigation.scss */
 .c3xgm-about-main-nav-container {
-  width: 100%;
-  max-width: 996px;
+  width: 31px;
   position: fixed;
   margin: auto;
-  top: 0;
-  left: 0;
-  right: 0;
-  z-index: 10000;
-  -webkit-transform: translate3d(0, 0, 10000);
-  -moz-transform: translate3d(0, 0, 10000);
-  -o-transform: translate3d(0, 0, 10000);
-  -ms-transform: translate3d(0, 0, 10000);
-  transform: translate3d(0, 0, 10000);
+  top: 40px;
+  right: 4%;
+  z-index: 2000;
+  -webkit-transform: translate3d(0, 0, 2000);
+  -moz-transform: translate3d(0, 0, 2000);
+  -o-transform: translate3d(0, 0, 2000);
+  -ms-transform: translate3d(0, 0, 2000);
+  transform: translate3d(0, 0, 2000);
+  pointer-events: none;
 }
 @media (min-width: 768px) {
-  /* line 3, ../sass/components/_navigation.scss */
+  /* line 2, ../sass/components/_navigation.scss */
   .c3xgm-about-main-nav-container {
+    width: 25px;
     top: 208px;
-    left: -26px;
   }
 }
-/* line 13, ../sass/components/_navigation.scss */
+@media (min-width: 906px) {
+  /* line 2, ../sass/components/_navigation.scss */
+  .c3xgm-about-main-nav-container {
+    right: 0;
+    left: 0;
+    width: 96%;
+    max-width: 906px;
+  }
+}
+/* line 25, ../sass/components/_navigation.scss */
 .c3xgm-about-main-nav-container .c3xgm-about-main-nav {
   float: right;
   text-align: center;
   position: relative;
+  pointer-events: all;
 }
-/* line 19, ../sass/components/_navigation.scss */
+/* line 31, ../sass/components/_navigation.scss */
 .c3xgm-about-main-nav-container .c3xgm-about-main-nav li {
+  position: relative;
   display: block;
   margin: 0;
   padding: 0;
   float: left;
   clear: left;
 }
-/* line 21, ../sass/components/_navigation.scss */
+/* line 37, ../sass/components/_navigation.scss */
+.c3xgm-about-main-nav-container .c3xgm-about-main-nav li a {
+  text-decoration: none;
+}
+/* line 42, ../sass/components/_navigation.scss */
+.c3xgm-about-main-nav-container .c3xgm-about-main-nav li .c3xgm-about-nav-hover-title {
+  text-transform: uppercase;
+  display: block;
+  padding: 10px 0;
+  background: #ffffff;
+  width: 10.25em;
+  border: 2px solid #b4b8bc;
+  color: #464B51;
+  font-weight: 600;
+  position: absolute;
+  right: 130%;
+  top: -8px;
+  opacity: 0;
+  z-index: 0;
+  -webkit-transition: opacity 200ms;
+  -moz-transition: opacity 200ms;
+  -o-transition: opacity 200ms;
+  -ms-transition: opacity 200ms;
+  transition: opacity 200ms;
+}
+/* line 59, ../sass/components/_navigation.scss */
+.c3xgm-about-main-nav-container .c3xgm-about-main-nav li .c3xgm-about-nav-hover-title:after, .c3xgm-about-main-nav-container .c3xgm-about-main-nav li .c3xgm-about-nav-hover-title:before {
+  left: 100%;
+  top: 50%;
+  border: solid transparent;
+  content: " ";
+  height: 0;
+  width: 0;
+  position: absolute;
+  pointer-events: none;
+}
+/* line 70, ../sass/components/_navigation.scss */
+.c3xgm-about-main-nav-container .c3xgm-about-main-nav li .c3xgm-about-nav-hover-title:after {
+  border-color: rgba(136, 183, 213, 0);
+  border-left-color: #ffffff;
+  border-width: 8px;
+  margin-top: -8px;
+}
+/* line 76, ../sass/components/_navigation.scss */
+.c3xgm-about-main-nav-container .c3xgm-about-main-nav li .c3xgm-about-nav-hover-title:before {
+  border-color: rgba(180, 184, 188, 0);
+  border-left-color: #b4b8bc;
+  border-width: 11px;
+  margin-top: -11px;
+}
+/* line 84, ../sass/components/_navigation.scss */
+.c3xgm-about-main-nav-container .c3xgm-about-main-nav li .c3xgm-about-nav-hover-sub-title {
+  color: #124e9c;
+}
+/* line 89, ../sass/components/_navigation.scss */
+.c3xgm-about-main-nav-container .c3xgm-about-main-nav li > a:hover + .c3xgm-about-nav-hover-title {
+  opacity: 1;
+  z-index: 1;
+  -webkit-transition: opacity 50ms;
+  -moz-transition: opacity 50ms;
+  -o-transition: opacity 50ms;
+  -ms-transition: opacity 50ms;
+  transition: opacity 50ms;
+}
+/* line 96, ../sass/components/_navigation.scss */
 .c3xgm-about-main-nav-container .c3xgm-about-main-nav .c3xgm-about-nav-bullet {
   display: block;
   background-color: #808285;
-  width: 9px;
-  height: 9px;
-  margin: 8px;
+  width: 11px;
+  height: 11px;
+  margin: 10px;
 }
-/* line 28, ../sass/components/_navigation.scss */
+@media (min-width: 768px) {
+  /* line 96, ../sass/components/_navigation.scss */
+  .c3xgm-about-main-nav-container .c3xgm-about-main-nav .c3xgm-about-nav-bullet {
+    width: 9px;
+    height: 9px;
+    margin: 8px;
+  }
+}
+/* line 107, ../sass/components/_navigation.scss */
 .c3xgm-about-main-nav-container .c3xgm-about-main-nav .c3xgm-about-nav-bullet-active {
   background-color: #FDB12E;
 }
-/* line 31, ../sass/components/_navigation.scss */
+/* line 110, ../sass/components/_navigation.scss */
 .c3xgm-about-main-nav-container .c3xgm-about-main-nav .c3xgm-about-main-nav-sub {
   -webkit-transition: all 200ms;
   -moz-transition: all 200ms;
@@ -312,39 +373,46 @@ Stylesheet: Helpers
   -ms-transition: all 200ms;
   transition: all 200ms;
 }
-/* line 34, ../sass/components/_navigation.scss */
+/* line 113, ../sass/components/_navigation.scss */
 .c3xgm-about-main-nav-container .c3xgm-about-main-nav .c3xgm-about-main-nav-sub .c3xgm-about-nav-bullet {
   background-color: #555555;
 }
-/* line 35, ../sass/components/_navigation.scss */
+/* line 114, ../sass/components/_navigation.scss */
 .c3xgm-about-main-nav-container .c3xgm-about-main-nav .c3xgm-about-main-nav-sub .c3xgm-about-nav-bullet-active {
   background-color: #FDB12E;
 }
-/* line 37, ../sass/components/_navigation.scss */
+/* line 116, ../sass/components/_navigation.scss */
 .c3xgm-about-main-nav-container .c3xgm-about-main-nav .c3xgm-about-main-nav-sub li {
   position: relative;
 }
-/* line 38, ../sass/components/_navigation.scss */
+/* line 117, ../sass/components/_navigation.scss */
 .c3xgm-about-main-nav-container .c3xgm-about-main-nav .c3xgm-about-main-nav-sub li:after {
   content: "";
   display: block;
   width: 1px;
-  height: 17px;
+  height: 20px;
+  bottom: -10px;
   background-color: #555555;
   position: absolute;
   margin: auto;
   left: 0;
   right: 0;
-  bottom: -8px;
   z-index: -1;
 }
-/* line 47, ../sass/components/_navigation.scss */
+@media (min-width: 768px) {
+  /* line 117, ../sass/components/_navigation.scss */
+  .c3xgm-about-main-nav-container .c3xgm-about-main-nav .c3xgm-about-main-nav-sub li:after {
+    bottom: -8px;
+    height: 17px;
+  }
+}
+/* line 132, ../sass/components/_navigation.scss */
 .c3xgm-about-main-nav-container .c3xgm-about-main-nav .c3xgm-about-main-nav-sub li:last-child:after {
   content: none;
   display: none;
 }
 
-/* line 52, ../sass/components/_navigation.scss */
+/* line 137, ../sass/components/_navigation.scss */
 .c3xgm-about-main-nav-sub {
   opacity: 0;
   position: absolute;
@@ -355,9 +423,18 @@ Stylesheet: Helpers
   transition: all 200ms;
 }
 
-/* line 58, ../sass/components/_navigation.scss */
-.c3xgm-about-nav-bullet-active + .c3xgm-about-main-nav-sub {
+/* line 144, ../sass/components/_navigation.scss */
+.c3xgm-about-nav-bullet-active ~ .c3xgm-about-main-nav-sub {
   opacity: 1;
+}
+/* line 148, ../sass/components/_navigation.scss */
+.c3xgm-about-nav-bullet-active ~ .c3xgm-about-main-nav-sub .c3xgm-about-nav-hover-sub-title:hover {
+  opacity: 1;
+  -webkit-transition: opacity 50ms;
+  -moz-transition: opacity 50ms;
+  -o-transition: opacity 50ms;
+  -ms-transition: opacity 50ms;
+  transition: opacity 50ms;
 }
 
 /* line 3, ../sass/components/_layout.scss */
@@ -388,7 +465,7 @@ html, body {
 .c3xgm-about-temp-menu {
   padding-bottom: 33px;
   width: 100%;
-  max-width: 905px;
+  max-width: 906px;
   clear: both;
   background-image: url("../img/decorative/temp-menu.jpg");
   background-repeat: no-repeat;
@@ -440,7 +517,7 @@ html, body {
   width: 100%;
   max-width: 900px;
 }
-/* line 59, ../sass/components/_layout.scss */
+/* line 62, ../sass/components/_layout.scss */
 .c3xgm-about-section hr {
   background: #808285;
   border: none;
@@ -451,7 +528,7 @@ html, body {
   clear: left;
 }
 @media (min-width: 768px) {
-  /* line 59, ../sass/components/_layout.scss */
+  /* line 62, ../sass/components/_layout.scss */
   .c3xgm-about-section hr {
     float: left;
     margin-left: 4px;
@@ -462,52 +539,69 @@ html, body {
   }
 }
 
-/* line 75, ../sass/components/_layout.scss */
-img.c3xgm-about-section-icon {
-  display: block;
-  margin: 0 auto;
-  width: 100px;
-  height: 100px;
+/* line 77, ../sass/components/_layout.scss */
+.c3xgm-about-header-holder {
+  position: relative;
 }
 @media (min-width: 768px) {
-  /* line 75, ../sass/components/_layout.scss */
-  img.c3xgm-about-section-icon {
-    float: left;
-    margin: -16px 18px 0 8px;
+  /* line 77, ../sass/components/_layout.scss */
+  .c3xgm-about-header-holder {
+    overflow-x: hidden;
   }
 }
 
-/* line 85, ../sass/components/_layout.scss */
+/* line 98, ../sass/components/_layout.scss */
+img.c3xgm-about-section-icon {
+  width: 10%;
+  height: 10%;
+  margin: -10px 6px 0 0;
+  display: block;
+  margin: 0 auto;
+  width: 92px;
+  height: 92px;
+}
+@media (min-width: 768px) {
+  /* line 98, ../sass/components/_layout.scss */
+  img.c3xgm-about-section-icon {
+    float: left;
+    width: 90px;
+    height: 90px;
+    margin: -10px 21px 0 0;
+    padding-left: 8px;
+  }
+}
+
+/* line 112, ../sass/components/_layout.scss */
 .c3xgm-about-subsection {
   padding-left: 2px;
 }
 
-/* line 87, ../sass/components/_layout.scss */
+/* line 114, ../sass/components/_layout.scss */
 .c3xgm-about-header-image,
 .c3xgm-about-block-image,
 .c3xgm-about-block-icon {
   width: 100%;
 }
-/* line 92, ../sass/components/_layout.scss */
+/* line 119, ../sass/components/_layout.scss */
 .c3xgm-about-header-image img,
 .c3xgm-about-block-image img,
 .c3xgm-about-block-icon img {
   width: 100%;
 }
 
-/* line 95, ../sass/components/_layout.scss */
+/* line 122, ../sass/components/_layout.scss */
 .c3xgm-about-block,
 .c3xgm-about-block-earn {
   margin-bottom: 2em;
 }
 
-/* line 98, ../sass/components/_layout.scss */
+/* line 125, ../sass/components/_layout.scss */
 .clear-left,
 .c3xgm-clear-left {
   clear: left;
 }
 
-/* line 102, ../sass/components/_layout.scss */
+/* line 129, ../sass/components/_layout.scss */
 .c3xgm-about-module-20,
 .c3xgm-about-module-25,
 .c3xgm-about-module-35,
@@ -523,66 +617,71 @@ img.c3xgm-about-section-icon {
 }
 
 @media (min-width: 768px) {
-  /* line 117, ../sass/components/_layout.scss */
+  /* line 144, ../sass/components/_layout.scss */
   .c3xgm-about-module-20 {
     width: 20%;
     float: left;
   }
 
-  /* line 118, ../sass/components/_layout.scss */
+  /* line 145, ../sass/components/_layout.scss */
   .c3xgm-about-module-25 {
     width: 25%;
     float: left;
   }
 
-  /* line 119, ../sass/components/_layout.scss */
+  /* line 146, ../sass/components/_layout.scss */
   .c3xgm-about-module-35 {
     width: 35%;
     float: left;
   }
 
-  /* line 120, ../sass/components/_layout.scss */
+  /* line 147, ../sass/components/_layout.scss */
   .c3xgm-about-module-40 {
     width: 40%;
     float: left;
   }
 
-  /* line 121, ../sass/components/_layout.scss */
+  /* line 148, ../sass/components/_layout.scss */
   .c3xgm-about-module-50 {
     width: 50%;
     float: left;
   }
 
-  /* line 122, ../sass/components/_layout.scss */
+  /* line 149, ../sass/components/_layout.scss */
   .c3xgm-about-module-60 {
     width: 60%;
     float: left;
   }
 
-  /* line 123, ../sass/components/_layout.scss */
+  /* line 150, ../sass/components/_layout.scss */
   .c3xgm-about-module-65 {
     width: 65%;
     float: left;
   }
 
-  /* line 124, ../sass/components/_layout.scss */
+  /* line 151, ../sass/components/_layout.scss */
   .c3xgm-about-module-75 {
     width: 75%;
     float: left;
   }
 
-  /* line 125, ../sass/components/_layout.scss */
+  /* line 152, ../sass/components/_layout.scss */
   .c3xgm-about-module-80 {
     width: 80%;
     float: left;
   }
+
+  /* line 154, ../sass/components/_layout.scss */
+  .c3xgm-about-page-our-people .c3xgm-about-module-50 {
+    margin-top: 0;
+  }
 }
-/* line 129, ../sass/components/_layout.scss */
+/* line 158, ../sass/components/_layout.scss */
 svg {
   max-height: 100%;
 }
 
-/* line 132, ../sass/components/_layout.scss */
+/* line 161, ../sass/components/_layout.scss */
 .c3xgm-about-decorative {
   position: relative;
   width: 100%;
@@ -590,13 +689,13 @@ svg {
   margin-bottom: 0;
 }
 
-/* line 137, ../sass/components/_layout.scss */
+/* line 166, ../sass/components/_layout.scss */
 .c3xgm-about-module-technology,
 .c3xgm-about-module-foundation {
   position: relative;
 }
 
-/* line 140, ../sass/components/_layout.scss */
+/* line 169, ../sass/components/_layout.scss */
 .c3xgm-about-module-technology,
 .c3xgm-about-module-foundation,
 .c3xgm-about-subsection,
@@ -606,7 +705,7 @@ svg {
   margin: 0 auto 3.5em;
 }
 @media (min-width: 768px) {
-  /* line 140, ../sass/components/_layout.scss */
+  /* line 169, ../sass/components/_layout.scss */
   .c3xgm-about-module-technology,
   .c3xgm-about-module-foundation,
   .c3xgm-about-subsection,
@@ -616,24 +715,24 @@ svg {
   }
 }
 
-/* line 153, ../sass/components/_layout.scss */
+/* line 182, ../sass/components/_layout.scss */
 .c3xgm-about-page-environment .c3xgm-about-subsection {
   margin: 0 auto;
 }
 @media (min-width: 768px) {
-  /* line 153, ../sass/components/_layout.scss */
+  /* line 182, ../sass/components/_layout.scss */
   .c3xgm-about-page-environment .c3xgm-about-subsection {
     margin: 0 auto;
   }
 }
 
-/* line 159, ../sass/components/_layout.scss */
+/* line 188, ../sass/components/_layout.scss */
 .c3xgm-about-section {
   max-width: 906px;
   margin: 0 auto;
 }
 
-/* line 164, ../sass/components/_layout.scss */
+/* line 193, ../sass/components/_layout.scss */
 .c3xgm-about-block.c3xgm-about-decorative {
   width: 100%;
   max-width: none;
@@ -641,7 +740,7 @@ svg {
   margin-right: auto;
 }
 
-/* line 169, ../sass/components/_layout.scss */
+/* line 198, ../sass/components/_layout.scss */
 .c3xgm-about-section,
 .c3xgm-about-subsection,
 .c3xgm-about-module-foundation,
@@ -650,7 +749,7 @@ svg {
   width: 92%;
 }
 @media (min-width: 768px) {
-  /* line 169, ../sass/components/_layout.scss */
+  /* line 198, ../sass/components/_layout.scss */
   .c3xgm-about-section,
   .c3xgm-about-subsection,
   .c3xgm-about-module-foundation,
@@ -661,7 +760,7 @@ svg {
 }
 
 @media (min-width: 768px) {
-  /* line 178, ../sass/components/_layout.scss */
+  /* line 207, ../sass/components/_layout.scss */
   .c3xgm-about-module-technology,
   .c3xgm-about-block.c3xgm-about-decorative {
     width: 100%;
@@ -669,29 +768,29 @@ svg {
 }
 
 @media (min-width: 768px) {
-  /* line 187, ../sass/components/_layout.scss */
+  /* line 216, ../sass/components/_layout.scss */
   .c3xgm-about-block-image-mobile {
     display: none;
   }
 }
 
-/* line 190, ../sass/components/_layout.scss */
+/* line 219, ../sass/components/_layout.scss */
 .c3xgm-about-desktop {
   display: none;
 }
 @media (min-width: 768px) {
-  /* line 190, ../sass/components/_layout.scss */
+  /* line 219, ../sass/components/_layout.scss */
   .c3xgm-about-desktop {
     display: block;
   }
 }
 
-/* line 196, ../sass/components/_layout.scss */
+/* line 225, ../sass/components/_layout.scss */
 .c3xgm-about-open-sans {
   font-family: "open-sans", 'Arial', Arial, sans-serif !important;
 }
 
-/* line 200, ../sass/components/_layout.scss */
+/* line 229, ../sass/components/_layout.scss */
 .c3xgm-about-yellow-line,
 .c3xgm-about-gray-line {
   position: absolute;
@@ -699,23 +798,23 @@ svg {
   z-index: 1100;
 }
 
-/* line 207, ../sass/components/_layout.scss */
+/* line 236, ../sass/components/_layout.scss */
 .c3xgm-about-yellow-line {
   background-color: #FDB12E;
 }
 
-/* line 208, ../sass/components/_layout.scss */
+/* line 237, ../sass/components/_layout.scss */
 .c3xgm-about-gray-line {
   background-color: #d4d4d5;
 }
 
-/* line 210, ../sass/components/_layout.scss */
+/* line 239, ../sass/components/_layout.scss */
 .c3xgm-about-line-vert {
   height: 100%;
   width: .15rem;
 }
 @media (min-width: 768px) {
-  /* line 210, ../sass/components/_layout.scss */
+  /* line 239, ../sass/components/_layout.scss */
   .c3xgm-about-line-vert {
     width: .2rem;
   }
@@ -821,7 +920,7 @@ h1.c3xgm-about-h {
   }
 }
 
-/* line 55, ../sass/pages/_base-type.scss */
+/* line 58, ../sass/pages/_base-type.scss */
 h2.c3xgm-about-h {
   line-height: 1em;
   color: #124e9c;
@@ -829,14 +928,14 @@ h2.c3xgm-about-h {
   font-size: 8.65vw;
 }
 @media (min-width: 768px) {
-  /* line 55, ../sass/pages/_base-type.scss */
+  /* line 58, ../sass/pages/_base-type.scss */
   h2.c3xgm-about-h {
     font-size: 52px;
     line-height: 74px;
   }
 }
 
-/* line 63, ../sass/pages/_base-type.scss */
+/* line 66, ../sass/pages/_base-type.scss */
 h3.c3xgm-about-h {
   font-size: 18px;
   line-height: 1em;
@@ -844,13 +943,13 @@ h3.c3xgm-about-h {
   margin: 2px 0;
 }
 @media (min-width: 768px) {
-  /* line 63, ../sass/pages/_base-type.scss */
+  /* line 66, ../sass/pages/_base-type.scss */
   h3.c3xgm-about-h {
     font-size: 24px;
   }
 }
 
-/* line 70, ../sass/pages/_base-type.scss */
+/* line 73, ../sass/pages/_base-type.scss */
 h4.c3xgm-about-h {
   font-size: 19px;
   line-height: 23px;
@@ -858,7 +957,7 @@ h4.c3xgm-about-h {
   margin: 4px 0;
 }
 
-/* line 75, ../sass/pages/_base-type.scss */
+/* line 78, ../sass/pages/_base-type.scss */
 .c3xgm-about-link {
   font-family: "open-sans-condensed", 'Arial Narrow', Arial, sans-serif;
   color: #6086C4;
@@ -866,19 +965,19 @@ h4.c3xgm-about-h {
   text-decoration: none;
   font-weight: 600;
 }
-/* line 78, ../sass/pages/_base-type.scss */
+/* line 81, ../sass/pages/_base-type.scss */
 .c3xgm-about-link:hover, .c3xgm-about-link:focus, .c3xgm-about-link:active {
   text-decoration: none;
   outline: none;
 }
 
-/* line 82, ../sass/pages/_base-type.scss */
+/* line 85, ../sass/pages/_base-type.scss */
 .c3xgm-about-thin,
 .c3xgm-about-blockquote .c3xgm-about-thin span {
   font-weight: 200 !important;
 }
 
-/* line 85, ../sass/pages/_base-type.scss */
+/* line 88, ../sass/pages/_base-type.scss */
 .c3xgm-about-blockquote {
   text-transform: uppercase;
   margin: 9px 0 9px 0;
@@ -893,7 +992,7 @@ h4.c3xgm-about-h {
 .c3xgm-about-blockquote:after {
   clear: both;
 }
-/* line 91, ../sass/pages/_base-type.scss */
+/* line 94, ../sass/pages/_base-type.scss */
 .c3xgm-about-blockquote span {
   font-family: "open-sans-condensed", 'Arial Narrow', Arial, sans-serif;
   font-weight: 600;
@@ -902,66 +1001,66 @@ h4.c3xgm-about-h {
   line-height: 1em;
 }
 @media (min-width: 768px) {
-  /* line 91, ../sass/pages/_base-type.scss */
+  /* line 94, ../sass/pages/_base-type.scss */
   .c3xgm-about-blockquote span {
     font-size: 41px;
   }
 }
-/* line 100, ../sass/pages/_base-type.scss */
+/* line 103, ../sass/pages/_base-type.scss */
 .c3xgm-about-blockquote strong {
   font-weight: 700;
 }
 
-/* line 104, ../sass/pages/_base-type.scss */
+/* line 107, ../sass/pages/_base-type.scss */
 .c3xgm-about-light-blue {
   color: #6086C4 !important;
 }
 
-/* line 105, ../sass/pages/_base-type.scss */
+/* line 108, ../sass/pages/_base-type.scss */
 .c3xgm-about-blue {
   color: #5e85c4 !important;
 }
 
-/* line 106, ../sass/pages/_base-type.scss */
+/* line 109, ../sass/pages/_base-type.scss */
 .c3xgm-about-dark-blue {
   color: #124e9c !important;
 }
 
-/* line 107, ../sass/pages/_base-type.scss */
+/* line 110, ../sass/pages/_base-type.scss */
 .c3xgm-about-yellow {
   color: #FDB12E !important;
 }
 
-/* line 108, ../sass/pages/_base-type.scss */
+/* line 111, ../sass/pages/_base-type.scss */
 .c3xgm-about-light-gray {
   color: #7E8184 !important;
 }
 
-/* line 109, ../sass/pages/_base-type.scss */
+/* line 112, ../sass/pages/_base-type.scss */
 .c3xgm-about-gray {
   color: #808285 !important;
 }
 
-/* line 110, ../sass/pages/_base-type.scss */
+/* line 113, ../sass/pages/_base-type.scss */
 .c3xgm-about-dark-gray {
   color: #555555 !important;
 }
 
-/* line 113, ../sass/pages/_base-type.scss */
+/* line 116, ../sass/pages/_base-type.scss */
 .text-right,
 .text-right .c3xgm-about-blockquote,
 .c3xgm-about-text-right {
   text-align: right;
 }
 
-/* line 120, ../sass/pages/_base-type.scss */
+/* line 123, ../sass/pages/_base-type.scss */
 .c3xgm-about-header-p {
   margin: 0 auto;
   padding: 0 2% 0 7px;
   text-align: left;
 }
 @media (min-width: 768px) {
-  /* line 120, ../sass/pages/_base-type.scss */
+  /* line 123, ../sass/pages/_base-type.scss */
   .c3xgm-about-header-p {
     max-width: 768px;
     margin: 9px 0 9px 0;
@@ -969,13 +1068,13 @@ h4.c3xgm-about-h {
 }
 
 @media (min-width: 768px) {
-  /* line 130, ../sass/pages/_base-type.scss */
+  /* line 133, ../sass/pages/_base-type.scss */
   .c3xgm-about-section-header {
     padding: 0;
   }
 }
 
-/* line 135, ../sass/pages/_base-type.scss */
+/* line 138, ../sass/pages/_base-type.scss */
 .c3xgm-about-gray.c3xgm-about-disclaimer,
 .c3xgm-about-gray.c3xgm-about-disclaimer-small {
   font-family: "open-sans", 'Arial', Arial, sans-serif;
@@ -984,33 +1083,33 @@ h4.c3xgm-about-h {
   text-transform: none;
 }
 
-/* line 141, ../sass/pages/_base-type.scss */
+/* line 144, ../sass/pages/_base-type.scss */
 .c3xgm-about-gray.c3xgm-about-disclaimer-small {
   font-size: 10px;
   line-height: 1.613em;
 }
-/* line 143, ../sass/pages/_base-type.scss */
+/* line 146, ../sass/pages/_base-type.scss */
 .c3xgm-about-gray.c3xgm-about-disclaimer-small strong {
   font-family: "open-sans-condensed", 'Arial Narrow', Arial, sans-serif;
   font-size: 1.5em;
   color: #6086C4;
 }
 
-/* line 148, ../sass/pages/_base-type.scss */
+/* line 151, ../sass/pages/_base-type.scss */
 .c3xgm-about-gray.c3xgm-about-disclaimer {
   margin: 2em auto;
   font-size: 14px;
   line-height: 1.613em;
 }
 @media (min-width: 481px) {
-  /* line 148, ../sass/pages/_base-type.scss */
+  /* line 151, ../sass/pages/_base-type.scss */
   .c3xgm-about-gray.c3xgm-about-disclaimer {
     font-size: 18px;
     font-size: 2.0128157865vw;
   }
 }
 @media (min-width: 906px) {
-  /* line 148, ../sass/pages/_base-type.scss */
+  /* line 151, ../sass/pages/_base-type.scss */
   .c3xgm-about-gray.c3xgm-about-disclaimer {
     font-size: 18.222px;
   }
@@ -1280,20 +1379,27 @@ h4.c3xgm-about-h {
 /* line 52, ../sass/pages/_environment.scss */
 .c3xgm-about-page-our-commitment .c3xgm-about-epa-energy-star {
   max-width: 44.5em;
+  margin-bottom: 3em;
 }
-/* line 54, ../sass/pages/_environment.scss */
+@media (768px) {
+  /* line 52, ../sass/pages/_environment.scss */
+  .c3xgm-about-page-our-commitment .c3xgm-about-epa-energy-star {
+    margin-bottom: 7em;
+  }
+}
+/* line 58, ../sass/pages/_environment.scss */
 .c3xgm-about-page-our-commitment .c3xgm-about-epa-energy-star .c3xgm-about-block-image {
   width: 42%;
   position: relative;
 }
-/* line 57, ../sass/pages/_environment.scss */
+/* line 61, ../sass/pages/_environment.scss */
 .c3xgm-about-page-our-commitment .c3xgm-about-epa-energy-star .c3xgm-about-block-image img {
   width: 100%;
-  max-width: 160px;
+  max-width: 220px;
   height: auto;
 }
 @media (min-width: 768px) {
-  /* line 54, ../sass/pages/_environment.scss */
+  /* line 58, ../sass/pages/_environment.scss */
   .c3xgm-about-page-our-commitment .c3xgm-about-epa-energy-star .c3xgm-about-block-image {
     width: 25%;
     float: right;
@@ -1301,13 +1407,13 @@ h4.c3xgm-about-h {
     padding-bottom: 168px;
     height: 0;
   }
-  /* line 61, ../sass/pages/_environment.scss */
+  /* line 70, ../sass/pages/_environment.scss */
   .c3xgm-about-page-our-commitment .c3xgm-about-epa-energy-star .c3xgm-about-block-image img {
     width: 90%;
     max-width: 140px;
   }
 }
-/* line 68, ../sass/pages/_environment.scss */
+/* line 77, ../sass/pages/_environment.scss */
 .c3xgm-about-page-our-commitment .c3xgm-about-epa-energy-star .c3xgm-about-blockquote {
   text-align: right;
   padding-right: 1em;
@@ -1349,62 +1455,75 @@ h4.c3xgm-about-h {
   }
 }
 @media (min-width: 768px) {
-  /* line 68, ../sass/pages/_environment.scss */
+  /* line 77, ../sass/pages/_environment.scss */
   .c3xgm-about-page-our-commitment .c3xgm-about-epa-energy-star .c3xgm-about-blockquote {
     width: 73%;
     padding-right: 2.5em;
   }
 }
-/* line 76, ../sass/pages/_environment.scss */
+/* line 85, ../sass/pages/_environment.scss */
 .c3xgm-about-page-our-commitment .c3xgm-about-epa-energy-star .c3xgm-about-dark-blue.c3xgm-about-thin {
   font-size: 17px;
   font-size: 5.5vw;
 }
 @media (min-width: 768px) {
-  /* line 76, ../sass/pages/_environment.scss */
+  /* line 85, ../sass/pages/_environment.scss */
   .c3xgm-about-page-our-commitment .c3xgm-about-epa-energy-star .c3xgm-about-dark-blue.c3xgm-about-thin {
     font-size: 33.786625px;
   }
 }
-/* line 81, ../sass/pages/_environment.scss */
+/* line 90, ../sass/pages/_environment.scss */
 .c3xgm-about-page-our-commitment .c3xgm-about-epa-energy-star .c3xgm-about-light-blue {
   font-size: 32px;
   font-size: 10.25vw;
 }
 @media (min-width: 768px) {
-  /* line 81, ../sass/pages/_environment.scss */
+  /* line 90, ../sass/pages/_environment.scss */
   .c3xgm-about-page-our-commitment .c3xgm-about-epa-energy-star .c3xgm-about-light-blue {
     font-size: 67.072145px;
   }
 }
-/* line 86, ../sass/pages/_environment.scss */
+/* line 95, ../sass/pages/_environment.scss */
 .c3xgm-about-page-our-commitment .c3xgm-about-epa-energy-star .c3xgm-about-gray {
   font-size: 17px;
   font-size: 5.5vw;
 }
 @media (min-width: 768px) {
-  /* line 86, ../sass/pages/_environment.scss */
+  /* line 95, ../sass/pages/_environment.scss */
   .c3xgm-about-page-our-commitment .c3xgm-about-epa-energy-star .c3xgm-about-gray {
     font-size: 34.9255px;
   }
 }
-/* line 95, ../sass/pages/_environment.scss */
+/* line 104, ../sass/pages/_environment.scss */
 .c3xgm-about-page-our-commitment .c3xgm-about-climate-declaration {
   max-width: 52em;
+  margin-bottom: 5em;
+  margin-top: 0;
 }
-/* line 97, ../sass/pages/_environment.scss */
+@media (min-width: 768px) {
+  /* line 104, ../sass/pages/_environment.scss */
+  .c3xgm-about-page-our-commitment .c3xgm-about-climate-declaration {
+    margin-bottom: 7em;
+    margin-top: 7em;
+  }
+}
+/* line 109, ../sass/pages/_environment.scss */
 .c3xgm-about-page-our-commitment .c3xgm-about-climate-declaration .c3xgm-about-block-image {
-  width: 38%;
+  width: 78%;
   position: relative;
 }
-/* line 100, ../sass/pages/_environment.scss */
+/* line 113, ../sass/pages/_environment.scss */
+.c3xgm-about-page-our-commitment .c3xgm-about-climate-declaration .c3xgm-about-block-image > div {
+  margin-left: 20%;
+}
+/* line 115, ../sass/pages/_environment.scss */
 .c3xgm-about-page-our-commitment .c3xgm-about-climate-declaration .c3xgm-about-block-image img {
   width: 100%;
-  max-width: 151px;
+  max-width: none;
   height: auto;
 }
 @media (min-width: 768px) {
-  /* line 97, ../sass/pages/_environment.scss */
+  /* line 109, ../sass/pages/_environment.scss */
   .c3xgm-about-page-our-commitment .c3xgm-about-climate-declaration .c3xgm-about-block-image {
     width: 25%;
     height: 0;
@@ -1413,13 +1532,17 @@ h4.c3xgm-about-h {
     position: relative;
     float: left;
   }
-  /* line 105, ../sass/pages/_environment.scss */
+  /* line 121, ../sass/pages/_environment.scss */
+  .c3xgm-about-page-our-commitment .c3xgm-about-climate-declaration .c3xgm-about-block-image > div {
+    margin-left: auto;
+  }
+  /* line 125, ../sass/pages/_environment.scss */
   .c3xgm-about-page-our-commitment .c3xgm-about-climate-declaration .c3xgm-about-block-image img {
     width: 100%;
     max-width: none;
   }
 }
-/* line 112, ../sass/pages/_environment.scss */
+/* line 132, ../sass/pages/_environment.scss */
 .c3xgm-about-page-our-commitment .c3xgm-about-climate-declaration .c3xgm-about-blockquote {
   position: relative;
   padding-left: 1em;
@@ -1459,14 +1582,14 @@ h4.c3xgm-about-h {
   }
 }
 @media (min-width: 768px) {
-  /* line 112, ../sass/pages/_environment.scss */
+  /* line 132, ../sass/pages/_environment.scss */
   .c3xgm-about-page-our-commitment .c3xgm-about-climate-declaration .c3xgm-about-blockquote {
     float: right;
     width: 75%;
     padding-left: 2.5em;
   }
 }
-/* line 120, ../sass/pages/_environment.scss */
+/* line 140, ../sass/pages/_environment.scss */
 .c3xgm-about-page-our-commitment .c3xgm-about-climate-declaration .c3xgm-about-dark-blue.c3xgm-about-thin {
   font-size: 16px;
   font-size: 5vw;
@@ -1474,73 +1597,77 @@ h4.c3xgm-about-h {
   max-width: 13em;
 }
 @media (min-width: 768px) {
-  /* line 120, ../sass/pages/_environment.scss */
+  /* line 140, ../sass/pages/_environment.scss */
   .c3xgm-about-page-our-commitment .c3xgm-about-climate-declaration .c3xgm-about-dark-blue.c3xgm-about-thin {
     max-width: none;
     font-size: 25px;
   }
 }
 @media (min-width: 870px) {
-  /* line 120, ../sass/pages/_environment.scss */
+  /* line 140, ../sass/pages/_environment.scss */
   .c3xgm-about-page-our-commitment .c3xgm-about-climate-declaration .c3xgm-about-dark-blue.c3xgm-about-thin {
     max-width: none;
     font-size: 30px;
   }
 }
-/* line 128, ../sass/pages/_environment.scss */
+/* line 148, ../sass/pages/_environment.scss */
 .c3xgm-about-page-our-commitment .c3xgm-about-climate-declaration .c3xgm-about-light-blue {
   font-size: 28px;
   font-size: 9vw;
 }
 @media (min-width: 768px) {
-  /* line 128, ../sass/pages/_environment.scss */
+  /* line 148, ../sass/pages/_environment.scss */
   .c3xgm-about-page-our-commitment .c3xgm-about-climate-declaration .c3xgm-about-light-blue {
     font-size: 56px;
   }
 }
 @media (min-width: 870px) {
-  /* line 128, ../sass/pages/_environment.scss */
+  /* line 148, ../sass/pages/_environment.scss */
   .c3xgm-about-page-our-commitment .c3xgm-about-climate-declaration .c3xgm-about-light-blue {
     max-width: none;
     font-size: 63px;
   }
 }
-/* line 134, ../sass/pages/_environment.scss */
+/* line 154, ../sass/pages/_environment.scss */
 .c3xgm-about-page-our-commitment .c3xgm-about-climate-declaration .c3xgm-about-gray.c3xgm-about-thin {
   font-size: 17px;
   font-size: 5.5vw;
 }
 @media (min-width: 768px) {
-  /* line 134, ../sass/pages/_environment.scss */
+  /* line 154, ../sass/pages/_environment.scss */
   .c3xgm-about-page-our-commitment .c3xgm-about-climate-declaration .c3xgm-about-gray.c3xgm-about-thin {
     font-size: 36.59585px;
   }
 }
-/* line 142, ../sass/pages/_environment.scss */
+/* line 161, ../sass/pages/_environment.scss */
+.c3xgm-about-page-our-commitment .c3xgm-about-landfill-free {
+  margin-bottom: 0;
+}
+/* line 164, ../sass/pages/_environment.scss */
 .c3xgm-about-page-our-commitment .c3xgm-about-landfill-free .c3xgm-about-block-image {
   width: 30%;
   position: relative;
 }
-/* line 145, ../sass/pages/_environment.scss */
+/* line 167, ../sass/pages/_environment.scss */
 .c3xgm-about-page-our-commitment .c3xgm-about-landfill-free .c3xgm-about-block-image img {
   width: 100%;
   max-width: 172px;
   height: auto;
 }
 @media (min-width: 768px) {
-  /* line 142, ../sass/pages/_environment.scss */
+  /* line 164, ../sass/pages/_environment.scss */
   .c3xgm-about-page-our-commitment .c3xgm-about-landfill-free .c3xgm-about-block-image {
     width: 24%;
     float: right;
-    padding-bottom: 162px;
+    padding-bottom: 0;
     margin-top: 9px;
   }
-  /* line 149, ../sass/pages/_environment.scss */
+  /* line 173, ../sass/pages/_environment.scss */
   .c3xgm-about-page-our-commitment .c3xgm-about-landfill-free .c3xgm-about-block-image img {
     width: 60%;
   }
 }
-/* line 156, ../sass/pages/_environment.scss */
+/* line 180, ../sass/pages/_environment.scss */
 .c3xgm-about-page-our-commitment .c3xgm-about-landfill-free .c3xgm-about-blockquote {
   position: relative;
   max-width: 52em;
@@ -1583,67 +1710,71 @@ h4.c3xgm-about-h {
   }
 }
 @media (min-width: 768px) {
-  /* line 156, ../sass/pages/_environment.scss */
+  /* line 180, ../sass/pages/_environment.scss */
   .c3xgm-about-page-our-commitment .c3xgm-about-landfill-free .c3xgm-about-blockquote {
     width: 76%;
     padding-right: 2.5em;
   }
 }
-/* line 164, ../sass/pages/_environment.scss */
+/* line 188, ../sass/pages/_environment.scss */
 .c3xgm-about-page-our-commitment .c3xgm-about-landfill-free .c3xgm-about-dark-blue.c3xgm-about-thin {
   font-size: 26.3007926940918px;
   font-size: 8.218997794875vw;
 }
 @media (min-width: 768px) {
-  /* line 164, ../sass/pages/_environment.scss */
+  /* line 188, ../sass/pages/_environment.scss */
   .c3xgm-about-page-our-commitment .c3xgm-about-landfill-free .c3xgm-about-dark-blue.c3xgm-about-thin {
     font-size: 74.4065px;
   }
 }
-/* line 169, ../sass/pages/_environment.scss */
+/* line 193, ../sass/pages/_environment.scss */
 .c3xgm-about-page-our-commitment .c3xgm-about-landfill-free .c3xgm-about-light-blue {
   font-size: 25px;
   font-size: 8vw;
 }
 @media (min-width: 768px) {
-  /* line 169, ../sass/pages/_environment.scss */
+  /* line 193, ../sass/pages/_environment.scss */
   .c3xgm-about-page-our-commitment .c3xgm-about-landfill-free .c3xgm-about-light-blue {
     font-size: 54.666px;
   }
 }
-/* line 174, ../sass/pages/_environment.scss */
+/* line 198, ../sass/pages/_environment.scss */
 .c3xgm-about-page-our-commitment .c3xgm-about-landfill-free .c3xgm-about-gray {
   font-size: 16px;
   font-size: 5vw;
 }
 @media (min-width: 768px) {
-  /* line 174, ../sass/pages/_environment.scss */
+  /* line 198, ../sass/pages/_environment.scss */
   .c3xgm-about-page-our-commitment .c3xgm-about-landfill-free .c3xgm-about-gray {
     font-size: 34.9255px;
   }
 }
 
-/* line 4, ../sass/pages/_safety.scss */
+/* line 5, ../sass/pages/_safety.scss */
+.c3xgm-about-page-our-commitment .c3xgm-about-page-safety-quality > .c3xgm-about-subsection {
+  margin-bottom: 3em;
+}
+/* line 10, ../sass/pages/_safety.scss */
 .c3xgm-about-page-our-commitment .c3xgm-about-blockquote {
   display: inline-block;
 }
 @media (min-width: 768px) {
-  /* line 4, ../sass/pages/_safety.scss */
+  /* line 10, ../sass/pages/_safety.scss */
   .c3xgm-about-page-our-commitment .c3xgm-about-blockquote {
     display: block;
   }
 }
-/* line 10, ../sass/pages/_safety.scss */
+/* line 16, ../sass/pages/_safety.scss */
 .c3xgm-about-page-our-commitment .c3xgm-about-crash-test-dummies {
-  margin-bottom: 10em;
+  margin-top: 0;
 }
-/* line 12, ../sass/pages/_safety.scss */
+/* line 19, ../sass/pages/_safety.scss */
 .c3xgm-about-page-our-commitment .c3xgm-about-crash-test-dummies .c3xgm-about-block-image {
   width: 100%;
   position: relative;
 }
 @media (min-width: 768px) {
-  /* line 12, ../sass/pages/_safety.scss */
+  /* line 19, ../sass/pages/_safety.scss */
   .c3xgm-about-page-our-commitment .c3xgm-about-crash-test-dummies .c3xgm-about-block-image {
     float: left;
     width: 25%;
@@ -1651,7 +1782,7 @@ h4.c3xgm-about-h {
     padding-bottom: 297px;
     margin-right: 1em;
   }
-  /* line 20, ../sass/pages/_safety.scss */
+  /* line 27, ../sass/pages/_safety.scss */
   .c3xgm-about-page-our-commitment .c3xgm-about-crash-test-dummies .c3xgm-about-block-image img {
     position: absolute;
     top: 50%;
@@ -1670,7 +1801,7 @@ h4.c3xgm-about-h {
     width: 235%;
   }
 }
-/* line 29, ../sass/pages/_safety.scss */
+/* line 36, ../sass/pages/_safety.scss */
 .c3xgm-about-page-our-commitment .c3xgm-about-crash-test-dummies .c3xgm-about-blockquote {
   background: #fff;
   display: inline-block;
@@ -1678,19 +1809,19 @@ h4.c3xgm-about-h {
   position: relative;
   z-index: 10;
 }
-/* line 33, ../sass/pages/_safety.scss */
+/* line 40, ../sass/pages/_safety.scss */
 .c3xgm-about-page-our-commitment .c3xgm-about-crash-test-dummies .c3xgm-about-blockquote > span {
   display: inline-block;
   float: left;
   clear: left;
   max-width: 5.5em;
 }
-/* line 38, ../sass/pages/_safety.scss */
+/* line 45, ../sass/pages/_safety.scss */
 .c3xgm-about-page-our-commitment .c3xgm-about-crash-test-dummies .c3xgm-about-blockquote > span.c3xgm-about-light-gray {
   max-width: 16em;
 }
 @media (min-width: 768px) {
-  /* line 29, ../sass/pages/_safety.scss */
+  /* line 36, ../sass/pages/_safety.scss */
   .c3xgm-about-page-our-commitment .c3xgm-about-crash-test-dummies .c3xgm-about-blockquote {
     display: block;
     width: auto;
@@ -1734,20 +1865,20 @@ h4.c3xgm-about-h {
     width: 0.2rem;
   }
 }
-/* line 48, ../sass/pages/_safety.scss */
+/* line 55, ../sass/pages/_safety.scss */
 .c3xgm-about-page-our-commitment .c3xgm-about-crash-test-dummies .c3xgm-about-dark-blue.c3xgm-about-thin {
   font-size: 12.9088582992554px;
   font-size: 6.034018vw;
   line-height: 1.25em;
 }
 @media (min-width: 768px) {
-  /* line 48, ../sass/pages/_safety.scss */
+  /* line 55, ../sass/pages/_safety.scss */
   .c3xgm-about-page-our-commitment .c3xgm-about-crash-test-dummies .c3xgm-about-dark-blue.c3xgm-about-thin {
     font-size: 36.5199px;
     line-height: 43.808725px;
   }
 }
-/* line 56, ../sass/pages/_safety.scss */
+/* line 63, ../sass/pages/_safety.scss */
 .c3xgm-about-page-our-commitment .c3xgm-about-crash-test-dummies .c3xgm-about-light-blue {
   font-size: 28.7430095672607px;
   font-size: 13.98219vw;
@@ -1756,13 +1887,13 @@ h4.c3xgm-about-h {
   display: inline-block;
 }
 @media (min-width: 768px) {
-  /* line 56, ../sass/pages/_safety.scss */
+  /* line 63, ../sass/pages/_safety.scss */
   .c3xgm-about-page-our-commitment .c3xgm-about-crash-test-dummies .c3xgm-about-light-blue {
     font-size: 81.315675px;
     line-height: 75.925px;
   }
 }
-/* line 62, ../sass/pages/_safety.scss */
+/* line 69, ../sass/pages/_safety.scss */
 .c3xgm-about-page-our-commitment .c3xgm-about-crash-test-dummies .c3xgm-about-light-gray {
   display: inline-block;
   font-size: 18px;
@@ -1770,47 +1901,47 @@ h4.c3xgm-about-h {
   line-height: 1.2em;
 }
 @media (min-width: 768px) {
-  /* line 62, ../sass/pages/_safety.scss */
+  /* line 69, ../sass/pages/_safety.scss */
   .c3xgm-about-page-our-commitment .c3xgm-about-crash-test-dummies .c3xgm-about-light-gray {
     font-size: 33px;
   }
 }
-/* line 69, ../sass/pages/_safety.scss */
+/* line 76, ../sass/pages/_safety.scss */
 .c3xgm-about-page-our-commitment .c3xgm-about-crash-test-dummies .c3xgm-about-light-gray.c3xgm-about-thin .c3xgm-about-light-blue {
   font-size: 14.4925537109375px;
   font-size: 3.522427626375vw;
   line-height: 1.2em;
 }
 @media (min-width: 768px) {
-  /* line 69, ../sass/pages/_safety.scss */
+  /* line 76, ../sass/pages/_safety.scss */
   .c3xgm-about-page-our-commitment .c3xgm-about-crash-test-dummies .c3xgm-about-light-gray.c3xgm-about-thin .c3xgm-about-light-blue {
     font-size: 31.8885px;
   }
 }
-/* line 77, ../sass/pages/_safety.scss */
+/* line 84, ../sass/pages/_safety.scss */
 .c3xgm-about-page-our-commitment .c3xgm-about-test-facility {
   max-width: 54em;
 }
-/* line 79, ../sass/pages/_safety.scss */
+/* line 86, ../sass/pages/_safety.scss */
 .c3xgm-about-page-our-commitment .c3xgm-about-test-facility .c3xgm-about-block-image {
   width: 60%;
   height: 0;
   padding-bottom: 55%;
   position: relative;
 }
-/* line 83, ../sass/pages/_safety.scss */
+/* line 90, ../sass/pages/_safety.scss */
 .c3xgm-about-page-our-commitment .c3xgm-about-test-facility .c3xgm-about-block-image .c3xgm-about-circle-lines {
   position: absolute;
   width: 90%;
   max-width: none;
 }
 @media (min-width: 768px) {
-  /* line 83, ../sass/pages/_safety.scss */
+  /* line 90, ../sass/pages/_safety.scss */
   .c3xgm-about-page-our-commitment .c3xgm-about-test-facility .c3xgm-about-block-image .c3xgm-about-circle-lines {
     width: 85%;
   }
 }
-/* line 87, ../sass/pages/_safety.scss */
+/* line 94, ../sass/pages/_safety.scss */
 .c3xgm-about-page-our-commitment .c3xgm-about-test-facility .c3xgm-about-block-image img {
   position: absolute;
   top: 50%;
@@ -1823,34 +1954,38 @@ h4.c3xgm-about-h {
   width: 50%;
 }
 @media (min-width: 768px) {
-  /* line 79, ../sass/pages/_safety.scss */
+  /* line 86, ../sass/pages/_safety.scss */
   .c3xgm-about-page-our-commitment .c3xgm-about-test-facility .c3xgm-about-block-image {
     width: 48%;
     float: right;
     padding-bottom: 270px;
   }
-  /* line 95, ../sass/pages/_safety.scss */
+  /* line 103, ../sass/pages/_safety.scss */
+  .c3xgm-about-page-our-commitment .c3xgm-about-test-facility .c3xgm-about-block-image > div {
+    max-width: 414px;
+  }
+  /* line 104, ../sass/pages/_safety.scss */
   .c3xgm-about-page-our-commitment .c3xgm-about-test-facility .c3xgm-about-block-image img {
     max-width: 225px;
   }
 }
-/* line 99, ../sass/pages/_safety.scss */
+/* line 108, ../sass/pages/_safety.scss */
 .c3xgm-about-page-our-commitment .c3xgm-about-test-facility .c3xgm-about-blockquote {
   display: inline-block;
 }
-/* line 101, ../sass/pages/_safety.scss */
+/* line 110, ../sass/pages/_safety.scss */
 .c3xgm-about-page-our-commitment .c3xgm-about-test-facility .c3xgm-about-blockquote > span {
   display: inline-block;
   float: left;
   clear: left;
 }
 @media (min-width: 768px) {
-  /* line 99, ../sass/pages/_safety.scss */
+  /* line 108, ../sass/pages/_safety.scss */
   .c3xgm-about-page-our-commitment .c3xgm-about-test-facility .c3xgm-about-blockquote {
     display: block;
   }
 }
-/* line 108, ../sass/pages/_safety.scss */
+/* line 117, ../sass/pages/_safety.scss */
 .c3xgm-about-page-our-commitment .c3xgm-about-test-facility .c3xgm-about-dark-blue.c3xgm-about-thin {
   font-size: 19px;
   font-size: 6vw;
@@ -1858,12 +1993,12 @@ h4.c3xgm-about-h {
   max-width: 12em;
 }
 @media (min-width: 768px) {
-  /* line 108, ../sass/pages/_safety.scss */
+  /* line 117, ../sass/pages/_safety.scss */
   .c3xgm-about-page-our-commitment .c3xgm-about-test-facility .c3xgm-about-dark-blue.c3xgm-about-thin {
     font-size: 34.5199px;
   }
 }
-/* line 114, ../sass/pages/_safety.scss */
+/* line 123, ../sass/pages/_safety.scss */
 .c3xgm-about-page-our-commitment .c3xgm-about-test-facility .c3xgm-about-gray {
   font-size: 17px;
   font-size: 5.5vw;
@@ -1872,12 +2007,12 @@ h4.c3xgm-about-h {
   margin-bottom: .27em;
 }
 @media (min-width: 768px) {
-  /* line 114, ../sass/pages/_safety.scss */
+  /* line 123, ../sass/pages/_safety.scss */
   .c3xgm-about-page-our-commitment .c3xgm-about-test-facility .c3xgm-about-gray {
     font-size: 28px;
   }
 }
-/* line 120, ../sass/pages/_safety.scss */
+/* line 129, ../sass/pages/_safety.scss */
 .c3xgm-about-page-our-commitment .c3xgm-about-test-facility .c3xgm-about-light-blue {
   padding-left: .6rem;
   position: relative;
@@ -1916,7 +2051,7 @@ h4.c3xgm-about-h {
     width: 0.2rem;
   }
 }
-/* line 124, ../sass/pages/_safety.scss */
+/* line 133, ../sass/pages/_safety.scss */
 .c3xgm-about-page-our-commitment .c3xgm-about-test-facility .c3xgm-about-light-blue span {
   font-size: 38px;
   font-size: 12vw;
@@ -1926,20 +2061,20 @@ h4.c3xgm-about-h {
   float: left;
 }
 @media (min-width: 768px) {
-  /* line 124, ../sass/pages/_safety.scss */
+  /* line 133, ../sass/pages/_safety.scss */
   .c3xgm-about-page-our-commitment .c3xgm-about-test-facility .c3xgm-about-light-blue span {
     font-size: 68.3325px;
   }
 }
-/* line 133, ../sass/pages/_safety.scss */
+/* line 142, ../sass/pages/_safety.scss */
 .c3xgm-about-page-our-commitment .c3xgm-about-safety-score {
   margin-top: 0;
 }
-/* line 135, ../sass/pages/_safety.scss */
+/* line 144, ../sass/pages/_safety.scss */
 .c3xgm-about-page-our-commitment .c3xgm-about-safety-score .c3xgm-about-block-image {
   width: 45%;
 }
-/* line 137, ../sass/pages/_safety.scss */
+/* line 146, ../sass/pages/_safety.scss */
 .c3xgm-about-page-our-commitment .c3xgm-about-safety-score .c3xgm-about-sep {
   display: block;
   float: right;
@@ -1949,18 +2084,18 @@ h4.c3xgm-about-h {
   padding-left: 2.5%;
 }
 @media (min-width: 768px) {
-  /* line 137, ../sass/pages/_safety.scss */
+  /* line 146, ../sass/pages/_safety.scss */
   .c3xgm-about-page-our-commitment .c3xgm-about-safety-score .c3xgm-about-sep {
     width: 65%;
   }
 }
-/* line 144, ../sass/pages/_safety.scss */
+/* line 153, ../sass/pages/_safety.scss */
 .c3xgm-about-page-our-commitment .c3xgm-about-safety-score .c3xgm-about-sep:first-child {
   float: left;
   padding-left: 0;
 }
 @media (min-width: 768px) {
-  /* line 144, ../sass/pages/_safety.scss */
+  /* line 153, ../sass/pages/_safety.scss */
   .c3xgm-about-page-our-commitment .c3xgm-about-safety-score .c3xgm-about-sep:first-child {
     width: 35%;
   }
@@ -1999,13 +2134,13 @@ h4.c3xgm-about-h {
     width: 0.2rem;
   }
 }
-/* line 155, ../sass/pages/_safety.scss */
+/* line 164, ../sass/pages/_safety.scss */
 .c3xgm-about-page-our-commitment .c3xgm-about-safety-score .c3xgm-about-clear,
 .c3xgm-about-page-our-commitment .c3xgm-about-safety-score span strong {
   float: left;
   clear: left;
 }
-/* line 161, ../sass/pages/_safety.scss */
+/* line 170, ../sass/pages/_safety.scss */
 .c3xgm-about-page-our-commitment .c3xgm-about-safety-score .c3xgm-about-light-blue.number,
 .c3xgm-about-page-our-commitment .c3xgm-about-safety-score .c3xgm-about-light-blue.number span {
   display: block;
@@ -2016,7 +2151,7 @@ h4.c3xgm-about-h {
   margin: 0 auto 0.1em;
 }
 @media (min-width: 768px) {
-  /* line 161, ../sass/pages/_safety.scss */
+  /* line 170, ../sass/pages/_safety.scss */
   .c3xgm-about-page-our-commitment .c3xgm-about-safety-score .c3xgm-about-light-blue.number,
   .c3xgm-about-page-our-commitment .c3xgm-about-safety-score .c3xgm-about-light-blue.number span {
     position: relative;
@@ -2028,11 +2163,11 @@ h4.c3xgm-about-h {
     line-height: 0.96em;
   }
 }
-/* line 176, ../sass/pages/_safety.scss */
+/* line 185, ../sass/pages/_safety.scss */
 .c3xgm-about-page-our-commitment .c3xgm-about-safety-score .c3xgm-about-dark-blue.c3xgm-about-thin {
   display: inline-block;
 }
-/* line 178, ../sass/pages/_safety.scss */
+/* line 187, ../sass/pages/_safety.scss */
 .c3xgm-about-page-our-commitment .c3xgm-about-safety-score .c3xgm-about-dark-blue.c3xgm-about-thin,
 .c3xgm-about-page-our-commitment .c3xgm-about-safety-score .c3xgm-about-dark-blue.c3xgm-about-thin span {
   font-size: 13.1503963470459px;
@@ -2041,13 +2176,13 @@ h4.c3xgm-about-h {
   font-size: 6vw;
 }
 @media (min-width: 768px) {
-  /* line 178, ../sass/pages/_safety.scss */
+  /* line 187, ../sass/pages/_safety.scss */
   .c3xgm-about-page-our-commitment .c3xgm-about-safety-score .c3xgm-about-dark-blue.c3xgm-about-thin,
   .c3xgm-about-page-our-commitment .c3xgm-about-safety-score .c3xgm-about-dark-blue.c3xgm-about-thin span {
     font-size: 33px;
   }
 }
-/* line 185, ../sass/pages/_safety.scss */
+/* line 194, ../sass/pages/_safety.scss */
 .c3xgm-about-page-our-commitment .c3xgm-about-safety-score .c3xgm-about-light-blue {
   line-height: 0.9em;
   font-size: 26px;
@@ -2059,25 +2194,25 @@ h4.c3xgm-about-h {
   clear: left;
 }
 @media (min-width: 768px) {
-  /* line 185, ../sass/pages/_safety.scss */
+  /* line 194, ../sass/pages/_safety.scss */
   .c3xgm-about-page-our-commitment .c3xgm-about-safety-score .c3xgm-about-light-blue {
     font-size: 40px;
     clear: none;
   }
 }
-/* line 192, ../sass/pages/_safety.scss */
+/* line 201, ../sass/pages/_safety.scss */
 .c3xgm-about-page-our-commitment .c3xgm-about-safety-score .c3xgm-about-light-blue span {
   line-height: 0.9em;
   font-size: 26px;
   font-size: 8vw;
 }
 @media (min-width: 768px) {
-  /* line 192, ../sass/pages/_safety.scss */
+  /* line 201, ../sass/pages/_safety.scss */
   .c3xgm-about-page-our-commitment .c3xgm-about-safety-score .c3xgm-about-light-blue span {
     font-size: 40px;
   }
 }
-/* line 199, ../sass/pages/_safety.scss */
+/* line 208, ../sass/pages/_safety.scss */
 .c3xgm-about-page-our-commitment .c3xgm-about-safety-score .c3xgm-about-light-gray.c3xgm-about-thin,
 .c3xgm-about-page-our-commitment .c3xgm-about-safety-score .c3xgm-about-light-gray.c3xgm-about-thin span {
   font-family: "open-sans", Arial, sans-serif;
@@ -2088,19 +2223,29 @@ h4.c3xgm-about-h {
   font-size: 4.5vw;
 }
 @media (min-width: 768px) {
-  /* line 199, ../sass/pages/_safety.scss */
+  /* line 208, ../sass/pages/_safety.scss */
   .c3xgm-about-page-our-commitment .c3xgm-about-safety-score .c3xgm-about-light-gray.c3xgm-about-thin,
   .c3xgm-about-page-our-commitment .c3xgm-about-safety-score .c3xgm-about-light-gray.c3xgm-about-thin span {
     font-size: 22.807869999999998px;
   }
 }
-/* line 213, ../sass/pages/_safety.scss */
+/* line 221, ../sass/pages/_safety.scss */
+.c3xgm-about-page-our-commitment .c3xgm-about-onstar-subscribers {
+  margin-bottom: 9em;
+}
+@media (min-width: 768px) {
+  /* line 221, ../sass/pages/_safety.scss */
+  .c3xgm-about-page-our-commitment .c3xgm-about-onstar-subscribers {
+    margin-bottom: 7em;
+  }
+}
+/* line 225, ../sass/pages/_safety.scss */
 .c3xgm-about-page-our-commitment .c3xgm-about-onstar-subscribers .c3xgm-about-block-image {
   width: 45%;
   position: relative;
 }
 @media (min-width: 768px) {
-  /* line 213, ../sass/pages/_safety.scss */
+  /* line 225, ../sass/pages/_safety.scss */
   .c3xgm-about-page-our-commitment .c3xgm-about-onstar-subscribers .c3xgm-about-block-image {
     width: 27%;
     height: 0;
@@ -2108,12 +2253,12 @@ h4.c3xgm-about-h {
     padding-bottom: 221px;
     margin-top: 9px;
   }
-  /* line 218, ../sass/pages/_safety.scss */
+  /* line 230, ../sass/pages/_safety.scss */
   .c3xgm-about-page-our-commitment .c3xgm-about-onstar-subscribers .c3xgm-about-block-image img {
     width: 85%;
   }
 }
-/* line 222, ../sass/pages/_safety.scss */
+/* line 234, ../sass/pages/_safety.scss */
 .c3xgm-about-page-our-commitment .c3xgm-about-onstar-subscribers .c3xgm-about-blockquote {
   padding-left: 1.25rem;
   position: relative;
@@ -2153,13 +2298,13 @@ h4.c3xgm-about-h {
   }
 }
 @media (min-width: 768px) {
-  /* line 222, ../sass/pages/_safety.scss */
+  /* line 234, ../sass/pages/_safety.scss */
   .c3xgm-about-page-our-commitment .c3xgm-about-onstar-subscribers .c3xgm-about-blockquote {
     width: 70%;
     float: left;
   }
 }
-/* line 230, ../sass/pages/_safety.scss */
+/* line 242, ../sass/pages/_safety.scss */
 .c3xgm-about-page-our-commitment .c3xgm-about-onstar-subscribers .c3xgm-about-dark-blue.c3xgm-about-thin.c3xgm-about-small {
   font-size: 12.9088582992554px;
   font-size: 4.03401830544375vw;
@@ -2169,12 +2314,12 @@ h4.c3xgm-about-h {
   width: auto;
 }
 @media (min-width: 768px) {
-  /* line 230, ../sass/pages/_safety.scss */
+  /* line 242, ../sass/pages/_safety.scss */
   .c3xgm-about-page-our-commitment .c3xgm-about-onstar-subscribers .c3xgm-about-dark-blue.c3xgm-about-thin.c3xgm-about-small {
     font-size: 36.519925px;
   }
 }
-/* line 237, ../sass/pages/_safety.scss */
+/* line 249, ../sass/pages/_safety.scss */
 .c3xgm-about-page-our-commitment .c3xgm-about-onstar-subscribers .c3xgm-about-light-blue.number {
   background: white;
   z-index: 10;
@@ -2187,12 +2332,12 @@ h4.c3xgm-about-h {
   line-height: 0.75em;
 }
 @media (min-width: 768px) {
-  /* line 237, ../sass/pages/_safety.scss */
+  /* line 249, ../sass/pages/_safety.scss */
   .c3xgm-about-page-our-commitment .c3xgm-about-onstar-subscribers .c3xgm-about-light-blue.number {
     font-size: 241.99315px;
   }
 }
-/* line 246, ../sass/pages/_safety.scss */
+/* line 258, ../sass/pages/_safety.scss */
 .c3xgm-about-page-our-commitment .c3xgm-about-onstar-subscribers .c3xgm-about-light-blue {
   font-size: 28.8503589630127px;
   font-size: 9.015737377031249vw;
@@ -2201,12 +2346,12 @@ h4.c3xgm-about-h {
   float: left;
 }
 @media (min-width: 768px) {
-  /* line 246, ../sass/pages/_safety.scss */
+  /* line 258, ../sass/pages/_safety.scss */
   .c3xgm-about-page-our-commitment .c3xgm-about-onstar-subscribers .c3xgm-about-light-blue {
     font-size: 81.61937499999999px;
   }
 }
-/* line 254, ../sass/pages/_safety.scss */
+/* line 266, ../sass/pages/_safety.scss */
 .c3xgm-about-page-our-commitment .c3xgm-about-onstar-subscribers .c3xgm-about-dark-blue.c3xgm-about-thin {
   display: inline-block;
   width: 8em;
@@ -2216,13 +2361,13 @@ h4.c3xgm-about-h {
   font-size: 7.51283492311125vw;
 }
 @media (min-width: 768px) {
-  /* line 254, ../sass/pages/_safety.scss */
+  /* line 266, ../sass/pages/_safety.scss */
   .c3xgm-about-page-our-commitment .c3xgm-about-onstar-subscribers .c3xgm-about-dark-blue.c3xgm-about-thin {
     font-size: 52px;
     width: auto;
   }
 }
-/* line 264, ../sass/pages/_safety.scss */
+/* line 276, ../sass/pages/_safety.scss */
 .c3xgm-about-page-our-commitment .c3xgm-about-onstar-subscribers .c3xgm-about-gray {
   display: inline-block;
   float: left;
@@ -2231,27 +2376,27 @@ h4.c3xgm-about-h {
   font-size: 5.99986839025875vw;
 }
 @media (min-width: 768px) {
-  /* line 264, ../sass/pages/_safety.scss */
+  /* line 276, ../sass/pages/_safety.scss */
   .c3xgm-about-page-our-commitment .c3xgm-about-onstar-subscribers .c3xgm-about-gray {
     font-size: 48px;
   }
 }
-/* line 273, ../sass/pages/_safety.scss */
+/* line 285, ../sass/pages/_safety.scss */
 .c3xgm-about-page-our-commitment .c3xgm-about-quality-awards {
   margin-bottom: 0;
   text-align: center;
 }
-/* line 275, ../sass/pages/_safety.scss */
+/* line 287, ../sass/pages/_safety.scss */
 .c3xgm-about-page-our-commitment .c3xgm-about-quality-awards .c3xgm-about-block-image {
   width: 40%;
   position: relative;
 }
-/* line 277, ../sass/pages/_safety.scss */
+/* line 289, ../sass/pages/_safety.scss */
 .c3xgm-about-page-our-commitment .c3xgm-about-quality-awards .c3xgm-about-block-image img {
   max-width: 225px;
 }
 @media (min-width: 768px) {
-  /* line 275, ../sass/pages/_safety.scss */
+  /* line 287, ../sass/pages/_safety.scss */
   .c3xgm-about-page-our-commitment .c3xgm-about-quality-awards .c3xgm-about-block-image {
     float: right;
     width: 25%;
@@ -2259,27 +2404,27 @@ h4.c3xgm-about-h {
     padding-bottom: 294px;
     margin-top: 9px;
   }
-  /* line 282, ../sass/pages/_safety.scss */
+  /* line 294, ../sass/pages/_safety.scss */
   .c3xgm-about-page-our-commitment .c3xgm-about-quality-awards .c3xgm-about-block-image img {
     width: 60%;
   }
 }
 @media (min-width: 906px) {
-  /* line 275, ../sass/pages/_safety.scss */
+  /* line 287, ../sass/pages/_safety.scss */
   .c3xgm-about-page-our-commitment .c3xgm-about-quality-awards .c3xgm-about-block-image {
     width: 33%;
   }
-  /* line 289, ../sass/pages/_safety.scss */
+  /* line 301, ../sass/pages/_safety.scss */
   .c3xgm-about-page-our-commitment .c3xgm-about-quality-awards .c3xgm-about-block-image img {
     left: 42%;
   }
 }
-/* line 293, ../sass/pages/_safety.scss */
+/* line 305, ../sass/pages/_safety.scss */
 .c3xgm-about-page-our-commitment .c3xgm-about-quality-awards .c3xgm-about-blockquote {
   padding-top: 1.6em;
   position: relative;
 }
-/* line 297, ../sass/pages/_safety.scss */
+/* line 309, ../sass/pages/_safety.scss */
 .c3xgm-about-page-our-commitment .c3xgm-about-quality-awards .c3xgm-about-blockquote:before {
   content: "";
   display: block;
@@ -2296,13 +2441,13 @@ h4.c3xgm-about-h {
   transform-origin: top right;
 }
 @media (min-width: 768px) {
-  /* line 297, ../sass/pages/_safety.scss */
+  /* line 309, ../sass/pages/_safety.scss */
   .c3xgm-about-page-our-commitment .c3xgm-about-quality-awards .c3xgm-about-blockquote:before {
     width: 0.2rem;
     height: 100%;
   }
 }
-/* line 308, ../sass/pages/_safety.scss */
+/* line 320, ../sass/pages/_safety.scss */
 .c3xgm-about-page-our-commitment .c3xgm-about-quality-awards .c3xgm-about-blockquote:after {
   content: "";
   display: block;
@@ -2319,26 +2464,26 @@ h4.c3xgm-about-h {
   transform-origin: top right;
 }
 @media (min-width: 768px) {
-  /* line 308, ../sass/pages/_safety.scss */
+  /* line 320, ../sass/pages/_safety.scss */
   .c3xgm-about-page-our-commitment .c3xgm-about-quality-awards .c3xgm-about-blockquote:after {
     width: 0.2em;
     height: 100%;
   }
 }
-/* line 318, ../sass/pages/_safety.scss */
+/* line 330, ../sass/pages/_safety.scss */
 .c3xgm-about-page-our-commitment .c3xgm-about-quality-awards .c3xgm-about-blockquote > span {
   display: inline-block;
   float: left;
   clear: left;
 }
 @media (min-width: 768px) {
-  /* line 293, ../sass/pages/_safety.scss */
+  /* line 305, ../sass/pages/_safety.scss */
   .c3xgm-about-page-our-commitment .c3xgm-about-quality-awards .c3xgm-about-blockquote {
     width: 75%;
     border-top: 0;
     padding-top: 0;
   }
-  /* line 325, ../sass/pages/_safety.scss */
+  /* line 337, ../sass/pages/_safety.scss */
   .c3xgm-about-page-our-commitment .c3xgm-about-quality-awards .c3xgm-about-blockquote > span {
     display: block;
     float: right;
@@ -2346,53 +2491,53 @@ h4.c3xgm-about-h {
   }
 }
 @media (min-width: 906px) {
-  /* line 293, ../sass/pages/_safety.scss */
+  /* line 305, ../sass/pages/_safety.scss */
   .c3xgm-about-page-our-commitment .c3xgm-about-quality-awards .c3xgm-about-blockquote {
     width: 66%;
   }
 }
-/* line 333, ../sass/pages/_safety.scss */
+/* line 345, ../sass/pages/_safety.scss */
 .c3xgm-about-page-our-commitment .c3xgm-about-quality-awards .c3xgm-about-dark-blue.c3xgm-about-thin {
   font-size: 20px;
   font-size: 6.25vw;
 }
 @media (min-width: 768px) {
-  /* line 333, ../sass/pages/_safety.scss */
+  /* line 345, ../sass/pages/_safety.scss */
   .c3xgm-about-page-our-commitment .c3xgm-about-quality-awards .c3xgm-about-dark-blue.c3xgm-about-thin {
     font-size: 36.519925px;
   }
 }
-/* line 338, ../sass/pages/_safety.scss */
+/* line 350, ../sass/pages/_safety.scss */
 .c3xgm-about-page-our-commitment .c3xgm-about-quality-awards .c3xgm-about-light-blue {
   font-size: 35px;
   font-size: 11vw;
   margin-bottom: .2em;
 }
 @media (min-width: 768px) {
-  /* line 338, ../sass/pages/_safety.scss */
+  /* line 350, ../sass/pages/_safety.scss */
   .c3xgm-about-page-our-commitment .c3xgm-about-quality-awards .c3xgm-about-light-blue {
     font-size: 65.249945px;
     width: 8em;
   }
 }
-/* line 347, ../sass/pages/_safety.scss */
+/* line 359, ../sass/pages/_safety.scss */
 .c3xgm-about-page-our-commitment .c3xgm-about-quality-awards .c3xgm-about-gray.c3xgm-about-thin {
   font-size: 17px;
   font-size: 5.5vw;
   line-height: 1.2em;
 }
 @media (min-width: 768px) {
-  /* line 347, ../sass/pages/_safety.scss */
+  /* line 359, ../sass/pages/_safety.scss */
   .c3xgm-about-page-our-commitment .c3xgm-about-quality-awards .c3xgm-about-gray.c3xgm-about-thin {
     font-size: 31.8885px;
   }
 }
-/* line 355, ../sass/pages/_safety.scss */
+/* line 367, ../sass/pages/_safety.scss */
 .c3xgm-about-page-our-commitment .c3xgm-about-disclaimer {
   text-align: left;
   margin-top: 1.5em;
 }
-/* line 359, ../sass/pages/_safety.scss */
+/* line 371, ../sass/pages/_safety.scss */
 .c3xgm-about-page-our-commitment .c3xgm-about-disclaimer .c3xgm-about-p,
 .c3xgm-about-page-our-commitment .c3xgm-about-disclaimer .c3xgm-about-gray.c3xgm-about-disclaimer {
   font-weight: normal;
@@ -2404,38 +2549,44 @@ h4.c3xgm-about-h {
   padding-right: 3em;
 }
 @media (min-width: 768px) {
-  /* line 359, ../sass/pages/_safety.scss */
+  /* line 371, ../sass/pages/_safety.scss */
   .c3xgm-about-page-our-commitment .c3xgm-about-disclaimer .c3xgm-about-p,
   .c3xgm-about-page-our-commitment .c3xgm-about-disclaimer .c3xgm-about-gray.c3xgm-about-disclaimer {
     font-size: 18.222px;
     max-width: none;
   }
 }
-/* line 370, ../sass/pages/_safety.scss */
+/* line 382, ../sass/pages/_safety.scss */
 .c3xgm-about-page-our-commitment .c3xgm-about-disclaimer .c3xgm-about-blockquote {
   max-width: 838px;
   float: right;
   padding-left: 4px;
 }
-/* line 374, ../sass/pages/_safety.scss */
+/* line 386, ../sass/pages/_safety.scss */
 .c3xgm-about-page-our-commitment .c3xgm-about-disclaimer .c3xgm-about-gray.c3xgm-about-disclaimer-small {
   font-weight: normal;
   text-transform: none;
   font-size: 10px;
   line-height: 1.6em;
-  max-width: 27em;
   display: block;
   margin: 0 auto;
   padding-right: 3em;
+  font-size: 10px;
+}
+@media (min-width: 480px) {
+  /* line 386, ../sass/pages/_safety.scss */
+  .c3xgm-about-page-our-commitment .c3xgm-about-disclaimer .c3xgm-about-gray.c3xgm-about-disclaimer-small {
+    font-size: 14px;
+  }
 }
 @media (min-width: 768px) {
-  /* line 374, ../sass/pages/_safety.scss */
+  /* line 386, ../sass/pages/_safety.scss */
   .c3xgm-about-page-our-commitment .c3xgm-about-disclaimer .c3xgm-about-gray.c3xgm-about-disclaimer-small {
-    font-size: 10.6295px;
+    font-size: 16px;
     max-width: none;
   }
 }
-/* line 382, ../sass/pages/_safety.scss */
+/* line 397, ../sass/pages/_safety.scss */
 .c3xgm-about-page-our-commitment .c3xgm-about-disclaimer .c3xgm-about-gray.c3xgm-about-disclaimer-small strong, .c3xgm-about-page-our-commitment .c3xgm-about-disclaimer .c3xgm-about-gray.c3xgm-about-disclaimer-small a {
   display: block;
   margin: 1em 0 .5em;
@@ -2446,13 +2597,13 @@ h4.c3xgm-about-h {
   font-family: "open-sans-condensed", 'Arial Narrow', Arial, sans-serif;
 }
 @media (min-width: 768px) {
-  /* line 382, ../sass/pages/_safety.scss */
+  /* line 397, ../sass/pages/_safety.scss */
   .c3xgm-about-page-our-commitment .c3xgm-about-disclaimer .c3xgm-about-gray.c3xgm-about-disclaimer-small strong, .c3xgm-about-page-our-commitment .c3xgm-about-disclaimer .c3xgm-about-gray.c3xgm-about-disclaimer-small a {
     font-size: 21.259px;
     max-width: none;
   }
 }
-/* line 391, ../sass/pages/_safety.scss */
+/* line 406, ../sass/pages/_safety.scss */
 .c3xgm-about-page-our-commitment .c3xgm-about-disclaimer .c3xgm-about-p.c3xgm-about-disclaimer-box {
   margin-left: 0;
   margin-right: 0;
@@ -2463,7 +2614,13 @@ h4.c3xgm-about-h {
   font-size: 10px;
   max-width: 83em;
 }
-/* line 397, ../sass/pages/_safety.scss */
+@media (min-width: 480px) {
+  /* line 406, ../sass/pages/_safety.scss */
+  .c3xgm-about-page-our-commitment .c3xgm-about-disclaimer .c3xgm-about-p.c3xgm-about-disclaimer-box {
+    font-size: 14px;
+  }
+}
+/* line 414, ../sass/pages/_safety.scss */
 .c3xgm-about-page-our-commitment .c3xgm-about-disclaimer .c3xgm-about-p.c3xgm-about-disclaimer-box strong, .c3xgm-about-page-our-commitment .c3xgm-about-disclaimer .c3xgm-about-p.c3xgm-about-disclaimer-box a {
   font-family: "open-sans", Arial, sans-serif;
   font-size: 1em;
@@ -2471,7 +2628,7 @@ h4.c3xgm-about-h {
   padding-left: 0.15em;
 }
 
-/* line 406, ../sass/pages/_safety.scss */
+/* line 423, ../sass/pages/_safety.scss */
 .c3xgm-about-disclaimer-box {
   height: 0;
   opacity: 0;
@@ -2483,99 +2640,85 @@ h4.c3xgm-about-h {
   transition: all 250ms;
 }
 
-/* line 412, ../sass/pages/_safety.scss */
+/* line 429, ../sass/pages/_safety.scss */
 .c3xgm-about-disclaimer-box.c3xgm-about-show-disclaimer {
   height: auto;
   opacity: 1;
 }
 
-/* line 423, ../sass/pages/_safety.scss */
+/* line 435, ../sass/pages/_safety.scss */
 .tik-set1 {
-  -moz-transform-origin: left bottom;
-  -ms-transform-origin: left bottom;
-  -o-transform-origin: left bottom;
   -webkit-transform-origin: left bottom;
+  -moz-transform-origin: left bottom;
+  -o-transform-origin: left bottom;
+  -ms-transform-origin: left bottom;
   transform-origin: left bottom;
-  -moz-animation: clockRotate 3s infinite linear;
   -webkit-animation: clockRotate 3s infinite linear;
+  -moz-animation: clockRotate 3s infinite linear;
   -o-animation: clockRotate 3s infinite linear;
   -ms-animation: clockRotate 3s infinite linear;
   animation: clockRotate 3s infinite linear;
 }
 
-/* line 436, ../sass/pages/_safety.scss */
+/* line 440, ../sass/pages/_safety.scss */
 .tik-set2 {
-  -moz-transform-origin: left bottom;
-  -ms-transform-origin: left bottom;
-  -o-transform-origin: left bottom;
   -webkit-transform-origin: left bottom;
+  -moz-transform-origin: left bottom;
+  -o-transform-origin: left bottom;
+  -ms-transform-origin: left bottom;
   transform-origin: left bottom;
   -webkit-animation: clockRotate 5s infinite linear;
   -moz-animation: clockRotate 5s infinite linear;
-  -ms-animation: clockRotate 5s infinite linear;
   -o-animation: clockRotate 5s infinite linear;
+  -ms-animation: clockRotate 5s infinite linear;
   animation: clockRotate 5s infinite linear;
 }
 
-/* line 449, ../sass/pages/_safety.scss */
+/* line 445, ../sass/pages/_safety.scss */
 .tik-set3 {
-  -moz-transform-origin: left bottom;
-  -ms-transform-origin: left bottom;
-  -o-transform-origin: left bottom;
   -webkit-transform-origin: left bottom;
+  -moz-transform-origin: left bottom;
+  -o-transform-origin: left bottom;
+  -ms-transform-origin: left bottom;
   transform-origin: left bottom;
   -webkit-animation: clockRotate 4s infinite linear;
   -moz-animation: clockRotate 4s infinite linear;
-  -ms-animation: clockRotate 4s infinite linear;
   -o-animation: clockRotate 4s infinite linear;
+  -ms-animation: clockRotate 4s infinite linear;
   animation: clockRotate 4s infinite linear;
 }
 
-/* line 462, ../sass/pages/_safety.scss */
+/* line 450, ../sass/pages/_safety.scss */
 .tik-set4 {
-  -moz-transform-origin: left bottom;
-  -ms-transform-origin: left bottom;
-  -o-transform-origin: left bottom;
   -webkit-transform-origin: left bottom;
+  -moz-transform-origin: left bottom;
+  -o-transform-origin: left bottom;
+  -ms-transform-origin: left bottom;
   transform-origin: left bottom;
   -webkit-animation: clockRotate 5.5s infinite linear;
   -moz-animation: clockRotate 5.5s infinite linear;
-  -ms-animation: clockRotate 5.5s infinite linear;
   -o-animation: clockRotate 5.5s infinite linear;
+  -ms-animation: clockRotate 5.5s infinite linear;
   animation: clockRotate 5.5s infinite linear;
 }
 
 /*END OF TIMEZONE CLOCK ANIMATION*/
 /*MAP ANIMATION*/
-/* line 478, ../sass/pages/_safety.scss */
+/* line 458, ../sass/pages/_safety.scss */
 .fill {
   -webkit-animation: wenfill 2s 4s linear forwards;
   -moz-animation: wenfill 2s 4s linear forwards;
-  -ms-animation: wenfill 2s 4s linear forwards;
   -o-animation: wenfill 2s 4s linear forwards;
+  -ms-animation: wenfill 2s 4s linear forwards;
   animation: wenfill 2s 4s linear forwards;
   -webkit-transition: fill-opacity 2s ease-in-out;
   -moz-transition: fill-opacity 2s ease-in-out;
+  -o-transition: fill-opacity 2s ease-in-out;
+  -ms-transition: fill-opacity 2s ease-in-out;
   transition: fill-opacity 2s ease-in-out;
 }
 
-/* line 489, ../sass/pages/_safety.scss */
-#map-marker {
-  width: 6%;
-  position: absolute;
-  left: 22%;
-  z-index: 10;
-  opacity: 0;
-  -webkit-animation: markerDrop 1s 5s linear forwards;
-  -moz-animation: markerDrop 1s 5s linear forwards;
-  -ms-animation: markerDrop 1s 5s linear forwards;
-  -o-animation: markerDrop 1s 5s linear forwards;
-  animation: markerDrop 1s 5s linear forwards;
-}
-
-/*END OF MAP ANIMATION*/
-/*NEW STYLES!!!!!!*/
-/* line 523, ../sass/pages/_safety.scss */
+/* line 463, ../sass/pages/_safety.scss */
 #safety-truck {
   opacity: 0;
   -webkit-transition: opacity 400ms;
@@ -2585,36 +2728,42 @@ h4.c3xgm-about-h {
   transition: opacity 400ms;
 }
 
-/* line 528, ../sass/pages/_safety.scss */
+/* line 468, ../sass/pages/_safety.scss */
 #truck-parent {
-  height: 270px;
+  height: 200px;
+}
+@media (min-width: 768px) {
+  /* line 468, ../sass/pages/_safety.scss */
+  #truck-parent {
+    height: 270px;
+  }
 }
 
-/* line 532, ../sass/pages/_safety.scss */
+/* line 473, ../sass/pages/_safety.scss */
 .c3xgm-about-circle-lines {
   opacity: 1;
   filter: inherit;
 }
 
-/* line 537, ../sass/pages/_safety.scss */
+/* line 478, ../sass/pages/_safety.scss */
 #line-parent {
   opacity: 0;
   height: 300px;
 }
 
-/* line 542, ../sass/pages/_safety.scss */
+/* line 483, ../sass/pages/_safety.scss */
 .carAnimation-slide {
   -webkit-animation: wenSlideInUp 3s forwards;
   animation: wenSlideInUp 3s forwards;
 }
 
-/* line 547, ../sass/pages/_safety.scss */
+/* line 488, ../sass/pages/_safety.scss */
 .carAnimation-rotate {
   -webkit-animation: wenRotate 4s forwards;
   animation: wenRotate 4s forwards;
 }
 
-/* line 552, ../sass/pages/_safety.scss */
+/* line 493, ../sass/pages/_safety.scss */
 .carAnimation-lineRotate {
   top: -12% !important;
   left: 7% !important;
@@ -2622,7 +2771,7 @@ h4.c3xgm-about-h {
   animation: wenLineRotate 3s infinite linear;
 }
 
-/* line 559, ../sass/pages/_safety.scss */
+/* line 500, ../sass/pages/_safety.scss */
 .carAnimation-lineFadeIn {
   -webkit-animation: wenLineFadeIn 2s forwards;
   animation: wenLineFadeIn 2s forwards;
@@ -2671,27 +2820,27 @@ h4.c3xgm-about-h {
 /*NEW STYLES!!!!!!!!!!!*/
 @-webkit-keyframes wenSlideInUp {
   25% {
-    opacity: 1;
-    -webkit-transform: translate(0, -25%);
-    -moz-transform: translate(0, -25%);
-    -o-transform: translate(0, -25%);
-    -ms-transform: translate(0, -25%);
-    transform: translate(0, -25%);
-  }
-  100% {
-    -webkit-transform: translate(0, -35%);
-    -moz-transform: translate(0, -35%);
-    -o-transform: translate(0, -35%);
-    -ms-transform: translate(0, -35%);
-    transform: translate(0, -35%);
+    -webkit-transform: translate(0, 5%);
+    -moz-transform: translate(0, 5%);
+    -o-transform: translate(0, 5%);
+    -ms-transform: translate(0, 5%);
+    transform: translate(0, 5%);
     opacity: 1;
   }
   100% {
-    -webkit-transform: translate(0, -30%);
-    -moz-transform: translate(0, -30%);
-    -o-transform: translate(0, -30%);
-    -ms-transform: translate(0, -30%);
-    transform: translate(0, -30%);
+    -webkit-transform: translate(0, -5%);
+    -moz-transform: translate(0, -5%);
+    -o-transform: translate(0, -5%);
+    -ms-transform: translate(0, -5%);
+    transform: translate(0, -5%);
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: translate(0, 0%);
+    -moz-transform: translate(0, 0%);
+    -o-transform: translate(0, 0%);
+    -ms-transform: translate(0, 0%);
+    transform: translate(0, 0%);
     opacity: 1;
   }
 }
@@ -2836,33 +2985,21 @@ h4.c3xgm-about-h {
   }
 }
 /*END OF MAP FILLING*/
-/*MAP MARKER DROP*/
-@-webkit-keyframes markerDrop {
-  from {
-    transform: translateY(0%);
-    opacity: 0;
-  }
-  to {
-    transform: translateY(150px);
-    opacity: 1;
-  }
-}
-/*END OF MARKER DROP*/
 @media (max-width: 628px) {
-  /* line 830, ../sass/pages/_safety.scss */
+  /* line 751, ../sass/pages/_safety.scss */
   .c3xgm-about-circle-lines {
     top: -5% !important;
     left: 6% !important;
   }
 }
 @media (max-width: 500px) {
-  /* line 837, ../sass/pages/_safety.scss */
+  /* line 758, ../sass/pages/_safety.scss */
   .c3xgm-about-circle-lines {
     top: 5% !important;
   }
 }
 @media (max-width: 450px) {
-  /* line 843, ../sass/pages/_safety.scss */
+  /* line 764, ../sass/pages/_safety.scss */
   .c3xgm-about-circle-lines {
     top: 13% !important;
   }
@@ -3106,8 +3243,15 @@ h4.c3xgm-about-h {
 /* line 94, ../sass/pages/_our-brands.scss */
 .c3xgm-about-seconds {
   max-width: 945px;
+  margin-bottom: 9em;
 }
-/* line 96, ../sass/pages/_our-brands.scss */
+@media (min-width: 768px) {
+  /* line 94, ../sass/pages/_our-brands.scss */
+  .c3xgm-about-seconds {
+    margin-bottom: 7em;
+  }
+}
+/* line 98, ../sass/pages/_our-brands.scss */
 .c3xgm-about-seconds .c3xgm-about-blockquote {
   display: inline-block;
   text-align: right;
@@ -3151,50 +3295,50 @@ h4.c3xgm-about-h {
   }
 }
 @media (min-width: 768px) {
-  /* line 96, ../sass/pages/_our-brands.scss */
+  /* line 98, ../sass/pages/_our-brands.scss */
   .c3xgm-about-seconds .c3xgm-about-blockquote {
     width: 80%;
     float: right;
     padding-right: 1.2rem;
     margin-top: 4.5%;
   }
-  /* line 106, ../sass/pages/_our-brands.scss */
+  /* line 108, ../sass/pages/_our-brands.scss */
   .c3xgm-about-seconds .c3xgm-about-blockquote span br {
     display: none;
   }
-  /* line 107, ../sass/pages/_our-brands.scss */
+  /* line 109, ../sass/pages/_our-brands.scss */
   .c3xgm-about-seconds .c3xgm-about-blockquote > span {
     float: right;
   }
 }
 @media (min-width: 1150px) {
-  /* line 96, ../sass/pages/_our-brands.scss */
+  /* line 98, ../sass/pages/_our-brands.scss */
   .c3xgm-about-seconds .c3xgm-about-blockquote {
     margin-top: 3.5%;
   }
 }
 @media (min-width: 768px) {
-  /* line 111, ../sass/pages/_our-brands.scss */
+  /* line 113, ../sass/pages/_our-brands.scss */
   .c3xgm-about-seconds .c3xgm-about-block-image {
     float: right;
     width: 20%;
   }
 }
 
-/* line 118, ../sass/pages/_our-brands.scss */
+/* line 120, ../sass/pages/_our-brands.scss */
 .c3xgm-about-dealers {
   text-align: center;
   margin-top: 6em;
   margin-bottom: 2em;
 }
 @media (min-width: 768px) {
-  /* line 118, ../sass/pages/_our-brands.scss */
+  /* line 120, ../sass/pages/_our-brands.scss */
   .c3xgm-about-dealers {
     text-align: left;
     margin-bottom: 3em;
   }
 }
-/* line 123, ../sass/pages/_our-brands.scss */
+/* line 125, ../sass/pages/_our-brands.scss */
 .c3xgm-about-dealers .c3xgm-about-blockquote {
   width: auto;
   margin: 0 auto;
@@ -3202,26 +3346,26 @@ h4.c3xgm-about-h {
   text-align: center;
 }
 @media (min-width: 768px) {
-  /* line 123, ../sass/pages/_our-brands.scss */
+  /* line 125, ../sass/pages/_our-brands.scss */
   .c3xgm-about-dealers .c3xgm-about-blockquote {
     width: 77%;
     display: block;
     text-align: right;
   }
 }
-/* line 131, ../sass/pages/_our-brands.scss */
+/* line 133, ../sass/pages/_our-brands.scss */
 .c3xgm-about-dealers .c3xgm-about-blockquote .c3xgm-about-sep {
   position: relative;
   overflow: hidden;
   display: block;
 }
 @media (min-width: 768px) {
-  /* line 134, ../sass/pages/_our-brands.scss */
+  /* line 136, ../sass/pages/_our-brands.scss */
   .c3xgm-about-dealers .c3xgm-about-blockquote .c3xgm-about-sep > span {
     display: inline-block;
   }
 }
-/* line 139, ../sass/pages/_our-brands.scss */
+/* line 141, ../sass/pages/_our-brands.scss */
 .c3xgm-about-dealers .c3xgm-about-blockquote .c3xgm-about-sep:first-child {
   width: auto;
   max-width: 6.5em;
@@ -3231,7 +3375,7 @@ h4.c3xgm-about-h {
   margin-left: auto;
   margin-right: auto;
 }
-/* line 146, ../sass/pages/_our-brands.scss */
+/* line 148, ../sass/pages/_our-brands.scss */
 .c3xgm-about-dealers .c3xgm-about-blockquote .c3xgm-about-sep:first-child:before {
   content: "";
   display: block;
@@ -3242,7 +3386,7 @@ h4.c3xgm-about-h {
   background-color: #d4d4d5;
 }
 @media (min-width: 768px) {
-  /* line 146, ../sass/pages/_our-brands.scss */
+  /* line 148, ../sass/pages/_our-brands.scss */
   .c3xgm-about-dealers .c3xgm-about-blockquote .c3xgm-about-sep:first-child:before {
     width: 0.2rem;
     height: 100%;
@@ -3251,7 +3395,7 @@ h4.c3xgm-about-h {
     right: 0;
   }
 }
-/* line 157, ../sass/pages/_our-brands.scss */
+/* line 159, ../sass/pages/_our-brands.scss */
 .c3xgm-about-dealers .c3xgm-about-blockquote .c3xgm-about-sep:first-child:after {
   content: "";
   display: block;
@@ -3262,7 +3406,7 @@ h4.c3xgm-about-h {
   background-color: #FDB12E;
 }
 @media (min-width: 768px) {
-  /* line 157, ../sass/pages/_our-brands.scss */
+  /* line 159, ../sass/pages/_our-brands.scss */
   .c3xgm-about-dealers .c3xgm-about-blockquote .c3xgm-about-sep:first-child:after {
     width: 0.2rem;
     height: 100%;
@@ -3272,7 +3416,7 @@ h4.c3xgm-about-h {
   }
 }
 @media (min-width: 768px) {
-  /* line 139, ../sass/pages/_our-brands.scss */
+  /* line 141, ../sass/pages/_our-brands.scss */
   .c3xgm-about-dealers .c3xgm-about-blockquote .c3xgm-about-sep:first-child {
     width: 75%;
     max-width: none;
@@ -3282,54 +3426,54 @@ h4.c3xgm-about-h {
     padding-right: 2rem;
   }
 }
-/* line 174, ../sass/pages/_our-brands.scss */
+/* line 176, ../sass/pages/_our-brands.scss */
 .c3xgm-about-dealers .c3xgm-about-blockquote .c3xgm-about-sep:nth-child(2) {
   text-align: center;
   width: 100%;
 }
 @media (min-width: 768px) {
-  /* line 174, ../sass/pages/_our-brands.scss */
+  /* line 176, ../sass/pages/_our-brands.scss */
   .c3xgm-about-dealers .c3xgm-about-blockquote .c3xgm-about-sep:nth-child(2) {
     width: 25%;
   }
 }
-/* line 181, ../sass/pages/_our-brands.scss */
+/* line 183, ../sass/pages/_our-brands.scss */
 .c3xgm-about-dealers .c3xgm-about-blockquote .c3xgm-about-dark-blue {
   font-size: 28.665995380401597px;
   font-size: 11.16789277353616vw;
 }
 @media (min-width: 768px) {
-  /* line 181, ../sass/pages/_our-brands.scss */
+  /* line 183, ../sass/pages/_our-brands.scss */
   .c3xgm-about-dealers .c3xgm-about-blockquote .c3xgm-about-dark-blue {
     font-size: 14.8459243774414px;
     font-size: 5.783775842113087vw;
   }
 }
 @media (min-width: 906px) {
-  /* line 181, ../sass/pages/_our-brands.scss */
+  /* line 183, ../sass/pages/_our-brands.scss */
   .c3xgm-about-dealers .c3xgm-about-blockquote .c3xgm-about-dark-blue {
     font-size: 52.36046145px;
   }
 }
-/* line 186, ../sass/pages/_our-brands.scss */
+/* line 188, ../sass/pages/_our-brands.scss */
 .c3xgm-about-dealers .c3xgm-about-blockquote .c3xgm-about-dark-blue span {
   font-size: 37.53880364971164px;
   font-size: 14.5vw;
 }
 @media (min-width: 768px) {
-  /* line 186, ../sass/pages/_our-brands.scss */
+  /* line 188, ../sass/pages/_our-brands.scss */
   .c3xgm-about-dealers .c3xgm-about-blockquote .c3xgm-about-dark-blue span {
     font-size: 19.4410915374756px;
     font-size: 7.509262175090214vw;
   }
 }
 @media (min-width: 906px) {
-  /* line 186, ../sass/pages/_our-brands.scss */
+  /* line 188, ../sass/pages/_our-brands.scss */
   .c3xgm-about-dealers .c3xgm-about-blockquote .c3xgm-about-dark-blue span {
     font-size: 67.98127095px;
   }
 }
-/* line 193, ../sass/pages/_our-brands.scss */
+/* line 195, ../sass/pages/_our-brands.scss */
 .c3xgm-about-dealers .c3xgm-about-blockquote .number {
   display: block;
   padding-top: 0.5rem;
@@ -3338,7 +3482,7 @@ h4.c3xgm-about-h {
   line-height: 0.75em;
 }
 @media (min-width: 768px) {
-  /* line 193, ../sass/pages/_our-brands.scss */
+  /* line 195, ../sass/pages/_our-brands.scss */
   .c3xgm-about-dealers .c3xgm-about-blockquote .number {
     font-size: 29.6918487548828px;
     font-size: 11.43983852257275vw;
@@ -3347,31 +3491,31 @@ h4.c3xgm-about-h {
   }
 }
 @media (min-width: 906px) {
-  /* line 193, ../sass/pages/_our-brands.scss */
+  /* line 195, ../sass/pages/_our-brands.scss */
   .c3xgm-about-dealers .c3xgm-about-blockquote .number {
     font-size: 103.564737px;
   }
 }
-/* line 204, ../sass/pages/_our-brands.scss */
+/* line 206, ../sass/pages/_our-brands.scss */
 .c3xgm-about-dealers .c3xgm-about-blockquote .c3xgm-about-gray {
   font-size: 17.06309240064622px;
   font-size: 6.731692003028844vw;
 }
 @media (min-width: 768px) {
-  /* line 204, ../sass/pages/_our-brands.scss */
+  /* line 206, ../sass/pages/_our-brands.scss */
   .c3xgm-about-dealers .c3xgm-about-blockquote .c3xgm-about-gray {
     font-size: 8.83685970306397px;
     font-size: 3.4862975830073246vw;
   }
 }
 @media (min-width: 906px) {
-  /* line 204, ../sass/pages/_our-brands.scss */
+  /* line 206, ../sass/pages/_our-brands.scss */
   .c3xgm-about-dealers .c3xgm-about-blockquote .c3xgm-about-gray {
     font-size: 31.561415099999998px;
   }
 }
 
-/* line 214, ../sass/pages/_our-brands.scss */
+/* line 216, ../sass/pages/_our-brands.scss */
 .c3xgm-about-china {
   position: relative;
   margin: 7em auto;
@@ -3379,19 +3523,19 @@ h4.c3xgm-about-h {
   padding-bottom: 18%;
 }
 @media (min-width: 768px) {
-  /* line 214, ../sass/pages/_our-brands.scss */
+  /* line 216, ../sass/pages/_our-brands.scss */
   .c3xgm-about-china {
     padding-top: 0;
     padding-bottom: 15%;
   }
 }
 @media (min-width: 906px) {
-  /* line 214, ../sass/pages/_our-brands.scss */
+  /* line 216, ../sass/pages/_our-brands.scss */
   .c3xgm-about-china {
     padding-bottom: 135px;
   }
 }
-/* line 221, ../sass/pages/_our-brands.scss */
+/* line 223, ../sass/pages/_our-brands.scss */
 .c3xgm-about-china .c3xgm-about-block-image {
   width: 46%;
   position: absolute;
@@ -3399,12 +3543,12 @@ h4.c3xgm-about-h {
   z-index: -1;
 }
 @media (min-width: 768px) {
-  /* line 225, ../sass/pages/_our-brands.scss */
+  /* line 227, ../sass/pages/_our-brands.scss */
   .c3xgm-about-china .c3xgm-about-block-image .china-flag-wrapper {
     position: relative;
     height: 450px;
   }
-  /* line 227, ../sass/pages/_our-brands.scss */
+  /* line 229, ../sass/pages/_our-brands.scss */
   .c3xgm-about-china .c3xgm-about-block-image .china-flag-wrapper img:first-child {
     height: 100%;
     width: auto;
@@ -3412,7 +3556,7 @@ h4.c3xgm-about-h {
     top: 0;
     left: 0;
   }
-  /* line 232, ../sass/pages/_our-brands.scss */
+  /* line 234, ../sass/pages/_our-brands.scss */
   .c3xgm-about-china .c3xgm-about-block-image .china-flag-wrapper img:nth-child(2) {
     width: auto;
     position: absolute;
@@ -3421,11 +3565,11 @@ h4.c3xgm-about-h {
     z-index: -2;
   }
 }
-/* line 239, ../sass/pages/_our-brands.scss */
+/* line 241, ../sass/pages/_our-brands.scss */
 .c3xgm-about-china .c3xgm-about-block-image .c3xgm-about-block-image-mobile {
   margin-top: -45%;
 }
-/* line 242, ../sass/pages/_our-brands.scss */
+/* line 244, ../sass/pages/_our-brands.scss */
 .c3xgm-about-china .c3xgm-about-blockquote {
   width: auto;
   max-width: 21em;
@@ -3436,13 +3580,13 @@ h4.c3xgm-about-h {
   margin-top: 18%;
 }
 @media (min-width: 404px) {
-  /* line 242, ../sass/pages/_our-brands.scss */
+  /* line 244, ../sass/pages/_our-brands.scss */
   .c3xgm-about-china .c3xgm-about-blockquote {
     max-width: 41em;
   }
 }
 @media (min-width: 768px) {
-  /* line 242, ../sass/pages/_our-brands.scss */
+  /* line 244, ../sass/pages/_our-brands.scss */
   .c3xgm-about-china .c3xgm-about-blockquote {
     max-width: none;
     float: left;
@@ -3450,35 +3594,35 @@ h4.c3xgm-about-h {
     margin-top: 19%;
   }
 }
-/* line 253, ../sass/pages/_our-brands.scss */
+/* line 255, ../sass/pages/_our-brands.scss */
 .c3xgm-about-china .c3xgm-about-blockquote .c3xgm-about-dark-blue.c3xgm-about-thin {
   font-family: open-sans, Arial, sans-serif;
   font-size: 11.609307290216254px;
   font-size: 3.6279085848434995vw;
   line-height: 1.2em;
 }
-/* line 257, ../sass/pages/_our-brands.scss */
+/* line 259, ../sass/pages/_our-brands.scss */
 .c3xgm-about-china .c3xgm-about-blockquote .c3xgm-about-dark-blue.c3xgm-about-thin strong {
   font-family: open-sans-condensed, 'Arial Narrow', Arial, sans-serif;
 }
 @media (min-width: 768px) {
-  /* line 253, ../sass/pages/_our-brands.scss */
+  /* line 255, ../sass/pages/_our-brands.scss */
   .c3xgm-about-china .c3xgm-about-blockquote .c3xgm-about-dark-blue.c3xgm-about-thin {
     font-size: 6.975993912267684px;
     font-size: 2.179998131625vw;
   }
-  /* line 260, ../sass/pages/_our-brands.scss */
+  /* line 262, ../sass/pages/_our-brands.scss */
   .c3xgm-about-china .c3xgm-about-blockquote .c3xgm-about-dark-blue.c3xgm-about-thin br {
     display: none;
   }
 }
 @media (min-width: 906px) {
-  /* line 253, ../sass/pages/_our-brands.scss */
+  /* line 255, ../sass/pages/_our-brands.scss */
   .c3xgm-about-china .c3xgm-about-blockquote .c3xgm-about-dark-blue.c3xgm-about-thin {
     font-size: 26px;
   }
 }
-/* line 265, ../sass/pages/_our-brands.scss */
+/* line 267, ../sass/pages/_our-brands.scss */
 .c3xgm-about-china .c3xgm-about-blockquote .c3xgm-about-dark-blue.c3xgm-about-thin.c3xgm-about-big {
   font-family: open-sans-condensed, 'Arial Narrow', Arial, sans-serif;
   max-width: 8em;
@@ -3491,7 +3635,7 @@ h4.c3xgm-about-h {
   font-size: 7.739538314332799vw;
 }
 @media (min-width: 768px) {
-  /* line 265, ../sass/pages/_our-brands.scss */
+  /* line 267, ../sass/pages/_our-brands.scss */
   .c3xgm-about-china .c3xgm-about-blockquote .c3xgm-about-dark-blue.c3xgm-about-thin.c3xgm-about-big {
     clear: none;
     margin-left: .35em;
@@ -3503,12 +3647,12 @@ h4.c3xgm-about-h {
   }
 }
 @media (min-width: 906px) {
-  /* line 265, ../sass/pages/_our-brands.scss */
+  /* line 267, ../sass/pages/_our-brands.scss */
   .c3xgm-about-china .c3xgm-about-blockquote .c3xgm-about-dark-blue.c3xgm-about-thin.c3xgm-about-big {
     font-size: 44px;
   }
 }
-/* line 279, ../sass/pages/_our-brands.scss */
+/* line 281, ../sass/pages/_our-brands.scss */
 .c3xgm-about-china .c3xgm-about-blockquote .c3xgm-about-light-blue {
   float: left;
   font-size: 66.56002860311509px;
@@ -3516,23 +3660,23 @@ h4.c3xgm-about-h {
   line-height: 0.8em;
 }
 @media (min-width: 768px) {
-  /* line 279, ../sass/pages/_our-brands.scss */
+  /* line 281, ../sass/pages/_our-brands.scss */
   .c3xgm-about-china .c3xgm-about-blockquote .c3xgm-about-light-blue {
     font-size: 39.995698513984685px;
     font-size: 12.5vw;
   }
 }
 @media (min-width: 906px) {
-  /* line 279, ../sass/pages/_our-brands.scss */
+  /* line 281, ../sass/pages/_our-brands.scss */
   .c3xgm-about-china .c3xgm-about-blockquote .c3xgm-about-light-blue {
     font-size: 116px;
   }
 }
-/* line 287, ../sass/pages/_our-brands.scss */
+/* line 289, ../sass/pages/_our-brands.scss */
 .c3xgm-about-china .c3xgm-about-blockquote .c3xgm-about-light-blue.c3xgm-about-thin {
   margin-left: -.05em;
 }
-/* line 289, ../sass/pages/_our-brands.scss */
+/* line 291, ../sass/pages/_our-brands.scss */
 .c3xgm-about-china .c3xgm-about-blockquote .c3xgm-about-gray {
   clear: left;
   max-width: 8.25em;
@@ -3541,7 +3685,7 @@ h4.c3xgm-about-h {
   line-height: 1.05em;
 }
 @media (min-width: 768px) {
-  /* line 289, ../sass/pages/_our-brands.scss */
+  /* line 291, ../sass/pages/_our-brands.scss */
   .c3xgm-about-china .c3xgm-about-blockquote .c3xgm-about-gray {
     max-width: none;
     line-height: 1.1em;
@@ -3550,66 +3694,68 @@ h4.c3xgm-about-h {
   }
 }
 @media (min-width: 906px) {
-  /* line 289, ../sass/pages/_our-brands.scss */
+  /* line 291, ../sass/pages/_our-brands.scss */
   .c3xgm-about-china .c3xgm-about-blockquote .c3xgm-about-gray {
     font-size: 58px;
   }
 }
 
-/* line 305, ../sass/pages/_our-brands.scss */
+/* line 307, ../sass/pages/_our-brands.scss */
 .c3xgm-about-cadillac-award,
 .c3xgm-about-chevrolet-award {
   position: relative;
   max-width: 906px;
 }
-/* line 310, ../sass/pages/_our-brands.scss */
+/* line 312, ../sass/pages/_our-brands.scss */
 .c3xgm-about-cadillac-award .c3xgm-about-block-image,
 .c3xgm-about-chevrolet-award .c3xgm-about-block-image {
   width: 100%;
   text-align: center;
   z-index: -1;
+  margin-bottom: 1.5em;
 }
-/* line 313, ../sass/pages/_our-brands.scss */
+/* line 316, ../sass/pages/_our-brands.scss */
 .c3xgm-about-cadillac-award .c3xgm-about-block-image img,
 .c3xgm-about-chevrolet-award .c3xgm-about-block-image img {
   width: 45%;
 }
 @media (min-width: 768px) {
-  /* line 310, ../sass/pages/_our-brands.scss */
+  /* line 312, ../sass/pages/_our-brands.scss */
   .c3xgm-about-cadillac-award .c3xgm-about-block-image,
   .c3xgm-about-chevrolet-award .c3xgm-about-block-image {
+    margin-bottom: 0;
     width: 29%;
     text-align: right;
     position: absolute;
     right: 0;
   }
-  /* line 318, ../sass/pages/_our-brands.scss */
+  /* line 322, ../sass/pages/_our-brands.scss */
   .c3xgm-about-cadillac-award .c3xgm-about-block-image img,
   .c3xgm-about-chevrolet-award .c3xgm-about-block-image img {
     width: 80%;
   }
 }
 @media (min-width: 906px) {
-  /* line 310, ../sass/pages/_our-brands.scss */
+  /* line 312, ../sass/pages/_our-brands.scss */
   .c3xgm-about-cadillac-award .c3xgm-about-block-image,
   .c3xgm-about-chevrolet-award .c3xgm-about-block-image {
     text-align: left;
   }
 }
-/* line 324, ../sass/pages/_our-brands.scss */
+/* line 328, ../sass/pages/_our-brands.scss */
 .c3xgm-about-cadillac-award .c3xgm-about-blockquote,
 .c3xgm-about-chevrolet-award .c3xgm-about-blockquote {
   float: none;
   display: inline-block;
 }
 @media (min-width: 768px) {
-  /* line 324, ../sass/pages/_our-brands.scss */
+  /* line 328, ../sass/pages/_our-brands.scss */
   .c3xgm-about-cadillac-award .c3xgm-about-blockquote,
   .c3xgm-about-chevrolet-award .c3xgm-about-blockquote {
     float: left;
   }
 }
-/* line 329, ../sass/pages/_our-brands.scss */
+/* line 333, ../sass/pages/_our-brands.scss */
 .c3xgm-about-cadillac-award .c3xgm-about-blockquote .c3xgm-about-dark-blue.c3xgm-about-thin,
 .c3xgm-about-chevrolet-award .c3xgm-about-blockquote .c3xgm-about-dark-blue.c3xgm-about-thin {
   margin-left: -0.05em;
@@ -3620,7 +3766,7 @@ h4.c3xgm-about-h {
   line-height: 1.2em;
 }
 @media (min-width: 768px) {
-  /* line 329, ../sass/pages/_our-brands.scss */
+  /* line 333, ../sass/pages/_our-brands.scss */
   .c3xgm-about-cadillac-award .c3xgm-about-blockquote .c3xgm-about-dark-blue.c3xgm-about-thin,
   .c3xgm-about-chevrolet-award .c3xgm-about-blockquote .c3xgm-about-dark-blue.c3xgm-about-thin {
     font-size: 52px;
@@ -3628,13 +3774,13 @@ h4.c3xgm-about-h {
   }
 }
 @media (min-width: 906px) {
-  /* line 329, ../sass/pages/_our-brands.scss */
+  /* line 333, ../sass/pages/_our-brands.scss */
   .c3xgm-about-cadillac-award .c3xgm-about-blockquote .c3xgm-about-dark-blue.c3xgm-about-thin,
   .c3xgm-about-chevrolet-award .c3xgm-about-blockquote .c3xgm-about-dark-blue.c3xgm-about-thin {
     font-size: 66px;
   }
 }
-/* line 335, ../sass/pages/_our-brands.scss */
+/* line 339, ../sass/pages/_our-brands.scss */
 .c3xgm-about-cadillac-award .c3xgm-about-blockquote .c3xgm-about-dark-blue.c3xgm-about-thin strong,
 .c3xgm-about-chevrolet-award .c3xgm-about-blockquote .c3xgm-about-dark-blue.c3xgm-about-thin strong {
   color: #6086C4;
@@ -3642,7 +3788,7 @@ h4.c3xgm-about-h {
   font-size: 11.5vw;
 }
 @media (min-width: 768px) {
-  /* line 335, ../sass/pages/_our-brands.scss */
+  /* line 339, ../sass/pages/_our-brands.scss */
   .c3xgm-about-cadillac-award .c3xgm-about-blockquote .c3xgm-about-dark-blue.c3xgm-about-thin strong,
   .c3xgm-about-chevrolet-award .c3xgm-about-blockquote .c3xgm-about-dark-blue.c3xgm-about-thin strong {
     font-size: 77px;
@@ -3650,13 +3796,13 @@ h4.c3xgm-about-h {
   }
 }
 @media (min-width: 906px) {
-  /* line 335, ../sass/pages/_our-brands.scss */
+  /* line 339, ../sass/pages/_our-brands.scss */
   .c3xgm-about-cadillac-award .c3xgm-about-blockquote .c3xgm-about-dark-blue.c3xgm-about-thin strong,
   .c3xgm-about-chevrolet-award .c3xgm-about-blockquote .c3xgm-about-dark-blue.c3xgm-about-thin strong {
     font-size: 81px;
   }
 }
-/* line 342, ../sass/pages/_our-brands.scss */
+/* line 346, ../sass/pages/_our-brands.scss */
 .c3xgm-about-cadillac-award .c3xgm-about-blockquote .c3xgm-about-gray,
 .c3xgm-about-chevrolet-award .c3xgm-about-blockquote .c3xgm-about-gray {
   font-size: 21px;
@@ -3665,7 +3811,7 @@ h4.c3xgm-about-h {
   line-height: 1.105em;
 }
 @media (min-width: 768px) {
-  /* line 342, ../sass/pages/_our-brands.scss */
+  /* line 346, ../sass/pages/_our-brands.scss */
   .c3xgm-about-cadillac-award .c3xgm-about-blockquote .c3xgm-about-gray,
   .c3xgm-about-chevrolet-award .c3xgm-about-blockquote .c3xgm-about-gray {
     font-size: 32px;
@@ -3676,13 +3822,13 @@ h4.c3xgm-about-h {
   }
 }
 @media (min-width: 906px) {
-  /* line 342, ../sass/pages/_our-brands.scss */
+  /* line 346, ../sass/pages/_our-brands.scss */
   .c3xgm-about-cadillac-award .c3xgm-about-blockquote .c3xgm-about-gray,
   .c3xgm-about-chevrolet-award .c3xgm-about-blockquote .c3xgm-about-gray {
     font-size: 34px;
   }
 }
-/* line 353, ../sass/pages/_our-brands.scss */
+/* line 357, ../sass/pages/_our-brands.scss */
 .c3xgm-about-cadillac-award .c3xgm-about-blockquote .c3xgm-about-gray .c3xgm-about-thin,
 .c3xgm-about-chevrolet-award .c3xgm-about-blockquote .c3xgm-about-gray .c3xgm-about-thin {
   color: #124e9c;
@@ -3693,7 +3839,7 @@ h4.c3xgm-about-h {
   clear: left;
 }
 @media (min-width: 768px) {
-  /* line 353, ../sass/pages/_our-brands.scss */
+  /* line 357, ../sass/pages/_our-brands.scss */
   .c3xgm-about-cadillac-award .c3xgm-about-blockquote .c3xgm-about-gray .c3xgm-about-thin,
   .c3xgm-about-chevrolet-award .c3xgm-about-blockquote .c3xgm-about-gray .c3xgm-about-thin {
     font-size: 17px;
@@ -3702,32 +3848,59 @@ h4.c3xgm-about-h {
   }
 }
 @media (min-width: 906px) {
-  /* line 353, ../sass/pages/_our-brands.scss */
+  /* line 357, ../sass/pages/_our-brands.scss */
   .c3xgm-about-cadillac-award .c3xgm-about-blockquote .c3xgm-about-gray .c3xgm-about-thin,
   .c3xgm-about-chevrolet-award .c3xgm-about-blockquote .c3xgm-about-gray .c3xgm-about-thin {
     font-size: 26px;
   }
 }
 
-/* line 367, ../sass/pages/_our-brands.scss */
+/* line 370, ../sass/pages/_our-brands.scss */
+.c3xgm-about-cadillac-award {
+  margin-bottom: 4em;
+  margin-top: 9em;
+}
+@media (min-width: 768px) {
+  /* line 370, ../sass/pages/_our-brands.scss */
+  .c3xgm-about-cadillac-award {
+    margin-bottom: 0;
+    margin-top: 7em;
+  }
+}
+/* line 378, ../sass/pages/_our-brands.scss */
 .c3xgm-about-cadillac-award .c3xgm-about-blockquote {
   margin-top: 1%;
 }
-/* line 369, ../sass/pages/_our-brands.scss */
+/* line 380, ../sass/pages/_our-brands.scss */
 .c3xgm-about-cadillac-award .c3xgm-about-blockquote .c3xgm-about-gray {
   margin-bottom: 1%;
   margin-top: 1%;
 }
 @media (min-width: 768px) {
-  /* line 369, ../sass/pages/_our-brands.scss */
+  /* line 380, ../sass/pages/_our-brands.scss */
   .c3xgm-about-cadillac-award .c3xgm-about-blockquote .c3xgm-about-gray {
     margin-top: 0;
   }
 }
 @media (min-width: 906px) {
-  /* line 369, ../sass/pages/_our-brands.scss */
+  /* line 380, ../sass/pages/_our-brands.scss */
   .c3xgm-about-cadillac-award .c3xgm-about-blockquote .c3xgm-about-gray {
     font-size: 41px;
+  }
+}
+
+/* line 388, ../sass/pages/_our-brands.scss */
+.c3xgm-about-block.c3xgm-about-chevrolet-award {
+  margin-top: 1em;
+}
+/* line 391, ../sass/pages/_our-brands.scss */
+.c3xgm-about-block.c3xgm-about-chevrolet-award .c3xgm-about-block-image img {
+  width: 50%;
+}
+@media (min-width: 768px) {
+  /* line 391, ../sass/pages/_our-brands.scss */
+  .c3xgm-about-block.c3xgm-about-chevrolet-award .c3xgm-about-block-image img {
+    width: 85%;
   }
 }
 
@@ -3735,7 +3908,14 @@ h4.c3xgm-about-h {
 .c3xgm-about-page-our-people {
   width: 92%;
   max-width: 906px;
-  padding-bottom: 7em;
+  /*MAP MARKER DROP*/
+  /*END OF MARKER DROP*/
+}
+@media (min-width: 768px) {
+  /* line 2, ../sass/pages/_our-people.scss */
+  .c3xgm-about-page-our-people {
+    padding-bottom: 7em;
+  }
 }
 /* line 6, ../sass/pages/_our-people.scss */
 .c3xgm-about-page-our-people .c3xgm-about-block.c3xgm-about-clearfix.c3xgm-about-employees,
@@ -3749,30 +3929,45 @@ h4.c3xgm-about-h {
 /* line 11, ../sass/pages/_our-people.scss */
 .c3xgm-about-page-our-people .c3xgm-about-block {
   margin-top: 0;
-  margin-bottom: 1.75em;
+  margin-bottom: 4em;
 }
 /* line 13, ../sass/pages/_our-people.scss */
+.c3xgm-about-page-our-people .c3xgm-about-block.c3xgm-about-timezones {
+  margin-bottom: 4em;
+}
+@media (min-width: 768px) {
+  /* line 11, ../sass/pages/_our-people.scss */
+  .c3xgm-about-page-our-people .c3xgm-about-block {
+    margin-bottom: 1.75em;
+  }
+  /* line 16, ../sass/pages/_our-people.scss */
+  .c3xgm-about-page-our-people .c3xgm-about-block.c3xgm-about-timezones {
+    margin-bottom: 1.75em;
+  }
+}
+/* line 18, ../sass/pages/_our-people.scss */
 .c3xgm-about-page-our-people .c3xgm-about-block .c3xgm-about-block-image {
   position: relative;
   text-align: center;
 }
-/* line 17, ../sass/pages/_our-people.scss */
+/* line 22, ../sass/pages/_our-people.scss */
 .c3xgm-about-page-our-people .c3xgm-about-block.c3xgm-about-employees {
-  margin: 0 auto 2em;
+  margin: 0 auto 4em;
   float: none;
   text-align: center;
 }
 @media (min-width: 768px) {
-  /* line 17, ../sass/pages/_our-people.scss */
+  /* line 22, ../sass/pages/_our-people.scss */
   .c3xgm-about-page-our-people .c3xgm-about-block.c3xgm-about-employees {
     width: 92%;
+    margin: 0 auto 2em;
   }
 }
-/* line 21, ../sass/pages/_our-people.scss */
+/* line 27, ../sass/pages/_our-people.scss */
 .c3xgm-about-page-our-people .c3xgm-about-block.c3xgm-about-employees .c3xgm-about-module-50.c3xgm-about-employee-container {
   margin-top: 0;
 }
-/* line 23, ../sass/pages/_our-people.scss */
+/* line 29, ../sass/pages/_our-people.scss */
 .c3xgm-about-page-our-people .c3xgm-about-block.c3xgm-about-employees .c3xgm-about-blockquote {
   max-width: 82%;
   text-align: left;
@@ -3781,7 +3976,7 @@ h4.c3xgm-about-h {
   margin: 0 auto;
 }
 @media (min-width: 768px) {
-  /* line 23, ../sass/pages/_our-people.scss */
+  /* line 29, ../sass/pages/_our-people.scss */
   .c3xgm-about-page-our-people .c3xgm-about-block.c3xgm-about-employees .c3xgm-about-blockquote {
     margin: 0;
     float: left;
@@ -3789,39 +3984,39 @@ h4.c3xgm-about-h {
     max-width: none;
   }
 }
-/* line 32, ../sass/pages/_our-people.scss */
+/* line 38, ../sass/pages/_our-people.scss */
 .c3xgm-about-page-our-people .c3xgm-about-block.c3xgm-about-employees .c3xgm-about-blockquote .c3xgm-about-gray {
   margin-top: 0%;
   float: left;
 }
 @media (min-width: 400px) {
-  /* line 32, ../sass/pages/_our-people.scss */
+  /* line 38, ../sass/pages/_our-people.scss */
   .c3xgm-about-page-our-people .c3xgm-about-block.c3xgm-about-employees .c3xgm-about-blockquote .c3xgm-about-gray {
     margin-top: -2.272%;
   }
 }
 @media (min-width: 768px) {
-  /* line 38, ../sass/pages/_our-people.scss */
+  /* line 44, ../sass/pages/_our-people.scss */
   .c3xgm-about-page-our-people .c3xgm-about-block.c3xgm-about-employees .c3xgm-about-blockquote .c3xgm-about-span-container {
     float: right;
     padding-right: 1rem;
     padding-left: 7px;
   }
-  /* line 40, ../sass/pages/_our-people.scss */
+  /* line 46, ../sass/pages/_our-people.scss */
   .c3xgm-about-page-our-people .c3xgm-about-block.c3xgm-about-employees .c3xgm-about-blockquote .c3xgm-about-span-container > span {
     float: left;
     clear: left;
   }
 }
-/* line 45, ../sass/pages/_our-people.scss */
+/* line 51, ../sass/pages/_our-people.scss */
 .c3xgm-about-page-our-people .c3xgm-about-block.c3xgm-about-employees .c3xgm-about-girl {
   background-image: url("../img/pages/people/girl.png");
 }
-/* line 46, ../sass/pages/_our-people.scss */
+/* line 52, ../sass/pages/_our-people.scss */
 .c3xgm-about-page-our-people .c3xgm-about-block.c3xgm-about-employees .c3xgm-about-boy {
   background-image: url("../img/pages/people/boy.png");
 }
-/* line 48, ../sass/pages/_our-people.scss */
+/* line 54, ../sass/pages/_our-people.scss */
 .c3xgm-about-page-our-people .c3xgm-about-block.c3xgm-about-employees .c3xgm-about-girl,
 .c3xgm-about-page-our-people .c3xgm-about-block.c3xgm-about-employees .c3xgm-about-boy {
   background-size: 80%;
@@ -3834,13 +4029,13 @@ h4.c3xgm-about-h {
   float: left;
 }
 @media (min-width: 522px) {
-  /* line 48, ../sass/pages/_our-people.scss */
+  /* line 54, ../sass/pages/_our-people.scss */
   .c3xgm-about-page-our-people .c3xgm-about-block.c3xgm-about-employees .c3xgm-about-girl,
   .c3xgm-about-page-our-people .c3xgm-about-block.c3xgm-about-employees .c3xgm-about-boy {
     padding-bottom: 124px;
   }
 }
-/* line 57, ../sass/pages/_our-people.scss */
+/* line 63, ../sass/pages/_our-people.scss */
 .c3xgm-about-page-our-people .c3xgm-about-block.c3xgm-about-employees .c3xgm-about-employees-img {
   height: 0;
   padding-bottom: 33.2%;
@@ -3848,12 +4043,12 @@ h4.c3xgm-about-h {
   overflow: hidden;
 }
 @media (min-width: 522px) {
-  /* line 57, ../sass/pages/_our-people.scss */
+  /* line 63, ../sass/pages/_our-people.scss */
   .c3xgm-about-page-our-people .c3xgm-about-block.c3xgm-about-employees .c3xgm-about-employees-img {
     padding-bottom: 124px;
   }
 }
-/* line 63, ../sass/pages/_our-people.scss */
+/* line 69, ../sass/pages/_our-people.scss */
 .c3xgm-about-page-our-people .c3xgm-about-block.c3xgm-about-employees .c3xgm-about-block-image {
   width: 83%;
   max-width: 425px;
@@ -3861,26 +4056,26 @@ h4.c3xgm-about-h {
   margin-left: auto;
   margin-right: auto;
 }
-/* line 67, ../sass/pages/_our-people.scss */
+/* line 73, ../sass/pages/_our-people.scss */
 .c3xgm-about-page-our-people .c3xgm-about-block.c3xgm-about-employees .c3xgm-about-block-image img {
   width: 88%;
   max-width: 82%;
 }
 @media (min-width: 768px) {
-  /* line 63, ../sass/pages/_our-people.scss */
+  /* line 69, ../sass/pages/_our-people.scss */
   .c3xgm-about-page-our-people .c3xgm-about-block.c3xgm-about-employees .c3xgm-about-block-image {
     float: left;
     width: 48%;
     margin-top: 1%;
   }
-  /* line 71, ../sass/pages/_our-people.scss */
+  /* line 77, ../sass/pages/_our-people.scss */
   .c3xgm-about-page-our-people .c3xgm-about-block.c3xgm-about-employees .c3xgm-about-block-image img {
     float: none;
     width: auto;
     max-width: none;
   }
 }
-/* line 75, ../sass/pages/_our-people.scss */
+/* line 81, ../sass/pages/_our-people.scss */
 .c3xgm-about-page-our-people .c3xgm-about-block.c3xgm-about-employees .number,
 .c3xgm-about-page-our-people .c3xgm-about-block.c3xgm-about-employees .number > span {
   line-height: 1em;
@@ -3889,7 +4084,7 @@ h4.c3xgm-about-h {
   display: inline-block;
 }
 @media (min-width: 768px) {
-  /* line 75, ../sass/pages/_our-people.scss */
+  /* line 81, ../sass/pages/_our-people.scss */
   .c3xgm-about-page-our-people .c3xgm-about-block.c3xgm-about-employees .number,
   .c3xgm-about-page-our-people .c3xgm-about-block.c3xgm-about-employees .number > span {
     font-size: 64px;
@@ -3898,26 +4093,26 @@ h4.c3xgm-about-h {
   }
 }
 @media (min-width: 906px) {
-  /* line 75, ../sass/pages/_our-people.scss */
+  /* line 81, ../sass/pages/_our-people.scss */
   .c3xgm-about-page-our-people .c3xgm-about-block.c3xgm-about-employees .number,
   .c3xgm-about-page-our-people .c3xgm-about-block.c3xgm-about-employees .number > span {
     font-size: 128px;
   }
 }
-/* line 84, ../sass/pages/_our-people.scss */
+/* line 90, ../sass/pages/_our-people.scss */
 .c3xgm-about-page-our-people .c3xgm-about-block.c3xgm-about-employees .c3xgm-about-gray {
   margin-left: 0;
   font-size: 20px;
   font-size: 6.5vw;
 }
 @media (min-width: 768px) {
-  /* line 84, ../sass/pages/_our-people.scss */
+  /* line 90, ../sass/pages/_our-people.scss */
   .c3xgm-about-page-our-people .c3xgm-about-block.c3xgm-about-employees .c3xgm-about-gray {
     margin-left: 5px;
     font-size: 34px;
   }
 }
-/* line 92, ../sass/pages/_our-people.scss */
+/* line 98, ../sass/pages/_our-people.scss */
 .c3xgm-about-page-our-people .c3xgm-about-separator {
   position: relative;
   overflow: hidden;
@@ -3928,7 +4123,7 @@ h4.c3xgm-about-h {
   padding-right: .4em;
   padding-bottom: .65em;
 }
-/* line 98, ../sass/pages/_our-people.scss */
+/* line 104, ../sass/pages/_our-people.scss */
 .c3xgm-about-page-our-people .c3xgm-about-separator .c3xgm-about-yellow-line,
 .c3xgm-about-page-our-people .c3xgm-about-separator .c3xgm-about-gray-line {
   position: absolute;
@@ -3943,30 +4138,30 @@ h4.c3xgm-about-h {
   transform-origin: center top;
 }
 @media (min-width: 768px) {
-  /* line 98, ../sass/pages/_our-people.scss */
+  /* line 104, ../sass/pages/_our-people.scss */
   .c3xgm-about-page-our-people .c3xgm-about-separator .c3xgm-about-yellow-line,
   .c3xgm-about-page-our-people .c3xgm-about-separator .c3xgm-about-gray-line {
     width: 0.2rem;
   }
 }
-/* line 108, ../sass/pages/_our-people.scss */
+/* line 114, ../sass/pages/_our-people.scss */
 .c3xgm-about-page-our-people .c3xgm-about-separator .c3xgm-about-yellow-line {
   background: #808285;
 }
-/* line 109, ../sass/pages/_our-people.scss */
+/* line 115, ../sass/pages/_our-people.scss */
 .c3xgm-about-page-our-people .c3xgm-about-separator .c3xgm-about-yellow-line {
   background: #FDB12E;
 }
-/* line 111, ../sass/pages/_our-people.scss */
+/* line 117, ../sass/pages/_our-people.scss */
 .c3xgm-about-page-our-people .c3xgm-about-separator .c3xgm-about-gray {
   line-height: .9em;
 }
-/* line 113, ../sass/pages/_our-people.scss */
+/* line 119, ../sass/pages/_our-people.scss */
 .c3xgm-about-page-our-people .c3xgm-about-separator span {
   display: block;
   clear: left;
 }
-/* line 114, ../sass/pages/_our-people.scss */
+/* line 120, ../sass/pages/_our-people.scss */
 .c3xgm-about-page-our-people .c3xgm-about-separator + .number {
   float: left;
   padding-left: .1em;
@@ -3975,7 +4170,7 @@ h4.c3xgm-about-h {
   line-height: .8em;
 }
 @media (min-width: 768px) {
-  /* line 114, ../sass/pages/_our-people.scss */
+  /* line 120, ../sass/pages/_our-people.scss */
   .c3xgm-about-page-our-people .c3xgm-about-separator + .number {
     font-size: 41px;
     font-size: 13.697113vw;
@@ -3984,70 +4179,76 @@ h4.c3xgm-about-h {
   }
 }
 @media (min-width: 830px) {
-  /* line 114, ../sass/pages/_our-people.scss */
+  /* line 120, ../sass/pages/_our-people.scss */
   .c3xgm-about-page-our-people .c3xgm-about-separator + .number {
     width: 130px;
   }
 }
 @media (min-width: 906px) {
-  /* line 114, ../sass/pages/_our-people.scss */
+  /* line 120, ../sass/pages/_our-people.scss */
   .c3xgm-about-page-our-people .c3xgm-about-separator + .number {
     font-size: 124px;
   }
 }
 @media (min-width: 768px) {
-  /* line 124, ../sass/pages/_our-people.scss */
+  /* line 130, ../sass/pages/_our-people.scss */
   .c3xgm-about-page-our-people .c3xgm-about-timezones {
     margin-bottom: 3.5em;
   }
 }
-/* line 126, ../sass/pages/_our-people.scss */
+/* line 132, ../sass/pages/_our-people.scss */
 .c3xgm-about-page-our-people .c3xgm-about-timezones .c3xgm-about-block-image {
   padding-top: 2.5%;
 }
-/* line 128, ../sass/pages/_our-people.scss */
+/* line 134, ../sass/pages/_our-people.scss */
 .c3xgm-about-page-our-people .c3xgm-about-timezones .c3xgm-about-block-image img {
   width: 76.672%;
   max-width: 333px;
 }
-/* line 134, ../sass/pages/_our-people.scss */
+@media (min-width: 768px) {
+  /* line 132, ../sass/pages/_our-people.scss */
+  .c3xgm-about-page-our-people .c3xgm-about-timezones .c3xgm-about-block-image {
+    padding-bottom: 4.5%;
+  }
+}
+/* line 142, ../sass/pages/_our-people.scss */
 .c3xgm-about-page-our-people .c3xgm-about-continents .c3xgm-about-block-image img {
   width: 88.672%;
   max-width: 385px;
 }
 @media (min-width: 768px) {
-  /* line 137, ../sass/pages/_our-people.scss */
+  /* line 145, ../sass/pages/_our-people.scss */
   .c3xgm-about-page-our-people .c3xgm-about-continents .c3xgm-about-blockquote {
     margin-left: -15%;
   }
-  /* line 138, ../sass/pages/_our-people.scss */
+  /* line 146, ../sass/pages/_our-people.scss */
   .c3xgm-about-page-our-people .c3xgm-about-continents .c3xgm-about-block-image img {
     float: left;
   }
 }
-/* line 144, ../sass/pages/_our-people.scss */
+/* line 152, ../sass/pages/_our-people.scss */
 .c3xgm-about-page-our-people .c3xgm-about-languages .c3xgm-about-blockquote {
   margin-bottom: 0;
 }
-/* line 145, ../sass/pages/_our-people.scss */
+/* line 153, ../sass/pages/_our-people.scss */
 .c3xgm-about-page-our-people .c3xgm-about-languages .c3xgm-about-block-image img {
   width: 78.110599%;
   max-width: 339px;
 }
-/* line 147, ../sass/pages/_our-people.scss */
+/* line 155, ../sass/pages/_our-people.scss */
 .c3xgm-about-page-our-people .c3xgm-about-timezones,
 .c3xgm-about-page-our-people .c3xgm-about-continents,
 .c3xgm-about-page-our-people .c3xgm-about-languages {
   text-align: center;
 }
-/* line 151, ../sass/pages/_our-people.scss */
+/* line 159, ../sass/pages/_our-people.scss */
 .c3xgm-about-page-our-people .c3xgm-about-timezones > p,
 .c3xgm-about-page-our-people .c3xgm-about-continents > p,
 .c3xgm-about-page-our-people .c3xgm-about-languages > p {
   display: inline-block;
 }
 @media (min-width: 768px) {
-  /* line 154, ../sass/pages/_our-people.scss */
+  /* line 162, ../sass/pages/_our-people.scss */
   .c3xgm-about-page-our-people .c3xgm-about-headquarters,
   .c3xgm-about-page-our-people .c3xgm-about-timezones,
   .c3xgm-about-page-our-people .c3xgm-about-continents,
@@ -4055,11 +4256,11 @@ h4.c3xgm-about-h {
     margin-left: 0;
   }
 }
-/* line 162, ../sass/pages/_our-people.scss */
+/* line 170, ../sass/pages/_our-people.scss */
 .c3xgm-about-page-our-people .c3xgm-about-headquarters {
   text-align: center;
 }
-/* line 164, ../sass/pages/_our-people.scss */
+/* line 172, ../sass/pages/_our-people.scss */
 .c3xgm-about-page-our-people .c3xgm-about-headquarters .c3xgm-about-blockquote {
   display: inline-block;
   margin-top: 1.0625em;
@@ -4067,7 +4268,7 @@ h4.c3xgm-about-h {
   width: auto;
   position: relative;
 }
-/* line 171, ../sass/pages/_our-people.scss */
+/* line 179, ../sass/pages/_our-people.scss */
 .c3xgm-about-page-our-people .c3xgm-about-headquarters .c3xgm-about-blockquote:before {
   content: "";
   display: block;
@@ -4084,12 +4285,12 @@ h4.c3xgm-about-h {
   transform-origin: top right;
 }
 @media (min-width: 768px) {
-  /* line 171, ../sass/pages/_our-people.scss */
+  /* line 179, ../sass/pages/_our-people.scss */
   .c3xgm-about-page-our-people .c3xgm-about-headquarters .c3xgm-about-blockquote:before {
     width: 0.2rem;
   }
 }
-/* line 181, ../sass/pages/_our-people.scss */
+/* line 189, ../sass/pages/_our-people.scss */
 .c3xgm-about-page-our-people .c3xgm-about-headquarters .c3xgm-about-blockquote:after {
   content: "";
   display: block;
@@ -4106,24 +4307,24 @@ h4.c3xgm-about-h {
   transform-origin: top right;
 }
 @media (min-width: 768px) {
-  /* line 181, ../sass/pages/_our-people.scss */
+  /* line 189, ../sass/pages/_our-people.scss */
   .c3xgm-about-page-our-people .c3xgm-about-headquarters .c3xgm-about-blockquote:after {
     width: 0.2rem;
   }
 }
 @media (min-width: 768px) {
-  /* line 164, ../sass/pages/_our-people.scss */
+  /* line 172, ../sass/pages/_our-people.scss */
   .c3xgm-about-page-our-people .c3xgm-about-headquarters .c3xgm-about-blockquote {
     float: left;
     margin-left: 9px;
   }
 }
-/* line 193, ../sass/pages/_our-people.scss */
+/* line 201, ../sass/pages/_our-people.scss */
 .c3xgm-about-page-our-people .c3xgm-about-headquarters .c3xgm-about-blockquote .c3xgm-about-gray {
   padding-left: .35em;
   display: block;
 }
-/* line 195, ../sass/pages/_our-people.scss */
+/* line 203, ../sass/pages/_our-people.scss */
 .c3xgm-about-page-our-people .c3xgm-about-headquarters .c3xgm-about-blockquote span > span {
   color: #6086C4;
   line-height: .86em;
@@ -4131,60 +4332,139 @@ h4.c3xgm-about-h {
   font-size: 22.604232vw;
 }
 @media (min-width: 768px) {
-  /* line 195, ../sass/pages/_our-people.scss */
+  /* line 203, ../sass/pages/_our-people.scss */
   .c3xgm-about-page-our-people .c3xgm-about-headquarters .c3xgm-about-blockquote span > span {
     font-size: 34px;
     font-size: 10.604232vw;
   }
 }
 @media (min-width: 906px) {
-  /* line 195, ../sass/pages/_our-people.scss */
+  /* line 203, ../sass/pages/_our-people.scss */
   .c3xgm-about-page-our-people .c3xgm-about-headquarters .c3xgm-about-blockquote span > span {
     font-size: 93px;
   }
 }
-/* line 201, ../sass/pages/_our-people.scss */
+/* line 209, ../sass/pages/_our-people.scss */
 .c3xgm-about-page-our-people .c3xgm-about-headquarters .c3xgm-about-blockquote > span:first-of-type {
   font-size: 25.577px;
   font-size: 8vw;
 }
 @media (min-width: 768px) {
-  /* line 201, ../sass/pages/_our-people.scss */
+  /* line 209, ../sass/pages/_our-people.scss */
   .c3xgm-about-page-our-people .c3xgm-about-headquarters .c3xgm-about-blockquote > span:first-of-type {
     font-size: 12px;
     font-size: 3.75vw;
   }
 }
 @media (min-width: 906px) {
-  /* line 201, ../sass/pages/_our-people.scss */
+  /* line 209, ../sass/pages/_our-people.scss */
   .c3xgm-about-page-our-people .c3xgm-about-headquarters .c3xgm-about-blockquote > span:first-of-type {
     font-size: 34px;
   }
 }
-/* line 207, ../sass/pages/_our-people.scss */
+/* line 215, ../sass/pages/_our-people.scss */
 .c3xgm-about-page-our-people .c3xgm-about-headquarters .c3xgm-about-blockquote > span:last-of-type {
   font-size: 27.5px;
   font-size: 8.71142095vw;
 }
 @media (min-width: 768px) {
-  /* line 207, ../sass/pages/_our-people.scss */
+  /* line 215, ../sass/pages/_our-people.scss */
   .c3xgm-about-page-our-people .c3xgm-about-headquarters .c3xgm-about-blockquote > span:last-of-type {
     font-size: 13px;
     font-size: 4.087vw;
   }
 }
 @media (min-width: 906px) {
-  /* line 207, ../sass/pages/_our-people.scss */
+  /* line 215, ../sass/pages/_our-people.scss */
   .c3xgm-about-page-our-people .c3xgm-about-headquarters .c3xgm-about-blockquote > span:last-of-type {
     font-size: 37px;
   }
 }
-
-/* line 219, ../sass/pages/_our-people.scss */
+/* line 223, ../sass/pages/_our-people.scss */
+.c3xgm-about-page-our-people #map-marker {
+  width: 6%;
+  position: absolute;
+  left: 25%;
+  top: 2%;
+  z-index: 10;
+  opacity: 0;
+}
+@media (min-width: 768px) {
+  /* line 223, ../sass/pages/_our-people.scss */
+  .c3xgm-about-page-our-people #map-marker {
+    left: 22%;
+    top: auto;
+  }
+}
+/* line 236, ../sass/pages/_our-people.scss */
+.c3xgm-about-page-our-people .element-in-view #map-marker {
+  -webkit-animation: markerDrop 0.8s 2.3s ease-out forwards;
+  -moz-animation: markerDrop 0.8s 2.3s ease-out forwards;
+  -o-animation: markerDrop 0.8s 2.3s ease-out forwards;
+  -ms-animation: markerDrop 0.8s 2.3s ease-out forwards;
+  animation: markerDrop 0.8s 2.3s ease-out forwards;
+}
+@-webkit-keyframes markerDrop {
+  0% {
+    -webkit-transform: translateY(0%);
+    opacity: 0;
+  }
+  75% {
+    -webkit-transform: translateY(150px);
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: translateY(150px);
+    opacity: 1;
+  }
+}
+@-moz-keyframes markerDrop {
+  0% {
+    -moz-transform: translateY(0%);
+    opacity: 0;
+  }
+  75% {
+    -moz-transform: translateY(150px);
+    opacity: 1;
+  }
+  100% {
+    -moz-transform: translateY(150px);
+    opacity: 1;
+  }
+}
+@-o-keyframes markerDrop {
+  0% {
+    -o-transform: translateY(0%);
+    opacity: 0;
+  }
+  75% {
+    -o-transform: translateY(150px);
+    opacity: 1;
+  }
+  100% {
+    -o-transform: translateY(150px);
+    opacity: 1;
+  }
+}
+@keyframes markerDrop {
+  0% {
+    transform: translateY(0%);
+    opacity: 0;
+  }
+  75% {
+    transform: translateY(150px);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(150px);
+    opacity: 1;
+  }
+}
+/* line 312, ../sass/pages/_our-people.scss */
 .svg .c3xgm-about-page-our-people .c3xgm-about-block.c3xgm-about-employees .c3xgm-about-girl {
   background-image: url("../img/pages/people/girl.svg");
 }
-/* line 220, ../sass/pages/_our-people.scss */
+/* line 313, ../sass/pages/_our-people.scss */
 .svg .c3xgm-about-page-our-people .c3xgm-about-block.c3xgm-about-employees .c3xgm-about-boy {
   background-image: url("../img/pages/people/boy.svg");
 }
@@ -4202,11 +4482,11 @@ h4.c3xgm-about-h {
   /* line 4, ../sass/decoratives/_five-stars.scss */
   .c3xgm-about-page-our-commitment .c3xgm-about-five-stars {
     margin-bottom: 2em;
-    margin-top: 11em;
+    margin-top: 10em;
     padding-bottom: 194px;
   }
 }
-/* line 16, ../sass/decoratives/_five-stars.scss */
+/* line 17, ../sass/decoratives/_five-stars.scss */
 .c3xgm-about-page-our-commitment .c3xgm-about-five-stars .c3xgm-about-checker {
   width: 100%;
   background-image: url("../img/decorative/landscape/checker.png");
@@ -4218,16 +4498,16 @@ h4.c3xgm-about-h {
   z-index: 5;
 }
 @media (min-width: 768px) {
-  /* line 16, ../sass/decoratives/_five-stars.scss */
+  /* line 17, ../sass/decoratives/_five-stars.scss */
   .c3xgm-about-page-our-commitment .c3xgm-about-five-stars .c3xgm-about-checker {
     padding-bottom: 30px;
   }
 }
-/* line 26, ../sass/decoratives/_five-stars.scss */
+/* line 27, ../sass/decoratives/_five-stars.scss */
 .c3xgm-about-page-our-commitment .c3xgm-about-five-stars .c3xgm-about-stars + .c3xgm-about-checker {
   bottom: 0;
 }
-/* line 28, ../sass/decoratives/_five-stars.scss */
+/* line 29, ../sass/decoratives/_five-stars.scss */
 .c3xgm-about-page-our-commitment .c3xgm-about-five-stars .c3xgm-about-grey-top {
   position: absolute;
   left: 17%;
@@ -4238,12 +4518,12 @@ h4.c3xgm-about-h {
   z-index: 1;
 }
 @media (min-width: 768px) {
-  /* line 28, ../sass/decoratives/_five-stars.scss */
+  /* line 29, ../sass/decoratives/_five-stars.scss */
   .c3xgm-about-page-our-commitment .c3xgm-about-five-stars .c3xgm-about-grey-top {
     padding-bottom: 194px;
   }
 }
-/* line 37, ../sass/decoratives/_five-stars.scss */
+/* line 38, ../sass/decoratives/_five-stars.scss */
 .c3xgm-about-page-our-commitment .c3xgm-about-five-stars .c3xgm-about-grey-top img {
   width: 135%;
   position: absolute;
@@ -4255,7 +4535,7 @@ h4.c3xgm-about-h {
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
 }
-/* line 45, ../sass/decoratives/_five-stars.scss */
+/* line 46, ../sass/decoratives/_five-stars.scss */
 .c3xgm-about-page-our-commitment .c3xgm-about-five-stars .c3xgm-about-stars {
   margin: 0 auto;
   text-align: center;
@@ -4273,18 +4553,18 @@ h4.c3xgm-about-h {
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
 }
-/* line 52, ../sass/decoratives/_five-stars.scss */
+/* line 53, ../sass/decoratives/_five-stars.scss */
 .c3xgm-about-page-our-commitment .c3xgm-about-five-stars .c3xgm-about-stars img {
   width: 100%;
 }
 @media (min-width: 768px) {
-  /* line 45, ../sass/decoratives/_five-stars.scss */
+  /* line 46, ../sass/decoratives/_five-stars.scss */
   .c3xgm-about-page-our-commitment .c3xgm-about-five-stars .c3xgm-about-stars {
     padding-bottom: 94px;
   }
 }
 
-/* line 58, ../sass/decoratives/_five-stars.scss */
+/* line 59, ../sass/decoratives/_five-stars.scss */
 div#c3xgm-about-grey-van:before {
   content: "";
   display: block;
@@ -4300,7 +4580,7 @@ div#c3xgm-about-grey-van:before {
 .c3xgm-about-page-our-brands .c3xgm-about-red-car-road {
   margin: 3em auto;
   height: 0;
-  padding-bottom: 31.602%;
+  padding-bottom: 20.5%;
 }
 @media (min-width: 768px) {
   /* line 4, ../sass/decoratives/_red-car.scss */
@@ -4322,28 +4602,30 @@ div#c3xgm-about-grey-van:before {
     margin-top: 120px;
   }
 }
-/* line 16, ../sass/decoratives/_red-car.scss */
+/* line 18, ../sass/decoratives/_red-car.scss */
 .c3xgm-about-page-our-brands .c3xgm-about-red-car-road .c3xgm-about-red-car {
   position: absolute;
+  bottom: -28%;
   left: auto;
   right: 0;
   margin: auto;
   width: 50%;
   max-width: 400px;
 }
-/* line 23, ../sass/decoratives/_red-car.scss */
+/* line 27, ../sass/decoratives/_red-car.scss */
 .c3xgm-about-page-our-brands .c3xgm-about-red-car-road .c3xgm-about-red-car img {
   width: 100%;
 }
 @media (min-width: 768px) {
-  /* line 16, ../sass/decoratives/_red-car.scss */
+  /* line 18, ../sass/decoratives/_red-car.scss */
   .c3xgm-about-page-our-brands .c3xgm-about-red-car-road .c3xgm-about-red-car {
     width: 34.042553%;
     margin-top: -3%;
+    bottom: auto;
   }
 }
 @media (min-width: 1176px) {
-  /* line 16, ../sass/decoratives/_red-car.scss */
+  /* line 18, ../sass/decoratives/_red-car.scss */
   .c3xgm-about-page-our-brands .c3xgm-about-red-car-road .c3xgm-about-red-car {
     margin-top: -44px;
   }
@@ -4365,11 +4647,11 @@ div#c3xgm-about-grey-van:before {
 @media (min-width: 768px) {
   /* line 2, ../sass/decoratives/_solar-panels.scss */
   .c3xgm-about-decorative.c3xgm-about-solar-panels {
-    padding-bottom: 550px;
-    margin-bottom: 150px;
+    padding-bottom: 580px;
+    margin-bottom: 100px;
   }
 }
-/* line 14, ../sass/decoratives/_solar-panels.scss */
+/* line 17, ../sass/decoratives/_solar-panels.scss */
 .c3xgm-about-decorative.c3xgm-about-solar-panels .c3xgm-about-grey-side {
   width: 45%;
   height: 0;
@@ -4381,7 +4663,7 @@ div#c3xgm-about-grey-van:before {
   margin: auto;
   z-index: 10;
 }
-/* line 22, ../sass/decoratives/_solar-panels.scss */
+/* line 25, ../sass/decoratives/_solar-panels.scss */
 .c3xgm-about-decorative.c3xgm-about-solar-panels .c3xgm-about-grey-side .c3xgm-about-wheel {
   background-image: url("../img/decorative/cars/wheel.png");
   -webkit-background-size: cover;
@@ -4397,52 +4679,52 @@ div#c3xgm-about-grey-van:before {
   bottom: 23%;
 }
 @media (min-width: 768px) {
-  /* line 22, ../sass/decoratives/_solar-panels.scss */
+  /* line 25, ../sass/decoratives/_solar-panels.scss */
   .c3xgm-about-decorative.c3xgm-about-solar-panels .c3xgm-about-grey-side .c3xgm-about-wheel {
     width: 13.85%;
     padding-bottom: 13.85%;
     bottom: 13%;
   }
 }
-/* line 36, ../sass/decoratives/_solar-panels.scss */
+/* line 39, ../sass/decoratives/_solar-panels.scss */
 .c3xgm-about-decorative.c3xgm-about-solar-panels .c3xgm-about-grey-side .c3xgm-about-front-wheel {
   right: 10.285714%;
 }
 @media (min-width: 768px) {
-  /* line 36, ../sass/decoratives/_solar-panels.scss */
+  /* line 39, ../sass/decoratives/_solar-panels.scss */
   .c3xgm-about-decorative.c3xgm-about-solar-panels .c3xgm-about-grey-side .c3xgm-about-front-wheel {
     right: 10.1%;
   }
 }
-/* line 41, ../sass/decoratives/_solar-panels.scss */
+/* line 44, ../sass/decoratives/_solar-panels.scss */
 .c3xgm-about-decorative.c3xgm-about-solar-panels .c3xgm-about-grey-side .c3xgm-about-back-wheel {
   left: 16%;
 }
 @media (min-width: 768px) {
-  /* line 41, ../sass/decoratives/_solar-panels.scss */
+  /* line 44, ../sass/decoratives/_solar-panels.scss */
   .c3xgm-about-decorative.c3xgm-about-solar-panels .c3xgm-about-grey-side .c3xgm-about-back-wheel {
     left: 15.7%;
   }
 }
 @media (min-width: 768px) {
-  /* line 14, ../sass/decoratives/_solar-panels.scss */
+  /* line 17, ../sass/decoratives/_solar-panels.scss */
   .c3xgm-about-decorative.c3xgm-about-solar-panels .c3xgm-about-grey-side {
     padding-bottom: 10.75%;
     width: 31%;
   }
 }
 @media (min-width: 906px) {
-  /* line 14, ../sass/decoratives/_solar-panels.scss */
+  /* line 17, ../sass/decoratives/_solar-panels.scss */
   .c3xgm-about-decorative.c3xgm-about-solar-panels .c3xgm-about-grey-side {
     padding-bottom: 96px;
     width: 276px;
   }
 }
-/* line 54, ../sass/decoratives/_solar-panels.scss */
+/* line 57, ../sass/decoratives/_solar-panels.scss */
 .c3xgm-about-decorative.c3xgm-about-solar-panels .c3xgm-about-grey-side img {
   width: 100%;
 }
-/* line 57, ../sass/decoratives/_solar-panels.scss */
+/* line 60, ../sass/decoratives/_solar-panels.scss */
 .c3xgm-about-decorative.c3xgm-about-solar-panels .c3xgm-about-tree {
   width: 66px;
   height: 61px;
@@ -4451,31 +4733,31 @@ div#c3xgm-about-grey-van:before {
   bottom: 40px;
   z-index: -5;
 }
-/* line 62, ../sass/decoratives/_solar-panels.scss */
+/* line 65, ../sass/decoratives/_solar-panels.scss */
 .c3xgm-about-decorative.c3xgm-about-solar-panels .c3xgm-about-tree img {
   width: 100%;
 }
 @media (min-width: 481px) {
-  /* line 57, ../sass/decoratives/_solar-panels.scss */
+  /* line 60, ../sass/decoratives/_solar-panels.scss */
   .c3xgm-about-decorative.c3xgm-about-solar-panels .c3xgm-about-tree {
     width: 99px;
     height: 93px;
   }
 }
 @media (min-width: 768px) {
-  /* line 57, ../sass/decoratives/_solar-panels.scss */
+  /* line 60, ../sass/decoratives/_solar-panels.scss */
   .c3xgm-about-decorative.c3xgm-about-solar-panels .c3xgm-about-tree {
     margin: auto;
   }
 }
 @media (min-width: 906px) {
-  /* line 57, ../sass/decoratives/_solar-panels.scss */
+  /* line 60, ../sass/decoratives/_solar-panels.scss */
   .c3xgm-about-decorative.c3xgm-about-solar-panels .c3xgm-about-tree {
     right: 0;
     left: -63%;
   }
 }
-/* line 68, ../sass/decoratives/_solar-panels.scss */
+/* line 71, ../sass/decoratives/_solar-panels.scss */
 .c3xgm-about-decorative.c3xgm-about-solar-panels .c3xgm-about-solar-panels {
   width: 127px;
   height: 141px;
@@ -4485,18 +4767,18 @@ div#c3xgm-about-grey-van:before {
   bottom: 0;
   z-index: -5;
 }
-/* line 73, ../sass/decoratives/_solar-panels.scss */
+/* line 76, ../sass/decoratives/_solar-panels.scss */
 .c3xgm-about-decorative.c3xgm-about-solar-panels .c3xgm-about-solar-panels img {
   width: 100%;
 }
 @media (min-width: 481px) {
-  /* line 68, ../sass/decoratives/_solar-panels.scss */
+  /* line 71, ../sass/decoratives/_solar-panels.scss */
   .c3xgm-about-decorative.c3xgm-about-solar-panels .c3xgm-about-solar-panels {
     bottom: 40px;
   }
 }
 @media (min-width: 906px) {
-  /* line 68, ../sass/decoratives/_solar-panels.scss */
+  /* line 71, ../sass/decoratives/_solar-panels.scss */
   .c3xgm-about-decorative.c3xgm-about-solar-panels .c3xgm-about-solar-panels {
     width: 193px;
     height: 213px;
@@ -4506,7 +4788,7 @@ div#c3xgm-about-grey-van:before {
     margin: auto;
   }
 }
-/* line 82, ../sass/decoratives/_solar-panels.scss */
+/* line 85, ../sass/decoratives/_solar-panels.scss */
 .c3xgm-about-decorative.c3xgm-about-solar-panels .c3xgm-about-sun {
   width: 16%;
   max-width: 140px;
@@ -4517,25 +4799,25 @@ div#c3xgm-about-grey-van:before {
   top: 40%;
   right: 5%;
 }
-/* line 88, ../sass/decoratives/_solar-panels.scss */
+/* line 91, ../sass/decoratives/_solar-panels.scss */
 .c3xgm-about-decorative.c3xgm-about-solar-panels .c3xgm-about-sun img {
   width: 100%;
 }
 @media (min-width: 400px) {
-  /* line 82, ../sass/decoratives/_solar-panels.scss */
+  /* line 85, ../sass/decoratives/_solar-panels.scss */
   .c3xgm-about-decorative.c3xgm-about-solar-panels .c3xgm-about-sun {
     padding-bottom: 100px;
   }
 }
 @media (min-width: 768px) {
-  /* line 82, ../sass/decoratives/_solar-panels.scss */
+  /* line 85, ../sass/decoratives/_solar-panels.scss */
   .c3xgm-about-decorative.c3xgm-about-solar-panels .c3xgm-about-sun {
     top: 26%;
     padding-bottom: 140px;
   }
 }
 @media (min-width: 906px) {
-  /* line 82, ../sass/decoratives/_solar-panels.scss */
+  /* line 85, ../sass/decoratives/_solar-panels.scss */
   .c3xgm-about-decorative.c3xgm-about-solar-panels .c3xgm-about-sun {
     left: 0;
     right: -50%;
@@ -4543,7 +4825,7 @@ div#c3xgm-about-grey-van:before {
   }
 }
 
-/* line 95, ../sass/decoratives/_solar-panels.scss */
+/* line 98, ../sass/decoratives/_solar-panels.scss */
 .c3xgm-about-solar-road {
   width: 100%;
   height: 0;
@@ -4658,11 +4940,15 @@ div#c3xgm-about-grey-van:before {
 }
 
 /* line 4, ../sass/modules/_tech.scss */
+.c3xgm-about-module-technology .c3xgm-about-subsection {
+  margin-bottom: 3em;
+}
+/* line 6, ../sass/modules/_tech.scss */
 .c3xgm-about-module-technology .c3xgm-about-module {
   text-align: center;
   width: 100%;
 }
-/* line 8, ../sass/modules/_tech.scss */
+/* line 10, ../sass/modules/_tech.scss */
 .c3xgm-about-module-technology .c3xgm-about-module:after {
   content: "";
   display: block;
@@ -4670,19 +4956,19 @@ div#c3xgm-about-grey-van:before {
   height: 0;
   padding-bottom: 32%;
 }
-/* line 17, ../sass/modules/_tech.scss */
+/* line 19, ../sass/modules/_tech.scss */
 .c3xgm-about-module-technology .c3xgm-about-module .c3xgm-about-blockquote-container {
   width: 94%;
   max-width: 46em;
   margin: 0 auto;
 }
-/* line 25, ../sass/modules/_tech.scss */
+/* line 27, ../sass/modules/_tech.scss */
 .c3xgm-about-module-technology .c3xgm-about-block-icon {
   position: relative;
   padding-bottom: 18%;
   height: 0;
 }
-/* line 30, ../sass/modules/_tech.scss */
+/* line 32, ../sass/modules/_tech.scss */
 .c3xgm-about-module-technology .c3xgm-about-block-icon img {
   width: 60%;
   position: absolute;
@@ -4694,26 +4980,32 @@ div#c3xgm-about-grey-van:before {
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
 }
-/* line 36, ../sass/modules/_tech.scss */
+/* line 38, ../sass/modules/_tech.scss */
 .c3xgm-about-module-technology .c3xgm-about-block-image {
+  width: 100%;
+  max-width: 906px;
   margin: 0 auto;
   position: absolute;
   bottom: 28px;
   z-index: -1;
 }
 @media (min-width: 768px) {
-  /* line 36, ../sass/modules/_tech.scss */
+  /* line 38, ../sass/modules/_tech.scss */
   .c3xgm-about-module-technology .c3xgm-about-block-image {
     margin: 0 auto;
     position: absolute;
     bottom: 28px;
   }
 }
-/* line 48, ../sass/modules/_tech.scss */
-.c3xgm-about-module-technology .c3xgm-about-block-image img {
+/* line 51, ../sass/modules/_tech.scss */
+.c3xgm-about-module-technology .c3xgm-about-block-image .c3xgm-about-wheel {
+  display: block;
+}
+/* line 52, ../sass/modules/_tech.scss */
+.c3xgm-about-module-technology .c3xgm-about-block-image .c3xgm-about-tech-car {
   width: 70%;
 }
-/* line 51, ../sass/modules/_tech.scss */
+/* line 55, ../sass/modules/_tech.scss */
 .c3xgm-about-module-technology .c3xgm-about-blockquote {
   max-width: 92%;
   margin: 1em auto 1.5em;
@@ -4721,30 +5013,30 @@ div#c3xgm-about-grey-van:before {
   text-align: left;
 }
 @media (min-width: 768px) {
-  /* line 51, ../sass/modules/_tech.scss */
+  /* line 55, ../sass/modules/_tech.scss */
   .c3xgm-about-module-technology .c3xgm-about-blockquote {
     display: block;
     margin: 0;
   }
 }
-/* line 58, ../sass/modules/_tech.scss */
+/* line 62, ../sass/modules/_tech.scss */
 .c3xgm-about-module-technology .c3xgm-about-blockquote span {
   display: block;
   float: left;
   clear: left;
 }
 @media (min-width: 768px) {
-  /* line 51, ../sass/modules/_tech.scss */
+  /* line 55, ../sass/modules/_tech.scss */
   .c3xgm-about-module-technology .c3xgm-about-blockquote {
     float: right;
   }
 }
-/* line 69, ../sass/modules/_tech.scss */
+/* line 73, ../sass/modules/_tech.scss */
 .c3xgm-about-module-technology .c3xgm-about-4g-lte .c3xgm-about-blockquote-container {
   max-width: 39em;
 }
 @media (min-width: 768px) {
-  /* line 70, ../sass/modules/_tech.scss */
+  /* line 74, ../sass/modules/_tech.scss */
   .c3xgm-about-module-technology .c3xgm-about-4g-lte .c3xgm-about-block-icon {
     width: 35%;
     float: right;
@@ -4752,161 +5044,213 @@ div#c3xgm-about-grey-van:before {
     padding-bottom: 128px;
   }
 }
-/* line 75, ../sass/modules/_tech.scss */
-.c3xgm-about-module-technology .c3xgm-about-4g-lte .c3xgm-about-block-icon img {
+/* line 79, ../sass/modules/_tech.scss */
+.c3xgm-about-module-technology .c3xgm-about-4g-lte .c3xgm-about-block-icon .c3xgm-about-tech-car {
   width: 65%;
   max-width: 157px;
 }
 @media (min-width: 768px) {
-  /* line 75, ../sass/modules/_tech.scss */
-  .c3xgm-about-module-technology .c3xgm-about-4g-lte .c3xgm-about-block-icon img {
+  /* line 79, ../sass/modules/_tech.scss */
+  .c3xgm-about-module-technology .c3xgm-about-4g-lte .c3xgm-about-block-icon .c3xgm-about-tech-car {
     width: 80%;
     max-width: none;
   }
 }
 @media (min-width: 768px) {
-  /* line 81, ../sass/modules/_tech.scss */
-  .c3xgm-about-module-technology .c3xgm-about-4g-lte .c3xgm-about-block-image img {
+  /* line 85, ../sass/modules/_tech.scss */
+  .c3xgm-about-module-technology .c3xgm-about-4g-lte .c3xgm-about-block-image .c3xgm-about-tech-car {
     width: 70%;
   }
 }
+/* line 89, ../sass/modules/_tech.scss */
+.c3xgm-about-module-technology .c3xgm-about-4g-lte .c3xgm-about-block-image .c3xgm-about-wheel {
+  width: 9%;
+  max-width: 76px;
+  max-height: 75px;
+  position: absolute;
+  bottom: 19%;
+}
+/* line 95, ../sass/modules/_tech.scss */
+.c3xgm-about-module-technology .c3xgm-about-4g-lte .c3xgm-about-block-image .c3xgm-about-wheel:first-child {
+  left: 30%;
+}
+/* line 98, ../sass/modules/_tech.scss */
+.c3xgm-about-module-technology .c3xgm-about-4g-lte .c3xgm-about-block-image .c3xgm-about-wheel:nth-child(3) {
+  right: 26.4%;
+  bottom: 19.6%;
+}
 @media (min-width: 768px) {
-  /* line 86, ../sass/modules/_tech.scss */
+  /* line 106, ../sass/modules/_tech.scss */
   .c3xgm-about-module-technology .c3xgm-about-4g-lte .c3xgm-about-blockquote {
     width: 65%;
     float: right;
   }
 }
-/* line 90, ../sass/modules/_tech.scss */
+/* line 110, ../sass/modules/_tech.scss */
 .c3xgm-about-module-technology .c3xgm-about-4g-lte .c3xgm-about-dark-blue.c3xgm-about-thin,
 .c3xgm-about-module-technology .c3xgm-about-4g-lte .c3xgm-about-light-blue {
   font-size: 27px;
   font-size: 8.5vw;
 }
 @media (min-width: 768px) {
-  /* line 90, ../sass/modules/_tech.scss */
+  /* line 110, ../sass/modules/_tech.scss */
   .c3xgm-about-module-technology .c3xgm-about-4g-lte .c3xgm-about-dark-blue.c3xgm-about-thin,
   .c3xgm-about-module-technology .c3xgm-about-4g-lte .c3xgm-about-light-blue {
     font-size: 41.7931483782966px;
   }
 }
-/* line 96, ../sass/modules/_tech.scss */
+/* line 116, ../sass/modules/_tech.scss */
 .c3xgm-about-module-technology .c3xgm-about-4g-lte .c3xgm-about-gray {
   font-size: 12px;
   font-size: 3.961772vw;
   line-height: 1.075em;
 }
 @media (min-width: 768px) {
-  /* line 96, ../sass/modules/_tech.scss */
+  /* line 116, ../sass/modules/_tech.scss */
   .c3xgm-about-module-technology .c3xgm-about-4g-lte .c3xgm-about-gray {
     font-size: 20px;
   }
 }
-/* line 102, ../sass/modules/_tech.scss */
+/* line 122, ../sass/modules/_tech.scss */
 .c3xgm-about-module-technology .c3xgm-about-4g-lte .c3xgm-about-light-blue {
   margin: .05em 0;
 }
-/* line 108, ../sass/modules/_tech.scss */
+/* line 128, ../sass/modules/_tech.scss */
 .c3xgm-about-module-technology .c3xgm-about-concept-car .c3xgm-about-blockquote-container {
   max-width: 43em;
 }
-/* line 110, ../sass/modules/_tech.scss */
+/* line 130, ../sass/modules/_tech.scss */
 .c3xgm-about-module-technology .c3xgm-about-concept-car .c3xgm-about-blockquote {
   width: auto;
 }
 @media (min-width: 768px) {
-  /* line 110, ../sass/modules/_tech.scss */
+  /* line 130, ../sass/modules/_tech.scss */
   .c3xgm-about-module-technology .c3xgm-about-concept-car .c3xgm-about-blockquote {
     width: 75%;
     float: right;
   }
 }
-/* line 114, ../sass/modules/_tech.scss */
+/* line 134, ../sass/modules/_tech.scss */
 .c3xgm-about-module-technology .c3xgm-about-concept-car .c3xgm-about-block-icon {
   padding-bottom: 27%;
 }
-/* line 116, ../sass/modules/_tech.scss */
+/* line 136, ../sass/modules/_tech.scss */
 .c3xgm-about-module-technology .c3xgm-about-concept-car .c3xgm-about-block-icon img {
   width: 30%;
   max-width: 113px;
 }
 @media (min-width: 768px) {
-  /* line 114, ../sass/modules/_tech.scss */
+  /* line 134, ../sass/modules/_tech.scss */
   .c3xgm-about-module-technology .c3xgm-about-concept-car .c3xgm-about-block-icon {
     width: 25%;
     height: 0;
     float: right;
     padding-bottom: 223px;
   }
-  /* line 120, ../sass/modules/_tech.scss */
+  /* line 140, ../sass/modules/_tech.scss */
   .c3xgm-about-module-technology .c3xgm-about-concept-car .c3xgm-about-block-icon img {
     width: 75%;
     max-width: none;
   }
 }
-/* line 127, ../sass/modules/_tech.scss */
+/* line 145, ../sass/modules/_tech.scss */
+.c3xgm-about-module-technology .c3xgm-about-concept-car .c3xgm-about-block-image .c3xgm-about-wheel {
+  width: 9%;
+  max-width: 79px;
+  max-height: 78px;
+  position: absolute;
+  bottom: 20.5%;
+}
+/* line 153, ../sass/modules/_tech.scss */
+.c3xgm-about-module-technology .c3xgm-about-concept-car .c3xgm-about-block-image .c3xgm-about-wheel:first-child {
+  bottom: 20.7%;
+  left: 30.1%;
+}
+/* line 158, ../sass/modules/_tech.scss */
+.c3xgm-about-module-technology .c3xgm-about-concept-car .c3xgm-about-block-image .c3xgm-about-wheel:nth-child(3) {
+  right: 28.2%;
+  bottom: 20.2%;
+}
+/* line 168, ../sass/modules/_tech.scss */
 .c3xgm-about-module-technology .c3xgm-about-safety .c3xgm-about-block-icon {
   padding-bottom: 25%;
 }
 @media (min-width: 768px) {
-  /* line 127, ../sass/modules/_tech.scss */
+  /* line 168, ../sass/modules/_tech.scss */
   .c3xgm-about-module-technology .c3xgm-about-safety .c3xgm-about-block-icon {
     width: 20%;
     height: 0;
     padding-bottom: 212px;
   }
 }
-/* line 134, ../sass/modules/_tech.scss */
+/* line 175, ../sass/modules/_tech.scss */
 .c3xgm-about-module-technology .c3xgm-about-safety .c3xgm-about-block-icon img {
   width: 40%;
 }
 @media (min-width: 768px) {
-  /* line 134, ../sass/modules/_tech.scss */
+  /* line 175, ../sass/modules/_tech.scss */
   .c3xgm-about-module-technology .c3xgm-about-safety .c3xgm-about-block-icon img {
     width: 80%;
   }
 }
 @media (min-width: 768px) {
-  /* line 141, ../sass/modules/_tech.scss */
+  /* line 182, ../sass/modules/_tech.scss */
   .c3xgm-about-module-technology .c3xgm-about-safety .c3xgm-about-blockquote {
     width: 80%;
   }
 }
-/* line 145, ../sass/modules/_tech.scss */
+/* line 186, ../sass/modules/_tech.scss */
 .c3xgm-about-module-technology .c3xgm-about-safety .c3xgm-about-light-blue {
   max-width: 6em;
 }
 @media (min-width: 768px) {
-  /* line 145, ../sass/modules/_tech.scss */
+  /* line 186, ../sass/modules/_tech.scss */
   .c3xgm-about-module-technology .c3xgm-about-safety .c3xgm-about-light-blue {
     max-width: none;
   }
 }
-/* line 150, ../sass/modules/_tech.scss */
+/* line 191, ../sass/modules/_tech.scss */
 .c3xgm-about-module-technology .c3xgm-about-safety .c3xgm-about-gray.c3xgm-about-thin.c3xgm-about-small {
   font-size: 12px;
   font-size: 4vw;
 }
 @media (min-width: 768px) {
-  /* line 150, ../sass/modules/_tech.scss */
+  /* line 191, ../sass/modules/_tech.scss */
   .c3xgm-about-module-technology .c3xgm-about-safety .c3xgm-about-gray.c3xgm-about-thin.c3xgm-about-small {
     font-size: 21px;
   }
 }
-/* line 159, ../sass/modules/_tech.scss */
+/* line 198, ../sass/modules/_tech.scss */
+.c3xgm-about-module-technology .c3xgm-about-safety .c3xgm-about-block-image .c3xgm-about-wheel {
+  width: 9%;
+  max-width: 76px;
+  max-height: 75px;
+  position: absolute;
+  bottom: 19%;
+}
+/* line 204, ../sass/modules/_tech.scss */
+.c3xgm-about-module-technology .c3xgm-about-safety .c3xgm-about-block-image .c3xgm-about-wheel:first-child {
+  left: 30%;
+}
+/* line 207, ../sass/modules/_tech.scss */
+.c3xgm-about-module-technology .c3xgm-about-safety .c3xgm-about-block-image .c3xgm-about-wheel:nth-child(3) {
+  right: 26.4%;
+  bottom: 19.6%;
+}
+/* line 219, ../sass/modules/_tech.scss */
 .c3xgm-about-module-technology .c3xgm-about-safety .c3xgm-about-dark-blue.c3xgm-about-thin,
 .c3xgm-about-module-technology .c3xgm-about-concept-car .c3xgm-about-dark-blue.c3xgm-about-thin {
   font-size: 17px;
   font-size: 5vw;
 }
 @media (min-width: 768px) {
-  /* line 159, ../sass/modules/_tech.scss */
+  /* line 219, ../sass/modules/_tech.scss */
   .c3xgm-about-module-technology .c3xgm-about-safety .c3xgm-about-dark-blue.c3xgm-about-thin,
   .c3xgm-about-module-technology .c3xgm-about-concept-car .c3xgm-about-dark-blue.c3xgm-about-thin {
     font-size: 28px;
   }
 }
-/* line 163, ../sass/modules/_tech.scss */
+/* line 223, ../sass/modules/_tech.scss */
 .c3xgm-about-module-technology .c3xgm-about-safety .c3xgm-about-light-blue,
 .c3xgm-about-module-technology .c3xgm-about-concept-car .c3xgm-about-light-blue {
   margin: .05em 0;
@@ -4915,13 +5259,13 @@ div#c3xgm-about-grey-van:before {
   line-height: 0.9em;
 }
 @media (min-width: 768px) {
-  /* line 163, ../sass/modules/_tech.scss */
+  /* line 223, ../sass/modules/_tech.scss */
   .c3xgm-about-module-technology .c3xgm-about-safety .c3xgm-about-light-blue,
   .c3xgm-about-module-technology .c3xgm-about-concept-car .c3xgm-about-light-blue {
     font-size: 60px;
   }
 }
-/* line 169, ../sass/modules/_tech.scss */
+/* line 229, ../sass/modules/_tech.scss */
 .c3xgm-about-module-technology .c3xgm-about-safety .c3xgm-about-gray,
 .c3xgm-about-module-technology .c3xgm-about-concept-car .c3xgm-about-gray {
   font-size: 20px;
@@ -4929,45 +5273,58 @@ div#c3xgm-about-grey-van:before {
   line-height: 1.075em;
 }
 @media (min-width: 768px) {
-  /* line 169, ../sass/modules/_tech.scss */
+  /* line 229, ../sass/modules/_tech.scss */
   .c3xgm-about-module-technology .c3xgm-about-safety .c3xgm-about-gray,
   .c3xgm-about-module-technology .c3xgm-about-concept-car .c3xgm-about-gray {
     font-size: 35px;
   }
 }
-/* line 178, ../sass/modules/_tech.scss */
+/* line 238, ../sass/modules/_tech.scss */
 .c3xgm-about-module-technology .c3xgm-about-module-nav {
   text-align: center;
 }
-/* line 180, ../sass/modules/_tech.scss */
+/* line 240, ../sass/modules/_tech.scss */
 .c3xgm-about-module-technology .c3xgm-about-module-nav li {
   display: inline-block;
   margin: 0;
   padding: 0;
 }
-/* line 181, ../sass/modules/_tech.scss */
+/* line 241, ../sass/modules/_tech.scss */
 .c3xgm-about-module-technology .c3xgm-about-module-nav .c3xgm-about-module-nav-bullet {
   display: block;
-  width: 8px;
-  height: 8px;
-  margin: 8px;
   background-color: #808285;
+  width: 11px;
+  height: 11px;
+  margin: 10px;
 }
-/* line 187, ../sass/modules/_tech.scss */
+@media (min-width: 768px) {
+  /* line 241, ../sass/modules/_tech.scss */
+  .c3xgm-about-module-technology .c3xgm-about-module-nav .c3xgm-about-module-nav-bullet {
+    width: 9px;
+    height: 9px;
+    margin: 8px;
+  }
+}
+/* line 252, ../sass/modules/_tech.scss */
 .c3xgm-about-module-technology .c3xgm-about-module-nav .c3xgm-about-module-nav-bullet-active {
   background-color: #FDB12E;
 }
 
 /* line 3, ../sass/modules/_foundation.scss */
+.c3xgm-about-page-our-global-community .c3xgm-about-subsection {
+  margin-top: 9em;
+}
+
+/* line 6, ../sass/modules/_foundation.scss */
 .c3xgm-about-module-foundation .c3xgm-about-module-20,
 .c3xgm-about-module-foundation .c3xgm-about-module-80 {
   margin-top: 0;
 }
-/* line 6, ../sass/modules/_foundation.scss */
+/* line 9, ../sass/modules/_foundation.scss */
 .c3xgm-about-module-foundation .c3xgm-about-module-20 {
   overflow: hidden;
 }
-/* line 8, ../sass/modules/_foundation.scss */
+/* line 11, ../sass/modules/_foundation.scss */
 .c3xgm-about-module-foundation .c3xgm-about-gray-line,
 .c3xgm-about-module-foundation .c3xgm-about-yellow-line {
   bottom: 0;
@@ -4981,7 +5338,7 @@ div#c3xgm-about-grey-van:before {
   transform-origin: top right;
 }
 @media (min-width: 768px) {
-  /* line 8, ../sass/modules/_foundation.scss */
+  /* line 11, ../sass/modules/_foundation.scss */
   .c3xgm-about-module-foundation .c3xgm-about-gray-line,
   .c3xgm-about-module-foundation .c3xgm-about-yellow-line {
     top: 0;
@@ -4991,19 +5348,19 @@ div#c3xgm-about-grey-van:before {
     height: 100%;
   }
 }
-/* line 23, ../sass/modules/_foundation.scss */
+/* line 26, ../sass/modules/_foundation.scss */
 .c3xgm-about-module-foundation .c3xgm-about-module {
   width: 85%;
   margin: 0 auto;
 }
 @media (min-width: 768px) {
-  /* line 23, ../sass/modules/_foundation.scss */
+  /* line 26, ../sass/modules/_foundation.scss */
   .c3xgm-about-module-foundation .c3xgm-about-module {
     width: 100%;
     padding-left: 3em;
   }
 }
-/* line 30, ../sass/modules/_foundation.scss */
+/* line 33, ../sass/modules/_foundation.scss */
 .c3xgm-about-module-foundation .c3xgm-about-module h3.c3xgm-about-h {
   padding: 0 0 0 7px;
   font-size: 24px;
@@ -5011,56 +5368,56 @@ div#c3xgm-about-grey-van:before {
   padding-top: 1.25rem;
 }
 @media (min-width: 768px) {
-  /* line 30, ../sass/modules/_foundation.scss */
+  /* line 33, ../sass/modules/_foundation.scss */
   .c3xgm-about-module-foundation .c3xgm-about-module h3.c3xgm-about-h {
     font-size: 41px;
     padding-top: 0;
   }
 }
-/* line 40, ../sass/modules/_foundation.scss */
+/* line 43, ../sass/modules/_foundation.scss */
 .c3xgm-about-module-foundation .c3xgm-about-module p.c3xgm-about-p {
   max-width: 24em;
   margin-bottom: 3em;
 }
 @media (min-width: 768px) {
-  /* line 40, ../sass/modules/_foundation.scss */
+  /* line 43, ../sass/modules/_foundation.scss */
   .c3xgm-about-module-foundation .c3xgm-about-module p.c3xgm-about-p {
     margin-top: 1.5rem;
   }
 }
-/* line 50, ../sass/modules/_foundation.scss */
+/* line 53, ../sass/modules/_foundation.scss */
 .c3xgm-about-module-foundation .c3xgm-about-block-icon {
   width: 30%;
   padding-bottom: 30%;
   height: 0;
   float: left;
 }
-/* line 55, ../sass/modules/_foundation.scss */
+/* line 58, ../sass/modules/_foundation.scss */
 .c3xgm-about-module-foundation .c3xgm-about-block-icon img {
   width: 100%;
   height: auto;
 }
 @media (min-width: 400px) {
-  /* line 50, ../sass/modules/_foundation.scss */
+  /* line 53, ../sass/modules/_foundation.scss */
   .c3xgm-about-module-foundation .c3xgm-about-block-icon {
     width: 100px;
     padding-bottom: 100px;
   }
 }
-/* line 62, ../sass/modules/_foundation.scss */
+/* line 65, ../sass/modules/_foundation.scss */
 .c3xgm-about-module-foundation .c3xgm-about-module-foundation-logo-container {
   width: 85%;
   margin: 0 auto;
   padding-bottom: 1rem;
 }
 @media (min-width: 768px) {
-  /* line 62, ../sass/modules/_foundation.scss */
+  /* line 65, ../sass/modules/_foundation.scss */
   .c3xgm-about-module-foundation .c3xgm-about-module-foundation-logo-container {
     width: 100%;
     border-bottom: 0;
   }
 }
-/* line 74, ../sass/modules/_foundation.scss */
+/* line 77, ../sass/modules/_foundation.scss */
 .c3xgm-about-module-foundation .c3xgm-about-module-foundation-logo-container li {
   width: 50%;
   height: 0;
@@ -5070,13 +5427,13 @@ div#c3xgm-about-grey-van:before {
   text-align: center;
 }
 @media (min-width: 768px) {
-  /* line 74, ../sass/modules/_foundation.scss */
+  /* line 77, ../sass/modules/_foundation.scss */
   .c3xgm-about-module-foundation .c3xgm-about-module-foundation-logo-container li {
     width: 100%;
     padding-bottom: 50%;
   }
 }
-/* line 84, ../sass/modules/_foundation.scss */
+/* line 87, ../sass/modules/_foundation.scss */
 .c3xgm-about-module-foundation .c3xgm-about-module-foundation-logo-container li img {
   width: 50%;
   max-width: 130px;
@@ -5090,16 +5447,16 @@ div#c3xgm-about-grey-van:before {
   transform: translate(-50%, -50%);
 }
 @media (min-width: 768px) {
-  /* line 84, ../sass/modules/_foundation.scss */
+  /* line 87, ../sass/modules/_foundation.scss */
   .c3xgm-about-module-foundation .c3xgm-about-module-foundation-logo-container li img {
     width: 40%;
   }
 }
-/* line 90, ../sass/modules/_foundation.scss */
+/* line 93, ../sass/modules/_foundation.scss */
 .c3xgm-about-module-foundation .c3xgm-about-module-foundation-logo-container li:first-child {
   width: 100%;
 }
-/* line 92, ../sass/modules/_foundation.scss */
+/* line 95, ../sass/modules/_foundation.scss */
 .c3xgm-about-module-foundation .c3xgm-about-module-foundation-logo-container li:first-child img {
   width: 75%;
   max-width: none;
@@ -5309,8 +5666,37 @@ div#c3xgm-about-grey-van:before {
   float: left;
   text-align: center;
   width: 33.3333334%;
+  position: relative;
+  height: 0;
+  padding-bottom: 17%;
 }
-/* line 127, ../sass/modules/_car.scss */
+/* line 131, ../sass/modules/_car.scss */
+.c3xgm-about-module-car .c3xgm-about-module-car-logo-container li a {
+  line-height: 0;
+  display: block;
+}
+/* line 133, ../sass/modules/_car.scss */
+.c3xgm-about-module-car .c3xgm-about-module-car-logo-container li a img {
+  display: block;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+@media (min-width: 768px) {
+  /* line 131, ../sass/modules/_car.scss */
+  .c3xgm-about-module-car .c3xgm-about-module-car-logo-container li a {
+    line-height: 44px;
+  }
+  /* line 141, ../sass/modules/_car.scss */
+  .c3xgm-about-module-car .c3xgm-about-module-car-logo-container li a img {
+    position: static;
+    display: inline;
+  }
+}
+/* line 148, ../sass/modules/_car.scss */
 .c3xgm-about-module-car .c3xgm-about-module-car-logo-container li:nth-of-type(3n+1) {
   clear: left;
 }
@@ -5319,58 +5705,60 @@ div#c3xgm-about-grey-van:before {
   .c3xgm-about-module-car .c3xgm-about-module-car-logo-container li {
     width: 50%;
     margin: 1em auto;
+    height: auto;
+    padding-bottom: 0;
   }
-  /* line 130, ../sass/modules/_car.scss */
+  /* line 153, ../sass/modules/_car.scss */
   .c3xgm-about-module-car .c3xgm-about-module-car-logo-container li:nth-of-type(3n+1) {
     clear: none;
   }
-  /* line 131, ../sass/modules/_car.scss */
+  /* line 154, ../sass/modules/_car.scss */
   .c3xgm-about-module-car .c3xgm-about-module-car-logo-container li:nth-of-type(odd) {
     clear: left;
   }
 }
-/* line 134, ../sass/modules/_car.scss */
+/* line 157, ../sass/modules/_car.scss */
 .c3xgm-about-module-car .c3xgm-about-module-car-logo-container li .c3xgm-about-module-car-logo {
   line-height: 44px;
 }
-/* line 136, ../sass/modules/_car.scss */
+/* line 159, ../sass/modules/_car.scss */
 .c3xgm-about-module-car .c3xgm-about-module-car-logo-container li .c3xgm-about-module-car-logo img {
   width: 60%;
   vertical-align: middle;
 }
 @media (min-width: 768px) {
-  /* line 134, ../sass/modules/_car.scss */
+  /* line 157, ../sass/modules/_car.scss */
   .c3xgm-about-module-car .c3xgm-about-module-car-logo-container li .c3xgm-about-module-car-logo {
     line-height: 60px;
     display: block;
     text-align: left;
   }
-  /* line 139, ../sass/modules/_car.scss */
+  /* line 162, ../sass/modules/_car.scss */
   .c3xgm-about-module-car .c3xgm-about-module-car-logo-container li .c3xgm-about-module-car-logo img {
     padding-left: 7px;
   }
 }
-/* line 146, ../sass/modules/_car.scss */
+/* line 169, ../sass/modules/_car.scss */
 .c3xgm-about-module-car .c3xgm-about-chevrolet .c3xgm-about-block-image {
   padding-bottom: 37.56906077348066%;
 }
-/* line 147, ../sass/modules/_car.scss */
+/* line 170, ../sass/modules/_car.scss */
 .c3xgm-about-module-car .c3xgm-about-buick .c3xgm-about-block-image {
   padding-bottom: 39.95584988962472%;
 }
-/* line 148, ../sass/modules/_car.scss */
+/* line 171, ../sass/modules/_car.scss */
 .c3xgm-about-module-car .c3xgm-about-gmc .c3xgm-about-block-image {
   padding-bottom: 34.65783664459161%;
 }
-/* line 149, ../sass/modules/_car.scss */
+/* line 172, ../sass/modules/_car.scss */
 .c3xgm-about-module-car .c3xgm-about-opel .c3xgm-about-block-image {
   padding-bottom: 42.721854304635764%;
 }
-/* line 150, ../sass/modules/_car.scss */
+/* line 173, ../sass/modules/_car.scss */
 .c3xgm-about-module-car .c3xgm-about-cadillac .c3xgm-about-block-image {
   padding-bottom: 27.593818984547464%;
 }
-/* line 151, ../sass/modules/_car.scss */
+/* line 174, ../sass/modules/_car.scss */
 .c3xgm-about-module-car .c3xgm-about-vauxhall .c3xgm-about-block-image {
   padding-bottom: 42.60485651214128%;
 }
@@ -5655,7 +6043,7 @@ div#c3xgm-about-grey-van:before {
 .c3xgm-about-module-technology {
   overflow: hidden;
 }
-/* line 7, ../sass/modules/_tech-module-click-animations.scss */
+/* line 10, ../sass/modules/_tech-module-click-animations.scss */
 .c3xgm-about-module-technology .hide-module {
   opacity: 0;
   position: absolute;
@@ -5668,13 +6056,16 @@ div#c3xgm-about-grey-van:before {
   -ms-transform: translate3d(-100%, 0, 0);
   transform: translate3d(-100%, 0, 0);
 }
-/* line 20, ../sass/modules/_tech-module-click-animations.scss */
+/* line 23, ../sass/modules/_tech-module-click-animations.scss */
 .c3xgm-about-module-technology .show-module-slide-in {
   visibility: visible;
   opacity: 1;
   z-index: 1000;
   right: 0;
   left: auto;
+}
+/* line 30, ../sass/modules/_tech-module-click-animations.scss */
+.c3xgm-about-module-technology .show-module-slide-in .c3xgm-about-block-image {
   -webkit-transform: translate3d(0, 0, 1000);
   -moz-transform: translate3d(0, 0, 1000);
   -o-transform: translate3d(0, 0, 1000);
@@ -5690,44 +6081,230 @@ div#c3xgm-about-grey-van:before {
   -o-animation: techSlideIn;
   -ms-animation: techSlideIn;
   animation: techSlideIn;
-  -webkit-animation-duration: 600ms;
-  -moz-animation-duration: 600ms;
-  -o-animation-duration: 600ms;
-  -ms-animation-duration: 600ms;
-  animation-duration: 600ms;
+  -webkit-animation-duration: 900ms;
+  -moz-animation-duration: 900ms;
+  -o-animation-duration: 900ms;
+  -ms-animation-duration: 900ms;
+  animation-duration: 900ms;
   -webkit-animation-fill-mode: both;
   -moz-animation-fill-mode: both;
   -o-animation-fill-mode: both;
   -ms-animation-fill-mode: both;
   animation-fill-mode: both;
 }
-/* line 54, ../sass/modules/_tech-module-click-animations.scss */
-.c3xgm-about-module-technology .hide-module-slide-out {
-  opacity: 0;
-  position: absolute;
-  top: 0;
-  right: -100%;
-  left: auto;
-  -webkit-transform: translate3d(100%, 0, 0);
-  -moz-transform: translate3d(100%, 0, 0);
-  -o-transform: translate3d(100%, 0, 0);
-  -ms-transform: translate3d(100%, 0, 0);
-  transform: translate3d(100%, 0, 0);
-  -webkit-transition: all 600ms;
-  -moz-transition: all 600ms;
-  -o-transition: all 600ms;
-  -ms-transition: all 600ms;
-  transition: all 600ms;
-  -webkit-animation: techSlideOut;
-  -moz-animation: techSlideOut;
-  -o-animation: techSlideOut;
-  -ms-animation: techSlideOut;
-  animation: techSlideOut;
+/* line 38, ../sass/modules/_tech-module-click-animations.scss */
+.c3xgm-about-module-technology .show-module-slide-in .c3xgm-about-block-image .c3xgm-about-wheel {
+  -webkit-animation-fill-mode: both;
+  -moz-animation-fill-mode: both;
+  -o-animation-fill-mode: both;
+  -ms-animation-fill-mode: both;
+  animation-fill-mode: both;
+  -webkit-animation-name: spin;
+  -moz-animation-name: spin;
+  -o-animation-name: spin;
+  -ms-animation-name: spin;
+  animation-name: spin;
+  -webkit-animation-delay: 0;
+  -moz-animation-delay: 0;
+  -o-animation-delay: 0;
+  -ms-animation-delay: 0;
+  animation-delay: 0;
+  -webkit-animation-duration: 1200ms;
+  -moz-animation-duration: 1200ms;
+  -o-animation-duration: 1200ms;
+  -ms-animation-duration: 1200ms;
+  animation-duration: 1200ms;
+}
+/* line 46, ../sass/modules/_tech-module-click-animations.scss */
+.c3xgm-about-module-technology .show-module-slide-in .c3xgm-about-h,
+.c3xgm-about-module-technology .show-module-slide-in .c3xgm-about-block-icon {
+  -webkit-animation-delay: 0ms;
+  -moz-animation-delay: 0ms;
+  -o-animation-delay: 0ms;
+  -ms-animation-delay: 0ms;
+  animation-delay: 0ms;
+  -webkit-animation: fadeIn;
+  -moz-animation: fadeIn;
+  -o-animation: fadeIn;
+  -ms-animation: fadeIn;
+  animation: fadeIn;
   -webkit-animation-duration: 600ms;
   -moz-animation-duration: 600ms;
   -o-animation-duration: 600ms;
   -ms-animation-duration: 600ms;
   animation-duration: 600ms;
+  -webkit-animation-delay: 900ms;
+  -moz-animation-delay: 900ms;
+  -o-animation-delay: 900ms;
+  -ms-animation-delay: 900ms;
+  animation-delay: 900ms;
+  -webkit-animation-fill-mode: both;
+  -moz-animation-fill-mode: both;
+  -o-animation-fill-mode: both;
+  -ms-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+/* line 56, ../sass/modules/_tech-module-click-animations.scss */
+.c3xgm-about-module-technology .show-module-slide-in .c3xgm-about-blockquote {
+  overflow: hidden;
+}
+/* line 59, ../sass/modules/_tech-module-click-animations.scss */
+.c3xgm-about-module-technology .show-module-slide-in .c3xgm-about-blockquote > span:first-child {
+  -webkit-animation-fill-mode: both;
+  -moz-animation-fill-mode: both;
+  -o-animation-fill-mode: both;
+  -ms-animation-fill-mode: both;
+  animation-fill-mode: both;
+  -webkit-animation-name: fadeInRightMega;
+  -moz-animation-name: fadeInRightMega;
+  -o-animation-name: fadeInRightMega;
+  -ms-animation-name: fadeInRightMega;
+  animation-name: fadeInRightMega;
+  -webkit-animation-delay: 900ms;
+  -moz-animation-delay: 900ms;
+  -o-animation-delay: 900ms;
+  -ms-animation-delay: 900ms;
+  animation-delay: 900ms;
+  -webkit-animation-duration: 600ms;
+  -moz-animation-duration: 600ms;
+  -o-animation-duration: 600ms;
+  -ms-animation-duration: 600ms;
+  animation-duration: 600ms;
+}
+/* line 65, ../sass/modules/_tech-module-click-animations.scss */
+.c3xgm-about-module-technology .show-module-slide-in .c3xgm-about-blockquote > span:nth-child(2) {
+  -webkit-animation-fill-mode: both;
+  -moz-animation-fill-mode: both;
+  -o-animation-fill-mode: both;
+  -ms-animation-fill-mode: both;
+  animation-fill-mode: both;
+  -webkit-animation-name: fadeInRightMega;
+  -moz-animation-name: fadeInRightMega;
+  -o-animation-name: fadeInRightMega;
+  -ms-animation-name: fadeInRightMega;
+  animation-name: fadeInRightMega;
+  -webkit-animation-delay: 1150ms;
+  -moz-animation-delay: 1150ms;
+  -o-animation-delay: 1150ms;
+  -ms-animation-delay: 1150ms;
+  animation-delay: 1150ms;
+  -webkit-animation-duration: 600ms;
+  -moz-animation-duration: 600ms;
+  -o-animation-duration: 600ms;
+  -ms-animation-duration: 600ms;
+  animation-duration: 600ms;
+}
+/* line 71, ../sass/modules/_tech-module-click-animations.scss */
+.c3xgm-about-module-technology .show-module-slide-in .c3xgm-about-blockquote > span:nth-child(3) {
+  -webkit-animation-fill-mode: both;
+  -moz-animation-fill-mode: both;
+  -o-animation-fill-mode: both;
+  -ms-animation-fill-mode: both;
+  animation-fill-mode: both;
+  -webkit-animation-name: fadeIn;
+  -moz-animation-name: fadeIn;
+  -o-animation-name: fadeIn;
+  -ms-animation-name: fadeIn;
+  animation-name: fadeIn;
+  -webkit-animation-delay: 1400ms;
+  -moz-animation-delay: 1400ms;
+  -o-animation-delay: 1400ms;
+  -ms-animation-delay: 1400ms;
+  animation-delay: 1400ms;
+  -webkit-animation-duration: 600ms;
+  -moz-animation-duration: 600ms;
+  -o-animation-duration: 600ms;
+  -ms-animation-duration: 600ms;
+  animation-duration: 600ms;
+}
+/* line 77, ../sass/modules/_tech-module-click-animations.scss */
+.c3xgm-about-module-technology .show-module-slide-in .c3xgm-about-blockquote > span:nth-child(4) {
+  -webkit-animation-fill-mode: both;
+  -moz-animation-fill-mode: both;
+  -o-animation-fill-mode: both;
+  -ms-animation-fill-mode: both;
+  animation-fill-mode: both;
+  -webkit-animation-name: fadeIn;
+  -moz-animation-name: fadeIn;
+  -o-animation-name: fadeIn;
+  -ms-animation-name: fadeIn;
+  animation-name: fadeIn;
+  -webkit-animation-delay: 1650ms;
+  -moz-animation-delay: 1650ms;
+  -o-animation-delay: 1650ms;
+  -ms-animation-delay: 1650ms;
+  animation-delay: 1650ms;
+  -webkit-animation-duration: 600ms;
+  -moz-animation-duration: 600ms;
+  -o-animation-duration: 600ms;
+  -ms-animation-duration: 600ms;
+  animation-duration: 600ms;
+}
+/* line 88, ../sass/modules/_tech-module-click-animations.scss */
+.c3xgm-about-module-technology .hide-module-slide-out .c3xgm-about-block-image {
+  -webkit-animation: techSlideOut;
+  -moz-animation: techSlideOut;
+  -o-animation: techSlideOut;
+  -ms-animation: techSlideOut;
+  animation: techSlideOut;
+  -webkit-animation-duration: 400ms;
+  -moz-animation-duration: 400ms;
+  -o-animation-duration: 400ms;
+  -ms-animation-duration: 400ms;
+  animation-duration: 400ms;
+  -webkit-animation-fill-mode: both;
+  -moz-animation-fill-mode: both;
+  -o-animation-fill-mode: both;
+  -ms-animation-fill-mode: both;
+  animation-fill-mode: both;
+  -webkit-animation-delay: 0ms;
+  -moz-animation-delay: 0ms;
+  -o-animation-delay: 0ms;
+  -ms-animation-delay: 0ms;
+  animation-delay: 0ms;
+}
+/* line 94, ../sass/modules/_tech-module-click-animations.scss */
+.c3xgm-about-module-technology .hide-module-slide-out .c3xgm-about-block-image .c3xgm-about-wheel {
+  -webkit-animation-fill-mode: both;
+  -moz-animation-fill-mode: both;
+  -o-animation-fill-mode: both;
+  -ms-animation-fill-mode: both;
+  animation-fill-mode: both;
+  -webkit-animation-name: spin;
+  -moz-animation-name: spin;
+  -o-animation-name: spin;
+  -ms-animation-name: spin;
+  animation-name: spin;
+  -webkit-animation-delay: 0;
+  -moz-animation-delay: 0;
+  -o-animation-delay: 0;
+  -ms-animation-delay: 0;
+  animation-delay: 0;
+  -webkit-animation-duration: 1200ms;
+  -moz-animation-duration: 1200ms;
+  -o-animation-duration: 1200ms;
+  -ms-animation-duration: 1200ms;
+  animation-duration: 1200ms;
+}
+/* line 102, ../sass/modules/_tech-module-click-animations.scss */
+.c3xgm-about-module-technology .hide-module-slide-out .c3xgm-about-blockquote,
+.c3xgm-about-module-technology .hide-module-slide-out .c3xgm-about-h,
+.c3xgm-about-module-technology .hide-module-slide-out .c3xgm-about-block-icon {
+  -webkit-animation-delay: 0ms;
+  -moz-animation-delay: 0ms;
+  -o-animation-delay: 0ms;
+  -ms-animation-delay: 0ms;
+  animation-delay: 0ms;
+  -webkit-animation: fadeOut;
+  -moz-animation: fadeOut;
+  -o-animation: fadeOut;
+  -ms-animation: fadeOut;
+  animation: fadeOut;
+  -webkit-animation-duration: 300ms;
+  -moz-animation-duration: 300ms;
+  -o-animation-duration: 300ms;
+  -ms-animation-duration: 300ms;
+  animation-duration: 300ms;
   -webkit-animation-fill-mode: both;
   -moz-animation-fill-mode: both;
   -o-animation-fill-mode: both;
@@ -5857,6 +6434,30 @@ div#c3xgm-about-grey-van:before {
   100% {
     opacity: 1;
     -o-transform: translate3d(0, 0, 0);
+  }
+}
+@-moz-keyframes spin {
+  from {
+    -moz-transform: rotate(0deg);
+  }
+  to {
+    -moz-transform: rotate(360deg);
+  }
+}
+@-webkit-keyframes spin {
+  from {
+    -webkit-transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+  }
+}
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
   }
 }
 @-webkit-keyframes bounceUpDown {
@@ -12430,11 +13031,6 @@ body {
   -o-animation-fill-mode: both;
   -ms-animation-fill-mode: both;
   animation-fill-mode: both;
-  -webkit-animation-name: fadeInRightMega;
-  -moz-animation-name: fadeInRightMega;
-  -o-animation-name: fadeInRightMega;
-  -ms-animation-name: fadeInRightMega;
-  animation-name: fadeInRightMega;
   -webkit-animation-delay: 400ms;
   -moz-animation-delay: 400ms;
   -o-animation-delay: 400ms;
@@ -12445,8 +13041,25 @@ body {
   -o-animation-duration: 800ms;
   -ms-animation-duration: 800ms;
   animation-duration: 800ms;
+  -webkit-animation-name: fadeIn;
+  -moz-animation-name: fadeIn;
+  -o-animation-name: fadeIn;
+  -ms-animation-name: fadeIn;
+  animation-name: fadeIn;
 }
-/* line 22, ../sass/animations/_page-in-view.scss */
+@media (min-width: 768px) {
+  /* line 15, ../sass/animations/_page-in-view.scss */
+  #c3xgm-about-page-our-brands.c3xgm-about-page.c3xgm-about-page-in-view .c3xgm-about-section-header h1.c3xgm-about-h,
+  #c3xgm-about-page-our-company.c3xgm-about-page.c3xgm-about-page-in-view .c3xgm-about-section-header h1.c3xgm-about-h,
+  #c3xgm-about-page-our-people.c3xgm-about-page.c3xgm-about-page-in-view .c3xgm-about-section-header h1.c3xgm-about-h {
+    -webkit-animation-name: fadeInRightMega;
+    -moz-animation-name: fadeInRightMega;
+    -o-animation-name: fadeInRightMega;
+    -ms-animation-name: fadeInRightMega;
+    animation-name: fadeInRightMega;
+  }
+}
+/* line 27, ../sass/animations/_page-in-view.scss */
 #c3xgm-about-page-our-brands.c3xgm-about-page.c3xgm-about-page-in-view .c3xgm-about-section-header hr,
 #c3xgm-about-page-our-company.c3xgm-about-page.c3xgm-about-page-in-view .c3xgm-about-section-header hr,
 #c3xgm-about-page-our-people.c3xgm-about-page.c3xgm-about-page-in-view .c3xgm-about-section-header hr {
@@ -12471,7 +13084,7 @@ body {
   -ms-animation-duration: 800ms;
   animation-duration: 800ms;
 }
-/* line 31, ../sass/animations/_page-in-view.scss */
+/* line 36, ../sass/animations/_page-in-view.scss */
 #c3xgm-about-page-our-brands.c3xgm-about-page.c3xgm-about-page-in-view .c3xgm-about-header-p,
 #c3xgm-about-page-our-company.c3xgm-about-page.c3xgm-about-page-in-view .c3xgm-about-header-p,
 #c3xgm-about-page-our-people.c3xgm-about-page.c3xgm-about-page-in-view .c3xgm-about-header-p {
@@ -12496,7 +13109,7 @@ body {
   -ms-animation-duration: 800ms;
   animation-duration: 800ms;
 }
-/* line 40, ../sass/animations/_page-in-view.scss */
+/* line 45, ../sass/animations/_page-in-view.scss */
 #c3xgm-about-page-our-brands.c3xgm-about-page.c3xgm-about-page-in-view .c3xgm-about-block-earn .c3xgm-about-yellow-bar-left-wrapper,
 #c3xgm-about-page-our-company.c3xgm-about-page.c3xgm-about-page-in-view .c3xgm-about-block-earn .c3xgm-about-yellow-bar-left-wrapper,
 #c3xgm-about-page-our-people.c3xgm-about-page.c3xgm-about-page-in-view .c3xgm-about-block-earn .c3xgm-about-yellow-bar-left-wrapper {
@@ -12504,7 +13117,7 @@ body {
   position: relative;
   border-left: none;
 }
-/* line 47, ../sass/animations/_page-in-view.scss */
+/* line 52, ../sass/animations/_page-in-view.scss */
 #c3xgm-about-page-our-brands.c3xgm-about-page.c3xgm-about-page-in-view .c3xgm-about-block-earn .c3xgm-about-yellow-bar-left-wrapper .c3xgm-about-block-tagline:before,
 #c3xgm-about-page-our-company.c3xgm-about-page.c3xgm-about-page-in-view .c3xgm-about-block-earn .c3xgm-about-yellow-bar-left-wrapper .c3xgm-about-block-tagline:before,
 #c3xgm-about-page-our-people.c3xgm-about-page.c3xgm-about-page-in-view .c3xgm-about-block-earn .c3xgm-about-yellow-bar-left-wrapper .c3xgm-about-block-tagline:before {
@@ -12545,14 +13158,14 @@ body {
   animation-duration: 600ms;
 }
 @media (min-width: 768px) {
-  /* line 47, ../sass/animations/_page-in-view.scss */
+  /* line 52, ../sass/animations/_page-in-view.scss */
   #c3xgm-about-page-our-brands.c3xgm-about-page.c3xgm-about-page-in-view .c3xgm-about-block-earn .c3xgm-about-yellow-bar-left-wrapper .c3xgm-about-block-tagline:before,
   #c3xgm-about-page-our-company.c3xgm-about-page.c3xgm-about-page-in-view .c3xgm-about-block-earn .c3xgm-about-yellow-bar-left-wrapper .c3xgm-about-block-tagline:before,
   #c3xgm-about-page-our-people.c3xgm-about-page.c3xgm-about-page-in-view .c3xgm-about-block-earn .c3xgm-about-yellow-bar-left-wrapper .c3xgm-about-block-tagline:before {
     width: 0.2rem;
   }
 }
-/* line 62, ../sass/animations/_page-in-view.scss */
+/* line 67, ../sass/animations/_page-in-view.scss */
 #c3xgm-about-page-our-brands.c3xgm-about-page.c3xgm-about-page-in-view .c3xgm-about-block-earn .c3xgm-about-yellow-bar-left-wrapper .c3xgm-about-block-tagline:after,
 #c3xgm-about-page-our-company.c3xgm-about-page.c3xgm-about-page-in-view .c3xgm-about-block-earn .c3xgm-about-yellow-bar-left-wrapper .c3xgm-about-block-tagline:after,
 #c3xgm-about-page-our-people.c3xgm-about-page.c3xgm-about-page-in-view .c3xgm-about-block-earn .c3xgm-about-yellow-bar-left-wrapper .c3xgm-about-block-tagline:after {
@@ -12593,14 +13206,14 @@ body {
   animation-duration: 600ms;
 }
 @media (min-width: 768px) {
-  /* line 62, ../sass/animations/_page-in-view.scss */
+  /* line 67, ../sass/animations/_page-in-view.scss */
   #c3xgm-about-page-our-brands.c3xgm-about-page.c3xgm-about-page-in-view .c3xgm-about-block-earn .c3xgm-about-yellow-bar-left-wrapper .c3xgm-about-block-tagline:after,
   #c3xgm-about-page-our-company.c3xgm-about-page.c3xgm-about-page-in-view .c3xgm-about-block-earn .c3xgm-about-yellow-bar-left-wrapper .c3xgm-about-block-tagline:after,
   #c3xgm-about-page-our-people.c3xgm-about-page.c3xgm-about-page-in-view .c3xgm-about-block-earn .c3xgm-about-yellow-bar-left-wrapper .c3xgm-about-block-tagline:after {
     width: 0.2rem;
   }
 }
-/* line 77, ../sass/animations/_page-in-view.scss */
+/* line 82, ../sass/animations/_page-in-view.scss */
 #c3xgm-about-page-our-brands.c3xgm-about-page.c3xgm-about-page-in-view .c3xgm-about-block-earn .c3xgm-about-yellow-bar-left-wrapper .c3xgm-about-block-tagline > span:first-child,
 #c3xgm-about-page-our-company.c3xgm-about-page.c3xgm-about-page-in-view .c3xgm-about-block-earn .c3xgm-about-yellow-bar-left-wrapper .c3xgm-about-block-tagline > span:first-child,
 #c3xgm-about-page-our-people.c3xgm-about-page.c3xgm-about-page-in-view .c3xgm-about-block-earn .c3xgm-about-yellow-bar-left-wrapper .c3xgm-about-block-tagline > span:first-child {
@@ -12625,7 +13238,7 @@ body {
   -ms-animation-duration: 600ms;
   animation-duration: 600ms;
 }
-/* line 84, ../sass/animations/_page-in-view.scss */
+/* line 89, ../sass/animations/_page-in-view.scss */
 #c3xgm-about-page-our-brands.c3xgm-about-page.c3xgm-about-page-in-view .c3xgm-about-block-earn .c3xgm-about-yellow-bar-left-wrapper .c3xgm-about-block-tagline > span:nth-child(2),
 #c3xgm-about-page-our-company.c3xgm-about-page.c3xgm-about-page-in-view .c3xgm-about-block-earn .c3xgm-about-yellow-bar-left-wrapper .c3xgm-about-block-tagline > span:nth-child(2),
 #c3xgm-about-page-our-people.c3xgm-about-page.c3xgm-about-page-in-view .c3xgm-about-block-earn .c3xgm-about-yellow-bar-left-wrapper .c3xgm-about-block-tagline > span:nth-child(2) {
@@ -12650,7 +13263,7 @@ body {
   -ms-animation-duration: 500ms;
   animation-duration: 500ms;
 }
-/* line 93, ../sass/animations/_page-in-view.scss */
+/* line 98, ../sass/animations/_page-in-view.scss */
 #c3xgm-about-page-our-brands.c3xgm-about-page.c3xgm-about-page-in-view .c3xgm-about-block-earn .c3xgm-about-p,
 #c3xgm-about-page-our-company.c3xgm-about-page.c3xgm-about-page-in-view .c3xgm-about-block-earn .c3xgm-about-p,
 #c3xgm-about-page-our-people.c3xgm-about-page.c3xgm-about-page-in-view .c3xgm-about-block-earn .c3xgm-about-p {
@@ -12675,7 +13288,7 @@ body {
   -ms-animation-duration: 800ms;
   animation-duration: 800ms;
 }
-/* line 102, ../sass/animations/_page-in-view.scss */
+/* line 107, ../sass/animations/_page-in-view.scss */
 #c3xgm-about-page-our-brands.c3xgm-about-page.c3xgm-about-page-in-view .c3xgm-about-down-arrow-link,
 #c3xgm-about-page-our-company.c3xgm-about-page.c3xgm-about-page-in-view .c3xgm-about-down-arrow-link,
 #c3xgm-about-page-our-people.c3xgm-about-page.c3xgm-about-page-in-view .c3xgm-about-down-arrow-link {
@@ -12700,7 +13313,7 @@ body {
   -ms-animation-duration: 400ms;
   animation-duration: 400ms;
 }
-/* line 110, ../sass/animations/_page-in-view.scss */
+/* line 115, ../sass/animations/_page-in-view.scss */
 #c3xgm-about-page-our-brands.c3xgm-about-page.c3xgm-about-page-in-view .c3xgm-about-employees .c3xgm-about-blockquote .c3xgm-about-light-blue.number,
 #c3xgm-about-page-our-brands.c3xgm-about-page.c3xgm-about-page-in-view .c3xgm-about-employees .c3xgm-about-blockquote .c3xgm-about-span-container .c3xgm-about-gray,
 #c3xgm-about-page-our-company.c3xgm-about-page.c3xgm-about-page-in-view .c3xgm-about-employees .c3xgm-about-blockquote .c3xgm-about-light-blue.number,
@@ -12728,7 +13341,7 @@ body {
   -ms-animation-duration: 900ms;
   animation-duration: 900ms;
 }
-/* line 121, ../sass/animations/_page-in-view.scss */
+/* line 126, ../sass/animations/_page-in-view.scss */
 #c3xgm-about-page-our-brands.c3xgm-about-page.c3xgm-about-page-in-view .c3xgm-about-module-car .c3xgm-about-module-car-logo-container li,
 #c3xgm-about-page-our-company.c3xgm-about-page.c3xgm-about-page-in-view .c3xgm-about-module-car .c3xgm-about-module-car-logo-container li,
 #c3xgm-about-page-our-people.c3xgm-about-page.c3xgm-about-page-in-view .c3xgm-about-module-car .c3xgm-about-module-car-logo-container li {
@@ -12753,7 +13366,7 @@ body {
   -ms-animation-duration: 100ms;
   animation-duration: 100ms;
 }
-/* line 127, ../sass/animations/_page-in-view.scss */
+/* line 132, ../sass/animations/_page-in-view.scss */
 #c3xgm-about-page-our-brands.c3xgm-about-page.c3xgm-about-page-in-view .c3xgm-about-module-car .c3xgm-about-module-car-logo-container li:nth-child(2),
 #c3xgm-about-page-our-company.c3xgm-about-page.c3xgm-about-page-in-view .c3xgm-about-module-car .c3xgm-about-module-car-logo-container li:nth-child(2),
 #c3xgm-about-page-our-people.c3xgm-about-page.c3xgm-about-page-in-view .c3xgm-about-module-car .c3xgm-about-module-car-logo-container li:nth-child(2) {
@@ -12763,7 +13376,7 @@ body {
   -ms-animation-delay: 1900ms;
   animation-delay: 1900ms;
 }
-/* line 128, ../sass/animations/_page-in-view.scss */
+/* line 133, ../sass/animations/_page-in-view.scss */
 #c3xgm-about-page-our-brands.c3xgm-about-page.c3xgm-about-page-in-view .c3xgm-about-module-car .c3xgm-about-module-car-logo-container li:nth-child(3),
 #c3xgm-about-page-our-company.c3xgm-about-page.c3xgm-about-page-in-view .c3xgm-about-module-car .c3xgm-about-module-car-logo-container li:nth-child(3),
 #c3xgm-about-page-our-people.c3xgm-about-page.c3xgm-about-page-in-view .c3xgm-about-module-car .c3xgm-about-module-car-logo-container li:nth-child(3) {
@@ -12773,7 +13386,7 @@ body {
   -ms-animation-delay: 2000ms;
   animation-delay: 2000ms;
 }
-/* line 129, ../sass/animations/_page-in-view.scss */
+/* line 134, ../sass/animations/_page-in-view.scss */
 #c3xgm-about-page-our-brands.c3xgm-about-page.c3xgm-about-page-in-view .c3xgm-about-module-car .c3xgm-about-module-car-logo-container li:nth-child(4),
 #c3xgm-about-page-our-company.c3xgm-about-page.c3xgm-about-page-in-view .c3xgm-about-module-car .c3xgm-about-module-car-logo-container li:nth-child(4),
 #c3xgm-about-page-our-people.c3xgm-about-page.c3xgm-about-page-in-view .c3xgm-about-module-car .c3xgm-about-module-car-logo-container li:nth-child(4) {
@@ -12783,7 +13396,7 @@ body {
   -ms-animation-delay: 2100ms;
   animation-delay: 2100ms;
 }
-/* line 130, ../sass/animations/_page-in-view.scss */
+/* line 135, ../sass/animations/_page-in-view.scss */
 #c3xgm-about-page-our-brands.c3xgm-about-page.c3xgm-about-page-in-view .c3xgm-about-module-car .c3xgm-about-module-car-logo-container li:nth-child(5),
 #c3xgm-about-page-our-company.c3xgm-about-page.c3xgm-about-page-in-view .c3xgm-about-module-car .c3xgm-about-module-car-logo-container li:nth-child(5),
 #c3xgm-about-page-our-people.c3xgm-about-page.c3xgm-about-page-in-view .c3xgm-about-module-car .c3xgm-about-module-car-logo-container li:nth-child(5) {
@@ -12793,7 +13406,7 @@ body {
   -ms-animation-delay: 2200ms;
   animation-delay: 2200ms;
 }
-/* line 131, ../sass/animations/_page-in-view.scss */
+/* line 136, ../sass/animations/_page-in-view.scss */
 #c3xgm-about-page-our-brands.c3xgm-about-page.c3xgm-about-page-in-view .c3xgm-about-module-car .c3xgm-about-module-car-logo-container li:nth-child(6),
 #c3xgm-about-page-our-company.c3xgm-about-page.c3xgm-about-page-in-view .c3xgm-about-module-car .c3xgm-about-module-car-logo-container li:nth-child(6),
 #c3xgm-about-page-our-people.c3xgm-about-page.c3xgm-about-page-in-view .c3xgm-about-module-car .c3xgm-about-module-car-logo-container li:nth-child(6) {
@@ -12803,7 +13416,7 @@ body {
   -ms-animation-delay: 2300ms;
   animation-delay: 2300ms;
 }
-/* line 132, ../sass/animations/_page-in-view.scss */
+/* line 137, ../sass/animations/_page-in-view.scss */
 #c3xgm-about-page-our-brands.c3xgm-about-page.c3xgm-about-page-in-view .c3xgm-about-module-car .c3xgm-about-module-car-logo-container li:nth-child(7),
 #c3xgm-about-page-our-company.c3xgm-about-page.c3xgm-about-page-in-view .c3xgm-about-module-car .c3xgm-about-module-car-logo-container li:nth-child(7),
 #c3xgm-about-page-our-people.c3xgm-about-page.c3xgm-about-page-in-view .c3xgm-about-module-car .c3xgm-about-module-car-logo-container li:nth-child(7) {
@@ -12813,7 +13426,7 @@ body {
   -ms-animation-delay: 2400ms;
   animation-delay: 2400ms;
 }
-/* line 133, ../sass/animations/_page-in-view.scss */
+/* line 138, ../sass/animations/_page-in-view.scss */
 #c3xgm-about-page-our-brands.c3xgm-about-page.c3xgm-about-page-in-view .c3xgm-about-module-car .c3xgm-about-module-car-logo-container li:nth-child(8),
 #c3xgm-about-page-our-company.c3xgm-about-page.c3xgm-about-page-in-view .c3xgm-about-module-car .c3xgm-about-module-car-logo-container li:nth-child(8),
 #c3xgm-about-page-our-people.c3xgm-about-page.c3xgm-about-page-in-view .c3xgm-about-module-car .c3xgm-about-module-car-logo-container li:nth-child(8) {
@@ -12823,7 +13436,7 @@ body {
   -ms-animation-delay: 2500ms;
   animation-delay: 2500ms;
 }
-/* line 134, ../sass/animations/_page-in-view.scss */
+/* line 139, ../sass/animations/_page-in-view.scss */
 #c3xgm-about-page-our-brands.c3xgm-about-page.c3xgm-about-page-in-view .c3xgm-about-module-car .c3xgm-about-module-car-logo-container li:nth-child(9),
 #c3xgm-about-page-our-company.c3xgm-about-page.c3xgm-about-page-in-view .c3xgm-about-module-car .c3xgm-about-module-car-logo-container li:nth-child(9),
 #c3xgm-about-page-our-people.c3xgm-about-page.c3xgm-about-page-in-view .c3xgm-about-module-car .c3xgm-about-module-car-logo-container li:nth-child(9) {
@@ -12834,7 +13447,7 @@ body {
   animation-delay: 2600ms;
 }
 @media (min-width: 768px) {
-  /* line 137, ../sass/animations/_page-in-view.scss */
+  /* line 142, ../sass/animations/_page-in-view.scss */
   #c3xgm-about-page-our-brands.c3xgm-about-page.c3xgm-about-page-in-view .c3xgm-about-module-car .c3xgm-about-module-car-logo-container li:nth-child(3),
   #c3xgm-about-page-our-company.c3xgm-about-page.c3xgm-about-page-in-view .c3xgm-about-module-car .c3xgm-about-module-car-logo-container li:nth-child(3),
   #c3xgm-about-page-our-people.c3xgm-about-page.c3xgm-about-page-in-view .c3xgm-about-module-car .c3xgm-about-module-car-logo-container li:nth-child(3) {
@@ -12844,7 +13457,7 @@ body {
     -ms-animation-delay: 1900ms;
     animation-delay: 1900ms;
   }
-  /* line 138, ../sass/animations/_page-in-view.scss */
+  /* line 143, ../sass/animations/_page-in-view.scss */
   #c3xgm-about-page-our-brands.c3xgm-about-page.c3xgm-about-page-in-view .c3xgm-about-module-car .c3xgm-about-module-car-logo-container li:nth-child(5),
   #c3xgm-about-page-our-company.c3xgm-about-page.c3xgm-about-page-in-view .c3xgm-about-module-car .c3xgm-about-module-car-logo-container li:nth-child(5),
   #c3xgm-about-page-our-people.c3xgm-about-page.c3xgm-about-page-in-view .c3xgm-about-module-car .c3xgm-about-module-car-logo-container li:nth-child(5) {
@@ -12854,7 +13467,7 @@ body {
     -ms-animation-delay: 2000ms;
     animation-delay: 2000ms;
   }
-  /* line 139, ../sass/animations/_page-in-view.scss */
+  /* line 144, ../sass/animations/_page-in-view.scss */
   #c3xgm-about-page-our-brands.c3xgm-about-page.c3xgm-about-page-in-view .c3xgm-about-module-car .c3xgm-about-module-car-logo-container li:nth-child(7),
   #c3xgm-about-page-our-company.c3xgm-about-page.c3xgm-about-page-in-view .c3xgm-about-module-car .c3xgm-about-module-car-logo-container li:nth-child(7),
   #c3xgm-about-page-our-people.c3xgm-about-page.c3xgm-about-page-in-view .c3xgm-about-module-car .c3xgm-about-module-car-logo-container li:nth-child(7) {
@@ -12864,7 +13477,7 @@ body {
     -ms-animation-delay: 2100ms;
     animation-delay: 2100ms;
   }
-  /* line 140, ../sass/animations/_page-in-view.scss */
+  /* line 145, ../sass/animations/_page-in-view.scss */
   #c3xgm-about-page-our-brands.c3xgm-about-page.c3xgm-about-page-in-view .c3xgm-about-module-car .c3xgm-about-module-car-logo-container li:nth-child(9),
   #c3xgm-about-page-our-company.c3xgm-about-page.c3xgm-about-page-in-view .c3xgm-about-module-car .c3xgm-about-module-car-logo-container li:nth-child(9),
   #c3xgm-about-page-our-people.c3xgm-about-page.c3xgm-about-page-in-view .c3xgm-about-module-car .c3xgm-about-module-car-logo-container li:nth-child(9) {
@@ -12874,7 +13487,7 @@ body {
     -ms-animation-delay: 2200ms;
     animation-delay: 2200ms;
   }
-  /* line 141, ../sass/animations/_page-in-view.scss */
+  /* line 146, ../sass/animations/_page-in-view.scss */
   #c3xgm-about-page-our-brands.c3xgm-about-page.c3xgm-about-page-in-view .c3xgm-about-module-car .c3xgm-about-module-car-logo-container li:nth-child(2),
   #c3xgm-about-page-our-company.c3xgm-about-page.c3xgm-about-page-in-view .c3xgm-about-module-car .c3xgm-about-module-car-logo-container li:nth-child(2),
   #c3xgm-about-page-our-people.c3xgm-about-page.c3xgm-about-page-in-view .c3xgm-about-module-car .c3xgm-about-module-car-logo-container li:nth-child(2) {
@@ -12884,7 +13497,7 @@ body {
     -ms-animation-delay: 2300ms;
     animation-delay: 2300ms;
   }
-  /* line 142, ../sass/animations/_page-in-view.scss */
+  /* line 147, ../sass/animations/_page-in-view.scss */
   #c3xgm-about-page-our-brands.c3xgm-about-page.c3xgm-about-page-in-view .c3xgm-about-module-car .c3xgm-about-module-car-logo-container li:nth-child(4),
   #c3xgm-about-page-our-company.c3xgm-about-page.c3xgm-about-page-in-view .c3xgm-about-module-car .c3xgm-about-module-car-logo-container li:nth-child(4),
   #c3xgm-about-page-our-people.c3xgm-about-page.c3xgm-about-page-in-view .c3xgm-about-module-car .c3xgm-about-module-car-logo-container li:nth-child(4) {
@@ -12894,7 +13507,7 @@ body {
     -ms-animation-delay: 2400ms;
     animation-delay: 2400ms;
   }
-  /* line 143, ../sass/animations/_page-in-view.scss */
+  /* line 148, ../sass/animations/_page-in-view.scss */
   #c3xgm-about-page-our-brands.c3xgm-about-page.c3xgm-about-page-in-view .c3xgm-about-module-car .c3xgm-about-module-car-logo-container li:nth-child(6),
   #c3xgm-about-page-our-company.c3xgm-about-page.c3xgm-about-page-in-view .c3xgm-about-module-car .c3xgm-about-module-car-logo-container li:nth-child(6),
   #c3xgm-about-page-our-people.c3xgm-about-page.c3xgm-about-page-in-view .c3xgm-about-module-car .c3xgm-about-module-car-logo-container li:nth-child(6) {
@@ -12904,7 +13517,7 @@ body {
     -ms-animation-delay: 2500ms;
     animation-delay: 2500ms;
   }
-  /* line 144, ../sass/animations/_page-in-view.scss */
+  /* line 149, ../sass/animations/_page-in-view.scss */
   #c3xgm-about-page-our-brands.c3xgm-about-page.c3xgm-about-page-in-view .c3xgm-about-module-car .c3xgm-about-module-car-logo-container li:nth-child(8),
   #c3xgm-about-page-our-company.c3xgm-about-page.c3xgm-about-page-in-view .c3xgm-about-module-car .c3xgm-about-module-car-logo-container li:nth-child(8),
   #c3xgm-about-page-our-people.c3xgm-about-page.c3xgm-about-page-in-view .c3xgm-about-module-car .c3xgm-about-module-car-logo-container li:nth-child(8) {
@@ -12915,7 +13528,7 @@ body {
     animation-delay: 2600ms;
   }
 }
-/* line 151, ../sass/animations/_page-in-view.scss */
+/* line 156, ../sass/animations/_page-in-view.scss */
 #c3xgm-about-page-our-brands.c3xgm-about-page.c3xgm-about-page-in-view .c3xgm-about-module-car .c3xgm-about-module-35 .c3xgm-about-gray-line,
 #c3xgm-about-page-our-brands.c3xgm-about-page.c3xgm-about-page-in-view .c3xgm-about-module-car .c3xgm-about-module-35 .c3xgm-about-yellow-line,
 #c3xgm-about-page-our-company.c3xgm-about-page.c3xgm-about-page-in-view .c3xgm-about-module-car .c3xgm-about-module-35 .c3xgm-about-gray-line,
@@ -12938,7 +13551,7 @@ body {
   -ms-animation-duration: 500ms;
   animation-duration: 500ms;
 }
-/* line 158, ../sass/animations/_page-in-view.scss */
+/* line 163, ../sass/animations/_page-in-view.scss */
 #c3xgm-about-page-our-brands.c3xgm-about-page.c3xgm-about-page-in-view .c3xgm-about-module-car .c3xgm-about-module-35 .c3xgm-about-gray-line,
 #c3xgm-about-page-our-company.c3xgm-about-page.c3xgm-about-page-in-view .c3xgm-about-module-car .c3xgm-about-module-35 .c3xgm-about-gray-line,
 #c3xgm-about-page-our-people.c3xgm-about-page.c3xgm-about-page-in-view .c3xgm-about-module-car .c3xgm-about-module-35 .c3xgm-about-gray-line {
@@ -12948,7 +13561,7 @@ body {
   -ms-animation-delay: 2200ms;
   animation-delay: 2200ms;
 }
-/* line 161, ../sass/animations/_page-in-view.scss */
+/* line 166, ../sass/animations/_page-in-view.scss */
 #c3xgm-about-page-our-brands.c3xgm-about-page.c3xgm-about-page-in-view .c3xgm-about-module-car .c3xgm-about-module-35 .c3xgm-about-yellow-line,
 #c3xgm-about-page-our-company.c3xgm-about-page.c3xgm-about-page-in-view .c3xgm-about-module-car .c3xgm-about-module-35 .c3xgm-about-yellow-line,
 #c3xgm-about-page-our-people.c3xgm-about-page.c3xgm-about-page-in-view .c3xgm-about-module-car .c3xgm-about-module-35 .c3xgm-about-yellow-line {
@@ -12959,7 +13572,7 @@ body {
   animation-delay: 2700ms;
 }
 
-/* line 173, ../sass/animations/_page-in-view.scss */
+/* line 178, ../sass/animations/_page-in-view.scss */
 #c3xgm-about-page-our-commitment.c3xgm-about-page.c3xgm-about-page-in-view .c3xgm-about-section-header .c3xgm-about-section-icon {
   -webkit-animation-fill-mode: both;
   -moz-animation-fill-mode: both;
@@ -12982,7 +13595,7 @@ body {
   -ms-animation-duration: 800ms;
   animation-duration: 800ms;
 }
-/* line 180, ../sass/animations/_page-in-view.scss */
+/* line 185, ../sass/animations/_page-in-view.scss */
 #c3xgm-about-page-our-commitment.c3xgm-about-page.c3xgm-about-page-in-view .c3xgm-about-section-header h1.c3xgm-about-h {
   -webkit-animation-fill-mode: both;
   -moz-animation-fill-mode: both;
@@ -13005,7 +13618,7 @@ body {
   -ms-animation-duration: 800ms;
   animation-duration: 800ms;
 }
-/* line 187, ../sass/animations/_page-in-view.scss */
+/* line 192, ../sass/animations/_page-in-view.scss */
 #c3xgm-about-page-our-commitment.c3xgm-about-page.c3xgm-about-page-in-view .c3xgm-about-section-header hr {
   -webkit-animation-fill-mode: both;
   -moz-animation-fill-mode: both;
@@ -13029,7 +13642,7 @@ body {
   animation-duration: 800ms;
 }
 
-/* line 208, ../sass/animations/_page-in-view.scss */
+/* line 213, ../sass/animations/_page-in-view.scss */
 #c3xgm-about-page-safety-quality.c3xgm-about-page-in-view .c3xgm-about-subsection .c3xgm-about-h,
 #c3xgm-about-page-our-global-community.c3xgm-about-page-in-view .c3xgm-about-subsection .c3xgm-about-h,
 #c3xgm-about-page-environment.c3xgm-about-page-in-view .c3xgm-about-subsection .c3xgm-about-h,
@@ -13055,7 +13668,7 @@ body {
   -ms-animation-duration: 800ms;
   animation-duration: 800ms;
 }
-/* line 215, ../sass/animations/_page-in-view.scss */
+/* line 220, ../sass/animations/_page-in-view.scss */
 #c3xgm-about-page-safety-quality.c3xgm-about-page-in-view .c3xgm-about-subsection .c3xgm-about-p,
 #c3xgm-about-page-our-global-community.c3xgm-about-page-in-view .c3xgm-about-subsection .c3xgm-about-p,
 #c3xgm-about-page-environment.c3xgm-about-page-in-view .c3xgm-about-subsection .c3xgm-about-p,
@@ -13086,7 +13699,7 @@ body {
   -ms-animation-duration: 800ms;
   animation-duration: 800ms;
 }
-/* line 222, ../sass/animations/_page-in-view.scss */
+/* line 227, ../sass/animations/_page-in-view.scss */
 #c3xgm-about-page-safety-quality.c3xgm-about-page-in-view .c3xgm-about-subsection .c3xgm-about-p:before,
 #c3xgm-about-page-our-global-community.c3xgm-about-page-in-view .c3xgm-about-subsection .c3xgm-about-p:before,
 #c3xgm-about-page-environment.c3xgm-about-page-in-view .c3xgm-about-subsection .c3xgm-about-p:before,
@@ -13128,7 +13741,7 @@ body {
   animation-duration: 600ms;
 }
 @media (min-width: 768px) {
-  /* line 222, ../sass/animations/_page-in-view.scss */
+  /* line 227, ../sass/animations/_page-in-view.scss */
   #c3xgm-about-page-safety-quality.c3xgm-about-page-in-view .c3xgm-about-subsection .c3xgm-about-p:before,
   #c3xgm-about-page-our-global-community.c3xgm-about-page-in-view .c3xgm-about-subsection .c3xgm-about-p:before,
   #c3xgm-about-page-environment.c3xgm-about-page-in-view .c3xgm-about-subsection .c3xgm-about-p:before,
@@ -13136,7 +13749,7 @@ body {
     width: 0.2rem;
   }
 }
-/* line 237, ../sass/animations/_page-in-view.scss */
+/* line 242, ../sass/animations/_page-in-view.scss */
 #c3xgm-about-page-safety-quality.c3xgm-about-page-in-view .c3xgm-about-subsection .c3xgm-about-p:after,
 #c3xgm-about-page-our-global-community.c3xgm-about-page-in-view .c3xgm-about-subsection .c3xgm-about-p:after,
 #c3xgm-about-page-environment.c3xgm-about-page-in-view .c3xgm-about-subsection .c3xgm-about-p:after,
@@ -13178,7 +13791,7 @@ body {
   animation-duration: 600ms;
 }
 @media (min-width: 768px) {
-  /* line 237, ../sass/animations/_page-in-view.scss */
+  /* line 242, ../sass/animations/_page-in-view.scss */
   #c3xgm-about-page-safety-quality.c3xgm-about-page-in-view .c3xgm-about-subsection .c3xgm-about-p:after,
   #c3xgm-about-page-our-global-community.c3xgm-about-page-in-view .c3xgm-about-subsection .c3xgm-about-p:after,
   #c3xgm-about-page-environment.c3xgm-about-page-in-view .c3xgm-about-subsection .c3xgm-about-p:after,
@@ -13187,7 +13800,7 @@ body {
   }
 }
 
-/* line 259, ../sass/animations/_page-in-view.scss */
+/* line 264, ../sass/animations/_page-in-view.scss */
 #c3xgm-about-page-our-global-community.c3xgm-about-page.c3xgm-about-page-in-view .c3xgm-about-yellow-bar-left-wrapper.c3xgm-about-p {
   -webkit-animation-fill-mode: both;
   -moz-animation-fill-mode: both;
@@ -13210,7 +13823,7 @@ body {
   -ms-animation-duration: 800ms;
   animation-duration: 800ms;
 }
-/* line 267, ../sass/animations/_page-in-view.scss */
+/* line 272, ../sass/animations/_page-in-view.scss */
 #c3xgm-about-page-our-global-community.c3xgm-about-page.c3xgm-about-page-in-view .c3xgm-about-module-foundation .c3xgm-about-module-foundation-logo-container li {
   -webkit-animation-fill-mode: both;
   -moz-animation-fill-mode: both;
@@ -13228,7 +13841,7 @@ body {
   -ms-animation-duration: 200ms;
   animation-duration: 200ms;
 }
-/* line 272, ../sass/animations/_page-in-view.scss */
+/* line 277, ../sass/animations/_page-in-view.scss */
 #c3xgm-about-page-our-global-community.c3xgm-about-page.c3xgm-about-page-in-view .c3xgm-about-module-foundation .c3xgm-about-module-foundation-logo-container li:first-child {
   -webkit-animation-delay: 1400ms;
   -moz-animation-delay: 1400ms;
@@ -13236,7 +13849,7 @@ body {
   -ms-animation-delay: 1400ms;
   animation-delay: 1400ms;
 }
-/* line 273, ../sass/animations/_page-in-view.scss */
+/* line 278, ../sass/animations/_page-in-view.scss */
 #c3xgm-about-page-our-global-community.c3xgm-about-page.c3xgm-about-page-in-view .c3xgm-about-module-foundation .c3xgm-about-module-foundation-logo-container li:nth-child(2) {
   -webkit-animation-delay: 1700ms;
   -moz-animation-delay: 1700ms;
@@ -13244,7 +13857,7 @@ body {
   -ms-animation-delay: 1700ms;
   animation-delay: 1700ms;
 }
-/* line 274, ../sass/animations/_page-in-view.scss */
+/* line 279, ../sass/animations/_page-in-view.scss */
 #c3xgm-about-page-our-global-community.c3xgm-about-page.c3xgm-about-page-in-view .c3xgm-about-module-foundation .c3xgm-about-module-foundation-logo-container li:nth-child(3) {
   -webkit-animation-delay: 2000ms;
   -moz-animation-delay: 2000ms;
@@ -13252,7 +13865,7 @@ body {
   -ms-animation-delay: 2000ms;
   animation-delay: 2000ms;
 }
-/* line 275, ../sass/animations/_page-in-view.scss */
+/* line 280, ../sass/animations/_page-in-view.scss */
 #c3xgm-about-page-our-global-community.c3xgm-about-page.c3xgm-about-page-in-view .c3xgm-about-module-foundation .c3xgm-about-module-foundation-logo-container li:nth-child(4) {
   -webkit-animation-delay: 2300ms;
   -moz-animation-delay: 2300ms;
@@ -13260,7 +13873,7 @@ body {
   -ms-animation-delay: 2300ms;
   animation-delay: 2300ms;
 }
-/* line 276, ../sass/animations/_page-in-view.scss */
+/* line 281, ../sass/animations/_page-in-view.scss */
 #c3xgm-about-page-our-global-community.c3xgm-about-page.c3xgm-about-page-in-view .c3xgm-about-module-foundation .c3xgm-about-module-foundation-logo-container li:nth-child(5) {
   -webkit-animation-delay: 2600ms;
   -moz-animation-delay: 2600ms;
@@ -13268,7 +13881,7 @@ body {
   -ms-animation-delay: 2600ms;
   animation-delay: 2600ms;
 }
-/* line 279, ../sass/animations/_page-in-view.scss */
+/* line 284, ../sass/animations/_page-in-view.scss */
 #c3xgm-about-page-our-global-community.c3xgm-about-page.c3xgm-about-page-in-view .c3xgm-about-module-foundation .c3xgm-about-gray-line {
   -webkit-animation-name: growBorder;
   -moz-animation-name: growBorder;
@@ -13291,7 +13904,7 @@ body {
   -ms-animation-duration: 500ms;
   animation-duration: 500ms;
 }
-/* line 285, ../sass/animations/_page-in-view.scss */
+/* line 290, ../sass/animations/_page-in-view.scss */
 #c3xgm-about-page-our-global-community.c3xgm-about-page.c3xgm-about-page-in-view .c3xgm-about-module-foundation .c3xgm-about-yellow-line {
   -webkit-animation-name: growBorder;
   -moz-animation-name: growBorder;
@@ -13315,14 +13928,14 @@ body {
   animation-duration: 500ms;
 }
 
-/* line 298, ../sass/animations/_page-in-view.scss */
+/* line 303, ../sass/animations/_page-in-view.scss */
 .people-animate {
   -webkit-animation: wenFadeIn 1s  forwards;
   -moz-animation: wenFadeIn 1s linear forwards;
   -ms-animation: wenFadeIn 1s linear forwards;
 }
 
-/* line 304, ../sass/animations/_page-in-view.scss */
+/* line 309, ../sass/animations/_page-in-view.scss */
 #c3xgm-about-employees-img div {
   opacity: 0;
 }
@@ -13388,6 +14001,7 @@ body {
   position: relative;
   width: 100%;
   overflow-x: hidden;
+  margin-bottom: 10em;
   -webkit-transform: translate3d(0, 0, 0);
   -moz-transform: translate3d(0, 0, 0);
   -o-transform: translate3d(0, 0, 0);
@@ -13398,51 +14012,62 @@ body {
   /* line 12, ../sass/animations/_flag-line.scss */
   .c3xgm-about-flag-line-container {
     height: 335px;
+    margin-bottom: 7em;
   }
 }
-/* line 20, ../sass/animations/_flag-line.scss */
+/* line 21, ../sass/animations/_flag-line.scss */
 .c3xgm-about-flag-line-container .c3xgm-about-grey-white-gradient {
   width: 100%;
   padding-bottom: 5%;
   margin-top: -4%;
+  z-index: 10;
 }
 @media (min-width: 768px) {
-  /* line 20, ../sass/animations/_flag-line.scss */
+  /* line 21, ../sass/animations/_flag-line.scss */
   .c3xgm-about-flag-line-container .c3xgm-about-grey-white-gradient {
     margin-top: -38px;
     padding-bottom: 37px;
   }
 }
 
-/* line 28, ../sass/animations/_flag-line.scss */
+/* line 30, ../sass/animations/_flag-line.scss */
 #flag-line-container {
   width: 480%;
   z-index: -1;
   position: relative;
 }
 @media (min-width: 768px) {
-  /* line 28, ../sass/animations/_flag-line.scss */
+  /* line 30, ../sass/animations/_flag-line.scss */
   #flag-line-container {
     width: 300%;
   }
 }
-/* line 35, ../sass/animations/_flag-line.scss */
+/* line 37, ../sass/animations/_flag-line.scss */
 #flag-line-container > ul {
   width: 200%;
   max-width: 5500px;
   position: relative;
 }
-/* line 39, ../sass/animations/_flag-line.scss */
+/* line 41, ../sass/animations/_flag-line.scss */
 #flag-line-container > ul .flag-line {
   width: 50%;
   float: left;
 }
-/* line 44, ../sass/animations/_flag-line.scss */
+/* line 46, ../sass/animations/_flag-line.scss */
 #flag-line-container > ul .flag-line > img {
   width: 100%;
   display: block;
   margin: 0 auto;
   padding: 0;
+}
+
+/* line 56, ../sass/animations/_flag-line.scss */
+.animate-flag-line {
+  -webkit-animation: moveFlagLine 32s linear infinite;
+  -moz-animation: moveFlagLine 32s linear infinite;
+  -o-animation: moveFlagLine 32s linear infinite;
+  -ms-animation: moveFlagLine 32s linear infinite;
+  animation: moveFlagLine 32s linear infinite;
 }
 
 /* line 17, ../sass/animations/_grey-car-wheels.scss */

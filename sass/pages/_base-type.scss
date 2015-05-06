@@ -44,11 +44,14 @@ h1,h2,h3,h4,h5,h6{
 
 h1.c3xgm-about-h{
 	text-align:center;
-	font-size: 43px; font-size: 11.3vw; line-height:1em;
+	font-size: 43px; font-size: 11.3vw; 
+	line-height:1em;
+	// line-height:1.2em;
 	@media(min-width:$tablet-height ){ 
 		text-align: left;
 		font-size:8.06vw;
-		font-size: 73px; line-height: 70px; 
+		font-size: 73px; 
+		line-height: 70px; 
 	}
 }
 
