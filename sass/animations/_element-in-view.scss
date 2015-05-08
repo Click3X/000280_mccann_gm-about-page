@@ -690,11 +690,12 @@
 			@include prefix(transition-delay, $anim-delay);
 			img {
 			  	// @include prefix(animation-delay, 1s);
-				@include prefix(animation-fill-mode, both);
-				@include prefix(animation-iteration-count, infinite);
-				@include prefix(animation-delay, 0);
-				@include prefix(animation-name, rotate);
-				@include prefix(animation-duration, 5s);
+				// @include prefix(animation-fill-mode, both);
+				// @include prefix(animation-iteration-count, infinite);
+				// @include prefix(animation-delay, 0);
+				// // @include prefix(animation-name, rotate);
+				// @include prefix(animation-duration, 5s);
+				@include prefix(animation, rotate 5s infinite linear);
 			}
 		}
 	}

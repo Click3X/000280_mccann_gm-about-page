@@ -7,7 +7,7 @@
             <?php 
                 foreach ($pages as $key => $page) {
 
-                    pageHeader($page['title'], $page['icon'], $page['tagline']);
+                    pageHeader($page['title'], $page['icon@2x'], $page['tagline']);
 
                 }
             ?>

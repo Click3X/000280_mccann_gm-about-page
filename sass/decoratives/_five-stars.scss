@@ -8,8 +8,7 @@
   		overflow: hidden;
   		
 		@media(min-width: $tablet-height) {
-			margin-bottom:2em;  
-			margin-top:10em;
+			margin-bottom:2em; margin-top:10em;
 			padding-bottom: 194px;
 		}
 		
@@ -28,16 +27,13 @@
 
 		.c3xgm-about-grey-top {
 			position: absolute; 
-			// left:-10%;
-			left: 17%;
-			height: 0; 
-			padding-bottom: 30.7%;
+			// left: 17%;
+			height: 0;  padding-bottom: 30.7%;
 			width: 43%; max-width: 230px;
 			z-index: 1;
 			@media(min-width: $tablet-height) {  padding-bottom: 194px; }
 			img {
-				// width: 100%;
-				  width: 135%;
+				 width: 135%;
 				@include center;
 			}
 
@@ -56,13 +52,12 @@
 	}
 }
 
-div#c3xgm-about-grey-van:before {
+div#c3xgm-about-grey-top:before {
   content: "";
   display: block;
   position: absolute;
   right: -322%;
-  width: 400%;
-  height: 0;
+  width: 400%; height: 0;
   padding-bottom: 71.1%;
   background:  #f3f3f4;
 }

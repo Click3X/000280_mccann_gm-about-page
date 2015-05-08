@@ -104,21 +104,25 @@ jQuery(document).ready(function($) {
 
     // NUMBER ANIMATIONS
     // CHECK IF ANIMATED EMPLOYEES IN ON SCREEN
-     // OUR PEOPLE MAP DRAW STROKE
     var current_frame, total_frames, path, length, handle;
 
     var init = function() {
       current_frame = 0;
-      // total_frames = 60;
-      total_frames = 150;
+      total_frames = 480;
       path = new Array();
       length = new Array();
+
+      // ITERATE THROUGH PATHS
       for(var i=0; i< 12 ;i++){
+        // GET PATH
         path[i] = document.getElementById('i'+i);
-        // console.log(path[i]);
+
+        // GET PATH LENGTH
         l = path[i].getTotalLength();
-        // console.log(l);
+        // ADD TO LENGTH ARRAY
         length[i] = l;
+
+        // CSS PROPERTIES THAT WE ARE ANIMATING
         path[i].style.strokeDasharray = l + ' ' + l; 
         path[i].style.strokeDashoffset = l;
       }
@@ -129,13 +133,22 @@ jQuery(document).ready(function($) {
     var draw = function() {
        var progress = current_frame/total_frames;
        if (progress > 1) {
-         window.cancelAnimationFrame(handle);
+
+            // window.cancelAnimationFrame(handle);
+            clearTimeout(handle);
+
        } else {
          current_frame++;
          for(var j=0; j<path.length;j++){
              path[j].style.strokeDashoffset = Math.floor(length[j] * (1 - progress));
          }
-         handle = window.requestAnimationFrame(draw);
+         
+         // handle = window.requestAnimationFrame(draw);
+
+         handle = setTimeout(function(){
+            draw();
+         }, 60/1000);
+
        }
     };
     
@@ -356,7 +369,9 @@ jQuery(document).ready(function($) {
         if(defaults.blocktype == 'page') {
         	this.elementName = this.$element.attr('id');
         } else {
-        	this.elementName = this.$element.get(0).classList[2];	
+        	this.elementName = this.$element.attr("class").split(" ")[2];
+            // var theClass = this.$element.attr("class").split(" ")[2];
+            // theClass = theClass.split(" ")[2];
         }
         
         this.elementWidth = Number( this.$element.css("width").replace('px', '') );
@@ -459,12 +474,12 @@ jQuery(document).ready(function($) {
 	} // END OBJECT
 
     // ON SCROLL ANIMATIONS ---------------------------------------------------
-    var decDefaults = {type:'decorative'},
-        GreyVan = new AmimatedElement('#c3xgm-about-grey-van', decDefaults),
-        RedCar = new AmimatedElement('#c3xgm-about-red-car', decDefaults),
-        GreyFlagCar = new AmimatedElement('#c3xgm-about-flag-line-grey-car', decDefaults),
-        GreySide = new AmimatedElement('#c3xgm-about-solar-grey-car', decDefaults),
-        FlagLine = new AmimatedElement('#animate-flag-line', decDefaults);
+    // var decDefaults = {type:'decorative'},
+        // GreyVan = new AmimatedElement('#c3xgm-about-grey-top', decDefaults),
+        // RedCar = new AmimatedElement('#c3xgm-about-red-car', decDefaults),
+        // GreyFlagCar = new AmimatedElement('#c3xgm-about-flag-line-grey-car', decDefaults),
+        // GreySide = new AmimatedElement('#c3xgm-about-solar-grey-car', decDefaults),
+        // FlagLine = new AmimatedElement('#animate-flag-line', decDefaults);
 
     // SCROLL HANDLER --------------------------------------------
 
@@ -491,22 +506,22 @@ jQuery(document).ready(function($) {
             // UPDATE NAV
             updateNav();
             // GREY VAN
-            if( GreyVan.isInView() ) {
-                GreyVan.moveRight();
-            }
-            // RED CAR
-            if( RedCar.isInView() ) {
-                RedCar.moveLeft();
-            }
-            // FLAG LINE
-            if( FlagLine.isInView() ) {
-                FlagLine.moveLeft();
-                GreyFlagCar.moveRight();
-            }   
-            // GREY SIDE
-            if( GreySide.isInView() ) {
-                GreySide.moveRight();
-            }
+            // if( GreyVan.isInView() ) {
+            //     GreyVan.moveRight();
+            // }
+            // // RED CAR
+            // if( RedCar.isInView() ) {
+            //     RedCar.moveLeft();
+            // }
+            // // FLAG LINE
+            // if( FlagLine.isInView() ) {
+            //     FlagLine.moveLeft();
+            //     GreyFlagCar.moveRight();
+            // }   
+            // // GREY SIDE
+            // if( GreySide.isInView() ) {
+            //     GreySide.moveRight();
+            // }
         }
     }
 

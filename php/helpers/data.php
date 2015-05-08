@@ -353,7 +353,7 @@ $pages = array(
 							"grey-top" =>array(
 								"image"=>"img/decorative/cars/grey-top.png",
 								"image@2x"=>"img/decorative/cars/grey-top@2x.png",
-								"id"=>"c3xgm-about-grey-van"
+								"id"=>"c3xgm-about-grey-top"
 							),
 							"checker" =>array(
 								"image"=>"img/decorative/landscape/checker.png",

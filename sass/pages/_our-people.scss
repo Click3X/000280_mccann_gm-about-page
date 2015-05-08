@@ -220,20 +220,28 @@
 		}
 	}
 
-	#map-marker {
-	    width: 6%;
+
+	.c3xgm-about-marker-holder {
+		position: absolute;
+		width: 6%;
 	    position: absolute;
 	    left: 25%; top:2%;
 	    z-index: 10;
 	    opacity: 0;
-
-	    @media(min-width: $tablet-height) {
+	     @media(min-width: $tablet-height) {
 	    	left: 22%; top:auto;
 	    }
 	}
 
+
+	// #map-marker {
+	    
+	   
+	// }
+
 	.element-in-view {
-		#map-marker { @include prefix(animation, markerDrop .8s 2.3s ease-out forwards); }
+		// #map-marker { @include prefix(animation, markerDrop .8s 2.3s ease-out forwards); }
+		.c3xgm-about-marker-holder { @include prefix(animation, markerDrop .8s 2.3s ease-out forwards); }
 	}
 	
 
@@ -305,6 +313,7 @@
 	}
 	/*END OF MARKER DROP*/
 }
+
 
 .svg {
 	.c3xgm-about-page-our-people {

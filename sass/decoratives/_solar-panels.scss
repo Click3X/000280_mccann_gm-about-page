@@ -5,13 +5,25 @@
 	padding-bottom:120%; 
 	height: 0;
 	position: relative; 
-
-	// overflow-x:hidden;
-
+	  
 	@media(min-width: 480px) { padding-bottom:100%; }
   	@media(min-width: $tablet-height) { 
   		padding-bottom:580px; 
   		margin-bottom:100px; 
+  	}
+
+
+  	.c3xgm-about-grey-car-holder {
+		height: 0;
+	 	padding-bottom: 17.5%;
+	  	width: 100%;
+	  	overflow: hidden;
+	  	// position: relative;
+	  	position:absolute;
+	  	bottom:0;
+
+	  	@media(min-width: $tablet-height) { padding-bottom: 10.75%; }
+  		@media(min-width: $inner-border) { padding-bottom: 96px; }
   	}
 
 	.c3xgm-about-grey-side {
@@ -23,16 +35,20 @@
 		z-index: 10;
 
 		.c3xgm-about-wheel {
-			background-image:url('../img/decorative/cars/wheel.png');
+			// background-image:url('../img/decorative/cars/wheel.png');
 			@include prefix(background-size, cover);
-			background-position: 50% 50%; background-repeat:no-repeat;
+			// background-position: 50% 50%; background-repeat:no-repeat;
+			height: 0;
+			display: block; z-index: 200;
 			width: 13.142857%; padding-bottom: 13.142857%;
 			position: absolute;
 			bottom: 23%;
 
 			@media(min-width: $tablet-height) { 
-				width: 13.85%; padding-bottom: 13.85%;
-				bottom: 13%;
+				  height: 39px;
+				  width: 39px;
+				  bottom: 12%;
+				 	padding-bottom: 0;
 			}
 		}
 

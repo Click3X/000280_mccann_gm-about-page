@@ -49,9 +49,10 @@ h1.c3xgm-about-h{
 	// line-height:1.2em;
 	@media(min-width:$tablet-height ){ 
 		text-align: left;
-		font-size:8.06vw;
 		font-size: 73px; 
-		line-height: 70px; 
+		// line-height: 114px;
+		line-height: 1.56164em;
+		margin-left: 0.2em;
 	}
 }
 

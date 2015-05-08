@@ -29,19 +29,23 @@
         </script>
         <![endif]--> 
 
+        <!-- REQUEST ANIMATION FRAME FUNCTIONS-->
+        <script src="js/request-animation-frame.js"></script>
+
+        <!-- HELPER FUNCTIONS-->
+        <script src="js/helpers.js"></script>
+
         <!-- RESIZE FUNCTIONS FOR SLIDERS WITH VARIABLE HEIGHT -->    
         <script src="js/resize-functions.js"></script>
             
-        <!-- // SLIDER FILES FOR ALL SLIDERS, NOT JUST CAR  -->
-        <script src="js/modules/car-slider.js"></script>
+        <!-- SLIDER FILES FOR ALL SLIDERS -->
+        <script src="js/modules/sliders.js"></script>
 
         <!-- MAIN JS -->
-        <script src="js/helpers.js"></script>
-        <script src="js/page.js"></script>
-        
-        <!--
         <script src="js/main.js"></script>
-        -->
+
+        <!-- BACK STREET BOYS -->
+        <script src="js/b-boys-scroll.js"></script>
 
         <!-- OUTLINE HELPER W/ LOCAL SERVER CONDITIONAL -->
         <?php include('php/helpers/outlines-js.php'); ?>

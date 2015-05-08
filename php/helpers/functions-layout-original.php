@@ -9,14 +9,8 @@ function pageHeader($title, $icon, $tagline, $image) {
 	echo '<div class="c3xgm-about-section c3xgm-about-clearfix '.cleanString($title).'">
 		    <div class="c3xgm-about-section-header c3xgm-about-clearfix">
 			    <div class="c3xgm-about-section-header-inner c3xgm-about-clearfix">
-			    	<div class="c3xgm-about-icon-holder c3xgm-about-clearfix">
-			        	<img id="c3xgm-about-'.cleanString($title).'-icon" class="c3xgm-about-section-icon" src="'.$icon.'" alt="'.$title.'">
-			        </div>
-			        <div class="c3xgm-about-header-holder c3xgm-about-clearfix">
-			        	<div class="c3xgm-about-overflow c3xgm-about-clearfix">
-			        		<h1 class="c3xgm-about-h">'.$titleSpan.'</h1>
-			        	</div>
-			        </div>
+			        <img id="c3xgm-about-'.cleanString($title).'-icon" class="c3xgm-about-section-icon" src="'.$icon.'" alt="'.$title.'">
+			        <div class="c3xgm-about-header-holder c3xgm-about-clearfix"><h1 class="c3xgm-about-h">'.$titleSpan.'</h1></div>
 			    </div>
 				<hr>
 			</div>';

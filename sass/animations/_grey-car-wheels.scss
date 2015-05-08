@@ -1,48 +1,29 @@
 // GREY-CAR and WHEELS
-
-// @-webkit-keyframes rotateTires {
-//     0%   { -webkit-transform: rotate(0); }    
-//     100% { -webkit-transform: rotate(360deg); }
-// }
-// @-moz-keyframes rotateTires {
-//     0%   { -moz-transform: rotate(0); }    
-//     100% { -moz-transform: rotate(360deg); }
-// }
-
-// @keyframes rotateTires {
-//     0%   { transform: rotate(0); }    
-//     100% { transform: rotate(360deg); }
-// }
-
 .animate-tires {
-    @include prefix(animation-fill-mode, both);
-    @include prefix(animation-iteration-count, infinite);
-    @include prefix(animation-delay, 0);
-    @include prefix(animation-name, rotate);
-    @include prefix(animation-duration, 5s);    
+    @include prefix(animation, rotate 2s infinite linear);
+}
+
+.animate-tires-fast {
+    @include prefix(animation, rotate 1s infinite linear);
 }
 
 .grey-car {
     background-image:url('../img/decorative/cars/grey-side.png');
     background-size: 100%;
     background-position: 50% 50%; background-repeat:no-repeat;
-    height:0;
-    width: 45.692%;
-    padding-bottom: 14.1%;
-    margin: auto;
-    right:0; left:0;
+    height:0; width: 45.692%;
+    padding-bottom: 14.1%; margin: auto;
     position:absolute;
-    bottom:10px;
+    bottom:10px; 
+    // right:0; left:0;
     
     @include prefix(transform, translate3d(0,0,0));
     @include prefix(transition, left 0.05s ease-out);
 
     @media(min-width: $tablet-height) {
-        width:350px;
-        padding-bottom:108px;
-
-        left:-75%; 
-        right:0;
+        width:350px; padding-bottom:108px;
+        // left:-75%; 
+        // right:0;
     }
 
     .wheel {
@@ -51,7 +32,6 @@
         background-position: 50% 50%; background-repeat:no-repeat;
         width: 13.142857%; padding-bottom: 13.142857%;
         position: absolute;
-        // bottom:0.857143%;
         bottom: 2%;
         
         @media(min-width: $tablet-height) { 

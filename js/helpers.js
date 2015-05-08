@@ -67,17 +67,18 @@ function addAnimation(index) {
 
 
 
-// DISABLE HOVER ON SCROLL SCROLL
+// DISABLE HOVER ON SCROLL FOR SMOOTHER PERFORMANCE
 var body = document.body,
 timer;
 
 window.addEventListener('scroll', function() {
     clearTimeout(timer);
-    if(!body.classList.contains('disable-hover')) {
-        body.classList.add('disable-hover')
+
+    if(! $('body').hasClass('disable-hover')) {
+        $('body').addClass('disable-hover');
     }
 
     timer = setTimeout(function(){
-        body.classList.remove('disable-hover')
+        $('body').removeClass('disable-hover');
     }, 90);
 }, false);
