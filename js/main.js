@@ -1,6 +1,6 @@
 // PAGE JS FOR PAGES
 jQuery(document).ready(function($) { 
-	console.log('This is page js!');
+	// console.log('This is page js!');
 
 	// DECLARE VARIABLES FOR LATER USE
 	var css3dtransforms = true,
@@ -26,6 +26,7 @@ jQuery(document).ready(function($) {
     for (var i=0; i < aChildren.length; i++) {    
         var aChild = aChildren[i],
             ahref = $(aChild).attr('href');
+
         aArray.push(ahref);
     } 
 
@@ -56,12 +57,15 @@ jQuery(document).ready(function($) {
     $('.c3xgm-about-main-nav a[href*=#]:not([href=#]), a.c3xgm-about-down-arrow-link').click(function() {
         if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
             var target = $(this.hash);
-            console.log('This is the target: ' + this.hash);
+            // console.log('This is the target: ' + this.hash);
             target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
             if (target.length) {
                 $('html,body').animate({
                     scrollTop: target.offset().top
-                }, 1000);
+                }, 1000, 'linear', function() {
+                    console.log('Scrolling animation has finished!');
+                    // $('.c3xgm-about-nav-bullet-active + .c3xgm-about-nav-hover-title').css('opacity', 0);
+                });
                 return false;
             }
         }
@@ -101,55 +105,54 @@ jQuery(document).ready(function($) {
     }, false);
 
 
-
     // NUMBER ANIMATIONS
     // CHECK IF ANIMATED EMPLOYEES IN ON SCREEN
-    var current_frame, total_frames, path, length, handle;
+    var current_frame, 
+        total_frames, 
+        path, 
+        length, 
+        handle;
 
     var init = function() {
-      current_frame = 0;
-      total_frames = 480;
-      path = new Array();
-      length = new Array();
+        current_frame = 0;
+        total_frames = 90;
+        path = new Array();
+        length = new Array();
 
-      // ITERATE THROUGH PATHS
-      for(var i=0; i< 12 ;i++){
-        // GET PATH
-        path[i] = document.getElementById('i'+i);
+        // ITERATE THROUGH PATHS
+        for(var i=0; i< 12 ;i++){
+            // GET PATH
+            path[i] = document.getElementById('i'+i);
 
-        // GET PATH LENGTH
-        l = path[i].getTotalLength();
-        // ADD TO LENGTH ARRAY
-        length[i] = l;
+            // GET PATH LENGTH
+            l = path[i].getTotalLength();
+            // ADD TO LENGTH ARRAY
+            length[i] = l;
 
-        // CSS PROPERTIES THAT WE ARE ANIMATING
-        path[i].style.strokeDasharray = l + ' ' + l; 
-        path[i].style.strokeDashoffset = l;
-      }
-      handle = 0;
+            // CSS PROPERTIES THAT WE ARE ANIMATING
+            path[i].style.strokeDasharray = l + ' ' + l; 
+            path[i].style.strokeDashoffset = l;
+        }
+        handle = 0;
     }
      
      
     var draw = function() {
        var progress = current_frame/total_frames;
        if (progress > 1) {
-
-            // window.cancelAnimationFrame(handle);
-            clearTimeout(handle);
-
-       } else {
-         current_frame++;
-         for(var j=0; j<path.length;j++){
-             path[j].style.strokeDashoffset = Math.floor(length[j] * (1 - progress));
-         }
-         
+            window.cancelAnimationFrame(draw);
+            // clearTimeout(handle);
+        } else {
+            current_frame++;
+            for(var j=0; j<path.length;j++){
+                path[j].style.strokeDashoffset = Math.floor(length[j] * (1 - progress));
+            }
          // handle = window.requestAnimationFrame(draw);
-
-         handle = setTimeout(function(){
-            draw();
-         }, 60/1000);
-
-       }
+         // handle = setTimeout(function(){
+         //    draw();
+         // }, 60/1000);
+        requestAnimationFrame(draw);
+        }
     };
     
     var animateEmployees = false;
@@ -258,15 +261,15 @@ jQuery(document).ready(function($) {
     			_t.hasViewClass = true;
 
                 // TRIGGER GIF ON ICON
-                var pageIcon = $(_t.$element ).find('.c3xgm-about-section-icon');
+                // var pageIcon = $(_t.$element ).find('.c3xgm-about-section-icon');
 
-                if(pageIcon.length > 0) {
-                    var icon = $(pageIcon).get(0);
-                    setTimeout(function() {
-                        console.dir(icon.id);
-                        triggerGif(  document.getElementById(icon.id) );    
-                    }, 800);                    
-                }
+                // if(pageIcon.length > 0) {
+                //     var icon = $(pageIcon).get(0);
+                //     setTimeout(function() {
+                //         console.dir(icon.id);
+                //         triggerGif(  document.getElementById(icon.id) );    
+                //     }, 800);                    
+                // }
 
                 // IF CURRENT PAGE IS OUR PEOPLE, SEQUENTIALLY FADE IN ANIMATIONS
                 if(currentPage == 1) {
@@ -328,7 +331,8 @@ jQuery(document).ready(function($) {
 
         if(currentPage != 1) {
             $.each(blocks, function(i, val) {
-                if( this.isAtEighth() && (this.hasViewClass == false) ){
+                // if( this.isAtEighth() && (this.hasViewClass == false) ){
+                   if( this.isInView() && (this.hasViewClass == false) ){
                     // ADD IN VIEW CLASS
                     this.addInViewClass();
                     console.log('Im in view: ' + this.elementName);
@@ -370,8 +374,6 @@ jQuery(document).ready(function($) {
         	this.elementName = this.$element.attr('id');
         } else {
         	this.elementName = this.$element.attr("class").split(" ")[2];
-            // var theClass = this.$element.attr("class").split(" ")[2];
-            // theClass = theClass.split(" ")[2];
         }
         
         this.elementWidth = Number( this.$element.css("width").replace('px', '') );
@@ -410,10 +412,6 @@ jQuery(document).ready(function($) {
             this.elementBottom = this.elementHeight + this.$element.offset().top;
         }
 
-        this.getScrollAmt = function() {
-            return Math.round( viewDimensions.scrollBottom - this.elementTop );
-        }
-
         // IN VIEW
         this.isInView = function() {
         	return ( (this.elementTop <= viewDimensions.scrollBottom) && (this.elementBottom >= viewDimensions.scrollTop) );
@@ -424,62 +422,16 @@ jQuery(document).ready(function($) {
             return ( (this.elementTop <= viewDimensions.scrollBottom - viewDimensions.windowHeight/8) );
         }
 
-        // TEST ISINVIEW AND SET INVIEW
-        // this.setInView = function() {
-        // 	this.inView = this.isInView();
-        // }
-
         // ADD IN VIEW CLASS
         this.addInViewClass = function() {
         	if( defaults.blocktype == 'page' ) {
-                this.$element.removeClass('invisible');  
-        		this.$element.addClass('c3xgm-about-page-in-view');	
+                this.$element.removeClass('invisible').addClass('c3xgm-about-page-in-view');	
         	} else {
-                this.$element.removeClass('invisible');  
-        		this.$element.addClass('element-in-view');	
+                this.$element.removeClass('invisible').addClass('element-in-view');	
         	}
         }
 
-        // ANIMATE FUNCTION - TEST FOR CSS3 TRANSFORMS
-        if(css3dtransforms) {
-            this.moveRight = function() {
-                move = this.getScrollAmt();
-                this.$element.css("transform", "translate3d("+ move +"px, 0, 10px)");
-                // console.log('this.elementRight: ' + this.elementRight);
-                // console.log('this.elementLeft: ' + this.elementLeft);
-            }
-
-            this.moveLeft = function() {
-                move = this.getScrollAmt();
-                this.$element.css("transform", "translate3d(-"+ move +"px, 0, 10px)");
-                // console.log('this.elementRight: ' + this.elementRight);
-                // console.log('this.elementLeft: ' + this.elementLeft);
-            }
-
-        } else {
-            this.elementPosition = this.$element.position();
-
-            this.moveRight = function() {
-                move = this.getScrollAmt();
-                this.$element.css("right", move + "px");
-            }
-
-            this.moveLeft = function() {
-                move = this.getScrollAmt();
-                this.$element.css("left", move + "px");
-            }
-        }   
-
-	
 	} // END OBJECT
-
-    // ON SCROLL ANIMATIONS ---------------------------------------------------
-    // var decDefaults = {type:'decorative'},
-        // GreyVan = new AmimatedElement('#c3xgm-about-grey-top', decDefaults),
-        // RedCar = new AmimatedElement('#c3xgm-about-red-car', decDefaults),
-        // GreyFlagCar = new AmimatedElement('#c3xgm-about-flag-line-grey-car', decDefaults),
-        // GreySide = new AmimatedElement('#c3xgm-about-solar-grey-car', decDefaults),
-        // FlagLine = new AmimatedElement('#animate-flag-line', decDefaults);
 
     // SCROLL HANDLER --------------------------------------------
 
@@ -505,23 +457,6 @@ jQuery(document).ready(function($) {
             checkBlocks(currentPage);
             // UPDATE NAV
             updateNav();
-            // GREY VAN
-            // if( GreyVan.isInView() ) {
-            //     GreyVan.moveRight();
-            // }
-            // // RED CAR
-            // if( RedCar.isInView() ) {
-            //     RedCar.moveLeft();
-            // }
-            // // FLAG LINE
-            // if( FlagLine.isInView() ) {
-            //     FlagLine.moveLeft();
-            //     GreyFlagCar.moveRight();
-            // }   
-            // // GREY SIDE
-            // if( GreySide.isInView() ) {
-            //     GreySide.moveRight();
-            // }
         }
     }
 

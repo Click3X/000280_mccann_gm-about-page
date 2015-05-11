@@ -5,23 +5,22 @@
 
 	.c3xgm-about-section-header { 
 
-		.c3xgm-about-section-icon { 
-			@include prefix(animation-fill-mode, both);
-			@include prefix(animation-name, fadeIn);
-			@include prefix(animation-delay, 800ms);
-			@include prefix(animation-duration, 800ms);
+		.c3xgm-about-icon-holder { 
+			.c3xgm-about-section-icon {
+				@include prefix(animation-fill-mode, both);
+				@include prefix(animation-name, fadeIn);
+				@include prefix(animation-delay, 400ms);
+				@include prefix(animation-duration, 800ms);
+			}	
 		}
+
 
 		h1.c3xgm-about-h {
 			@include prefix(animation-fill-mode, both);
 			@include prefix(animation-delay, 400ms);
 			@include prefix(animation-duration, 800ms);
 			@include prefix(animation-name, fadeIn);
-			@media(min-width: $tablet-height) {
-				// @include prefix(animation-name, fadeInRightMega);	
-				@include prefix(animation-name, fadeInRightMega);	
-			}
-			
+			@media(min-width: $tablet-height) { @include prefix(animation-name, fadeInRightMega); }
 		 }
 
 		hr { 
@@ -43,8 +42,7 @@
 	.c3xgm-about-block-earn {
 
 		.c3xgm-about-yellow-bar-left-wrapper { 
-			overflow: hidden;
-			position: relative;
+			overflow: hidden; position: relative;
 			border-left:none;
 
 			.c3xgm-about-block-tagline { 
@@ -204,7 +202,6 @@
 #c3xgm-about-page-environment.c3xgm-about-page-in-view,
 #c3xgm-about-page-technology.c3xgm-about-page-in-view {
 	$subsec-duration:400;
-	// $subsec-delay:1600;
 	$subsec-delay:600;
 	$subsec-step:250;
 
@@ -300,60 +297,5 @@
 
 
 // WENS ANIMATIONS
-.people-animate {
-	  -webkit-animation: wenFadeIn 1s  forwards;
-	  -moz-animation: wenFadeIn 1s linear forwards;
-	  -ms-animation: wenFadeIn 1s linear forwards;	
-}
-
-#c3xgm-about-employees-img div {
-	opacity: 0;
-}
-
-@-webkit-keyframes wenFadeIn {
-	from {
-		margin-top: 80px;
-		opacity: 0;
-	}
-
-	to {
-		margin-top: 0px;
-		opacity: 1;
-	}
-}
-
-@-moz-keyframes wenFadeIn {
-	from {
-		margin-top: 80px;
-		opacity: 0;
-	}
-
-	to {
-		margin-top: 0px;
-		opacity: 1;
-	}
-}
-
-@-o-keyframes wenFadeIn {
-	from {
-		margin-top: 80px;
-		opacity: 0;
-	}
-
-	to {
-		margin-top: 0px;
-		opacity: 1;
-	}
-}
-
-@keyframes wenFadeIn {
-	from {
-		margin-top: 80px;
-		opacity: 0;
-	}
-
-	to {
-		margin-top: 0px;
-		opacity: 1;
-	}
-}
+.people-animate { @include prefix(animation, wenFadeIn 1s linear forwards); }
+#c3xgm-about-employees-img div { opacity: 0; }

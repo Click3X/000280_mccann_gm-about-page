@@ -10,6 +10,9 @@
 @import "components/mixins";
 @import "components/helpers";
 
+// ANIMATIONS INSPIRED BY ANIMATE CSS
+@import "animations/animations-all";
+
 // COMPONENTS
 @import "components/navigation";
 @import "components/layout";
@@ -39,16 +42,16 @@
 @import "modules/tech-module-click-animations";
 
 // A N I M A T I O N S 
-// ANIMATE CSS
-@import "animations/animations-all";
-
-// ELEMENT IN VIEW ANIMATIONS
-@import "animations/element-in-view";
+// DECORATIVE ANIMATIONS
+@import "animations/grey-car-wheels";
+@import "animations/clock";
+// @import "animations/icon-animations-wen";
 
 // PAGE IN VIEW ANIMATIONS
 @import "animations/page-in-view";
 
-// DECORATIVE ANIMATIONS
-@import "animations/flag-line";
-@import "animations/grey-car-wheels";
-@import "animations/clock";
+// // ELEMENT IN VIEW ANIMATIONS
+@import "animations/element-in-view";
+
+
+// @import "animations/wen-people-animations";

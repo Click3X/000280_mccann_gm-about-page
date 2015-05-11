@@ -12,15 +12,24 @@ var mobile = false;
 // CHECK FOR MOBILE DEVICE
 if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
     mobile = true;
-
-    jQuery('body').addClass('c3xgm-about-mobile-device');
 }
 
 console.log('This is mobile: ' + mobile);
 // IF MOBILE - ADD MOBILE STYLESHEET
 if(mobile) {
     jQuery('head').append('<link rel="stylesheet" href="stylesheets/mobile.css" type="text/css" />');
-    jQuery('body').append('<script src="js/mobile.js"></script>');
+
+
+    // REPLACE GIFS WITH SVGS
+    $('img[src$=".gif"]').each(function(index,element) {
+        element.src = element.src.replace('.gif','.svg');
+    });
+
+    // MAKE FLAGS ANIMATE
+    $('#animate-flag-line').addClass('animate-flag-line');
+
+    // jQuery('body').append('<script src="js/mobile.js"></script>').addClass('c3xgm-about-mobile-device');
+    jQuery('body').addClass('c3xgm-about-mobile-device');
 }
 
 

@@ -1,15 +1,15 @@
 // BACK STREET BOYS DEMO INSPRIRED SCROLL SCRIPTS
-var _containerHeight = 4000;
-// var _containerHeight = window.innerWidth * 4.415;
-var _width  = window.innerWidth;
+var _containerHeight = 4000,
+  _width = window.innerWidth,
+  _height, _scrollHeight,
+  _movingElements = [],
+  _scrollPercent = 0,
+  pre = prefix(),
+  _jsPrefix  = pre.lowercase,
+  _cssPrefix = pre.css;
 
-var _height, _scrollHeight;
-var _movingElements = [];
-var _scrollPercent = 0;
-var pre = prefix();
-var _jsPrefix  = pre.lowercase;
-if(_jsPrefix == 'moz') _jsPrefix = 'Moz'
-var _cssPrefix = pre.css;
+if(_jsPrefix == 'moz') _jsPrefix = 'Moz';
+
 var _positions = [
   {
     name: 'c3xgm-about-red-car', 
@@ -29,12 +29,12 @@ var _positions = [
     name: 'c3xgm-about-flag-line-grey-car',
     start: {
       percent: getElemOffest('#c3xgm-about-flag-line-grey-car'), 
-      x: -0.2, 
+      x: 0.1, 
       y:0
     },
     end: {
       percent: getElemOffest('#c3xgm-about-flag-line-grey-car') + 0.4, 
-      x: 1.2, 
+      x: 0.9, 
       y:0
     }
   },
@@ -55,12 +55,12 @@ var _positions = [
     name: 'c3xgm-about-grey-top',
     start: {
       percent: getElemOffest('#c3xgm-about-grey-top') * 1.1, 
-      x: -0.2, 
+      x:0.1, 
       y:0
     },
     end: {
-      percent: getElemOffest('#c3xgm-about-grey-top') * 1.1 + 0.31,
-      x: 1.2, 
+      percent: getElemOffest('#c3xgm-about-grey-top') * 1.1 + 0.29,
+      x: 1.1, 
       y:0
     }
   },
@@ -68,39 +68,23 @@ var _positions = [
     name: 'c3xgm-about-solar-grey-car',
     start: {
       percent: getElemOffest('#c3xgm-about-solar-grey-car') * 1.17, 
-      x: -0.2, 
+      x:0.1, 
       y:0
     },
     end: {
-      percent: getElemOffest('#c3xgm-about-solar-grey-car') * 1.17 + 0.33,
-      x: 1.2, 
+      percent: getElemOffest('#c3xgm-about-solar-grey-car') * 1.17 + 0.3,
+      x:0.75, 
       y:0
     }
   }
-]
+];
 
 resetWidth();
 resize();
 initMovingElements();
 
-
 function getElemOffest(elemId) {
   return jQuery(elemId).offset().top / _containerHeight;
-}
-
-
-function initMovingElements() {
-  for (var i = 0; i < _positions.length; i++) {
-    _positions[i].diff = {
-      percent: _positions[i].end.percent - _positions[i].start.percent,
-      x: _positions[i].end.x - _positions[i].start.x,
-      y: _positions[i].end.y - _positions[i].start.y,
-    }
-    _positions[i].target = {};
-    _positions[i].current = {};
-    var el = document.getElementsByClassName(_positions[i].name)[0];
-    _movingElements.push(el);
-  }
 }
 
 function resetWidth() {
@@ -116,6 +100,20 @@ function resize() {
   _height = window.innerHeight;
   resetWidth();
   _scrollHeight = _containerHeight-_height;
+}
+
+function initMovingElements() {
+  for (var i = 0; i < _positions.length; i++) {
+    _positions[i].diff = {
+      percent: _positions[i].end.percent - _positions[i].start.percent,
+      x: _positions[i].end.x - _positions[i].start.x,
+      y: _positions[i].end.y - _positions[i].start.y,
+    }
+    _positions[i].target = {};
+    _positions[i].current = {};
+    var el = document.getElementsByClassName(_positions[i].name)[0];
+    _movingElements.push(el);
+  }
 }
 
 function updateElements() {

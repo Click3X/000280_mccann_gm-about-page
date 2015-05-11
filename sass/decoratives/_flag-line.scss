@@ -1,7 +1,6 @@
 // FLAG-LINE
 .c3xgm-about-page-our-brands {
 
-	// .c3xgm-about-grey-car + .c3xgm-about-flag-line {
 	.c3xgm-about-flag-line {
 		background-image:url('../img/decorative/landscape/flag-line.png');
 		background-repeat:  no-repeat; background-size: cover;
@@ -27,3 +26,42 @@
 		.c3xgm-about-flag-line { margin:0 auto; text-align: center; }
 	}
 }
+
+// FROM FLAG LINE ANIMATIONS
+
+.c3xgm-about-flag-line-container {
+    position: relative; width: 100%;
+    overflow-x:hidden; 
+    margin-bottom:5em;
+    @include prefix(transform, translate3d(0,0,0)); 
+    @media(min-width:$inner-border) { height: 335px; margin-bottom:7em; }
+
+    .c3xgm-about-grey-white-gradient {
+        width: 100%; z-index: 10;
+        padding-bottom: 5%; margin-top: -4%;
+        @media(min-width: $tablet-height) {  margin-top:-37px;  padding-bottom: 37px;}
+    }
+}
+
+#flag-line-container {
+    position: relative; width: 480%;
+    z-index: -1; 
+    @media(min-width: $tablet-height) { width: 300%; }
+
+    > ul { 
+        width:200%; max-width: 5500px;
+        position: relative;    
+
+        .flag-line {
+            width: 50%; float: left;
+            
+            > img {
+                width:100%; display: block;
+                margin:0 auto; padding:0;
+            }
+        }
+    }
+}
+
+// SEPARATING ANIMATION INTO ITS OWN CLASS
+.animate-flag-line { @include prefix(animation, moveFlagLine 32s linear infinite); }

@@ -2,9 +2,9 @@
 .element-in-view {
 
 	.c3xgm-about-blockquote {
-		position: relative;
-		overflow: hidden;
+		position: relative; overflow: hidden;
 
+		// $anim-delay:1200;
 		$anim-delay:1200;
 		$anim-step:300;
 		$anim-duration:400;
@@ -59,16 +59,13 @@
 		svg, img { 
 			@include prefix(animation-fill-mode, both);
 			@include prefix(animation-name, fadeIn);
-			// @include prefix(animation-delay, 400ms);
 			@include prefix(animation-delay, #{$anim-delay + "ms"});
 			@include prefix(animation-duration, #{$anim-duration + "ms"});
 		}
 	}
 }
-
 // OUR PEOPLE PAGE
 .c3xgm-about-headquarters {
-	// $page-delay:2200;
 	$anim-delay:400;
 	$anim-step:300;
 	$anim-duration:500;
@@ -206,11 +203,12 @@
 }  // END ELEMENT
 
 
+
+// GLOBAL - SECONDS - DEALERS
 // GLOBAL
 .c3xgm-about-global {
 	$global-duration:700;
-	// $global-delay:1400;
-	$global-delay:1400;
+	$global-delay:600;
 	$global-step:300;
 
 	.c3xgm-about-block-image {
@@ -221,10 +219,8 @@
 			img {
 				// DISABLE ANIMATIONS
 				@include noAnimation;
-
 				@media(min-width: $tablet-height) {
 					@include prefix(transform, translate3d(-50%, -4%, 0));
-					// @include prefix(transform, translate3d(-50%, -50%, 0));
 				}
 			}
 		}
@@ -237,8 +233,6 @@
 			@include prefix(animation-name, fadeInRightMega);
 			@include prefix(animation-delay, #{$global-delay + "ms"});
 			@include prefix(animation-duration, #{$global-duration + "ms"});
-			
-			img {}
 		}
 		
 		.c3xgm-about-blockquote {
@@ -271,15 +265,14 @@
 // SECONDS
 .c3xgm-about-seconds {
 	$seconds-duration:700;
-	// $seconds-delay:2000;
-	$seconds-delay:1600;
+	// $seconds-delay:800;
+	$seconds-delay:600;
 	$seconds-step:300;
 
 	// ELEMENT IN VIEW
 	&.element-in-view {
 		.c3xgm-about-block-image {
 			overflow: hidden;
-
 			img { @include noAnimation; }
 
 			#clock {
@@ -320,8 +313,8 @@
 // DEALERS
 .c3xgm-about-dealers {
 	$dealers-duration:700;
-	// $dealers-delay:2600;
-	$dealers-delay:1800;
+	// $dealers-delay:1000;
+	$dealers-delay:6000;
 	$dealers-step:300;
 
 	// ELEMENT IN VIEW
@@ -354,9 +347,10 @@
 
 
 // CRASH TEST DUMMIES
+// CRASH TEST DUMMIES - TEST FACILITY
 .c3xgm-about-crash-test-dummies {
 	$crash-duration:400;
-	$crash-delay:1700;
+	$crash-delay:1100;
 	$crash-step:300;
 
 	// ELEMENT IN VIEW
@@ -415,17 +409,16 @@
 				span:first-child {
 					@include prefix(animation-fill-mode, both);
 					@include prefix(animation-name, fadeInLeftMega);
-					@include prefix(animation-delay, #{ ($test-delay + $test-step * 2 + 1500) + "ms"});
+					@include prefix(animation-delay, #{ ($test-delay + $test-step * 2 + 900) + "ms"});
 					@include prefix(animation-duration, #{$test-duration + "ms"});
 				}
 				span:nth-child(2) {
 					@include prefix(animation-fill-mode, both);
 					@include prefix(animation-name, fadeInLeftMega);
-					@include prefix(animation-delay, #{ ($test-delay + $test-step * 3 + 1500) + "ms"});
+					@include prefix(animation-delay, #{ ($test-delay + $test-step * 3 + 900) + "ms"});
 					@include prefix(animation-duration, #{$test-duration + "ms"});
 				}
 			}
-
 
 			.c3xgm-about-light-blue {
 				@include borderLinesAnimation($test-delay + $test-step * 2 + 100);
@@ -435,10 +428,12 @@
 }
 
 
+// SAFETY SCORE - ON STAR - AWARDS
 // SAFETY SCORE
 .c3xgm-about-safety-score {
 	$test-duration:600;
-	$test-delay:1400;
+	// $test-delay:1400;
+	$test-delay:800;
 	$test-step:300;
 
 	// ELEMENT IN VIEW
@@ -485,7 +480,7 @@
 // ON-STAR SUBCRIBERS
 .c3xgm-about-onstar-subscribers {
 	$on-star-duration:400;
-	$on-star-delay:1500;
+	$on-star-delay:1000;
 	$on-star-step:300;
 
 	// ELEMENT IN VIEW
@@ -547,8 +542,8 @@
 .c3xgm-about-quality-awards {
 // QUALITY
 	$quality-duration:400;
-	$quality-delay:1000;
-	$quality-step:200;
+	$quality-delay:1200;
+	$quality-step:300;
 
 	// ELEMENT IN VIEW
 	&.element-in-view {
@@ -623,7 +618,6 @@
 	}
 }
 
-
 // CLEAN ENERGY
 .c3xgm-about-solar-panels {
 	$anim-duration:500;
@@ -689,23 +683,19 @@
 			@include prefix(transform, scale(1, 1));
 			@include prefix(transition-delay, $anim-delay);
 			img {
-			  	// @include prefix(animation-delay, 1s);
-				// @include prefix(animation-fill-mode, both);
-				// @include prefix(animation-iteration-count, infinite);
-				// @include prefix(animation-delay, 0);
-				// // @include prefix(animation-name, rotate);
-				// @include prefix(animation-duration, 5s);
 				@include prefix(animation, rotate 5s infinite linear);
 			}
 		}
 	}
 }
 
+
+// EPA ENERGY - CLIMATE DESCRIPTION - LANDFILL
 // EPA ENERGY
 .c3xgm-about-epa-energy-star {
-	$anim-duration:500;
-	$anim-delay:1200;
-	$anim-step:250;
+	$anim-duration:400;
+	$anim-delay:600;
+	$anim-step:300;
 
 	// ELEMENT IN VIEW
 	&.element-in-view {
@@ -755,9 +745,9 @@
 
 // CLIMATE DECLARATION
 .c3xgm-about-climate-declaration {
-	$anim-duration:500;
-	$anim-delay:1200;
-	$anim-step:250;	
+	$anim-duration:400;
+	$anim-delay:800;
+	$anim-step:300;	
 
 	// ELEMENT IN VIEW
 	&.element-in-view {
@@ -800,9 +790,9 @@
 
 // LANDFILL
 .c3xgm-about-landfill-free {
-	$anim-duration:500;
-	$anim-delay:1200;
-	$anim-step:250;
+	$anim-duration:400;
+	$anim-delay:1000;
+	$anim-step:300;
 
 	// ELEMENT IN VIEW
 	&.element-in-view {

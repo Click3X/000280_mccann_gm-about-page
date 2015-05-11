@@ -12,6 +12,10 @@ html {
 html, body {
 	-webkit-overflow-scrolling: touch;
 }
+
+body { /* Addresses a small issue in webkit: http://bit.ly/NEdoDq */
+	-webkit-backface-visibility: hidden;
+}
 // PAGE CONTAINER
 .c3xgm-about-page-container {
 	width:100%;
@@ -65,13 +69,18 @@ html, body {
 	}
 }
 
-.c3xgm-about-overflow { overflow: hidden; }
+.c3xgm-about-overflow { 
+	overflow: hidden; 
+	position: relative;
+}
 
 .c3xgm-about-header-holder { position: relative; }
 
 .c3xgm-about-icon-holder {
 	text-align: center;
 	position: relative;
+
+	svg { display: block; }
 	@media(min-width: $tablet-height) {
 		float: left;
 		height: 113px; width:113px;
@@ -138,7 +147,7 @@ html, body {
 }
 
 // FIX SVG INCORRECT HEIGHT BUG
-svg { max-height: 100%; }
+// svg { max-height: 100%; }
 
 // DECORATIVES
 .c3xgm-about-decorative {

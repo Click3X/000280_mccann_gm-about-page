@@ -14,8 +14,11 @@
 	
 	// CRASH TEST DUMMIES	
 	.c3xgm-about-crash-test-dummies {
-		// margin-bottom: 10em;
 		margin-top:0;
+		margin-bottom: 2em;
+
+		@media(min-width: $tablet-height) { margin-bottom: 7em; }
+
 		.c3xgm-about-block-image {
 			width:100%; 
 			position: relative;
@@ -83,6 +86,14 @@
 	// TEST FACILITY
 	.c3xgm-about-test-facility {
 		max-width: 54em;
+		margin-top: 2em;
+		@media(min-width: $tablet-height) {margin-top:7em; }
+
+		.carAnimation-slide {
+			margin-bottom:3em;
+			@media(min-width: $tablet-height) { margin-bottom: 0; }
+		}
+
 		.c3xgm-about-block-image {
 			width: 60%; height: 0; 
 			padding-bottom: 55%;
@@ -99,6 +110,7 @@
 				  width: 48%;
 				  // width: 55%;
 				  float: right;
+				  margin-bottom:0;
 				  padding-bottom: 270px;
 				  > div {max-width: 414px;}
 				  img { max-width: 225px; }
@@ -219,8 +231,8 @@
 
 	// ON STAR
 	.c3xgm-about-onstar-subscribers {
-
-		  margin-bottom: 9em;
+		  // margin-bottom: 9em;
+		  margin-bottom: 5em;
 		  @media(min-width: $tablet-height) { margin-bottom: 7em; }
 		.c3xgm-about-block-image {
 			width: 45%; position: relative;
@@ -428,340 +440,4 @@
 
 .c3xgm-about-disclaimer-box.c3xgm-about-show-disclaimer {
 	height: auto; opacity: 1;
-}
-
-
-// WENS ANIMATIONS
-.tik-set1 {
-    @include prefix(transform-origin, left bottom);
-    @include prefix(animation, clockRotate 3s infinite linear);  
-}
-
-.tik-set2 {
-    @include prefix(transform-origin, left bottom);
-    @include prefix(animation, clockRotate 5s infinite linear);  
-}
-
-.tik-set3 {
-	@include prefix(transform-origin, left bottom);
-    @include prefix(animation, clockRotate 4s infinite linear);  
-}
-
-.tik-set4 {
-    @include prefix(transform-origin, left bottom);
-    @include prefix(animation, clockRotate 5.5s infinite linear);    
-}
-/*END OF TIMEZONE CLOCK ANIMATION*/
-
-
-/*MAP ANIMATION*/
-.fill {
-    @include prefix(animation, wenfill 2s 4s linear forwards);
-    @include prefix(transition, fill-opacity 2s ease-in-out);
-} 
- 
-#safety-truck {
-    opacity: 0;
-    @include prefix(transition, opacity 400ms);
-}
-
-#truck-parent {
-	height: 200px;
-	@media(min-width: $tablet-height) { height: 270px; }
-}
-
-.c3xgm-about-circle-lines {
-    opacity: 1;
-    filter:inherit;
-}
-
-#line-parent {
-    opacity: 0;
-    height: 300px;
-}
-
-.carAnimation-slide {
- -webkit-animation: wenSlideInUp 3s forwards;
- animation: wenSlideInUp 3s forwards;
-}
-
-.carAnimation-rotate {
-    -webkit-animation: wenRotate 4s forwards;
-    animation: wenRotate 4s forwards;
-}
-
-.carAnimation-lineRotate {
-    top: -12% !important;
-    left: 7% !important;
-    -webkit-animation: wenLineRotate 3s infinite linear ;
-    animation: wenLineRotate 3s infinite linear;
-}
-
-.carAnimation-lineFadeIn {
-     -webkit-animation: wenLineFadeIn 2s forwards;
-    animation: wenLineFadeIn 2s forwards;
-}
-
-@-webkit-keyframes wenFadeIn {
-    from {
-        margin-top: 80px;
-        opacity: 0;
-    }
-
-    to {
-        margin-top: 0px;
-        opacity: 1;
-    }
-}
-
-@-moz-keyframes wenFadeIn {
-    from {
-        margin-top: 80px;
-        opacity: 0;
-    }
-
-    to {
-        margin-top: 0px;
-        opacity: 1;
-    }
-}
-
-@-o-keyframes wenFadeIn {
-    from {
-        margin-top: 80px;
-        opacity: 0;
-    }
-
-    to {
-        margin-top: 0px;
-        opacity: 1;
-    }
-}
-
-@keyframes wenFadeIn {
-    from {
-        margin-top: 80px;
-        opacity: 0;
-    }
-
-    to {
-        margin-top: 0px;
-        opacity: 1;
-    }
-}
-
-
-// #truck-line-container {
-// 	@media(min-width: $tablet-height) {
-// 		@include prefix(transform, translate(0, 30%) );
-// 	}
-// }
-
-/*NEW STYLES!!!!!!!!!!!*/
-@-webkit-keyframes wenSlideInUp {
-  0% {
-
-  }
-
-  25% {
-    @include prefix(transform, translate(0, 5%) );
-    opacity: 1;
-  }
-
-  100% {
-   @include prefix(transform, translate(0, -5%) );
-    opacity: 1;
-  }
-
-  100% {
-    @include prefix(transform, translate(0, 0%) );
-    opacity: 1;
-  }
-}
-
-
-@-webkit-keyframes wenRotate {
-  0% {
-    -webkit-transform: rotate(0deg);
-    transform: rotate(0deg);
-  }
-
-  10% {
-    -webkit-transform: rotate(0deg);
-    transform: rotate(0deg);
-  }
-
-  100% {
-    -webkit-transform: rotate(360deg);
-    transform: rotate(360deg);
-  }
-}
-
-@-webkit-keyframes wenLineRotate {
-  from {
-    -webkit-transform: rotate(0deg);
-    transform: rotate(0deg);
-  }
-
-  to {
-    -webkit-transform: rotate(360deg);
-    transform: rotate(360deg);
-  }
-}
-
-@-webkit-keyframes wenLineFadeIn {
-  0% {
-    opacity: 0;
-  }
-
-  10% {
-    opacity: 0;
-  }
-
-  100% {
-    opacity: 1;
-  }
-}
-
-/*TIMEZONE CLOCKS ROTATE*/
-@-webkit-keyframes clockRotate {
-  from {
-    -webkit-transform: rotate(0deg);
-    -moz-transform: rotate(0deg);
-    -ms-transform: rotate(0deg);
-    transform: rotate(0deg);
-  }
-
-  to {
-    -webkit-transform: rotate(360deg);
-    -moz-transform: rotate(0deg);
-    -ms-transform: rotate(0deg);
-    transform: rotate(360deg);
-  }
-}
-
-@-moz-keyframes clockRotate {
-  from {
-    -webkit-transform: rotate(0deg);
-    -moz-transform: rotate(0deg);
-    -ms-transform: rotate(0deg);
-    transform: rotate(0deg);
-  }
-
-  to {
-    -webkit-transform: rotate(360deg);
-    -moz-transform: rotate(360deg);
-    -ms-transform: rotate(360deg);
-    transform: rotate(360deg);
-  }
-}
-
-@-o-keyframes clockRotate {
-  from {
-    -webkit-transform: rotate(0deg);
-    -moz-transform: rotate(0deg);
-    -ms-transform: rotate(0deg);
-    transform: rotate(0deg);
-  }
-
-  to {
-    -webkit-transform: rotate(360deg);
-    -moz-transform: rotate(360deg);
-    -ms-transform: rotate(360deg);
-    transform: rotate(360deg);
-  }
-}
-
-@keyframes clockRotate {
-  from {
-    -webkit-transform: rotate(0deg);
-    transform: rotate(0deg);
-  }
-
-  to {
-    -webkit-transform: rotate(360deg);
-    transform: rotate(360deg);
-  }
-}
-/*END OF TIMEZONE CLOCK ROTATE*/
-
-/*MAP FILLING*/
-@-webkit-keyframes wenfill {
-  from {
-      fill: none;
-      fill-opacity: 0;
-  }
-
-  to {
-      fill: #E6E7E8;
-      fill-opacity: 1;
-  }
-}
-
-@-moz-keyframes wenfill {
-  from {
-      fill: none;
-      fill-opacity: 0;
-  }
-
-  to {
-      fill: #E6E7E8;
-      fill-opacity: 1;
-  }
-}
-
-@-ms-keyframes wenfill {
-  from {
-      fill: none;
-      fill-opacity: 0;
-  }
-
-  to {
-      fill: #E6E7E8;
-      fill-opacity: 1;
-  }
-}
-
-@-o-keyframes wenfill {
-  from {
-      fill: none;
-      fill-opacity: 0;
-  }
-
-  to {
-      fill: #E6E7E8;
-      fill-opacity: 1;
-  }
-}
-
-@keyframes wenfill {
-  from {
-      fill: none;
-      fill-opacity: 0;
-  }
-
-  to {
-      fill: #E6E7E8;
-      fill-opacity: 1;
-  }
-}
-/*END OF MAP FILLING*/
-
-@media (max-width: 628px) {
-    .c3xgm-about-circle-lines {
-        top: -5% !important;
-        left: 6% !important;
-    }
-}
-
-@media (max-width: 500px) {
-    .c3xgm-about-circle-lines {
-        top: 5% !important;
-    }
-}
-
-@media (max-width: 450px) {
-    .c3xgm-about-circle-lines {
-        top: 13% !important;
-    }
 }

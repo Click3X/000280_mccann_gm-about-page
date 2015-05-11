@@ -28,8 +28,8 @@ $page = $pages[2];
                                     </div>
                                     <div id="flag-line-container" class="c3xgm-about-clearfix">
                                         <ul id="animate-flag-line" class="animate-flag-line-js c3xgm-about-clearfix">
-                                            <li class="flag-line"><img src="img/decorative/landscape/flag-line.svg"></li>
-                                            <li class="flag-line"><img src="img/decorative/landscape/flag-line.svg"></li>
+                                            <li class="flag-line"><img src="img/decorative/landscape/flag-line.png"></li>
+                                            <li class="flag-line"><img src="img/decorative/landscape/flag-line.png"></li>
                                         </ul>
                                     </div>
                                     <div class="c3xgm-about-grey-white-gradient c3xgm-about-clearfix"></div>

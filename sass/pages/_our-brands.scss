@@ -5,7 +5,7 @@
 }
 
 .c3xgm-about-block { 
-	margin:4em auto 5em; 
+	margin:4em auto; 
 	@media(min-width:$tablet-height) { margin:7em auto; }
 }
 
@@ -71,6 +71,8 @@
 
 // GLOBAL
 .c3xgm-about-global {
+	margin-bottom:4em;
+	@media(min-width: $tablet-height) { margin-bottom:7em; }
 	.c3xgm-about-blockquote { 
 		position: relative; float:none; 
 		text-align: left; padding-left: 1em; 
@@ -93,7 +95,8 @@
 // SECONDS
 .c3xgm-about-seconds {
 	max-width: 945px;
-	margin-bottom: 9em;
+	// margin-bottom: 9em;
+	margin-bottom:5em;
 	@media(min-width:$tablet-height) { margin-bottom: 7em; }
 	.c3xgm-about-blockquote { 
 		display: inline-block; text-align: right;
@@ -119,7 +122,7 @@
 // DEALERS
 .c3xgm-about-dealers {
 	text-align: center;
-	margin-top:6em; margin-bottom:2em;
+	margin-top:5em; margin-bottom:2em;
 	@media(min-width:$tablet-height) { text-align: left; margin-bottom: 3em;}
 	
 	.c3xgm-about-blockquote {
@@ -215,9 +218,9 @@
 // CHINA
 .c3xgm-about-china {
 	position: relative;
-	margin:7em auto;
+	margin:5em auto;
 	padding-top: 19%;padding-bottom: 18%;
-	@media(min-width:$tablet-height	) { padding-top:0; padding-bottom: 15%; }
+	@media(min-width:$tablet-height	) { padding-top:0; padding-bottom: 15%; margin:7em auto; }
 	@media(min-width:$inner-border) { padding-bottom: 135px; }
 
 	.c3xgm-about-block-image { 
@@ -369,7 +372,7 @@
 // CADILLAC SPECIFIC 
 .c3xgm-about-cadillac-award {
 	margin-bottom: 4em;
-  	margin-top: 9em;
+  	margin-top: 5em;
 
   	@media(min-width: $tablet-height){
   		margin-bottom:0;

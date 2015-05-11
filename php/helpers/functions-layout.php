@@ -9,9 +9,10 @@ function pageHeader($title, $icon, $tagline, $image) {
 	echo '<div class="c3xgm-about-section c3xgm-about-clearfix '.cleanString($title).'">
 		    <div class="c3xgm-about-section-header c3xgm-about-clearfix">
 			    <div class="c3xgm-about-section-header-inner c3xgm-about-clearfix">
-			    	<div class="c3xgm-about-icon-holder c3xgm-about-clearfix">
-			        	<img id="c3xgm-about-'.cleanString($title).'-icon" class="c3xgm-about-section-icon" src="'.$icon.'" alt="'.$title.'">
-			        </div>
+			    	<div class="c3xgm-about-icon-holder c3xgm-about-clearfix">';
+			     echo '<img id="c3xgm-about-'.cleanString($title).'-icon" class="c3xgm-about-section-icon" src="'.$icon.'" alt="'.$title.'">';
+			    	// include('icons-inline-svg/'.cleanString($title).'.php');
+			    echo '</div>
 			        <div class="c3xgm-about-header-holder c3xgm-about-clearfix">
 			        	<div class="c3xgm-about-overflow c3xgm-about-clearfix">
 			        		<h1 class="c3xgm-about-h">'.$titleSpan.'</h1>
@@ -57,6 +58,7 @@ function printDecorative($block) {
 		else { $deco_class = ""; }
 
 	echo '<div class="c3xgm-about-decorative c3xgm-about-clearfix'.$class.''.$deco_class.'">';
+			echo '<div class="c3xgm-about-clearfix c3xgm-about-overflow">';
 			if( isset($block['assets']) ) {
 				if($block['title'] == "Five Stars") { echo '<div class="c3xgm-about-checker"></div>';}
 				
@@ -87,6 +89,7 @@ function printDecorative($block) {
 				if($block['title'] == "Five Stars") { echo '<div class="c3xgm-about-checker"></div>';}
 				if($block['title'] == "Solar Panels" || $block['title'] == "Flag Line") { echo '<div class="c3xgm-about-gradient c3xgm-about-grey-gradient c3xgm-about-solar-road"></div>';}
 			}
+		echo '</div>';
 	echo '</div>';
 }
 
@@ -136,7 +139,7 @@ function printBlock($block) {
 					} elseif($block['title'] == "China") { 
 						$desk_class="c3xgm-about-desktop";
 						echo '<div class="c3xgm-about-block-image">
-								<div class="'.$img_anim.' '.$desk_class.'" alt="'.$block['title'].'">
+								<div class="'.$img_anim.' '.$desk_class.'">
 									<div class="china-flag-wrapper c3xgm-about-desktop c3xgm-about-clearfix">
 									    <img src="img/pages/brands/pole.svg"  alt="China Flag">
 									    <img src="img/pages/brands/chinaflag.gif" alt="China Flag">
