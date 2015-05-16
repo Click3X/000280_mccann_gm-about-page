@@ -10,46 +10,47 @@
 		&:after {
 			content: "";
 			display: block;
-			width:100%;
-			height: 0;
+			width:100%; height: 0;
   			padding-bottom: 32%;
 		}
 
 
 		.c3xgm-about-blockquote-container {
-			width: 94%; max-width: 46em;
-			// margin: 1.5em auto 0;
+			width: 94%; 
 			margin: 0 auto;
+			@media(min-width: $tablet-height) { width: 98%;  }
 		}
 	}
 	// COMMON
 	// IMAGE
 	.c3xgm-about-block-icon {
 		position: relative;
-		// padding-bottom:20%;
-		padding-bottom:18%;
-		height: 0;
+		@media(min-width: $tablet-height) { padding-bottom:18%; height: 0; }
 		img { 
-			width:60%;
-			@include center;
+			width:70%;
+		 	@media(min-width: $tablet-height) {
+		 		width: 90%;
+		 		@include center;
+		 	}
 		}
 	}
 	// IMAGE
 	.c3xgm-about-block-image {
-		  width: 100%; 
-		  max-width: $inner-border;
-		  margin: 0 auto;
-		  position: absolute;
-		  bottom:28px;
-
-		  z-index: -1;
-		  @media(min-width: $tablet-height) {  
+		width: 100%;  max-width: $inner-border;
+		margin: 0 auto;
+		position: absolute;
+		z-index: -1;
+		@media(min-width: $tablet-height) {  
 		  	margin: 0 auto;
 		  	position: absolute;
-		  	bottom:28px;
-		  }
+		}
+		
+		.c3xgm-about-tech-car { 
+			width:90%; 
+			// width:70%; 
+		}
+
 		.c3xgm-about-wheel {display: block;}
-		.c3xgm-about-tech-car { width:70%;}
 	}
 	// BLOCK-QUOTE
 	.c3xgm-about-blockquote {
@@ -70,42 +71,47 @@
 	// INDIVIDUAL
 	// 4G LTE
 	.c3xgm-about-4g-lte {
-		.c3xgm-about-blockquote-container { max-width:39em; }
 		.c3xgm-about-block-icon {
 			@media(min-width: $tablet-height) { 
 				width:35%; float: right; 
 				height: 0; padding-bottom: 128px;
+
+				margin-top:4em;
 			}
-			.c3xgm-about-tech-car { 
-				width:65%; max-width: 157px; 
-				@media(min-width: $tablet-height) { width:80%; max-width: none; }
+			// .c3xgm-about-tech-car { 
+			// 	width:65%; max-width: 157px; 
+			// 	@media(min-width: $tablet-height) { width:80%; max-width: none; }
+			// }
+		}
+		
+		.c3xgm-about-blockquote { 
+			@media(min-width: $tablet-height) { 
+				width:65%; 
+				float: right; 
+				padding-left: 1.5em;
+				margin-top:4em;
 			}
 		}
+
 		.c3xgm-about-block-image { 
 			.c3xgm-about-tech-car {
-				@media(min-width: $tablet-height) { width: 70%; }
+				@media(min-width: $tablet-height) { width: 90%; }
 			}
 
 			.c3xgm-about-wheel {
-				width: 9%;
-				max-width: 76px;
-  				max-height: 75px;
+				width: 11.5714286%; max-width:98px;
 				position: absolute;
-				bottom:19%;
-				&:first-child {
-					left:30%;
+				&:first-child {  
+					bottom:18.6%;
+					left:24.2%; 
 				}
-				&:nth-child(3) {
-					right: 26.4%;
-  					bottom: 19.6%;
+				&:nth-child(3) { 
+					right: 19.4%; bottom: 19.4%; 
 				}
 			}
 
 		}
 
-		.c3xgm-about-blockquote { 
-			@media(min-width: $tablet-height) { width:65%; float: right; }
-		}
 
 		.c3xgm-about-dark-blue.c3xgm-about-thin,
 		.c3xgm-about-light-blue {
@@ -125,40 +131,31 @@
 
 	// CONCEPT CAR
 	.c3xgm-about-concept-car {
-		.c3xgm-about-blockquote-container { max-width: 43em; }
 		// IMAGES
 		.c3xgm-about-blockquote { 
 			width: auto;
-			@media(min-width: $tablet-height) { width:75%; float: right; }
+			@media(min-width: $tablet-height) { 
+				width:75%; float: right; 
+				padding-left:2em;
+			}
 		}
 		.c3xgm-about-block-icon {
-			padding-bottom: 27%;
-			img {width:30%; max-width: 113px;}
+			img {width:30%;}
 			@media(min-width: $tablet-height) { 
 				width:25%; height: 0;  float:right;
 				padding-bottom: 223px;
-				img {width:75%; max-width: none;}
+				img {width:auto; }
 			}
 		}
 
 		.c3xgm-about-block-image { 
 			.c3xgm-about-wheel {	
-				width: 9%;
-				// max-width: 72px; max-height: 71px;
-				max-width: 79px;
-  				max-height: 78px;
+				width: 11.5714286%; max-width: 101px;
 				position: absolute;
 				bottom:20.5%;
 
-				&:first-child {
-					bottom: 20.7%;
-  					left: 30.1%;
-				}
-
-				&:nth-child(3) {
-					right: 28.2%;
-  					bottom: 20.2%;
-				}
+				&:first-child {  bottom: 20.6%; left: 24.1%; }
+				&:nth-child(3) {   right: 21.9%; bottom: 20%; }
 			}
 		}
 	}
@@ -166,21 +163,17 @@
 	// SAFETY
 	.c3xgm-about-safety {
 		.c3xgm-about-block-icon {
-			padding-bottom: 25%;
-			@media(min-width: $tablet-height) { 
-				width: 20%; height: 0;
-				padding-bottom: 212px;
-
-			}
+			@media(min-width: $tablet-height) { width: 30%; height: 0; padding-bottom: 212px; }
+			@media(min-width: $inner-border) { width: 35%; }
 			img {
-				// width:57%;
-				width:40%;
+				width:60%;
 				@media(min-width: $tablet-height) { width: 80%; }
 			}
 		}
 
 		.c3xgm-about-blockquote { 
-			@media(min-width: $tablet-height) { width: 80%; }
+			@media(min-width: $tablet-height) { width: 70%; }
+			@media(min-width: $inner-border) { width: 65%; }
 		}
 
   		.c3xgm-about-light-blue {
@@ -196,17 +189,14 @@
 		.c3xgm-about-block-image {
 
 			.c3xgm-about-wheel {
-				width: 9%;
-				max-width: 76px;
-  				max-height: 75px;
+				width: 11.5714286%; max-width:98px;
 				position: absolute;
-				bottom:19%;
-				&:first-child {
-					left:30%;
+				&:first-child {  
+					bottom:18.6%;
+					left:24.2%; 
 				}
-				&:nth-child(3) {
-					right: 26.4%;
-  					bottom: 19.6%;
+				&:nth-child(3) { 
+					right: 19.4%; bottom: 19.4%; 
 				}
 			}
 		}
@@ -253,4 +243,9 @@
 	}
 
 
+}
+
+
+#c3xgm-about-technology-4g-lte .c3xgm-about-module-technology .c3xgm-about-blockquote {
+	margin-top:4em;
 }

@@ -3,22 +3,23 @@
 #c3xgm-about-page-our-company.c3xgm-about-page.c3xgm-about-page-in-view,
 #c3xgm-about-page-our-people.c3xgm-about-page.c3xgm-about-page-in-view {
 
+
 	.c3xgm-about-section-header { 
 
 		.c3xgm-about-icon-holder { 
 			.c3xgm-about-section-icon {
 				@include prefix(animation-fill-mode, both);
 				@include prefix(animation-name, fadeIn);
-				@include prefix(animation-delay, 400ms);
-				@include prefix(animation-duration, 800ms);
+				@include prefix(animation-delay, 300ms);
+				@include prefix(animation-duration, 600ms);
 			}	
 		}
 
 
 		h1.c3xgm-about-h {
 			@include prefix(animation-fill-mode, both);
-			@include prefix(animation-delay, 400ms);
-			@include prefix(animation-duration, 800ms);
+			@include prefix(animation-delay, 300ms);
+			@include prefix(animation-duration, 600ms);
 			@include prefix(animation-name, fadeIn);
 			@media(min-width: $tablet-height) { @include prefix(animation-name, fadeInRightMega); }
 		 }
@@ -26,8 +27,8 @@
 		hr { 
 			@include prefix(animation-fill-mode, both);
 			@include prefix(animation-name, growHr);
-			@include prefix(animation-delay, 800ms);
-			@include prefix(animation-duration, 800ms);
+			@include prefix(animation-delay, 600ms);
+			@include prefix(animation-duration, 600ms);
 		}
 	}
 
@@ -35,8 +36,8 @@
 	.c3xgm-about-header-p { 
 		@include prefix(animation-fill-mode, both);
 		@include prefix(animation-name, fadeIn);
-		@include prefix(animation-delay, 1400ms);
-		@include prefix(animation-duration, 800ms);
+		@include prefix(animation-delay, 900ms);
+		@include prefix(animation-duration, 600ms);
 	}
 
 	.c3xgm-about-block-earn {
@@ -57,8 +58,8 @@
 					@include prefix(transform-origin, top right);
 					@include prefix(animation-fill-mode, both);
 					@include prefix(animation-name, growBorder);
-					@include prefix(animation-delay,1800ms);
-		  			@include prefix(animation-duration,600ms);
+					@include prefix(animation-delay,900ms);
+		  			@include prefix(animation-duration,400ms);
 		  			@media(min-width: $tablet-height) { width:0.2rem;}
 				}
 
@@ -72,23 +73,23 @@
 					@include prefix(transform-origin, top right);
 					@include prefix(animation-fill-mode, both);
 					@include prefix(animation-name, growBorder);
-					@include prefix(animation-delay,2400ms);
-		  			@include prefix(animation-duration,600ms);
+					@include prefix(animation-delay,1300ms);
+		  			@include prefix(animation-duration,400ms);
 		  			@media(min-width: $tablet-height) { width:0.2rem;}
 				}
 			
 				> span:first-child { 
 					@include prefix(animation-fill-mode, both);
 					@include prefix(animation-name, fadeInLeftMega);
-					@include prefix(animation-delay, 2800ms);
-					@include prefix(animation-duration, 600ms);
+					@include prefix(animation-delay, 1300ms);
+					@include prefix(animation-duration, 400ms);
 				}
 
 				> span:nth-child(2) {
 					@include prefix(animation-fill-mode, both);
 					@include prefix(animation-name, fadeInLeftMega);
-					@include prefix(animation-delay, 3400ms);
-					@include prefix(animation-duration, 500ms);
+					@include prefix(animation-delay, 1700ms);
+					@include prefix(animation-duration, 400ms);
 				}
 			}
 		}
@@ -96,8 +97,8 @@
 		.c3xgm-about-p { 
 			@include prefix(animation-fill-mode, both);
 			@include prefix(animation-name, fadeIn);
-			@include prefix(animation-delay, 4000ms);
-			@include prefix(animation-duration, 800ms);
+			@include prefix(animation-delay, 2400ms);
+			@include prefix(animation-duration, 400ms);
 		}
 
 	}
@@ -105,46 +106,41 @@
 	.c3xgm-about-down-arrow-link {
 		@include prefix(animation-fill-mode, both);
 		@include prefix(animation-name, fadeIn);
-		@include prefix(animation-delay, 4200ms);
+		@include prefix(animation-delay, 3200ms);
 		@include prefix(animation-duration, 400ms);
 	}
-
-	// OUR PEOPLE
-	.c3xgm-about-employees .c3xgm-about-blockquote .c3xgm-about-light-blue.number,
-	.c3xgm-about-employees .c3xgm-about-blockquote .c3xgm-about-span-container .c3xgm-about-gray {
-		@include prefix(animation-fill-mode, both);
-		@include prefix(animation-name, fadeIn);
-		@include prefix(animation-delay, 1900ms);
-		@include prefix(animation-duration, 900ms);
-	}	
 
 
 	// CAR LOGOS
 	.c3xgm-about-module-car {
+		$anim-delay:1400;
+		$anim-step:100;
+		$anim-duration:100;
 		.c3xgm-about-module-car-logo-container li {
+
 			@include prefix(animation-fill-mode, both);
 			@include prefix(animation-name, fadeIn);
-			@include prefix(animation-delay, 1800ms);
+			@include prefix(animation-delay, #{ $anim-delay + "ms"});
 			@include prefix(animation-duration, 100ms);
 
-			&:nth-child(2) { @include prefix(animation-delay, 1900ms); }
-			&:nth-child(3) { @include prefix(animation-delay, 2000ms); }
-			&:nth-child(4) { @include prefix(animation-delay, 2100ms); }
-			&:nth-child(5) { @include prefix(animation-delay, 2200ms); }
-			&:nth-child(6) { @include prefix(animation-delay, 2300ms); }
-			&:nth-child(7) { @include prefix(animation-delay, 2400ms); }
-			&:nth-child(8) { @include prefix(animation-delay, 2500ms); }
-			&:nth-child(9) { @include prefix(animation-delay, 2600ms); }
+			&:nth-child(2) { @include prefix(animation-delay, #{ ($anim-delay + $anim-step * 1 ) + "ms"}); }
+			&:nth-child(3) { @include prefix(animation-delay, #{ ($anim-delay + $anim-step * 2 ) + "ms"}); }
+			&:nth-child(4) { @include prefix(animation-delay,  #{ ($anim-delay + $anim-step * 3 ) + "ms"}); }
+			&:nth-child(5) { @include prefix(animation-delay,  #{ ($anim-delay + $anim-step * 4 ) + "ms"}); }
+			&:nth-child(6) { @include prefix(animation-delay,  #{ ($anim-delay + $anim-step * 5 ) + "ms"}); }
+			&:nth-child(7) { @include prefix(animation-delay,  #{ ($anim-delay + $anim-step * 6 ) + "ms"}); }
+			&:nth-child(8) { @include prefix(animation-delay,  #{ ($anim-delay + $anim-step * 7 ) + "ms"}); }
+			&:nth-child(9) { @include prefix(animation-delay,  #{ ($anim-delay + $anim-step * 8 ) + "ms"}); }
 
 			@media(min-width: $tablet-height) {
-				&:nth-child(3) { @include prefix(animation-delay, 1900ms); }
-				&:nth-child(5) { @include prefix(animation-delay, 2000ms); }
-				&:nth-child(7) { @include prefix(animation-delay, 2100ms); }
-				&:nth-child(9) { @include prefix(animation-delay, 2200ms); }
-				&:nth-child(2) { @include prefix(animation-delay, 2300ms); }
-				&:nth-child(4) { @include prefix(animation-delay, 2400ms); }
-				&:nth-child(6) { @include prefix(animation-delay, 2500ms); }
-				&:nth-child(8) { @include prefix(animation-delay, 2600ms); }
+				&:nth-child(3) { @include prefix(animation-delay, #{ ($anim-delay + $anim-step * 1 ) + "ms"}); }
+				&:nth-child(5) { @include prefix(animation-delay, #{ ($anim-delay + $anim-step * 2 ) + "ms"}); }
+				&:nth-child(7) { @include prefix(animation-delay,  #{ ($anim-delay + $anim-step * 3 ) + "ms"}); }
+				&:nth-child(9) { @include prefix(animation-delay,  #{ ($anim-delay + $anim-step * 4 ) + "ms"}); }
+				&:nth-child(2) { @include prefix(animation-delay,  #{ ($anim-delay + $anim-step * 5 ) + "ms"}); }
+				&:nth-child(4) { @include prefix(animation-delay,  #{ ($anim-delay + $anim-step * 6 ) + "ms"}); }
+				&:nth-child(6) { @include prefix(animation-delay,  #{ ($anim-delay + $anim-step * 7 ) + "ms"}); }
+				&:nth-child(8) { @include prefix(animation-delay,  #{ ($anim-delay + $anim-step * 8 ) + "ms"}); }
 			}
 		}
 
@@ -159,10 +155,10 @@
 	  			@include prefix(animation-duration,500ms);
 			}
 			.c3xgm-about-gray-line {
-				@include prefix(animation-delay,2200ms);
+				@include prefix(animation-delay, #{ ($anim-delay) + "ms"});
 			}
 			.c3xgm-about-yellow-line {
-				@include prefix(animation-delay,2700ms);
+				@include prefix(animation-delay, #{ ($anim-delay + 500) + "ms"});
 			}
 		}
 	}
@@ -176,22 +172,22 @@
 		.c3xgm-about-section-icon { 
 			@include prefix(animation-fill-mode, both);
 			@include prefix(animation-name, fadeIn);
-			@include prefix(animation-delay, 800ms);
-			@include prefix(animation-duration, 800ms);
+			@include prefix(animation-delay, 300ms);
+			@include prefix(animation-duration, 600ms);
 		}
 
 		h1.c3xgm-about-h {
 			@include prefix(animation-fill-mode, both);
 			@include prefix(animation-name, fadeInRightMega);
-			@include prefix(animation-delay, 400ms);
-			@include prefix(animation-duration, 800ms);
+			@include prefix(animation-delay, 300ms);
+			@include prefix(animation-duration, 600ms);
 		 }
 
 		hr { 
 			@include prefix(animation-fill-mode, both);
 			@include prefix(animation-name, growHr);
-			@include prefix(animation-delay, 800ms);
-			@include prefix(animation-duration, 800ms);
+			@include prefix(animation-delay, 600ms);
+			@include prefix(animation-duration, 600ms);
 		}
 	}
 }
@@ -202,8 +198,8 @@
 #c3xgm-about-page-environment.c3xgm-about-page-in-view,
 #c3xgm-about-page-technology.c3xgm-about-page-in-view {
 	$subsec-duration:400;
-	$subsec-delay:600;
-	$subsec-step:250;
+	$subsec-delay:400;
+	$subsec-step:300;
 
 		// SUB-SECTIONS
 	.c3xgm-about-subsection {
@@ -221,34 +217,24 @@
 			@include prefix(animation-delay, #{($subsec-delay) + "ms"});
 			@include prefix(animation-duration, 800ms);	
 
+
+			// @include borderLinesAnimation(200);
+			
 			&:before {
-				content: ""; display: block;
-				position: absolute;
-				margin: auto;
-				bottom:0; left:-0.5em; top:0;
-				width:0.15rem; height: 90%;
-				background-color:$gm-gray-line;
 				@include prefix(transform-origin, top right);
 				@include prefix(animation-fill-mode, both);
 				@include prefix(animation-name, growBorder);
-				@include prefix(animation-delay, #{($subsec-delay + 400) + "ms"});
-	  			@include prefix(animation-duration,600ms);
-	  			@media(min-width: $tablet-height) { width:0.2rem;}
+				@include prefix(animation-delay, #{($subsec-delay ) + "ms"});
+	  			@include prefix(animation-duration,300ms);
 			}
 
 			&:after {
-				content: ""; display: block;
-				position: absolute;
-				bottom:0; top:0; left:-0.5em;
-				margin: auto;
-				width:0.15rem; height: 90%;
-				background-color:$gm-yellow;
+			
 				@include prefix(transform-origin, top right);
 				@include prefix(animation-fill-mode, both);
 				@include prefix(animation-name, growBorder);
-				@include prefix(animation-delay, #{($subsec-delay + 1000) + "ms"});
-	  			@include prefix(animation-duration,600ms);
-	  			@media(min-width: $tablet-height) { width:0.2rem;}
+				@include prefix(animation-delay, #{($subsec-delay + 300) + "ms"});
+	  			@include prefix(animation-duration,300ms);
 			}
 		}
 	}
@@ -261,7 +247,7 @@
 	.c3xgm-about-yellow-bar-left-wrapper.c3xgm-about-p {
 		@include prefix(animation-fill-mode, both);
 		@include prefix(animation-name, fadeIn);
-		@include prefix(animation-delay, 800ms);
+		@include prefix(animation-delay, 400ms);
 		@include prefix(animation-duration, 800ms);
 	}
 
@@ -271,24 +257,24 @@
 			@include prefix(animation-name, fadeIn);
 			@include prefix(animation-duration, 200ms);
 
-			&:first-child { @include prefix(animation-delay, 1400ms); }
-			&:nth-child(2) { @include prefix(animation-delay, 1700ms); }
-			&:nth-child(3) { @include prefix(animation-delay, 2000ms); }
-			&:nth-child(4) { @include prefix(animation-delay, 2300ms); }
-			&:nth-child(5) { @include prefix(animation-delay, 2600ms); }
+			&:first-child { @include prefix(animation-delay, 800ms); }
+			&:nth-child(2) { @include prefix(animation-delay, 950ms); }
+			&:nth-child(3) { @include prefix(animation-delay, 1100ms); }
+			&:nth-child(4) { @include prefix(animation-delay, 1350ms); }
+			&:nth-child(5) { @include prefix(animation-delay, 1500ms); }
 		}
 
 		.c3xgm-about-gray-line {
 			@include prefix(animation-name, growBorder);
 			@include prefix(animation-fill-mode, both);
-			@include prefix(animation-delay, 1600ms);
-			@include prefix(animation-duration, 500ms);			
+			@include prefix(animation-delay, 850ms);
+			@include prefix(animation-duration, 400ms);			
 		}
 		.c3xgm-about-yellow-line {
 			@include prefix(animation-name, growBorder);
 			@include prefix(animation-fill-mode, both);
-			@include prefix(animation-delay, 2200ms);
-			@include prefix(animation-duration, 500ms);			
+			@include prefix(animation-delay, 1250ms);
+			@include prefix(animation-duration, 400ms);			
 		}
 	}
 }
@@ -299,3 +285,8 @@
 // WENS ANIMATIONS
 .people-animate { @include prefix(animation, wenFadeIn 1s linear forwards); }
 #c3xgm-about-employees-img div { opacity: 0; }
+
+.fill {
+    @include prefix(animation, wenfill 2s 4s linear forwards);
+    // @include prefix(transition, fill-opacity 2s ease-in-out);
+} 

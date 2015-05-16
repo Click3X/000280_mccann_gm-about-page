@@ -1,6 +1,6 @@
 <?php
 echo '<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                                     viewBox="0 0 253.2 128.9" enable-background="new 0 0 253.2 128.9" xml:space="preserve" style="max-height: 100%; width: 88%">
+                                     viewBox="0 0 253.2 128.9" enable-background="new 0 0 253.2 128.9" xml:space="preserve" style="max-height: 100%; width: 88%" class="fill">
                                  <g>
                                     <g>
                                        <path class="fill" id="i0" fill="none" stroke="#E6E7E8" d="M79,39v-1.5h-0.2v-1.4l-6.7-7.3V28l1.7-5.6v-0.5L62.7,12v-0.6h0.6V11h1.6c0,0,7.2-10.8,7.2-10.8

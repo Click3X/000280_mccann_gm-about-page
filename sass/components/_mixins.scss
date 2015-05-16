@@ -232,14 +232,14 @@ Stylesheet: Sass Mixins
 		@include prefix(animation-fill-mode, both);
 		@include prefix(animation-name, growBorder);
 		@include prefix(animation-delay, #{$delay + "ms"});
-		@include prefix(animation-duration,600ms);
+		@include prefix(animation-duration,200ms);
 	}
 
 	&:after {
 		@include prefix(transform-origin, top right);
 		@include prefix(animation-fill-mode, both);
 		@include prefix(animation-name, growBorder);
-		@include prefix(animation-delay, #{ ($delay + 600) + "ms"});
-		@include prefix(animation-duration,600ms);
+		@include prefix(animation-delay, #{ ($delay + 300) + "ms"});
+		@include prefix(animation-duration,200ms);
 	}
 }

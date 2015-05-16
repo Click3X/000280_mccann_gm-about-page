@@ -1,298 +1,298 @@
-// WEN ICON ANIMATIONS
-/*GUY ANIMATION*/
-.out_circle {
-  stroke-dasharray: 1000;
-  stroke-dashoffset: 1000;
-}
-
-#person {
-  @include prefix( transform, translateY(100px) );
-}
-
-.grey_circle {
-  @include prefix(transform, scale(0,0) );
-  @include prefix(transform-origin, center center);
-
-  @include prefix(animation, wenScaleUp 0.7s 0.5s linear forwards);
-}
-
-.shadow {
-  @include prefix(transform, scale(0,0) );
-  @include prefix( transform-origin, left center);
-}
-/*END OF GUY ANIMATION*/
-
-/*OUR BRANDS CAR ANIMATION*/
-#brand_car {
-  @include prefix( transform, translateX(-100px) );
-}
-
-#brand_car_shadow {
-  @include prefix(transform, scale(0,0) );
-  @include prefix( transform-origin, left top);
-}
-
-/*OUR COMMITMENT CAR ANIMATION*/
-
-#inner_car {
-  @include prefix(transform, scale(0,0) );
-  @include prefix(transform-origin, 57px 40px);
-  -webkit-transform-origin: center center;
-}
-
-#dark_grey {
-  @include prefix(transform, scale(0,0) );
-  @include prefix(transform-origin, 57px 100px);
-  -webkit-transform-origin: center bottom;
-}
-
-#road {
-  @include prefix(transform, scale(0,0) );
-  @include prefix(transform-origin, 57px 100px);
-  -webkit-transform-origin: center bottom;
-}
-
-#road_lines {
-  @include prefix(transform, scale(0,0) );
-  @include prefix(transform-origin, 57px 100px);
-  -webkit-transform-origin: center bottom;
-}
-
-/*OUR COMPANY ANIMATION*/
-#lighter_yellow {
-  @include prefix(transform, translateY(100px) );
-}
-
-#darker_yellow {
-  @include prefix( transform, translateY(100px) );
-}
-
-#white_band {
-  @include prefix( transform, scale(0, 1) );
-  @include prefix( transform-origin, 32px 0px);
-}
-
-
-// WEN ROTATE
-@-webkit-keyframes wenRotate {
-  0% {-webkit-transform: rotate(0deg);transform: rotate(0deg);
+.c3xgm-about-desktop-device {
+  /*OUR COMPANY ANIMATION*/
+  #lighter_yellow, #gm_logo {
+    opacity: 0;
+    -webkit-transform: translateY(100px);
+    -moz-transform: translateY(100px);
+    -ms-transform: translateY(100px);
+    transform: translateY(100px);
   }
 
-  50% {
-  	-webkit-transform: rotate(0deg);
-    transform: rotate(0deg);
+  #darker_yellow {
+    opacity: 0;
+    -webkit-transform: translateY(100px);
+    -moz-transform: translateY(100px);
+    -ms-transform: translateY(100px);
+    transform: translateY(100px);
+    // -webkit-animation: personSlideIn 0.8s 1s linear forwards;
+    // -moz-animation: personSlideIn 0.8s 1s linear forwards;
+    // -ms-animation: personSlideIn 0.8s 1s linear forwards;
   }
 
-  100% {
-  	-webkit-transform: rotate(360deg);
-    transform: rotate(360deg);
-  }
-}
-
-@-moz-keyframes wenRotate {
-  0% {
-    -moz-transform: rotate(0deg);
-    transform: rotate(0deg);
+  #white_band {
+    stroke-dasharray: 1000;
+    stroke-dashoffset: 1000;
+    // -webkit-animation: dash 6s 2s linear forwards;
+    // -moz-animation: dash 6s 2s linear forwards;
+    // -ms-animation: dash 6s 2s linear forwards;
   }
 
-  50% {
-    -moz-transform: rotate(0deg);
-    transform: rotate(0deg);
+
+  /* OUR PEOPLE */
+  .out_circle {
+    opacity: 0;
+    stroke-dasharray: 1000;
+    stroke-dashoffset: 1000;
+    // -webkit-animation: dash 3s 0.5s linear forwards;
+    // -moz-animation: dash 3s 0.5s linear forwards;
+    // -ms-animation: dash 3s 0.5s linear forwards;
   }
 
-  100% {
-    -moz-transform: rotate(360deg);
-    transform: rotate(360deg);
-  }
-}
-
-@-o-keyframes wenRotate {
-  0% {
-    -o-transform: rotate(0deg);
-    transform: rotate(0deg);
-  }
-
-  50% {
-    -o-transform: rotate(0deg);
-    transform: rotate(0deg);
+  #person {
+    opacity: 0;
+    -webkit-transform: translateY(100px);
+    -moz-transform: translateY(100px);
+    -ms-transform: translateY(100px);
+    transform: translateY(100px);
+    // -webkit-animation: personSlideIn 0.5s 1.1s linear forwards;
+    // -moz-animation: personSlideIn 0.5s 1.1s linear forwards;
+    // -ms-animation: personSlideIn 0.5s 1.1s linear forwards;
   }
 
-  100% {
-    -o-transform: rotate(360deg);
-    transform: rotate(360deg);
-  }
-}
-
-@keyframes wenRotate {
-  0% {
-    transform: rotate(0deg);
-    transform: rotate(0deg);
-  }
-
-  50% {
-    transform: rotate(0deg);
-    transform: rotate(0deg);
+  #tie {
+    opacity: 0;
+    -webkit-transform: translateY(-100px);
+    -moz-transform: translateY(-100px);
+    -ms-transform: translateY(-100px);
+    transform: translateY(-100px);
+    // -webkit-animation: tieSlideIn 0.5s 1.2s linear forwards;
+    // -moz-animation: tieSlideIn 0.5s 1.2s linear forwards;
+    // -ms-animation: tieSlideIn 0.5s 1.2s linear forwards;
   }
 
-  100% {
-    transform: rotate(360deg);
-    transform: rotate(360deg);
+  .grey_circle {
+    -webkit-transform: scale(0,0);
+    -moz-transform: scale(0,0);
+    -ms-transform: scale(0,0);
+    transform: scale(0,0);
+    -webkit-transform-origin: center center;
+    -moz-transform-origin: center center;
+    transform-origin: center center;
+    // -webkit-animation: wenScaleUp 0.5s 0.5s linear forwards;
+    // -moz-animation: wenScaleUp 0.5s 0.5s linear forwards;
+    // -ms-animation: wenScaleUp 0.5s 0.5s linear forwards;
+  }
+
+  .shadow { opacity: 0; }
+
+  /*OUR BRANDS CAR ANIMATION*/
+  #brand_car {
+    opacity: 0;
+    -webkit-transform: translateX(-100px);
+    -moz-transform: translateX(-100px);
+    -ms-transform: translateX(-100px);
+    transform: translateX(-100px);
+  }
+
+  #brand_car_shadow {
+    -webkit-transform: scale(0,0);
+    -moz-transform: scale(0,0);
+    -ms-transform: scale(0,0);
+    transform: scale(0,0);
+    -webkit-transform-origin: left top;
+    -moz-transform-origin: left top;
+    transform-origin: left top;
+    // -webkit-animation: wenScaleUp 0.3s 1.4s linear forwards;
+    // -moz-animation: wenScaleUp 0.3s 1.4s linear forwards;
+    // -ms-animation: wenScaleUp 0.3s 1.4s linear forwards;
+    // -o-animation: wenScaleUp 0.3s 1.4s linear forwards;
+    // animation: wenScaleUp 0.3s 1.4s linear forwards;
+  }
+
+  /*OUR COMMITMENT CAR ANIMATION*/
+
+  #inner_car {
+    -webkit-transform: scale(0,0);
+    -moz-transform: scale(0,0);
+    -ms-transform: scale(0,0);
+    transform: scale(0,0);
+    -webkit-transform-origin: center center;
+    -moz-transform-origin: 57px 40px;
+    transform-origin: 57px 40px;
+    // -webkit-animation: wenScaleUp 0.5s 1.2s linear forwards;
+    // -moz-animation: wenScaleUp 0.5s 1.2s linear forwards;
+    // -ms-animation: wenScaleUp 0.5s 1.2s linear forwards;
+  }
+
+  #dark_grey {
+    -webkit-transform: scale(0,0);
+    -moz-transform: scale(0,0);
+    -ms-transform: scale(0,0);
+    transform: scale(0,0);
+    -webkit-transform-origin: center bottom;
+    -moz-transform-origin: 57px 100px;
+    transform-origin: 57px 100px;
+    // -webkit-animation: wenScaleUp 0.4s 0.8s linear forwards;
+    // -moz-animation: wenScaleUp 0.4s 0.8s linear forwards;
+    // -ms-animation: wenScaleUp 0.4s 0.8s linear forwards;
+  }
+
+  #road {
+    -webkit-transform: scale(0,0);
+    -moz-transform: scale(0,0);
+    -ms-transform: scale(0,0);
+    transform: scale(0,0);
+    -webkit-transform-origin: center center;
+    -moz-transform-origin: 57px 57px;
+    transform-origin: 57px 57px;
+    // -webkit-animation: wenScaleUp 0.5s 1s linear forwards;
+    // -moz-animation: wenScaleUp 0.5s 1s linear forwards;
+    // -ms-animation: wenScaleUp 0.5s 1s linear forwards;
+  }
+
+  #road_lines {
+    -webkit-transform: scale(0,0);
+    -moz-transform: scale(0,0);
+    -ms-transform: scale(0,0);
+    transform: scale(0,0);
+    -webkit-transform-origin: center center;
+    -moz-transform-origin: 57px 57px;
+    transform-origin: 57px 57px;
+    // -webkit-animation: wenScaleUp 0.6s 1.2s linear forwards;
+    // -moz-animation: wenScaleUp 0.6s 1.2s linear forwards;
+    // -ms-animation: wenScaleUp 0.6s 1.2s linear forwards;
+  }
+
+  #sun {
+      -webkit-transform: scale(0,0);
+    -moz-transform: scale(0,0);
+    -ms-transform: scale(0,0);
+    transform: scale(0,0);
+    -webkit-transform-origin: center;
+    -moz-transform-origin: center;
+    transform-origin: center;
+    // -webkit-animation: wenScaleUp 0.6s 1.2s linear forwards;
+    // -moz-animation: wenScaleUp 0.6s 1.2s linear forwards;
+    // -ms-animation: wenScaleUp 0.6s 1.2s linear forwards;
+  }
+
+
+  .c3xgm-about-page-in-view {
+
+    .out_circle {
+      opacity: 1;
+      -webkit-animation: dash 3s 0.5s linear forwards;
+      -moz-animation: dash 3s 0.5s linear forwards;
+      -ms-animation: dash 3s 0.5s linear forwards;
+      -o-animation: dash 3s 0.5s linear forwards;
+      animation: dash 3s 0.5s linear forwards;
+    }
+
+    /*OUR COMPANY ANIMATION*/
+    #lighter_yellow, #gm_logo {
+      // opacity: 1;
+      -webkit-animation: personSlideIn 0.8s 0.7s linear forwards;
+      -moz-animation: personSlideIn 0.8s 0.7s linear forwards;
+      -ms-animation: personSlideIn 0.8s 0.7s linear forwards;
+      -o-animation: personSlideIn 0.8s 0.7s linear forwards;
+      animation: personSlideIn 0.8s 0.7s linear forwards;
+    }
+
+    #darker_yellow {
+      // opacity: 1;
+      -webkit-animation: personSlideIn 0.8s 1s linear forwards;
+      -moz-animation: personSlideIn 0.8s 1s linear forwards;
+      -ms-animation: personSlideIn 0.8s 1s linear forwards;
+      -o-animation: personSlideIn 0.8s 1s linear forwards;
+      animation: personSlideIn 0.8s 1s linear forwards;
+    }
+
+    #white_band {
+      -webkit-animation: dash 6s 2s linear forwards;
+      -moz-animation: dash 6s 2s linear forwards;
+      -ms-animation: dash 6s 2s linear forwards;
+      -o-animation: dash 6s 2s linear forwards;
+      animation: dash 6s 2s linear forwards;
+    }
+
+    // OUR PEOPLE
+    #person {
+      opacity: 1;
+      -webkit-animation: personSlideIn 0.7s 0.6s linear forwards;
+      -moz-animation: personSlideIn 0.7s 0.6s linear forwards;
+      -ms-animation: personSlideIn 0.7s 0.6s linear forwards;
+      -o-animation: personSlideIn 0.7s 0.6s linear forwards;
+      animation: personSlideIn 0.7s 0.6s linear forwards;
+    }
+    #tie {
+      // opacity: 1;
+      -webkit-animation: tieSlideIn 0.5s 1.2s linear forwards;
+      -moz-animation: tieSlideIn 0.5s 1.2s linear forwards;
+      -ms-animation: tieSlideIn 0.5s 1.2s linear forwards;
+      -o-animation: tieSlideIn 0.5s 1.2s linear forwards;
+      animation: tieSlideIn 0.5s 1.2s linear forwards;
+    }
+    .grey_circle {
+      -webkit-animation: greycircleScaleUp 0.5s 0.5s linear forwards;
+      -moz-animation: greycircleScaleUp 0.5s 0.5s linear forwards;
+      -ms-animation: greycircleScaleUp 0.5s 0.5s linear forwards;
+      -o-animation: greycircleScaleUp 0.5s 0.5s linear forwards;
+      animation: greycircleScaleUp 0.5s 0.5s linear forwards;
+    }
+    .shadow {
+      -webkit-animation: fadeIn 0.3s 1.6s linear forwards;
+      -moz-animation: fadeIn 0.3s 1.6s linear forwards;
+      -ms-animation: fadeIn 0.3s 1.6s linear forwards;
+      -o-animation: fadeIn 0.3s 1.6s linear forwards;
+      animation: fadeIn 0.3s 1.6s linear forwards;
+    }
+
+    // OUR BRANDS
+    #brand_car {
+      -webkit-animation: wenSlideRight 0.4s 1s linear forwards;
+      -moz-animation: wenSlideRight 0.4s 1s linear forwards;
+      -ms-animation: wenSlideRight 0.4s 1s linear forwards;
+      -o-animation: wenSlideRight 0.4s 1s linear forwards;
+      animation: wenSlideRight 0.4s 1s linear forwards;
+    }
+
+    #brand_car_shadow {
+      -webkit-animation: wenScaleUp 0.3s 1.4s linear forwards;
+      -moz-animation: wenScaleUp 0.3s 1.4s linear forwards;
+      -ms-animation: wenScaleUp 0.3s 1.4s linear forwards;
+      -o-animation: wenScaleUp 0.3s 1.4s linear forwards;
+      animation: wenScaleUp 0.3s 1.4s linear forwards;
+    }
+
+    // OUR COMMITMENT
+    #inner_car {
+      -webkit-animation: wenScaleUp 0.5s 1.2s linear forwards;
+      -moz-animation: wenScaleUp 0.5s 1.2s linear forwards;
+      -ms-animation: wenScaleUp 0.5s 1.2s linear forwards;
+      -o-animation: wenScaleUp 0.5s 1.2s linear forwards;
+      animation: wenScaleUp 0.5s 1.2s linear forwards;
+    }
+
+    #dark_grey {
+      -webkit-animation: wenScaleUp 0.4s 0.8s linear forwards;
+      -moz-animation: wenScaleUp 0.4s 0.8s linear forwards;
+      -ms-animation: wenScaleUp 0.4s 0.8s linear forwards;
+      -o-animation: wenScaleUp 0.4s 0.8s linear forwards;
+      animation: wenScaleUp 0.4s 0.8s linear forwards;
+    }
+
+    #road {
+      -webkit-animation: wenScaleUp 0.5s 1s linear forwards;
+      -moz-animation: wenScaleUp 0.5s 1s linear forwards;
+      -ms-animation: wenScaleUp 0.5s 1s linear forwards;
+      -o-animation: wenScaleUp 0.5s 1s linear forwards;
+      animation: wenScaleUp 0.5s 1s linear forwards;
+    }
+
+    #road_lines {
+      -webkit-animation: wenScaleUp 0.6s 1.2s linear forwards;
+      -moz-animation: wenScaleUp 0.6s 1.2s linear forwards;
+      -ms-animation: wenScaleUp 0.6s 1.2s linear forwards;
+      -o-animation: wenScaleUp 0.6s 1.2s linear forwards;
+      animation: wenScaleUp 0.6s 1.2s linear forwards;
+    }
+
+    #sun {
+      -webkit-animation: wenScaleUp 0.6s 1.2s linear forwards;
+      -moz-animation: wenScaleUp 0.6s 1.2s linear forwards;
+      -ms-animation: wenScaleUp 0.6s 1.2s linear forwards;
+      -o-animation: wenScaleUp 0.6s 1.2s linear forwards;
+      animation: wenScaleUp 0.6s 1.2s linear forwards;
+    }
   }
 }
-
-
-// LINE ROTATE
-@-webkit-keyframes wenLineRotate {
-  0% { -webkit-transform: rotate(0deg); }
-  100% { -webkit-transform: rotate(360deg); }
-}
-
-@-moz-keyframes wenLineRotate {
-  0% { -moz-transform: rotate(0deg); }
-  100% { -moz-transform: rotate(360deg); }
-}
-
-@-o-keyframes wenLineRotate {
-  0% { -o-transform: rotate(0deg); }
-  100% { -o-transform: rotate(360deg); }
-}
-
-@keyframes wenLineRotate {
-  0% { transform: rotate(0deg); }
-  100% { transform: rotate(360deg); }
-}
-
-// LINE FADE IN
-@-webkit-keyframes wenLineFadeIn {
-  0% {opacity: 0;}
-  50% {opacity: 0;}
-  100% {opacity: 1;}
-}
-
-@-moz-keyframes wenLineFadeIn {
-  0% { opacity: 0;}
-  50% { opacity: 0;}
-  100% { opacity: 1;}
-}
-
-@-o-keyframes wenLineFadeIn {
-  0% { opacity: 0;}
-  50% { opacity: 0;}
-  100% { opacity: 1;}
-}
-
-@keyframes wenLineFadeIn {
-  0% { opacity: 0; }
-  50% { opacity: 0; }
-  100% { opacity: 1; }
-}
-
-
-/*start of icons animation*/
-@-webkit-keyframes dash {
-  0% { stroke-dashoffset: 1000; }
-  100% { stroke-dashoffset: 0; }
-}
-
-@-moz-keyframes dash {
-  0% { stroke-dashoffset: 1000; }
-  100% { stroke-dashoffset: 0; }
-}
-
-@-o-keyframes dash {
-  0% { stroke-dashoffset: 1000; }
-  100% { stroke-dashoffset: 0; }
-}
-
-@keyframes dash {
-  0% { stroke-dashoffset: 1000; }
-  100% { stroke-dashoffset: 0; }
-}
-
-
-
-/*PERSON SLIDE IN*/
-@-webkit-keyframes personSlideIn {
-  0% { -webkit-transform: translateY(100px); }
-  100% { -webkit-transform: translateY(0); }
-}
-
-@-moz-keyframes personSlideIn {
-  0% { -moz-transform: translateY(100px); }
-  100% { -moz-transform: translateY(0); }
-}
-
-@-o-keyframes personSlideIn {
-  0% { -o-transform: translateY(100px); }
-  100% { -o-transform: translateY(0); }
-}
-
-@keyframes personSlideIn {
-  0% { transform: translateY(100px); }
-  100% { transform: translateY(0);}
-}
-
-
-/*wen SCALEUP*/
-@-webkit-keyframes wenScaleUp {
-  0% { -webkit-transform: scale(0,0); }
-  100% { -webkit-transform: scale(1,1); }
-}
-
-@-moz-keyframes wenScaleUp {
-  0% { -moz-transform: scale(0,0); }
-  100% { -moz-transform: scale(1,1); }
-}
-
-@-o-keyframes wenScaleUp {
-  0% { -o-transform: scale(0,0); }
-  100% { -o-transform: scale(1,1); }
-}
-
-@keyframes wenScaleUp {
-  0% { transform: scale(0,0); }
-  100% { transform: scale(1,1); }
-}
-
-// WHITE BAND SCALE3
-@-webkit-keyframes whiteBandScale {
-  0% {-webkit-transform: scale(0,1); }
-  100% { -webkit-transform: scale(1,1); }
-}
-
-@-moz-keyframes whiteBandScale {
-  0% { -moz-transform: scale(0,1); }
-  100% { -moz-transform: scale(1,1); }
-}
-
-@-o-keyframes whiteBandScale {
-  0% { -o-transform: scale(0,1); }
-  100% { -o-transform: scale(1,1); }
-}
-
-@keyframes whiteBandScale {
-  0% { transform: scale(0,1); }
-  100% { transform: scale(1,1); }
-}
-
-/*Brand car slide in 0% left*/
-@-webkit-keyframes wenSlideRight {
-  0% { -webkit-transform: translateX(-100px); }
-  100% { -webkit-transform: translateX(0); }
-}
-
-@-moz-keyframes wenSlideRight {
-  0% { -moz-transform: translateX(-100px); }
-  100% { -moz-transform: translateX(0); }
-}
-
-@-o-keyframes wenSlideRight {
-  0% { -o-transform: translateX(-100px); }
-  100% { -o-transform: translateX(0); }
-}
-
-@keyframes wenSlideRight {
-  0% { transform: translateX(-100px); }
-  100% { transform: translateX(0); }
-}
-/*end of icons animation*/

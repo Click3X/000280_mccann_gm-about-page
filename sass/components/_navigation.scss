@@ -4,7 +4,9 @@
 	position: fixed; 
 	margin:auto;
 	
-	top:40px; right:4%; 
+	top:40px; 
+	// right:4%; 
+	right:0; 
 
 	z-index: 2000;
 	@include prefix(transform, translate3d(0,0,2000));

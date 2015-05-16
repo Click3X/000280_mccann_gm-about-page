@@ -100,7 +100,8 @@
 
 			display: block;
 			position: absolute;
-			bottom: 1em; left: 0; right: 0;
+			// bottom: 1em; 
+			left: 0; right: 0;
 		}
 
 		.c3xgm-about-p { margin-left:0; margin-right:0; 
@@ -115,8 +116,13 @@
 
 		.c3xgm-about-block-image {
 			position: relative; text-align: center;
-			max-width: 77%; height: 0; margin-top:2em;
-			img {  display: block; margin:0 auto; max-width: 77%; }
+			// max-width: 77%; 
+			height: 0; 
+			margin-top:2em;
+			img {  
+				display: block; margin:0 auto; 
+				// max-width: 77%; 
+			}
 		}
 	}
 
@@ -165,11 +171,18 @@
 		}
 	}
 
+	#c3xgm-about-module-car {
+		.c3xgm-about-block-image {
+			padding-bottom: 0;
+			height: auto;
+		}
+	}
+
 	// CARS
-	.c3xgm-about-chevrolet .c3xgm-about-block-image { padding-bottom:37.56906077348066%; }
-	.c3xgm-about-buick .c3xgm-about-block-image { padding-bottom:39.95584988962472%; }
-	.c3xgm-about-gmc .c3xgm-about-block-image { padding-bottom:34.65783664459161%; }
-	.c3xgm-about-opel .c3xgm-about-block-image { padding-bottom:42.721854304635764%; }
-	.c3xgm-about-cadillac .c3xgm-about-block-image { padding-bottom:27.593818984547464%; }
-	.c3xgm-about-vauxhall .c3xgm-about-block-image { padding-bottom:42.60485651214128%; }
+	// .c3xgm-about-chevrolet .c3xgm-about-block-image { padding-bottom:37.56906077348066%; }
+	// .c3xgm-about-buick .c3xgm-about-block-image { padding-bottom:39.95584988962472%; }
+	// .c3xgm-about-gmc .c3xgm-about-block-image { padding-bottom:34.65783664459161%; }
+	// .c3xgm-about-opel .c3xgm-about-block-image { padding-bottom:42.721854304635764%; }
+	// .c3xgm-about-cadillac .c3xgm-about-block-image { padding-bottom:27.593818984547464%; }
+	// .c3xgm-about-vauxhall .c3xgm-about-block-image { padding-bottom:42.60485651214128%; }
 }

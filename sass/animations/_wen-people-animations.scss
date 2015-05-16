@@ -3,22 +3,22 @@
 // WENS ANIMATIONS
 .tik-set1 {
     @include prefix(transform-origin, left bottom);
-    @include prefix(animation, clockRotate 3s infinite linear);  
+    @include prefix(animation, rotate 3s infinite linear both);  
 }
 
 .tik-set2 {
     @include prefix(transform-origin, left bottom);
-    @include prefix(animation, clockRotate 5s infinite linear);  
+    @include prefix(animation, rotate 5s infinite linear both);  
 }
 
 .tik-set3 {
   @include prefix(transform-origin, left bottom);
-    @include prefix(animation, clockRotate 4s infinite linear);  
+    @include prefix(animation, rotate 4s infinite linear both);  
 }
 
 .tik-set4 {
     @include prefix(transform-origin, left bottom);
-    @include prefix(animation, clockRotate 5.5s infinite linear);    
+    @include prefix(animation, rotate 5.5s infinite linear both);    
 }
 /*END OF TIMEZONE CLOCK ANIMATION*/
 
@@ -26,10 +26,11 @@
 /*MAP ANIMATION*/
 .fill {
     @include prefix(animation, wenfill 2s 4s linear forwards);
-    @include prefix(transition, fill-opacity 2s ease-in-out);
+    // @include prefix(transition, fill-opacity 2s ease-in-out);
 } 
  
-#safety-truck {
+// #safety-truck {
+#c3xgm-about-truck-line-holder {
     opacity: 0;
     @include prefix(transition, opacity 400ms);
 }
@@ -39,278 +40,39 @@
   @media(min-width: $tablet-height) { height: 270px; }
 }
 
-.c3xgm-about-circle-lines {
-    opacity: 1;
-    filter:inherit;
-}
+.c3xgm-about-circle-lines { opacity: 1;  filter:inherit; }
 
-#line-parent {
-    opacity: 0;
-    height: 300px;
-}
+#line-parent { opacity: 0; height: 300px; }
+
 
 .carAnimation-slide {
- -webkit-animation: wenSlideInUp 3s forwards;
- animation: wenSlideInUp 3s forwards;
+    @include prefix(animation-fill-mode, forwards);
+    @include prefix(animation-name, wenSlideInUp);
+    @include prefix(animation-delay,0);
+    @include prefix(animation-duration, 1s);
 }
 
 .carAnimation-rotate {
-    -webkit-animation: wenRotate 4s forwards;
-    animation: wenRotate 4s forwards;
+    @include prefix(animation-fill-mode, forwards);
+    @include prefix(animation-name, rotate);
+    @include prefix(animation-delay,1s);
+    @include prefix(animation-duration, 4s);
 }
 
 .carAnimation-lineRotate {
-    top: -12% !important;
-    left: 7% !important;
-    -webkit-animation: wenLineRotate 3s infinite linear ;
-    animation: wenLineRotate 3s infinite linear;
+    @include prefix(animation-fill-mode, forwards);
+    // @include prefix(animation-name, wenLineRotate);
+    @include prefix(animation-name, rotate);
+    @include prefix( animation-iteration-count, infinite);
+    @include prefix(animation-delay,1s);
+    @include prefix(animation-duration, 3s);
+    @include prefix(animation-timing-function, linear);
 }
 
 .carAnimation-lineFadeIn {
-     -webkit-animation: wenLineFadeIn 2s forwards;
-    animation: wenLineFadeIn 2s forwards;
+    @include prefix(animation-fill-mode, forwards);
+    @include prefix(animation-name, fadeIn);
+    @include prefix(animation-delay,1s);
+    @include prefix(animation-duration,1s);
 }
 
-@-webkit-keyframes wenFadeIn {
-    from {
-        margin-top: 80px;
-        opacity: 0;
-    }
-
-    to {
-        margin-top: 0px;
-        opacity: 1;
-    }
-}
-
-@-moz-keyframes wenFadeIn {
-    from {
-        margin-top: 80px;
-        opacity: 0;
-    }
-
-    to {
-        margin-top: 0px;
-        opacity: 1;
-    }
-}
-
-@-o-keyframes wenFadeIn {
-    from {
-        margin-top: 80px;
-        opacity: 0;
-    }
-
-    to {
-        margin-top: 0px;
-        opacity: 1;
-    }
-}
-
-@keyframes wenFadeIn {
-    from {
-        margin-top: 80px;
-        opacity: 0;
-    }
-
-    to {
-        margin-top: 0px;
-        opacity: 1;
-    }
-}
-
-
-// #truck-line-container {
-//  @media(min-width: $tablet-height) {
-//    @include prefix(transform, translate(0, 30%) );
-//  }
-// }
-
-/*NEW STYLES!!!!!!!!!!!*/
-@-webkit-keyframes wenSlideInUp {
-  0% {
-
-  }
-
-  25% {
-    @include prefix(transform, translate(0, 5%) );
-    opacity: 1;
-  }
-
-  100% {
-   @include prefix(transform, translate(0, -5%) );
-    opacity: 1;
-  }
-
-  100% {
-    @include prefix(transform, translate(0, 0%) );
-    opacity: 1;
-  }
-}
-
-
-@-webkit-keyframes wenRotate {
-  0% {
-    -webkit-transform: rotate(0deg);
-    transform: rotate(0deg);
-  }
-
-  10% {
-    -webkit-transform: rotate(0deg);
-    transform: rotate(0deg);
-  }
-
-  100% {
-    -webkit-transform: rotate(360deg);
-    transform: rotate(360deg);
-  }
-}
-
-@-webkit-keyframes wenLineRotate {
-  from {
-    -webkit-transform: rotate(0deg);
-    transform: rotate(0deg);
-  }
-
-  to {
-    -webkit-transform: rotate(360deg);
-    transform: rotate(360deg);
-  }
-}
-
-@-webkit-keyframes wenLineFadeIn {
-  0% {
-    opacity: 0;
-  }
-
-  10% {
-    opacity: 0;
-  }
-
-  100% {
-    opacity: 1;
-  }
-}
-
-/*TIMEZONE CLOCKS ROTATE*/
-@-webkit-keyframes clockRotate {
-  from {
-    -webkit-transform: rotate(0deg);
-  }
-
-  to {
-    -webkit-transform: rotate(360deg);
-  }
-}
-
-@-moz-keyframes clockRotate {
-  from {
-    -moz-transform: rotate(0deg);
-  }
-
-  to {
-    -moz-transform: rotate(360deg);
-  }
-}
-
-@-o-keyframes clockRotate {
-  from {
-    -o-transform: rotate(0deg);
-  }
-
-  to {
-    -o-transform: rotate(360deg);
-  }
-}
-
-@keyframes clockRotate {
-  from {
-    transform: rotate(0deg);
-  }
-
-  to {
-    transform: rotate(360deg);
-  }
-}
-/*END OF TIMEZONE CLOCK ROTATE*/
-
-/*MAP FILLING*/
-@-webkit-keyframes wenfill {
-  from {
-      fill: none;
-      fill-opacity: 0;
-  }
-
-  to {
-      fill: #E6E7E8;
-      fill-opacity: 1;
-  }
-}
-
-@-moz-keyframes wenfill {
-  from {
-      fill: none;
-      fill-opacity: 0;
-  }
-
-  to {
-      fill: #E6E7E8;
-      fill-opacity: 1;
-  }
-}
-
-@-ms-keyframes wenfill {
-  from {
-      fill: none;
-      fill-opacity: 0;
-  }
-
-  to {
-      fill: #E6E7E8;
-      fill-opacity: 1;
-  }
-}
-
-@-o-keyframes wenfill {
-  from {
-      fill: none;
-      fill-opacity: 0;
-  }
-
-  to {
-      fill: #E6E7E8;
-      fill-opacity: 1;
-  }
-}
-
-@keyframes wenfill {
-  from {
-      fill: none;
-      fill-opacity: 0;
-  }
-
-  to {
-      fill: #E6E7E8;
-      fill-opacity: 1;
-  }
-}
-/*END OF MAP FILLING*/
-
-@media (max-width: 628px) {
-    .c3xgm-about-circle-lines {
-        top: -5% !important;
-        left: 6% !important;
-    }
-}
-
-@media (max-width: 500px) {
-    .c3xgm-about-circle-lines {
-        top: 5% !important;
-    }
-}
-
-@media (max-width: 450px) {
-    .c3xgm-about-circle-lines {
-        top: 13% !important;
-    }
-}

@@ -24,16 +24,12 @@ h1,h2,h3,h4,h5,h6{
 	font-family: "open-sans", 'Arial', Arial, sans-serif; color: $gm-black;
 	margin:9px 0 9px 0; 
 	padding:0 2% 0 7px;
-	// max-width: 39em;
 	  max-width: 44em;
 
 	@media( min-width:$tablet-height ){ font-size: 18px; }
 	strong { font-weight: 700; }
 }
 
-// .c3xgm-about-subsection .c3xgm-about-p::first-line { 
-//     background-color: yellow;
-// }
 
 .c3xgm-about-blockquote { max-width: none; }
 
@@ -120,7 +116,6 @@ h4.c3xgm-about-h{
 
 
 // RESPONSIVE STYLES FOR SECTION HEADERS
-// p.c3xgm-about-p.c3xgm-about-header-p {
 .c3xgm-about-header-p {
 	margin:0 auto; padding: 0 2% 0 7px;
 	text-align: left;
@@ -133,6 +128,15 @@ h4.c3xgm-about-h{
 
 .c3xgm-about-section-header {
 	@media( min-width:$tablet-height ){ padding:0; }
+}
+
+// SUBSECTION HEADERS
+.c3xgm-about-subsection .c3xgm-about-p {
+	// BORDER LINES
+	@include borderLines(left);
+
+	&:before,
+	&:after { left:-0.5em; }
 }
 
 // DISCLAIMER

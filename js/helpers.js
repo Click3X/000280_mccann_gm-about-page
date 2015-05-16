@@ -17,19 +17,43 @@ if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(naviga
 console.log('This is mobile: ' + mobile);
 // IF MOBILE - ADD MOBILE STYLESHEET
 if(mobile) {
-    jQuery('head').append('<link rel="stylesheet" href="stylesheets/mobile.css" type="text/css" />');
-
 
     // REPLACE GIFS WITH SVGS
     $('img[src$=".gif"]').each(function(index,element) {
-        element.src = element.src.replace('.gif','.svg');
+        var fname = element.src.substring(element.src.lastIndexOf('/')+1, element.src.lastIndexOf('.'));
+        console.log(fname);
+        // IF CHINA FLAG ON TABLET DEVICE, HIDE GIF AND GET APPORPRIATE SVG
+
+        if(fname == "flag") {
+            $('img[src$="pole.svg"]').each(function(index, element) {
+                element.src = element.src.replace('pole.svg','flag.svg');
+            });
+            $('img[src$="flag.gif"]').hide();
+        } else if(fname == "crash-test-dummies") {
+            var elemSrc = element.src.replace('.gif','.svg');
+            // GET PARENT TO ATTACH NEW ELEMENT
+            var parent = $(element).parent();
+            // DELETE HTML ELEMENT W/ JQUERY
+            $(element).remove();
+            // CREATE NEW HTML ELEMENT & ADD TO PARENT
+            jQuery('<img/>', {
+                src: elemSrc
+            }).addClass('c3xgm-about-crash-svg').appendTo(parent);
+
+        } else {
+            // REPLACE ELEMENT SRC
+            element.src = element.src.replace('.gif','.svg');
+        }
     });
 
     // MAKE FLAGS ANIMATE
     $('#animate-flag-line').addClass('animate-flag-line');
 
-    // jQuery('body').append('<script src="js/mobile.js"></script>').addClass('c3xgm-about-mobile-device');
+    // ADD MOBILE CLASS
     jQuery('body').addClass('c3xgm-about-mobile-device');
+} else {
+    // ADD DESKTOP CLASS
+    jQuery('body').addClass('c3xgm-about-desktop-device');
 }
 
 
@@ -40,7 +64,12 @@ function formatNumber (num) {
 
 // TRIGGER GIF
 function triggerGif(gif){
-    return gif.src= gif.src.split('?')[0]+'?='+(+new Date());
+    if(mobile) {
+        // DONT TRIGGER GIF IF MOBILE
+        return false;
+    } else {
+        return gif.src= gif.src.split('?')[0]+'?='+(+new Date());
+    }
 }
 
 // NUMBER TICKER
@@ -48,7 +77,7 @@ jQuery.fn.jQuerySimpleCounter = function( options ) {
     var settings = jQuery.extend({
         start:  200000,
         end:    216000,
-        easing: 'swing',
+        easing: 'linear',
         duration: 2500,
         complete: ''
     }, options );

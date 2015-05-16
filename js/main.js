@@ -64,7 +64,7 @@ jQuery(document).ready(function($) {
                     scrollTop: target.offset().top
                 }, 1000, 'linear', function() {
                     console.log('Scrolling animation has finished!');
-                    // $('.c3xgm-about-nav-bullet-active + .c3xgm-about-nav-hover-title').css('opacity', 0);
+                    $('.c3xgm-about-nav-bullet-active + .c3xgm-about-nav-hover-title').css('opacity', 0);
                 });
                 return false;
             }
@@ -107,52 +107,54 @@ jQuery(document).ready(function($) {
 
     // NUMBER ANIMATIONS
     // CHECK IF ANIMATED EMPLOYEES IN ON SCREEN
-    var current_frame, 
-        total_frames, 
-        path, 
-        length, 
-        handle;
+    var current_frame, total_frames, path, length, handle;
 
     var init = function() {
-        current_frame = 0;
-        total_frames = 90;
-        path = new Array();
-        length = new Array();
+      current_frame = 0;
+      total_frames = 90;
+      path = new Array();
+      length = new Array();
 
-        // ITERATE THROUGH PATHS
-        for(var i=0; i< 12 ;i++){
-            // GET PATH
-            path[i] = document.getElementById('i'+i);
+      // ITERATE THROUGH PATHS
+      for(var i=0; i< 12 ;i++){
+        // GET PATH
+        path[i] = document.getElementById('i'+i);
 
-            // GET PATH LENGTH
-            l = path[i].getTotalLength();
-            // ADD TO LENGTH ARRAY
-            length[i] = l;
+        // GET PATH LENGTH
+        l = path[i].getTotalLength();
+        // ADD TO LENGTH ARRAY
+        length[i] = l;
 
-            // CSS PROPERTIES THAT WE ARE ANIMATING
-            path[i].style.strokeDasharray = l + ' ' + l; 
-            path[i].style.strokeDashoffset = l;
-        }
-        handle = 0;
+        // CSS PROPERTIES THAT WE ARE ANIMATING
+        path[i].style.strokeDasharray = l + ' ' + l; 
+        path[i].style.strokeDashoffset = l;
+      }
+      handle = 0;
     }
      
      
     var draw = function() {
        var progress = current_frame/total_frames;
        if (progress > 1) {
+
             window.cancelAnimationFrame(draw);
             // clearTimeout(handle);
-        } else {
-            current_frame++;
-            for(var j=0; j<path.length;j++){
-                path[j].style.strokeDashoffset = Math.floor(length[j] * (1 - progress));
-            }
+
+       } else {
+         current_frame++;
+         for(var j=0; j<path.length;j++){
+             path[j].style.strokeDashoffset = Math.floor(length[j] * (1 - progress));
+         }
+         
          // handle = window.requestAnimationFrame(draw);
+
          // handle = setTimeout(function(){
          //    draw();
          // }, 60/1000);
+
         requestAnimationFrame(draw);
-        }
+
+       }
     };
     
     var animateEmployees = false;
@@ -167,7 +169,7 @@ jQuery(document).ready(function($) {
             // MAKE SURE NUMBER REACHES 216000
             setTimeout(function(){ 
                 $('#c3xgm-about-emp-num').text(formatNumber(216000));
-            }, 2500);
+            }, 2510);
 
             // TRIGGER PEOPLE ANIMATION
             $('#c3xgm-about-employees-img div').each(addAnimation);
@@ -179,15 +181,16 @@ jQuery(document).ready(function($) {
     var animate6 = false;
     function fireAnimate6() {          
           if(animate6 === false) {
+            
             // EMPTY TEXT
             $('#c3xgm-about-number-6').text('');
           // // TRIGGER NUMBER ANIMATION
             setTimeout(function(){ 
                 init();
                 draw();
-                $('#c3xgm-about-number-6').jQuerySimpleCounter({start:0, end: 6,duration: 1000});
+                $('#c3xgm-about-number-6').jQuerySimpleCounter({start:0, end: 6,duration: 700});
                 animate6 = true;
-            }, 800);
+            }, 700);
         }
     }
 
@@ -198,9 +201,9 @@ jQuery(document).ready(function($) {
             $('#c3xgm-about-number-23').text('');
           // // TRIGGER NUMBER ANIMATION
             setTimeout(function(){ 
-                $('#c3xgm-about-number-23').jQuerySimpleCounter({start:0, end: 23,duration: 1200});
+                $('#c3xgm-about-number-23').jQuerySimpleCounter({start:0, end: 23,duration: 700});
                 animate23 = true;
-            }, 600);
+            }, 700);
         }
     }
 
@@ -211,9 +214,9 @@ jQuery(document).ready(function($) {
             $('#c3xgm-about-number-70').text('');
           // // TRIGGER NUMBER ANIMATION
             setTimeout(function(){ 
-                $('#c3xgm-about-number-70').jQuerySimpleCounter({start:0, end: 70,duration: 1200});
+                $('#c3xgm-about-number-70').jQuerySimpleCounter({start:0, end: 70,duration: 700});
                 animate70 = true;
-            }, 600);
+            }, 700);
         }
     }
 
@@ -224,9 +227,9 @@ jQuery(document).ready(function($) {
             $('#c3xgm-about-number-63').text('');
           // // TRIGGER NUMBER ANIMATION
             setTimeout(function(){ 
-                $('#c3xgm-about-number-63').jQuerySimpleCounter({start:55, end: 63,duration: 800});
+                $('#c3xgm-about-number-63').jQuerySimpleCounter({start:55, end: 63,duration:700});
                 animate63 = true;
-            }, 1100);
+            }, 700);
         }
     }
 
@@ -235,9 +238,11 @@ jQuery(document).ready(function($) {
     function rotateCar() {
         if(carHasRotated === false) {
             setTimeout(function(){ 
-                $('#safety-truck').css('opacity', 1);
+                // $('#safety-truck').css('opacity', 1);
+                $('#c3xgm-about-truck-line-holder').css('opacity', 1);
                 setTimeout(function(){ 
-                    $('#truck-line-container').addClass('carAnimation-slide');                
+                    // $('#truck-line-container').addClass('carAnimation-slide');                
+                    $('#truck-line-container').addClass('carAnimation-slide');
                     $('#truck-parent').addClass('carAnimation-rotate');
                     $('#line-parent').addClass('carAnimation-lineFadeIn');
                     $('.c3xgm-about-circle-lines').addClass('carAnimation-lineRotate');
@@ -260,24 +265,13 @@ jQuery(document).ready(function($) {
     			// SET PAGE VIEW STATE
     			_t.hasViewClass = true;
 
-                // TRIGGER GIF ON ICON
-                // var pageIcon = $(_t.$element ).find('.c3xgm-about-section-icon');
-
-                // if(pageIcon.length > 0) {
-                //     var icon = $(pageIcon).get(0);
-                //     setTimeout(function() {
-                //         console.dir(icon.id);
-                //         triggerGif(  document.getElementById(icon.id) );    
-                //     }, 800);                    
-                // }
-
                 // IF CURRENT PAGE IS OUR PEOPLE, SEQUENTIALLY FADE IN ANIMATIONS
                 if(currentPage == 1) {
                     var time;
                     $.each(_t.animBlocks, function(i, val) {
                         var animateNum = $(this.$element ).find('.c3xgm-about-animate-number');
                         setTimeout(function() {
-                            time = 1200 * i;
+                            time = 700 * i;
                             setTimeout(function() {
                                 val.addInViewClass();
                                 if(animateNum.length > 0) {
@@ -294,7 +288,7 @@ jQuery(document).ready(function($) {
                                     }
                                 }
                             }, time);
-                        }, 2000);
+                        },1500);
                     });
                 }
 
@@ -303,7 +297,7 @@ jQuery(document).ready(function($) {
                     // SHOW FIRST SLIDE
                     setTimeout(function() {
                         $('#c3xgm-about-car-chevrolet').removeClass('hide-module hide-module-slide-out').addClass('show-module-slide-in');
-                    }, 3000);
+                    }, 2200);
                 }
 
                 // TRIGGER TECH MODULE
@@ -311,14 +305,14 @@ jQuery(document).ready(function($) {
                     // SHOW FIRST SLIDE
                     setTimeout(function() {
                         $('#c3xgm-about-technology-4g-lte').removeClass('hide-module hide-module-slide-out').addClass('show-module-slide-in');
-                    }, 2200);
+                    }, 1200);
                 }
                 
                 if( _t.elementName == "c3xgm-about-page-our-global-community") {
                 //     // SHOW FIRST SLIDE
                     setTimeout(function() {
                         $('#c3xgm-about-foundation-gm-foundation').removeClass('hide-module hide-module-slide-out').addClass('show-module-slide-in');
-                    }, 3000);
+                    }, 1800);
                 }
     		} 
     	}); 
@@ -331,8 +325,7 @@ jQuery(document).ready(function($) {
 
         if(currentPage != 1) {
             $.each(blocks, function(i, val) {
-                // if( this.isAtEighth() && (this.hasViewClass == false) ){
-                   if( this.isInView() && (this.hasViewClass == false) ){
+                if( this.isAtEighth() && (this.hasViewClass == false) ){
                     // ADD IN VIEW CLASS
                     this.addInViewClass();
                     console.log('Im in view: ' + this.elementName);
@@ -340,7 +333,8 @@ jQuery(document).ready(function($) {
                     this.hasViewClass = true;
                     // IF TEST FACILITY - TRIGGER ROLLOVER
                     if(this.elementName == "c3xgm-about-test-facility") {
-                        rotateCar();
+                        // console.log('This is test facilit7y  E');
+                        // rotateCar();
                     } else if( this.elementName == "c3xgm-about-safety-score") {
                         fireAnimate63();
                     } else if( this.elementName == "c3xgm-about-crash-test-dummies") {
@@ -412,6 +406,10 @@ jQuery(document).ready(function($) {
             this.elementBottom = this.elementHeight + this.$element.offset().top;
         }
 
+        this.getScrollAmt = function() {
+            return Math.round( viewDimensions.scrollBottom - this.elementTop );
+        }
+
         // IN VIEW
         this.isInView = function() {
         	return ( (this.elementTop <= viewDimensions.scrollBottom) && (this.elementBottom >= viewDimensions.scrollTop) );
@@ -425,12 +423,41 @@ jQuery(document).ready(function($) {
         // ADD IN VIEW CLASS
         this.addInViewClass = function() {
         	if( defaults.blocktype == 'page' ) {
-                this.$element.removeClass('invisible').addClass('c3xgm-about-page-in-view');	
+                this.$element.removeClass('invisible');  
+        		this.$element.addClass('c3xgm-about-page-in-view');	
         	} else {
-                this.$element.removeClass('invisible').addClass('element-in-view');	
+                this.$element.removeClass('invisible');  
+        		this.$element.addClass('element-in-view');	
         	}
         }
 
+        // ANIMATE FUNCTION - TEST FOR CSS3 TRANSFORMS
+        if(css3dtransforms) {
+            this.moveRight = function() {
+                move = this.getScrollAmt();
+                this.$element.css("transform", "translate3d("+ move +"px, 0, 10px)");
+            }
+
+            this.moveLeft = function() {
+                move = this.getScrollAmt();
+                this.$element.css("transform", "translate3d(-"+ move +"px, 0, 10px)");
+            }
+
+        } else {
+            this.elementPosition = this.$element.position();
+
+            this.moveRight = function() {
+                move = this.getScrollAmt();
+                this.$element.css("right", move + "px");
+            }
+
+            this.moveLeft = function() {
+                move = this.getScrollAmt();
+                this.$element.css("left", move + "px");
+            }
+        }   
+
+	
 	} // END OBJECT
 
     // SCROLL HANDLER --------------------------------------------
@@ -440,9 +467,9 @@ jQuery(document).ready(function($) {
             // UPDATE VIEW PORT
             updateviewDimensions();
             // CHECK PAGES
-            checkPages();
+            // checkPages();
             // CHECK BLOCKS FOR CURRENT PAGES
-            checkBlocks(currentPage);
+            // checkBlocks(currentPage);
             // UPDATE NAV
             updateNav();
         }
@@ -480,27 +507,32 @@ jQuery(document).ready(function($) {
     });
 
     // HIDE ALL ANIMATABLE ELEMENTS AND PAGES ---------------------------------------------------
-    $.each(Pages, function(i, val) {
-        // HIDE PAGES
-        this.$element.removeClass("c3xgm-about-page-in-view").addClass("invisible");
-        // LOOP PAGE BLOCKS IF PAGE HAS THEM
-        if(val.aboutBlocks.length > 0) {
-            // HIDE PAGE BLOCKS
-            $.each(val.aboutBlocks, function(i, val) {
-                // HIDE BLOCK
-                $(val).addClass('invisible');
-            });
-        }
-    });
+    // CHECK IF SCREEN SIZE IS SMALL
+    if( !mobile) {
 
-    // HIDE GIFS
-    $('#c3xgm-about-crash-test-dummies').addClass('invisible');
+        $.each(Pages, function(i, val) {
+            // HIDE PAGES
+            this.$element.removeClass("c3xgm-about-page-in-view").addClass("invisible");
+            // LOOP PAGE BLOCKS IF PAGE HAS THEM
+            if(val.aboutBlocks.length > 0) {
+                // HIDE PAGE BLOCKS
+                $.each(val.aboutBlocks, function(i, val) {
+                    // HIDE BLOCK
+                    $(val).addClass('invisible');
+                });
+            }
+        });
+
+        // HIDE GIFS
+        $('#c3xgm-about-crash-test-dummies').addClass('invisible');
+
+        // NOW THAT WE HAVE OUR PAGE OBJECTS - SEE WHICH ONES ON SCREEN
+        checkPages();
+        // CHECK IF THERE ARE BLOCKS ON CURRENT PAGE
+        checkBlocks(currentPage);
+    }
 
     // UPDATE NAV ON PAGE LOAD
     updateNav();
-    // NOW THAT WE HAVE OUR PAGE OBJECTS - SEE WHICH ONES ON SCREEN
-    checkPages();
-    // CHECK IF THERE ARE BLOCKS ON CURRENT PAGE
-    checkBlocks(currentPage);
 
 });

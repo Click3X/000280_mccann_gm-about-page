@@ -20,12 +20,16 @@
 		// margin-top:5em;
 		width: 92%;
 		max-width: 906px;
-		margin: 5em auto;
+		// margin: 5em auto;
+		margin: 3em auto 5em;
 		.c3xgm-about-blockquote {
 			padding-left: 14px; margin-left:9px;
 			position: relative; overflow: hidden;
 			@include borderLines(left);
-			@media(min-width: $tablet-height) {padding-left: 21px;}
+			@media(min-width: $tablet-height) {
+				padding-left: 21px;
+				margin: 5em auto;
+			}
 		}
 
 		@media(min-width:$tablet-height) { 
@@ -118,6 +122,11 @@
 				max-width:none; 
 				height:auto;  
 			}
+
+			img[src$=".svg"] {
+  				width: 70%;
+  				margin-right:20%;
+  			}
 			@media(min-width:$tablet-height) { 
 				> div { margin-left:auto;}
 				width:25%; height:0;
@@ -126,6 +135,11 @@
 	  			img {  
 	  				width:100%; max-width: none; 
 	  				// @include center;
+	  			}
+
+	  			img[src$=".svg"] {
+	  				width: 90%;
+	  				margin-right:0;
 	  			}
 	  		}
 		}

@@ -5,7 +5,11 @@
 		margin: $block-margin;
 		height: 0; padding-bottom: 20.5%;
 
-		> .c3xgm-about-overflow { height: 0; padding-bottom: 20.5%; width: 100%; }
+		> .c3xgm-about-overflow { 
+			height: 0; padding-bottom: 20.5%; width: 100%; 
+			
+			padding-bottom: 30.5%; margin-top: -4%;
+		}
 
 		@media(min-width:$tablet-height) { 
 			padding-bottom: 15%; 
@@ -28,10 +32,15 @@
 
 
 		.c3xgm-about-red-car {
-			position: absolute; bottom:-28%;
+			position: absolute; bottom: 0;
 			width: 50%; max-width:400px;
+
 			img { width: 100%; }
-			@media(min-width: $tablet-height) { width:34.042553%; bottom:0; }
+			@media(min-width: $tablet-height) { 
+				width:34.042553%; 
+				bottom:0; 
+			}
 		}
 	}
 }
+

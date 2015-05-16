@@ -1,10 +1,10 @@
 // GREY-CAR and WHEELS
 .animate-tires {
-    @include prefix(animation, rotate 2s infinite linear);
+    @include prefix(animation, rotate 2s infinite linear both) ;
 }
 
 .animate-tires-fast {
-    @include prefix(animation, rotate 1s infinite linear);
+    @include prefix(animation, rotate 1s infinite linear both);
 }
 
 .grey-car {
@@ -12,17 +12,18 @@
     background-size: 100%;
     background-position: 50% 50%; background-repeat:no-repeat;
     height:0; width: 45.692%;
-    padding-bottom: 14.1%; margin: auto;
+    padding-bottom: 14.1%; 
     position:absolute;
-    bottom:10px; 
+    bottom:10px; right:0; left:0;
 
-    right:0; left:0;
+    margin: auto;
     
     @include prefix(transform, translate3d(0,0,0));
     @include prefix(transition, left 0.05s ease-out);
 
     @media(min-width: $tablet-height) {
         width:350px; padding-bottom:108px;
+        margin:0;
         // left:-75%; 
         // right:0;
     }

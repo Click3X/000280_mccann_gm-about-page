@@ -11,15 +11,6 @@ jQuery(document).ready(function($) {
 		techLinks = $('#c3xgm-about-page-technology .c3xgm-about-module-nav li a');
 
 
-	// console.log('Here are your foundationLinks: ' + foundationLinks);
-	// console.dir(foundationLinks);
-	// console.log('Here are your foundationSlides: ' + foundationSlides);
-	// console.dir(foundationSlides);
-	// console.log('Here are your carLinks: ' + carLinks);
-	// console.dir(carLinks);
-	// console.log('Here are your carContainer: ' + carContainer);
-	// console.dir(carContainer);
-
 	// CARS ---------------------------------------------------------------------------------------------------------
 	
 	// MOVE ALL SLIDES TO RIGHT 100%;
@@ -51,11 +42,11 @@ jQuery(document).ready(function($) {
 		curSlide.removeClass('show-module-slide-in').addClass('hide-module-slide-out');
 		setTimeout(function() {
 				$(curSlide).addClass('hide-module');
-			}, 700);
+			}, 200);
 		// MODULE SLIDE-IN
 		setTimeout(function() {
 			$(target).removeClass('hide-module').removeClass('hide-module-slide-out').addClass('show-module-slide-in');
-		}, 700);
+		}, 200);
 	});
 
 
@@ -71,9 +62,9 @@ jQuery(document).ready(function($) {
 	});
 
 	// SHOW FIRST SLIDE
-	setTimeout(function() {
-		$('#c3xgm-about-foundation-gm-foundation').removeClass('hide-module hide-module-slide-out').addClass('show-module-slide-in');
-	}, 3000);
+	// setTimeout(function() {
+	// 	$('#c3xgm-about-foundation-gm-foundation').removeClass('hide-module hide-module-slide-out').addClass('show-module-slide-in');
+	// }, 3000);
 	
 	// FOUNDATION
 	foundationLinks.on('click touchstart', function(e) {
@@ -95,11 +86,11 @@ jQuery(document).ready(function($) {
 		curSlide.removeClass('show-module-slide-in').addClass('hide-module-slide-out');
 		setTimeout(function() {
 				$(curSlide).addClass('hide-module');
-			}, 700);
+			}, 300);
 		// MODULE SLIDE-IN
 		setTimeout(function() {
 			$(target).removeClass('hide-module').removeClass('hide-module-slide-out').addClass('show-module-slide-in');
-		}, 700);
+		}, 300);
 	});
 
 
@@ -110,6 +101,11 @@ jQuery(document).ready(function($) {
 	techSlides.addClass('hide-module');
 	// MAKE GM TECH DEFALUT 
 	$('#c3xgm-about-page-technology-4g-lte').removeClass('hide-module').addClass('show-module-slide-in');
+
+	// SHOW FIRST SLIDE
+	// setTimeout(function() {
+	// 	$('#c3xgm-about-technology-4g-lte').removeClass('hide-module hide-module-slide-out').addClass('show-module-slide-in');
+	// }, 0);
 		
 	// TECH
 	techLinks.on('click touchstart', function(e) {
@@ -127,13 +123,12 @@ jQuery(document).ready(function($) {
 		// MODULE SLIDE-OUT
 		curSlide.removeClass('show-module-slide-in').addClass('hide-module-slide-out');
 		setTimeout(function() {
-				$(curSlide).addClass('hide-module');
-				$(curSlide).removeClass('hide-module-slide-out');
-			}, 700);
+				$(curSlide).removeClass('hide-module-slide-out').addClass('hide-module');
+			}, 500);
 		// MODULE SLIDE-IN
 		setTimeout(function() {
 			$(target).removeClass('hide-module hide-module-slide-out').addClass('show-module-slide-in');
-		}, 700);
+		}, 500);
 	});
 
 

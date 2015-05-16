@@ -13,7 +13,7 @@
 	    position: absolute;
 	    top:0; left: 100%; right: auto;
 	    z-index: 0;
-	    @include prefix(transform, translate3d(100%,0,0));
+	    // @include prefix(transform, translate3d(100%,0,0));
 	}
 
 	.show-module-slide-in {
@@ -24,9 +24,9 @@
 
 		.c3xgm-about-h { 
 			@include prefix(animation, slideIn);
-			@include prefix(animation-duration, 400ms);
+			@include prefix(animation-duration, 300ms);
 			@include prefix(animation-fill-mode, both);
-			@include prefix(animation-delay, 0ms);
+			// @include prefix(animation-delay, 0ms);
 		}
 
 		.c3xgm-about-p,
@@ -35,9 +35,9 @@
 		.c3xgm-about-block-icon,
 		.c3xgm-about-vehicle-copy {
 			@include prefix(animation, fadeIn);
-	    	@include prefix(animation-duration, 600ms);
+	    	@include prefix(animation-duration, 300ms);
 			@include prefix(animation-fill-mode, both);
-			@include prefix(animation-delay, 400ms);
+			@include prefix(animation-delay, 300ms);
 		}
 	}
 
@@ -46,7 +46,7 @@
 			@include prefix(animation, slideOut);
 			@include prefix(animation-duration, 400ms);
 			@include prefix(animation-fill-mode, both);
-			@include prefix(animation-delay, 0ms);
+			// @include prefix(animation-delay, 0ms);
 		}
 
 		.c3xgm-about-p,
@@ -54,129 +54,10 @@
 		.c3xgm-about-block-image,
 		.c3xgm-about-block-icon,
 		.c3xgm-about-vehicle-copy {
-			@include prefix(animation-delay, 0ms);
+			// @include prefix(animation-delay, 0ms);
 			@include prefix(animation, fadeOut);
 	    	@include prefix(animation-duration, 300ms);
 			@include prefix(animation-fill-mode, both);
 		}
-	}
-}
-
-
-// DEFINE KEY FRAME ANIMATION HERE
-@-webkit-keyframes slideOut {
-	0% {opacity: 1;}
-	70% { opacity: 0; }
-	75% { z-index:-1;}
-	99% {
-		-webkit-transform: translate3d(100%, 0, 0);
-	}
-	100% {
-		opacity: 0;
-	    position: absolute; 
-	    top:0; right: 100%; left: auto;
-		-webkit-transform: translate3d(-100%, 0, 0);
-	}
-}
-
-@-moz-keyframes slideOut {
-	0% { opacity: 1; }
-	70% { opacity: 0; }
-	75% { z-index:-1;}
-	99% {
-		-moz-transform: translate3d(100%, 0, 0);
-	}
-	100% {
-		opacity: 0;
-	    position: absolute;
-	    top:0;
-	    right: 100%;
-	    left: auto;
-		-moz-transform: translate3d(-100%, 0, 0);
-	}
-}
-
-
-@-o-keyframes slideOut {
-	0% { opacity: 1; }
-	70% { opacity: 0; }
-	75% { z-index:-1;}
-	99% {
-		-o-transform: translate3d(100%, 0, 0);
-	}	
-	100% {
-		opacity: 0;
-	    position: absolute;
-	    top:0;
-	    right: 100%;
-	    left: auto;
-		-o-transform: translate3d(-100%, 0, 0);
-	}
-}
-
-@keyframes slideOut {
-	0% { opacity: 1; }
-	70% { opacity: 0; }
-	75% { z-index:-1;}
-	99% {
-		-o-transform: translate3d(100%, 0, 0);
-	}
-	100% {
-		opacity: 0;
-	    position: absolute;
-	    top:0;
-	    right: 100%;
-	    left: auto;
-		-o-transform: translate3d(-100%, 0, 0);
-	}
-}
-
-// SLIDE IN
-@-webkit-keyframes slideIn {
-	0% { 
-		opacity:0;
-		z-index: 0;
-		-webkit-transform: translate3d(-100%, 0, 0);
-	}
-	100% {
-		opacity: 1;
-		-webkit-transform: translate3d(0, 0, 0);
-	}
-}
-
-@-moz-keyframes slideIn {
-	0% { 
-		opacity: 0;
-		z-index: 0;
-		-moz-transform: translate3d(-100%, 0, 0);
-	}
-	100% {
-		opacity: 1;
-		-moz-transform: translate3d(0, 0, 0);
-	}
-}
-
-
-@-o-keyframes slideIn {
-	0% { 
-		opacity: 0;
-		z-index: 0;
-		-o-transform: translate3d(-100%, 0, 0);
-	}	
-	100% {
-		opacity: 1;
-		-o-transform: translate3d(0, 0, 0);
-	}
-}
-
-@keyframes slideIn {
-	0% { 
-		opacity: 0;
-		z-index: 0;
-		-o-transform: translate3d(-100%, 0, 0);
-	}
-	100% {
-		opacity: 1;
-		-o-transform: translate3d(0, 0, 0);
 	}
 }

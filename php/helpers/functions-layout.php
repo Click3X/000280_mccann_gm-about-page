@@ -10,8 +10,8 @@ function pageHeader($title, $icon, $tagline, $image) {
 		    <div class="c3xgm-about-section-header c3xgm-about-clearfix">
 			    <div class="c3xgm-about-section-header-inner c3xgm-about-clearfix">
 			    	<div class="c3xgm-about-icon-holder c3xgm-about-clearfix">';
-			     echo '<img id="c3xgm-about-'.cleanString($title).'-icon" class="c3xgm-about-section-icon" src="'.$icon.'" alt="'.$title.'">';
-			    	// include('icons-inline-svg/'.cleanString($title).'.php');
+			     // echo '<img id="c3xgm-about-'.cleanString($title).'-icon" class="c3xgm-about-section-icon" src="'.$icon.'" alt="'.$title.'">';
+			    	include('icons-inline-svg/'.cleanString($title).'.php');
 			    echo '</div>
 			        <div class="c3xgm-about-header-holder c3xgm-about-clearfix">
 			        	<div class="c3xgm-about-overflow c3xgm-about-clearfix">
@@ -142,7 +142,7 @@ function printBlock($block) {
 								<div class="'.$img_anim.' '.$desk_class.'">
 									<div class="china-flag-wrapper c3xgm-about-desktop c3xgm-about-clearfix">
 									    <img src="img/pages/brands/pole.svg"  alt="China Flag">
-									    <img src="img/pages/brands/chinaflag.gif" alt="China Flag">
+									    <img src="img/pages/brands/flag.gif" alt="China Flag">
 									</div>
 								</div>';						
 						// IF BLOCK IS CHINA AND HAS MOBILE PICS, GET MOBIL PICS

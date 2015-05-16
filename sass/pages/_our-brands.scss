@@ -61,7 +61,8 @@
 			margin-top:9px;
 			img { 
 				@include center; 
-				width: 93%; max-width: none;
+				width: 90%; 
+				max-width: none;
 			}
 		}
 		@media(min-width:$outer-border) { padding-bottom: 171px; }
@@ -76,7 +77,13 @@
 	.c3xgm-about-blockquote { 
 		position: relative; float:none; 
 		text-align: left; padding-left: 1em; 
-		@media(min-width: $tablet-height) { padding-left: 2.5em; }
+		@media(min-width: $tablet-height) { 
+			padding-left: 2.5em; 
+			margin-top:1.25em;
+		}
+		@media(min-width: $outer-border) { 
+			margin-top:0;
+		}
 		// BORDER LINES + ANIMATION
 		@include borderLines(left);
 	}
@@ -85,8 +92,13 @@
 		width: 100%; 
 		text-align: center;
 		margin-bottom: 1.5em;
+		img[src$=".svg"]{ width: 35%; }
 		@media(min-width:$tablet-height) {
 			width: 25%; float:left;  margin-bottom:9px;
+			img[src$=".svg"]{ 
+				width: 70%; 
+				// @include prefix(transform, translate3d(-50%,8%, 0) );
+			}
 		}
 	}
 }
@@ -107,11 +119,11 @@
 
 		@media(min-width: $tablet-height) { 
 			width: 80%; float:right; 
-			padding-right: 1.2rem; margin-top: 4.5%;
+			padding-right: 1.2rem; margin-top: 3.5%;
 			span br { display: none; }
 			> span { float: right; }
 		}
-		@media(min-width:1150px) { margin-top:3.5%; }
+		@media(min-width:1150px) { margin-top:2.5%; }
 	}
 	.c3xgm-about-block-image { 
 		@media(min-width:$tablet-height) { float:right; width: 20%; }
@@ -226,7 +238,11 @@
 	.c3xgm-about-block-image { 
 		width: 46%; position: absolute; left:0; z-index: -1;
 
+		top:0; bottom:0; margin:auto;
+
+
 		@media(min-width:$tablet-height	) { 
+			bottom:auto;
 			.china-flag-wrapper {
 				position: relative; height: 450px;
 				img:first-child {
@@ -240,8 +256,12 @@
 					z-index: -2;
 				}
 			}
+			img[src$=".svg"]{ margin-top:-3em; }
 		}
-		.c3xgm-about-block-image-mobile { margin-top: -45%; }
+
+		@media(min-width: $inner-border) {
+			img[src$=".svg"]{ margin-top:0; }
+		}
 	}
 
 	.c3xgm-about-blockquote {

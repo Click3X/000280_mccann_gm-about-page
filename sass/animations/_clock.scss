@@ -1,5 +1,5 @@
 // CLOCK
-.element-in-view {
+// .element-in-view {
     #clock { 
         position: relative;
         margin: 0 auto;
@@ -76,4 +76,4 @@
         top:25%; 
         @include prefix(animation-duration, 21150s);
     } 
-}
+// }

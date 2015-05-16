@@ -32,17 +32,35 @@ foreach ($pages as $key => $page) {
                                     include('safety-score.php');
                                 } 
                                 else if( ( isset($block['title']) ) && ( $block['title'] == "Test Facility" ) ) {
-                                    echo ' <div class="c3xgm-about-block c3xgm-about-clearfix c3xgm-about-test-facility">
-                                               <div id="truck-line-container" class="c3xgm-about-block-image">
-                                                  <div id="truck-parent">
-                                                    <img src="img/pages/commitment/truck-front.png" class=" " id="safety-truck" alt="Test Facility">
-                                                  </div>
-                                                  <div id="line-parent">
-                                                     <img src="img/pages/commitment/circle-lines.svg" class="c3xgm-about-circle-lines" alt="Rollover Test Facility">
-                                                  </div>
-                                               </div>
-                                               <p class="c3xgm-about-blockquote"><span class="c3xgm-about-dark-blue c3xgm-about-thin">The first North American <br>auto manufacturer</span><span class="c3xgm-about-gray">to build a</span><span class="c3xgm-about-light-blue"><span class="c3xgm-about-sep">Rollover</span><span class="c3xgm-about-sep">Test Facility</span></span></p>
-                                            </div>';
+                                    // echo ' <div class="c3xgm-about-block c3xgm-about-clearfix c3xgm-about-test-facility">
+                                    //           <div id="c3xgm-about-truck-line-holder" class="c3xgm-about-clearfix c3xgm-about-truck-line-holder">
+                                    //              <div id="truck-line-container" class="c3xgm-about-block-image">
+                                    //                 <div id="truck-parent">
+                                    //                   <img src="img/pages/commitment/truck-front.png" class=" " id="safety-truck" alt="Test Facility">
+                                    //                 </div>
+                                    //                 <div id="line-parent">
+                                    //                    <img src="img/pages/commitment/circle-lines.svg" class="c3xgm-about-circle-lines" alt="Rollover Test Facility">
+                                    //                 </div>
+                                    //              </div>
+                                    //            </div>
+                                    //            <p class="c3xgm-about-blockquote"><span class="c3xgm-about-dark-blue c3xgm-about-thin">The first North American <br>auto manufacturer</span><span class="c3xgm-about-gray">to build a</span><span class="c3xgm-about-light-blue"><span class="c3xgm-about-sep">Rollover</span><span class="c3xgm-about-sep">Test Facility</span></span></p>
+                                    //         </div>';
+
+                                    // TRUCK NEW TRY
+                                   echo '<div class="c3xgm-about-block c3xgm-about-clearfix c3xgm-about-test-facility">
+
+                                            <div class="c3xgm-about-truck-shadow-container c3xgm-about-clearfix">
+                                                <div id="c3xgm-about-truck-shadow" class="c3xgm-about-truck-shadow c3xgm-about-clearfix">
+                                                    <div class="c3xgm-about-truck-bg-outer c3xgm-about-clearfix">
+                                                        <div class="c3xgm-about-truck-bg c3xgm-about-truck"></div>
+                                                        <div class="c3xgm-about-truck-lines-holder"><div class="c3xgm-about-truck-bg c3xgm-about-truck-lines"></div></div>
+                                                    </div>
+                                                    <div class="c3xgm-about-truck-bg c3xgm-about-shadow"></div>
+                                                </div>
+                                            </div>
+                                      
+                                            <p class="c3xgm-about-blockquote"><span class="c3xgm-about-dark-blue c3xgm-about-thin">The first North American <br>auto manufacturer</span><span class="c3xgm-about-gray">to build a</span><span class="c3xgm-about-light-blue"><span class="c3xgm-about-sep">Rollover</span><span class="c3xgm-about-sep">Test Facility</span></span></p>
+                                        </div>';
                                 } 
                                 else{
                                     printBlock($block);

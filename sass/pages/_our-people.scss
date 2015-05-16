@@ -132,14 +132,16 @@
 		 .c3xgm-about-block-image {
 			 padding-top: 2.5%;
 			img { width:76.672%; max-width: 333px;}
-
 			@media(min-width:$tablet-height) { padding-bottom: 4.5%; }
 		}
 	}
 
 	// CONTINETS
 	.c3xgm-about-continents {
-		 .c3xgm-about-block-image img { width:88.672%; max-width: 385px; }
+		 .c3xgm-about-block-image {
+		 	img { width:88.672%; max-width: 385px; }
+		 	// svg { fill-opacity: 0; }
+		 }
 		 
 		 @media(min-width: $tablet-height) {
 		 	.c3xgm-about-blockquote {margin-left: -15%; }
@@ -198,7 +200,7 @@
 
 			@media(min-width: $tablet-height) { float: left; margin-left: 9px; }
 
-			.c3xgm-about-gray { padding-left: .35em; display: block; }
+			.c3xgm-about-gray { position:relative; padding-left: .35em; display: block; }
 
 			span > span {
 				color:$gm-light-blue; line-height: .86em;				
@@ -220,7 +222,6 @@
 		}
 	}
 
-
 	.c3xgm-about-marker-holder {
 		position: absolute;
 		width: 6%;
@@ -229,82 +230,8 @@
 	     @media(min-width: $tablet-height) {
 	    	left: 22%; top:auto;
 	    }
-	}
-
-	.element-in-view {
-		.c3xgm-about-marker-holder { @include prefix(animation, markerDrop .8s 2.3s ease-out forwards); }
-	}
-	
-
-	/*MAP MARKER DROP*/
-	@-webkit-keyframes markerDrop {
-	  0% {
-	    -webkit-transform: translateY(-125%);
-	    opacity: 0;
-	  }
-
-	  75% {
-	    -webkit-transform: translateY(30%);
-	    opacity: 1;
-	  }
-	  
-	  100% {
-	    -webkit-transform: translateY(30%);
-	    opacity: 1;
-	  }
-	}
-	@-moz-keyframes markerDrop {
-	  0% {
-	    -moz-transform: translateY(-125%);
-	    opacity: 0;
-	  }
-
-	  75% {
-	    -moz-transform: translateY(30%);
-	    opacity: 1;
-	  }
-
-	  100% {
-	    -moz-transform: translateY(30%);
-	    opacity: 1;
-	  }
-	}
-	@-o-keyframes markerDrop {
-	  0% {
-	    -o-transform: translateY(-125%);
-	    opacity: 0;
-	  }
-
-	  75% {
-	    -o-transform: translateY(30%);
-	    opacity: 1;
-	  }
-
-	  100% {
-	    -o-transform: translateY(30%);
-	    opacity: 1;
-	  }
-	}
-
-	@keyframes markerDrop {
-	  0% {
-	    transform: translateY(-125%);
-	    opacity: 0;
-	  }
-
-	  75% {
-	    transform: translateY(30%);
-	    opacity: 1;
-	  }
-
-	  100% {
-	    transform: translateY(30%);
-	    opacity: 1;
-	  }
-	}
-	/*END OF MARKER DROP*/
+	}	
 }
-
 
 .svg {
 	.c3xgm-about-page-our-people {

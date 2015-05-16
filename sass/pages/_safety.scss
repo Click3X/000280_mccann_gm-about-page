@@ -1,11 +1,7 @@
 // SAFETY
 .c3xgm-about-page-our-commitment {
 
-	.c3xgm-about-page-safety-quality {
-		> .c3xgm-about-subsection {
-			margin-bottom: 3em;
-		}
-	}
+	.c3xgm-about-page-safety-quality > .c3xgm-about-subsection { margin-bottom: 3em; }
 
 	.c3xgm-about-blockquote {
 		display: inline-block;
@@ -32,6 +28,11 @@
   					transform: translate(-27%, -50%);
   					@include prefix(transform, translate(-27%, -50%) );
   					width: 235%;
+  				}
+
+  				img.c3xgm-about-crash-svg { 
+  					width:70%; 
+  					@include prefix(transform, translate(-50%, -50%) );
   				}
   			}
 		}
@@ -86,36 +87,80 @@
 	// TEST FACILITY
 	.c3xgm-about-test-facility {
 		max-width: 54em;
-		margin-top: 2em;
+		margin-top: 6em;
 		@media(min-width: $tablet-height) {margin-top:7em; }
 
-		.carAnimation-slide {
-			margin-bottom:3em;
-			@media(min-width: $tablet-height) { margin-bottom: 0; }
-		}
+		// .c3xgm-about-truck-line-holder {
+		// 	width: 100%;
+		// 	height: 0;
+		// 	padding-bottom: 44%;
+		// 	position: relative;
+		// 	margin: 6em auto 4em;
 
-		.c3xgm-about-block-image {
-			width: 60%; height: 0; 
-			padding-bottom: 55%;
-			position: relative;
-			.c3xgm-about-circle-lines {
-				position: absolute; width:90%; max-width: none;
-				@media(min-width: $tablet-height) { width: 85%; }
-			}
-			img { 
-				@include center; 
-				width: 50%; 
-			}
-			@media(min-width: $tablet-height) { 
-				  width: 48%;
-				  // width: 55%;
-				  float: right;
-				  margin-bottom:0;
-				  padding-bottom: 270px;
-				  > div {max-width: 414px;}
-				  img { max-width: 225px; }
-			}
-		}
+
+		// 	&:after {
+		// 		content: "";
+		// 		display: block;
+		// 		position: absolute;
+		// 		width: 25%;
+		// 		box-shadow: 0px 3px 19px 7px rgba(0, 0, 0, 0.2);
+		// 		right: 0; left: 0; bottom: 0;
+		// 		margin: auto;
+		// 		@media(min-width: $tablet-height) { 
+		// 			width: 43.3999%; 
+		// 			box-shadow: 0px 3px 37px 13px rgba(0, 0, 0, 0.2);
+		// 		}
+		// 	}
+
+		// 	@media(min-width: $tablet-height) {
+		// 		width: 48%;
+		// 		float: right;
+		// 		margin-bottom: 0;
+		// 		padding-bottom: 270px;
+		// 		height: 0;
+		// 	}
+		// }
+
+
+
+		// .carAnimation-slide {
+		// 	margin-bottom:3em;
+		// 	@media(min-width: $tablet-height) { margin-bottom: 0; }
+		// }
+
+		// .c3xgm-about-block-image {
+		// 	width: 60%; height: 0; 
+		// 	padding-bottom: 55%;
+		// 	position: relative;
+		// 	.c3xgm-about-circle-lines {
+		// 		position: absolute; width:90%; max-width: none;
+		// 		@media(min-width: $tablet-height) { width: 85%; }
+		// 	}
+		// 	img { 
+		// 		@include center; 
+		// 		width: 50%;
+		// 	}
+
+		// 	img.c3xgm-about-circle-lines {
+		// 		top: -5% !important;
+  // 				left: 5% !important;
+
+  // 				@media(min-width: $tablet-height) { 
+		// 			top: -12% !important;
+		// 			left: 7% !important;
+		// 		}
+		// 	}
+			  	
+		// 	@media(min-width: $tablet-height) { 
+		// 		  // width: 48%;
+		// 		  width: 100%;
+		// 		  float: right;
+		// 		  margin-bottom:0;
+		// 		  padding-bottom: 270px;
+		// 		  > div {max-width: 414px;}
+		// 		  img { max-width: 225px; }
+		// 	}
+		// }
 		
 		.c3xgm-about-blockquote {
 			display: inline-block;
@@ -174,10 +219,7 @@
 
 
 		.c3xgm-about-clear,
-		span strong {
-			float: left;
-			clear: left;
-		}
+		span strong { float: left; clear: left; }
 
 		.c3xgm-about-light-blue.number,
 		.c3xgm-about-light-blue.number span {
@@ -185,11 +227,8 @@
 			font-size: 53vw; line-height: 0.8em;
 			margin:0 auto 0.1em;
 			@media(min-width:$tablet-height) {
-				position: relative; width: 1em; 
-				float:right; 
-				padding-right: 2.5%;
-				// margin:0 auto; 
-				padding-bottom: 0; 
+				position: relative; width: 1em; float:right; 
+				padding-right: 2.5%;  padding-bottom: 0; 
 				font-size:250px; line-height: 0.96em;
 			}
 		}
@@ -226,12 +265,10 @@
 			@media(min-width:$tablet-height) {font-size:22.807869999999998px; }
 		}
 	}
-	
 
 
 	// ON STAR
 	.c3xgm-about-onstar-subscribers {
-		  // margin-bottom: 9em;
 		  margin-bottom: 5em;
 		  @media(min-width: $tablet-height) { margin-bottom: 7em; }
 		.c3xgm-about-block-image {
@@ -397,12 +434,9 @@
 
 		.c3xgm-about-gray.c3xgm-about-disclaimer-small {
 			font-weight: normal; text-transform: none;
-			font-size: 10px; 
-			line-height: 1.6em;
-			// max-width: 27em;
+			font-size: 10px; line-height: 1.6em;
 			display: block;
 			margin: 0 auto; padding-right: 3em;
-			font-size: 10px; 
 			@media(min-width: 480px) { font-size: 14px; }
 			@media(min-width:$tablet-height) {font-size:16px; max-width: none; }
 
