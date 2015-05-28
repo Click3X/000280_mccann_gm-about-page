@@ -1022,6 +1022,7 @@
             var isIE11 = !!navigator.userAgent.match(/Trident.*rv[ :]*11\./);
             if (isIE11) {
                 $(window).load(function(){
+                    $('body').addClass('ie');
                     console.log('this is ie 11');
                     // MAP FILL FALLBACK 
                     $('#myobj').find('path').css({
@@ -1046,6 +1047,15 @@
         <script src="js/modules/sliders.js"></script>
         <!-- MAIN JS -->
         <script src="js/main.js"></script>
+
+        <script>
+            jQuery('head').append('<style>#outline {position:fixed;z-index:1000;bottom:50px;right:50px;} .outlines {outline:1px solid rgba(255, 0, 0, 0.3);}</style>');
+            jQuery('body').append('<input id=\"outline\" type=\"button\">');
+
+            jQuery('#outline').click(function() {
+                jQuery('*').toggleClass('outlines');
+           });
+        </script>
 
     </body>
 </html>

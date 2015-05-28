@@ -45,3 +45,9 @@
 .lt-ie9 .c3xgm-about-gradient {
   filter: none;
 }
+
+.lt-ie9 .c3xgm-about-flag-line-container {
+  /*height: 335px;*/
+  height: 375px;
+  margin-bottom: 7em;
+}

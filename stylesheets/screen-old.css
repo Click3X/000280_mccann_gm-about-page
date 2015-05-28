@@ -13763,8 +13763,14 @@ body {
 @media (min-width: 906px) {
   /* line 12, ../sass/animations/_flag-line.scss */
   .c3xgm-about-flag-line-container {
-    height: 335px;
+    /*height: 335px;*/
+    height: 375px;
     margin-bottom: 7em;
+  }
+
+  /* ADD HEIGHT TO FIX SCROLL BARS IN IE */
+  .ie .c3xgm-about-flag-line-container {
+    height: 375px;
   }
 }
 /* line 21, ../sass/animations/_flag-line.scss */
@@ -13777,7 +13783,7 @@ body {
 @media (min-width: 768px) {
   /* line 21, ../sass/animations/_flag-line.scss */
   .c3xgm-about-flag-line-container .c3xgm-about-grey-white-gradient {
-    margin-top: -38px;
+    margin-top: -30px;
     padding-bottom: 37px;
   }
 }
@@ -13872,6 +13878,7 @@ body {
     padding-bottom: 108px;
     left: -75%;
     right: 0;
+    bottom: 50px;
   }
 }
 /* line 33, ../sass/animations/_grey-car-wheels.scss */
