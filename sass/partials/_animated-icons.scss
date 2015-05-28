@@ -3,6 +3,17 @@
 // IMAGE CLASS ADDED TO IMG TAGS (which are currently commented out)
 .c3xgm-about-icon-image { }
 
+// ON MOBILE - ICONS SHOULD BE SMALLER
+.c3xgm-about-icon-holder  {
+  svg {
+    width: 20%; max-width: 90px;
+    height: 100%; max-height: 90px;
+    display: block; margin: 0.5em auto 1em;
+
+    @media(min-width: $tablet-height) { width: auto; }
+  }
+}
+
 // WENS ANIMATED ICONS CODE GOES HERE....
 // // WEN ICON ANIMATIONS
 
