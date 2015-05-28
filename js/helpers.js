@@ -40,7 +40,9 @@ function formatNumber (num) {
 
 // TRIGGER GIF
 function triggerGif(gif){
-    return gif.src= gif.src.split('?')[0]+'?='+(+new Date());
+    if(!mobile) {
+        return gif.src= gif.src.split('?')[0]+'?='+(+new Date());
+    }
 }
 
 // NUMBER TICKER

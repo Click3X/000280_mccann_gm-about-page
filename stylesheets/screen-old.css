@@ -10419,6 +10419,7 @@ body {
   animation-duration: 0;
 }
 /* line 119, ../sass/animations/_element-in-view.scss */
+.c3xgm-about-china.element-in-view .c3xgm-about-block-image .c3xgm-about-block-image-mobile,
 .c3xgm-about-china .c3xgm-about-block-image .china-flag-wrapper {
   -webkit-transform-origin: 50% 100%;
   -moz-transform-origin: 50% 100%;
@@ -10436,7 +10437,9 @@ body {
   -ms-transition: transform 900ms;
   transition: transform 900ms;
 }
+
 /* line 129, ../sass/animations/_element-in-view.scss */
+
 .c3xgm-about-china.element-in-view .c3xgm-about-block-image img {
   -webkit-animation-fill-mode: none;
   -moz-animation-fill-mode: none;
@@ -10460,6 +10463,7 @@ body {
   animation-duration: 0;
 }
 /* line 130, ../sass/animations/_element-in-view.scss */
+.c3xgm-about-china.element-in-view .c3xgm-about-block-image .c3xgm-about-block-image-mobile,
 .c3xgm-about-china.element-in-view .c3xgm-about-block-image .china-flag-wrapper {
   -webkit-transform: scale(1, 1);
   -moz-transform: scale(1, 1);
@@ -13857,7 +13861,8 @@ body {
   height: 0;
   width: 45.692%;
   padding-bottom: 14.1%;
-  margin: auto;
+  /*margin: auto;*/
+  margin: 0;
   right: 0;
   left: 0;
   position: absolute;
@@ -13878,8 +13883,9 @@ body {
   .grey-car {
     width: 350px;
     padding-bottom: 108px;
-    left: -75%;
-    right: 0;
+    /*left: -75%;
+    right: 0;*/
+    left: -200px;
     /*bottom: 50px;*/
   }
 }

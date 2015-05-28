@@ -115,6 +115,7 @@
 				// DISABLE ANIMATIONS
 				@include noAnimation;
 			}
+			.c3xgm-about-block-image-mobile,
 			.china-flag-wrapper { 
 				@include prefix(transform-origin, 50% 100%);
 				@include prefix(transform, scale(0,0));

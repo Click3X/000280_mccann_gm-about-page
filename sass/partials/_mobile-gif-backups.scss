@@ -1,6 +1,12 @@
 // MOBILE GIF BACK UPS
 .c3xgm-about-mobile-device {
 
+	// CHINA FLAG FOR MOBILE - DISPLAY BLOCK;
+	.c3xgm-about-block-image-mobile {
+		display: block;
+		@media(min-width: $tablet-height) { display: none; }
+	}
+
 	.c3xgm-about-page-our-commitment {
 		.c3xgm-about-crash-test-dummies .c3xgm-about-block-image img { 
 			width: 50%; 
@@ -24,14 +30,6 @@
 	}
 
 
-	// SCROLL ANIMATIONS BACK UP
-	// FLAG LINE AND SOLAR CAR
-	#c3xgm-about-solar-grey-car,
-	#c3xgm-about-flag-line-grey-car {
-		margin: auto;
-		left:0; right:0;
-	}
-
 	.c3xgm-about-decorative.c3xgm-about-red-car-road {
 		position: relative; overflow-x:hidden;
 
@@ -47,8 +45,23 @@
 		}
 	}
 
+
+	// FLAG LINE
+	.c3xgm-about-flag-line-container {
+		#c3xgm-about-flag-line-grey-car {
+			margin: 0;
+			left: -380px;
+			@include prefix(animation-fill-mode, both);
+			@include prefix(animation-name, moveCarRight);
+			@include prefix(animation-delay, 0);
+			@include prefix(animation-duration, 4s);
+			@include prefix(animation-timing-function, linear);
+			@include prefix(animation-iteration-count, infinite);
+
+		}
+	}
+
 	// FIVE STARS
-	// div#c3xgm-about-solar-grey-car.
 	.c3xgm-about-grey-top {
 		left: -380px;
 		// @media(min-width: $tablet-height) {left: -480px; }
@@ -83,17 +96,11 @@
 	}
 
 
-	.c3xgm-about-mobile-visible {
-		opacity: 1;
-	}
+	// MOBILE CLASSES TAKEN FROM MOBILE .CSS
+	.c3xgm-about-mobile-visible { opacity: 1; }
 
-	/*.c3xgm-about-mobile-device .c3xgm-about-decorative.c3xgm-about-solar-panels,*/
-	.c3xgm-about-mobile-device .c3xgm-about-section .c3xgm-about-section-header-inner {
-		overflow-x:auto;
-	}
+	.c3xgm-about-mobile-device .c3xgm-about-section .c3xgm-about-section-header-inner { overflow-x:auto; }
 
-	.c3xgm-about-mobile-device  .c3xgm-about-main-nav-sub {
-		display: none;
-	}
+	.c3xgm-about-mobile-device  .c3xgm-about-main-nav-sub { display: none; }
 
 }
