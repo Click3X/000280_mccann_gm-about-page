@@ -2,13 +2,31 @@
 .c3xgm-about-decorative.c3xgm-about-solar-panels {
 	margin-bottom: 10%;
 	 // padding-bottom:120%;
-	height: 0;
+	 padding-bottom:0;
+	// height: 0;
+	// height:auto;
+	height:300px;
 	position: relative; 
 	margin-top:5em;
+
+	.c3xgm-about-clean-energy {
+		// padding-bottom: 80%;
+
+		p {margin-top:0; margin-bottom:0;}
+	}
+
+	@media(min-width: 350px) { 
+		height: 400px;
+	}
+
+	@media(min-width: 500px) { 
+		height: 500px;
+	}
 	  
-	@media(min-width: 480px) { padding-bottom:100%; }
+	// @media(min-width: 480px) { padding-bottom:100%; }
   	@media(min-width: $tablet-height) { 
-  		padding-bottom:580px; margin-bottom:100px; 
+  		// padding-bottom:580px; 
+  		margin-bottom:100px; 
   	}
 
 
