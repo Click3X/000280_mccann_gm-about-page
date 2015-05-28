@@ -19,8 +19,17 @@ if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(naviga
 console.log('This is mobile: ' + mobile);
 // IF MOBILE - ADD MOBILE STYLESHEET
 if(mobile) {
-    jQuery('head').append('<link rel="stylesheet" href="stylesheets/mobile.css" type="text/css" />');
-    jQuery('body').append('<script src="js/mobile.js"></script>');
+
+    // REPLACE GIFS WITH SVGS
+    $('img[src$=".gif"]').each(function(index,element) {
+        // NO CHINA FLAG GIF FOR MOBILE, BUT IF SCREEN IS IPAD OR LARGER, SHOW GIF
+        if( (element.src != 'chinaflag.gif') && ( $(window).width < 768 )) {
+            element.src = element.src.replace('.gif','.svg');
+        }
+    });
+
+     // MAKE FLAGS ANIMATE
+    $('#animate-flag-line').addClass('animate-flag-line');
 }
 
 

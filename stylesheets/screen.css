@@ -1592,6 +1592,10 @@ Stylesheet: Helpers
     fill: #E6E7E8;
   }
 }
+/* line 2, ../sass/partials/_mobile-gif-backups.scss */
+.c3xgm-about-mobile-device {
+  /*.c3xgm-about-mobile-device .c3xgm-about-decorative.c3xgm-about-solar-panels,*/
+}
 /* line 5, ../sass/partials/_mobile-gif-backups.scss */
 .c3xgm-about-mobile-device .c3xgm-about-page-our-commitment .c3xgm-about-crash-test-dummies .c3xgm-about-block-image img {
   width: 50%;
@@ -1750,6 +1754,18 @@ Stylesheet: Helpers
   -o-animation-iteration-count: infinite;
   -ms-animation-iteration-count: infinite;
   animation-iteration-count: infinite;
+}
+/* line 86, ../sass/partials/_mobile-gif-backups.scss */
+.c3xgm-about-mobile-device .c3xgm-about-mobile-visible {
+  opacity: 1;
+}
+/* line 91, ../sass/partials/_mobile-gif-backups.scss */
+.c3xgm-about-mobile-device .c3xgm-about-mobile-device .c3xgm-about-section .c3xgm-about-section-header-inner {
+  overflow-x: auto;
+}
+/* line 95, ../sass/partials/_mobile-gif-backups.scss */
+.c3xgm-about-mobile-device .c3xgm-about-mobile-device .c3xgm-about-main-nav-sub {
+  display: none;
 }
 
 /* line 2, ../sass/partials/_navigation.scss */

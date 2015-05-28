@@ -82,4 +82,18 @@
 		}
 	}
 
+
+	.c3xgm-about-mobile-visible {
+		opacity: 1;
+	}
+
+	/*.c3xgm-about-mobile-device .c3xgm-about-decorative.c3xgm-about-solar-panels,*/
+	.c3xgm-about-mobile-device .c3xgm-about-section .c3xgm-about-section-header-inner {
+		overflow-x:auto;
+	}
+
+	.c3xgm-about-mobile-device  .c3xgm-about-main-nav-sub {
+		display: none;
+	}
+
 }
