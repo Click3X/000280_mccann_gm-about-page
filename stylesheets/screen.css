@@ -169,6 +169,11 @@ Stylesheet: Helpers
   }
 }
 
+/* line 5, ../sass/partials/_mobile-gif-backups.scss */
+.c3xgm-about-mobile-device .c3xgm-about-page-our-commitment .c3xgm-about-crash-test-dummies .c3xgm-about-block-image img {
+  width: 50%;
+}
+
 /* line 3, ../sass/animations/_animations-all.scss */
 .animated {
   -webkit-animation-fill-mode: animation-duration 1s;
