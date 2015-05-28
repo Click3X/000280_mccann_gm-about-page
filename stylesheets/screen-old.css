@@ -5538,11 +5538,16 @@ div#c3xgm-about-grey-van:before {
 /* line 25, ../sass/modules/_module-click-animations.scss */
 .c3xgm-about-module-car .show-module-slide-in .c3xgm-about-h,
 .c3xgm-about-module-foundation .show-module-slide-in .c3xgm-about-h {
-  -webkit-animation: slideIn;
+  /*-webkit-animation: slideIn;
   -moz-animation: slideIn;
   -o-animation: slideIn;
   -ms-animation: slideIn;
-  animation: slideIn;
+  animation: slideIn;*/
+  -webkit-animation: fadeInLeftMega;
+  -moz-animation: fadeInLeftMega;
+  -o-animation: fadeInLeftMega;
+  -ms-animation: fadeInLeftMega;
+  animation: fadeInLeftMega;
   -webkit-animation-duration: 400ms;
   -moz-animation-duration: 400ms;
   -o-animation-duration: 400ms;
@@ -5594,11 +5599,16 @@ div#c3xgm-about-grey-van:before {
 /* line 45, ../sass/modules/_module-click-animations.scss */
 .c3xgm-about-module-car .hide-module-slide-out .c3xgm-about-h,
 .c3xgm-about-module-foundation .hide-module-slide-out .c3xgm-about-h {
-  -webkit-animation: slideOut;
+  /*-webkit-animation: slideOut;
   -moz-animation: slideOut;
   -o-animation: slideOut;
   -ms-animation: slideOut;
-  animation: slideOut;
+  animation: slideOut;*/
+  -webkit-animation: fadeOut;
+  -moz-animation: fadeOut;
+  -o-animation: fadeOut;
+  -ms-animation: fadeOut;
+  animation: fadeOut;
   -webkit-animation-duration: 400ms;
   -moz-animation-duration: 400ms;
   -o-animation-duration: 400ms;
