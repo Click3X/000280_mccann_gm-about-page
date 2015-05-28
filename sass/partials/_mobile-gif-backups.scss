@@ -2,7 +2,15 @@
 .c3xgm-about-mobile-device {
 
 	.c3xgm-about-page-our-commitment {
-		.c3xgm-about-crash-test-dummies .c3xgm-about-block-image img { width: 50%; }
+		.c3xgm-about-crash-test-dummies .c3xgm-about-block-image img { 
+			width: 50%; 
+			@media(min-width: $tablet-height) {
+				width: 80%;
+				position: absolute; top: 50%; left: 50%;
+				@include prefix(transform, translate(-50%, -50%));
+			}
+		}
 	}
+
 
 }

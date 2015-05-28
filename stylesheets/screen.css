@@ -173,6 +173,20 @@ Stylesheet: Helpers
 .c3xgm-about-mobile-device .c3xgm-about-page-our-commitment .c3xgm-about-crash-test-dummies .c3xgm-about-block-image img {
   width: 50%;
 }
+@media (min-width: 768px) {
+  /* line 5, ../sass/partials/_mobile-gif-backups.scss */
+  .c3xgm-about-mobile-device .c3xgm-about-page-our-commitment .c3xgm-about-crash-test-dummies .c3xgm-about-block-image img {
+    width: 80%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+  }
+}
 
 /* line 3, ../sass/animations/_animations-all.scss */
 .animated {
