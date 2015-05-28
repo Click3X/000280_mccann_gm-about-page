@@ -27,12 +27,10 @@ if(mobile) {
         console.log('This is window Width: ' + $(window).width() );
         
         if( (element.src != 'chinaflag.gif') && ($(window).width() < 768) ) {
-            
+
             element.src = element.src.replace('.gif','.svg');
         } 
-        // else if( element.src == 'crash-test-dummies.gif' ) {
-        //     // element.src = element.src.replace('.gif','.svg');
-        // }
+
     });
 
      // MAKE FLAGS ANIMATE

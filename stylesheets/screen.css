@@ -1602,12 +1602,12 @@ Stylesheet: Helpers
     display: none;
   }
 }
-/* line 12, ../sass/partials/_mobile-gif-backups.scss */
+/* line 13, ../sass/partials/_mobile-gif-backups.scss */
 .c3xgm-about-mobile-device .c3xgm-about-page-our-commitment .c3xgm-about-crash-test-dummies .c3xgm-about-block-image img[src$="svg"] {
   width: 50%;
 }
 @media (min-width: 768px) {
-  /* line 12, ../sass/partials/_mobile-gif-backups.scss */
+  /* line 13, ../sass/partials/_mobile-gif-backups.scss */
   .c3xgm-about-mobile-device .c3xgm-about-page-our-commitment .c3xgm-about-crash-test-dummies .c3xgm-about-block-image img[src$="svg"] {
     width: 80%;
     position: absolute;
@@ -1620,7 +1620,7 @@ Stylesheet: Helpers
     transform: translate(-50%, -50%);
   }
 }
-/* line 29, ../sass/partials/_mobile-gif-backups.scss */
+/* line 23, ../sass/partials/_mobile-gif-backups.scss */
 .c3xgm-about-mobile-device .c3xgm-about-page-our-commitment .c3xgm-about-crash-test-dummies.element-in-view .c3xgm-about-block-image img {
   -webkit-animation-fill-mode: both;
   -moz-animation-fill-mode: both;
@@ -1643,12 +1643,12 @@ Stylesheet: Helpers
   -ms-animation-duration: 400ms;
   animation-duration: 400ms;
 }
-/* line 42, ../sass/partials/_mobile-gif-backups.scss */
+/* line 36, ../sass/partials/_mobile-gif-backups.scss */
 .c3xgm-about-mobile-device .c3xgm-about-decorative.c3xgm-about-red-car-road {
   position: relative;
   overflow-x: hidden;
 }
-/* line 45, ../sass/partials/_mobile-gif-backups.scss */
+/* line 39, ../sass/partials/_mobile-gif-backups.scss */
 .c3xgm-about-mobile-device .c3xgm-about-decorative.c3xgm-about-red-car-road #c3xgm-about-red-car {
   right: -380px;
   -webkit-animation-fill-mode: both;
@@ -1682,7 +1682,7 @@ Stylesheet: Helpers
   -ms-animation-iteration-count: infinite;
   animation-iteration-count: infinite;
 }
-/* line 60, ../sass/partials/_mobile-gif-backups.scss */
+/* line 54, ../sass/partials/_mobile-gif-backups.scss */
 .c3xgm-about-mobile-device .c3xgm-about-flag-line-container #c3xgm-about-flag-line-grey-car {
   margin: 0;
   left: -380px;
@@ -1717,7 +1717,7 @@ Stylesheet: Helpers
   -ms-animation-iteration-count: infinite;
   animation-iteration-count: infinite;
 }
-/* line 74, ../sass/partials/_mobile-gif-backups.scss */
+/* line 68, ../sass/partials/_mobile-gif-backups.scss */
 .c3xgm-about-mobile-device .c3xgm-about-grey-top {
   left: -380px;
   -webkit-animation-fill-mode: both;
@@ -1751,11 +1751,11 @@ Stylesheet: Helpers
   -ms-animation-iteration-count: infinite;
   animation-iteration-count: infinite;
 }
-/* line 87, ../sass/partials/_mobile-gif-backups.scss */
+/* line 81, ../sass/partials/_mobile-gif-backups.scss */
 .c3xgm-about-mobile-device div#c3xgm-about-grey-van:before {
   display: none;
 }
-/* line 96, ../sass/partials/_mobile-gif-backups.scss */
+/* line 90, ../sass/partials/_mobile-gif-backups.scss */
 .c3xgm-about-mobile-device .c3xgm-about-decorative.c3xgm-about-solar-panels #c3xgm-about-solar-grey-car {
   left: -380px;
   -webkit-animation-fill-mode: both;
@@ -1789,15 +1789,15 @@ Stylesheet: Helpers
   -ms-animation-iteration-count: infinite;
   animation-iteration-count: infinite;
 }
-/* line 109, ../sass/partials/_mobile-gif-backups.scss */
+/* line 103, ../sass/partials/_mobile-gif-backups.scss */
 .c3xgm-about-mobile-device .c3xgm-about-mobile-visible {
   opacity: 1;
 }
-/* line 111, ../sass/partials/_mobile-gif-backups.scss */
+/* line 105, ../sass/partials/_mobile-gif-backups.scss */
 .c3xgm-about-mobile-device .c3xgm-about-mobile-device .c3xgm-about-section .c3xgm-about-section-header-inner {
   overflow-x: auto;
 }
-/* line 113, ../sass/partials/_mobile-gif-backups.scss */
+/* line 107, ../sass/partials/_mobile-gif-backups.scss */
 .c3xgm-about-mobile-device .c3xgm-about-mobile-device .c3xgm-about-main-nav-sub {
   display: none;
 }

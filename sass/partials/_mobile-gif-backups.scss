@@ -19,14 +19,6 @@
 			}
 		}
 
-		// .c3xgm-about-crash-test-dummies .c3xgm-about-block-image img[src$="svg"] {
-		// 	@media(min-width: $tablet-height) {
-		// 		width: 80%;
-		// 		position: absolute; top: 50%; left: 50%;
-		// 		@include prefix(transform, translate(-50%, -50%));
-		// 	}
-		// }
-
 		.c3xgm-about-crash-test-dummies.element-in-view .c3xgm-about-block-image img {
 			$crash-duration:400;
 			$crash-delay:1800;
