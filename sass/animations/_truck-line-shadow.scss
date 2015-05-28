@@ -1,0 +1,78 @@
+// NEW TRUCK LINE SHADOW
+.c3xgm-about-test-facility {
+
+	.c3xgm-about-truck-line-holder {
+		@media(min-width: $tablet-height) {
+			  width: 48%; float: right;
+		}
+	}
+
+	.c3xgm-about-truck,
+	.c3xgm-about-truck-shadow-container,
+	.c3xgm-about-truck-bg-outer {
+		@include prefix(transform-origin, 50% 50%);
+	}
+
+	.c3xgm-about-truck-bg-outer {
+		// width: 65%; 
+		max-width:300px;
+		// padding-bottom: 69%;
+		padding-bottom: 100%;
+		width: 100%; 
+		@media(min-width: 502px) { 
+			padding-bottom: 300px; 
+		}
+		@media(min-width: $tablet-height) {
+			width:300px;
+			padding-bottom: 300px; 
+			margin-bottom:auto;
+		}
+	}
+
+	
+	.c3xgm-about-truck-shadow-container {
+		position: relative;
+		width: 65%; max-width:300px;
+		margin:1em auto;
+		@media(min-width: $tablet-height) {
+			float: right;
+			width:300px;
+			margin-top: -1em;
+		}
+
+		@media(min-width:830px) { margin-right: 12%; }
+	}
+
+	.c3xgm-about-truck-shadow {
+		position: relative;
+	}
+
+	.c3xgm-about-shadow {
+		@include prefix(transform-origin, center bottom);
+	}
+
+	.c3xgm-about-truck-bg {
+		background-position: 50% 50%;
+		background-repeat:no-repeat;
+		background-size: 100%;
+		width: 100%;
+		// padding-bottom:101.31%;
+		padding-bottom:100%;
+		
+		position: absolute;
+		top:0; left:0;
+	}
+
+	.c3xgm-about-truck {
+		background-image:url('../img/pages/commitment/truck.png');
+	}
+
+	.c3xgm-about-shadow {
+		background-image:url('../img/pages/commitment/shadow.png');
+	}
+
+	.c3xgm-about-truck-lines {
+		padding-bottom: 100%;
+		background-image:url('../img/pages/commitment/circle.png');
+	}
+}
