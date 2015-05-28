@@ -1,16 +1,19 @@
 // CAR JS MODULE 'OUR BRANDS'
 
-var techSlideInterval, currentTechSlide = 0;
+var aboutSlideInterval, carLinks, currentAboutSlide = 0;
+var techSlideInterval, techLinks, currentTechSlide = 0;
+var foundationSlideInterval, foundationLinks, currentFoundationSlide = 0;
 
 jQuery(document).ready(function($) {
-	var carLinks = $('.c3xgm-about-module-car-logo'),
-		carSlides = $('#c3xgm-about-module-car .c3xgm-about-slide'),
+	carLinks = $('.c3xgm-about-module-car-logo');
+	techLinks = $('#c3xgm-about-page-technology .c3xgm-about-module-nav li a');
+	foundationLinks = $('.c3xgm-about-module-foundation-logo');
+
+	var carSlides = $('#c3xgm-about-module-car .c3xgm-about-slide'),
 		carContainer = $('.c3xgm-about-module-65').get(0),
 		foundationContainer = $('.c3xgm-about-module-foundation .c3xgm-about-module-20').get(0),
-		foundationLinks = $('.c3xgm-about-module-foundation-logo'),
 		foundationSlides = $('#c3xgm-about-module-foundation .c3xgm-about-slide'),
-		techSlides = $('.c3xgm-about-module-technology .c3xgm-about-module'),
-		techLinks = $('#c3xgm-about-page-technology .c3xgm-about-module-nav li a');
+		techSlides = $('.c3xgm-about-module-technology .c3xgm-about-module');
 
 	// console.log('Here are your foundationLinks: ' + foundationLinks);
 	// console.dir(foundationLinks);
@@ -33,7 +36,7 @@ jQuery(document).ready(function($) {
 	});
 
 	// CARS LINKS
-	carLinks.on('click touchstart', function(e) {
+	carLinks.on('click touchstart', function(e, auto_rotate) {
 		e.preventDefault();
 
 		// GET LINKS
@@ -57,10 +60,9 @@ jQuery(document).ready(function($) {
 		setTimeout(function() {
 			$(target).removeClass('hide-module').removeClass('hide-module-slide-out').addClass('show-module-slide-in');
 		}, 700);
+
+		if(!auto_rotate) killAutoRotateAboutSlider();
 	});
-
-
-
 
 	// FOUNDATION ---------------------------------------------------------------------------------------------------------
 	// MOVE ALL SLIDES TO RIGHT 100%;
@@ -113,6 +115,8 @@ jQuery(document).ready(function($) {
 	techLinks.on('click touchstart', function(e, auto_rotate) {
 		e.preventDefault();
 
+		// console.log("TECH LINK CLICKED", techLinks.indexOf(this) );
+
 		// GET LINKS
 		var target = $(this).attr('href');
 		//  ADD ACRIVE CLASS
@@ -150,21 +154,60 @@ jQuery(document).ready(function($) {
 
 });
 
-function autorotateTechSlider(){
-    var navList = $("div.c3xgm-about-module-technology ul.c3xgm-about-module-nav li");
 
-    if(!techSlideInterval){
-        techSlideInterval = setInterval(function(){
-            currentTechSlide++; if(currentTechSlide > navList.length-1) currentTechSlide = 0;
+//AUTO ROTATE ABOUT SLIDER
+function autorotateAboutSlider(){
+   console.log("autorotateAboutSlider");
 
-            $(navList[currentTechSlide]).children("a").eq(0).trigger("click", true);
+    if(!aboutSlideInterval){
+        aboutSlideInterval = setInterval(function(){
+            currentAboutSlide++; if(currentAboutSlide > carLinks.length-1) currentAboutSlide = 0;
+
+            $(carLinks[currentAboutSlide]).eq(0).trigger("click", true);
         }, 5000);
     }
 }
+function killAutoRotateAboutSlider(){
+	console.log("killAutoRotateAboutSlider");
 
+    clearInterval(aboutSlideInterval);
+    aboutSlideInterval = null;
+}
+
+//AUTO ROTATE TECH SLIDER
+function autorotateTechSlider(){
+	console.log("autorotateTechSlider");
+
+    if(!techSlideInterval){
+        techSlideInterval = setInterval(function(){
+            currentTechSlide++; if(currentTechSlide > techLinks.length-1) currentTechSlide = 0;
+
+            $( techLinks[currentTechSlide] ).eq(0).trigger("click", true);
+        }, 5000);
+    }
+}
 function killAutoRotateTechSlider(){
 	console.log("killAutoRotateTechSlider");
 
     clearInterval(techSlideInterval);
     techSlideInterval = null;
+}
+
+//AUTO ROTATE FOUNDATION SLIDER
+function autorotateFoundationSlider(){
+	console.log("autorotateFoundationSlider");
+
+    if(!foundationSlideInterval){
+        foundationSlideInterval = setInterval(function(){
+            currentFoundationSlide++; if(currentFoundationSlide > foundationLinks.length-1) currentFoundationSlide = 0;
+
+            $( foundationLinks[currentFoundationSlide] ).eq(0).trigger("click", true);
+        }, 5000);
+    }
+}
+function killAutoRotateFoundationSlider(){
+	console.log("killAutoRotateFoundationSlider");
+
+    clearInterval(foundationSlideInterval);
+    foundationSlideInterval = null;
 }

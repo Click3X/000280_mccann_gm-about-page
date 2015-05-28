@@ -301,38 +301,35 @@ jQuery(document).ready(function($) {
                     // SHOW FIRST SLIDE
                     setTimeout(function() {
                         $('#c3xgm-about-car-chevrolet').removeClass('hide-module hide-module-slide-out').addClass('show-module-slide-in');
+
+                        autorotateAboutSlider();
                     }, 3000);
-                }
+                } /*else {
+                    killAutoRotateAboutSlider();
+                }*/
 
                 // TRIGGER TECH MODULE
-                if( _t.elementName == "c3xgm-about-page-technology") {
+                if( _t.elementName == "c3xgm-about-page-technology" ) {
                     // SHOW FIRST SLIDE
                     setTimeout(function() {
-                        $('#c3xgm-about-technology-4g-lte').removeClass('hide-module hide-module-slide-out').addClass('show-module-slide-in');
-                    }, 2200);
-                }
-
-                if( _t.elementName == "c3xgm-about-page-technology") {
-                    // SHOW FIRST SLIDE
-                    console.log("SHOWING TECH SLIDE");
-
-                    setTimeout(function() {
-                        console.log("SHOWING FIRST SLIDE");
-
                         $('#c3xgm-about-technology-4g-lte').removeClass('hide-module hide-module-slide-out').addClass('show-module-slide-in');      
 
                         autorotateTechSlider();
                     }, 3000);
-                } else {
+                } /*else {
                     killAutoRotateTechSlider();
-                }
+                }*/
                 
-                if( _t.elementName == "c3xgm-about-page-our-global-community") {
-                //     // SHOW FIRST SLIDE
+                if( _t.elementName == "c3xgm-about-page-our-global-community" ) {
+                    // SHOW FIRST SLIDE
                     setTimeout(function() {
                         $('#c3xgm-about-foundation-gm-foundation').removeClass('hide-module hide-module-slide-out').addClass('show-module-slide-in');
+
+                        autorotateFoundationSlider();
                     }, 3000);
-                }
+                } /*else {
+                    killAutoRotateFoundationSlider();
+                }*/
     		} 
     	}); 
     }
