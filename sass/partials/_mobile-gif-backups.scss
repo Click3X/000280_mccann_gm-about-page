@@ -10,6 +10,17 @@
 				@include prefix(transform, translate(-50%, -50%));
 			}
 		}
+
+		.c3xgm-about-crash-test-dummies.element-in-view .c3xgm-about-block-image img {
+			$crash-duration:400;
+			$crash-delay:1800;
+			$crash-step:300;
+
+			@include prefix(animation-fill-mode, both);
+			@include prefix(animation-name, fadeIn);
+			@include prefix(animation-delay, #{$crash-delay + "ms"});
+			@include prefix(animation-duration, #{$crash-duration + "ms"});
+		}
 	}
 
 
