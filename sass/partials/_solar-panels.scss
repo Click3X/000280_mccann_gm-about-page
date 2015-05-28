@@ -1,8 +1,10 @@
 // SOLAR PANELS
 .c3xgm-about-decorative.c3xgm-about-solar-panels {
-	margin-bottom: 10%; padding-bottom:120%; 
+	margin-bottom: 10%;
+	 // padding-bottom:120%;
 	height: 0;
 	position: relative; 
+	margin-top:5em;
 	  
 	@media(min-width: 480px) { padding-bottom:100%; }
   	@media(min-width: $tablet-height) { 

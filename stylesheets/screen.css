@@ -1235,7 +1235,7 @@ Stylesheet: Helpers
 @media (min-width: 480px) {
   @-webkit-keyframes moveCarRight {
     0% {
-      -webkit-transform: translate3d(-300px, 0, 0);
+      -webkit-transform: translate3d(-400px, 0, 0);
       opacity: 0;
     }
     1% {
@@ -1250,13 +1250,13 @@ Stylesheet: Helpers
       opacity: 0;
     }
     100% {
-      -webkit-transform: translate3d(-300px, 0, 0);
+      -webkit-transform: translate3d(-400px, 0, 0);
       opacity: 0;
     }
   }
   @-moz-keyframes moveCarRight {
     0% {
-      -moz-transform: translate3d(-300px, 0, 0);
+      -moz-transform: translate3d(-400px, 0, 0);
       opacity: 0;
     }
     1% {
@@ -1271,13 +1271,13 @@ Stylesheet: Helpers
       opacity: 0;
     }
     100% {
-      -moz-transform: translate3d(-300px, 0, 0);
+      -moz-transform: translate3d(-400px, 0, 0);
       opacity: 0;
     }
   }
   @-o-keyframes moveCarRight {
     0% {
-      -o-transform: translate3d(-300px, 0, 0);
+      -o-transform: translate3d(-400px, 0, 0);
       opacity: 0;
     }
     1% {
@@ -1292,13 +1292,13 @@ Stylesheet: Helpers
       opacity: 0;
     }
     100% {
-      -o-transform: translate3d(-300px, 0, 0);
+      -o-transform: translate3d(-400px, 0, 0);
       opacity: 0;
     }
   }
   @keyframes moveCarRight {
     0% {
-      transform: translate3d(-300px, 0, 0);
+      transform: translate3d(-400px, 0, 0);
       opacity: 0;
     }
     1% {
@@ -1313,7 +1313,7 @@ Stylesheet: Helpers
       opacity: 0;
     }
     100% {
-      transform: translate3d(-300px, 0, 0);
+      transform: translate3d(-400px, 0, 0);
       opacity: 0;
     }
   }
@@ -1632,6 +1632,90 @@ Stylesheet: Helpers
   -o-animation-duration: 400ms;
   -ms-animation-duration: 400ms;
   animation-duration: 400ms;
+}
+/* line 29, ../sass/partials/_mobile-gif-backups.scss */
+.c3xgm-about-mobile-device #c3xgm-about-solar-grey-car,
+.c3xgm-about-mobile-device #c3xgm-about-flag-line-grey-car {
+  margin: auto;
+  left: 0;
+  right: 0;
+}
+/* line 35, ../sass/partials/_mobile-gif-backups.scss */
+.c3xgm-about-mobile-device .c3xgm-about-decorative.c3xgm-about-red-car-road {
+  position: relative;
+  overflow-x: hidden;
+}
+/* line 38, ../sass/partials/_mobile-gif-backups.scss */
+.c3xgm-about-mobile-device .c3xgm-about-decorative.c3xgm-about-red-car-road #c3xgm-about-red-car {
+  right: -380px;
+  -webkit-animation-fill-mode: both;
+  -moz-animation-fill-mode: both;
+  -o-animation-fill-mode: both;
+  -ms-animation-fill-mode: both;
+  animation-fill-mode: both;
+  -webkit-animation-name: moveCarLeft;
+  -moz-animation-name: moveCarLeft;
+  -o-animation-name: moveCarLeft;
+  -ms-animation-name: moveCarLeft;
+  animation-name: moveCarLeft;
+  -webkit-animation-delay: 0;
+  -moz-animation-delay: 0;
+  -o-animation-delay: 0;
+  -ms-animation-delay: 0;
+  animation-delay: 0;
+  -webkit-animation-duration: 3s;
+  -moz-animation-duration: 3s;
+  -o-animation-duration: 3s;
+  -ms-animation-duration: 3s;
+  animation-duration: 3s;
+  -webkit-animation-timing-function: linear;
+  -moz-animation-timing-function: linear;
+  -o-animation-timing-function: linear;
+  -ms-animation-timing-function: linear;
+  animation-timing-function: linear;
+  -webkit-animation-iteration-count: infinite;
+  -moz-animation-iteration-count: infinite;
+  -o-animation-iteration-count: infinite;
+  -ms-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+}
+/* line 51, ../sass/partials/_mobile-gif-backups.scss */
+.c3xgm-about-mobile-device .c3xgm-about-grey-top {
+  left: -380px;
+  -webkit-animation-fill-mode: both;
+  -moz-animation-fill-mode: both;
+  -o-animation-fill-mode: both;
+  -ms-animation-fill-mode: both;
+  animation-fill-mode: both;
+  -webkit-animation-name: moveCarRight;
+  -moz-animation-name: moveCarRight;
+  -o-animation-name: moveCarRight;
+  -ms-animation-name: moveCarRight;
+  animation-name: moveCarRight;
+  -webkit-animation-delay: 0;
+  -moz-animation-delay: 0;
+  -o-animation-delay: 0;
+  -ms-animation-delay: 0;
+  animation-delay: 0;
+  -webkit-animation-duration: 4s;
+  -moz-animation-duration: 4s;
+  -o-animation-duration: 4s;
+  -ms-animation-duration: 4s;
+  animation-duration: 4s;
+  -webkit-animation-timing-function: linear;
+  -moz-animation-timing-function: linear;
+  -o-animation-timing-function: linear;
+  -ms-animation-timing-function: linear;
+  animation-timing-function: linear;
+  -webkit-animation-iteration-count: infinite;
+  -moz-animation-iteration-count: infinite;
+  -o-animation-iteration-count: infinite;
+  -ms-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+}
+/* line 64, ../sass/partials/_mobile-gif-backups.scss */
+.c3xgm-about-mobile-device div#c3xgm-about-grey-van:before {
+  display: none;
 }
 
 /* line 2, ../sass/partials/_navigation.scss */
@@ -3118,9 +3202,9 @@ Stylesheet: Helpers
 /* line 2, ../sass/partials/_solar-panels.scss */
 .c3xgm-about-decorative.c3xgm-about-solar-panels {
   margin-bottom: 10%;
-  padding-bottom: 120%;
   height: 0;
   position: relative;
+  margin-top: 5em;
 }
 @media (min-width: 480px) {
   /* line 2, ../sass/partials/_solar-panels.scss */
@@ -3135,7 +3219,7 @@ Stylesheet: Helpers
     margin-bottom: 100px;
   }
 }
-/* line 13, ../sass/partials/_solar-panels.scss */
+/* line 15, ../sass/partials/_solar-panels.scss */
 .c3xgm-about-decorative.c3xgm-about-solar-panels .c3xgm-about-grey-car-holder {
   height: 0;
   width: 100%;
@@ -3145,18 +3229,18 @@ Stylesheet: Helpers
   bottom: 0;
 }
 @media (min-width: 768px) {
-  /* line 13, ../sass/partials/_solar-panels.scss */
+  /* line 15, ../sass/partials/_solar-panels.scss */
   .c3xgm-about-decorative.c3xgm-about-solar-panels .c3xgm-about-grey-car-holder {
     padding-bottom: 10.75%;
   }
 }
 @media (min-width: 906px) {
-  /* line 13, ../sass/partials/_solar-panels.scss */
+  /* line 15, ../sass/partials/_solar-panels.scss */
   .c3xgm-about-decorative.c3xgm-about-solar-panels .c3xgm-about-grey-car-holder {
     padding-bottom: 96px;
   }
 }
-/* line 24, ../sass/partials/_solar-panels.scss */
+/* line 26, ../sass/partials/_solar-panels.scss */
 .c3xgm-about-decorative.c3xgm-about-solar-panels .c3xgm-about-grey-side {
   width: 45%;
   height: 0;
@@ -3168,7 +3252,7 @@ Stylesheet: Helpers
   margin: auto;
   z-index: 10;
 }
-/* line 32, ../sass/partials/_solar-panels.scss */
+/* line 34, ../sass/partials/_solar-panels.scss */
 .c3xgm-about-decorative.c3xgm-about-solar-panels .c3xgm-about-grey-side .c3xgm-about-wheel {
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -3184,7 +3268,7 @@ Stylesheet: Helpers
   bottom: 23%;
 }
 @media (min-width: 768px) {
-  /* line 32, ../sass/partials/_solar-panels.scss */
+  /* line 34, ../sass/partials/_solar-panels.scss */
   .c3xgm-about-decorative.c3xgm-about-solar-panels .c3xgm-about-grey-side .c3xgm-about-wheel {
     height: 39px;
     width: 39px;
@@ -3192,45 +3276,45 @@ Stylesheet: Helpers
     bottom: 12%;
   }
 }
-/* line 49, ../sass/partials/_solar-panels.scss */
+/* line 51, ../sass/partials/_solar-panels.scss */
 .c3xgm-about-decorative.c3xgm-about-solar-panels .c3xgm-about-grey-side .c3xgm-about-front-wheel {
   right: 10.285714%;
 }
 @media (min-width: 768px) {
-  /* line 49, ../sass/partials/_solar-panels.scss */
+  /* line 51, ../sass/partials/_solar-panels.scss */
   .c3xgm-about-decorative.c3xgm-about-solar-panels .c3xgm-about-grey-side .c3xgm-about-front-wheel {
     right: 10.1%;
   }
 }
-/* line 54, ../sass/partials/_solar-panels.scss */
+/* line 56, ../sass/partials/_solar-panels.scss */
 .c3xgm-about-decorative.c3xgm-about-solar-panels .c3xgm-about-grey-side .c3xgm-about-back-wheel {
   left: 16%;
 }
 @media (min-width: 768px) {
-  /* line 54, ../sass/partials/_solar-panels.scss */
+  /* line 56, ../sass/partials/_solar-panels.scss */
   .c3xgm-about-decorative.c3xgm-about-solar-panels .c3xgm-about-grey-side .c3xgm-about-back-wheel {
     left: 15.7%;
   }
 }
 @media (min-width: 768px) {
-  /* line 24, ../sass/partials/_solar-panels.scss */
+  /* line 26, ../sass/partials/_solar-panels.scss */
   .c3xgm-about-decorative.c3xgm-about-solar-panels .c3xgm-about-grey-side {
     padding-bottom: 10.75%;
     width: 31%;
   }
 }
 @media (min-width: 906px) {
-  /* line 24, ../sass/partials/_solar-panels.scss */
+  /* line 26, ../sass/partials/_solar-panels.scss */
   .c3xgm-about-decorative.c3xgm-about-solar-panels .c3xgm-about-grey-side {
     padding-bottom: 96px;
     width: 276px;
   }
 }
-/* line 67, ../sass/partials/_solar-panels.scss */
+/* line 69, ../sass/partials/_solar-panels.scss */
 .c3xgm-about-decorative.c3xgm-about-solar-panels .c3xgm-about-grey-side img {
   width: 100%;
 }
-/* line 70, ../sass/partials/_solar-panels.scss */
+/* line 72, ../sass/partials/_solar-panels.scss */
 .c3xgm-about-decorative.c3xgm-about-solar-panels .c3xgm-about-tree {
   width: 66px;
   height: 61px;
@@ -3239,31 +3323,31 @@ Stylesheet: Helpers
   bottom: 40px;
   z-index: -5;
 }
-/* line 75, ../sass/partials/_solar-panels.scss */
+/* line 77, ../sass/partials/_solar-panels.scss */
 .c3xgm-about-decorative.c3xgm-about-solar-panels .c3xgm-about-tree img {
   width: 100%;
 }
 @media (min-width: 481px) {
-  /* line 70, ../sass/partials/_solar-panels.scss */
+  /* line 72, ../sass/partials/_solar-panels.scss */
   .c3xgm-about-decorative.c3xgm-about-solar-panels .c3xgm-about-tree {
     width: 99px;
     height: 93px;
   }
 }
 @media (min-width: 768px) {
-  /* line 70, ../sass/partials/_solar-panels.scss */
+  /* line 72, ../sass/partials/_solar-panels.scss */
   .c3xgm-about-decorative.c3xgm-about-solar-panels .c3xgm-about-tree {
     margin: auto;
   }
 }
 @media (min-width: 906px) {
-  /* line 70, ../sass/partials/_solar-panels.scss */
+  /* line 72, ../sass/partials/_solar-panels.scss */
   .c3xgm-about-decorative.c3xgm-about-solar-panels .c3xgm-about-tree {
     right: 0;
     left: -63%;
   }
 }
-/* line 81, ../sass/partials/_solar-panels.scss */
+/* line 83, ../sass/partials/_solar-panels.scss */
 .c3xgm-about-decorative.c3xgm-about-solar-panels .c3xgm-about-solar-panels {
   width: 127px;
   height: 141px;
@@ -3273,18 +3357,18 @@ Stylesheet: Helpers
   bottom: 0;
   z-index: -5;
 }
-/* line 86, ../sass/partials/_solar-panels.scss */
+/* line 88, ../sass/partials/_solar-panels.scss */
 .c3xgm-about-decorative.c3xgm-about-solar-panels .c3xgm-about-solar-panels img {
   width: 100%;
 }
 @media (min-width: 481px) {
-  /* line 81, ../sass/partials/_solar-panels.scss */
+  /* line 83, ../sass/partials/_solar-panels.scss */
   .c3xgm-about-decorative.c3xgm-about-solar-panels .c3xgm-about-solar-panels {
     bottom: 40px;
   }
 }
 @media (min-width: 906px) {
-  /* line 81, ../sass/partials/_solar-panels.scss */
+  /* line 83, ../sass/partials/_solar-panels.scss */
   .c3xgm-about-decorative.c3xgm-about-solar-panels .c3xgm-about-solar-panels {
     width: 193px;
     height: 213px;
@@ -3294,7 +3378,7 @@ Stylesheet: Helpers
     margin: auto;
   }
 }
-/* line 95, ../sass/partials/_solar-panels.scss */
+/* line 97, ../sass/partials/_solar-panels.scss */
 .c3xgm-about-decorative.c3xgm-about-solar-panels .c3xgm-about-sun {
   width: 16%;
   max-width: 140px;
@@ -3305,25 +3389,25 @@ Stylesheet: Helpers
   top: 40%;
   right: 5%;
 }
-/* line 101, ../sass/partials/_solar-panels.scss */
+/* line 103, ../sass/partials/_solar-panels.scss */
 .c3xgm-about-decorative.c3xgm-about-solar-panels .c3xgm-about-sun img {
   width: 100%;
 }
 @media (min-width: 400px) {
-  /* line 95, ../sass/partials/_solar-panels.scss */
+  /* line 97, ../sass/partials/_solar-panels.scss */
   .c3xgm-about-decorative.c3xgm-about-solar-panels .c3xgm-about-sun {
     padding-bottom: 100px;
   }
 }
 @media (min-width: 768px) {
-  /* line 95, ../sass/partials/_solar-panels.scss */
+  /* line 97, ../sass/partials/_solar-panels.scss */
   .c3xgm-about-decorative.c3xgm-about-solar-panels .c3xgm-about-sun {
     top: 26%;
     padding-bottom: 140px;
   }
 }
 @media (min-width: 906px) {
-  /* line 95, ../sass/partials/_solar-panels.scss */
+  /* line 97, ../sass/partials/_solar-panels.scss */
   .c3xgm-about-decorative.c3xgm-about-solar-panels .c3xgm-about-sun {
     left: 0;
     right: -50%;
@@ -3331,7 +3415,7 @@ Stylesheet: Helpers
   }
 }
 
-/* line 108, ../sass/partials/_solar-panels.scss */
+/* line 110, ../sass/partials/_solar-panels.scss */
 .c3xgm-about-solar-road {
   width: 100%;
   height: 0;

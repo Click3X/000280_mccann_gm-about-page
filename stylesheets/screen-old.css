@@ -1072,7 +1072,8 @@ h4.c3xgm-about-h {
   text-align: left;
   width: 92%;
   max-width: 906px;
-  margin: 5em auto;
+  /*margin: 5em auto;*/
+  margin: 0 auto;
 }
 /* line 23, ../sass/pages/_environment.scss */
 .c3xgm-about-page-our-commitment .c3xgm-about-clean-energy .c3xgm-about-blockquote {
@@ -13779,6 +13780,7 @@ body {
   padding-bottom: 5%;
   margin-top: -4%;
   z-index: 10;
+  height: 0;
 }
 @media (min-width: 768px) {
   /* line 21, ../sass/animations/_flag-line.scss */
@@ -13878,8 +13880,12 @@ body {
     padding-bottom: 108px;
     left: -75%;
     right: 0;
-    bottom: 50px;
+    /*bottom: 50px;*/
   }
+}
+/* NEW ADDITION - 5-28-2015 */
+@media (min-width: 906px) {
+  .grey-car { bottom: 50px; }
 }
 /* line 33, ../sass/animations/_grey-car-wheels.scss */
 .grey-car .wheel {
