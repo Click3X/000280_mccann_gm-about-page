@@ -1,0 +1,59 @@
+/******************************************************************
+Site Name: GM
+Author: Jason Tordsen
+
+Stylesheet: Sass Variables
+******************************************************************/
+$nav-dot-size: 10px;
+$nav-dot-size-touch: 20px;
+
+$gm-blue: rgb(94, 133, 196);
+$gm-dark-blue: #124e9c;
+$gm-light-blue: #6086C4;
+$gm-yellow: #FDB12E;
+// $gm-light-gray: #939597;
+$gm-light-gray: #7E8184;
+$gm-gray: #808285;
+$gm-dark-gray: #555555;
+$gm-black: #464B51;
+
+$gm-nav-gray: #b4b8bc;
+$gm-gray-line: #d4d4d5;
+
+$gm-nav-bullet: transparent;
+$gm-nav-bullet-border: #F0B41C;
+$gm-nav-bullet-active: #FFDD17;
+
+
+
+/*----screen sizes----
+----------------------*/
+$desktop-width:1200px;
+$desktop-height:900px;
+
+$tablet-width:1024px;
+$tablet-height:768px;
+$font-change:600px;
+
+$mobile-large-width:414px;
+$mobile-large-height:736px;
+
+$mobile-width:320px;
+$mobile-height:480px;
+
+// FONT RATIOS
+// VW
+// $pxvw: 0.11046075;
+// $ptpx: 1.5185;
+
+
+
+/*----page-widths----
+----------------------*/
+// $inner-border: 905px;
+// $outer-border: 1175px;
+$inner-border: 906px;
+$outer-border: 1176px;
+
+// BLOCK VARIABLES
+$block-margin: 3em auto;

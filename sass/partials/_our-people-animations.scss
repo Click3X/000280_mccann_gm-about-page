@@ -1,0 +1,43 @@
+// OUR PEOPLE ANIMATIONS
+
+.c3xgm-about-page-our-people {
+	.c3xgm-about-marker-holder {
+		position: absolute;
+		width: 6%;
+	    left: 25%; top:auto;
+	    z-index: 10; opacity: 0;
+	     @media(min-width: $tablet-height) {
+	    	left: 22%; top:auto;
+	    }
+	}
+
+	#map-pin path {
+		stroke-dasharray:988.00 988.00;
+  		stroke-dashoffset:988;
+	}
+
+	.element-in-view {
+		.c3xgm-about-marker-holder { @include prefix(animation, markerDrop .8s 2.3s ease-out forwards); }
+		#map-pin path { @include prefix(animation, animFill .8s 2.3s ease-out forwards); }
+	}
+
+	@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+		.element-in-view {
+			.c3xgm-about-marker-holder { @include prefix(animation, markerDropIE .8s 2.3s ease-out forwards); }
+			
+		}
+	}
+}
+
+.svg {
+	.c3xgm-about-page-our-people {
+		.c3xgm-about-block.c3xgm-about-employees {
+			.c3xgm-about-girl {background-image: url('../img/pages/people/girl.svg');}
+			.c3xgm-about-boy {background-image: url('../img/pages/people/boy.svg');}
+		}
+	}
+}
+
+#map-pin .fill {
+	@include prefix(transition, fill 1200ms);
+}

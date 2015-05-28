@@ -1,0 +1,502 @@
+/*start of icons animation*/
+
+@-moz-keyframes dash {
+  from {
+    stroke-dashoffset: 1000;
+  }
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+@-webkit-keyframes dash {
+  from {
+    stroke-dashoffset: 1000;
+  }
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+/*PERSON SLIDE IN*/
+/*CHANGED*/
+@-webkit-keyframes personSlideIn {
+  0% {
+    -webkit-transform: translateY(100px);
+    transform: translateY(100px);
+  }
+  50% {
+    opacity: 0;
+    -webkit-transform: translateY(50px);
+    transform: translateY(50px);
+  }
+/*  80% {
+    opacity: 0;
+    -webkit-transform: translateY(20px);
+    transform: translateY(20px);
+  }*/
+
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+   transform: translateY(0);
+  }
+}
+
+@-moz-keyframes personSlideIn {
+  0% {
+    -moz-transform: translateY(100px);
+    transform: translateY(100px);
+  }
+  50% {
+    opacity: 0;
+    -moz-transform: translateY(50px);
+    transform: translateY(50px);
+  }
+/*  80% {
+    opacity: 0;
+    -moz-transform: translateY(20px);
+    transform: translateY(20px);
+  }*/
+
+  100% {
+    opacity: 1;
+    -moz-transform: translateY(0);
+   transform: translateY(0);
+  }
+}
+
+/*TIE SLIDE IN*/
+@-webkit-keyframes tieSlideIn {
+  0% {
+    -webkit-transform: translateY(-100px);
+    transform: translateY(-100px);
+  }
+  50% {
+    opacity: 0;
+    -webkit-transform: translateY(-50px);
+    transform: translateY(-50px);
+  }
+  80% {
+    opacity: 0;
+    -webkit-transform: translateY(-20px);
+    transform: translateY(-20px);
+  }
+
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+   transform: translateY(0);
+  }
+}
+
+@-moz-keyframes tieSlideIn {
+  0% {
+    -moz-transform: translateY(-100px);
+    transform: translateY(-100px);
+  }
+  50% {
+    opacity: 0;
+    -moz-transform: translateY(-50px);
+    transform: translateY(-50px);
+  }
+  80% {
+    opacity: 0;
+    -moz-transform: translateY(-20px);
+    transform: translateY(-20px);
+  }
+
+  100% {
+    opacity: 1;
+    -moz-transform: translateY(0);
+   transform: translateY(0);
+  }
+}
+
+
+/*SCALEUP*/
+@-webkit-keyframes scaleUp {
+  from {
+    opacity: 0;
+    -webkit-transform: scale(0,0);
+    transform: scale(0,0);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: scale(1,1);
+   transform: scale(1,1);
+  }
+}
+
+@-moz-keyframes scaleUp {
+
+  from {
+     opacity: 0;
+    -moz-transform: scale(0,0);
+    transform: scale(0,0);
+  }
+  to {
+    opacity: 1;
+    -moz-transform: scale(1,1);
+   transform: scale(1,1);
+  }
+}
+
+@-webkit-keyframes whiteBandScale {
+  from {
+     opacity: 0;
+    -webkit-transform: scale(0,1);
+    transform: scale(0,1);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: scale(1,1);
+   transform: scale(1,1);
+  }
+}
+
+@-moz-keyframes whiteBandScale {
+  from {
+     opacity: 0;
+    -moz-transform: scale(0,1);
+    transform: scale(0,1);
+  }
+  to {
+    opacity: 1;
+    -moz-transform: scale(1,1);
+   transform: scale(1,1);
+  }
+}
+
+/*BELOW ARE NEW ON MAY 15 2015*/
+
+/*Brand car slide in from left*/
+
+/*CHANGED*/
+@-webkit-keyframes slideRight {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateX(-100px);
+   
+  }
+
+  50% {
+    opacity: 0;
+    -webkit-transform: translateX(-50px);
+    
+  }
+
+/*  80% {
+    opacity: 1;
+    -webkit-transform: translateX(-20px);
+    
+  }*/
+
+  100% {
+    opacity: 1;
+    -webkit-transform: translateX(0);
+   
+  }
+}
+
+@-moz-keyframes slideRight {
+  0% {
+    opacity: 0;
+    -moz-transform: translateX(-100px);
+    
+  }
+
+  50% {
+    opacity: 0;
+    -moz-transform: translateX(-50px);
+    
+  }
+
+/*  80% {
+    opacity: 1;
+    -moz-transform: translateX(-20px);
+    
+  }*/
+
+  100% {
+    opacity: 1;
+    -moz-transform: translateX(0);
+   
+  }
+}
+
+@keyframes slideRight {
+  0% {
+    opacity: 0;
+    transform: translateX(-100px);
+    
+  }
+
+  50% {
+    opacity: 0;
+    transform: translateX(-50px);
+    
+  }
+
+  80% {
+    opacity: 1;
+    transform: translateX(-20px);
+    
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+   
+  }
+}
+
+
+/*SHADOW FADE IN*/
+@-webkit-keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/*grey circle scale up*/
+
+@-webkit-keyframes greycircleScaleUp {
+  0% {
+    opacity: 0;
+    -webkit-transform: scale(0,0);
+   
+  }
+
+  50% {
+    opacity: 0;
+    -webkit-transform: scale(0.5,0.5);
+   
+  }
+
+  100% {
+    opacity: 1;
+    -webkit-transform: scale(1,1);
+   
+  }
+}
+
+@-moz-keyframes greycircleScaleUp {
+
+  0% {
+    opacity: 0;
+    -moz-transform: scale(0,0);
+   
+  }
+
+  50% {
+    opacity: 0;
+    -moz-transform: scale(0.5,0.5);
+   
+  }
+
+  100% {
+    opacity: 1;
+    -moz-transform: scale(1,1);
+   
+  }
+}
+
+
+/*GUY ANIMATION*/
+.out_circle {
+  stroke-dasharray: 1000;
+  stroke-dashoffset: 1000;
+  -webkit-animation: dash 3s linear forwards;
+  -moz-animation: dash 3s linear forwards;
+  -ms-animation: dash 3s linear forwards;
+}
+/*CHANGED*/
+#person {
+  opacity: 0;
+  -webkit-transform: translateY(100px);
+  -moz-transform: translateY(100px);
+  -ms-transform: translateY(100px);
+  transform: translateY(100px);
+  -webkit-animation: personSlideIn 0.7s 0.6s ease forwards;
+  -moz-animation: personSlideIn 0.7s 0.6s ease forwards;
+  -ms-animation: personSlideIn 0.7s 0.6s ease forwards;
+}
+
+/*CHANGED*/
+#tie {
+  -webkit-transform: translateY(-100px);
+  -moz-transform: translateY(-100px);
+  -ms-transform: translateY(-100px);
+  transform: translateY(-100px);
+  opacity: 0;
+  -webkit-animation: tieSlideIn 0.5s 0.9s linear forwards;
+  -moz-animation: tieSlideIn 0.5s 0.9s linear forwards;
+  -ms-animation: tieSlideIn 0.5s 0.9s linear forwards;
+}
+
+.grey_circle {
+  opacity: 0;
+  -webkit-transform: scale(0,0);
+  -moz-transform: scale(0,0);
+  -ms-transform: scale(0,0);
+  transform: scale(0,0);
+  -webkit-transform-origin: center center;
+  -moz-transform-origin: center center;
+  transform-origin: center center;
+  -webkit-animation: greycircleScaleUp 0.5s 0.5s linear forwards;
+  -moz-animation: greycircleScaleUp 0.5s 0.5s linear forwards;
+  -ms-animation: greycircleScaleUp 0.5s 0.5s linear forwards;
+}
+
+/*CHANGED*/
+.shadow {
+  opacity: 0;
+  -webkit-animation: fadeIn 0.3s 1.5s linear forwards;
+  -moz-animation: fadeIn 0.3s 1.5s linear forwards;
+  -ms-animation: fadeIn 0.3s 1.5s linear forwards;
+}
+/*END OF GUY ANIMATION*/
+
+/*OUR BRANDS CAR ANIMATION*/
+/*CHANGED*/
+#brand_car {
+  opacity: 0;
+  -webkit-transform: translateX(-100px);
+  -moz-transform: translateX(-100px);
+  -ms-transform: translateX(-100px);
+  transform: translateX(-100px);
+  -webkit-animation: slideRight 0.6s 1s ease forwards;
+  -moz-animation: slideRight 0.6s 1s ease forwards;
+  -ms-animation: slideRight 0.6s 1s ease forwards;
+}
+
+#brand_car_shadow {
+  -webkit-transform: scale(0,0);
+  -moz-transform: scale(0,0);
+  -ms-transform: scale(0,0);
+  transform: scale(0,0);
+  -webkit-transform-origin: left top;
+  -moz-transform-origin: left top;
+  transform-origin: left top;
+  -webkit-animation: scaleUp 0.3s 1.4s linear forwards;
+  -moz-animation: scaleUp 0.3s 1.4s linear forwards;
+  -ms-animation: scaleUp 0.3s 1.4s linear forwards;
+}
+
+/*OUR COMMITMENT CAR ANIMATION*/
+
+#inner_car {
+  -webkit-transform: scale(0,0);
+  -moz-transform: scale(0,0);
+  -ms-transform: scale(0,0);
+  transform: scale(0,0);
+  -webkit-transform-origin: center bottom;
+  -moz-transform-origin: 57px 50px;
+  transform-origin: 57px 50px;
+  -webkit-animation: scaleUp 0.5s 1.2s linear forwards;
+  -moz-animation: scaleUp 0.5s 1.2s linear forwards;
+  -ms-animation: scaleUp 0.5s 1.2s linear forwards;
+}
+
+#dark_grey {
+  -webkit-transform: scale(0,0);
+  -moz-transform: scale(0,0);
+  -ms-transform: scale(0,0);
+  transform: scale(0,0);
+  -webkit-transform-origin: center bottom;
+  -moz-transform-origin: 57px 100px;
+  transform-origin: 57px 100px;
+  -webkit-animation: scaleUp 0.4s 0.8s linear forwards;
+  -moz-animation: scaleUp 0.4s 0.8s linear forwards;
+  -ms-animation: scaleUp 0.4s 0.8s linear forwards;
+}
+
+#road {
+  -webkit-transform: scale(0,0);
+  -moz-transform: scale(0,0);
+  -ms-transform: scale(0,0);
+  transform: scale(0,0);
+  -webkit-transform-origin: center center;
+  -moz-transform-origin: 57px 57px;
+  transform-origin: 57px 57px;
+  -webkit-animation: scaleUp 0.5s 1s linear forwards;
+  -moz-animation: scaleUp 0.5s 1s linear forwards;
+  -ms-animation: scaleUp 0.5s 1s linear forwards;
+}
+
+#road_lines {
+  -webkit-transform: scale(0,0);
+  -moz-transform: scale(0,0);
+  -ms-transform: scale(0,0);
+  transform: scale(0,0);
+  -webkit-transform-origin: center center;
+  -moz-transform-origin: 57px 57px;
+  transform-origin: 57px 57px;
+  -webkit-animation: scaleUp 0.6s 1.2s linear forwards;
+  -moz-animation: scaleUp 0.6s 1.2s linear forwards;
+  -ms-animation: scaleUp 0.6s 1.2s linear forwards;
+}
+
+#sun {
+    -webkit-transform: scale(0,0);
+  -moz-transform: scale(0,0);
+  -ms-transform: scale(0,0);
+  transform: scale(0,0);
+  -webkit-transform-origin: center;
+  -moz-transform-origin: center;
+  transform-origin: center;
+  -webkit-animation: scaleUp 0.6s 1.2s linear forwards;
+  -moz-animation: scaleUp 0.6s 1.2s linear forwards;
+  -ms-animation: scaleUp 0.6s 1.2s linear forwards;
+}
+
+/*OUR COMPANY ANIMATION*/
+#lighter_yellow, #gm_logo {
+  opacity: 0;
+  -webkit-transform: translateY(100px);
+  -moz-transform: translateY(100px);
+  -ms-transform: translateY(100px);
+  transform: translateY(100px);
+  -webkit-animation: personSlideIn 0.8s 0.7s linear forwards;
+  -moz-animation: personSlideIn 0.8s 0.7s linear forwards;
+  -ms-animation: personSlideIn 0.8s 0.7s linear forwards;
+}
+
+#darker_yellow {
+  opacity: 0;
+  -webkit-transform: translateY(100px);
+  -moz-transform: translateY(100px);
+  -ms-transform: translateY(100px);
+  transform: translateY(100px);
+  -webkit-animation: personSlideIn 0.8s 1s linear forwards;
+  -moz-animation: personSlideIn 0.8s 1s linear forwards;
+  -ms-animation: personSlideIn 0.8s 1s linear forwards;
+}
+
+#white_band {
+  stroke-dasharray: 1000;
+  stroke-dashoffset: 1000;
+  -webkit-animation: dash 6s 2s linear forwards;
+  -moz-animation: dash 6s 2s linear forwards;
+  -ms-animation: dash 6s 2s linear forwards;
+}
+
+
+
+
+
+
+
