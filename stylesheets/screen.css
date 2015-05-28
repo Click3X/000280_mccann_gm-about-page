@@ -169,25 +169,6 @@ Stylesheet: Helpers
   }
 }
 
-/* line 5, ../sass/partials/_mobile-gif-backups.scss */
-.c3xgm-about-mobile-device .c3xgm-about-page-our-commitment .c3xgm-about-crash-test-dummies .c3xgm-about-block-image img {
-  width: 50%;
-}
-@media (min-width: 768px) {
-  /* line 5, ../sass/partials/_mobile-gif-backups.scss */
-  .c3xgm-about-mobile-device .c3xgm-about-page-our-commitment .c3xgm-about-crash-test-dummies .c3xgm-about-block-image img {
-    width: 80%;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    -webkit-transform: translate(-50%, -50%);
-    -moz-transform: translate(-50%, -50%);
-    -o-transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
-  }
-}
-
 /* line 3, ../sass/animations/_animations-all.scss */
 .animated {
   -webkit-animation-fill-mode: animation-duration 1s;
@@ -1611,6 +1592,246 @@ Stylesheet: Helpers
     fill: #E6E7E8;
   }
 }
+/* line 5, ../sass/partials/_mobile-gif-backups.scss */
+.c3xgm-about-mobile-device .c3xgm-about-page-our-commitment .c3xgm-about-crash-test-dummies .c3xgm-about-block-image img {
+  width: 50%;
+}
+@media (min-width: 768px) {
+  /* line 5, ../sass/partials/_mobile-gif-backups.scss */
+  .c3xgm-about-mobile-device .c3xgm-about-page-our-commitment .c3xgm-about-crash-test-dummies .c3xgm-about-block-image img {
+    width: 80%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+  }
+}
+
+/* line 2, ../sass/partials/_navigation.scss */
+.c3xgm-about-main-nav-container {
+  width: 31px;
+  position: fixed;
+  margin: auto;
+  top: 40px;
+  right: 0;
+  z-index: 2000;
+  -webkit-transform: translate3d(0, 0, 2000);
+  -moz-transform: translate3d(0, 0, 2000);
+  -o-transform: translate3d(0, 0, 2000);
+  -ms-transform: translate3d(0, 0, 2000);
+  transform: translate3d(0, 0, 2000);
+  pointer-events: none;
+}
+@media (min-width: 768px) {
+  /* line 2, ../sass/partials/_navigation.scss */
+  .c3xgm-about-main-nav-container {
+    width: 25px;
+    top: 208px;
+  }
+}
+@media (min-width: 906px) {
+  /* line 2, ../sass/partials/_navigation.scss */
+  .c3xgm-about-main-nav-container {
+    right: 0;
+    left: 0;
+    width: 96%;
+    max-width: 906px;
+  }
+}
+/* line 21, ../sass/partials/_navigation.scss */
+.c3xgm-about-main-nav-container .c3xgm-about-main-nav {
+  float: right;
+  text-align: center;
+  position: relative;
+  pointer-events: all;
+}
+/* line 27, ../sass/partials/_navigation.scss */
+.c3xgm-about-main-nav-container .c3xgm-about-main-nav li {
+  position: relative;
+  display: block;
+  margin: 0;
+  padding: 0;
+  float: left;
+  clear: left;
+}
+/* line 33, ../sass/partials/_navigation.scss */
+.c3xgm-about-main-nav-container .c3xgm-about-main-nav li a {
+  text-decoration: none;
+}
+/* line 36, ../sass/partials/_navigation.scss */
+.c3xgm-about-main-nav-container .c3xgm-about-main-nav li .c3xgm-about-nav-hover-title {
+  text-transform: uppercase;
+  display: block;
+  padding: 10px 0;
+  background: #ffffff;
+  width: 10.25em;
+  border: 2px solid #b4b8bc;
+  color: #464B51;
+  font-weight: 600;
+  position: absolute;
+  right: 130%;
+  top: -8px;
+  opacity: 0;
+  z-index: 0;
+  display: none;
+  -webkit-transition: opacity 200ms;
+  -moz-transition: opacity 200ms;
+  -o-transition: opacity 200ms;
+  -ms-transition: opacity 200ms;
+  transition: opacity 200ms;
+}
+/* line 52, ../sass/partials/_navigation.scss */
+.c3xgm-about-main-nav-container .c3xgm-about-main-nav li .c3xgm-about-nav-hover-title:after, .c3xgm-about-main-nav-container .c3xgm-about-main-nav li .c3xgm-about-nav-hover-title:before {
+  content: " ";
+  left: 100%;
+  top: 50%;
+  border: solid transparent;
+  height: 0;
+  width: 0;
+  position: absolute;
+  pointer-events: none;
+}
+/* line 61, ../sass/partials/_navigation.scss */
+.c3xgm-about-main-nav-container .c3xgm-about-main-nav li .c3xgm-about-nav-hover-title:after {
+  border-color: rgba(136, 183, 213, 0);
+  border-left-color: #ffffff;
+  border-width: 8px;
+  margin-top: -8px;
+}
+/* line 65, ../sass/partials/_navigation.scss */
+.c3xgm-about-main-nav-container .c3xgm-about-main-nav li .c3xgm-about-nav-hover-title:before {
+  border-color: rgba(180, 184, 188, 0);
+  border-left-color: #b4b8bc;
+  border-width: 11px;
+  margin-top: -11px;
+}
+/* line 70, ../sass/partials/_navigation.scss */
+.c3xgm-about-main-nav-container .c3xgm-about-main-nav li .c3xgm-about-nav-hover-sub-title {
+  color: #124e9c;
+}
+/* line 72, ../sass/partials/_navigation.scss */
+.c3xgm-about-main-nav-container .c3xgm-about-main-nav li > a:hover + .c3xgm-about-nav-hover-title {
+  opacity: 1;
+  z-index: 1;
+  display: block;
+  -webkit-transition: opacity 50ms;
+  -moz-transition: opacity 50ms;
+  -o-transition: opacity 50ms;
+  -ms-transition: opacity 50ms;
+  transition: opacity 50ms;
+}
+/* line 78, ../sass/partials/_navigation.scss */
+.c3xgm-about-main-nav-container .c3xgm-about-main-nav .c3xgm-about-nav-bullet {
+  padding: 10px;
+  display: inline-block;
+}
+/* line 82, ../sass/partials/_navigation.scss */
+.c3xgm-about-main-nav-container .c3xgm-about-main-nav .c3xgm-about-nav-bullet .c3xgm-about-inner-bullet {
+  display: block;
+  background-color: #808285;
+  width: 11px;
+  height: 11px;
+}
+@media (min-width: 768px) {
+  /* line 78, ../sass/partials/_navigation.scss */
+  .c3xgm-about-main-nav-container .c3xgm-about-main-nav .c3xgm-about-nav-bullet {
+    padding: 8px;
+  }
+  /* line 89, ../sass/partials/_navigation.scss */
+  .c3xgm-about-main-nav-container .c3xgm-about-main-nav .c3xgm-about-nav-bullet .c3xgm-about-inner-bullet {
+    width: 9px;
+    height: 9px;
+  }
+}
+/* line 93, ../sass/partials/_navigation.scss */
+.c3xgm-about-main-nav-container .c3xgm-about-main-nav .c3xgm-about-nav-bullet-active .c3xgm-about-inner-bullet {
+  background-color: #FDB12E;
+}
+/* line 96, ../sass/partials/_navigation.scss */
+.c3xgm-about-main-nav-container .c3xgm-about-main-nav .c3xgm-about-main-nav-sub {
+  -webkit-transition: all 200ms;
+  -moz-transition: all 200ms;
+  -o-transition: all 200ms;
+  -ms-transition: all 200ms;
+  transition: all 200ms;
+}
+@media (max-width: 767px) {
+  /* line 96, ../sass/partials/_navigation.scss */
+  .c3xgm-about-main-nav-container .c3xgm-about-main-nav .c3xgm-about-main-nav-sub {
+    display: none;
+  }
+}
+/* line 101, ../sass/partials/_navigation.scss */
+.c3xgm-about-main-nav-container .c3xgm-about-main-nav .c3xgm-about-main-nav-sub .c3xgm-about-nav-bullet .c3xgm-about-inner-bullet {
+  background-color: #555555;
+}
+/* line 102, ../sass/partials/_navigation.scss */
+.c3xgm-about-main-nav-container .c3xgm-about-main-nav .c3xgm-about-main-nav-sub .c3xgm-about-nav-bullet-active .c3xgm-about-inner-bullet {
+  background-color: #FDB12E;
+}
+/* line 104, ../sass/partials/_navigation.scss */
+.c3xgm-about-main-nav-container .c3xgm-about-main-nav .c3xgm-about-main-nav-sub li {
+  position: relative;
+}
+/* line 105, ../sass/partials/_navigation.scss */
+.c3xgm-about-main-nav-container .c3xgm-about-main-nav .c3xgm-about-main-nav-sub li:after {
+  content: "";
+  display: block;
+  width: 1px;
+  height: 22px;
+  background-color: #555555;
+  position: absolute;
+  margin: auto;
+  left: 0;
+  right: 0;
+  bottom: -10px;
+  z-index: -1;
+}
+@media (min-width: 768px) {
+  /* line 105, ../sass/partials/_navigation.scss */
+  .c3xgm-about-main-nav-container .c3xgm-about-main-nav .c3xgm-about-main-nav-sub li:after {
+    bottom: -8px;
+    height: 18px;
+  }
+}
+/* line 116, ../sass/partials/_navigation.scss */
+.c3xgm-about-main-nav-container .c3xgm-about-main-nav .c3xgm-about-main-nav-sub li:last-child:after {
+  content: none;
+  display: none;
+}
+
+/* line 121, ../sass/partials/_navigation.scss */
+.c3xgm-about-main-nav-sub {
+  opacity: 0;
+  display: none;
+  position: absolute;
+  -webkit-transition: all 200ms;
+  -moz-transition: all 200ms;
+  -o-transition: all 200ms;
+  -ms-transition: all 200ms;
+  transition: all 200ms;
+}
+
+/* line 128, ../sass/partials/_navigation.scss */
+.c3xgm-about-nav-bullet-active ~ .c3xgm-about-main-nav-sub {
+  opacity: 1;
+  display: block;
+}
+/* line 132, ../sass/partials/_navigation.scss */
+.c3xgm-about-nav-bullet-active ~ .c3xgm-about-main-nav-sub .c3xgm-about-nav-hover-sub-title:hover {
+  opacity: 1;
+  display: block;
+  -webkit-transition: opacity 50ms;
+  -moz-transition: opacity 50ms;
+  -o-transition: opacity 50ms;
+  -ms-transition: opacity 50ms;
+  transition: opacity 50ms;
+}
+
 /*GUY ANIMATION*/
 /* line 10, ../sass/partials/_animated-icons.scss */
 .out_circle {
