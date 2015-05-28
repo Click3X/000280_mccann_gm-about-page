@@ -39,6 +39,8 @@ jQuery(document).ready(function($) {
 	carLinks.on('click touchstart', function(e, auto_rotate) {
 		e.preventDefault();
 
+		console.log("ABOUT LINK CLICKED", $(this).parent().index() );
+
 		// GET LINKS
 		var target = $(this).attr('href');
 		//  ADD ACRIVE CLASS
@@ -61,7 +63,11 @@ jQuery(document).ready(function($) {
 			$(target).removeClass('hide-module').removeClass('hide-module-slide-out').addClass('show-module-slide-in');
 		}, 700);
 
-		if(!auto_rotate) killAutoRotateAboutSlider();
+		if(!auto_rotate){
+			killAutoRotateAboutSlider();
+
+			currentAboutSlide = $(this).parent().index();
+		}
 	});
 
 	// FOUNDATION ---------------------------------------------------------------------------------------------------------
@@ -79,8 +85,10 @@ jQuery(document).ready(function($) {
 	}, 3000);
 	
 	// FOUNDATION
-	foundationLinks.on('click touchstart', function(e) {
+	foundationLinks.on('click touchstart', function(e, auto_rotate) {
 		e.preventDefault();
+
+		console.log("FOUNDATION LINK CLICKED", $(this).parent().index() );
 
 		// GET LINKS
 		var target = $(this).attr('href');
@@ -103,6 +111,12 @@ jQuery(document).ready(function($) {
 		setTimeout(function() {
 			$(target).removeClass('hide-module').removeClass('hide-module-slide-out').addClass('show-module-slide-in');
 		}, 700);
+
+		if(!auto_rotate){
+			killAutoRotateFoundationSlider();
+
+			currentFoundationSlide = $(this).parent().index();
+		}
 	});
 
 	// TECH ---------------------------------------------------------------------------------------------------------
@@ -115,7 +129,7 @@ jQuery(document).ready(function($) {
 	techLinks.on('click touchstart', function(e, auto_rotate) {
 		e.preventDefault();
 
-		// console.log("TECH LINK CLICKED", techLinks.indexOf(this) );
+		console.log("TECH LINK CLICKED", $(this).parent().index() );
 
 		// GET LINKS
 		var target = $(this).attr('href');
@@ -137,7 +151,11 @@ jQuery(document).ready(function($) {
 			$(target).removeClass('hide-module hide-module-slide-out').addClass('show-module-slide-in');
 		}, 700);
 
-		if(!auto_rotate) killAutoRotateTechSlider();
+		if(!auto_rotate){
+			killAutoRotateTechSlider();
+
+			currentTechSlide = $(this).parent().index();
+		}
 	});
 
 	// DISCLAIMER ---------------------------------------------------------------------------------------------------------
