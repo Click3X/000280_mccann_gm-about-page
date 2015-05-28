@@ -5,7 +5,10 @@ jQuery(document).ready(function($) {
 
 	// REPLACE GIFS WITH SVGS
 	$('img[src$=".gif"]').each(function(index,element) {
-        element.src = element.src.replace('.gif','.svg');
+		// NO CHINA FLAG GIF FOR MOBILE, BUT IF SCREEN IS IPAD OR LARGER, SHOW GIF
+		if( (element.src != 'chinaflag.gif') && ( $(window).width < 768 )) {
+        	element.src = element.src.replace('.gif','.svg');
+        }
     });
 
 
