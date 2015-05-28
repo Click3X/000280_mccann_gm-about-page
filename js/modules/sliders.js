@@ -1,6 +1,8 @@
 // CAR JS MODULE 'OUR BRANDS'
-jQuery(document).ready(function($) {
 
+var techSlideInterval, currentTechSlide = 0;
+
+jQuery(document).ready(function($) {
 	var carLinks = $('.c3xgm-about-module-car-logo'),
 		carSlides = $('#c3xgm-about-module-car .c3xgm-about-slide'),
 		carContainer = $('.c3xgm-about-module-65').get(0),
@@ -9,7 +11,6 @@ jQuery(document).ready(function($) {
 		foundationSlides = $('#c3xgm-about-module-foundation .c3xgm-about-slide'),
 		techSlides = $('.c3xgm-about-module-technology .c3xgm-about-module'),
 		techLinks = $('#c3xgm-about-page-technology .c3xgm-about-module-nav li a');
-
 
 	// console.log('Here are your foundationLinks: ' + foundationLinks);
 	// console.dir(foundationLinks);
@@ -102,9 +103,6 @@ jQuery(document).ready(function($) {
 		}, 700);
 	});
 
-
-
-
 	// TECH ---------------------------------------------------------------------------------------------------------
 	// MOVE ALL SLIDES TO RIGHT 100%;
 	techSlides.addClass('hide-module');
@@ -112,7 +110,7 @@ jQuery(document).ready(function($) {
 	$('#c3xgm-about-page-technology-4g-lte').removeClass('hide-module').addClass('show-module-slide-in');
 		
 	// TECH
-	techLinks.on('click touchstart', function(e) {
+	techLinks.on('click touchstart', function(e, auto_rotate) {
 		e.preventDefault();
 
 		// GET LINKS
@@ -134,9 +132,9 @@ jQuery(document).ready(function($) {
 		setTimeout(function() {
 			$(target).removeClass('hide-module hide-module-slide-out').addClass('show-module-slide-in');
 		}, 700);
+
+		if(!auto_rotate) killAutoRotateTechSlider();
 	});
-
-
 
 	// DISCLAIMER ---------------------------------------------------------------------------------------------------------
 	// DISCLAIMER BOX OPEN CLOSE
@@ -151,3 +149,22 @@ jQuery(document).ready(function($) {
 	});
 
 });
+
+function autorotateTechSlider(){
+    var navList = $("div.c3xgm-about-module-technology ul.c3xgm-about-module-nav li");
+
+    if(!techSlideInterval){
+        techSlideInterval = setInterval(function(){
+            currentTechSlide++; if(currentTechSlide > navList.length-1) currentTechSlide = 0;
+
+            $(navList[currentTechSlide]).children("a").eq(0).trigger("click", true);
+        }, 5000);
+    }
+}
+
+function killAutoRotateTechSlider(){
+	console.log("killAutoRotateTechSlider");
+
+    clearInterval(techSlideInterval);
+    techSlideInterval = null;
+}
