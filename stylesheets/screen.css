@@ -1620,7 +1620,7 @@ Stylesheet: Helpers
     transform: translate(-50%, -50%);
   }
 }
-/* line 23, ../sass/partials/_mobile-gif-backups.scss */
+/* line 22, ../sass/partials/_mobile-gif-backups.scss */
 .c3xgm-about-mobile-device .c3xgm-about-page-our-commitment .c3xgm-about-crash-test-dummies.element-in-view .c3xgm-about-block-image img {
   -webkit-animation-fill-mode: both;
   -moz-animation-fill-mode: both;
@@ -1643,12 +1643,12 @@ Stylesheet: Helpers
   -ms-animation-duration: 400ms;
   animation-duration: 400ms;
 }
-/* line 36, ../sass/partials/_mobile-gif-backups.scss */
+/* line 35, ../sass/partials/_mobile-gif-backups.scss */
 .c3xgm-about-mobile-device .c3xgm-about-decorative.c3xgm-about-red-car-road {
   position: relative;
   overflow-x: hidden;
 }
-/* line 39, ../sass/partials/_mobile-gif-backups.scss */
+/* line 38, ../sass/partials/_mobile-gif-backups.scss */
 .c3xgm-about-mobile-device .c3xgm-about-decorative.c3xgm-about-red-car-road #c3xgm-about-red-car {
   right: -380px;
   -webkit-animation-fill-mode: both;
@@ -1682,7 +1682,7 @@ Stylesheet: Helpers
   -ms-animation-iteration-count: infinite;
   animation-iteration-count: infinite;
 }
-/* line 54, ../sass/partials/_mobile-gif-backups.scss */
+/* line 53, ../sass/partials/_mobile-gif-backups.scss */
 .c3xgm-about-mobile-device .c3xgm-about-flag-line-container #c3xgm-about-flag-line-grey-car {
   margin: 0;
   left: -380px;
@@ -1717,7 +1717,7 @@ Stylesheet: Helpers
   -ms-animation-iteration-count: infinite;
   animation-iteration-count: infinite;
 }
-/* line 68, ../sass/partials/_mobile-gif-backups.scss */
+/* line 67, ../sass/partials/_mobile-gif-backups.scss */
 .c3xgm-about-mobile-device .c3xgm-about-grey-top {
   left: -380px;
   -webkit-animation-fill-mode: both;
@@ -1751,11 +1751,11 @@ Stylesheet: Helpers
   -ms-animation-iteration-count: infinite;
   animation-iteration-count: infinite;
 }
-/* line 81, ../sass/partials/_mobile-gif-backups.scss */
+/* line 80, ../sass/partials/_mobile-gif-backups.scss */
 .c3xgm-about-mobile-device div#c3xgm-about-grey-van:before {
   display: none;
 }
-/* line 90, ../sass/partials/_mobile-gif-backups.scss */
+/* line 89, ../sass/partials/_mobile-gif-backups.scss */
 .c3xgm-about-mobile-device .c3xgm-about-decorative.c3xgm-about-solar-panels #c3xgm-about-solar-grey-car {
   left: -380px;
   -webkit-animation-fill-mode: both;
@@ -1789,15 +1789,11 @@ Stylesheet: Helpers
   -ms-animation-iteration-count: infinite;
   animation-iteration-count: infinite;
 }
-/* line 103, ../sass/partials/_mobile-gif-backups.scss */
+/* line 102, ../sass/partials/_mobile-gif-backups.scss */
 .c3xgm-about-mobile-device .c3xgm-about-mobile-visible {
   opacity: 1;
 }
-/* line 105, ../sass/partials/_mobile-gif-backups.scss */
-.c3xgm-about-mobile-device .c3xgm-about-mobile-device .c3xgm-about-section .c3xgm-about-section-header-inner {
-  overflow-x: auto;
-}
-/* line 107, ../sass/partials/_mobile-gif-backups.scss */
+/* line 106, ../sass/partials/_mobile-gif-backups.scss */
 .c3xgm-about-mobile-device .c3xgm-about-mobile-device .c3xgm-about-main-nav-sub {
   display: none;
 }
@@ -3342,12 +3338,11 @@ Stylesheet: Helpers
   padding-bottom: 17.5%;
   position: absolute;
   left: 0;
-  bottom: 0;
   right: auto;
   margin: auto;
   z-index: 10;
 }
-/* line 52, ../sass/partials/_solar-panels.scss */
+/* line 54, ../sass/partials/_solar-panels.scss */
 .c3xgm-about-decorative.c3xgm-about-solar-panels .c3xgm-about-grey-side .c3xgm-about-wheel {
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -3363,7 +3358,7 @@ Stylesheet: Helpers
   bottom: 23%;
 }
 @media (min-width: 768px) {
-  /* line 52, ../sass/partials/_solar-panels.scss */
+  /* line 54, ../sass/partials/_solar-panels.scss */
   .c3xgm-about-decorative.c3xgm-about-solar-panels .c3xgm-about-grey-side .c3xgm-about-wheel {
     height: 39px;
     width: 39px;
@@ -3371,22 +3366,22 @@ Stylesheet: Helpers
     bottom: 12%;
   }
 }
-/* line 69, ../sass/partials/_solar-panels.scss */
+/* line 71, ../sass/partials/_solar-panels.scss */
 .c3xgm-about-decorative.c3xgm-about-solar-panels .c3xgm-about-grey-side .c3xgm-about-front-wheel {
   right: 10.285714%;
 }
 @media (min-width: 768px) {
-  /* line 69, ../sass/partials/_solar-panels.scss */
+  /* line 71, ../sass/partials/_solar-panels.scss */
   .c3xgm-about-decorative.c3xgm-about-solar-panels .c3xgm-about-grey-side .c3xgm-about-front-wheel {
     right: 10.1%;
   }
 }
-/* line 74, ../sass/partials/_solar-panels.scss */
+/* line 76, ../sass/partials/_solar-panels.scss */
 .c3xgm-about-decorative.c3xgm-about-solar-panels .c3xgm-about-grey-side .c3xgm-about-back-wheel {
   left: 16%;
 }
 @media (min-width: 768px) {
-  /* line 74, ../sass/partials/_solar-panels.scss */
+  /* line 76, ../sass/partials/_solar-panels.scss */
   .c3xgm-about-decorative.c3xgm-about-solar-panels .c3xgm-about-grey-side .c3xgm-about-back-wheel {
     left: 15.7%;
   }
@@ -3405,11 +3400,11 @@ Stylesheet: Helpers
     width: 276px;
   }
 }
-/* line 87, ../sass/partials/_solar-panels.scss */
+/* line 89, ../sass/partials/_solar-panels.scss */
 .c3xgm-about-decorative.c3xgm-about-solar-panels .c3xgm-about-grey-side img {
   width: 100%;
 }
-/* line 90, ../sass/partials/_solar-panels.scss */
+/* line 92, ../sass/partials/_solar-panels.scss */
 .c3xgm-about-decorative.c3xgm-about-solar-panels .c3xgm-about-tree {
   width: 66px;
   height: 61px;
@@ -3418,31 +3413,31 @@ Stylesheet: Helpers
   bottom: 40px;
   z-index: -5;
 }
-/* line 95, ../sass/partials/_solar-panels.scss */
+/* line 97, ../sass/partials/_solar-panels.scss */
 .c3xgm-about-decorative.c3xgm-about-solar-panels .c3xgm-about-tree img {
   width: 100%;
 }
 @media (min-width: 481px) {
-  /* line 90, ../sass/partials/_solar-panels.scss */
+  /* line 92, ../sass/partials/_solar-panels.scss */
   .c3xgm-about-decorative.c3xgm-about-solar-panels .c3xgm-about-tree {
     width: 99px;
     height: 93px;
   }
 }
 @media (min-width: 768px) {
-  /* line 90, ../sass/partials/_solar-panels.scss */
+  /* line 92, ../sass/partials/_solar-panels.scss */
   .c3xgm-about-decorative.c3xgm-about-solar-panels .c3xgm-about-tree {
     margin: auto;
   }
 }
 @media (min-width: 906px) {
-  /* line 90, ../sass/partials/_solar-panels.scss */
+  /* line 92, ../sass/partials/_solar-panels.scss */
   .c3xgm-about-decorative.c3xgm-about-solar-panels .c3xgm-about-tree {
     right: 0;
     left: -63%;
   }
 }
-/* line 101, ../sass/partials/_solar-panels.scss */
+/* line 103, ../sass/partials/_solar-panels.scss */
 .c3xgm-about-decorative.c3xgm-about-solar-panels .c3xgm-about-solar-panels {
   width: 127px;
   height: 141px;
@@ -3452,18 +3447,18 @@ Stylesheet: Helpers
   bottom: 0;
   z-index: -5;
 }
-/* line 106, ../sass/partials/_solar-panels.scss */
+/* line 108, ../sass/partials/_solar-panels.scss */
 .c3xgm-about-decorative.c3xgm-about-solar-panels .c3xgm-about-solar-panels img {
   width: 100%;
 }
 @media (min-width: 481px) {
-  /* line 101, ../sass/partials/_solar-panels.scss */
+  /* line 103, ../sass/partials/_solar-panels.scss */
   .c3xgm-about-decorative.c3xgm-about-solar-panels .c3xgm-about-solar-panels {
     bottom: 40px;
   }
 }
 @media (min-width: 906px) {
-  /* line 101, ../sass/partials/_solar-panels.scss */
+  /* line 103, ../sass/partials/_solar-panels.scss */
   .c3xgm-about-decorative.c3xgm-about-solar-panels .c3xgm-about-solar-panels {
     width: 193px;
     height: 213px;
@@ -3473,7 +3468,7 @@ Stylesheet: Helpers
     margin: auto;
   }
 }
-/* line 115, ../sass/partials/_solar-panels.scss */
+/* line 117, ../sass/partials/_solar-panels.scss */
 .c3xgm-about-decorative.c3xgm-about-solar-panels .c3xgm-about-sun {
   width: 16%;
   max-width: 140px;
@@ -3484,25 +3479,25 @@ Stylesheet: Helpers
   top: 40%;
   right: 5%;
 }
-/* line 121, ../sass/partials/_solar-panels.scss */
+/* line 123, ../sass/partials/_solar-panels.scss */
 .c3xgm-about-decorative.c3xgm-about-solar-panels .c3xgm-about-sun img {
   width: 100%;
 }
 @media (min-width: 400px) {
-  /* line 115, ../sass/partials/_solar-panels.scss */
+  /* line 117, ../sass/partials/_solar-panels.scss */
   .c3xgm-about-decorative.c3xgm-about-solar-panels .c3xgm-about-sun {
     padding-bottom: 100px;
   }
 }
 @media (min-width: 768px) {
-  /* line 115, ../sass/partials/_solar-panels.scss */
+  /* line 117, ../sass/partials/_solar-panels.scss */
   .c3xgm-about-decorative.c3xgm-about-solar-panels .c3xgm-about-sun {
     top: 26%;
     padding-bottom: 140px;
   }
 }
 @media (min-width: 906px) {
-  /* line 115, ../sass/partials/_solar-panels.scss */
+  /* line 117, ../sass/partials/_solar-panels.scss */
   .c3xgm-about-decorative.c3xgm-about-solar-panels .c3xgm-about-sun {
     left: 0;
     right: -50%;
@@ -3510,7 +3505,7 @@ Stylesheet: Helpers
   }
 }
 
-/* line 128, ../sass/partials/_solar-panels.scss */
+/* line 130, ../sass/partials/_solar-panels.scss */
 .c3xgm-about-solar-road {
   width: 100%;
   height: 0;

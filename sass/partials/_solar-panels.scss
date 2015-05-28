@@ -45,14 +45,15 @@
 		width:45%; height: 0;
   		padding-bottom: 17.5%;
   		position: absolute;
-		left:0; bottom:0; right:auto;
+		left:0; 
+		// bottom:0; 
+		right:auto;
 		margin: auto;
 		z-index: 10;
 
 		.c3xgm-about-wheel {
-			// background-image:url('../img/decorative/cars/wheel.png');
+			
 			@include prefix(background-size, cover);
-			// background-position: 50% 50%; background-repeat:no-repeat;
 			height: 0;
 			display: block; z-index: 200;
 			width: 13.142857%; padding-bottom: 13.142857%;
