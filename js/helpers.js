@@ -23,9 +23,16 @@ if(mobile) {
     // REPLACE GIFS WITH SVGS
     $('img[src$=".gif"]').each(function(index,element) {
         // NO CHINA FLAG GIF FOR MOBILE, BUT IF SCREEN IS IPAD OR LARGER, SHOW GIF
-        if( (element.src != 'chinaflag.gif') && ( $(window).width < 768 )) {
+        console.log('This is element Src: ' + element.src);
+        console.log('This is window Width: ' + $(window).width() );
+        
+        if( (element.src != 'chinaflag.gif') && ($(window).width() < 768) ) {
+            
             element.src = element.src.replace('.gif','.svg');
-        }
+        } 
+        // else if( element.src == 'crash-test-dummies.gif' ) {
+        //     // element.src = element.src.replace('.gif','.svg');
+        // }
     });
 
      // MAKE FLAGS ANIMATE
