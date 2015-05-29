@@ -596,3 +596,406 @@
 .c3xgm-about-module-technology .c3xgm-about-module-nav .c3xgm-about-module-nav-bullet-active {
   background-color: #FDB12E;
 }
+
+
+
+/* TECH CLICKS */
+
+/* line 2, ../sass/modules/_tech-module-click-animations.scss */
+.c3xgm-about-module-technology {
+  overflow: hidden;
+}
+/* line 10, ../sass/modules/_tech-module-click-animations.scss */
+.c3xgm-about-module-technology .hide-module {
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  right: 100%;
+  left: auto;
+  -webkit-transform: translate3d(-100%, 0, 0);
+  -moz-transform: translate3d(-100%, 0, 0);
+  -o-transform: translate3d(-100%, 0, 0);
+  -ms-transform: translate3d(-100%, 0, 0);
+  transform: translate3d(-100%, 0, 0);
+}
+/* line 23, ../sass/modules/_tech-module-click-animations.scss */
+.c3xgm-about-module-technology .show-module-slide-in {
+  visibility: visible;
+  opacity: 1;
+  z-index: 1000;
+  right: 0;
+  left: auto;
+  top:0;
+}
+/* line 30, ../sass/modules/_tech-module-click-animations.scss */
+.c3xgm-about-module-technology .show-module-slide-in .c3xgm-about-block-image {
+  -webkit-transform: translate3d(0, 0, 1000);
+  -moz-transform: translate3d(0, 0, 1000);
+  -o-transform: translate3d(0, 0, 1000);
+  -ms-transform: translate3d(0, 0, 1000);
+  transform: translate3d(0, 0, 1000);
+  -webkit-transition: all 600ms;
+  -moz-transition: all 600ms;
+  -o-transition: all 600ms;
+  -ms-transition: all 600ms;
+  transition: all 600ms;
+  -webkit-animation: techSlideIn;
+  -moz-animation: techSlideIn;
+  -o-animation: techSlideIn;
+  -ms-animation: techSlideIn;
+  animation: techSlideIn;
+  -webkit-animation-duration: 900ms;
+  -moz-animation-duration: 900ms;
+  -o-animation-duration: 900ms;
+  -ms-animation-duration: 900ms;
+  animation-duration: 900ms;
+  -webkit-animation-fill-mode: both;
+  -moz-animation-fill-mode: both;
+  -o-animation-fill-mode: both;
+  -ms-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+/* line 38, ../sass/modules/_tech-module-click-animations.scss */
+.c3xgm-about-module-technology .show-module-slide-in .c3xgm-about-block-image .c3xgm-about-wheel {
+  -webkit-animation-fill-mode: both;
+  -moz-animation-fill-mode: both;
+  -o-animation-fill-mode: both;
+  -ms-animation-fill-mode: both;
+  animation-fill-mode: both;
+  -webkit-animation-name: spin;
+  -moz-animation-name: spin;
+  -o-animation-name: spin;
+  -ms-animation-name: spin;
+  animation-name: spin;
+  -webkit-animation-delay: 0;
+  -moz-animation-delay: 0;
+  -o-animation-delay: 0;
+  -ms-animation-delay: 0;
+  animation-delay: 0;
+  -webkit-animation-duration: 1200ms;
+  -moz-animation-duration: 1200ms;
+  -o-animation-duration: 1200ms;
+  -ms-animation-duration: 1200ms;
+  animation-duration: 1200ms;
+}
+/* line 46, ../sass/modules/_tech-module-click-animations.scss */
+.c3xgm-about-module-technology .show-module-slide-in .c3xgm-about-h,
+.c3xgm-about-module-technology .show-module-slide-in .c3xgm-about-block-icon {
+  -webkit-animation-delay: 0ms;
+  -moz-animation-delay: 0ms;
+  -o-animation-delay: 0ms;
+  -ms-animation-delay: 0ms;
+  animation-delay: 0ms;
+  -webkit-animation: fadeIn;
+  -moz-animation: fadeIn;
+  -o-animation: fadeIn;
+  -ms-animation: fadeIn;
+  animation: fadeIn;
+  -webkit-animation-duration: 600ms;
+  -moz-animation-duration: 600ms;
+  -o-animation-duration: 600ms;
+  -ms-animation-duration: 600ms;
+  animation-duration: 600ms;
+  -webkit-animation-delay: 900ms;
+  -moz-animation-delay: 900ms;
+  -o-animation-delay: 900ms;
+  -ms-animation-delay: 900ms;
+  animation-delay: 900ms;
+  -webkit-animation-fill-mode: both;
+  -moz-animation-fill-mode: both;
+  -o-animation-fill-mode: both;
+  -ms-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+/* line 56, ../sass/modules/_tech-module-click-animations.scss */
+.c3xgm-about-module-technology .show-module-slide-in .c3xgm-about-blockquote {
+  overflow: hidden;
+}
+/* line 59, ../sass/modules/_tech-module-click-animations.scss */
+.c3xgm-about-module-technology .show-module-slide-in .c3xgm-about-blockquote > span:first-child {
+  -webkit-animation-fill-mode: both;
+  -moz-animation-fill-mode: both;
+  -o-animation-fill-mode: both;
+  -ms-animation-fill-mode: both;
+  animation-fill-mode: both;
+  -webkit-animation-name: fadeInRightMega;
+  -moz-animation-name: fadeInRightMega;
+  -o-animation-name: fadeInRightMega;
+  -ms-animation-name: fadeInRightMega;
+  animation-name: fadeInRightMega;
+  -webkit-animation-delay: 900ms;
+  -moz-animation-delay: 900ms;
+  -o-animation-delay: 900ms;
+  -ms-animation-delay: 900ms;
+  animation-delay: 900ms;
+  -webkit-animation-duration: 600ms;
+  -moz-animation-duration: 600ms;
+  -o-animation-duration: 600ms;
+  -ms-animation-duration: 600ms;
+  animation-duration: 600ms;
+}
+/* line 65, ../sass/modules/_tech-module-click-animations.scss */
+.c3xgm-about-module-technology .show-module-slide-in .c3xgm-about-blockquote > span:nth-child(2) {
+  -webkit-animation-fill-mode: both;
+  -moz-animation-fill-mode: both;
+  -o-animation-fill-mode: both;
+  -ms-animation-fill-mode: both;
+  animation-fill-mode: both;
+  -webkit-animation-name: fadeInRightMega;
+  -moz-animation-name: fadeInRightMega;
+  -o-animation-name: fadeInRightMega;
+  -ms-animation-name: fadeInRightMega;
+  animation-name: fadeInRightMega;
+  -webkit-animation-delay: 1150ms;
+  -moz-animation-delay: 1150ms;
+  -o-animation-delay: 1150ms;
+  -ms-animation-delay: 1150ms;
+  animation-delay: 1150ms;
+  -webkit-animation-duration: 600ms;
+  -moz-animation-duration: 600ms;
+  -o-animation-duration: 600ms;
+  -ms-animation-duration: 600ms;
+  animation-duration: 600ms;
+}
+/* line 71, ../sass/modules/_tech-module-click-animations.scss */
+.c3xgm-about-module-technology .show-module-slide-in .c3xgm-about-blockquote > span:nth-child(3) {
+  -webkit-animation-fill-mode: both;
+  -moz-animation-fill-mode: both;
+  -o-animation-fill-mode: both;
+  -ms-animation-fill-mode: both;
+  animation-fill-mode: both;
+  -webkit-animation-name: fadeIn;
+  -moz-animation-name: fadeIn;
+  -o-animation-name: fadeIn;
+  -ms-animation-name: fadeIn;
+  animation-name: fadeIn;
+  -webkit-animation-delay: 1400ms;
+  -moz-animation-delay: 1400ms;
+  -o-animation-delay: 1400ms;
+  -ms-animation-delay: 1400ms;
+  animation-delay: 1400ms;
+  -webkit-animation-duration: 600ms;
+  -moz-animation-duration: 600ms;
+  -o-animation-duration: 600ms;
+  -ms-animation-duration: 600ms;
+  animation-duration: 600ms;
+}
+/* line 77, ../sass/modules/_tech-module-click-animations.scss */
+.c3xgm-about-module-technology .show-module-slide-in .c3xgm-about-blockquote > span:nth-child(4) {
+  -webkit-animation-fill-mode: both;
+  -moz-animation-fill-mode: both;
+  -o-animation-fill-mode: both;
+  -ms-animation-fill-mode: both;
+  animation-fill-mode: both;
+  -webkit-animation-name: fadeIn;
+  -moz-animation-name: fadeIn;
+  -o-animation-name: fadeIn;
+  -ms-animation-name: fadeIn;
+  animation-name: fadeIn;
+  -webkit-animation-delay: 1650ms;
+  -moz-animation-delay: 1650ms;
+  -o-animation-delay: 1650ms;
+  -ms-animation-delay: 1650ms;
+  animation-delay: 1650ms;
+  -webkit-animation-duration: 600ms;
+  -moz-animation-duration: 600ms;
+  -o-animation-duration: 600ms;
+  -ms-animation-duration: 600ms;
+  animation-duration: 600ms;
+}
+/* line 88, ../sass/modules/_tech-module-click-animations.scss */
+.c3xgm-about-module-technology .hide-module-slide-out .c3xgm-about-block-image {
+  -webkit-animation: techSlideOut;
+  -moz-animation: techSlideOut;
+  -o-animation: techSlideOut;
+  -ms-animation: techSlideOut;
+  animation: techSlideOut;
+  -webkit-animation-duration: 400ms;
+  -moz-animation-duration: 400ms;
+  -o-animation-duration: 400ms;
+  -ms-animation-duration: 400ms;
+  animation-duration: 400ms;
+  -webkit-animation-fill-mode: both;
+  -moz-animation-fill-mode: both;
+  -o-animation-fill-mode: both;
+  -ms-animation-fill-mode: both;
+  animation-fill-mode: both;
+  -webkit-animation-delay: 0ms;
+  -moz-animation-delay: 0ms;
+  -o-animation-delay: 0ms;
+  -ms-animation-delay: 0ms;
+  animation-delay: 0ms;
+}
+/* line 94, ../sass/modules/_tech-module-click-animations.scss */
+.c3xgm-about-module-technology .hide-module-slide-out .c3xgm-about-block-image .c3xgm-about-wheel {
+  -webkit-animation-fill-mode: both;
+  -moz-animation-fill-mode: both;
+  -o-animation-fill-mode: both;
+  -ms-animation-fill-mode: both;
+  animation-fill-mode: both;
+  -webkit-animation-name: spin;
+  -moz-animation-name: spin;
+  -o-animation-name: spin;
+  -ms-animation-name: spin;
+  animation-name: spin;
+  -webkit-animation-delay: 0;
+  -moz-animation-delay: 0;
+  -o-animation-delay: 0;
+  -ms-animation-delay: 0;
+  animation-delay: 0;
+  -webkit-animation-duration: 1200ms;
+  -moz-animation-duration: 1200ms;
+  -o-animation-duration: 1200ms;
+  -ms-animation-duration: 1200ms;
+  animation-duration: 1200ms;
+}
+/* line 102, ../sass/modules/_tech-module-click-animations.scss */
+.c3xgm-about-module-technology .hide-module-slide-out .c3xgm-about-blockquote,
+.c3xgm-about-module-technology .hide-module-slide-out .c3xgm-about-h,
+.c3xgm-about-module-technology .hide-module-slide-out .c3xgm-about-block-icon {
+  -webkit-animation-delay: 0ms;
+  -moz-animation-delay: 0ms;
+  -o-animation-delay: 0ms;
+  -ms-animation-delay: 0ms;
+  animation-delay: 0ms;
+  -webkit-animation: fadeOut;
+  -moz-animation: fadeOut;
+  -o-animation: fadeOut;
+  -ms-animation: fadeOut;
+  animation: fadeOut;
+  -webkit-animation-duration: 300ms;
+  -moz-animation-duration: 300ms;
+  -o-animation-duration: 300ms;
+  -ms-animation-duration: 300ms;
+  animation-duration: 300ms;
+  -webkit-animation-fill-mode: both;
+  -moz-animation-fill-mode: both;
+  -o-animation-fill-mode: both;
+  -ms-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+
+@-webkit-keyframes techSlideOut {
+  0% {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+  }
+  15% {
+    z-index: -1;
+  }
+  70% {
+    opacity: 0;
+  }
+  99% {
+    -webkit-transform: translate3d(100%, 0, 0);
+  }
+  100% {
+    opacity: 0;
+    position: absolute;
+    -webkit-transform: translate3d(-100%, 0, 0);
+  }
+}
+@-moz-keyframes techSlideOut {
+  0% {
+    opacity: 1;
+    -moz-transform: translate3d(0, 0, 0);
+  }
+  15% {
+    z-index: -1;
+  }
+  70% {
+    opacity: 0;
+  }
+  99% {
+    -moz-transform: translate3d(100%, 0, 0);
+  }
+  100% {
+    opacity: 0;
+    position: absolute;
+    -moz-transform: translate3d(-100%, 0, 0);
+  }
+}
+@-o-keyframes techSlideOut {
+  0% {
+    opacity: 1;
+    -o-transform: translate3d(0, 0, 0);
+  }
+  15% {
+    z-index: -1;
+  }
+  70% {
+    opacity: 0;
+  }
+  99% {
+    -o-transform: translate3d(100%, 0, 0);
+  }
+  100% {
+    opacity: 0;
+    position: absolute;
+    -o-transform: translate3d(-100%, 0, 0);
+  }
+}
+@keyframes techSlideOut {
+  0% {
+    opacity: 1;
+    -o-transform: translate3d(0, 0, 0);
+  }
+  15% {
+    z-index: -1;
+  }
+  70% {
+    opacity: 0;
+  }
+  99% {
+    -o-transform: translate3d(100%, 0, 0);
+  }
+  100% {
+    opacity: 0;
+    position: absolute;
+    -o-transform: translate3d(-100%, 0, 0);
+  }
+}
+@-webkit-keyframes techSlideIn {
+  0% {
+    opacity: 0;
+    z-index: 0;
+    -webkit-transform: translate3d(-100%, 0, 0);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+  }
+}
+@-moz-keyframes techSlideIn {
+  0% {
+    opacity: 0;
+    z-index: 0;
+    -moz-transform: translate3d(-100%, 0, 0);
+  }
+  100% {
+    opacity: 1;
+    -moz-transform: translate3d(0, 0, 0);
+  }
+}
+@-o-keyframes techSlideIn {
+  0% {
+    opacity: 0;
+    z-index: 0;
+    -o-transform: translate3d(-100%, 0, 0);
+  }
+  100% {
+    opacity: 1;
+    -o-transform: translate3d(0, 0, 0);
+  }
+}
+@keyframes techSlideIn {
+  0% {
+    opacity: 0;
+    z-index: 0;
+    -o-transform: translate3d(-100%, 0, 0);
+  }
+  100% {
+    opacity: 1;
+    -o-transform: translate3d(0, 0, 0);
+  }
+}

@@ -1,8 +1,13 @@
 // TECHNOLOGY MODULE
-.c3xgm-about-module-technology {
+.c3xgm-about-module-technology {	
+
 	.c3xgm-about-module-container {
 		position: relative;
-		> div { background: white; }
+	}
+
+	.c3xgm-about-block-icon img {
+	  // width: 100%;
+	  width:60%;
 	}
 
 	.c3xgm-about-subsection {margin-bottom: 3em;}
@@ -10,56 +15,39 @@
 	.c3xgm-about-module {
 		text-align: center; 
 		width: 100%;
-		
-		&:after {
-			content: "";
-			display: block;
-			width:100%; height: 0;
-  			padding-bottom: 32%;
-		}
-
 
 		.c3xgm-about-blockquote-container {
-			width: 94%; 
+			max-width: $inner-border;
 			margin: 0 auto;
-			@media(min-width: $tablet-height) { width: 98%;  }
+
+			@media(min-width: $tablet-height) {
+				width: 94%; 
+			}
 		}
 	}
 	// COMMON
 	// IMAGE
 	.c3xgm-about-block-icon {
 		position: relative;
-		@media(min-width: $tablet-height) { padding-bottom:18%; height: 0; }
-		img { 
-			width:60%;
-		 	@media(min-width: $tablet-height) {
-		 		width: 90%;
-		 		@include center;
-		 	}
-		}
 	}
 	// IMAGE
 	.c3xgm-about-block-image {
-		width: 100%;  max-width: $inner-border;
-		margin: 0 auto;
-		position: absolute;
-		// z-index: -1;
-		@media(min-width: $tablet-height) {  
-		  	margin: 0 auto;
-		  	position: absolute;
-		}
-		
-		.c3xgm-about-tech-car { 
-			width:90%; 
-			// width:70%; 
-		}
+		  width: 100%; 
+		  max-width: $inner-border;
+		  margin: 0 auto;
+		  position: relative;
 
 		.c3xgm-about-wheel {display: block;}
+		.c3xgm-about-tech-car {
+		 	// width:70%;
+		 	@media(min-width: $tablet-height) {  width:70%; }
+		}
 	}
 	// BLOCK-QUOTE
 	.c3xgm-about-blockquote {
 		max-width: 92%;
-		margin: 1em auto 1.5em;
+		// margin: 1em auto 1.5em;
+		margin: 0.75em auto;
 		display: inline-block;
 		text-align: left;
 		@media(min-width: $tablet-height) { display: block; margin: 0; }
@@ -72,56 +60,53 @@
 		@media(min-width: $tablet-height) { float: right; }
 	}
 
+	.c3xgm-about-block-image { 
+			img.c3xgm-about-tech-car {
+				width: 90%; 
+				@media(min-width: $tablet-height) {  width: 70%; }
+			}
+		}
+
 	// INDIVIDUAL
 	// 4G LTE
 	.c3xgm-about-4g-lte {
 		.c3xgm-about-block-icon {
 			@media(min-width: $tablet-height) { 
-				width:35%; float: right; 
-				height: 0; padding-bottom: 128px;
-
-				margin-top:4em;
+				width:40%; float: right; 
+				img { width: 75%; }
 			}
-			// .c3xgm-about-tech-car { 
-			// 	width:65%; max-width: 157px; 
-			// 	@media(min-width: $tablet-height) { width:80%; max-width: none; }
-			// }
-		}
-		
-		.c3xgm-about-blockquote { 
-			margin-top:3em;
-			@media(min-width: $tablet-height) { 
-				width:65%; 
-				float: right; 
-				padding-left: 1.5em;
-				margin-top:4em;
+			.c3xgm-about-tech-car { 
+				width:65%; max-width: 157px; 
+				@media(min-width: $tablet-height) { width:80%; max-width: none; }
 			}
 		}
-
 		.c3xgm-about-block-image { 
-			.c3xgm-about-tech-car {
-				@media(min-width: $tablet-height) { width: 90%; }
-			}
-
 			.c3xgm-about-wheel {
-				width: 11.5714286%; max-width:98px;
-				position: absolute;
-				&:first-child {  
-					bottom:18.6%;
-					left:24.2%; 
-				}
-				&:nth-child(3) { 
-					right: 19.4%; bottom: 19.4%; 
+				width: 11.5714286%;
+				position: absolute; bottom:19%;
+  				max-width: 86px; max-height: 85px;
+
+				&:first-child { left:24%;  }
+				&:nth-child(3) {  right: 19%; bottom: 19%; }
+
+				@media(min-width:$tablet-height) {
+					width: 9%;
+					 &:first-child {left:30%; }
+					 &:nth-child(3) {right: 26.4%; bottom: 19.6%; }
 				}
 			}
 
 		}
 
+		.c3xgm-about-blockquote { 
+			@media(min-width: $tablet-height) { width:60%; float: right; }
+		}
 
 		.c3xgm-about-dark-blue.c3xgm-about-thin,
 		.c3xgm-about-light-blue {
 			font-size:27px; font-size: 8.5vw;
-			@media(min-width:$tablet-height) {font-size:41.7931483782966px; }
+			@media(min-width:$tablet-height) { font-size:42px; }
+			@media(min-width:$inner-border) { font-size:50px; }
 		}
 
 		.c3xgm-about-gray {
@@ -139,28 +124,29 @@
 		// IMAGES
 		.c3xgm-about-blockquote { 
 			width: auto;
-			@media(min-width: $tablet-height) { 
-				width:75%; float: right; 
-				padding-left:2em;
-			}
+			@media(min-width: $tablet-height) { width:70%; float: right; }
 		}
 		.c3xgm-about-block-icon {
-			img {width:30%;}
+			img { width:25%; max-width:none; margin-right: 10%; }
 			@media(min-width: $tablet-height) { 
-				width:25%; height: 0;  float:right;
-				padding-bottom: 223px;
-				img {width:auto; }
+				width:30%; float:right;
+				img {width:75%; max-width: none; margin-right:auto; }
 			}
 		}
 
 		.c3xgm-about-block-image { 
 			.c3xgm-about-wheel {	
-				width: 11.5714286%; max-width: 101px;
-				position: absolute;
-				bottom:20.5%;
+				width: 11.5714286%;
+				position: absolute; bottom:20.5%; 
+				max-width: 88px; max-height: 87px;
 
-				&:first-child {  bottom: 20.6%; left: 24.1%; }
-				&:nth-child(3) {   right: 21.9%; bottom: 20%; }
+				&:first-child { bottom: 20.7%; left: 24.1%; }
+				&:nth-child(3) { right: 21.6%; bottom: 20%; }
+				@media(min-width: $tablet-height) {
+					width: 9%;
+					&:first-child { bottom: 20.7%; left: 30.1%; }
+					&:nth-child(3) { right: 28.2%; bottom: 20.2%; }
+				}
 			}
 		}
 	}
@@ -168,17 +154,17 @@
 	// SAFETY
 	.c3xgm-about-safety {
 		.c3xgm-about-block-icon {
-			@media(min-width: $tablet-height) { width: 30%; height: 0; padding-bottom: 212px; }
-			@media(min-width: $inner-border) { width: 30%; }
-			img {
-				width:60%;
-				@media(min-width: $tablet-height) { width: 80%; }
+			img {width:40%; }
+
+			@media(min-width: $tablet-height) { 
+				margin:0;width: 30%;  
+
+				img {width: 80%; }
 			}
 		}
 
 		.c3xgm-about-blockquote { 
 			@media(min-width: $tablet-height) { width: 70%; }
-			@media(min-width: $inner-border) { width: 70%; }
 		}
 
   		.c3xgm-about-light-blue {
@@ -194,18 +180,19 @@
 		.c3xgm-about-block-image {
 
 			.c3xgm-about-wheel {
-				width: 11.5714286%; max-width:98px;
-				position: absolute;
-				&:first-child {  
-					bottom:18.6%;
-					left:24.2%; 
-				}
-				&:nth-child(3) { 
-					right: 19.4%; bottom: 19.4%; 
+				width: 11.5714286%; 
+				max-width: 86px; max-height: 85px;
+				position: absolute; bottom:19%;
+				&:first-child { left:24%;  }
+				&:nth-child(3) { right: 19%; bottom: 19%;  }
+
+				@media(min-width:$tablet-height) { 
+					width: 9%; 
+					&:nth-child(3) { right: 26.4%; bottom: 19.6%; }
+					&:first-child { left:30%; }
 				}
 			}
 		}
-
 	}
 
 	// BOTH CONCEPT AND SAFETY
@@ -219,19 +206,20 @@
 			margin: .05em 0; 
 			font-size:35px; font-size: 10.7vw;
 			line-height: 0.9em;
-			@media(min-width:$tablet-height) {font-size:60px; }
+			@media(min-width:$tablet-height) { font-size:50px; font-size: 6.5vw; }
+			@media(min-width:$inner-border) { font-size:60px; }
 		}
 		.c3xgm-about-gray {
 			font-size:20px; font-size: 6vw;
 			line-height: 1.075em;
-			@media(min-width:$tablet-height) {font-size:35px; }
+			@media(min-width:$tablet-height) {font-size:29px; }
+			@media(min-width:$inner-border) {font-size:35px;}
 		}
 	}
 
-
 	// NAV FOR TECHNOLOGY MODULE
 	.c3xgm-about-module-nav {
-		text-align: center; background: white;
+		text-align: center;
 		li {display: inline-block; margin: 0; padding: 0;}
 		.c3xgm-about-module-nav-bullet {
 			display: block; background-color: $gm-gray;
@@ -245,11 +233,4 @@
 		}
 		.c3xgm-about-module-nav-bullet-active { background-color: $gm-yellow; }
 	}
-
-
-}
-
-
-#c3xgm-about-technology-4g-lte .c3xgm-about-module-technology .c3xgm-about-blockquote {
-	margin-top:4em;
 }
