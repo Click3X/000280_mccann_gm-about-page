@@ -14,6 +14,8 @@ if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(naviga
     mobile = true;
 
     jQuery('body').addClass('c3xgm-about-mobile-device');
+} else {
+    jQuery('body').addClass('c3xgm-about-desktop-device');
 }
 
 console.log('This is mobile: ' + mobile);

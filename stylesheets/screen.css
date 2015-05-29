@@ -4131,22 +4131,20 @@ Stylesheet: Helpers
   animation-fill-mode: both;
 }
 
-/* line 4, ../sass/partials/_wheel-car-new.scss */
-#c3xgm-about-flag-line-grey-car.grey-car {
+/* line 5, ../sass/partials/_wheel-car-new.scss */
+.c3xgm-about-desktop-device #c3xgm-about-flag-line-grey-car.grey-car {
   background: none;
 }
-
-/* line 8, ../sass/partials/_wheel-car-new.scss */
-.grey-car.new-grey-car {
+/* line 9, ../sass/partials/_wheel-car-new.scss */
+.c3xgm-about-desktop-device .grey-car.new-grey-car {
   position: relative;
   z-index: 10;
   top: 0;
   right: 0;
   left: auto;
 }
-
-/* line 14, ../sass/partials/_wheel-car-new.scss */
-#c3xgm-about-solar-grey-car > img {
+/* line 15, ../sass/partials/_wheel-car-new.scss */
+.c3xgm-about-desktop-device #c3xgm-about-solar-grey-car > img {
   z-index: 1000;
   position: relative;
   display: block;
