@@ -2001,10 +2001,9 @@ Stylesheet: Helpers
 
 /* line 8, ../sass/partials/_animated-icons.scss */
 .c3xgm-about-icon-holder svg {
-  width: 20%;
-  max-width: 90px;
-  height: 100%;
-  max-height: 90px;
+  width: 21%;
+  max-width: 100px;
+  padding: 1px;
   display: block;
   margin: 0.5em auto 1em;
 }
@@ -2016,13 +2015,13 @@ Stylesheet: Helpers
 }
 
 /*GUY ANIMATION*/
-/* line 21, ../sass/partials/_animated-icons.scss */
+/* line 24, ../sass/partials/_animated-icons.scss */
 .out_circle {
   stroke-dasharray: 1000;
   stroke-dashoffset: 1000;
 }
 
-/* line 30, ../sass/partials/_animated-icons.scss */
+/* line 33, ../sass/partials/_animated-icons.scss */
 .c3xgm-about-page-in-view .c3xgm-about-section-header .c3xgm-about-section-header-inner .c3xgm-about-icon-holder .out_circle {
   -webkit-animation: dash 3s linear forwards;
   -moz-animation: dash 3s linear forwards;
@@ -2030,7 +2029,7 @@ Stylesheet: Helpers
   -ms-animation: dash 3s linear forwards;
   animation: dash 3s linear forwards;
 }
-/* line 38, ../sass/partials/_animated-icons.scss */
+/* line 41, ../sass/partials/_animated-icons.scss */
 .c3xgm-about-page-in-view .c3xgm-about-section-header .c3xgm-about-section-header-inner .c3xgm-about-icon-holder #person {
   -webkit-animation: personSlideIn 0.7s 0.6s ease forwards;
   -moz-animation: personSlideIn 0.7s 0.6s ease forwards;
@@ -2038,7 +2037,7 @@ Stylesheet: Helpers
   -o-animation: personSlideIn 0.7s 0.6s ease forwards;
   animation: personSlideIn 0.7s 0.6s ease forwards;
 }
-/* line 46, ../sass/partials/_animated-icons.scss */
+/* line 49, ../sass/partials/_animated-icons.scss */
 .c3xgm-about-page-in-view .c3xgm-about-section-header .c3xgm-about-section-header-inner .c3xgm-about-icon-holder #tie {
   -webkit-animation: tieSlideIn 0.5s 0.9s linear forwards;
   -moz-animation: tieSlideIn 0.5s 0.9s linear forwards;
@@ -2046,7 +2045,7 @@ Stylesheet: Helpers
   -o-animation: tieSlideIn 0.5s 0.9s linear forwards;
   animation: tieSlideIn 0.5s 0.9s linear forwards;
 }
-/* line 54, ../sass/partials/_animated-icons.scss */
+/* line 57, ../sass/partials/_animated-icons.scss */
 .c3xgm-about-page-in-view .c3xgm-about-section-header .c3xgm-about-section-header-inner .c3xgm-about-icon-holder .grey_circle {
   -webkit-animation: greycircleScaleUp 0.5s 0.5s linear forwards;
   -moz-animation: greycircleScaleUp 0.5s 0.5s linear forwards;
@@ -2054,7 +2053,7 @@ Stylesheet: Helpers
   -o-animation: greycircleScaleUp 0.5s 0.5s linear forwards;
   animation: greycircleScaleUp 0.5s 0.5s linear forwards;
 }
-/* line 62, ../sass/partials/_animated-icons.scss */
+/* line 65, ../sass/partials/_animated-icons.scss */
 .c3xgm-about-page-in-view .c3xgm-about-section-header .c3xgm-about-section-header-inner .c3xgm-about-icon-holder .shadow {
   -webkit-animation: fadeIn 0.3s 1.5s linear forwards;
   -moz-animation: fadeIn 0.3s 1.5s linear forwards;
@@ -2062,7 +2061,7 @@ Stylesheet: Helpers
   -o-animation: fadeIn 0.3s 1.5s linear forwards;
   animation: fadeIn 0.3s 1.5s linear forwards;
 }
-/* line 70, ../sass/partials/_animated-icons.scss */
+/* line 73, ../sass/partials/_animated-icons.scss */
 .c3xgm-about-page-in-view .c3xgm-about-section-header .c3xgm-about-section-header-inner .c3xgm-about-icon-holder #brand_car {
   -webkit-animation: slideRight 0.6s 1s ease forwards;
   -moz-animation: slideRight 0.6s 1s ease forwards;
@@ -2070,7 +2069,7 @@ Stylesheet: Helpers
   -o-animation: slideRight 0.6s 1s ease forwards;
   animation: slideRight 0.6s 1s ease forwards;
 }
-/* line 78, ../sass/partials/_animated-icons.scss */
+/* line 81, ../sass/partials/_animated-icons.scss */
 .c3xgm-about-page-in-view .c3xgm-about-section-header .c3xgm-about-section-header-inner .c3xgm-about-icon-holder #brand_car_shadow {
   -webkit-animation: scaleUp 0.3s 1.4s linear forwards;
   -moz-animation: scaleUp 0.3s 1.4s linear forwards;
@@ -2078,7 +2077,7 @@ Stylesheet: Helpers
   -o-animation: scaleUp 0.3s 1.4s linear forwards;
   animation: scaleUp 0.3s 1.4s linear forwards;
 }
-/* line 87, ../sass/partials/_animated-icons.scss */
+/* line 90, ../sass/partials/_animated-icons.scss */
 .c3xgm-about-page-in-view .c3xgm-about-section-header .c3xgm-about-section-header-inner .c3xgm-about-icon-holder #inner_car {
   -webkit-animation: scaleUp 0.5s 1.2s linear forwards;
   -moz-animation: scaleUp 0.5s 1.2s linear forwards;
@@ -2086,7 +2085,7 @@ Stylesheet: Helpers
   -o-animation: scaleUp 0.5s 1.2s linear forwards;
   animation: scaleUp 0.5s 1.2s linear forwards;
 }
-/* line 96, ../sass/partials/_animated-icons.scss */
+/* line 99, ../sass/partials/_animated-icons.scss */
 .c3xgm-about-page-in-view .c3xgm-about-section-header .c3xgm-about-section-header-inner .c3xgm-about-icon-holder #dark_grey {
   -webkit-animation: scaleUp 0.4s 0.8s linear forwards;
   -moz-animation: scaleUp 0.4s 0.8s linear forwards;
@@ -2094,7 +2093,7 @@ Stylesheet: Helpers
   -o-animation: scaleUp 0.4s 0.8s linear forwards;
   animation: scaleUp 0.4s 0.8s linear forwards;
 }
-/* line 104, ../sass/partials/_animated-icons.scss */
+/* line 107, ../sass/partials/_animated-icons.scss */
 .c3xgm-about-page-in-view .c3xgm-about-section-header .c3xgm-about-section-header-inner .c3xgm-about-icon-holder #road {
   -webkit-animation: scaleUp 0.5s 1s linear forwards;
   -moz-animation: scaleUp 0.5s 1s linear forwards;
@@ -2102,7 +2101,7 @@ Stylesheet: Helpers
   -o-animation: scaleUp 0.5s 1s linear forwards;
   animation: scaleUp 0.5s 1s linear forwards;
 }
-/* line 112, ../sass/partials/_animated-icons.scss */
+/* line 115, ../sass/partials/_animated-icons.scss */
 .c3xgm-about-page-in-view .c3xgm-about-section-header .c3xgm-about-section-header-inner .c3xgm-about-icon-holder #road_lines {
   -webkit-animation: scaleUp 0.6s 1.2s linear forwards;
   -moz-animation: scaleUp 0.6s 1.2s linear forwards;
@@ -2110,7 +2109,7 @@ Stylesheet: Helpers
   -o-animation: scaleUp 0.6s 1.2s linear forwards;
   animation: scaleUp 0.6s 1.2s linear forwards;
 }
-/* line 120, ../sass/partials/_animated-icons.scss */
+/* line 123, ../sass/partials/_animated-icons.scss */
 .c3xgm-about-page-in-view .c3xgm-about-section-header .c3xgm-about-section-header-inner .c3xgm-about-icon-holder #sun {
   -webkit-animation: scaleUp 0.6s 1.2s linear forwards;
   -moz-animation: scaleUp 0.6s 1.2s linear forwards;
@@ -2118,7 +2117,7 @@ Stylesheet: Helpers
   -o-animation: scaleUp 0.6s 1.2s linear forwards;
   animation: scaleUp 0.6s 1.2s linear forwards;
 }
-/* line 128, ../sass/partials/_animated-icons.scss */
+/* line 131, ../sass/partials/_animated-icons.scss */
 .c3xgm-about-page-in-view .c3xgm-about-section-header .c3xgm-about-section-header-inner .c3xgm-about-icon-holder #lighter_yellow, .c3xgm-about-page-in-view .c3xgm-about-section-header .c3xgm-about-section-header-inner .c3xgm-about-icon-holder #gm_logo {
   -webkit-animation: personSlideIn 0.8s 0.7s linear forwards;
   -moz-animation: personSlideIn 0.8s 0.7s linear forwards;
@@ -2126,7 +2125,7 @@ Stylesheet: Helpers
   -o-animation: personSlideIn 0.8s 0.7s linear forwards;
   animation: personSlideIn 0.8s 0.7s linear forwards;
 }
-/* line 136, ../sass/partials/_animated-icons.scss */
+/* line 139, ../sass/partials/_animated-icons.scss */
 .c3xgm-about-page-in-view .c3xgm-about-section-header .c3xgm-about-section-header-inner .c3xgm-about-icon-holder #darker_yellow {
   -webkit-animation: personSlideIn 0.8s 1s linear forwards;
   -moz-animation: personSlideIn 0.8s 1s linear forwards;
@@ -2134,7 +2133,7 @@ Stylesheet: Helpers
   -o-animation: personSlideIn 0.8s 1s linear forwards;
   animation: personSlideIn 0.8s 1s linear forwards;
 }
-/* line 144, ../sass/partials/_animated-icons.scss */
+/* line 147, ../sass/partials/_animated-icons.scss */
 .c3xgm-about-page-in-view .c3xgm-about-section-header .c3xgm-about-section-header-inner .c3xgm-about-icon-holder #white_band {
   -webkit-animation: dash 6s 2s linear forwards;
   -moz-animation: dash 6s 2s linear forwards;
@@ -2144,7 +2143,7 @@ Stylesheet: Helpers
 }
 
 /*CHANGED*/
-/* line 156, ../sass/partials/_animated-icons.scss */
+/* line 159, ../sass/partials/_animated-icons.scss */
 #person {
   opacity: 0;
   -webkit-transform: translateY(100px);
@@ -2155,7 +2154,7 @@ Stylesheet: Helpers
 }
 
 /*CHANGED*/
-/* line 167, ../sass/partials/_animated-icons.scss */
+/* line 170, ../sass/partials/_animated-icons.scss */
 #tie {
   -webkit-transform: translateY(-100px);
   -moz-transform: translateY(-100px);
@@ -2165,7 +2164,7 @@ Stylesheet: Helpers
   opacity: 0;
 }
 
-/* line 176, ../sass/partials/_animated-icons.scss */
+/* line 179, ../sass/partials/_animated-icons.scss */
 .grey_circle {
   opacity: 0;
   -webkit-transform: scale(0, 0);
@@ -2180,7 +2179,7 @@ Stylesheet: Helpers
 }
 
 /*CHANGED*/
-/* line 191, ../sass/partials/_animated-icons.scss */
+/* line 194, ../sass/partials/_animated-icons.scss */
 .shadow {
   opacity: 0;
 }
@@ -2188,7 +2187,7 @@ Stylesheet: Helpers
 /*END OF GUY ANIMATION*/
 /*OUR BRANDS CAR ANIMATION*/
 /*CHANGED*/
-/* line 198, ../sass/partials/_animated-icons.scss */
+/* line 201, ../sass/partials/_animated-icons.scss */
 #brand_car {
   opacity: 0;
   -webkit-transform: translateX(-100px);
@@ -2198,7 +2197,7 @@ Stylesheet: Helpers
   transform: translateX(-100px);
 }
 
-/* line 207, ../sass/partials/_animated-icons.scss */
+/* line 210, ../sass/partials/_animated-icons.scss */
 #brand_car_shadow {
   -webkit-transform: scale(0, 0);
   -moz-transform: scale(0, 0);
@@ -2213,7 +2212,7 @@ Stylesheet: Helpers
 }
 
 /*OUR COMMITMENT CAR ANIMATION*/
-/* line 222, ../sass/partials/_animated-icons.scss */
+/* line 225, ../sass/partials/_animated-icons.scss */
 #inner_car {
   -webkit-transform: scale(0, 0);
   -moz-transform: scale(0, 0);
@@ -2228,7 +2227,7 @@ Stylesheet: Helpers
   opacity: 0;
 }
 
-/* line 236, ../sass/partials/_animated-icons.scss */
+/* line 239, ../sass/partials/_animated-icons.scss */
 #dark_grey {
   -webkit-transform: scale(0, 0);
   -moz-transform: scale(0, 0);
@@ -2243,7 +2242,7 @@ Stylesheet: Helpers
   opacity: 0;
 }
 
-/* line 250, ../sass/partials/_animated-icons.scss */
+/* line 253, ../sass/partials/_animated-icons.scss */
 #road {
   -webkit-transform: scale(0, 0);
   -moz-transform: scale(0, 0);
@@ -2258,7 +2257,7 @@ Stylesheet: Helpers
   opacity: 0;
 }
 
-/* line 264, ../sass/partials/_animated-icons.scss */
+/* line 267, ../sass/partials/_animated-icons.scss */
 #road_lines {
   -webkit-transform: scale(0, 0);
   -moz-transform: scale(0, 0);
@@ -2273,7 +2272,7 @@ Stylesheet: Helpers
   opacity: 0;
 }
 
-/* line 278, ../sass/partials/_animated-icons.scss */
+/* line 281, ../sass/partials/_animated-icons.scss */
 #sun {
   -webkit-transform: scale(0, 0);
   -moz-transform: scale(0, 0);
@@ -2289,7 +2288,7 @@ Stylesheet: Helpers
 }
 
 /*OUR COMPANY ANIMATION*/
-/* line 293, ../sass/partials/_animated-icons.scss */
+/* line 296, ../sass/partials/_animated-icons.scss */
 #lighter_yellow, #gm_logo {
   opacity: 0;
   -webkit-transform: translateY(100px);
@@ -2299,7 +2298,7 @@ Stylesheet: Helpers
   transform: translateY(100px);
 }
 
-/* line 302, ../sass/partials/_animated-icons.scss */
+/* line 305, ../sass/partials/_animated-icons.scss */
 #darker_yellow {
   opacity: 0;
   -webkit-transform: translateY(100px);
@@ -2309,7 +2308,7 @@ Stylesheet: Helpers
   transform: translateY(100px);
 }
 
-/* line 311, ../sass/partials/_animated-icons.scss */
+/* line 314, ../sass/partials/_animated-icons.scss */
 #white_band {
   stroke-dasharray: 1000;
   stroke-dashoffset: 1000;
@@ -2770,7 +2769,7 @@ Stylesheet: Helpers
 }
 @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
   /* IE10+ specific styles go here */
-  /* line 856, ../sass/partials/_animated-icons.scss */
+  /* line 859, ../sass/partials/_animated-icons.scss */
   .c3xgm-about-page-in-view .c3xgm-about-section-header .c3xgm-about-section-header-inner .out_circle {
     stroke-dashoffset: 0;
     -webkit-animation: fadeIn 0.8s ease forwards;
@@ -2780,7 +2779,7 @@ Stylesheet: Helpers
     animation: fadeIn 0.8s ease forwards;
   }
 
-  /* line 860, ../sass/partials/_animated-icons.scss */
+  /* line 863, ../sass/partials/_animated-icons.scss */
   .c3xgm-about-page-in-view .c3xgm-about-section-header .c3xgm-about-section-header-inner #white_band {
     stroke-dashoffset: 0;
   }

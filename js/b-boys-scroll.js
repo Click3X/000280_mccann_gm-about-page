@@ -1,11 +1,4 @@
 // BACK STREET BOYS DEMO INSPRIRED SCROLL SCRIPTS
-if(mobile) {
-  console.log('We have mobile from B s boys script AND WE AINT GIVIN NO SCROLL TIED ANIMATIONS');
-} else {
-  console.log('NO MOHILE from B s boys script');
-  // ONLY SCROLL ANIMATIONS FOR DESKTOP
-
-
   var _containerHeight = 4000;
   var _width = window.innerWidth;
 
@@ -14,7 +7,6 @@ if(mobile) {
   var _scrollPercent = 0;
   var pre = prefix();
   var _jsPrefix  = pre.lowercase;
-
   if(_jsPrefix == 'moz') _jsPrefix = 'Moz'
   var _cssPrefix = pre.css;
   var _positions = [
@@ -84,12 +76,7 @@ if(mobile) {
         y:0
       }
     }
-  ]
-
-  resetWidth();
-  resize();
-  initMovingElements();
-
+  ];
 
   function getElemOffest(elemId) {
     return jQuery(elemId).offset().top / _containerHeight;
@@ -163,7 +150,6 @@ if(mobile) {
     requestAnimationFrame(loop);
   }
 
-  loop();
 
   window.addEventListener('resize', resize);
 
@@ -184,5 +170,19 @@ if(mobile) {
       js: pre[0].toUpperCase() + pre.substr(1)
     };
   }
+
+
+
+if(mobile) {
+  console.log('We have mobile from B s boys script AND WE AINT GIVIN NO SCROLL TIED ANIMATIONS');
+} else {
+  console.log('NO MOHILE from B s boys script');
+  // ONLY SCROLL ANIMATIONS FOR DESKTOP
+
+  resetWidth();
+  resize();
+  initMovingElements();
+
+  loop();
 
 }

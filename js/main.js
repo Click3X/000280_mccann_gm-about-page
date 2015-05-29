@@ -10,7 +10,7 @@ jQuery(document).ready(function($) {
 		scrollHandler,
 		resizeHandler,
 		viewDimensions,
-		currentPage,
+		currentPage = 0,
 		newPage,
 		recentPage = "";
 
@@ -356,7 +356,9 @@ jQuery(document).ready(function($) {
 
     // CHECK FOR BLOCKS
     function checkBlocks(currentPage) {
-        // cd(currentPage);
+        console.log('Thsi is currentPage: ' + currentPage);
+        console.dir(currentPage);
+        
     	var blocks = Pages[currentPage].animBlocks;
 
         if(currentPage != 1) {
