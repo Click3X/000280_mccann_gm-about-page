@@ -193,6 +193,11 @@ function autorotateAboutSlider(){
         }, 5000);
     }
 }
+
+function autorotateAboutSliderOnce(){
+	  $(carLinks[currentAboutSlide]).eq(0).trigger("click", true);
+}
+
 function killAutoRotateAboutSlider(){
 	console.log("killAutoRotateAboutSlider");
 
@@ -214,16 +219,7 @@ function autorotateTechSlider(){
 }
 
 function autorotateTechSliderOnce(){
-	console.log("autorotateTechSlider Once");
 	 $( techLinks[currentTechSlide] ).eq(0).trigger("click", true);
-
-    // if(!techSlideInterval){
-    //     techSlideInterval = setInterval(function(){
-    //         currentTechSlide++; if(currentTechSlide > techLinks.length-1) currentTechSlide = 0;
-
-    //         $( techLinks[currentTechSlide] ).eq(0).trigger("click", true);
-    //     }, 5000);
-    // }
 }
 
 function killAutoRotateTechSlider(){
@@ -244,6 +240,9 @@ function autorotateFoundationSlider(){
             $( foundationLinks[currentFoundationSlide] ).eq(0).trigger("click", true);
         }, 5000);
     }
+}
+function autorotateFoundationSliderOnce(){
+	  $( foundationLinks[currentFoundationSlide] ).eq(0).trigger("click", true);
 }
 function killAutoRotateFoundationSlider(){
 	console.log("killAutoRotateFoundationSlider");
