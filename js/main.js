@@ -37,14 +37,14 @@ jQuery(document).ready(function($) {
                 divHeight = Pages[i].elementHeight;
 
             // UPDATE NAV BASED ON WINDOW POSITION AND PAGE HEIGHT
-            if (viewDimensions.scrollTop >= (divPos - 20) && viewDimensions.scrollTop < ((divPos - 20) + divHeight)) {
+            if (viewDimensions.scrollTop >= (divPos - 100) && viewDimensions.scrollTop < ((divPos) + (divHeight-100) )) {
                 $("a[href='" + theID + "']").addClass("c3xgm-about-nav-bullet-active");
             } else {
                 $("a[href='" + theID + "']").removeClass("c3xgm-about-nav-bullet-active");
             }
 
             // IF BOTTOM OF DOC IS REACHED, HIGHLIGHT LAST BULLET
-            if ( viewDimensions.scrollTop + viewDimensions.windowHeight == viewDimensions.docHeight - 20) {
+            if ( viewDimensions.scrollTop + viewDimensions.windowHeight == viewDimensions.docHeight) {
                 var lastPage = aArray[aArray.length - 1];
                 $("a[href='#c3xgm-about-page-environment']").removeClass("c3xgm-about-nav-bullet-active");
                 $("a[href='" + lastPage + "']").addClass("c3xgm-about-nav-bullet-active");
@@ -311,7 +311,7 @@ jQuery(document).ready(function($) {
                         setTimeout(function() {
                             autorotateAboutSlider();
                         }, 6000);
-                    }, 3000);
+                    }, 2000);
 
                 } /*else {
                     killAutoRotateAboutSlider();
@@ -344,7 +344,7 @@ jQuery(document).ready(function($) {
                         setTimeout(function() {
                             autorotateFoundationSlider();
                         }, 6000);
-                    }, 3000);
+                    }, 2900);
                 } /*else {
                     killAutoRotateFoundationSlider();
                 }*/
@@ -426,7 +426,8 @@ jQuery(document).ready(function($) {
         this.hasViewClass = false;
 
         // PAGE BLOCKS - BLOCKS ARE INDIVIDUAL 'PAGE OBJECTS'
-        this.aboutBlocks = this.$element.find('.c3xgm-about-block, .c3xgm-about-solar-panels');
+        // this.aboutBlocks = this.$element.find('.c3xgm-about-block, .c3xgm-about-solar-panels');
+        this.aboutBlocks = this.$element.find('.c3xgm-about-block');
         // READY ANIM BLOCKS ARRAY
         this.animBlocks = []; 
 

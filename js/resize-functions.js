@@ -112,10 +112,14 @@ jQuery(document).ready(function($) {
 
 
 
-    setTimeout(function() {
+    // setTimeout(function() {
+        $(window).load(function() {
+            console.log('Resizing Tech Modules from Window Load');
+            resizeTechModules(techQuotes, techPics);
+        });
         // console.log('Fron ST: resize!');
-        resizeTechModules(techQuotes, techPics);
-    }, 100);
+        // resizeTechModules(techQuotes, techPics);
+    // }, 100);
     
     
 });

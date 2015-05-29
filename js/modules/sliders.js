@@ -80,9 +80,9 @@ jQuery(document).ready(function($) {
 	});
 
 	// SHOW FIRST SLIDE
-	setTimeout(function() {
-		$('#c3xgm-about-foundation-gm-foundation').removeClass('hide-module hide-module-slide-out').addClass('show-module-slide-in');
-	}, 3000);
+	// setTimeout(function() {
+	// 	$('#c3xgm-about-foundation-gm-foundation').removeClass('hide-module hide-module-slide-out').addClass('show-module-slide-in');
+	// }, 3000);
 	
 	// FOUNDATION
 	foundationLinks.on('click touchstart', function(e, auto_rotate) {

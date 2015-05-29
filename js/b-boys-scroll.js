@@ -128,7 +128,7 @@ if(mobile) {
   function updateElements() {
     for (var i = 0; i < _movingElements.length; i++) {
       var p = _positions[i];
-      console.log('This is _scrollPercent')
+
       if(_scrollPercent <= p.start.percent) {
         p.target.x = p.start.x*_width;
         p.target.y = p.start.y*_containerHeight;
