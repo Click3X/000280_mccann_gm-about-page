@@ -1,6 +1,6 @@
 // PAGE JS FOR PAGES
 jQuery(document).ready(function($) { 
-	console.log('This is page js!');
+	// console.log('This is page js!');
 
 	// DECLARE VARIABLES FOR LATER USE
 	var css3dtransforms = true,
@@ -252,7 +252,7 @@ jQuery(document).ready(function($) {
             if( _t.isInView() && ( $(this.$element).hasClass('invisible') ) ){
                 // ADD IN VIEW CLASS
     			_t.addInViewClass();
-    			console.log('PAGE: ' + _t.elementName);
+    			// console.log('PAGE: ' + _t.elementName);
     			// SET CURRENT PAGE TO PAGE INDEX
     			currentPage = i;
     			// SET PAGE VIEW STATE
@@ -356,7 +356,7 @@ jQuery(document).ready(function($) {
 
     // CHECK FOR BLOCKS
     function checkBlocks(currentPage) {
-        console.log('Thsi is currentPage: ' + currentPage);
+        // console.log('Thsi is currentPage: ' + currentPage);
         console.dir(currentPage);
         
     	var blocks = Pages[currentPage].animBlocks;
@@ -368,7 +368,7 @@ jQuery(document).ready(function($) {
                 if( this.isAtEighth() ){
                     // ADD IN VIEW CLASS
                     this.addInViewClass();
-                    console.log('Im in view: ' + this.elementName);
+                    // console.log('Im in view: ' + this.elementName);
                     // SET PAGE VIEW STATE
                     this.hasViewClass = true;
                     // IF TEST FACILITY - TRIGGER ROLLOVER
