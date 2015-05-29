@@ -51,14 +51,17 @@
 	// FLAG LINE
 	.c3xgm-about-flag-line-container {
 		#c3xgm-about-flag-line-grey-car {
-			margin: 0;
-			left: -380px;
-			@include prefix(animation-fill-mode, both);
-			@include prefix(animation-name, moveCarRight);
-			@include prefix(animation-delay, 0);
-			@include prefix(animation-duration, 4s);
-			@include prefix(animation-timing-function, linear);
-			@include prefix(animation-iteration-count, infinite);
+
+			margin:0 auto;
+			
+			// margin: 0;
+			// left: -380px;
+			// @include prefix(animation-fill-mode, both);
+			// @include prefix(animation-name, moveCarRight);
+			// @include prefix(animation-delay, 0);
+			// @include prefix(animation-duration, 4s);
+			// @include prefix(animation-timing-function, linear);
+			// @include prefix(animation-iteration-count, infinite);
 
 		}
 	}
