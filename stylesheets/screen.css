@@ -3366,22 +3366,22 @@ Stylesheet: Helpers
     bottom: 12%;
   }
 }
-/* line 71, ../sass/partials/_solar-panels.scss */
+/* line 70, ../sass/partials/_solar-panels.scss */
 .c3xgm-about-decorative.c3xgm-about-solar-panels .c3xgm-about-grey-side .c3xgm-about-front-wheel {
   right: 10.285714%;
 }
 @media (min-width: 768px) {
-  /* line 71, ../sass/partials/_solar-panels.scss */
+  /* line 70, ../sass/partials/_solar-panels.scss */
   .c3xgm-about-decorative.c3xgm-about-solar-panels .c3xgm-about-grey-side .c3xgm-about-front-wheel {
     right: 10.1%;
   }
 }
-/* line 76, ../sass/partials/_solar-panels.scss */
+/* line 75, ../sass/partials/_solar-panels.scss */
 .c3xgm-about-decorative.c3xgm-about-solar-panels .c3xgm-about-grey-side .c3xgm-about-back-wheel {
   left: 16%;
 }
 @media (min-width: 768px) {
-  /* line 76, ../sass/partials/_solar-panels.scss */
+  /* line 75, ../sass/partials/_solar-panels.scss */
   .c3xgm-about-decorative.c3xgm-about-solar-panels .c3xgm-about-grey-side .c3xgm-about-back-wheel {
     left: 15.7%;
   }
@@ -3400,11 +3400,11 @@ Stylesheet: Helpers
     width: 276px;
   }
 }
-/* line 89, ../sass/partials/_solar-panels.scss */
+/* line 88, ../sass/partials/_solar-panels.scss */
 .c3xgm-about-decorative.c3xgm-about-solar-panels .c3xgm-about-grey-side img {
   width: 100%;
 }
-/* line 92, ../sass/partials/_solar-panels.scss */
+/* line 91, ../sass/partials/_solar-panels.scss */
 .c3xgm-about-decorative.c3xgm-about-solar-panels .c3xgm-about-tree {
   width: 66px;
   height: 61px;
@@ -3413,31 +3413,31 @@ Stylesheet: Helpers
   bottom: 40px;
   z-index: -5;
 }
-/* line 97, ../sass/partials/_solar-panels.scss */
+/* line 96, ../sass/partials/_solar-panels.scss */
 .c3xgm-about-decorative.c3xgm-about-solar-panels .c3xgm-about-tree img {
   width: 100%;
 }
 @media (min-width: 481px) {
-  /* line 92, ../sass/partials/_solar-panels.scss */
+  /* line 91, ../sass/partials/_solar-panels.scss */
   .c3xgm-about-decorative.c3xgm-about-solar-panels .c3xgm-about-tree {
     width: 99px;
     height: 93px;
   }
 }
 @media (min-width: 768px) {
-  /* line 92, ../sass/partials/_solar-panels.scss */
+  /* line 91, ../sass/partials/_solar-panels.scss */
   .c3xgm-about-decorative.c3xgm-about-solar-panels .c3xgm-about-tree {
     margin: auto;
   }
 }
 @media (min-width: 906px) {
-  /* line 92, ../sass/partials/_solar-panels.scss */
+  /* line 91, ../sass/partials/_solar-panels.scss */
   .c3xgm-about-decorative.c3xgm-about-solar-panels .c3xgm-about-tree {
     right: 0;
     left: -63%;
   }
 }
-/* line 103, ../sass/partials/_solar-panels.scss */
+/* line 102, ../sass/partials/_solar-panels.scss */
 .c3xgm-about-decorative.c3xgm-about-solar-panels .c3xgm-about-solar-panels {
   width: 127px;
   height: 141px;
@@ -3447,18 +3447,18 @@ Stylesheet: Helpers
   bottom: 0;
   z-index: -5;
 }
-/* line 108, ../sass/partials/_solar-panels.scss */
+/* line 107, ../sass/partials/_solar-panels.scss */
 .c3xgm-about-decorative.c3xgm-about-solar-panels .c3xgm-about-solar-panels img {
   width: 100%;
 }
 @media (min-width: 481px) {
-  /* line 103, ../sass/partials/_solar-panels.scss */
+  /* line 102, ../sass/partials/_solar-panels.scss */
   .c3xgm-about-decorative.c3xgm-about-solar-panels .c3xgm-about-solar-panels {
     bottom: 40px;
   }
 }
 @media (min-width: 906px) {
-  /* line 103, ../sass/partials/_solar-panels.scss */
+  /* line 102, ../sass/partials/_solar-panels.scss */
   .c3xgm-about-decorative.c3xgm-about-solar-panels .c3xgm-about-solar-panels {
     width: 193px;
     height: 213px;
@@ -3468,7 +3468,7 @@ Stylesheet: Helpers
     margin: auto;
   }
 }
-/* line 117, ../sass/partials/_solar-panels.scss */
+/* line 116, ../sass/partials/_solar-panels.scss */
 .c3xgm-about-decorative.c3xgm-about-solar-panels .c3xgm-about-sun {
   width: 16%;
   max-width: 140px;
@@ -3479,25 +3479,25 @@ Stylesheet: Helpers
   top: 40%;
   right: 5%;
 }
-/* line 123, ../sass/partials/_solar-panels.scss */
+/* line 122, ../sass/partials/_solar-panels.scss */
 .c3xgm-about-decorative.c3xgm-about-solar-panels .c3xgm-about-sun img {
   width: 100%;
 }
 @media (min-width: 400px) {
-  /* line 117, ../sass/partials/_solar-panels.scss */
+  /* line 116, ../sass/partials/_solar-panels.scss */
   .c3xgm-about-decorative.c3xgm-about-solar-panels .c3xgm-about-sun {
     padding-bottom: 100px;
   }
 }
 @media (min-width: 768px) {
-  /* line 117, ../sass/partials/_solar-panels.scss */
+  /* line 116, ../sass/partials/_solar-panels.scss */
   .c3xgm-about-decorative.c3xgm-about-solar-panels .c3xgm-about-sun {
     top: 26%;
     padding-bottom: 140px;
   }
 }
 @media (min-width: 906px) {
-  /* line 117, ../sass/partials/_solar-panels.scss */
+  /* line 116, ../sass/partials/_solar-panels.scss */
   .c3xgm-about-decorative.c3xgm-about-solar-panels .c3xgm-about-sun {
     left: 0;
     right: -50%;
@@ -3505,7 +3505,7 @@ Stylesheet: Helpers
   }
 }
 
-/* line 130, ../sass/partials/_solar-panels.scss */
+/* line 129, ../sass/partials/_solar-panels.scss */
 .c3xgm-about-solar-road {
   width: 100%;
   height: 0;
@@ -3513,4 +3513,399 @@ Stylesheet: Helpers
   position: absolute;
   bottom: 0;
   z-index: -2;
+}
+
+/* line 4, ../sass/partials/_tech.scss */
+.c3xgm-about-module-technology .c3xgm-about-subsection {
+  margin-bottom: 3em;
+}
+/* line 6, ../sass/partials/_tech.scss */
+.c3xgm-about-module-technology .c3xgm-about-module {
+  text-align: center;
+  width: 100%;
+}
+/* line 10, ../sass/partials/_tech.scss */
+.c3xgm-about-module-technology .c3xgm-about-module .c3xgm-about-blockquote-container {
+  max-width: 906px;
+  margin: 0 auto;
+}
+@media (min-width: 768px) {
+  /* line 10, ../sass/partials/_tech.scss */
+  .c3xgm-about-module-technology .c3xgm-about-module .c3xgm-about-blockquote-container {
+    width: 94%;
+  }
+}
+/* line 21, ../sass/partials/_tech.scss */
+.c3xgm-about-module-technology .c3xgm-about-block-icon {
+  position: relative;
+}
+/* line 25, ../sass/partials/_tech.scss */
+.c3xgm-about-module-technology .c3xgm-about-block-image {
+  width: 100%;
+  max-width: 906px;
+  margin: 0 auto;
+  position: relative;
+}
+/* line 31, ../sass/partials/_tech.scss */
+.c3xgm-about-module-technology .c3xgm-about-block-image .c3xgm-about-wheel {
+  display: block;
+}
+@media (min-width: 768px) {
+  /* line 32, ../sass/partials/_tech.scss */
+  .c3xgm-about-module-technology .c3xgm-about-block-image .c3xgm-about-tech-car {
+    width: 70%;
+  }
+}
+/* line 38, ../sass/partials/_tech.scss */
+.c3xgm-about-module-technology .c3xgm-about-blockquote {
+  max-width: 92%;
+  margin: 1em auto 1.5em;
+  display: inline-block;
+  text-align: left;
+}
+@media (min-width: 768px) {
+  /* line 38, ../sass/partials/_tech.scss */
+  .c3xgm-about-module-technology .c3xgm-about-blockquote {
+    display: block;
+    margin: 0;
+  }
+}
+/* line 45, ../sass/partials/_tech.scss */
+.c3xgm-about-module-technology .c3xgm-about-blockquote span {
+  display: block;
+  float: left;
+  clear: left;
+}
+@media (min-width: 768px) {
+  /* line 38, ../sass/partials/_tech.scss */
+  .c3xgm-about-module-technology .c3xgm-about-blockquote {
+    float: right;
+  }
+}
+/* line 54, ../sass/partials/_tech.scss */
+.c3xgm-about-module-technology .c3xgm-about-block-image img.c3xgm-about-tech-car {
+  width: 90%;
+}
+@media (min-width: 768px) {
+  /* line 54, ../sass/partials/_tech.scss */
+  .c3xgm-about-module-technology .c3xgm-about-block-image img.c3xgm-about-tech-car {
+    width: 70%;
+  }
+}
+@media (min-width: 768px) {
+  /* line 63, ../sass/partials/_tech.scss */
+  .c3xgm-about-module-technology .c3xgm-about-4g-lte .c3xgm-about-block-icon {
+    width: 40%;
+    float: right;
+  }
+  /* line 66, ../sass/partials/_tech.scss */
+  .c3xgm-about-module-technology .c3xgm-about-4g-lte .c3xgm-about-block-icon img {
+    width: 75%;
+  }
+}
+/* line 68, ../sass/partials/_tech.scss */
+.c3xgm-about-module-technology .c3xgm-about-4g-lte .c3xgm-about-block-icon .c3xgm-about-tech-car {
+  width: 65%;
+  max-width: 157px;
+}
+@media (min-width: 768px) {
+  /* line 68, ../sass/partials/_tech.scss */
+  .c3xgm-about-module-technology .c3xgm-about-4g-lte .c3xgm-about-block-icon .c3xgm-about-tech-car {
+    width: 80%;
+    max-width: none;
+  }
+}
+/* line 74, ../sass/partials/_tech.scss */
+.c3xgm-about-module-technology .c3xgm-about-4g-lte .c3xgm-about-block-image .c3xgm-about-wheel {
+  width: 11.5714286%;
+  position: absolute;
+  bottom: 19%;
+  max-width: 86px;
+  max-height: 85px;
+}
+/* line 79, ../sass/partials/_tech.scss */
+.c3xgm-about-module-technology .c3xgm-about-4g-lte .c3xgm-about-block-image .c3xgm-about-wheel:first-child {
+  left: 24%;
+}
+/* line 80, ../sass/partials/_tech.scss */
+.c3xgm-about-module-technology .c3xgm-about-4g-lte .c3xgm-about-block-image .c3xgm-about-wheel:nth-child(3) {
+  right: 19%;
+  bottom: 19%;
+}
+@media (min-width: 768px) {
+  /* line 74, ../sass/partials/_tech.scss */
+  .c3xgm-about-module-technology .c3xgm-about-4g-lte .c3xgm-about-block-image .c3xgm-about-wheel {
+    width: 9%;
+  }
+  /* line 84, ../sass/partials/_tech.scss */
+  .c3xgm-about-module-technology .c3xgm-about-4g-lte .c3xgm-about-block-image .c3xgm-about-wheel:first-child {
+    left: 30%;
+  }
+  /* line 85, ../sass/partials/_tech.scss */
+  .c3xgm-about-module-technology .c3xgm-about-4g-lte .c3xgm-about-block-image .c3xgm-about-wheel:nth-child(3) {
+    right: 26.4%;
+    bottom: 19.6%;
+  }
+}
+@media (min-width: 768px) {
+  /* line 91, ../sass/partials/_tech.scss */
+  .c3xgm-about-module-technology .c3xgm-about-4g-lte .c3xgm-about-blockquote {
+    width: 60%;
+    float: right;
+  }
+}
+/* line 95, ../sass/partials/_tech.scss */
+.c3xgm-about-module-technology .c3xgm-about-4g-lte .c3xgm-about-dark-blue.c3xgm-about-thin,
+.c3xgm-about-module-technology .c3xgm-about-4g-lte .c3xgm-about-light-blue {
+  font-size: 27px;
+  font-size: 8.5vw;
+}
+@media (min-width: 768px) {
+  /* line 95, ../sass/partials/_tech.scss */
+  .c3xgm-about-module-technology .c3xgm-about-4g-lte .c3xgm-about-dark-blue.c3xgm-about-thin,
+  .c3xgm-about-module-technology .c3xgm-about-4g-lte .c3xgm-about-light-blue {
+    font-size: 42px;
+  }
+}
+@media (min-width: 906px) {
+  /* line 95, ../sass/partials/_tech.scss */
+  .c3xgm-about-module-technology .c3xgm-about-4g-lte .c3xgm-about-dark-blue.c3xgm-about-thin,
+  .c3xgm-about-module-technology .c3xgm-about-4g-lte .c3xgm-about-light-blue {
+    font-size: 50px;
+  }
+}
+/* line 102, ../sass/partials/_tech.scss */
+.c3xgm-about-module-technology .c3xgm-about-4g-lte .c3xgm-about-gray {
+  font-size: 12px;
+  font-size: 3.961772vw;
+  line-height: 1.075em;
+}
+@media (min-width: 768px) {
+  /* line 102, ../sass/partials/_tech.scss */
+  .c3xgm-about-module-technology .c3xgm-about-4g-lte .c3xgm-about-gray {
+    font-size: 20px;
+  }
+}
+/* line 108, ../sass/partials/_tech.scss */
+.c3xgm-about-module-technology .c3xgm-about-4g-lte .c3xgm-about-light-blue {
+  margin: .05em 0;
+}
+/* line 115, ../sass/partials/_tech.scss */
+.c3xgm-about-module-technology .c3xgm-about-concept-car .c3xgm-about-blockquote {
+  width: auto;
+}
+@media (min-width: 768px) {
+  /* line 115, ../sass/partials/_tech.scss */
+  .c3xgm-about-module-technology .c3xgm-about-concept-car .c3xgm-about-blockquote {
+    width: 70%;
+    float: right;
+  }
+}
+/* line 120, ../sass/partials/_tech.scss */
+.c3xgm-about-module-technology .c3xgm-about-concept-car .c3xgm-about-block-icon img {
+  width: 45%;
+  max-width: none;
+}
+@media (min-width: 768px) {
+  /* line 119, ../sass/partials/_tech.scss */
+  .c3xgm-about-module-technology .c3xgm-about-concept-car .c3xgm-about-block-icon {
+    width: 30%;
+    float: right;
+  }
+  /* line 123, ../sass/partials/_tech.scss */
+  .c3xgm-about-module-technology .c3xgm-about-concept-car .c3xgm-about-block-icon img {
+    width: 75%;
+    max-width: none;
+  }
+}
+/* line 128, ../sass/partials/_tech.scss */
+.c3xgm-about-module-technology .c3xgm-about-concept-car .c3xgm-about-block-image .c3xgm-about-wheel {
+  width: 11.5714286%;
+  position: absolute;
+  bottom: 20.5%;
+  max-width: 88px;
+  max-height: 87px;
+}
+/* line 133, ../sass/partials/_tech.scss */
+.c3xgm-about-module-technology .c3xgm-about-concept-car .c3xgm-about-block-image .c3xgm-about-wheel:first-child {
+  bottom: 20.7%;
+  left: 24.1%;
+}
+/* line 134, ../sass/partials/_tech.scss */
+.c3xgm-about-module-technology .c3xgm-about-concept-car .c3xgm-about-block-image .c3xgm-about-wheel:nth-child(3) {
+  right: 21.6%;
+  bottom: 20%;
+}
+@media (min-width: 768px) {
+  /* line 128, ../sass/partials/_tech.scss */
+  .c3xgm-about-module-technology .c3xgm-about-concept-car .c3xgm-about-block-image .c3xgm-about-wheel {
+    width: 9%;
+  }
+  /* line 137, ../sass/partials/_tech.scss */
+  .c3xgm-about-module-technology .c3xgm-about-concept-car .c3xgm-about-block-image .c3xgm-about-wheel:first-child {
+    bottom: 20.7%;
+    left: 30.1%;
+  }
+  /* line 138, ../sass/partials/_tech.scss */
+  .c3xgm-about-module-technology .c3xgm-about-concept-car .c3xgm-about-block-image .c3xgm-about-wheel:nth-child(3) {
+    right: 28.2%;
+    bottom: 20.2%;
+  }
+}
+/* line 147, ../sass/partials/_tech.scss */
+.c3xgm-about-module-technology .c3xgm-about-safety .c3xgm-about-block-icon img {
+  width: 80%;
+}
+@media (min-width: 768px) {
+  /* line 146, ../sass/partials/_tech.scss */
+  .c3xgm-about-module-technology .c3xgm-about-safety .c3xgm-about-block-icon {
+    margin: 0;
+    width: 30%;
+  }
+}
+@media (min-width: 768px) {
+  /* line 152, ../sass/partials/_tech.scss */
+  .c3xgm-about-module-technology .c3xgm-about-safety .c3xgm-about-blockquote {
+    width: 70%;
+  }
+}
+/* line 156, ../sass/partials/_tech.scss */
+.c3xgm-about-module-technology .c3xgm-about-safety .c3xgm-about-light-blue {
+  max-width: 6em;
+}
+@media (min-width: 768px) {
+  /* line 156, ../sass/partials/_tech.scss */
+  .c3xgm-about-module-technology .c3xgm-about-safety .c3xgm-about-light-blue {
+    max-width: none;
+  }
+}
+/* line 161, ../sass/partials/_tech.scss */
+.c3xgm-about-module-technology .c3xgm-about-safety .c3xgm-about-gray.c3xgm-about-thin.c3xgm-about-small {
+  font-size: 12px;
+  font-size: 4vw;
+}
+@media (min-width: 768px) {
+  /* line 161, ../sass/partials/_tech.scss */
+  .c3xgm-about-module-technology .c3xgm-about-safety .c3xgm-about-gray.c3xgm-about-thin.c3xgm-about-small {
+    font-size: 21px;
+  }
+}
+/* line 168, ../sass/partials/_tech.scss */
+.c3xgm-about-module-technology .c3xgm-about-safety .c3xgm-about-block-image .c3xgm-about-wheel {
+  width: 11.5714286%;
+  max-width: 86px;
+  max-height: 85px;
+  position: absolute;
+  bottom: 19%;
+}
+/* line 172, ../sass/partials/_tech.scss */
+.c3xgm-about-module-technology .c3xgm-about-safety .c3xgm-about-block-image .c3xgm-about-wheel:first-child {
+  left: 24%;
+}
+/* line 173, ../sass/partials/_tech.scss */
+.c3xgm-about-module-technology .c3xgm-about-safety .c3xgm-about-block-image .c3xgm-about-wheel:nth-child(3) {
+  right: 19%;
+  bottom: 19%;
+}
+@media (min-width: 768px) {
+  /* line 168, ../sass/partials/_tech.scss */
+  .c3xgm-about-module-technology .c3xgm-about-safety .c3xgm-about-block-image .c3xgm-about-wheel {
+    width: 9%;
+  }
+  /* line 177, ../sass/partials/_tech.scss */
+  .c3xgm-about-module-technology .c3xgm-about-safety .c3xgm-about-block-image .c3xgm-about-wheel:nth-child(3) {
+    right: 26.4%;
+    bottom: 19.6%;
+  }
+  /* line 178, ../sass/partials/_tech.scss */
+  .c3xgm-about-module-technology .c3xgm-about-safety .c3xgm-about-block-image .c3xgm-about-wheel:first-child {
+    left: 30%;
+  }
+}
+/* line 187, ../sass/partials/_tech.scss */
+.c3xgm-about-module-technology .c3xgm-about-safety .c3xgm-about-dark-blue.c3xgm-about-thin,
+.c3xgm-about-module-technology .c3xgm-about-concept-car .c3xgm-about-dark-blue.c3xgm-about-thin {
+  font-size: 17px;
+  font-size: 5vw;
+}
+@media (min-width: 768px) {
+  /* line 187, ../sass/partials/_tech.scss */
+  .c3xgm-about-module-technology .c3xgm-about-safety .c3xgm-about-dark-blue.c3xgm-about-thin,
+  .c3xgm-about-module-technology .c3xgm-about-concept-car .c3xgm-about-dark-blue.c3xgm-about-thin {
+    font-size: 28px;
+  }
+}
+/* line 191, ../sass/partials/_tech.scss */
+.c3xgm-about-module-technology .c3xgm-about-safety .c3xgm-about-light-blue,
+.c3xgm-about-module-technology .c3xgm-about-concept-car .c3xgm-about-light-blue {
+  margin: .05em 0;
+  font-size: 35px;
+  font-size: 10.7vw;
+  line-height: 0.9em;
+}
+@media (min-width: 768px) {
+  /* line 191, ../sass/partials/_tech.scss */
+  .c3xgm-about-module-technology .c3xgm-about-safety .c3xgm-about-light-blue,
+  .c3xgm-about-module-technology .c3xgm-about-concept-car .c3xgm-about-light-blue {
+    font-size: 50px;
+    font-size: 6.5vw;
+  }
+}
+@media (min-width: 906px) {
+  /* line 191, ../sass/partials/_tech.scss */
+  .c3xgm-about-module-technology .c3xgm-about-safety .c3xgm-about-light-blue,
+  .c3xgm-about-module-technology .c3xgm-about-concept-car .c3xgm-about-light-blue {
+    font-size: 60px;
+  }
+}
+/* line 198, ../sass/partials/_tech.scss */
+.c3xgm-about-module-technology .c3xgm-about-safety .c3xgm-about-gray,
+.c3xgm-about-module-technology .c3xgm-about-concept-car .c3xgm-about-gray {
+  font-size: 20px;
+  font-size: 6vw;
+  line-height: 1.075em;
+}
+@media (min-width: 768px) {
+  /* line 198, ../sass/partials/_tech.scss */
+  .c3xgm-about-module-technology .c3xgm-about-safety .c3xgm-about-gray,
+  .c3xgm-about-module-technology .c3xgm-about-concept-car .c3xgm-about-gray {
+    font-size: 29px;
+  }
+}
+@media (min-width: 906px) {
+  /* line 198, ../sass/partials/_tech.scss */
+  .c3xgm-about-module-technology .c3xgm-about-safety .c3xgm-about-gray,
+  .c3xgm-about-module-technology .c3xgm-about-concept-car .c3xgm-about-gray {
+    font-size: 35px;
+  }
+}
+/* line 207, ../sass/partials/_tech.scss */
+.c3xgm-about-module-technology .c3xgm-about-module-nav {
+  text-align: center;
+}
+/* line 209, ../sass/partials/_tech.scss */
+.c3xgm-about-module-technology .c3xgm-about-module-nav li {
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+}
+/* line 210, ../sass/partials/_tech.scss */
+.c3xgm-about-module-technology .c3xgm-about-module-nav .c3xgm-about-module-nav-bullet {
+  display: block;
+  background-color: #808285;
+  width: 11px;
+  height: 11px;
+  margin: 10px;
+}
+@media (min-width: 768px) {
+  /* line 210, ../sass/partials/_tech.scss */
+  .c3xgm-about-module-technology .c3xgm-about-module-nav .c3xgm-about-module-nav-bullet {
+    width: 9px;
+    height: 9px;
+    margin: 8px;
+  }
+}
+/* line 220, ../sass/partials/_tech.scss */
+.c3xgm-about-module-technology .c3xgm-about-module-nav .c3xgm-about-module-nav-bullet-active {
+  background-color: #FDB12E;
 }

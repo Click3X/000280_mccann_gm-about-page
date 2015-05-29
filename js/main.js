@@ -249,7 +249,8 @@ jQuery(document).ready(function($) {
     	$.each(Pages, function(i, val) {
             var _t = this;
     		// if( _t.isInView() && (_t.hasViewClass == false) ){
-            if( _t.isInView() && ( $(this.$element).hasClass('invisible') ) ){
+            // if( _t.isInView() && ( $(this.$element).hasClass('invisible') ) ){
+            if( _t.isInView() ){
                 // ADD IN VIEW CLASS
     			_t.addInViewClass();
     			console.log('PAGE: ' + _t.elementName);
@@ -342,7 +343,8 @@ jQuery(document).ready(function($) {
         if(currentPage != 1) {
             $.each(blocks, function(i, val) {
                 // if( this.isAtEighth() && (this.hasViewClass == false) ){
-                if( this.isAtEighth() && ( $(this.$element).hasClass('invisible') ) ){
+                // if( this.isAtEighth() && ( $(this.$element).hasClass('invisible') ) ){
+                if( this.isAtEighth() ){
                     // ADD IN VIEW CLASS
                     this.addInViewClass();
                     console.log('Im in view: ' + this.elementName);
