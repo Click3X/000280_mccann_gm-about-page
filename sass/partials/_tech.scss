@@ -1,5 +1,14 @@
 // TECHNOLOGY MODULE
-.c3xgm-about-module-technology {
+.c3xgm-about-module-technology {	
+
+	.c3xgm-about-module-container {
+		position: relative;
+	}
+
+	.c3xgm-about-block-icon img {
+	  // width: 100%;
+	  width:60%;
+	}
 
 	.c3xgm-about-subsection {margin-bottom: 3em;}
 
@@ -37,7 +46,8 @@
 	// BLOCK-QUOTE
 	.c3xgm-about-blockquote {
 		max-width: 92%;
-		margin: 1em auto 1.5em;
+		// margin: 1em auto 1.5em;
+		margin: 0.75em auto;
 		display: inline-block;
 		text-align: left;
 		@media(min-width: $tablet-height) { display: block; margin: 0; }
@@ -117,10 +127,10 @@
 			@media(min-width: $tablet-height) { width:70%; float: right; }
 		}
 		.c3xgm-about-block-icon {
-			img { width:45%; max-width:none; }
+			img { width:25%; max-width:none; margin-right: 10%; }
 			@media(min-width: $tablet-height) { 
 				width:30%; float:right;
-				img {width:75%; max-width: none;}
+				img {width:75%; max-width: none; margin-right:auto; }
 			}
 		}
 
@@ -144,9 +154,13 @@
 	// SAFETY
 	.c3xgm-about-safety {
 		.c3xgm-about-block-icon {
-			img {width:80%; }
+			img {width:40%; }
 
-			@media(min-width: $tablet-height) { margin:0;width: 30%;  }
+			@media(min-width: $tablet-height) { 
+				margin:0;width: 30%;  
+
+				img {width: 80%; }
+			}
 		}
 
 		.c3xgm-about-blockquote { 

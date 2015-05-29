@@ -221,3 +221,378 @@
   -ms-transition: opacity 50ms;
   transition: opacity 50ms;
 }
+
+
+
+/* TECHNOLOGY OUTTAKES */
+
+/* line 4, ../sass/modules/_tech.scss */
+.c3xgm-about-module-technology .c3xgm-about-subsection {
+  margin-bottom: 3em;
+}
+/* line 6, ../sass/modules/_tech.scss */
+.c3xgm-about-module-technology .c3xgm-about-module {
+  text-align: center;
+  width: 100%;
+}
+/* line 10, ../sass/modules/_tech.scss */
+/*.c3xgm-about-module-technology .c3xgm-about-module:after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 0;
+  padding-bottom: 32%;
+}*/
+/* line 19, ../sass/modules/_tech.scss */
+.c3xgm-about-module-technology .c3xgm-about-module .c3xgm-about-blockquote-container {
+  width: 94%;
+  max-width: 46em;
+  margin: 0 auto;
+}
+/* line 27, ../sass/modules/_tech.scss */
+.c3xgm-about-module-technology .c3xgm-about-block-icon {
+  position: relative;
+  padding-bottom: 18%;
+  height: 0;
+}
+/* line 32, ../sass/modules/_tech.scss */
+.c3xgm-about-module-technology .c3xgm-about-block-icon img {
+  width: 60%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+/* line 38, ../sass/modules/_tech.scss */
+/*.c3xgm-about-module-technology .c3xgm-about-block-image {
+  width: 100%;
+  max-width: 906px;
+  margin: 0 auto;
+  position: absolute;
+  bottom: 28px;
+  z-index: -1;
+}
+@media (min-width: 768px) {
+  /* line 38, ../sass/modules/_tech.scss */
+  .c3xgm-about-module-technology .c3xgm-about-block-image {
+    margin: 0 auto;
+    position: absolute;
+    bottom: 28px;
+  }
+}*/
+/* line 51, ../sass/modules/_tech.scss */
+.c3xgm-about-module-technology .c3xgm-about-block-image .c3xgm-about-wheel {
+  display: block;
+}
+/* line 52, ../sass/modules/_tech.scss */
+.c3xgm-about-module-technology .c3xgm-about-block-image .c3xgm-about-tech-car {
+  width: 70%;
+}
+/* line 55, ../sass/modules/_tech.scss */
+.c3xgm-about-module-technology .c3xgm-about-blockquote {
+  max-width: 92%;
+  margin: 1em auto 1.5em;
+  display: inline-block;
+  text-align: left;
+}
+@media (min-width: 768px) {
+  /* line 55, ../sass/modules/_tech.scss */
+  .c3xgm-about-module-technology .c3xgm-about-blockquote {
+    display: block;
+    margin: 0;
+  }
+}
+/* line 62, ../sass/modules/_tech.scss */
+.c3xgm-about-module-technology .c3xgm-about-blockquote span {
+  display: block;
+  float: left;
+  clear: left;
+}
+@media (min-width: 768px) {
+  /* line 55, ../sass/modules/_tech.scss */
+  .c3xgm-about-module-technology .c3xgm-about-blockquote {
+    float: right;
+  }
+}
+/* line 73, ../sass/modules/_tech.scss */
+.c3xgm-about-module-technology .c3xgm-about-4g-lte .c3xgm-about-blockquote-container {
+  max-width: 39em;
+}
+@media (min-width: 768px) {
+  /* line 74, ../sass/modules/_tech.scss */
+  .c3xgm-about-module-technology .c3xgm-about-4g-lte .c3xgm-about-block-icon {
+    width: 35%;
+    float: right;
+    height: 0;
+    padding-bottom: 128px;
+  }
+}
+/* line 79, ../sass/modules/_tech.scss */
+.c3xgm-about-module-technology .c3xgm-about-4g-lte .c3xgm-about-block-icon .c3xgm-about-tech-car {
+  width: 65%;
+  max-width: 157px;
+}
+@media (min-width: 768px) {
+  /* line 79, ../sass/modules/_tech.scss */
+  .c3xgm-about-module-technology .c3xgm-about-4g-lte .c3xgm-about-block-icon .c3xgm-about-tech-car {
+    width: 80%;
+    max-width: none;
+  }
+}
+@media (min-width: 768px) {
+  /* line 85, ../sass/modules/_tech.scss */
+  .c3xgm-about-module-technology .c3xgm-about-4g-lte .c3xgm-about-block-image .c3xgm-about-tech-car {
+    width: 70%;
+  }
+}
+/* line 89, ../sass/modules/_tech.scss */
+.c3xgm-about-module-technology .c3xgm-about-4g-lte .c3xgm-about-block-image .c3xgm-about-wheel {
+  width: 9%;
+  max-width: 76px;
+  max-height: 75px;
+  position: absolute;
+  bottom: 19%;
+}
+/* line 95, ../sass/modules/_tech.scss */
+.c3xgm-about-module-technology .c3xgm-about-4g-lte .c3xgm-about-block-image .c3xgm-about-wheel:first-child {
+  left: 30%;
+}
+/* line 98, ../sass/modules/_tech.scss */
+.c3xgm-about-module-technology .c3xgm-about-4g-lte .c3xgm-about-block-image .c3xgm-about-wheel:nth-child(3) {
+  right: 26.4%;
+  bottom: 19.6%;
+}
+@media (min-width: 768px) {
+  /* line 106, ../sass/modules/_tech.scss */
+  .c3xgm-about-module-technology .c3xgm-about-4g-lte .c3xgm-about-blockquote {
+    width: 65%;
+    float: right;
+  }
+}
+/* line 110, ../sass/modules/_tech.scss */
+.c3xgm-about-module-technology .c3xgm-about-4g-lte .c3xgm-about-dark-blue.c3xgm-about-thin,
+.c3xgm-about-module-technology .c3xgm-about-4g-lte .c3xgm-about-light-blue {
+  font-size: 27px;
+  font-size: 8.5vw;
+}
+@media (min-width: 768px) {
+  /* line 110, ../sass/modules/_tech.scss */
+  .c3xgm-about-module-technology .c3xgm-about-4g-lte .c3xgm-about-dark-blue.c3xgm-about-thin,
+  .c3xgm-about-module-technology .c3xgm-about-4g-lte .c3xgm-about-light-blue {
+    font-size: 41.7931483782966px;
+  }
+}
+/* line 116, ../sass/modules/_tech.scss */
+.c3xgm-about-module-technology .c3xgm-about-4g-lte .c3xgm-about-gray {
+  font-size: 12px;
+  font-size: 3.961772vw;
+  line-height: 1.075em;
+}
+@media (min-width: 768px) {
+  /* line 116, ../sass/modules/_tech.scss */
+  .c3xgm-about-module-technology .c3xgm-about-4g-lte .c3xgm-about-gray {
+    font-size: 20px;
+  }
+}
+/* line 122, ../sass/modules/_tech.scss */
+.c3xgm-about-module-technology .c3xgm-about-4g-lte .c3xgm-about-light-blue {
+  margin: .05em 0;
+}
+/* line 128, ../sass/modules/_tech.scss */
+.c3xgm-about-module-technology .c3xgm-about-concept-car .c3xgm-about-blockquote-container {
+  max-width: 43em;
+}
+/* line 130, ../sass/modules/_tech.scss */
+.c3xgm-about-module-technology .c3xgm-about-concept-car .c3xgm-about-blockquote {
+  width: auto;
+}
+@media (min-width: 768px) {
+  /* line 130, ../sass/modules/_tech.scss */
+  .c3xgm-about-module-technology .c3xgm-about-concept-car .c3xgm-about-blockquote {
+    width: 75%;
+    float: right;
+  }
+}
+/* line 134, ../sass/modules/_tech.scss */
+.c3xgm-about-module-technology .c3xgm-about-concept-car .c3xgm-about-block-icon {
+  padding-bottom: 27%;
+}
+/* line 136, ../sass/modules/_tech.scss */
+.c3xgm-about-module-technology .c3xgm-about-concept-car .c3xgm-about-block-icon img {
+  width: 30%;
+  max-width: 113px;
+}
+@media (min-width: 768px) {
+  /* line 134, ../sass/modules/_tech.scss */
+  .c3xgm-about-module-technology .c3xgm-about-concept-car .c3xgm-about-block-icon {
+    width: 25%;
+    height: 0;
+    float: right;
+    padding-bottom: 223px;
+  }
+  /* line 140, ../sass/modules/_tech.scss */
+  .c3xgm-about-module-technology .c3xgm-about-concept-car .c3xgm-about-block-icon img {
+    width: 75%;
+    max-width: none;
+  }
+}
+/* line 145, ../sass/modules/_tech.scss */
+.c3xgm-about-module-technology .c3xgm-about-concept-car .c3xgm-about-block-image .c3xgm-about-wheel {
+  width: 9%;
+  max-width: 79px;
+  max-height: 78px;
+  position: absolute;
+  bottom: 20.5%;
+}
+/* line 153, ../sass/modules/_tech.scss */
+.c3xgm-about-module-technology .c3xgm-about-concept-car .c3xgm-about-block-image .c3xgm-about-wheel:first-child {
+  bottom: 20.7%;
+  left: 30.1%;
+}
+/* line 158, ../sass/modules/_tech.scss */
+.c3xgm-about-module-technology .c3xgm-about-concept-car .c3xgm-about-block-image .c3xgm-about-wheel:nth-child(3) {
+  right: 28.2%;
+  bottom: 20.2%;
+}
+/* line 168, ../sass/modules/_tech.scss */
+.c3xgm-about-module-technology .c3xgm-about-safety .c3xgm-about-block-icon {
+  padding-bottom: 25%;
+}
+@media (min-width: 768px) {
+  /* line 168, ../sass/modules/_tech.scss */
+  .c3xgm-about-module-technology .c3xgm-about-safety .c3xgm-about-block-icon {
+    width: 20%;
+    height: 0;
+    padding-bottom: 212px;
+  }
+}
+/* line 175, ../sass/modules/_tech.scss */
+.c3xgm-about-module-technology .c3xgm-about-safety .c3xgm-about-block-icon img {
+  width: 40%;
+}
+@media (min-width: 768px) {
+  /* line 175, ../sass/modules/_tech.scss */
+  .c3xgm-about-module-technology .c3xgm-about-safety .c3xgm-about-block-icon img {
+    width: 80%;
+  }
+}
+@media (min-width: 768px) {
+  /* line 182, ../sass/modules/_tech.scss */
+  .c3xgm-about-module-technology .c3xgm-about-safety .c3xgm-about-blockquote {
+    width: 80%;
+  }
+}
+/* line 186, ../sass/modules/_tech.scss */
+.c3xgm-about-module-technology .c3xgm-about-safety .c3xgm-about-light-blue {
+  max-width: 6em;
+}
+@media (min-width: 768px) {
+  /* line 186, ../sass/modules/_tech.scss */
+  .c3xgm-about-module-technology .c3xgm-about-safety .c3xgm-about-light-blue {
+    max-width: none;
+  }
+}
+/* line 191, ../sass/modules/_tech.scss */
+.c3xgm-about-module-technology .c3xgm-about-safety .c3xgm-about-gray.c3xgm-about-thin.c3xgm-about-small {
+  font-size: 12px;
+  font-size: 4vw;
+}
+@media (min-width: 768px) {
+  /* line 191, ../sass/modules/_tech.scss */
+  .c3xgm-about-module-technology .c3xgm-about-safety .c3xgm-about-gray.c3xgm-about-thin.c3xgm-about-small {
+    font-size: 21px;
+  }
+}
+/* line 198, ../sass/modules/_tech.scss */
+.c3xgm-about-module-technology .c3xgm-about-safety .c3xgm-about-block-image .c3xgm-about-wheel {
+  width: 9%;
+  max-width: 76px;
+  max-height: 75px;
+  position: absolute;
+  bottom: 19%;
+}
+/* line 204, ../sass/modules/_tech.scss */
+.c3xgm-about-module-technology .c3xgm-about-safety .c3xgm-about-block-image .c3xgm-about-wheel:first-child {
+  left: 30%;
+}
+/* line 207, ../sass/modules/_tech.scss */
+.c3xgm-about-module-technology .c3xgm-about-safety .c3xgm-about-block-image .c3xgm-about-wheel:nth-child(3) {
+  right: 26.4%;
+  bottom: 19.6%;
+}
+/* line 219, ../sass/modules/_tech.scss */
+.c3xgm-about-module-technology .c3xgm-about-safety .c3xgm-about-dark-blue.c3xgm-about-thin,
+.c3xgm-about-module-technology .c3xgm-about-concept-car .c3xgm-about-dark-blue.c3xgm-about-thin {
+  font-size: 17px;
+  font-size: 5vw;
+}
+@media (min-width: 768px) {
+  /* line 219, ../sass/modules/_tech.scss */
+  .c3xgm-about-module-technology .c3xgm-about-safety .c3xgm-about-dark-blue.c3xgm-about-thin,
+  .c3xgm-about-module-technology .c3xgm-about-concept-car .c3xgm-about-dark-blue.c3xgm-about-thin {
+    font-size: 28px;
+  }
+}
+/* line 223, ../sass/modules/_tech.scss */
+.c3xgm-about-module-technology .c3xgm-about-safety .c3xgm-about-light-blue,
+.c3xgm-about-module-technology .c3xgm-about-concept-car .c3xgm-about-light-blue {
+  margin: .05em 0;
+  font-size: 35px;
+  font-size: 10.7vw;
+  line-height: 0.9em;
+}
+@media (min-width: 768px) {
+  /* line 223, ../sass/modules/_tech.scss */
+  .c3xgm-about-module-technology .c3xgm-about-safety .c3xgm-about-light-blue,
+  .c3xgm-about-module-technology .c3xgm-about-concept-car .c3xgm-about-light-blue {
+    font-size: 60px;
+  }
+}
+/* line 229, ../sass/modules/_tech.scss */
+.c3xgm-about-module-technology .c3xgm-about-safety .c3xgm-about-gray,
+.c3xgm-about-module-technology .c3xgm-about-concept-car .c3xgm-about-gray {
+  font-size: 20px;
+  font-size: 6vw;
+  line-height: 1.075em;
+}
+@media (min-width: 768px) {
+  /* line 229, ../sass/modules/_tech.scss */
+  .c3xgm-about-module-technology .c3xgm-about-safety .c3xgm-about-gray,
+  .c3xgm-about-module-technology .c3xgm-about-concept-car .c3xgm-about-gray {
+    font-size: 35px;
+  }
+}
+/* line 238, ../sass/modules/_tech.scss */
+.c3xgm-about-module-technology .c3xgm-about-module-nav {
+  text-align: center;
+}
+/* line 240, ../sass/modules/_tech.scss */
+.c3xgm-about-module-technology .c3xgm-about-module-nav li {
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+}
+/* line 241, ../sass/modules/_tech.scss */
+.c3xgm-about-module-technology .c3xgm-about-module-nav .c3xgm-about-module-nav-bullet {
+  display: block;
+  background-color: #808285;
+  width: 11px;
+  height: 11px;
+  margin: 10px;
+}
+@media (min-width: 768px) {
+  /* line 241, ../sass/modules/_tech.scss */
+  .c3xgm-about-module-technology .c3xgm-about-module-nav .c3xgm-about-module-nav-bullet {
+    width: 9px;
+    height: 9px;
+    margin: 8px;
+  }
+}
+/* line 252, ../sass/modules/_tech.scss */
+.c3xgm-about-module-technology .c3xgm-about-module-nav .c3xgm-about-module-nav-bullet-active {
+  background-color: #FDB12E;
+}

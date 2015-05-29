@@ -315,7 +315,7 @@ jQuery(document).ready(function($) {
                     setTimeout(function() {
                         $('#c3xgm-about-technology-4g-lte').removeClass('hide-module hide-module-slide-out').addClass('show-module-slide-in');      
 
-                        autorotateTechSlider();
+                        // autorotateTechSlider();
                     }, 3000);
                 } /*else {
                     killAutoRotateTechSlider();
