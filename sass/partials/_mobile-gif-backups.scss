@@ -105,4 +105,15 @@
 
 	.c3xgm-about-mobile-device  .c3xgm-about-main-nav-sub { display: none; }
 
+	.c3xgm-about-page-our-commitment .c3xgm-about-climate-declaration .c3xgm-about-block-image > div {
+	    margin-left:auto;
+	    // img {
+	    // 	width: 10%;
+	    // }
+	}
+
 }
+
+.c3xgm-about-climate-declaration.element-in-view .c3xgm-about-block-image img[src$='svg'] {
+	width: 50%; margin-left:auto; margin-right:auto;
+	}
