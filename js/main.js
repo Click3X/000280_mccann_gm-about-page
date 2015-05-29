@@ -335,6 +335,8 @@ jQuery(document).ready(function($) {
     	}); 
     }
 
+    var triggerCTD = false;
+
     // CHECK FOR BLOCKS
     function checkBlocks(currentPage) {
         // cd(currentPage);
@@ -358,8 +360,13 @@ jQuery(document).ready(function($) {
                     } else if( this.elementName == "c3xgm-about-crash-test-dummies") {
                         setTimeout(function() {
                             // console.log('We have test dummites!');
-                            $('#c3xgm-about-crash-test-dummies').removeClass('invisible');
-                            triggerGif( document.getElementById('c3xgm-about-crash-test-dummies') );
+                            if(triggerCTD == false) {
+                                $('#c3xgm-about-crash-test-dummies').removeClass('invisible');
+                                triggerGif( document.getElementById('c3xgm-about-crash-test-dummies') );
+                                
+                                triggerCTD = true;    
+                            }
+                            
                         }, 800);
                     }
                 }
