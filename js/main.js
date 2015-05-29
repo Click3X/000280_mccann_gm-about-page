@@ -249,8 +249,7 @@ jQuery(document).ready(function($) {
     	$.each(Pages, function(i, val) {
             var _t = this;
     		// if( _t.isInView() && (_t.hasViewClass == false) ){
-            // if( _t.isInView() && ( $(this.$element).hasClass('invisible') ) ){
-            if( _t.isInView() ){
+            if( _t.isInView() && ( $(this.$element).hasClass('invisible') ) ){
                 // ADD IN VIEW CLASS
     			_t.addInViewClass();
     			console.log('PAGE: ' + _t.elementName);
@@ -301,7 +300,7 @@ jQuery(document).ready(function($) {
                 if(currentPage == 2) {
                     // SHOW FIRST SLIDE
                     setTimeout(function() {
-                        $('#c3xgm-about-car-chevrolet').removeClass('hide-module hide-module-slide-out').addClass('show-module-slide-in');
+                        // $('#c3xgm-about-car-chevrolet').removeClass('hide-module hide-module-slide-out').addClass('show-module-slide-in');
 
                         autorotateAboutSlider();
                     }, 3000);
@@ -313,10 +312,12 @@ jQuery(document).ready(function($) {
                 if( _t.elementName == "c3xgm-about-page-technology" ) {
                     // SHOW FIRST SLIDE
                     setTimeout(function() {
-                        $('#c3xgm-about-technology-4g-lte').removeClass('hide-module hide-module-slide-out').addClass('show-module-slide-in');      
-
-                        // autorotateTechSlider();
-                    }, 3000);
+                        // $('#c3xgm-about-technology-4g-lte').removeClass('hide-module hide-module-slide-out').addClass('show-module-slide-in');      
+                        autorotateTechSliderOnce();
+                        setTimeout(function() {
+                            autorotateTechSlider();
+                        }, 6000);
+                    }, 2000);
                 } /*else {
                     killAutoRotateTechSlider();
                 }*/
@@ -324,7 +325,7 @@ jQuery(document).ready(function($) {
                 if( _t.elementName == "c3xgm-about-page-our-global-community" ) {
                     // SHOW FIRST SLIDE
                     setTimeout(function() {
-                        $('#c3xgm-about-foundation-gm-foundation').removeClass('hide-module hide-module-slide-out').addClass('show-module-slide-in');
+                        // $('#c3xgm-about-foundation-gm-foundation').removeClass('hide-module hide-module-slide-out').addClass('show-module-slide-in');
 
                         autorotateFoundationSlider();
                     }, 3000);

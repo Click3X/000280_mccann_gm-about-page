@@ -119,6 +119,45 @@ jQuery(document).ready(function($) {
 		}
 	});
 
+	// TECH ---------------------------------------------------------------------------------------------------------
+	// // MOVE ALL SLIDES TO RIGHT 100%;
+	// techSlides.addClass('hide-module');
+	// // MAKE GM TECH DEFALUT 
+	// $('#c3xgm-about-page-technology-4g-lte').removeClass('hide-module').addClass('show-module-slide-in');
+		
+	// // TECH
+	// techLinks.on('click touchstart', function(e, auto_rotate) {
+	// 	e.preventDefault();
+
+	// 	console.log("TECH LINK CLICKED", $(this).parent().index() );
+
+	// 	// GET LINKS
+	// 	var target = $(this).attr('href');
+	// 	//  ADD ACRIVE CLASS
+	// 	$('#c3xgm-about-page-technology .c3xgm-about-module-nav li a.c3xgm-about-module-nav-bullet-active').removeClass('c3xgm-about-module-nav-bullet-active');
+	// 	$(this).addClass('c3xgm-about-module-nav-bullet-active');
+
+	// 	// GET CUR SLIDE
+	// 	var curSlide = $('.c3xgm-about-module-technology .show-module-slide-in');
+
+	// 	// MODULE SLIDE-OUT
+	// 	curSlide.removeClass('show-module-slide-in').addClass('hide-module-slide-out');
+	// 	setTimeout(function() {
+	// 			$(curSlide).addClass('hide-module');
+	// 			$(curSlide).removeClass('hide-module-slide-out');
+	// 		}, 700);
+	// 	// MODULE SLIDE-IN
+	// 	setTimeout(function() {
+	// 		$(target).removeClass('hide-module hide-module-slide-out').addClass('show-module-slide-in');
+	// 	}, 700);
+
+	// 	if(!auto_rotate){
+	// 		killAutoRotateTechSlider();
+
+	// 		currentTechSlide = $(this).parent().index();
+	// 	}
+	// });
+
 
 
 	// TECH ---------------------------------------------------------------------------------------------------------
@@ -212,20 +251,6 @@ function autorotateTechSlider(){
         }, 5000);
     }
 }
-
-function autorotateTechSliderOnce(){
-	console.log("autorotateTechSlider Once");
-	 $( techLinks[currentTechSlide] ).eq(0).trigger("click", true);
-
-    // if(!techSlideInterval){
-    //     techSlideInterval = setInterval(function(){
-    //         currentTechSlide++; if(currentTechSlide > techLinks.length-1) currentTechSlide = 0;
-
-    //         $( techLinks[currentTechSlide] ).eq(0).trigger("click", true);
-    //     }, 5000);
-    // }
-}
-
 function killAutoRotateTechSlider(){
 	console.log("killAutoRotateTechSlider");
 
