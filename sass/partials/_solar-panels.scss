@@ -55,7 +55,8 @@
 			
 			@include prefix(background-size, cover);
 			height: 0;
-			display: block; z-index: 200;
+			display: block;
+			 // z-index: 200;
 			width: 13.142857%; padding-bottom: 13.142857%;
 			position: absolute;
 			bottom: 23%;
@@ -69,7 +70,10 @@
 
 		.c3xgm-about-front-wheel {
 			right: 10.285714%;
-          	@media(min-width: $tablet-height) { right: 10.1%; }
+          	@media(min-width: $tablet-height) { 
+          		// right: 10.1%; 
+          			right: 10%; 
+          	}
 		}
 
 		.c3xgm-about-back-wheel {

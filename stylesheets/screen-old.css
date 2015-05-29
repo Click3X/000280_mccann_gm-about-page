@@ -4398,7 +4398,8 @@ div#c3xgm-about-grey-van:before {
 }
 /* line 37, ../sass/decoratives/_solar-panels.scss */
 .c3xgm-about-decorative.c3xgm-about-solar-panels .c3xgm-about-grey-side .c3xgm-about-wheel {
-  background-image: url("../img/decorative/cars/wheel.png");
+  /*background-image: url("../img/decorative/cars/wheel.png");*/
+  background-image: url("../img/decorative/cars/wheel.gif");
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -13108,7 +13109,7 @@ body {
 
 /* line 10, ../sass/animations/_grey-car-wheels.scss */
 .grey-car {
-  background-image: url("../img/decorative/cars/grey-side.png");
+  background-image: url("../img/decorative/cars/grey-car-no-tires.png");
   background-size: 100%;
   background-position: 50% 50%;
   background-repeat: no-repeat;
@@ -13149,7 +13150,8 @@ body {
 }
 /* line 33, ../sass/animations/_grey-car-wheels.scss */
 .grey-car .wheel {
-  background-image: url("../img/decorative/cars/wheel.png");
+  /*background-image: url("../img/decorative/cars/wheel.png");*/
+  background-image: url("../img/decorative/cars/wheel.gif");
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
