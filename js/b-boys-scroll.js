@@ -61,12 +61,12 @@ if(mobile) {
     {
       name: 'c3xgm-about-grey-top',
       start: {
-        percent: getElemOffest('#c3xgm-about-grey-top') * 1.1, 
+        percent: getElemOffest('#c3xgm-about-grey-van') * 1.1, 
         x:0.1, 
         y:0
       },
       end: {
-        percent: getElemOffest('#c3xgm-about-grey-top') * 1.1 + 0.29,
+        percent: getElemOffest('#c3xgm-about-grey-van') * 1.1 + 0.29,
         x: 1.1, 
         y:0
       }

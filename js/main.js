@@ -529,22 +529,22 @@ jQuery(document).ready(function($) {
             // UPDATE NAV
             updateNav();
             // GREY VAN
-            if( GreyVan.isInView() ) {
-                GreyVan.moveRight();
-            }
-            // RED CAR
-            if( RedCar.isInView() ) {
-                RedCar.moveLeft();
-            }
-            // FLAG LINE
-            if( FlagLine.isInView() ) {
-                FlagLine.moveLeft();
-                GreyFlagCar.moveRight();
-            }   
-            // GREY SIDE
-            if( GreySide.isInView() ) {
-                GreySide.moveRight();
-            }
+            // if( GreyVan.isInView() ) {
+            //     GreyVan.moveRight();
+            // }
+            // // RED CAR
+            // if( RedCar.isInView() ) {
+            //     RedCar.moveLeft();
+            // }
+            // // FLAG LINE
+            // if( FlagLine.isInView() ) {
+            //     FlagLine.moveLeft();
+            //     GreyFlagCar.moveRight();
+            // }   
+            // // GREY SIDE
+            // if( GreySide.isInView() ) {
+            //     GreySide.moveRight();
+            // }
         }
     }
 
@@ -569,8 +569,12 @@ jQuery(document).ready(function($) {
 
     // HIDE ALL ANIMATABLE ELEMENTS AND PAGES ---------------------------------------------------
     $.each(Pages, function(i, val) {
-        // HIDE PAGES
-        this.$element.removeClass("c3xgm-about-page-in-view").addClass("invisible");
+        // HIDE PAGES]
+        // ADD CONDITRIONAL TO SKIP  FIRST PAGE, OUR COMPANY
+        if(i != 0) {
+            this.$element.removeClass("c3xgm-about-page-in-view").addClass("invisible");    
+        }
+        
         // LOOP PAGE BLOCKS IF PAGE HAS THEM
         if(val.aboutBlocks.length > 0) {
             // HIDE PAGE BLOCKS
