@@ -7,7 +7,7 @@ if(mobile) {
 
 
   var _containerHeight = 4000;
-  var _width  = window.innerWidth;
+  var _width = window.innerWidth;
 
   var _height, _scrollHeight;
   var _movingElements = [];
@@ -22,12 +22,12 @@ if(mobile) {
       name: 'c3xgm-about-red-car', 
       start: {
         // percent: 0.7, 
-        percent: getElemOffest('#c3xgm-about-red-car') * 0.88, 
-        x: 1.2, 
+        percent: getElemOffest('#c3xgm-about-red-car') - 0.4, 
+        x: 1, 
         y:0
       },
       end: {
-        percent: getElemOffest('#c3xgm-about-red-car') + 0.3, 
+        percent: getElemOffest('#c3xgm-about-red-car') + 0.4, 
         x: -0.5, 
         y:0
       }
@@ -45,19 +45,19 @@ if(mobile) {
         y:0
       }
     },
-    {
-      name: 'animate-flag-line-js',
-      start: {
-        percent: getElemOffest('#animate-flag-line'), 
-        x: -0.5, 
-        y:0
-      },
-      end: {
-        percent: getElemOffest('#animate-flag-line') + 0.6,
-        x: -1.2, 
-        y:0
-      }
-    },
+    // {
+    //   name: 'animate-flag-line-js',
+    //   start: {
+    //     percent: getElemOffest('#animate-flag-line'), 
+    //     x: -0.5, 
+    //     y:0
+    //   },
+    //   end: {
+    //     percent: getElemOffest('#animate-flag-line') + 0.6,
+    //     x: -1.2, 
+    //     y:0
+    //   }
+    // },
     {
       name: 'c3xgm-about-grey-top',
       start: {
@@ -128,6 +128,7 @@ if(mobile) {
   function updateElements() {
     for (var i = 0; i < _movingElements.length; i++) {
       var p = _positions[i];
+      console.log('This is _scrollPercent')
       if(_scrollPercent <= p.start.percent) {
         p.target.x = p.start.x*_width;
         p.target.y = p.start.y*_containerHeight;

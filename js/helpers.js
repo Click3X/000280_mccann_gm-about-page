@@ -45,9 +45,12 @@ if(mobile) {
     });
 
      // MAKE FLAGS ANIMATE
-    $('#animate-flag-line').addClass('animate-flag-line');
+    // $('#animate-flag-line').addClass('animate-flag-line');
 }
 
+
+ // MAKE FLAGS ANIMATE
+$('#animate-flag-line').addClass('animate-flag-line');
 
 // FORMAT NUMBER
 function formatNumber (num) {
