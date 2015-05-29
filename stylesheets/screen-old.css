@@ -4397,7 +4397,8 @@ div#c3xgm-about-grey-van:before {
   z-index: 10;
 }
 /* line 37, ../sass/decoratives/_solar-panels.scss */
-.c3xgm-about-decorative.c3xgm-about-solar-panels .c3xgm-about-grey-side .c3xgm-about-wheel {
+/*.c3xgm-about-decorative.c3xgm-about-solar-panels .c3xgm-about-grey-side .c3xgm-about-wheel {*/
+  .c3xgm-about-decorative.c3xgm-about-solar-panels .c3xgm-about-grey-side .c3xgm-about-wheel {
   /*background-image: url("../img/decorative/cars/wheel.png");*/
   background-image: url("../img/decorative/cars/wheel.gif");
   -webkit-background-size: cover;
