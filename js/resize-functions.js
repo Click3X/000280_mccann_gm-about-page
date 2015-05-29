@@ -32,15 +32,15 @@ jQuery(document).ready(function($) {
         $(this).parent().height('auto');
         
         var quotesMaxHeight = Math.max.apply(null, techQuotes.map(function () {
-            console.log('This is ID: ' + $(this).parent().attr('id'));
-            console.log('This is quotesMaxHeigh: ' + $(this).height());
+            // console.log('This is ID: ' + $(this).parent().attr('id'));
+            // console.log('This is quotesMaxHeigh: ' + $(this).height());
             return $(this).height();
         }).get());        
         $(techQuotes).height(quotesMaxHeight);
 
         var picsMaxHeight = Math.max.apply(null, techPics.map(function () {
-            console.log('This is ID: ' + $(this).parent().attr('id'));
-            console.log('This is picMaxHeigh: ' + $(this).height());
+            // console.log('This is ID: ' + $(this).parent().attr('id'));
+            // console.log('This is picMaxHeigh: ' + $(this).height());
             return $(this).height();
         }).get());        
         $(techPics).height(picsMaxHeight);
@@ -113,7 +113,7 @@ jQuery(document).ready(function($) {
 
 
     setTimeout(function() {
-        console.log('Fron ST: resize!');
+        // console.log('Fron ST: resize!');
         resizeTechModules(techQuotes, techPics);
     }, 100);
     

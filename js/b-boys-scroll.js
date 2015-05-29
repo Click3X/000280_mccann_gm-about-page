@@ -22,26 +22,26 @@ if(mobile) {
       name: 'c3xgm-about-red-car', 
       start: {
         // percent: 0.7, 
-        percent: getElemOffest('#c3xgm-about-red-car') - 0.4, 
+        percent: getElemOffest('#c3xgm-about-red-car') - 0.3, 
         x: 1, 
         y:0
       },
       end: {
-        percent: getElemOffest('#c3xgm-about-red-car') + 0.4, 
-        x: -0.5, 
+        percent: getElemOffest('#c3xgm-about-red-car') + 0.3, 
+        x: -1, 
         y:0
       }
     },
     {
       name: 'c3xgm-about-flag-line-grey-car',
       start: {
-        percent: getElemOffest('#c3xgm-about-flag-line-grey-car'), 
-        x: 0.1, 
+        percent: getElemOffest('#c3xgm-about-flag-line-grey-car') - 0.05, 
+        x: -0.1, 
         y:0
       },
       end: {
         percent: getElemOffest('#c3xgm-about-flag-line-grey-car') + 0.4, 
-        x: 0.9, 
+        x: 1.1, 
         y:0
       }
     },
@@ -61,13 +61,13 @@ if(mobile) {
     {
       name: 'c3xgm-about-grey-top',
       start: {
-        percent: getElemOffest('#c3xgm-about-grey-van') * 1.1, 
-        x:0.1, 
+        percent: getElemOffest('#c3xgm-about-grey-van') + 0.2,
+        x:0, 
         y:0
       },
       end: {
-        percent: getElemOffest('#c3xgm-about-grey-van') * 1.1 + 0.29,
-        x: 1.1, 
+        percent: getElemOffest('#c3xgm-about-grey-van') + 0.7,
+        x: 1.25, 
         y:0
       }
     },
@@ -80,7 +80,7 @@ if(mobile) {
       },
       end: {
         percent: getElemOffest('#c3xgm-about-solar-grey-car') * 1.17 + 0.3,
-        x:0.75, 
+        x:1, 
         y:0
       }
     }
