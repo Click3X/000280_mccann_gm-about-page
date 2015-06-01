@@ -3,6 +3,12 @@
 // IMAGE CLASS ADDED TO IMG TAGS (which are currently commented out)
 .c3xgm-about-icon-image { }
 
+// CORNER PATH FOR ICON
+// #c3xgm-about-page-our-company > div.c3xgm-about-section.c3xgm-about-clearfix.our-company > div > div > div.c3xgm-about-icon-holder.c3xgm-about-clearfix > svg > g.corner_path > path {
+//   fill:red;
+//   z-index: 100;
+// }
+
 // ON MOBILE - ICONS SHOULD BE SMALLER
 .c3xgm-about-icon-holder  {
   svg {
@@ -11,10 +17,19 @@
     padding:1px;
     // height: 100%; 
     // max-height: 100px;
-    display: block; margin: 0.5em auto 1em;
+    display: block; 
+    margin: 0.5em auto 1em;
 
-    @media(min-width: $tablet-height) { width: auto; }
+    @media(min-width: $tablet-height) { 
+      width: auto; 
+      margin: 0;
+    }
   }
+}
+
+// WRAP TO DEAL WITH WEIRD SVG OVERFLOW
+.c3xgm-about-icon-holder-wrap {
+  @media(min-width: $tablet-height) { float: left; }
 }
 
 // WENS ANIMATED ICONS CODE GOES HERE....

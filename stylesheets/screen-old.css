@@ -315,8 +315,8 @@ html, body {
   /* line 54, ../sass/components/_layout.scss */
   .c3xgm-about-section hr {
     float: left;
-    width: 86.25%;
-    height: 2px;
+    width: 86.25%; height: 2px;
+    margin-top:1em;
   }
 }
 
@@ -705,7 +705,8 @@ h1.c3xgm-about-h {
   h1.c3xgm-about-h {
     text-align: left;
     font-size: 73px;
-    line-height: 1.56164em;
+    /*line-height: 1.56164em;*/
+    line-height: 100px;
     margin-left: 0.2em;
   }
 }
