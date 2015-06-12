@@ -13,6 +13,20 @@
 		margin-top: 1em;
 	}
 
+	p {
+		margin: 2em 0 1em 8px;
+		color: #7E8184;
+		text-transform: uppercase;
+		font-weight: 600;
+		font-family: "open-sans-condensed", sans-serif;
+		font-size: 18px;
+		line-height: 1.15em;
+		letter-spacing: .025em;
+		@media(min-width: $tablet-height) {
+			font-size: 24px;
+		}
+	}
+
 	.c3xgm-about-end-nav-links {
 		li {
 			display: block;
@@ -21,7 +35,8 @@
 			width: 100%;	
 
 			.c3xgm-about-section-icon {
-  				width: 50%;
+  				width: 56%;
+  				max-width: none; max-height: none;
   			}
 
 			@media(min-width:480px) {
