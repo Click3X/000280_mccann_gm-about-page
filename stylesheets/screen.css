@@ -4153,17 +4153,23 @@ Stylesheet: Helpers
   margin-top: 2em;
 }
 /* line 5, ../sass/partials/_end-nav.scss */
+.c3xgm-about-end-nav > div.c3xgm-about-section {
+  width: 86.25%;
+  float: left;
+}
+/* line 10, ../sass/partials/_end-nav.scss */
 .c3xgm-about-end-nav hr, .c3xgm-about-end-nav ul {
   clear: both;
-  float: left;
-  width: 86.25%;
+  width: auto;
 }
-/* line 11, ../sass/partials/_end-nav.scss */
+/* line 15, ../sass/partials/_end-nav.scss */
 .c3xgm-about-end-nav hr {
+  float: left;
+  width: 100%;
   height: 2px;
   margin-top: 1em;
 }
-/* line 16, ../sass/partials/_end-nav.scss */
+/* line 22, ../sass/partials/_end-nav.scss */
 .c3xgm-about-end-nav p {
   margin: 2em 0 1em 8px;
   color: #7E8184;
@@ -4175,41 +4181,45 @@ Stylesheet: Helpers
   letter-spacing: .025em;
 }
 @media (min-width: 768px) {
-  /* line 16, ../sass/partials/_end-nav.scss */
+  /* line 22, ../sass/partials/_end-nav.scss */
   .c3xgm-about-end-nav p {
     font-size: 24px;
   }
 }
-/* line 31, ../sass/partials/_end-nav.scss */
+/* line 36, ../sass/partials/_end-nav.scss */
+.c3xgm-about-end-nav .c3xgm-about-end-nav-links {
+  margin: 0 auto;
+}
+/* line 38, ../sass/partials/_end-nav.scss */
 .c3xgm-about-end-nav .c3xgm-about-end-nav-links li {
   display: block;
   float: left;
   text-align: center;
   width: 100%;
 }
-/* line 37, ../sass/partials/_end-nav.scss */
+/* line 44, ../sass/partials/_end-nav.scss */
 .c3xgm-about-end-nav .c3xgm-about-end-nav-links li .c3xgm-about-section-icon {
   width: 56%;
-  max-width: none;
   max-height: none;
+  max-width: 103px;
 }
 @media (min-width: 480px) {
-  /* line 31, ../sass/partials/_end-nav.scss */
+  /* line 38, ../sass/partials/_end-nav.scss */
   .c3xgm-about-end-nav .c3xgm-about-end-nav-links li {
     width: 50%;
   }
 }
 @media (min-width: 768px) {
-  /* line 31, ../sass/partials/_end-nav.scss */
+  /* line 38, ../sass/partials/_end-nav.scss */
   .c3xgm-about-end-nav .c3xgm-about-end-nav-links li {
     width: 25%;
   }
 }
-/* line 51, ../sass/partials/_end-nav.scss */
+/* line 60, ../sass/partials/_end-nav.scss */
 .c3xgm-about-end-nav .c3xgm-about-end-nav-links li h3 {
   font-size: 1.2em;
 }
-/* line 53, ../sass/partials/_end-nav.scss */
+/* line 62, ../sass/partials/_end-nav.scss */
 .c3xgm-about-end-nav .c3xgm-about-end-nav-links li a {
   text-decoration: none;
   color: inherit;
@@ -4222,24 +4232,24 @@ Stylesheet: Helpers
   transition: color 150ms;
 }
 @media (min-width: 768px) {
-  /* line 53, ../sass/partials/_end-nav.scss */
+  /* line 62, ../sass/partials/_end-nav.scss */
   .c3xgm-about-end-nav .c3xgm-about-end-nav-links li a {
     margin: 1.5em auto;
   }
 }
-/* line 63, ../sass/partials/_end-nav.scss */
+/* line 72, ../sass/partials/_end-nav.scss */
 .c3xgm-about-end-nav .c3xgm-about-end-nav-links li a:hover {
   color: #124e9c;
 }
-/* line 65, ../sass/partials/_end-nav.scss */
+/* line 74, ../sass/partials/_end-nav.scss */
 .c3xgm-about-end-nav .c3xgm-about-end-nav-links li a:hover h3 {
   color: #124e9c;
 }
-/* line 68, ../sass/partials/_end-nav.scss */
+/* line 77, ../sass/partials/_end-nav.scss */
 .c3xgm-about-end-nav .c3xgm-about-end-nav-links li a span {
   font-weight: 100;
 }
-/* line 73, ../sass/partials/_end-nav.scss */
+/* line 82, ../sass/partials/_end-nav.scss */
 .c3xgm-about-end-nav .c3xgm-about-end-nav-links li img, .c3xgm-about-end-nav .c3xgm-about-end-nav-links li svg {
   margin: 1em auto;
 }

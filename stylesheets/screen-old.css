@@ -494,6 +494,11 @@ svg {
   max-width: 906px;
   margin: 0 auto 3.5em;
 }
+
+.c3xgm-about-module-foundation {
+  margin-bottom: 0;
+}
+
 @media (min-width: 768px) {
   /* line 152, ../sass/components/_layout.scss */
   .c3xgm-about-module-technology,
@@ -4736,7 +4741,8 @@ div#c3xgm-about-grey-van:before {
 /* line 43, ../sass/modules/_foundation.scss */
 .c3xgm-about-module-foundation .c3xgm-about-module p.c3xgm-about-p {
   max-width: 24em;
-  margin-bottom: 3em;
+  /*margin-bottom: 3em;*/
+  margin-bottom: 1em;
 }
 @media (min-width: 768px) {
   /* line 43, ../sass/modules/_foundation.scss */
