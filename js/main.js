@@ -308,14 +308,14 @@ jQuery(document).ready(function($) {
 
                 // TRIGGER TECH MODULE
                 if( _t.elementName == "c3xgm-about-page-technology" ) {
-                    // // SHOW FIRST SLIDE
-                    // setTimeout(function() {
-                    //     autorotateTechSliderOnce();
-                    // }, 1500);
-                    // // START AUTO SLIDER
-                    // setTimeout(function() {
-                    //     autorotateTechSlider();
-                    // }, 1000);
+                    // SHOW FIRST SLIDE
+                    setTimeout(function() {
+                        autorotateTechSliderOnce();
+                    }, 1500);
+                    // START AUTO SLIDER
+                    setTimeout(function() {
+                        autorotateTechSlider();
+                    }, 1000);
                 } 
                 
                 if( _t.elementName == "c3xgm-about-page-our-global-community" ) {
