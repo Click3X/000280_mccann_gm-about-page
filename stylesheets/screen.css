@@ -3855,37 +3855,102 @@ Stylesheet: Helpers
 .c3xgm-about-module-technology .c3xgm-about-module-nav {
   text-align: center;
   background: white;
+  width: 93px;
+  margin: 0 auto;
 }
-/* line 235, ../sass/partials/_tech.scss */
+@media (min-width: 768px) {
+  /* line 233, ../sass/partials/_tech.scss */
+  .c3xgm-about-module-technology .c3xgm-about-module-nav {
+    width: 75px;
+  }
+}
+/* line 241, ../sass/partials/_tech.scss */
 .c3xgm-about-module-technology .c3xgm-about-module-nav li {
-  display: inline-block;
+  position: relative;
+  display: block;
+  float: left;
   margin: 0;
   padding: 0;
 }
-/* line 236, ../sass/partials/_tech.scss */
-.c3xgm-about-module-technology .c3xgm-about-module-nav .c3xgm-about-module-nav-bullet {
+/* line 247, ../sass/partials/_tech.scss */
+.c3xgm-about-module-technology .c3xgm-about-module-nav .c3xgm-about-nav-bullet {
+  padding: 10px;
+  display: block;
+  cursor: pointer;
+}
+/* line 252, ../sass/partials/_tech.scss */
+.c3xgm-about-module-technology .c3xgm-about-module-nav .c3xgm-about-nav-bullet .c3xgm-about-inner-bullet {
   display: block;
   background-color: #808285;
   width: 11px;
   height: 11px;
-  margin: 10px;
 }
 @media (min-width: 768px) {
-  /* line 236, ../sass/partials/_tech.scss */
-  .c3xgm-about-module-technology .c3xgm-about-module-nav .c3xgm-about-module-nav-bullet {
+  /* line 247, ../sass/partials/_tech.scss */
+  .c3xgm-about-module-technology .c3xgm-about-module-nav .c3xgm-about-nav-bullet {
+    padding: 8px;
+  }
+  /* line 259, ../sass/partials/_tech.scss */
+  .c3xgm-about-module-technology .c3xgm-about-module-nav .c3xgm-about-nav-bullet .c3xgm-about-inner-bullet {
     width: 9px;
     height: 9px;
-    margin: 8px;
   }
 }
-/* line 246, ../sass/partials/_tech.scss */
-.c3xgm-about-module-technology .c3xgm-about-module-nav .c3xgm-about-module-nav-bullet-active {
+/* line 263, ../sass/partials/_tech.scss */
+.c3xgm-about-module-technology .c3xgm-about-module-nav .c3xgm-about-module-nav-bullet-active .c3xgm-about-inner-bullet {
   background-color: #FDB12E;
 }
 
-/* line 253, ../sass/partials/_tech.scss */
+/* line 269, ../sass/partials/_tech.scss */
 #c3xgm-about-technology-4g-lte .c3xgm-about-module-technology .c3xgm-about-blockquote {
   margin-top: 4em;
+}
+
+/* line 275, ../sass/partials/_tech.scss */
+.c3xgm-about-technology-right,
+.c3xgm-about-technology-left {
+  display: none;
+  width: 0;
+  height: 0;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  border-style: solid;
+  -webkit-transition: border-color 150ms;
+  -moz-transition: border-color 150ms;
+  -o-transition: border-color 150ms;
+  -ms-transition: border-color 150ms;
+  transition: border-color 150ms;
+}
+@media (min-width: 481px) {
+  /* line 275, ../sass/partials/_tech.scss */
+  .c3xgm-about-technology-right,
+  .c3xgm-about-technology-left {
+    display: block;
+  }
+}
+
+/* line 291, ../sass/partials/_tech.scss */
+.c3xgm-about-technology-right {
+  right: 1.8em;
+  border-width: 7.5px 0 7.5px 11px;
+  border-color: transparent transparent transparent #808285;
+}
+/* line 296, ../sass/partials/_tech.scss */
+.c3xgm-about-technology-right:hover {
+  border-color: transparent transparent transparent #FDB12E;
+}
+
+/* line 301, ../sass/partials/_tech.scss */
+.c3xgm-about-technology-left {
+  left: 1.8em;
+  border-width: 7.5px 11px 7.5px 0;
+  border-color: transparent #808285 transparent transparent;
+}
+/* line 305, ../sass/partials/_tech.scss */
+.c3xgm-about-technology-left:hover {
+  border-color: transparent #FDB12E transparent transparent;
 }
 
 /* line 2, ../sass/partials/_tech-animations.scss */

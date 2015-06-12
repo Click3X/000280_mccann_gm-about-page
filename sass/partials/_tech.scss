@@ -232,24 +232,77 @@
 	// NAV FOR TECHNOLOGY MODULE
 	.c3xgm-about-module-nav {
 		text-align: center; background: white;
-		li {display: inline-block; margin: 0; padding: 0;}
-		.c3xgm-about-module-nav-bullet {
-			display: block; background-color: $gm-gray;
-			width:11px; height:11px; 
-			margin:10px;
-			
+		width: 93px;
+		margin: 0 auto;
+		@media(min-width: $tablet-height) {
+			width: 75px;
+		}
+
+		li {
+			position: relative;
+			display: block; float: left;
+			margin: 0; padding: 0;
+		}
+
+		.c3xgm-about-nav-bullet {
+			padding:10px;
+			display: block;
+			cursor: pointer;
+
+			.c3xgm-about-inner-bullet {
+				display: block; background-color: $gm-gray;
+				width:11px; height:11px; 
+			}
+
 			@media(min-width: $tablet-height) {
-				width:9px; height:9px; 
-				margin:8px;
+				padding:8px;
+				.c3xgm-about-inner-bullet { width:9px; height:9px; }
 			}
 		}
-		.c3xgm-about-module-nav-bullet-active { background-color: $gm-yellow; }
+
+		.c3xgm-about-module-nav-bullet-active .c3xgm-about-inner-bullet { background-color: $gm-yellow;  }
 	}
 
 
 }
 
-
 #c3xgm-about-technology-4g-lte .c3xgm-about-module-technology .c3xgm-about-blockquote {
 	margin-top:4em;
+}
+
+
+// ARRAOWS
+.c3xgm-about-technology-right,
+.c3xgm-about-technology-left {
+	display: none;
+	width: 0; height: 0;
+	position: absolute;
+	top:0; bottom:0;
+	margin: auto;
+	border-style: solid;
+
+	@include prefix(transition, border-color 150ms);
+
+	@media(min-width: 481px) {
+		display: block;
+	}
+}
+
+.c3xgm-about-technology-right {
+	right:1.8em;
+	border-width: 7.5px 0 7.5px 11px;
+	border-color: transparent transparent transparent #808285;
+
+	&:hover {
+		border-color: transparent transparent transparent #FDB12E;
+	}
+}
+
+.c3xgm-about-technology-left {
+	left:1.8em;
+	border-width: 7.5px 11px 7.5px 0;
+	border-color: transparent #808285 transparent transparent;
+	&:hover {
+		border-color: transparent #FDB12E transparent transparent;
+	}
 }

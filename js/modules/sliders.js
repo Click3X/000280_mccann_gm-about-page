@@ -78,11 +78,6 @@ jQuery(document).ready(function($) {
 	foundationLinks.hover(function(e) {
 		foundationLinks.not(this).removeClass('active').addClass('c3xgm-about-module-logo-unactive');
 	});
-
-	// SHOW FIRST SLIDE
-	// setTimeout(function() {
-	// 	$('#c3xgm-about-foundation-gm-foundation').removeClass('hide-module hide-module-slide-out').addClass('show-module-slide-in');
-	// }, 3000);
 	
 	// FOUNDATION
 	foundationLinks.on('click touchstart', function(e, auto_rotate) {
@@ -127,17 +122,15 @@ jQuery(document).ready(function($) {
 	// MAKE GM TECH DEFALUT 
 	$('#c3xgm-about-page-technology-4g-lte').removeClass('hide-module').addClass('show-module-slide-in');
 
-	// SHOW FIRST SLIDE
-	// setTimeout(function() {
-	// 	$('#c3xgm-about-technology-4g-lte').removeClass('hide-module hide-module-slide-out').addClass('show-module-slide-in');
-	// }, 0);
-		
 	// TECH
 	techLinks.on('click touchstart', function(e, auto_rotate) {
 		e.preventDefault();
 
 		// GET LINKS
 		var target = $(this).attr('href');
+
+		currentTechSlide = $(this).parent().index();
+		console.log("Current Tech slide is: ", currentTechSlide );
 		//  ADD ACRIVE CLASS
 		$('#c3xgm-about-page-technology .c3xgm-about-module-nav li a.c3xgm-about-module-nav-bullet-active').removeClass('c3xgm-about-module-nav-bullet-active');
 		$(this).addClass('c3xgm-about-module-nav-bullet-active');
