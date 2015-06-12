@@ -257,7 +257,6 @@ jQuery(document).ready(function($) {
     			currentPage = i;
     			// SET PAGE VIEW STATE
     			_t.hasViewClass = true;
-
                 // TRIGGER GIF ON ICON
                 var pageIcon = $(_t.$element ).find('.c3xgm-about-section-icon');
 
@@ -279,7 +278,6 @@ jQuery(document).ready(function($) {
                             setTimeout(function() {
                                 val.addInViewClass();
                                 if(animateNum.length > 0) {
-                                    // cd(animateNum);
                                     // console.log('This is index: ' + i);
                                     if(i == 0 ) {
                                         fireAnimatedEmployees();
@@ -310,14 +308,14 @@ jQuery(document).ready(function($) {
 
                 // TRIGGER TECH MODULE
                 if( _t.elementName == "c3xgm-about-page-technology" ) {
-                    // SHOW FIRST SLIDE
-                    setTimeout(function() {
-                        autorotateTechSliderOnce();
-                    }, 1500);
-                    // START AUTO SLIDER
-                    setTimeout(function() {
-                        autorotateTechSlider();
-                    }, 1000);
+                    // // SHOW FIRST SLIDE
+                    // setTimeout(function() {
+                    //     autorotateTechSliderOnce();
+                    // }, 1500);
+                    // // START AUTO SLIDER
+                    // setTimeout(function() {
+                    //     autorotateTechSlider();
+                    // }, 1000);
                 } 
                 
                 if( _t.elementName == "c3xgm-about-page-our-global-community" ) {
@@ -395,8 +393,6 @@ jQuery(document).ready(function($) {
         	this.elementName = this.$element.attr('id');
         } else {
         	this.elementName = this.$element.attr("class").split(" ")[2];
-            // var theClass = this.$element.attr("class").split(" ")[2];
-            // theClass = theClass.split(" ")[2];
         }
         
         this.elementWidth = Number( this.$element.css("width").replace('px', '') );
@@ -411,7 +407,6 @@ jQuery(document).ready(function($) {
         this.hasViewClass = false;
 
         // PAGE BLOCKS - BLOCKS ARE INDIVIDUAL 'PAGE OBJECTS'
-        // this.aboutBlocks = this.$element.find('.c3xgm-about-block, .c3xgm-about-solar-panels');
         this.aboutBlocks = this.$element.find('.c3xgm-about-block');
         // READY ANIM BLOCKS ARRAY
         this.animBlocks = []; 
@@ -531,23 +526,6 @@ jQuery(document).ready(function($) {
             checkBlocks(currentPage);
             // UPDATE NAV
             updateNav();
-            // GREY VAN
-            // if( GreyVan.isInView() ) {
-            //     GreyVan.moveRight();
-            // }
-            // // RED CAR
-            // if( RedCar.isInView() ) {
-            //     RedCar.moveLeft();
-            // }
-            // // FLAG LINE
-            // if( FlagLine.isInView() ) {
-            //     FlagLine.moveLeft();
-            //     GreyFlagCar.moveRight();
-            // }   
-            // // GREY SIDE
-            // if( GreySide.isInView() ) {
-            //     GreySide.moveRight();
-            // }
         }
     }
 
