@@ -4,6 +4,8 @@
  * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
 
 
+// THESE SASS FILES ARE COMPILED AFTER THE ORIGINAL ABOUT PAGE CSS : style-old.css
+
 @import "components/variables";
 @import "components/mixins";
 @import "components/functions";
@@ -24,6 +26,6 @@
 @import "partials/tech";
 @import "partials/tech-animations";
 
-
-
 @import "partials/wheel-car-new";
+
+@import "partials/end-nav";

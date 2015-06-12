@@ -811,6 +811,38 @@
                     </div>
                 </div>
             </div>
+
+            <div id="c3xgm-about-end-nav" class="c3xgm-about-block c3xgm-about-clearfix c3xgm-about-end-nav">
+                <div class="c3xgm-about-clearfix c3xgm-about-section">
+                    <hr>
+                    <ul class="c3xgm-about-end-nav-links">
+                        <li class="c3xgm-about-logo-container">
+                            <a href="#c3xgm-about-page-our-company" class="c3xgm-about-end-nav-link">
+                                <img id="c3xgm-about-our-company-icon" class="c3xgm-about-section-icon c3xgm-about-icon-image" src="img/title-icons/our-company.svg" alt="Our Company">
+                                <h3><span>Our </span>Company</h3>
+                            </a>
+                        </li>
+                        <li class="c3xgm-about-logo-container">
+                            <a href="#c3xgm-about-page-our-people" class="c3xgm-about-end-nav-link">
+                                <img id="c3xgm-about-our-people-icon" class="c3xgm-about-section-icon c3xgm-about-icon-image" src="img/title-icons/our-people.svg" alt="Our People">
+                                <h3><span>Our </span>People</h3>
+                            </a>
+                        </li>
+                        <li class="c3xgm-about-logo-container">
+                            <a href="#c3xgm-about-page-our-brands" class="c3xgm-about-end-nav-link">
+                                <img id="c3xgm-about-our-brands-icon" class="c3xgm-about-section-icon c3xgm-about-icon-image" src="img/title-icons/our-brands.svg" alt="Our Brands">
+                                <h3><span>Our </span>Brands</h3>
+                            </a>
+                        </li>
+                        <li class="c3xgm-about-logo-container">
+                            <a href="#c3xgm-about-page-our-commitment" class="c3xgm-about-end-nav-link">
+                                <img id="c3xgm-about-our-commitment-icon" class="c3xgm-about-section-icon c3xgm-about-icon-image" src="img/title-icons/our-commitment.svg" alt="Our Commitment">
+                                <h3><span>Our </span>Commitment</h3>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </div>
         <!-- JQUERY OF COURSE -->
         <script src="js/vendor/jquery-1.11.1.min.js"></script>
@@ -857,6 +889,15 @@
         <script src="js/main.js"></script>
         <!-- REQUEST-ANIMATION-FRAME -->
         <script src="js/b-boys-scroll.js"></script>
+
+        <script>
+            jQuery('head').append('<style>#outline {position:fixed;z-index:1000;bottom:50px;right:50px;} .outlines {outline:1px solid rgba(255, 0, 0, 0.3);}</style>');
+            jQuery('body').append('<input id=\"outline\" type=\"button\">');
+
+            jQuery('#outline').click(function() {
+                jQuery('*').toggleClass('outlines');
+           });
+        </script>
 
     </body>
 </html>
