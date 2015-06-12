@@ -4643,18 +4643,11 @@ div#c3xgm-about-grey-van:before {
   -ms-transition: opacity 90ms;
   transition: opacity 90ms;
 }
-/* line 8, ../sass/modules/_all-modules.scss */
+
+/* line 14, ../sass/modules/_all-modules.scss */
 .c3xgm-about-module-car-logo:hover, .c3xgm-about-module-car-logo:focus,
 .c3xgm-about-module-foundation-logo:hover,
-.c3xgm-about-module-foundation-logo:focus {
-  opacity: 0.75;
-  -webkit-transition: opacity 120ms;
-  -moz-transition: opacity 120ms;
-  -o-transition: opacity 120ms;
-  -ms-transition: opacity 120ms;
-  transition: opacity 120ms;
-}
-/* line 14, ../sass/modules/_all-modules.scss */
+.c3xgm-about-module-foundation-logo:focus,
 .c3xgm-about-module-car-logo.active,
 .c3xgm-about-module-foundation-logo.active {
   opacity: 1;

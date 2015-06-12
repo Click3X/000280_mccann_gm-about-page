@@ -299,55 +299,38 @@ jQuery(document).ready(function($) {
                 // IF CURRENT PAGE IS OUR BRANDS, FADE IN FIRST SLIDE
                 if(currentPage == 2) {
                     // SHOW FIRST SLIDE
-                    // setTimeout(function() {
-                    //     // $('#c3xgm-about-car-chevrolet').removeClass('hide-module hide-module-slide-out').addClass('show-module-slide-in');
-
-                    //     autorotateAboutSlider();
-                    // }, 3000);
-
                     setTimeout(function() {
-                        // $('#c3xgm-about-technology-4g-lte').removeClass('hide-module hide-module-slide-out').addClass('show-module-slide-in');      
                         autorotateAboutSliderOnce();
-                        setTimeout(function() {
-                            autorotateAboutSlider();
-                        }, 6000);
                     }, 2000);
-
-                } /*else {
-                    killAutoRotateAboutSlider();
-                }*/
+                    // START AUTO SLIDER
+                    setTimeout(function() {
+                            autorotateAboutSlider();
+                    }, 1000);
+                }
 
                 // TRIGGER TECH MODULE
                 if( _t.elementName == "c3xgm-about-page-technology" ) {
                     // SHOW FIRST SLIDE
                     setTimeout(function() {
-                        // $('#c3xgm-about-technology-4g-lte').removeClass('hide-module hide-module-slide-out').addClass('show-module-slide-in');      
                         autorotateTechSliderOnce();
-                        setTimeout(function() {
-                            autorotateTechSlider();
-                        }, 6000);
-                    }, 2000);
-                } /*else {
-                    killAutoRotateTechSlider();
-                }*/
+                    }, 1500);
+                    // START AUTO SLIDER
+                    setTimeout(function() {
+                        autorotateTechSlider();
+                    }, 1000);
+                } 
                 
                 if( _t.elementName == "c3xgm-about-page-our-global-community" ) {
                     // SHOW FIRST SLIDE
-                    // setTimeout(function() {
-                    //     // $('#c3xgm-about-foundation-gm-foundation').removeClass('hide-module hide-module-slide-out').addClass('show-module-slide-in');
-
-                    //     autorotateFoundationSlider();
-                    // }, 3000);
                     setTimeout(function() {
-                        // $('#c3xgm-about-technology-4g-lte').removeClass('hide-module hide-module-slide-out').addClass('show-module-slide-in');      
                         autorotateFoundationSliderOnce();
-                        setTimeout(function() {
-                            autorotateFoundationSlider();
-                        }, 6000);
-                    }, 2900);
-                } /*else {
-                    killAutoRotateFoundationSlider();
-                }*/
+                    }, 2200);
+                    // START AUTO SLIDER
+                    setTimeout(function() {
+                        autorotateFoundationSlider();
+                    }, 1000);
+
+                } 
     		} 
     	}); 
     }
