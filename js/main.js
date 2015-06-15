@@ -361,9 +361,9 @@ jQuery(document).ready(function($) {
                         setTimeout(function() {
                             // console.log('We have test dummites!');
                             if(triggerCTD == false) {
-                                $('#c3xgm-about-crash-test-dummies').removeClass('invisible');
-                                triggerGif( document.getElementById('c3xgm-about-crash-test-dummies') );
                                 
+                                triggerGif( document.getElementById('c3xgm-about-crash-test-dummies') );
+                                $('#c3xgm-about-crash-test-dummies').removeClass('invisible');
                                 triggerCTD = true;    
                             }
                             
