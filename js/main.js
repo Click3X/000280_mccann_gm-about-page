@@ -338,7 +338,7 @@ jQuery(document).ready(function($) {
     // CHECK FOR BLOCKS
     function checkBlocks(currentPage) {
         // console.log('Thsi is currentPage: ' + currentPage);
-        console.dir(currentPage);
+        // console.dir(currentPage);
         
     	var blocks = Pages[currentPage].animBlocks;
 

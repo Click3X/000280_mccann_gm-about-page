@@ -3,26 +3,19 @@
 var aboutSlideInterval, carLinks, currentAboutSlide = 0;
 var techSlideInterval, techLinks, currentTechSlide = 0;
 var foundationSlideInterval, foundationLinks, currentFoundationSlide = 0;
+var techLeftRight;
 
 jQuery(document).ready(function($) {
 	carLinks = $('.c3xgm-about-module-car-logo');
 	techLinks = $('#c3xgm-about-page-technology .c3xgm-about-module-nav li a');
 	foundationLinks = $('.c3xgm-about-module-foundation-logo');
+	techLeftRight = $('#c3xgm-about-technology-right, #c3xgm-about-technology-left');
 
 	var carSlides = $('#c3xgm-about-module-car .c3xgm-about-slide'),
 		carContainer = $('.c3xgm-about-module-65').get(0),
 		foundationContainer = $('.c3xgm-about-module-foundation .c3xgm-about-module-20').get(0),
 		foundationSlides = $('#c3xgm-about-module-foundation .c3xgm-about-slide'),
 		techSlides = $('.c3xgm-about-module-technology .c3xgm-about-module');
-
-	// console.log('Here are your foundationLinks: ' + foundationLinks);
-	// console.dir(foundationLinks);
-	// console.log('Here are your foundationSlides: ' + foundationSlides);
-	// console.dir(foundationSlides);
-	// console.log('Here are your carLinks: ' + carLinks);
-	// console.dir(carLinks);
-	// console.log('Here are your carContainer: ' + carContainer);
-	// console.dir(carContainer);
 
 	// CARS ---------------------------------------------------------------------------------------------------------
 	
@@ -158,6 +151,40 @@ jQuery(document).ready(function($) {
 			currentTechSlide = $(this).parent().index();
 		}
 	});
+
+
+	// TECH LEFT RIGHT LINKS
+	techLeftRight.on('click touchstart', function(e) {
+		e.preventDefault();
+
+		// GET HREF OF CLICKED LINK,
+		// DECLARE OTHER VARS WERE GONNA USE
+		var href = $(this).attr('href'), 
+			target,
+			clickIndex;
+
+		// TEST IF LEFT - RIGHT - ASSIGN CLICKINDEX APPROPRIATELY
+		if(href == '#right') {
+			if (currentTechSlide + 1 < techSlides.length) {
+				clickIndex = currentTechSlide +1;
+			} else {
+				clickIndex = 0;
+			}
+		} else if(href == '#left') {
+			if (currentTechSlide - 1 > 0) {
+				clickIndex = currentTechSlide - 1;
+			} else {
+				clickIndex = techSlides.length - 1;
+			}
+		} 
+
+		// console.log('This is clickIndex: ' + clickIndex);
+
+		// TRIGGER CLICK ON INDEX
+		$(techLinks[clickIndex]).trigger('click');
+	});
+
+
 
 	// DISCLAIMER ---------------------------------------------------------------------------------------------------------
 	// DISCLAIMER BOX OPEN CLOSE
