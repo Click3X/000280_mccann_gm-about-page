@@ -13051,35 +13051,41 @@ body {
 }
 
 /* line 30, ../sass/animations/_flag-line.scss */
-#flag-line-container {
+.flag-line-container {
   width: 480%;
   z-index: -1;
   position: relative;
 }
 @media (min-width: 768px) {
   /* line 30, ../sass/animations/_flag-line.scss */
-  #flag-line-container {
+  .flag-line-container {
     width: 300%;
   }
 }
 /* line 37, ../sass/animations/_flag-line.scss */
-#flag-line-container > ul {
+.flag-line-container > ul {
   width: 200%;
   max-width: 5500px;
   position: relative;
 }
 /* line 41, ../sass/animations/_flag-line.scss */
-#flag-line-container > ul .flag-line {
+.flag-line-container > ul .flag-line {
   width: 50%;
   float: left;
 }
 /* line 46, ../sass/animations/_flag-line.scss */
-#flag-line-container > ul .flag-line > img {
+.flag-line-container > ul .flag-line > img {
   width: 100%;
   display: block;
   margin: 0 auto;
   padding: 0;
 }
+
+/* line 46, ../sass/animations/_flag-line.scss */
+.solar-road-container > ul .flag-line > img {
+   width: auto; 
+}
+
 
 /* line 56, ../sass/animations/_flag-line.scss */
 .animate-flag-line {
