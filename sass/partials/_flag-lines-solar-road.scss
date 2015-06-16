@@ -1,1 +1,79 @@
 // FLAG LINE SOLAR ROAD
+.c3xgm-about-solar-road-wrapper {
+	padding:2em 0;
+
+	.c3xgm-about-solar-road-container {
+		width: 100%;
+		overflow-x:hidden;
+
+		.c3xgm-about-solar-road-list {
+			width: 200%;
+
+			li {
+				width: 50%;
+				display: block;
+				float: left;
+				position: relative;
+
+				img {
+					display:inline-block;
+					margin-bottom: -2px;
+					z-index: -2;
+				}
+
+				.c3xgm-about-tree {
+					margin-left:15%;
+					width: 9.9%; height: auto;
+					max-width: 99px;
+				}
+
+				.c3xgm-about-solar-panels {
+					margin-left: 37%;
+					width: 25.7%; height: auto;
+					max-width: 257px;
+				}
+			}
+		}
+	}
+
+	.c3xgm-about-sun {
+		width: 16%; max-width: 140px;
+  		height: 0; padding-bottom: 16%;
+  		z-index: -1;
+		position: absolute;
+		top:40%; right: 5%;
+		img { width:100%;}
+  		@media(min-width:400px) { padding-bottom: 100px; }
+		@media(min-width:$tablet-height) { top: 26%; padding-bottom: 140px; }
+		@media(min-width: $inner-border) {left: 0; right: -50%; margin: auto; }
+	}
+
+
+	.c3xgm-about-road {
+		width: 100%;
+		// height: 40px;
+		height: 0;
+  		padding-bottom: 5%;
+  		@media (min-width:$tablet-height) {
+  			padding-bottom: 37px;
+  		}
+	}
+
+
+	.c3xgm-about-flag-line-grey-car {
+		z-index: 1000;
+	}
+
+	.grey-car {
+		bottom: 37px;
+		@media(min-width: $tablet-height) {
+			bottom: 50px;
+		}
+	}
+
+}
+
+
+.c3xgm-about-solar-panels-animated {
+
+}
