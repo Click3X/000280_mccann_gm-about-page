@@ -69,7 +69,6 @@
 	// FIVE STARS
 	.c3xgm-about-grey-top {
 		left: -380px;
-		// @media(min-width: $tablet-height) {left: -480px; }
 
 		@include prefix(animation-fill-mode, both);
 		@include prefix(animation-name, moveCarRight);
@@ -86,8 +85,6 @@
 
 	// SOLAR PANELS
 	.c3xgm-about-decorative.c3xgm-about-solar-panels {
-		// position: relative; 
-		// overflow-x:hidden;
 		
 		#c3xgm-about-solar-grey-car {
 			left: -380px;
@@ -104,19 +101,56 @@
 	// MOBILE CLASSES TAKEN FROM MOBILE .CSS
 	.c3xgm-about-mobile-visible { opacity: 1; }
 
-	// .c3xgm-about-mobile-device .c3xgm-about-section .c3xgm-about-section-header-inner { overflow-x:auto; }
-
 	.c3xgm-about-mobile-device  .c3xgm-about-main-nav-sub { display: none; }
 
 	.c3xgm-about-page-our-commitment .c3xgm-about-climate-declaration .c3xgm-about-block-image > div {
 	    margin-left:auto;
-	    // img {
-	    // 	width: 10%;
-	    // }
 	}
 
 }
 
 .c3xgm-about-climate-declaration.element-in-view .c3xgm-about-block-image img[src$='svg'] {
 	width: 50%; margin-left:auto; margin-right:auto;
+}
+
+.c3xgm-about-alt-anim {
+	// FLAG LINE
+	.c3xgm-about-flag-line-container {
+		#c3xgm-about-flag-line-grey-car {
+			// margin:0 auto;
+			
+			margin: 0;
+			left: -380px;
+			@include prefix(animation-fill-mode, both);
+			@include prefix(animation-name, moveCarRight);
+			@include prefix(animation-delay, 0);
+			@include prefix(animation-duration, 3s);
+			@include prefix(animation-timing-function, linear);
+			@include prefix(animation-iteration-count, infinite);
+
+			@media(min-width: $tablet-height) {
+				@include prefix(animation-duration, 5s);
+			}
+
+		}
 	}
+	// SOLAR PANELS
+	.c3xgm-about-decorative.c3xgm-about-solar-panels-animation {
+
+		#c3xgm-about-solar-road-grey-car {
+			left: -380px;
+			@include prefix(animation-fill-mode, both);
+			@include prefix(animation-name, moveCarRight);
+			@include prefix(animation-delay, 0);
+			@include prefix(animation-duration, 3s);
+			@include prefix(animation-timing-function, linear);
+			@include prefix(animation-iteration-count, infinite);
+
+			@media(min-width: $tablet-height) {
+				@include prefix(animation-duration, 5s);
+			}
+		}
+	}
+
+}
+
