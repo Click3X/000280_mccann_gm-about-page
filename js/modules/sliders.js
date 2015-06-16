@@ -24,9 +24,9 @@ jQuery(document).ready(function($) {
 	carSlides.addClass('hide-module').addClass('hide-module-slide-out');
 
 	// ON HOVER ADD TRANSPARENCY TO LINKS
-	carLinks.hover(function(e) {
-		carLinks.not(this).removeClass('active').addClass('c3xgm-about-module-logo-unactive');
-	});
+	// carLinks.hover(function(e) {
+	// 	carLinks.not(this).removeClass('active').addClass('c3xgm-about-module-logo-unactive');
+	// });
 
 	// CARS LINKS
 	carLinks.on('click touchstart', function(e, auto_rotate) {
@@ -68,9 +68,9 @@ jQuery(document).ready(function($) {
 	foundationSlides.addClass('hide-module');
 
 	// ON HOVER ADD TRANSPARENCY TO LINKS
-	foundationLinks.hover(function(e) {
+	/*foundationLinks.hover(function(e) {
 		foundationLinks.not(this).removeClass('active').addClass('c3xgm-about-module-logo-unactive');
-	});
+	});*/
 	
 	// FOUNDATION
 	foundationLinks.on('click touchstart', function(e, auto_rotate) {

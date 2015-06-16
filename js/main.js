@@ -495,12 +495,12 @@ jQuery(document).ready(function($) {
 	} // END OBJECT
 
     // ON SCROLL ANIMATIONS ---------------------------------------------------
-    var decDefaults = {type:'decorative'},
-        GreyVan = new AmimatedElement('#c3xgm-about-grey-van', decDefaults),
-        RedCar = new AmimatedElement('#c3xgm-about-red-car', decDefaults),
-        GreyFlagCar = new AmimatedElement('#c3xgm-about-flag-line-grey-car', decDefaults),
-        GreySide = new AmimatedElement('#c3xgm-about-solar-grey-car', decDefaults),
-        FlagLine = new AmimatedElement('#animate-flag-line', decDefaults);
+    // var decDefaults = {type:'decorative'},
+    //     GreyVan = new AmimatedElement('#c3xgm-about-grey-van', decDefaults),
+    //     RedCar = new AmimatedElement('#c3xgm-about-red-car', decDefaults),
+    //     GreyFlagCar = new AmimatedElement('#c3xgm-about-flag-line-grey-car', decDefaults),
+    //     GreySide = new AmimatedElement('#c3xgm-about-solar-grey-car', decDefaults),
+    //     FlagLine = new AmimatedElement('#animate-flag-line', decDefaults);
 
     // SCROLL HANDLER --------------------------------------------
 
