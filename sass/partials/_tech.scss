@@ -233,7 +233,8 @@
 	.c3xgm-about-module-nav {
 		text-align: center; background: white;
 		width: 93px;
-		margin: 0 auto;
+		// margin: 0 auto;
+		display: inline-block;
 		@media(min-width: $tablet-height) {
 			width: 75px;
 		}
@@ -270,39 +271,34 @@
 	margin-top:4em;
 }
 
+// CONTAINER ARROWS
+.c3xgm-about-nav-container {
+	text-align: center;
+}
 
 // ARRAOWS
 .c3xgm-about-technology-right,
 .c3xgm-about-technology-left {
 	display: none;
-	width: 0; height: 0;
-	position: absolute;
-	top:0; bottom:0;
-	margin: auto;
-	border-style: solid;
+	width: 21px; height: 21px;
+	border-left:7px solid #b3b8bc;
+	border-top:7px solid #b3b8bc;
 
 	@include prefix(transition, border-color 150ms);
 
 	@media(min-width: 481px) {
-		display: block;
+		display: inline-block;
 	}
 }
 
 .c3xgm-about-technology-right {
-	right:1.8em;
-	border-width: 7.5px 0 7.5px 11px;
-	border-color: transparent transparent transparent #808285;
-
-	&:hover {
-		border-color: transparent transparent transparent #FDB12E;
-	}
+	margin-left: 12%;
+	@include prefix(transform, rotate(135deg));
+	&:hover { border-color: #FDB12E; }
 }
 
 .c3xgm-about-technology-left {
-	left:1.8em;
-	border-width: 7.5px 11px 7.5px 0;
-	border-color: transparent #808285 transparent transparent;
-	&:hover {
-		border-color: transparent #FDB12E transparent transparent;
-	}
+	margin-right: 12%;
+	@include prefix(transform, rotate(-45deg));
+	&:hover { border-color: #FDB12E; }
 }
