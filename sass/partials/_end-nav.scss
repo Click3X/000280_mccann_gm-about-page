@@ -4,10 +4,12 @@
 
 	> div.c3xgm-about-section {
 		width: auto;
-		float: left;
-
-		@media(min-width: $tablet-height) {
-			width: 86.25%;
+		// float: left;
+		
+		div.c3xgm-about-section-header {
+			@media(min-width: $tablet-height) {
+				width: 86.25%;
+			}
 		}
 	}
 

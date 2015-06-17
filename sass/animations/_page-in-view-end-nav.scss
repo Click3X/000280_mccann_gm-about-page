@@ -1,0 +1,23 @@
+// PAGE IN VIEW - END NAV
+
+
+#c3xgm-about-end-nav.c3xgm-about-page.c3xgm-about-page-in-view {
+
+	.c3xgm-about-section-header { 
+		 hr {
+			@include prefix(animation-fill-mode, both);
+			@include prefix(animation-name, growHr);
+			@include prefix(animation-delay, 800ms);
+			@include prefix(animation-duration, 800ms);
+			@include prefix(animation-iteration-count, 1);
+		}
+
+		.c3xgm-about-header-p { 
+			@include prefix(animation-fill-mode, both);
+			@include prefix(animation-name, fadeIn);
+			@include prefix(animation-delay, 1400ms);
+			@include prefix(animation-duration, 800ms);
+			@include prefix(animation-iteration-count, 1);
+		}
+	}
+}
