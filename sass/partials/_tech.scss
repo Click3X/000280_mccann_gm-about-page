@@ -50,8 +50,8 @@
 		}
 		
 		.c3xgm-about-tech-car { 
-			width:90%; 
-			// width:70%; 
+			// width:90%; 
+			width:80%; 
 		}
 
 		.c3xgm-about-wheel {display: block;}
@@ -79,13 +79,8 @@
 			@media(min-width: $tablet-height) { 
 				width:35%; float: right; 
 				height: 0; padding-bottom: 128px;
-
 				margin-top:4em;
 			}
-			// .c3xgm-about-tech-car { 
-			// 	width:65%; max-width: 157px; 
-			// 	@media(min-width: $tablet-height) { width:80%; max-width: none; }
-			// }
 		}
 		
 		.c3xgm-about-blockquote { 
@@ -97,25 +92,6 @@
 				margin-top:4em;
 			}
 		}
-
-		.c3xgm-about-block-image { 
-			.c3xgm-about-tech-car {
-				@media(min-width: $tablet-height) { width: 90%; }
-			}
-
-			.c3xgm-about-wheel {
-				width: 11.5714286%; max-width:98px;
-				position: absolute;
-				&:first-child {  
-					left: 21.5%; bottom: 18.4%;
-				}
-				&:nth-child(3) { 
-					right: 17%; bottom: 19%;
-				}
-			}
-
-		}
-
 
 		.c3xgm-about-dark-blue.c3xgm-about-thin,
 		.c3xgm-about-light-blue {
@@ -152,6 +128,10 @@
 			}
 		}
 
+		.c3xgm-about-tech-car { 
+			width:90%; 
+		}
+
 		.c3xgm-about-block-image { 
 			.c3xgm-about-wheel {	
 				width: 11.5714286%; max-width: 101px;
@@ -162,6 +142,23 @@
 					bottom: 20.7%; left: 24.5%;
 				}
 				&:nth-child(3) {   right: 21.9%; bottom: 20%; }
+			}
+		}
+	}
+
+	.c3xgm-about-4g-lte,
+	.c3xgm-about-safety {
+		.c3xgm-about-block-image { 
+
+			.c3xgm-about-wheel {
+				width: 10.2857143%; max-width:87px;
+				position: absolute;
+				&:first-child {  
+					left: 24.7%; bottom: 27.7%;
+				}
+				&:nth-child(3) { 
+					right: 20.7%; bottom: 28%;
+				}
 			}
 		}
 	}
@@ -191,21 +188,6 @@
 		  	font-size:12px; font-size: 4vw;
 		  	@media(min-width:$tablet-height) { font-size: 21px; }
 		}
-
-		.c3xgm-about-block-image {
-
-			.c3xgm-about-wheel {
-				width: 11.5714286%; max-width:98px;
-				position: absolute;
-				&:first-child {  
-					left: 21.5%; bottom: 18.4%;
-				}
-				&:nth-child(3) { 
-					right: 17%; bottom: 19%;
-				}
-			}
-		}
-
 	}
 
 	// BOTH CONCEPT AND SAFETY
