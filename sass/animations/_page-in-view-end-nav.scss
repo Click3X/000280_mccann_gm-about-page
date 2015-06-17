@@ -2,6 +2,7 @@
 $anim-delay:1600;
 $anim-step:400;
 
+.c3xgm-about-page-in-view .c3xgm-about-section-header,
 #c3xgm-about-end-nav.c3xgm-about-page.c3xgm-about-page-in-view {
 
 	.c3xgm-about-section-header { 
@@ -22,29 +23,99 @@ $anim-step:400;
 		}
 
 		.c3xgm-about-logo-container .c3xgm-about-section-icon,
-		.c3xgm-about-logo-container .c3xgm-about-section-icon + h3 {
+		.c3xgm-about-logo-container .c3xgm-about-section-icon + h3,
+		.c3xgm-about-logo-container .c3xgm-about-icon-holder + h3 {
 			@include prefix(animation-fill-mode, both);
 			@include prefix(animation-name, fadeIn);
 			@include prefix(animation-duration, 800ms);
 			@include prefix(animation-iteration-count, 1);
 		}
 
-		.c3xgm-about-logo-container:first-of-type .c3xgm-about-section-icon,
-		.c3xgm-about-logo-container:first-of-type .c3xgm-about-section-icon + h3 {
-			@include prefix(animation-delay, #{ ($anim-delay + $anim-step) + "ms"});
+
+		.c3xgm-about-logo-container:first-of-type {
+			.c3xgm-about-icon-holder {
+				.grey_circle,
+				.out_circle,
+				.dark_grey,
+				.lighter_yellow,
+				.darker_yellow,
+				.gm_logo {
+					@include prefix(animation-delay, #{ ($anim-delay + $anim-step) + "ms"});
+	    		}
+	    		.white_band {
+					@include prefix(animation-delay, #{ ($anim-delay + $anim-step + 750) + "ms"});
+	    		}
+	    		.shadow {
+					@include prefix(animation-delay, #{ ($anim-delay + $anim-step + 750) + "ms"});
+	    		}	
+	    	}
+	    	.c3xgm-about-section-icon + h3,
+	    	.c3xgm-about-icon-holder + h3,
+	    	.c3xgm-about-section-icon {
+	    		@include prefix(animation-delay, #{ ($anim-delay + $anim-step) + "ms"});
+	    	}
 		}
-		.c3xgm-about-logo-container:nth-of-type(2) .c3xgm-about-section-icon,
-		.c3xgm-about-logo-container:nth-of-type(2) .c3xgm-about-section-icon + h3 {
-			@include prefix(animation-delay, #{ ($anim-delay + $anim-step * 2) + "ms"});
+
+		// OUR PEOPLE
+		.c3xgm-about-logo-container:nth-of-type(2) {
+			.c3xgm-about-icon-holder {
+				.grey_circle,
+				.out_circle,
+				.dark_grey,
+				.tie,
+				.person {
+					@include prefix(animation-delay, #{ ($anim-delay + $anim-step * 2) + "ms"});
+	    		}	
+	    		.shadow {
+					@include prefix(animation-delay, #{ ($anim-delay + $anim-step * 2 + 750) + "ms"});
+	    		}	
+	    	}
+	    	.c3xgm-about-section-icon + h3,
+	    	.c3xgm-about-icon-holder + h3,
+	    	.c3xgm-about-section-icon {
+	    		@include prefix(animation-delay, #{ ($anim-delay + $anim-step * 2) + "ms"});
+	    	}
 		}
-		.c3xgm-about-logo-container:nth-of-type(3) .c3xgm-about-section-icon,
-		.c3xgm-about-logo-container:nth-of-type(3) .c3xgm-about-section-icon + h3 {
-			@include prefix(animation-delay, #{ ($anim-delay + $anim-step * 3) + "ms"});
+
+		.c3xgm-about-logo-container:nth-of-type(3) {
+			.c3xgm-about-icon-holder {
+				.grey_circle,
+				.out_circle,
+				.dark_grey,
+				.brand_car {
+					@include prefix(animation-delay, #{ ($anim-delay + $anim-step * 3) + "ms"});
+	    		}
+	    		.shadow {
+					@include prefix(animation-delay, #{ ($anim-delay + $anim-step * 3 + 750) + "ms"});
+	    		}
+	    	}
+	    	.c3xgm-about-section-icon + h3,
+	    	.c3xgm-about-icon-holder + h3,
+	    	.c3xgm-about-section-icon {
+	    		@include prefix(animation-delay, #{ ($anim-delay + $anim-step * 3) + "ms"});
+	    	}
 		}
-		.c3xgm-about-logo-container:nth-of-type(4) .c3xgm-about-section-icon,
-		.c3xgm-about-logo-container:nth-of-type(4) .c3xgm-about-section-icon + h3 {
-			@include prefix(animation-delay, #{ ($anim-delay + $anim-step * 4) + "ms"});
-		
+
+
+		// OUR COMMITMENT
+		.c3xgm-about-logo-container:nth-of-type(4) {
+			.c3xgm-about-icon-holder {
+				.grey_circle,
+				.out_circle,
+				.inner_car,
+				.dark_grey,
+				.road,
+				.road_lines,
+				.sun {
+					@include prefix(animation-delay, #{ ($anim-delay + $anim-step * 4) + "ms"});
+	    		}	
+	    	}
+	    	.c3xgm-about-section-icon + h3,
+	    	.c3xgm-about-icon-holder + h3,
+	    	.c3xgm-about-section-icon {
+	    		@include prefix(animation-delay, #{ ($anim-delay + $anim-step * 4) + "ms"});
+	    	}
 		}
+
 	}
 }
