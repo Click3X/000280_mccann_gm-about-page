@@ -118,7 +118,7 @@
       animation: personSlideIn 0.8s 0.7s linear forwards;
     }
 
-    #darker_yellow {
+    .darker_yellow {
       -webkit-animation: personSlideIn 0.8s 1s linear forwards;
       -moz-animation: personSlideIn 0.8s 1s linear forwards;
       -ms-animation: personSlideIn 0.8s 1s linear forwards;
@@ -284,7 +284,7 @@
     transform: translateY(100px);
   }
 
-  #darker_yellow {
+  .darker_yellow {
     opacity: 0;
     -webkit-transform: translateY(100px);
     -moz-transform: translateY(100px);

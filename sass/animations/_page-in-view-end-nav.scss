@@ -1,5 +1,6 @@
 // PAGE IN VIEW - END NAV
-
+$anim-delay:1600;
+$anim-step:400;
 
 #c3xgm-about-end-nav.c3xgm-about-page.c3xgm-about-page-in-view {
 
@@ -18,6 +19,32 @@
 			@include prefix(animation-delay, 1400ms);
 			@include prefix(animation-duration, 800ms);
 			@include prefix(animation-iteration-count, 1);
+		}
+
+		.c3xgm-about-logo-container .c3xgm-about-section-icon,
+		.c3xgm-about-logo-container .c3xgm-about-section-icon + h3 {
+			@include prefix(animation-fill-mode, both);
+			@include prefix(animation-name, fadeIn);
+			@include prefix(animation-duration, 800ms);
+			@include prefix(animation-iteration-count, 1);
+		}
+
+		.c3xgm-about-logo-container:first-of-type .c3xgm-about-section-icon,
+		.c3xgm-about-logo-container:first-of-type .c3xgm-about-section-icon + h3 {
+			@include prefix(animation-delay, #{ ($anim-delay + $anim-step) + "ms"});
+		}
+		.c3xgm-about-logo-container:nth-of-type(2) .c3xgm-about-section-icon,
+		.c3xgm-about-logo-container:nth-of-type(2) .c3xgm-about-section-icon + h3 {
+			@include prefix(animation-delay, #{ ($anim-delay + $anim-step * 2) + "ms"});
+		}
+		.c3xgm-about-logo-container:nth-of-type(3) .c3xgm-about-section-icon,
+		.c3xgm-about-logo-container:nth-of-type(3) .c3xgm-about-section-icon + h3 {
+			@include prefix(animation-delay, #{ ($anim-delay + $anim-step * 3) + "ms"});
+		}
+		.c3xgm-about-logo-container:nth-of-type(4) .c3xgm-about-section-icon,
+		.c3xgm-about-logo-container:nth-of-type(4) .c3xgm-about-section-icon + h3 {
+			@include prefix(animation-delay, #{ ($anim-delay + $anim-step * 4) + "ms"});
+		
 		}
 	}
 }

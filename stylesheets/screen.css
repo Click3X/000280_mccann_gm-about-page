@@ -4593,7 +4593,7 @@ Stylesheet: Helpers
   margin: 1em auto;
 }
 
-/* line 7, ../sass/animations/_page-in-view-end-nav.scss */
+/* line 8, ../sass/animations/_page-in-view-end-nav.scss */
 #c3xgm-about-end-nav.c3xgm-about-page.c3xgm-about-page-in-view .c3xgm-about-section-header hr {
   -webkit-animation-fill-mode: both;
   -moz-animation-fill-mode: both;
@@ -4621,7 +4621,7 @@ Stylesheet: Helpers
   -ms-animation-iteration-count: 1;
   animation-iteration-count: 1;
 }
-/* line 15, ../sass/animations/_page-in-view-end-nav.scss */
+/* line 16, ../sass/animations/_page-in-view-end-nav.scss */
 #c3xgm-about-end-nav.c3xgm-about-page.c3xgm-about-page-in-view .c3xgm-about-section-header .c3xgm-about-header-p {
   -webkit-animation-fill-mode: both;
   -moz-animation-fill-mode: both;
@@ -4648,4 +4648,64 @@ Stylesheet: Helpers
   -o-animation-iteration-count: 1;
   -ms-animation-iteration-count: 1;
   animation-iteration-count: 1;
+}
+/* line 24, ../sass/animations/_page-in-view-end-nav.scss */
+#c3xgm-about-end-nav.c3xgm-about-page.c3xgm-about-page-in-view .c3xgm-about-section-header .c3xgm-about-logo-container .c3xgm-about-section-icon,
+#c3xgm-about-end-nav.c3xgm-about-page.c3xgm-about-page-in-view .c3xgm-about-section-header .c3xgm-about-logo-container .c3xgm-about-section-icon + h3 {
+  -webkit-animation-fill-mode: both;
+  -moz-animation-fill-mode: both;
+  -o-animation-fill-mode: both;
+  -ms-animation-fill-mode: both;
+  animation-fill-mode: both;
+  -webkit-animation-name: fadeIn;
+  -moz-animation-name: fadeIn;
+  -o-animation-name: fadeIn;
+  -ms-animation-name: fadeIn;
+  animation-name: fadeIn;
+  -webkit-animation-duration: 800ms;
+  -moz-animation-duration: 800ms;
+  -o-animation-duration: 800ms;
+  -ms-animation-duration: 800ms;
+  animation-duration: 800ms;
+  -webkit-animation-iteration-count: 1;
+  -moz-animation-iteration-count: 1;
+  -o-animation-iteration-count: 1;
+  -ms-animation-iteration-count: 1;
+  animation-iteration-count: 1;
+}
+/* line 32, ../sass/animations/_page-in-view-end-nav.scss */
+#c3xgm-about-end-nav.c3xgm-about-page.c3xgm-about-page-in-view .c3xgm-about-section-header .c3xgm-about-logo-container:first-of-type .c3xgm-about-section-icon,
+#c3xgm-about-end-nav.c3xgm-about-page.c3xgm-about-page-in-view .c3xgm-about-section-header .c3xgm-about-logo-container:first-of-type .c3xgm-about-section-icon + h3 {
+  -webkit-animation-delay: 2000ms;
+  -moz-animation-delay: 2000ms;
+  -o-animation-delay: 2000ms;
+  -ms-animation-delay: 2000ms;
+  animation-delay: 2000ms;
+}
+/* line 36, ../sass/animations/_page-in-view-end-nav.scss */
+#c3xgm-about-end-nav.c3xgm-about-page.c3xgm-about-page-in-view .c3xgm-about-section-header .c3xgm-about-logo-container:nth-of-type(2) .c3xgm-about-section-icon,
+#c3xgm-about-end-nav.c3xgm-about-page.c3xgm-about-page-in-view .c3xgm-about-section-header .c3xgm-about-logo-container:nth-of-type(2) .c3xgm-about-section-icon + h3 {
+  -webkit-animation-delay: 2400ms;
+  -moz-animation-delay: 2400ms;
+  -o-animation-delay: 2400ms;
+  -ms-animation-delay: 2400ms;
+  animation-delay: 2400ms;
+}
+/* line 40, ../sass/animations/_page-in-view-end-nav.scss */
+#c3xgm-about-end-nav.c3xgm-about-page.c3xgm-about-page-in-view .c3xgm-about-section-header .c3xgm-about-logo-container:nth-of-type(3) .c3xgm-about-section-icon,
+#c3xgm-about-end-nav.c3xgm-about-page.c3xgm-about-page-in-view .c3xgm-about-section-header .c3xgm-about-logo-container:nth-of-type(3) .c3xgm-about-section-icon + h3 {
+  -webkit-animation-delay: 2800ms;
+  -moz-animation-delay: 2800ms;
+  -o-animation-delay: 2800ms;
+  -ms-animation-delay: 2800ms;
+  animation-delay: 2800ms;
+}
+/* line 44, ../sass/animations/_page-in-view-end-nav.scss */
+#c3xgm-about-end-nav.c3xgm-about-page.c3xgm-about-page-in-view .c3xgm-about-section-header .c3xgm-about-logo-container:nth-of-type(4) .c3xgm-about-section-icon,
+#c3xgm-about-end-nav.c3xgm-about-page.c3xgm-about-page-in-view .c3xgm-about-section-header .c3xgm-about-logo-container:nth-of-type(4) .c3xgm-about-section-icon + h3 {
+  -webkit-animation-delay: 3200ms;
+  -moz-animation-delay: 3200ms;
+  -o-animation-delay: 3200ms;
+  -ms-animation-delay: 3200ms;
+  animation-delay: 3200ms;
 }

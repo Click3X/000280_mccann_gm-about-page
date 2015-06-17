@@ -12599,7 +12599,7 @@ body {
 }
 
 /* line 178, ../sass/animations/_page-in-view.scss */
-#c3xgm-about-page-our-commitment.c3xgm-about-page.c3xgm-about-page-in-view .c3xgm-about-section-header .c3xgm-about-section-icon {
+#c3xgm-about-page-our-commitment.c3xgm-about-page.c3xgm-about-page-in-view .our-commitment .c3xgm-about-section-header .c3xgm-about-section-icon {
   -webkit-animation-fill-mode: both;
   -moz-animation-fill-mode: both;
   -o-animation-fill-mode: both;
@@ -12645,7 +12645,7 @@ body {
   animation-duration: 800ms;
 }
 /* line 192, ../sass/animations/_page-in-view.scss */
-#c3xgm-about-page-our-commitment.c3xgm-about-page.c3xgm-about-page-in-view .c3xgm-about-section-header hr {
+#c3xgm-about-page-our-commitment.c3xgm-about-page.c3xgm-about-page-in-view .our-commitment .c3xgm-about-section-header hr {
   -webkit-animation-fill-mode: both;
   -moz-animation-fill-mode: both;
   -o-animation-fill-mode: both;
