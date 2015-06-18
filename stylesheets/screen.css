@@ -4508,29 +4508,25 @@ Stylesheet: Helpers
 .c3xgm-about-end-nav {
   margin-top: 2em;
 }
-/* line 5, ../sass/partials/_end-nav.scss */
-.c3xgm-about-end-nav > div.c3xgm-about-section {
-  width: auto;
-}
 @media (min-width: 768px) {
-  /* line 9, ../sass/partials/_end-nav.scss */
+  /* line 8, ../sass/partials/_end-nav.scss */
   .c3xgm-about-end-nav > div.c3xgm-about-section div.c3xgm-about-section-header {
     width: 86.25%;
   }
 }
-/* line 16, ../sass/partials/_end-nav.scss */
+/* line 15, ../sass/partials/_end-nav.scss */
 .c3xgm-about-end-nav hr, .c3xgm-about-end-nav ul {
   clear: both;
   width: auto;
 }
-/* line 21, ../sass/partials/_end-nav.scss */
+/* line 20, ../sass/partials/_end-nav.scss */
 .c3xgm-about-end-nav hr {
   float: left;
   width: 100%;
   height: 2px;
   margin-top: 1em;
 }
-/* line 27, ../sass/partials/_end-nav.scss */
+/* line 26, ../sass/partials/_end-nav.scss */
 .c3xgm-about-end-nav p {
   margin: 2em 0 1em 8px;
   color: #7E8184;
@@ -4542,39 +4538,39 @@ Stylesheet: Helpers
   letter-spacing: .025em;
 }
 @media (min-width: 768px) {
-  /* line 27, ../sass/partials/_end-nav.scss */
+  /* line 26, ../sass/partials/_end-nav.scss */
   .c3xgm-about-end-nav p {
     font-size: 24px;
   }
 }
-/* line 39, ../sass/partials/_end-nav.scss */
+/* line 38, ../sass/partials/_end-nav.scss */
 .c3xgm-about-end-nav .c3xgm-about-end-nav-links {
   margin: 0 auto;
 }
-/* line 41, ../sass/partials/_end-nav.scss */
+/* line 40, ../sass/partials/_end-nav.scss */
 .c3xgm-about-end-nav .c3xgm-about-end-nav-links li {
   display: block;
   float: left;
   text-align: center;
   width: 50%;
 }
-/* line 47, ../sass/partials/_end-nav.scss */
+/* line 46, ../sass/partials/_end-nav.scss */
 .c3xgm-about-end-nav .c3xgm-about-end-nav-links li .c3xgm-about-section-icon {
   width: 56%;
   max-height: none;
   max-width: 103px;
 }
 @media (min-width: 768px) {
-  /* line 41, ../sass/partials/_end-nav.scss */
+  /* line 40, ../sass/partials/_end-nav.scss */
   .c3xgm-about-end-nav .c3xgm-about-end-nav-links li {
     width: 25%;
   }
 }
-/* line 55, ../sass/partials/_end-nav.scss */
+/* line 54, ../sass/partials/_end-nav.scss */
 .c3xgm-about-end-nav .c3xgm-about-end-nav-links li h3 {
   font-size: 1.2em;
 }
-/* line 57, ../sass/partials/_end-nav.scss */
+/* line 56, ../sass/partials/_end-nav.scss */
 .c3xgm-about-end-nav .c3xgm-about-end-nav-links li a {
   text-decoration: none;
   color: inherit;
@@ -4587,34 +4583,38 @@ Stylesheet: Helpers
   transition: color 150ms;
 }
 @media (min-width: 768px) {
-  /* line 57, ../sass/partials/_end-nav.scss */
+  /* line 56, ../sass/partials/_end-nav.scss */
   .c3xgm-about-end-nav .c3xgm-about-end-nav-links li a {
     margin: 1.5em auto;
   }
 }
-/* line 66, ../sass/partials/_end-nav.scss */
+/* line 65, ../sass/partials/_end-nav.scss */
 .c3xgm-about-end-nav .c3xgm-about-end-nav-links li a:hover {
   color: #124e9c;
 }
-/* line 68, ../sass/partials/_end-nav.scss */
+/* line 67, ../sass/partials/_end-nav.scss */
 .c3xgm-about-end-nav .c3xgm-about-end-nav-links li a:hover h3 {
   color: #124e9c;
 }
-/* line 71, ../sass/partials/_end-nav.scss */
+/* line 70, ../sass/partials/_end-nav.scss */
 .c3xgm-about-end-nav .c3xgm-about-end-nav-links li a span {
   font-weight: 100;
 }
-/* line 74, ../sass/partials/_end-nav.scss */
+/* line 73, ../sass/partials/_end-nav.scss */
 .c3xgm-about-end-nav .c3xgm-about-end-nav-links li img, .c3xgm-about-end-nav .c3xgm-about-end-nav-links li svg {
   margin: 1em auto;
 }
 
-/* line 80, ../sass/partials/_end-nav.scss */
+/* line 79, ../sass/partials/_end-nav.scss */
 #c3xgm-about-end-nav .c3xgm-about-icon-holder {
   float: none;
   height: auto;
   width: auto;
   margin: 0 auto;
+}
+/* line 85, ../sass/partials/_end-nav.scss */
+#c3xgm-about-end-nav .c3xgm-about-icon-holder svg {
+  width: 60%;
 }
 
 /* line 9, ../sass/animations/_page-in-view-end-nav.scss */
