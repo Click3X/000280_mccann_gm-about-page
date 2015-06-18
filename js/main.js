@@ -256,9 +256,9 @@ jQuery(document).ready(function($) {
 
             // DONT SHOW ANIMATIONS FOR IE9 AND BELOW
             if(!css3dtransforms) {
-                // this.addInViewClass();
                 _t.addInViewClass();
 
+                // ADD IN VIEW CLASS TO ALL PAGE BLOCKS
                 $.each(_t.animBlocks, function(i, val) {
                     val.addInViewClass();
                 });
@@ -565,8 +565,15 @@ jQuery(document).ready(function($) {
         }
     });
 
-    // HIDE GIFS
-    $('#c3xgm-about-crash-test-dummies').addClass('invisible');
+    // CRASH TEST DUMMIES GIGS, AND IE 0
+    if(css3dtransforms) {
+        $('#c3xgm-about-crash-test-dummies').addClass('invisible');
+    } else {
+        // REPLACE .GIF WITH .SVG FOR IE 9
+        $('#c3xgm-about-crash-test-dummies').each(function(index,element) {
+            element.src = element.src.replace('.gif','.svg');
+        });
+    }
 
     // UPDATE VIEWPORT DIMENSIONS
     updateviewDimensions();
