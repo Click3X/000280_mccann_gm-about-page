@@ -258,15 +258,15 @@ jQuery(document).ready(function($) {
     			// SET PAGE VIEW STATE
     			_t.hasViewClass = true;
                 // TRIGGER GIF ON ICON
-                var pageIcon = $(_t.$element ).find('.c3xgm-about-section-icon');
+                // var pageIcon = $(_t.$element ).find('.c3xgm-about-section-icon');
 
-                if(pageIcon.length > 0) {
-                    var icon = $(pageIcon).get(0);
-                    setTimeout(function() {
-                        console.dir(icon.id);
-                        triggerGif(  document.getElementById(icon.id) );    
-                    }, 800);                    
-                }
+                // if(pageIcon.length > 0) {
+                //     var icon = $(pageIcon).get(0);
+                //     setTimeout(function() {
+                //         console.dir(icon.id);
+                //         triggerGif(  document.getElementById(icon.id) );    
+                //     }, 800);                    
+                // }
 
                 // IF CURRENT PAGE IS OUR PEOPLE, SEQUENTIALLY FADE IN ANIMATIONS
                 if(currentPage == 1) {

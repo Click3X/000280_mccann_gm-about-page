@@ -26,19 +26,13 @@ var gifImgs = jQuery('img[src$=".gif"]').not(jQuery('img[src$="wheel.gif"]'));
 // IF MOBILE - ADD MOBILE STYLESHEET
 if(mobile) {
 
-    // var gifImgs = jQuery('img[src$=".gif"]').not(jQuery('img[src$="wheel.gif"]'));
-    // console.dir(gifImgs);
-
     // REPLACE GIFS WITH SVGS
     jQuery('img[src$=".gif"]').each(function(index,element) {
-    // jQuery(gifImgs).each(function(index,element) {
         // NO CHINA FLAG GIF FOR MOBILE, BUT IF SCREEN IS IPAD OR LARGER, SHOW GIF
         console.log('This is element Src: ' + element.src);
         console.log('This is window Width: ' + $(window).width() );
 
-        
         if( (element.src != 'chinaflag.gif') && ($(window).width() < 768) ) {
-
             element.src = element.src.replace('.gif','.svg');
         } 
 
@@ -50,7 +44,7 @@ if(mobile) {
 
 
  // MAKE FLAGS ANIMATE
-$('#animate-flag-line').addClass('animate-flag-line');
+// $('#animate-flag-line, #c3xgm-about-solar-road-list').addClass('animate-flag-line');
 
 // FORMAT NUMBER
 function formatNumber (num) {
