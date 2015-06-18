@@ -1812,6 +1812,7 @@ Stylesheet: Helpers
 }
 /* line 89, ../sass/partials/_mobile-gif-backups.scss */
 .c3xgm-about-mobile-device .c3xgm-about-decorative.c3xgm-about-solar-panels #c3xgm-about-solar-grey-car {
+  left: -380px;
   -webkit-animation-fill-mode: both;
   -moz-animation-fill-mode: both;
   -o-animation-fill-mode: both;
@@ -1863,10 +1864,9 @@ Stylesheet: Helpers
   margin-right: auto;
 }
 
-/* line 119, ../sass/partials/_mobile-gif-backups.scss */
-.c3xgm-about-alt-anim .c3xgm-about-flag-line-container #c3xgm-about-flag-line-grey-car {
+/* line 120, ../sass/partials/_mobile-gif-backups.scss */
+.c3xgm-about-alt-anim .c3xgm-about-dealers.element-in-view + .c3xgm-about-flag-line-container #c3xgm-about-flag-line-grey-car {
   margin: 0;
-  left: -380px;
   -webkit-animation-fill-mode: both;
   -moz-animation-fill-mode: both;
   -o-animation-fill-mode: both;
@@ -1899,8 +1899,8 @@ Stylesheet: Helpers
   animation-iteration-count: infinite;
 }
 @media (min-width: 768px) {
-  /* line 119, ../sass/partials/_mobile-gif-backups.scss */
-  .c3xgm-about-alt-anim .c3xgm-about-flag-line-container #c3xgm-about-flag-line-grey-car {
+  /* line 120, ../sass/partials/_mobile-gif-backups.scss */
+  .c3xgm-about-alt-anim .c3xgm-about-dealers.element-in-view + .c3xgm-about-flag-line-container #c3xgm-about-flag-line-grey-car {
     -webkit-animation-duration: 5s;
     -moz-animation-duration: 5s;
     -o-animation-duration: 5s;
@@ -1908,9 +1908,9 @@ Stylesheet: Helpers
     animation-duration: 5s;
   }
 }
-/* line 140, ../sass/partials/_mobile-gif-backups.scss */
-.c3xgm-about-alt-anim .c3xgm-about-decorative.c3xgm-about-solar-panels-animation #c3xgm-about-solar-road-grey-car {
-  left: -380px;
+/* line 139, ../sass/partials/_mobile-gif-backups.scss */
+.c3xgm-about-alt-anim .c3xgm-about-decorative.c3xgm-about-solar-panels-animation.element-in-view #c3xgm-about-solar-road-grey-car {
+  margin: 0;
   -webkit-animation-fill-mode: both;
   -moz-animation-fill-mode: both;
   -o-animation-fill-mode: both;
@@ -1943,8 +1943,8 @@ Stylesheet: Helpers
   animation-iteration-count: infinite;
 }
 @media (min-width: 768px) {
-  /* line 140, ../sass/partials/_mobile-gif-backups.scss */
-  .c3xgm-about-alt-anim .c3xgm-about-decorative.c3xgm-about-solar-panels-animation #c3xgm-about-solar-road-grey-car {
+  /* line 139, ../sass/partials/_mobile-gif-backups.scss */
+  .c3xgm-about-alt-anim .c3xgm-about-decorative.c3xgm-about-solar-panels-animation.element-in-view #c3xgm-about-solar-road-grey-car {
     -webkit-animation-duration: 5s;
     -moz-animation-duration: 5s;
     -o-animation-duration: 5s;

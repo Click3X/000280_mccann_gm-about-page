@@ -87,7 +87,7 @@
 	.c3xgm-about-decorative.c3xgm-about-solar-panels {
 		
 		#c3xgm-about-solar-grey-car {
-			// left: -380px;
+			left: -380px;
 			@include prefix(animation-fill-mode, both);
 			@include prefix(animation-name, moveCarRight);
 			@include prefix(animation-delay, 0);
@@ -115,12 +115,10 @@
 
 .c3xgm-about-alt-anim {
 	// FLAG LINE
-	.c3xgm-about-flag-line-container {
+	// .c3xgm-about-flag-line-container {
+	.c3xgm-about-dealers.element-in-view + .c3xgm-about-flag-line-container {
 		#c3xgm-about-flag-line-grey-car {
-			// margin:0 auto;
-			
 			margin: 0;
-			left: -380px;
 			@include prefix(animation-fill-mode, both);
 			@include prefix(animation-name, moveCarRight);
 			@include prefix(animation-delay, 0);
@@ -134,11 +132,12 @@
 
 		}
 	}
+
 	// SOLAR PANELS
-	.c3xgm-about-decorative.c3xgm-about-solar-panels-animation {
+	.c3xgm-about-decorative.c3xgm-about-solar-panels-animation.element-in-view {
 
 		#c3xgm-about-solar-road-grey-car {
-			left: -380px;
+			margin:0;
 			@include prefix(animation-fill-mode, both);
 			@include prefix(animation-name, moveCarRight);
 			@include prefix(animation-delay, 0);
