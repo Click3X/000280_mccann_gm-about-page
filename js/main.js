@@ -2,6 +2,10 @@
 jQuery(document).ready(function($) { 
 	// console.log('This is page js!');
 
+    // TEST IF PAGE IS animation
+    var altAnim = $('body').hasClass('c3xgm-about-alt-anim');
+    console.log('This is altAnim: ' + altAnim);
+
 	// DECLARE VARIABLES FOR LATER USE
 	var css3dtransforms = true,
 		currentScroll,
@@ -257,16 +261,6 @@ jQuery(document).ready(function($) {
     			currentPage = i;
     			// SET PAGE VIEW STATE
     			_t.hasViewClass = true;
-                // TRIGGER GIF ON ICON
-                // var pageIcon = $(_t.$element ).find('.c3xgm-about-section-icon');
-
-                // if(pageIcon.length > 0) {
-                //     var icon = $(pageIcon).get(0);
-                //     setTimeout(function() {
-                //         console.dir(icon.id);
-                //         triggerGif(  document.getElementById(icon.id) );    
-                //     }, 800);                    
-                // }
 
                 // IF CURRENT PAGE IS OUR PEOPLE, SEQUENTIALLY FADE IN ANIMATIONS
                 if(currentPage == 1) {
@@ -327,8 +321,12 @@ jQuery(document).ready(function($) {
                     setTimeout(function() {
                         autorotateFoundationSlider();
                     }, 1000);
-
                 } 
+
+                // ANIMATE FLAG LINE AND SOLAR ROAD
+                if( _t.elementName == "c3xgm-about-page-environment" ) {
+                }
+
     		} 
     	}); 
     }
@@ -355,7 +353,10 @@ jQuery(document).ready(function($) {
                     // IF TEST FACILITY - TRIGGER ROLLOVER
                     if(this.elementName == "c3xgm-about-test-facility") {
                         rotateCar();
-                    } else if( this.elementName == "c3xgm-about-safety-score") {
+                    } else if( (this.elementName == "c3xgm-about-dealers") && (altAnim == false) ) {
+                        $('#animate-flag-line').addClass('animate-flag-line');
+                    }
+                     else if( this.elementName == "c3xgm-about-safety-score" ) {
                         fireAnimate63();
                     } else if( this.elementName == "c3xgm-about-crash-test-dummies") {
                         setTimeout(function() {
@@ -444,11 +445,6 @@ jQuery(document).ready(function($) {
         this.isAtEighth = function() {
             return ( (this.elementTop <= viewDimensions.scrollBottom - viewDimensions.windowHeight/8) );
         }
-
-        // TEST ISINVIEW AND SET INVIEW
-        // this.setInView = function() {
-        // 	this.inView = this.isInView();
-        // }
 
         // ADD IN VIEW CLASS
         this.addInViewClass = function() {

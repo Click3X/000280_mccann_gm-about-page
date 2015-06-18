@@ -2,6 +2,10 @@
 .c3xgm-about-solar-road-wrapper {
 	padding:3em 0;
 
+	.c3xgm-about-overflow {
+		position: relative;
+	}
+
 	.c3xgm-about-solar-road-container {
 		width: 100%;
 		overflow-x:hidden;
@@ -75,6 +79,12 @@
 }
 
 
-.c3xgm-about-solar-panels-animated {
-
+//  ALT ANIMATIONS
+.c3xgm-about-alt-anim {
+	.c3xgm-about-solar-road-wrapper .grey-car {
+		bottom:4px;
+		@media(min-width: $tablet-height) {
+			bottom: 10px;
+		}
+	}
 }
