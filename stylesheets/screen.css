@@ -1942,15 +1942,21 @@ Stylesheet: Helpers
 .c3xgm-about-mobile-device .c3xgm-about-page-our-commitment .c3xgm-about-climate-declaration .c3xgm-about-block-image > div {
   margin-left: auto;
 }
+/* line 111, ../sass/partials/_mobile-gif-backups.scss */
+.c3xgm-about-mobile-device #c3xgm-about-solar-road-grey-car {
+  left: 0;
+  right: 0;
+  margin: auto;
+}
 
-/* line 112, ../sass/partials/_mobile-gif-backups.scss */
+/* line 117, ../sass/partials/_mobile-gif-backups.scss */
 .c3xgm-about-climate-declaration.element-in-view .c3xgm-about-block-image img[src$='svg'] {
   width: 50%;
   margin-left: auto;
   margin-right: auto;
 }
 
-/* line 119, ../sass/partials/_mobile-gif-backups.scss */
+/* line 124, ../sass/partials/_mobile-gif-backups.scss */
 .c3xgm-about-alt-anim .c3xgm-about-dealers.element-in-view + .c3xgm-about-flag-line-container #c3xgm-about-flag-line-grey-car {
   margin: 0;
   -webkit-animation-fill-mode: both;
@@ -1985,7 +1991,7 @@ Stylesheet: Helpers
   animation-iteration-count: infinite;
 }
 @media (min-width: 768px) {
-  /* line 119, ../sass/partials/_mobile-gif-backups.scss */
+  /* line 124, ../sass/partials/_mobile-gif-backups.scss */
   .c3xgm-about-alt-anim .c3xgm-about-dealers.element-in-view + .c3xgm-about-flag-line-container #c3xgm-about-flag-line-grey-car {
     -webkit-animation-duration: 6s;
     -moz-animation-duration: 6s;
@@ -1994,7 +2000,7 @@ Stylesheet: Helpers
     animation-duration: 6s;
   }
 }
-/* line 138, ../sass/partials/_mobile-gif-backups.scss */
+/* line 143, ../sass/partials/_mobile-gif-backups.scss */
 .c3xgm-about-alt-anim .c3xgm-about-decorative.c3xgm-about-solar-panels-animation.element-in-view #c3xgm-about-solar-road-grey-car {
   margin: 0;
   -webkit-animation-fill-mode: both;
@@ -2029,7 +2035,7 @@ Stylesheet: Helpers
   animation-iteration-count: infinite;
 }
 @media (min-width: 768px) {
-  /* line 138, ../sass/partials/_mobile-gif-backups.scss */
+  /* line 143, ../sass/partials/_mobile-gif-backups.scss */
   .c3xgm-about-alt-anim .c3xgm-about-decorative.c3xgm-about-solar-panels-animation.element-in-view #c3xgm-about-solar-road-grey-car {
     -webkit-animation-duration: 6s;
     -moz-animation-duration: 6s;
@@ -4472,7 +4478,7 @@ Stylesheet: Helpers
 
 /* line 2, ../sass/partials/_flag-lines-solar-road.scss */
 .c3xgm-about-solar-road-wrapper {
-  padding: 3em 0;
+  padding: 3em 0 0;
 }
 /* line 5, ../sass/partials/_flag-lines-solar-road.scss */
 .c3xgm-about-solar-road-wrapper .c3xgm-about-overflow {

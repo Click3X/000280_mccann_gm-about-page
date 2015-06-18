@@ -3315,13 +3315,14 @@ h4.c3xgm-about-h {
 /* line 216, ../sass/pages/_our-brands.scss */
 .c3xgm-about-china {
   position: relative;
-  margin: 7em auto;
+  margin: 3em auto 7em;
   padding-top: 19%;
   padding-bottom: 18%;
 }
 @media (min-width: 768px) {
   /* line 216, ../sass/pages/_our-brands.scss */
   .c3xgm-about-china {
+    margin-top:7em;
     padding-top: 0;
     padding-bottom: 15%;
   }
@@ -13027,12 +13028,18 @@ body {
   position: relative;
   width: 100%;
   overflow-x: hidden;
-  margin-bottom: 10em;
+  /*margin-bottom: 10em;*/
+  margin-bottom: 4em;
   -webkit-transform: translate3d(0, 0, 0);
   -moz-transform: translate3d(0, 0, 0);
   -o-transform: translate3d(0, 0, 0);
   -ms-transform: translate3d(0, 0, 0);
   transform: translate3d(0, 0, 0);
+}
+@media (min-width: 768px) {
+  .c3xgm-about-flag-line-container {
+    margin-bottom: 7em;
+  }
 }
 @media (min-width: 906px) {
   /* line 12, ../sass/animations/_flag-line.scss */

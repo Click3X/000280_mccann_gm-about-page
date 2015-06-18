@@ -23,16 +23,11 @@ jQuery(document).ready(function($) {
 	carLinks.addClass('active');
 	carSlides.addClass('hide-module').addClass('hide-module-slide-out');
 
-	// ON HOVER ADD TRANSPARENCY TO LINKS
-	// carLinks.hover(function(e) {
-	// 	carLinks.not(this).removeClass('active').addClass('c3xgm-about-module-logo-unactive');
-	// });
-
 	// CARS LINKS
 	carLinks.on('click touchstart', function(e, auto_rotate) {
 		e.preventDefault();
 
-		console.log("ABOUT LINK CLICKED", $(this).parent().index() );
+		// console.log("ABOUT LINK CLICKED", $(this).parent().index() );
 
 		// GET LINKS
 		var target = $(this).attr('href');
@@ -66,17 +61,12 @@ jQuery(document).ready(function($) {
 	// FOUNDATION ---------------------------------------------------------------------------------------------------------
 	// MOVE ALL SLIDES TO RIGHT 100%;
 	foundationSlides.addClass('hide-module');
-
-	// ON HOVER ADD TRANSPARENCY TO LINKS
-	/*foundationLinks.hover(function(e) {
-		foundationLinks.not(this).removeClass('active').addClass('c3xgm-about-module-logo-unactive');
-	});*/
 	
 	// FOUNDATION
 	foundationLinks.on('click touchstart', function(e, auto_rotate) {
 		e.preventDefault();
 
-		console.log("FOUNDATION LINK CLICKED", $(this).parent().index() );
+		// console.log("FOUNDATION LINK CLICKED", $(this).parent().index() );
 
 		// GET LINKS
 		var target = $(this).attr('href');
@@ -123,7 +113,7 @@ jQuery(document).ready(function($) {
 		var target = $(this).attr('href');
 
 		currentTechSlide = $(this).parent().index();
-		console.log("Current Tech slide is: ", currentTechSlide );
+		// console.log("Current Tech slide is: ", currentTechSlide );
 		//  ADD ACRIVE CLASS
 		$('#c3xgm-about-page-technology .c3xgm-about-module-nav li a.c3xgm-about-module-nav-bullet-active').removeClass('c3xgm-about-module-nav-bullet-active');
 		$(this).addClass('c3xgm-about-module-nav-bullet-active');
