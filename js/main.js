@@ -253,81 +253,90 @@ jQuery(document).ready(function($) {
     	$.each(Pages, function(i, val) {
             var _t = this;
     		// if( _t.isInView() && (_t.hasViewClass == false) ){
-            if( _t.isInView() && ( $(this.$element).hasClass('invisible') ) ){
-                // ADD IN VIEW CLASS
-    			_t.addInViewClass();
-    			// console.log('PAGE: ' + _t.elementName);
-    			// SET CURRENT PAGE TO PAGE INDEX
-    			currentPage = i;
-    			// SET PAGE VIEW STATE
-    			_t.hasViewClass = true;
 
-                // IF CURRENT PAGE IS OUR PEOPLE, SEQUENTIALLY FADE IN ANIMATIONS
-                if(currentPage == 1) {
-                    var time;
-                    $.each(_t.animBlocks, function(i, val) {
-                        var animateNum = $(this.$element ).find('.c3xgm-about-animate-number');
-                        setTimeout(function() {
-                            time = 1200 * i;
+            // DONT SHOW ANIMATIONS FOR IE9 AND BELOW
+            if(!css3dtransforms) {
+                // this.addInViewClass();
+                _t.addInViewClass();
+
+                $.each(_t.animBlocks, function(i, val) {
+                    val.addInViewClass();
+                });
+
+            } else {
+
+                if( _t.isInView() && ( $(this.$element).hasClass('invisible') ) ){
+                    // ADD IN VIEW CLASS
+        			_t.addInViewClass();
+        			// console.log('PAGE: ' + _t.elementName);
+        			// SET CURRENT PAGE TO PAGE INDEX
+        			currentPage = i;
+        			// SET PAGE VIEW STATE
+        			_t.hasViewClass = true;
+
+                    // IF CURRENT PAGE IS OUR PEOPLE, SEQUENTIALLY FADE IN ANIMATIONS
+                    if(currentPage == 1) {
+                        var time;
+                        $.each(_t.animBlocks, function(i, val) {
+                            var animateNum = $(this.$element ).find('.c3xgm-about-animate-number');
                             setTimeout(function() {
-                                val.addInViewClass();
-                                if(animateNum.length > 0) {
-                                    // console.log('This is index: ' + i);
-                                    if(i == 0 ) {
-                                        fireAnimatedEmployees();
-                                    } else if(i==1) {
-                                        fireAnimate6();
-                                    } else if(i==3) {
-                                        fireAnimate23();
-                                    } else if(i==4) {
-                                        fireAnimate70();
+                                time = 1200 * i;
+                                setTimeout(function() {
+                                    val.addInViewClass();
+                                    if(animateNum.length > 0) {
+                                        // console.log('This is index: ' + i);
+                                        if(i == 0 ) {
+                                            fireAnimatedEmployees();
+                                        } else if(i==1) {
+                                            fireAnimate6();
+                                        } else if(i==3) {
+                                            fireAnimate23();
+                                        } else if(i==4) {
+                                            fireAnimate70();
+                                        }
                                     }
-                                }
-                            }, time);
+                                }, time);
+                            }, 2000);
+                        });
+                    }
+
+                    // IF CURRENT PAGE IS OUR BRANDS, FADE IN FIRST SLIDE
+                    if(currentPage == 2) {
+                        // SHOW FIRST SLIDE
+                        setTimeout(function() {
+                            autorotateAboutSliderOnce();
                         }, 2000);
-                    });
-                }
+                        // START AUTO SLIDER
+                        setTimeout(function() {
+                                autorotateAboutSlider();
+                        }, 1000);
+                    }
 
-                // IF CURRENT PAGE IS OUR BRANDS, FADE IN FIRST SLIDE
-                if(currentPage == 2) {
-                    // SHOW FIRST SLIDE
-                    setTimeout(function() {
-                        autorotateAboutSliderOnce();
-                    }, 2000);
-                    // START AUTO SLIDER
-                    setTimeout(function() {
-                            autorotateAboutSlider();
-                    }, 1000);
-                }
+                    // TRIGGER TECH MODULE
+                    if( _t.elementName == "c3xgm-about-page-technology" ) {
+                        // SHOW FIRST SLIDE
+                        setTimeout(function() {
+                            autorotateTechSliderOnce();
+                        }, 1500);
+                        // START AUTO SLIDER
+                        setTimeout(function() {
+                            autorotateTechSlider();
+                        }, 1000);
+                    } 
+                    
+                    if( _t.elementName == "c3xgm-about-page-our-global-community" ) {
+                        // SHOW FIRST SLIDE
+                        setTimeout(function() {
+                            autorotateFoundationSliderOnce();
+                        }, 2200);
+                        // START AUTO SLIDER
+                        setTimeout(function() {
+                            autorotateFoundationSlider();
+                        }, 1000);
+                    } 
+        		} 
 
-                // TRIGGER TECH MODULE
-                if( _t.elementName == "c3xgm-about-page-technology" ) {
-                    // SHOW FIRST SLIDE
-                    setTimeout(function() {
-                        autorotateTechSliderOnce();
-                    }, 1500);
-                    // START AUTO SLIDER
-                    setTimeout(function() {
-                        autorotateTechSlider();
-                    }, 1000);
-                } 
-                
-                if( _t.elementName == "c3xgm-about-page-our-global-community" ) {
-                    // SHOW FIRST SLIDE
-                    setTimeout(function() {
-                        autorotateFoundationSliderOnce();
-                    }, 2200);
-                    // START AUTO SLIDER
-                    setTimeout(function() {
-                        autorotateFoundationSlider();
-                    }, 1000);
-                } 
-
-                // ANIMATE FLAG LINE AND SOLAR ROAD
-                if( _t.elementName == "c3xgm-about-page-environment" ) {
-                }
-
-    		} 
+            }
     	}); 
     }
 
@@ -344,6 +353,8 @@ jQuery(document).ready(function($) {
             $.each(blocks, function(i, val) {
                 // if( this.isAtEighth() && (this.hasViewClass == false) ){
                 // if( this.isAtEighth() && ( $(this.$element).hasClass('invisible') ) ){
+
+
                 if( this.isAtEighth() ){
                     // ADD IN VIEW CLASS
                     this.addInViewClass();
@@ -524,9 +535,6 @@ jQuery(document).ready(function($) {
     var pages = $('.c3xgm-about-page'),
         Pages = [];
 
-    // UPDATE VIEWPORT DIMENSIONS
-	updateviewDimensions();
-
     // INIT PAGES OBJECTS
     $.each(pages, function(i, val) {
         // BUILD EACH PAGE
@@ -560,6 +568,8 @@ jQuery(document).ready(function($) {
     // HIDE GIFS
     $('#c3xgm-about-crash-test-dummies').addClass('invisible');
 
+    // UPDATE VIEWPORT DIMENSIONS
+    updateviewDimensions();
     // UPDATE NAV ON PAGE LOAD
     updateNav();
     // NOW THAT WE HAVE OUR PAGE OBJECTS - SEE WHICH ONES ON SCREEN
