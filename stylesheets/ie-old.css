@@ -51,3 +51,12 @@
   height: 375px;
   margin-bottom: 7em;
 }
+
+.lt-ie9 .c3xgm-about-icon-image,
+.c3xgm-about-icon-image {
+  display:block;
+}
+
+.lt-ie9 .c3xgm-about-icon-holder svg {
+  display: none;
+}

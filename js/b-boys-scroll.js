@@ -1,4 +1,11 @@
 // BACK STREET BOYS DEMO INSPRIRED SCROLL SCRIPTS
+// TEST FOR 3D TRANSFORMS - for IE
+  var css3dtransforms;
+  
+  if( $('html').hasClass('no-csstransforms3d') ) {
+      css3dtransforms = false;
+  }
+
   var _containerHeight = 4000;
   var _width = window.innerWidth;
 

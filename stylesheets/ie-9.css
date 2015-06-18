@@ -1,0 +1,14 @@
+/* ie 9 */
+
+.c3xgm-about-icon-holder > svg {
+  display: none;
+}
+
+#c3xgm-about-employees-img {
+  background-image:url('../img/pages/people/people-icons.png');
+  background-size:100%;
+  background-repeat: no-repeat;
+}
+/*.c3xgm-about-solar-road-container {
+  overflow-x:;
+}*/
