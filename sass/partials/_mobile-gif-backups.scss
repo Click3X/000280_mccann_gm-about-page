@@ -87,7 +87,7 @@
 	.c3xgm-about-decorative.c3xgm-about-solar-panels {
 		
 		#c3xgm-about-solar-grey-car {
-			left: -380px;
+			// left: -380px;
 			@include prefix(animation-fill-mode, both);
 			@include prefix(animation-name, moveCarRight);
 			@include prefix(animation-delay, 0);
