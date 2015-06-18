@@ -1157,11 +1157,11 @@ Stylesheet: Helpers
     opacity: 1;
   }
   98% {
-    -webkit-transform: translate3d(968px, 0, 0);
+    -webkit-transform: translate3d(480px, 0, 0);
     opacity: 1;
   }
   99% {
-    -webkit-transform: translate3d(968px, 0, 0);
+    -webkit-transform: translate3d(480px, 0, 0);
     opacity: 0;
   }
   100% {
@@ -1178,11 +1178,11 @@ Stylesheet: Helpers
     opacity: 1;
   }
   98% {
-    -moz-transform: translate3d(968px, 0, 0);
+    -moz-transform: translate3d(480px, 0, 0);
     opacity: 1;
   }
   99% {
-    -moz-transform: translate3d(968px, 0, 0);
+    -moz-transform: translate3d(480px, 0, 0);
     opacity: 0;
   }
   100% {
@@ -1199,11 +1199,11 @@ Stylesheet: Helpers
     opacity: 1;
   }
   98% {
-    -o-transform: translate3d(968px, 0, 0);
+    -o-transform: translate3d(480px, 0, 0);
     opacity: 1;
   }
   99% {
-    -o-transform: translate3d(968px, 0, 0);
+    -o-transform: translate3d(480px, 0, 0);
     opacity: 0;
   }
   100% {
@@ -1220,11 +1220,11 @@ Stylesheet: Helpers
     opacity: 1;
   }
   98% {
-    transform: translate3d(968px, 0, 0);
+    transform: translate3d(480px, 0, 0);
     opacity: 1;
   }
   99% {
-    transform: translate3d(968px, 0, 0);
+    transform: translate3d(480px, 0, 0);
     opacity: 0;
   }
   100% {
@@ -1235,85 +1235,85 @@ Stylesheet: Helpers
 @media (min-width: 480px) {
   @-webkit-keyframes moveCarRight {
     0% {
-      -webkit-transform: translate3d(-400px, 0, 0);
+      -webkit-transform: translate3d(-350px, 0, 0);
       opacity: 0;
     }
     1% {
       opacity: 1;
     }
     98% {
-      -webkit-transform: translate3d(1468px, 0, 0);
+      -webkit-transform: translate3d(1068px, 0, 0);
       opacity: 1;
     }
     99% {
-      -webkit-transform: translate3d(1468px, 0, 0);
+      -webkit-transform: translate3d(1068px, 0, 0);
       opacity: 0;
     }
     100% {
-      -webkit-transform: translate3d(-400px, 0, 0);
+      -webkit-transform: translate3d(-350px, 0, 0);
       opacity: 0;
     }
   }
   @-moz-keyframes moveCarRight {
     0% {
-      -moz-transform: translate3d(-400px, 0, 0);
+      -moz-transform: translate3d(-350px, 0, 0);
       opacity: 0;
     }
     1% {
       opacity: 1;
     }
     98% {
-      -moz-transform: translate3d(1468px, 0, 0);
+      -moz-transform: translate3d(1068px, 0, 0);
       opacity: 1;
     }
     99% {
-      -moz-transform: translate3d(1468px, 0, 0);
+      -moz-transform: translate3d(1068px, 0, 0);
       opacity: 0;
     }
     100% {
-      -moz-transform: translate3d(-400px, 0, 0);
+      -moz-transform: translate3d(-350px, 0, 0);
       opacity: 0;
     }
   }
   @-o-keyframes moveCarRight {
     0% {
-      -o-transform: translate3d(-400px, 0, 0);
+      -o-transform: translate3d(-350px, 0, 0);
       opacity: 0;
     }
     1% {
       opacity: 1;
     }
     98% {
-      -o-transform: translate3d(1468px, 0, 0);
+      -o-transform: translate3d(1068px, 0, 0);
       opacity: 1;
     }
     99% {
-      -o-transform: translate3d(1468px, 0, 0);
+      -o-transform: translate3d(1068px, 0, 0);
       opacity: 0;
     }
     100% {
-      -o-transform: translate3d(-400px, 0, 0);
+      -o-transform: translate3d(-350px, 0, 0);
       opacity: 0;
     }
   }
   @keyframes moveCarRight {
     0% {
-      transform: translate3d(-400px, 0, 0);
+      transform: translate3d(-350px, 0, 0);
       opacity: 0;
     }
     1% {
       opacity: 1;
     }
     98% {
-      transform: translate3d(1468px, 0, 0);
+      transform: translate3d(1068px, 0, 0);
       opacity: 1;
     }
     99% {
-      transform: translate3d(1468px, 0, 0);
+      transform: translate3d(1068px, 0, 0);
       opacity: 0;
     }
     100% {
-      transform: translate3d(-400px, 0, 0);
+      transform: translate3d(-350px, 0, 0);
       opacity: 0;
     }
   }
@@ -1321,85 +1321,171 @@ Stylesheet: Helpers
 @media (min-width: 768px) {
   @-webkit-keyframes moveCarRight {
     0% {
-      -webkit-transform: translate3d(-400px, 0, 0);
+      -webkit-transform: translate3d(-350px, 0, 0);
       opacity: 0;
     }
     1% {
       opacity: 1;
     }
     98% {
-      -webkit-transform: translate3d(2868px, 0, 0);
+      -webkit-transform: translate3d(1600px, 0, 0);
       opacity: 1;
     }
     99% {
-      -webkit-transform: translate3d(2868px, 0, 0);
+      -webkit-transform: translate3d(1600px, 0, 0);
       opacity: 0;
     }
     100% {
-      -webkit-transform: translate3d(-400px, 0, 0);
+      -webkit-transform: translate3d(-350px, 0, 0);
       opacity: 0;
     }
   }
   @-moz-keyframes moveCarRight {
     0% {
-      -moz-transform: translate3d(-400px, 0, 0);
+      -moz-transform: translate3d(-350px, 0, 0);
       opacity: 0;
     }
     1% {
       opacity: 1;
     }
     98% {
-      -moz-transform: translate3d(2868px, 0, 0);
+      -moz-transform: translate3d(1600px, 0, 0);
       opacity: 1;
     }
     99% {
-      -moz-transform: translate3d(2868px, 0, 0);
+      -moz-transform: translate3d(1600px, 0, 0);
       opacity: 0;
     }
     100% {
-      -moz-transform: translate3d(-400px, 0, 0);
+      -moz-transform: translate3d(-350px, 0, 0);
       opacity: 0;
     }
   }
   @-o-keyframes moveCarRight {
     0% {
-      -o-transform: translate3d(-400px, 0, 0);
+      -o-transform: translate3d(-350px, 0, 0);
       opacity: 0;
     }
     1% {
       opacity: 1;
     }
     98% {
-      -o-transform: translate3d(2868px, 0, 0);
+      -o-transform: translate3d(1600px, 0, 0);
       opacity: 1;
     }
     99% {
-      -o-transform: translate3d(2868px, 0, 0);
+      -o-transform: translate3d(1600px, 0, 0);
       opacity: 0;
     }
     100% {
-      -o-transform: translate3d(-400px, 0, 0);
+      -o-transform: translate3d(-350px, 0, 0);
       opacity: 0;
     }
   }
   @keyframes moveCarRight {
     0% {
-      transform: translate3d(-400px, 0, 0);
+      transform: translate3d(-350px, 0, 0);
       opacity: 0;
     }
     1% {
       opacity: 1;
     }
     98% {
-      transform: translate3d(2868px, 0, 0);
+      transform: translate3d(1600px, 0, 0);
       opacity: 1;
     }
     99% {
-      transform: translate3d(2868px, 0, 0);
+      transform: translate3d(1600px, 0, 0);
       opacity: 0;
     }
     100% {
-      transform: translate3d(-400px, 0, 0);
+      transform: translate3d(-350px, 0, 0);
+      opacity: 0;
+    }
+  }
+}
+@media (min-width: 1400px) {
+  @-webkit-keyframes moveCarRight {
+    0% {
+      -webkit-transform: translate3d(-350px, 0, 0);
+      opacity: 0;
+    }
+    1% {
+      opacity: 1;
+    }
+    98% {
+      -webkit-transform: translate3d(2400px, 0, 0);
+      opacity: 1;
+    }
+    99% {
+      -webkit-transform: translate3d(2400px, 0, 0);
+      opacity: 0;
+    }
+    100% {
+      -webkit-transform: translate3d(-350px, 0, 0);
+      opacity: 0;
+    }
+  }
+  @-moz-keyframes moveCarRight {
+    0% {
+      -moz-transform: translate3d(-350px, 0, 0);
+      opacity: 0;
+    }
+    1% {
+      opacity: 1;
+    }
+    98% {
+      -moz-transform: translate3d(2400px, 0, 0);
+      opacity: 1;
+    }
+    99% {
+      -moz-transform: translate3d(2400px, 0, 0);
+      opacity: 0;
+    }
+    100% {
+      -moz-transform: translate3d(-350px, 0, 0);
+      opacity: 0;
+    }
+  }
+  @-o-keyframes moveCarRight {
+    0% {
+      -o-transform: translate3d(-350px, 0, 0);
+      opacity: 0;
+    }
+    1% {
+      opacity: 1;
+    }
+    98% {
+      -o-transform: translate3d(2400px, 0, 0);
+      opacity: 1;
+    }
+    99% {
+      -o-transform: translate3d(2400px, 0, 0);
+      opacity: 0;
+    }
+    100% {
+      -o-transform: translate3d(-350px, 0, 0);
+      opacity: 0;
+    }
+  }
+  @keyframes moveCarRight {
+    0% {
+      transform: translate3d(-350px, 0, 0);
+      opacity: 0;
+    }
+    1% {
+      opacity: 1;
+    }
+    98% {
+      transform: translate3d(2400px, 0, 0);
+      opacity: 1;
+    }
+    99% {
+      transform: translate3d(2400px, 0, 0);
+      opacity: 0;
+    }
+    100% {
+      transform: translate3d(-350px, 0, 0);
       opacity: 0;
     }
   }
@@ -1864,7 +1950,7 @@ Stylesheet: Helpers
   margin-right: auto;
 }
 
-/* line 120, ../sass/partials/_mobile-gif-backups.scss */
+/* line 119, ../sass/partials/_mobile-gif-backups.scss */
 .c3xgm-about-alt-anim .c3xgm-about-dealers.element-in-view + .c3xgm-about-flag-line-container #c3xgm-about-flag-line-grey-car {
   margin: 0;
   -webkit-animation-fill-mode: both;
@@ -1882,11 +1968,11 @@ Stylesheet: Helpers
   -o-animation-delay: 0;
   -ms-animation-delay: 0;
   animation-delay: 0;
-  -webkit-animation-duration: 3s;
-  -moz-animation-duration: 3s;
-  -o-animation-duration: 3s;
-  -ms-animation-duration: 3s;
-  animation-duration: 3s;
+  -webkit-animation-duration: 4s;
+  -moz-animation-duration: 4s;
+  -o-animation-duration: 4s;
+  -ms-animation-duration: 4s;
+  animation-duration: 4s;
   -webkit-animation-timing-function: linear;
   -moz-animation-timing-function: linear;
   -o-animation-timing-function: linear;
@@ -1899,16 +1985,16 @@ Stylesheet: Helpers
   animation-iteration-count: infinite;
 }
 @media (min-width: 768px) {
-  /* line 120, ../sass/partials/_mobile-gif-backups.scss */
+  /* line 119, ../sass/partials/_mobile-gif-backups.scss */
   .c3xgm-about-alt-anim .c3xgm-about-dealers.element-in-view + .c3xgm-about-flag-line-container #c3xgm-about-flag-line-grey-car {
-    -webkit-animation-duration: 5s;
-    -moz-animation-duration: 5s;
-    -o-animation-duration: 5s;
-    -ms-animation-duration: 5s;
-    animation-duration: 5s;
+    -webkit-animation-duration: 6s;
+    -moz-animation-duration: 6s;
+    -o-animation-duration: 6s;
+    -ms-animation-duration: 6s;
+    animation-duration: 6s;
   }
 }
-/* line 139, ../sass/partials/_mobile-gif-backups.scss */
+/* line 138, ../sass/partials/_mobile-gif-backups.scss */
 .c3xgm-about-alt-anim .c3xgm-about-decorative.c3xgm-about-solar-panels-animation.element-in-view #c3xgm-about-solar-road-grey-car {
   margin: 0;
   -webkit-animation-fill-mode: both;
@@ -1926,11 +2012,11 @@ Stylesheet: Helpers
   -o-animation-delay: 0;
   -ms-animation-delay: 0;
   animation-delay: 0;
-  -webkit-animation-duration: 3s;
-  -moz-animation-duration: 3s;
-  -o-animation-duration: 3s;
-  -ms-animation-duration: 3s;
-  animation-duration: 3s;
+  -webkit-animation-duration: 4s;
+  -moz-animation-duration: 4s;
+  -o-animation-duration: 4s;
+  -ms-animation-duration: 4s;
+  animation-duration: 4s;
   -webkit-animation-timing-function: linear;
   -moz-animation-timing-function: linear;
   -o-animation-timing-function: linear;
@@ -1943,13 +2029,13 @@ Stylesheet: Helpers
   animation-iteration-count: infinite;
 }
 @media (min-width: 768px) {
-  /* line 139, ../sass/partials/_mobile-gif-backups.scss */
+  /* line 138, ../sass/partials/_mobile-gif-backups.scss */
   .c3xgm-about-alt-anim .c3xgm-about-decorative.c3xgm-about-solar-panels-animation.element-in-view #c3xgm-about-solar-road-grey-car {
-    -webkit-animation-duration: 5s;
-    -moz-animation-duration: 5s;
-    -o-animation-duration: 5s;
-    -ms-animation-duration: 5s;
-    animation-duration: 5s;
+    -webkit-animation-duration: 6s;
+    -moz-animation-duration: 6s;
+    -o-animation-duration: 6s;
+    -ms-animation-duration: 6s;
+    animation-duration: 6s;
   }
 }
 

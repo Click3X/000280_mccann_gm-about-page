@@ -115,19 +115,18 @@
 
 .c3xgm-about-alt-anim {
 	// FLAG LINE
-	// .c3xgm-about-flag-line-container {
 	.c3xgm-about-dealers.element-in-view + .c3xgm-about-flag-line-container {
 		#c3xgm-about-flag-line-grey-car {
 			margin: 0;
 			@include prefix(animation-fill-mode, both);
 			@include prefix(animation-name, moveCarRight);
 			@include prefix(animation-delay, 0);
-			@include prefix(animation-duration, 3s);
+			@include prefix(animation-duration, 4s);
 			@include prefix(animation-timing-function, linear);
 			@include prefix(animation-iteration-count, infinite);
 
 			@media(min-width: $tablet-height) {
-				@include prefix(animation-duration, 5s);
+				@include prefix(animation-duration, 6s);
 			}
 
 		}
@@ -141,12 +140,12 @@
 			@include prefix(animation-fill-mode, both);
 			@include prefix(animation-name, moveCarRight);
 			@include prefix(animation-delay, 0);
-			@include prefix(animation-duration, 3s);
+			@include prefix(animation-duration, 4s);
 			@include prefix(animation-timing-function, linear);
 			@include prefix(animation-iteration-count, infinite);
 
 			@media(min-width: $tablet-height) {
-				@include prefix(animation-duration, 5s);
+				@include prefix(animation-duration, 6s);
 			}
 		}
 	}
