@@ -1,14 +1,26 @@
 /* ie 9 */
 
+/* NO HEADER INLINE SVGS */
 .c3xgm-about-icon-holder > svg {
   display: none;
 }
 
+.c3xgm-about-logo-container .c3xgm-about-our-commitment-icon {
+  padding-top: 3px;
+}
+
+/* OUR PEOPLE */
 #c3xgm-about-employees-img {
   background-image:url('../img/pages/people/people-icons.png');
   background-size:100%;
   background-repeat: no-repeat;
 }
-/*.c3xgm-about-solar-road-container {
-  overflow-x:;
-}*/
+
+#myobj {
+  background-image:url('../img/pages/people/map.png');
+  background-size:70%;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+}
+
+#myobj svg { visibility: hidden; }
