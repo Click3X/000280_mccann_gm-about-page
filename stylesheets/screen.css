@@ -4408,42 +4408,6 @@ Stylesheet: Helpers
 .c3xgm-about-solar-road-wrapper .c3xgm-about-overflow {
   position: relative;
 }
-/* line 9, ../sass/partials/_flag-lines-solar-road.scss */
-.c3xgm-about-solar-road-wrapper .c3xgm-about-solar-road-container {
-  width: 100%;
-  overflow-x: hidden;
-}
-/* line 13, ../sass/partials/_flag-lines-solar-road.scss */
-.c3xgm-about-solar-road-wrapper .c3xgm-about-solar-road-container .c3xgm-about-solar-road-list {
-  width: 200%;
-}
-/* line 16, ../sass/partials/_flag-lines-solar-road.scss */
-.c3xgm-about-solar-road-wrapper .c3xgm-about-solar-road-container .c3xgm-about-solar-road-list li {
-  width: 50%;
-  display: block;
-  float: left;
-  position: relative;
-}
-/* line 22, ../sass/partials/_flag-lines-solar-road.scss */
-.c3xgm-about-solar-road-wrapper .c3xgm-about-solar-road-container .c3xgm-about-solar-road-list li img {
-  display: inline-block;
-  margin-bottom: -2px;
-  z-index: -2;
-}
-/* line 28, ../sass/partials/_flag-lines-solar-road.scss */
-.c3xgm-about-solar-road-wrapper .c3xgm-about-solar-road-container .c3xgm-about-solar-road-list li .c3xgm-about-tree {
-  margin-left: 2%;
-  width: 9.9%;
-  height: auto;
-  max-width: 99px;
-}
-/* line 35, ../sass/partials/_flag-lines-solar-road.scss */
-.c3xgm-about-solar-road-wrapper .c3xgm-about-solar-road-container .c3xgm-about-solar-road-list li .c3xgm-about-solar-panels {
-  margin-left: 37%;
-  width: 25.7%;
-  height: auto;
-  max-width: 257px;
-}
 /* line 44, ../sass/partials/_flag-lines-solar-road.scss */
 .c3xgm-about-solar-road-wrapper .c3xgm-about-sun {
   width: 16%;
@@ -4508,14 +4472,51 @@ Stylesheet: Helpers
 }
 
 /* line 84, ../sass/partials/_flag-lines-solar-road.scss */
-.c3xgm-about-alt-anim .c3xgm-about-solar-road-wrapper .grey-car {
+.c3xgm-about-solar-road-wrapper .grey-car {
   bottom: 4px;
 }
 @media (min-width: 768px) {
   /* line 84, ../sass/partials/_flag-lines-solar-road.scss */
-  .c3xgm-about-alt-anim .c3xgm-about-solar-road-wrapper .grey-car {
+  .c3xgm-about-solar-road-wrapper .grey-car {
     bottom: 10px;
   }
+}
+
+/* line 94, ../sass/partials/_flag-lines-solar-road.scss */
+.c3xgm-about-solar-road-container {
+  width: 100%;
+  overflow-x: hidden;
+}
+/* line 98, ../sass/partials/_flag-lines-solar-road.scss */
+.c3xgm-about-solar-road-container .c3xgm-about-solar-road-list {
+  width: 200%;
+}
+/* line 101, ../sass/partials/_flag-lines-solar-road.scss */
+.c3xgm-about-solar-road-container .c3xgm-about-solar-road-list li {
+  width: 50%;
+  display: block;
+  float: left;
+  position: relative;
+}
+/* line 107, ../sass/partials/_flag-lines-solar-road.scss */
+.c3xgm-about-solar-road-container .c3xgm-about-solar-road-list li img {
+  display: inline-block;
+  margin-bottom: -2px;
+  z-index: -2;
+}
+/* line 113, ../sass/partials/_flag-lines-solar-road.scss */
+.c3xgm-about-solar-road-container .c3xgm-about-solar-road-list li .c3xgm-about-tree {
+  margin-left: 2%;
+  width: 9.9%;
+  height: auto;
+  max-width: 99px;
+}
+/* line 120, ../sass/partials/_flag-lines-solar-road.scss */
+.c3xgm-about-solar-road-container .c3xgm-about-solar-road-list li .c3xgm-about-solar-panels {
+  margin-left: 37%;
+  width: 25.7%;
+  height: auto;
+  max-width: 257px;
 }
 
 /* line 2, ../sass/partials/_end-nav.scss */

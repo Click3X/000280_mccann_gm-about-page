@@ -64,14 +64,15 @@
       }
     },
     {
-      name: 'c3xgm-about-solar-grey-car',
+      // name: 'c3xgm-about-solar-road-grey-car',
+      name: 'c3xgm-about-solar-road-grey-car',
       start: {
-        percent: getElemOffest('#c3xgm-about-solar-grey-car') * 1.17, 
+        percent: getElemOffest('#c3xgm-about-solar-road-grey-car') * 1.17, 
         x:0.1, 
         y:0
       },
       end: {
-        percent: getElemOffest('#c3xgm-about-solar-grey-car') * 1.17 + 0.3,
+        percent: getElemOffest('#c3xgm-about-solar-road-grey-car') * 1.17 + 0.3,
         x:1, 
         y:0
       }

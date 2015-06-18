@@ -353,16 +353,17 @@ jQuery(document).ready(function($) {
                     // IF TEST FACILITY - TRIGGER ROLLOVER
                     if(this.elementName == "c3xgm-about-test-facility") {
                         rotateCar();
+                        // ANIMATE FLAG WHEN ELEMENT IS IN VIEW - ONLY ON ALT ANIMATION PAGE
                     } else if( (this.elementName == "c3xgm-about-dealers") && (altAnim == false) ) {
                         $('#animate-flag-line').addClass('animate-flag-line');
+                    } else if( (this.elementName == "c3xgm-about-solar-panels-animation") && (altAnim == false) ) {
+                        $('#c3xgm-about-solar-road-list').addClass('animate-flag-line');
                     }
                      else if( this.elementName == "c3xgm-about-safety-score" ) {
                         fireAnimate63();
                     } else if( this.elementName == "c3xgm-about-crash-test-dummies") {
                         setTimeout(function() {
-                            // console.log('We have test dummites!');
                             if(triggerCTD == false) {
-                                
                                 triggerGif( document.getElementById('c3xgm-about-crash-test-dummies') );
                                 $('#c3xgm-about-crash-test-dummies').removeClass('invisible');
                                 triggerCTD = true;    
