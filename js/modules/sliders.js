@@ -171,10 +171,10 @@ jQuery(document).ready(function($) {
 				clickIndex = 0;
 			}
 		} else if(href == '#left') {
-			if (currentTechSlide - 1 > 0) {
-				clickIndex = currentTechSlide - 1;
-			} else {
+			if (currentTechSlide - 1 < 0) {
 				clickIndex = techSlides.length - 1;
+			} else {
+				clickIndex = currentTechSlide - 1;
 			}
 		} 
 
