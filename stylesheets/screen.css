@@ -2207,7 +2207,6 @@ Stylesheet: Helpers
 }
 
 /* line 49, ../sass/partials/_animated-icons.scss */
-.c3xgm-about-page-in-view .c3xgm-about-section-header .c3xgm-about-icon-holder .out_circle,
 .c3xgm-about-page-in-view .c3xgm-about-section-header .c3xgm-about-section-header-inner .c3xgm-about-icon-holder .out_circle {
   -webkit-animation: dash 3s linear forwards;
   -moz-animation: dash 3s linear forwards;
@@ -2216,7 +2215,6 @@ Stylesheet: Helpers
   animation: dash 3s linear forwards;
 }
 /* line 57, ../sass/partials/_animated-icons.scss */
-.c3xgm-about-page-in-view .c3xgm-about-section-header .c3xgm-about-icon-holder .person,
 .c3xgm-about-page-in-view .c3xgm-about-section-header .c3xgm-about-section-header-inner .c3xgm-about-icon-holder .person {
   -webkit-animation: personSlideIn 0.7s 0.6s ease forwards;
   -moz-animation: personSlideIn 0.7s 0.6s ease forwards;
@@ -2225,7 +2223,6 @@ Stylesheet: Helpers
   animation: personSlideIn 0.7s 0.6s ease forwards;
 }
 /* line 65, ../sass/partials/_animated-icons.scss */
-.c3xgm-about-page-in-view .c3xgm-about-section-header .c3xgm-about-icon-holder .tie,
 .c3xgm-about-page-in-view .c3xgm-about-section-header .c3xgm-about-section-header-inner .c3xgm-about-icon-holder .tie {
   -webkit-animation: tieSlideIn 0.5s 0.9s linear forwards;
   -moz-animation: tieSlideIn 0.5s 0.9s linear forwards;
@@ -2234,7 +2231,6 @@ Stylesheet: Helpers
   animation: tieSlideIn 0.5s 0.9s linear forwards;
 }
 /* line 73, ../sass/partials/_animated-icons.scss */
-.c3xgm-about-page-in-view .c3xgm-about-section-header .c3xgm-about-icon-holder .grey_circle,
 .c3xgm-about-page-in-view .c3xgm-about-section-header .c3xgm-about-section-header-inner .c3xgm-about-icon-holder .grey_circle {
   -webkit-animation: greycircleScaleUp 0.5s 0.5s linear forwards;
   -moz-animation: greycircleScaleUp 0.5s 0.5s linear forwards;
@@ -2243,7 +2239,6 @@ Stylesheet: Helpers
   animation: greycircleScaleUp 0.5s 0.5s linear forwards;
 }
 /* line 81, ../sass/partials/_animated-icons.scss */
-.c3xgm-about-page-in-view .c3xgm-about-section-header .c3xgm-about-icon-holder .shadow,
 .c3xgm-about-page-in-view .c3xgm-about-section-header .c3xgm-about-section-header-inner .c3xgm-about-icon-holder .shadow {
   -webkit-animation: fadeIn 0.3s 1.5s linear forwards;
   -moz-animation: fadeIn 0.3s 1.5s linear forwards;
@@ -2252,7 +2247,6 @@ Stylesheet: Helpers
   animation: fadeIn 0.3s 1.5s linear forwards;
 }
 /* line 89, ../sass/partials/_animated-icons.scss */
-.c3xgm-about-page-in-view .c3xgm-about-section-header .c3xgm-about-icon-holder .brand_car,
 .c3xgm-about-page-in-view .c3xgm-about-section-header .c3xgm-about-section-header-inner .c3xgm-about-icon-holder .brand_car {
   -webkit-animation: slideRight 0.6s 1s ease forwards;
   -moz-animation: slideRight 0.6s 1s ease forwards;
@@ -2261,7 +2255,6 @@ Stylesheet: Helpers
   animation: slideRight 0.6s 1s ease forwards;
 }
 /* line 97, ../sass/partials/_animated-icons.scss */
-.c3xgm-about-page-in-view .c3xgm-about-section-header .c3xgm-about-icon-holder .brand_car_shadow,
 .c3xgm-about-page-in-view .c3xgm-about-section-header .c3xgm-about-section-header-inner .c3xgm-about-icon-holder .brand_car_shadow {
   -webkit-animation: scaleUp 0.3s 1.4s linear forwards;
   -moz-animation: scaleUp 0.3s 1.4s linear forwards;
@@ -2270,7 +2263,6 @@ Stylesheet: Helpers
   animation: scaleUp 0.3s 1.4s linear forwards;
 }
 /* line 106, ../sass/partials/_animated-icons.scss */
-.c3xgm-about-page-in-view .c3xgm-about-section-header .c3xgm-about-icon-holder .inner_car,
 .c3xgm-about-page-in-view .c3xgm-about-section-header .c3xgm-about-section-header-inner .c3xgm-about-icon-holder .inner_car {
   -webkit-animation: scaleUp 0.5s 1.2s linear forwards;
   -moz-animation: scaleUp 0.5s 1.2s linear forwards;
@@ -2279,7 +2271,6 @@ Stylesheet: Helpers
   animation: scaleUp 0.5s 1.2s linear forwards;
 }
 /* line 115, ../sass/partials/_animated-icons.scss */
-.c3xgm-about-page-in-view .c3xgm-about-section-header .c3xgm-about-icon-holder .dark_grey,
 .c3xgm-about-page-in-view .c3xgm-about-section-header .c3xgm-about-section-header-inner .c3xgm-about-icon-holder .dark_grey {
   -webkit-animation: scaleUp 0.4s 0.8s linear forwards;
   -moz-animation: scaleUp 0.4s 0.8s linear forwards;
@@ -2288,7 +2279,6 @@ Stylesheet: Helpers
   animation: scaleUp 0.4s 0.8s linear forwards;
 }
 /* line 123, ../sass/partials/_animated-icons.scss */
-.c3xgm-about-page-in-view .c3xgm-about-section-header .c3xgm-about-icon-holder .road,
 .c3xgm-about-page-in-view .c3xgm-about-section-header .c3xgm-about-section-header-inner .c3xgm-about-icon-holder .road {
   -webkit-animation: scaleUp 0.5s 1s linear forwards;
   -moz-animation: scaleUp 0.5s 1s linear forwards;
@@ -2297,7 +2287,6 @@ Stylesheet: Helpers
   animation: scaleUp 0.5s 1s linear forwards;
 }
 /* line 131, ../sass/partials/_animated-icons.scss */
-.c3xgm-about-page-in-view .c3xgm-about-section-header .c3xgm-about-icon-holder .road_lines,
 .c3xgm-about-page-in-view .c3xgm-about-section-header .c3xgm-about-section-header-inner .c3xgm-about-icon-holder .road_lines {
   -webkit-animation: scaleUp 0.6s 1.2s linear forwards;
   -moz-animation: scaleUp 0.6s 1.2s linear forwards;
@@ -2306,7 +2295,6 @@ Stylesheet: Helpers
   animation: scaleUp 0.6s 1.2s linear forwards;
 }
 /* line 139, ../sass/partials/_animated-icons.scss */
-.c3xgm-about-page-in-view .c3xgm-about-section-header .c3xgm-about-icon-holder .sun,
 .c3xgm-about-page-in-view .c3xgm-about-section-header .c3xgm-about-section-header-inner .c3xgm-about-icon-holder .sun {
   -webkit-animation: scaleUp 0.6s 1.2s linear forwards;
   -moz-animation: scaleUp 0.6s 1.2s linear forwards;
@@ -2315,9 +2303,7 @@ Stylesheet: Helpers
   animation: scaleUp 0.6s 1.2s linear forwards;
 }
 /* line 147, ../sass/partials/_animated-icons.scss */
-.c3xgm-about-page-in-view .c3xgm-about-section-header .c3xgm-about-icon-holder .lighter_yellow, .c3xgm-about-page-in-view .c3xgm-about-section-header .c3xgm-about-icon-holder .gm_logo,
-.c3xgm-about-page-in-view .c3xgm-about-section-header .c3xgm-about-section-header-inner .c3xgm-about-icon-holder .lighter_yellow,
-.c3xgm-about-page-in-view .c3xgm-about-section-header .c3xgm-about-section-header-inner .c3xgm-about-icon-holder .gm_logo {
+.c3xgm-about-page-in-view .c3xgm-about-section-header .c3xgm-about-section-header-inner .c3xgm-about-icon-holder .lighter_yellow, .c3xgm-about-page-in-view .c3xgm-about-section-header .c3xgm-about-section-header-inner .c3xgm-about-icon-holder .gm_logo {
   -webkit-animation: personSlideIn 0.8s 0.7s linear forwards;
   -moz-animation: personSlideIn 0.8s 0.7s linear forwards;
   -ms-animation: personSlideIn 0.8s 0.7s linear forwards;
@@ -2325,7 +2311,6 @@ Stylesheet: Helpers
   animation: personSlideIn 0.8s 0.7s linear forwards;
 }
 /* line 155, ../sass/partials/_animated-icons.scss */
-.c3xgm-about-page-in-view .c3xgm-about-section-header .c3xgm-about-icon-holder .darker_yellow,
 .c3xgm-about-page-in-view .c3xgm-about-section-header .c3xgm-about-section-header-inner .c3xgm-about-icon-holder .darker_yellow {
   -webkit-animation: personSlideIn 0.8s 1s linear forwards;
   -moz-animation: personSlideIn 0.8s 1s linear forwards;
@@ -2334,7 +2319,6 @@ Stylesheet: Helpers
   animation: personSlideIn 0.8s 1s linear forwards;
 }
 /* line 163, ../sass/partials/_animated-icons.scss */
-.c3xgm-about-page-in-view .c3xgm-about-section-header .c3xgm-about-icon-holder .white_band,
 .c3xgm-about-page-in-view .c3xgm-about-section-header .c3xgm-about-section-header-inner .c3xgm-about-icon-holder .white_band {
   -webkit-animation: dash 6s 2s linear forwards;
   -moz-animation: dash 6s 2s linear forwards;
@@ -4718,7 +4702,143 @@ Stylesheet: Helpers
   -ms-animation-iteration-count: 1;
   animation-iteration-count: 1;
 }
-/* line 37, ../sass/animations/_page-in-view-end-nav.scss */
+/* line 35, ../sass/animations/_page-in-view-end-nav.scss */
+.c3xgm-about-page-in-view .c3xgm-about-section-header .c3xgm-about-section-header .c3xgm-about-logo-container .c3xgm-about-icon-holder .out_circle,
+#c3xgm-about-end-nav.c3xgm-about-page.c3xgm-about-page-in-view .c3xgm-about-section-header .c3xgm-about-logo-container .c3xgm-about-icon-holder .out_circle {
+  -webkit-animation: dash 3s linear forwards;
+  -moz-animation: dash 3s linear forwards;
+  -o-animation: dash 3s linear forwards;
+  -ms-animation: dash 3s linear forwards;
+  animation: dash 3s linear forwards;
+}
+/* line 43, ../sass/animations/_page-in-view-end-nav.scss */
+.c3xgm-about-page-in-view .c3xgm-about-section-header .c3xgm-about-section-header .c3xgm-about-logo-container .c3xgm-about-icon-holder .grey_circle,
+#c3xgm-about-end-nav.c3xgm-about-page.c3xgm-about-page-in-view .c3xgm-about-section-header .c3xgm-about-logo-container .c3xgm-about-icon-holder .grey_circle {
+  -webkit-animation: greycircleScaleUp 0.5s 0.5s linear forwards;
+  -moz-animation: greycircleScaleUp 0.5s 0.5s linear forwards;
+  -ms-animation: greycircleScaleUp 0.5s 0.5s linear forwards;
+  -o-animation: greycircleScaleUp 0.5s 0.5s linear forwards;
+  animation: greycircleScaleUp 0.5s 0.5s linear forwards;
+}
+/* line 51, ../sass/animations/_page-in-view-end-nav.scss */
+.c3xgm-about-page-in-view .c3xgm-about-section-header .c3xgm-about-section-header .c3xgm-about-logo-container .c3xgm-about-icon-holder .dark_grey,
+#c3xgm-about-end-nav.c3xgm-about-page.c3xgm-about-page-in-view .c3xgm-about-section-header .c3xgm-about-logo-container .c3xgm-about-icon-holder .dark_grey {
+  -webkit-animation: scaleUp 0.4s 0.8s linear forwards;
+  -moz-animation: scaleUp 0.4s 0.8s linear forwards;
+  -ms-animation: scaleUp 0.4s 0.8s linear forwards;
+  -o-animation: scaleUp 0.4s 0.8s linear forwards;
+  animation: scaleUp 0.4s 0.8s linear forwards;
+}
+/* line 59, ../sass/animations/_page-in-view-end-nav.scss */
+.c3xgm-about-page-in-view .c3xgm-about-section-header .c3xgm-about-section-header .c3xgm-about-logo-container .c3xgm-about-icon-holder .shadow,
+#c3xgm-about-end-nav.c3xgm-about-page.c3xgm-about-page-in-view .c3xgm-about-section-header .c3xgm-about-logo-container .c3xgm-about-icon-holder .shadow {
+  -webkit-animation: fadeIn 0.3s 1.5s linear forwards;
+  -moz-animation: fadeIn 0.3s 1.5s linear forwards;
+  -ms-animation: fadeIn 0.3s 1.5s linear forwards;
+  -o-animation: fadeIn 0.3s 1.5s linear forwards;
+  animation: fadeIn 0.3s 1.5s linear forwards;
+}
+/* line 67, ../sass/animations/_page-in-view-end-nav.scss */
+.c3xgm-about-page-in-view .c3xgm-about-section-header .c3xgm-about-section-header .c3xgm-about-logo-container .c3xgm-about-icon-holder .brand_car,
+#c3xgm-about-end-nav.c3xgm-about-page.c3xgm-about-page-in-view .c3xgm-about-section-header .c3xgm-about-logo-container .c3xgm-about-icon-holder .brand_car {
+  -webkit-animation: slideRight 0.6s 1s ease forwards;
+  -moz-animation: slideRight 0.6s 1s ease forwards;
+  -ms-animation: slideRight 0.6s 1s ease forwards;
+  -o-animation: slideRight 0.6s 1s ease forwards;
+  animation: slideRight 0.6s 1s ease forwards;
+}
+/* line 75, ../sass/animations/_page-in-view-end-nav.scss */
+.c3xgm-about-page-in-view .c3xgm-about-section-header .c3xgm-about-section-header .c3xgm-about-logo-container .c3xgm-about-icon-holder .brand_car_shadow,
+#c3xgm-about-end-nav.c3xgm-about-page.c3xgm-about-page-in-view .c3xgm-about-section-header .c3xgm-about-logo-container .c3xgm-about-icon-holder .brand_car_shadow {
+  -webkit-animation: scaleUp 0.3s 1.4s linear forwards;
+  -moz-animation: scaleUp 0.3s 1.4s linear forwards;
+  -ms-animation: scaleUp 0.3s 1.4s linear forwards;
+  -o-animation: scaleUp 0.3s 1.4s linear forwards;
+  animation: scaleUp 0.3s 1.4s linear forwards;
+}
+/* line 84, ../sass/animations/_page-in-view-end-nav.scss */
+.c3xgm-about-page-in-view .c3xgm-about-section-header .c3xgm-about-section-header .c3xgm-about-logo-container .c3xgm-about-icon-holder .inner_car,
+#c3xgm-about-end-nav.c3xgm-about-page.c3xgm-about-page-in-view .c3xgm-about-section-header .c3xgm-about-logo-container .c3xgm-about-icon-holder .inner_car {
+  -webkit-animation: scaleUp 0.5s 1.2s linear forwards;
+  -moz-animation: scaleUp 0.5s 1.2s linear forwards;
+  -ms-animation: scaleUp 0.5s 1.2s linear forwards;
+  -o-animation: scaleUp 0.5s 1.2s linear forwards;
+  animation: scaleUp 0.5s 1.2s linear forwards;
+}
+/* line 92, ../sass/animations/_page-in-view-end-nav.scss */
+.c3xgm-about-page-in-view .c3xgm-about-section-header .c3xgm-about-section-header .c3xgm-about-logo-container .c3xgm-about-icon-holder .road,
+#c3xgm-about-end-nav.c3xgm-about-page.c3xgm-about-page-in-view .c3xgm-about-section-header .c3xgm-about-logo-container .c3xgm-about-icon-holder .road {
+  -webkit-animation: scaleUp 0.5s 1s linear forwards;
+  -moz-animation: scaleUp 0.5s 1s linear forwards;
+  -ms-animation: scaleUp 0.5s 1s linear forwards;
+  -o-animation: scaleUp 0.5s 1s linear forwards;
+  animation: scaleUp 0.5s 1s linear forwards;
+}
+/* line 100, ../sass/animations/_page-in-view-end-nav.scss */
+.c3xgm-about-page-in-view .c3xgm-about-section-header .c3xgm-about-section-header .c3xgm-about-logo-container .c3xgm-about-icon-holder .road_lines,
+#c3xgm-about-end-nav.c3xgm-about-page.c3xgm-about-page-in-view .c3xgm-about-section-header .c3xgm-about-logo-container .c3xgm-about-icon-holder .road_lines {
+  -webkit-animation: scaleUp 0.6s 1.2s linear forwards;
+  -moz-animation: scaleUp 0.6s 1.2s linear forwards;
+  -ms-animation: scaleUp 0.6s 1.2s linear forwards;
+  -o-animation: scaleUp 0.6s 1.2s linear forwards;
+  animation: scaleUp 0.6s 1.2s linear forwards;
+}
+/* line 108, ../sass/animations/_page-in-view-end-nav.scss */
+.c3xgm-about-page-in-view .c3xgm-about-section-header .c3xgm-about-section-header .c3xgm-about-logo-container .c3xgm-about-icon-holder .sun,
+#c3xgm-about-end-nav.c3xgm-about-page.c3xgm-about-page-in-view .c3xgm-about-section-header .c3xgm-about-logo-container .c3xgm-about-icon-holder .sun {
+  -webkit-animation: scaleUp 0.6s 1.2s linear forwards;
+  -moz-animation: scaleUp 0.6s 1.2s linear forwards;
+  -ms-animation: scaleUp 0.6s 1.2s linear forwards;
+  -o-animation: scaleUp 0.6s 1.2s linear forwards;
+  animation: scaleUp 0.6s 1.2s linear forwards;
+}
+/* line 116, ../sass/animations/_page-in-view-end-nav.scss */
+.c3xgm-about-page-in-view .c3xgm-about-section-header .c3xgm-about-section-header .c3xgm-about-logo-container .c3xgm-about-icon-holder .lighter_yellow, .c3xgm-about-page-in-view .c3xgm-about-section-header .c3xgm-about-section-header .c3xgm-about-logo-container .c3xgm-about-icon-holder .gm_logo,
+#c3xgm-about-end-nav.c3xgm-about-page.c3xgm-about-page-in-view .c3xgm-about-section-header .c3xgm-about-logo-container .c3xgm-about-icon-holder .lighter_yellow,
+#c3xgm-about-end-nav.c3xgm-about-page.c3xgm-about-page-in-view .c3xgm-about-section-header .c3xgm-about-logo-container .c3xgm-about-icon-holder .gm_logo {
+  -webkit-animation: personSlideIn 0.8s 0.7s linear forwards;
+  -moz-animation: personSlideIn 0.8s 0.7s linear forwards;
+  -ms-animation: personSlideIn 0.8s 0.7s linear forwards;
+  -o-animation: personSlideIn 0.8s 0.7s linear forwards;
+  animation: personSlideIn 0.8s 0.7s linear forwards;
+}
+/* line 124, ../sass/animations/_page-in-view-end-nav.scss */
+.c3xgm-about-page-in-view .c3xgm-about-section-header .c3xgm-about-section-header .c3xgm-about-logo-container .c3xgm-about-icon-holder .darker_yellow,
+#c3xgm-about-end-nav.c3xgm-about-page.c3xgm-about-page-in-view .c3xgm-about-section-header .c3xgm-about-logo-container .c3xgm-about-icon-holder .darker_yellow {
+  -webkit-animation: personSlideIn 0.8s 1s linear forwards;
+  -moz-animation: personSlideIn 0.8s 1s linear forwards;
+  -ms-animation: personSlideIn 0.8s 1s linear forwards;
+  -o-animation: personSlideIn 0.8s 1s linear forwards;
+  animation: personSlideIn 0.8s 1s linear forwards;
+}
+/* line 132, ../sass/animations/_page-in-view-end-nav.scss */
+.c3xgm-about-page-in-view .c3xgm-about-section-header .c3xgm-about-section-header .c3xgm-about-logo-container .c3xgm-about-icon-holder .white_band,
+#c3xgm-about-end-nav.c3xgm-about-page.c3xgm-about-page-in-view .c3xgm-about-section-header .c3xgm-about-logo-container .c3xgm-about-icon-holder .white_band {
+  -webkit-animation: dash 6s 2s linear forwards;
+  -moz-animation: dash 6s 2s linear forwards;
+  -ms-animation: dash 6s 2s linear forwards;
+  -o-animation: dash 6s 2s linear forwards;
+  animation: dash 6s 2s linear forwards;
+}
+/* line 140, ../sass/animations/_page-in-view-end-nav.scss */
+.c3xgm-about-page-in-view .c3xgm-about-section-header .c3xgm-about-section-header .c3xgm-about-logo-container .c3xgm-about-icon-holder .person,
+#c3xgm-about-end-nav.c3xgm-about-page.c3xgm-about-page-in-view .c3xgm-about-section-header .c3xgm-about-logo-container .c3xgm-about-icon-holder .person {
+  -webkit-animation: personSlideIn 0.7s 0.6s ease forwards;
+  -moz-animation: personSlideIn 0.7s 0.6s ease forwards;
+  -ms-animation: personSlideIn 0.7s 0.6s ease forwards;
+  -o-animation: personSlideIn 0.7s 0.6s ease forwards;
+  animation: personSlideIn 0.7s 0.6s ease forwards;
+}
+/* line 148, ../sass/animations/_page-in-view-end-nav.scss */
+.c3xgm-about-page-in-view .c3xgm-about-section-header .c3xgm-about-section-header .c3xgm-about-logo-container .c3xgm-about-icon-holder .tie,
+#c3xgm-about-end-nav.c3xgm-about-page.c3xgm-about-page-in-view .c3xgm-about-section-header .c3xgm-about-logo-container .c3xgm-about-icon-holder .tie {
+  -webkit-animation: tieSlideIn 0.5s 0.9s linear forwards;
+  -moz-animation: tieSlideIn 0.5s 0.9s linear forwards;
+  -ms-animation: tieSlideIn 0.5s 0.9s linear forwards;
+  -o-animation: tieSlideIn 0.5s 0.9s linear forwards;
+  animation: tieSlideIn 0.5s 0.9s linear forwards;
+}
+/* line 161, ../sass/animations/_page-in-view-end-nav.scss */
 .c3xgm-about-page-in-view .c3xgm-about-section-header .c3xgm-about-section-header .c3xgm-about-logo-container:first-of-type .c3xgm-about-icon-holder .grey_circle,
 .c3xgm-about-page-in-view .c3xgm-about-section-header .c3xgm-about-section-header .c3xgm-about-logo-container:first-of-type .c3xgm-about-icon-holder .out_circle,
 .c3xgm-about-page-in-view .c3xgm-about-section-header .c3xgm-about-section-header .c3xgm-about-logo-container:first-of-type .c3xgm-about-icon-holder .dark_grey,
@@ -4737,7 +4857,7 @@ Stylesheet: Helpers
   -ms-animation-delay: 2000ms;
   animation-delay: 2000ms;
 }
-/* line 45, ../sass/animations/_page-in-view-end-nav.scss */
+/* line 169, ../sass/animations/_page-in-view-end-nav.scss */
 .c3xgm-about-page-in-view .c3xgm-about-section-header .c3xgm-about-section-header .c3xgm-about-logo-container:first-of-type .c3xgm-about-icon-holder .white_band,
 #c3xgm-about-end-nav.c3xgm-about-page.c3xgm-about-page-in-view .c3xgm-about-section-header .c3xgm-about-logo-container:first-of-type .c3xgm-about-icon-holder .white_band {
   -webkit-animation-delay: 2750ms;
@@ -4746,7 +4866,7 @@ Stylesheet: Helpers
   -ms-animation-delay: 2750ms;
   animation-delay: 2750ms;
 }
-/* line 48, ../sass/animations/_page-in-view-end-nav.scss */
+/* line 172, ../sass/animations/_page-in-view-end-nav.scss */
 .c3xgm-about-page-in-view .c3xgm-about-section-header .c3xgm-about-section-header .c3xgm-about-logo-container:first-of-type .c3xgm-about-icon-holder .shadow,
 #c3xgm-about-end-nav.c3xgm-about-page.c3xgm-about-page-in-view .c3xgm-about-section-header .c3xgm-about-logo-container:first-of-type .c3xgm-about-icon-holder .shadow {
   -webkit-animation-delay: 2750ms;
@@ -4755,7 +4875,7 @@ Stylesheet: Helpers
   -ms-animation-delay: 2750ms;
   animation-delay: 2750ms;
 }
-/* line 52, ../sass/animations/_page-in-view-end-nav.scss */
+/* line 176, ../sass/animations/_page-in-view-end-nav.scss */
 .c3xgm-about-page-in-view .c3xgm-about-section-header .c3xgm-about-section-header .c3xgm-about-logo-container:first-of-type .c3xgm-about-section-icon + h3,
 .c3xgm-about-page-in-view .c3xgm-about-section-header .c3xgm-about-section-header .c3xgm-about-logo-container:first-of-type .c3xgm-about-icon-holder + h3,
 .c3xgm-about-page-in-view .c3xgm-about-section-header .c3xgm-about-section-header .c3xgm-about-logo-container:first-of-type .c3xgm-about-section-icon,
@@ -4768,7 +4888,7 @@ Stylesheet: Helpers
   -ms-animation-delay: 2000ms;
   animation-delay: 2000ms;
 }
-/* line 62, ../sass/animations/_page-in-view-end-nav.scss */
+/* line 186, ../sass/animations/_page-in-view-end-nav.scss */
 .c3xgm-about-page-in-view .c3xgm-about-section-header .c3xgm-about-section-header .c3xgm-about-logo-container:nth-of-type(2) .c3xgm-about-icon-holder .grey_circle,
 .c3xgm-about-page-in-view .c3xgm-about-section-header .c3xgm-about-section-header .c3xgm-about-logo-container:nth-of-type(2) .c3xgm-about-icon-holder .out_circle,
 .c3xgm-about-page-in-view .c3xgm-about-section-header .c3xgm-about-section-header .c3xgm-about-logo-container:nth-of-type(2) .c3xgm-about-icon-holder .dark_grey,
@@ -4785,7 +4905,7 @@ Stylesheet: Helpers
   -ms-animation-delay: 2400ms;
   animation-delay: 2400ms;
 }
-/* line 69, ../sass/animations/_page-in-view-end-nav.scss */
+/* line 193, ../sass/animations/_page-in-view-end-nav.scss */
 .c3xgm-about-page-in-view .c3xgm-about-section-header .c3xgm-about-section-header .c3xgm-about-logo-container:nth-of-type(2) .c3xgm-about-icon-holder .shadow,
 #c3xgm-about-end-nav.c3xgm-about-page.c3xgm-about-page-in-view .c3xgm-about-section-header .c3xgm-about-logo-container:nth-of-type(2) .c3xgm-about-icon-holder .shadow {
   -webkit-animation-delay: 3150ms;
@@ -4794,7 +4914,7 @@ Stylesheet: Helpers
   -ms-animation-delay: 3150ms;
   animation-delay: 3150ms;
 }
-/* line 73, ../sass/animations/_page-in-view-end-nav.scss */
+/* line 197, ../sass/animations/_page-in-view-end-nav.scss */
 .c3xgm-about-page-in-view .c3xgm-about-section-header .c3xgm-about-section-header .c3xgm-about-logo-container:nth-of-type(2) .c3xgm-about-section-icon + h3,
 .c3xgm-about-page-in-view .c3xgm-about-section-header .c3xgm-about-section-header .c3xgm-about-logo-container:nth-of-type(2) .c3xgm-about-icon-holder + h3,
 .c3xgm-about-page-in-view .c3xgm-about-section-header .c3xgm-about-section-header .c3xgm-about-logo-container:nth-of-type(2) .c3xgm-about-section-icon,
@@ -4807,7 +4927,7 @@ Stylesheet: Helpers
   -ms-animation-delay: 2400ms;
   animation-delay: 2400ms;
 }
-/* line 82, ../sass/animations/_page-in-view-end-nav.scss */
+/* line 206, ../sass/animations/_page-in-view-end-nav.scss */
 .c3xgm-about-page-in-view .c3xgm-about-section-header .c3xgm-about-section-header .c3xgm-about-logo-container:nth-of-type(3) .c3xgm-about-icon-holder .grey_circle,
 .c3xgm-about-page-in-view .c3xgm-about-section-header .c3xgm-about-section-header .c3xgm-about-logo-container:nth-of-type(3) .c3xgm-about-icon-holder .out_circle,
 .c3xgm-about-page-in-view .c3xgm-about-section-header .c3xgm-about-section-header .c3xgm-about-logo-container:nth-of-type(3) .c3xgm-about-icon-holder .dark_grey,
@@ -4822,7 +4942,7 @@ Stylesheet: Helpers
   -ms-animation-delay: 2800ms;
   animation-delay: 2800ms;
 }
-/* line 88, ../sass/animations/_page-in-view-end-nav.scss */
+/* line 212, ../sass/animations/_page-in-view-end-nav.scss */
 .c3xgm-about-page-in-view .c3xgm-about-section-header .c3xgm-about-section-header .c3xgm-about-logo-container:nth-of-type(3) .c3xgm-about-icon-holder .shadow,
 #c3xgm-about-end-nav.c3xgm-about-page.c3xgm-about-page-in-view .c3xgm-about-section-header .c3xgm-about-logo-container:nth-of-type(3) .c3xgm-about-icon-holder .shadow {
   -webkit-animation-delay: 3550ms;
@@ -4831,7 +4951,7 @@ Stylesheet: Helpers
   -ms-animation-delay: 3550ms;
   animation-delay: 3550ms;
 }
-/* line 92, ../sass/animations/_page-in-view-end-nav.scss */
+/* line 216, ../sass/animations/_page-in-view-end-nav.scss */
 .c3xgm-about-page-in-view .c3xgm-about-section-header .c3xgm-about-section-header .c3xgm-about-logo-container:nth-of-type(3) .c3xgm-about-section-icon + h3,
 .c3xgm-about-page-in-view .c3xgm-about-section-header .c3xgm-about-section-header .c3xgm-about-logo-container:nth-of-type(3) .c3xgm-about-icon-holder + h3,
 .c3xgm-about-page-in-view .c3xgm-about-section-header .c3xgm-about-section-header .c3xgm-about-logo-container:nth-of-type(3) .c3xgm-about-section-icon,
@@ -4844,7 +4964,7 @@ Stylesheet: Helpers
   -ms-animation-delay: 2800ms;
   animation-delay: 2800ms;
 }
-/* line 103, ../sass/animations/_page-in-view-end-nav.scss */
+/* line 227, ../sass/animations/_page-in-view-end-nav.scss */
 .c3xgm-about-page-in-view .c3xgm-about-section-header .c3xgm-about-section-header .c3xgm-about-logo-container:nth-of-type(4) .c3xgm-about-icon-holder .grey_circle,
 .c3xgm-about-page-in-view .c3xgm-about-section-header .c3xgm-about-section-header .c3xgm-about-logo-container:nth-of-type(4) .c3xgm-about-icon-holder .out_circle,
 .c3xgm-about-page-in-view .c3xgm-about-section-header .c3xgm-about-section-header .c3xgm-about-logo-container:nth-of-type(4) .c3xgm-about-icon-holder .inner_car,
@@ -4865,7 +4985,7 @@ Stylesheet: Helpers
   -ms-animation-delay: 3200ms;
   animation-delay: 3200ms;
 }
-/* line 113, ../sass/animations/_page-in-view-end-nav.scss */
+/* line 237, ../sass/animations/_page-in-view-end-nav.scss */
 .c3xgm-about-page-in-view .c3xgm-about-section-header .c3xgm-about-section-header .c3xgm-about-logo-container:nth-of-type(4) .c3xgm-about-section-icon + h3,
 .c3xgm-about-page-in-view .c3xgm-about-section-header .c3xgm-about-section-header .c3xgm-about-logo-container:nth-of-type(4) .c3xgm-about-icon-holder + h3,
 .c3xgm-about-page-in-view .c3xgm-about-section-header .c3xgm-about-section-header .c3xgm-about-logo-container:nth-of-type(4) .c3xgm-about-section-icon,

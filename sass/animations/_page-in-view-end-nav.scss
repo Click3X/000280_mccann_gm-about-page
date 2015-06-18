@@ -31,6 +31,130 @@ $anim-step:400;
 			@include prefix(animation-iteration-count, 1);
 		}
 
+		.c3xgm-about-logo-container .c3xgm-about-icon-holder {
+			.out_circle {
+				-webkit-animation: dash 3s linear forwards;
+				-moz-animation: dash 3s linear forwards;
+				-o-animation: dash 3s linear forwards;
+				-ms-animation: dash 3s linear forwards;
+				animation: dash 3s linear forwards;
+	    	}
+
+	    	.grey_circle {
+				-webkit-animation: greycircleScaleUp 0.5s 0.5s linear forwards;
+				-moz-animation: greycircleScaleUp 0.5s 0.5s linear forwards;
+				-ms-animation: greycircleScaleUp 0.5s 0.5s linear forwards;
+				-o-animation: greycircleScaleUp 0.5s 0.5s linear forwards;
+				animation: greycircleScaleUp 0.5s 0.5s linear forwards;
+			}
+
+			.dark_grey {
+				-webkit-animation: scaleUp 0.4s 0.8s linear forwards;
+				-moz-animation: scaleUp 0.4s 0.8s linear forwards;
+				-ms-animation: scaleUp 0.4s 0.8s linear forwards;
+				-o-animation: scaleUp 0.4s 0.8s linear forwards;
+				animation: scaleUp 0.4s 0.8s linear forwards;
+			}
+
+			.shadow {
+		      -webkit-animation: fadeIn 0.3s 1.5s linear forwards;
+		      -moz-animation: fadeIn 0.3s 1.5s linear forwards;
+		      -ms-animation: fadeIn 0.3s 1.5s linear forwards;
+		      -o-animation: fadeIn 0.3s 1.5s linear forwards;
+		      animation: fadeIn 0.3s 1.5s linear forwards;
+		    }
+
+		    .brand_car {
+		      -webkit-animation: slideRight 0.6s 1s ease forwards;
+		      -moz-animation: slideRight 0.6s 1s ease forwards;
+		      -ms-animation: slideRight 0.6s 1s ease forwards;
+		      -o-animation: slideRight 0.6s 1s ease forwards;
+		      animation: slideRight 0.6s 1s ease forwards;
+		    }
+
+		    .brand_car_shadow {
+		      -webkit-animation: scaleUp 0.3s 1.4s linear forwards;
+		      -moz-animation: scaleUp 0.3s 1.4s linear forwards;
+		      -ms-animation: scaleUp 0.3s 1.4s linear forwards;
+		      -o-animation: scaleUp 0.3s 1.4s linear forwards;
+		      animation: scaleUp 0.3s 1.4s linear forwards;
+
+		    }
+
+		    .inner_car {
+		      -webkit-animation: scaleUp 0.5s 1.2s linear forwards;
+		      -moz-animation: scaleUp 0.5s 1.2s linear forwards;
+		      -ms-animation: scaleUp 0.5s 1.2s linear forwards;
+		      -o-animation: scaleUp 0.5s 1.2s linear forwards;
+		      animation: scaleUp 0.5s 1.2s linear forwards;
+		    }
+
+		    .road {
+		      -webkit-animation: scaleUp 0.5s 1s linear forwards;
+		      -moz-animation: scaleUp 0.5s 1s linear forwards;
+		      -ms-animation: scaleUp 0.5s 1s linear forwards;
+		      -o-animation: scaleUp 0.5s 1s linear forwards;
+		      animation: scaleUp 0.5s 1s linear forwards;
+		    }
+
+		    .road_lines {
+		      -webkit-animation: scaleUp 0.6s 1.2s linear forwards;
+		      -moz-animation: scaleUp 0.6s 1.2s linear forwards;
+		      -ms-animation: scaleUp 0.6s 1.2s linear forwards;
+		      -o-animation: scaleUp 0.6s 1.2s linear forwards;
+		      animation: scaleUp 0.6s 1.2s linear forwards;
+		    }
+
+		    .sun {
+		      -webkit-animation: scaleUp 0.6s 1.2s linear forwards;
+		      -moz-animation: scaleUp 0.6s 1.2s linear forwards;
+		      -ms-animation: scaleUp 0.6s 1.2s linear forwards;
+		      -o-animation: scaleUp 0.6s 1.2s linear forwards;
+		      animation: scaleUp 0.6s 1.2s linear forwards;
+		    }
+
+		    .lighter_yellow, .gm_logo  {
+		      -webkit-animation: personSlideIn 0.8s 0.7s linear forwards;
+		      -moz-animation: personSlideIn 0.8s 0.7s linear forwards;
+		      -ms-animation: personSlideIn 0.8s 0.7s linear forwards;
+		      -o-animation: personSlideIn 0.8s 0.7s linear forwards;
+		      animation: personSlideIn 0.8s 0.7s linear forwards;
+		    }
+
+		    .darker_yellow {
+		      -webkit-animation: personSlideIn 0.8s 1s linear forwards;
+		      -moz-animation: personSlideIn 0.8s 1s linear forwards;
+		      -ms-animation: personSlideIn 0.8s 1s linear forwards;
+		      -o-animation: personSlideIn 0.8s 1s linear forwards;
+		      animation: personSlideIn 0.8s 1s linear forwards;
+		    }
+
+		    .white_band {
+		      -webkit-animation: dash 6s 2s linear forwards;
+		      -moz-animation: dash 6s 2s linear forwards;
+		      -ms-animation: dash 6s 2s linear forwards;
+		      -o-animation: dash 6s 2s linear forwards;
+		      animation: dash 6s 2s linear forwards; 
+		    }
+
+			 .person {
+		      -webkit-animation: personSlideIn 0.7s 0.6s ease forwards;
+			  -moz-animation: personSlideIn 0.7s 0.6s ease forwards;
+			  -ms-animation: personSlideIn 0.7s 0.6s ease forwards;
+			  -o-animation: personSlideIn 0.7s 0.6s ease forwards;
+			  animation: personSlideIn 0.7s 0.6s ease forwards;
+			}
+
+			.tie {
+			  -webkit-animation: tieSlideIn 0.5s 0.9s linear forwards;
+			  -moz-animation: tieSlideIn 0.5s 0.9s linear forwards;
+			  -ms-animation: tieSlideIn 0.5s 0.9s linear forwards;
+			  -o-animation: tieSlideIn 0.5s 0.9s linear forwards;
+			  animation: tieSlideIn 0.5s 0.9s linear forwards;
+			}
+
+		}
+
 
 		.c3xgm-about-logo-container:first-of-type {
 			.c3xgm-about-icon-holder {
