@@ -56,6 +56,7 @@ jQuery(document).ready(function($) {
             // if ( viewDimensions.scrollTop + viewDimensions.windowHeight == viewDimensions.docHeight) {
             var curScroll = viewDimensions.scrollTop + viewDimensions.windowHeight;
             var endDim = viewDimensions.docHeight - endHeight;
+            // var endDim = viewDimensions.docHeight - endHeight - 108;
 
             console.log('This is curScroll:' + curScroll);
             console.log('This is endDim:' + endDim);
@@ -64,6 +65,7 @@ jQuery(document).ready(function($) {
 
                 var lastPage = aArray[aArray.length - 1];
                 // $("a[href='#c3xgm-about-page-environment']").removeClass("c3xgm-about-nav-bullet-active");
+                $('c3xgm-about-main-nav > li a.c3xgm-about-nav-bullet-active').removeClass('c3xgm-about-nav-bullet-active');
                 $("a[href='" + lastPage + "']").addClass("c3xgm-about-nav-bullet-active");
             }
         }

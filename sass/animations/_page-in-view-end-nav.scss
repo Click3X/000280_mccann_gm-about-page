@@ -32,12 +32,24 @@ $anim-step:400;
 		}
 
 		.c3xgm-about-logo-container .c3xgm-about-icon-holder {
+			@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {  
+				& * {
+					-ms-animation: none !important;
+					animation: none !important;
+					opacity: 1;
+				}
+			}
 			.out_circle {
 				-webkit-animation: dash 3s linear forwards;
 				-moz-animation: dash 3s linear forwards;
 				-o-animation: dash 3s linear forwards;
 				-ms-animation: dash 3s linear forwards;
 				animation: dash 3s linear forwards;
+
+				@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {  
+					stroke-dashoffset:0; 
+      				@include prefix(animation, fadeIn 0.8s ease forwards);
+  				}
 	    	}
 
 	    	.grey_circle {
@@ -135,6 +147,10 @@ $anim-step:400;
 		      -ms-animation: dash 6s 2s linear forwards;
 		      -o-animation: dash 6s 2s linear forwards;
 		      animation: dash 6s 2s linear forwards; 
+
+		      @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {  
+		      	stroke-dashoffset:0;
+		      }
 		    }
 
 			 .person {

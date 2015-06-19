@@ -4779,7 +4779,16 @@ Stylesheet: Helpers
   -ms-animation-iteration-count: 1;
   animation-iteration-count: 1;
 }
-/* line 35, ../sass/animations/_page-in-view-end-nav.scss */
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+  /* line 36, ../sass/animations/_page-in-view-end-nav.scss */
+  .c3xgm-about-page-in-view .c3xgm-about-section-header .c3xgm-about-section-header .c3xgm-about-logo-container .c3xgm-about-icon-holder *,
+  #c3xgm-about-end-nav.c3xgm-about-page.c3xgm-about-page-in-view .c3xgm-about-section-header .c3xgm-about-logo-container .c3xgm-about-icon-holder * {
+    -ms-animation: none !important;
+    animation: none !important;
+    opacity: 1;
+  }
+}
+/* line 42, ../sass/animations/_page-in-view-end-nav.scss */
 .c3xgm-about-page-in-view .c3xgm-about-section-header .c3xgm-about-section-header .c3xgm-about-logo-container .c3xgm-about-icon-holder .out_circle,
 #c3xgm-about-end-nav.c3xgm-about-page.c3xgm-about-page-in-view .c3xgm-about-section-header .c3xgm-about-logo-container .c3xgm-about-icon-holder .out_circle {
   -webkit-animation: dash 3s linear forwards;
@@ -4788,7 +4797,19 @@ Stylesheet: Helpers
   -ms-animation: dash 3s linear forwards;
   animation: dash 3s linear forwards;
 }
-/* line 43, ../sass/animations/_page-in-view-end-nav.scss */
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+  /* line 42, ../sass/animations/_page-in-view-end-nav.scss */
+  .c3xgm-about-page-in-view .c3xgm-about-section-header .c3xgm-about-section-header .c3xgm-about-logo-container .c3xgm-about-icon-holder .out_circle,
+  #c3xgm-about-end-nav.c3xgm-about-page.c3xgm-about-page-in-view .c3xgm-about-section-header .c3xgm-about-logo-container .c3xgm-about-icon-holder .out_circle {
+    stroke-dashoffset: 0;
+    -webkit-animation: fadeIn 0.8s ease forwards;
+    -moz-animation: fadeIn 0.8s ease forwards;
+    -o-animation: fadeIn 0.8s ease forwards;
+    -ms-animation: fadeIn 0.8s ease forwards;
+    animation: fadeIn 0.8s ease forwards;
+  }
+}
+/* line 55, ../sass/animations/_page-in-view-end-nav.scss */
 .c3xgm-about-page-in-view .c3xgm-about-section-header .c3xgm-about-section-header .c3xgm-about-logo-container .c3xgm-about-icon-holder .grey_circle,
 #c3xgm-about-end-nav.c3xgm-about-page.c3xgm-about-page-in-view .c3xgm-about-section-header .c3xgm-about-logo-container .c3xgm-about-icon-holder .grey_circle {
   -webkit-animation: greycircleScaleUp 0.5s 0.5s linear forwards;
@@ -4797,7 +4818,7 @@ Stylesheet: Helpers
   -o-animation: greycircleScaleUp 0.5s 0.5s linear forwards;
   animation: greycircleScaleUp 0.5s 0.5s linear forwards;
 }
-/* line 51, ../sass/animations/_page-in-view-end-nav.scss */
+/* line 63, ../sass/animations/_page-in-view-end-nav.scss */
 .c3xgm-about-page-in-view .c3xgm-about-section-header .c3xgm-about-section-header .c3xgm-about-logo-container .c3xgm-about-icon-holder .dark_grey,
 #c3xgm-about-end-nav.c3xgm-about-page.c3xgm-about-page-in-view .c3xgm-about-section-header .c3xgm-about-logo-container .c3xgm-about-icon-holder .dark_grey {
   -webkit-animation: scaleUp 0.4s 0.8s linear forwards;
@@ -4806,7 +4827,7 @@ Stylesheet: Helpers
   -o-animation: scaleUp 0.4s 0.8s linear forwards;
   animation: scaleUp 0.4s 0.8s linear forwards;
 }
-/* line 59, ../sass/animations/_page-in-view-end-nav.scss */
+/* line 71, ../sass/animations/_page-in-view-end-nav.scss */
 .c3xgm-about-page-in-view .c3xgm-about-section-header .c3xgm-about-section-header .c3xgm-about-logo-container .c3xgm-about-icon-holder .shadow,
 #c3xgm-about-end-nav.c3xgm-about-page.c3xgm-about-page-in-view .c3xgm-about-section-header .c3xgm-about-logo-container .c3xgm-about-icon-holder .shadow {
   -webkit-animation: fadeIn 0.3s 1.5s linear forwards;
@@ -4815,7 +4836,7 @@ Stylesheet: Helpers
   -o-animation: fadeIn 0.3s 1.5s linear forwards;
   animation: fadeIn 0.3s 1.5s linear forwards;
 }
-/* line 67, ../sass/animations/_page-in-view-end-nav.scss */
+/* line 79, ../sass/animations/_page-in-view-end-nav.scss */
 .c3xgm-about-page-in-view .c3xgm-about-section-header .c3xgm-about-section-header .c3xgm-about-logo-container .c3xgm-about-icon-holder .brand_car,
 #c3xgm-about-end-nav.c3xgm-about-page.c3xgm-about-page-in-view .c3xgm-about-section-header .c3xgm-about-logo-container .c3xgm-about-icon-holder .brand_car {
   -webkit-animation: slideRight 0.6s 1s ease forwards;
@@ -4824,7 +4845,7 @@ Stylesheet: Helpers
   -o-animation: slideRight 0.6s 1s ease forwards;
   animation: slideRight 0.6s 1s ease forwards;
 }
-/* line 75, ../sass/animations/_page-in-view-end-nav.scss */
+/* line 87, ../sass/animations/_page-in-view-end-nav.scss */
 .c3xgm-about-page-in-view .c3xgm-about-section-header .c3xgm-about-section-header .c3xgm-about-logo-container .c3xgm-about-icon-holder .brand_car_shadow,
 #c3xgm-about-end-nav.c3xgm-about-page.c3xgm-about-page-in-view .c3xgm-about-section-header .c3xgm-about-logo-container .c3xgm-about-icon-holder .brand_car_shadow {
   -webkit-animation: scaleUp 0.3s 1.4s linear forwards;
@@ -4833,7 +4854,7 @@ Stylesheet: Helpers
   -o-animation: scaleUp 0.3s 1.4s linear forwards;
   animation: scaleUp 0.3s 1.4s linear forwards;
 }
-/* line 84, ../sass/animations/_page-in-view-end-nav.scss */
+/* line 96, ../sass/animations/_page-in-view-end-nav.scss */
 .c3xgm-about-page-in-view .c3xgm-about-section-header .c3xgm-about-section-header .c3xgm-about-logo-container .c3xgm-about-icon-holder .inner_car,
 #c3xgm-about-end-nav.c3xgm-about-page.c3xgm-about-page-in-view .c3xgm-about-section-header .c3xgm-about-logo-container .c3xgm-about-icon-holder .inner_car {
   -webkit-animation: scaleUp 0.5s 1.2s linear forwards;
@@ -4842,7 +4863,7 @@ Stylesheet: Helpers
   -o-animation: scaleUp 0.5s 1.2s linear forwards;
   animation: scaleUp 0.5s 1.2s linear forwards;
 }
-/* line 92, ../sass/animations/_page-in-view-end-nav.scss */
+/* line 104, ../sass/animations/_page-in-view-end-nav.scss */
 .c3xgm-about-page-in-view .c3xgm-about-section-header .c3xgm-about-section-header .c3xgm-about-logo-container .c3xgm-about-icon-holder .road,
 #c3xgm-about-end-nav.c3xgm-about-page.c3xgm-about-page-in-view .c3xgm-about-section-header .c3xgm-about-logo-container .c3xgm-about-icon-holder .road {
   -webkit-animation: scaleUp 0.5s 1s linear forwards;
@@ -4851,7 +4872,7 @@ Stylesheet: Helpers
   -o-animation: scaleUp 0.5s 1s linear forwards;
   animation: scaleUp 0.5s 1s linear forwards;
 }
-/* line 100, ../sass/animations/_page-in-view-end-nav.scss */
+/* line 112, ../sass/animations/_page-in-view-end-nav.scss */
 .c3xgm-about-page-in-view .c3xgm-about-section-header .c3xgm-about-section-header .c3xgm-about-logo-container .c3xgm-about-icon-holder .road_lines,
 #c3xgm-about-end-nav.c3xgm-about-page.c3xgm-about-page-in-view .c3xgm-about-section-header .c3xgm-about-logo-container .c3xgm-about-icon-holder .road_lines {
   -webkit-animation: scaleUp 0.6s 1.2s linear forwards;
@@ -4860,7 +4881,7 @@ Stylesheet: Helpers
   -o-animation: scaleUp 0.6s 1.2s linear forwards;
   animation: scaleUp 0.6s 1.2s linear forwards;
 }
-/* line 108, ../sass/animations/_page-in-view-end-nav.scss */
+/* line 120, ../sass/animations/_page-in-view-end-nav.scss */
 .c3xgm-about-page-in-view .c3xgm-about-section-header .c3xgm-about-section-header .c3xgm-about-logo-container .c3xgm-about-icon-holder .sun,
 #c3xgm-about-end-nav.c3xgm-about-page.c3xgm-about-page-in-view .c3xgm-about-section-header .c3xgm-about-logo-container .c3xgm-about-icon-holder .sun {
   -webkit-animation: scaleUp 0.6s 1.2s linear forwards;
@@ -4869,7 +4890,7 @@ Stylesheet: Helpers
   -o-animation: scaleUp 0.6s 1.2s linear forwards;
   animation: scaleUp 0.6s 1.2s linear forwards;
 }
-/* line 116, ../sass/animations/_page-in-view-end-nav.scss */
+/* line 128, ../sass/animations/_page-in-view-end-nav.scss */
 .c3xgm-about-page-in-view .c3xgm-about-section-header .c3xgm-about-section-header .c3xgm-about-logo-container .c3xgm-about-icon-holder .lighter_yellow, .c3xgm-about-page-in-view .c3xgm-about-section-header .c3xgm-about-section-header .c3xgm-about-logo-container .c3xgm-about-icon-holder .gm_logo,
 #c3xgm-about-end-nav.c3xgm-about-page.c3xgm-about-page-in-view .c3xgm-about-section-header .c3xgm-about-logo-container .c3xgm-about-icon-holder .lighter_yellow,
 #c3xgm-about-end-nav.c3xgm-about-page.c3xgm-about-page-in-view .c3xgm-about-section-header .c3xgm-about-logo-container .c3xgm-about-icon-holder .gm_logo {
@@ -4879,7 +4900,7 @@ Stylesheet: Helpers
   -o-animation: personSlideIn 0.8s 0.7s linear forwards;
   animation: personSlideIn 0.8s 0.7s linear forwards;
 }
-/* line 124, ../sass/animations/_page-in-view-end-nav.scss */
+/* line 136, ../sass/animations/_page-in-view-end-nav.scss */
 .c3xgm-about-page-in-view .c3xgm-about-section-header .c3xgm-about-section-header .c3xgm-about-logo-container .c3xgm-about-icon-holder .darker_yellow,
 #c3xgm-about-end-nav.c3xgm-about-page.c3xgm-about-page-in-view .c3xgm-about-section-header .c3xgm-about-logo-container .c3xgm-about-icon-holder .darker_yellow {
   -webkit-animation: personSlideIn 0.8s 1s linear forwards;
@@ -4888,7 +4909,7 @@ Stylesheet: Helpers
   -o-animation: personSlideIn 0.8s 1s linear forwards;
   animation: personSlideIn 0.8s 1s linear forwards;
 }
-/* line 132, ../sass/animations/_page-in-view-end-nav.scss */
+/* line 144, ../sass/animations/_page-in-view-end-nav.scss */
 .c3xgm-about-page-in-view .c3xgm-about-section-header .c3xgm-about-section-header .c3xgm-about-logo-container .c3xgm-about-icon-holder .white_band,
 #c3xgm-about-end-nav.c3xgm-about-page.c3xgm-about-page-in-view .c3xgm-about-section-header .c3xgm-about-logo-container .c3xgm-about-icon-holder .white_band {
   -webkit-animation: dash 6s 2s linear forwards;
@@ -4897,7 +4918,14 @@ Stylesheet: Helpers
   -o-animation: dash 6s 2s linear forwards;
   animation: dash 6s 2s linear forwards;
 }
-/* line 140, ../sass/animations/_page-in-view-end-nav.scss */
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+  /* line 144, ../sass/animations/_page-in-view-end-nav.scss */
+  .c3xgm-about-page-in-view .c3xgm-about-section-header .c3xgm-about-section-header .c3xgm-about-logo-container .c3xgm-about-icon-holder .white_band,
+  #c3xgm-about-end-nav.c3xgm-about-page.c3xgm-about-page-in-view .c3xgm-about-section-header .c3xgm-about-logo-container .c3xgm-about-icon-holder .white_band {
+    stroke-dashoffset: 0;
+  }
+}
+/* line 156, ../sass/animations/_page-in-view-end-nav.scss */
 .c3xgm-about-page-in-view .c3xgm-about-section-header .c3xgm-about-section-header .c3xgm-about-logo-container .c3xgm-about-icon-holder .person,
 #c3xgm-about-end-nav.c3xgm-about-page.c3xgm-about-page-in-view .c3xgm-about-section-header .c3xgm-about-logo-container .c3xgm-about-icon-holder .person {
   -webkit-animation: personSlideIn 0.7s 0.6s ease forwards;
@@ -4906,7 +4934,7 @@ Stylesheet: Helpers
   -o-animation: personSlideIn 0.7s 0.6s ease forwards;
   animation: personSlideIn 0.7s 0.6s ease forwards;
 }
-/* line 148, ../sass/animations/_page-in-view-end-nav.scss */
+/* line 164, ../sass/animations/_page-in-view-end-nav.scss */
 .c3xgm-about-page-in-view .c3xgm-about-section-header .c3xgm-about-section-header .c3xgm-about-logo-container .c3xgm-about-icon-holder .tie,
 #c3xgm-about-end-nav.c3xgm-about-page.c3xgm-about-page-in-view .c3xgm-about-section-header .c3xgm-about-logo-container .c3xgm-about-icon-holder .tie {
   -webkit-animation: tieSlideIn 0.5s 0.9s linear forwards;
@@ -4915,7 +4943,7 @@ Stylesheet: Helpers
   -o-animation: tieSlideIn 0.5s 0.9s linear forwards;
   animation: tieSlideIn 0.5s 0.9s linear forwards;
 }
-/* line 161, ../sass/animations/_page-in-view-end-nav.scss */
+/* line 177, ../sass/animations/_page-in-view-end-nav.scss */
 .c3xgm-about-page-in-view .c3xgm-about-section-header .c3xgm-about-section-header .c3xgm-about-logo-container:first-of-type .c3xgm-about-icon-holder .grey_circle,
 .c3xgm-about-page-in-view .c3xgm-about-section-header .c3xgm-about-section-header .c3xgm-about-logo-container:first-of-type .c3xgm-about-icon-holder .out_circle,
 .c3xgm-about-page-in-view .c3xgm-about-section-header .c3xgm-about-section-header .c3xgm-about-logo-container:first-of-type .c3xgm-about-icon-holder .dark_grey,
@@ -4934,7 +4962,7 @@ Stylesheet: Helpers
   -ms-animation-delay: 2000ms;
   animation-delay: 2000ms;
 }
-/* line 169, ../sass/animations/_page-in-view-end-nav.scss */
+/* line 185, ../sass/animations/_page-in-view-end-nav.scss */
 .c3xgm-about-page-in-view .c3xgm-about-section-header .c3xgm-about-section-header .c3xgm-about-logo-container:first-of-type .c3xgm-about-icon-holder .white_band,
 #c3xgm-about-end-nav.c3xgm-about-page.c3xgm-about-page-in-view .c3xgm-about-section-header .c3xgm-about-logo-container:first-of-type .c3xgm-about-icon-holder .white_band {
   -webkit-animation-delay: 2750ms;
@@ -4943,7 +4971,7 @@ Stylesheet: Helpers
   -ms-animation-delay: 2750ms;
   animation-delay: 2750ms;
 }
-/* line 172, ../sass/animations/_page-in-view-end-nav.scss */
+/* line 188, ../sass/animations/_page-in-view-end-nav.scss */
 .c3xgm-about-page-in-view .c3xgm-about-section-header .c3xgm-about-section-header .c3xgm-about-logo-container:first-of-type .c3xgm-about-icon-holder .shadow,
 #c3xgm-about-end-nav.c3xgm-about-page.c3xgm-about-page-in-view .c3xgm-about-section-header .c3xgm-about-logo-container:first-of-type .c3xgm-about-icon-holder .shadow {
   -webkit-animation-delay: 2750ms;
@@ -4952,7 +4980,7 @@ Stylesheet: Helpers
   -ms-animation-delay: 2750ms;
   animation-delay: 2750ms;
 }
-/* line 176, ../sass/animations/_page-in-view-end-nav.scss */
+/* line 192, ../sass/animations/_page-in-view-end-nav.scss */
 .c3xgm-about-page-in-view .c3xgm-about-section-header .c3xgm-about-section-header .c3xgm-about-logo-container:first-of-type .c3xgm-about-section-icon + h3,
 .c3xgm-about-page-in-view .c3xgm-about-section-header .c3xgm-about-section-header .c3xgm-about-logo-container:first-of-type .c3xgm-about-icon-holder + h3,
 .c3xgm-about-page-in-view .c3xgm-about-section-header .c3xgm-about-section-header .c3xgm-about-logo-container:first-of-type .c3xgm-about-section-icon,
@@ -4965,7 +4993,7 @@ Stylesheet: Helpers
   -ms-animation-delay: 2000ms;
   animation-delay: 2000ms;
 }
-/* line 186, ../sass/animations/_page-in-view-end-nav.scss */
+/* line 202, ../sass/animations/_page-in-view-end-nav.scss */
 .c3xgm-about-page-in-view .c3xgm-about-section-header .c3xgm-about-section-header .c3xgm-about-logo-container:nth-of-type(2) .c3xgm-about-icon-holder .grey_circle,
 .c3xgm-about-page-in-view .c3xgm-about-section-header .c3xgm-about-section-header .c3xgm-about-logo-container:nth-of-type(2) .c3xgm-about-icon-holder .out_circle,
 .c3xgm-about-page-in-view .c3xgm-about-section-header .c3xgm-about-section-header .c3xgm-about-logo-container:nth-of-type(2) .c3xgm-about-icon-holder .dark_grey,
@@ -4982,7 +5010,7 @@ Stylesheet: Helpers
   -ms-animation-delay: 2400ms;
   animation-delay: 2400ms;
 }
-/* line 193, ../sass/animations/_page-in-view-end-nav.scss */
+/* line 209, ../sass/animations/_page-in-view-end-nav.scss */
 .c3xgm-about-page-in-view .c3xgm-about-section-header .c3xgm-about-section-header .c3xgm-about-logo-container:nth-of-type(2) .c3xgm-about-icon-holder .shadow,
 #c3xgm-about-end-nav.c3xgm-about-page.c3xgm-about-page-in-view .c3xgm-about-section-header .c3xgm-about-logo-container:nth-of-type(2) .c3xgm-about-icon-holder .shadow {
   -webkit-animation-delay: 3150ms;
@@ -4991,7 +5019,7 @@ Stylesheet: Helpers
   -ms-animation-delay: 3150ms;
   animation-delay: 3150ms;
 }
-/* line 197, ../sass/animations/_page-in-view-end-nav.scss */
+/* line 213, ../sass/animations/_page-in-view-end-nav.scss */
 .c3xgm-about-page-in-view .c3xgm-about-section-header .c3xgm-about-section-header .c3xgm-about-logo-container:nth-of-type(2) .c3xgm-about-section-icon + h3,
 .c3xgm-about-page-in-view .c3xgm-about-section-header .c3xgm-about-section-header .c3xgm-about-logo-container:nth-of-type(2) .c3xgm-about-icon-holder + h3,
 .c3xgm-about-page-in-view .c3xgm-about-section-header .c3xgm-about-section-header .c3xgm-about-logo-container:nth-of-type(2) .c3xgm-about-section-icon,
@@ -5004,7 +5032,7 @@ Stylesheet: Helpers
   -ms-animation-delay: 2400ms;
   animation-delay: 2400ms;
 }
-/* line 206, ../sass/animations/_page-in-view-end-nav.scss */
+/* line 222, ../sass/animations/_page-in-view-end-nav.scss */
 .c3xgm-about-page-in-view .c3xgm-about-section-header .c3xgm-about-section-header .c3xgm-about-logo-container:nth-of-type(3) .c3xgm-about-icon-holder .grey_circle,
 .c3xgm-about-page-in-view .c3xgm-about-section-header .c3xgm-about-section-header .c3xgm-about-logo-container:nth-of-type(3) .c3xgm-about-icon-holder .out_circle,
 .c3xgm-about-page-in-view .c3xgm-about-section-header .c3xgm-about-section-header .c3xgm-about-logo-container:nth-of-type(3) .c3xgm-about-icon-holder .dark_grey,
@@ -5019,7 +5047,7 @@ Stylesheet: Helpers
   -ms-animation-delay: 2800ms;
   animation-delay: 2800ms;
 }
-/* line 212, ../sass/animations/_page-in-view-end-nav.scss */
+/* line 228, ../sass/animations/_page-in-view-end-nav.scss */
 .c3xgm-about-page-in-view .c3xgm-about-section-header .c3xgm-about-section-header .c3xgm-about-logo-container:nth-of-type(3) .c3xgm-about-icon-holder .shadow,
 #c3xgm-about-end-nav.c3xgm-about-page.c3xgm-about-page-in-view .c3xgm-about-section-header .c3xgm-about-logo-container:nth-of-type(3) .c3xgm-about-icon-holder .shadow {
   -webkit-animation-delay: 3550ms;
@@ -5028,7 +5056,7 @@ Stylesheet: Helpers
   -ms-animation-delay: 3550ms;
   animation-delay: 3550ms;
 }
-/* line 216, ../sass/animations/_page-in-view-end-nav.scss */
+/* line 232, ../sass/animations/_page-in-view-end-nav.scss */
 .c3xgm-about-page-in-view .c3xgm-about-section-header .c3xgm-about-section-header .c3xgm-about-logo-container:nth-of-type(3) .c3xgm-about-section-icon + h3,
 .c3xgm-about-page-in-view .c3xgm-about-section-header .c3xgm-about-section-header .c3xgm-about-logo-container:nth-of-type(3) .c3xgm-about-icon-holder + h3,
 .c3xgm-about-page-in-view .c3xgm-about-section-header .c3xgm-about-section-header .c3xgm-about-logo-container:nth-of-type(3) .c3xgm-about-section-icon,
@@ -5041,7 +5069,7 @@ Stylesheet: Helpers
   -ms-animation-delay: 2800ms;
   animation-delay: 2800ms;
 }
-/* line 227, ../sass/animations/_page-in-view-end-nav.scss */
+/* line 243, ../sass/animations/_page-in-view-end-nav.scss */
 .c3xgm-about-page-in-view .c3xgm-about-section-header .c3xgm-about-section-header .c3xgm-about-logo-container:nth-of-type(4) .c3xgm-about-icon-holder .grey_circle,
 .c3xgm-about-page-in-view .c3xgm-about-section-header .c3xgm-about-section-header .c3xgm-about-logo-container:nth-of-type(4) .c3xgm-about-icon-holder .out_circle,
 .c3xgm-about-page-in-view .c3xgm-about-section-header .c3xgm-about-section-header .c3xgm-about-logo-container:nth-of-type(4) .c3xgm-about-icon-holder .inner_car,
@@ -5062,7 +5090,7 @@ Stylesheet: Helpers
   -ms-animation-delay: 3200ms;
   animation-delay: 3200ms;
 }
-/* line 237, ../sass/animations/_page-in-view-end-nav.scss */
+/* line 253, ../sass/animations/_page-in-view-end-nav.scss */
 .c3xgm-about-page-in-view .c3xgm-about-section-header .c3xgm-about-section-header .c3xgm-about-logo-container:nth-of-type(4) .c3xgm-about-section-icon + h3,
 .c3xgm-about-page-in-view .c3xgm-about-section-header .c3xgm-about-section-header .c3xgm-about-logo-container:nth-of-type(4) .c3xgm-about-icon-holder + h3,
 .c3xgm-about-page-in-view .c3xgm-about-section-header .c3xgm-about-section-header .c3xgm-about-logo-container:nth-of-type(4) .c3xgm-about-section-icon,
@@ -5137,6 +5165,11 @@ Stylesheet: Helpers
   /* line 56, ../sass/partials/_ie-fixes.scss */
   #map-pin path {
     stroke: transparent;
+  }
+
+  /* line 72, ../sass/partials/_ie-fixes.scss */
+  #c3xgm-about-end-nav .c3xgm-about-logo-container svg * {
+    opacity: 1;
   }
 }
 /*

@@ -56,6 +56,24 @@
 	#map-pin path {
 	    stroke:transparent;
 	}
+
+	// #c3xgm-about-end-nav {
+	// 	.c3xgm-about-logo-container {
+	// 		.c3xgm-about-our-company-icon {
+	// 			display: block;
+	// 		}
+	// 		.c3xgm-about-our-company-icon + svg {
+	// 			display: none;
+	// 		}
+	// 	}	
+	// }
+	#c3xgm-about-end-nav {
+		.c3xgm-about-logo-container {
+			svg * {
+				opacity: 1;
+			}
+		}
+	}
 }
 
 // svg {}

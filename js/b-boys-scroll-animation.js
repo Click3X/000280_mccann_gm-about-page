@@ -1,5 +1,13 @@
 // BACK STREET BOYS DEMO INSPRIRED SCROLL SCRIPTS
-  var _containerHeight = 4000;
+// TEST FOR 3D TRANSFORMS - for IE
+  var css3dtransforms;
+  
+  if( $('html').hasClass('no-csstransforms3d') ) {
+      css3dtransforms = false;
+  }
+
+  // var _containerHeight = 4000;
+  var _containerHeight = $(document).height();
   var _width = window.innerWidth;
 
   var _height, _scrollHeight;
@@ -13,73 +21,35 @@
     {
       name: 'c3xgm-about-red-car', 
       start: {
-        // percent: 0.7, 
-        percent: getElemOffest('#c3xgm-about-red-car') - 0.3, 
+        percent: getElemOffest('#c3xgm-about-red-car') - 0.1,
         x: 1, 
         y:0
       },
       end: {
-        percent: getElemOffest('#c3xgm-about-red-car') + 0.3, 
+        percent: getElemOffest('#c3xgm-about-red-car') + 0.05, 
         x: -1, 
         y:0
       }
     },
-    // {
-    //   name: 'c3xgm-about-flag-line-grey-car',
-    //   start: {
-    //     percent: getElemOffest('#c3xgm-about-flag-line-grey-car') - 0.05, 
-    //     x: -0.1, 
-    //     y:0
-    //   },
-    //   end: {
-    //     percent: getElemOffest('#c3xgm-about-flag-line-grey-car') + 0.4, 
-    //     x: 1.1, 
-    //     y:0
-    //   }
-    // },
-    // {
-    //   name: 'animate-flag-line-js',
-    //   start: {
-    //     percent: getElemOffest('#animate-flag-line'), 
-    //     x: -0.5, 
-    //     y:0
-    //   },
-    //   end: {
-    //     percent: getElemOffest('#animate-flag-line') + 0.6,
-    //     x: -1.2, 
-    //     y:0
-    //   }
-    // },
     {
       name: 'c3xgm-about-grey-top',
       start: {
-        percent: getElemOffest('#c3xgm-about-grey-van') + 0.2,
-        x:0, 
+        percent: getElemOffest('#c3xgm-about-grey-van') - 0.028,
+        x:-0.2, 
         y:0
       },
       end: {
-        percent: getElemOffest('#c3xgm-about-grey-van') + 0.7,
-        x: 1.25, 
+        percent: getElemOffest('#c3xgm-about-grey-van') + 0.085,
+        x: 1.1, 
         y:0
       }
     }
-    // ,
-    // {
-    //   name: 'c3xgm-about-solar-grey-car',
-    //   start: {
-    //     percent: getElemOffest('#c3xgm-about-solar-grey-car') * 1.17, 
-    //     x:0.1, 
-    //     y:0
-    //   },
-    //   end: {
-    //     percent: getElemOffest('#c3xgm-about-solar-grey-car') * 1.17 + 0.3,
-    //     x:1, 
-    //     y:0
-    //   }
-    // }
   ];
 
   function getElemOffest(elemId) {
+    // console.log('THis is element Offset ID ' + elemId);
+    // console.log('This is elemId offset top: ' + jQuery(elemId).offset().top);
+    // console.log('This is elemId offset ratio: ' + jQuery(elemId).offset().top / _containerHeight );
     return jQuery(elemId).offset().top / _containerHeight;
   }
 
@@ -99,11 +69,7 @@
   }
 
   function resetWidth() {
-    if(_width > 906) {
-      _containerHeight = 4000;
-    } else {
-      _containerHeight = window.innerWidth * 4.415;
-    }
+    _containerHeight = $(document).height();
   }
 
   function resize() {
@@ -116,6 +82,11 @@
   function updateElements() {
     for (var i = 0; i < _movingElements.length; i++) {
       var p = _positions[i];
+
+      // console.log('This is _scrollPercent' + _scrollPercent);
+      // console.log('This is _scrollOffset' + _scrollOffset);
+      // console.log('This is _scrollHeight' + _scrollHeight);
+       
 
       if(_scrollPercent <= p.start.percent) {
         p.target.x = p.start.x*_width;
@@ -175,9 +146,9 @@
 
 
 if(mobile) {
-  console.log('We have mobile from B s boys script AND WE AINT GIVIN NO SCROLL TIED ANIMATIONS');
+  // console.log('We have mobile from B s boys script AND WE AINT GIVIN NO SCROLL TIED ANIMATIONS');
 } else {
-  console.log('NO MOHILE from B s boys script');
+  // console.log('NO MOHILE from B s boys script');
   // ONLY SCROLL ANIMATIONS FOR DESKTOP
 
   resetWidth();
