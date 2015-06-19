@@ -80,7 +80,7 @@
       },
       end: {
         percent: getElemOffest('#c3xgm-about-solar-road-grey-car') * 1.17 + 0.3,
-        x:1, 
+        x:1.17, 
         y:0
       }
     }
