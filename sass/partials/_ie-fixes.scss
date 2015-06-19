@@ -1,10 +1,79 @@
-// IE FIXES
-// .svg {
-//  	.c3xgm-about-icon-image {
-// 	display: none;
-// 	}
-// }
-
+// IE FIXES - PREVENTATIVE MEASURES
+// THESE CLASS ARE FOR BROWSERS OTHER THAN IE
 .c3xgm-about-icon-image {
   display:none;
 }
+
+.c3xgm-about-page-our-people .c3xgm-about-marker-holder {
+	img.map-marker {
+		display: block;
+		width: 100%;
+		@media(min-width: $tablet-height) {
+			max-width: 27px;
+		}	
+	}
+}
+
+.c3xgm-about-only-ie {
+	display: none;
+}
+
+.ie {
+	.c3xgm-about-only-ie {
+		display:block;
+	}
+
+	.c3xgm-about-map-no-pin {
+		float: none !important;
+		margin:0 auto;
+	}
+
+	// HIDE OUR PEOPLE MAP SVG AND COLOR STROKE TRANSPARENT
+	#map-pin {
+		display: none;
+
+		path {
+			stroke:transparent;
+		}
+	}
+}
+
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+	/* NEW IE FIXES */
+	.c3xgm-about-only-ie {
+	    display:block;
+	}
+
+	.c3xgm-about-map-no-pin {
+	    float: none !important;
+	    margin:0 auto;
+	}
+
+	#map-pin {
+	    display: none;
+	}
+
+	#map-pin path {
+	    stroke:transparent;
+	}
+}
+
+// svg {}
+
+/*
+ * Let's target IE to respect aspect ratios and sizes for img tags containing SVG files
+ *
+ * [1] IE9
+ * [2] IE10+
+ */
+/* 1 */
+
+// .ie9 img[src*=".svg"] {
+//   width: 100%; 
+// }
+// /* 2 */
+// @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+//   img[src*=".svg"] {
+//     width: 100%; 
+//   }
+// }

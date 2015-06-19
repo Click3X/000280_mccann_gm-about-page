@@ -217,7 +217,7 @@ function killAutoRotateAboutSlider(){
 
 //AUTO ROTATE TECH SLIDER
 function autorotateTechSlider(){
-	console.log("autorotateTechSlider");
+	// console.log("autorotateTechSlider");
 
     if(!techSlideInterval){
         techSlideInterval = setInterval(function(){

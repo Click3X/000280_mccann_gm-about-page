@@ -4012,7 +4012,7 @@ h4.c3xgm-about-h {
 /* line 142, ../sass/pages/_our-people.scss */
 .c3xgm-about-page-our-people .c3xgm-about-continents .c3xgm-about-block-image img {
   width: 88.672%;
-  max-width: 385px;
+  /*max-width: 385px;*/
 }
 @media (min-width: 768px) {
   /* line 145, ../sass/pages/_our-people.scss */

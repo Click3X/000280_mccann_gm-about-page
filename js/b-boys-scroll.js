@@ -182,9 +182,9 @@
 
 
 if(mobile) {
-  console.log('We have mobile from B s boys script AND WE AINT GIVIN NO SCROLL TIED ANIMATIONS');
+  // console.log('We have mobile from B s boys script AND WE AINT GIVIN NO SCROLL TIED ANIMATIONS');
 } else {
-  console.log('NO MOHILE from B s boys script');
+  // console.log('NO MOHILE from B s boys script');
   // ONLY SCROLL ANIMATIONS FOR DESKTOP
 
   resetWidth();

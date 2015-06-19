@@ -3090,13 +3090,13 @@ Stylesheet: Helpers
   animation: animFill 0.8s 2.3s ease-out forwards;
 }
 @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
-  /* line 26, ../sass/partials/_our-people-animations.scss */
+  /* line 27, ../sass/partials/_our-people-animations.scss */
   .c3xgm-about-page-our-people .element-in-view .c3xgm-about-marker-holder {
-    -webkit-animation: markerDropIE 0.8s 2.3s ease-out forwards;
-    -moz-animation: markerDropIE 0.8s 2.3s ease-out forwards;
-    -o-animation: markerDropIE 0.8s 2.3s ease-out forwards;
-    -ms-animation: markerDropIE 0.8s 2.3s ease-out forwards;
-    animation: markerDropIE 0.8s 2.3s ease-out forwards;
+    -webkit-animation: markerDrop 0.8s 2.3s ease-out forwards;
+    -moz-animation: markerDrop 0.8s 2.3s ease-out forwards;
+    -o-animation: markerDrop 0.8s 2.3s ease-out forwards;
+    -ms-animation: markerDrop 0.8s 2.3s ease-out forwards;
+    animation: markerDrop 0.8s 2.3s ease-out forwards;
   }
 }
 
@@ -4523,45 +4523,45 @@ Stylesheet: Helpers
     padding-bottom: 37px;
   }
 }
-/* line 37, ../sass/partials/_flag-lines-solar-road.scss */
+/* line 32, ../sass/partials/_flag-lines-solar-road.scss */
 .c3xgm-about-solar-road-wrapper .grey-car {
   bottom: 37px;
 }
 @media (min-width: 768px) {
-  /* line 37, ../sass/partials/_flag-lines-solar-road.scss */
+  /* line 32, ../sass/partials/_flag-lines-solar-road.scss */
   .c3xgm-about-solar-road-wrapper .grey-car {
     bottom: 50px;
   }
 }
 
-/* line 46, ../sass/partials/_flag-lines-solar-road.scss */
+/* line 41, ../sass/partials/_flag-lines-solar-road.scss */
 .c3xgm-about-solar-road-container {
   width: 100%;
 }
-/* line 49, ../sass/partials/_flag-lines-solar-road.scss */
+/* line 44, ../sass/partials/_flag-lines-solar-road.scss */
 .c3xgm-about-solar-road-container .c3xgm-about-solar-road-list {
   width: 200%;
 }
-/* line 52, ../sass/partials/_flag-lines-solar-road.scss */
+/* line 47, ../sass/partials/_flag-lines-solar-road.scss */
 .c3xgm-about-solar-road-container .c3xgm-about-solar-road-list li {
   width: 50%;
   display: block;
   float: left;
   position: relative;
 }
-/* line 58, ../sass/partials/_flag-lines-solar-road.scss */
+/* line 53, ../sass/partials/_flag-lines-solar-road.scss */
 .c3xgm-about-solar-road-container .c3xgm-about-solar-road-list li img {
   display: inline-block;
   z-index: -2;
 }
-/* line 64, ../sass/partials/_flag-lines-solar-road.scss */
+/* line 58, ../sass/partials/_flag-lines-solar-road.scss */
 .c3xgm-about-solar-road-container .c3xgm-about-solar-road-list li .c3xgm-about-tree {
   margin-left: 2%;
   width: 9.9%;
   height: auto;
   max-width: 99px;
 }
-/* line 70, ../sass/partials/_flag-lines-solar-road.scss */
+/* line 64, ../sass/partials/_flag-lines-solar-road.scss */
 .c3xgm-about-solar-road-container .c3xgm-about-solar-road-list li .c3xgm-about-solar-panels {
   margin-left: 37%;
   width: 25.7%;
@@ -4569,12 +4569,12 @@ Stylesheet: Helpers
   max-width: 257px;
 }
 
-/* line 80, ../sass/partials/_flag-lines-solar-road.scss */
+/* line 74, ../sass/partials/_flag-lines-solar-road.scss */
 .c3xgm-about-solar-road-wrapper .grey-car {
   bottom: 4px;
 }
 @media (min-width: 768px) {
-  /* line 80, ../sass/partials/_flag-lines-solar-road.scss */
+  /* line 74, ../sass/partials/_flag-lines-solar-road.scss */
   .c3xgm-about-solar-road-wrapper .grey-car {
     bottom: 10px;
   }
@@ -5076,7 +5076,73 @@ Stylesheet: Helpers
   animation-delay: 3200ms;
 }
 
-/* line 8, ../sass/partials/_ie-fixes.scss */
+/* line 3, ../sass/partials/_ie-fixes.scss */
 .c3xgm-about-icon-image {
   display: none;
 }
+
+/* line 8, ../sass/partials/_ie-fixes.scss */
+.c3xgm-about-page-our-people .c3xgm-about-marker-holder img.map-marker {
+  display: block;
+  width: 100%;
+}
+@media (min-width: 768px) {
+  /* line 8, ../sass/partials/_ie-fixes.scss */
+  .c3xgm-about-page-our-people .c3xgm-about-marker-holder img.map-marker {
+    max-width: 27px;
+  }
+}
+
+/* line 17, ../sass/partials/_ie-fixes.scss */
+.c3xgm-about-only-ie {
+  display: none;
+}
+
+/* line 22, ../sass/partials/_ie-fixes.scss */
+.ie .c3xgm-about-only-ie {
+  display: block;
+}
+/* line 26, ../sass/partials/_ie-fixes.scss */
+.ie .c3xgm-about-map-no-pin {
+  float: none !important;
+  margin: 0 auto;
+}
+/* line 32, ../sass/partials/_ie-fixes.scss */
+.ie #map-pin {
+  display: none;
+}
+/* line 35, ../sass/partials/_ie-fixes.scss */
+.ie #map-pin path {
+  stroke: transparent;
+}
+
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+  /* NEW IE FIXES */
+  /* line 43, ../sass/partials/_ie-fixes.scss */
+  .c3xgm-about-only-ie {
+    display: block;
+  }
+
+  /* line 47, ../sass/partials/_ie-fixes.scss */
+  .c3xgm-about-map-no-pin {
+    float: none !important;
+    margin: 0 auto;
+  }
+
+  /* line 52, ../sass/partials/_ie-fixes.scss */
+  #map-pin {
+    display: none;
+  }
+
+  /* line 56, ../sass/partials/_ie-fixes.scss */
+  #map-pin path {
+    stroke: transparent;
+  }
+}
+/*
+ * Let's target IE to respect aspect ratios and sizes for img tags containing SVG files
+ *
+ * [1] IE9
+ * [2] IE10+
+ */
+/* 1 */

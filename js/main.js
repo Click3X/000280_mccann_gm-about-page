@@ -4,7 +4,7 @@ jQuery(document).ready(function($) {
 
     // TEST IF PAGE IS animation
     var altAnim = $('body').hasClass('c3xgm-about-alt-anim');
-    console.log('This is altAnim: ' + altAnim);
+    // console.log('This is altAnim: ' + altAnim);
 
 	// DECLARE VARIABLES FOR LATER USE
 	var css3dtransforms = true,

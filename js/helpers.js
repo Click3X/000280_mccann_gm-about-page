@@ -1,5 +1,5 @@
 // HELPERS JS
-console.log('This is helpers js!');
+// console.log('This is helpers js!');
 
 // CONSOLE HELPER FUNCTION FOR QUICK DEBUGGING
 function cd(myVar) {
@@ -18,10 +18,10 @@ if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(naviga
     jQuery('body').addClass('c3xgm-about-desktop-device');
 }
 
-console.log('This is mobile: ' + mobile);
+// console.log('This is mobile: ' + mobile);
 
 var gifImgs = jQuery('img[src$=".gif"]').not(jQuery('img[src$="wheel.gif"]'));
-    console.dir(gifImgs);
+    // console.dir(gifImgs);
 
 // IF MOBILE - ADD MOBILE STYLESHEET
 if(mobile) {
