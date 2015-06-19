@@ -54,10 +54,16 @@ jQuery(document).ready(function($) {
 
             // IF BOTTOM OF DOC IS REACHED, HIGHLIGHT LAST BULLET
             // if ( viewDimensions.scrollTop + viewDimensions.windowHeight == viewDimensions.docHeight) {
+            var curScroll = viewDimensions.scrollTop + viewDimensions.windowHeight;
+            var endDim = viewDimensions.docHeight - endHeight;
+
+            console.log('This is curScroll:' + curScroll);
+            console.log('This is endDim:' + endDim);
+
             if ( viewDimensions.scrollTop + viewDimensions.windowHeight > viewDimensions.docHeight - endHeight ) {
 
                 var lastPage = aArray[aArray.length - 1];
-                $("a[href='#c3xgm-about-page-environment']").removeClass("c3xgm-about-nav-bullet-active");
+                // $("a[href='#c3xgm-about-page-environment']").removeClass("c3xgm-about-nav-bullet-active");
                 $("a[href='" + lastPage + "']").addClass("c3xgm-about-nav-bullet-active");
             }
         }
