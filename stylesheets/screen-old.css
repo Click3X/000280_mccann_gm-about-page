@@ -4645,6 +4645,7 @@ div#c3xgm-about-grey-van:before {
 /* line 2, ../sass/modules/_all-modules.scss */
 .c3xgm-about-module-car-logo,
 .c3xgm-about-module-foundation-logo {
+  opacity: 0.35;
   -webkit-transition: opacity 90ms;
   -moz-transition: opacity 90ms;
   -o-transition: opacity 90ms;
@@ -4653,10 +4654,11 @@ div#c3xgm-about-grey-van:before {
 }
 
 /* line 14, ../sass/modules/_all-modules.scss */
-.c3xgm-about-module-car-logo:hover, .c3xgm-about-module-car-logo:focus,
+.c3xgm-about-module-car-logo:hover, 
+.c3xgm-about-module-car-logo:focus,
+.c3xgm-about-module-car-logo.active,
 .c3xgm-about-module-foundation-logo:hover,
 .c3xgm-about-module-foundation-logo:focus,
-.c3xgm-about-module-car-logo.active,
 .c3xgm-about-module-foundation-logo.active {
   opacity: 1;
   -webkit-transition: opacity 120ms;

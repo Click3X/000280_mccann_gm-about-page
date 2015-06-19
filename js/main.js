@@ -47,8 +47,15 @@ jQuery(document).ready(function($) {
                 $("a[href='" + theID + "']").removeClass("c3xgm-about-nav-bullet-active");
             }
 
+            var endNavHeight = Number( $('#c3xgm-about-end-nav').height() );
+            var endSec = Number( $('#c3xgm-about-page-our-global-community').height() );
+            var endHeight = endNavHeight + endSec;
+            console.log("This is endNavHeight: " + endHeight);
+
             // IF BOTTOM OF DOC IS REACHED, HIGHLIGHT LAST BULLET
-            if ( viewDimensions.scrollTop + viewDimensions.windowHeight == viewDimensions.docHeight) {
+            // if ( viewDimensions.scrollTop + viewDimensions.windowHeight == viewDimensions.docHeight) {
+            if ( viewDimensions.scrollTop + viewDimensions.windowHeight > viewDimensions.docHeight - endHeight ) {
+
                 var lastPage = aArray[aArray.length - 1];
                 $("a[href='#c3xgm-about-page-environment']").removeClass("c3xgm-about-nav-bullet-active");
                 $("a[href='" + lastPage + "']").addClass("c3xgm-about-nav-bullet-active");
