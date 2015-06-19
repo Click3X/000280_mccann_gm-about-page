@@ -93,8 +93,10 @@ jQuery(document).ready(function($) {
     $(carModContainer).height('auto');
     // GET TALLEST DIV
     carMaxHeight = Math.max.apply(null, carContainers.map(function () {
+        console.log('This is car height: ' + $(this).height() );
         return $(this).height();
     }).get());
+    console.log('This is carMaxHeight: ' + carMaxHeight);
 
     // console.log('This is carMaxHeight: ' + carMaxHeight);
     $(carModContainer).height(carMaxHeight);

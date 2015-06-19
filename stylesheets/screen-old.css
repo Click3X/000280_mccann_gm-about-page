@@ -4976,10 +4976,10 @@ div#c3xgm-about-grey-van:before {
   margin: 1em auto 0;
   font-family: open-sans, Arial, sans-serif;
   display: block;
-  position: absolute;
+  /*position: absolute;
   bottom: 1em;
   left: 0;
-  right: 0;
+  right: 0;*/
 }
 /* line 106, ../sass/modules/_car.scss */
 .c3xgm-about-module-car .c3xgm-about-module .c3xgm-about-p {
@@ -5134,6 +5134,14 @@ div#c3xgm-about-grey-van:before {
 
 .c3xgm-about-module-car .c3xgm-about-holden .c3xgm-about-block-image {
   padding-bottom:45%
+}
+
+.c3xgm-about-module-car .c3xgm-about-baojun .c3xgm-about-block-image {
+  padding-bottom:35%
+}
+
+.c3xgm-about-module-car .c3xgm-about-wuling .c3xgm-about-block-image {
+  padding-bottom:52%
 }
 
 
