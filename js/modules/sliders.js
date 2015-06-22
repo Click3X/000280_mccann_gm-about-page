@@ -241,7 +241,7 @@ function killAutoRotateTechSlider(){
 
 //AUTO ROTATE FOUNDATION SLIDER
 function autorotateFoundationSlider(){
-	console.log("autorotateFoundationSlider");
+	// console.log("autorotateFoundationSlider");
 
     if(!foundationSlideInterval){
         foundationSlideInterval = setInterval(function(){
