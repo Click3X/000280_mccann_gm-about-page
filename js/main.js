@@ -51,7 +51,7 @@ jQuery(document).ready(function($) {
             var endNavHeight = Number( $('#c3xgm-about-end-nav').height() );
             var endSec = Number( $('#c3xgm-about-page-our-global-community').height() );
             var endHeight = endNavHeight + endSec;
-            // console.log("This is endNavHeight: " + endHeight);
+            console.log("This is endNavHeight: " + endHeight);
 
             // IF BOTTOM OF DOC IS REACHED, HIGHLIGHT LAST BULLET
             // if ( viewDimensions.scrollTop + viewDimensions.windowHeight == viewDimensions.docHeight) {
@@ -101,6 +101,26 @@ jQuery(document).ready(function($) {
 
 		return viewDimensions;
 	}
+
+	// CHECK UPDATE - VIEWPORT ON RESIZE
+	window.addEventListener('resize', function() {
+		setTimeout(function() {
+			updateviewDimensions();
+		}, 320);
+	} , false);
+
+
+	// S C R O L L 
+    window.addEventListener('scroll', function() {
+        if (scrollTimeout) {
+            // clear the timeout, if one is pending
+            clearTimeout(scrollTimeout);
+            scrollTimeout = null;
+        }
+        scrollTimeout = setTimeout(scrollHandler, 120/1000);
+    }, false);
+
+
 
     // NUMBER ANIMATIONS
     // CHECK IF ANIMATED EMPLOYEES IN ON SCREEN
@@ -261,7 +281,7 @@ jQuery(document).ready(function($) {
 
             } else {
 
-                if( _t.isInView() ){
+                if( _t.isInView() && ( $(this.$element).hasClass('invisible') ) ){
                 // if( _t.isInView() && ( $(this.$element).hasClass('invisible') ) ){
                     // ADD IN VIEW CLASS
         			_t.addInViewClass();
@@ -270,68 +290,68 @@ jQuery(document).ready(function($) {
         			currentPage = i;
         			// SET PAGE VIEW STATE
         			_t.hasViewClass = true;
+                }
 
-                    // IF CURRENT PAGE IS OUR PEOPLE, SEQUENTIALLY FADE IN ANIMATIONS
-                    if(currentPage == 1) {
-                        var time;
-                        $.each(_t.animBlocks, function(i, val) {
-                            var animateNum = $(this.$element ).find('.c3xgm-about-animate-number');
+                // IF CURRENT PAGE IS OUR PEOPLE, SEQUENTIALLY FADE IN ANIMATIONS
+                if(currentPage == 1) {
+                    var time;
+                    $.each(_t.animBlocks, function(i, val) {
+                        var animateNum = $(this.$element ).find('.c3xgm-about-animate-number');
+                        setTimeout(function() {
+                            time = 1200 * i;
                             setTimeout(function() {
-                                time = 1200 * i;
-                                setTimeout(function() {
-                                    val.addInViewClass();
-                                    if(animateNum.length > 0) {
-                                        // console.log('This is index: ' + i);
-                                        if(i == 0 ) {
-                                            fireAnimatedEmployees();
-                                        } else if(i==1) {
-                                            fireAnimate6();
-                                        } else if(i==3) {
-                                            fireAnimate23();
-                                        } else if(i==4) {
-                                            fireAnimate70();
-                                        }
+                                val.addInViewClass();
+                                if(animateNum.length > 0) {
+                                    // console.log('This is index: ' + i);
+                                    if(i == 0 ) {
+                                        fireAnimatedEmployees();
+                                    } else if(i==1) {
+                                        fireAnimate6();
+                                    } else if(i==3) {
+                                        fireAnimate23();
+                                    } else if(i==4) {
+                                        fireAnimate70();
                                     }
-                                }, time);
-                            }, 2000);
-                        });
-                    }
-
-                    // IF CURRENT PAGE IS OUR BRANDS, FADE IN FIRST SLIDE
-                    if(currentPage == 2) {
-                        // SHOW FIRST SLIDE
-                        setTimeout(function() {
-                            autorotateAboutSliderOnce();
+                                }
+                            }, time);
                         }, 2000);
-                        // START AUTO SLIDER
-                        setTimeout(function() {
-                                autorotateAboutSlider();
-                        }, 1000);
-                    }
+                    });
+                }
 
-                    // TRIGGER TECH MODULE
-                    if( _t.elementName == "c3xgm-about-page-technology" ) {
-                        // SHOW FIRST SLIDE
-                        setTimeout(function() {
-                            autorotateTechSliderOnce();
-                        }, 1500);
-                        // START AUTO SLIDER
-                        setTimeout(function() {
-                            autorotateTechSlider();
-                        }, 1000);
-                    } 
-                    
-                    if( _t.elementName == "c3xgm-about-page-our-global-community" ) {
-                        // SHOW FIRST SLIDE
-                        setTimeout(function() {
-                            autorotateFoundationSliderOnce();
-                        }, 2200);
-                        // START AUTO SLIDER
-                        setTimeout(function() {
-                            autorotateFoundationSlider();
-                        }, 1000);
-                    } 
-        		} 
+                // IF CURRENT PAGE IS OUR BRANDS, FADE IN FIRST SLIDE
+                if(currentPage == 2) {
+                    // SHOW FIRST SLIDE
+                    setTimeout(function() {
+                        autorotateAboutSliderOnce();
+                    }, 2000);
+                    // START AUTO SLIDER
+                    setTimeout(function() {
+                            autorotateAboutSlider();
+                    }, 1000);
+                }
+
+                // TRIGGER TECH MODULE
+                if( _t.elementName == "c3xgm-about-page-technology" ) {
+                    // SHOW FIRST SLIDE
+                    setTimeout(function() {
+                        autorotateTechSliderOnce();
+                    }, 1500);
+                    // START AUTO SLIDER
+                    setTimeout(function() {
+                        autorotateTechSlider();
+                    }, 1000);
+                } 
+                
+                if( _t.elementName == "c3xgm-about-page-our-global-community" ) {
+                    // SHOW FIRST SLIDE
+                    setTimeout(function() {
+                        autorotateFoundationSliderOnce();
+                    }, 2200);
+                    // START AUTO SLIDER
+                    setTimeout(function() {
+                        autorotateFoundationSlider();
+                    }, 1000);
+                } 
 
             }
     	}); 
@@ -469,66 +489,30 @@ jQuery(document).ready(function($) {
 	} // END OBJECT
 
 
-    // CHECK UPDATE - VIEWPORT ON RESIZE
-    window.addEventListener('resize', function() {
-        setTimeout(function() {
-            updateviewDimensions();
-        }, 320);
-    } , false);
-
-
-    // S C R O L L 
-    window.addEventListener('scroll', function() {
-        if (scrollTimeout) {
-            // clear the timeout, if one is pending
-            clearTimeout(scrollTimeout);
-            scrollTimeout = null;
-        }
-        scrollTimeout = setTimeout(scrollHandler, 120/1000);
-    }, false);
-
-
-    // SEPARATE SCROLLING HANDLER FOR NAV
-    var navTimeout, navHandler;
-
-    window.addEventListener('scroll', function() {
-        if (navTimeout) {
-            // clear the timeout, if one is pending
-            clearTimeout(navTimeout);
-            navTimeout = null;
-        }
-        navTimeout = setTimeout(navHandler, 240/1000);
-    }, false);
-
-
     // SCROLL HANDLER --------------------------------------------
-    // if(mobile) {
-    //     scrollHandler = function () {
-    //         // UPDATE VIEW PORT
-    //         updateviewDimensions();
-    //         // CHECK PAGES
-    //         checkPages();
-    //         // CHECK BLOCKS FOR CURRENT PAGES
-    //         checkBlocks(currentPage);
-    //         // UPDATE NAV
-    //         updateNav();
-    //     }
+    if(mobile) {
+        scrollHandler = function () {
+            // UPDATE VIEW PORT
+            updateviewDimensions();
+            // CHECK PAGES
+            checkPages();
+            // CHECK BLOCKS FOR CURRENT PAGES
+            checkBlocks(currentPage);
+            // UPDATE NAV
+            updateNav();
+        }
 
-    // } else {
-    // }
-
-    scrollHandler = function () {
-        // CHECK PAGES
-        checkPages();
-        // CHECK BLOCKS FOR CURRENT PAGES
-        checkBlocks(currentPage);
-    }
-
-    navHandler = function() {
-        // UPDATE VIEW PORT
-        updateviewDimensions();
-        // UPDATE NAV
-        updateNav();
+    } else {
+        scrollHandler = function () {
+            // UPDATE VIEW PORT
+            updateviewDimensions();
+            // CHECK PAGES
+            checkPages();
+            // CHECK BLOCKS FOR CURRENT PAGES
+            checkBlocks(currentPage);
+            // UPDATE NAV
+            updateNav();
+        }
     }
 
 
