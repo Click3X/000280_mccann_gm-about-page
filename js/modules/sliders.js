@@ -233,7 +233,7 @@ function autorotateTechSliderOnce(){
 }
 
 function killAutoRotateTechSlider(){
-	console.log("killAutoRotateTechSlider");
+	// console.log("killAutoRotateTechSlider");
 
     clearInterval(techSlideInterval);
     techSlideInterval = null;
@@ -255,7 +255,7 @@ function autorotateFoundationSliderOnce(){
 	  $( foundationLinks[currentFoundationSlide] ).eq(0).trigger("click", true);
 }
 function killAutoRotateFoundationSlider(){
-	console.log("killAutoRotateFoundationSlider");
+	// console.log("killAutoRotateFoundationSlider");
 
     clearInterval(foundationSlideInterval);
     foundationSlideInterval = null;
