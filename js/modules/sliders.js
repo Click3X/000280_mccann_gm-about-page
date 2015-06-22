@@ -209,7 +209,7 @@ function autorotateAboutSliderOnce(){
 }
 
 function killAutoRotateAboutSlider(){
-	console.log("killAutoRotateAboutSlider");
+	// console.log("killAutoRotateAboutSlider");
 
     clearInterval(aboutSlideInterval);
     aboutSlideInterval = null;
