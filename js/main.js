@@ -51,7 +51,7 @@ jQuery(document).ready(function($) {
             var endNavHeight = Number( $('#c3xgm-about-end-nav').height() );
             var endSec = Number( $('#c3xgm-about-page-our-global-community').height() );
             var endHeight = endNavHeight + endSec;
-            console.log("This is endNavHeight: " + endHeight);
+            // console.log("This is endNavHeight: " + endHeight);
 
             // IF BOTTOM OF DOC IS REACHED, HIGHLIGHT LAST BULLET
             // if ( viewDimensions.scrollTop + viewDimensions.windowHeight == viewDimensions.docHeight) {
