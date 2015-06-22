@@ -565,9 +565,12 @@ jQuery(document).ready(function($) {
     updateviewDimensions();
     // UPDATE NAV ON PAGE LOAD
     updateNav();
-    // NOW THAT WE HAVE OUR PAGE OBJECTS - SEE WHICH ONES ON SCREEN
-    checkPages();
-    // CHECK IF THERE ARE BLOCKS ON CURRENT PAGE
-    checkBlocks(currentPage);
+    
+    $(window).load(function() {
+        // NOW THAT WE HAVE OUR PAGE OBJECTS - SEE WHICH ONES ON SCREEN
+        checkPages();
+        // CHECK IF THERE ARE BLOCKS ON CURRENT PAGE
+        checkBlocks(currentPage);
+    });
 
 });
