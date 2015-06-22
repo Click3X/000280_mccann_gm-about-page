@@ -21,6 +21,7 @@ jQuery(document).ready(function($) {
 	// TEST FOR 3D TRANSFORMS - for IE
 	if( $('html').hasClass('no-csstransforms3d') ) {
 	    css3dtransforms = false;
+        console.log('We havre no transfrom!');
 	}
 
 	/** MAIN NAV JS --- HIGH LIGHT NAV, ATTACH CLASSES */
@@ -58,8 +59,8 @@ jQuery(document).ready(function($) {
             var endDim = viewDimensions.docHeight - endHeight;
             // var endDim = viewDimensions.docHeight - endHeight - 108;
 
-            console.log('This is curScroll:' + curScroll);
-            console.log('This is endDim:' + endDim);
+            // console.log('This is curScroll:' + curScroll);
+            // console.log('This is endDim:' + endDim);
 
             if ( viewDimensions.scrollTop + viewDimensions.windowHeight > viewDimensions.docHeight - endHeight ) {
 
@@ -280,7 +281,8 @@ jQuery(document).ready(function($) {
 
             } else {
 
-                if( _t.isInView() && ( $(this.$element).hasClass('invisible') ) ){
+                if( _t.isInView() ){
+                // if( _t.isInView() && ( $(this.$element).hasClass('invisible') ) ){
                     // ADD IN VIEW CLASS
         			_t.addInViewClass();
         			// console.log('PAGE: ' + _t.elementName);
@@ -483,37 +485,6 @@ jQuery(document).ready(function($) {
         		this.$element.addClass('element-in-view');	
         	}
         }
-
-        // ANIMATE FUNCTION - TEST FOR CSS3 TRANSFORMS
-        if(css3dtransforms) {
-            this.moveRight = function() {
-                move = this.getScrollAmt();
-                this.$element.css("transform", "translate3d("+ move +"px, 0, 10px)");
-                // console.log('this.elementRight: ' + this.elementRight);
-                // console.log('this.elementLeft: ' + this.elementLeft);
-            }
-
-            this.moveLeft = function() {
-                move = this.getScrollAmt();
-                this.$element.css("transform", "translate3d(-"+ move +"px, 0, 10px)");
-                // console.log('this.elementRight: ' + this.elementRight);
-                // console.log('this.elementLeft: ' + this.elementLeft);
-            }
-
-        } else {
-            this.elementPosition = this.$element.position();
-
-            this.moveRight = function() {
-                move = this.getScrollAmt();
-                this.$element.css("right", move + "px");
-            }
-
-            this.moveLeft = function() {
-                move = this.getScrollAmt();
-                this.$element.css("left", move + "px");
-            }
-        }   
-
 	
 	} // END OBJECT
 
