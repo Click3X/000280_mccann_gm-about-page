@@ -193,7 +193,7 @@ jQuery(document).ready(function($) {
 
 //AUTO ROTATE ABOUT SLIDER
 function autorotateAboutSlider(){
-   console.log("autorotateAboutSlider");
+   // console.log("autorotateAboutSlider");
 
     if(!aboutSlideInterval){
         aboutSlideInterval = setInterval(function(){
