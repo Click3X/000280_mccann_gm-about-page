@@ -35,7 +35,7 @@ jQuery(document).ready(function($) {
 
     // HIGHTLIGHT NAV
     function updateNav() {
-        for (var i=0; i < aArray.length; i++) {
+        for (var i=0; i < aArray.length-1; i++) {
             // console.log('THis is from updateNav!: ' + aArray[i]);
             // console.dir(aArray[i]);
 
