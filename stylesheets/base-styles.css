@@ -12285,9 +12285,9 @@ body {
   animation-duration: 600ms;
 }
 /* line 89, ../sass/animations/_page-in-view.scss */
-#c3xgm-about-page-our-brands.c3xgm-about-page.c3xgm-about-page-in-view .c3xgm-about-block-earn .c3xgm-about-yellow-bar-left-wrapper .c3xgm-about-block-tagline > span:nth-child(2),
-#c3xgm-about-page-our-company.c3xgm-about-page.c3xgm-about-page-in-view .c3xgm-about-block-earn .c3xgm-about-yellow-bar-left-wrapper .c3xgm-about-block-tagline > span:nth-child(2),
-#c3xgm-about-page-our-people.c3xgm-about-page.c3xgm-about-page-in-view .c3xgm-about-block-earn .c3xgm-about-yellow-bar-left-wrapper .c3xgm-about-block-tagline > span:nth-child(2) {
+#c3xgm-about-page-our-brands.c3xgm-about-page.c3xgm-about-page-in-view .c3xgm-about-block-earn .c3xgm-about-yellow-bar-left-wrapper .c3xgm-about-block-tagline > span + span,
+#c3xgm-about-page-our-company.c3xgm-about-page.c3xgm-about-page-in-view .c3xgm-about-block-earn .c3xgm-about-yellow-bar-left-wrapper .c3xgm-about-block-tagline > span + span,
+#c3xgm-about-page-our-people.c3xgm-about-page.c3xgm-about-page-in-view .c3xgm-about-block-earn .c3xgm-about-yellow-bar-left-wrapper .c3xgm-about-block-tagline > span + span {
   -webkit-animation-fill-mode: both;
   -moz-animation-fill-mode: both;
   -o-animation-fill-mode: both;
