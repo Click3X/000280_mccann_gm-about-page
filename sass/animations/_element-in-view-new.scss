@@ -43,52 +43,52 @@
 			}
 		}
 
-		.c3xgm-about-truck-shadow-container {
-			@include prefix(animation-fill-mode, both);
-		    @include prefix(animation-name, fadeIn);
-		    @include prefix(animation-delay, #{ ($test-delay + $test-step * 3) + "ms"});
-		    @include prefix(animation-duration, 700ms);
+		// .c3xgm-about-truck-shadow-container {
+		// 	@include prefix(animation-fill-mode, both);
+		//     @include prefix(animation-name, fadeIn);
+		//     @include prefix(animation-delay, #{ ($test-delay + $test-step * 3) + "ms"});
+		//     @include prefix(animation-duration, 700ms);
 
-			.c3xgm-about-truck {
-				@include prefix(animation-fill-mode, both);
-			    @include prefix(animation-name, rotate);
-			    @include prefix(animation-delay, #{ ($test-delay + $test-step * 4) + 1000 + "ms"});
-			    @include prefix(animation-duration, 2000ms);	
-			    @include prefix(animation-timing-function, ease-in-out);	
-			}
+		// 	.c3xgm-about-truck {
+		// 		@include prefix(animation-fill-mode, both);
+		// 	    @include prefix(animation-name, rotate);
+		// 	    @include prefix(animation-delay, #{ ($test-delay + $test-step * 4) + 1000 + "ms"});
+		// 	    @include prefix(animation-duration, 2000ms);	
+		// 	    @include prefix(animation-timing-function, ease-in-out);	
+		// 	}
 
-			.c3xgm-about-truck-bg-outer {
-			 	@include prefix(animation-fill-mode, both);
-			    @include prefix(animation-name, wenSlideInUp);
-			    @include prefix(animation-delay, #{ ($test-delay + $test-step * 4) + "ms"});
-			    @include prefix(animation-duration, 1000ms);
-			    @include prefix(animation-timing-function, ease-in-out);
-			}
+		// 	.c3xgm-about-truck-bg-outer {
+		// 	 	@include prefix(animation-fill-mode, both);
+		// 	    @include prefix(animation-name, wenSlideInUp);
+		// 	    @include prefix(animation-delay, #{ ($test-delay + $test-step * 4) + "ms"});
+		// 	    @include prefix(animation-duration, 1000ms);
+		// 	    @include prefix(animation-timing-function, ease-in-out);
+		// 	}
 
-			.c3xgm-about-truck-lines-holder {
-				@include prefix(animation-fill-mode, both);
-			    @include prefix(animation-name, fadeIn);
-			    @include prefix(animation-delay, 2.75s);
-			    @include prefix(animation-duration, 700ms);
-			}
+		// 	.c3xgm-about-truck-lines-holder {
+		// 		@include prefix(animation-fill-mode, both);
+		// 	    @include prefix(animation-name, fadeIn);
+		// 	    @include prefix(animation-delay, 2.75s);
+		// 	    @include prefix(animation-duration, 700ms);
+		// 	}
 
-			.c3xgm-about-truck-lines {
-				opacity: 1;
-				@include prefix(animation-fill-mode, both);
-			    @include prefix(animation-name, rotate);
-			    @include prefix(animation-delay, #{ ($test-delay + $test-step * 4) + "ms"});
-			    @include prefix(animation-duration, 2000ms);
-			    @include prefix(animation-timing-function, linear);
-			    @include prefix(animation-iteration-count, infinite);	
-			}
+		// 	.c3xgm-about-truck-lines {
+		// 		opacity: 1;
+		// 		@include prefix(animation-fill-mode, both);
+		// 	    @include prefix(animation-name, rotate);
+		// 	    @include prefix(animation-delay, #{ ($test-delay + $test-step * 4) + "ms"});
+		// 	    @include prefix(animation-duration, 2000ms);
+		// 	    @include prefix(animation-timing-function, linear);
+		// 	    @include prefix(animation-iteration-count, infinite);	
+		// 	}
 
-			.c3xgm-about-shadow {
-				@include prefix(animation-fill-mode, both);
-			    @include prefix(animation-name, shadowScaleDown);
-			    @include prefix(animation-delay, #{ ($test-delay + $test-step * 4) + "ms"});
-			    @include prefix(animation-duration, 1200ms);
-			    @include prefix(animation-timing-function, ease-out);
-			}
-		}
+		// 	.c3xgm-about-shadow {
+		// 		@include prefix(animation-fill-mode, both);
+		// 	    @include prefix(animation-name, shadowScaleDown);
+		// 	    @include prefix(animation-delay, #{ ($test-delay + $test-step * 4) + "ms"});
+		// 	    @include prefix(animation-duration, 1200ms);
+		// 	    @include prefix(animation-timing-function, ease-out);
+		// 	}
+		// }
 	}
 }

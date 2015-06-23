@@ -1,29 +1,30 @@
 // PAGE JS FOR PAGES
 jQuery(document).ready(function($) { 
-    // console.log('This is page js!');
+	// console.log('This is page js!');
 
     // TEST IF PAGE IS animation
     var altAnim = $('body').hasClass('c3xgm-about-alt-anim');
-    console.log('This is altAnim: ' + altAnim);
+    // console.log('This is altAnim: ' + altAnim);
 
-    // DECLARE VARIABLES FOR LATER USE
-    var css3dtransforms = true,
-        currentScroll,
-        scrollTimeout,
-        resizeTimeout,
-        scrollHandler,
-        resizeHandler,
-        viewDimensions,
-        currentPage = 0,
-        newPage,
-        recentPage = "";
+	// DECLARE VARIABLES FOR LATER USE
+	var css3dtransforms = true,
+		currentScroll,
+		scrollTimeout,
+		resizeTimeout,
+		scrollHandler,
+		resizeHandler,
+		viewDimensions,
+		currentPage = 0,
+		newPage,
+		recentPage = "";
 
-    // TEST FOR 3D TRANSFORMS - for IE
-    if( $('html').hasClass('no-csstransforms3d') ) {
-        css3dtransforms = false;
-    }
+	// TEST FOR 3D TRANSFORMS - for IE
+	if( $('html').hasClass('no-csstransforms3d') ) {
+	    css3dtransforms = false;
+        console.log('We havre no transfrom!');
+	}
 
-    /** MAIN NAV JS --- HIGH LIGHT NAV, ATTACH CLASSES */
+	/** MAIN NAV JS --- HIGH LIGHT NAV, ATTACH CLASSES */
     var aChildren = $(".c3xgm-about-main-nav li a"),
         aArray = [];
     
@@ -36,9 +37,6 @@ jQuery(document).ready(function($) {
     // HIGHTLIGHT NAV
     function updateNav() {
         for (var i=0; i < aArray.length; i++) {
-            // console.log('THis is from updateNav!: ' + aArray[i]);
-            // console.dir(aArray[i]);
-
             var theID = aArray[i],
                 divPos = Pages[i].elementTop;
                 divHeight = Pages[i].elementHeight;
@@ -50,10 +48,25 @@ jQuery(document).ready(function($) {
                 $("a[href='" + theID + "']").removeClass("c3xgm-about-nav-bullet-active");
             }
 
+            var endNavHeight = Number( $('#c3xgm-about-end-nav').height() );
+            var endSec = Number( $('#c3xgm-about-page-our-global-community').height() );
+            var endHeight = endNavHeight + endSec;
+            // console.log("This is endNavHeight: " + endHeight);
+
             // IF BOTTOM OF DOC IS REACHED, HIGHLIGHT LAST BULLET
-            if ( viewDimensions.scrollTop + viewDimensions.windowHeight == viewDimensions.docHeight) {
+            // if ( viewDimensions.scrollTop + viewDimensions.windowHeight == viewDimensions.docHeight) {
+            var curScroll = viewDimensions.scrollTop + viewDimensions.windowHeight;
+            var endDim = viewDimensions.docHeight - endHeight;
+            // var endDim = viewDimensions.docHeight - endHeight - 108;
+
+            // console.log('This is curScroll:' + curScroll);
+            // console.log('This is endDim:' + endDim);
+
+            if ( viewDimensions.scrollTop + viewDimensions.windowHeight > viewDimensions.docHeight - endHeight ) {
+
                 var lastPage = aArray[aArray.length - 1];
-                $("a[href='#c3xgm-about-page-environment']").removeClass("c3xgm-about-nav-bullet-active");
+                // $("a[href='#c3xgm-about-page-environment']").removeClass("c3xgm-about-nav-bullet-active");
+                $('c3xgm-about-main-nav > li a.c3xgm-about-nav-bullet-active').removeClass('c3xgm-about-nav-bullet-active');
                 $("a[href='" + lastPage + "']").addClass("c3xgm-about-nav-bullet-active");
             }
         }
@@ -74,30 +87,30 @@ jQuery(document).ready(function($) {
         }
     });
 
-    // UPDATE VIEW PORT DIMENSIONS
-    function updateviewDimensions() {
-        viewDimensions = {
-            windowHeight : jQuery(window).height(),
-            windowWidth : jQuery(window).width(),
-            scrollTop : jQuery(window).scrollTop(),
-            scrollBottom : jQuery(window).scrollTop() + jQuery(window).height(),
-            docHeight : jQuery(document).height(),
+	// UPDATE VIEW PORT DIMENSIONS
+	function updateviewDimensions() {
+		viewDimensions = {
+			windowHeight : jQuery(window).height(),
+		    windowWidth : jQuery(window).width(),
+		    scrollTop : jQuery(window).scrollTop(),
+		    scrollBottom : jQuery(window).scrollTop() + jQuery(window).height(),
+		    docHeight : jQuery(document).height(),
             left : jQuery(window).scrollLeft(),
             right : jQuery(window).scrollLeft() + jQuery(window).height()
-        }
+		}
 
-        return viewDimensions;
-    }
+		return viewDimensions;
+	}
 
-    // CHECK UPDATE - VIEWPORT ON RESIZE
-    window.addEventListener('resize', function() {
-        setTimeout(function() {
-            updateviewDimensions();
-        }, 320);
-    } , false);
+	// CHECK UPDATE - VIEWPORT ON RESIZE
+	window.addEventListener('resize', function() {
+		setTimeout(function() {
+			updateviewDimensions();
+		}, 320);
+	} , false);
 
 
-    // S C R O L L 
+	// S C R O L L 
     window.addEventListener('scroll', function() {
         if (scrollTimeout) {
             // clear the timeout, if one is pending
@@ -253,17 +266,31 @@ jQuery(document).ready(function($) {
 
     // CHECK FOR PAGES ON SCREEN
     function checkPages() {
-        $.each(Pages, function(i, val) {
+    	$.each(Pages, function(i, val) {
             var _t = this;
-            // if( _t.isInView() && (_t.hasViewClass == false) ){
-            if( _t.isInView() && ( $(this.$element).hasClass('invisible') ) ){
-                // ADD IN VIEW CLASS
+    		// if( _t.isInView() && (_t.hasViewClass == false) ){
+
+            // DONT SHOW ANIMATIONS FOR IE9 AND BELOW
+            if(!css3dtransforms) {
                 _t.addInViewClass();
-                // console.log('PAGE: ' + _t.elementName);
-                // SET CURRENT PAGE TO PAGE INDEX
-                currentPage = i;
-                // SET PAGE VIEW STATE
-                _t.hasViewClass = true;
+
+                // ADD IN VIEW CLASS TO ALL PAGE BLOCKS
+                $.each(_t.animBlocks, function(i, val) {
+                    val.addInViewClass();
+                });
+
+            } else {
+
+                if( _t.isInView() && ( $(this.$element).hasClass('invisible') ) ){
+                // if( _t.isInView() && ( $(this.$element).hasClass('invisible') ) ){
+                    // ADD IN VIEW CLASS
+        			_t.addInViewClass();
+        			// console.log('PAGE: ' + _t.elementName);
+        			// SET CURRENT PAGE TO PAGE INDEX
+        			currentPage = i;
+        			// SET PAGE VIEW STATE
+        			_t.hasViewClass = true;
+                }
 
                 // IF CURRENT PAGE IS OUR PEOPLE, SEQUENTIALLY FADE IN ANIMATIONS
                 if(currentPage == 1) {
@@ -303,7 +330,7 @@ jQuery(document).ready(function($) {
                     }, 1000);
                 }
 
-                // // TRIGGER TECH MODULE
+                // TRIGGER TECH MODULE
                 if( _t.elementName == "c3xgm-about-page-technology" ) {
                     // SHOW FIRST SLIDE
                     setTimeout(function() {
@@ -326,12 +353,8 @@ jQuery(document).ready(function($) {
                     }, 1000);
                 } 
 
-                // // ANIMATE FLAG LINE AND SOLAR ROAD
-                // if( _t.elementName == "c3xgm-about-page-environment" ) {
-                // }
-
-            } 
-        }); 
+            }
+    	}); 
     }
 
     var triggerCTD = false;
@@ -341,21 +364,23 @@ jQuery(document).ready(function($) {
         // console.log('Thsi is currentPage: ' + currentPage);
         // console.dir(currentPage);
         
-        var blocks = Pages[currentPage].animBlocks;
+    	var blocks = Pages[currentPage].animBlocks;
 
         if(currentPage != 1) {
             $.each(blocks, function(i, val) {
                 // if( this.isAtEighth() && (this.hasViewClass == false) ){
                 // if( this.isAtEighth() && ( $(this.$element).hasClass('invisible') ) ){
+
+
                 if( this.isAtEighth() ){
                     // ADD IN VIEW CLASS
                     this.addInViewClass();
-                    console.log('Im in view: ' + this.elementName);
+                    // console.log('Im in view: ' + this.elementName);
                     // SET PAGE VIEW STATE
-                    // this.hasViewClass = true;
+                    this.hasViewClass = true;
                     // IF TEST FACILITY - TRIGGER ROLLOVER
                     if(this.elementName == "c3xgm-about-test-facility") {
-                        // rotateCar();
+                        rotateCar();
                         // ANIMATE FLAG WHEN ELEMENT IS IN VIEW - ONLY ON ALT ANIMATION PAGE
                     } else if( (this.elementName == "c3xgm-about-dealers") && (altAnim == false) ) {
                         $('#animate-flag-line').addClass('animate-flag-line');
@@ -379,10 +404,10 @@ jQuery(document).ready(function($) {
         }
     }
 
-    // PAGE OBJECT
-    function AmimatedElement(elem, defaults) {
-        // DECLARE ELEM, DEFAULTS, THIS, OFFSET, CALLBACK - OPTIONAL USE
-        var elem = elem,
+	// PAGE OBJECT
+	function AmimatedElement(elem, defaults) {
+		// DECLARE ELEM, DEFAULTS, THIS, OFFSET, CALLBACK - OPTIONAL USE
+		var elem = elem,
             defaults = defaults || {},
             _t = this,
             offset = defaults.offset || 100,
@@ -395,9 +420,9 @@ jQuery(document).ready(function($) {
 
         // ELEMENT DIMENSIONS
         if(defaults.blocktype == 'page') {
-            this.elementName = this.$element.attr('id');
+        	this.elementName = this.$element.attr('id');
         } else {
-            this.elementName = this.$element.attr("class").split(" ")[2];
+        	this.elementName = this.$element.attr("class").split(" ")[2];
         }
         
         this.elementWidth = Number( this.$element.css("width").replace('px', '') );
@@ -419,15 +444,15 @@ jQuery(document).ready(function($) {
         // BUILD ANIM BLOCKS
         if(this.aboutBlocks.length > 0){
             $.each(this.aboutBlocks, function(i, val) {
-                // BUILD EACH PAGE
-                var elem = $(this).get(0),
-                    defaults = {
-                        'blocktype':'block'
-                    };
+    	        // BUILD EACH PAGE
+    	        var elem = $(this).get(0),
+    	        	defaults = {
+			        	'blocktype':'block'
+			        };
 
-                elem = new AmimatedElement(val, defaults);
-                _t.animBlocks.push(elem);
-            });
+    	        elem = new AmimatedElement(val, defaults);
+    	        _t.animBlocks.push(elem);
+    	    });
         }
 
 
@@ -442,7 +467,7 @@ jQuery(document).ready(function($) {
 
         // IN VIEW
         this.isInView = function() {
-            return ( (this.elementTop <= viewDimensions.scrollBottom) && (this.elementBottom >= viewDimensions.scrollTop) );
+        	return ( (this.elementTop <= viewDimensions.scrollBottom) && (this.elementBottom >= viewDimensions.scrollTop) );
         }
 
         // IS AT EIGHTH
@@ -452,17 +477,16 @@ jQuery(document).ready(function($) {
 
         // ADD IN VIEW CLASS
         this.addInViewClass = function() {
-            if( defaults.blocktype == 'page' ) {
+        	if( defaults.blocktype == 'page' ) {
                 this.$element.removeClass('invisible');  
-                this.$element.addClass('c3xgm-about-page-in-view'); 
-            } else {
+        		this.$element.addClass('c3xgm-about-page-in-view');	
+        	} else {
                 this.$element.removeClass('invisible');  
-                this.$element.addClass('element-in-view');  
-            }
-        }  
-
-    
-    } // END OBJECT
+        		this.$element.addClass('element-in-view');	
+        	}
+        }
+	
+	} // END OBJECT
 
 
     // SCROLL HANDLER --------------------------------------------
@@ -492,20 +516,16 @@ jQuery(document).ready(function($) {
     }
 
 
-    // NOW THAT WE HAVE PREPPED OUR ENVIRONMENT -------------------------------------------------------------------------------
-    // GET ALL PAGES
+	// NOW THAT WE HAVE PREPPED OUR ENVIRONMENT -------------------------------------------------------------------------------
+	// GET ALL PAGES
     var pages = $('.c3xgm-about-page'),
-    // var pages = $('#c3xgm-about-page-our-company, #c3xgm-about-page-our-people, #c3xgm-about-page-our-brands, #c3xgm-about-page-our-commitment'),    
         Pages = [];
-
-    // UPDATE VIEWPORT DIMENSIONS
-    updateviewDimensions();
 
     // INIT PAGES OBJECTS
     $.each(pages, function(i, val) {
         // BUILD EACH PAGE
         var defaults = {
-            'blocktype':'page'
+        	'blocktype':'page'
         }
         Pages[i] = new AmimatedElement(val, defaults);
         console.log(Pages[i]);
@@ -531,30 +551,26 @@ jQuery(document).ready(function($) {
         }
     });
 
-    // HIDE GIFS
-    $('#c3xgm-about-crash-test-dummies').addClass('invisible');
+    // CRASH TEST DUMMIES GIGS, AND IE 0
+    if(css3dtransforms) {
+        $('#c3xgm-about-crash-test-dummies').addClass('invisible');
+    } else {
+        // REPLACE .GIF WITH .SVG FOR IE 9
+        $('#c3xgm-about-crash-test-dummies').each(function(index,element) {
+            element.src = element.src.replace('.gif','.svg');
+        });
+    }
 
+    // UPDATE VIEWPORT DIMENSIONS
+    updateviewDimensions();
+    // UPDATE NAV ON PAGE LOAD
+    updateNav();
+    
     $(window).load(function() {
-        // UPDATE NAV ON PAGE LOAD
-        updateNav();
         // NOW THAT WE HAVE OUR PAGE OBJECTS - SEE WHICH ONES ON SCREEN
         checkPages();
         // CHECK IF THERE ARE BLOCKS ON CURRENT PAGE
-        checkBlocks(currentPage);  
-    })
-    // // UPDATE NAV ON PAGE LOAD
-    // updateNav();
-    // // NOW THAT WE HAVE OUR PAGE OBJECTS - SEE WHICH ONES ON SCREEN
-    // checkPages();
-    // // CHECK IF THERE ARE BLOCKS ON CURRENT PAGE
-    // checkBlocks(currentPage);
-
-    // SET INTERVAL TO SEE IF THERE ARE ANY INVISIBLE ELEMENTS ON THE PAGE
-    setInterval(function() {
-        // CHECK IF THERE ARE BLOCKS ON CURRENT PAGE
-        console.log('I am checking for blocks!');
-        console.log('I am currentPage: ' + currentPage);
         checkBlocks(currentPage);
-    }, 1000);
+    });
 
 });

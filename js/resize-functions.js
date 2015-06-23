@@ -46,12 +46,8 @@ jQuery(document).ready(function($) {
         $(techPics).height(picsMaxHeight);
 
         var parentHeight = quotesMaxHeight + picsMaxHeight;
-        // console.log('This is parentHeight: ' + parentHeight);
 
-        // var parent = $(this).parent().attr('id');
-        // console.log(parent);
         $('#c3xgm-about-module-technology').height(parentHeight);
-        // parent.height( parentHeight );
 
     }
 
@@ -69,9 +65,6 @@ jQuery(document).ready(function($) {
         $(carModContainer).height(carMaxHeight);
         $(carContainers).height(carMaxHeight);
 
-
-        
-
         // TECH HANDLER
         resizeTechModules(techQuotes, techPics);
 
@@ -86,10 +79,8 @@ jQuery(document).ready(function($) {
         $(foundationModContainer).height(foundationMaxHeight);
     }
 
-    // CALL FUNCTION ON PAGE LOAD
-    resizeHandler();
 
-     $(carContainers).height('auto');
+    $(carContainers).height('auto');
     $(carModContainer).height('auto');
     // GET TALLEST DIV
     carMaxHeight = Math.max.apply(null, carContainers.map(function () {
@@ -102,24 +93,23 @@ jQuery(document).ready(function($) {
 
 
     // DEFAULT HEIGHT TO ORIGINAL SIZE ON RESIZE 
-        $(foundationContainers).height('auto');
-        $(foundationModContainer).height('auto');
-        // GET TALLEST DIV
-        foundationMaxHeight = Math.max.apply(null, foundationContainers.map(function () {
-            return $(this).height();
-        }).get());
-        $(foundationModContainer).height(foundationMaxHeight);
+    $(foundationContainers).height('auto');
+    $(foundationModContainer).height('auto');
+    // GET TALLEST DIV
+    foundationMaxHeight = Math.max.apply(null, foundationContainers.map(function () {
+        return $(this).height();
+    }).get());
+
+    $(foundationModContainer).height(foundationMaxHeight);
 
 
+    // CALL FUNCTION ON PAGE LOAD
+    resizeHandler();
 
-    // setTimeout(function() {
-        $(window).load(function() {
-            // console.log('Resizing Tech Modules from Window Load');
-            resizeTechModules(techQuotes, techPics);
-        });
-        // console.log('Fron ST: resize!');
-        // resizeTechModules(techQuotes, techPics);
-    // }, 100);
+    $(window).load(function() {
+        // console.log('Resizing Tech Modules from Window Load');
+        resizeTechModules(techQuotes, techPics);
+    });
     
     
 });

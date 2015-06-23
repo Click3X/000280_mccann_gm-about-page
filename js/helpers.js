@@ -37,14 +37,7 @@ if(mobile) {
         } 
 
     });
-
-     // MAKE FLAGS ANIMATE
-    // $('#animate-flag-line').addClass('animate-flag-line');
 }
-
-
- // MAKE FLAGS ANIMATE
-// $('#animate-flag-line, #c3xgm-about-solar-road-list').addClass('animate-flag-line');
 
 // FORMAT NUMBER
 function formatNumber (num) {

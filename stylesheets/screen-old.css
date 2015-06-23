@@ -1569,6 +1569,7 @@ h4.c3xgm-about-h {
 .c3xgm-about-page-our-commitment .c3xgm-about-crash-test-dummies .c3xgm-about-block-image {
   width: 100%;
   position: relative;
+  overflow: hidden;
 }
 @media (min-width: 768px) {
   /* line 19, ../sass/pages/_safety.scss */
@@ -1577,7 +1578,8 @@ h4.c3xgm-about-h {
     width: 25%;
     height: 0;
     padding-bottom: 297px;
-    margin-right: 1em;
+    /*margin-right: 1em;*/
+    margin-left: 1em;
   }
   /* line 27, ../sass/pages/_safety.scss */
   .c3xgm-about-page-our-commitment .c3xgm-about-crash-test-dummies .c3xgm-about-block-image img {
@@ -3972,8 +3974,13 @@ h4.c3xgm-about-h {
   .c3xgm-about-page-our-people .c3xgm-about-separator + .number {
     font-size: 41px;
     font-size: 13.697113vw;
-    width: 114px;
+    /*width: 114px;*/
+    width: 110px;
     text-align: left;
+  }
+
+  #c3xgm-about-number-6 {
+    width: 90px;
   }
 }
 @media (min-width: 830px) {
@@ -4017,7 +4024,7 @@ h4.c3xgm-about-h {
 @media (min-width: 768px) {
   /* line 145, ../sass/pages/_our-people.scss */
   .c3xgm-about-page-our-people .c3xgm-about-continents .c3xgm-about-blockquote {
-    margin-left: -15%;
+    /*margin-left: -15%;*/
   }
   /* line 146, ../sass/pages/_our-people.scss */
   .c3xgm-about-page-our-people .c3xgm-about-continents .c3xgm-about-block-image img {

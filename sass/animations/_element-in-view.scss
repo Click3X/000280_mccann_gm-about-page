@@ -13,27 +13,27 @@
 			> .c3xgm-about-separator {
 
 				> span:first-child { 
-					@include prefix(animation-fill-mode, both);
+					@include prefix(animation-fill-mode, forwards);
 					@include prefix(animation-name, fadeInRightMega);
 					@include prefix(animation-delay, #{$anim-delay + "ms"});
 					@include prefix(animation-duration, #{$anim-duration + "ms"});
 				}
 				> span:nth-child(2) { 
-					@include prefix(animation-fill-mode, both);
+					@include prefix(animation-fill-mode, forwards);
 					@include prefix(animation-name, fadeInRightMega);
 					@include prefix(animation-delay, #{ ($anim-delay + $anim-step) + "ms"});
 					@include prefix(animation-duration, #{$anim-duration + "ms"});
 				}
 
 				.c3xgm-about-gray-line {
-					@include prefix(animation-fill-mode, both);
+					@include prefix(animation-fill-mode, forwards);
 					@include prefix(animation-name, growBorder);
 					@include prefix(animation-delay,200ms);
 		  			@include prefix(animation-duration,600ms);
 
 				}
 				.c3xgm-about-yellow-line {
-					@include prefix(animation-fill-mode, both);
+					@include prefix(animation-fill-mode, forwards);
 					@include prefix(animation-name, growBorder);
 					@include prefix(animation-delay,800ms);
 		  			@include prefix(animation-duration,600ms);
@@ -42,7 +42,7 @@
 
 			> span.c3xgm-about-light-blue.number,
 			> span.c3xgm-about-light-blue.number span {
-					@include prefix(animation-fill-mode, both);
+					@include prefix(animation-fill-mode, forwards);
 					@include prefix(animation-name, fadeIn);
 					@include prefix(animation-delay, #{$anim-delay + "ms"});
 					@include prefix(animation-duration,800ms);	
@@ -58,7 +58,7 @@
 			$anim-duration:400;
 
 			img { 
-				@include prefix(animation-fill-mode, both);
+				@include prefix(animation-fill-mode, forwards);
 				@include prefix(animation-name, fadeIn);
 				@include prefix(animation-delay, #{$anim-delay + "ms"});
 				@include prefix(animation-duration, #{$anim-duration + "ms"});
@@ -85,19 +85,19 @@
 				}
 
 				> span:first-child {
-					@include prefix(animation-fill-mode, both);
+					@include prefix(animation-fill-mode, forwards);
 					@include prefix(animation-name, fadeIn);
 					@include prefix(animation-delay, #{$anim-delay + "ms"});
 					@include prefix(animation-duration, #{$anim-duration + "ms"});
 				}
 				> span:nth-child(2) { 
-					@include prefix(animation-fill-mode, both);
+					@include prefix(animation-fill-mode, forwards);
 					@include prefix(animation-name, fadeInLeft);
 					@include prefix(animation-delay,  #{ ($anim-delay + $anim-step + 400 ) + "ms"});
 					@include prefix(animation-duration, #{$anim-duration + "ms"});
 				}
 				> span:nth-child(3) { 
-					@include prefix(animation-fill-mode, both);
+					@include prefix(animation-fill-mode, forwards);
 					@include prefix(animation-name, fadeInLeft);
 					@include prefix(animation-delay,  #{ ($anim-delay + $anim-step + 400 ) + "ms"});
 					@include prefix(animation-duration, #{$anim-duration + "ms"});
@@ -132,20 +132,20 @@
 
 			.c3xgm-about-blockquote {
 				> span:first-child {
-					@include prefix(animation-fill-mode, both);
+					@include prefix(animation-fill-mode, forwards);
 					@include prefix(animation-name, fadeIn);
 					@include prefix(animation-delay, 600ms);
 					@include prefix(animation-duration, 400ms);
 				}
 				> span:nth-child(2),
 				> span:nth-child(3) { 
-					@include prefix(animation-fill-mode, both);
+					@include prefix(animation-fill-mode, forwards);
 					@include prefix(animation-name, fadeIn);
 					@include prefix(animation-delay, 900ms);
 					@include prefix(animation-duration, 400ms);
 				}
 				> span:nth-child(4) { 
-					@include prefix(animation-fill-mode, both);
+					@include prefix(animation-fill-mode, forwards);
 					@include prefix(animation-name, fadeIn);
 					@include prefix(animation-delay, 1200ms);
 					@include prefix(animation-duration, 400ms);
@@ -183,19 +183,19 @@
 
 			.c3xgm-about-blockquote {
 				> span:first-child {
-					@include prefix(animation-fill-mode, both);
+					@include prefix(animation-fill-mode, forwards);
 					@include prefix(animation-name, fadeIn);
 					@include prefix(animation-delay, 500ms);
 					@include prefix(animation-duration, 600ms);
 				}
 				> span:nth-child(2) {
-					@include prefix(animation-fill-mode, both);
+					@include prefix(animation-fill-mode, forwards);
 					@include prefix(animation-name, fadeIn);
 					@include prefix(animation-delay, 1000ms);
 					@include prefix(animation-duration, 600ms);
 				}
 				> span:nth-child(3) { 
-					@include prefix(animation-fill-mode, both);
+					@include prefix(animation-fill-mode, forwards);
 					@include prefix(animation-name, fadeIn);
 					@include prefix(animation-delay, 1500ms);
 					@include prefix(animation-duration, 600ms);
@@ -232,7 +232,7 @@
 		// ELEMENT IN VIEW
 		&.element-in-view {
 			.c3xgm-about-block-image > div {
-				@include prefix(animation-fill-mode, both);
+				@include prefix(animation-fill-mode, forwards);
 				@include prefix(animation-name, fadeInRightMega);
 				@include prefix(animation-delay, #{$global-delay + "ms"});
 				@include prefix(animation-duration, #{$global-duration + "ms"});
@@ -243,19 +243,19 @@
 				@include borderLinesAnimation(0);
 
 				> span:first-child {
-					@include prefix(animation-fill-mode, both);
+					@include prefix(animation-fill-mode, forwards);
 					@include prefix(animation-name, fadeInLeftMega);
 					@include prefix(animation-delay, #{$global-delay + "ms"});
 					@include prefix(animation-duration, #{$global-duration + "ms"});
 				}
 				> span:nth-child(2) {
-					@include prefix(animation-fill-mode, both);
+					@include prefix(animation-fill-mode, forwards);
 					@include prefix(animation-name, fadeInLeftMega);
 					@include prefix(animation-delay, #{ ($global-delay + $global-step) + "ms"});
 					@include prefix(animation-duration, #{$global-duration + "ms"});
 				}
 				> span:nth-child(3) { 
-					@include prefix(animation-fill-mode, both);
+					@include prefix(animation-fill-mode, forwards);
 					@include prefix(animation-name, fadeInLeftMega);
 					@include prefix(animation-delay, #{ ($global-delay + $global-step * 2) + "ms"});
 					@include prefix(animation-duration, #{$global-duration + "ms"});
@@ -279,7 +279,7 @@
 				img { @include noAnimation; }
 
 				#clock {
-					@include prefix(animation-fill-mode, both);
+					@include prefix(animation-fill-mode, forwards);
 					@include prefix(animation-name, fadeInLeft);
 					@include prefix(animation-delay, #{$seconds-delay + "ms"});
 					@include prefix(animation-duration, #{$seconds-duration + "ms"});
@@ -291,19 +291,19 @@
 				@include borderLinesAnimation(200);
 
 				> span:first-child {
-					@include prefix(animation-fill-mode, both);
+					@include prefix(animation-fill-mode, forwards);
 					@include prefix(animation-name, fadeInRightMega);
 					@include prefix(animation-delay, #{$seconds-delay + "ms"});
 					@include prefix(animation-duration, #{$seconds-duration + "ms"});
 				}
 				> span:nth-child(2) {
-					@include prefix(animation-fill-mode, both);
+					@include prefix(animation-fill-mode, forwards);
 					@include prefix(animation-name, fadeInRightMega);
 					@include prefix(animation-delay, #{ ($seconds-delay + $seconds-step) + "ms"});
 					@include prefix(animation-duration, #{$seconds-duration + "ms"});
 				}
 				> span:nth-child(3) { 
-					@include prefix(animation-fill-mode, both);
+					@include prefix(animation-fill-mode, forwards);
 					@include prefix(animation-name, fadeInRightMega);
 					@include prefix(animation-delay, #{ ($seconds-delay + $seconds-step * 2) + "ms"});
 					@include prefix(animation-duration, #{$seconds-duration + "ms"});
@@ -329,7 +329,7 @@
 					@include borderLinesAnimation(400);
 
 					> span:first-child {
-						@include prefix(animation-fill-mode, both);
+						@include prefix(animation-fill-mode, forwards);
 						@include prefix(animation-name, fadeInRightMega);
 						@include prefix(animation-delay, #{$dealers-delay + "ms"});
 						@include prefix(animation-duration, #{$dealers-duration + "ms"});
@@ -338,7 +338,7 @@
 				
 				.c3xgm-about-sep:nth-child(2) {
 					> span {
-						@include prefix(animation-fill-mode, both);
+						@include prefix(animation-fill-mode, forwards);
 						@include prefix(animation-name, fadeInLeftMega);
 						@include prefix(animation-delay, #{ ($dealers-delay + $dealers-step) + "ms"});
 						@include prefix(animation-duration, #{$dealers-duration + "ms"});
@@ -363,19 +363,19 @@
 				@include borderLinesAnimation(600);
 
 				> span:first-child {
-					@include prefix(animation-fill-mode, both);
+					@include prefix(animation-fill-mode, forwards);
 					@include prefix(animation-name, fadeInLeftMega);
 					@include prefix(animation-delay, #{$crash-delay + "ms"});
 					@include prefix(animation-duration, #{$crash-duration + "ms"});
 				}
 				> span:nth-child(2) {
-					@include prefix(animation-fill-mode, both);
+					@include prefix(animation-fill-mode, forwards);
 					@include prefix(animation-name, fadeInLeftMega);
 					@include prefix(animation-delay, #{ ($crash-delay + $crash-step) + "ms"});
 					@include prefix(animation-duration, #{$crash-duration + "ms"});
 				}
 				> span:nth-child(3) { 
-					@include prefix(animation-fill-mode, both);
+					@include prefix(animation-fill-mode, forwards);
 					@include prefix(animation-name, fadeIn);
 					@include prefix(animation-delay, #{ ($crash-delay + $crash-step * 2 + 100) + "ms"});
 					@include prefix(animation-duration, #{$crash-duration + "ms"});
@@ -397,26 +397,26 @@
 				// ANIMATE BORDER LINES
 
 				> span:first-child {
-					@include prefix(animation-fill-mode, both);
+					@include prefix(animation-fill-mode, forwards);
 					@include prefix(animation-name, fadeIn);
 					@include prefix(animation-delay, #{$test-delay + "ms"});
 					@include prefix(animation-duration, #{$test-duration + "ms"});
 				}
 				> span:nth-child(2) {
-					@include prefix(animation-fill-mode, both);
+					@include prefix(animation-fill-mode, forwards);
 					@include prefix(animation-name, fadeIn);
 					@include prefix(animation-delay, #{ ($test-delay + $test-step) + "ms"});
 					@include prefix(animation-duration, #{$test-duration + "ms"});
 				}
 				> span:nth-child(3) { 
 					span:first-child {
-						@include prefix(animation-fill-mode, both);
+						@include prefix(animation-fill-mode, forwards);
 						@include prefix(animation-name, fadeInLeftMega);
 						@include prefix(animation-delay, #{ ($test-delay + $test-step * 2 + 900) + "ms"});
 						@include prefix(animation-duration, #{$test-duration + "ms"});
 					}
 					span:nth-child(2) {
-						@include prefix(animation-fill-mode, both);
+						@include prefix(animation-fill-mode, forwards);
 						@include prefix(animation-name, fadeInLeftMega);
 						@include prefix(animation-delay, #{ ($test-delay + $test-step * 3 + 900) + "ms"});
 						@include prefix(animation-duration, #{$test-duration + "ms"});
@@ -428,53 +428,53 @@
 				}
 			}
 
-			.c3xgm-about-truck-shadow-container {
-				@include prefix(animation-fill-mode, both);
-			    @include prefix(animation-name, fadeIn);
-			    @include prefix(animation-delay, #{ ($test-delay + $test-step * 3) + "ms"});
-			    @include prefix(animation-duration, 700ms);
+			// .c3xgm-about-truck-shadow-container {
+			// 	@include prefix(animation-fill-mode, forwards);
+			//     @include prefix(animation-name, fadeIn);
+			//     @include prefix(animation-delay, #{ ($test-delay + $test-step * 3) + "ms"});
+			//     @include prefix(animation-duration, 700ms);
 
-				.c3xgm-about-truck {
-					@include prefix(animation-fill-mode, both);
-				    @include prefix(animation-name, rotate);
-				    @include prefix(animation-delay, #{ ($test-delay + $test-step * 4) + 1000 + "ms"});
-				    @include prefix(animation-duration, 2000ms);	
-				    @include prefix(animation-timing-function, ease-in-out);	
-				}
+			// 	.c3xgm-about-truck {
+			// 		@include prefix(animation-fill-mode, forwards);
+			// 	    @include prefix(animation-name, rotate);
+			// 	    @include prefix(animation-delay, #{ ($test-delay + $test-step * 4) + 1000 + "ms"});
+			// 	    @include prefix(animation-duration, 2000ms);	
+			// 	    @include prefix(animation-timing-function, ease-in-out);	
+			// 	}
 
-				.c3xgm-about-truck-bg-outer {
-				 	@include prefix(animation-fill-mode, both);
-				    @include prefix(animation-name, wenSlideInUp);
-				    @include prefix(animation-delay, #{ ($test-delay + $test-step * 4) + "ms"});
-				    @include prefix(animation-duration, 1000ms);
-				    @include prefix(animation-timing-function, ease-in-out);
-				}
+			// 	.c3xgm-about-truck-bg-outer {
+			// 	 	@include prefix(animation-fill-mode, forwards);
+			// 	    @include prefix(animation-name, wenSlideInUp);
+			// 	    @include prefix(animation-delay, #{ ($test-delay + $test-step * 4) + "ms"});
+			// 	    @include prefix(animation-duration, 1000ms);
+			// 	    @include prefix(animation-timing-function, ease-in-out);
+			// 	}
 
-				.c3xgm-about-truck-lines-holder {
-					@include prefix(animation-fill-mode, both);
-				    @include prefix(animation-name, fadeIn);
-				    @include prefix(animation-delay, 2.75s);
-				    @include prefix(animation-duration, 700ms);
-				}
+			// 	.c3xgm-about-truck-lines-holder {
+			// 		@include prefix(animation-fill-mode, forwards);
+			// 	    @include prefix(animation-name, fadeIn);
+			// 	    @include prefix(animation-delay, 2.75s);
+			// 	    @include prefix(animation-duration, 700ms);
+			// 	}
 
-				.c3xgm-about-truck-lines {
-					opacity: 1;
-					@include prefix(animation-fill-mode, both);
-				    @include prefix(animation-name, rotate);
-				    @include prefix(animation-delay, #{ ($test-delay + $test-step * 4) + "ms"});
-				    @include prefix(animation-duration, 2000ms);
-				    @include prefix(animation-timing-function, linear);
-				    @include prefix(animation-iteration-count, infinite);	
-				}
+			// 	.c3xgm-about-truck-lines {
+			// 		opacity: 1;
+			// 		@include prefix(animation-fill-mode, forwards);
+			// 	    @include prefix(animation-name, rotate);
+			// 	    @include prefix(animation-delay, #{ ($test-delay + $test-step * 4) + "ms"});
+			// 	    @include prefix(animation-duration, 2000ms);
+			// 	    @include prefix(animation-timing-function, linear);
+			// 	    @include prefix(animation-iteration-count, infinite);	
+			// 	}
 
-				.c3xgm-about-shadow {
-					@include prefix(animation-fill-mode, both);
-				    @include prefix(animation-name, shadowScaleDown);
-				    @include prefix(animation-delay, #{ ($test-delay + $test-step * 4) + "ms"});
-				    @include prefix(animation-duration, 1200ms);
-				    @include prefix(animation-timing-function, ease-out);
-				}
-			}
+			// 	.c3xgm-about-shadow {
+			// 		@include prefix(animation-fill-mode, forwards);
+			// 	    @include prefix(animation-name, shadowScaleDown);
+			// 	    @include prefix(animation-delay, #{ ($test-delay + $test-step * 4) + "ms"});
+			// 	    @include prefix(animation-duration, 1200ms);
+			// 	    @include prefix(animation-timing-function, ease-out);
+			// 	}
+			// }
 		}
 	}
 
@@ -494,7 +494,7 @@
 				@include borderLinesAnimation(200);
 
 				.c3xgm-about-sep:first-child {
-					@include prefix(animation-fill-mode, both);
+					@include prefix(animation-fill-mode, forwards);
 					@include prefix(animation-name, fadeIn);
 					@include prefix(animation-delay, #{$test-delay + "ms"});
 					@include prefix(animation-duration, #{ ($test-duration * 2 ) + "ms"});
@@ -505,19 +505,19 @@
 					@include borderLinesAnimation(200);
 
 					> span:first-child {
-						@include prefix(animation-fill-mode, both);
+						@include prefix(animation-fill-mode, forwards);
 						@include prefix(animation-name, fadeIn);
 						@include prefix(animation-delay, #{ ($test-delay) + "ms"});
 						@include prefix(animation-duration, #{$test-duration + "ms"});
 					}
 					> span:nth-child(2) { 
-						@include prefix(animation-fill-mode, both);
+						@include prefix(animation-fill-mode, forwards);
 						@include prefix(animation-name, fadeInLeftMega);
 						@include prefix(animation-delay, #{ ($test-delay + $test-step + 200) + "ms"});
 						@include prefix(animation-duration, #{$test-duration + "ms"});
 					}
 					> span:nth-child(3) { 
-						@include prefix(animation-fill-mode, both);
+						@include prefix(animation-fill-mode, forwards);
 						@include prefix(animation-name, fadeIn);
 						@include prefix(animation-delay, #{ ($test-delay + $test-step * 2 + 200) + "ms"});
 						@include prefix(animation-duration, #{$test-duration + "ms"});
@@ -540,7 +540,7 @@
 				overflow: hidden;
 				img {
 					@media(min-width: $tablet-height) {
-						@include prefix(animation-fill-mode, both);
+						@include prefix(animation-fill-mode, forwards);
 						@include prefix(animation-name, fadeInRight);
 						@include prefix(animation-delay, #{$on-star-delay + "ms"});
 						@include prefix(animation-duration, #{$on-star-duration + "ms"});
@@ -554,33 +554,33 @@
 				@include borderLinesAnimation(400);
 
 				> span:first-child {
-					@include prefix(animation-fill-mode, both);
+					@include prefix(animation-fill-mode, forwards);
 					@include prefix(animation-name, fadeInLeft);
 					@include prefix(animation-delay, #{$on-star-delay + "ms"});
 					@include prefix(animation-duration, #{$on-star-duration + "ms"});
 				}
 				> span:nth-child(2) {
-					@include prefix(animation-fill-mode, both);
+					@include prefix(animation-fill-mode, forwards);
 					@include prefix(animation-name, fadeInLeftFixed);
 					@include prefix(animation-delay, #{ ($on-star-delay + $on-star-step) + "ms"});
 					@include prefix(animation-duration, #{$on-star-duration + "ms"});
 				}
 				> span:nth-child(3) { 
-					@include prefix(animation-fill-mode, both);
+					@include prefix(animation-fill-mode, forwards);
 					@include prefix(animation-name, fadeInLeftFixed);
 					@include prefix(animation-delay, #{ ($on-star-delay + $on-star-step) + "ms"});
 					@include prefix(animation-duration, #{$on-star-duration + "ms"});
 				}
 
 				> span:nth-child(4) { 
-					@include prefix(animation-fill-mode, both);
+					@include prefix(animation-fill-mode, forwards);
 					@include prefix(animation-name, fadeIn);
 					@include prefix(animation-delay, #{ ($on-star-delay + $on-star-step * 2 + 200) + "ms"});
 					@include prefix(animation-duration, #{$on-star-duration + "ms"});
 				}
 
 				> span:nth-child(5) { 
-					@include prefix(animation-fill-mode, both);
+					@include prefix(animation-fill-mode, forwards);
 					@include prefix(animation-name, fadeIn);
 					@include prefix(animation-delay, #{ ($on-star-delay + $on-star-step * 2 + 200) + "ms"});
 					@include prefix(animation-duration, #{$on-star-duration + "ms"});
@@ -602,7 +602,7 @@
 				overflow: hidden;
 				img {
 					@media(min-width: $tablet-height) {
-						@include prefix(animation-fill-mode, both);
+						@include prefix(animation-fill-mode, forwards);
 						@include prefix(animation-name, fadeInLeftMega);
 						@include prefix(animation-delay, #{$quality-delay + "ms"});
 						@include prefix(animation-duration, #{$quality-duration + "ms"});
@@ -614,32 +614,32 @@
 				overflow: hidden;
 				// ANIMATE BORDER LINES
 				&:before {
-					@include prefix(animation-fill-mode, both);
+					@include prefix(animation-fill-mode, forwards);
 					@include prefix(animation-name, growBorder);
 					@include prefix(animation-delay,400ms);
 		  			@include prefix(animation-duration,600ms);
 				}
 				&:after {
-					@include prefix(animation-fill-mode, both);
+					@include prefix(animation-fill-mode, forwards);
 					@include prefix(animation-name, growBorder);
 					@include prefix(animation-delay,1000ms);
 					@include prefix(animation-duration,600ms);
 				}
 
 				> span:first-child {
-					@include prefix(animation-fill-mode, both);
+					@include prefix(animation-fill-mode, forwards);
 					@include prefix(animation-name, fadeInRightMega);
 					@include prefix(animation-delay, #{$quality-delay + "ms"});
 					@include prefix(animation-duration, #{$quality-duration + "ms"});
 				}
 				> span:nth-child(2) {
-					@include prefix(animation-fill-mode, both);
+					@include prefix(animation-fill-mode, forwards);
 					@include prefix(animation-name, fadeInRightMega);
 					@include prefix(animation-delay, #{ ($quality-delay + $quality-step) + "ms"});
 					@include prefix(animation-duration, #{$quality-duration + "ms"});
 				}
 				> span:nth-child(3) { 
-					@include prefix(animation-fill-mode, both);
+					@include prefix(animation-fill-mode, forwards);
 					@include prefix(animation-name, fadeIn);
 					@include prefix(animation-delay, #{ ($quality-delay + $quality-step * 2) + "ms"});
 					@include prefix(animation-duration, #{$quality-duration + "ms"});
@@ -660,7 +660,7 @@
 				overflow: hidden;
 				> span.c3xgm-about-gray:nth-child(2),
 				> span.c3xgm-about-disclaimer {
-					@include prefix(animation-fill-mode, both);
+					@include prefix(animation-fill-mode, forwards);
 					@include prefix(animation-name, fadeIn);
 					@include prefix(animation-delay, #{ ($quality-delay + $quality-step * 2) + "ms"});
 					@include prefix(animation-duration, #{$quality-duration + "ms"});
@@ -689,25 +689,25 @@
 				@include borderLinesAnimation(200);
 
 				> span:first-child {
-					@include prefix(animation-fill-mode, both);
+					@include prefix(animation-fill-mode, forwards);
 					@include prefix(animation-name, fadeInRight);
 					@include prefix(animation-delay, #{$anim-delay + "ms"});
 					@include prefix(animation-duration, #{$anim-duration + "ms"});
 				}
 				> span:nth-child(2) {
-					@include prefix(animation-fill-mode, both);
+					@include prefix(animation-fill-mode, forwards);
 					@include prefix(animation-name, fadeInRight);
 					@include prefix(animation-delay, #{ ($anim-delay + $anim-step) + "ms"});
 					@include prefix(animation-duration, #{$anim-duration + "ms"});
 				}
 				> span:nth-child(3) {
-					@include prefix(animation-fill-mode, both);
+					@include prefix(animation-fill-mode, forwards);
 					@include prefix(animation-name, fadeInRight);
 					@include prefix(animation-delay, #{ ($anim-delay + $anim-step) + "ms"});
 					@include prefix(animation-duration, #{$anim-duration + "ms"});
 				}
 				> span:nth-child(4) {
-					@include prefix(animation-fill-mode, both);
+					@include prefix(animation-fill-mode, forwards);
 					@include prefix(animation-name, fadeIn);
 					@include prefix(animation-delay, #{ ($anim-delay + $anim-step * 2) + "ms"});
 					@include prefix(animation-duration, #{$anim-duration + "ms"});
@@ -715,7 +715,7 @@
 			}
 
 			.c3xgm-about-solar-road {
-				@include prefix(animation-fill-mode, both);
+				@include prefix(animation-fill-mode, forwards);
 				@include prefix(animation-name, fadeInLeftMega);
 				@include prefix(animation-delay, #{ ($anim-delay/2) + "ms"});
 				@include prefix(animation-duration,600ms);
@@ -723,7 +723,7 @@
 
 			.c3xgm-about-solar-panels,
 			.c3xgm-about-tree {
-				@include prefix(animation-fill-mode, both);
+				@include prefix(animation-fill-mode, forwards);
 				@include prefix(transform-origin, center bottom);
 				@include prefix(animation-delay, #{ ($anim-delay ) + "ms"});
 				@include prefix(animation-name, scaleUp);
@@ -754,7 +754,7 @@
 			.c3xgm-about-block-image {
 				overflow: hidden;
 				img {
-					@include prefix(animation-fill-mode, both);
+					@include prefix(animation-fill-mode, forwards);
 					@include prefix(animation-name, scaleUp);
 					@include prefix(animation-delay, #{$anim-delay + "ms"});
 					@include prefix(animation-duration, #{$anim-duration + "ms"});
@@ -766,25 +766,25 @@
 				@include borderLinesAnimation(200);
 
 				> span:first-child {
-					@include prefix(animation-fill-mode, both);
+					@include prefix(animation-fill-mode, forwards);
 					@include prefix(animation-name, fadeInRightMega);
 					@include prefix(animation-delay, #{$anim-delay + "ms"});
 					@include prefix(animation-duration, #{$anim-duration + "ms"});
 				}
 				> span:nth-child(2) {
-					@include prefix(animation-fill-mode, both);
+					@include prefix(animation-fill-mode, forwards);
 					@include prefix(animation-name, fadeInRightMega);
 					@include prefix(animation-delay, #{ ($anim-delay + $anim-step) + "ms"});
 					@include prefix(animation-duration, #{$anim-duration + "ms"});
 				}
 				> span:nth-child(3) {
-					@include prefix(animation-fill-mode, both);
+					@include prefix(animation-fill-mode, forwards);
 					@include prefix(animation-name, fadeIn);
 					@include prefix(animation-delay, #{ ($anim-delay +$anim-step * 2) + "ms"});
 					@include prefix(animation-duration, #{$anim-duration + "ms"});
 				}
 				> span:nth-child(4) {
-					@include prefix(animation-fill-mode, both);
+					@include prefix(animation-fill-mode, forwards);
 					@include prefix(animation-name, fadeIn);
 					@include prefix(animation-delay, #{ ($anim-delay + $anim-step * 2) + "ms"});
 					@include prefix(animation-duration, #{$anim-duration + "ms"});
@@ -806,7 +806,7 @@
 			.c3xgm-about-block-image {
 				overflow: hidden;
 				img {
-					@include prefix(animation-fill-mode, both);
+					@include prefix(animation-fill-mode, forwards);
 					@include prefix(animation-name, fadeIn);
 					@include prefix(animation-delay, #{$anim-delay + "ms"});
 					@include prefix(animation-duration, #{$anim-duration + "ms"});
@@ -818,19 +818,19 @@
 				@include borderLinesAnimation(200);
 
 				> span:first-child {
-					@include prefix(animation-fill-mode, both);
+					@include prefix(animation-fill-mode, forwards);
 					@include prefix(animation-name, fadeInLeftMega);
 					@include prefix(animation-delay, #{($anim-delay ) + "ms"});
 					@include prefix(animation-duration, #{$anim-duration + "ms"});
 				}
 				> span:nth-child(2) {
-					@include prefix(animation-fill-mode, both);
+					@include prefix(animation-fill-mode, forwards);
 					@include prefix(animation-name, fadeInLeftMega);
 					@include prefix(animation-delay, #{ ($anim-delay + $anim-step) + "ms"});
 					@include prefix(animation-duration, #{$anim-duration + "ms"});
 				}
 				> span:nth-child(3) {
-					@include prefix(animation-fill-mode, both);
+					@include prefix(animation-fill-mode, forwards);
 					@include prefix(animation-name, fadeIn);
 					@include prefix(animation-delay, #{ ($anim-delay +$anim-step * 2.5) + "ms"});
 					@include prefix(animation-duration, #{$anim-duration + "ms"});
@@ -851,7 +851,7 @@
 			.c3xgm-about-block-image {
 				overflow: hidden;
 				img {
-					@include prefix(animation-fill-mode, both);
+					@include prefix(animation-fill-mode, forwards);
 					@include prefix(animation-name, fadeInLeftMega);
 					@include prefix(animation-delay, #{$anim-delay + "ms"});
 					@include prefix(animation-duration, #{$anim-duration + "ms"});
@@ -863,19 +863,19 @@
 				@include borderLinesAnimation(200);
 
 				> span:first-child {
-					@include prefix(animation-fill-mode, both);
+					@include prefix(animation-fill-mode, forwards);
 					@include prefix(animation-name, fadeInRightMega);
 					@include prefix(animation-delay, #{$anim-delay + "ms"});
 					@include prefix(animation-duration, #{$anim-duration + "ms"});
 				}
 				> span:nth-child(2) {
-					@include prefix(animation-fill-mode, both);
+					@include prefix(animation-fill-mode, forwards);
 					@include prefix(animation-name, fadeInRightMega);
 					@include prefix(animation-delay, #{ ($anim-delay + $anim-step) + "ms"});
 					@include prefix(animation-duration, #{$anim-duration + "ms"});
 				}
 				> span:nth-child(3) {
-					@include prefix(animation-fill-mode, both);
+					@include prefix(animation-fill-mode, forwards);
 					@include prefix(animation-name, fadeIn);
 					@include prefix(animation-delay, #{ ($anim-delay + $anim-step * 2.5) + "ms"});
 					@include prefix(animation-duration, #{$anim-duration + "ms"});
