@@ -345,6 +345,8 @@ jQuery(document).ready(function($) {
 
         if(currentPage != 1) {
             $.each(blocks, function(i, val) {
+                console.log('I am checking your blocks now!');
+                console.log('This is your index: ' + i + ', this is your val: ' + val);
                 // if( this.isAtEighth() && (this.hasViewClass == false) ){
                 // if( this.isAtEighth() && ( $(this.$element).hasClass('invisible') ) ){
                 if( this.isAtEighth() ){
@@ -555,6 +557,7 @@ jQuery(document).ready(function($) {
         console.log('I am checking for blocks!');
         console.log('I am currentPage: ' + currentPage);
         checkBlocks(currentPage);
+        console.dir(Pages[currentPage]);
     }, 1000);
 
 });
