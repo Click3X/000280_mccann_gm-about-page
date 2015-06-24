@@ -503,13 +503,13 @@ jQuery(document).ready(function($) {
     // } else {
         scrollHandler = function () {
             // UPDATE VIEW PORT
-            // updateviewDimensions();
-            // UPDATE NAV
-            updateNav();
+            updateviewDimensions();
             // CHECK PAGES
             checkPages();
-            // // CHECK BLOCKS FOR CURRENT PAGES
+            // CHECK BLOCKS FOR CURRENT PAGES
             checkBlocks(currentPage);
+            // UPDATE NAV
+            updateNav();
             // animateFlags
             animateFlags();
 
