@@ -1433,7 +1433,8 @@ h4.c3xgm-about-h {
 @media (min-width: 768px) {
   /* line 154, ../sass/pages/_environment.scss */
   .c3xgm-about-page-our-commitment .c3xgm-about-climate-declaration .c3xgm-about-gray.c3xgm-about-thin {
-    font-size: 36.59585px;
+    /*font-size: 36.59585px;*/
+    font-size: 34px;
   }
 }
 /* line 161, ../sass/pages/_environment.scss */
