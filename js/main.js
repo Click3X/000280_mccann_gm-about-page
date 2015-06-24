@@ -226,26 +226,9 @@ jQuery(document).ready(function($) {
             $('#c3xgm-about-number-63').text('');
           // // TRIGGER NUMBER ANIMATION
             setTimeout(function(){ 
-                $('#c3xgm-about-number-63').jQuerySimpleCounter({start:55, end: 63,duration: 800});
+                $('#c3xgm-about-number-63').jQuerySimpleCounter({start:40, end: 63,duration: 900});
                 animate63 = true;
-            }, 1100);
-        }
-    }
-
-    var carHasRotated = false;
-      // ROTATE CAR
-    function rotateCar() {
-        if(carHasRotated === false) {
-            setTimeout(function(){ 
-                $('#safety-truck').css('opacity', 1);
-                setTimeout(function(){ 
-                    $('#truck-line-container').addClass('carAnimation-slide');                
-                    $('#truck-parent').addClass('carAnimation-rotate');
-                    $('#line-parent').addClass('carAnimation-lineFadeIn');
-                    $('.c3xgm-about-circle-lines').addClass('carAnimation-lineRotate');
-                    carHasRotated = true;
-                }, 800);
-            }, 2400);
+            }, 800);
         }
     }
 
@@ -304,7 +287,7 @@ jQuery(document).ready(function($) {
                     // SHOW FIRST SLIDE
                     setTimeout(function() {
                         autorotateTechSliderOnce();
-                    }, 1500);
+                    }, 1000);
                     // START AUTO SLIDER
                     setTimeout(function() {
                         autorotateTechSlider();
@@ -322,10 +305,6 @@ jQuery(document).ready(function($) {
                     }, 1000);
                 } 
 
-                // // ANIMATE FLAG LINE AND SOLAR ROAD
-                // if( _t.elementName == "c3xgm-about-page-environment" ) {
-                // }
-
             } 
         }); 
     }
@@ -341,21 +320,14 @@ jQuery(document).ready(function($) {
 
         if(currentPage != 1) {
             $.each(blocks, function(i, val) {
-                console.log('I am checking your blocks now!');
                 console.log('This is your index: ' + i + ', this is your val: ' + val);
-                // if( this.isAtEighth() && (this.hasViewClass == false) ){
-                // if( this.isAtEighth() && ( $(this.$element).hasClass('invisible') ) ){
-                if( this.isAtEighth() ){
+
+                if( this.isAtSixteen() ){
                     // ADD IN VIEW CLASS
                     this.addInViewClass();
                     console.log('Im in view: ' + this.elementName);
-                    // SET PAGE VIEW STATE
-                    // this.hasViewClass = true;
                     // IF TEST FACILITY - TRIGGER ROLLOVER
-                    if(this.elementName == "c3xgm-about-test-facility") {
-                        // rotateCar();
-                        // ANIMATE FLAG WHEN ELEMENT IS IN VIEW - ONLY ON ALT ANIMATION PAGE
-                    } else if( (this.elementName == "c3xgm-about-dealers") && (altAnim == false) ) {
+                    if( (this.elementName == "c3xgm-about-dealers") && (altAnim == false) ) {
                         $('#animate-flag-line').addClass('animate-flag-line');
                     } else if( (this.elementName == "c3xgm-about-solar-panels-animation") && (altAnim == false) ) {
                         $('#c3xgm-about-solar-road-list').addClass('animate-flag-line');
@@ -369,8 +341,8 @@ jQuery(document).ready(function($) {
                                 $('#c3xgm-about-crash-test-dummies').removeClass('invisible');
                                 triggerCTD = true;    
                             }
-                            
-                        }, 800);
+                        // }, 800);
+                    }, 200);
                     }
                 }
             });
