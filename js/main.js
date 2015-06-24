@@ -588,8 +588,9 @@ jQuery(document).ready(function($) {
         // CHECK IF THERE ARE BLOCKS ON CURRENT PAGE
         console.log('I am checking for blocks!');
         console.log('I am currentPage: ' + currentPage);
+        console.dir(Pages[currentPage]);
         reCheckBlocks(currentPage);
         // console.dir(Pages[currentPage]);
-    }, 1000);
+    }, 4000);
 
 });
