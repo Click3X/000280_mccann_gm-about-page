@@ -1,6 +1,6 @@
 // PAGE IN VIEW - END NAV
-$anim-delay:1600;
-$anim-step:400;
+$anim-delay:800;
+$anim-step:600;
 
 .c3xgm-about-page-in-view .c3xgm-about-section-header,
 #c3xgm-about-end-nav.c3xgm-about-page.c3xgm-about-page-in-view {
@@ -9,16 +9,16 @@ $anim-step:400;
 		 hr {
 			@include prefix(animation-fill-mode, both);
 			@include prefix(animation-name, growHr);
-			@include prefix(animation-delay, 800ms);
-			@include prefix(animation-duration, 800ms);
+			@include prefix(animation-delay, 200ms);
+			@include prefix(animation-duration, 600ms);
 			@include prefix(animation-iteration-count, 1);
 		}
 
 		.c3xgm-about-header-p { 
 			@include prefix(animation-fill-mode, both);
 			@include prefix(animation-name, fadeIn);
-			@include prefix(animation-delay, 1400ms);
-			@include prefix(animation-duration, 800ms);
+			@include prefix(animation-delay, 600ms);
+			@include prefix(animation-duration, 600ms);
 			@include prefix(animation-iteration-count, 1);
 		}
 
@@ -27,7 +27,7 @@ $anim-step:400;
 		.c3xgm-about-logo-container .c3xgm-about-icon-holder + h3 {
 			@include prefix(animation-fill-mode, both);
 			@include prefix(animation-name, fadeIn);
-			@include prefix(animation-duration, 800ms);
+			@include prefix(animation-duration, 600ms);
 			@include prefix(animation-iteration-count, 1);
 		}
 

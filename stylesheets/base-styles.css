@@ -11533,11 +11533,11 @@ body {
   -o-transform: scale(1, 1);
   -ms-transform: scale(1, 1);
   transform: scale(1, 1);
-  -webkit-transition-delay: 600;
-  -moz-transition-delay: 600;
-  -o-transition-delay: 600;
-  -ms-transition-delay: 600;
-  transition-delay: 600;
+  -webkit-transition-delay: 600ms;
+  -moz-transition-delay: 600ms;
+  -o-transition-delay: 600ms;
+  -ms-transition-delay: 600ms;
+  transition-delay: 600ms;
 }
 /* line 691, ../sass/animations/_element-in-view.scss */
 .c3xgm-about-solar-panels-animation.element-in-view .c3xgm-about-sun img,
@@ -11565,16 +11565,16 @@ body {
   -o-animation-name: scaleUp;
   -ms-animation-name: scaleUp;
   animation-name: scaleUp;
-  -webkit-animation-delay: 1200ms;
-  -moz-animation-delay: 1200ms;
-  -o-animation-delay: 1200ms;
-  -ms-animation-delay: 1200ms;
-  animation-delay: 1200ms;
-  -webkit-animation-duration: 500ms;
-  -moz-animation-duration: 500ms;
-  -o-animation-duration: 500ms;
-  -ms-animation-duration: 500ms;
-  animation-duration: 500ms;
+  -webkit-animation-delay: 800ms;
+  -moz-animation-delay: 800ms;
+  -o-animation-delay: 800ms;
+  -ms-animation-delay: 800ms;
+  animation-delay: 800ms;
+  -webkit-animation-duration: 400ms;
+  -moz-animation-duration: 400ms;
+  -o-animation-duration: 400ms;
+  -ms-animation-duration: 400ms;
+  animation-duration: 400ms;
 }
 /* line 723, ../sass/animations/_element-in-view.scss */
 .c3xgm-about-epa-energy-star.element-in-view .c3xgm-about-blockquote {
@@ -11602,11 +11602,11 @@ body {
   -o-animation-delay: 200ms;
   -ms-animation-delay: 200ms;
   animation-delay: 200ms;
-  -webkit-animation-duration: 600ms;
-  -moz-animation-duration: 600ms;
-  -o-animation-duration: 600ms;
-  -ms-animation-duration: 600ms;
-  animation-duration: 600ms;
+  -webkit-animation-duration: 500ms;
+  -moz-animation-duration: 500ms;
+  -o-animation-duration: 500ms;
+  -ms-animation-duration: 500ms;
+  animation-duration: 500ms;
 }
 /* line 238, ../sass/components/_mixins.scss */
 .c3xgm-about-epa-energy-star.element-in-view .c3xgm-about-blockquote:after {
@@ -11630,11 +11630,11 @@ body {
   -o-animation-delay: 800ms;
   -ms-animation-delay: 800ms;
   animation-delay: 800ms;
-  -webkit-animation-duration: 600ms;
-  -moz-animation-duration: 600ms;
-  -o-animation-duration: 600ms;
-  -ms-animation-duration: 600ms;
-  animation-duration: 600ms;
+  -webkit-animation-duration: 500ms;
+  -moz-animation-duration: 500ms;
+  -o-animation-duration: 500ms;
+  -ms-animation-duration: 500ms;
+  animation-duration: 500ms;
 }
 /* line 727, ../sass/animations/_element-in-view.scss */
 .c3xgm-about-epa-energy-star.element-in-view .c3xgm-about-blockquote > span:first-child {
@@ -11648,16 +11648,16 @@ body {
   -o-animation-name: fadeInRightMega;
   -ms-animation-name: fadeInRightMega;
   animation-name: fadeInRightMega;
-  -webkit-animation-delay: 1200ms;
-  -moz-animation-delay: 1200ms;
-  -o-animation-delay: 1200ms;
-  -ms-animation-delay: 1200ms;
-  animation-delay: 1200ms;
-  -webkit-animation-duration: 500ms;
-  -moz-animation-duration: 500ms;
-  -o-animation-duration: 500ms;
-  -ms-animation-duration: 500ms;
-  animation-duration: 500ms;
+  -webkit-animation-delay: 800ms;
+  -moz-animation-delay: 800ms;
+  -o-animation-delay: 800ms;
+  -ms-animation-delay: 800ms;
+  animation-delay: 800ms;
+  -webkit-animation-duration: 400ms;
+  -moz-animation-duration: 400ms;
+  -o-animation-duration: 400ms;
+  -ms-animation-duration: 400ms;
+  animation-duration: 400ms;
 }
 /* line 733, ../sass/animations/_element-in-view.scss */
 .c3xgm-about-epa-energy-star.element-in-view .c3xgm-about-blockquote > span:nth-child(2) {
@@ -11676,11 +11676,11 @@ body {
   -o-animation-delay: 1450ms;
   -ms-animation-delay: 1450ms;
   animation-delay: 1450ms;
-  -webkit-animation-duration: 500ms;
-  -moz-animation-duration: 500ms;
-  -o-animation-duration: 500ms;
-  -ms-animation-duration: 500ms;
-  animation-duration: 500ms;
+  -webkit-animation-duration: 400ms;
+  -moz-animation-duration: 400ms;
+  -o-animation-duration: 400ms;
+  -ms-animation-duration: 400ms;
+  animation-duration: 400ms;
 }
 /* line 739, ../sass/animations/_element-in-view.scss */
 .c3xgm-about-epa-energy-star.element-in-view .c3xgm-about-blockquote > span:nth-child(3) {
@@ -11699,11 +11699,11 @@ body {
   -o-animation-delay: 1700ms;
   -ms-animation-delay: 1700ms;
   animation-delay: 1700ms;
-  -webkit-animation-duration: 500ms;
-  -moz-animation-duration: 500ms;
-  -o-animation-duration: 500ms;
-  -ms-animation-duration: 500ms;
-  animation-duration: 500ms;
+  -webkit-animation-duration: 400ms;
+  -moz-animation-duration: 400ms;
+  -o-animation-duration: 400ms;
+  -ms-animation-duration: 400ms;
+  animation-duration: 400ms;
 }
 /* line 745, ../sass/animations/_element-in-view.scss */
 .c3xgm-about-epa-energy-star.element-in-view .c3xgm-about-blockquote > span:nth-child(4) {
@@ -11722,11 +11722,11 @@ body {
   -o-animation-delay: 1700ms;
   -ms-animation-delay: 1700ms;
   animation-delay: 1700ms;
-  -webkit-animation-duration: 500ms;
-  -moz-animation-duration: 500ms;
-  -o-animation-duration: 500ms;
-  -ms-animation-duration: 500ms;
-  animation-duration: 500ms;
+  -webkit-animation-duration: 400ms;
+  -moz-animation-duration: 400ms;
+  -o-animation-duration: 400ms;
+  -ms-animation-duration: 400ms;
+  animation-duration: 400ms;
 }
 
 /* line 765, ../sass/animations/_element-in-view.scss */
@@ -11745,16 +11745,16 @@ body {
   -o-animation-name: fadeIn;
   -ms-animation-name: fadeIn;
   animation-name: fadeIn;
-  -webkit-animation-delay: 1200ms;
-  -moz-animation-delay: 1200ms;
-  -o-animation-delay: 1200ms;
-  -ms-animation-delay: 1200ms;
-  animation-delay: 1200ms;
-  -webkit-animation-duration: 500ms;
-  -moz-animation-duration: 500ms;
-  -o-animation-duration: 500ms;
-  -ms-animation-duration: 500ms;
-  animation-duration: 500ms;
+  -webkit-animation-delay: 800ms;
+  -moz-animation-delay: 800ms;
+  -o-animation-delay: 800ms;
+  -ms-animation-delay: 800ms;
+  animation-delay: 800ms;
+  -webkit-animation-duration: 400ms;
+  -moz-animation-duration: 400ms;
+  -o-animation-duration: 400ms;
+  -ms-animation-duration: 400ms;
+  animation-duration: 400ms;
 }
 /* line 775, ../sass/animations/_element-in-view.scss */
 .c3xgm-about-climate-declaration.element-in-view .c3xgm-about-blockquote {
@@ -11782,11 +11782,11 @@ body {
   -o-animation-delay: 200ms;
   -ms-animation-delay: 200ms;
   animation-delay: 200ms;
-  -webkit-animation-duration: 600ms;
-  -moz-animation-duration: 600ms;
-  -o-animation-duration: 600ms;
-  -ms-animation-duration: 600ms;
-  animation-duration: 600ms;
+  -webkit-animation-duration: 500ms;
+  -moz-animation-duration: 500ms;
+  -o-animation-duration: 500ms;
+  -ms-animation-duration: 500ms;
+  animation-duration: 500ms;
 }
 /* line 238, ../sass/components/_mixins.scss */
 .c3xgm-about-climate-declaration.element-in-view .c3xgm-about-blockquote:after {
@@ -11810,11 +11810,11 @@ body {
   -o-animation-delay: 800ms;
   -ms-animation-delay: 800ms;
   animation-delay: 800ms;
-  -webkit-animation-duration: 600ms;
-  -moz-animation-duration: 600ms;
-  -o-animation-duration: 600ms;
-  -ms-animation-duration: 600ms;
-  animation-duration: 600ms;
+  -webkit-animation-duration: 500ms;
+  -moz-animation-duration: 500ms;
+  -o-animation-duration: 500ms;
+  -ms-animation-duration: 500ms;
+  animation-duration: 500ms;
 }
 /* line 779, ../sass/animations/_element-in-view.scss */
 .c3xgm-about-climate-declaration.element-in-view .c3xgm-about-blockquote > span:first-child {
@@ -11828,16 +11828,16 @@ body {
   -o-animation-name: fadeInLeftMega;
   -ms-animation-name: fadeInLeftMega;
   animation-name: fadeInLeftMega;
-  -webkit-animation-delay: 1200ms;
-  -moz-animation-delay: 1200ms;
-  -o-animation-delay: 1200ms;
-  -ms-animation-delay: 1200ms;
-  animation-delay: 1200ms;
-  -webkit-animation-duration: 500ms;
-  -moz-animation-duration: 500ms;
-  -o-animation-duration: 500ms;
-  -ms-animation-duration: 500ms;
-  animation-duration: 500ms;
+  -webkit-animation-delay: 800ms;
+  -moz-animation-delay: 800ms;
+  -o-animation-delay: 800ms;
+  -ms-animation-delay: 800ms;
+  animation-delay: 800ms;
+  -webkit-animation-duration: 400ms;
+  -moz-animation-duration: 400ms;
+  -o-animation-duration: 400ms;
+  -ms-animation-duration: 400ms;
+  animation-duration: 400ms;
 }
 /* line 785, ../sass/animations/_element-in-view.scss */
 .c3xgm-about-climate-declaration.element-in-view .c3xgm-about-blockquote > span:nth-child(2) {
@@ -11856,11 +11856,11 @@ body {
   -o-animation-delay: 1450ms;
   -ms-animation-delay: 1450ms;
   animation-delay: 1450ms;
-  -webkit-animation-duration: 500ms;
-  -moz-animation-duration: 500ms;
-  -o-animation-duration: 500ms;
-  -ms-animation-duration: 500ms;
-  animation-duration: 500ms;
+  -webkit-animation-duration: 400ms;
+  -moz-animation-duration: 400ms;
+  -o-animation-duration: 400ms;
+  -ms-animation-duration: 400ms;
+  animation-duration: 400ms;
 }
 /* line 791, ../sass/animations/_element-in-view.scss */
 .c3xgm-about-climate-declaration.element-in-view .c3xgm-about-blockquote > span:nth-child(3) {
@@ -11879,11 +11879,11 @@ body {
   -o-animation-delay: 1825ms;
   -ms-animation-delay: 1825ms;
   animation-delay: 1825ms;
-  -webkit-animation-duration: 500ms;
-  -moz-animation-duration: 500ms;
-  -o-animation-duration: 500ms;
-  -ms-animation-duration: 500ms;
-  animation-duration: 500ms;
+  -webkit-animation-duration: 400ms;
+  -moz-animation-duration: 400ms;
+  -o-animation-duration: 400ms;
+  -ms-animation-duration: 400ms;
+  animation-duration: 400ms;
 }
 
 /* line 810, ../sass/animations/_element-in-view.scss */
@@ -11902,16 +11902,16 @@ body {
   -o-animation-name: fadeInLeftMega;
   -ms-animation-name: fadeInLeftMega;
   animation-name: fadeInLeftMega;
-  -webkit-animation-delay: 1200ms;
-  -moz-animation-delay: 1200ms;
-  -o-animation-delay: 1200ms;
-  -ms-animation-delay: 1200ms;
-  animation-delay: 1200ms;
-  -webkit-animation-duration: 500ms;
-  -moz-animation-duration: 500ms;
-  -o-animation-duration: 500ms;
-  -ms-animation-duration: 500ms;
-  animation-duration: 500ms;
+  -webkit-animation-delay: 800ms;
+  -moz-animation-delay: 800ms;
+  -o-animation-delay: 800ms;
+  -ms-animation-delay: 800ms;
+  animation-delay: 800ms;
+  -webkit-animation-duration: 400ms;
+  -moz-animation-duration: 400ms;
+  -o-animation-duration: 400ms;
+  -ms-animation-duration: 400ms;
+  animation-duration: 400ms;
 }
 /* line 820, ../sass/animations/_element-in-view.scss */
 .c3xgm-about-landfill-free.element-in-view .c3xgm-about-blockquote {
@@ -11939,11 +11939,11 @@ body {
   -o-animation-delay: 200ms;
   -ms-animation-delay: 200ms;
   animation-delay: 200ms;
-  -webkit-animation-duration: 600ms;
-  -moz-animation-duration: 600ms;
-  -o-animation-duration: 600ms;
-  -ms-animation-duration: 600ms;
-  animation-duration: 600ms;
+  -webkit-animation-duration: 500ms;
+  -moz-animation-duration: 500ms;
+  -o-animation-duration: 500ms;
+  -ms-animation-duration: 500ms;
+  animation-duration: 500ms;
 }
 /* line 238, ../sass/components/_mixins.scss */
 .c3xgm-about-landfill-free.element-in-view .c3xgm-about-blockquote:after {
@@ -11962,16 +11962,16 @@ body {
   -o-animation-name: growBorder;
   -ms-animation-name: growBorder;
   animation-name: growBorder;
-  -webkit-animation-delay: 800ms;
-  -moz-animation-delay: 800ms;
-  -o-animation-delay: 800ms;
-  -ms-animation-delay: 800ms;
-  animation-delay: 800ms;
-  -webkit-animation-duration: 600ms;
-  -moz-animation-duration: 600ms;
-  -o-animation-duration: 600ms;
-  -ms-animation-duration: 600ms;
-  animation-duration: 600ms;
+  -webkit-animation-delay: 600ms;
+  -moz-animation-delay: 600ms;
+  -o-animation-delay: 600ms;
+  -ms-animation-delay: 600ms;
+  animation-delay: 600ms;
+  -webkit-animation-duration: 500ms;
+  -moz-animation-duration: 500ms;
+  -o-animation-duration: 500ms;
+  -ms-animation-duration: 500ms;
+  animation-duration: 500ms;
 }
 /* line 824, ../sass/animations/_element-in-view.scss */
 .c3xgm-about-landfill-free.element-in-view .c3xgm-about-blockquote > span:first-child {
@@ -11985,16 +11985,16 @@ body {
   -o-animation-name: fadeInRightMega;
   -ms-animation-name: fadeInRightMega;
   animation-name: fadeInRightMega;
-  -webkit-animation-delay: 1200ms;
-  -moz-animation-delay: 1200ms;
-  -o-animation-delay: 1200ms;
-  -ms-animation-delay: 1200ms;
-  animation-delay: 1200ms;
-  -webkit-animation-duration: 500ms;
-  -moz-animation-duration: 500ms;
-  -o-animation-duration: 500ms;
-  -ms-animation-duration: 500ms;
-  animation-duration: 500ms;
+  -webkit-animation-delay: 800ms;
+  -moz-animation-delay: 800ms;
+  -o-animation-delay: 800ms;
+  -ms-animation-delay: 800ms;
+  animation-delay: 800ms;
+  -webkit-animation-duration: 400ms;
+  -moz-animation-duration: 400ms;
+  -o-animation-duration: 400ms;
+  -ms-animation-duration: 400ms;
+  animation-duration: 400ms;
 }
 /* line 830, ../sass/animations/_element-in-view.scss */
 .c3xgm-about-landfill-free.element-in-view .c3xgm-about-blockquote > span:nth-child(2) {
@@ -12013,11 +12013,11 @@ body {
   -o-animation-delay: 1450ms;
   -ms-animation-delay: 1450ms;
   animation-delay: 1450ms;
-  -webkit-animation-duration: 500ms;
-  -moz-animation-duration: 500ms;
-  -o-animation-duration: 500ms;
-  -ms-animation-duration: 500ms;
-  animation-duration: 500ms;
+  -webkit-animation-duration: 400ms;
+  -moz-animation-duration: 400ms;
+  -o-animation-duration: 400ms;
+  -ms-animation-duration: 400ms;
+  animation-duration: 400ms;
 }
 /* line 836, ../sass/animations/_element-in-view.scss */
 .c3xgm-about-landfill-free.element-in-view .c3xgm-about-blockquote > span:nth-child(3) {
@@ -12036,11 +12036,11 @@ body {
   -o-animation-delay: 1825ms;
   -ms-animation-delay: 1825ms;
   animation-delay: 1825ms;
-  -webkit-animation-duration: 500ms;
-  -moz-animation-duration: 500ms;
-  -o-animation-duration: 500ms;
-  -ms-animation-duration: 500ms;
-  animation-duration: 500ms;
+  -webkit-animation-duration: 400ms;
+  -moz-animation-duration: 400ms;
+  -o-animation-duration: 400ms;
+  -ms-animation-duration: 400ms;
+  animation-duration: 400ms;
 }
 
 /* line 8, ../sass/animations/_page-in-view.scss */
