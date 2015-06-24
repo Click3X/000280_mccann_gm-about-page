@@ -45,10 +45,10 @@ jQuery(document).ready(function($) {
             // UPDATE NAV BASED ON WINDOW POSITION AND PAGE HEIGHT
             if (viewDimensions.scrollTop >= (divPos - 100) && viewDimensions.scrollTop < ((divPos) + (divHeight-100) )) {
                 $("a[href='" + theID + "']").addClass("c3xgm-about-nav-bullet-active");
-                console.log('This is theID: ' + theID);
-                console.log('This is i: ' + i);
-                console.log('This is aArray: ');
-                console.dir(aArray);
+                // console.log('This is theID: ' + theID);
+                // console.log('This is i: ' + i);
+                // console.log('This is aArray: ');
+                // console.dir(aArray);
                 // DECLARE CURRENTPAGE VAR AS i
                 currentPage = i;
             } else {
@@ -320,12 +320,13 @@ jQuery(document).ready(function($) {
 
         if(currentPage != 1) {
             $.each(blocks, function(i, val) {
-                console.log('This is your index: ' + i + ', this is your val: ' + val);
+                // console.log('This is your index: ' + i + ', this is your val: ' + val);
 
                 if( this.isAtSixteen() ){
                     // ADD IN VIEW CLASS
                     this.addInViewClass();
                     console.log('Im in view: ' + this.elementName);
+                    console.log('My Offset: ' + this.elementTop);
                     // IF TEST FACILITY - TRIGGER ROLLOVER
                     if( (this.elementName == "c3xgm-about-dealers") && (altAnim == false) ) {
                         $('#animate-flag-line').addClass('animate-flag-line');
@@ -353,19 +354,25 @@ jQuery(document).ready(function($) {
 
     // CHECK FOR BLOCKS
     function reCheckBlocks(currentPage) {
-        console.log('Thsi is currentPage: ' + currentPage);
-        console.dir(currentPage);
+        console.log('Thsi is currentPage: ' + Pages[currentPage].elementName);
+        // console.dir(currentPage);
         
         var blocks = Pages[currentPage].animBlocks;
 
-        if(currentPage != 1) {
+        console.log('This is your blocks');
+        console.dir(blocks);
+
+        if( (currentPage != 1) && (blocks.length > 0) ) {
+            console.log('Here come your blocks!');
             $.each(blocks, function(i, val) {
                 // console.log('I am checking your blocks now!');
-                console.log('This is your index: ' + i + ', this is your block: ' + val.elementName);
+                // console.log('This is your index: ' + i + ', this is your block: ' + val.elementName);
+                // console.log('My Offset: ' + this.elementTop);
                 // console.dir(val)
                 if( this.isAtSixteen() ){
                     this.addInViewClass();
                     console.log('Im in view: ' + this.elementName);
+                    console.log('Im in elementTop: ' + this.elementTop);
                 }
             });
         }
@@ -394,7 +401,7 @@ jQuery(document).ready(function($) {
         
         this.elementWidth = Number( this.$element.css("width").replace('px', '') );
         this.elementHeight = Number( this.$element.css("height").replace('px', '') );
-        this.elementPaddingBottom = Number( this.$element.css("paddingBottom").replace('px', '') );
+        // this.elementPaddingBottom = Number( this.$element.css("paddingBottom").replace('px', '') );
         this.elementTop = this.$element.offset().top;
         this.elementLeft = this.$element.offset().left;
         this.elementRight = this.$element.offset().left + Number( this.$element.css("width").replace('px', '') );
@@ -501,7 +508,7 @@ jQuery(document).ready(function($) {
             'blocktype':'page'
         }
         Pages[i] = new AmimatedElement(val, defaults);
-        console.log(Pages[i]);
+        // console.log(Pages[i]);
     });
 
     console.dir(Pages);
@@ -546,11 +553,12 @@ jQuery(document).ready(function($) {
     // SET INTERVAL TO SEE IF THERE ARE ANY INVISIBLE ELEMENTS ON THE PAGE
     setInterval(function() {
         // CHECK IF THERE ARE BLOCKS ON CURRENT PAGE
-        console.log('I am checking for blocks!');
+        // console.log('I am checking for blocks!');
         console.log('I am currentPage: ' + currentPage);
-        console.dir(Pages[currentPage]);
-        reCheckBlocks(currentPage);
+        console.log(Pages[currentPage].elementName);
         // console.dir(Pages[currentPage]);
-    }, 2000);
+        reCheckBlocks(currentPage);
+        
+    }, 5000);
 
 });

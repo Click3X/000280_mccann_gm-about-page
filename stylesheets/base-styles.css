@@ -9696,8 +9696,8 @@ body {
   animation-duration: 0;
 }
 /* line 119, ../sass/animations/_element-in-view.scss */
-.c3xgm-about-china .c3xgm-about-block-image .china-flag-wrapper,
-.c3xgm-about-china.element-in-view .c3xgm-about-block-image .c3xgm-about-block-image-mobile {
+/*.c3xgm-about-china.element-in-view .c3xgm-about-block-image .c3xgm-about-block-image-mobile,*/
+.c3xgm-about-china .c3xgm-about-block-image .china-flag-wrapper {
   -webkit-transform-origin: 50% 100%;
   -moz-transform-origin: 50% 100%;
   -o-transform-origin: 50% 100%;
@@ -9740,8 +9740,8 @@ body {
   animation-duration: 0;
 }*/
 /* line 130, ../sass/animations/_element-in-view.scss */
-.c3xgm-about-china.element-in-view .c3xgm-about-block-image .china-flag-wrapper,
-.c3xgm-about-china.element-in-view .c3xgm-about-block-image .c3xgm-about-block-image-mobile {
+/*.c3xgm-about-china.element-in-view .c3xgm-about-block-image .c3xgm-about-block-image-mobile,*/
+.c3xgm-about-china.element-in-view .c3xgm-about-block-image .china-flag-wrapper {
   -webkit-transform: scale(1, 1);
   -moz-transform: scale(1, 1);
   -o-transform: scale(1, 1);
