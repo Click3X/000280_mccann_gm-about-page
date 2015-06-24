@@ -37,8 +37,6 @@ jQuery(document).ready(function($) {
     function updateNav() {
         // for (var i=0; i < aArray.length-1; i++) {
             for (var i=0; i < aArray.length; i++) {
-            // console.log('THis is from updateNav!: ' + aArray[i]);
-            // console.dir(aArray[i]);
 
             var theID = aArray[i],
                 divPos = Pages[i].elementTop;
@@ -56,13 +54,6 @@ jQuery(document).ready(function($) {
             } else {
                 $("a[href='" + theID + "']").removeClass("c3xgm-about-nav-bullet-active");
             }
-
-            // IF BOTTOM OF DOC IS REACHED, HIGHLIGHT LAST BULLET
-            // if ( viewDimensions.scrollTop + viewDimensions.windowHeight == viewDimensions.docHeight) {
-            //     var lastPage = aArray[aArray.length - 1];
-            //     $("a[href='#c3xgm-about-page-environment']").removeClass("c3xgm-about-nav-bullet-active");
-            //     $("a[href='" + lastPage + "']").addClass("c3xgm-about-nav-bullet-active");
-            // }
         }
     }
 
@@ -269,8 +260,6 @@ jQuery(document).ready(function($) {
                 // console.log('PAGE: ' + _t.elementName);
                 // SET CURRENT PAGE TO PAGE INDEX
                 currentPage = i;
-                // SET PAGE VIEW STATE
-                _t.hasViewClass = true;
 
                 // IF CURRENT PAGE IS OUR PEOPLE, SEQUENTIALLY FADE IN ANIMATIONS
                 if(currentPage == 1) {
@@ -399,9 +388,9 @@ jQuery(document).ready(function($) {
 
         if(currentPage != 1) {
             $.each(blocks, function(i, val) {
-                console.log('I am checking your blocks now!');
+                // console.log('I am checking your blocks now!');
                 console.log('This is your index: ' + i + ', this is your block: ' + val.elementName);
-                console.dir(val)
+                // console.dir(val)
                 if( this.isAtSixteen() ){
                     this.addInViewClass();
                     console.log('Im in view: ' + this.elementName);
@@ -438,9 +427,6 @@ jQuery(document).ready(function($) {
         this.elementLeft = this.$element.offset().left;
         this.elementRight = this.$element.offset().left + Number( this.$element.css("width").replace('px', '') );
         this.elementBottom = this.elementHeight + this.elementTop;
-
-        // ELEMENT STATE - PAGE VIEW
-        this.hasViewClass = false;
 
         // PAGE BLOCKS - BLOCKS ARE INDIVIDUAL 'PAGE OBJECTS'
         this.aboutBlocks = this.$element.find('.c3xgm-about-block');

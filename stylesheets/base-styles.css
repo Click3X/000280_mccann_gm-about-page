@@ -10446,16 +10446,16 @@ body {
   -o-animation-name: growBorder;
   -ms-animation-name: growBorder;
   animation-name: growBorder;
-  -webkit-animation-delay: 600ms;
-  -moz-animation-delay: 600ms;
-  -o-animation-delay: 600ms;
-  -ms-animation-delay: 600ms;
-  animation-delay: 600ms;
-  -webkit-animation-duration: 600ms;
-  -moz-animation-duration: 600ms;
-  -o-animation-duration: 600ms;
-  -ms-animation-duration: 600ms;
-  animation-duration: 600ms;
+  -webkit-animation-delay: 300ms;
+  -moz-animation-delay: 300ms;
+  -o-animation-delay: 300ms;
+  -ms-animation-delay: 300ms;
+  animation-delay: 300ms;
+  -webkit-animation-duration: 400ms;
+  -moz-animation-duration: 400ms;
+  -o-animation-duration: 400ms;
+  -ms-animation-duration: 400ms;
+  animation-duration: 400ms;
 }
 /* line 238, ../sass/components/_mixins.scss */
 .c3xgm-about-crash-test-dummies.element-in-view .c3xgm-about-blockquote:after {
@@ -10474,16 +10474,16 @@ body {
   -o-animation-name: growBorder;
   -ms-animation-name: growBorder;
   animation-name: growBorder;
-  -webkit-animation-delay: 1200ms;
-  -moz-animation-delay: 1200ms;
-  -o-animation-delay: 1200ms;
-  -ms-animation-delay: 1200ms;
-  animation-delay: 1200ms;
-  -webkit-animation-duration: 600ms;
-  -moz-animation-duration: 600ms;
-  -o-animation-duration: 600ms;
-  -ms-animation-duration: 600ms;
-  animation-duration: 600ms;
+  -webkit-animation-delay: 600ms;
+  -moz-animation-delay: 600ms;
+  -o-animation-delay: 600ms;
+  -ms-animation-delay: 600ms;
+  animation-delay: 600ms;
+  -webkit-animation-duration: 400ms;
+  -moz-animation-duration: 400ms;
+  -o-animation-duration: 400ms;
+  -ms-animation-duration: 400ms;
+  animation-duration: 400ms;
 }
 /* line 368, ../sass/animations/_element-in-view.scss */
 .c3xgm-about-crash-test-dummies.element-in-view .c3xgm-about-blockquote > span:first-child {
@@ -10497,11 +10497,11 @@ body {
   -o-animation-name: fadeInLeftMega;
   -ms-animation-name: fadeInLeftMega;
   animation-name: fadeInLeftMega;
-  -webkit-animation-delay: 1700ms;
-  -moz-animation-delay: 1700ms;
-  -o-animation-delay: 1700ms;
-  -ms-animation-delay: 1700ms;
-  animation-delay: 1700ms;
+  -webkit-animation-delay: 1100ms;
+  -moz-animation-delay: 1100ms;
+  -o-animation-delay: 1100ms;
+  -ms-animation-delay: 1100ms;
+  animation-delay: 1100ms;
   -webkit-animation-duration: 400ms;
   -moz-animation-duration: 400ms;
   -o-animation-duration: 400ms;
@@ -10520,11 +10520,11 @@ body {
   -o-animation-name: fadeInLeftMega;
   -ms-animation-name: fadeInLeftMega;
   animation-name: fadeInLeftMega;
-  -webkit-animation-delay: 2000ms;
-  -moz-animation-delay: 2000ms;
-  -o-animation-delay: 2000ms;
-  -ms-animation-delay: 2000ms;
-  animation-delay: 2000ms;
+  -webkit-animation-delay: 1400ms;
+  -moz-animation-delay: 1400ms;
+  -o-animation-delay: 1400ms;
+  -ms-animation-delay: 1400ms;
+  animation-delay: 1400ms;
   -webkit-animation-duration: 400ms;
   -moz-animation-duration: 400ms;
   -o-animation-duration: 400ms;
@@ -10543,11 +10543,11 @@ body {
   -o-animation-name: fadeIn;
   -ms-animation-name: fadeIn;
   animation-name: fadeIn;
-  -webkit-animation-delay: 2400ms;
-  -moz-animation-delay: 2400ms;
-  -o-animation-delay: 2400ms;
-  -ms-animation-delay: 2400ms;
-  animation-delay: 2400ms;
+  -webkit-animation-delay: 1800ms;
+  -moz-animation-delay: 1800ms;
+  -o-animation-delay: 1800ms;
+  -ms-animation-delay: 1800ms;
+  animation-delay: 1800ms;
   -webkit-animation-duration: 400ms;
   -moz-animation-duration: 400ms;
   -o-animation-duration: 400ms;
