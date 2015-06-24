@@ -387,6 +387,28 @@ jQuery(document).ready(function($) {
         }
     }
 
+
+
+    // CHECK FOR BLOCKS
+    function reCheckBlocks(currentPage) {
+        console.log('Thsi is currentPage: ' + currentPage);
+        console.dir(currentPage);
+        
+        var blocks = Pages[currentPage].animBlocks;
+
+        if(currentPage != 1) {
+            $.each(blocks, function(i, val) {
+                console.log('I am checking your blocks now!');
+                console.log('This is your index: ' + i + ', this is your block: ' + val.elementName);
+                console.dir(val)
+                if( this.isAtSixteen() ){
+                    this.addInViewClass();
+                    console.log('Im in view: ' + this.elementName);
+                }
+            });
+        }
+    }
+
     // PAGE OBJECT
     function AmimatedElement(elem, defaults) {
         // DECLARE ELEM, DEFAULTS, THIS, OFFSET, CALLBACK - OPTIONAL USE
@@ -456,6 +478,10 @@ jQuery(document).ready(function($) {
         // IS AT EIGHTH
         this.isAtEighth = function() {
             return ( (this.elementTop <= viewDimensions.scrollBottom - viewDimensions.windowHeight/8) );
+        }
+
+        this.isAtSixteen = function() {
+            return ( (this.elementTop <= viewDimensions.scrollBottom - viewDimensions.windowHeight/16) );
         }
 
         // ADD IN VIEW CLASS
@@ -562,7 +588,7 @@ jQuery(document).ready(function($) {
         // CHECK IF THERE ARE BLOCKS ON CURRENT PAGE
         console.log('I am checking for blocks!');
         console.log('I am currentPage: ' + currentPage);
-        checkBlocks(currentPage);
+        reCheckBlocks(currentPage);
         // console.dir(Pages[currentPage]);
     }, 1000);
 
