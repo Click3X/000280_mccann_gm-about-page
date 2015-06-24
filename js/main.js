@@ -564,11 +564,12 @@ jQuery(document).ready(function($) {
         checkBlocks(currentPage);  
     })
     // // UPDATE NAV ON PAGE LOAD
-    // updateNav();
+    updateNav();
     // // NOW THAT WE HAVE OUR PAGE OBJECTS - SEE WHICH ONES ON SCREEN
-    // checkPages();
+    checkPages();
     // // CHECK IF THERE ARE BLOCKS ON CURRENT PAGE
     // checkBlocks(currentPage);
+    reCheckBlocks(currentPage);
 
     // SET INTERVAL TO SEE IF THERE ARE ANY INVISIBLE ELEMENTS ON THE PAGE
     setInterval(function() {
