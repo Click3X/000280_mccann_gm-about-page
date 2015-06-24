@@ -46,6 +46,12 @@ jQuery(document).ready(function($) {
             // UPDATE NAV BASED ON WINDOW POSITION AND PAGE HEIGHT
             if (viewDimensions.scrollTop >= (divPos - 100) && viewDimensions.scrollTop < ((divPos) + (divHeight-100) )) {
                 $("a[href='" + theID + "']").addClass("c3xgm-about-nav-bullet-active");
+                console.log('This is theID: ' + theID);
+                console.log('This is i: ' + i);
+                console.log('This is aArray: ');
+                console.dir(aArray);
+                // DECLARE CURRENTPAGE VAR AS i
+                currentPage = i;
             } else {
                 $("a[href='" + theID + "']").removeClass("c3xgm-about-nav-bullet-active");
             }
@@ -557,7 +563,7 @@ jQuery(document).ready(function($) {
         console.log('I am checking for blocks!');
         console.log('I am currentPage: ' + currentPage);
         checkBlocks(currentPage);
-        console.dir(Pages[currentPage]);
+        // console.dir(Pages[currentPage]);
     }, 1000);
 
 });
