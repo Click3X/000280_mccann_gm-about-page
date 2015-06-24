@@ -578,6 +578,6 @@ jQuery(document).ready(function($) {
         console.dir(Pages[currentPage]);
         reCheckBlocks(currentPage);
         // console.dir(Pages[currentPage]);
-    }, 4000);
+    }, 2000);
 
 });
