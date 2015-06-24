@@ -313,7 +313,7 @@ jQuery(document).ready(function($) {
 
     // CHECK FOR BLOCKS
     function checkBlocks(currentPage) {
-        // console.log('Thsi is currentPage: ' + currentPage);
+        console.log('CHECK BLOCKS currentPage: ' + Pages[currentPage].elementName);
         // console.dir(currentPage);
         
         var blocks = Pages[currentPage].animBlocks;
@@ -327,13 +327,15 @@ jQuery(document).ready(function($) {
                     this.addInViewClass();
                     console.log('Im in view: ' + this.elementName);
                     console.log('My Offset: ' + this.elementTop);
-                    // IF TEST FACILITY - TRIGGER ROLLOVER
-                    if( (this.elementName == "c3xgm-about-dealers") && (altAnim == false) ) {
-                        $('#animate-flag-line').addClass('animate-flag-line');
-                    } else if( (this.elementName == "c3xgm-about-solar-panels-animation") && (altAnim == false) ) {
-                        $('#c3xgm-about-solar-road-list').addClass('animate-flag-line');
-                    }
-                     else if( this.elementName == "c3xgm-about-safety-score" ) {
+
+                    // ANIMATE FLAG LINE AND SOLAR ROAD
+                    // if( (this.elementName == "c3xgm-about-dealers") && (altAnim == false) ) {
+                    //     $('#animate-flag-line').addClass('animate-flag-line');
+                    // } else if( (this.elementName == "c3xgm-about-solar-panels-animation") && (altAnim == false) ) {
+                    //     $('#c3xgm-about-solar-road-list').addClass('animate-flag-line');
+                    // }
+
+                    if( this.elementName == "c3xgm-about-safety-score" ) {
                         fireAnimate63();
                     } else if( this.elementName == "c3xgm-about-crash-test-dummies") {
                         setTimeout(function() {
@@ -378,6 +380,23 @@ jQuery(document).ready(function($) {
         }
     }
 
+
+    function animateFlags(flagLine) {
+        if( FlagLine.isInView() ) {
+            FlagLine.inView = true;
+            console.log('FlagLine in view');
+            if(!FlagLine.$element.hasClass('animate-flag-line') ) {
+                FlagLine.$element.addClass('animate-flag-line');
+            }
+        } else {
+            FlagLine.inView = false;
+            console.log('animate FlagLine aint in view');
+            if(FlagLine.$element.hasClass('animate-flag-line') ) {
+                FlagLine.$element.removeClass('animate-flag-line');
+            }
+        }
+    }
+
     // PAGE OBJECT
     function AmimatedElement(elem, defaults) {
         // DECLARE ELEM, DEFAULTS, THIS, OFFSET, CALLBACK - OPTIONAL USE
@@ -406,6 +425,9 @@ jQuery(document).ready(function($) {
         this.elementLeft = this.$element.offset().left;
         this.elementRight = this.$element.offset().left + Number( this.$element.css("width").replace('px', '') );
         this.elementBottom = this.elementHeight + this.elementTop;
+
+        // READY ANIM BLOCKS ARRAY
+        this.inView = false; 
 
         // PAGE BLOCKS - BLOCKS ARE INDIVIDUAL 'PAGE OBJECTS'
         this.aboutBlocks = this.$element.find('.c3xgm-about-block');
@@ -455,7 +477,7 @@ jQuery(document).ready(function($) {
             if( defaults.blocktype == 'page' ) {
                 this.$element.removeClass('invisible');  
                 this.$element.addClass('c3xgm-about-page-in-view'); 
-            } else {
+            } else if( defaults.blocktype == 'block' ) {
                 this.$element.removeClass('invisible');  
                 this.$element.addClass('element-in-view');  
             }
@@ -466,30 +488,33 @@ jQuery(document).ready(function($) {
 
 
     // SCROLL HANDLER --------------------------------------------
-    if(mobile) {
-        scrollHandler = function () {
-            // UPDATE VIEW PORT
-            updateviewDimensions();
-            // CHECK PAGES
-            checkPages();
-            // CHECK BLOCKS FOR CURRENT PAGES
-            checkBlocks(currentPage);
-            // UPDATE NAV
-            updateNav();
-        }
+    // if(mobile) {
+    //     scrollHandler = function () {
+    //         // UPDATE VIEW PORT
+    //         updateviewDimensions();
+    //         // CHECK PAGES
+    //         checkPages();
+    //         // CHECK BLOCKS FOR CURRENT PAGES
+    //         checkBlocks(currentPage);
+    //         // UPDATE NAV
+    //         updateNav();
+    //     }
 
-    } else {
+    // } else {
         scrollHandler = function () {
             // UPDATE VIEW PORT
-            updateviewDimensions();
-            // CHECK PAGES
-            checkPages();
-            // CHECK BLOCKS FOR CURRENT PAGES
-            checkBlocks(currentPage);
+            // updateviewDimensions();
             // UPDATE NAV
             updateNav();
+            // CHECK PAGES
+            checkPages();
+            // // CHECK BLOCKS FOR CURRENT PAGES
+            checkBlocks(currentPage);
+            // animateFlags
+            animateFlags();
+
         }
-    }
+    // }
 
 
     // NOW THAT WE HAVE PREPPED OUR ENVIRONMENT -------------------------------------------------------------------------------
@@ -497,6 +522,12 @@ jQuery(document).ready(function($) {
     var pages = $('.c3xgm-about-page'),
     // var pages = $('#c3xgm-about-page-our-company, #c3xgm-about-page-our-people, #c3xgm-about-page-our-brands, #c3xgm-about-page-our-commitment'),    
         Pages = [];
+
+    var flag = $('#animate-flag-line'),
+        flDefaults = {
+            'blocktype':'decorative'
+        },
+        FlagLine = new AmimatedElement(flag, flDefaults);
 
     // UPDATE VIEWPORT DIMENSIONS
     updateviewDimensions();
