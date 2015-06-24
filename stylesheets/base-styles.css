@@ -10399,11 +10399,11 @@ body {
   -o-animation-delay: 1000ms;
   -ms-animation-delay: 1000ms;
   animation-delay: 1000ms;
-  -webkit-animation-duration: 6000ms;
-  -moz-animation-duration: 6000ms;
-  -o-animation-duration: 6000ms;
-  -ms-animation-duration: 6000ms;
-  animation-duration: 6000ms;
+  -webkit-animation-duration: 600ms;
+  -moz-animation-duration: 600ms;
+  -o-animation-duration: 600ms;
+  -ms-animation-duration: 600ms;
+  animation-duration: 600ms;
 }
 /* line 344, ../sass/animations/_element-in-view.scss */
 .c3xgm-about-dealers.element-in-view .c3xgm-about-blockquote .c3xgm-about-sep:nth-child(2) > span {
