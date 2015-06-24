@@ -110,18 +110,18 @@
 
 	// CHINA
 	.c3xgm-about-china {
-		.c3xgm-about-block-image {
-			img {
-				// DISABLE ANIMATIONS
-				@include noAnimation;
-			}
-			.c3xgm-about-block-image-mobile,
-			.china-flag-wrapper { 
-				@include prefix(transform-origin, 50% 100%);
-				@include prefix(transform, scale(0,0));
-				@include prefix(transition, transform 900ms);
-			}
-		}
+		// .c3xgm-about-block-image {
+		// 	img {
+		// 		// DISABLE ANIMATIONS
+		// 		@include noAnimation;
+		// 	}
+		// 	.c3xgm-about-block-image-mobile,
+		// 	.china-flag-wrapper { 
+		// 		@include prefix(transform-origin, 50% 100%);
+		// 		@include prefix(transform, scale(0,0));
+		// 		@include prefix(transition, transform 900ms);
+		// 	}
+		// }
 
 		// ELEMENT IN VIEW
 		&.element-in-view {

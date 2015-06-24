@@ -9717,7 +9717,7 @@ body {
 
 /* line 129, ../sass/animations/_element-in-view.scss */
 
-.c3xgm-about-china.element-in-view .c3xgm-about-block-image img {
+/*.c3xgm-about-china.element-in-view .c3xgm-about-block-image img {
   -webkit-animation-fill-mode: both;
   -moz-animation-fill-mode: both;
   -o-animation-fill-mode: both;
@@ -9738,7 +9738,7 @@ body {
   -o-animation-duration: 0;
   -ms-animation-duration: 0;
   animation-duration: 0;
-}
+}*/
 /* line 130, ../sass/animations/_element-in-view.scss */
 .c3xgm-about-china.element-in-view .c3xgm-about-block-image .china-flag-wrapper,
 .c3xgm-about-china.element-in-view .c3xgm-about-block-image .c3xgm-about-block-image-mobile {
