@@ -35,7 +35,8 @@ jQuery(document).ready(function($) {
 
     // HIGHTLIGHT NAV
     function updateNav() {
-        for (var i=0; i < aArray.length-1; i++) {
+        // for (var i=0; i < aArray.length-1; i++) {
+            for (var i=0; i < aArray.length; i++) {
             // console.log('THis is from updateNav!: ' + aArray[i]);
             // console.dir(aArray[i]);
 
@@ -57,11 +58,11 @@ jQuery(document).ready(function($) {
             }
 
             // IF BOTTOM OF DOC IS REACHED, HIGHLIGHT LAST BULLET
-            if ( viewDimensions.scrollTop + viewDimensions.windowHeight == viewDimensions.docHeight) {
-                var lastPage = aArray[aArray.length - 1];
-                $("a[href='#c3xgm-about-page-environment']").removeClass("c3xgm-about-nav-bullet-active");
-                $("a[href='" + lastPage + "']").addClass("c3xgm-about-nav-bullet-active");
-            }
+            // if ( viewDimensions.scrollTop + viewDimensions.windowHeight == viewDimensions.docHeight) {
+            //     var lastPage = aArray[aArray.length - 1];
+            //     $("a[href='#c3xgm-about-page-environment']").removeClass("c3xgm-about-nav-bullet-active");
+            //     $("a[href='" + lastPage + "']").addClass("c3xgm-about-nav-bullet-active");
+            // }
         }
     }
 
