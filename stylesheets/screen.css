@@ -1849,7 +1849,7 @@ Stylesheet: Helpers
 .c3xgm-about-mobile-device .c3xgm-about-flag-line-container #c3xgm-about-flag-line-grey-car {
   margin: 0 auto;
 }
-/* line 71, ../sass/partials/_mobile-gif-backups.scss */
+/* line 62, ../sass/partials/_mobile-gif-backups.scss */
 .c3xgm-about-mobile-device .c3xgm-about-grey-top {
   left: -380px;
   -webkit-animation-fill-mode: both;
@@ -1883,11 +1883,11 @@ Stylesheet: Helpers
   -ms-animation-iteration-count: infinite;
   animation-iteration-count: infinite;
 }
-/* line 83, ../sass/partials/_mobile-gif-backups.scss */
+/* line 74, ../sass/partials/_mobile-gif-backups.scss */
 .c3xgm-about-mobile-device div#c3xgm-about-grey-van:before {
   display: none;
 }
-/* line 90, ../sass/partials/_mobile-gif-backups.scss */
+/* line 81, ../sass/partials/_mobile-gif-backups.scss */
 .c3xgm-about-mobile-device .c3xgm-about-decorative.c3xgm-about-solar-panels #c3xgm-about-solar-grey-car {
   left: -380px;
   -webkit-animation-fill-mode: both;
@@ -1921,33 +1921,33 @@ Stylesheet: Helpers
   -ms-animation-iteration-count: infinite;
   animation-iteration-count: infinite;
 }
-/* line 103, ../sass/partials/_mobile-gif-backups.scss */
+/* line 94, ../sass/partials/_mobile-gif-backups.scss */
 .c3xgm-about-mobile-device .c3xgm-about-mobile-visible {
   opacity: 1;
 }
-/* line 105, ../sass/partials/_mobile-gif-backups.scss */
+/* line 96, ../sass/partials/_mobile-gif-backups.scss */
 .c3xgm-about-mobile-device .c3xgm-about-mobile-device .c3xgm-about-main-nav-sub {
   display: none;
 }
-/* line 107, ../sass/partials/_mobile-gif-backups.scss */
+/* line 98, ../sass/partials/_mobile-gif-backups.scss */
 .c3xgm-about-mobile-device .c3xgm-about-page-our-commitment .c3xgm-about-climate-declaration .c3xgm-about-block-image > div {
   margin-left: auto;
 }
-/* line 112, ../sass/partials/_mobile-gif-backups.scss */
+/* line 103, ../sass/partials/_mobile-gif-backups.scss */
 .c3xgm-about-mobile-device #c3xgm-about-solar-road-grey-car {
   left: 0;
   right: 0;
   margin: auto;
 }
 
-/* line 118, ../sass/partials/_mobile-gif-backups.scss */
+/* line 109, ../sass/partials/_mobile-gif-backups.scss */
 .c3xgm-about-climate-declaration.element-in-view .c3xgm-about-block-image img[src$='svg'] {
   width: 50%;
   margin-left: auto;
   margin-right: auto;
 }
 
-/* line 125, ../sass/partials/_mobile-gif-backups.scss */
+/* line 116, ../sass/partials/_mobile-gif-backups.scss */
 .c3xgm-about-alt-anim .c3xgm-about-dealers.element-in-view + .c3xgm-about-flag-line-container #c3xgm-about-flag-line-grey-car {
   margin: 0;
   -webkit-animation-fill-mode: both;
@@ -1982,7 +1982,7 @@ Stylesheet: Helpers
   animation-iteration-count: infinite;
 }
 @media (min-width: 768px) {
-  /* line 125, ../sass/partials/_mobile-gif-backups.scss */
+  /* line 116, ../sass/partials/_mobile-gif-backups.scss */
   .c3xgm-about-alt-anim .c3xgm-about-dealers.element-in-view + .c3xgm-about-flag-line-container #c3xgm-about-flag-line-grey-car {
     -webkit-animation-duration: 6s;
     -moz-animation-duration: 6s;
@@ -1991,7 +1991,7 @@ Stylesheet: Helpers
     animation-duration: 6s;
   }
 }
-/* line 144, ../sass/partials/_mobile-gif-backups.scss */
+/* line 135, ../sass/partials/_mobile-gif-backups.scss */
 .c3xgm-about-alt-anim .c3xgm-about-decorative.c3xgm-about-solar-panels-animation.element-in-view #c3xgm-about-solar-road-grey-car {
   margin: 0;
   -webkit-animation-fill-mode: both;
@@ -2026,7 +2026,7 @@ Stylesheet: Helpers
   animation-iteration-count: infinite;
 }
 @media (min-width: 768px) {
-  /* line 144, ../sass/partials/_mobile-gif-backups.scss */
+  /* line 135, ../sass/partials/_mobile-gif-backups.scss */
   .c3xgm-about-alt-anim .c3xgm-about-decorative.c3xgm-about-solar-panels-animation.element-in-view #c3xgm-about-solar-road-grey-car {
     -webkit-animation-duration: 6s;
     -moz-animation-duration: 6s;
