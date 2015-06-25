@@ -122,7 +122,6 @@ jQuery(document).ready(function($) {
 
     fireOurPeopleAnimations = function(page) {
     	var time;
-
         $.each(ourPeopleBlocks, function(i, val) {
             setTimeout(function() {
                 time = 1200 * i;
@@ -141,7 +140,6 @@ jQuery(document).ready(function($) {
                 }, time);
             }, 2000);
         });
-
 	}
 
     console.log('This is from give in:');
@@ -150,8 +148,8 @@ jQuery(document).ready(function($) {
     var currentPage = 0,
     	navLinks = $('.c3xgm-about-main-nav > li a');
 
-    console.log('This is your navLinks:');
-    console.dir(navLinks);
+    // console.log('This is your navLinks:');
+    // console.dir(navLinks);
 
     // GET NAME OF BLOCK
     function getName(block) {
@@ -215,6 +213,7 @@ jQuery(document).ready(function($) {
 			$(".c3xgm-about-main-nav > li > a.c3xgm-about-nav-bullet-active").removeClass("c3xgm-about-nav-bullet-active");
 			// HIGHLIGHT NAV BULLET
 			$(navLinks.eq(currentPage)).addClass("c3xgm-about-nav-bullet-active");
+
 			// ADD PAGE IN VIEW CLASS
 			$(this).removeClass('invisible').addClass('c3xgm-about-page-in-view'); 
 

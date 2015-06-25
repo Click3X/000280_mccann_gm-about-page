@@ -3969,6 +3969,9 @@ h4.c3xgm-about-h {
   font-size: 77px;
   font-size: 25.697113vw;
   line-height: .8em;
+  
+  width:1em;
+  text-align: left;
 }
 @media (min-width: 768px) {
   /* line 120, ../sass/pages/_our-people.scss */
@@ -3977,6 +3980,7 @@ h4.c3xgm-about-h {
     font-size: 13.697113vw;
     /*width: 114px;*/
     width: 110px;
+    width:0.9em;
     text-align: left;
   }
 
