@@ -1,6 +1,7 @@
 // GIVE IN  
 // DECLARE VARS
-var currentPage = 0;
+var currentPage = 0,
+	currentSection = 0;
 
 jQuery(document).ready(function($) { 
     console.log('This is from give in:');
@@ -23,6 +24,7 @@ jQuery(document).ready(function($) {
 
     // PAGES FOR HEADING ANINATIONS
    	var pages = $('#c3xgm-about-page-container > .c3xgm-about-page'),
+   		sections = $('#c3xgm-about-page-our-commitment > .c3xgm-about-page'),	
     	blocks = $('.c3xgm-about-block').not('.c3xgm-about-solar-panels-animation, .c3xgm-about-test-facility'),
     	sliders = $('.c3xgm-about-module-foundation, .c3xgm-about-module-technology, .c3xgm-about-module-car'),
     	triggers = $('#animate-flag-line, #c3xgm-about-solar-road-list');
@@ -60,6 +62,36 @@ jQuery(document).ready(function($) {
 
 		} else {
 			console.log('PAGE out of view!: ' + name);
+			console.dir(this);
+		}
+	});
+
+    // SECTIONS
+	$(sections).bind('inview', function (event, visible) {
+    	var name = getName(this), 
+    		id = '#'+name;
+
+		if (visible == true) {
+			// UPDATE CURRENT SECTION
+			currentSection = $(sections).index( $(this) );
+
+			console.log('Section in view!: ' + name);
+			console.log('This is currentSection: ' + currentSection);
+			console.dir(this);
+			
+			// UNHIGHTLIGHT CURRENT SUB NAV BULLET
+			$(".c3xgm-about-main-nav-sub .c3xgm-about-nav-bullet-active").removeClass("c3xgm-about-nav-bullet-active");
+			// HIGHLIGHT SUB NAV BULLET
+			var subNavHighlight = currentSection + 4;
+			// $(navLinks.eq(subNavHighlight)).addClass("c3xgm-about-nav-bullet-active");
+
+			console.log('This is subNavHighlight: '+ subNavHighlight);
+			console.dir($(navLinks.eq(subNavHighlight)));
+			// ADD SECTION IN VIEW CLASS
+			$(this).addClass('c3xgm-about-page-in-view'); 
+
+		} else {
+			console.log('SECTION out of view!: ' + name);
 			console.dir(this);
 		}
 	});
