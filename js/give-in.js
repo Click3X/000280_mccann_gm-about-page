@@ -6,7 +6,11 @@ jQuery(document).ready(function($) {
     console.log('This is from give in:');
 
     // // DECLARE VARS
-    // var currentPage = 0;
+    var currentPage = 0,
+    	navLinks = $('.c3xgm-about-main-nav > li a');
+
+    console.log('This is your navLinks:');
+    console.dir(navLinks);
 
     // GET NAME OF BLOCK
     function getName(block) {
@@ -18,51 +22,49 @@ jQuery(document).ready(function($) {
     }
 
     // PAGES FOR HEADING ANINATIONS
-    // BLOCKS FOR BLOCK IN VIEW ANIMATIONS
-    // var pages = $('.c3xgm-about-page').not('#c3xgm-about-end-nav'),
    	var pages = $('#c3xgm-about-page-container > .c3xgm-about-page'),
     	blocks = $('.c3xgm-about-block').not('.c3xgm-about-solar-panels-animation, .c3xgm-about-test-facility'),
     	sliders = $('.c3xgm-about-module-foundation, .c3xgm-about-module-technology, .c3xgm-about-module-car'),
     	triggers = $('#animate-flag-line, #c3xgm-about-solar-road-list');
 
-    console.log('These are your pages:');
-    console.dir(pages);
-    console.log('These are your blocks:');
-    console.dir(blocks);
-    console.log('These are your sliders:');
-    console.dir(sliders);
-    console.log('These are your triggers:');
-    console.dir(triggers);
+    // console.log('These are your pages:');
+    // console.dir(pages);
+    // console.log('These are your blocks:');
+    // console.dir(blocks);
+    // console.log('These are your sliders:');
+    // console.dir(sliders);
+    // console.log('These are your triggers:');
+    // console.dir(triggers);
 
 
-
-    // PAGE
     // BIND NAV UPDATE TO PAGES WHEN IN VIEW
+    // PAGE AND NAV FUNCTIONALITY
     $(pages).bind('inview', function (event, visible) {
     	var name = getName(this), 
     		id = '#'+name;
 
 		if (visible == true) {
+			// UPDATE CURRENT PAGE
 			currentPage = $(pages).index( $(this) );
 
 			console.log('PAGE in view!: ' + name);
 			console.log('This is currentPage: ' + currentPage);
 			console.dir(this);
 			
+			// UNHIGHTLIGHT CURRENT NAV BULLET
+			$(".c3xgm-about-nav-bullet-active").removeClass("c3xgm-about-nav-bullet-active");
 			// HIGHLIGHT NAV BULLET
-			$("a[href='" + id + "']").addClass("c3xgm-about-nav-bullet-active");
-
+			$(navLinks.eq(currentPage)).addClass("c3xgm-about-nav-bullet-active");
 			// ADD PAGE IN VIEW CLASS
-			// $(this).addClass('c3xgm-about-page-in-view'); 
+			$(this).addClass('c3xgm-about-page-in-view'); 
 
 		} else {
-			$("a[href='" + id + "']").removeClass("c3xgm-about-nav-bullet-active");
 			console.log('PAGE out of view!: ' + name);
 			console.dir(this);
 		}
 	});
 
-    // TRIGGERS -- ANIMATING FLAG LINE
+    // TRIGGERS -- ANIMATING FLAG LINE - SOLAR ROAD
     $(triggers).bind('inview', function (event, visible) {
     	var name = getName(this);
 		if (visible == true) {

@@ -143,14 +143,12 @@ jQuery(document).ready(function($) {
 
         // CREATE NEW ANIMATED ELEMENT FROM PAGE
         Pages[i] = new AmimatedElement(val, defaults);
-        // console.log(Pages[i]);
 
         // HIDE PAGE IF NOT 'OUR COMPANY' (FIRST PAGE)
         if(i != 0) {
             Pages[i].$element.removeClass("c3xgm-about-page-in-view").addClass("invisible");    
         }
         // LOOP PAGE BLOCKS IF PAGE HAS THEM
-        // if(val.aboutBlocks.length > 0) {
         if(Pages[i].aboutBlocks.length > 0) {
             // HIDE PAGE BLOCKS
             $.each(Pages[i].aboutBlocks, function(i, pBlock) {
