@@ -270,12 +270,12 @@ jQuery(document).ready(function($) {
 			}
 			
             // ONLY CHANGE NAV HIGHLIGHTS IF MENU BUTTONS WERENT CLICKED
-            if(!navClickScrolling == true) {
+            // if(!navClickScrolling == true) {
                 // UNHIGHTLIGHT CURRENT NAV BULLET
                 $(".c3xgm-about-main-nav > li > a.c3xgm-about-nav-bullet-active").removeClass("c3xgm-about-nav-bullet-active");
                 // HIGHLIGHT NAV BULLET
                 $(navLinks.eq(currentPage)).addClass("c3xgm-about-nav-bullet-active");
-            }
+            // }/
 
 			// ADD PAGE IN VIEW CLASS
 			$(this).removeClass('invisible').addClass('c3xgm-about-page-in-view'); 
