@@ -155,7 +155,10 @@ jQuery(document).ready(function($) {
         var _t = this;
         console.log('THis is this _t: ' + _t);
 
-        var curLink = $('.c3xgm-about-main-nav > li a').index( $(this) );
+        var curLink = $('.c3xgm-about-main-nav > li a').index( $(this) ),
+            oldLink = $('.c3xgm-about-main-nav li a').index( $('.c3xgm-about-nav-bullet-active') );
+
+        console.log('This is oldLInk' + oldLink);
         console.log('This is curLInk' + curLink);
 
         // MAKE NAV CLICK SCROLLING TRUE - THIS IS A HOOK TO DISABLE OTHER MENU SCROLL CHECKS
@@ -192,6 +195,7 @@ jQuery(document).ready(function($) {
                     $(_t).addClass('c3xgm-about-nav-bullet-active');
                     navClickScrolling = false;
                 }));
+                navClickScrolling = false;
                 return false;
             }
         }
@@ -317,7 +321,7 @@ jQuery(document).ready(function($) {
     // TRIGGERS -- ANIMATING FLAG LINE - SOLAR ROAD
     $(triggers).bind('inview', function (event, visible) {
     	var name = getName(this);
-		if (visible == true) {
+		if ( (visible == true) && (navClickScrolling !== true) ) {
 			console.log('TRIGGER in view!: ' + name);
 			$(this).addClass('animate-flag-line');
 		} else {
@@ -331,7 +335,7 @@ jQuery(document).ready(function($) {
      // MOBILE TRIGGERS -- ANIMATING FLAG LINE - SOLAR ROAD
         $(mobileTriggers).bind('inview', function (event, visible) {
             var name = getName(this);
-            if (visible == true) {
+            if ( (visible == true) && (navClickScrolling !== true) ) {
                 console.log('MOBILE TRIGGER in view!: ' + name);
                 $(this).addClass('animate-flag-line');
             } else {
@@ -345,7 +349,7 @@ jQuery(document).ready(function($) {
     // SLIDERS
 	$(sliders).bind('inview', function (event, visible) {
     	var name = this.className.split(" ")[1];
-		if (visible == true) {
+		if ( (visible == true) && (navClickScrolling == false) ) {
 			console.log('SLIDER in view!: ' + name);
 			if(name == 'c3xgm-about-module-car') {
 				setTimeout(function() {
