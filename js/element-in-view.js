@@ -14,15 +14,14 @@
         return height;
     }
 
-    var scrollTime = $.now();
-
+    // var scrollTime = $.now();
 
 
     $(window).scroll(function () {
 
-        if( $.now() > scrollTime + 100 ) {
-            scrollTime = $.now();
-            
+        // if( $.now() > scrollTime + 100 ) {
+        //     scrollTime = $.now();
+
             var vpH = getViewportHeight(),
                 scrolltop = (document.documentElement.scrollTop ?
                     document.documentElement.scrollTop :
@@ -59,7 +58,7 @@
                 });
             }
 
-        } // END NOW
+        // } // END NOW
     });
     
     // kick the event to pick up any elements already in view.

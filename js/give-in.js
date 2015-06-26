@@ -144,65 +144,6 @@ jQuery(document).ready(function($) {
 	}
     
 
-    // // SMOOTH SCROOL
-    // var $secNav = $('.c3xgm-about-main-nav-sub'),
-    //     $navBullets = $('.c3xgm-about-nav-bullet'),
-    //     $navHoverTitle = $('.c3xgm-about-nav-hover-title'),
-    //     navClickScrolling = false;
-
-
-    // $('.c3xgm-about-main-nav a[href*=#]:not([href=#]), a.c3xgm-about-down-arrow-link, .c3xgm-about-end-nav a[href*=#]:not([href=#])').on('click touchend', function() {
-    //     var _t = this;
-    //     // console.log('THis is this _t: ' + _t);
-
-    //     var curLink = $('.c3xgm-about-main-nav > li a').index( $(this) ),
-    //         oldLink = $('.c3xgm-about-main-nav li a').index( $('.c3xgm-about-nav-bullet-active') );
-
-    //     // console.log('This is oldLInk' + oldLink);
-    //     // console.log('This is curLInk' + curLink);
-
-    //     // MAKE NAV CLICK SCROLLING TRUE - THIS IS A HOOK TO DISABLE OTHER MENU SCROLL CHECKS
-    //     navClickScrolling = true;
-
-    //     // // ADD ACTIVE CLASS
-    //     // $navBullets.removeClass('c3xgm-about-nav-bullet-active');
-    //     // $(this).addClass('c3xgm-about-nav-bullet-active');
-    //     // IF SUB NAV IS CLICKED - SHOW IT
-    //     // if($(this).parent().parent().hasClass('section-nav') ) {
-    //     //     if( !$secNav.hasClass('show-nav') ) {
-    //     //         $secNav.addClass('show-nav');   
-    //     //     }
-    //     // } else {
-    //     //     if( $secNav.hasClass('show-nav') ) {
-    //     //         $secNav.removeClass('show-nav');    
-    //     //     }
-    //     // }
-
-    //     if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
-    //         var target = $(this.hash);
-    //         target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
-    //         if (target.length) {
-    //             $("html, body").animate({
-    //                 scrollTop: target.offset().top
-    //             }, 1000, (function() {
-    //                 $navHoverTitle.fadeOut();
-    //                 // ADD ACTIVE CLASS
-    //                 if(curLink < 4) {
-    //                     $navBullets.removeClass('c3xgm-about-nav-bullet-active');    
-    //                 }
-                    
-    //                 // console.log('I am adding active class!');
-    //                 $(_t).addClass('c3xgm-about-nav-bullet-active');
-    //                 navClickScrolling = false;
-    //             }));
-    //             navClickScrolling = false;
-    //             return false;
-    //         }
-    //     }
-    // });
-
-    // console.log('This is from give in:');
-
     // // DECLARE VARS
     var currentPage = 0,
     	navLinks = $('.c3xgm-about-main-nav > li a');
@@ -233,23 +174,23 @@ jQuery(document).ready(function($) {
     // HIDE ANIMATED ELEMENTS
     // $(pages).addClass('invisible');
 
-    $.each(allAnimatedElements, function(i,elem) {
-    	$(this).addClass('invisible');
+    // $.each(allAnimatedElements, function(i,elem) {
+    // 	$(this).addClass('invisible');
+    // });
+
+
+
+    $.each(blocks, function(i,elem) {
+        $(this).addClass('element-in-view');
     });
 
+    $.each(pages, function(i,elem) {
+        $(this).addClass('c3xgm-about-page-in-view');
+    });
 
-
-    // $.each(blocks, function(i,elem) {
-    //     $(this).addClass('element-in-view');
-    // });
-
-    // $.each(pages, function(i,elem) {
-    //     $(this).addClass('c3xgm-about-page-in-view');
-    // });
-
-    // $.each(sections, function(i,elem) {
-    //     $(this).addClass('c3xgm-about-page-in-view');
-    // });
+    $.each(sections, function(i,elem) {
+        $(this).addClass('c3xgm-about-page-in-view');
+    });
 
 
 
@@ -266,7 +207,7 @@ jQuery(document).ready(function($) {
 
     // BIND NAV UPDATE TO PAGES WHEN IN VIEW
     // PAGE AND NAV FUNCTIONALITY
-    $(pages).bind('inview', function (event, visible) {
+    $(pages).one('inview', function (event, visible) {
     	var name = getName(this), 
     		id = '#'+name;
 
@@ -287,6 +228,7 @@ jQuery(document).ready(function($) {
 
 			console.log('PAGE in view!: ' + name);
 			console.log('This is currentPage: ' + currentPage);
+            console.log($(this).offset().top );
 			// console.dir(this);
 
 			// IF CURRENT PAGE == OUR PEOPLE (1) - THEN FIRE OFF ANIMATIONS
@@ -303,7 +245,8 @@ jQuery(document).ready(function($) {
 	});
 
     // SECTIONS
-	$(sections).bind('inview', function (event, visible) {
+	// $(sections).bind('inview', function (event, visible) {
+    $(sections).one('inview', function (event, visible) {
     	var name = getName(this), 
     		id = '#'+name;
 
@@ -313,6 +256,7 @@ jQuery(document).ready(function($) {
 
 			console.log('Section in view!: ' + name);
 			console.log('This is currentSection: ' + currentSection);
+            console.log($(this).offset().top );
 			// console.dir(this);
 			
 			// UNHIGHTLIGHT CURRENT SUB NAV BULLET
@@ -341,6 +285,7 @@ jQuery(document).ready(function($) {
 		// if ( (visible == true) && (navClickScrolling !== true) ) {
 			console.log('TRIGGER in view!: ' + name);
 			$(this).addClass('animate-flag-line');
+            console.log($(this).offset().top );
 		} else {
 			console.log('TRIGGER out of view!: ' + name);
 			$(this).removeClass('animate-flag-line');
@@ -356,6 +301,7 @@ jQuery(document).ready(function($) {
             // if ( (visible == true) && (navClickScrolling !== true) ) {
                 console.log('MOBILE TRIGGER in view!: ' + name);
                 $(this).addClass('animate-flag-line');
+                console.log($(this).offset().top );
             } else {
                 console.log('MOBILE TRIGGER out of view!: ' + name);
                 $(this).removeClass('animate-flag-line');
@@ -369,6 +315,7 @@ jQuery(document).ready(function($) {
     	var name = this.className.split(" ")[1];
 		if(visible == true) {
 			console.log('SLIDER in view!: ' + name);
+            console.log($(this).offset().top );
 			if(name == 'c3xgm-about-module-car') {
 				setTimeout(function() {
                     autorotateAboutSliderOnce();
@@ -405,10 +352,11 @@ jQuery(document).ready(function($) {
 
 
 	// BLOCKS
-    $(blocks).bind('inview', function (event, visible) {
+    $(blocks).one('inview', function (event, visible) {
     	var name = getName(this);
 		if (visible == true) {
 			console.log('BLOCK in view!: ' + name);
+            console.log($(this).offset().top );
 			$(this).removeClass('invisible').addClass('element-in-view');
 		} else {
 			console.log('BLOCK out of view!: ' + name);
@@ -417,10 +365,11 @@ jQuery(document).ready(function($) {
 
 
 	// END NAV
-    $(endNav).bind('inview', function (event, visible) {
+    $(endNav).one('inview', function (event, visible) {
     	var name = getName(this);
 		if (visible == true) {
 			// console.log('endNav in view!: ' + name);
+            console.log($(this).offset().top );
 			$(this).removeClass('invisible').addClass('c3xgm-about-page-in-view');
 		} else {
 			console.log('endNav out of view!: ' + name);
@@ -428,92 +377,78 @@ jQuery(document).ready(function($) {
 	});
 
 
-    // GIF 
-    // var tzGif = $('img[src="img/pages/people/time-zones.gif"]');
-    // console.log('This is tzGif: ' + tzGif);
-    // console.dir(tzGif);
 
-    // $(tzGif).bind('inview', function (event, visible) {
-    //     if (visible == true) {
-    //         console.log('endNav in view!: tz-gif');
-    //         tzGif.get(0).src="img/pages/people/time-zones.gif";
-    //     } else {
-    //         console.log('endNav out of view!: tz-gif');
-    //         tzGif.get(0).src="";
-    //     }
+
+
+    // var gifs = $('img[src$=".gif"]');
+
+    // $.each(gifs, function(i, elem) {
+        
+    //     var gifSrc = elem.src,
+    //         srcHeight = $(elem).height(),
+    //         gifParent = $(elem).parent();
+
+
+    //     var $gifParent = $(gifParent).get(0);
+        
+
+    //     $(elem).bind('inview', function (event, visible) {
+    //         if (visible == true) {
+    //             console.log('endNav in view!: ' + gifSrc);
+    //             $($gifParent).height('auto');
+                
+    //             elem.src = gifSrc;
+    //         } else {
+    //             console.log('endNav out of view!: ' + gifSrc);
+    //             srcHeight = $(elem).height();
+    //             $($gifParent).height(srcHeight);
+    //             elem.src = "";
+    //         }
+    //     });
+
     // });
 
 
-    var gifs = $('img[src$=".gif"]');
+    // function getViewportHeight() {
+    //     var height = window.innerHeight; // Safari, Opera
+    //     var mode = document.compatMode;
 
-    $.each(gifs, function(i, elem) {
+    //     if ( (mode || !$.support.boxModel) ) { // IE, Gecko
+    //         height = (mode == 'CSS1Compat') ?
+    //         document.documentElement.clientHeight : // Standards
+    //         document.body.clientHeight; // Quirks
+    //     }
+
+    //     return height;
+    // }
+
+    // var vpH, 
+    //     scrolltop,
+    //     winHeight = $(window).height();
+
+    // $(window).scroll(function () {
+    //         vpH = getViewportHeight(),
+    //         scrolltop = (document.documentElement.scrollTop ?
+    //             document.documentElement.scrollTop :
+    //             document.body.scrollTop);
+    // });
+
+    // blockInView = function(elem) {
+    //     var $el = $(elem),
+    //         top = $el.offset().top,
+    //         height = $el.height(),
+    //         bottom = top + height;
+
+    //         var name = getName(elem);
+    //             // console.log(name);
+    //             // console.log(top, winHeight, bottom, scrolltop);
         
-        var gifSrc = elem.src,
-            srcHeight = $(elem).height(),
-            gifParent = $(elem).parent();
-
-
-        var $gifParent = $(gifParent).get(0);
-        
-
-        $(elem).bind('inview', function (event, visible) {
-            if (visible == true) {
-                console.log('endNav in view!: ' + gifSrc);
-                $($gifParent).height('auto');
-                
-                elem.src = gifSrc;
-            } else {
-                console.log('endNav out of view!: ' + gifSrc);
-                srcHeight = $(elem).height();
-                $($gifParent).height(srcHeight);
-                elem.src = "";
-            }
-        });
-
-    });
-
-
-    function getViewportHeight() {
-        var height = window.innerHeight; // Safari, Opera
-        var mode = document.compatMode;
-
-        if ( (mode || !$.support.boxModel) ) { // IE, Gecko
-            height = (mode == 'CSS1Compat') ?
-            document.documentElement.clientHeight : // Standards
-            document.body.clientHeight; // Quirks
-        }
-
-        return height;
-    }
-
-    var vpH, 
-        scrolltop,
-        winHeight = $(window).height();
-
-    $(window).scroll(function () {
-            vpH = getViewportHeight(),
-            scrolltop = (document.documentElement.scrollTop ?
-                document.documentElement.scrollTop :
-                document.body.scrollTop);
-    });
-
-    blockInView = function(elem) {
-        var $el = $(elem),
-            top = $el.offset().top,
-            height = $el.height(),
-            bottom = top + height;
-
-            var name = getName(elem);
-            console.log(name);
-            console.log(top, winHeight, bottom, scrolltop);
-        
-            return ( (top <= scrolltop + winHeight) && (bottom >= scrolltop) );
-    }
+    //         return ( (top <= scrolltop + winHeight) && (bottom >= scrolltop) );
+    // }
 
 
 
-    // TRIGGER FUNCTION ON WINDOW AT DOCUMENT READY
-	// $(window).trigger('scroll');
+    
 
     // SET INTERVAL TO SEE IF THERE ARE ANY INVISIBLE ELEMENTS ON THE PAGE
     // setInterval(function() {
@@ -532,5 +467,8 @@ jQuery(document).ready(function($) {
     //     });
         
     // }, 2000);
+    
+    // TRIGGER FUNCTION ON WINDOW AT DOCUMENT READY
+    $(window).trigger('scroll');
 
 });
