@@ -51,6 +51,16 @@ function triggerGif(gif){
     }
 }
 
+// UNLOADIMG
+function unLoadImgSrc(img){
+    return img.src = '';
+}
+
+// UNLOADIMG
+function loadImgSrc(img, src){
+    return img.src = src;
+}
+
 // NUMBER TICKER
 jQuery.fn.jQuerySimpleCounter = function( options ) {
     var settings = jQuery.extend({

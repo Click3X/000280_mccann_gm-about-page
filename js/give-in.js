@@ -414,6 +414,51 @@ jQuery(document).ready(function($) {
 	});
 
 
+    // GIF 
+    // var tzGif = $('img[src="img/pages/people/time-zones.gif"]');
+    // console.log('This is tzGif: ' + tzGif);
+    // console.dir(tzGif);
+
+    // $(tzGif).bind('inview', function (event, visible) {
+    //     if (visible == true) {
+    //         console.log('endNav in view!: tz-gif');
+    //         tzGif.get(0).src="img/pages/people/time-zones.gif";
+    //     } else {
+    //         console.log('endNav out of view!: tz-gif');
+    //         tzGif.get(0).src="";
+    //     }
+    // });
+
+
+    var gifs = $('img[src$=".gif"]');
+
+    $.each(gifs, function(i, elem) {
+        
+        var gifSrc = elem.src,
+            srcHeight = $(elem).height(),
+            gifParent = $(elem).parent();
+
+
+        var $gifParent = $(gifParent).get(0);
+        
+
+        $(elem).bind('inview', function (event, visible) {
+            if (visible == true) {
+                console.log('endNav in view!: ' + gifSrc);
+                $($gifParent).height('auto');
+                
+                elem.src = gifSrc;
+            } else {
+                console.log('endNav out of view!: ' + gifSrc);
+                srcHeight = $(elem).height();
+                $($gifParent).height(srcHeight);
+                elem.src = "";
+            }
+        });
+
+    });
+
+
     function getViewportHeight() {
         var height = window.innerHeight; // Safari, Opera
         var mode = document.compatMode;
@@ -457,21 +502,21 @@ jQuery(document).ready(function($) {
 	// $(window).trigger('scroll');
 
     // SET INTERVAL TO SEE IF THERE ARE ANY INVISIBLE ELEMENTS ON THE PAGE
-    setInterval(function() {
-        // CHECK IF THERE ARE BLOCKS ON CURRENT PAGE
-        console.log('Checking blocks on interval');
-        // console.log('I am currentPage: ' + currentPage);
-        // $(window).trigger('scroll');
-        $.each(blocks, function(i, elem) {
-            // console.log('This is block:');
-            // console.dir(elem);
-            if( blockInView(elem) ) {
-                var name = getName(elem);
-                console.log('This is in biew blck name from blockk in view: ' + name);
-                $(elem).removeClass('invisible').addClass('element-in-view');
-            }
-        });
+    // setInterval(function() {
+    //     // CHECK IF THERE ARE BLOCKS ON CURRENT PAGE
+    //     console.log('Checking blocks on interval');
+    //     // console.log('I am currentPage: ' + currentPage);
+    //     // $(window).trigger('scroll');
+    //     $.each(blocks, function(i, elem) {
+    //         // console.log('This is block:');
+    //         // console.dir(elem);
+    //         if( blockInView(elem) ) {
+    //             var name = getName(elem);
+    //             console.log('This is in biew blck name from blockk in view: ' + name);
+    //             $(elem).removeClass('invisible').addClass('element-in-view');
+    //         }
+    //     });
         
-    }, 2000);
+    // }, 2000);
 
 });
