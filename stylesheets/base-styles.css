@@ -3980,7 +3980,8 @@ h4.c3xgm-about-h {
     font-size: 13.697113vw;
     /*width: 114px;*/
     width: 110px;
-    width:0.9em;
+    /*width:0.9em;*/
+    width:1.1em;
     text-align: left;
   }
 
