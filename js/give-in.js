@@ -172,25 +172,25 @@ jQuery(document).ready(function($) {
     	allAnimatedElements = [pages, sections, endNav, blocks, ourPeopleBlocks];
 
     // HIDE ANIMATED ELEMENTS
-    // $(pages).addClass('invisible');
+    $(pages).addClass('invisible');
 
-    // $.each(allAnimatedElements, function(i,elem) {
-    // 	$(this).addClass('invisible');
+    $.each(allAnimatedElements, function(i,elem) {
+    	$(this).addClass('invisible');
+    });
+
+
+
+    // $.each(blocks, function(i,elem) {
+    //     $(this).addClass('element-in-view');
     // });
 
+    // $.each(pages, function(i,elem) {
+    //     $(this).addClass('c3xgm-about-page-in-view');
+    // });
 
-
-    $.each(blocks, function(i,elem) {
-        $(this).addClass('element-in-view');
-    });
-
-    $.each(pages, function(i,elem) {
-        $(this).addClass('c3xgm-about-page-in-view');
-    });
-
-    $.each(sections, function(i,elem) {
-        $(this).addClass('c3xgm-about-page-in-view');
-    });
+    // $.each(sections, function(i,elem) {
+    //     $(this).addClass('c3xgm-about-page-in-view');
+    // });
 
 
 
