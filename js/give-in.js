@@ -120,6 +120,7 @@ jQuery(document).ready(function($) {
         }
     }
 
+
     fireOurPeopleAnimations = function(page) {
     	var time;
         $.each(ourPeopleBlocks, function(i, val) {

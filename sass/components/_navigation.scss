@@ -135,3 +135,11 @@
 		}
 	}
 }
+
+
+// SHOW NAV
+.show-nav {
+	opacity: 1; 
+	display: block;
+	@include prefix(transition, opacity 50ms);
+}
