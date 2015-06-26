@@ -232,10 +232,9 @@ jQuery(document).ready(function($) {
 			// console.dir(this);
 
 			// IF CURRENT PAGE == OUR PEOPLE (1) - THEN FIRE OFF ANIMATIONS
-			if(currentPage == 1) {
-				fireOurPeopleAnimations();
-			}
-			
+			// if(currentPage == 1) {
+			// 	fireOurPeopleAnimations();
+			// }
             
 
 		} else {
