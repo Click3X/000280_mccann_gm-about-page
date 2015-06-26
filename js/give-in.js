@@ -427,42 +427,28 @@ jQuery(document).ready(function($) {
         return height;
     }
 
-    var vpH = getViewportHeight(),
+    var vpH, 
+        scrolltop,
+        winHeight = $(window).height();
+
+    $(window).scroll(function () {
+            vpH = getViewportHeight(),
             scrolltop = (document.documentElement.scrollTop ?
                 document.documentElement.scrollTop :
-                document.body.scrollTop),
+                document.body.scrollTop);
+    });
 
     blockInView = function(elem) {
         var $el = $(elem),
             top = $el.offset().top,
             height = $el.height(),
-            inview = $el.data('inview') || false;
+            bottom = top + height;
 
             var name = getName(elem);
-
-            // console.log('This is scrolltop:' + scrolltop);
-            // console.log('This is top:' + top);
-            // console.log('This is height:' + height);
-            // console.log('This is inview:' + inview);
-
-        // if (scrolltop > (top + height) || scrolltop + vpH < top) {
-            if (inview) {
-                // $el.data('inview', false);
-                // $el.trigger('inview', [ false ]);
-                console.log('I am in view');
-                console.log(name);
-                // console.dir($el);
-                $el.removeClass('invisible').addClass('element-in-view');
-                // console.dir($el);
-            // }
-        }
-        // } else if (scrolltop < (top + height)) {
-        //     if (!inview) {
-        //         $el.data('inview', true);
-        //         $el.trigger('inview', [ true ]);
-        //         // console.log('I am out of view');
-        //     }
-        // }    
+            console.log(name);
+            console.log(top, winHeight, bottom, scrolltop);
+        
+            return ( (top <= scrolltop + winHeight) && (bottom >= scrolltop) );
     }
 
 
@@ -479,7 +465,11 @@ jQuery(document).ready(function($) {
         $.each(blocks, function(i, elem) {
             // console.log('This is block:');
             // console.dir(elem);
-            blockInView(elem);
+            if( blockInView(elem) ) {
+                var name = getName(elem);
+                console.log('This is in biew blck name from blockk in view: ' + name);
+                $(elem).removeClass('invisible').addClass('element-in-view');
+            }
         });
         
     }, 2000);
