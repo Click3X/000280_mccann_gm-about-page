@@ -153,13 +153,13 @@ jQuery(document).ready(function($) {
 
     $('.c3xgm-about-main-nav a[href*=#]:not([href=#]), a.c3xgm-about-down-arrow-link, .c3xgm-about-end-nav a[href*=#]:not([href=#])').on('click touchend', function() {
         var _t = this;
-        console.log('THis is this _t: ' + _t);
+        // console.log('THis is this _t: ' + _t);
 
         var curLink = $('.c3xgm-about-main-nav > li a').index( $(this) ),
             oldLink = $('.c3xgm-about-main-nav li a').index( $('.c3xgm-about-nav-bullet-active') );
 
-        console.log('This is oldLInk' + oldLink);
-        console.log('This is curLInk' + curLink);
+        // console.log('This is oldLInk' + oldLink);
+        // console.log('This is curLInk' + curLink);
 
         // MAKE NAV CLICK SCROLLING TRUE - THIS IS A HOOK TO DISABLE OTHER MENU SCROLL CHECKS
         navClickScrolling = true;
@@ -191,7 +191,7 @@ jQuery(document).ready(function($) {
                         $navBullets.removeClass('c3xgm-about-nav-bullet-active');    
                     }
                     
-                    console.log('I am adding active class!');
+                    // console.log('I am adding active class!');
                     $(_t).addClass('c3xgm-about-nav-bullet-active');
                     navClickScrolling = false;
                 }));
@@ -201,7 +201,7 @@ jQuery(document).ready(function($) {
         }
     });
 
-    console.log('This is from give in:');
+    // console.log('This is from give in:');
 
     // // DECLARE VARS
     var currentPage = 0,
@@ -245,8 +245,8 @@ jQuery(document).ready(function($) {
     // console.dir(blocks);
     // console.log('These are your sliders:');
     // console.dir(sliders);
-    console.log('These are your triggers:');
-    console.dir(triggers);
+    // console.log('These are your triggers:');
+    // console.dir(triggers);
 
     // ADD BLOCKS TO pages objectsd
 
@@ -260,9 +260,9 @@ jQuery(document).ready(function($) {
 			// UPDATE CURRENT PAGE
 			currentPage = $(pages).index( $(this) );
 
-			console.log('PAGE in view!: ' + name);
-			console.log('This is currentPage: ' + currentPage);
-			console.dir(this);
+			// console.log('PAGE in view!: ' + name);
+			// console.log('This is currentPage: ' + currentPage);
+			// console.dir(this);
 
 			// IF CURRENT PAGE == OUR PEOPLE (1) - THEN FIRE OFF ANIMATIONS
 			if(currentPage == 1) {
@@ -281,8 +281,8 @@ jQuery(document).ready(function($) {
 			$(this).removeClass('invisible').addClass('c3xgm-about-page-in-view'); 
 
 		} else {
-			console.log('PAGE out of view!: ' + name);
-			console.dir(this);
+			// console.log('PAGE out of view!: ' + name);
+			// console.dir(this);
 		}
 	});
 
@@ -295,17 +295,17 @@ jQuery(document).ready(function($) {
 			// UPDATE CURRENT SECTION
 			currentSection = $(sections).index( $(this) );
 
-			console.log('Section in view!: ' + name);
-			console.log('This is currentSection: ' + currentSection);
-			console.dir(this);
+			// console.log('Section in view!: ' + name);
+			// console.log('This is currentSection: ' + currentSection);
+			// console.dir(this);
 			
 			// UNHIGHTLIGHT CURRENT SUB NAV BULLET
 			$(".c3xgm-about-main-nav-sub .c3xgm-about-nav-bullet-active").removeClass("c3xgm-about-nav-bullet-active");
 			
 			// HIGHLIGHT SUB NAV BULLET
 			var subNavLink = $('a[href="'+id+'"]');
-			console.log('This is subNavLink: ' + subNavLink);
-			console.dir(subNavLink);
+			// console.log('This is subNavLink: ' + subNavLink);
+			// console.dir(subNavLink);
 
 			$(subNavLink).eq(0).addClass("c3xgm-about-nav-bullet-active");
 			
@@ -313,8 +313,8 @@ jQuery(document).ready(function($) {
 			$(this).removeClass('invisible').addClass('c3xgm-about-page-in-view');
 
 		} else {
-			console.log('SECTION out of view!: ' + name);
-			console.dir(this);
+			// console.log('SECTION out of view!: ' + name);
+			// console.dir(this);
 		}
 	});
 
@@ -322,10 +322,10 @@ jQuery(document).ready(function($) {
     $(triggers).bind('inview', function (event, visible) {
     	var name = getName(this);
 		if ( (visible == true) && (navClickScrolling !== true) ) {
-			console.log('TRIGGER in view!: ' + name);
+			// console.log('TRIGGER in view!: ' + name);
 			$(this).addClass('animate-flag-line');
 		} else {
-			console.log('TRIGGER out of view!: ' + name);
+			// console.log('TRIGGER out of view!: ' + name);
 			$(this).removeClass('animate-flag-line');
 		}
 	});
@@ -336,10 +336,10 @@ jQuery(document).ready(function($) {
         $(mobileTriggers).bind('inview', function (event, visible) {
             var name = getName(this);
             if ( (visible == true) && (navClickScrolling !== true) ) {
-                console.log('MOBILE TRIGGER in view!: ' + name);
+                // console.log('MOBILE TRIGGER in view!: ' + name);
                 $(this).addClass('animate-flag-line');
             } else {
-                console.log('MOBILE TRIGGER out of view!: ' + name);
+                // console.log('MOBILE TRIGGER out of view!: ' + name);
                 $(this).removeClass('animate-flag-line');
             }
         });        
@@ -350,7 +350,7 @@ jQuery(document).ready(function($) {
 	$(sliders).bind('inview', function (event, visible) {
     	var name = this.className.split(" ")[1];
 		if ( (visible == true) && (navClickScrolling == false) ) {
-			console.log('SLIDER in view!: ' + name);
+			// console.log('SLIDER in view!: ' + name);
 			if(name == 'c3xgm-about-module-car') {
 				setTimeout(function() {
                     autorotateAboutSliderOnce();
@@ -374,7 +374,7 @@ jQuery(document).ready(function($) {
 				}, 1000);
 			}
 		} else {
-			console.log('SLIDER out of view!: ' + name);
+			// console.log('SLIDER out of view!: ' + name);
 			if(name == 'c3xgm-about-module-car') {
 				killAutoRotateAboutSlider();
 			} else if(name == 'c3xgm-about-module-technology') {
@@ -390,10 +390,10 @@ jQuery(document).ready(function($) {
     $(blocks).bind('inview', function (event, visible) {
     	var name = getName(this);
 		if (visible == true) {
-			console.log('BLOCK in view!: ' + name);
+			// console.log('BLOCK in view!: ' + name);
 			$(this).removeClass('invisible').addClass('element-in-view');
 		} else {
-			console.log('BLOCK out of view!: ' + name);
+			// console.log('BLOCK out of view!: ' + name);
 		}
 	});
 
@@ -402,10 +402,10 @@ jQuery(document).ready(function($) {
     $(endNav).bind('inview', function (event, visible) {
     	var name = getName(this);
 		if (visible == true) {
-			console.log('endNav in view!: ' + name);
+			// console.log('endNav in view!: ' + name);
 			$(this).removeClass('invisible').addClass('c3xgm-about-page-in-view');
 		} else {
-			console.log('endNav out of view!: ' + name);
+			// console.log('endNav out of view!: ' + name);
 		}
 	});
 

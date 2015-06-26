@@ -193,7 +193,7 @@ jQuery(document).ready(function($) {
 
 //AUTO ROTATE ABOUT SLIDER
 function autorotateAboutSlider(){
-   console.log("autorotateAboutSlider");
+   // console.log("autorotateAboutSlider");
 
     if(!aboutSlideInterval){
         aboutSlideInterval = setInterval(function(){
@@ -209,7 +209,7 @@ function autorotateAboutSliderOnce(){
 }
 
 function killAutoRotateAboutSlider(){
-	console.log("killAutoRotateAboutSlider");
+	// console.log("killAutoRotateAboutSlider");
 
     clearInterval(aboutSlideInterval);
     aboutSlideInterval = null;
@@ -217,7 +217,7 @@ function killAutoRotateAboutSlider(){
 
 //AUTO ROTATE TECH SLIDER
 function autorotateTechSlider(){
-	console.log("autorotateTechSlider");
+	// console.log("autorotateTechSlider");
 
     if(!techSlideInterval){
         techSlideInterval = setInterval(function(){
@@ -233,7 +233,7 @@ function autorotateTechSliderOnce(){
 }
 
 function killAutoRotateTechSlider(){
-	console.log("killAutoRotateTechSlider");
+	// console.log("killAutoRotateTechSlider");
 
     clearInterval(techSlideInterval);
     techSlideInterval = null;
@@ -241,7 +241,7 @@ function killAutoRotateTechSlider(){
 
 //AUTO ROTATE FOUNDATION SLIDER
 function autorotateFoundationSlider(){
-	console.log("autorotateFoundationSlider");
+	// console.log("autorotateFoundationSlider");
 
     if(!foundationSlideInterval){
         foundationSlideInterval = setInterval(function(){
@@ -255,7 +255,7 @@ function autorotateFoundationSliderOnce(){
 	  $( foundationLinks[currentFoundationSlide] ).eq(0).trigger("click", true);
 }
 function killAutoRotateFoundationSlider(){
-	console.log("killAutoRotateFoundationSlider");
+	// console.log("killAutoRotateFoundationSlider");
 
     clearInterval(foundationSlideInterval);
     foundationSlideInterval = null;
