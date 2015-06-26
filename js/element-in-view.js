@@ -27,8 +27,6 @@
                     document.documentElement.scrollTop :
                     document.body.scrollTop),
                 elems = [];
-
-                console.log('This is vpH: ' + vpH);
             
             // naughty, but this is how it knows which elements to check for
             $.each($.cache, function () {

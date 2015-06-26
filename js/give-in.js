@@ -172,25 +172,25 @@ jQuery(document).ready(function($) {
     	allAnimatedElements = [pages, sections, endNav, blocks, ourPeopleBlocks];
 
     // HIDE ANIMATED ELEMENTS
-    $(pages).addClass('invisible');
+    // $(pages).addClass('invisible');
 
-    $.each(allAnimatedElements, function(i,elem) {
-    	$(this).addClass('invisible');
+    // $.each(allAnimatedElements, function(i,elem) {
+    // 	$(this).addClass('invisible');
+    // });
+
+
+
+    $.each(blocks, function(i,elem) {
+        $(this).addClass('element-in-view');
     });
 
+    $.each(pages, function(i,elem) {
+        $(this).addClass('c3xgm-about-page-in-view');
+    });
 
-
-    // $.each(blocks, function(i,elem) {
-    //     $(this).addClass('element-in-view');
-    // });
-
-    // $.each(pages, function(i,elem) {
-    //     $(this).addClass('c3xgm-about-page-in-view');
-    // });
-
-    // $.each(sections, function(i,elem) {
-    //     $(this).addClass('c3xgm-about-page-in-view');
-    // });
+    $.each(sections, function(i,elem) {
+        $(this).addClass('c3xgm-about-page-in-view');
+    });
 
 
 
@@ -207,7 +207,7 @@ jQuery(document).ready(function($) {
 
     // BIND NAV UPDATE TO PAGES WHEN IN VIEW
     // PAGE AND NAV FUNCTIONALITY
-    $(pages).bine('inview', function (event, visible) {
+    $(pages).bind('inview', function (event, visible) {
     	var name = getName(this), 
     		id = '#'+name;
 
@@ -217,7 +217,7 @@ jQuery(document).ready(function($) {
 
             // ONLY CHANGE NAV HIGHLIGHTS IF MENU BUTTONS WERENT CLICKED
             // if(!navClickScrolling == true) {
-                // UNHIGHTLIGHT CURRENT NAV BULLET]
+                // UNHIGHTLIGHT CURRENT NAV BULLET
             $(".c3xgm-about-main-nav > li > a.c3xgm-about-nav-bullet-active").removeClass("c3xgm-about-nav-bullet-active");
             // HIGHLIGHT NAV BULLET
             $(navLinks.eq(currentPage)).addClass("c3xgm-about-nav-bullet-active");
@@ -232,10 +232,11 @@ jQuery(document).ready(function($) {
 			// console.dir(this);
 
 			// IF CURRENT PAGE == OUR PEOPLE (1) - THEN FIRE OFF ANIMATIONS
-			// if(currentPage == 1) {
-			// 	fireOurPeopleAnimations();
-			// }
+			if(currentPage == 1) {
+				fireOurPeopleAnimations();
+			}
 			
+            
 
 		} else {
 			console.log('PAGE out of view!: ' + name);
@@ -244,8 +245,7 @@ jQuery(document).ready(function($) {
 	});
 
     // SECTIONS
-	// $(sections).bind('inview', function (event, visible) {
-    $(sections).one('inview', function (event, visible) {
+	$(sections).bind('inview', function (event, visible) {
     	var name = getName(this), 
     		id = '#'+name;
 
@@ -351,7 +351,7 @@ jQuery(document).ready(function($) {
 
 
 	// BLOCKS
-    $(blocks).one('inview', function (event, visible) {
+    $(blocks).bind('inview', function (event, visible) {
     	var name = getName(this);
 		if (visible == true) {
 			console.log('BLOCK in view!: ' + name);
@@ -364,7 +364,7 @@ jQuery(document).ready(function($) {
 
 
 	// END NAV
-    $(endNav).one('inview', function (event, visible) {
+    $(endNav).bind('inview', function (event, visible) {
     	var name = getName(this);
 		if (visible == true) {
 			// console.log('endNav in view!: ' + name);
@@ -376,7 +376,20 @@ jQuery(document).ready(function($) {
 	});
 
 
+    // GIF 
+    // var tzGif = $('img[src="img/pages/people/time-zones.gif"]');
+    // console.log('This is tzGif: ' + tzGif);
+    // console.dir(tzGif);
 
+    // $(tzGif).bind('inview', function (event, visible) {
+    //     if (visible == true) {
+    //         console.log('endNav in view!: tz-gif');
+    //         tzGif.get(0).src="img/pages/people/time-zones.gif";
+    //     } else {
+    //         console.log('endNav out of view!: tz-gif');
+    //         tzGif.get(0).src="";
+    //     }
+    // });
 
 
     // var gifs = $('img[src$=".gif"]');
@@ -447,7 +460,8 @@ jQuery(document).ready(function($) {
 
 
 
-    
+    // TRIGGER FUNCTION ON WINDOW AT DOCUMENT READY
+	// $(window).trigger('scroll');
 
     // SET INTERVAL TO SEE IF THERE ARE ANY INVISIBLE ELEMENTS ON THE PAGE
     // setInterval(function() {
@@ -466,8 +480,5 @@ jQuery(document).ready(function($) {
     //     });
         
     // }, 2000);
-    
-    // TRIGGER FUNCTION ON WINDOW AT DOCUMENT READY
-    $(window).trigger('scroll');
 
 });
