@@ -263,28 +263,28 @@ jQuery(document).ready(function($) {
             // ONLY CHANGE NAV HIGHLIGHTS IF MENU BUTTONS WERENT CLICKED
             // if(!navClickScrolling == true) {
                 // UNHIGHTLIGHT CURRENT NAV BULLET
-                $(".c3xgm-about-main-nav > li > a.c3xgm-about-nav-bullet-active").removeClass("c3xgm-about-nav-bullet-active");
-                // HIGHLIGHT NAV BULLET
-                $(navLinks.eq(currentPage)).addClass("c3xgm-about-nav-bullet-active");
+            $(".c3xgm-about-main-nav > li > a.c3xgm-about-nav-bullet-active").removeClass("c3xgm-about-nav-bullet-active");
+            // HIGHLIGHT NAV BULLET
+            $(navLinks.eq(currentPage)).addClass("c3xgm-about-nav-bullet-active");
             // }/
 
             // ADD PAGE IN VIEW CLASS
             $(this).removeClass('invisible').addClass('c3xgm-about-page-in-view'); 
 
-			// console.log('PAGE in view!: ' + name);
-			// console.log('This is currentPage: ' + currentPage);
+			console.log('PAGE in view!: ' + name);
+			console.log('This is currentPage: ' + currentPage);
 			// console.dir(this);
 
 			// IF CURRENT PAGE == OUR PEOPLE (1) - THEN FIRE OFF ANIMATIONS
-			// if(currentPage == 1) {
-			// 	fireOurPeopleAnimations();
-			// }
+			if(currentPage == 1) {
+				fireOurPeopleAnimations();
+			}
 			
             
 
 		} else {
-			// console.log('PAGE out of view!: ' + name);
-			// console.dir(this);
+			console.log('PAGE out of view!: ' + name);
+			console.dir(this);
 		}
 	});
 
@@ -297,8 +297,8 @@ jQuery(document).ready(function($) {
 			// UPDATE CURRENT SECTION
 			currentSection = $(sections).index( $(this) );
 
-			// console.log('Section in view!: ' + name);
-			// console.log('This is currentSection: ' + currentSection);
+			console.log('Section in view!: ' + name);
+			console.log('This is currentSection: ' + currentSection);
 			// console.dir(this);
 			
 			// UNHIGHTLIGHT CURRENT SUB NAV BULLET
@@ -315,19 +315,20 @@ jQuery(document).ready(function($) {
 			$(this).removeClass('invisible').addClass('c3xgm-about-page-in-view');
 
 		} else {
-			// console.log('SECTION out of view!: ' + name);
-			// console.dir(this);
+			console.log('SECTION out of view!: ' + name);
+			console.dir(this);
 		}
 	});
 
     // TRIGGERS -- ANIMATING FLAG LINE - SOLAR ROAD
     $(triggers).bind('inview', function (event, visible) {
     	var name = getName(this);
-		if ( (visible == true) && (navClickScrolling !== true) ) {
-			// console.log('TRIGGER in view!: ' + name);
+        if ( (visible == true) {
+		// if ( (visible == true) && (navClickScrolling !== true) ) {
+			console.log('TRIGGER in view!: ' + name);
 			$(this).addClass('animate-flag-line');
 		} else {
-			// console.log('TRIGGER out of view!: ' + name);
+			console.log('TRIGGER out of view!: ' + name);
 			$(this).removeClass('animate-flag-line');
 		}
 	});
@@ -337,11 +338,12 @@ jQuery(document).ready(function($) {
      // MOBILE TRIGGERS -- ANIMATING FLAG LINE - SOLAR ROAD
         $(mobileTriggers).bind('inview', function (event, visible) {
             var name = getName(this);
-            if ( (visible == true) && (navClickScrolling !== true) ) {
-                // console.log('MOBILE TRIGGER in view!: ' + name);
+            if ( visible == true ) {
+            // if ( (visible == true) && (navClickScrolling !== true) ) {
+                console.log('MOBILE TRIGGER in view!: ' + name);
                 $(this).addClass('animate-flag-line');
             } else {
-                // console.log('MOBILE TRIGGER out of view!: ' + name);
+                console.log('MOBILE TRIGGER out of view!: ' + name);
                 $(this).removeClass('animate-flag-line');
             }
         });        
@@ -352,7 +354,7 @@ jQuery(document).ready(function($) {
 	$(sliders).bind('inview', function (event, visible) {
     	var name = this.className.split(" ")[1];
 		if ( (visible == true) && (navClickScrolling == false) ) {
-			// console.log('SLIDER in view!: ' + name);
+			console.log('SLIDER in view!: ' + name);
 			if(name == 'c3xgm-about-module-car') {
 				setTimeout(function() {
                     autorotateAboutSliderOnce();
@@ -392,10 +394,10 @@ jQuery(document).ready(function($) {
     $(blocks).bind('inview', function (event, visible) {
     	var name = getName(this);
 		if (visible == true) {
-			// console.log('BLOCK in view!: ' + name);
+			console.log('BLOCK in view!: ' + name);
 			$(this).removeClass('invisible').addClass('element-in-view');
 		} else {
-			// console.log('BLOCK out of view!: ' + name);
+			console.log('BLOCK out of view!: ' + name);
 		}
 	});
 
@@ -407,14 +409,14 @@ jQuery(document).ready(function($) {
 			// console.log('endNav in view!: ' + name);
 			$(this).removeClass('invisible').addClass('c3xgm-about-page-in-view');
 		} else {
-			// console.log('endNav out of view!: ' + name);
+			console.log('endNav out of view!: ' + name);
 		}
 	});
 
 
 
     // TRIGGER FUNCTION ON WINDOW AT DOCUMENT READY
-	$(window).trigger('scroll');
+	// $(window).trigger('scroll');
 
     // SET INTERVAL TO SEE IF THERE ARE ANY INVISIBLE ELEMENTS ON THE PAGE
     // setInterval(function() {
