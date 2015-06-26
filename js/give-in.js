@@ -207,7 +207,7 @@ jQuery(document).ready(function($) {
 
     // BIND NAV UPDATE TO PAGES WHEN IN VIEW
     // PAGE AND NAV FUNCTIONALITY
-    $(pages).one('inview', function (event, visible) {
+    $(pages).bine('inview', function (event, visible) {
     	var name = getName(this), 
     		id = '#'+name;
 
@@ -217,7 +217,7 @@ jQuery(document).ready(function($) {
 
             // ONLY CHANGE NAV HIGHLIGHTS IF MENU BUTTONS WERENT CLICKED
             // if(!navClickScrolling == true) {
-                // UNHIGHTLIGHT CURRENT NAV BULLET
+                // UNHIGHTLIGHT CURRENT NAV BULLET]
             $(".c3xgm-about-main-nav > li > a.c3xgm-about-nav-bullet-active").removeClass("c3xgm-about-nav-bullet-active");
             // HIGHLIGHT NAV BULLET
             $(navLinks.eq(currentPage)).addClass("c3xgm-about-nav-bullet-active");
@@ -232,11 +232,10 @@ jQuery(document).ready(function($) {
 			// console.dir(this);
 
 			// IF CURRENT PAGE == OUR PEOPLE (1) - THEN FIRE OFF ANIMATIONS
-			if(currentPage == 1) {
-				fireOurPeopleAnimations();
-			}
+			// if(currentPage == 1) {
+			// 	fireOurPeopleAnimations();
+			// }
 			
-            
 
 		} else {
 			console.log('PAGE out of view!: ' + name);
