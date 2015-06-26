@@ -323,7 +323,7 @@ jQuery(document).ready(function($) {
     // TRIGGERS -- ANIMATING FLAG LINE - SOLAR ROAD
     $(triggers).bind('inview', function (event, visible) {
     	var name = getName(this);
-        if ( (visible == true) {
+        if (visible == true) {
 		// if ( (visible == true) && (navClickScrolling !== true) ) {
 			console.log('TRIGGER in view!: ' + name);
 			$(this).addClass('animate-flag-line');
@@ -353,7 +353,7 @@ jQuery(document).ready(function($) {
     // SLIDERS
 	$(sliders).bind('inview', function (event, visible) {
     	var name = this.className.split(" ")[1];
-		if ( (visible == true) && (navClickScrolling == false) ) {
+		if(visible == true) {
 			console.log('SLIDER in view!: ' + name);
 			if(name == 'c3xgm-about-module-car') {
 				setTimeout(function() {
