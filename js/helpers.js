@@ -32,9 +32,9 @@ if(mobile) {
         // console.log('This is element Src: ' + element.src);
         // console.log('This is window Width: ' + $(window).width() );
 
-        // if( (element.src != 'chinaflag.gif') && ($(window).width() < 768) ) {
+        if( (element.src != 'chinaflag.gif') && ($(window).width() < 768) ) {
             element.src = element.src.replace('.gif','.svg');
-        // } 
+        } 
 
     });
 }
