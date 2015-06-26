@@ -13,9 +13,9 @@ var mobile = false;
 if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
     mobile = true;
 
-    jQuery('body').addClass('c3xgm-about-mobile-device');
+    // jQuery('body').addClass('c3xgm-about-mobile-device');
 } else {
-    jQuery('body').addClass('c3xgm-about-desktop-device');
+    // jQuery('body').addClass('c3xgm-about-desktop-device');
 }
 
 console.log('This is mobile: ' + mobile);
