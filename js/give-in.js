@@ -260,15 +260,6 @@ jQuery(document).ready(function($) {
 			// UPDATE CURRENT PAGE
 			currentPage = $(pages).index( $(this) );
 
-			// console.log('PAGE in view!: ' + name);
-			// console.log('This is currentPage: ' + currentPage);
-			// console.dir(this);
-
-			// IF CURRENT PAGE == OUR PEOPLE (1) - THEN FIRE OFF ANIMATIONS
-			if(currentPage == 1) {
-				fireOurPeopleAnimations();
-			}
-			
             // ONLY CHANGE NAV HIGHLIGHTS IF MENU BUTTONS WERENT CLICKED
             // if(!navClickScrolling == true) {
                 // UNHIGHTLIGHT CURRENT NAV BULLET
@@ -277,8 +268,19 @@ jQuery(document).ready(function($) {
                 $(navLinks.eq(currentPage)).addClass("c3xgm-about-nav-bullet-active");
             // }/
 
-			// ADD PAGE IN VIEW CLASS
-			$(this).removeClass('invisible').addClass('c3xgm-about-page-in-view'); 
+            // ADD PAGE IN VIEW CLASS
+            $(this).removeClass('invisible').addClass('c3xgm-about-page-in-view'); 
+
+			// console.log('PAGE in view!: ' + name);
+			// console.log('This is currentPage: ' + currentPage);
+			// console.dir(this);
+
+			// IF CURRENT PAGE == OUR PEOPLE (1) - THEN FIRE OFF ANIMATIONS
+			// if(currentPage == 1) {
+			// 	fireOurPeopleAnimations();
+			// }
+			
+            
 
 		} else {
 			// console.log('PAGE out of view!: ' + name);
