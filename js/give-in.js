@@ -414,4 +414,13 @@ jQuery(document).ready(function($) {
     // TRIGGER FUNCTION ON WINDOW AT DOCUMENT READY
 	$(window).trigger('scroll');
 
+    // SET INTERVAL TO SEE IF THERE ARE ANY INVISIBLE ELEMENTS ON THE PAGE
+    setInterval(function() {
+        // CHECK IF THERE ARE BLOCKS ON CURRENT PAGE
+        console.log('I am triggering scroll');
+        console.log('I am currentPage: ' + currentPage);
+        $(window).trigger('scroll');
+        
+    }, 2000);
+
 });
