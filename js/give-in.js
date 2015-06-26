@@ -222,6 +222,7 @@ jQuery(document).ready(function($) {
     	blocks = $('.c3xgm-about-block').not('.c3xgm-about-solar-panels-animation, .c3xgm-about-test-facility, #c3xgm-about-page-our-people .c3xgm-about-block'),
     	sliders = $('.c3xgm-about-module-foundation, .c3xgm-about-module-technology, .c3xgm-about-module-car'),
     	triggers = $('#animate-flag-line, #c3xgm-about-solar-road-list'),
+        mobileTriggers = $('#c3xgm-about-red-car, #c3xgm-about-grey-van'),
     	ourPeopleBlocks = $('#c3xgm-about-page-our-people .c3xgm-about-block');
     	allAnimatedElements = [pages, sections, endNav, blocks, ourPeopleBlocks];
 
@@ -240,8 +241,8 @@ jQuery(document).ready(function($) {
     // console.dir(blocks);
     // console.log('These are your sliders:');
     // console.dir(sliders);
-    // console.log('These are your triggers:');
-    // console.dir(triggers);
+    console.log('These are your triggers:');
+    console.dir(triggers);
 
     // ADD BLOCKS TO pages objectsd
 
@@ -324,6 +325,21 @@ jQuery(document).ready(function($) {
 			$(this).removeClass('animate-flag-line');
 		}
 	});
+
+    // ONLY BIND MOBILE TRIGGERS IF MOBILE
+    if(mobile) {
+     // MOBILE TRIGGERS -- ANIMATING FLAG LINE - SOLAR ROAD
+        $(mobileTriggers).bind('inview', function (event, visible) {
+            var name = getName(this);
+            if (visible == true) {
+                console.log('MOBILE TRIGGER in view!: ' + name);
+                $(this).addClass('animate-flag-line');
+            } else {
+                console.log('MOBILE TRIGGER out of view!: ' + name);
+                $(this).removeClass('animate-flag-line');
+            }
+        });        
+    }
 
 
     // SLIDERS

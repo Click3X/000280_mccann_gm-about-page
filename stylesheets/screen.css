@@ -1814,11 +1814,6 @@ Stylesheet: Helpers
 /* line 39, ../sass/partials/_mobile-gif-backups.scss */
 .c3xgm-about-mobile-device .c3xgm-about-decorative.c3xgm-about-red-car-road #c3xgm-about-red-car {
   right: -380px;
-  -webkit-animation-fill-mode: both;
-  -moz-animation-fill-mode: both;
-  -o-animation-fill-mode: both;
-  -ms-animation-fill-mode: both;
-  animation-fill-mode: both;
   -webkit-animation-name: moveCarLeft;
   -moz-animation-name: moveCarLeft;
   -o-animation-name: moveCarLeft;
@@ -1845,18 +1840,21 @@ Stylesheet: Helpers
   -ms-animation-iteration-count: infinite;
   animation-iteration-count: infinite;
 }
-/* line 54, ../sass/partials/_mobile-gif-backups.scss */
-.c3xgm-about-mobile-device .c3xgm-about-flag-line-container #c3xgm-about-flag-line-grey-car {
-  margin: 0 auto;
-}
-/* line 62, ../sass/partials/_mobile-gif-backups.scss */
-.c3xgm-about-mobile-device .c3xgm-about-grey-top {
-  left: -380px;
+/* line 47, ../sass/partials/_mobile-gif-backups.scss */
+.c3xgm-about-mobile-device .c3xgm-about-decorative.c3xgm-about-red-car-road #c3xgm-about-red-car.animate-flag-line {
   -webkit-animation-fill-mode: both;
   -moz-animation-fill-mode: both;
   -o-animation-fill-mode: both;
   -ms-animation-fill-mode: both;
   animation-fill-mode: both;
+}
+/* line 56, ../sass/partials/_mobile-gif-backups.scss */
+.c3xgm-about-mobile-device .c3xgm-about-flag-line-container #c3xgm-about-flag-line-grey-car {
+  margin: 0 auto;
+}
+/* line 62, ../sass/partials/_mobile-gif-backups.scss */
+.c3xgm-about-mobile-device #c3xgm-about-grey-van {
+  left: -380px;
   -webkit-animation-name: moveCarRight;
   -moz-animation-name: moveCarRight;
   -o-animation-name: moveCarRight;
@@ -1883,11 +1881,19 @@ Stylesheet: Helpers
   -ms-animation-iteration-count: infinite;
   animation-iteration-count: infinite;
 }
-/* line 74, ../sass/partials/_mobile-gif-backups.scss */
+/* line 70, ../sass/partials/_mobile-gif-backups.scss */
+.c3xgm-about-mobile-device #c3xgm-about-grey-van.animate-flag-line {
+  -webkit-animation-fill-mode: both;
+  -moz-animation-fill-mode: both;
+  -o-animation-fill-mode: both;
+  -ms-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+/* line 77, ../sass/partials/_mobile-gif-backups.scss */
 .c3xgm-about-mobile-device div#c3xgm-about-grey-van:before {
   display: none;
 }
-/* line 81, ../sass/partials/_mobile-gif-backups.scss */
+/* line 84, ../sass/partials/_mobile-gif-backups.scss */
 .c3xgm-about-mobile-device .c3xgm-about-decorative.c3xgm-about-solar-panels #c3xgm-about-solar-grey-car {
   left: -380px;
   -webkit-animation-fill-mode: both;
@@ -1921,33 +1927,33 @@ Stylesheet: Helpers
   -ms-animation-iteration-count: infinite;
   animation-iteration-count: infinite;
 }
-/* line 94, ../sass/partials/_mobile-gif-backups.scss */
+/* line 97, ../sass/partials/_mobile-gif-backups.scss */
 .c3xgm-about-mobile-device .c3xgm-about-mobile-visible {
   opacity: 1;
 }
-/* line 96, ../sass/partials/_mobile-gif-backups.scss */
+/* line 99, ../sass/partials/_mobile-gif-backups.scss */
 .c3xgm-about-mobile-device .c3xgm-about-mobile-device .c3xgm-about-main-nav-sub {
   display: none;
 }
-/* line 98, ../sass/partials/_mobile-gif-backups.scss */
+/* line 101, ../sass/partials/_mobile-gif-backups.scss */
 .c3xgm-about-mobile-device .c3xgm-about-page-our-commitment .c3xgm-about-climate-declaration .c3xgm-about-block-image > div {
   margin-left: auto;
 }
-/* line 103, ../sass/partials/_mobile-gif-backups.scss */
+/* line 106, ../sass/partials/_mobile-gif-backups.scss */
 .c3xgm-about-mobile-device #c3xgm-about-solar-road-grey-car {
   left: 0;
   right: 0;
   margin: auto;
 }
 
-/* line 109, ../sass/partials/_mobile-gif-backups.scss */
+/* line 112, ../sass/partials/_mobile-gif-backups.scss */
 .c3xgm-about-climate-declaration.element-in-view .c3xgm-about-block-image img[src$='svg'] {
   width: 50%;
   margin-left: auto;
   margin-right: auto;
 }
 
-/* line 116, ../sass/partials/_mobile-gif-backups.scss */
+/* line 119, ../sass/partials/_mobile-gif-backups.scss */
 .c3xgm-about-alt-anim .c3xgm-about-dealers.element-in-view + .c3xgm-about-flag-line-container #c3xgm-about-flag-line-grey-car {
   margin: 0;
   -webkit-animation-fill-mode: both;
@@ -1982,7 +1988,7 @@ Stylesheet: Helpers
   animation-iteration-count: infinite;
 }
 @media (min-width: 768px) {
-  /* line 116, ../sass/partials/_mobile-gif-backups.scss */
+  /* line 119, ../sass/partials/_mobile-gif-backups.scss */
   .c3xgm-about-alt-anim .c3xgm-about-dealers.element-in-view + .c3xgm-about-flag-line-container #c3xgm-about-flag-line-grey-car {
     -webkit-animation-duration: 6s;
     -moz-animation-duration: 6s;
@@ -1991,7 +1997,7 @@ Stylesheet: Helpers
     animation-duration: 6s;
   }
 }
-/* line 135, ../sass/partials/_mobile-gif-backups.scss */
+/* line 138, ../sass/partials/_mobile-gif-backups.scss */
 .c3xgm-about-alt-anim .c3xgm-about-decorative.c3xgm-about-solar-panels-animation.element-in-view #c3xgm-about-solar-road-grey-car {
   margin: 0;
   -webkit-animation-fill-mode: both;
@@ -2026,7 +2032,7 @@ Stylesheet: Helpers
   animation-iteration-count: infinite;
 }
 @media (min-width: 768px) {
-  /* line 135, ../sass/partials/_mobile-gif-backups.scss */
+  /* line 138, ../sass/partials/_mobile-gif-backups.scss */
   .c3xgm-about-alt-anim .c3xgm-about-decorative.c3xgm-about-solar-panels-animation.element-in-view #c3xgm-about-solar-road-grey-car {
     -webkit-animation-duration: 6s;
     -moz-animation-duration: 6s;
