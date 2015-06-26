@@ -1,8 +1,8 @@
 jQuery(document).ready(function($) {
     
-    var $secNav = $('.section-nav'),
-        $navBullets = $('.nav-bullet'),
-        $navHoverTitle = $('.nav-hover-title');
+    var $secNav = $('.c3xgm-about-main-nav-sub'),
+        // $navBullets = $('.nav-bullet'),
+        $navHoverTitle = $('.c3xgm-about-nav-hover-title');
 
 
     // $('#page-nav a[href*=#]:not([href=#])').on('click touchstart', function() {
@@ -10,8 +10,8 @@ jQuery(document).ready(function($) {
         
 
         // ADD ACTIVE CLASS
-        $navBullets.removeClass('active');
-        $(this).addClass('active');
+        // $navBullets.removeClass('active');
+        // $(this).addClass('active');
         // IF SUB NAV IS CLICKED - SHOW IT
         if($(this).parent().parent().hasClass('section-nav') ) {
             if( !$secNav.hasClass('show-nav') ) {
