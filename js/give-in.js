@@ -414,17 +414,74 @@ jQuery(document).ready(function($) {
 	});
 
 
+    function getViewportHeight() {
+        var height = window.innerHeight; // Safari, Opera
+        var mode = document.compatMode;
+
+        if ( (mode || !$.support.boxModel) ) { // IE, Gecko
+            height = (mode == 'CSS1Compat') ?
+            document.documentElement.clientHeight : // Standards
+            document.body.clientHeight; // Quirks
+        }
+
+        return height;
+    }
+
+    var vpH = getViewportHeight(),
+            scrolltop = (document.documentElement.scrollTop ?
+                document.documentElement.scrollTop :
+                document.body.scrollTop),
+
+    blockInView = function(elem) {
+        var $el = $(elem),
+            top = $el.offset().top,
+            height = $el.height(),
+            inview = $el.data('inview') || false;
+
+            var name = getName(elem);
+
+            // console.log('This is scrolltop:' + scrolltop);
+            // console.log('This is top:' + top);
+            // console.log('This is height:' + height);
+            // console.log('This is inview:' + inview);
+
+        // if (scrolltop > (top + height) || scrolltop + vpH < top) {
+            if (inview) {
+                // $el.data('inview', false);
+                // $el.trigger('inview', [ false ]);
+                console.log('I am in view');
+                console.log(name);
+                // console.dir($el);
+                $el.removeClass('invisible').addClass('element-in-view');
+                // console.dir($el);
+            // }
+        }
+        // } else if (scrolltop < (top + height)) {
+        //     if (!inview) {
+        //         $el.data('inview', true);
+        //         $el.trigger('inview', [ true ]);
+        //         // console.log('I am out of view');
+        //     }
+        // }    
+    }
+
+
 
     // TRIGGER FUNCTION ON WINDOW AT DOCUMENT READY
 	// $(window).trigger('scroll');
 
     // SET INTERVAL TO SEE IF THERE ARE ANY INVISIBLE ELEMENTS ON THE PAGE
-    // setInterval(function() {
-    //     // CHECK IF THERE ARE BLOCKS ON CURRENT PAGE
-    //     console.log('I am triggering scroll');
-    //     console.log('I am currentPage: ' + currentPage);
-    //     $(window).trigger('scroll');
+    setInterval(function() {
+        // CHECK IF THERE ARE BLOCKS ON CURRENT PAGE
+        console.log('Checking blocks on interval');
+        // console.log('I am currentPage: ' + currentPage);
+        // $(window).trigger('scroll');
+        $.each(blocks, function(i, elem) {
+            // console.log('This is block:');
+            // console.dir(elem);
+            blockInView(elem);
+        });
         
-    // }, 2000);
+    }, 2000);
 
 });
