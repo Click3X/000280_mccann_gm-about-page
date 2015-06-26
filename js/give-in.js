@@ -121,27 +121,27 @@ jQuery(document).ready(function($) {
     }
 
 
- //    fireOurPeopleAnimations = function(page) {
- //    	var time;
- //        $.each(ourPeopleBlocks, function(i, val) {
- //            setTimeout(function() {
- //                time = 1200 * i;
- //                setTimeout(function() {
- //                    $(val).removeClass('invisible').addClass('element-in-view');
- //                        // console.log('This is index: ' + i);
- //                    if(i == 0 ) {
- //                        fireAnimatedEmployees();
- //                    } else if(i==1) {
- //                        fireAnimate6();
- //                    } else if(i==3) {
- //                        fireAnimate23();
- //                    } else if(i==4) {
- //                        fireAnimate70();
- //                    }
- //                }, time);
- //            }, 2000);
- //        });
-	// }
+    fireOurPeopleAnimations = function(page) {
+    	var time;
+        $.each(ourPeopleBlocks, function(i, val) {
+            setTimeout(function() {
+                time = 1200 * i;
+                setTimeout(function() {
+                    $(val).removeClass('invisible').addClass('element-in-view');
+                        // console.log('This is index: ' + i);
+                    if(i == 0 ) {
+                        fireAnimatedEmployees();
+                    } else if(i==1) {
+                        fireAnimate6();
+                    } else if(i==3) {
+                        fireAnimate23();
+                    } else if(i==4) {
+                        fireAnimate70();
+                    }
+                }, time);
+            }, 2000);
+        });
+	}
     
 
     // // DECLARE VARS
@@ -168,9 +168,8 @@ jQuery(document).ready(function($) {
     	sliders = $('.c3xgm-about-module-foundation, .c3xgm-about-module-technology, .c3xgm-about-module-car'),
     	triggers = $('#animate-flag-line, #c3xgm-about-solar-road-list'),
         mobileTriggers = $('#c3xgm-about-red-car, #c3xgm-about-grey-van'),
-    	// ourPeopleBlocks = $('#c3xgm-about-page-our-people .c3xgm-about-block');
-    	// allAnimatedElements = [pages, sections, endNav, blocks, ourPeopleBlocks];
-        allAnimatedElements = [pages, sections, endNav, blocks];
+    	ourPeopleBlocks = $('#c3xgm-about-page-our-people .c3xgm-about-block');
+    	allAnimatedElements = [pages, sections, endNav, blocks, ourPeopleBlocks];
 
     // HIDE ANIMATED ELEMENTS
     $(pages).addClass('invisible');
@@ -233,9 +232,9 @@ jQuery(document).ready(function($) {
 			// console.dir(this);
 
 			// IF CURRENT PAGE == OUR PEOPLE (1) - THEN FIRE OFF ANIMATIONS
-			// if(currentPage == 1) {
-			// 	fireOurPeopleAnimations();
-			// }
+			if(currentPage == 1) {
+				fireOurPeopleAnimations();
+			}
             
 
 		} else {
