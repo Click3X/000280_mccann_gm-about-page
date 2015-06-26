@@ -4693,7 +4693,12 @@ div#c3xgm-about-grey-van:before {
 
 /* line 3, ../sass/modules/_foundation.scss */
 .c3xgm-about-page-our-global-community .c3xgm-about-subsection {
-  margin-top: 9em;
+  /*margin-top: 9em;*/
+  margin-top:0;
+}
+
+#c3xgm-about-page-environment {
+  margin-bottom:9em;
 }
 
 /* line 6, ../sass/modules/_foundation.scss */

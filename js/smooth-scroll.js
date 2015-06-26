@@ -1,17 +1,16 @@
 jQuery(document).ready(function($) {
     
     var $secNav = $('.c3xgm-about-main-nav-sub'),
-        // $navBullets = $('.nav-bullet'),
+        $navBullets = $('.c3xgm-about-nav-bullet'),
         $navHoverTitle = $('.c3xgm-about-nav-hover-title');
 
 
-    // $('#page-nav a[href*=#]:not([href=#])').on('click touchstart', function() {
     $('.c3xgm-about-main-nav a[href*=#]:not([href=#]), a.c3xgm-about-down-arrow-link, .c3xgm-about-end-nav a[href*=#]:not([href=#])').on('click touchstart', function() {
         
 
         // ADD ACTIVE CLASS
-        // $navBullets.removeClass('active');
-        // $(this).addClass('active');
+        $navBullets.removeClass('c3xgm-about-nav-bullet-active');
+        $(this).addClass('c3xgm-about-nav-bullet-active');
         // IF SUB NAV IS CLICKED - SHOW IT
         if($(this).parent().parent().hasClass('section-nav') ) {
             if( !$secNav.hasClass('show-nav') ) {
