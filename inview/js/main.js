@@ -17,21 +17,18 @@ function init(){
 ===================================*/
 
 function step( time ){
-	if( didresize && time - laststeptime > 300 ){
-		updateSectionSizes();
+	if( time-laststeptime > 300 ){
+		if( didscroll || didresize ){
+			updateSectionSizes();
+			updateSections();
 
-		laststeptime 	= time;
-		didresize 		= false;
+			didscroll = didresize 	= false; 
+		}
+
+		laststeptime = time;
 	}
 
-	if( ( didscroll || didresize ) && time - laststeptime > 300 ){
-		updateSections();
-
-		laststeptime 			= time;
-		didscroll = didresize 	= false; 
-	}
-
-	window.requestAnimationFrame( step );
+	window.requestAnimationFrame(step);
 }
 
 /*======== WORKER METHODS ==========
@@ -99,10 +96,14 @@ function sectionToInActiveState( _section ){
 ===================================*/
 
 function onScroll( _e ){
+	console.log("-- onScroll --");
+	
 	didscroll = true;
 }
 
 function onResize( _e ){
+	console.log("-- onResize --");
+
 	didresize = true;
 }
 
