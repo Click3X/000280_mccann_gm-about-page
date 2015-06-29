@@ -5,17 +5,32 @@ var techSlideInterval, techLinks, currentTechSlide = 0;
 var foundationSlideInterval, foundationLinks, currentFoundationSlide = 0;
 var techLeftRight;
 
+
+// INIT SLIDER RESIZE VARS
+var carSlides,
+	carContainer,
+	foundationSlides,
+	foundationContainer,
+	techPics,
+	techSlides,
+	techQuotes,
+	techContainer;
+
+
 jQuery(document).ready(function($) {
 	carLinks = $('.c3xgm-about-module-car-logo');
 	techLinks = $('#c3xgm-about-page-technology .c3xgm-about-module-nav li a');
 	foundationLinks = $('.c3xgm-about-module-foundation-logo');
 	techLeftRight = $('#c3xgm-about-technology-right, #c3xgm-about-technology-left');
 
-	var carSlides = $('#c3xgm-about-module-car .c3xgm-about-slide'),
-		carContainer = $('.c3xgm-about-module-65').get(0),
-		foundationContainer = $('.c3xgm-about-module-foundation .c3xgm-about-module-20').get(0),
-		foundationSlides = $('#c3xgm-about-module-foundation .c3xgm-about-slide'),
-		techSlides = $('.c3xgm-about-module-technology .c3xgm-about-module');
+	carSlides = $('#c3xgm-about-module-car .c3xgm-about-slide');
+	carContainer = $('.c3xgm-about-module-65').get(0);
+	foundationContainer = $('.c3xgm-about-module-foundation .c3xgm-about-module-20').get(0);
+	foundationSlides = $('#c3xgm-about-module-foundation .c3xgm-about-slide');
+	techSlides = $('.c3xgm-about-module-technology .c3xgm-about-module');
+    techQuotes = $('.c3xgm-about-module-technology .c3xgm-about-module .c3xgm-about-blockquote-container');
+    techPics = $('.c3xgm-about-module-technology .c3xgm-about-module .c3xgm-about-block-image');
+    techContainer = $('#c3xgm-about-module-technology');
 
 	// CARS ---------------------------------------------------------------------------------------------------------
 	
@@ -259,4 +274,40 @@ function killAutoRotateFoundationSlider(){
 
     clearInterval(foundationSlideInterval);
     foundationSlideInterval = null;
+}
+
+
+// SLIDER RESIZE FUNCTIONS
+function resizeTechModules(techQuotes, techPics, techContainer ) {
+    $(techQuotes).height('auto');
+    $(techPics).height('auto');
+    $(this).parent().height('auto');
+    
+    var quotesMaxHeight = Math.max.apply(null, techQuotes.map(function () {
+        return $(this).height();
+    }).get());        
+    $(techQuotes).height(quotesMaxHeight);
+
+    var picsMaxHeight = Math.max.apply(null, techPics.map(function () {
+        return $(this).height();
+    }).get());        
+    $(techPics).height(picsMaxHeight);
+
+    var parentHeight = quotesMaxHeight + picsMaxHeight;
+
+    $(parent).height(parentHeight);
+}
+
+function equalizeSlides(container, slides) {
+    $(container).height('auto');
+    $(slides).height('auto');
+    
+
+    var maxSlideHeight = Math.max.apply(null, $(slides).map(function () {
+        return $(this).height();
+    }).get());
+
+    console.log('This is var maxSlideHeight: ' + maxSlideHeight);
+    $(container).height(maxSlideHeight);
+    $(slides).height(maxSlideHeight);
 }

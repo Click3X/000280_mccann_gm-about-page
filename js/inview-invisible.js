@@ -101,17 +101,17 @@ function sectionToActiveState( _section ){
 	console.log( "-- sectionToActiveState " + _section + " --" );
 	console.dir( _section);
 
-	// if( (_section.blockType == "page") || (_section.blockType == "section") ) {
-	// 	_section.$el.removeClass("invisible").addClass( "c3xgm-about-page-in-view" );
-	// } else if(_section.blockType == "block") {
-	// 	_section.$el.removeClass("invisible").addClass( "element-in-view" );
-	// } else if(_section.blockType == "slider") {
-	// 	var trigger = _section.$el.eq(0).attr('data-trigger');
-	// 	// AUTO ROTATE SLIDER
-	// 	triggerSlider(trigger);
-	// } else if(_section.blockType == "loop") {
-	// 	_section.$el.addClass( "animate-flag-line" );
-	// }
+	if( (_section.blockType == "page") || (_section.blockType == "section") ) {
+		_section.$el.removeClass("invisible").addClass( "c3xgm-about-page-in-view" );
+	} else if(_section.blockType == "block") {
+		_section.$el.removeClass("invisible").addClass( "element-in-view" );
+	} else if(_section.blockType == "slider") {
+		var trigger = _section.$el.eq(0).attr('data-trigger');
+		// AUTO ROTATE SLIDER
+		// triggerSlider(trigger);
+	} else if(_section.blockType == "loop") {
+		_section.$el.addClass( "animate-flag-line" );
+	}
 
 }
 

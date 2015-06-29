@@ -4958,7 +4958,7 @@ div#c3xgm-about-grey-van:before {
 }
 /* line 67, ../sass/modules/_car.scss */
 .c3xgm-about-module-car .c3xgm-about-module-container > .c3xgm-about-module {
-  /*position: absolute;*/
+  position: absolute;
   left: 0;
   width: 100%;
 }

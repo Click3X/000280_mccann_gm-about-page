@@ -3,7 +3,7 @@
 
 var sections = [], didscroll = false, didresize = true, laststeptime = 0, inviewpadding = 60;
 
-var resizeSliders = true;
+var resizeSliders = true, currentPage = 0, currentSection = 0, navLinks, subNavLink;
 
 /*========== INITIALIZE ============
 ===================================*/
@@ -93,15 +93,37 @@ function updateSections(){
 			}
 		}
 
-		console.log( i + 1, offsettop, offsetmiddle, offsetbottom );
+		// console.log( i + 1, offsettop, offsetmiddle, offsetbottom );
 	}
 }
+
 
 function sectionToActiveState( _section ){
 	console.log( "-- sectionToActiveState " + _section + " --" );
 	console.dir( _section);
 
 	if( (_section.blockType == "page") || (_section.blockType == "section") ) {
+		_section.$el.removeClass("invisible").addClass( "c3xgm-about-page-in-view" );
+
+		var id = '#' + _section.pageId;
+    	
+    	if(_section.blockType == "page") {
+    		currentPage = $( "#c3xgm-about-page-container > .c3xgm-about-page").index( _section.$el ); 
+    		// UNHIGHTLIGHT CURRENT NAV BULLET
+	        $(".c3xgm-about-main-nav > li > a.c3xgm-about-nav-bullet-active").removeClass("c3xgm-about-nav-bullet-active");
+	        // HIGHLIGHT NAV BULLET
+	        $(navLinks.eq(currentPage)).addClass("c3xgm-about-nav-bullet-active");
+    	} 
+    	else if(_section.blockType == "section") {
+    		currentSection = $( "#c3xgm-about-page-our-commitment > .c3xgm-about-page").index( _section.$el );
+    		// UNHIGHTLIGHT CURRENT SUB NAV BULLET
+			$(".c3xgm-about-main-nav-sub .c3xgm-about-nav-bullet-active").removeClass("c3xgm-about-nav-bullet-active");
+			// HIGHLIGHT SUB NAV BULLET
+			subNavLink = $('a[href="'+id+'"]');
+			$(subNavLink).eq(0).addClass("c3xgm-about-nav-bullet-active");
+    	}
+
+	} else if( _section.blockType == "end-nav" ) {
 		_section.$el.removeClass("invisible").addClass( "c3xgm-about-page-in-view" );
 	} else if(_section.blockType == "block") {
 		_section.$el.removeClass("invisible").addClass( "element-in-view" );
@@ -179,6 +201,8 @@ $(function() {
 
 	console.log( "-- only inview --" );
 
+	navLinks = $('.c3xgm-about-main-nav > li a');
+
 	// $( ".section" ).each( function(){
 	// BLOCKS
 	$( ".c3xgm-about-block" ).each( function(){
@@ -192,7 +216,7 @@ $(function() {
 		obj.blockType  = 'block';
 
 		// ADD INVISIBLE CLASS TO ANIMATE ELEMENTS IN
-		// obj.$el.addClass('invisible');
+		obj.$el.addClass('invisible');
 
 		sections.push( obj );
 	});
@@ -203,20 +227,40 @@ $(function() {
 
 		obj.el 		= t;
 		obj.$el 	= $( t );
+		obj.pageId 	= $( t ).attr('id');
 		obj.inbiew 	= true;
 		obj.active 	= false;
 		// ADD BLOCK TYPE PROPERTY TO DIFFERENTIAGE BETWEEN PAGES AND BLOCKS
 		obj.blockType  = 'page';
 
 		// ADD INVISIBLE CLASS TO ANIMATE ELEMENTS IN
-		// obj.$el.addClass('invisible');
+		obj.$el.addClass('invisible');
 
 		sections.push( obj );
 	});
 
 
 	// SECTIONS ( IN OUR COMMITMENT PAGE ) AND END NAV
-	$( "#c3xgm-about-page-our-commitment > .c3xgm-about-page, #c3xgm-about-end-nav" ).each( function(){
+	// $( "#c3xgm-about-page-our-commitment > .c3xgm-about-page, #c3xgm-about-end-nav" ).each( function(){
+	$( "#c3xgm-about-page-our-commitment > .c3xgm-about-page" ).each( function(){
+		var obj = {}, t = $( this );
+
+		obj.el 		= t;
+		obj.$el 	= $( t );
+		obj.pageId 	= $( t ).attr('id');
+		obj.inbiew 	= true;
+		obj.active 	= false;
+		// ADD BLOCK TYPE PROPERTY TO DIFFERENTIAGE BETWEEN PAGES AND BLOCKS
+		obj.blockType  = 'section';
+
+		// ADD INVISIBLE CLASS TO ANIMATE ELEMENTS IN
+		obj.$el.addClass('invisible');
+
+		sections.push( obj );
+	});
+
+	// END NAV
+	$( "#c3xgm-about-end-nav").each( function(){
 		var obj = {}, t = $( this );
 
 		obj.el 		= t;
@@ -224,10 +268,10 @@ $(function() {
 		obj.inbiew 	= true;
 		obj.active 	= false;
 		// ADD BLOCK TYPE PROPERTY TO DIFFERENTIAGE BETWEEN PAGES AND BLOCKS
-		obj.blockType  = 'section';
+		obj.blockType  = 'end-nav';
 
 		// ADD INVISIBLE CLASS TO ANIMATE ELEMENTS IN
-		// obj.$el.addClass('invisible');
+		obj.$el.addClass('invisible');
 
 		sections.push( obj );
 	});
@@ -250,6 +294,20 @@ $(function() {
 	// loop animations - TRIGGER ON OFF
 	if(mobile){
 		$('#c3xgm-about-flag-line-grey-car, #c3xgm-about-solar-road-grey-car, #c3xgm-about-grey-van, #c3xgm-about-red-car').each( function(){
+			var obj = {}, t = $( this );
+
+			obj.el 		= t;
+			obj.$el 	= $( t );
+			obj.inbiew 	= true;
+			obj.active 	= false;
+			// ADD BLOCK TYPE PROPERTY TO DIFFERENTIAGE BETWEEN PAGES AND BLOCKS
+			obj.blockType  = 'loop';
+
+
+			sections.push( obj );
+		});
+	} else {
+		$('#animate-flag-line, #c3xgm-about-solar-road-list').each( function(){
 			var obj = {}, t = $( this );
 
 			obj.el 		= t;
