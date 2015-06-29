@@ -176,6 +176,8 @@ function onResize( _e ){
 $(function() {
 	console.log( "-- jQuery Ready --" );
 
+	console.log( "-- INVIEW AND RESIZE BABY! --" );
+
 	// SLIDER VARS
 	carSlides = $('#c3xgm-about-module-car .c3xgm-about-slide'),
 	carContainer = $('div.c3xgm-about-clearfix.c3xgm-about-module-car > div.c3xgm-about-clearfix.c3xgm-about-module-65 > div').get(0),

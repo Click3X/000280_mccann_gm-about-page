@@ -125,6 +125,8 @@ function onResize( _e ){
 $(function() {
 	console.log( "-- jQuery Ready --" );
 
+	console.log( "-- only inview --" );
+
 	// $( ".section" ).each( function(){
 	// BLOCKS
 	$( ".c3xgm-about-block" ).each( function(){
