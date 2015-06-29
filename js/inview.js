@@ -28,9 +28,9 @@ function step( time ){
 		} else if(resizeSliders) {
 
 			// SLIDE RESIZE FUNCTIONS ON WINDOW RESIZE
-			equalizeSlides(carContainer, carSlides);
-			equalizeSlides(foundationContainer, foundationSlides);
-			resizeTechModules(techQuotes, techPics, techContainer);
+			// equalizeSlides(carContainer, carSlides);
+			// equalizeSlides(foundationContainer, foundationSlides);
+			// resizeTechModules(techQuotes, techPics, techContainer);
 	
 			resizeSliders = false;
 		}
