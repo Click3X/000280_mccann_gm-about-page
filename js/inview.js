@@ -31,7 +31,7 @@ function step( time ){
 			// equalizeSlides(carContainer, carSlides);
 			// equalizeSlides(foundationContainer, foundationSlides);
 			// resizeTechModules(techQuotes, techPics, techContainer);
-	
+
 			resizeSliders = false;
 		}
 
@@ -109,6 +109,8 @@ function sectionToActiveState( _section ){
 		var trigger = _section.$el.eq(0).attr('data-trigger');
 		// AUTO ROTATE SLIDER
 		triggerSlider(trigger);
+	} else if(_section.blockType == "loop") {
+		_section.$el.addClass( "animate-flag-line" );
 	}
 
 }
@@ -122,6 +124,8 @@ function sectionToInActiveState( _section ){
 		var trigger = _section.$el.eq(0).attr('data-trigger');
 		// KILL AUTO ROTATE SLIDER
 		killSlider(trigger);
+	} else if(_section.blockType == "loop") {
+		_section.$el.removeClass( "animate-flag-line" );
 	}
 }
 
@@ -242,6 +246,23 @@ $(function() {
 
 		sections.push( obj );
 	});
+
+	// loop animations - TRIGGER ON OFF
+	if(mobile){
+		$('#c3xgm-about-flag-line-grey-car, #c3xgm-about-solar-road-grey-car, #c3xgm-about-grey-van, #c3xgm-about-red-car').each( function(){
+			var obj = {}, t = $( this );
+
+			obj.el 		= t;
+			obj.$el 	= $( t );
+			obj.inbiew 	= true;
+			obj.active 	= false;
+			// ADD BLOCK TYPE PROPERTY TO DIFFERENTIAGE BETWEEN PAGES AND BLOCKS
+			obj.blockType  = 'loop';
+
+
+			sections.push( obj );
+		});
+	}
 
 	window.addEventListener( "scroll", onScroll );
 	window.addEventListener( "resize", onResize );
