@@ -3,6 +3,8 @@
 
 var sections = [], didscroll = false, didresize = true, laststeptime = 0, inviewpadding = 60;
 
+var resizeSliders = true;
+
 /*========== INITIALIZE ============
 ===================================*/
 
@@ -23,6 +25,14 @@ function step( time ){
 			updateSections();
 
 			didscroll = didresize 	= false; 
+		} else if(resizeSliders) {
+
+			// SLIDE RESIZE FUNCTIONS ON WINDOW RESIZE
+			equalizeSlides(carContainer, carSlides);
+			equalizeSlides(foundationContainer, foundationSlides);
+			resizeTechModules(techQuotes, techPics, techContainer);
+	
+			resizeSliders = false;
 		}
 
 		laststeptime = time;
@@ -91,10 +101,14 @@ function sectionToActiveState( _section ){
 	console.log( "-- sectionToActiveState " + _section + " --" );
 	console.dir( _section);
 
-	if(_section.blockType == "page") {
+	if( (_section.blockType == "page") || (_section.blockType == "section") ) {
 		_section.$el.removeClass("invisible").addClass( "c3xgm-about-page-in-view" );
 	} else if(_section.blockType == "block") {
 		_section.$el.removeClass("invisible").addClass( "element-in-view" );
+	} else if(_section.blockType == "slider") {
+		var trigger = _section.$el.eq(0).attr('data-trigger');
+		// AUTO ROTATE SLIDER
+		triggerSlider(trigger);
 	}
 
 }
@@ -102,6 +116,38 @@ function sectionToActiveState( _section ){
 // INACTIVE STATE
 function sectionToInActiveState( _section ){
 	console.log( "-- sectionToInActiveState " + _section + " --" );
+
+	// KILL SLIDDERS
+	if(_section.blockType == "slider") {
+		var trigger = _section.$el.eq(0).attr('data-trigger');
+		// KILL AUTO ROTATE SLIDER
+		killSlider(trigger);
+	}
+}
+
+
+// SLIDER HELPERS
+function triggerSlider(trigger) {
+	if(trigger == "car") {
+		autorotateAboutSliderOnce();
+		autorotateAboutSlider();
+	} else if(trigger == "tech") {
+		aautorotateTechSliderOnce();
+		autorotateTechSlider();
+	} else if(trigger == "foundation") {
+		autorotateFoundationSliderOnce();
+		autorotateFoundationSlider();
+	}
+}
+
+function killSlider(trigger) {
+	if(trigger == "car") {
+		killAutoRotateAboutSlider();
+	} else if(trigger == "tech") {
+		killAutoRotateTechSlider();
+	} else if(trigger == "foundation") {
+		killAutoRotateFoundationSlider();
+	}
 }
 
 /*======== EVENT HANDLERS ==========
@@ -117,6 +163,8 @@ function onResize( _e ){
 	console.log("-- onResize --");
 
 	didresize = true;
+	
+	resizeSliders = true;	
 }
 
 /*======== DOCUMENT READY ==========
@@ -158,6 +206,39 @@ $(function() {
 
 		// ADD INVISIBLE CLASS TO ANIMATE ELEMENTS IN
 		obj.$el.addClass('invisible');
+
+		sections.push( obj );
+	});
+
+
+	// SECTIONS ( IN OUR COMMITMENT PAGE ) AND END NAV
+	$( "#c3xgm-about-page-our-commitment > .c3xgm-about-page, #c3xgm-about-end-nav" ).each( function(){
+		var obj = {}, t = $( this );
+
+		obj.el 		= t;
+		obj.$el 	= $( t );
+		obj.inbiew 	= true;
+		obj.active 	= false;
+		// ADD BLOCK TYPE PROPERTY TO DIFFERENTIAGE BETWEEN PAGES AND BLOCKS
+		obj.blockType  = 'section';
+
+		// ADD INVISIBLE CLASS TO ANIMATE ELEMENTS IN
+		obj.$el.addClass('invisible');
+
+		sections.push( obj );
+	});
+
+	// SLIDDERS - TRIGGER ON OFF
+	$('.c3xgm-about-module-foundation, .c3xgm-about-module-technology, .c3xgm-about-module-car').each( function(){
+		var obj = {}, t = $( this );
+
+		obj.el 		= t;
+		obj.$el 	= $( t );
+		obj.inbiew 	= true;
+		obj.active 	= false;
+		// ADD BLOCK TYPE PROPERTY TO DIFFERENTIAGE BETWEEN PAGES AND BLOCKS
+		obj.blockType  = 'slider';
+
 
 		sections.push( obj );
 	});
