@@ -101,17 +101,17 @@ function sectionToActiveState( _section ){
 	console.log( "-- sectionToActiveState " + _section + " --" );
 	console.dir( _section);
 
-	if( (_section.blockType == "page") || (_section.blockType == "section") ) {
-		_section.$el.removeClass("invisible").addClass( "c3xgm-about-page-in-view" );
-	} else if(_section.blockType == "block") {
-		_section.$el.removeClass("invisible").addClass( "element-in-view" );
-	} else if(_section.blockType == "slider") {
-		var trigger = _section.$el.eq(0).attr('data-trigger');
-		// AUTO ROTATE SLIDER
-		triggerSlider(trigger);
-	} else if(_section.blockType == "loop") {
-		_section.$el.addClass( "animate-flag-line" );
-	}
+	// if( (_section.blockType == "page") || (_section.blockType == "section") ) {
+	// 	_section.$el.removeClass("invisible").addClass( "c3xgm-about-page-in-view" );
+	// } else if(_section.blockType == "block") {
+	// 	_section.$el.removeClass("invisible").addClass( "element-in-view" );
+	// } else if(_section.blockType == "slider") {
+	// 	var trigger = _section.$el.eq(0).attr('data-trigger');
+	// 	// AUTO ROTATE SLIDER
+	// 	triggerSlider(trigger);
+	// } else if(_section.blockType == "loop") {
+	// 	_section.$el.addClass( "animate-flag-line" );
+	// }
 
 }
 
@@ -120,13 +120,13 @@ function sectionToInActiveState( _section ){
 	console.log( "-- sectionToInActiveState " + _section + " --" );
 
 	// KILL SLIDDERS
-	if(_section.blockType == "slider") {
-		var trigger = _section.$el.eq(0).attr('data-trigger');
-		// KILL AUTO ROTATE SLIDER
-		killSlider(trigger);
-	} else if(_section.blockType == "loop") {
-		_section.$el.removeClass( "animate-flag-line" );
-	}
+	// if(_section.blockType == "slider") {
+	// 	var trigger = _section.$el.eq(0).attr('data-trigger');
+	// 	// KILL AUTO ROTATE SLIDER
+	// 	killSlider(trigger);
+	// } else if(_section.blockType == "loop") {
+	// 	_section.$el.removeClass( "animate-flag-line" );
+	// }
 }
 
 
@@ -192,7 +192,7 @@ $(function() {
 		obj.blockType  = 'block';
 
 		// ADD INVISIBLE CLASS TO ANIMATE ELEMENTS IN
-		// obj.$el.addClass('invisible');
+		obj.$el.addClass('invisible');
 
 		sections.push( obj );
 	});
@@ -209,7 +209,7 @@ $(function() {
 		obj.blockType  = 'page';
 
 		// ADD INVISIBLE CLASS TO ANIMATE ELEMENTS IN
-		// obj.$el.addClass('invisible');
+		obj.$el.addClass('invisible');
 
 		sections.push( obj );
 	});
@@ -227,42 +227,10 @@ $(function() {
 		obj.blockType  = 'section';
 
 		// ADD INVISIBLE CLASS TO ANIMATE ELEMENTS IN
-		// obj.$el.addClass('invisible');
+		obj.$el.addClass('invisible');
 
 		sections.push( obj );
 	});
-
-	// SLIDDERS - TRIGGER ON OFF
-	$('.c3xgm-about-module-foundation, .c3xgm-about-module-technology, .c3xgm-about-module-car').each( function(){
-		var obj = {}, t = $( this );
-
-		obj.el 		= t;
-		obj.$el 	= $( t );
-		obj.inbiew 	= true;
-		obj.active 	= false;
-		// ADD BLOCK TYPE PROPERTY TO DIFFERENTIAGE BETWEEN PAGES AND BLOCKS
-		obj.blockType  = 'slider';
-
-
-		sections.push( obj );
-	});
-
-	// loop animations - TRIGGER ON OFF
-	if(mobile){
-		$('#c3xgm-about-flag-line-grey-car, #c3xgm-about-solar-road-grey-car, #c3xgm-about-grey-van, #c3xgm-about-red-car').each( function(){
-			var obj = {}, t = $( this );
-
-			obj.el 		= t;
-			obj.$el 	= $( t );
-			obj.inbiew 	= true;
-			obj.active 	= false;
-			// ADD BLOCK TYPE PROPERTY TO DIFFERENTIAGE BETWEEN PAGES AND BLOCKS
-			obj.blockType  = 'loop';
-
-
-			sections.push( obj );
-		});
-	}
 
 	window.addEventListener( "scroll", onScroll );
 	window.addEventListener( "resize", onResize );
