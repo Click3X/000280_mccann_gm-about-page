@@ -136,7 +136,7 @@ function triggerSlider(trigger) {
 		autorotateAboutSliderOnce();
 		autorotateAboutSlider();
 	} else if(trigger == "tech") {
-		aautorotateTechSliderOnce();
+		autorotateTechSliderOnce();
 		autorotateTechSlider();
 	} else if(trigger == "foundation") {
 		autorotateFoundationSliderOnce();
