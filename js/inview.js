@@ -70,7 +70,7 @@ function updateSections(){
 		var section 	= sections[ i ],
 		offsettop 		= Math.round( section.top - scrolltop ),
 		offsetbottom 	= Math.round( windowheight - offsettop ),
-		offsetmiddle	= ( windowheight * .5 ) - offsettop;
+		offsetmiddle	= ( windowheight * .8 ) - offsettop;
 
 		var inview 		= ( offsettop+section.height >= 0 ) && ( offsetbottom >= 0 ),
 		fullyvisible 	= ( offsettop >= -25 ) && ( windowheight - ( offsettop+section.height ) ) >= -25,
