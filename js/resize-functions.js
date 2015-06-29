@@ -1,11 +1,9 @@
 jQuery(document).ready(function($) { 
-    // console.log('document is ready!');
+    console.log('RESIZE FUNCTIONS HERE BABT!');
     // RESIZE TECH MODULES
     // R E S I Z E 
     var resizeTimeout,
         resizeHandler,
-        carMaxHeight,
-        foundationMaxHeight,
 
         carContainers = $('#c3xgm-about-module-car .c3xgm-about-slide'),
         carModContainer = $('div.c3xgm-about-clearfix.c3xgm-about-module-car > div.c3xgm-about-clearfix.c3xgm-about-module-65 > div').get(0),
@@ -17,6 +15,54 @@ jQuery(document).ready(function($) {
         foundationModContainer = $('.c3xgm-about-clearfix.c3xgm-about-module-foundation > div.c3xgm-about-clearfix.c3xgm-about-module-80 > div').get(0);
 
 
+    function resizeTechModules(techQuotes, techPics ) {
+        $(techQuotes).height('auto');
+        $(techPics).height('auto');
+        $(this).parent().height('auto');
+        
+        var quotesMaxHeight = Math.max.apply(null, techQuotes.map(function () {
+            return $(this).height();
+        }).get());        
+        $(techQuotes).height(quotesMaxHeight);
+
+        var picsMaxHeight = Math.max.apply(null, techPics.map(function () {
+            return $(this).height();
+        }).get());        
+        $(techPics).height(picsMaxHeight);
+
+        var parentHeight = quotesMaxHeight + picsMaxHeight;
+
+        $('#c3xgm-about-module-technology').height(parentHeight);
+    }
+
+    function equalizeSlides(container, slides) {
+        $(container).height('auto');
+        $(slides).height('auto');
+        
+
+        var maxSlideHeight = Math.max.apply(null, $(slides).map(function () {
+            return $(this).height();
+        }).get());
+
+        console.log('This is var maxSlideHeight: ' + maxSlideHeight);
+        $(container).height(maxSlideHeight);
+        $(slides).height(maxSlideHeight);
+    }
+
+
+    resizeHandler = function() {
+        // CAR HANDLER
+        equalizeSlides(carModContainer, carContainers);
+
+        // TECH HANDLER
+        resizeTechModules(techQuotes, techPics);
+
+        // FOUNDATION HANDLER
+        equalizeSlides(foundationModContainer, foundationContainers);
+    }
+
+
+    // BIND FUNCTION TO RESIZE EVENT
     $(window).resize(function() {
         if (resizeTimeout) {
             // clear the timeout, if one is pending
@@ -26,90 +72,13 @@ jQuery(document).ready(function($) {
         resizeTimeout = setTimeout(resizeHandler, 60/1000);
     });
 
-    function resizeTechModules(techQuotes, techPics ) {
-        $(techQuotes).height('auto');
-        $(techPics).height('auto');
-        $(this).parent().height('auto');
-        
-        var quotesMaxHeight = Math.max.apply(null, techQuotes.map(function () {
-            // console.log('This is ID: ' + $(this).parent().attr('id'));
-            // console.log('This is quotesMaxHeigh: ' + $(this).height());
-            return $(this).height();
-        }).get());        
-        $(techQuotes).height(quotesMaxHeight);
-
-        var picsMaxHeight = Math.max.apply(null, techPics.map(function () {
-            // console.log('This is ID: ' + $(this).parent().attr('id'));
-            // console.log('This is picMaxHeigh: ' + $(this).height());
-            return $(this).height();
-        }).get());        
-        $(techPics).height(picsMaxHeight);
-
-        var parentHeight = quotesMaxHeight + picsMaxHeight;
-
-        $('#c3xgm-about-module-technology').height(parentHeight);
-
-    }
-
-    resizeHandler = function() {
-        // CAR HANDLER
-        // DEFAULT HEIGHT TO ORIGINAL SIZE ON RESIZE 
-        $(carContainers).height('auto');
-        $(carModContainer).height('auto');
-        // GET TALLEST DIV
-        carMaxHeight = Math.max.apply(null, carContainers.map(function () {
-            return $(this).height();
-        }).get());
-
-        // console.log('This is carMaxHeight: ' + carMaxHeight);
-        $(carModContainer).height(carMaxHeight);
-        $(carContainers).height(carMaxHeight);
-
-        // TECH HANDLER
-        resizeTechModules(techQuotes, techPics);
-
-        // FOUNDATION HANDLER
-        // DEFAULT HEIGHT TO ORIGINAL SIZE ON RESIZE 
-        $(foundationContainers).height('auto');
-        $(foundationModContainer).height('auto');
-        // GET TALLEST DIV
-        foundationMaxHeight = Math.max.apply(null, foundationContainers.map(function () {
-            return $(this).height();
-        }).get());
-        $(foundationModContainer).height(foundationMaxHeight);
-    }
-
-
-    $(carContainers).height('auto');
-    $(carModContainer).height('auto');
-    // GET TALLEST DIV
-    carMaxHeight = Math.max.apply(null, carContainers.map(function () {
-        return $(this).height();
-    }).get());
-
-    // console.log('This is carMaxHeight: ' + carMaxHeight);
-    $(carModContainer).height(carMaxHeight);
-    $(carContainers).height(carMaxHeight);
-
-
-    // DEFAULT HEIGHT TO ORIGINAL SIZE ON RESIZE 
-    $(foundationContainers).height('auto');
-    $(foundationModContainer).height('auto');
-    // GET TALLEST DIV
-    foundationMaxHeight = Math.max.apply(null, foundationContainers.map(function () {
-        return $(this).height();
-    }).get());
-
-    $(foundationModContainer).height(foundationMaxHeight);
-
 
     // CALL FUNCTION ON PAGE LOAD
     resizeHandler();
 
     $(window).load(function() {
         // console.log('Resizing Tech Modules from Window Load');
-        resizeTechModules(techQuotes, techPics);
+        resizeHandler();
     });
-    
     
 });
