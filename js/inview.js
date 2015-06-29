@@ -20,7 +20,7 @@ function init(){
 
 function step( time ){
 	// if( time-laststeptime > 300 ){
-	if( time-laststeptime > 100 ){
+	if( time-laststeptime > 30 ){
 		if( didscroll || didresize ){
 			updateSectionSizes();
 			updateSections();
