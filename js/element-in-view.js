@@ -5,11 +5,11 @@
         var height = window.innerHeight; // Safari, Opera
         var mode = document.compatMode;
 
-        if ( (mode || !$.support.boxModel) ) { // IE, Gecko
-            height = (mode == 'CSS1Compat') ?
-            document.documentElement.clientHeight : // Standards
-            document.body.clientHeight; // Quirks
-        }
+        // if ( (mode || !$.support.boxModel) ) { // IE, Gecko
+        //     height = (mode == 'CSS1Compat') ?
+        //     document.documentElement.clientHeight : // Standards
+        //     document.body.clientHeight; // Quirks
+        // }
 
         return height;
     }
