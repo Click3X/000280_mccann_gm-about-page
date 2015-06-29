@@ -64,7 +64,8 @@ function updateSections(){
 
 		var inview 		= ( offsettop+section.height >= 0 ) && ( offsetbottom >= 0 ),
 		fullyvisible 	= ( offsettop >= -25 ) && ( windowheight - ( offsettop+section.height ) ) >= -25,
-		active 			= inview && ( offsetmiddle >= 0 || fullyvisible );
+		active 			= inview && ( offsetmiddle >= 0 || fullyvisible ),
+		blockType		= section.blockType;
 
 		if( section.inview != inview ){
 			section.$el.toggleClass( "inview" );
@@ -72,12 +73,18 @@ function updateSections(){
 		}
 
 		if( section.active != active ){
-			// section.$el.toggleClass( "active" );
-			section.$el.toggleClass( "element-in-view" );
+			section.$el.toggleClass( "active" );			
 			section.active = !section.active;
 
 			if( section.active ){
 				sectionToActiveState( section );
+				
+				// if(blockType == "page") {
+				// section.$el.removeClass("invisible").addClass( "c3xgm-about-page-in-view" );
+				// } else if(blockType == "block") {
+				// 	section.$el.removeClass("invisible").addClass( "element-in-view" );
+				// }
+
 			} else {
 				sectionToInActiveState( section );
 			}
@@ -89,6 +96,14 @@ function updateSections(){
 
 function sectionToActiveState( _section ){
 	console.log( "-- sectionToActiveState " + _section + " --" );
+	console.dir( _section);
+
+	if(_section.blockType == "page") {
+		_section.$el.removeClass("invisible").addClass( "c3xgm-about-page-in-view" );
+	} else if(_section.blockType == "block") {
+		_section.$el.removeClass("invisible").addClass( "element-in-view" );
+	}
+
 }
 
 function sectionToInActiveState( _section ){
@@ -117,6 +132,7 @@ $(function() {
 	console.log( "-- jQuery Ready --" );
 
 	// $( ".section" ).each( function(){
+	// BLOCKS
 	$( ".c3xgm-about-block" ).each( function(){
 		var obj = {}, t = $( this );
 
@@ -124,6 +140,28 @@ $(function() {
 		obj.$el 	= $( t );
 		obj.inbiew 	= true;
 		obj.active 	= false;
+		// ADD BLOCK TYPE PROPERTY TO DIFFERENTIAGE BETWEEN PAGES AND BLOCKS
+		obj.blockType  = 'block';
+
+		// ADD INVISIBLE CLASS TO ANIMATE ELEMENTS IN
+		obj.$el.addClass('invisible');
+
+		sections.push( obj );
+	});
+
+	// PAGES
+	$( "#c3xgm-about-page-container > .c3xgm-about-page" ).each( function(){
+		var obj = {}, t = $( this );
+
+		obj.el 		= t;
+		obj.$el 	= $( t );
+		obj.inbiew 	= true;
+		obj.active 	= false;
+		// ADD BLOCK TYPE PROPERTY TO DIFFERENTIAGE BETWEEN PAGES AND BLOCKS
+		obj.blockType  = 'page';
+
+		// ADD INVISIBLE CLASS TO ANIMATE ELEMENTS IN
+		obj.$el.addClass('invisible');
 
 		sections.push( obj );
 	});
