@@ -19,7 +19,8 @@ function init(){
 ===================================*/
 
 function step( time ){
-	if( time-laststeptime > 300 ){
+	// if( time-laststeptime > 300 ){
+	if( time-laststeptime > 100 ){
 		if( didscroll || didresize ){
 			updateSectionSizes();
 			updateSections();
@@ -74,8 +75,7 @@ function updateSections(){
 
 		var inview 		= ( offsettop+section.height >= 0 ) && ( offsetbottom >= 0 ),
 		fullyvisible 	= ( offsettop >= -25 ) && ( windowheight - ( offsettop+section.height ) ) >= -25,
-		active 			= inview && ( offsetmiddle >= 0 || fullyvisible ),
-		blockType		= section.blockType;
+		active 			= inview && ( offsetmiddle >= 0 || f\
 
 		if( section.inview != inview ){
 			section.$el.toggleClass( "inview" );
