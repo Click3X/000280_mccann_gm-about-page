@@ -9690,27 +9690,29 @@ body {
 }
 
 /* line 115, ../sass/animations/_element-in-view.scss */
-.c3xgm-about-china .c3xgm-about-block-image img {
-  -webkit-animation-fill-mode: none;
-  -moz-animation-fill-mode: none;
-  -o-animation-fill-mode: none;
-  -ms-animation-fill-mode: none;
-  animation-fill-mode: none;
-  -webkit-animation-name: none;
-  -moz-animation-name: none;
-  -o-animation-name: none;
-  -ms-animation-name: none;
-  animation-name: none;
-  -webkit-animation-delay: 0;
-  -moz-animation-delay: 0;
-  -o-animation-delay: 0;
-  -ms-animation-delay: 0;
-  animation-delay: 0;
-  -webkit-animation-duration: 0;
-  -moz-animation-duration: 0;
-  -o-animation-duration: 0;
-  -ms-animation-duration: 0;
-  animation-duration: 0;
+.c3xgm-about-china .c3xgm-about-block-image > img { display: block; }
+
+.c3xgm-about-china.inview .c3xgm-about-block-image > img {
+  -webkit-animation-fill-mode: both;
+  -moz-animation-fill-mode: both;
+  -o-animation-fill-mode: both;
+  -ms-animation-fill-mode: both;
+  animation-fill-mode: both;
+  -webkit-animation-name: fadeIn;
+  -moz-animation-name: fadeIn;
+  -o-animation-name: fadeIn;
+  -ms-animation-name: fadeIn;
+  animation-name: fadeIn;
+  -webkit-animation-delay: 400ms;
+  -moz-animation-delay: 400ms;
+  -o-animation-delay: 400ms;
+  -ms-animation-delay: 400ms;
+  animation-delay: 400ms;
+  -webkit-animation-duration: 600ms;
+  -moz-animation-duration: 600ms;
+  -o-animation-duration: 600ms;
+  -ms-animation-duration: 600ms;
+  animation-duration: 600ms;
 }
 /* line 119, ../sass/animations/_element-in-view.scss */
 /*.c3xgm-about-china.element-in-view .c3xgm-about-block-image .c3xgm-about-block-image-mobile,*/
@@ -10939,7 +10941,8 @@ body {
 .c3xgm-about-onstar-subscribers.element-in-view .c3xgm-about-block-image {
   overflow: hidden;
 }
-@media (min-width: 768px) {
+
+/*@media (min-width: 768px) {*/
   /* line 495, ../sass/animations/_element-in-view.scss */
   .c3xgm-about-onstar-subscribers.element-in-view .c3xgm-about-block-image img {
     -webkit-animation-fill-mode: both;
@@ -10963,7 +10966,7 @@ body {
     -ms-animation-duration: 400ms;
     animation-duration: 400ms;
   }
-}
+/*}*/
 /* line 505, ../sass/animations/_element-in-view.scss */
 .c3xgm-about-onstar-subscribers.element-in-view .c3xgm-about-blockquote {
   overflow: hidden;
@@ -11144,7 +11147,7 @@ body {
 .c3xgm-about-quality-awards.element-in-view .c3xgm-about-block-image {
   overflow: hidden;
 }
-@media (min-width: 768px) {
+/*@media (min-width: 768px) {*/
   /* line 557, ../sass/animations/_element-in-view.scss */
   .c3xgm-about-quality-awards.element-in-view .c3xgm-about-block-image img {
     -webkit-animation-fill-mode: both;
@@ -11168,7 +11171,7 @@ body {
     -ms-animation-duration: 400ms;
     animation-duration: 400ms;
   }
-}
+/*}*/
 /* line 567, ../sass/animations/_element-in-view.scss */
 .c3xgm-about-quality-awards.element-in-view .c3xgm-about-blockquote {
   overflow: hidden;
