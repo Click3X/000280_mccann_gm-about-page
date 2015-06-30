@@ -5226,3 +5226,8 @@ Stylesheet: Helpers
 #c3xgm-about-number-63 {
   height: 0.8em;
 }
+
+/* line 21, ../sass/components/_final-styles.scss */
+.c3xgm-about-desktop-device .c3xgm-about-china .c3xgm-about-block-image > img {
+  display: none;
+}
