@@ -2820,6 +2820,7 @@ h4.c3xgm-about-h {
 @media (min-width: 768px) {
   /* line 7, ../sass/pages/_our-brands.scss */
   .c3xgm-about-block {
+    /*margin: 7em auto;*/
     margin: 7em auto;
   }
 }

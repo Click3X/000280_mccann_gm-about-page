@@ -124,6 +124,7 @@ function fireAnimate63() {
 
 // CRASH TEST DUMMIES
 var triggerCTD = false;
+$('#c3xgm-about-crash-test-dummies').addClass('invisible');
 function fireCTD() {
 	setTimeout(function() {
         if(triggerCTD == false) {

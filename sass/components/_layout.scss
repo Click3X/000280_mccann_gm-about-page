@@ -236,17 +236,27 @@ body { /* Addresses a small issue in webkit: http://bit.ly/NEdoDq */
 		margin:1em auto;
 		
 		svg {
-			// width: 25%;
 			width: 16%;
 			margin: 0 auto;
 		}
 	}
 }
 
-// MARGIN-BOTTOM FOR OUR GLOBAL COMMUNITY
-// #c3xgm-about-page-our-global-community > div.c3xgm-about-subsection.c3xgm-about-clearfix {
-// 	margin-top:0;
-// }
 .c3xgm-about-page-environment {
 	margin-bottom: 9em;
+}
+
+// OVERFLOW PROPERTIES FOR ROLLOVER FACILLITY
+.c3xgm-about-test-facility.c3xgm-about-block {
+	@media(min-width: $tablet-height) {
+		margin: 4em auto;
+	}
+	> .c3xgm-about-overflow {
+		position: relative;
+
+		@media(min-width: $tablet-height) {
+			padding: 3em 0;
+		}	
+	}
+	
 }
