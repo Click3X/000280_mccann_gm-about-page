@@ -146,7 +146,6 @@ jQuery(document).ready(function($) {
 		}
 	});
 
-
 	// TECH LEFT RIGHT LINKS
 	techLeftRight.on('click touchstart', function(e) {
 		e.preventDefault();
