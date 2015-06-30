@@ -2972,7 +2972,7 @@ h4.c3xgm-about-h {
   }
 
   .c3xgm-about-global .c3xgm-about-block-image img[src$="svg"] {
-    width: 80%;
+    width: 65%;
   }
 }
 @media (min-width: 1176px) {
