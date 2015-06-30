@@ -353,13 +353,10 @@ function sectionToInActiveState( _section ){
 // SLIDER HELPERS
 function triggerSlider(trigger) {
 	if(trigger == "car") {
-		autorotateAboutSliderOnce();
 		autorotateAboutSlider();
 	} else if(trigger == "tech") {
-		autorotateTechSliderOnce();
 		autorotateTechSlider();
 	} else if(trigger == "foundation") {
-		autorotateFoundationSliderOnce();
 		autorotateFoundationSlider();
 	}
 }

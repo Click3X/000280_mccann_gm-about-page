@@ -81,7 +81,7 @@ if( mobile ){
 
 console.log(useragent);
 console.log(browser);
-console.log("static experience: ", static_experience);
+console.log("Static experience: ", static_experience);
 console.log('This is mobile: ' + mobile);
 
 // FORMAT NUMBER
