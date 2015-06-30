@@ -720,7 +720,8 @@ h1.c3xgm-about-h {
 h2.c3xgm-about-h {
   line-height: 1em;
   color: #124e9c;
-  font-size: 48px;
+  /*font-size: 48px;*/
+  font-size: 27px;
   font-size: 8.65vw;
 }
 @media (min-width: 768px) {
@@ -3892,7 +3893,8 @@ h4.c3xgm-about-h {
 .c3xgm-about-page-our-people .c3xgm-about-block.c3xgm-about-employees .number,
 .c3xgm-about-page-our-people .c3xgm-about-block.c3xgm-about-employees .number > span {
   line-height: 1em;
-  font-size: 128px;
+  /*font-size: 128px;*/
+  font-size: 76px;
   font-size: 24vw;
   display: inline-block;
 }
