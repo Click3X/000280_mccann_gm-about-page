@@ -4,14 +4,11 @@
 	// CHINA FLAG FOR MOBILE - DISPLAY BLOCK;
 	.c3xgm-about-block-image-mobile {
 		display: block;
-		@media(min-width: $tablet-height) { display: none; }
 	}
 
 	.c3xgm-about-page-our-commitment {
 		
-		// .c3xgm-about-crash-test-dummies .c3xgm-about-block-image img { 
 		.c3xgm-about-crash-test-dummies .c3xgm-about-block-image img[src$="svg"] {
-			// width: 50%;
 			width: 40%; 
 			@media(min-width: $tablet-height) {
 				width: 80%;
@@ -22,7 +19,7 @@
 
 		.c3xgm-about-crash-test-dummies.element-in-view .c3xgm-about-block-image img {
 			$crash-duration:400;
-			$crash-delay:1800;
+			$crash-delay:1200;
 			$crash-step:300;
 
 			@include prefix(animation-fill-mode, both);
@@ -35,7 +32,6 @@
 
 	.c3xgm-about-decorative.c3xgm-about-red-car-road {
 		position: relative; 
-		// overflow-x:hidden;
 
 		#c3xgm-about-red-car {
 			right: -380px;

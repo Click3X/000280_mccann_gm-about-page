@@ -3375,6 +3375,13 @@ h4.c3xgm-about-h {
 .c3xgm-about-china .c3xgm-about-block-image .c3xgm-about-block-image-mobile {
   margin-top: -45%;
 }
+
+@media (min-width: 768px) {
+  .c3xgm-about-china .c3xgm-about-block-image .c3xgm-about-block-image-mobile {
+    margin-top:0;
+  }
+}
+
 /* line 244, ../sass/pages/_our-brands.scss */
 .c3xgm-about-china .c3xgm-about-blockquote {
   width: auto;
@@ -9692,7 +9699,8 @@ body {
 /* line 115, ../sass/animations/_element-in-view.scss */
 .c3xgm-about-china .c3xgm-about-block-image > img { display: block; }
 
-.c3xgm-about-china.inview .c3xgm-about-block-image > img {
+.c3xgm-about-china.inview .c3xgm-about-block-image > img,
+.c3xgm-about-china.inview .c3xgm-about-block-image > .c3xgm-about-block-cfix {
   -webkit-animation-fill-mode: both;
   -moz-animation-fill-mode: both;
   -o-animation-fill-mode: both;

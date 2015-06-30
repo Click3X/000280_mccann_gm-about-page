@@ -28,16 +28,9 @@ if(mobile) {
 
     // REPLACE GIFS WITH SVGS
     jQuery('img[src$=".gif"]').each(function(index,element) {
-        // NO CHINA FLAG GIF FOR MOBILE, BUT IF SCREEN IS IPAD OR LARGER, SHOW PNG
-
-        if( (element.src != 'chinaflag.gif') && ($(window).width() < 768) ) {
-            element.src = element.src.replace('.gif','.svg');
-        } 
-        // else {
-        //     element.src = element.src.replace('.gif','.svg');
-        // }
-
+        element.src = element.src.replace('.gif','.svg');
     });
+
 }
 
 // FORMAT NUMBER

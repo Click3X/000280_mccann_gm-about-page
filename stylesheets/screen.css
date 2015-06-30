@@ -1760,18 +1760,12 @@ Stylesheet: Helpers
 .c3xgm-about-mobile-device .c3xgm-about-block-image-mobile {
   display: block;
 }
-@media (min-width: 768px) {
-  /* line 5, ../sass/partials/_mobile-gif-backups.scss */
-  .c3xgm-about-mobile-device .c3xgm-about-block-image-mobile {
-    display: none;
-  }
-}
-/* line 13, ../sass/partials/_mobile-gif-backups.scss */
+/* line 11, ../sass/partials/_mobile-gif-backups.scss */
 .c3xgm-about-mobile-device .c3xgm-about-page-our-commitment .c3xgm-about-crash-test-dummies .c3xgm-about-block-image img[src$="svg"] {
   width: 40%;
 }
 @media (min-width: 768px) {
-  /* line 13, ../sass/partials/_mobile-gif-backups.scss */
+  /* line 11, ../sass/partials/_mobile-gif-backups.scss */
   .c3xgm-about-mobile-device .c3xgm-about-page-our-commitment .c3xgm-about-crash-test-dummies .c3xgm-about-block-image img[src$="svg"] {
     width: 80%;
     position: absolute;
@@ -1784,7 +1778,7 @@ Stylesheet: Helpers
     transform: translate(-50%, -50%);
   }
 }
-/* line 23, ../sass/partials/_mobile-gif-backups.scss */
+/* line 20, ../sass/partials/_mobile-gif-backups.scss */
 .c3xgm-about-mobile-device .c3xgm-about-page-our-commitment .c3xgm-about-crash-test-dummies.element-in-view .c3xgm-about-block-image img {
   -webkit-animation-fill-mode: both;
   -moz-animation-fill-mode: both;
@@ -1796,22 +1790,22 @@ Stylesheet: Helpers
   -o-animation-name: fadeIn;
   -ms-animation-name: fadeIn;
   animation-name: fadeIn;
-  -webkit-animation-delay: 1800ms;
-  -moz-animation-delay: 1800ms;
-  -o-animation-delay: 1800ms;
-  -ms-animation-delay: 1800ms;
-  animation-delay: 1800ms;
+  -webkit-animation-delay: 1200ms;
+  -moz-animation-delay: 1200ms;
+  -o-animation-delay: 1200ms;
+  -ms-animation-delay: 1200ms;
+  animation-delay: 1200ms;
   -webkit-animation-duration: 400ms;
   -moz-animation-duration: 400ms;
   -o-animation-duration: 400ms;
   -ms-animation-duration: 400ms;
   animation-duration: 400ms;
 }
-/* line 36, ../sass/partials/_mobile-gif-backups.scss */
+/* line 33, ../sass/partials/_mobile-gif-backups.scss */
 .c3xgm-about-mobile-device .c3xgm-about-decorative.c3xgm-about-red-car-road {
   position: relative;
 }
-/* line 40, ../sass/partials/_mobile-gif-backups.scss */
+/* line 36, ../sass/partials/_mobile-gif-backups.scss */
 .c3xgm-about-mobile-device .c3xgm-about-decorative.c3xgm-about-red-car-road #c3xgm-about-red-car {
   right: -380px;
   -webkit-animation-name: moveCarLeft;
@@ -1840,7 +1834,7 @@ Stylesheet: Helpers
   -ms-animation-iteration-count: infinite;
   animation-iteration-count: infinite;
 }
-/* line 48, ../sass/partials/_mobile-gif-backups.scss */
+/* line 44, ../sass/partials/_mobile-gif-backups.scss */
 .c3xgm-about-mobile-device .c3xgm-about-decorative.c3xgm-about-red-car-road #c3xgm-about-red-car.animate-flag-line {
   -webkit-animation-fill-mode: both;
   -moz-animation-fill-mode: both;
@@ -1848,11 +1842,11 @@ Stylesheet: Helpers
   -ms-animation-fill-mode: both;
   animation-fill-mode: both;
 }
-/* line 57, ../sass/partials/_mobile-gif-backups.scss */
+/* line 53, ../sass/partials/_mobile-gif-backups.scss */
 .c3xgm-about-mobile-device .c3xgm-about-flag-line-container #c3xgm-about-flag-line-grey-car {
   margin: 0 auto;
 }
-/* line 63, ../sass/partials/_mobile-gif-backups.scss */
+/* line 59, ../sass/partials/_mobile-gif-backups.scss */
 .c3xgm-about-mobile-device #c3xgm-about-grey-van {
   -webkit-animation-name: moveCarRight;
   -moz-animation-name: moveCarRight;
@@ -1880,7 +1874,7 @@ Stylesheet: Helpers
   -ms-animation-iteration-count: infinite;
   animation-iteration-count: infinite;
 }
-/* line 71, ../sass/partials/_mobile-gif-backups.scss */
+/* line 67, ../sass/partials/_mobile-gif-backups.scss */
 .c3xgm-about-mobile-device #c3xgm-about-grey-van.animate-flag-line {
   -webkit-animation-fill-mode: both;
   -moz-animation-fill-mode: both;
@@ -1888,11 +1882,11 @@ Stylesheet: Helpers
   -ms-animation-fill-mode: both;
   animation-fill-mode: both;
 }
-/* line 78, ../sass/partials/_mobile-gif-backups.scss */
+/* line 74, ../sass/partials/_mobile-gif-backups.scss */
 .c3xgm-about-mobile-device div#c3xgm-about-grey-van:before {
   display: none;
 }
-/* line 85, ../sass/partials/_mobile-gif-backups.scss */
+/* line 81, ../sass/partials/_mobile-gif-backups.scss */
 .c3xgm-about-mobile-device .c3xgm-about-decorative.c3xgm-about-solar-panels #c3xgm-about-solar-grey-car {
   left: -380px;
   -webkit-animation-name: moveCarRight;
@@ -1921,7 +1915,7 @@ Stylesheet: Helpers
   -ms-animation-iteration-count: infinite;
   animation-iteration-count: infinite;
 }
-/* line 95, ../sass/partials/_mobile-gif-backups.scss */
+/* line 91, ../sass/partials/_mobile-gif-backups.scss */
 .c3xgm-about-mobile-device .c3xgm-about-decorative.c3xgm-about-solar-panels.animate-flag-line {
   -webkit-animation-fill-mode: both;
   -moz-animation-fill-mode: both;
@@ -1929,33 +1923,33 @@ Stylesheet: Helpers
   -ms-animation-fill-mode: both;
   animation-fill-mode: both;
 }
-/* line 102, ../sass/partials/_mobile-gif-backups.scss */
+/* line 98, ../sass/partials/_mobile-gif-backups.scss */
 .c3xgm-about-mobile-device .c3xgm-about-mobile-visible {
   opacity: 1;
 }
-/* line 104, ../sass/partials/_mobile-gif-backups.scss */
+/* line 100, ../sass/partials/_mobile-gif-backups.scss */
 .c3xgm-about-mobile-device .c3xgm-about-mobile-device .c3xgm-about-main-nav-sub {
   display: none;
 }
-/* line 106, ../sass/partials/_mobile-gif-backups.scss */
+/* line 102, ../sass/partials/_mobile-gif-backups.scss */
 .c3xgm-about-mobile-device .c3xgm-about-page-our-commitment .c3xgm-about-climate-declaration .c3xgm-about-block-image > div {
   margin-left: auto;
 }
-/* line 111, ../sass/partials/_mobile-gif-backups.scss */
+/* line 107, ../sass/partials/_mobile-gif-backups.scss */
 .c3xgm-about-mobile-device #c3xgm-about-solar-road-grey-car {
   left: 0;
   right: 0;
   margin: auto;
 }
 
-/* line 117, ../sass/partials/_mobile-gif-backups.scss */
+/* line 113, ../sass/partials/_mobile-gif-backups.scss */
 .c3xgm-about-climate-declaration.element-in-view .c3xgm-about-block-image img[src$='svg'] {
   width: 50%;
   margin-left: auto;
   margin-right: auto;
 }
 
-/* line 124, ../sass/partials/_mobile-gif-backups.scss */
+/* line 120, ../sass/partials/_mobile-gif-backups.scss */
 .c3xgm-about-alt-anim .c3xgm-about-dealers.element-in-view + .c3xgm-about-flag-line-container #c3xgm-about-flag-line-grey-car {
   margin: 0;
   -webkit-animation-fill-mode: both;
@@ -1990,7 +1984,7 @@ Stylesheet: Helpers
   animation-iteration-count: infinite;
 }
 @media (min-width: 768px) {
-  /* line 124, ../sass/partials/_mobile-gif-backups.scss */
+  /* line 120, ../sass/partials/_mobile-gif-backups.scss */
   .c3xgm-about-alt-anim .c3xgm-about-dealers.element-in-view + .c3xgm-about-flag-line-container #c3xgm-about-flag-line-grey-car {
     -webkit-animation-duration: 6s;
     -moz-animation-duration: 6s;
@@ -1999,7 +1993,7 @@ Stylesheet: Helpers
     animation-duration: 6s;
   }
 }
-/* line 143, ../sass/partials/_mobile-gif-backups.scss */
+/* line 139, ../sass/partials/_mobile-gif-backups.scss */
 .c3xgm-about-alt-anim .c3xgm-about-decorative.c3xgm-about-solar-panels-animation.element-in-view #c3xgm-about-solar-road-grey-car {
   margin: 0;
   -webkit-animation-fill-mode: both;
@@ -2034,7 +2028,7 @@ Stylesheet: Helpers
   animation-iteration-count: infinite;
 }
 @media (min-width: 768px) {
-  /* line 143, ../sass/partials/_mobile-gif-backups.scss */
+  /* line 139, ../sass/partials/_mobile-gif-backups.scss */
   .c3xgm-about-alt-anim .c3xgm-about-decorative.c3xgm-about-solar-panels-animation.element-in-view #c3xgm-about-solar-road-grey-car {
     -webkit-animation-duration: 6s;
     -moz-animation-duration: 6s;
@@ -5232,9 +5226,21 @@ Stylesheet: Helpers
   display: none;
 }
 
+/* line 34, ../sass/components/_final-styles.scss */
+.c3xgm-about-mobile-device .c3xgm-about-china .c3xgm-about-desktop {
+  display: none;
+}
+
+/* line 41, ../sass/components/_final-styles.scss */
+.c3xgm-about-block-cfix {
+  background-image: url("../img/pages/brands/flag-mobile.svg");
+  background-repeat: no-repeat;
+  width: 100%;
+  padding-bottom: 266.77%;
+}
 @media (min-width: 768px) {
-  /* line 27, ../sass/components/_final-styles.scss */
-  .c3xgm-about-mobile-device .c3xgm-about-china .c3xgm-about-block-image > img {
-    display: none;
+  /* line 41, ../sass/components/_final-styles.scss */
+  .c3xgm-about-block-cfix {
+    background-image: url("../img/pages/brands/flag-mobile.png");
   }
 }
