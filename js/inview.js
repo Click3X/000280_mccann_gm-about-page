@@ -492,9 +492,24 @@ $(function() {
 		sections.push( obj );
 	});
 
+
+	// BLOCKS FOR LOOPING FLAGLINE AND SOLAR ROAD
+	$('#animate-flag-line, #c3xgm-about-solar-road-list').each( function(){
+		var obj = {}, t = $( this );
+
+		obj.el 		= t;
+		obj.$el 	= $( t );
+		obj.inbiew 	= true;
+		obj.active 	= false;
+		// ADD BLOCK TYPE PROPERTY TO DIFFERENTIAGE BETWEEN PAGES AND BLOCKS
+		obj.blockType  = 'loop';
+
+
+		sections.push( obj );
+	});
+
 	// loop animations - TRIGGER ON OFF
 	if(mobile){
-		// $('#c3xgm-about-flag-line-grey-car, #c3xgm-about-solar-road-grey-car, #c3xgm-about-grey-van, #c3xgm-about-red-car').each( function(){
 		$('#c3xgm-about-grey-van, #c3xgm-about-red-car').each( function(){
 			var obj = {}, t = $( this );
 
@@ -505,24 +520,9 @@ $(function() {
 			// ADD BLOCK TYPE PROPERTY TO DIFFERENTIAGE BETWEEN PAGES AND BLOCKS
 			obj.blockType  = 'loop';
 
-
 			sections.push( obj );
 		});
-	} else {
-		$('#animate-flag-line, #c3xgm-about-solar-road-list').each( function(){
-			var obj = {}, t = $( this );
-
-			obj.el 		= t;
-			obj.$el 	= $( t );
-			obj.inbiew 	= true;
-			obj.active 	= false;
-			// ADD BLOCK TYPE PROPERTY TO DIFFERENTIAGE BETWEEN PAGES AND BLOCKS
-			obj.blockType  = 'loop';
-
-
-			sections.push( obj );
-		});
-	}
+	} 
 
 	window.addEventListener( "scroll", onScroll );
 	window.addEventListener( "resize", onResize );
