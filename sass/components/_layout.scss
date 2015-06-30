@@ -245,18 +245,3 @@ body { /* Addresses a small issue in webkit: http://bit.ly/NEdoDq */
 .c3xgm-about-page-environment {
 	margin-bottom: 9em;
 }
-
-// OVERFLOW PROPERTIES FOR ROLLOVER FACILLITY
-.c3xgm-about-test-facility.c3xgm-about-block {
-	@media(min-width: $tablet-height) {
-		margin: 4em auto;
-	}
-	> .c3xgm-about-overflow {
-		position: relative;
-
-		@media(min-width: $tablet-height) {
-			padding: 3em 0;
-		}	
-	}
-	
-}

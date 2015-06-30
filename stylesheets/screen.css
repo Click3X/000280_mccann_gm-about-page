@@ -5187,3 +5187,18 @@ Stylesheet: Helpers
  * [2] IE10+
  */
 /* 1 */
+/* line 3, ../sass/components/_final-styles.scss */
+#c3xgm-about-page-safety-quality > div.c3xgm-about-block.c3xgm-about-clearfix.c3xgm-about-test-facility {
+  margin: 1em auto;
+}
+@media (min-width: 768px) {
+  /* line 3, ../sass/components/_final-styles.scss */
+  #c3xgm-about-page-safety-quality > div.c3xgm-about-block.c3xgm-about-clearfix.c3xgm-about-test-facility {
+    margin: 4em auto;
+  }
+}
+/* line 8, ../sass/components/_final-styles.scss */
+#c3xgm-about-page-safety-quality > div.c3xgm-about-block.c3xgm-about-clearfix.c3xgm-about-test-facility > div {
+  position: relative;
+  padding: 3em 0;
+}

@@ -1,0 +1,15 @@
+// FINAL STYLES
+// TEST FACILITY FIXES
+#c3xgm-about-page-safety-quality > div.c3xgm-about-block.c3xgm-about-clearfix.c3xgm-about-test-facility {
+	margin: 1em auto;
+	@media(min-width: $tablet-height) {
+		margin: 4em auto;
+	}
+	 > div {
+		position: relative;
+		padding: 3em 0;
+		// @media(min-width: $tablet-height) {
+		// 	padding: 3em 0;
+		// }	
+	}
+}
