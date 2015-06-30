@@ -8,15 +8,37 @@ function cd(myVar) {
     console.dir(myVar);
 }
 
-var mobile = false;
-// CHECK FOR MOBILE DEVICE
-if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
+var mobile = false, static_experience = false, browser = {};
+var gifImgs = jQuery('img[src$=".gif"]').not(jQuery('img[src$="wheel.gif"]'));
+var useragent = navigator.userAgent;
+
+//GET IS MOBILE
+if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(useragent) ) 
     mobile = true;
 
-    jQuery('body').addClass('c3xgm-about-mobile-device');
-} else {
-    jQuery('body').addClass('c3xgm-about-desktop-device');
+//GET BROWSER NAME
+if( /Mozilla/i.test(useragent) )        browser.name        = "Firefox";
+if( /Safari/i.test(useragent) )         browser.name        = "Safari";
+if( /Chrome/i.test(useragent) )         browser.name        = "Chrome";
+if( /Android/i.test(useragent) )        browser.name        = "Android";
+if( /MSIE|Trident/i.test(useragent) )   browser.name        = "IE";
+
+//GET BROWSER VERSION
+var start_i = 0, dot_i = 0, v_search_str = null;
+
+switch( browser.name ){
+    case "Firefox": v_search_str = "Firefox/";
+    break;
+    case "Safari":  v_search_str = "Version/";
+    break;
+    case "Android": v_search_str = "Android ";
+    break;
+    case "Chrome":  v_search_str = "Chrome/";
+    break;
+    case "IE": if( /MSIE/i.test(useragent) ) v_search_str = "MSIE "; else browser.version = "11.0";
+    break;
 }
+
 
 console.log('This is mobile: ' + mobile);
 
@@ -25,12 +47,41 @@ console.log('This is mobile: ' + mobile);
 var gifImgs = jQuery('img[src$=".gif"]').not(jQuery('img[src$="wheel.gif"]'));
 
 // IF MOBILE - ADD MOBILE STYLESHEET
-if(mobile) {
-    // REPLACE GIFS WITH SVGS
+if( v_search_str ){
+    start_i             = useragent.indexOf(v_search_str);
+    dot_i               = useragent.indexOf(".", start_i );
+    browser.version     = useragent.substring( start_i+v_search_str.length, dot_i + 2 );
+}
+
+//STATIC EXPERIENCE DETECTION
+if( mobile ){
     jQuery('img[src$=".gif"]').each(function(index,element) {
         element.src = element.src.replace('.gif','.svg');
     });
+
+    jQuery('body').addClass('c3xgm-about-mobile-device');
+
+    if( browser.name == "Android" ||
+        ( browser.name == "Safari" && browser.version < 7 ) ){
+            jQuery('body').addClass('c3xgm-about-static-experience');
+            static_experience = true;
+    }
+} else {
+    jQuery('body').addClass('c3xgm-about-desktop-device');
+
+    if( ( browser.name == "Safari" && browser.version < 8 )     ||
+        ( browser.name == "Firefox" && browser.version < 38 )   ||
+        ( browser.name == "Chrome" && browser.version < 43 )    ||
+        ( browser.name == "IE" && browser.version < 9 ) ){
+            jQuery('body').addClass('c3xgm-about-static-experience');
+            static_experience = true;
+    }
 }
+
+console.log(useragent);
+console.log(browser);
+console.log("static experience: ", static_experience);
+console.log('This is mobile: ' + mobile);
 
 // FORMAT NUMBER
 function formatNumber (num) {
