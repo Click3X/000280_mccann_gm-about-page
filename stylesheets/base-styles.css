@@ -2970,6 +2970,10 @@ h4.c3xgm-about-h {
     width: 93%;
     max-width: none;
   }
+
+  .c3xgm-about-global .c3xgm-about-block-image img[src$="svg"] {
+    width: 80%;
+  }
 }
 @media (min-width: 1176px) {
   /* line 47, ../sass/pages/_our-brands.scss */
@@ -10009,6 +10013,14 @@ body {
     -o-transform: translate3d(-50%, -4%, 0);
     -ms-transform: translate3d(-50%, -4%, 0);
     transform: translate3d(-50%, -4%, 0);
+  }
+
+  .c3xgm-about-global .c3xgm-about-block-image > div img[src$="svg"] {
+    -webkit-transform: translate3d(-50%, 0, 0);
+    -moz-transform: translate3d(-50%, 0, 0);
+    -o-transform: translate3d(-50%, 0, 0);
+    -ms-transform: translate3d(-50%, 0, 0);
+    transform: translate3d(-50%, 0, 0);
   }
 }
 /* line 235, ../sass/animations/_element-in-view.scss */
