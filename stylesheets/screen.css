@@ -1768,7 +1768,7 @@ Stylesheet: Helpers
 }
 /* line 13, ../sass/partials/_mobile-gif-backups.scss */
 .c3xgm-about-mobile-device .c3xgm-about-page-our-commitment .c3xgm-about-crash-test-dummies .c3xgm-about-block-image img[src$="svg"] {
-  width: 50%;
+  width: 40%;
 }
 @media (min-width: 768px) {
   /* line 13, ../sass/partials/_mobile-gif-backups.scss */
@@ -1784,7 +1784,7 @@ Stylesheet: Helpers
     transform: translate(-50%, -50%);
   }
 }
-/* line 22, ../sass/partials/_mobile-gif-backups.scss */
+/* line 23, ../sass/partials/_mobile-gif-backups.scss */
 .c3xgm-about-mobile-device .c3xgm-about-page-our-commitment .c3xgm-about-crash-test-dummies.element-in-view .c3xgm-about-block-image img {
   -webkit-animation-fill-mode: both;
   -moz-animation-fill-mode: both;
@@ -1807,11 +1807,11 @@ Stylesheet: Helpers
   -ms-animation-duration: 400ms;
   animation-duration: 400ms;
 }
-/* line 35, ../sass/partials/_mobile-gif-backups.scss */
+/* line 36, ../sass/partials/_mobile-gif-backups.scss */
 .c3xgm-about-mobile-device .c3xgm-about-decorative.c3xgm-about-red-car-road {
   position: relative;
 }
-/* line 39, ../sass/partials/_mobile-gif-backups.scss */
+/* line 40, ../sass/partials/_mobile-gif-backups.scss */
 .c3xgm-about-mobile-device .c3xgm-about-decorative.c3xgm-about-red-car-road #c3xgm-about-red-car {
   right: -380px;
   -webkit-animation-name: moveCarLeft;
@@ -1840,7 +1840,7 @@ Stylesheet: Helpers
   -ms-animation-iteration-count: infinite;
   animation-iteration-count: infinite;
 }
-/* line 47, ../sass/partials/_mobile-gif-backups.scss */
+/* line 48, ../sass/partials/_mobile-gif-backups.scss */
 .c3xgm-about-mobile-device .c3xgm-about-decorative.c3xgm-about-red-car-road #c3xgm-about-red-car.animate-flag-line {
   -webkit-animation-fill-mode: both;
   -moz-animation-fill-mode: both;
@@ -1848,13 +1848,12 @@ Stylesheet: Helpers
   -ms-animation-fill-mode: both;
   animation-fill-mode: both;
 }
-/* line 56, ../sass/partials/_mobile-gif-backups.scss */
+/* line 57, ../sass/partials/_mobile-gif-backups.scss */
 .c3xgm-about-mobile-device .c3xgm-about-flag-line-container #c3xgm-about-flag-line-grey-car {
   margin: 0 auto;
 }
-/* line 62, ../sass/partials/_mobile-gif-backups.scss */
+/* line 63, ../sass/partials/_mobile-gif-backups.scss */
 .c3xgm-about-mobile-device #c3xgm-about-grey-van {
-  left: -380px;
   -webkit-animation-name: moveCarRight;
   -moz-animation-name: moveCarRight;
   -o-animation-name: moveCarRight;
@@ -1881,7 +1880,7 @@ Stylesheet: Helpers
   -ms-animation-iteration-count: infinite;
   animation-iteration-count: infinite;
 }
-/* line 70, ../sass/partials/_mobile-gif-backups.scss */
+/* line 71, ../sass/partials/_mobile-gif-backups.scss */
 .c3xgm-about-mobile-device #c3xgm-about-grey-van.animate-flag-line {
   -webkit-animation-fill-mode: both;
   -moz-animation-fill-mode: both;
@@ -1889,11 +1888,11 @@ Stylesheet: Helpers
   -ms-animation-fill-mode: both;
   animation-fill-mode: both;
 }
-/* line 77, ../sass/partials/_mobile-gif-backups.scss */
+/* line 78, ../sass/partials/_mobile-gif-backups.scss */
 .c3xgm-about-mobile-device div#c3xgm-about-grey-van:before {
   display: none;
 }
-/* line 84, ../sass/partials/_mobile-gif-backups.scss */
+/* line 85, ../sass/partials/_mobile-gif-backups.scss */
 .c3xgm-about-mobile-device .c3xgm-about-decorative.c3xgm-about-solar-panels #c3xgm-about-solar-grey-car {
   left: -380px;
   -webkit-animation-name: moveCarRight;
@@ -1922,7 +1921,7 @@ Stylesheet: Helpers
   -ms-animation-iteration-count: infinite;
   animation-iteration-count: infinite;
 }
-/* line 94, ../sass/partials/_mobile-gif-backups.scss */
+/* line 95, ../sass/partials/_mobile-gif-backups.scss */
 .c3xgm-about-mobile-device .c3xgm-about-decorative.c3xgm-about-solar-panels.animate-flag-line {
   -webkit-animation-fill-mode: both;
   -moz-animation-fill-mode: both;
@@ -1930,33 +1929,33 @@ Stylesheet: Helpers
   -ms-animation-fill-mode: both;
   animation-fill-mode: both;
 }
-/* line 101, ../sass/partials/_mobile-gif-backups.scss */
+/* line 102, ../sass/partials/_mobile-gif-backups.scss */
 .c3xgm-about-mobile-device .c3xgm-about-mobile-visible {
   opacity: 1;
 }
-/* line 103, ../sass/partials/_mobile-gif-backups.scss */
+/* line 104, ../sass/partials/_mobile-gif-backups.scss */
 .c3xgm-about-mobile-device .c3xgm-about-mobile-device .c3xgm-about-main-nav-sub {
   display: none;
 }
-/* line 105, ../sass/partials/_mobile-gif-backups.scss */
+/* line 106, ../sass/partials/_mobile-gif-backups.scss */
 .c3xgm-about-mobile-device .c3xgm-about-page-our-commitment .c3xgm-about-climate-declaration .c3xgm-about-block-image > div {
   margin-left: auto;
 }
-/* line 110, ../sass/partials/_mobile-gif-backups.scss */
+/* line 111, ../sass/partials/_mobile-gif-backups.scss */
 .c3xgm-about-mobile-device #c3xgm-about-solar-road-grey-car {
   left: 0;
   right: 0;
   margin: auto;
 }
 
-/* line 116, ../sass/partials/_mobile-gif-backups.scss */
+/* line 117, ../sass/partials/_mobile-gif-backups.scss */
 .c3xgm-about-climate-declaration.element-in-view .c3xgm-about-block-image img[src$='svg'] {
   width: 50%;
   margin-left: auto;
   margin-right: auto;
 }
 
-/* line 123, ../sass/partials/_mobile-gif-backups.scss */
+/* line 124, ../sass/partials/_mobile-gif-backups.scss */
 .c3xgm-about-alt-anim .c3xgm-about-dealers.element-in-view + .c3xgm-about-flag-line-container #c3xgm-about-flag-line-grey-car {
   margin: 0;
   -webkit-animation-fill-mode: both;
@@ -1991,7 +1990,7 @@ Stylesheet: Helpers
   animation-iteration-count: infinite;
 }
 @media (min-width: 768px) {
-  /* line 123, ../sass/partials/_mobile-gif-backups.scss */
+  /* line 124, ../sass/partials/_mobile-gif-backups.scss */
   .c3xgm-about-alt-anim .c3xgm-about-dealers.element-in-view + .c3xgm-about-flag-line-container #c3xgm-about-flag-line-grey-car {
     -webkit-animation-duration: 6s;
     -moz-animation-duration: 6s;
@@ -2000,7 +1999,7 @@ Stylesheet: Helpers
     animation-duration: 6s;
   }
 }
-/* line 142, ../sass/partials/_mobile-gif-backups.scss */
+/* line 143, ../sass/partials/_mobile-gif-backups.scss */
 .c3xgm-about-alt-anim .c3xgm-about-decorative.c3xgm-about-solar-panels-animation.element-in-view #c3xgm-about-solar-road-grey-car {
   margin: 0;
   -webkit-animation-fill-mode: both;
@@ -2035,7 +2034,7 @@ Stylesheet: Helpers
   animation-iteration-count: infinite;
 }
 @media (min-width: 768px) {
-  /* line 142, ../sass/partials/_mobile-gif-backups.scss */
+  /* line 143, ../sass/partials/_mobile-gif-backups.scss */
   .c3xgm-about-alt-anim .c3xgm-about-decorative.c3xgm-about-solar-panels-animation.element-in-view #c3xgm-about-solar-road-grey-car {
     -webkit-animation-duration: 6s;
     -moz-animation-duration: 6s;
@@ -3369,110 +3368,8 @@ Stylesheet: Helpers
   -ms-animation-duration: 600ms;
   animation-duration: 600ms;
 }
-/* line 46, ../sass/animations/_element-in-view-new.scss */
-.c3xgm-about-test-facility.element-in-view .c3xgm-about-truck-shadow-container {
-  -webkit-animation-fill-mode: both;
-  -moz-animation-fill-mode: both;
-  -o-animation-fill-mode: both;
-  -ms-animation-fill-mode: both;
-  animation-fill-mode: both;
-  -webkit-animation-name: fadeIn;
-  -moz-animation-name: fadeIn;
-  -o-animation-name: fadeIn;
-  -ms-animation-name: fadeIn;
-  animation-name: fadeIn;
-  -webkit-animation-delay: 1400ms;
-  -moz-animation-delay: 1400ms;
-  -o-animation-delay: 1400ms;
-  -ms-animation-delay: 1400ms;
-  animation-delay: 1400ms;
-  -webkit-animation-duration: 700ms;
-  -moz-animation-duration: 700ms;
-  -o-animation-duration: 700ms;
-  -ms-animation-duration: 700ms;
-  animation-duration: 700ms;
-}
-/* line 52, ../sass/animations/_element-in-view-new.scss */
-.c3xgm-about-test-facility.element-in-view .c3xgm-about-truck-shadow-container .c3xgm-about-truck {
-  -webkit-animation-fill-mode: both;
-  -moz-animation-fill-mode: both;
-  -o-animation-fill-mode: both;
-  -ms-animation-fill-mode: both;
-  animation-fill-mode: both;
-  -webkit-animation-name: rotate;
-  -moz-animation-name: rotate;
-  -o-animation-name: rotate;
-  -ms-animation-name: rotate;
-  animation-name: rotate;
-  -webkit-animation-delay: 2700ms;
-  -moz-animation-delay: 2700ms;
-  -o-animation-delay: 2700ms;
-  -ms-animation-delay: 2700ms;
-  animation-delay: 2700ms;
-  -webkit-animation-duration: 2000ms;
-  -moz-animation-duration: 2000ms;
-  -o-animation-duration: 2000ms;
-  -ms-animation-duration: 2000ms;
-  animation-duration: 2000ms;
-  -webkit-animation-timing-function: ease-in-out;
-  -moz-animation-timing-function: ease-in-out;
-  -o-animation-timing-function: ease-in-out;
-  -ms-animation-timing-function: ease-in-out;
-  animation-timing-function: ease-in-out;
-}
-/* line 60, ../sass/animations/_element-in-view-new.scss */
-.c3xgm-about-test-facility.element-in-view .c3xgm-about-truck-shadow-container .c3xgm-about-truck-bg-outer {
-  -webkit-animation-fill-mode: both;
-  -moz-animation-fill-mode: both;
-  -o-animation-fill-mode: both;
-  -ms-animation-fill-mode: both;
-  animation-fill-mode: both;
-  -webkit-animation-name: wenSlideInUp;
-  -moz-animation-name: wenSlideInUp;
-  -o-animation-name: wenSlideInUp;
-  -ms-animation-name: wenSlideInUp;
-  animation-name: wenSlideInUp;
-  -webkit-animation-delay: 1700ms;
-  -moz-animation-delay: 1700ms;
-  -o-animation-delay: 1700ms;
-  -ms-animation-delay: 1700ms;
-  animation-delay: 1700ms;
-  -webkit-animation-duration: 1000ms;
-  -moz-animation-duration: 1000ms;
-  -o-animation-duration: 1000ms;
-  -ms-animation-duration: 1000ms;
-  animation-duration: 1000ms;
-  -webkit-animation-timing-function: ease-in-out;
-  -moz-animation-timing-function: ease-in-out;
-  -o-animation-timing-function: ease-in-out;
-  -ms-animation-timing-function: ease-in-out;
-  animation-timing-function: ease-in-out;
-}
-/* line 68, ../sass/animations/_element-in-view-new.scss */
-.c3xgm-about-test-facility.element-in-view .c3xgm-about-truck-shadow-container .c3xgm-about-truck-lines-holder {
-  -webkit-animation-fill-mode: both;
-  -moz-animation-fill-mode: both;
-  -o-animation-fill-mode: both;
-  -ms-animation-fill-mode: both;
-  animation-fill-mode: both;
-  -webkit-animation-name: fadeIn;
-  -moz-animation-name: fadeIn;
-  -o-animation-name: fadeIn;
-  -ms-animation-name: fadeIn;
-  animation-name: fadeIn;
-  -webkit-animation-delay: 2.75s;
-  -moz-animation-delay: 2.75s;
-  -o-animation-delay: 2.75s;
-  -ms-animation-delay: 2.75s;
-  animation-delay: 2.75s;
-  -webkit-animation-duration: 700ms;
-  -moz-animation-duration: 700ms;
-  -o-animation-duration: 700ms;
-  -ms-animation-duration: 700ms;
-  animation-duration: 700ms;
-}
-/* line 75, ../sass/animations/_element-in-view-new.scss */
-.c3xgm-about-test-facility.element-in-view .c3xgm-about-truck-shadow-container .c3xgm-about-truck-lines {
+/* line 49, ../sass/animations/_element-in-view-new.scss */
+.c3xgm-about-test-facility.element-in-view.inview .c3xgm-about-truck-shadow-container .c3xgm-about-truck-lines {
   opacity: 1;
   -webkit-animation-fill-mode: both;
   -moz-animation-fill-mode: both;
@@ -3505,7 +3402,124 @@ Stylesheet: Helpers
   -ms-animation-iteration-count: infinite;
   animation-iteration-count: infinite;
 }
+/* line 61, ../sass/animations/_element-in-view-new.scss */
+.c3xgm-about-test-facility.element-in-view .c3xgm-about-truck-shadow-container {
+  -webkit-animation-fill-mode: both;
+  -moz-animation-fill-mode: both;
+  -o-animation-fill-mode: both;
+  -ms-animation-fill-mode: both;
+  animation-fill-mode: both;
+  -webkit-animation-name: fadeIn;
+  -moz-animation-name: fadeIn;
+  -o-animation-name: fadeIn;
+  -ms-animation-name: fadeIn;
+  animation-name: fadeIn;
+  -webkit-animation-delay: 1400ms;
+  -moz-animation-delay: 1400ms;
+  -o-animation-delay: 1400ms;
+  -ms-animation-delay: 1400ms;
+  animation-delay: 1400ms;
+  -webkit-animation-duration: 700ms;
+  -moz-animation-duration: 700ms;
+  -o-animation-duration: 700ms;
+  -ms-animation-duration: 700ms;
+  animation-duration: 700ms;
+}
+/* line 67, ../sass/animations/_element-in-view-new.scss */
+.c3xgm-about-test-facility.element-in-view .c3xgm-about-truck-shadow-container .c3xgm-about-truck {
+  -webkit-animation-fill-mode: both;
+  -moz-animation-fill-mode: both;
+  -o-animation-fill-mode: both;
+  -ms-animation-fill-mode: both;
+  animation-fill-mode: both;
+  -webkit-animation-name: rotate;
+  -moz-animation-name: rotate;
+  -o-animation-name: rotate;
+  -ms-animation-name: rotate;
+  animation-name: rotate;
+  -webkit-animation-delay: 2700ms;
+  -moz-animation-delay: 2700ms;
+  -o-animation-delay: 2700ms;
+  -ms-animation-delay: 2700ms;
+  animation-delay: 2700ms;
+  -webkit-animation-duration: 2000ms;
+  -moz-animation-duration: 2000ms;
+  -o-animation-duration: 2000ms;
+  -ms-animation-duration: 2000ms;
+  animation-duration: 2000ms;
+  -webkit-animation-timing-function: ease-in-out;
+  -moz-animation-timing-function: ease-in-out;
+  -o-animation-timing-function: ease-in-out;
+  -ms-animation-timing-function: ease-in-out;
+  animation-timing-function: ease-in-out;
+  -webkit-animation-iteration-count: 1;
+  -moz-animation-iteration-count: 1;
+  -o-animation-iteration-count: 1;
+  -ms-animation-iteration-count: 1;
+  animation-iteration-count: 1;
+}
+/* line 76, ../sass/animations/_element-in-view-new.scss */
+.c3xgm-about-test-facility.element-in-view .c3xgm-about-truck-shadow-container .c3xgm-about-truck-bg-outer {
+  -webkit-animation-fill-mode: both;
+  -moz-animation-fill-mode: both;
+  -o-animation-fill-mode: both;
+  -ms-animation-fill-mode: both;
+  animation-fill-mode: both;
+  -webkit-animation-name: wenSlideInUp;
+  -moz-animation-name: wenSlideInUp;
+  -o-animation-name: wenSlideInUp;
+  -ms-animation-name: wenSlideInUp;
+  animation-name: wenSlideInUp;
+  -webkit-animation-delay: 1700ms;
+  -moz-animation-delay: 1700ms;
+  -o-animation-delay: 1700ms;
+  -ms-animation-delay: 1700ms;
+  animation-delay: 1700ms;
+  -webkit-animation-duration: 1000ms;
+  -moz-animation-duration: 1000ms;
+  -o-animation-duration: 1000ms;
+  -ms-animation-duration: 1000ms;
+  animation-duration: 1000ms;
+  -webkit-animation-timing-function: ease-in-out;
+  -moz-animation-timing-function: ease-in-out;
+  -o-animation-timing-function: ease-in-out;
+  -ms-animation-timing-function: ease-in-out;
+  animation-timing-function: ease-in-out;
+  -webkit-animation-iteration-count: 1;
+  -moz-animation-iteration-count: 1;
+  -o-animation-iteration-count: 1;
+  -ms-animation-iteration-count: 1;
+  animation-iteration-count: 1;
+}
 /* line 85, ../sass/animations/_element-in-view-new.scss */
+.c3xgm-about-test-facility.element-in-view .c3xgm-about-truck-shadow-container .c3xgm-about-truck-lines-holder {
+  -webkit-animation-fill-mode: both;
+  -moz-animation-fill-mode: both;
+  -o-animation-fill-mode: both;
+  -ms-animation-fill-mode: both;
+  animation-fill-mode: both;
+  -webkit-animation-name: fadeIn;
+  -moz-animation-name: fadeIn;
+  -o-animation-name: fadeIn;
+  -ms-animation-name: fadeIn;
+  animation-name: fadeIn;
+  -webkit-animation-delay: 2.75s;
+  -moz-animation-delay: 2.75s;
+  -o-animation-delay: 2.75s;
+  -ms-animation-delay: 2.75s;
+  animation-delay: 2.75s;
+  -webkit-animation-duration: 700ms;
+  -moz-animation-duration: 700ms;
+  -o-animation-duration: 700ms;
+  -ms-animation-duration: 700ms;
+  animation-duration: 700ms;
+  -webkit-animation-iteration-count: 1;
+  -moz-animation-iteration-count: 1;
+  -o-animation-iteration-count: 1;
+  -ms-animation-iteration-count: 1;
+  animation-iteration-count: 1;
+}
+/* line 93, ../sass/animations/_element-in-view-new.scss */
 .c3xgm-about-test-facility.element-in-view .c3xgm-about-truck-shadow-container .c3xgm-about-shadow {
   -webkit-animation-fill-mode: both;
   -moz-animation-fill-mode: both;
@@ -3532,6 +3546,11 @@ Stylesheet: Helpers
   -o-animation-timing-function: ease-out;
   -ms-animation-timing-function: ease-out;
   animation-timing-function: ease-out;
+  -webkit-animation-iteration-count: 1;
+  -moz-animation-iteration-count: 1;
+  -o-animation-iteration-count: 1;
+  -ms-animation-iteration-count: 1;
+  animation-iteration-count: 1;
 }
 
 /* line 2, ../sass/partials/_solar-panels.scss */
@@ -5201,4 +5220,9 @@ Stylesheet: Helpers
 #c3xgm-about-page-safety-quality > div.c3xgm-about-block.c3xgm-about-clearfix.c3xgm-about-test-facility > div {
   position: relative;
   padding: 3em 0;
+}
+
+/* line 15, ../sass/components/_final-styles.scss */
+#c3xgm-about-number-63 {
+  height: 0.8em;
 }

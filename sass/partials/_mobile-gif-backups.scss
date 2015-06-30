@@ -11,7 +11,8 @@
 		
 		// .c3xgm-about-crash-test-dummies .c3xgm-about-block-image img { 
 		.c3xgm-about-crash-test-dummies .c3xgm-about-block-image img[src$="svg"] {
-			width: 50%; 
+			// width: 50%;
+			width: 40%; 
 			@media(min-width: $tablet-height) {
 				width: 80%;
 				position: absolute; top: 50%; left: 50%;
@@ -60,7 +61,7 @@
 
 	// FIVE STARS
 	#c3xgm-about-grey-van {
-		left: -380px;
+		// left: -380px;
 		@include prefix(animation-name, moveCarRight);
 		@include prefix(animation-delay, 0);
 		@include prefix(animation-duration, 4s);
