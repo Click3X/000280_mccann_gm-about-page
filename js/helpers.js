@@ -66,6 +66,7 @@ if( mobile ){
             jQuery('body').addClass('c3xgm-about-static-experience');
             static_experience = true;
     }
+
 } else {
     jQuery('body').addClass('c3xgm-about-desktop-device');
 

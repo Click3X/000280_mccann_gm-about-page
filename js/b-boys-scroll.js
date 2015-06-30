@@ -74,9 +74,6 @@
   ];
 
   function getElemOffest(elemId) {
-    console.log('THis is element Offset ID ' + elemId);
-    console.log('This is elemId offset top: ' + jQuery(elemId).offset().top);
-    console.log('This is elemId offset ratio: ' + jQuery(elemId).offset().top / _containerHeight );
     return jQuery(elemId).offset().top / _containerHeight;
   }
 

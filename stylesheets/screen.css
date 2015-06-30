@@ -5230,8 +5230,12 @@ Stylesheet: Helpers
 .c3xgm-about-mobile-device .c3xgm-about-china .c3xgm-about-desktop {
   display: none;
 }
+/* line 40, ../sass/components/_final-styles.scss */
+.c3xgm-about-mobile-device .c3xgm-about-main-nav-container {
+  display: none;
+}
 
-/* line 41, ../sass/components/_final-styles.scss */
+/* line 44, ../sass/components/_final-styles.scss */
 .c3xgm-about-block-cfix {
   background-image: url("../img/pages/brands/flag-mobile.svg");
   background-repeat: no-repeat;
@@ -5239,7 +5243,7 @@ Stylesheet: Helpers
   padding-bottom: 266.77%;
 }
 @media (min-width: 768px) {
-  /* line 41, ../sass/components/_final-styles.scss */
+  /* line 44, ../sass/components/_final-styles.scss */
   .c3xgm-about-block-cfix {
     background-image: url("../img/pages/brands/flag-mobile.png");
   }

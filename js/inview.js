@@ -194,7 +194,7 @@ function step( time ){
 ===================================*/
 // FOR RESIZING FUNCTION - PUT HERE ...
 function updateSectionSizes(){
-	console.log( "-- updateSectionSizes --" );
+	// console.log( "-- updateSectionSizes --" );
 
 	for( var i = 0; i < sections.length; i++ ){
 		var section 			= sections[ i ];
@@ -205,14 +205,14 @@ function updateSectionSizes(){
 }
 
 function updateSections(){
-	console.log( "-- updateSections --" );
+	// console.log( "-- updateSections --" );
 
 	var scrolltop 		= $( window ).scrollTop(),
 	windowheight 		= Math.round( window.innerHeight ),
 	bodyheight 			= Math.round( $( "#c3xgm-about-page-container" ).height() );
 	
 
-	console.log( scrolltop, windowheight, bodyheight );
+	// console.log( scrolltop, windowheight, bodyheight );
 
 	for(var i = 0; i<sections.length; i++){
 		var section 	= sections[ i ],
@@ -247,7 +247,7 @@ function updateSections(){
 
 
 function sectionToActiveState( _section ){
-	console.log( "-- sectionToActiveState " + _section + " --" );
+	// console.log( "-- sectionToActiveState " + _section + " --" );
 	// console.dir( _section);
 
 	if( (_section.blockType == "page") || (_section.blockType == "section") ) {
@@ -266,20 +266,17 @@ function sectionToActiveState( _section ){
 	        // OUR PEOPLE TRIGGERS
 	        var time;
 	        if( _section.pageId && (_section.pageId == "c3xgm-about-page-our-people") ) {
-	        	console.log('OUR PEOPLE');
 
 	        	var page =  $(_section.$el.get(0)),
 	        		blocks = $(page).find('.c3xgm-about-block');
 
 	        	$.each(blocks, function(i, val) {
                     var animateNum = $(this).find('.c3xgm-about-animate-number');
-                    console.dir(animateNum);
                     setTimeout(function() {
                         time = 1200 * i;
                         setTimeout(function() {
                         	$(val).removeClass('invisible').addClass('element-in-view');
                             if(animateNum.length > 0) {
-                                console.log('This is index: ' + i);
                                 if(i == 0 ) {
                                     fireAnimatedEmployees();
                                 } else if(i==1) {
@@ -311,10 +308,8 @@ function sectionToActiveState( _section ){
 
 		// TRIGGERS FOR SPECIFIC BLOCKS
 		if( _section.pageId && (_section.pageId == "c3xgm-about-safety-score") ) {
-			console.log('SAFETY SCORE in view!');
 			fireAnimate63();
 		} else if ( _section.pageId && (_section.pageId == "c3xgm-about-crash-test-dummies-block") ) {
-			console.log('CRASH TEST DUMMIES in view!');
 			fireCTD();
 		}
 
@@ -324,15 +319,12 @@ function sectionToActiveState( _section ){
 			setTimeout(function(){
             	// AUTO ROTATE SLIDER
 				triggerSlider(trigger);
-         	// }, 2500);
 			}, 1250);
 		} else {
 			if( trigger == 'tech' ) {
-				// AUTO ROTATE SLIDER
 				setTimeout(function(){
 	            	// AUTO ROTATE SLIDER
 					triggerSlider(trigger);
-	         	// }, 1000);
 				}, 500);
 			}
 		}
@@ -386,14 +378,12 @@ function killSlider(trigger) {
 ===================================*/
 
 function onScroll( _e ){
-	console.log("-- onScroll --");
-	
+	// console.log("-- onScroll --");
 	didscroll = true;
 }
 
 function onResize( _e ){
-	console.log("-- onResize --");
-
+	// console.log("-- onResize --");
 	didresize = true;
 }
 
