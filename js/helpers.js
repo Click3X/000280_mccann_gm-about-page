@@ -32,10 +32,9 @@ if(mobile) {
 
         if( (element.src != 'chinaflag.gif') && ($(window).width() < 768) ) {
             element.src = element.src.replace('.gif','.svg');
-        } 
-        // else {
-        //     element.src = element.src.replace('.gif','.svg');
-        // }
+        } else {
+            element.src = element.src.replace('.gif','.svg');
+        }
 
     });
 }
