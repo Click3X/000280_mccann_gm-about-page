@@ -122,6 +122,19 @@ function fireAnimate63() {
     }
 }
 
+// CRASH TEST DUMMIES
+var triggerCTD = false;
+function fireCTD() {
+	setTimeout(function() {
+        if(triggerCTD == false) {
+            triggerGif( document.getElementById('c3xgm-about-crash-test-dummies') );
+            $('#c3xgm-about-crash-test-dummies').removeClass('invisible');
+            triggerCTD = true;    
+        }
+	}, 200);	
+}
+
+
 /*======= GLOBAL PROPERTIES ========
 ===================================*/
 
@@ -285,10 +298,13 @@ function sectionToActiveState( _section ){
 		_section.$el.removeClass("invisible").addClass( "element-in-view" );
 
 		// TRIGGERS FOR SPECIFIC BLOCKS
-		// if( _section.pageId && (_section.pageId == "c3xgm-about-employees") ) {
-		// 	console.log('Employees in view!');
-		// 	fireAnimatedEmployees();
-		// }
+		if( _section.pageId && (_section.pageId == "c3xgm-about-safety-score") ) {
+			console.log('SAFETY SCORE in view!');
+			fireAnimate63();
+		} else if ( _section.pageId && (_section.pageId == "c3xgm-about-crash-test-dummies-block") ) {
+			console.log('CRASH TEST DUMMIES in view!');
+			fireCTD();
+		}
 
 	} else if(_section.blockType == "slider") {
 		var trigger = _section.$el.eq(0).attr('data-trigger');
