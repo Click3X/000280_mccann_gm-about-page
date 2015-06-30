@@ -61,7 +61,7 @@ function fireAnimatedEmployees() {
         // MAKE SURE NUMBER REACHES 216000
         setTimeout(function(){ 
             $('#c3xgm-about-emp-num').text(formatNumber(216000));
-        }, 2500);
+        }, 2600);
 
         animateEmployees = true;
     }
@@ -81,7 +81,7 @@ function fireAnimate6() {
 
             setTimeout(function(){ 
 	            $('#c3xgm-about-number-6').text(formatNumber(6));
-	        }, 1000);
+	        }, 1100);
 
             animate6 = true;
         }, 800);
@@ -99,7 +99,7 @@ function fireAnimate23() {
 
             setTimeout(function(){ 
 	            $('#c3xgm-about-number-23').text(formatNumber(23));
-	        }, 1200);
+	        }, 1300);
 
             animate23 = true;
         }, 600);
@@ -117,7 +117,7 @@ function fireAnimate70() {
 
             setTimeout(function(){ 
 	            $('#c3xgm-about-number-70').text(formatNumber(70));
-	        }, 1200);
+	        }, 1300);
 
             animate70 = true;
         }, 600);
@@ -131,14 +131,14 @@ function fireAnimate63() {
         $('#c3xgm-about-number-63').text('');
       // // TRIGGER NUMBER ANIMATION
         setTimeout(function(){ 
-            $('#c3xgm-about-number-63').jQuerySimpleCounter({start:40, end: 63,duration: 900});
+            $('#c3xgm-about-number-63').jQuerySimpleCounter({start:40, end: 63,duration: 1400});
             
             setTimeout(function(){ 
 	            $('#c3xgm-about-number-63').text(formatNumber(63));
-	        }, 900);
+	        }, 1500);
 
             animate63 = true;
-        }, 800);
+        }, 1400);
     }
 }
 
