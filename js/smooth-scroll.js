@@ -12,10 +12,19 @@ jQuery(document).ready(function($) {
             var target = $(this.hash);
             target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
 
+            console.log('THis is target: ' + target);
+            console.dir(target);
+
+            var tId = '#' + target.get(0).id;
+
+            console.log('THis is tId: ' + tId);
+            console.dir(tId);
+
             if (target.length) {
                 $("html, body").animate({
                     scrollTop: target.offset().top
                 }, 1000, (function() {
+
                 }));
                 return false;
             }
