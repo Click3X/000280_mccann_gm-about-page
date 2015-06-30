@@ -329,8 +329,16 @@ function sectionToActiveState( _section ){
 
 	} else if(_section.blockType == "slider") {
 		var trigger = _section.$el.eq(0).attr('data-trigger');
-		// AUTO ROTATE SLIDER
-		triggerSlider(trigger);
+		if( (trigger == 'car') || (trigger == 'foundation') ) {
+			setTimeout(function(){
+            	// AUTO ROTATE SLIDER
+				triggerSlider(trigger);
+         	}, 2500);
+		} else {
+			// AUTO ROTATE SLIDER
+			triggerSlider(trigger);
+		}
+
 	} else if(_section.blockType == "loop") {
 		_section.$el.addClass( "animate-flag-line" );
 	}
@@ -463,7 +471,6 @@ $(function() {
 
 
 	// SECTIONS ( IN OUR COMMITMENT PAGE ) AND END NAV
-	// $( "#c3xgm-about-page-our-commitment > .c3xgm-about-page, #c3xgm-about-end-nav" ).each( function(){
 	$( "#c3xgm-about-page-our-commitment > .c3xgm-about-page" ).each( function(){
 		var obj = {}, t = $( this );
 
@@ -508,6 +515,8 @@ $(function() {
 		obj.active 	= false;
 		// ADD BLOCK TYPE PROPERTY TO DIFFERENTIAGE BETWEEN PAGES AND BLOCKS
 		obj.blockType  = 'slider';
+		// ADD ID PROPERTY IF BLOCK HAS ONE
+		if( $( t ).attr('id') ) { obj.pageId = $( t ).attr('id'); }
 
 
 		sections.push( obj );
