@@ -335,8 +335,13 @@ function sectionToActiveState( _section ){
 				triggerSlider(trigger);
          	}, 2500);
 		} else {
-			// AUTO ROTATE SLIDER
-			triggerSlider(trigger);
+			if( trigger == 'tech' ) {
+				// AUTO ROTATE SLIDER
+				setTimeout(function(){
+	            	// AUTO ROTATE SLIDER
+					triggerSlider(trigger);
+	         	}, 1000);
+			}
 		}
 
 	} else if(_section.blockType == "loop") {

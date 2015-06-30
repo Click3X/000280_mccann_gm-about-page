@@ -61,7 +61,8 @@
       name: 'c3xgm-about-solar-road-grey-car',
       start: {
         percent: getElemOffest('#c3xgm-about-solar-road-grey-car') + 0.01, 
-        x:-0.12, 
+        // x:-0.12, 
+        x:-0.2, 
         y:0
       },
       end: {
