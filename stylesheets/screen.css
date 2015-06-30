@@ -5231,3 +5231,10 @@ Stylesheet: Helpers
 .c3xgm-about-desktop-device .c3xgm-about-china .c3xgm-about-block-image > img {
   display: none;
 }
+
+@media (min-width: 768px) {
+  /* line 27, ../sass/components/_final-styles.scss */
+  .c3xgm-about-mobile-device .c3xgm-about-china .c3xgm-about-block-image > img {
+    display: none;
+  }
+}

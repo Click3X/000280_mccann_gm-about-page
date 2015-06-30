@@ -22,3 +22,11 @@
 		display: none;
 	}
 }
+
+.c3xgm-about-mobile-device {
+	.c3xgm-about-china .c3xgm-about-block-image > img {
+		@media(min-width: $tablet-height) {
+			display: none;
+		}
+	}
+}
