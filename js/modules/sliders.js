@@ -1,8 +1,8 @@
 // CAR JS MODULE 'OUR BRANDS'
 
-var aboutSlideInterval, carLinks, currentAboutSlide = 0;
-var techSlideInterval, techLinks, currentTechSlide = 0;
-var foundationSlideInterval, foundationLinks, currentFoundationSlide = 0;
+var aboutSlideInterval, carLinks, currentAboutSlide = -1;
+var techSlideInterval, techLinks, currentTechSlide = -1;
+var foundationSlideInterval, foundationLinks, currentFoundationSlide = -1;
 var techLeftRight;
 
 jQuery(document).ready(function($) {
@@ -27,34 +27,37 @@ jQuery(document).ready(function($) {
 	carLinks.on('click touchstart', function(e, auto_rotate) {
 		e.preventDefault();
 
-		// console.log("ABOUT LINK CLICKED", $(this).parent().index() );
-
-		// GET LINKS
-		var target = $(this).attr('href');
-		//  ADD ACRIVE CLASS
-		$('.c3xgm-about-module-car .active').removeClass('active');
-		$(this).addClass('active');
-
-		// ADD TRANSPARENCY TO OTHER NAV ITEMS
-		carLinks.not(this).addClass('c3xgm-about-module-logo-unactive');
-
-		// GET CUR SLIDE
-		var curSlide = $('.c3xgm-about-module-car .show-module-slide-in');
-
-		// MODULE SLIDE-OUT
-		curSlide.removeClass('show-module-slide-in').addClass('hide-module-slide-out');
-		setTimeout(function() {
-				$(curSlide).addClass('hide-module');
-			}, 700);
-		// MODULE SLIDE-IN
-		setTimeout(function() {
-			$(target).removeClass('hide-module').removeClass('hide-module-slide-out').addClass('show-module-slide-in');
-		}, 700);
-
-		if(!auto_rotate){
-			killAutoRotateAboutSlider();
+		if( auto_rotate || currentAboutSlide != $(this).parent().index() ){
+			// GET LINKS
+			var target = $(this).attr('href');
 
 			currentAboutSlide = $(this).parent().index();
+
+			//  ADD ACRIVE CLASS
+			$('.c3xgm-about-module-car .active').removeClass('active');
+			$(this).addClass('active');
+
+			// ADD TRANSPARENCY TO OTHER NAV ITEMS
+			carLinks.not(this).addClass('c3xgm-about-module-logo-unactive');
+
+			// GET CUR SLIDE
+			var curSlide = $('.c3xgm-about-module-car .show-module-slide-in');
+
+			// MODULE SLIDE-OUT
+			curSlide.removeClass('show-module-slide-in').addClass('hide-module-slide-out');
+
+			setTimeout(function() {
+				$(curSlide).addClass('hide-module');
+			}, 700);
+
+			// MODULE SLIDE-IN
+			setTimeout(function() {
+				$(target).removeClass('hide-module').removeClass('hide-module-slide-out').addClass('show-module-slide-in');
+			}, 700);
+
+			if(!auto_rotate){
+				killAutoRotateAboutSlider();
+			}
 		}
 	});
 
@@ -66,38 +69,38 @@ jQuery(document).ready(function($) {
 	foundationLinks.on('click touchstart', function(e, auto_rotate) {
 		e.preventDefault();
 
-		// console.log("FOUNDATION LINK CLICKED", $(this).parent().index() );
-
-		// GET LINKS
-		var target = $(this).attr('href');
-		//  ADD ACRIVE CLASS
-		$('.c3xgm-about-module-foundation .active').removeClass('active');
-		$(this).addClass('active');
-
-		// ADD TRANSPARENCY TO OTHER NAV ITEMS
-		foundationLinks.not(this).addClass('c3xgm-about-module-logo-unactive');
-
-		// GET CUR SLIDE
-		var curSlide = $('.c3xgm-about-module-foundation .show-module-slide-in');
-
-		// MODULE SLIDE-OUT
-		curSlide.removeClass('show-module-slide-in').addClass('hide-module-slide-out');
-		setTimeout(function() {
-				$(curSlide).addClass('hide-module');
-			}, 700);
-		// MODULE SLIDE-IN
-		setTimeout(function() {
-			$(target).removeClass('hide-module').removeClass('hide-module-slide-out').addClass('show-module-slide-in');
-		}, 700);
-
-		if(!auto_rotate){
-			killAutoRotateFoundationSlider();
+		if( auto_rotate || currentFoundationSlide != $(this).parent().index() ){
+			// GET LINKS
+			var target = $(this).attr('href');
 
 			currentFoundationSlide = $(this).parent().index();
+
+			//  ADD ACRIVE CLASS
+			$('.c3xgm-about-module-foundation .active').removeClass('active');
+			$(this).addClass('active');
+
+			// ADD TRANSPARENCY TO OTHER NAV ITEMS
+			foundationLinks.not(this).addClass('c3xgm-about-module-logo-unactive');
+
+			// GET CUR SLIDE
+			var curSlide = $('.c3xgm-about-module-foundation .show-module-slide-in');
+
+			// MODULE SLIDE-OUT
+			curSlide.removeClass('show-module-slide-in').addClass('hide-module-slide-out');
+			setTimeout(function() {
+				$(curSlide).addClass('hide-module');
+			}, 700);
+
+			// MODULE SLIDE-IN
+			setTimeout(function() {
+				$(target).removeClass('hide-module').removeClass('hide-module-slide-out').addClass('show-module-slide-in');
+			}, 700);
+
+			if(!auto_rotate){
+				killAutoRotateFoundationSlider();
+			}
 		}
 	});
-
-
 
 	// TECH ---------------------------------------------------------------------------------------------------------
 	// MOVE ALL SLIDES TO RIGHT 100%;
@@ -109,36 +112,37 @@ jQuery(document).ready(function($) {
 	techLinks.on('click touchstart', function(e, auto_rotate) {
 		e.preventDefault();
 
-		// GET LINKS
-		var target = $(this).attr('href');
-
-		currentTechSlide = $(this).parent().index();
-		// console.log("Current Tech slide is: ", currentTechSlide );
-		//  ADD ACRIVE CLASS
-		$('#c3xgm-about-page-technology .c3xgm-about-module-nav li a.c3xgm-about-module-nav-bullet-active').removeClass('c3xgm-about-module-nav-bullet-active');
-		$(this).addClass('c3xgm-about-module-nav-bullet-active');
-
-		// GET CUR SLIDE
-		var curSlide = $('.c3xgm-about-module-technology .show-module-slide-in');
-
-		// MODULE SLIDE-OUT
-		$(curSlide).removeClass('show-module-slide-in').addClass('hide-module-slide-out');
-		setTimeout(function() {
-			$('.c3xgm-about-module-technology .show-module-slide-in').removeClass('show-module-slide-in').addClass('hide-module-slide-out');
-		}, 0);
-
-		setTimeout(function() {
-				$(curSlide).removeClass('hide-module-slide-out').addClass('hide-module');
-			}, 500);
-		// MODULE SLIDE-IN
-		setTimeout(function() {
-			$(target).removeClass('hide-module hide-module-slide-out').addClass('show-module-slide-in');
-		}, 500);
-
-		if(!auto_rotate){
-			killAutoRotateTechSlider();
+		if( auto_rotate || currentTechSlide != $(this).parent().index() ){
+			// GET LINKS
+			var target = $(this).attr('href');
 
 			currentTechSlide = $(this).parent().index();
+
+			//  ADD ACTIVE CLASS
+			$('#c3xgm-about-page-technology .c3xgm-about-module-nav li a.c3xgm-about-module-nav-bullet-active').removeClass('c3xgm-about-module-nav-bullet-active');
+			$(this).addClass('c3xgm-about-module-nav-bullet-active');
+
+			// GET CUR SLIDE
+			var curSlide = $('.c3xgm-about-module-technology .show-module-slide-in');
+
+			// MODULE SLIDE-OUT
+			$(curSlide).removeClass('show-module-slide-in').addClass('hide-module-slide-out');
+			setTimeout(function() {
+				$('.c3xgm-about-module-technology .show-module-slide-in').removeClass('show-module-slide-in').addClass('hide-module-slide-out');
+			}, 0);
+
+			setTimeout(function() {
+				$(curSlide).removeClass('hide-module-slide-out').addClass('hide-module');
+			}, 500);
+
+			// MODULE SLIDE-IN
+			setTimeout(function() {
+				$(target).removeClass('hide-module hide-module-slide-out').addClass('show-module-slide-in');
+			}, 500);
+
+			if(!auto_rotate){
+				killAutoRotateTechSlider();
+			}
 		}
 	});
 
@@ -168,13 +172,9 @@ jQuery(document).ready(function($) {
 			}
 		} 
 
-		// console.log('This is clickIndex: ' + clickIndex);
-
 		// TRIGGER CLICK ON INDEX
 		$(techLinks[clickIndex]).trigger('click');
 	});
-
-
 
 	// DISCLAIMER ---------------------------------------------------------------------------------------------------------
 	// DISCLAIMER BOX OPEN CLOSE
@@ -187,29 +187,26 @@ jQuery(document).ready(function($) {
 		event.preventDefault();
 		$discBox.toggleClass('c3xgm-about-show-disclaimer');
 	});
-
 });
 
 
 //AUTO ROTATE ABOUT SLIDER
 function autorotateAboutSlider(){
-   // console.log("autorotateAboutSlider");
+	console.log("-- autorotateAboutSlider --", carLinks.length);
 
     if(!aboutSlideInterval){
-        aboutSlideInterval = setInterval(function(){
-            currentAboutSlide++; if(currentAboutSlide > carLinks.length-1) currentAboutSlide = 0;
+    	currentAboutSlide++; if(currentAboutSlide > carLinks.length-1) currentAboutSlide = 0;
+        $(carLinks[currentAboutSlide]).eq(0).trigger("click", true);
 
-            $(carLinks[currentAboutSlide]).eq(0).trigger("click", true);
-        }, 5000);
+    	aboutSlideInterval = setInterval(function(){
+    		currentAboutSlide++; if(currentAboutSlide > carLinks.length-1) currentAboutSlide = 0;
+        	$(carLinks[currentAboutSlide]).eq(0).trigger("click", true);
+        }, 4000);
     }
 }
 
-function autorotateAboutSliderOnce(){
-	  $(carLinks[currentAboutSlide]).eq(0).trigger("click", true);
-}
-
 function killAutoRotateAboutSlider(){
-	// console.log("killAutoRotateAboutSlider");
+	console.log("-- killAutoRotateAboutSlider --");
 
     clearInterval(aboutSlideInterval);
     aboutSlideInterval = null;
@@ -217,45 +214,43 @@ function killAutoRotateAboutSlider(){
 
 //AUTO ROTATE TECH SLIDER
 function autorotateTechSlider(){
-	// console.log("autorotateTechSlider");
+	console.log("-- autorotateTechSlider --");
 
     if(!techSlideInterval){
+    	currentTechSlide++; if(currentTechSlide > techLinks.length-1) currentTechSlide = 0;
+        $( techLinks[currentTechSlide] ).eq(0).trigger("click", true);
+
         techSlideInterval = setInterval(function(){
             currentTechSlide++; if(currentTechSlide > techLinks.length-1) currentTechSlide = 0;
-
             $( techLinks[currentTechSlide] ).eq(0).trigger("click", true);
-        }, 5000);
+        }, 3000);
     }
 }
 
-function autorotateTechSliderOnce(){
-	 $( techLinks[currentTechSlide] ).eq(0).trigger("click", true);
-}
-
 function killAutoRotateTechSlider(){
-	// console.log("killAutoRotateTechSlider");
+	console.log("-- killAutoRotateTechSlider --");
 
-    clearInterval(techSlideInterval);
-    techSlideInterval = null;
+	clearInterval(techSlideInterval);
+	techSlideInterval = null;
 }
 
 //AUTO ROTATE FOUNDATION SLIDER
 function autorotateFoundationSlider(){
-	// console.log("autorotateFoundationSlider");
+	console.log("-- autorotateFoundationSlider --");
 
     if(!foundationSlideInterval){
+    	currentFoundationSlide++; if(currentFoundationSlide > foundationLinks.length-1) currentFoundationSlide = 0;
+        $( foundationLinks[currentFoundationSlide] ).eq(0).trigger("click", true);
+
         foundationSlideInterval = setInterval(function(){
             currentFoundationSlide++; if(currentFoundationSlide > foundationLinks.length-1) currentFoundationSlide = 0;
-
             $( foundationLinks[currentFoundationSlide] ).eq(0).trigger("click", true);
-        }, 5000);
+        }, 4000);
     }
 }
-function autorotateFoundationSliderOnce(){
-	  $( foundationLinks[currentFoundationSlide] ).eq(0).trigger("click", true);
-}
+
 function killAutoRotateFoundationSlider(){
-	// console.log("killAutoRotateFoundationSlider");
+	console.log("-- killAutoRotateFoundationSlider --");
 
     clearInterval(foundationSlideInterval);
     foundationSlideInterval = null;
