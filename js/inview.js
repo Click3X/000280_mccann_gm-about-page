@@ -78,6 +78,11 @@ function fireAnimate6() {
             initDraw();
             draw();
             $('#c3xgm-about-number-6').jQuerySimpleCounter({start:0, end: 6,duration: 1000});
+
+            setTimeout(function(){ 
+	            $('#c3xgm-about-number-6').text(formatNumber(6));
+	        }, 1000);
+
             animate6 = true;
         }, 800);
     }
@@ -91,6 +96,11 @@ function fireAnimate23() {
       // // TRIGGER NUMBER ANIMATION
         setTimeout(function(){ 
             $('#c3xgm-about-number-23').jQuerySimpleCounter({start:0, end: 23,duration: 1200});
+
+            setTimeout(function(){ 
+	            $('#c3xgm-about-number-23').text(formatNumber(23));
+	        }, 1200);
+
             animate23 = true;
         }, 600);
     }
@@ -104,6 +114,11 @@ function fireAnimate70() {
       // // TRIGGER NUMBER ANIMATION
         setTimeout(function(){ 
             $('#c3xgm-about-number-70').jQuerySimpleCounter({start:0, end: 70,duration: 1200});
+
+            setTimeout(function(){ 
+	            $('#c3xgm-about-number-70').text(formatNumber(70));
+	        }, 1200);
+
             animate70 = true;
         }, 600);
     }
@@ -117,6 +132,11 @@ function fireAnimate63() {
       // // TRIGGER NUMBER ANIMATION
         setTimeout(function(){ 
             $('#c3xgm-about-number-63').jQuerySimpleCounter({start:40, end: 63,duration: 900});
+            
+            setTimeout(function(){ 
+	            $('#c3xgm-about-number-63').text(formatNumber(63));
+	        }, 900);
+
             animate63 = true;
         }, 800);
     }
