@@ -144,7 +144,7 @@ function fireAnimate63() {
 
 // CRASH TEST DUMMIES
 var triggerCTD = false;
-$('#c3xgm-about-crash-test-dummies').addClass('invisible');
+
 function fireCTD() {
 	setTimeout(function() {
         if(triggerCTD == false) {
@@ -393,6 +393,8 @@ $(function() {
 	navLinks = $('.c3xgm-about-main-nav > li a');
 
 	if(!$(body).hasClass('c3xgm-about-static-experience')) {
+		// HIDE GIF
+		$('#c3xgm-about-crash-test-dummies').addClass('invisible');
 
 		// BLOCKS
 		$( ".c3xgm-about-block" ).not("#c3xgm-about-page-our-people .c3xgm-about-block").each( function(){
