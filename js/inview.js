@@ -1,3 +1,127 @@
+// NUMBER ANIMATIONS
+    // CHECK IF ANIMATED EMPLOYEES IN ON SCREEN
+    var current_frame, total_frames, path, length, handle;
+
+    var initDraw = function() {
+      current_frame = 0;
+      total_frames = 480;
+      path = new Array();
+      length = new Array();
+
+      // ITERATE THROUGH PATHS
+      for(var i=0; i< 12 ;i++){
+        // GET PATH
+        path[i] = document.getElementById('i'+i);
+
+        // GET PATH LENGTH
+        l = path[i].getTotalLength();
+        // ADD TO LENGTH ARRAY
+        length[i] = l;
+
+        // CSS PROPERTIES THAT WE ARE ANIMATING
+        path[i].style.strokeDasharray = l + ' ' + l; 
+        path[i].style.strokeDashoffset = l;
+      }
+      handle = 0;
+    }
+     
+     
+    var draw = function() {
+       var progress = current_frame/total_frames;
+       if (progress > 1) {
+
+            // window.cancelAnimationFrame(handle);
+            clearTimeout(handle);
+
+       } else {
+         current_frame++;
+         for(var j=0; j<path.length;j++){
+             path[j].style.strokeDashoffset = Math.floor(length[j] * (1 - progress));
+         }
+         
+         // handle = window.requestAnimationFrame(draw);
+
+         handle = setTimeout(function(){
+            draw();
+         }, 60/1000);
+
+       }
+    };
+    
+var animateEmployees = false;
+function fireAnimatedEmployees() {
+      if(animateEmployees === false) {
+        // EMPTY TEXT
+        $('#c3xgm-about-emp-num').text('');
+        // TRIGGER NUMBER ANIMATION
+        $('#c3xgm-about-emp-num').jQuerySimpleCounter({end: 216000,duration: 2500});
+        // TRIGGER PEOPLE ANIMATION
+        $('#c3xgm-about-employees-img div').each(addAnimation);
+
+        // MAKE SURE NUMBER REACHES 216000
+        setTimeout(function(){ 
+            $('#c3xgm-about-emp-num').text(formatNumber(216000));
+        }, 2500);
+
+        animateEmployees = true;
+    }
+}
+
+
+var animate6 = false;
+function fireAnimate6() {          
+      if(animate6 === false) {
+        // EMPTY TEXT
+        $('#c3xgm-about-number-6').text('');
+      // // TRIGGER NUMBER ANIMATION
+        setTimeout(function(){ 
+            initDraw();
+            draw();
+            $('#c3xgm-about-number-6').jQuerySimpleCounter({start:0, end: 6,duration: 1000});
+            animate6 = true;
+        }, 800);
+    }
+}
+
+var animate23 = false;
+function fireAnimate23() {
+      if(animate23 === false) {
+        // EMPTY TEXT
+        $('#c3xgm-about-number-23').text('');
+      // // TRIGGER NUMBER ANIMATION
+        setTimeout(function(){ 
+            $('#c3xgm-about-number-23').jQuerySimpleCounter({start:0, end: 23,duration: 1200});
+            animate23 = true;
+        }, 600);
+    }
+}
+
+var animate70 = false;
+function fireAnimate70() {
+      if(animate70 === false) {
+        // EMPTY TEXT
+        $('#c3xgm-about-number-70').text('');
+      // // TRIGGER NUMBER ANIMATION
+        setTimeout(function(){ 
+            $('#c3xgm-about-number-70').jQuerySimpleCounter({start:0, end: 70,duration: 1200});
+            animate70 = true;
+        }, 600);
+    }
+}
+
+var animate63 = false;
+function fireAnimate63() {
+      if(animate63 === false) {
+        // EMPTY TEXT
+        $('#c3xgm-about-number-63').text('');
+      // // TRIGGER NUMBER ANIMATION
+        setTimeout(function(){ 
+            $('#c3xgm-about-number-63').jQuerySimpleCounter({start:40, end: 63,duration: 900});
+            animate63 = true;
+        }, 800);
+    }
+}
+
 /*======= GLOBAL PROPERTIES ========
 ===================================*/
 
@@ -113,6 +237,38 @@ function sectionToActiveState( _section ){
 	        $(".c3xgm-about-main-nav > li > a.c3xgm-about-nav-bullet-active").removeClass("c3xgm-about-nav-bullet-active");
 	        // HIGHLIGHT NAV BULLET
 	        $(navLinks.eq(currentPage)).addClass("c3xgm-about-nav-bullet-active");
+
+	        // OUR PEOPLE TRIGGERS
+	        var time;
+	        if( _section.pageId && (_section.pageId == "c3xgm-about-page-our-people") ) {
+	        	console.log('OUR PEOPLE');
+	        	
+	        	var page =  $(_section.$el.get(0)),
+	        		blocks = $(page).find('.c3xgm-about-block');
+
+	        	$.each(blocks, function(i, val) {
+                    var animateNum = $(this).find('.c3xgm-about-animate-number');
+                    console.dir(animateNum);
+                    setTimeout(function() {
+                        time = 1200 * i;
+                        setTimeout(function() {
+                        	$(val).removeClass('invisible').addClass('element-in-view');
+                            if(animateNum.length > 0) {
+                                console.log('This is index: ' + i);
+                                if(i == 0 ) {
+                                    fireAnimatedEmployees();
+                                } else if(i==1) {
+                                    fireAnimate6();
+                                } else if(i==3) {
+                                    fireAnimate23();
+                                } else if(i==4) {
+                                    fireAnimate70();
+                                }
+                            }
+                        }, time);
+                    }, 2000);
+                });
+	        }
     	} 
     	else if(_section.blockType == "section") {
     		currentSection = $( "#c3xgm-about-page-our-commitment > .c3xgm-about-page").index( _section.$el );
@@ -127,6 +283,13 @@ function sectionToActiveState( _section ){
 		_section.$el.removeClass("invisible").addClass( "c3xgm-about-page-in-view" );
 	} else if(_section.blockType == "block") {
 		_section.$el.removeClass("invisible").addClass( "element-in-view" );
+
+		// TRIGGERS FOR SPECIFIC BLOCKS
+		// if( _section.pageId && (_section.pageId == "c3xgm-about-employees") ) {
+		// 	console.log('Employees in view!');
+		// 	fireAnimatedEmployees();
+		// }
+
 	} else if(_section.blockType == "slider") {
 		var trigger = _section.$el.eq(0).attr('data-trigger');
 		// AUTO ROTATE SLIDER
@@ -205,15 +368,37 @@ $(function() {
 
 	// $( ".section" ).each( function(){
 	// BLOCKS
-	$( ".c3xgm-about-block" ).each( function(){
+	$( ".c3xgm-about-block" ).not("#c3xgm-about-page-our-people .c3xgm-about-block").each( function(){
 		var obj = {}, t = $( this );
 
 		obj.el 		= t;
 		obj.$el 	= $( t );
 		obj.inbiew 	= true;
 		obj.active 	= false;
+		// ADD ID PROPERTY IF BLOCK HAS ONE
+		if( $( t ).attr('id') ) { obj.pageId = $( t ).attr('id'); }
 		// ADD BLOCK TYPE PROPERTY TO DIFFERENTIAGE BETWEEN PAGES AND BLOCKS
 		obj.blockType  = 'block';
+
+
+		// ADD INVISIBLE CLASS TO ANIMATE ELEMENTS IN
+		obj.$el.addClass('invisible');
+
+		sections.push( obj );
+	});
+
+	// OUR PEOPLE BLOCKS
+	$('#c3xgm-about-page-our-people .c3xgm-about-block').each( function(){
+		var obj = {}, t = $( this );
+
+		obj.el 		= t;
+		obj.$el 	= $( t );
+		obj.inbiew 	= true;
+		obj.active 	= false;
+		// ADD ID PROPERTY IF BLOCK HAS ONE
+		if( $( t ).attr('id') ) { obj.pageId = $( t ).attr('id'); }
+		// ADD BLOCK TYPE PROPERTY TO DIFFERENTIAGE BETWEEN PAGES AND BLOCKS
+		obj.blockType  = 'our-people';
 
 		// ADD INVISIBLE CLASS TO ANIMATE ELEMENTS IN
 		obj.$el.addClass('invisible');
