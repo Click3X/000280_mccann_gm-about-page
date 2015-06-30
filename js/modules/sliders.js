@@ -18,7 +18,6 @@ jQuery(document).ready(function($) {
 		techSlides = $('.c3xgm-about-module-technology .c3xgm-about-module');
 
 	// CARS ---------------------------------------------------------------------------------------------------------
-	
 	// MOVE ALL SLIDES TO RIGHT 100%;
 	carLinks.addClass('active');
 	carSlides.addClass('hide-module').addClass('hide-module-slide-out');
@@ -33,8 +32,8 @@ jQuery(document).ready(function($) {
 
 			currentAboutSlide = $(this).parent().index();
 
-			//  ADD ACRIVE CLASS
-			$('.c3xgm-about-module-car .active').removeClass('active').addClass("c3xgm-about-module-logo-unactive");;
+			//  ADD ACTIVE CLASS
+			$('.c3xgm-about-module-car .active').removeClass('active').addClass("c3xgm-about-module-logo-unactive");
 			$(this).removeClass("c3xgm-about-module-logo-unactive").addClass('active');
 
 			// GET CUR SLIDE
@@ -72,7 +71,7 @@ jQuery(document).ready(function($) {
 
 			currentFoundationSlide = $(this).parent().index();
 
-			//  ADD ACRIVE CLASS
+			//  ADD ACTIVE CLASS
 			$('.c3xgm-about-module-foundation li a').removeClass('active').addClass("c3xgm-about-module-logo-unactive");
 			$(this).removeClass("c3xgm-about-module-logo-unactive").addClass('active');
 
