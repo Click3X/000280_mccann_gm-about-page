@@ -242,7 +242,7 @@ function sectionToActiveState( _section ){
 	        var time;
 	        if( _section.pageId && (_section.pageId == "c3xgm-about-page-our-people") ) {
 	        	console.log('OUR PEOPLE');
-	        	
+
 	        	var page =  $(_section.$el.get(0)),
 	        		blocks = $(page).find('.c3xgm-about-block');
 
@@ -478,7 +478,8 @@ $(function() {
 
 	// loop animations - TRIGGER ON OFF
 	if(mobile){
-		$('#c3xgm-about-flag-line-grey-car, #c3xgm-about-solar-road-grey-car, #c3xgm-about-grey-van, #c3xgm-about-red-car').each( function(){
+		// $('#c3xgm-about-flag-line-grey-car, #c3xgm-about-solar-road-grey-car, #c3xgm-about-grey-van, #c3xgm-about-red-car').each( function(){
+		$('#c3xgm-about-grey-van, #c3xgm-about-red-car').each( function(){
 			var obj = {}, t = $( this );
 
 			obj.el 		= t;
