@@ -392,134 +392,120 @@ $(function() {
 
 	navLinks = $('.c3xgm-about-main-nav > li a');
 
-	// BLOCKS
-	$( ".c3xgm-about-block" ).not("#c3xgm-about-page-our-people .c3xgm-about-block").each( function(){
-		var obj = {}, t = $( this );
+	if(!$(body).hasClass('c3xgm-about-static-experience')) {
 
-		obj.el 		= t;
-		obj.$el 	= $( t );
-		obj.inbiew 	= true;
-		obj.active 	= false;
-		// ADD ID PROPERTY IF BLOCK HAS ONE
-		if( $( t ).attr('id') ) { obj.pageId = $( t ).attr('id'); }
-		// ADD BLOCK TYPE PROPERTY TO DIFFERENTIAGE BETWEEN PAGES AND BLOCKS
-		obj.blockType  = 'block';
+		// BLOCKS
+		$( ".c3xgm-about-block" ).not("#c3xgm-about-page-our-people .c3xgm-about-block").each( function(){
+			var obj = {}, t = $( this );
 
-		// ADD INVISIBLE CLASS TO ANIMATE ELEMENTS IN
-		obj.$el.addClass('invisible');
+			obj.el 		= t;
+			obj.$el 	= $( t );
+			obj.inbiew 	= true;
+			obj.active 	= false;
+			// ADD ID PROPERTY IF BLOCK HAS ONE
+			if( $( t ).attr('id') ) { obj.pageId = $( t ).attr('id'); }
+			// ADD BLOCK TYPE PROPERTY TO DIFFERENTIAGE BETWEEN PAGES AND BLOCKS
+			obj.blockType  = 'block';
 
-		sections.push( obj );
-	});
+			// ADD INVISIBLE CLASS TO ANIMATE ELEMENTS IN
+			obj.$el.addClass('invisible');
 
-	// OUR PEOPLE BLOCKS
-	$('#c3xgm-about-page-our-people .c3xgm-about-block').each( function(){
-		var obj = {}, t = $( this );
+			sections.push( obj );
+		});
 
-		obj.el 		= t;
-		obj.$el 	= $( t );
-		obj.inbiew 	= true;
-		obj.active 	= false;
-		// ADD ID PROPERTY IF BLOCK HAS ONE
-		if( $( t ).attr('id') ) { obj.pageId = $( t ).attr('id'); }
-		// ADD BLOCK TYPE PROPERTY TO DIFFERENTIAGE BETWEEN PAGES AND BLOCKS
-		obj.blockType  = 'our-people';
+		// OUR PEOPLE BLOCKS
+		$('#c3xgm-about-page-our-people .c3xgm-about-block').each( function(){
+			var obj = {}, t = $( this );
 
-		// ADD INVISIBLE CLASS TO ANIMATE ELEMENTS IN
-		obj.$el.addClass('invisible');
+			obj.el 		= t;
+			obj.$el 	= $( t );
+			obj.inbiew 	= true;
+			obj.active 	= false;
+			// ADD ID PROPERTY IF BLOCK HAS ONE
+			if( $( t ).attr('id') ) { obj.pageId = $( t ).attr('id'); }
+			// ADD BLOCK TYPE PROPERTY TO DIFFERENTIAGE BETWEEN PAGES AND BLOCKS
+			obj.blockType  = 'our-people';
 
-		sections.push( obj );
-	});
+			// ADD INVISIBLE CLASS TO ANIMATE ELEMENTS IN
+			obj.$el.addClass('invisible');
 
-	// PAGES
-	$( "#c3xgm-about-page-container > .c3xgm-about-page" ).each( function(){
-		var obj = {}, t = $( this );
+			sections.push( obj );
+		});
 
-		obj.el 		= t;
-		obj.$el 	= $( t );
-		obj.pageId 	= $( t ).attr('id');
-		obj.inbiew 	= true;
-		obj.active 	= false;
-		// ADD BLOCK TYPE PROPERTY TO DIFFERENTIAGE BETWEEN PAGES AND BLOCKS
-		obj.blockType  = 'page';
+		// PAGES
+		$( "#c3xgm-about-page-container > .c3xgm-about-page" ).each( function(){
+			var obj = {}, t = $( this );
 
-		// ADD INVISIBLE CLASS TO ANIMATE ELEMENTS IN
-		obj.$el.addClass('invisible');
+			obj.el 		= t;
+			obj.$el 	= $( t );
+			obj.pageId 	= $( t ).attr('id');
+			obj.inbiew 	= true;
+			obj.active 	= false;
+			// ADD BLOCK TYPE PROPERTY TO DIFFERENTIAGE BETWEEN PAGES AND BLOCKS
+			obj.blockType  = 'page';
 
-		sections.push( obj );
-	});
+			// ADD INVISIBLE CLASS TO ANIMATE ELEMENTS IN
+			obj.$el.addClass('invisible');
 
-
-	// SECTIONS ( IN OUR COMMITMENT PAGE ) AND END NAV
-	$( "#c3xgm-about-page-our-commitment > .c3xgm-about-page" ).each( function(){
-		var obj = {}, t = $( this );
-
-		obj.el 		= t;
-		obj.$el 	= $( t );
-		obj.pageId 	= $( t ).attr('id');
-		obj.inbiew 	= true;
-		obj.active 	= false;
-		// ADD BLOCK TYPE PROPERTY TO DIFFERENTIAGE BETWEEN PAGES AND BLOCKS
-		obj.blockType  = 'section';
-
-		// ADD INVISIBLE CLASS TO ANIMATE ELEMENTS IN
-		obj.$el.addClass('invisible');
-
-		sections.push( obj );
-	});
-
-	// END NAV
-	$( "#c3xgm-about-end-nav").each( function(){
-		var obj = {}, t = $( this );
-
-		obj.el 		= t;
-		obj.$el 	= $( t );
-		obj.inbiew 	= true;
-		obj.active 	= false;
-		// ADD BLOCK TYPE PROPERTY TO DIFFERENTIAGE BETWEEN PAGES AND BLOCKS
-		obj.blockType  = 'end-nav';
-
-		// ADD INVISIBLE CLASS TO ANIMATE ELEMENTS IN
-		obj.$el.addClass('invisible');
-
-		sections.push( obj );
-	});
-
-	// SLIDDERS - TRIGGER ON OFF
-	$('.c3xgm-about-module-foundation, .c3xgm-about-module-technology, .c3xgm-about-module-car').each( function(){
-		var obj = {}, t = $( this );
-
-		obj.el 		= t;
-		obj.$el 	= $( t );
-		obj.inbiew 	= true;
-		obj.active 	= false;
-		// ADD BLOCK TYPE PROPERTY TO DIFFERENTIAGE BETWEEN PAGES AND BLOCKS
-		obj.blockType  = 'slider';
-		// ADD ID PROPERTY IF BLOCK HAS ONE
-		if( $( t ).attr('id') ) { obj.pageId = $( t ).attr('id'); }
+			sections.push( obj );
+		});
 
 
-		sections.push( obj );
-	});
+		// SECTIONS ( IN OUR COMMITMENT PAGE ) AND END NAV
+		$( "#c3xgm-about-page-our-commitment > .c3xgm-about-page" ).each( function(){
+			var obj = {}, t = $( this );
+
+			obj.el 		= t;
+			obj.$el 	= $( t );
+			obj.pageId 	= $( t ).attr('id');
+			obj.inbiew 	= true;
+			obj.active 	= false;
+			// ADD BLOCK TYPE PROPERTY TO DIFFERENTIAGE BETWEEN PAGES AND BLOCKS
+			obj.blockType  = 'section';
+
+			// ADD INVISIBLE CLASS TO ANIMATE ELEMENTS IN
+			obj.$el.addClass('invisible');
+
+			sections.push( obj );
+		});
+
+		// END NAV
+		$( "#c3xgm-about-end-nav").each( function(){
+			var obj = {}, t = $( this );
+
+			obj.el 		= t;
+			obj.$el 	= $( t );
+			obj.inbiew 	= true;
+			obj.active 	= false;
+			// ADD BLOCK TYPE PROPERTY TO DIFFERENTIAGE BETWEEN PAGES AND BLOCKS
+			obj.blockType  = 'end-nav';
+
+			// ADD INVISIBLE CLASS TO ANIMATE ELEMENTS IN
+			obj.$el.addClass('invisible');
+
+			sections.push( obj );
+		});
+
+		// SLIDDERS - TRIGGER ON OFF
+		$('.c3xgm-about-module-foundation, .c3xgm-about-module-technology, .c3xgm-about-module-car').each( function(){
+			var obj = {}, t = $( this );
+
+			obj.el 		= t;
+			obj.$el 	= $( t );
+			obj.inbiew 	= true;
+			obj.active 	= false;
+			// ADD BLOCK TYPE PROPERTY TO DIFFERENTIAGE BETWEEN PAGES AND BLOCKS
+			obj.blockType  = 'slider';
+			// ADD ID PROPERTY IF BLOCK HAS ONE
+			if( $( t ).attr('id') ) { obj.pageId = $( t ).attr('id'); }
 
 
-	// BLOCKS FOR LOOPING FLAGLINE AND SOLAR ROAD
-	$('#animate-flag-line, #c3xgm-about-solar-road-list').each( function(){
-		var obj = {}, t = $( this );
-
-		obj.el 		= t;
-		obj.$el 	= $( t );
-		obj.inbiew 	= true;
-		obj.active 	= false;
-		// ADD BLOCK TYPE PROPERTY TO DIFFERENTIAGE BETWEEN PAGES AND BLOCKS
-		obj.blockType  = 'loop';
+			sections.push( obj );
+		});
 
 
-		sections.push( obj );
-	});
-
-	// loop animations - TRIGGER ON OFF
-	if(mobile){
-		$('#c3xgm-about-grey-van, #c3xgm-about-red-car').each( function(){
+		// BLOCKS FOR LOOPING FLAGLINE AND SOLAR ROAD
+		$('#animate-flag-line, #c3xgm-about-solar-road-list').each( function(){
 			var obj = {}, t = $( this );
 
 			obj.el 		= t;
@@ -529,12 +515,29 @@ $(function() {
 			// ADD BLOCK TYPE PROPERTY TO DIFFERENTIAGE BETWEEN PAGES AND BLOCKS
 			obj.blockType  = 'loop';
 
+
 			sections.push( obj );
 		});
-	} 
 
-	window.addEventListener( "scroll", onScroll );
-	window.addEventListener( "resize", onResize );
+		// loop animations - TRIGGER ON OFF
+		if(mobile){
+			$('#c3xgm-about-grey-van, #c3xgm-about-red-car').each( function(){
+				var obj = {}, t = $( this );
 
-	init();
+				obj.el 		= t;
+				obj.$el 	= $( t );
+				obj.inbiew 	= true;
+				obj.active 	= false;
+				// ADD BLOCK TYPE PROPERTY TO DIFFERENTIAGE BETWEEN PAGES AND BLOCKS
+				obj.blockType  = 'loop';
+
+				sections.push( obj );
+			});
+		} 
+
+		window.addEventListener( "scroll", onScroll );
+		window.addEventListener( "resize", onResize );
+
+		init();
+	}
 });

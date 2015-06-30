@@ -64,6 +64,11 @@ if( mobile ){
     if( browser.name == "Android" ||
         ( browser.name == "Safari" && browser.version < 7 ) ){
             jQuery('body').addClass('c3xgm-about-static-experience');
+            
+            $('img[src$=".svg"]').each(function(index,element) {
+                element.src = element.src.replace('.svg','.png');
+            });
+
             static_experience = true;
     }
 
@@ -75,6 +80,11 @@ if( mobile ){
         ( browser.name == "Chrome" && browser.version < 43 )    ||
         ( browser.name == "IE" && browser.version < 9 ) ){
             jQuery('body').addClass('c3xgm-about-static-experience');
+            
+            $('img[src$=".svg"]').each(function(index,element) {
+                element.src = element.src.replace('.svg','.png');
+            });
+
             static_experience = true;
     }
 }
