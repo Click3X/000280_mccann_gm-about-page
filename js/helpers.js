@@ -68,7 +68,7 @@ jQuery.fn.jQuerySimpleCounter = function( options ) {
     var settings = jQuery.extend({
         start:  200000,
         end:    216000,
-        easing: 'swing',
+        easing: 'linear',
         duration: 2500,
         complete: ''
     }, options );
