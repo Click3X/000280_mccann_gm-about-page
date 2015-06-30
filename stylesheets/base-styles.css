@@ -9985,46 +9985,46 @@ body {
   transform-origin: center center;
 }
 /* line 221, ../sass/animations/_element-in-view.scss */
-.c3xgm-about-global .c3xgm-about-block-image > div img {
-  -webkit-animation-fill-mode: none;
-  -moz-animation-fill-mode: none;
-  -o-animation-fill-mode: none;
-  -ms-animation-fill-mode: none;
-  animation-fill-mode: none;
-  -webkit-animation-name: none;
-  -moz-animation-name: none;
-  -o-animation-name: none;
-  -ms-animation-name: none;
-  animation-name: none;
+.c3xgm-about-global .c3xgm-about-block-image > div img[src$="svg"] {
+  -webkit-animation-fill-mode: both;
+  -moz-animation-fill-mode: both;
+  -o-animation-fill-mode: both;
+  -ms-animation-fill-mode: both;
+  animation-fill-mode: both;
+  -webkit-animation-name: fadeIn;
+  -moz-animation-name: fadeIn;
+  -o-animation-name: fadeIn;
+  -ms-animation-name: fadeIn;
+  animation-name: fadeIn;
   -webkit-animation-delay: 0;
   -moz-animation-delay: 0;
   -o-animation-delay: 0;
   -ms-animation-delay: 0;
   animation-delay: 0;
-  -webkit-animation-duration: 0;
-  -moz-animation-duration: 0;
-  -o-animation-duration: 0;
-  -ms-animation-duration: 0;
-  animation-duration: 0;
+  -webkit-animation-duration: 400ms;
+  -moz-animation-duration: 400ms;
+  -o-animation-duration: 400ms;
+  -ms-animation-duration: 400ms;
+  animation-duration: 400ms;
 }
-/*@media (min-width: 768px) {*/
+@media (min-width: 768px) {
   /* line 221, ../sass/animations/_element-in-view.scss */
-.c3xgm-about-global .c3xgm-about-block-image > div img {
-  -webkit-transform: translate3d(-50%, -4%, 0);
-  -moz-transform: translate3d(-50%, -4%, 0);
-  -o-transform: translate3d(-50%, -4%, 0);
-  -ms-transform: translate3d(-50%, -4%, 0);
-  transform: translate3d(-50%, -4%, 0);
-}
+  .c3xgm-about-global .c3xgm-about-block-image > div img {
+    -webkit-transform: translate3d(-50%, -4%, 0);
+    -moz-transform: translate3d(-50%, -4%, 0);
+    -o-transform: translate3d(-50%, -4%, 0);
+    -ms-transform: translate3d(-50%, -4%, 0);
+    transform: translate3d(-50%, -4%, 0);
+  }
 
-.c3xgm-about-global .c3xgm-about-block-image > div img[src$="svg"] {
-  -webkit-transform: translate3d(-50%, 0, 0);
-  -moz-transform: translate3d(-50%, 0, 0);
-  -o-transform: translate3d(-50%, 0, 0);
-  -ms-transform: translate3d(-50%, 0, 0);
-  transform: translate3d(-50%, 0, 0);
+  .c3xgm-about-global .c3xgm-about-block-image > div img[src$="svg"] {
+    -webkit-transform: translate3d(-50%, 0, 0);
+    -moz-transform: translate3d(-50%, 0, 0);
+    -o-transform: translate3d(-50%, 0, 0);
+    -ms-transform: translate3d(-50%, 0, 0);
+    transform: translate3d(-50%, 0, 0);
+  }
 }
-/*}*/
 /* line 235, ../sass/animations/_element-in-view.scss */
 .c3xgm-about-global.element-in-view .c3xgm-about-block-image > div {
   -webkit-animation-fill-mode: both;
