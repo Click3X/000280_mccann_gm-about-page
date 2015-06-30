@@ -3369,6 +3369,170 @@ Stylesheet: Helpers
   -ms-animation-duration: 600ms;
   animation-duration: 600ms;
 }
+/* line 46, ../sass/animations/_element-in-view-new.scss */
+.c3xgm-about-test-facility.element-in-view .c3xgm-about-truck-shadow-container {
+  -webkit-animation-fill-mode: both;
+  -moz-animation-fill-mode: both;
+  -o-animation-fill-mode: both;
+  -ms-animation-fill-mode: both;
+  animation-fill-mode: both;
+  -webkit-animation-name: fadeIn;
+  -moz-animation-name: fadeIn;
+  -o-animation-name: fadeIn;
+  -ms-animation-name: fadeIn;
+  animation-name: fadeIn;
+  -webkit-animation-delay: 1400ms;
+  -moz-animation-delay: 1400ms;
+  -o-animation-delay: 1400ms;
+  -ms-animation-delay: 1400ms;
+  animation-delay: 1400ms;
+  -webkit-animation-duration: 700ms;
+  -moz-animation-duration: 700ms;
+  -o-animation-duration: 700ms;
+  -ms-animation-duration: 700ms;
+  animation-duration: 700ms;
+}
+/* line 52, ../sass/animations/_element-in-view-new.scss */
+.c3xgm-about-test-facility.element-in-view .c3xgm-about-truck-shadow-container .c3xgm-about-truck {
+  -webkit-animation-fill-mode: both;
+  -moz-animation-fill-mode: both;
+  -o-animation-fill-mode: both;
+  -ms-animation-fill-mode: both;
+  animation-fill-mode: both;
+  -webkit-animation-name: rotate;
+  -moz-animation-name: rotate;
+  -o-animation-name: rotate;
+  -ms-animation-name: rotate;
+  animation-name: rotate;
+  -webkit-animation-delay: 2700ms;
+  -moz-animation-delay: 2700ms;
+  -o-animation-delay: 2700ms;
+  -ms-animation-delay: 2700ms;
+  animation-delay: 2700ms;
+  -webkit-animation-duration: 2000ms;
+  -moz-animation-duration: 2000ms;
+  -o-animation-duration: 2000ms;
+  -ms-animation-duration: 2000ms;
+  animation-duration: 2000ms;
+  -webkit-animation-timing-function: ease-in-out;
+  -moz-animation-timing-function: ease-in-out;
+  -o-animation-timing-function: ease-in-out;
+  -ms-animation-timing-function: ease-in-out;
+  animation-timing-function: ease-in-out;
+}
+/* line 60, ../sass/animations/_element-in-view-new.scss */
+.c3xgm-about-test-facility.element-in-view .c3xgm-about-truck-shadow-container .c3xgm-about-truck-bg-outer {
+  -webkit-animation-fill-mode: both;
+  -moz-animation-fill-mode: both;
+  -o-animation-fill-mode: both;
+  -ms-animation-fill-mode: both;
+  animation-fill-mode: both;
+  -webkit-animation-name: wenSlideInUp;
+  -moz-animation-name: wenSlideInUp;
+  -o-animation-name: wenSlideInUp;
+  -ms-animation-name: wenSlideInUp;
+  animation-name: wenSlideInUp;
+  -webkit-animation-delay: 1700ms;
+  -moz-animation-delay: 1700ms;
+  -o-animation-delay: 1700ms;
+  -ms-animation-delay: 1700ms;
+  animation-delay: 1700ms;
+  -webkit-animation-duration: 1000ms;
+  -moz-animation-duration: 1000ms;
+  -o-animation-duration: 1000ms;
+  -ms-animation-duration: 1000ms;
+  animation-duration: 1000ms;
+  -webkit-animation-timing-function: ease-in-out;
+  -moz-animation-timing-function: ease-in-out;
+  -o-animation-timing-function: ease-in-out;
+  -ms-animation-timing-function: ease-in-out;
+  animation-timing-function: ease-in-out;
+}
+/* line 68, ../sass/animations/_element-in-view-new.scss */
+.c3xgm-about-test-facility.element-in-view .c3xgm-about-truck-shadow-container .c3xgm-about-truck-lines-holder {
+  -webkit-animation-fill-mode: both;
+  -moz-animation-fill-mode: both;
+  -o-animation-fill-mode: both;
+  -ms-animation-fill-mode: both;
+  animation-fill-mode: both;
+  -webkit-animation-name: fadeIn;
+  -moz-animation-name: fadeIn;
+  -o-animation-name: fadeIn;
+  -ms-animation-name: fadeIn;
+  animation-name: fadeIn;
+  -webkit-animation-delay: 2.75s;
+  -moz-animation-delay: 2.75s;
+  -o-animation-delay: 2.75s;
+  -ms-animation-delay: 2.75s;
+  animation-delay: 2.75s;
+  -webkit-animation-duration: 700ms;
+  -moz-animation-duration: 700ms;
+  -o-animation-duration: 700ms;
+  -ms-animation-duration: 700ms;
+  animation-duration: 700ms;
+}
+/* line 75, ../sass/animations/_element-in-view-new.scss */
+.c3xgm-about-test-facility.element-in-view .c3xgm-about-truck-shadow-container .c3xgm-about-truck-lines {
+  opacity: 1;
+  -webkit-animation-fill-mode: both;
+  -moz-animation-fill-mode: both;
+  -o-animation-fill-mode: both;
+  -ms-animation-fill-mode: both;
+  animation-fill-mode: both;
+  -webkit-animation-name: rotate;
+  -moz-animation-name: rotate;
+  -o-animation-name: rotate;
+  -ms-animation-name: rotate;
+  animation-name: rotate;
+  -webkit-animation-delay: 1700ms;
+  -moz-animation-delay: 1700ms;
+  -o-animation-delay: 1700ms;
+  -ms-animation-delay: 1700ms;
+  animation-delay: 1700ms;
+  -webkit-animation-duration: 2000ms;
+  -moz-animation-duration: 2000ms;
+  -o-animation-duration: 2000ms;
+  -ms-animation-duration: 2000ms;
+  animation-duration: 2000ms;
+  -webkit-animation-timing-function: linear;
+  -moz-animation-timing-function: linear;
+  -o-animation-timing-function: linear;
+  -ms-animation-timing-function: linear;
+  animation-timing-function: linear;
+  -webkit-animation-iteration-count: infinite;
+  -moz-animation-iteration-count: infinite;
+  -o-animation-iteration-count: infinite;
+  -ms-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+}
+/* line 85, ../sass/animations/_element-in-view-new.scss */
+.c3xgm-about-test-facility.element-in-view .c3xgm-about-truck-shadow-container .c3xgm-about-shadow {
+  -webkit-animation-fill-mode: both;
+  -moz-animation-fill-mode: both;
+  -o-animation-fill-mode: both;
+  -ms-animation-fill-mode: both;
+  animation-fill-mode: both;
+  -webkit-animation-name: shadowScaleDown;
+  -moz-animation-name: shadowScaleDown;
+  -o-animation-name: shadowScaleDown;
+  -ms-animation-name: shadowScaleDown;
+  animation-name: shadowScaleDown;
+  -webkit-animation-delay: 1700ms;
+  -moz-animation-delay: 1700ms;
+  -o-animation-delay: 1700ms;
+  -ms-animation-delay: 1700ms;
+  animation-delay: 1700ms;
+  -webkit-animation-duration: 1200ms;
+  -moz-animation-duration: 1200ms;
+  -o-animation-duration: 1200ms;
+  -ms-animation-duration: 1200ms;
+  animation-duration: 1200ms;
+  -webkit-animation-timing-function: ease-out;
+  -moz-animation-timing-function: ease-out;
+  -o-animation-timing-function: ease-out;
+  -ms-animation-timing-function: ease-out;
+  animation-timing-function: ease-out;
+}
 
 /* line 2, ../sass/partials/_solar-panels.scss */
 .c3xgm-about-decorative.c3xgm-about-solar-panels {
