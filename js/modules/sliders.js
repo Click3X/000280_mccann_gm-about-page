@@ -34,11 +34,8 @@ jQuery(document).ready(function($) {
 			currentAboutSlide = $(this).parent().index();
 
 			//  ADD ACRIVE CLASS
-			$('.c3xgm-about-module-car .active').removeClass('active');
-			$(this).addClass('active');
-
-			// ADD TRANSPARENCY TO OTHER NAV ITEMS
-			carLinks.not(this).addClass('c3xgm-about-module-logo-unactive');
+			$('.c3xgm-about-module-car .active').removeClass('active').addClass("c3xgm-about-module-logo-unactive");;
+			$(this).removeClass("c3xgm-about-module-logo-unactive").addClass('active');
 
 			// GET CUR SLIDE
 			var curSlide = $('.c3xgm-about-module-car .show-module-slide-in');
@@ -76,11 +73,8 @@ jQuery(document).ready(function($) {
 			currentFoundationSlide = $(this).parent().index();
 
 			//  ADD ACRIVE CLASS
-			$('.c3xgm-about-module-foundation .active').removeClass('active');
-			$(this).addClass('active');
-
-			// ADD TRANSPARENCY TO OTHER NAV ITEMS
-			foundationLinks.not(this).addClass('c3xgm-about-module-logo-unactive');
+			$('.c3xgm-about-module-foundation li a').removeClass('active').addClass("c3xgm-about-module-logo-unactive");
+			$(this).removeClass("c3xgm-about-module-logo-unactive").addClass('active');
 
 			// GET CUR SLIDE
 			var curSlide = $('.c3xgm-about-module-foundation .show-module-slide-in');
