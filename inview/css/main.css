@@ -70,7 +70,26 @@ html{
     padding:20px;
 }
 
+.scroll-progress{
+    width: 60px;
+    height: 40px;
+    position: absolute;
+    top:0; left:0;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.scroll-progress.graycar{
+    background-image: url('../img/grey-car.png');
+}
+
+.scroll-progress.redcar{
+    background-image: url('../img/red-car.png');
+}
+
 .section{
+    position: relative;
     opacity: 0;
     margin-bottom: 20px;
 
@@ -92,7 +111,7 @@ html{
 
 .section-inner{
     padding:20px;
-    background-color: #eee;
+    background-color: rgba(250,250,250,1);
 }
 
 .section:last-child{
