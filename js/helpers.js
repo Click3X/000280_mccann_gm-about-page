@@ -20,21 +20,20 @@ if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(naviga
 
 console.log('This is mobile: ' + mobile);
 
+// GET GIF IMAGES THAT AREN'T THE WHEEL
 var gifImgs = jQuery('img[src$=".gif"]').not(jQuery('img[src$="wheel.gif"]'));
-    // console.dir(gifImgs);
 
 // IF MOBILE - ADD MOBILE STYLESHEET
 if(mobile) {
 
     // REPLACE GIFS WITH SVGS
     jQuery('img[src$=".gif"]').each(function(index,element) {
-        // NO CHINA FLAG GIF FOR MOBILE, BUT IF SCREEN IS IPAD OR LARGER, SHOW GIF
-        // console.log('This is element Src: ' + element.src);
-        // console.log('This is window Width: ' + $(window).width() );
+        // NO CHINA FLAG GIF FOR MOBILE, BUT IF SCREEN IS IPAD OR LARGER, SHOW PNG
 
         if( (element.src != 'chinaflag.gif') && ($(window).width() < 768) ) {
             element.src = element.src.replace('.gif','.svg');
-        } else if ( (element.src == 'chinaflag.gif') && ($(window).width() >= 768) ) {
+        }
+        if ( (element.src == 'chinaflag.gif') && ($(window).width() >= 768) ) {
             element.src = element.src.replace('.gif','.png');
         }
 
