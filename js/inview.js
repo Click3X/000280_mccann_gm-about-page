@@ -160,8 +160,7 @@ function fireCTD() {
 ===================================*/
 
 var sections = [], didscroll = false, didresize = true, laststeptime = 0, inviewpadding = 60;
-
-var resizeSliders = true, currentPage = 0, currentSection = 0, navLinks, subNavLink;
+var currentPage = 0, currentSection = 0, navLinks, subNavLink;
 
 /*========== INITIALIZE ============
 ===================================*/
@@ -183,14 +182,6 @@ function step( time ){
 			updateSections();
 
 			didscroll = didresize 	= false; 
-		} else if(resizeSliders) {
-
-			// SLIDE RESIZE FUNCTIONS ON WINDOW RESIZE
-			// equalizeSlides(carContainer, carSlides);
-			// equalizeSlides(foundationContainer, foundationSlides);
-			// resizeTechModules(techQuotes, techPics, techContainer);
-
-			resizeSliders = false;
 		}
 
 		laststeptime = time;
@@ -218,7 +209,6 @@ function updateSections(){
 
 	var scrolltop 		= $( window ).scrollTop(),
 	windowheight 		= Math.round( window.innerHeight ),
-	// bodyheight 			= Math.round( $( ".sections-container" ).height() );
 	bodyheight 			= Math.round( $( "#c3xgm-about-page-container" ).height() );
 	
 
@@ -258,7 +248,7 @@ function updateSections(){
 
 function sectionToActiveState( _section ){
 	console.log( "-- sectionToActiveState " + _section + " --" );
-	console.dir( _section);
+	// console.dir( _section);
 
 	if( (_section.blockType == "page") || (_section.blockType == "section") ) {
 		_section.$el.removeClass("invisible").addClass( "c3xgm-about-page-in-view" );
@@ -266,6 +256,7 @@ function sectionToActiveState( _section ){
 		var id = '#' + _section.pageId;
     	
     	if(_section.blockType == "page") {
+    		// GET INDEX OF CURRENT PAGE
     		currentPage = $( "#c3xgm-about-page-container > .c3xgm-about-page").index( _section.$el ); 
     		// UNHIGHTLIGHT CURRENT NAV BULLET
 	        $(".c3xgm-about-main-nav > li > a.c3xgm-about-nav-bullet-active").removeClass("c3xgm-about-nav-bullet-active");
@@ -404,8 +395,6 @@ function onResize( _e ){
 	console.log("-- onResize --");
 
 	didresize = true;
-	
-	resizeSliders = true;	
 }
 
 /*======== DOCUMENT READY ==========
@@ -414,11 +403,8 @@ function onResize( _e ){
 $(function() {
 	console.log( "-- jQuery Ready --" );
 
-	console.log( "-- only inview --" );
-
 	navLinks = $('.c3xgm-about-main-nav > li a');
 
-	// $( ".section" ).each( function(){
 	// BLOCKS
 	$( ".c3xgm-about-block" ).not("#c3xgm-about-page-our-people .c3xgm-about-block").each( function(){
 		var obj = {}, t = $( this );
@@ -431,7 +417,6 @@ $(function() {
 		if( $( t ).attr('id') ) { obj.pageId = $( t ).attr('id'); }
 		// ADD BLOCK TYPE PROPERTY TO DIFFERENTIAGE BETWEEN PAGES AND BLOCKS
 		obj.blockType  = 'block';
-
 
 		// ADD INVISIBLE CLASS TO ANIMATE ELEMENTS IN
 		obj.$el.addClass('invisible');

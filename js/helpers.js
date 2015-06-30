@@ -20,17 +20,16 @@ if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(naviga
 
 console.log('This is mobile: ' + mobile);
 
+
 // GET GIF IMAGES THAT AREN'T THE WHEEL
 var gifImgs = jQuery('img[src$=".gif"]').not(jQuery('img[src$="wheel.gif"]'));
 
 // IF MOBILE - ADD MOBILE STYLESHEET
 if(mobile) {
-
     // REPLACE GIFS WITH SVGS
     jQuery('img[src$=".gif"]').each(function(index,element) {
         element.src = element.src.replace('.gif','.svg');
     });
-
 }
 
 // FORMAT NUMBER
@@ -44,17 +43,6 @@ function triggerGif(gif){
         return gif.src= gif.src.split('?')[0]+'?='+(+new Date());
     }
 }
-
-// UNLOADIMG
-function unLoadImgSrc(img){
-    return img.src = '';
-}
-
-// UNLOADIMG
-function loadImgSrc(img, src){
-    return img.src = src;
-}
-
 
 // NUMBER TICKER
 jQuery.fn.jQuerySimpleCounter = function( options ) {
@@ -86,7 +74,6 @@ function addAnimation(index) {
       item.addClass('people-animate');
     }, index * 250);
 }
-
 
 
 // DISABLE HOVER ON SCROLL FOR SMOOTHER PERFORMANCE
