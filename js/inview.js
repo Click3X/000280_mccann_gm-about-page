@@ -333,14 +333,16 @@ function sectionToActiveState( _section ){
 			setTimeout(function(){
             	// AUTO ROTATE SLIDER
 				triggerSlider(trigger);
-         	}, 2500);
+         	// }, 2500);
+			}, 1250);
 		} else {
 			if( trigger == 'tech' ) {
 				// AUTO ROTATE SLIDER
 				setTimeout(function(){
 	            	// AUTO ROTATE SLIDER
 					triggerSlider(trigger);
-	         	}, 1000);
+	         	// }, 1000);
+				}, 500);
 			}
 		}
 
