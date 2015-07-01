@@ -1,0 +1,36 @@
+// STATIC EXPERIENCE
+.c3xgm-about-static-experience {
+	/* OUR PEOPLE */
+	#c3xgm-about-employees-img {
+	  background-image:url('../img/pages/people/people-icons.png');
+	  background-size:100%;
+	  background-repeat: no-repeat;
+	  @media(max-width: 767px) {
+	  	padding-bottom: 23.2%;
+	  }
+
+	  .c3xgm-about-girl,
+	  .c3xgm-about-boy {
+	  	display: none;
+	  }
+	}
+
+	#myobj {
+	  background-image:url('../img/pages/people/map.png');
+	  background-size:70%;
+	  background-position: 50% 50%;
+	  background-repeat: no-repeat;
+	  width: 88%;
+	  padding-bottom: 45%;
+	  background-size: 100%;
+	  margin: 0 auto;
+	}
+
+	.c3xgm-about-marker-holder {
+		display: none;
+	}
+
+	.c3xgm-about-icon-holder {
+		margin:0 auto;
+	}
+}

@@ -29,10 +29,7 @@
         <link href="stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" />
         <link href="stylesheets/print.css" media="print" rel="stylesheet" type="text/css" />
         <!--[if IE]>
-          <link href="/stylesheets/ie.css" media="screen, projection" rel="stylesheet" type="text/css" />
-        <![endif]-->
-        <!--[if IE]>
-        <link href="stylesheets/ie-old.css" media="screen, projection" rel="stylesheet" type="text/css" />
+        <link href="stylesheets/ie-base.css" media="screen, projection" rel="stylesheet" type="text/css" />
         <![endif]-->
         <!--[if lte IE 9]>
           <link rel="stylesheet" type="text/css" href="stylesheets/ie-9.css">
@@ -1198,44 +1195,38 @@
 
         <!-- REQUEST-ANIMATION-FRAME -->
         <script src="js/request-animation-frame.js"></script>
+
         <!-- HELPER FUNCTIONS-->
         <script src="js/helpers.js"></script>
+
         <!-- RESIZE FUNCTIONS FOR SLIDERS WITH VARIABLE HEIGHT-->    
         <script src="js/resize-functions.js"></script>
          
-        
-        <!-- SLIDER FILES FOR ALL SLIDERS -->
+        <!-- SLIDERS -->
         <script src="js/modules/sliders.js"></script>
-        
         
         <!-- SMOOTH SCROLL -->
         <script src="js/smooth-scroll.js"></script>
 
-        <!-- B-BOYS SCROLL -->
-        <script src="js/b-boys-scroll.js"></script>
+        <!-- ON SCROLL ANIMATIONS -->
+        <script src="js/on-scroll-animations.js"></script>
+        
+        <!-- ELEMENT IN VIEW -->
+        <script src="js/inview.js"></script>
         
 
-
-         <!-- NEW JS FOR EL IN VIEW
-         <script src="js/give-in.js"></script>
-        -->
-
-         <!-- ELEMENT IN VIEW 
-         <script src="js/element-in-view.js"></script>
-        -->
-
-         <!-- ELEMENT IN VIEW -->
-         <script src="js/inview.js"></script>
-         
-          
-
-
         <script>
-            jQuery('head').append('<style>#outline {position:fixed;z-index:1000;bottom:50px;right:50px;} .outlines {outline:1px solid rgba(255, 0, 0, 0.3);}</style>');
+            jQuery('head').append('<style>#outline {position:fixed;z-index:1000;bottom:50px;right:50px;} .outlines {outline:1px solid rgba(255, 0, 0, 0.3);} #static {position:fixed;z-index:1000;bottom:50px;right:100px;}</style>');
             jQuery('body').append('<input id=\"outline\" type=\"button\">');
+
+            jQuery('body').append('<input id=\"static\" type=\"button\" style="background:red;">');
 
             jQuery('#outline').click(function() {
                 jQuery('*').toggleClass('outlines');
+           });
+
+            jQuery('#static').click(function() {
+                jQuery('body').toggleClass('c3xgm-about-desktop-device').toggleClass('c3xgm-about-static-experience');
            });
         </script>
 

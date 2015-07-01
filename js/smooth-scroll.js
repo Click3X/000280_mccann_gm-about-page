@@ -1,3 +1,4 @@
+// SMOOTH SCROLL
 jQuery(document).ready(function($) {
     
     $('.c3xgm-about-main-nav a[href*=#]:not([href=#]), a.c3xgm-about-down-arrow-link, .c3xgm-about-end-nav a[href*=#]:not([href=#])').on('click touchstart', function() {

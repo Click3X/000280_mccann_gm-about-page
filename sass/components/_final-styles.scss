@@ -11,9 +11,12 @@
 	}
 }
 
-// .number 
+// NUMBER 
 #c3xgm-about-number-63 {
-	height:0.8em;	
+	height:0.8em;
+	@media(min-width: $tablet-height) {
+		height:0.95em;
+	}
 }
 
 // HIDE MOBILE IMAGE ON DESKTOP
@@ -25,17 +28,10 @@
 
 .c3xgm-about-mobile-device {
 	.c3xgm-about-china {
-		.c3xgm-about-block-image > img {
-			@media(min-width: $tablet-height) {
-				// display: none;
-			}
-		}
-
 		.c3xgm-about-desktop {
 			display: none;
 		}
 	}
-
 	// HIDE NAV ON MOBILE DEVICES (TABLETS INCLUDED)
 	.c3xgm-about-main-nav-container { display: none;}
 }
@@ -44,7 +40,6 @@
 .c3xgm-about-block-cfix {
 	background-image: url('../img/pages/brands/flag-mobile.svg');
 	background-repeat: no-repeat;
-	// background-size: cover;
 	width: 100%;
 	padding-bottom: 266.77%;
 

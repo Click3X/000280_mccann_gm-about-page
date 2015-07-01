@@ -1,7 +1,5 @@
 jQuery(document).ready(function($) { 
-    console.log('RESIZE FUNCTIONS HERE BABT!');
     // RESIZE TECH MODULES
-    // R E S I Z E 
     var resizeTimeout,
         resizeHandler,
 
@@ -38,13 +36,11 @@ jQuery(document).ready(function($) {
     function equalizeSlides(container, slides) {
         $(container).height('auto');
         $(slides).height('auto');
-        
 
         var maxSlideHeight = Math.max.apply(null, $(slides).map(function () {
             return $(this).height();
         }).get());
 
-        console.log('This is var maxSlideHeight: ' + maxSlideHeight);
         $(container).height(maxSlideHeight);
         $(slides).height(maxSlideHeight);
     }
@@ -53,10 +49,8 @@ jQuery(document).ready(function($) {
     resizeHandler = function() {
         // CAR HANDLER
         equalizeSlides(carModContainer, carContainers);
-
         // TECH HANDLER
         resizeTechModules(techQuotes, techPics);
-
         // FOUNDATION HANDLER
         equalizeSlides(foundationModContainer, foundationContainers);
     }
@@ -77,7 +71,6 @@ jQuery(document).ready(function($) {
     resizeHandler();
 
     $(window).load(function() {
-        // console.log('Resizing Tech Modules from Window Load');
         resizeHandler();
     });
     

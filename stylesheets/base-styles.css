@@ -347,17 +347,22 @@ html, body {
 /* line 81, ../sass/components/_layout.scss */
 .c3xgm-about-section-icon {
   width: 20%;
-  max-width: 90px;
+  max-width: 100px;
   height: 100%;
-  max-height: 90px;
+  max-height: 100px;
   display: block;
-  margin: 0.4em auto;
+  /*margin: 0.4em auto;*/
+  margin: 0 auto;
 }
 @media (min-width: 768px) {
   /* line 81, ../sass/components/_layout.scss */
   .c3xgm-about-section-icon {
     width: 100%;
     margin: 14px;
+  }
+
+  .c3xgm-about-static-experience .c3xgm-about-section-icon {
+    margin: 0 auto;
   }
 }
 
@@ -1167,6 +1172,8 @@ h4.c3xgm-about-h {
 .c3xgm-about-page-our-commitment .c3xgm-about-clean-energy .c3xgm-about-gray {
   font-size: 19px;
   font-size: 6vw;
+  clear: left;
+  float: left;
 }
 @media (min-width: 768px) {
   /* line 45, ../sass/pages/_environment.scss */
@@ -1313,6 +1320,10 @@ h4.c3xgm-about-h {
 /* line 113, ../sass/pages/_environment.scss */
 .c3xgm-about-page-our-commitment .c3xgm-about-climate-declaration .c3xgm-about-block-image > div {
   margin-left: 20%;
+}
+
+.c3xgm-about-static-experience .c3xgm-about-page-our-commitment .c3xgm-about-climate-declaration .c3xgm-about-block-image > div {
+  margin-left:auto;
 }
 /* line 115, ../sass/pages/_environment.scss */
 .c3xgm-about-page-our-commitment .c3xgm-about-climate-declaration .c3xgm-about-block-image img {
@@ -1947,6 +1958,7 @@ h4.c3xgm-about-h {
   display: block;
   width: 100%;
   text-align: center;
+  font-size: 169px;
   font-size: 53vw;
   line-height: 0.8em;
   margin: 0 auto 0.1em;
@@ -9701,8 +9713,8 @@ body {
 /* line 115, ../sass/animations/_element-in-view.scss */
 .c3xgm-about-china .c3xgm-about-block-image > img { display: block; }
 
-.c3xgm-about-china.inview .c3xgm-about-block-image > img,
-.c3xgm-about-china.inview .c3xgm-about-block-image > .c3xgm-about-block-cfix {
+.c3xgm-about-china.element-in-view .c3xgm-about-block-image > img,
+.c3xgm-about-china.element-in-view .c3xgm-about-block-image > .c3xgm-about-block-cfix {
   -webkit-animation-fill-mode: both;
   -moz-animation-fill-mode: both;
   -o-animation-fill-mode: both;
@@ -9725,7 +9737,6 @@ body {
   animation-duration: 600ms;
 }
 /* line 119, ../sass/animations/_element-in-view.scss */
-/*.c3xgm-about-china.element-in-view .c3xgm-about-block-image .c3xgm-about-block-image-mobile,*/
 .c3xgm-about-china .c3xgm-about-block-image .china-flag-wrapper {
   -webkit-transform-origin: 50% 100%;
   -moz-transform-origin: 50% 100%;
@@ -9744,32 +9755,7 @@ body {
   transition: transform 900ms;
 }
 
-/* line 129, ../sass/animations/_element-in-view.scss */
-
-/*.c3xgm-about-china.element-in-view .c3xgm-about-block-image img {
-  -webkit-animation-fill-mode: both;
-  -moz-animation-fill-mode: both;
-  -o-animation-fill-mode: both;
-  -ms-animation-fill-mode: both;
-  animation-fill-mode: both;
-  -webkit-animation-name: fadeIn;
-  -moz-animation-name: fadeIn;
-  -o-animation-name: fadeIn;
-  -ms-animation-name: fadeIn;
-  animation-name: fadeIn;
-  -webkit-animation-delay: 0;
-  -moz-animation-delay: 0;
-  -o-animation-delay: 0;
-  -ms-animation-delay: 0;
-  animation-delay: 0;
-  -webkit-animation-duration: 0;
-  -moz-animation-duration: 0;
-  -o-animation-duration: 0;
-  -ms-animation-duration: 0;
-  animation-duration: 0;
-}*/
 /* line 130, ../sass/animations/_element-in-view.scss */
-/*.c3xgm-about-china.element-in-view .c3xgm-about-block-image .c3xgm-about-block-image-mobile,*/
 .c3xgm-about-china.element-in-view .c3xgm-about-block-image .china-flag-wrapper {
   -webkit-transform: scale(1, 1);
   -moz-transform: scale(1, 1);

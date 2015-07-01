@@ -4,14 +4,26 @@
   display:none;
 }
 
+// STATIC EXPERIENCE
 .c3xgm-about-static-experience {
 
 	.c3xgm-about-icon-image {
 		display: block;
 	}
 
+	img[src$=".png"].c3xgm-about-icon-image {
+		width:100px; height:100px;
+	}
+
 	svg {
 		display: none;
+	}
+
+	.c3xgm-about-climate-declaration .c3xgm-about-block-image {
+		img[src$=".png"] {
+			width: 60%;
+  			float: left;
+		}
 	}
 }
 
@@ -68,16 +80,6 @@
 	    stroke:transparent;
 	}
 
-	// #c3xgm-about-end-nav {
-	// 	.c3xgm-about-logo-container {
-	// 		.c3xgm-about-our-company-icon {
-	// 			display: block;
-	// 		}
-	// 		.c3xgm-about-our-company-icon + svg {
-	// 			display: none;
-	// 		}
-	// 	}	
-	// }
 	#c3xgm-about-end-nav {
 		.c3xgm-about-logo-container {
 			svg * {
@@ -86,23 +88,3 @@
 		}
 	}
 }
-
-// svg {}
-
-/*
- * Let's target IE to respect aspect ratios and sizes for img tags containing SVG files
- *
- * [1] IE9
- * [2] IE10+
- */
-/* 1 */
-
-// .ie9 img[src*=".svg"] {
-//   width: 100%; 
-// }
-// /* 2 */
-// @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
-//   img[src*=".svg"] {
-//     width: 100%; 
-//   }
-// }

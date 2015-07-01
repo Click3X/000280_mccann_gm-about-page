@@ -110,8 +110,9 @@
 
 }
 
-.c3xgm-about-climate-declaration.element-in-view .c3xgm-about-block-image img[src$='svg'] {
-	width: 50%; margin-left:auto; margin-right:auto;
+.c3xgm-about-climate-declaration.element-in-view .c3xgm-about-block-image img[src$='svg'],
+.c3xgm-about-climate-declaration .c3xgm-about-block-image img[src$='png'] {
+	width: 45%; margin-left:auto; margin-right:auto;
 }
 
 .c3xgm-about-alt-anim {

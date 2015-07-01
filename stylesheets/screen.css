@@ -1943,13 +1943,14 @@ Stylesheet: Helpers
 }
 
 /* line 113, ../sass/partials/_mobile-gif-backups.scss */
-.c3xgm-about-climate-declaration.element-in-view .c3xgm-about-block-image img[src$='svg'] {
-  width: 50%;
+.c3xgm-about-climate-declaration.element-in-view .c3xgm-about-block-image img[src$='svg'],
+.c3xgm-about-climate-declaration .c3xgm-about-block-image img[src$='png'] {
+  width: 45%;
   margin-left: auto;
   margin-right: auto;
 }
 
-/* line 120, ../sass/partials/_mobile-gif-backups.scss */
+/* line 121, ../sass/partials/_mobile-gif-backups.scss */
 .c3xgm-about-alt-anim .c3xgm-about-dealers.element-in-view + .c3xgm-about-flag-line-container #c3xgm-about-flag-line-grey-car {
   margin: 0;
   -webkit-animation-fill-mode: both;
@@ -1984,7 +1985,7 @@ Stylesheet: Helpers
   animation-iteration-count: infinite;
 }
 @media (min-width: 768px) {
-  /* line 120, ../sass/partials/_mobile-gif-backups.scss */
+  /* line 121, ../sass/partials/_mobile-gif-backups.scss */
   .c3xgm-about-alt-anim .c3xgm-about-dealers.element-in-view + .c3xgm-about-flag-line-container #c3xgm-about-flag-line-grey-car {
     -webkit-animation-duration: 6s;
     -moz-animation-duration: 6s;
@@ -1993,7 +1994,7 @@ Stylesheet: Helpers
     animation-duration: 6s;
   }
 }
-/* line 139, ../sass/partials/_mobile-gif-backups.scss */
+/* line 140, ../sass/partials/_mobile-gif-backups.scss */
 .c3xgm-about-alt-anim .c3xgm-about-decorative.c3xgm-about-solar-panels-animation.element-in-view #c3xgm-about-solar-road-grey-car {
   margin: 0;
   -webkit-animation-fill-mode: both;
@@ -2028,7 +2029,7 @@ Stylesheet: Helpers
   animation-iteration-count: infinite;
 }
 @media (min-width: 768px) {
-  /* line 139, ../sass/partials/_mobile-gif-backups.scss */
+  /* line 140, ../sass/partials/_mobile-gif-backups.scss */
   .c3xgm-about-alt-anim .c3xgm-about-decorative.c3xgm-about-solar-panels-animation.element-in-view #c3xgm-about-solar-road-grey-car {
     -webkit-animation-duration: 6s;
     -moz-animation-duration: 6s;
@@ -5130,85 +5131,88 @@ Stylesheet: Helpers
   display: none;
 }
 
-/* line 9, ../sass/partials/_ie-fixes.scss */
+/* line 10, ../sass/partials/_ie-fixes.scss */
 .c3xgm-about-static-experience .c3xgm-about-icon-image {
   display: block;
 }
-/* line 13, ../sass/partials/_ie-fixes.scss */
+/* line 14, ../sass/partials/_ie-fixes.scss */
+.c3xgm-about-static-experience img[src$=".png"].c3xgm-about-icon-image {
+  width: 100px;
+  height: 100px;
+}
+/* line 18, ../sass/partials/_ie-fixes.scss */
 .c3xgm-about-static-experience svg {
   display: none;
 }
+/* line 23, ../sass/partials/_ie-fixes.scss */
+.c3xgm-about-static-experience .c3xgm-about-climate-declaration .c3xgm-about-block-image img[src$=".png"] {
+  width: 60%;
+  float: left;
+}
 
-/* line 19, ../sass/partials/_ie-fixes.scss */
+/* line 31, ../sass/partials/_ie-fixes.scss */
 .c3xgm-about-page-our-people .c3xgm-about-marker-holder img.map-marker {
   display: block;
   width: 100%;
 }
 @media (min-width: 768px) {
-  /* line 19, ../sass/partials/_ie-fixes.scss */
+  /* line 31, ../sass/partials/_ie-fixes.scss */
   .c3xgm-about-page-our-people .c3xgm-about-marker-holder img.map-marker {
     max-width: 27px;
   }
 }
 
-/* line 28, ../sass/partials/_ie-fixes.scss */
+/* line 40, ../sass/partials/_ie-fixes.scss */
 .c3xgm-about-only-ie {
   display: none;
 }
 
-/* line 33, ../sass/partials/_ie-fixes.scss */
+/* line 45, ../sass/partials/_ie-fixes.scss */
 .ie .c3xgm-about-only-ie {
   display: block;
 }
-/* line 37, ../sass/partials/_ie-fixes.scss */
+/* line 49, ../sass/partials/_ie-fixes.scss */
 .ie .c3xgm-about-map-no-pin {
   float: none !important;
   margin: 0 auto;
 }
-/* line 43, ../sass/partials/_ie-fixes.scss */
+/* line 55, ../sass/partials/_ie-fixes.scss */
 .ie #map-pin {
   display: none;
 }
-/* line 46, ../sass/partials/_ie-fixes.scss */
+/* line 58, ../sass/partials/_ie-fixes.scss */
 .ie #map-pin path {
   stroke: transparent;
 }
 
 @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
   /* NEW IE FIXES */
-  /* line 54, ../sass/partials/_ie-fixes.scss */
+  /* line 66, ../sass/partials/_ie-fixes.scss */
   .c3xgm-about-only-ie {
     display: block;
   }
 
-  /* line 58, ../sass/partials/_ie-fixes.scss */
+  /* line 70, ../sass/partials/_ie-fixes.scss */
   .c3xgm-about-map-no-pin {
     float: none !important;
     margin: 0 auto;
   }
 
-  /* line 63, ../sass/partials/_ie-fixes.scss */
+  /* line 75, ../sass/partials/_ie-fixes.scss */
   #map-pin {
     display: none;
   }
 
-  /* line 67, ../sass/partials/_ie-fixes.scss */
+  /* line 79, ../sass/partials/_ie-fixes.scss */
   #map-pin path {
     stroke: transparent;
   }
 
-  /* line 83, ../sass/partials/_ie-fixes.scss */
+  /* line 85, ../sass/partials/_ie-fixes.scss */
   #c3xgm-about-end-nav .c3xgm-about-logo-container svg * {
     opacity: 1;
   }
 }
-/*
- * Let's target IE to respect aspect ratios and sizes for img tags containing SVG files
- *
- * [1] IE9
- * [2] IE10+
- */
-/* 1 */
 /* line 3, ../sass/components/_final-styles.scss */
 #c3xgm-about-page-safety-quality > div.c3xgm-about-block.c3xgm-about-clearfix.c3xgm-about-test-facility {
   margin: 1em auto;
@@ -5229,22 +5233,28 @@ Stylesheet: Helpers
 #c3xgm-about-number-63 {
   height: 0.8em;
 }
+@media (min-width: 768px) {
+  /* line 15, ../sass/components/_final-styles.scss */
+  #c3xgm-about-number-63 {
+    height: 0.95em;
+  }
+}
 
-/* line 21, ../sass/components/_final-styles.scss */
+/* line 24, ../sass/components/_final-styles.scss */
 .c3xgm-about-desktop-device .c3xgm-about-china .c3xgm-about-block-image > img {
   display: none;
 }
 
-/* line 34, ../sass/components/_final-styles.scss */
+/* line 31, ../sass/components/_final-styles.scss */
 .c3xgm-about-mobile-device .c3xgm-about-china .c3xgm-about-desktop {
   display: none;
 }
-/* line 40, ../sass/components/_final-styles.scss */
+/* line 36, ../sass/components/_final-styles.scss */
 .c3xgm-about-mobile-device .c3xgm-about-main-nav-container {
   display: none;
 }
 
-/* line 44, ../sass/components/_final-styles.scss */
+/* line 40, ../sass/components/_final-styles.scss */
 .c3xgm-about-block-cfix {
   background-image: url("../img/pages/brands/flag-mobile.svg");
   background-repeat: no-repeat;
@@ -5252,8 +5262,49 @@ Stylesheet: Helpers
   padding-bottom: 266.77%;
 }
 @media (min-width: 768px) {
-  /* line 44, ../sass/components/_final-styles.scss */
+  /* line 40, ../sass/components/_final-styles.scss */
   .c3xgm-about-block-cfix {
     background-image: url("../img/pages/brands/flag-mobile.png");
   }
+}
+
+/* line 2, ../sass/partials/_static-experience.scss */
+.c3xgm-about-static-experience {
+  /* OUR PEOPLE */
+}
+/* line 4, ../sass/partials/_static-experience.scss */
+.c3xgm-about-static-experience #c3xgm-about-employees-img {
+  background-image: url("../img/pages/people/people-icons.png");
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+@media (max-width: 767px) {
+  /* line 4, ../sass/partials/_static-experience.scss */
+  .c3xgm-about-static-experience #c3xgm-about-employees-img {
+    padding-bottom: 23.2%;
+  }
+}
+/* line 12, ../sass/partials/_static-experience.scss */
+.c3xgm-about-static-experience #c3xgm-about-employees-img .c3xgm-about-girl,
+.c3xgm-about-static-experience #c3xgm-about-employees-img .c3xgm-about-boy {
+  display: none;
+}
+/* line 18, ../sass/partials/_static-experience.scss */
+.c3xgm-about-static-experience #myobj {
+  background-image: url("../img/pages/people/map.png");
+  background-size: 70%;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  width: 88%;
+  padding-bottom: 45%;
+  background-size: 100%;
+  margin: 0 auto;
+}
+/* line 29, ../sass/partials/_static-experience.scss */
+.c3xgm-about-static-experience .c3xgm-about-marker-holder {
+  display: none;
+}
+/* line 33, ../sass/partials/_static-experience.scss */
+.c3xgm-about-static-experience .c3xgm-about-icon-holder {
+  margin: 0 auto;
 }

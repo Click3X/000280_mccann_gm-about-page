@@ -6,7 +6,6 @@
       css3dtransforms = false;
   }
 
-  // var _containerHeight = 4000;
   var _containerHeight = $(document).height();
   var _width = window.innerWidth;
 
@@ -32,6 +31,19 @@
       }
     },
     {
+      name: 'c3xgm-about-flag-line-grey-car',
+      start: {
+        percent: getElemOffest('#c3xgm-about-flag-line-grey-car') - 0.05, 
+        x: -0.17, 
+        y:0
+      },
+      end: {
+        percent: getElemOffest('#c3xgm-about-flag-line-grey-car') + 0.05, 
+        x: 1.1, 
+        y:0
+      }
+    },
+    {
       name: 'c3xgm-about-grey-top',
       start: {
         percent: getElemOffest('#c3xgm-about-grey-van') - 0.028,
@@ -43,13 +55,23 @@
         x: 1.1, 
         y:0
       }
+    },
+    {
+      name: 'c3xgm-about-solar-road-grey-car',
+      start: {
+        percent: getElemOffest('#c3xgm-about-solar-road-grey-car') + 0.01, 
+        x:-0.2, 
+        y:0
+      },
+      end: {
+        percent: getElemOffest('#c3xgm-about-solar-road-grey-car') + 0.09,
+        x:1.17, 
+        y:0
+      }
     }
   ];
 
   function getElemOffest(elemId) {
-    // console.log('THis is element Offset ID ' + elemId);
-    // console.log('This is elemId offset top: ' + jQuery(elemId).offset().top);
-    // console.log('This is elemId offset ratio: ' + jQuery(elemId).offset().top / _containerHeight );
     return jQuery(elemId).offset().top / _containerHeight;
   }
 
@@ -82,11 +104,6 @@
   function updateElements() {
     for (var i = 0; i < _movingElements.length; i++) {
       var p = _positions[i];
-
-      // console.log('This is _scrollPercent' + _scrollPercent);
-      // console.log('This is _scrollOffset' + _scrollOffset);
-      // console.log('This is _scrollHeight' + _scrollHeight);
-       
 
       if(_scrollPercent <= p.start.percent) {
         p.target.x = p.start.x*_width;
@@ -146,15 +163,12 @@
 
 
 if(mobile) {
-  // console.log('We have mobile from B s boys script AND WE AINT GIVIN NO SCROLL TIED ANIMATIONS');
+  // DONT DO ANYTNING FOR MOBILE
 } else {
-  // console.log('NO MOHILE from B s boys script');
   // ONLY SCROLL ANIMATIONS FOR DESKTOP
-
   resetWidth();
   resize();
   initMovingElements();
-
   loop();
 
 }
