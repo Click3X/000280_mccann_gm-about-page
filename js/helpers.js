@@ -65,8 +65,13 @@ if( mobile ){
         ( browser.name == "Safari" && browser.version < 7 ) ){
             jQuery('body').addClass('c3xgm-about-static-experience');
             
+            // REPLACE SVG WITH PNG FOR STATIC DEVICES
             $('img[src$=".svg"]').each(function(index,element) {
                 element.src = element.src.replace('.svg','.png');
+            });
+            // REPLACE WHEEL GIF WITH STATIC PNG FOR STATIC DEVICES
+            $('img[src$="wheel.gif"]').each(function(index,element) {
+                element.src = element.src.replace('.gif','.png');
             });
 
             static_experience = true;
@@ -81,8 +86,13 @@ if( mobile ){
         ( browser.name == "IE" && browser.version < 9 ) ){
             jQuery('body').addClass('c3xgm-about-static-experience');
             
+            // REPLACE SVG WITH PNG FOR STATIC DEVICES
             $('img[src$=".svg"]').each(function(index,element) {
                 element.src = element.src.replace('.svg','.png');
+            });
+            // REPLACE WHEEL GIF WITH STATIC PNG FOR STATIC DEVICES
+            $('img[src$="wheel.gif"]').each(function(index,element) {
+                element.src = element.src.replace('.gif','.png');
             });
 
             static_experience = true;
