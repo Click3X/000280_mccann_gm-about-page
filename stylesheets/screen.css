@@ -5337,19 +5337,19 @@ Stylesheet: Helpers
 .c3xgm-about-static-experience #clock span {
   display: none;
 }
-/* line 63, ../sass/partials/_static-experience.scss */
+/* line 75, ../sass/partials/_static-experience.scss */
 .c3xgm-about-static-experience img[src$="rash-test-dummies.svg"],
 .c3xgm-about-static-experience img[src$="rash-test-dummies.png"] {
   width: 50%;
 }
 @media (min-width: 768px) {
-  /* line 63, ../sass/partials/_static-experience.scss */
+  /* line 75, ../sass/partials/_static-experience.scss */
   .c3xgm-about-static-experience img[src$="rash-test-dummies.svg"],
   .c3xgm-about-static-experience img[src$="rash-test-dummies.png"] {
     width: auto;
   }
 }
-/* line 72, ../sass/partials/_static-experience.scss */
+/* line 84, ../sass/partials/_static-experience.scss */
 .c3xgm-about-static-experience .c3xgm-about-down-arrow-link {
   background-image: url("../img/pages/company/down-arrow.png");
   background-repeat: no-repeat;
@@ -5361,7 +5361,7 @@ Stylesheet: Helpers
   margin-right: auto;
   margin-bottom: 5em;
 }
-/* line 80, ../sass/partials/_static-experience.scss */
+/* line 92, ../sass/partials/_static-experience.scss */
 .c3xgm-about-static-experience .c3xgm-about-down-arrow-link img {
   display: none;
 }
