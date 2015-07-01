@@ -1146,7 +1146,8 @@ h4.c3xgm-about-h {
   /* line 32, ../sass/pages/_environment.scss */
   .c3xgm-about-page-our-commitment .c3xgm-about-clean-energy .c3xgm-about-blockquote > span {
     float: left;
-    clear: left;
+    /*clear: left;*/
+    clear: both;
   }
 }
 /* line 34, ../sass/pages/_environment.scss */
