@@ -10025,13 +10025,13 @@ body {
 }
 @media (min-width: 768px) {
   /* line 221, ../sass/animations/_element-in-view.scss */
-  .c3xgm-about-global .c3xgm-about-block-image > div img {
+  /*.c3xgm-about-global .c3xgm-about-block-image > div img {
     -webkit-transform: translate3d(-50%, -4%, 0);
     -moz-transform: translate3d(-50%, -4%, 0);
     -o-transform: translate3d(-50%, -4%, 0);
     -ms-transform: translate3d(-50%, -4%, 0);
     transform: translate3d(-50%, -4%, 0);
-  }
+  }*/
 
   .c3xgm-about-global .c3xgm-about-block-image > div img[src$="svg"] {
     -webkit-transform: translate3d(-50%, 0, 0);
@@ -12791,10 +12791,17 @@ body {
   animation-duration: 800ms;
 }
 /* line 227, ../sass/animations/_page-in-view.scss */
-#c3xgm-about-page-safety-quality.c3xgm-about-page-in-view .c3xgm-about-subsection .c3xgm-about-p:before,
-#c3xgm-about-page-our-global-community.c3xgm-about-page-in-view .c3xgm-about-subsection .c3xgm-about-p:before,
-#c3xgm-about-page-environment.c3xgm-about-page-in-view .c3xgm-about-subsection .c3xgm-about-p:before,
-#c3xgm-about-page-technology.c3xgm-about-page-in-view .c3xgm-about-subsection .c3xgm-about-p:before {
+#c3xgm-about-page-safety-quality .c3xgm-about-subsection .c3xgm-about-p,
+#c3xgm-about-page-our-global-community .c3xgm-about-subsection .c3xgm-about-p,
+#c3xgm-about-page-environment .c3xgm-about-subsection .c3xgm-about-p,
+#c3xgm-about-page-technology .c3xgm-about-subsection .c3xgm-about-p {
+  position: relative;
+}
+
+#c3xgm-about-page-safety-quality .c3xgm-about-subsection .c3xgm-about-p:before,
+#c3xgm-about-page-our-global-community .c3xgm-about-subsection .c3xgm-about-p:before,
+#c3xgm-about-page-environment .c3xgm-about-subsection .c3xgm-about-p:before,
+#c3xgm-about-page-technology .c3xgm-about-subsection .c3xgm-about-p:before {
   content: "";
   display: block;
   position: absolute;
@@ -12810,6 +12817,12 @@ body {
   -o-transform-origin: top right;
   -ms-transform-origin: top right;
   transform-origin: top right;
+}
+
+#c3xgm-about-page-safety-quality.c3xgm-about-page-in-view .c3xgm-about-subsection .c3xgm-about-p:before,
+#c3xgm-about-page-our-global-community.c3xgm-about-page-in-view .c3xgm-about-subsection .c3xgm-about-p:before,
+#c3xgm-about-page-environment.c3xgm-about-page-in-view .c3xgm-about-subsection .c3xgm-about-p:before,
+#c3xgm-about-page-technology.c3xgm-about-page-in-view .c3xgm-about-subsection .c3xgm-about-p:before {
   -webkit-animation-fill-mode: both;
   -moz-animation-fill-mode: both;
   -o-animation-fill-mode: both;
@@ -12841,10 +12854,10 @@ body {
   }
 }
 /* line 242, ../sass/animations/_page-in-view.scss */
-#c3xgm-about-page-safety-quality.c3xgm-about-page-in-view .c3xgm-about-subsection .c3xgm-about-p:after,
-#c3xgm-about-page-our-global-community.c3xgm-about-page-in-view .c3xgm-about-subsection .c3xgm-about-p:after,
-#c3xgm-about-page-environment.c3xgm-about-page-in-view .c3xgm-about-subsection .c3xgm-about-p:after,
-#c3xgm-about-page-technology.c3xgm-about-page-in-view .c3xgm-about-subsection .c3xgm-about-p:after {
+#c3xgm-about-page-safety-quality .c3xgm-about-subsection .c3xgm-about-p:after,
+#c3xgm-about-page-our-global-community .c3xgm-about-subsection .c3xgm-about-p:after,
+#c3xgm-about-page-environment .c3xgm-about-subsection .c3xgm-about-p:after,
+#c3xgm-about-page-technology .c3xgm-about-subsection .c3xgm-about-p:after {
   content: "";
   display: block;
   position: absolute;
@@ -12860,6 +12873,12 @@ body {
   -o-transform-origin: top right;
   -ms-transform-origin: top right;
   transform-origin: top right;
+}
+
+#c3xgm-about-page-safety-quality.c3xgm-about-page-in-view .c3xgm-about-subsection .c3xgm-about-p:after,
+#c3xgm-about-page-our-global-community.c3xgm-about-page-in-view .c3xgm-about-subsection .c3xgm-about-p:after,
+#c3xgm-about-page-environment.c3xgm-about-page-in-view .c3xgm-about-subsection .c3xgm-about-p:after,
+#c3xgm-about-page-technology.c3xgm-about-page-in-view .c3xgm-about-subsection .c3xgm-about-p:after {
   -webkit-animation-fill-mode: both;
   -moz-animation-fill-mode: both;
   -o-animation-fill-mode: both;
