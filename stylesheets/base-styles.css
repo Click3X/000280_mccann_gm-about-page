@@ -4764,7 +4764,7 @@ div#c3xgm-about-grey-van:before {
     right: 0;
     bottom: auto;
     /*width: 0.2rem;*/
-    width:4px;
+    width:3px;
     height: 100%;
   }
 }
@@ -4936,7 +4936,8 @@ div#c3xgm-about-grey-van:before {
   .c3xgm-about-module-car .c3xgm-about-module-35 .c3xgm-about-yellow-line {
     display: block;
     /*width: 0.15rem;*/
-    width: 0.25rem;
+    /*width: 0.25rem;*/
+    width:3px;
     height: 100%;
     top: 0;
     right: 0;
@@ -5113,7 +5114,7 @@ div#c3xgm-about-grey-van:before {
 .c3xgm-about-module-car .c3xgm-about-module .c3xgm-about-block-image img {
   display: block;
   margin: 0 auto;
-  /*max-width: 77%;*/
+  max-width: 77%;
 }
 /* line 124, ../sass/modules/_car.scss */
 .c3xgm-about-module-car .c3xgm-about-module-car-logo-container li {
@@ -5181,11 +5182,13 @@ div#c3xgm-about-grey-van:before {
 }
 /* line 159, ../sass/modules/_car.scss */
 .c3xgm-about-module-car .c3xgm-about-module-car-logo-container li .c3xgm-about-module-car-logo img {
-  /*width: 60%;*/
-  width: 70%;
+  width: 55%;
   vertical-align: middle;
 }
 @media (min-width: 768px) {
+  .c3xgm-about-module-car .c3xgm-about-module-car-logo-container li .c3xgm-about-module-car-logo img {
+      width: 70%;
+    }
   /* line 157, ../sass/modules/_car.scss */
   .c3xgm-about-module-car .c3xgm-about-module-car-logo-container li .c3xgm-about-module-car-logo {
     line-height: 60px;

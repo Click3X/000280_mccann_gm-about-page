@@ -51,7 +51,6 @@ jQuery(document).ready(function($) {
     resizeHandler = function() {
         // CAR HANDLER
         equalizeSlides(carModContainer, carContainers);
-        equalizeSlides(carLogoContainer, carContainers);
         // TECH HANDLER
         resizeTechModules(techQuotes, techPics);
         // FOUNDATION HANDLER
@@ -59,8 +58,16 @@ jQuery(document).ready(function($) {
     }
 
 
+
     // BIND FUNCTION TO RESIZE EVENT
     $(window).resize(function() {
+
+        if( $(window).width() >= 768 ) {
+            equalizeSlides(carLogoContainer, carContainers);
+        } else {
+            $(carLogoContainer).height('auto');
+        }
+
         if (resizeTimeout) {
             // clear the timeout, if one is pending
             clearTimeout(resizeTimeout);
