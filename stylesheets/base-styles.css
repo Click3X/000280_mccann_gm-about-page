@@ -9879,67 +9879,32 @@ body {
   animation-duration: 600ms;
 }
 
-/* line 161, ../sass/animations/_element-in-view.scss */
-.c3xgm-about-cadillac-award .c3xgm-about-block-image,
-.c3xgm-about-chevrolet-award .c3xgm-about-block-image {
-  opacity: 0;
-  z-index: 10;
-  -webkit-transform: translate3d(-100%, 0, 0);
-  -moz-transform: translate3d(-100%, 0, 0);
-  -o-transform: translate3d(-100%, 0, 0);
-  -ms-transform: translate3d(-100%, 0, 0);
-  transform: translate3d(-100%, 0, 0);
-  -webkit-transition: all 900ms;
-  -moz-transition: all 900ms;
-  -o-transition: all 900ms;
-  -ms-transition: all 900ms;
-  transition: all 900ms;
-}
-@media (min-width: 768px) {
-  /* line 161, ../sass/animations/_element-in-view.scss */
-  .c3xgm-about-cadillac-award .c3xgm-about-block-image,
-  .c3xgm-about-chevrolet-award .c3xgm-about-block-image {
-    -webkit-transform: translate3d(-300%, 0, 0);
-    -moz-transform: translate3d(-300%, 0, 0);
-    -o-transform: translate3d(-300%, 0, 0);
-    -ms-transform: translate3d(-300%, 0, 0);
-    transform: translate3d(-300%, 0, 0);
-  }
-}
-/* line 175, ../sass/animations/_element-in-view.scss */
-.c3xgm-about-cadillac-award.element-in-view .c3xgm-about-block-image,
-.c3xgm-about-chevrolet-award.element-in-view .c3xgm-about-block-image {
-  opacity: 1;
-  -webkit-transform: translate3d(0, 0, 0);
-  -moz-transform: translate3d(0, 0, 0);
-  -o-transform: translate3d(0, 0, 0);
-  -ms-transform: translate3d(0, 0, 0);
-  transform: translate3d(0, 0, 0);
-}
+
 /* line 178, ../sass/animations/_element-in-view.scss */
-/*.c3xgm-about-cadillac-award.element-in-view .c3xgm-about-block-image img,
+.c3xgm-about-cadillac-award.element-in-view .c3xgm-about-block-image img,
 .c3xgm-about-chevrolet-award.element-in-view .c3xgm-about-block-image img {
-  -webkit-animation-fill-mode: none;
-  -moz-animation-fill-mode: none;
-  -o-animation-fill-mode: none;
-  -ms-animation-fill-mode: none;
-  animation-fill-mode: none;
-  -webkit-animation-name: none;
-  -moz-animation-name: none;
-  -o-animation-name: none;
-  -ms-animation-name: none;
-  animation-name: none;
+  -webkit-animation-fill-mode: both;
+  -moz-animation-fill-mode: both;
+  -o-animation-fill-mode: both;
+  -ms-animation-fill-mode: both;
+  animation-fill-mode: both;
+  -webkit-animation-name: fadeInLeftBig;
+  -moz-animation-name: fadeInLeftBig;
+  -o-animation-name: fadeInLeftBig;
+  -ms-animation-name: fadeInLeftBig;
+  animation-name: fadeInLeftBig;
   -webkit-animation-delay: 0;
   -moz-animation-delay: 0;
   -o-animation-delay: 0;
   -ms-animation-delay: 0;
   animation-delay: 0;
-  -webkit-animation-duration: 0;
-  -moz-animation-duration: 0;
-  -o-animation-duration: 0;
-  -ms-animation-duration: 0;
-  animation-duration: 0;
-}*/
+  -webkit-animation-duration: 900ms;
+  -moz-animation-duration: 900ms;
+  -o-animation-duration: 900ms;
+  -ms-animation-duration: 900ms;
+  animation-duration: 900ms;
+}
+
 /* line 185, ../sass/animations/_element-in-view.scss */
 .c3xgm-about-cadillac-award.element-in-view .c3xgm-about-blockquote > span:first-child,
 .c3xgm-about-chevrolet-award.element-in-view .c3xgm-about-blockquote > span:first-child {

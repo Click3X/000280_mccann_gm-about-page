@@ -5308,6 +5308,40 @@ Stylesheet: Helpers
 .c3xgm-about-static-experience .c3xgm-about-icon-holder {
   margin: 0 auto;
 }
+/* line 37, ../sass/partials/_static-experience.scss */
+.c3xgm-about-static-experience .c3xgm-about-section-icon {
+  width: 20%;
+  max-width: 100px;
+  height: 100%;
+  max-height: 100px;
+  display: block;
+  margin: 0.5em auto 1em;
+}
+/* line 46, ../sass/partials/_static-experience.scss */
+.c3xgm-about-static-experience #clock {
+  background-image: url("../img/pages/brands/clock.png");
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+/* line 51, ../sass/partials/_static-experience.scss */
+.c3xgm-about-static-experience #clock span {
+  display: none;
+}
+/* line 57, ../sass/partials/_static-experience.scss */
+.c3xgm-about-static-experience .c3xgm-about-down-arrow-link {
+  background-image: url("../img/pages/company/down-arrow.png");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  display: block;
+  width: 22px;
+  height: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+/* line 65, ../sass/partials/_static-experience.scss */
+.c3xgm-about-static-experience .c3xgm-about-down-arrow-link img {
+  display: none;
+}
 
 /* line 6, ../sass/partials/_brands-slider-changes.scss */
 a[href="#c3xgm-about-car-buick"] img,
