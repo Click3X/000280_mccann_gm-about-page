@@ -5322,8 +5322,8 @@ Stylesheet: Helpers
   background-repeat: no-repeat;
   background-size: 100%;
   height: 0;
-  width: 40%;
-  padding-bottom: 40%;
+  width: 50%;
+  padding-bottom: 50%;
   margin-left: auto;
   margin-right: auto;
 }
@@ -5337,7 +5337,17 @@ Stylesheet: Helpers
 .c3xgm-about-static-experience #clock span {
   display: none;
 }
-/* line 64, ../sass/partials/_static-experience.scss */
+/* line 63, ../sass/partials/_static-experience.scss */
+.c3xgm-about-static-experience img[src$="rash-test-dummies.png"] {
+  width: 40%;
+}
+@media (min-width: 768px) {
+  /* line 63, ../sass/partials/_static-experience.scss */
+  .c3xgm-about-static-experience img[src$="rash-test-dummies.png"] {
+    width: auto;
+  }
+}
+/* line 71, ../sass/partials/_static-experience.scss */
 .c3xgm-about-static-experience .c3xgm-about-down-arrow-link {
   background-image: url("../img/pages/company/down-arrow.png");
   background-repeat: no-repeat;
@@ -5349,7 +5359,7 @@ Stylesheet: Helpers
   margin-right: auto;
   margin-bottom: 5em;
 }
-/* line 72, ../sass/partials/_static-experience.scss */
+/* line 79, ../sass/partials/_static-experience.scss */
 .c3xgm-about-static-experience .c3xgm-about-down-arrow-link img {
   display: none;
 }

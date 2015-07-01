@@ -47,8 +47,8 @@
 		background-repeat: no-repeat;
 		background-size: 100%;
 		height: 0;
-		width: 40%;
-  		padding-bottom: 40%;
+		width: 50%;
+  		padding-bottom: 50%;
   		margin-left:auto; margin-right:auto;
 
   		@media(min-width: $tablet-height) {
@@ -60,6 +60,13 @@
 		}
 	}
 
+	img[src$="rash-test-dummies.png"] {
+		width: 40%;
+
+		@media(min-width: $tablet-height) {
+			width: auto;
+		}
+	}
 
 	.c3xgm-about-down-arrow-link {
 		background-image:url('../img/pages/company/down-arrow.png');
