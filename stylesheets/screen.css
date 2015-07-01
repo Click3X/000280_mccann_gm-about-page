@@ -5308,3 +5308,25 @@ Stylesheet: Helpers
 .c3xgm-about-static-experience .c3xgm-about-icon-holder {
   margin: 0 auto;
 }
+
+/* line 6, ../sass/partials/_brands-slider-changes.scss */
+a[href="#c3xgm-about-car-buick"] img,
+a[href="#c3xgm-about-car-baojun"] img,
+a[href="#c3xgm-about-car-holden"] img {
+  max-width: 98px;
+}
+
+/* line 12, ../sass/partials/_brands-slider-changes.scss */
+a[href="#c3xgm-about-car-wuling"] img {
+  max-width: 105px;
+}
+
+/* line 18, ../sass/partials/_brands-slider-changes.scss */
+a[href="#c3xgm-about-car-vauxhall"] img {
+  max-width: 95px;
+}
+
+/* line 24, ../sass/partials/_brands-slider-changes.scss */
+.c3xgm-about-module-car .c3xgm-about-module .c3xgm-about-block-image img[src$="car/wuling.jpg"] {
+  max-width: 76%;
+}

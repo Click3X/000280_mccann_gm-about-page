@@ -5,6 +5,8 @@ jQuery(document).ready(function($) {
 
         carContainers = $('#c3xgm-about-module-car .c3xgm-about-slide'),
         carModContainer = $('div.c3xgm-about-clearfix.c3xgm-about-module-car > div.c3xgm-about-clearfix.c3xgm-about-module-65 > div').get(0),
+        carLogoContainer = $('div.c3xgm-about-clearfix.c3xgm-about-module-car > div.c3xgm-about-clearfix.c3xgm-about-module-35').get(0),
+        
         
         techQuotes = $('.c3xgm-about-module-technology .c3xgm-about-module .c3xgm-about-blockquote-container'),
         techPics = $('.c3xgm-about-module-technology .c3xgm-about-module .c3xgm-about-block-image'),
@@ -49,6 +51,7 @@ jQuery(document).ready(function($) {
     resizeHandler = function() {
         // CAR HANDLER
         equalizeSlides(carModContainer, carContainers);
+        equalizeSlides(carLogoContainer, carContainers);
         // TECH HANDLER
         resizeTechModules(techQuotes, techPics);
         // FOUNDATION HANDLER
