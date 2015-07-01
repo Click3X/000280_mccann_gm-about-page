@@ -4503,7 +4503,6 @@ Stylesheet: Helpers
   max-width: 140px;
   height: 0;
   padding-bottom: 16%;
-  z-index: -1;
   position: absolute;
   top: 40%;
   right: 5%;
@@ -4523,6 +4522,7 @@ Stylesheet: Helpers
   .c3xgm-about-solar-road-wrapper .c3xgm-about-sun {
     top: 26%;
     padding-bottom: 140px;
+    z-index: -1;
   }
 }
 @media (min-width: 906px) {
@@ -4533,57 +4533,57 @@ Stylesheet: Helpers
     margin: auto;
   }
 }
-/* line 23, ../sass/partials/_flag-lines-solar-road.scss */
+/* line 27, ../sass/partials/_flag-lines-solar-road.scss */
 .c3xgm-about-solar-road-wrapper .c3xgm-about-road {
   width: 100%;
   height: 0;
   padding-bottom: 5%;
 }
 @media (min-width: 768px) {
-  /* line 23, ../sass/partials/_flag-lines-solar-road.scss */
+  /* line 27, ../sass/partials/_flag-lines-solar-road.scss */
   .c3xgm-about-solar-road-wrapper .c3xgm-about-road {
     padding-bottom: 37px;
   }
 }
-/* line 32, ../sass/partials/_flag-lines-solar-road.scss */
+/* line 36, ../sass/partials/_flag-lines-solar-road.scss */
 .c3xgm-about-solar-road-wrapper .grey-car {
   bottom: 37px;
 }
 @media (min-width: 768px) {
-  /* line 32, ../sass/partials/_flag-lines-solar-road.scss */
+  /* line 36, ../sass/partials/_flag-lines-solar-road.scss */
   .c3xgm-about-solar-road-wrapper .grey-car {
     bottom: 50px;
   }
 }
 
-/* line 41, ../sass/partials/_flag-lines-solar-road.scss */
+/* line 45, ../sass/partials/_flag-lines-solar-road.scss */
 .c3xgm-about-solar-road-container {
   width: 100%;
 }
-/* line 44, ../sass/partials/_flag-lines-solar-road.scss */
+/* line 48, ../sass/partials/_flag-lines-solar-road.scss */
 .c3xgm-about-solar-road-container .c3xgm-about-solar-road-list {
   width: 200%;
 }
-/* line 47, ../sass/partials/_flag-lines-solar-road.scss */
+/* line 51, ../sass/partials/_flag-lines-solar-road.scss */
 .c3xgm-about-solar-road-container .c3xgm-about-solar-road-list li {
   width: 50%;
   display: block;
   float: left;
   position: relative;
 }
-/* line 53, ../sass/partials/_flag-lines-solar-road.scss */
+/* line 57, ../sass/partials/_flag-lines-solar-road.scss */
 .c3xgm-about-solar-road-container .c3xgm-about-solar-road-list li img {
   display: inline-block;
   z-index: -2;
 }
-/* line 58, ../sass/partials/_flag-lines-solar-road.scss */
+/* line 62, ../sass/partials/_flag-lines-solar-road.scss */
 .c3xgm-about-solar-road-container .c3xgm-about-solar-road-list li .c3xgm-about-tree {
   margin-left: 2%;
   width: 9.9%;
   height: auto;
   max-width: 99px;
 }
-/* line 64, ../sass/partials/_flag-lines-solar-road.scss */
+/* line 68, ../sass/partials/_flag-lines-solar-road.scss */
 .c3xgm-about-solar-road-container .c3xgm-about-solar-road-list li .c3xgm-about-solar-panels {
   margin-left: 37%;
   width: 25.7%;
@@ -4591,12 +4591,12 @@ Stylesheet: Helpers
   max-width: 257px;
 }
 
-/* line 74, ../sass/partials/_flag-lines-solar-road.scss */
+/* line 78, ../sass/partials/_flag-lines-solar-road.scss */
 .c3xgm-about-solar-road-wrapper .grey-car {
   bottom: 4px;
 }
 @media (min-width: 768px) {
-  /* line 74, ../sass/partials/_flag-lines-solar-road.scss */
+  /* line 78, ../sass/partials/_flag-lines-solar-road.scss */
   .c3xgm-about-solar-road-wrapper .grey-car {
     bottom: 10px;
   }
@@ -5338,16 +5338,18 @@ Stylesheet: Helpers
   display: none;
 }
 /* line 63, ../sass/partials/_static-experience.scss */
+.c3xgm-about-static-experience img[src$="rash-test-dummies.svg"],
 .c3xgm-about-static-experience img[src$="rash-test-dummies.png"] {
-  width: 40%;
+  width: 50%;
 }
 @media (min-width: 768px) {
   /* line 63, ../sass/partials/_static-experience.scss */
+  .c3xgm-about-static-experience img[src$="rash-test-dummies.svg"],
   .c3xgm-about-static-experience img[src$="rash-test-dummies.png"] {
     width: auto;
   }
 }
-/* line 71, ../sass/partials/_static-experience.scss */
+/* line 72, ../sass/partials/_static-experience.scss */
 .c3xgm-about-static-experience .c3xgm-about-down-arrow-link {
   background-image: url("../img/pages/company/down-arrow.png");
   background-repeat: no-repeat;
@@ -5359,7 +5361,7 @@ Stylesheet: Helpers
   margin-right: auto;
   margin-bottom: 5em;
 }
-/* line 79, ../sass/partials/_static-experience.scss */
+/* line 80, ../sass/partials/_static-experience.scss */
 .c3xgm-about-static-experience .c3xgm-about-down-arrow-link img {
   display: none;
 }

@@ -1098,6 +1098,10 @@ h4.c3xgm-about-h {
   position: relative;
   overflow: hidden;
 }
+
+.c3xgm-about-page-our-commitment .c3xgm-about-clean-energy .c3xgm-about-blockquote span {
+  display: block;
+  }
 /* line 209, ../sass/components/_mixins.scss */
 .c3xgm-about-page-our-commitment .c3xgm-about-clean-energy .c3xgm-about-blockquote:before {
   content: "";
@@ -2084,6 +2088,7 @@ h4.c3xgm-about-h {
 .c3xgm-about-page-our-commitment .c3xgm-about-onstar-subscribers .c3xgm-about-blockquote {
   padding-left: 1.25rem;
   position: relative;
+  width: 90%;
 }
 /* line 209, ../sass/components/_mixins.scss */
 .c3xgm-about-page-our-commitment .c3xgm-about-onstar-subscribers .c3xgm-about-blockquote:before {

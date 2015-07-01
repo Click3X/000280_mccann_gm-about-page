@@ -60,8 +60,9 @@
 		}
 	}
 
+	img[src$="rash-test-dummies.svg"],
 	img[src$="rash-test-dummies.png"] {
-		width: 40%;
+		width: 50%;
 
 		@media(min-width: $tablet-height) {
 			width: auto;
