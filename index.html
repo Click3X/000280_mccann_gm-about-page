@@ -21,13 +21,10 @@
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
             
-        <!-- STAGING CSS - ORINGAL SASS FILE COMPILED-->
-        <!-- <link href="stylesheets/screen-old.css" media="screen, projection" rel="stylesheet" type="text/css" /> -->
         <link href="stylesheets/base-styles.css" media="screen, projection" rel="stylesheet" type="text/css" />
-
-        <!-- NEW SASS FILES - CLEAN- BUT PLACED AFTER TO OVER-WRITE OLD FILES -->
         <link href="stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" />
         <link href="stylesheets/print.css" media="print" rel="stylesheet" type="text/css" />
+
         <!--[if IE]>
         <link href="stylesheets/ie-base.css" media="screen, projection" rel="stylesheet" type="text/css" />
         <![endif]-->
@@ -1169,10 +1166,11 @@
 
                 </div>
             </div>
-            
         </div>
-        <!-- JQUERY OF COURSE -->
+
+        <!-- JQUERY -->
         <script src="js/vendor/jquery-1.11.1.min.js"></script>
+        
         <!--[if lt IE 9 ]>
         <script>
             var is_ie_lt9 = true;
@@ -1182,16 +1180,6 @@
             });
         </script>
         <![endif]--> 
-
-        <script>
-            var isIE11 = !!navigator.userAgent.match(/Trident.*rv[ :]*11\./);
-            if (isIE11) {
-                $(window).load(function(){
-                    $('body').addClass('ie');
-                    console.log('this is ie 11');
-                });
-            }
-        </script>
 
         <!-- REQUEST-ANIMATION-FRAME -->
         <script src="js/request-animation-frame.js"></script>
@@ -1213,22 +1201,5 @@
         
         <!-- ELEMENT IN VIEW -->
         <script src="js/inview.js"></script>
-        
-
-        <script>
-            jQuery('head').append('<style>#outline {position:fixed;z-index:1000;bottom:50px;right:50px;} .outlines {outline:1px solid rgba(255, 0, 0, 0.3);} #static {position:fixed;z-index:1000;bottom:50px;right:100px;}</style>');
-            jQuery('body').append('<input id=\"outline\" type=\"button\">');
-
-            jQuery('body').append('<input id=\"static\" type=\"button\" style="background:red;">');
-
-            jQuery('#outline').click(function() {
-                jQuery('*').toggleClass('outlines');
-           });
-
-            jQuery('#static').click(function() {
-                jQuery('body').toggleClass('c3xgm-about-desktop-device').toggleClass('c3xgm-about-static-experience');
-           });
-        </script>
-
     </body>
 </html>

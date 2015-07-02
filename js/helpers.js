@@ -39,12 +39,8 @@ switch( browser.name ){
     break;
 }
 
-
-console.log('This is mobile: ' + mobile);
-
-
 // GET GIF IMAGES THAT AREN'T THE WHEEL
-var gifImgs = jQuery('img[src$=".gif"]').not(jQuery('img[src$="wheel.gif"]'));
+var gifImgs = jQuery('img[src$=".gif"]');///.not(jQuery('img[src$="wheel.gif"]'));
 
 // IF MOBILE - ADD MOBILE STYLESHEET
 if( v_search_str ){
@@ -55,48 +51,35 @@ if( v_search_str ){
 
 //STATIC EXPERIENCE DETECTION
 if( mobile ){
+    jQuery('body').addClass('c3xgm-about-mobile-device');
+
     jQuery('img[src$=".gif"]').each(function(index,element) {
         element.src = element.src.replace('.gif','.svg');
     });
 
-    jQuery('body').addClass('c3xgm-about-mobile-device');
-
     if( browser.name == "Android" ||
         ( browser.name == "Safari" && browser.version < 7 ) ){
-            jQuery('body').addClass('c3xgm-about-static-experience');
-            
-            // REPLACE SVG WITH PNG FOR STATIC DEVICES
-            $('img[src$=".svg"]').each(function(index,element) {
-                element.src = element.src.replace('.svg','.png');
-            });
-            // REPLACE WHEEL GIF WITH STATIC PNG FOR STATIC DEVICES
-            $('img[src$="wheel.gif"]').each(function(index,element) {
-                element.src = element.src.replace('.gif','.png');
-            });
-
             static_experience = true;
     }
-
 } else {
     jQuery('body').addClass('c3xgm-about-desktop-device');
 
     if( ( browser.name == "Safari" && browser.version < 8 )     ||
         ( browser.name == "Firefox" && browser.version < 38 )   ||
         ( browser.name == "Chrome" && browser.version < 43 )    ||
-        ( browser.name == "IE" && browser.version < 9 ) ){
-            jQuery('body').addClass('c3xgm-about-static-experience');
-            
-            // REPLACE SVG WITH PNG FOR STATIC DEVICES
-            $('img[src$=".svg"]').each(function(index,element) {
-                element.src = element.src.replace('.svg','.png');
-            });
-            // REPLACE WHEEL GIF WITH STATIC PNG FOR STATIC DEVICES
-            $('img[src$="wheel.gif"]').each(function(index,element) {
-                element.src = element.src.replace('.gif','.png');
-            });
-
+        ( browser.name == "IE" && browser.version < 10 ) ){
             static_experience = true;
     }
+}
+
+static_experience = true;
+
+if(static_experience){
+    jQuery('body').addClass('c3xgm-about-static-experience');
+
+    $('img[src$=".svg"]').each(function(index,element) {
+        element.src = element.src.replace('.svg','.png');
+    });
 }
 
 console.log(useragent);
@@ -146,7 +129,6 @@ function addAnimation(index) {
       item.addClass('people-animate');
     }, index * 250);
 }
-
 
 // DISABLE HOVER ON SCROLL FOR SMOOTHER PERFORMANCE
 var body = document.body,

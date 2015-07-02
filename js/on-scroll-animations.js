@@ -162,7 +162,7 @@
 
 
 
-if(mobile) {
+if(mobile || static_experience) {
   // DONT DO ANYTNING FOR MOBILE
 } else {
   // ONLY SCROLL ANIMATIONS FOR DESKTOP
