@@ -5332,29 +5332,45 @@ Stylesheet: Helpers
 /* line 37, ../sass/partials/_static-experience.scss */
 .c3xgm-about-static-experience #c3xgm-about-red-car {
   left: 0;
+  -webkit-animation-name: none !important;
+  -moz-animation-name: none !important;
+  -o-animation-name: none !important;
+  -ms-animation-name: none !important;
+  animation-name: none !important;
 }
-/* line 41, ../sass/partials/_static-experience.scss */
+/* line 43, ../sass/partials/_static-experience.scss */
+.c3xgm-about-static-experience #c3xgm-about-grey-van {
+  left: 0;
+  right: 0;
+  margin: auto;
+  -webkit-animation-name: none !important;
+  -moz-animation-name: none !important;
+  -o-animation-name: none !important;
+  -ms-animation-name: none !important;
+  animation-name: none !important;
+}
+/* line 49, ../sass/partials/_static-experience.scss */
 .c3xgm-about-static-experience #c3xgm-about-grey-van:before {
   display: none;
 }
-/* line 46, ../sass/partials/_static-experience.scss */
+/* line 54, ../sass/partials/_static-experience.scss */
 .c3xgm-about-static-experience #c3xgm-about-employees-img {
   background-image: url("../img/pages/people/people-icons.png");
   background-size: 100%;
   background-repeat: no-repeat;
 }
 @media (max-width: 767px) {
-  /* line 46, ../sass/partials/_static-experience.scss */
+  /* line 54, ../sass/partials/_static-experience.scss */
   .c3xgm-about-static-experience #c3xgm-about-employees-img {
     padding-bottom: 23.2%;
   }
 }
-/* line 54, ../sass/partials/_static-experience.scss */
+/* line 62, ../sass/partials/_static-experience.scss */
 .c3xgm-about-static-experience #c3xgm-about-employees-img .c3xgm-about-girl,
 .c3xgm-about-static-experience #c3xgm-about-employees-img .c3xgm-about-boy {
   display: none;
 }
-/* line 60, ../sass/partials/_static-experience.scss */
+/* line 68, ../sass/partials/_static-experience.scss */
 .c3xgm-about-static-experience #myobj {
   background-image: url("../img/pages/people/map.png");
   background-size: 70%;
@@ -5365,11 +5381,11 @@ Stylesheet: Helpers
   background-size: 100%;
   margin: 0 auto;
 }
-/* line 71, ../sass/partials/_static-experience.scss */
+/* line 79, ../sass/partials/_static-experience.scss */
 .c3xgm-about-static-experience .c3xgm-about-marker-holder {
   display: none;
 }
-/* line 75, ../sass/partials/_static-experience.scss */
+/* line 83, ../sass/partials/_static-experience.scss */
 .c3xgm-about-static-experience .c3xgm-about-icon-holder {
   margin: 0 auto;
 }

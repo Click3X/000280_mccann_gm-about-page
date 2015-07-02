@@ -72,7 +72,6 @@ if( mobile ){
     }
 }
 
-static_experience = true;
 
 if(static_experience){
     jQuery('body').addClass('c3xgm-about-static-experience');

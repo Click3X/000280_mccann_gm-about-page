@@ -36,6 +36,14 @@
 
 	#c3xgm-about-red-car{
 		left:0;
+
+		@include prefix(animation-name, none !important );
+	}
+
+	#c3xgm-about-grey-van
+	{
+		left:0; right:0; margin:auto;
+		@include prefix(animation-name, none !important );
 	}
 
 	#c3xgm-about-grey-van:before{
