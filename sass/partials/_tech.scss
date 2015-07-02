@@ -3,21 +3,6 @@
 	.c3xgm-about-module-container {
 		position: relative;
 
-		// height: auto;
-		// padding-bottom: 403px;
-
-		// @media(min-width: 321px) {
-		// 	padding-bottom: 126%;
-		// }
-
-		// @media(min-width: $tablet-height) {
-		// 	padding-bottom: 64%;
-		// }
-
-		// @media(min-width: 906px) {
-		// 	padding-bottom: 580px;
-		// }
-
 		> div { background: white; }
 	}
 
@@ -34,13 +19,13 @@
   			padding-bottom: 32%;
 		}
 
-
 		.c3xgm-about-blockquote-container {
 			width: 94%; 
 			margin: 0 auto;
 			@media(min-width: $tablet-height) { width: 98%;  }
 		}
 	}
+	
 	// COMMON
 	// IMAGE
 	.c3xgm-about-block-icon {
@@ -54,6 +39,7 @@
 		 	}
 		}
 	}
+
 	// IMAGE
 	.c3xgm-about-block-image {
 		width: 100%;  max-width: $inner-border;
@@ -68,6 +54,7 @@
 
 		.c3xgm-about-wheel {display: block;}
 	}
+
 	// BLOCK-QUOTE
 	.c3xgm-about-blockquote {
 		max-width: 92%;
@@ -155,10 +142,6 @@
 	.c3xgm-about-4g-lte,
 	.c3xgm-about-safety {
 		.c3xgm-about-block-image { 
-
-			// height: 0;
-  	// 		padding-bottom: 39.5%;
-
 			.c3xgm-about-wheel {
 				width: 10.2857143%; max-width:87px;
 				position: absolute;
@@ -215,7 +198,6 @@
 		}
 	}
 
-
 	// NAV FOR TECHNOLOGY MODULE
 	.c3xgm-about-module-nav {
 		text-align: center; background: white;
@@ -248,8 +230,6 @@
 
 		.c3xgm-about-module-nav-bullet-active .c3xgm-about-inner-bullet { background-color: $gm-yellow;  }
 	}
-
-
 }
 
 #c3xgm-about-technology-4g-lte .c3xgm-about-module-technology .c3xgm-about-blockquote {

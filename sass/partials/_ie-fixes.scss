@@ -4,29 +4,6 @@
   display:none;
 }
 
-// STATIC EXPERIENCE
-.c3xgm-about-static-experience {
-
-	.c3xgm-about-icon-image {
-		display: block;
-	}
-
-	img[src$=".png"].c3xgm-about-icon-image {
-		width:100px; height:100px;
-	}
-
-	svg {
-		display: none;
-	}
-
-	.c3xgm-about-climate-declaration .c3xgm-about-block-image {
-		img[src$=".png"] {
-			width: 60%;
-  			float: left;
-		}
-	}
-}
-
 .c3xgm-about-page-our-people .c3xgm-about-marker-holder {
 	img.map-marker {
 		display: block;

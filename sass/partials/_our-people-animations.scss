@@ -1,5 +1,4 @@
 // OUR PEOPLE ANIMATIONS
-
 .c3xgm-about-page-our-people {
 	.c3xgm-about-marker-holder {
 		position: absolute;
@@ -23,7 +22,6 @@
 
 	@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
 		.element-in-view {
-			// .c3xgm-about-marker-holder { @include prefix(animation, markerDropIE .8s 2.3s ease-out forwards); }
 			.c3xgm-about-marker-holder { @include prefix(animation, markerDrop .8s 2.3s ease-out forwards); }
 		}
 	}

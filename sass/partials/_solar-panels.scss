@@ -1,17 +1,12 @@
 // SOLAR PANELS
 .c3xgm-about-decorative.c3xgm-about-solar-panels {
 	margin-bottom: 10%;
-	 // padding-bottom:120%;
-	 padding-bottom:0;
-	// height: 0;
-	// height:auto;
+	padding-bottom:0;
 	height:300px;
 	position: relative; 
 	margin-top:5em;
 
 	.c3xgm-about-clean-energy {
-		// padding-bottom: 80%;
-
 		p {margin-top:0; margin-bottom:0;}
 	}
 
@@ -23,12 +18,9 @@
 		height: 500px;
 	}
 	  
-	// @media(min-width: 480px) { padding-bottom:100%; }
   	@media(min-width: $tablet-height) { 
-  		// padding-bottom:580px; 
   		margin-bottom:100px; 
   	}
-
 
   	.c3xgm-about-grey-car-holder {
 		height: 0; width: 100%;
@@ -46,7 +38,6 @@
   		padding-bottom: 17.5%;
   		position: absolute;
 		left:0; 
-		// bottom:0; 
 		right:auto;
 		margin: auto;
 		z-index: 10;
@@ -56,7 +47,6 @@
 			@include prefix(background-size, cover);
 			height: 0;
 			display: block;
-			 // z-index: 200;
 			width: 13.142857%; padding-bottom: 13.142857%;
 			position: absolute;
 			bottom: 23%;
@@ -71,7 +61,6 @@
 		.c3xgm-about-front-wheel {
 			right: 10.285714%;
           	@media(min-width: $tablet-height) { 
-          		// right: 10.1%; 
           			right: 10%; 
           	}
 		}

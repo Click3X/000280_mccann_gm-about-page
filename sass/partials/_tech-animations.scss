@@ -3,10 +3,8 @@
 	$tech-delay:0;
 	$tech-duration:400;
 	$tech-step:400;
-	// HIDE OVERFLOW ON CAR MOD CONTAINER
 	overflow: hidden;
 
-	// MODULE HELPERS
 	.hide-module { 
 	    opacity: 0;
 	    position: absolute;
@@ -15,9 +13,6 @@
 
 	.show-module-slide-in {
 		position: absolute;
-		// visibility: visible;
-		// opacity: 1; z-index: 1000; 
-		// right:0; left: auto;
 
 		.c3xgm-about-block-image {
 			@include prefix(animation, techSlideIn);
@@ -38,7 +33,6 @@
 			@include prefix(animation-delay, #{ ($tech-delay + $tech-step * 2) + "ms"});
 			@include prefix(animation-duration, #{$tech-duration + "ms"});
 		}
-
 
 		.c3xgm-about-blockquote {
 			overflow: hidden;
@@ -73,7 +67,6 @@
 
 	.hide-module-slide-out { 
 		.c3xgm-about-block-image {
-			// @include prefix(animation, techSlideOut);
 			@include prefix(animation, fadeOutRight);
 			@include prefix(animation-duration, #{$tech-duration + "ms"});
 			@include prefix(animation-fill-mode, both);

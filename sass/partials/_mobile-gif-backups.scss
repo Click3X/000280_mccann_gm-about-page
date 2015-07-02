@@ -29,7 +29,6 @@
 		}
 	}
 
-
 	.c3xgm-about-decorative.c3xgm-about-red-car-road {
 		position: relative; 
 
@@ -47,7 +46,6 @@
 		}
 	}
 
-
 	// FLAG LINE
 	.c3xgm-about-flag-line-container {
 		#c3xgm-about-flag-line-grey-car {
@@ -57,7 +55,6 @@
 
 	// FIVE STARS
 	#c3xgm-about-grey-van {
-		// left: -380px;
 		@include prefix(animation-name, moveCarRight);
 		@include prefix(animation-delay, 0);
 		@include prefix(animation-duration, 4s);
@@ -67,7 +64,6 @@
 		&.animate-flag-line {
 			@include prefix(animation-fill-mode, both);
 		}
-		
 	}
 	
 	// HIDE OBSCURING COLUMN
@@ -93,7 +89,6 @@
 		}
 	}
 
-
 	// MOBILE CLASSES TAKEN FROM MOBILE .CSS
 	.c3xgm-about-mobile-visible { opacity: 1; }
 
@@ -107,7 +102,6 @@
 	#c3xgm-about-solar-road-grey-car {
 		left:0; right:0;margin:auto;
 	}
-
 }
 
 .c3xgm-about-climate-declaration.element-in-view .c3xgm-about-block-image img[src$='svg'],
@@ -130,13 +124,11 @@
 			@media(min-width: $tablet-height) {
 				@include prefix(animation-duration, 6s);
 			}
-
 		}
 	}
 
 	// SOLAR PANELS
 	.c3xgm-about-decorative.c3xgm-about-solar-panels-animation.element-in-view {
-
 		#c3xgm-about-solar-road-grey-car {
 			margin:0;
 			@include prefix(animation-fill-mode, both);
@@ -151,6 +143,4 @@
 			}
 		}
 	}
-
 }
-

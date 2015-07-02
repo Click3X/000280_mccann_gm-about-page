@@ -6,11 +6,9 @@
 		position: relative;
 	}
 
-
 	.c3xgm-about-sun {
 		width: 16%; max-width: 140px;
   		height: 0; padding-bottom: 16%;
-  		// z-index: -1;
 		position: absolute;
 		top:40%; right: 5%;
 		img { width:100%;}
@@ -22,7 +20,6 @@
 		}
 		@media(min-width: $inner-border) {left: 0; right: -50%; margin: auto; }
 	}
-
 
 	.c3xgm-about-road {
 		width: 100%;

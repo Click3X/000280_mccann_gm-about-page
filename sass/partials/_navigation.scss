@@ -3,15 +3,12 @@
 	width: 31px;
 	position: fixed; 
 	margin:auto;
-	
 	top:40px; 
-	// right:4%; 
 	right:0; 
-
 	z-index: 2000;
-	@include prefix(transform, translate3d(0,0,2000));
-
 	pointer-events:none;
+
+	@include prefix(transform, translate3d(0,0,2000));
 	@media(min-width: $tablet-height) {  width: 25px; top:208px;  }
 	@media(min-width: $inner-border) {
 		right: 0; left: 0;
@@ -21,7 +18,6 @@
 	.c3xgm-about-main-nav {
 		float: right; text-align: center;
   		position: relative;
-
   		pointer-events:all;
 
 		li {
@@ -42,11 +38,10 @@
 				border:2px solid $gm-nav-gray;
 				color:$gm-black;
 				font-weight: 600;
-				
 				position: absolute;
 				right: 130%; top: -8px;
-
 				opacity: 0; z-index: 0; display: none;
+
 				@include prefix(transition, opacity 200ms);
 
 				&:after, &:before {
@@ -121,16 +116,17 @@
 .c3xgm-about-main-nav-sub {
 	opacity: 0; display: none;
 	position: absolute;
+
 	@include prefix(transition, all 200ms);
 }
 
-// .c3xgm-about-nav-bullet-active + .c3xgm-about-main-nav-sub { 
 .c3xgm-about-nav-bullet-active ~ .c3xgm-about-main-nav-sub { 
 	opacity: 1;  display: block;
 
 	.c3xgm-about-nav-hover-sub-title {
 		&:hover {
 			opacity: 1;  display: block;
+			
 			@include prefix(transition, opacity 50ms);
 		}
 	}

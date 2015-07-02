@@ -1,7 +1,6 @@
 // FLAG LINES
 // FLAG-LINE
 .c3xgm-about-page-our-brands {
-
 	.c3xgm-about-flag-line {
 		background-image:url('../img/decorative/landscape/flag-line.png');
 		background-repeat:  no-repeat; background-size: cover;
@@ -13,7 +12,6 @@
 	
 	.c3xgm-about-flag-line {
 		margin: 0 auto 5em;
-		// overflow-x:hidden;
 		@media(min-width: $tablet-height) { margin: 0 auto 9em; }
 		.grey-car {
 			position: absolute;
@@ -29,7 +27,6 @@
 }
 
 // FROM FLAG LINE ANIMATIONS
-
 .c3xgm-about-flag-line-container {
     position: relative; width: 100%;
     overflow-x:hidden; 
