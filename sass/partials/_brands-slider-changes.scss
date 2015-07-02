@@ -1,3 +1,43 @@
+.c3xgm-about-module-65{
+	height:auto;
+
+	#c3xgm-about-module-car{
+		height:auto;
+
+		.c3xgm-about-module{
+			height: auto;
+
+			.c3xgm-about-block-image{
+			    height: auto;
+			    padding-bottom: 10px;
+
+			    img{
+			    	margin:auto; padding:0; width:100%; height:auto; max-width:100%;
+			    }
+
+			    div.c3xgm-about-vehicle-copy{
+			    	width: 100%; max-width:100%; padding-left:0px;
+			    }
+			}
+		}
+	}
+}
+
+@media (max-width: 769px){
+	.c3xgm-about-module-car .c3xgm-about-module-container .c3xgm-about-module .c3xgm-about-h, .c3xgm-about-module-car .c3xgm-about-module-container .c3xgm-about-module .c3xgm-about-p, .c3xgm-about-module-car .c3xgm-about-module-container .c3xgm-about-module .c3xgm-about-link, .c3xgm-about-module-car .c3xgm-about-module-container .c3xgm-about-module .c3xgm-about-vehicle-copy{
+		width:100%;
+
+	}
+	.c3xgm-about-module-car .c3xgm-about-module .c3xgm-about-link {
+		font-size:120%;
+		margin-top: .5em;
+	}
+
+	.c3xgm-about-vehicle-copy{
+		font-size: 90%;
+	}
+}
+
 @media (min-width: 768px){
 	.c3xgm-about-module-65{
 		height:100%;
@@ -14,10 +54,10 @@
 				    margin: 0;
 				    height: auto;
 				    padding:0 0 16px 0;
+				    z-index: -1;
 
 				    img{
 				    	margin:auto; padding:0; width:90%; height:auto; max-width:90%;
-				    	// max-height: 200px;
 				    }
 
 				    div.c3xgm-about-vehicle-copy{
