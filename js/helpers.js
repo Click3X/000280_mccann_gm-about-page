@@ -71,7 +71,6 @@ if( mobile ){
             static_experience = true;
     }
 }
-static_experience = false;
 
 if(static_experience){
     jQuery('body').addClass('c3xgm-about-static-experience');
