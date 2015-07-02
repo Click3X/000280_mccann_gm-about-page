@@ -23,10 +23,12 @@
 	}
 }
 
-@media (max-width: 769px){
-	.c3xgm-about-module-car .c3xgm-about-module-container .c3xgm-about-module .c3xgm-about-h, .c3xgm-about-module-car .c3xgm-about-module-container .c3xgm-about-module .c3xgm-about-p, .c3xgm-about-module-car .c3xgm-about-module-container .c3xgm-about-module .c3xgm-about-link, .c3xgm-about-module-car .c3xgm-about-module-container .c3xgm-about-module .c3xgm-about-vehicle-copy{
+@media (max-width: 767px){
+	.c3xgm-about-module-car .c3xgm-about-module-container .c3xgm-about-module .c3xgm-about-h, 
+	.c3xgm-about-module-car .c3xgm-about-module-container .c3xgm-about-module .c3xgm-about-p, 
+	.c3xgm-about-module-car .c3xgm-about-module-container .c3xgm-about-module .c3xgm-about-link, 
+	.c3xgm-about-module-car .c3xgm-about-module-container .c3xgm-about-module .c3xgm-about-vehicle-copy{
 		width:100%;
-
 	}
 	.c3xgm-about-module-car .c3xgm-about-module .c3xgm-about-link {
 		font-size:120%;
