@@ -32,9 +32,27 @@
 		}
 	}
 
+	.c3xgm-about-seconds .c3xgm-about-block-image{
+		background-image: url('../img/decorative/clock/clock.png');
+		background-repeat: no-repeat;
+		  background-size: 80%;
+  background-position: center center;
+	}
+
 	@media (min-width: 768px){
-		.c3xgm-about-global .c3xgm-about-block-image img{
-		  top: 0;
+		.c3xgm-about-global .c3xgm-about-block-image
+		{
+			padding-bottom:18%;
+
+			div{
+				img{
+				 	top: 0; left:auto; right:20px; width:auto; height:100%;
+
+				 	@include prefix(transform-origin, none);
+					@include prefix(transform, none);
+					@include prefix(transition, none);
+				}
+			}
 		}
 	}
 

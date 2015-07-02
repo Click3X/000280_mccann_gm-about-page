@@ -159,7 +159,7 @@ function fireCTD() {
 ===================================*/
 
 var sections = [], didscroll = false, didresize = true, laststeptime = 0, inviewpadding = 60;
-var currentPage = 0, currentSection = 0, navLinks, subNavLink;
+var currentpage = null, currentsection = null, navLinks, subNavLink;
 
 /*========== INITIALIZE ============
 ===================================*/
@@ -204,12 +204,13 @@ function updateSectionSizes(){
 }
 
 function updateSections(){
-	// console.log( "-- updateSections --" );
+	console.log( "-- updateSections --" );
 
 	var scrolltop 		= $( window ).scrollTop(),
 	windowheight 		= Math.round( window.innerHeight ),
-	bodyheight 			= Math.round( $( "#c3xgm-about-page-container" ).height() );
-	
+	bodyheight 			= Math.round( $( "#c3xgm-about-page-container" ).height() ),
+	closestpage 		= null, closestpage_dist = 10000000,
+	closestsection 		= null, closestsection_dist = 10000000;
 
 	// console.log( scrolltop, windowheight, bodyheight );
 
@@ -218,6 +219,14 @@ function updateSections(){
 		offsettop 		= Math.round( section.top - scrolltop ),
 		offsetbottom 	= Math.round( windowheight - offsettop ),
 		offsetmiddle	= ( windowheight * .8 ) - offsettop;
+
+		if( section.blockType == "page" && (Math.abs( offsettop ) < closestpage_dist) ){
+			closestpage = section;
+			closestpage_dist = Math.abs( offsettop );
+		} else if( section.blockType == "section" && (Math.abs( offsettop ) < closestsection_dist) ){
+			closestsection = section;
+			closestsection_dist = Math.abs( offsettop );
+		}
 
 		var inview 		= ( offsettop+section.height >= 0 ) && ( offsetbottom >= 0 ),
 		fullyvisible 	= ( offsettop >= -25 ) && ( windowheight - ( offsettop+section.height ) ) >= -25,
@@ -239,8 +248,31 @@ function updateSections(){
 				sectionToInActiveState( section );
 			}
 		}
+	}
 
-		// console.log( i + 1, offsettop, offsetmiddle, offsetbottom );
+	if(!closestpage || (closestpage != currentpage)){
+		currentpage = closestpage;
+
+		var pageindex = $( "#c3xgm-about-page-container > .c3xgm-about-page").index( currentpage.$el );
+
+		// UNHIGHTLIGHT CURRENT NAV BULLET
+        $(".c3xgm-about-main-nav > li > a.c3xgm-about-nav-bullet-active").removeClass("c3xgm-about-nav-bullet-active");
+        // HIGHLIGHT NAV BULLET
+        $( navLinks.eq( pageindex ) ).addClass("c3xgm-about-nav-bullet-active");
+	}
+
+	if(!closestsection || (closestsection != currentsection)){
+		currentsection = closestsection;
+
+		var sectionindex = $( "#c3xgm-about-page-our-commitment > .c3xgm-about-page").index( currentsection.$el );
+
+		// UNHIGHTLIGHT CURRENT SUB NAV BULLET
+		$(".c3xgm-about-main-nav-sub .c3xgm-about-nav-bullet-active").removeClass("c3xgm-about-nav-bullet-active");
+		// HIGHLIGHT SUB NAV BULLET
+		subNavLink = $('a[href="#'+currentsection.pageId+'"]');
+		$(subNavLink).eq(0).addClass("c3xgm-about-nav-bullet-active");
+
+		console.log("currentsection.pageId: ", currentsection.pageId);
 	}
 }
 
@@ -256,13 +288,13 @@ function sectionToActiveState( _section ){
     	
     	if(_section.blockType == "page") {
     		// GET INDEX OF CURRENT PAGE
-    		console.log("current page : ", currentPage);
 
-    		currentPage = $( "#c3xgm-about-page-container > .c3xgm-about-page").index( _section.$el ); 
+    		//currentPage = $( "#c3xgm-about-page-container > .c3xgm-about-page").index( _section.$el ); 
+
     		// UNHIGHTLIGHT CURRENT NAV BULLET
-	        $(".c3xgm-about-main-nav > li > a.c3xgm-about-nav-bullet-active").removeClass("c3xgm-about-nav-bullet-active");
+	        //$(".c3xgm-about-main-nav > li > a.c3xgm-about-nav-bullet-active").removeClass("c3xgm-about-nav-bullet-active");
 	        // HIGHLIGHT NAV BULLET
-	        $(navLinks.eq(currentPage)).addClass("c3xgm-about-nav-bullet-active");
+	        //$(navLinks.eq(currentPage)).addClass("c3xgm-about-nav-bullet-active");
 
 	        // OUR PEOPLE TRIGGERS
 	        var time;
@@ -294,12 +326,13 @@ function sectionToActiveState( _section ){
 	        }
     	} 
     	else if(_section.blockType == "section") {
-    		currentSection = $( "#c3xgm-about-page-our-commitment > .c3xgm-about-page").index( _section.$el );
+    		//currentSection = $( "#c3xgm-about-page-our-commitment > .c3xgm-about-page").index( _section.$el );
+
     		// UNHIGHTLIGHT CURRENT SUB NAV BULLET
-			$(".c3xgm-about-main-nav-sub .c3xgm-about-nav-bullet-active").removeClass("c3xgm-about-nav-bullet-active");
+			//$(".c3xgm-about-main-nav-sub .c3xgm-about-nav-bullet-active").removeClass("c3xgm-about-nav-bullet-active");
 			// HIGHLIGHT SUB NAV BULLET
-			subNavLink = $('a[href="'+id+'"]');
-			$(subNavLink).eq(0).addClass("c3xgm-about-nav-bullet-active");
+			//subNavLink = $('a[href="'+id+'"]');
+			//$(subNavLink).eq(0).addClass("c3xgm-about-nav-bullet-active");
     	}
 	} else if( _section.blockType == "end-nav" ) {
 		if(!static_experience) _section.$el.removeClass("invisible").addClass( "c3xgm-about-page-in-view" );
