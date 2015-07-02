@@ -58,7 +58,7 @@ if( mobile ){
     });
 
     if( browser.name == "Android" ||
-        ( browser.name == "Safari" && browser.version < 7 ) ){
+        ( browser.name == "Safari" && browser.version < 8 ) ){
             static_experience = true;
     }
 } else {
