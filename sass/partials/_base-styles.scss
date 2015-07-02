@@ -1395,32 +1395,33 @@ h4.c3xgm-about-h {
 @media (min-width: 768px) {
   .c3xgm-about-page-our-commitment .c3xgm-about-crash-test-dummies .c3xgm-about-block-image {
     float: left;
-    width: 25%;
+    width: 28%;
     height: 0;
     padding-bottom: 297px;
-    /*margin-right: 1em;*/
-    margin-left: 1em;
+    margin-right: 4px;
+    margin-left: 0;
+    position: relative;
   }
   .c3xgm-about-page-our-commitment .c3xgm-about-crash-test-dummies .c3xgm-about-block-image img {
     position: absolute;
-    top: 50%;
-    left: 50%;
-    -webkit-transform: translate(-27%, -50%);
-    -moz-transform: translate(-27%, -50%);
-    -o-transform: translate(-27%, -50%);
-    -ms-transform: translate(-27%, -50%);
-    transform: translate(-27%, -50%);
-    width: 235%;
+    top: 10px;
+    left: 0;
+    -webkit-transform: none;
+    -moz-transform: none;
+    -o-transform: none;
+    -ms-transform: none;
+    transform: none;
+    width: 100%;
   }
 
   .c3xgm-about-page-our-commitment .c3xgm-about-crash-test-dummies .c3xgm-about-block-image img[src$=".svg"],
   .c3xgm-about-page-our-commitment .c3xgm-about-crash-test-dummies .c3xgm-about-block-image img[src$=".png"] {
-    -webkit-transform: translate(-50%, -50%);
-    -moz-transform: translate(-50%, -50%);
-    -o-transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
-     width: 80%;
+    // -webkit-transform: translate(-50%, -50%);
+    // -moz-transform: translate(-50%, -50%);
+    // -o-transform: translate(-50%, -50%);
+    // -ms-transform: translate(-50%, -50%);
+    // transform: translate(-50%, -50%);
+    //  width: 80%;
   }
 }
 .c3xgm-about-page-our-commitment .c3xgm-about-crash-test-dummies .c3xgm-about-blockquote {
@@ -11079,6 +11080,7 @@ body {
 .c3xgm-about-landfill-free.element-in-view .c3xgm-about-block-image {
   overflow: hidden;
 }
+
 .c3xgm-about-landfill-free.element-in-view .c3xgm-about-block-image img {
   -webkit-animation-fill-mode: both;
   -moz-animation-fill-mode: both;

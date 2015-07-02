@@ -44,30 +44,33 @@ jQuery(document).ready(function($) {
         }).get());
 
         $(container).height(maxSlideHeight);
-        $(slides).height(maxSlideHeight);
+       $(slides).height($(container).height);
     }
-
 
     resizeHandler = function() {
         // CAR HANDLER
-        equalizeSlides(carModContainer, carContainers);
+        $(".c3xgm-about-module-car").height("auto");
+
+        console.log(window.innerWidth);
+
+        if( window.innerWidth >= 768 ) {
+            $(carModContainer).height('100%');
+            $(carContainers).height('100%');
+
+            $(".c3xgm-about-module-car").css("height", $(".c3xgm-about-module-car").height() );
+        } else {
+           equalizeSlides(carModContainer, carContainers);
+        }
+
         // TECH HANDLER
         resizeTechModules(techQuotes, techPics);
+
         // FOUNDATION HANDLER
         equalizeSlides(foundationModContainer, foundationContainers);
     }
 
-
-
     // BIND FUNCTION TO RESIZE EVENT
     $(window).resize(function() {
-
-        if( $(window).width() >= 768 ) {
-            equalizeSlides(carLogoContainer, carContainers);
-        } else {
-            $(carLogoContainer).height('auto');
-        }
-
         if (resizeTimeout) {
             // clear the timeout, if one is pending
             clearTimeout(resizeTimeout);
@@ -76,12 +79,7 @@ jQuery(document).ready(function($) {
         resizeTimeout = setTimeout(resizeHandler, 60/1000);
     });
 
-
-    // CALL FUNCTION ON PAGE LOAD
-    resizeHandler();
-
     $(window).load(function() {
         resizeHandler();
     });
-    
 });

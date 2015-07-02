@@ -1,24 +1,26 @@
-// BRANDS-SLIDER-CHANGES
-a[href="#c3xgm-about-car-buick"],
-a[href="#c3xgm-about-car-baojun"],
-a[href="#c3xgm-about-car-holden"] {
-	img {
-		max-width: 98px;
-	}
-}
+@media (min-width: 768px){
+	.c3xgm-about-module-65{
+		height:100%;
 
-a[href="#c3xgm-about-car-wuling"] {
-	img {
-		max-width: 105px;
-	}
-}
+		#c3xgm-about-module-car{
+			height:100%;
 
-a[href="#c3xgm-about-car-vauxhall"] {
-	img {
-		max-width: 95px;
+			.c3xgm-about-module{
+				height: 100%;
+
+				.c3xgm-about-block-image{
+				    position: absolute;
+				    bottom: 0;
+				    margin: 0;
+				    height: auto;
+				    padding:0 0 16px 0;
+
+				    img{
+				    	margin:auto; padding:0; width:90%; height:auto;
+				    	// max-height: 200px;
+				    }
+				}
+			}
+		}
 	}
-}
-  
-.c3xgm-about-module-car .c3xgm-about-module .c3xgm-about-block-image img[src$="car/wuling.jpg"] {
-	max-width: 76%;
 }

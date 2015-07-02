@@ -71,13 +71,17 @@ if( mobile ){
             static_experience = true;
     }
 }
-
+static_experience = false;
 
 if(static_experience){
     jQuery('body').addClass('c3xgm-about-static-experience');
 
     $('img[src$=".svg"]').each(function(index,element) {
         element.src = element.src.replace('.svg','.png');
+    });
+
+    $('img[src$=".gif"]').each(function(index,element) {
+        element.src = element.src.replace('.gif','.png');
     });
 }
 
