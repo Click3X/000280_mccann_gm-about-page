@@ -25,7 +25,6 @@
       handle = 0;
     }
      
-     
     var draw = function() {
        var progress = current_frame/total_frames;
        if (progress > 1) {
