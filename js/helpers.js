@@ -51,7 +51,8 @@ if( v_search_str ){
 
 //STATIC EXPERIENCE DETECTION
 if( mobile ){
-    jQuery('body').addClass('c3xgm-about-mobile-device');
+    // jQuery('body').addClass('c3xgm-about-mobile-device');
+    jQuery('#c3xgm-about-encap-container').addClass('c3xgm-about-mobile-device');
 
     jQuery('img[src$=".gif"]').each(function(index,element) {
         element.src = element.src.replace('.gif','.svg');
@@ -62,7 +63,8 @@ if( mobile ){
             static_experience = true;
     }
 } else {
-    jQuery('body').addClass('c3xgm-about-desktop-device');
+    // jQuery('body').addClass('c3xgm-about-desktop-device');
+    jQuery('#c3xgm-about-encap-container').addClass('c3xgm-about-desktop-device');
 
     if( ( browser.name == "Safari" && browser.version < 8 )     ||
         ( browser.name == "Firefox" && browser.version < 38 )   ||
@@ -73,7 +75,8 @@ if( mobile ){
 }
 
 if(static_experience){
-    jQuery('body').addClass('c3xgm-about-static-experience');
+    // jQuery('body').addClass('c3xgm-about-static-experience');
+    jQuery('#c3xgm-about-encap-container').addClass('c3xgm-about-static-experience');
 
     $('img[src$=".svg"]').each(function(index,element) {
         element.src = element.src.replace('.svg','.png');
@@ -133,17 +136,18 @@ function addAnimation(index) {
 }
 
 // DISABLE HOVER ON SCROLL FOR SMOOTHER PERFORMANCE
-var body = document.body,
+// var body = document.body,
+var body = document.getElementById('c3xgm-about-encap-container'),
 timer;
 
 window.addEventListener('scroll', function() {
     clearTimeout(timer);
 
-    if(! $('body').hasClass('disable-hover')) {
-        $('body').addClass('disable-hover');
+    if(! $('#c3xgm-about-encap-container').hasClass('disable-hover')) {
+        $('#c3xgm-about-encap-container').addClass('disable-hover');
     }
 
     timer = setTimeout(function(){
-        $('body').removeClass('disable-hover');
+        $('#c3xgm-about-encap-container').removeClass('disable-hover');
     }, 90);
 }, false);
