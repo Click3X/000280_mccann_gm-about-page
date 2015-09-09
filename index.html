@@ -18,8 +18,13 @@
         <link rel="favicon" href="favicon.ico">
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-            
+
+        <!-- BODY STYLES -->
+        <link href="css/body-styles.css" media="screen, projection" rel="stylesheet" type="text/css" />
+        
+        <!-- MAIN STYLES             -->
         <link href="css/main.css" media="screen, projection" rel="stylesheet" type="text/css" />
+        
         <!--[if IE]>
         <link href="css/ie.css" media="screen, projection" rel="stylesheet" type="text/css" />
         <![endif]-->
@@ -33,8 +38,10 @@
         <script src="js/vendor/modernizr-2.6.2-respond-1.1.0.min.js"></script>
     </head>
     <body>
+        <!-- ENCAPSULATED DIV CONTAINER -->
         <div id="c3xgm-about-encap-container">
             <div id="c3xgm-about-encap-container-inner">
+
                 <!-- MAIN NAVIGATION -->
                 <div class="c3xgm-about-clearfix c3xgm-about-main-nav-container">
                     <ul class="c3xgm-about-clearfix c3xgm-about-main-nav">
@@ -1185,9 +1192,9 @@
                         </div>
                     </div>
                 </div>
-            
-            </div><!--  END MOBILE ENCAP CONTAINER -->
-        </div><!--  END NEW CONTAINER -->
+
+            </div><!--  CLOSE ENCAP CONTAINER INNER -->
+        </div><!--  CLOSE ENCAP CONTAINER -->
 
         <!-- JQUERY -->
         <script src="js/vendor/jquery-1.11.1.min.js"></script>
@@ -1196,7 +1203,7 @@
         <script>
             var is_ie_lt9 = true;
             console.log('THis is IE 8');
-            $('img[src$=".svg"]').each(function(index,element) {
+            $('#c3xgm-about-encap-container img[src$=".svg"]').each(function(index,element) {
                 element.src = element.src.replace('.svg','.png');
             });
         </script>

@@ -2,49 +2,26 @@
  * In this file you should write your main styles. (or centralize your imports)
  * Import this file using the following HTML or equivalent:
  * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
-
-// html, body,
-  div, span, applet, object, iframe,
-  h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-  a, abbr, acronym, address, big, cite, code,
-  del, dfn, em, img, ins, kbd, q, s, samp,
-  small, strike, strong, sub, sup, tt, var,
-  b, u, i, center,
-  dl, dt, dd, ol, ul, li,
-  fieldset, form, label, legend,
-  table, caption, tbody, tfoot, thead, tr, th, td,
-  article, aside, canvas, details, embed,
-  figure, figcaption, footer, header, hgroup,
-  menu, nav, output, ruby, section, summary,
-  time, mark, audio, video {
-    margin: 0;
-    padding: 0;
-    border: 0;
-    font: inherit;
-    font-size: 100%;
-    vertical-align: baseline;
+div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
 }
-
-.c3xgm-about-main-nav-sub,
-.c3xgm-about-main-nav {
-  padding:0; margin:0; border:0;
-}
-
-
-
-
-// html, body {
-  // margin: 0;
-  // padding: 0;
-  // border: 0;
-  // font: inherit;
-  // font-size: 100%; 
-  // vertical-align: baseline;
-// }
-
-// html {
-//   line-height: 1;
-// }
 
 ol, ul {
   list-style: none;
@@ -187,23 +164,11 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   }
 }
 
-// #c3xgm-about-encap-container {
-//   *,
-//   *::before,
-//   *::after {
-//     box-sizing: inherit;
-//   }  
-// }
-
-// // html,
-// #c3xgm-about-encap-container  {
-//   box-sizing: border-box;
-// }
-
-// // html, body,
-// #c3xgm-about-encap-container {
-//   -webkit-overflow-scrolling: touch;
-// }
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
 
 .c3xgm-about-page-container {
   width: 100%;
@@ -534,23 +499,11 @@ svg {
   }
 }
 
-// body, html {
-//   margin: 0;
-//   padding: 0;
-// }
-
-// body {
-//   font-family: "open-sans-condensed", 'Arial Narrow', Arial, sans-serif;
-//   color: #464B51;
-// }
-
-  h1, h2, h3, h4, h5, h6 {
-    font-weight: 600;
-    letter-spacing: .01em;
-    text-transform: uppercase;
-  }
-
-
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 600;
+  letter-spacing: .01em;
+  text-transform: uppercase;
+}
 h1.c3xgm-about-h, h2.c3xgm-about-h, h3.c3xgm-about-h, h4.c3xgm-about-h, h5.c3xgm-about-h, h6.c3xgm-about-h {
   margin: 0;
   padding: 0;
@@ -5267,10 +5220,6 @@ div#c3xgm-about-grey-van:before {
     opacity: 1;
     transform: scaleX(100%);
   }
-}
-body {
-  /* Addresses a small issue in webkit: http://bit.ly/NEdoDq */
-  -webkit-backface-visibility: hidden;
 }
 
 .animated {

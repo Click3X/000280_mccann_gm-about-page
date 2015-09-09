@@ -52,14 +52,14 @@
       },
       end: {
         percent: getElemOffest('#c3xgm-about-grey-van') + 0.085,
-        x: 1.1, 
+        x: 1.15, 
         y:0
       }
     },
     {
       name: 'c3xgm-about-solar-road-grey-car',
       start: {
-        percent: getElemOffest('#c3xgm-about-solar-road-grey-car') + 0.01, 
+        percent: getElemOffest('#c3xgm-about-solar-road-grey-car') - 0.01, 
         x:-0.2, 
         y:0
       },

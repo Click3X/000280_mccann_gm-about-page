@@ -154,15 +154,15 @@ window.addEventListener('scroll', function() {
 
 
 // ADD MARGIN, PADDING 0 T0 ENCAP CONTAINER (BODY)
-$('#c3xgm-about-encap-container').parent().css({
-    'margin': 0,
-    'padding': 0,
-    'border': 0,
-    'font':'inherit',
-    'font-size':'100%',
-    'vertical-align':'baseline',
-    '-webkit-overflow-scrolling':'touch',
-    '-webkit-backface-visibility':'hidden',
-    '-webkit-overflow-scrolling':'touch',
-    'box-sizing':'border-box'
-});
+// $('#c3xgm-about-encap-container').parent().css({
+//     'margin': 0,
+//     'padding': 0,
+//     'border': 0,
+//     'font':'inherit',
+//     'font-size':'100%',
+//     'vertical-align':'baseline',
+//     '-webkit-overflow-scrolling':'touch',
+//     '-webkit-backface-visibility':'hidden',
+//     '-webkit-overflow-scrolling':'touch',
+//     'box-sizing':'border-box'
+// });

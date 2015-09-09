@@ -1,43 +1,16 @@
+// ADDING ENCAP CONTAINER STYLES
 #c3xgm-about-encap-container {
+    font-family: "open-sans-condensed", 'Arial Narrow', Arial, sans-serif;
+    color: #464B51;
+    box-sizing: border-box;
+    line-height: 1;
+     // -webkit-overflow-scrolling: touch;
     margin: 0;
     padding: 0;
     border: 0;
-    font: inherit;
     font-size: 100%;
     vertical-align: baseline;
 
-    line-height: 1;
-
-    -webkit-backface-visibility: hidden;
-    -webkit-overflow-scrolling: touch;
-    box-sizing: border-box;
-}
-
-#c3xgm-about-encap-container {
-  *,
-  *::before,
-  *::after {
-    box-sizing: inherit;
-  }  
-}
-
-// html,
-#c3xgm-about-encap-container  {
-  box-sizing: border-box;
-}
-
-// html, body,
-#c3xgm-about-encap-container {
-  -webkit-overflow-scrolling: touch;
-}
-
-// body
-#c3xgm-about-encap-container {
-  font-family: "open-sans-condensed", 'Arial Narrow', Arial, sans-serif;
-  color: #464B51;
-}
-
-#c3xgm-about-encap-container {
     @import "partials/base-styles";
     @import "components/variables";
     @import "components/mixins";
@@ -61,4 +34,5 @@
     @import "components/final-styles";
     @import "partials/static-experience";
     @import "partials/_brands-slider-changes";
+
 }
