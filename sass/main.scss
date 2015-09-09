@@ -1,23 +1,64 @@
-@import "partials/base-styles";
-@import "components/variables";
-@import "components/mixins";
-@import "components/functions";
-@import "components/helpers";
-@import "animations/animations-all";
-@import "partials/mobile-gif-backups";
-@import "partials/navigation";
-@import "partials/animated-icons";
-@import "partials/our-people-animations";
-@import "animations/truck-line-shadow";
-@import "animations/element-in-view-new";
-@import "partials/solar-panels";
-@import "partials/tech";
-@import "partials/tech-animations";
-@import "partials/wheel-car-new";
-@import "partials/flag-lines-solar-road";
-@import "partials/end-nav";
-@import "animations/page-in-view-end-nav";
-@import "partials/ie-fixes";
-@import "components/final-styles";
-@import "partials/static-experience";
-@import "partials/_brands-slider-changes";
+#c3xgm-about-encap-container {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font: inherit;
+    font-size: 100%;
+    vertical-align: baseline;
+
+    line-height: 1;
+
+    -webkit-backface-visibility: hidden;
+    -webkit-overflow-scrolling: touch;
+    box-sizing: border-box;
+}
+
+#c3xgm-about-encap-container {
+  *,
+  *::before,
+  *::after {
+    box-sizing: inherit;
+  }  
+}
+
+// html,
+#c3xgm-about-encap-container  {
+  box-sizing: border-box;
+}
+
+// html, body,
+#c3xgm-about-encap-container {
+  -webkit-overflow-scrolling: touch;
+}
+
+// body
+#c3xgm-about-encap-container {
+  font-family: "open-sans-condensed", 'Arial Narrow', Arial, sans-serif;
+  color: #464B51;
+}
+
+#c3xgm-about-encap-container {
+    @import "partials/base-styles";
+    @import "components/variables";
+    @import "components/mixins";
+    @import "components/functions";
+    @import "components/helpers";
+    @import "animations/animations-all";
+    @import "partials/mobile-gif-backups";
+    @import "partials/navigation";
+    @import "partials/animated-icons";
+    @import "partials/our-people-animations";
+    @import "animations/truck-line-shadow";
+    @import "animations/element-in-view-new";
+    @import "partials/solar-panels";
+    @import "partials/tech";
+    @import "partials/tech-animations";
+    @import "partials/wheel-car-new";
+    @import "partials/flag-lines-solar-road";
+    @import "partials/end-nav";
+    @import "animations/page-in-view-end-nav";
+    @import "partials/ie-fixes";
+    @import "components/final-styles";
+    @import "partials/static-experience";
+    @import "partials/_brands-slider-changes";
+}
