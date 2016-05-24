@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      
+<html class="no-js lt-ie9 lt-ie8 lt-ie7">
+<![endif]-->
+<!--[if IE 7]>         
+<html class="no-js lt-ie9 lt-ie8">
+<![endif]-->
+<!--[if IE 8]>         
+<html class="no-js lt-ie9">
+<![endif]-->
+<!--[if gt IE 8]><!--> 
+<html class="no-js">
+    <!--<![endif]-->
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>GM New Icon</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- ORIGINAL STYLESHEETS FROM SITE -->
+    <link rel="stylesheet" type="text/css" href="css/original/body-styles.css">
+    <link rel="stylesheet" type="text/css" href="css/original/main.css">
+
+    <!-- NEW STYLE SHEET WITH NEW ICON STYLES - MOBILE CONSIDERED    -->
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+</head>
+<body>
+
+    <!-- ENCAPSULATED DIV CONTAINER -->
+    <div id="c3xgm-about-encap-container">
+        <div id="c3xgm-about-encap-container-inner">
+    
+            <div id="c3xgm-about-page-our-commitment" class="c3xgm-about-page c3xgm-about-clearfix c3xgm-about-page-our-commitment">
+                <div class="c3xgm-about-section c3xgm-about-clearfix our-commitment ">
+                    <div class="c3xgm-about-section-header c3xgm-about-clearfix">
+                        
+                        <div class="c3xgm-about-section-header-inner c3xgm-about-clearfix">
+                            <div class="c3xgm-about-icon-holder c3xgm-about-clearfix">
+                                <img class="c3xgm-about-our-company-icon c3xgm-about-section-icon c3xgm-about-icon-image " src="img/our-commitment.png" alt="Our Commitment">
+                                <svg version="1.1" id="new-icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 100 100" enable-background="new 0 0 100 100" xml:space="preserve">
+                                    <circle class="grey_circle" fill="#B3B7BB" cx="50" cy="50" r="44"></circle>
+                                    <path class="white_circle" fill="#FFFFFF" d="M50,0.8C22.8,0.8,0.7,22.8,0.7,50S22.8,99.2,50,99.2s49.3-22,49.3-49.2S77.2,0.8,50,0.8z M50,94
+                                        C25.7,94,6,74.3,6,50S25.7,6,50,6s44,19.7,44,44S74.3,94,50,94z"></path>
+                                    <g class="corner_path">
+                                        <path fill="#FFFFFF" d="M0,0v100h100V0H0z M50,100C22.4,100,0,77.6,0,50S22.4,0,50,0s50,22.4,50,50S77.6,100,50,100z"></path>
+                                    </g>
+                                    <circle class="out_circle" fill="none" stroke="#6D6E70" stroke-width="1.3984" stroke-miterlimit="10" cx="50" cy="50" r="49.3"></circle>
+                                </svg>
+                                <div id="new-icon-container">
+                                    <!-- whole map layer -->
+                                    <div id="whole-map-container">
+                                        <div id="whole-map"></div>
+                                    </div>
+                                    <!-- half wheel layer -->
+                                    <div id="half-wheel-container">
+                                        <div id="half-wheel"></div>
+                                    </div>
+                                    <!-- half map layer -->
+                                    <div id="half-map-container">
+                                        <div id="half-map-left"></div>
+                                    </div>
+                                </div>
+                                
+                            </div>
+                            <div class="c3xgm-about-header-holder c3xgm-about-clearfix">
+                                <div class="c3xgm-about-overflow c3xgm-about-clearfix">
+                                    <h1 class="c3xgm-about-h "><span class="c3xgm-about-thin ">Our</span> Commitment</h1>
+                                </div>
+                            </div>
+                        </div>
+
+                        <hr>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <button id="toggle">Toggle Animation</button>
+
+    <script>
+    jQuery(document).ready(function($) {
+        $('#toggle').on('click touchstart', function(e) {
+            console.log('I have been clicked!');
+            if($('.c3xgm-about-page').hasClass('c3xgm-about-page-in-view')) {
+                $('.c3xgm-about-page').removeClass('c3xgm-about-page-in-view');
+                setTimeout(function() {
+                    $('.c3xgm-about-page').addClass('c3xgm-about-page-in-view');
+                }, 500);
+            } else {
+                $('.c3xgm-about-page').addClass('c3xgm-about-page-in-view');    
+            }
+        });
+    });
+    </script>
+</body>
+</html>

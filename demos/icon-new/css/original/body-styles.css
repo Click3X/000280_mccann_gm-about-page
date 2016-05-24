@@ -1,0 +1,26 @@
+/* 
+THESE STYLES ARE NECESSARY TO HAVE ON <body> AND <html> TAGS
+THEY ARE BASED ON NORMALIZE.CSS STYLES 
+TO RESET PADDING, MARGIN, BORDERS ACROSS BROWSERS AND DEVICES
+AS WELL AS PERFORMANCE BOOST BEST PRACTICES FOR MOBILE
+*/
+
+html {
+    line-height: 1;
+    box-sizing: border-box;
+}
+
+html, body {
+    -webkit-overflow-scrolling: touch;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font: inherit;
+    font-size: 100%;
+    vertical-align: baseline;
+}
+
+body { 
+    /* Addresses a small issue in webkit: http://bit.ly/NEdoDq */
+    -webkit-backface-visibility: hidden;
+}
