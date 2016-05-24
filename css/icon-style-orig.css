@@ -1,7 +1,7 @@
 /*for test*/
 body,html {
-  	margin:0;
-  	padding:0;
+    margin:0;
+    padding:0;
 }
 /*end for test*/
 
@@ -17,10 +17,10 @@ body,html {
 }
 .out_circle {
     -webkit-animation: dash 3s linear forwards;
-  	-moz-animation: dash 3s linear forwards;
-  	-o-animation: dash 3s linear forwards;
-  	-ms-animation: dash 3s linear forwards;
-  	animation: dash 3s linear forwards;
+    -moz-animation: dash 3s linear forwards;
+    -o-animation: dash 3s linear forwards;
+    -ms-animation: dash 3s linear forwards;
+    animation: dash 3s linear forwards;
 }
 
 .grey_circle {
@@ -38,11 +38,11 @@ body,html {
 }
 
 .grey_circle {
-  	-webkit-animation: greycircleScaleUp 0.5s 0.5s linear forwards;
-  	-moz-animation: greycircleScaleUp 0.5s 0.5s linear forwards;
-  	-ms-animation: greycircleScaleUp 0.5s 0.5s linear forwards;
-  	-o-animation: greycircleScaleUp 0.5s 0.5s linear forwards;
-  	animation: greycircleScaleUp 0.5s 0.5s linear forwards;
+    -webkit-animation: greycircleScaleUp 0.5s 0.5s linear forwards;
+    -moz-animation: greycircleScaleUp 0.5s 0.5s linear forwards;
+    -ms-animation: greycircleScaleUp 0.5s 0.5s linear forwards;
+    -o-animation: greycircleScaleUp 0.5s 0.5s linear forwards;
+    animation: greycircleScaleUp 0.5s 0.5s linear forwards;
 }
 
 /*grey circle scale up*/
@@ -184,41 +184,14 @@ body,html {
 
 
 div#new-icon-container {
-  	/*position: relative;
-  	display: inline-block;*/
-        width: 21%;
-    max-width: 100px;
-    height: 100%;
-    max-height: 100px;
-    display: block;
-    margin: 0.5em auto 1em;
-
-    position: absolute;
-    top:0;
-    left:0;
-    bottom:0;
-    right: 0;
+    position: relative;
+    display: inline-block;
 }
 
 svg#new-icon {
-  	/*width:100px;
-  	height:100px;
-  	overflow: hidden;*/
+    width:100px;
+    height:100px;
     overflow: hidden;
-    width: 21%;
-    max-width: 100px;
-    height: 100%;
-    max-height: 100px;
-    display: block;
-    margin: 0.5em auto 1em;
-}
-
-@media(min-width: 768px) {
-  div#new-icon-container,
-  svg#new-icon {
-    width:auto;
-    margin:0;
-  }
 }
 
 #whole-map-container {
@@ -226,26 +199,13 @@ svg#new-icon {
     position: absolute;
     height: 78px;
     width: 78px;
-    /*top: 11px;
-    left: 11px;*/
-    top:0;
-    left:0;
-    bottom:0;
-    right: 0;
-    margin: auto;
+    top: 11px;
+    left: 11px;
 
     background:url('../img/new-icon/globe_2x.png') left center no-repeat;
     background-size: 274px 78px;
     border-radius: 78px;
-    /*-webkit-animation: mapSlideIn 0.4s 0.8s ease forwards;
-    -moz-animation: mapSlideIn 0.4s 0.8s ease forwards;
-    -ms-animation: mapSlideIn 0.4s 0.8s ease forwards;
-    -o-animation: mapSlideIn 0.4s 0.8s ease forwards;
-    animation: mapSlideIn 0.4s 0.8s ease forwards;*/
-}
-
-.c3xgm-about-page-in-view .c3xgm-about-section-header #whole-map-container {
-  -webkit-animation: mapSlideIn 0.4s 0.8s ease forwards;
+    -webkit-animation: mapSlideIn 0.4s 0.8s ease forwards;
     -moz-animation: mapSlideIn 0.4s 0.8s ease forwards;
     -ms-animation: mapSlideIn 0.4s 0.8s ease forwards;
     -o-animation: mapSlideIn 0.4s 0.8s ease forwards;
@@ -259,14 +219,6 @@ svg#new-icon {
     background-size: 274px 78px;
     border-radius: 78px;
     background-position: -80px 0;
-    /*-webkit-animation: rotateGlobe 1s 1.5s ease forwards;
-    -moz-animation: rotateGlobe 1s 1.5s ease forwards;
-    -ms-animation: rotateGlobe 1s 1.5s ease forwards;
-    -o-animation: rotateGlobe 1s 1.5s ease forwards;
-    animation: rotateGlobe 1s 1.5s ease forwards;*/
-}
-
-.c3xgm-about-page-in-view .c3xgm-about-section-header #whole-map {
     -webkit-animation: rotateGlobe 1s 1.5s ease forwards;
     -moz-animation: rotateGlobe 1s 1.5s ease forwards;
     -ms-animation: rotateGlobe 1s 1.5s ease forwards;
@@ -278,35 +230,20 @@ svg#new-icon {
     position: absolute;
     height: 78px;
     width: 78px;
-    /*top: 11px;
-    left: 11px;*/
+    top: 11px;
+    left: 11px;
     opacity: 0;
-
-    top:0;
-    left:0;
-    bottom:0;
-    right: 0;
-    margin: auto;
-
-    /*-webkit-animation: rotateWheel 0.7s 1.5s linear forwards;
+    -webkit-animation: rotateWheel 0.7s 1.5s linear forwards;
     -moz-animation: rotateWheel 0.7s 1.5s linear forwards;
     -ms-animation: rotateWheel 0.7s 1.5s linear forwards;
     -o-animation: rotateWheel 0.7s 1.5s linear forwards;
-    animation: rotateWheel 0.7s 1.5s linear forwards;*/
+    animation: rotateWheel 0.7s 1.5s linear forwards;
 
     -webkit-transform-origin: center center;
     -moz-transform-origin: center center;
     -ms-transform-origin: center center;
     -o-transform-origin: center center;
     transform-origin: center center;
-}
-
-.c3xgm-about-page-in-view .c3xgm-about-section-header #half-wheel-container {
-  -webkit-animation: rotateWheel 0.7s 1.5s linear forwards;
-    -moz-animation: rotateWheel 0.7s 1.5s linear forwards;
-    -ms-animation: rotateWheel 0.7s 1.5s linear forwards;
-    -o-animation: rotateWheel 0.7s 1.5s linear forwards;
-    animation: rotateWheel 0.7s 1.5s linear forwards;  
 }
 
 #half-wheel {
@@ -318,57 +255,36 @@ svg#new-icon {
 }
 
 #half-map-container {
-  	opacity: 0;
-  	position: absolute;
+    opacity: 0;
+    position: absolute;
     height: 78px;
     width: 39px;
-    /*top: 11px;
-    left: 11px;*/
+    top: 11px;
+    left: 11px;
 
-    top:0;
-    left:0;
-    bottom:0;
-    right: 0;
-    margin: auto;
-
-    /*-webkit-animation: mapSlideIn 0.2s 1s linear forwards;
-  	-moz-animation: mapSlideIn 0.2s 1s linear forwards;
-  	-ms-animation: mapSlideIn 0.2s 1s linear forwards;
-  	-o-animation: mapSlideIn 0.2s 1s linear forwards;
-  	animation: mapSlideIn 0.2s 1s linear forwards;*/
-}
-
-.c3xgm-about-page-in-view .c3xgm-about-section-header #half-map-container {
-  -webkit-animation: mapSlideIn 0.2s 1s linear forwards;
+    -webkit-animation: mapSlideIn 0.2s 1s linear forwards;
     -moz-animation: mapSlideIn 0.2s 1s linear forwards;
     -ms-animation: mapSlideIn 0.2s 1s linear forwards;
     -o-animation: mapSlideIn 0.2s 1s linear forwards;
-    animation: mapSlideIn 0.2s 1s linear forwards; 
+    animation: mapSlideIn 0.2s 1s linear forwards;
 }
 
 #half-map-left {
     display: inline-block;
-  	border-radius: 78px 0 0 78px;
-  	height: 78px;
+    border-radius: 78px 0 0 78px;
+    height: 78px;
     width: 39px;
-  	background:url('../img/new-icon/globe_2x.png') left center no-repeat;
+    background:url('../img/new-icon/globe_2x.png') left center no-repeat;
     background-size: 274px 78px;
     background-position: -80px 0;
-    /*-webkit-animation: rotateGlobe 1s 1.5s ease forwards;
-  	-moz-animation: rotateGlobe 1s 1.5s ease forwards;
-  	-ms-animation: rotateGlobe 1s 1.5s ease forwards;
-  	-o-animation: rotateGlobe 1s 1.5s ease forwards;
-  	animation: rotateGlobe 1s 1.5s ease forwards;*/
-    z-index: 999;
-    position: relative;
-}
-.c3xgm-about-page-in-view .c3xgm-about-section-header #half-map-left {
-  -webkit-animation: rotateGlobe 1s 1.5s ease forwards;
+    -webkit-animation: rotateGlobe 1s 1.5s ease forwards;
     -moz-animation: rotateGlobe 1s 1.5s ease forwards;
     -ms-animation: rotateGlobe 1s 1.5s ease forwards;
     -o-animation: rotateGlobe 1s 1.5s ease forwards;
     animation: rotateGlobe 1s 1.5s ease forwards;
-  }
+    z-index: 999;
+    position: relative;
+}
 
 /*MAP SLIDE IN FROM LEFT*/
   @-webkit-keyframes mapSlideIn {
@@ -494,7 +410,7 @@ svg#new-icon {
 
 /*rotate wheel*/
 @-webkit-keyframes rotateWheel {
-	0% { -webkit-transform: rotate(0deg); }
+  0% { -webkit-transform: rotate(0deg); }
   25% { 
     -webkit-transform: rotate(45deg); 
     opacity: 1;
@@ -507,7 +423,7 @@ svg#new-icon {
     -webkit-transform: rotate(135deg); 
     opacity: 1;
   }
-	100% { 
+  100% { 
     -webkit-transform: rotate(180deg); 
     opacity: 1;
   }
@@ -595,27 +511,27 @@ svg#new-icon {
 
 /*rotate globe*/
 @-webkit-keyframes rotateGlobe {
-	from { background-position: -80px 0; }
-	to { background-position: 0px 0px; }
+  from { background-position: -80px 0; }
+  to { background-position: 0px 0px; }
 }
 
 @-moz-keyframes rotateGlobe {
-	from { background-position: -80px 0; }
-	to { background-position: 0px 0px; }
+  from { background-position: -80px 0; }
+  to { background-position: 0px 0px; }
 }
 
 @-ms-keyframes rotateGlobe {
-	from { background-position: -80px 0; }
-	to { background-position: 0px 0px; }
+  from { background-position: -80px 0; }
+  to { background-position: 0px 0px; }
 }
 @-o-keyframes rotateGlobe {
-	from { background-position: -80px 0; }
-	to { background-position: 0px 0px; }
+  from { background-position: -80px 0; }
+  to { background-position: 0px 0px; }
 }
 
 @keyframes rotateGlobe {
-	from { background-position: -80px 0; }
-	to { background-position: 0px 0px; }
+  from { background-position: -80px 0; }
+  to { background-position: 0px 0px; }
 }
 
 /*fade globe*/
