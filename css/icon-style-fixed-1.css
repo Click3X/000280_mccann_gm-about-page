@@ -1,4 +1,4 @@
-/*div#new-icon-container {
+div#new-icon-container {
     position: absolute;
     top:11px;
     left:11px;
@@ -23,7 +23,7 @@ svg#new-icon {
     height:100px;
     overflow: hidden;
 }
-*/
+
 #whole-map-container {
     opacity: 0;
     background:url('../img/new-icon/globe_2x.png') left center no-repeat;
@@ -443,38 +443,4 @@ svg#new-icon {
     to {
         transform:rotate(180deg);
     }
-}
-
-
-div#new-icon-container {
-    position: absolute;
-    left:0;
-    right:0;
-    top:0;
-    width: 21%;
-    height: 0;
-    padding-bottom: 21%;
-    margin: 0.5em auto 1em;
-
-    max-width: 100px;
-}
-
-@media(min-width: 476px) {
-  div#new-icon-container { 
-    padding-bottom: 100px
-  }
-}
-
-
-@media(min-width: 767px) {
-  div#new-icon-container { 
-    top:11px;
-    left:11px;
-    right: auto;
-    bottom: auto;
-    padding-bottom: 0;
-    height: 78px;
-    width: 78px;
-    margin: 0;
-  }
 }

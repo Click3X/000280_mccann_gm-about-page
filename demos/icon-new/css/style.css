@@ -187,28 +187,6 @@ body {
 }
 /************ end of existing styles *************/
 
-/*div#new-icon-container {
-    position: absolute;
-    top:11px;
-    left:11px;
-    height: 78px;
-    width: 78px;
-}
-
-@media(max-width: 767px) {
-  div#new-icon-container { 
-    left:0;
-    right:0;
-    top:0;
-    width: 21%;
-    height: 0;
-    padding-bottom: 21%;
-    margin: 0.5em auto 1em;
-
-    max-width: 100px;
-  }
-}*/
-
 div#new-icon-container {
     position: absolute;
     left:0;
