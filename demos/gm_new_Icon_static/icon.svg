@@ -1,9 +1,0 @@
-<svg version="1.1" id="new-icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 100 100" enable-background="new 0 0 100 100" xml:space="preserve">
-    <circle class="grey_circle" fill="#B3B7BB" cx="50" cy="50" r="44"/>
-    <path class="white_circle" fill="#FFFFFF" d="M50,0.8C22.8,0.8,0.7,22.8,0.7,50S22.8,99.2,50,99.2s49.3-22,49.3-49.2S77.2,0.8,50,0.8z M50,94
-        C25.7,94,6,74.3,6,50S25.7,6,50,6s44,19.7,44,44S74.3,94,50,94z"/>
-    <g class="corner_path">
-        <path fill="#FFFFFF" d="M0,0v100h100V0H0z M50,100C22.4,100,0,77.6,0,50S22.4,0,50,0s50,22.4,50,50S77.6,100,50,100z"/>
-    </g>
-    <circle class="out_circle" fill="none" stroke="#6D6E70" stroke-width="1.3984" stroke-miterlimit="10" cx="50" cy="50" r="49.3"/>
-</svg>
